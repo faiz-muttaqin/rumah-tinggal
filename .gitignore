@@ -88,6 +88,8 @@ exports/
 crash.log
 
 # Local tools and runtime files
+/.context/
+/AGENTS.md
 .tools/
 graphify-out/
 .graphify_analysis.json

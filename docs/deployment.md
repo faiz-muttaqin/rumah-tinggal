@@ -1,6 +1,6 @@
 # Deployment server
 
-Aplikasi sudah dapat dibuild dan dijalankan lokal. Template nginx dan systemd tetap tidak aktif; belum ada perubahan layanan publik dari penyiapan ini. Usulan hostname adalah `rumah.faizmuttaqin.com`, sedangkan template memakai `rumah.example.com` sebagai placeholder.
+Aplikasi produksi tersedia di `https://rumah.faizmuttaqin.com`, melalui nginx dan service systemd `rumah-tinggal.service` pada loopback port 3100. Template pada repository tetap berupa contoh; konfigurasi aktif berada di `/etc`. Catatan rilis aktual, tracker, dan operasi server tersimpan lokal di `.context/` yang diabaikan Git.
 
 ## Build dan proses aplikasi
 
@@ -21,7 +21,9 @@ Untuk pengembangan, `./dev dev:api` memakai port 3100 dan `./dev dev` memakai po
 
 ## Direktori rilis dan data
 
-Checkout saat ini berada di `/root/projects/rumah-tinggal`; akun service khusus tidak dapat mengaksesnya dengan pembatasan `ProtectHome`. Untuk deployment, siapkan salinan rilis terpisah di **`/opt/rumah-tinggal`** yang dapat dibaca/dieksekusi akun `rumah-tinggal`. Rilis membutuhkan hasil build `dist/`, kode backend, `src/types.ts`, runtime Node lokal di `.tools/`, dan dependency runtime dengan symlink paket yang tetap utuh. Build dilakukan sebelum menjalankan service.
+Checkout berada di `/root/projects/rumah-tinggal`; service memakai akun khusus `rumah-tinggal` dan tidak mengakses `/root`. Rilis disimpan di **`/opt/rumah-tinggal/releases/<release-id>`**, dipilih melalui symlink **`/opt/rumah-tinggal/current`**. Build dilakukan sebelum aktivasi rilis.
+
+Rilis hanya membutuhkan `dist/`, kode produksi `server/` tanpa tes, `src/types.ts`, `package.json`, dan paket runtime `jose` pada `node_modules/jose` yang disalin tanpa symlink ke checkout. Runtime Node 26 ditempatkan di **`/opt/rumah-tinggal/runtime/node`**. Toolchain pnpm, dependency pengembangan, dan cache tidak disalin ke produksi.
 
 Source/rilis dimiliki administrator dan tidak perlu dapat ditulis akun aplikasi. Jangan membawa `.git`, `.env`, database, cache pengembangan, atau hasil analisis sementara ke document root. HTTP aplikasi hanya melayani ekstensi publik yang diizinkan di `dist/`, menolak dotfiles/path privat/traversal, dan tidak mengikuti symlink keluar direktori build.
 
@@ -40,7 +42,9 @@ SQLite privat berada di `/var/lib/rumah-tinggal/rumah-tinggal.sqlite`, beserta s
 
 ## Template systemd dan nginx
 
-[rumah-tinggal.service.example](../deploy/rumah-tinggal.service.example) memakai akun khusus `rumah-tinggal`, working directory `/opt/rumah-tinggal`, dan Node lokal secara langsung. systemd memberikan environment sehingga argumen `--env-file-if-exists` tidak diperlukan. `StateDirectory=rumah-tinggal` menyediakan direktori data di `/var/lib`; aplikasi tidak menulis ke rilis. Akun, rilis/runtime, environment file, dan seluruh jalur harus diprovision serta ditinjau sebelum unit dapat dijalankan. Template belum dipasang atau diaktifkan.
+[rumah-tinggal.service.example](../deploy/rumah-tinggal.service.example) memakai akun khusus `rumah-tinggal`, working directory `/opt/rumah-tinggal/current`, dan runtime Node secara langsung dengan entrypoint relatif `server/index.ts`. Entrypoint relatif penting karena Node menyelesaikan symlink ke direktori rilis fisik. systemd memberikan environment sehingga argumen `--env-file-if-exists` tidak diperlukan. `StateDirectory=rumah-tinggal` menyediakan direktori data di `/var/lib`; aplikasi tidak menulis ke rilis.
+
+Unit aktif adalah `/etc/systemd/system/rumah-tinggal.service`, berstatus enabled agar berjalan saat boot. Pantau dengan `systemctl status rumah-tinggal` dan `journalctl -u rumah-tinggal`. Mengganti source checkout tidak memperbarui rilis aktif: build, siapkan rilis baru, pilih symlink `current`, kemudian restart service dan verifikasi health. Pertahankan direktori state dan konfigurasi saat memperbarui atau rollback.
 
 [nginx.conf.example](../deploy/nginx.conf.example) meneruskan HTTPS ke loopback port 3100 serta menolak dotfiles dan sejumlah path/ekstensi sensitif. Root ACME contoh adalah `/var/www/rumah-tinggal/public`, terpisah dari `/opt` dan database. Ganti `server_name` serta jalur sertifikat; sertifikat dan private key harus tersedia di luar repository sebelum konfigurasi HTTPS bisa lolos `nginx -t`.
 
@@ -51,6 +55,6 @@ SQLite privat berada di `/var/lib/rumah-tinggal/rumah-tinggal.sqlite`, beserta s
 3. Selesaikan Authorized Domains dan pengaturan Google/Firebase, lalu uji login nyata pada domain HTTPS final. Lihat [login Google](auth-google.md). Proxy helper nginx hanya diaktifkan bila rancangan auth domain membutuhkannya dan placeholder telah diganti.
 4. Saat peluncuran diminta, tinjau dan pasang template yang telah disesuaikan. Validasi nginx dengan `nginx -t` sebelum reload; periksa HTTPS, health, login/logout, penolakan akses tanpa izin, dan pemisahan listing dua akun.
 
-Template mentah tidak dapat langsung dipakai: domain, jalur sertifikat, rilis, akun service, dan environment masih memerlukan provisioning.
+Template mentah tidak dapat langsung dipakai pada server lain: domain, jalur sertifikat, rilis, akun service, dan environment masih memerlukan provisioning. Jangan mematikan service produksi saat menutup sesi chat; QA harus memakai proses, port, dan direktori data terpisah.
 
 Rujukan: [Firebase pada nginx](https://firebase.google.com/docs/auth/web/redirect-best-practices), [Cloudflare Full (strict)](https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/full-strict/).

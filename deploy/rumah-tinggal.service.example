@@ -1,5 +1,5 @@
 # TEMPLATE TIDAK AKTIF. Jangan pasang sebelum akun, rilis, dan env tersedia.
-# Salin rilis dari /root/projects ke /opt/rumah-tinggal terlebih dahulu.
+# Siapkan rilis di /opt/rumah-tinggal/releases dan symlink current terlebih dahulu.
 # Ganti origin/domain pada /etc/rumah-tinggal.env; file dimiliki root, mode 0600.
 # Pastikan DATA_DIR dalam env file tetap /var/lib/rumah-tinggal.
 # Akun rumah-tinggal harus dapat membaca rilis dan mengeksekusi Node lokal.
@@ -13,13 +13,14 @@ Wants=network-online.target
 Type=simple
 User=rumah-tinggal
 Group=rumah-tinggal
-WorkingDirectory=/opt/rumah-tinggal
+WorkingDirectory=/opt/rumah-tinggal/current
 Environment=NODE_ENV=production
 Environment=HOST=127.0.0.1
 Environment=PORT=3100
 Environment=DATA_DIR=/var/lib/rumah-tinggal
 EnvironmentFile=/etc/rumah-tinggal.env
-ExecStart=/opt/rumah-tinggal/.tools/node_modules/.bin/node /opt/rumah-tinggal/server/index.ts
+# Entrypoint relatif mengikuti direktori rilis fisik setelah symlink current.
+ExecStart=/opt/rumah-tinggal/runtime/node server/index.ts
 Restart=on-failure
 RestartSec=3
 TimeoutStopSec=30

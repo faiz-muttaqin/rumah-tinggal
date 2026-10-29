@@ -82,6 +82,6 @@ Pola pemindaian dan hooks lokal memiliki batas; tinjau perubahan staged sebelum 
 
 ## Deployment
 
-Usulan subdomain: **`rumah.faizmuttaqin.com`**. Siapkan domain Firebase/Google, TLS, nginx, dan akun service sebelum peluncuran. DNS Cloudflare saja belum cukup.
+Domain produksi: **`https://rumah.faizmuttaqin.com`**. Service `rumah-tinggal` berjalan otomatis pada `127.0.0.1:3100` di belakang nginx. Login Google nyata tetap perlu diverifikasi dengan pengaturan domain Firebase/Google.
 
-Lihat [login Google](docs/auth-google.md), [deployment server](docs/deployment.md), [template nginx](deploy/nginx.conf.example), dan [template systemd](deploy/rumah-tinggal.service.example). Kedua template tetap tidak aktif dan memerlukan penyesuaian; pekerjaan lokal ini tidak mengaktifkan layanan publik.
+Lihat [login Google](docs/auth-google.md), [deployment server](docs/deployment.md), [template nginx](deploy/nginx.conf.example), dan [template systemd](deploy/rumah-tinggal.service.example). Template tetap memakai placeholder; konfigurasi aktif tersimpan di `/etc`. Agen yang bekerja pada checkout server ini membaca `AGENTS.md` dan `.context/` untuk status serta handoff lokal; keduanya diabaikan Git.
