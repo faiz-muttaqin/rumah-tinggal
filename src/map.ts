@@ -1,8 +1,14 @@
-import type { GeoJSONSource, Map as MapInstance, Marker } from "maplibre-gl";
+import type {
+  GeoJSONSource,
+  Map as MapInstance,
+  Marker,
+  Popup,
+} from "maplibre-gl";
 import * as maplibregl from "maplibre-gl";
 import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
 import { BASEMAP_GLYPHS, BASEMAP_LAYERS, BASEMAP_SOURCE } from "./basemap.ts";
 import { escapeHTML, money } from "./geo.ts";
+import { googleMapsLocation } from "./maps-links.ts";
 import type { Area, Listing } from "./types.ts";
 
 // MapLibre 6 requires an explicit bundled worker URL with Vite.
@@ -16,13 +22,26 @@ export const AREA_COLORS: Record<Area, string> = {
   Bekasi: "#5b8fa7",
 };
 
+export type TransitMode = "MRT" | "LRT" | "TransJakarta";
+
+const MOBILITY_LAYERS = {
+  TransJakarta: { prefix: "tj", color: "#2477a8", visibility: "none" },
+  MRT: { prefix: "mrt", color: "#0076bd", visibility: "visible" },
+  LRT: { prefix: "lrt", color: "#bb3f75", visibility: "visible" },
+} as const;
+
+const MOBILITY_MODES = ["TransJakarta", "MRT", "LRT"] as const;
+
 export class HousingMap {
   map: MapInstance;
   markers: Marker[] = [];
   ready: Promise<void>;
+  private mobilityPopup?: Popup;
+  private mobilityPopupMode?: TransitMode;
   constructor(
     regions: GeoJSON.FeatureCollection,
-    transit: GeoJSON.FeatureCollection,
+    transitKRL: GeoJSON.FeatureCollection,
+    mobility: GeoJSON.FeatureCollection,
     onArea: (area: string) => void,
     onPoint: (lng: number, lat: number) => void,
   ) {
@@ -60,7 +79,7 @@ export class HousingMap {
       new maplibregl.AttributionControl({
         compact: true,
         customAttribution:
-          'Wilayah: <a href="https://gitlab.com/adenaufal/nafkah" target="_blank" rel="noopener">Nafkah · HDX</a> · KRL: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>',
+          'Wilayah: <a href="https://gitlab.com/adenaufal/nafkah" target="_blank" rel="noopener">Nafkah · HDX</a> · Transportasi: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>',
       }),
       "bottom-right",
     );
@@ -79,6 +98,17 @@ export class HousingMap {
       }).length;
       container.dataset.regionFeatures = String(regionsCount);
       container.dataset.stationFeatures = String(stationsCount);
+      for (const mode of MOBILITY_MODES) {
+        const { prefix } = MOBILITY_LAYERS[mode];
+        container.dataset[`${prefix}Features`] = String(
+          this.map.queryRenderedFeatures({ layers: [`${prefix}-stations`] })
+            .length,
+        );
+        container.dataset[`${prefix}LineFeatures`] = String(
+          this.map.queryRenderedFeatures({ layers: [`${prefix}-lines`] })
+            .length,
+        );
+      }
       container.dataset.roadFeatures = String(
         this.map.queryRenderedFeatures({ layers: ["basemap-roads"] }).length,
       );
@@ -127,7 +157,77 @@ export class HousingMap {
             "line-dasharray": [3, 2],
           },
         });
-        this.map.addSource("transit", { type: "geojson", data: transit });
+        this.map.addSource("mobility", { type: "geojson", data: mobility });
+        // TransJakarta is added first so its stops and lines stay below rail.
+        for (const mode of MOBILITY_MODES) {
+          const { prefix, color, visibility } = MOBILITY_LAYERS[mode];
+          this.map.addLayer({
+            id: `${prefix}-casing`,
+            type: "line",
+            source: "mobility",
+            filter: [
+              "all",
+              ["==", ["get", "mode"], mode],
+              ["==", ["geometry-type"], "LineString"],
+            ],
+            layout: { visibility },
+            paint: {
+              "line-color": "#fffef7",
+              "line-width": ["interpolate", ["linear"], ["zoom"], 9, 4, 14, 8],
+              "line-opacity": 0.85,
+            },
+          });
+          this.map.addLayer({
+            id: `${prefix}-lines`,
+            type: "line",
+            source: "mobility",
+            filter: [
+              "all",
+              ["==", ["get", "mode"], mode],
+              ["==", ["geometry-type"], "LineString"],
+            ],
+            layout: { visibility },
+            paint: {
+              "line-color": ["to-color", ["get", "color"], color],
+              "line-width": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                9,
+                mode === "TransJakarta" ? 1.5 : 2.5,
+                14,
+                mode === "TransJakarta" ? 3 : 4.5,
+              ],
+              "line-opacity": 0.9,
+            },
+          });
+          this.map.addLayer({
+            id: `${prefix}-stations`,
+            type: "circle",
+            source: "mobility",
+            filter: [
+              "all",
+              ["==", ["get", "mode"], mode],
+              ["==", ["geometry-type"], "Point"],
+            ],
+            layout: { visibility },
+            paint: {
+              "circle-radius": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                9,
+                mode === "TransJakarta" ? 2 : 3,
+                14,
+                mode === "TransJakarta" ? 4.5 : 6,
+              ],
+              "circle-color": "#fffef7",
+              "circle-stroke-color": ["to-color", ["get", "color"], color],
+              "circle-stroke-width": 1.5,
+            },
+          });
+        }
+        this.map.addSource("transit", { type: "geojson", data: transitKRL });
         this.map.addLayer({
           id: "rail-casing",
           type: "line",
@@ -195,10 +295,57 @@ export class HousingMap {
             )
             .addTo(this.map);
         });
+        for (const mode of MOBILITY_MODES) {
+          const layer = `${MOBILITY_LAYERS[mode].prefix}-stations`;
+          this.map.on("click", layer, (event) => {
+            const feature = event.features?.[0];
+            if (feature?.geometry.type !== "Point") return;
+            const [lng, lat] = feature.geometry.coordinates;
+            if (
+              typeof lng !== "number" ||
+              typeof lat !== "number" ||
+              !Number.isFinite(lng) ||
+              !Number.isFinite(lat)
+            )
+              return;
+            const name = String(feature.properties.name ?? mode);
+            const network = feature.properties.network;
+            const networkLabel =
+              typeof network === "string" && network && network !== mode
+                ? ` · ${escapeHTML(network)}`
+                : "";
+            this.mobilityPopup?.remove();
+            const popup = new maplibregl.Popup({ closeButton: true })
+              .setLngLat([lng, lat])
+              .setHTML(
+                `<strong>${escapeHTML(name)}</strong><p>${escapeHTML(mode)}${networkLabel}</p><p>${lat.toFixed(5)}, ${lng.toFixed(5)}</p><a href="${escapeHTML(googleMapsLocation({ lat, lng }))}" target="_blank" rel="noopener noreferrer">Buka Google Maps ↗</a>`,
+              );
+            this.mobilityPopup = popup;
+            this.mobilityPopupMode = mode;
+            popup.on("close", () => {
+              if (this.mobilityPopup === popup) {
+                this.mobilityPopup = undefined;
+                this.mobilityPopupMode = undefined;
+              }
+            });
+            popup.addTo(this.map);
+          });
+          this.map.on("mouseenter", layer, () => {
+            this.map.getCanvas().style.cursor = "pointer";
+          });
+          this.map.on("mouseleave", layer, () => {
+            this.map.getCanvas().style.cursor = "";
+          });
+        }
         this.map.on("click", "region-fill", (event) => {
           if (
             this.map.queryRenderedFeatures(event.point, {
-              layers: ["stations"],
+              layers: [
+                "stations",
+                ...MOBILITY_MODES.map(
+                  (mode) => `${MOBILITY_LAYERS[mode].prefix}-stations`,
+                ),
+              ],
             }).length
           )
             return;
@@ -305,6 +452,22 @@ export class HousingMap {
         "visibility",
         visible ? "visible" : "none",
       );
+  }
+
+  async showTransit(mode: TransitMode, visible: boolean): Promise<void> {
+    await this.ready;
+    const { prefix } = MOBILITY_LAYERS[mode];
+    for (const suffix of ["casing", "lines", "stations"])
+      this.map.setLayoutProperty(
+        `${prefix}-${suffix}`,
+        "visibility",
+        visible ? "visible" : "none",
+      );
+    if (!visible && this.mobilityPopupMode === mode) {
+      this.mobilityPopup?.remove();
+      this.mobilityPopup = undefined;
+      this.mobilityPopupMode = undefined;
+    }
   }
 
   async showBuildings(visible: boolean): Promise<void> {

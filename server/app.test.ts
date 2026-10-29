@@ -364,12 +364,16 @@ test("static files stay inside dist and private paths cannot use SPA fallback", 
   );
 });
 
-test("only the two public map files are served as GeoJSON without symlink aliases", async (t) => {
+test("only the three public map files are served as GeoJSON without symlink aliases", async (t) => {
   const { directory, distDir, origin } = await fixture(t);
   const dataDir = join(distDir, "data");
   await mkdir(dataDir);
   const geojson = JSON.stringify({ type: "FeatureCollection", features: [] });
-  for (const filename of ["regions.geojson", "transit.geojson"]) {
+  for (const filename of [
+    "regions.geojson",
+    "transit.geojson",
+    "mobility.geojson",
+  ]) {
     await writeFile(join(dataDir, filename), geojson);
     const response = await fetch(`${origin}/data/${filename}`);
     assert.equal(response.status, 200);

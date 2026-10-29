@@ -36,6 +36,44 @@ async function expectRenderedVectors(page: Page) {
   }
 }
 
+type MobilityLayer = "mrt" | "lrt" | "tj";
+
+const mobilityCheckboxNames: Record<MobilityLayer, string> = {
+  mrt: "Jalur MRT",
+  lrt: "Jalur LRT",
+  tj: "Jalur TransJakarta",
+};
+
+async function expectRenderedAttribute(
+  page: Page,
+  attribute: string,
+  visible: boolean,
+) {
+  const map = page.locator("#map");
+  await expect(map).toHaveAttribute(attribute, /^\d+$/);
+  const rendered = expect.poll(
+    async () => Number(await map.getAttribute(attribute)),
+    { message: `${attribute} must reflect the rendered layer` },
+  );
+  if (visible) await rendered.toBeGreaterThan(0);
+  else await rendered.toBe(0);
+}
+
+async function expectMobilityLayer(
+  page: Page,
+  mode: MobilityLayer,
+  visible: boolean,
+) {
+  await expectRenderedAttribute(page, `data-${mode}-features`, visible);
+  await expectRenderedAttribute(page, `data-${mode}-line-features`, visible);
+}
+
+async function expectUnchangedMapContext(page: Page) {
+  await expectRenderedVectors(page);
+  await expectRenderedAttribute(page, "data-road-features", true);
+  await expect(page.locator("#map .price-pin")).toHaveCount(8);
+}
+
 async function expectNoHorizontalOverflow(page: Page) {
   const dimensions = await page.evaluate(() => ({
     viewport: window.innerWidth,
@@ -215,6 +253,84 @@ test("toggles actual rendered KRL station features while keeping regions visible
   await checkbox.setChecked(true);
   await expect(checkbox).toBeChecked();
   await expectRenderedVectors(page);
+});
+
+test("toggles MRT, LRT, and TransJakarta independently without hiding KRL, streets, or hunian", async ({
+  page,
+}) => {
+  const checkbox = (mode: MobilityLayer) =>
+    page.getByRole("checkbox", {
+      name: mobilityCheckboxNames[mode],
+      exact: true,
+    });
+  for (const mode of ["mrt", "lrt"] as const) {
+    await expect(checkbox(mode)).toBeChecked();
+    await expectMobilityLayer(page, mode, true);
+  }
+  await expect(checkbox("tj")).not.toBeChecked();
+  await expectMobilityLayer(page, "tj", false);
+  await expectUnchangedMapContext(page);
+
+  for (const mode of ["mrt", "lrt"] as const) {
+    const other = mode === "mrt" ? "lrt" : "mrt";
+    await checkbox(mode).setChecked(false);
+    await expectMobilityLayer(page, mode, false);
+    await expectMobilityLayer(page, other, true);
+    await expectMobilityLayer(page, "tj", false);
+    await expectUnchangedMapContext(page);
+
+    await checkbox(mode).setChecked(true);
+    await expectMobilityLayer(page, mode, true);
+    await expectMobilityLayer(page, other, true);
+    await expectUnchangedMapContext(page);
+  }
+
+  await checkbox("tj").setChecked(true);
+  await expectMobilityLayer(page, "tj", true);
+  for (const mode of ["mrt", "lrt"] as const)
+    await expectMobilityLayer(page, mode, true);
+  await expectUnchangedMapContext(page);
+
+  await checkbox("tj").setChecked(false);
+  await expectMobilityLayer(page, "tj", false);
+  for (const mode of ["mrt", "lrt"] as const)
+    await expectMobilityLayer(page, mode, true);
+  await expectUnchangedMapContext(page);
+});
+
+test("searching a stop reveals its hidden MRT, LRT, or TransJakarta layer", async ({
+  page,
+}) => {
+  for (const { mode, query, resultName } of [
+    {
+      mode: "mrt",
+      query: "Bundaran HI",
+      resultName: /MRT\s*·\s*Bundaran HI Bank Jakarta/i,
+    },
+    { mode: "lrt", query: "Harjamukti", resultName: /LRT\s*·\s*Harjamukti/i },
+    {
+      mode: "tj",
+      query: "Jakarta International Stadium",
+      resultName: /TransJakarta\s*·\s*Jakarta International Stadium/i,
+    },
+  ] as const) {
+    const checkbox = page.getByRole("checkbox", {
+      name: mobilityCheckboxNames[mode],
+      exact: true,
+    });
+    await checkbox.setChecked(false);
+    await expectMobilityLayer(page, mode, false);
+    await page.locator("#search").fill(query);
+    const result = page
+      .locator("#station-results")
+      .getByRole("button", { name: resultName })
+      .first();
+    await expect(result).toBeVisible();
+    await result.click();
+    await expect(checkbox).toBeChecked();
+    await expectMobilityLayer(page, mode, true);
+    await expect(mapRegion(page)).toBeVisible();
+  }
 });
 
 test("local regions and KRL remain usable when the external basemap is unavailable", async ({
@@ -403,6 +519,68 @@ test.describe("mobile explorer", () => {
     viewport: { width: 390, height: 844 },
     isMobile: true,
     hasTouch: true,
+  });
+
+  test("keeps six layer switches usable with hunian detail open on a phone", async ({
+    page,
+  }) => {
+    await cards(page).first().click();
+    const detail = page.locator("#detail-card");
+    await expect(detail).toBeVisible();
+    await expect(mapRegion(page)).toBeVisible();
+    await page
+      .getByRole("button", {
+        name: "Tampilkan seluruh Jabodetabek",
+        exact: true,
+      })
+      .click();
+    await expect(detail).toBeVisible();
+    const switches = page.getByRole("checkbox");
+    await expect(switches).toHaveCount(6);
+    for (const control of await switches.all())
+      await expect(control).toBeVisible();
+    const bounds = await Promise.all(
+      (await switches.all()).map((control) =>
+        control.locator("..").boundingBox(),
+      ),
+    );
+    const rows: { top: number; count: number }[] = [];
+    for (const bound of bounds) {
+      expect(bound).not.toBeNull();
+      if (!bound)
+        throw new Error("A mobile layer switch has no layout bounds.");
+      const row = rows.find(
+        (candidate) => Math.abs(candidate.top - bound.y) <= 4,
+      );
+      if (row) row.count++;
+      else rows.push({ top: bound.y, count: 1 });
+    }
+    expect(rows.map((row) => row.count)).toEqual([3, 3]);
+    await expectNoHorizontalOverflow(page);
+
+    const expected: Record<MobilityLayer, boolean> = {
+      mrt: true,
+      lrt: true,
+      tj: false,
+    };
+    for (const mode of ["mrt", "lrt", "tj"] as const)
+      await expectMobilityLayer(page, mode, expected[mode]);
+    for (const mode of ["mrt", "lrt", "tj"] as const) {
+      const checkbox = page.getByRole("checkbox", {
+        name: mobilityCheckboxNames[mode],
+        exact: true,
+      });
+      const initial = expected[mode];
+      for (const visible of [!initial, initial]) {
+        await checkbox.setChecked(visible);
+        expected[mode] = visible;
+        for (const other of ["mrt", "lrt", "tj"] as const)
+          await expectMobilityLayer(page, other, expected[other]);
+        await expect(detail).toBeVisible();
+        await expectUnchangedMapContext(page);
+        await expectNoHorizontalOverflow(page);
+      }
+    }
   });
 
   test("offers Maps links and usable layer toggles with a hunian selected", async ({

@@ -689,6 +689,7 @@ select {
 .layer-control > svg {
   width: 17px;
   height: 17px;
+  flex-shrink: 0;
 }
 .layer-control input {
   position: absolute;
@@ -707,6 +708,13 @@ select {
   display: block;
   pointer-events: none;
   margin-left: auto;
+  flex-shrink: 0;
+}
+.transjakarta-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .switch:after {
   content: "";
@@ -742,17 +750,30 @@ select {
   position: absolute;
   bottom: 65px;
   left: 24px;
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
   max-width: calc(100% - 100px);
   background: #fffef9ef;
   border: 1px solid #e0e5d7;
   border-radius: 8px;
   padding: 11px 13px;
   z-index: 1;
+  max-height: 180px;
+  overflow-y: auto;
 }
-.rail-legend > span {
+.rail-legend summary {
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 650;
+  color: #52644d;
+}
+.rail-legend[open] summary {
+  margin-bottom: 10px;
+}
+#rail-legend {
+  display: flex;
+  gap: 10px 12px;
+  flex-wrap: wrap;
+}
+.rail-legend span {
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -1433,7 +1454,7 @@ dialog h3 {
     font-size: 11px;
     padding: 8px;
     min-width: 0;
-    flex: 1;
+    flex: 0 0 calc((100% - 12px) / 3);
     gap: 5px;
   }
   .layer-control > svg {
@@ -1443,8 +1464,9 @@ dialog h3 {
     right: 8px;
   }
   .map-road-note {
-    flex-basis: 100%;
+    flex: 1;
     max-width: none;
+    text-align: left;
   }
   .add-floating {
     font-size: 11px;

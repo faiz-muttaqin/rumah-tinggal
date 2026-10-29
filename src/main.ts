@@ -4,7 +4,7 @@ import "./style.css";
 import { getUser, initializeAuth, login, logout, privateAPI } from "./auth.ts";
 import { demoListings } from "./demo.ts";
 import { escapeHTML as esc, money, nearestStation } from "./geo.ts";
-import { HousingMap } from "./map.ts";
+import { HousingMap, type TransitMode } from "./map.ts";
 import {
   googleMapsDirections,
   googleMapsLocation,
@@ -17,6 +17,7 @@ const icons = {
   search: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>',
   train:
     '<rect x="5" y="3" width="14" height="15" rx="4"/><path d="M5 10h14M9 18l-2 3m8-3 2 3M9 14h.01M15 14h.01"/>',
+  bus: '<rect x="4" y="3" width="16" height="16" rx="3"/><path d="M4 11h16M8 3v8m8-8v8M7 15h.01M17 15h.01M7 19v2m10-2v2"/>',
   bookmark: '<path d="M6 3h12v18l-6-4-6 4z"/>',
   arrow: '<path d="M5 12h14m-5-5 5 5-5 5"/>',
   close: '<path d="m6 6 12 12M6 18 18 6"/>',
@@ -44,7 +45,7 @@ $("app").innerHTML = `
       <div class="sidebar-top">
         <div class="eyebrow"><span class="tiny-line"></span> RUANG UNTUK PULANG</div>
         <h1>Rumah yang pas.<br/><span>Hidup lebih dekat.</span></h1>
-        <p class="intro">Kenali wilayahnya, cek akses KRL-nya,<br class="desktop-break"/> lalu temukan tempatmu bertumbuh.</p>
+        <p class="intro">Kenali wilayah dan akses transportasinya,<br class="desktop-break"/> lalu temukan tempatmu bertumbuh.</p>
         <div class="search-box">${icon("search")}<input id="search" aria-label="Cari wilayah, hunian, atau stasiun" type="search" placeholder="Wilayah, hunian, atau stasiun…" autocomplete="off"/><kbd>/</kbd></div>
         <div id="station-results" class="station-results"></div>
         <div class="area-chips" aria-label="Filter wilayah"><button class="chip selected" data-area="Semua" aria-pressed="true">Semua</button>${AREAS.map((area) => `<button class="chip" data-area="${area}" aria-pressed="false">${area}</button>`).join("")}</div>
@@ -61,28 +62,32 @@ $("app").innerHTML = `
     </aside>
     <section class="map-panel" aria-label="Peta hunian Jabodetabek">
       <div id="map" class="map" aria-label="Peta interaktif, gunakan tombol panah untuk menggeser"></div>
-      <div class="map-heading"><span class="map-heading-icon">${icon("pin")}</span><div><strong>Jabodetabek</strong><span>5 area · <span id="station-count">Memuat</span> stasiun KRL</span></div><button id="map-reset" class="icon-button" aria-label="Tampilkan seluruh Jabodetabek">${icon("target")}</button></div>
+      <div class="map-heading"><span class="map-heading-icon">${icon("pin")}</span><div><strong>Jabodetabek</strong><span>KRL · MRT · LRT · TransJakarta</span></div><button id="map-reset" class="icon-button" aria-label="Tampilkan seluruh Jabodetabek">${icon("target")}</button></div>
       <div id="map-status" class="map-status" role="status">Peta dasar belum termuat. Wilayah dan KRL tetap bisa dijelajahi.</div>
       <div class="map-tools" role="group" aria-label="Lapisan peta">
         <label class="layer-control">${icon("train")} Jalur KRL <input id="rail-toggle" aria-label="Jalur KRL" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
+        <label class="layer-control">${icon("train")} MRT <input id="mrt-toggle" aria-label="Jalur MRT" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
+        <label class="layer-control" title="LRT Jakarta dan LRT Jabodebek">${icon("train")} LRT <input id="lrt-toggle" aria-label="Jalur LRT" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
+        <label class="layer-control" title="TransJakarta · 14 koridor utama BRT">${icon("bus")} <span class="transjakarta-label">TransJakarta</span><input id="tj-toggle" aria-label="Jalur TransJakarta" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control">${icon("home")} Bangunan <input id="buildings-toggle" aria-label="Bangunan pada peta" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control">${icon("pin")} Hunian <input id="listings-toggle" aria-label="Marker dan detail hunian" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
         <span class="map-road-note">Jalan selalu tampil · bangunan saat diperbesar</span>
         <button class="add-floating" id="add-listing">${icon("plus")} Tambah listing</button>
       </div>
-      <div class="rail-legend" id="rail-legend"><span><i style="--line:#b33c39"></i>Bogor / Nambo</span><span><i style="--line:#2d6da6"></i>Cikarang</span><span><i style="--line:#278365"></i>Rangkasbitung</span><span><i style="--line:#956542"></i>Tangerang</span><span><i style="--line:#c95d9a"></i>Tj. Priok</span></div>
+      <details class="rail-legend" id="transit-legend"><summary>Legenda transportasi</summary><div id="rail-legend"><span data-legend-mode="KRL"><i style="--line:#DC2626"></i>KRL Bogor / Nambo</span><span data-legend-mode="KRL"><i style="--line:#2563EB"></i>KRL Cikarang</span><span data-legend-mode="KRL"><i style="--line:#16A34A"></i>KRL Rangkasbitung</span><span data-legend-mode="KRL"><i style="--line:#92400E"></i>KRL Tangerang</span><span data-legend-mode="KRL"><i style="--line:#DB2777"></i>KRL Tj. Priok</span><span data-legend-mode="MRT"><i style="--line:#CE0037"></i>MRT Utara–Selatan</span><span data-legend-mode="LRT"><i style="--line:#f16227"></i>LRT Jakarta</span><span data-legend-mode="LRT"><i style="--line:#20409A"></i>LRT Cibubur</span><span data-legend-mode="LRT"><i style="--line:#0E6938"></i>LRT Bekasi</span><span data-legend-mode="TransJakarta" hidden><i style="--line:#2477a8"></i>TransJakarta · warna per koridor</span></div></details>
       <div class="map-bottom-note">${icon("info")} Jarak stasiun dihitung garis lurus, bukan rute berjalan kaki.</div>
       <div id="detail-card" class="detail-card" hidden></div>
     </section>
   </main>
   <div class="mobile-view"><button id="mobile-map">${icon("pin")} Peta</button><button id="mobile-list" class="active">${icon("home")} Daftar</button></div>
-  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><span class="eyebrow">TRANSPARANSI DATA</span><button class="icon-button" data-close="sources-dialog" aria-label="Tutup sumber data">${icon("close")}</button></div><h2 id="sources-title">Sumber & catatan data</h2><div class="source-block"><h3>Wilayah Jabodetabek</h3><p>14 batas kabupaten/kota dari geometri Nafkah / HDX COD-AB, disederhanakan untuk gambaran wilayah. Batas ini tidak cukup rinci untuk memastikan alamat atau batas bidang tanah. Kepulauan Seribu sangat disederhanakan pada sumber.</p><a href="https://gitlab.com/adenaufal/nafkah" target="_blank" rel="noopener noreferrer">Nafkah · Ade Naufal · CC BY 4.0 ↗</a></div><div class="source-block"><h3>Jalur & stasiun KRL</h3><p>Geometri rel dan titik stasiun dari OpenStreetMap, snapshot 29 Oktober 2026. Lapisan ini memberi konteks spasial, tanpa jadwal, tarif, status operasi, atau waktu tempuh aktual.</p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL ↗</a></div><div class="source-block"><h3>Listing & jarak</h3><p>Semua hunian pada tab Contoh hunian adalah data ilustratif, bukan iklan atau penawaran properti. Listingku berisi data pribadi yang kamu masukkan sendiri. Jarak ke KRL adalah garis lurus ke titik stasiun terdekat, bukan akses pintu masuk atau rute berjalan.</p></div><div class="source-block"><h3>Peta jalan & bangunan</h3><p>Peta vektor OpenFreeMap, skema © OpenMapTiles, data © OpenStreetMap contributors. Bangunan dapat disembunyikan terpisah; jalan tetap tampil. Cakupan bangunan mengikuti data OSM.</p><a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">OpenFreeMap · OpenMapTiles · OpenStreetMap ↗</a></div><p class="fine-print">Peta dasar OpenFreeMap · © OpenMapTiles · © OpenStreetMap contributors. Tampilan terinspirasi pola peta Nafkah; implementasi aplikasi dibuat untuk Rumah Tinggal.</p></dialog>
+  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><span class="eyebrow">TRANSPARANSI DATA</span><button class="icon-button" data-close="sources-dialog" aria-label="Tutup sumber data">${icon("close")}</button></div><h2 id="sources-title">Sumber & catatan data</h2><div class="source-block"><h3>Wilayah Jabodetabek</h3><p>14 batas kabupaten/kota dari geometri Nafkah / HDX COD-AB, disederhanakan untuk gambaran wilayah. Batas ini tidak cukup rinci untuk memastikan alamat atau batas bidang tanah. Kepulauan Seribu sangat disederhanakan pada sumber.</p><a href="https://gitlab.com/adenaufal/nafkah" target="_blank" rel="noopener noreferrer">Nafkah · Ade Naufal · CC BY 4.0 ↗</a></div><div class="source-block"><h3>KRL, MRT, LRT & TransJakarta</h3><p>Snapshot geografis OpenStreetMap, 29 Oktober 2026: 80 titik KRL, 13 MRT, 29 LRT, serta 251 titik halte pada 14 koridor utama BRT TransJakarta. LRT mencakup LRT Jakarta dan LRT Jabodebek. TransJakarta belum mencakup pengumpan/Mikrotrans dan awalnya disembunyikan.</p><p>Geometri mengikuti rel/jalan yang dipetakan; titik stasiun/halte bukan pintu masuk terverifikasi. Data ini bukan jadwal, tarif, status operasi, atau waktu tempuh aktual. Periksa perjalanan ke operator.</p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL ↗</a></div><div class="source-block"><h3>Listing & jarak</h3><p>Semua hunian pada tab Contoh hunian adalah data ilustratif, bukan iklan atau penawaran properti. Listingku berisi data pribadi yang kamu masukkan sendiri. Jarak ke KRL adalah garis lurus ke titik stasiun terdekat, bukan akses pintu masuk atau rute berjalan.</p></div><div class="source-block"><h3>Peta jalan & bangunan</h3><p>Peta vektor OpenFreeMap, skema © OpenMapTiles, data © OpenStreetMap contributors. Bangunan dapat disembunyikan terpisah; jalan tetap tampil. Cakupan bangunan mengikuti data OSM.</p><a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">OpenFreeMap · OpenMapTiles · OpenStreetMap ↗</a></div><p class="fine-print">Peta dasar OpenFreeMap · © OpenMapTiles · © OpenStreetMap contributors. Tampilan terinspirasi pola peta Nafkah; implementasi aplikasi dibuat untuk Rumah Tinggal.</p></dialog>
   <dialog id="listing-dialog" aria-labelledby="listing-title"><div class="dialog-header"><span class="eyebrow">KOLEKSI PRIBADIMU</span><button class="icon-button" data-close="listing-dialog" aria-label="Tutup tambah listing">${icon("close")}</button></div><h2 id="listing-title">Tambahkan calon rumah</h2><p class="dialog-intro">Simpan lokasi, harga beli, dan catatan survei. Hanya akunmu yang dapat melihatnya.</p><form id="listing-form"><label>Nama hunian<input name="title" required maxlength="160" placeholder="Contoh: Rumah dekat Stasiun Pondok Ranji"/></label><div class="form-grid"><label>Wilayah<select name="area">${AREAS.map((area) => `<option>${area}</option>`).join("")}</select></label><label>Kecamatan / lingkungan<input name="district" required maxlength="100"/></label><label>Harga beli (Rp)<input name="price" type="number" min="1" max="1000000000000" required/></label><label>Jenis<select name="type"><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label><label>Kamar tidur<input name="bedrooms" type="number" min="0" max="30" value="2" required/></label><label>Luas tanah / unit (m²)<input name="landArea" type="number" min="1" max="100000" required/></label><label>Latitude<input id="form-lat" name="lat" type="number" step="any" min="-6.85" max="-5.75" required value="-6.3"/></label><label>Longitude<input id="form-lng" name="lng" type="number" step="any" min="106.3" max="107.31" required value="106.8"/></label></div><button type="button" id="pick-map" class="text-button">${icon("pin")} Pilih koordinat di peta</button><label>Tautan sumber (opsional)<input name="sourceUrl" type="url" maxlength="2000" placeholder="https://…"/></label><label>Catatan survei (opsional)<textarea name="notes" maxlength="3000" rows="3" placeholder="Akses jalan, kondisi lingkungan, hal yang perlu dicek…"></textarea></label><p id="form-error" class="form-error" role="alert"></p><button class="button primary wide" type="submit">Simpan ke Listingku ${icon("arrow")}</button></form></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 `;
 
 let map: HousingMap | undefined;
 let stations: Station[] = [];
+let transportStops: Station[] = [];
 let privateListings: Listing[] = [];
 let collection: "demo" | "private" = "demo";
 let selectedArea = "Semua";
@@ -343,24 +348,36 @@ $("search").oninput = () => {
   const query = $<HTMLInputElement>("search").value.trim().toLowerCase();
   const matches =
     query.length >= 3
-      ? stations
+      ? transportStops
           .filter((station) => station.name.toLowerCase().includes(query))
           .slice(0, 3)
       : [];
   $("station-results").innerHTML = matches
     .map(
       (station) =>
-        `<button data-station="${esc(station.id)}">${icon("train")} Stasiun ${esc(station.name)} <span>lihat di peta ↗</span></button>`,
+        `<button data-station="${esc(station.id)}">${icon(station.mode === "TransJakarta" ? "bus" : "train")} ${esc(station.mode)} · ${esc(station.name)} <span>lihat di peta ↗</span></button>`,
     )
     .join("");
   for (const button of document.querySelectorAll<HTMLButtonElement>(
     "[data-station]",
   ))
     button.onclick = () => {
-      const station = stations.find(
+      const station = transportStops.find(
         (item) => item.id === button.dataset.station,
       );
       if (station) {
+        const modeToggle =
+          station.mode === "KRL"
+            ? "rail-toggle"
+            : station.mode === "MRT"
+              ? "mrt-toggle"
+              : station.mode === "LRT"
+                ? "lrt-toggle"
+                : "tj-toggle";
+        $<HTMLInputElement>(modeToggle).checked = true;
+        if (station.mode === "KRL") void map?.showRail(true);
+        else void map?.showTransit(station.mode as TransitMode, true);
+        updateTransitLegend();
         void map?.focus(station.lng, station.lat, 14);
         if (matchMedia("(max-width: 760px)").matches) setMobileView("map");
       }
@@ -369,8 +386,30 @@ $("search").oninput = () => {
 $("rail-toggle").onchange = () => {
   const checked = $<HTMLInputElement>("rail-toggle").checked;
   void map?.showRail(checked);
-  $("rail-legend").hidden = !checked;
+  updateTransitLegend();
 };
+const transitToggles = [
+  ["mrt-toggle", "MRT"],
+  ["lrt-toggle", "LRT"],
+  ["tj-toggle", "TransJakarta"],
+] as const;
+function updateTransitLegend(): void {
+  let anyVisible = false;
+  for (const [id, mode] of [["rail-toggle", "KRL"], ...transitToggles]) {
+    const visible = $<HTMLInputElement>(id).checked;
+    anyVisible ||= visible;
+    for (const entry of document.querySelectorAll<HTMLElement>(
+      `[data-legend-mode="${mode}"]`,
+    ))
+      entry.hidden = !visible;
+  }
+  $("transit-legend").hidden = !anyVisible;
+}
+for (const [id, mode] of transitToggles)
+  $(id).onchange = () => {
+    void map?.showTransit(mode, $<HTMLInputElement>(id).checked);
+    updateTransitLegend();
+  };
 $("buildings-toggle").onchange = () => {
   void map?.showBuildings($<HTMLInputElement>("buildings-toggle").checked);
 };
@@ -476,12 +515,18 @@ async function start(): Promise<void> {
       if (!response.ok) throw new Error("Transit gagal dimuat");
       return response.json() as Promise<GeoJSON.FeatureCollection>;
     }),
+    fetch("/data/mobility.geojson").then((response) => {
+      if (!response.ok)
+        throw new Error("Data MRT/LRT/TransJakarta gagal dimuat");
+      return response.json() as Promise<GeoJSON.FeatureCollection>;
+    }),
     fetch("/api/config").then((response) => {
       if (!response.ok) throw new Error("Konfigurasi gagal dimuat");
       return response.json() as Promise<AppConfig>;
     }),
   ]);
-  const [regionsResult, transitResult, configResult] = resources;
+  const [regionsResult, transitResult, mobilityResult, configResult] =
+    resources;
   const empty: GeoJSON.FeatureCollection = {
     type: "FeatureCollection",
     features: [],
@@ -490,6 +535,8 @@ async function start(): Promise<void> {
     regionsResult.status === "fulfilled" ? regionsResult.value : empty;
   const transit =
     transitResult.status === "fulfilled" ? transitResult.value : empty;
+  const mobility =
+    mobilityResult.status === "fulfilled" ? mobilityResult.value : empty;
   stations = transit.features.flatMap((feature) => {
     if (feature.geometry.type !== "Point") return [];
     const props = feature.properties ?? {};
@@ -504,16 +551,35 @@ async function start(): Promise<void> {
       },
     ];
   });
-  $("station-count").textContent = String(stations.length);
+  transportStops = [
+    ...stations,
+    ...mobility.features.flatMap((feature): Station[] => {
+      if (feature.geometry.type !== "Point") return [];
+      const props = feature.properties ?? {};
+      if (!["MRT", "LRT", "TransJakarta"].includes(props.mode)) return [];
+      return [
+        {
+          id: String(props.id ?? feature.id),
+          name: String(props.name),
+          mode: props.mode,
+          lines: Array.isArray(props.lines) ? props.lines : [],
+          lng: feature.geometry.coordinates[0] ?? 0,
+          lat: feature.geometry.coordinates[1] ?? 0,
+        },
+      ];
+    }),
+  ];
   if (
     regionsResult.status === "rejected" ||
-    transitResult.status === "rejected"
+    transitResult.status === "rejected" ||
+    mobilityResult.status === "rejected"
   )
     toast("Sebagian data peta belum termuat. Coba muat ulang halaman.");
   try {
     map = new HousingMap(
       regions,
       transit,
+      mobility,
       (area) => {
         if (!pickingPoint) selectArea(area);
       },
@@ -527,6 +593,9 @@ async function start(): Promise<void> {
     );
     void map.showBuildings($<HTMLInputElement>("buildings-toggle").checked);
     void map.showRail($<HTMLInputElement>("rail-toggle").checked);
+    for (const [id, mode] of transitToggles)
+      void map.showTransit(mode, $<HTMLInputElement>(id).checked);
+    updateTransitLegend();
     render();
   } catch {
     $("map").innerHTML =

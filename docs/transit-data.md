@@ -1,4 +1,4 @@
-# Data KRL Jabodetabek
+# Data transportasi Jabodetabek
 
 `public/data/transit.geojson` adalah snapshot geografis **29 Oktober 2026** untuk konteks pencarian hunian. Berisi **80 stasiun unik** dan **6 fitur jalur**: lima keluarga lintas KRL dengan cabang Nambo sebagai fitur tersendiri. Tidak memuat jadwal, tarif, waktu tempuh, status layanan, atau posisi kereta.
 
@@ -26,7 +26,7 @@ Sebagai pemeriksaan konteks lintas, situs [KAI Commuter](https://commuterline.id
 - Lintas Rangkasbitung hanya ditampilkan sampai node pemberhentian **Tigaraksa**. Atribut `clippedAt` dan `coverageNote` menjelaskan bahwa lintas sebenarnya berlanjut ke Rangkasbitung. Batas ini adalah batas tampilan awal, bukan batas administratif Jabodetabek.
 - Titik stasiun adalah posisi node stasiun pada OSM, bukan koordinat pintu masuk. Jarak lurus dari listing ke titik ini tidak boleh ditampilkan sebagai jarak berjalan kaki atau waktu perjalanan.
 - Daftar pemberhentian relasi OSM dapat tertinggal. [Pondok Rajeg](https://www.openstreetmap.org/node/1228345121) dan [Jakarta International Stadium](https://www.openstreetmap.org/node/5726702622) ditambahkan dari node stasiun OSM pada koridor yang sama; atribut `mappingNote` mencatat perbedaan ini. Dataset tidak menjanjikan kelengkapan informasi operasional.
-- MRT, LRT, kereta bandara, dan angkutan lain belum termasuk. Bounding box aktual berurutan `[west, south, east, north]` adalah `[106.4330918, -6.5942887, 107.1457636, -6.1105573]`.
+- File KRL ini tidak mencampurkan moda lain; MRT, LRT, dan koridor utama TransJakarta tersedia pada `mobility.geojson` yang dijelaskan di bawah. Kereta bandara belum termasuk. Bounding box KRL aktual berurutan `[west, south, east, north]` adalah `[106.4330918, -6.5942887, 107.1457636, -6.1105573]`.
 
 ## Skema
 
@@ -47,3 +47,50 @@ ID stasiun mengikuti format `osm-node-<id>`. Semua ID dalam `lines` merujuk ke I
 4. Perbarui `snapshotDate`, versi sumber, jumlah fitur, dan dokumentasi. Cek perubahan layanan ke operator sebelum menambahkan klaim operasional apa pun.
 
 Validasi snapshot ini memeriksa parsing GeoJSON, 86 ID fitur unik, 80 nama stasiun unik, referensi timbal balik stasiun–jalur, semua koordinat dalam kotak awal `[106.35, -6.85, 107.30, -6.0]`, serta kehadiran tunggal Manggarai, Depok Baru, Bogor, Tangerang, dan Bekasi. Dataset berukuran sekitar 135 KB tanpa paket tambahan atau permintaan data langsung dari browser.
+
+## MRT, LRT, dan TransJakarta
+
+`public/data/mobility.geojson` adalah snapshot OSM **29 Oktober 2026**: 18 fitur jalur dan 293 titik pemberhentian (13 MRT, 29 LRT, 251 TransJakarta). Lisensi ODbL dan atribusi OSM yang sama berlaku pada file ini. Ini adalah geometri komunitas, bukan daftar layanan resmi, jadwal, tarif, atau bukti sebuah halte/stasiun sedang melayani penumpang.
+
+MRT/LRT awalnya terlihat dan memiliki toggle tersendiri; TransJakarta awalnya tersembunyi. Lapisan LRT mencakup LRT Jakarta dan LRT Jabodebek, tetap dibedakan nama jaringan dan warna lintas. TransJakarta hanya mencakup **14 koridor utama BRT**, tanpa rute lintas-koridor, pengumpan, Mikrotrans, atau Transjabodetabek. Legenda dapat dibuka bila dibutuhkan. Pencarian stasiun/halte mencakup semua moda dan mengaktifkan lapisan yang dipilih. Filter jarak, pengurutan, dan jarak pada kartu hunian tetap menyebut **KRL** secara eksplisit.
+
+### Relasi sumber yang dipin
+
+| ID                | Lintas                    | Titik unik pada lintas | Sumber master OSM                                           |
+| ----------------- | ------------------------- | ---------------------: | ----------------------------------------------------------- |
+| `mrt-north-south` | MRT Utara–Selatan         |                     13 | [9677671](https://www.openstreetmap.org/relation/9677671)   |
+| `lrt-jakarta`     | LRT Jakarta · Lin Selatan |                     11 | [10693161](https://www.openstreetmap.org/relation/10693161) |
+| `lrt-cibubur`     | LRT Jabodebek · Cibubur   |                     12 | [16035222](https://www.openstreetmap.org/relation/16035222) |
+| `lrt-bekasi`      | LRT Jabodebek · Bekasi    |                     14 | [16079480](https://www.openstreetmap.org/relation/16079480) |
+| `tj-1`            | TransJakarta Koridor 1    |                     26 | [16739342](https://www.openstreetmap.org/relation/16739342) |
+| `tj-2`            | TransJakarta Koridor 2    |                     23 | [6783311](https://www.openstreetmap.org/relation/6783311)   |
+| `tj-3`            | TransJakarta Koridor 3    |                     14 | [17027439](https://www.openstreetmap.org/relation/17027439) |
+| `tj-4`            | TransJakarta Koridor 4    |                     17 | [14717457](https://www.openstreetmap.org/relation/14717457) |
+| `tj-5`            | TransJakarta Koridor 5    |                     18 | [16871390](https://www.openstreetmap.org/relation/16871390) |
+| `tj-6`            | TransJakarta Koridor 6    |                     20 | [17011751](https://www.openstreetmap.org/relation/17011751) |
+| `tj-7`            | TransJakarta Koridor 7    |                     15 | [16035086](https://www.openstreetmap.org/relation/16035086) |
+| `tj-8`            | TransJakarta Koridor 8    |                     27 | [17027438](https://www.openstreetmap.org/relation/17027438) |
+| `tj-9`            | TransJakarta Koridor 9    |                     39 | [16935599](https://www.openstreetmap.org/relation/16935599) |
+| `tj-10`           | TransJakarta Koridor 10   |                     25 | [17003245](https://www.openstreetmap.org/relation/17003245) |
+| `tj-11`           | TransJakarta Koridor 11   |                     16 | [17004173](https://www.openstreetmap.org/relation/17004173) |
+| `tj-12`           | TransJakarta Koridor 12   |                     26 | [16873303](https://www.openstreetmap.org/relation/16873303) |
+| `tj-13`           | TransJakarta Koridor 13   |                     15 | [13251860](https://www.openstreetmap.org/relation/13251860) |
+| `tj-14`           | TransJakarta Koridor 14   |                     10 | [16732070](https://www.openstreetmap.org/relation/16732070) |
+
+Setiap fitur jalur mencantumkan `routeRelations` untuk kedua arah yang dipakai. `metadata.relationVersions` menyimpan versi, waktu perubahan, dan SHA-256 JSON masukan setiap master/rute. Nama pengguna, ID editor, changeset, dan metadata penyunting tidak disalin ke dataset publik.
+
+### Transformasi dan batas ketelitian
+
+- Geometri jalur berasal dari anggota `way` rel/jalan masing-masing arah, digabung berdasarkan ID way. Tidak menarik garis lurus antarstasiun, tidak menutup celah, dan tidak memasukkan jalan yang berstatus `highway=construction` atau rel yang bukan `subway`/`light_rail`. Tiga anggota way nonoperasional pada snapshot ini dilewati (dua di koridor1, satu di koridor4); celah geometri dipertahankan.
+- Titik MRT/LRT memakai `stop_position` dari relasi rute. Titik TransJakarta memakai anggota `platform`; jika berupa way, titik adalah rata-rata vertex unik platform. Titik tersebut bukan pintu masuk atau hasil survei alamat.
+- Nama sama dalam jaringan/moda yang sama dan berjarak ≤350 meter digabung dari dua arah. Koordinat representatif pertama dipertahankan; semua objek asal dicatat di `sources`. Nama sama yang berjauhan tetap berbeda. Dua jaringan LRT tidak digabung, termasuk stasiun bernama sama.
+- Jalur Cibubur dan Bekasi berbagi delapan titik LRT Jabodebek pada koridor Dukuh Atas–Cawang. LRT Jakarta pada relasi snapshot ini mencakup Kelapa Gading–Manggarai, 11 titik. Periksa operator untuk status operasi dan nama komersial terkini; aplikasi tidak menyatakan kesiapan layanan dari geometri saja.
+- Warna jalur mengikuti palet relasi, dengan beberapa warna koridor bus digelapkan untuk keterbacaan pada latar terang. Popup memperlihatkan jaringan, koordinat, dan tautan lokasi Google Maps.
+
+Konteks operator diperiksa pada [MRT Jakarta](https://bisnis.jakartamrt.co.id/location), [pelayanan LRT Jakarta](https://www.lrtjakarta.co.id/service), [peta LRT Jabodebek](https://lrtjabodebek.kai.id/informasi-peta-rute), dan [rute TransJakarta](https://www.transjakarta.co.id/rute). Halaman LRT Jabodebek hanya tersedia melalui cuplikan terindeks saat pemeriksaan (akses halaman403); gambar peta LRT Jakarta yang ditautkan operator gagal verifikasi rantai TLS. Geometri tidak diambil dari gambar atau peta operator, dan sumber tersebut tidak dipakai sebagai bukti status layanan real-time. ID master awal ditemukan lewat wiki OSM, lalu dikonfirmasi ke API inti OSM; MRT memakai master9677671 yang berisi relasi layanan, bukan master infrastruktur9434553.
+
+### Membangun ulang snapshot tambahan
+
+1. Unduh `https://api.openstreetmap.org/api/0.6/relation/<id>/full.json` untuk master yang tercantum pada `SPECS`/`TJ_MASTERS` dalam `scripts/build-mobility.py`, lalu setiap child relation rutenya, ke direktori lokal yang di-ignore dengan nama `relation-<id>.json`. Maksimal tiga request bersamaan cukup; cache respons yang sudah didapat.
+2. Jalankan `python3 scripts/build-mobility.py INPUT_DIR public/data/mobility.geojson --snapshot YYYY-MM-DD`. Script hanya memakai stdlib Python, tidak membuat request, dan tidak membutuhkan paket baru.
+3. Tinjau perubahan geometri/nama dan dokumentasi. Validasi ID unik, koordinat cakupan, referensi timbal balik stop–jalur, 14 koridor BRT, dan uji toggle render sebenarnya di browser. Jangan menyimpan raw JSON API yang memuat editor metadata ke Git.

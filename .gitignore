@@ -63,6 +63,7 @@ data/
 /public/data/*
 !/public/data/regions.geojson
 !/public/data/transit.geojson
+!/public/data/mobility.geojson
 storage/
 uploads/
 backups/

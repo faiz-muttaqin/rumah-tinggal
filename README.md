@@ -1,11 +1,12 @@
 # Rumah Tinggal
 
-Eksplorasi calon hunian Jabodetabek melalui peta wilayah dan akses KRL, dengan koleksi pribadi setelah login Google. Implementasi memakai TypeScript tanpa framework UI, MapLibre, Vite, Firebase Authentication, dan backend HTTP bawaan Node.js dengan SQLite.
+Eksplorasi calon hunian Jabodetabek melalui peta wilayah dan transportasi umum, dengan koleksi pribadi setelah login Google. Implementasi memakai TypeScript tanpa framework UI, MapLibre, Vite, Firebase Authentication, dan backend HTTP bawaan Node.js dengan SQLite.
 
 ## Fitur tahap pertama
 
 - Peta interaktif dengan 14 batas kabupaten/kota, dikelompokkan menjadi Jakarta, Bogor, Depok, Tangerang, dan Bekasi.
 - Lapisan geografis 80 stasiun KRL dan geometri rel OpenStreetMap; pencarian stasiun serta fokus lokasi pada peta.
+- Lapisan MRT Utara–Selatan, LRT Jakarta, dan LRT Jabodebek Cibubur/Bekasi, dengan toggle masing-masing moda. Lapisan TransJakarta mencakup 14 koridor utama BRT dan awalnya tersembunyi. Pencarian mencakup stasiun/halte semua moda; memilih hasil menampilkan lapisan terkait.
 - Toggle bangunan dan marker/detail hunian secara terpisah, dengan jalan tetap terlihat. Bangunan awalnya disembunyikan dan tersedia saat zoom mendekat.
 - Tautan Google Maps dari detail hunian: lokasi, rute ke hunian, serta rute berjalan ke stasiun terdekat. Jarak dan waktu rute diperiksa di Google Maps.
 - Filter wilayah, anggaran beli, jenis hunian, dan jarak garis lurus ke stasiun; pengurutan harga atau jarak KRL.
@@ -16,7 +17,7 @@ Eksplorasi calon hunian Jabodetabek melalui peta wilayah dan akses KRL, dengan k
 
 Belum ada katalog properti nyata, pengambilan iklan otomatis, jadwal/tarif KRL, atau perhitungan rute/waktu tempuh di dalam aplikasi. Jarak pada kartu adalah garis lurus ke titik stasiun OSM. Tautan Google Maps memakai koordinat hunian dan titik stasiun, bukan pintu masuk yang telah diverifikasi. Integrasi popup Google sudah dibuat; alur OAuth Google nyata belum diuji melalui browser karena pengaturan domain masih perlu diselesaikan.
 
-Lihat [sumber batas wilayah](docs/data-sources.md) dan [sumber serta keterbatasan data KRL](docs/transit-data.md). Pola peta Nafkah dipakai sebagai referensi; analisis kode dengan Graphify dilakukan di direktori sementara dan keluarannya tidak dimasukkan repository.
+Lihat [sumber batas wilayah](docs/data-sources.md) dan [sumber serta keterbatasan data transportasi](docs/transit-data.md). Pola peta Nafkah dipakai sebagai referensi; analisis kode dengan Graphify dilakukan di direktori sementara dan keluarannya tidak dimasukkan repository.
 
 ## Menjalankan lokal
 
@@ -70,7 +71,7 @@ Tes keamanan berjalan pada repository Git sementara; tes backend memakai token b
 
 Worker MapLibre 6 dibundel dan di-host bersama aplikasi. Peta jalan/bangunan memakai
 tile vektor OpenFreeMap dengan atribusi OpenMapTiles dan OpenStreetMap; style ringkas
-dibuat di aplikasi, tanpa API key. Wilayah/KRL tetap lokal saat tile tidak tersedia.
+dibuat di aplikasi, tanpa API key. Wilayah dan semua lapisan transportasi tetap lokal saat tile tidak tersedia.
 Tes browser memakai tile sintetis lokal dan memblokir seluruh request tile eksternal.
 Playwright berjalan di port QA 13100 dengan database `.runtime/e2e`, terpisah dari
 layanan produksi 3100. Lihat [catatan peta dasar](docs/data-sources.md#peta-dasar-dan-tautan-rute).
@@ -78,7 +79,7 @@ layanan produksi 3100. Lihat [catatan peta dasar](docs/data-sources.md#peta-dasa
 ## Privasi dan Git
 
 - `.env`, private key, JSON kredensial, database beserta WAL/SHM, backup, log, cache, dan toolchain lokal diabaikan Git. Hanya `/.env.example` boleh dipublikasikan, dengan nilai kosong atau konstanta lokal yang diizinkan.
-- `data/` menyimpan SQLite privat; dua pengecualian tepat di `public/data/` adalah `regions.geojson` dan `transit.geojson`, yaitu dataset geografis publik dengan atribusi.
+- `data/` menyimpan SQLite privat; tiga pengecualian tepat di `public/data/` adalah `regions.geojson`, `transit.geojson`, dan `mobility.geojson`, yaitu dataset geografis publik dengan atribusi. File lain tetap diblokir.
 - Hooks menolak path privat yang dipaksa masuk index dan menjalankan Gitleaks dengan output tersensor. Isi `.env.example` diperiksa dari blob staged dan riwayat, sehingga working copy yang bersih tidak menyembunyikan nilai staged. Push memeriksa seluruh ref/riwayat lokal, termasuk file yang sudah dihapus.
 - Aktifkan hooks pada setiap clone melalui bootstrap atau `node scripts/install-hooks.mjs`. Pemeriksaan manual: `./dev security:staged` dan `./dev security:history`. Jangan melewati hooks memakai `--no-verify`.
 

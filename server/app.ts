@@ -31,6 +31,7 @@ const contentTypes = new Map([
 const publicGeoJsonPaths = new Set([
   "/data/regions.geojson",
   "/data/transit.geojson",
+  "/data/mobility.geojson",
 ]);
 const privateSegments = new Set([
   "data",
