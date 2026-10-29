@@ -34,3 +34,13 @@ export function googleMapsWalkToStation(
     travelmode: "walking",
   });
 }
+
+export function googleMapsRoute(
+  origin: MapCoordinates,
+  destination: MapCoordinates,
+): string {
+  return mapsUrl("dir/", {
+    origin: coordinates(origin),
+    destination: coordinates(destination),
+  });
+}

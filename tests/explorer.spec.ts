@@ -696,3 +696,34 @@ test("place search focuses a geocoded place with a Google Maps link", async ({
   await page.locator("#search").fill("");
   await expect(page.locator("#place-results")).toBeEmpty();
 });
+
+test("anonymous pin tab and place popup ask for Google sign-in without fetching pins", async ({
+  page,
+}) => {
+  const pinRequests: string[] = [];
+  page.on("request", (request) => {
+    if (/^\/api\/pins(?:\/|$)/.test(new URL(request.url()).pathname))
+      pinRequests.push(request.method());
+  });
+  await page.locator("#pins-tab").click();
+  await expect(page.locator("#pins-tab")).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await expect(
+    page.locator("#listing-list").getByRole("button", { name: /Google/i }),
+  ).toBeVisible();
+  await expect(page.locator("#result-count")).toHaveText("0 pin");
+  await page.locator("#search").fill("taman uji");
+  await page
+    .locator("#place-results")
+    .getByRole("button", { name: /Taman Uji Menteng/ })
+    .click();
+  const pinButton = page
+    .locator(".maplibregl-popup")
+    .getByRole("button", { name: /Simpan sebagai pin/ });
+  await expect(pinButton).toBeVisible();
+  // Clicking it would start the real Google popup, which stays out of this suite.
+  await expect(page.locator("#add-pin")).toBeVisible();
+  expect(pinRequests, "Anonymous visitors must not fetch pins").toEqual([]);
+});

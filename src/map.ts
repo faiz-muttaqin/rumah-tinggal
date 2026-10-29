@@ -9,7 +9,8 @@ import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
 import { BASEMAP_GLYPHS, BASEMAP_LAYERS, BASEMAP_SOURCE } from "./basemap.ts";
 import { escapeHTML, money } from "./geo.ts";
 import { googleMapsLocation } from "./maps-links.ts";
-import type { Area, Listing, Place } from "./types.ts";
+import { PIN_STYLES, pinIcon } from "./pins.ts";
+import type { Area, Listing, Pin, Place } from "./types.ts";
 
 // MapLibre 6 requires an explicit bundled worker URL with Vite.
 maplibregl.setWorkerUrl(workerUrl);
@@ -35,10 +36,12 @@ const MOBILITY_MODES = ["TransJakarta", "MRT", "LRT"] as const;
 export class HousingMap {
   map: MapInstance;
   markers: Marker[] = [];
+  pinMarkers: Marker[] = [];
   ready: Promise<void>;
   private mobilityPopup?: Popup;
   private mobilityPopupMode?: TransitMode;
   private placePopup?: Popup;
+  private pinPopup?: Popup;
   constructor(
     regions: GeoJSON.FeatureCollection,
     transitKRL: GeoJSON.FeatureCollection,
@@ -417,16 +420,78 @@ export class HousingMap {
     });
   }
 
-  async showPlace(place: Place): Promise<void> {
+  async showPlace(place: Place, onPin?: () => void): Promise<void> {
     await this.focus(place.lng, place.lat, 16);
     this.placePopup?.remove();
     const detail = [place.kind, place.detail].filter(Boolean).join(" · ");
+    const content = document.createElement("div");
+    content.innerHTML = `<strong>${escapeHTML(place.name)}</strong>${detail ? `<p>${escapeHTML(detail)}</p>` : ""}<p>${place.lat.toFixed(5)}, ${place.lng.toFixed(5)}</p><a href="${escapeHTML(googleMapsLocation(place))}" target="_blank" rel="noopener noreferrer">Buka Google Maps ↗</a>${onPin ? '<button type="button" class="popup-action" data-pin-place>📍 Simpan sebagai pin</button>' : ""}`;
+    content
+      .querySelector<HTMLButtonElement>("[data-pin-place]")
+      ?.addEventListener("click", () => {
+        this.placePopup?.remove();
+        onPin?.();
+      });
     this.placePopup = new maplibregl.Popup({ closeButton: true })
       .setLngLat([place.lng, place.lat])
-      .setHTML(
-        `<strong>${escapeHTML(place.name)}</strong>${detail ? `<p>${escapeHTML(detail)}</p>` : ""}<p>${place.lat.toFixed(5)}, ${place.lng.toFixed(5)}</p><a href="${escapeHTML(googleMapsLocation(place))}" target="_blank" rel="noopener noreferrer">Buka Google Maps ↗</a>`,
-      )
+      .setDOMContent(content)
       .addTo(this.map);
+  }
+
+  async updatePins(
+    pins: Pin[],
+    popupContent: (pin: Pin, close: () => void) => HTMLElement,
+  ): Promise<void> {
+    await this.ready;
+    for (const marker of this.pinMarkers) marker.remove();
+    this.pinPopup?.remove();
+    this.pinMarkers = pins.map((pin) => {
+      const element = document.createElement("button");
+      element.className = "pin-marker";
+      element.dataset.pinId = pin.id;
+      element.style.setProperty("--pin", PIN_STYLES[pin.category].color);
+      element.innerHTML = pinIcon(pin.category, 15);
+      element.setAttribute(
+        "aria-label",
+        `${PIN_STYLES[pin.category].label}: ${pin.name}`,
+      );
+      element.addEventListener("click", (event) => {
+        // Hentikan agar klik pin tidak memilih wilayah di bawahnya.
+        event.stopPropagation();
+        this.openPinPopup(pin, popupContent);
+      });
+      return new maplibregl.Marker({ element, anchor: "bottom" })
+        .setLngLat([pin.lng, pin.lat])
+        .addTo(this.map);
+    });
+  }
+
+  openPinPopup(
+    pin: Pin,
+    popupContent: (pin: Pin, close: () => void) => HTMLElement,
+  ): void {
+    this.pinPopup?.remove();
+    const popup = new maplibregl.Popup({ closeButton: true, offset: 30 });
+    popup
+      .setLngLat([pin.lng, pin.lat])
+      .setDOMContent(popupContent(pin, () => popup.remove()))
+      .addTo(this.map);
+    this.pinPopup = popup;
+  }
+
+  async openPin(
+    pin: Pin,
+    popupContent: (pin: Pin, close: () => void) => HTMLElement,
+  ): Promise<void> {
+    await this.ready;
+    this.map.flyTo({
+      center: [pin.lng, pin.lat],
+      zoom: Math.max(this.map.getZoom(), 15),
+      duration: matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? 0
+        : 650,
+    });
+    this.openPinPopup(pin, popupContent);
   }
 
   async clearFocus(): Promise<void> {

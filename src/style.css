@@ -331,7 +331,8 @@ h1 > span {
 }
 .filter-grid label,
 .form-grid label,
-#listing-form > label {
+#listing-form > label,
+#pin-form > label {
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -824,6 +825,179 @@ select {
   width: 15px;
   height: 15px;
 }
+.add-actions {
+  display: flex;
+  gap: 6px;
+}
+.add-floating.add-pin {
+  background: #fffef9;
+  color: var(--green);
+  border: 1px solid #c9d6c3;
+}
+.pin-marker {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: var(--pin);
+  border: 2px solid white;
+  border-radius: 50% 50% 50% 4px;
+  transform: rotate(-45deg);
+  box-shadow: 0 2px 6px #1f3a2b55;
+  cursor: pointer;
+}
+.pin-marker svg {
+  transform: rotate(45deg);
+}
+.pin-marker:hover {
+  filter: brightness(1.1);
+}
+.popup-action {
+  display: block;
+  margin-top: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #eef2e8;
+  color: var(--green);
+  font: inherit;
+  font-weight: 700;
+}
+.popup-action.danger {
+  background: #fdecec;
+  color: #b42318;
+}
+.pin-popup-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--pin);
+  font-weight: 700;
+}
+.pin-popup p {
+  margin: 2px 0;
+}
+.pin-distance {
+  color: var(--green);
+  font-weight: 650;
+}
+.pin-card {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 8px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: white;
+  text-align: left;
+}
+.pin-card:hover {
+  border-color: var(--pin);
+}
+.pin-badge {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--pin);
+  color: white;
+}
+.pin-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+  font-size: 12px;
+}
+.pin-text small {
+  color: #6c786b;
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.detail-pins {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 10px 0;
+  font-size: 11px;
+}
+.detail-pins button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px;
+  border-radius: 6px;
+  text-align: left;
+}
+.detail-pins button:hover {
+  background: #eef2e8;
+}
+.detail-pins .pin-badge {
+  width: 22px;
+  height: 22px;
+}
+.detail-pins em {
+  margin-left: auto;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--green);
+}
+.detail-pins small {
+  color: #79886d;
+}
+.pin-categories {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+.pin-categories legend {
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.pin-category {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.pin-category input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.pin-category span {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--pin);
+  color: white;
+  flex-shrink: 0;
+}
+.pin-category:has(input:checked) {
+  border-color: var(--pin);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--pin) 30%, transparent);
+  font-weight: 700;
+}
+.pin-category:has(input:focus-visible) {
+  outline: 2px solid var(--green);
+}
 .price-pin {
   background: white;
   border: 1px solid #365f45;
@@ -1138,13 +1312,16 @@ dialog h3 {
   grid-template-columns: 1fr 1fr;
   gap: 13px;
 }
-#listing-form {
+#listing-form,
+#pin-form {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 #listing-form input,
-#listing-form textarea {
+#listing-form textarea,
+#pin-form input:not([type="radio"]),
+#pin-form textarea {
   width: 100%;
   min-width: 0;
   background: white;
@@ -1494,6 +1671,8 @@ dialog h3 {
   .add-floating {
     font-size: 11px;
     min-height: 40px;
+  }
+  .add-actions {
     margin-left: auto;
   }
   .map-bottom-note {

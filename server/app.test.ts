@@ -541,3 +541,51 @@ test("Photon results are trimmed to Jabodetabek and cached", async () => {
   assert.equal(urls.length, 1);
   assert.match(urls[0] ?? "", /bbox=106\.3%2C-6\.85%2C107\.31%2C-5\.75/);
 });
+
+test("pins are validated, owner-scoped, and require authentication", async (t) => {
+  const { api } = await fixture(t);
+  const validPin = {
+    name: " Masjid Uji ",
+    category: "masjid",
+    lat: -6.37,
+    lng: 106.83,
+    notes: "Dekat gang",
+  };
+  assert.equal((await api("/api/pins", "GET", undefined, null)).status, 401);
+  assert.equal(
+    (await api("/api/pins", "POST", validPin, "alice", null)).status,
+    403,
+  );
+  for (const invalid of [
+    { ...validPin, name: "" },
+    { ...validPin, category: "kasino" },
+    { ...validPin, lat: -7.5 },
+    { ...validPin, lng: "106.8" },
+    { ...validPin, notes: "x".repeat(2001) },
+    [validPin],
+  ])
+    assert.equal((await api("/api/pins", "POST", invalid)).status, 400);
+  const created = await api("/api/pins", "POST", {
+    ...validPin,
+    id: "forged-id",
+    owner_uid: "bob",
+  });
+  assert.equal(created.status, 201);
+  const { pin } = await created.json();
+  assert.notEqual(pin.id, "forged-id");
+  assert.equal(pin.name, "Masjid Uji");
+  assert.equal("owner_uid" in pin, false);
+  assert.equal((await (await api("/api/pins")).json()).pins.length, 1);
+  assert.equal(
+    (await (await api("/api/pins", "GET", undefined, "bob")).json()).pins
+      .length,
+    0,
+  );
+  assert.equal(
+    (await api(`/api/pins/${pin.id}`, "DELETE", undefined, "bob")).status,
+    404,
+  );
+  assert.equal((await api(`/api/pins/${pin.id}`, "DELETE")).status, 200);
+  assert.equal((await (await api("/api/pins")).json()).pins.length, 0);
+  assert.equal((await api("/api/pins", "PUT", validPin)).status, 405);
+});

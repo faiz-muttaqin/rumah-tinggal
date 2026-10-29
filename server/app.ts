@@ -6,14 +6,24 @@ import {
   type ServerResponse,
 } from "node:http";
 import { extname, isAbsolute, relative, resolve } from "node:path";
-import { type AppConfig, AREAS, type Listing } from "../src/types.ts";
+import {
+  type AppConfig,
+  AREAS,
+  type Listing,
+  PIN_CATEGORIES,
+  type Pin,
+} from "../src/types.ts";
 import { AuthError, createTokenVerifier, type TokenVerifier } from "./auth.ts";
 import {
   createPhotonSearch,
   createRateLimiter,
   type PlaceSearch,
 } from "./places.ts";
-import { ListingStore, MAX_LISTINGS_PER_OWNER } from "./store.ts";
+import {
+  ListingStore,
+  MAX_LISTINGS_PER_OWNER,
+  MAX_PINS_PER_OWNER,
+} from "./store.ts";
 
 const BODY_LIMIT = 32 * 1024;
 const contentTypes = new Map([
@@ -353,6 +363,44 @@ async function serveStatic(
   response.end(request.method === "HEAD" ? undefined : body);
 }
 
+export function validatePin(value: unknown): Pin {
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    throw new HttpError(400, "Data pin tidak valid.");
+  }
+  const input = value as Record<string, unknown>;
+  const name = typeof input.name === "string" ? input.name.trim() : "";
+  if (!name || name.length > 160)
+    throw new HttpError(400, "Isian name tidak valid.");
+  if (!PIN_CATEGORIES.includes(input.category as Pin["category"]))
+    throw new HttpError(400, "Kategori pin tidak valid.");
+  const coordinate = (key: string, min: number, max: number): number => {
+    const field = input[key];
+    if (
+      typeof field !== "number" ||
+      !Number.isFinite(field) ||
+      field < min ||
+      field > max
+    )
+      throw new HttpError(400, `Isian ${key} tidak valid.`);
+    return field;
+  };
+  let notes: string | undefined;
+  if (input.notes !== undefined && input.notes !== "") {
+    if (typeof input.notes !== "string" || input.notes.length > 2000)
+      throw new HttpError(400, "Isian notes tidak valid.");
+    notes = input.notes.trim() || undefined;
+  }
+  return {
+    id: randomUUID(),
+    name,
+    category: input.category as Pin["category"],
+    lat: coordinate("lat", -6.85, -5.75),
+    lng: coordinate("lng", 106.3, 107.31),
+    notes,
+    createdAt: new Date().toISOString(),
+  };
+}
+
 export interface AppOptions {
   config?: ServerConfig;
   dataDir?: string;
@@ -413,6 +461,37 @@ export function createApp(options: AppOptions = {}) {
         }
         json(response, 200, { places });
         return;
+      }
+      if (path === "/api/pins" || path.startsWith("/api/pins/")) {
+        const bearer =
+          request.headers.authorization?.match(/^Bearer ([^\s]+)$/i)?.[1];
+        if (!bearer || bearer.length > 8192) throw new AuthError();
+        const identity = await verify(bearer);
+        if (request.method === "GET" && path === "/api/pins") {
+          json(response, 200, { pins: store.listPins(identity.uid) });
+          return;
+        }
+        if (request.method === "POST" && path === "/api/pins") {
+          checkWriteOrigin(request, config);
+          const pin = validatePin(await readJson(request));
+          if (!store.addPin(identity.uid, pin)) {
+            throw new HttpError(
+              409,
+              `Maksimal ${MAX_PINS_PER_OWNER} pin per akun. Hapus pin sebelum menambah lagi.`,
+            );
+          }
+          json(response, 201, { pin });
+          return;
+        }
+        const id = path.match(/^\/api\/pins\/([A-Za-z0-9-]+)$/)?.[1];
+        if (request.method === "DELETE" && id) {
+          checkWriteOrigin(request, config);
+          if (!store.removePin(identity.uid, id))
+            throw new HttpError(404, "Pin tidak ditemukan.");
+          json(response, 200, { ok: true });
+          return;
+        }
+        throw new HttpError(405, "Metode tidak diizinkan.");
       }
       if (path === "/api/listings" || path.startsWith("/api/listings/")) {
         const bearer =

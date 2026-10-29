@@ -3,17 +3,21 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
 import { getUser, initializeAuth, login, logout, privateAPI } from "./auth.ts";
 import { demoListings } from "./demo.ts";
-import { escapeHTML as esc, money, nearestStation } from "./geo.ts";
+import { distanceKm, escapeHTML as esc, money, nearestStation } from "./geo.ts";
 import { HousingMap, type TransitMode } from "./map.ts";
 import {
   googleMapsDirections,
   googleMapsLocation,
+  googleMapsRoute,
   googleMapsWalkToStation,
 } from "./maps-links.ts";
+import { guessCategory, PIN_STYLES, pinIcon } from "./pins.ts";
 import {
   type AppConfig,
   AREAS,
   type Listing,
+  PIN_CATEGORIES,
+  type Pin,
   type Place,
   type Station,
 } from "./types.ts";
@@ -57,7 +61,7 @@ $("app").innerHTML = `
         <div class="area-chips" aria-label="Filter wilayah"><button class="chip selected" data-area="Semua" aria-pressed="true">Semua</button>${AREAS.map((area) => `<button class="chip" data-area="${area}" aria-pressed="false">${area}</button>`).join("")}</div>
         <div class="filter-grid"><label>Anggaran beli<select id="budget" aria-label="Anggaran maksimum"><option value="0">Semua anggaran</option><option value="500000000">Hingga Rp 500 juta</option><option value="750000000">Hingga Rp 750 juta</option><option value="1000000000">Hingga Rp 1 miliar</option></select></label><label>Jenis hunian<select id="housing-type" aria-label="Jenis hunian"><option value="Semua">Semua jenis</option><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label></div>
         <div class="commute-filter">${icon("train")}<label for="station-distance">Jarak ke stasiun KRL</label><select id="station-distance" aria-label="Jarak maksimum ke stasiun KRL"><option value="0">Bebas</option><option value="1">≤ 1 km</option><option value="3">≤ 3 km</option><option value="5">≤ 5 km</option></select></div>
-        <div class="data-tabs" aria-label="Koleksi hunian"><button id="demo-tab" class="active" aria-pressed="true">Contoh hunian <span>8</span></button><button id="private-tab" aria-pressed="false">${icon("bookmark")} Listingku</button></div>
+        <div class="data-tabs" aria-label="Koleksi hunian"><button id="demo-tab" class="active" aria-pressed="true">Contoh hunian <span>8</span></button><button id="private-tab" aria-pressed="false">${icon("bookmark")} Listingku</button><button id="pins-tab" aria-pressed="false">${icon("pin")} Pin tempat</button></div>
       </div>
       <section id="results" class="results" tabindex="-1" aria-label="Hasil pencarian">
         <div class="results-toolbar"><div><strong id="result-count">8 hunian</strong><span id="result-scope"> di Jabodetabek</span></div><select id="sort" aria-label="Urutkan hunian"><option value="recommended">Rekomendasi</option><option value="price">Harga terendah</option><option value="station">Terdekat KRL</option></select></div>
@@ -78,7 +82,7 @@ $("app").innerHTML = `
         <label class="layer-control">${icon("home")} Bangunan <input id="buildings-toggle" aria-label="Bangunan pada peta" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control">${icon("pin")} Hunian <input id="listings-toggle" aria-label="Marker dan detail hunian" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
         <span class="map-road-note">Jalan selalu tampil · bangunan saat diperbesar</span>
-        <button class="add-floating" id="add-listing">${icon("plus")} Tambah listing</button>
+        <div class="add-actions"><button class="add-floating add-pin" id="add-pin">${icon("pin")} Tambah pin</button><button class="add-floating" id="add-listing">${icon("plus")} Tambah listing</button></div>
       </div>
       <details class="rail-legend" id="transit-legend"><summary>Legenda transportasi</summary><div id="rail-legend"><span data-legend-mode="KRL"><i style="--line:#DC2626"></i>KRL Bogor / Nambo</span><span data-legend-mode="KRL"><i style="--line:#2563EB"></i>KRL Cikarang</span><span data-legend-mode="KRL"><i style="--line:#16A34A"></i>KRL Rangkasbitung</span><span data-legend-mode="KRL"><i style="--line:#92400E"></i>KRL Tangerang</span><span data-legend-mode="KRL"><i style="--line:#DB2777"></i>KRL Tj. Priok</span><span data-legend-mode="MRT"><i style="--line:#CE0037"></i>MRT Utara–Selatan</span><span data-legend-mode="LRT"><i style="--line:#f16227"></i>LRT Jakarta</span><span data-legend-mode="LRT"><i style="--line:#20409A"></i>LRT Cibubur</span><span data-legend-mode="LRT"><i style="--line:#0E6938"></i>LRT Bekasi</span><span data-legend-mode="TransJakarta" hidden><i style="--line:#2477a8"></i>TransJakarta · warna per koridor</span></div></details>
       <div class="map-bottom-note">${icon("info")} Jarak stasiun dihitung garis lurus, bukan rute berjalan kaki.</div>
@@ -88,6 +92,7 @@ $("app").innerHTML = `
   <div class="mobile-view"><button id="mobile-map">${icon("pin")} Peta</button><button id="mobile-list" class="active">${icon("home")} Daftar</button></div>
   <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><span class="eyebrow">TRANSPARANSI DATA</span><button class="icon-button" data-close="sources-dialog" aria-label="Tutup sumber data">${icon("close")}</button></div><h2 id="sources-title">Sumber & catatan data</h2><div class="source-block"><h3>Wilayah Jabodetabek</h3><p>14 batas kabupaten/kota dari geometri Nafkah / HDX COD-AB, disederhanakan untuk gambaran wilayah. Batas ini tidak cukup rinci untuk memastikan alamat atau batas bidang tanah. Kepulauan Seribu sangat disederhanakan pada sumber.</p><a href="https://gitlab.com/adenaufal/nafkah" target="_blank" rel="noopener noreferrer">Nafkah · Ade Naufal · CC BY 4.0 ↗</a></div><div class="source-block"><h3>KRL, MRT, LRT & TransJakarta</h3><p>Snapshot geografis OpenStreetMap, 29 Oktober 2026: 80 titik KRL, 13 MRT, 29 LRT, serta 251 titik halte pada 14 koridor utama BRT TransJakarta. LRT mencakup LRT Jakarta dan LRT Jabodebek. TransJakarta belum mencakup pengumpan/Mikrotrans dan awalnya disembunyikan.</p><p>Geometri mengikuti rel/jalan yang dipetakan; titik stasiun/halte bukan pintu masuk terverifikasi. Data ini bukan jadwal, tarif, status operasi, atau waktu tempuh aktual. Periksa perjalanan ke operator.</p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL ↗</a></div><div class="source-block"><h3>Listing & jarak</h3><p>Semua hunian pada tab Contoh hunian adalah data ilustratif, bukan iklan atau penawaran properti. Listingku berisi data pribadi yang kamu masukkan sendiri. Jarak ke KRL adalah garis lurus ke titik stasiun terdekat, bukan akses pintu masuk atau rute berjalan.</p></div><div class="source-block"><h3>Peta jalan & bangunan</h3><p>Peta vektor OpenFreeMap, skema © OpenMapTiles, data © OpenStreetMap contributors. Bangunan dapat disembunyikan terpisah; jalan tetap tampil. Cakupan bangunan mengikuti data OSM.</p><a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">OpenFreeMap · OpenMapTiles · OpenStreetMap ↗</a></div><p class="fine-print">Peta dasar OpenFreeMap · © OpenMapTiles · © OpenStreetMap contributors. Tampilan terinspirasi pola peta Nafkah; implementasi aplikasi dibuat untuk Rumah Tinggal.</p></dialog>
   <dialog id="listing-dialog" aria-labelledby="listing-title"><div class="dialog-header"><span class="eyebrow">KOLEKSI PRIBADIMU</span><button class="icon-button" data-close="listing-dialog" aria-label="Tutup tambah listing">${icon("close")}</button></div><h2 id="listing-title">Tambahkan calon rumah</h2><p class="dialog-intro">Simpan lokasi, harga beli, dan catatan survei. Hanya akunmu yang dapat melihatnya.</p><form id="listing-form"><label>Nama hunian<input name="title" required maxlength="160" placeholder="Contoh: Rumah dekat Stasiun Pondok Ranji"/></label><div class="form-grid"><label>Wilayah<select name="area">${AREAS.map((area) => `<option>${area}</option>`).join("")}</select></label><label>Kecamatan / lingkungan<input name="district" required maxlength="100"/></label><label>Harga beli (Rp)<input name="price" type="number" min="1" max="1000000000000" required/></label><label>Jenis<select name="type"><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label><label>Kamar tidur<input name="bedrooms" type="number" min="0" max="30" value="2" required/></label><label>Luas tanah / unit (m²)<input name="landArea" type="number" min="1" max="100000" required/></label><label>Latitude<input id="form-lat" name="lat" type="number" step="any" min="-6.85" max="-5.75" required value="-6.3"/></label><label>Longitude<input id="form-lng" name="lng" type="number" step="any" min="106.3" max="107.31" required value="106.8"/></label></div><button type="button" id="pick-map" class="text-button">${icon("pin")} Pilih koordinat di peta</button><label>Tautan sumber (opsional)<input name="sourceUrl" type="url" maxlength="2000" placeholder="https://…"/></label><label>Catatan survei (opsional)<textarea name="notes" maxlength="3000" rows="3" placeholder="Akses jalan, kondisi lingkungan, hal yang perlu dicek…"></textarea></label><p id="form-error" class="form-error" role="alert"></p><button class="button primary wide" type="submit">Simpan ke Listingku ${icon("arrow")}</button></form></dialog>
+  <dialog id="pin-dialog" aria-labelledby="pin-title"><div class="dialog-header"><span class="eyebrow">TEMPAT PENTING</span><button class="icon-button" data-close="pin-dialog" aria-label="Tutup tambah pin">${icon("close")}</button></div><h2 id="pin-title">Tandai tempat penting</h2><p class="dialog-intro">Masjid, sekolah, tempat kerja, atau tempat lain yang sering kamu datangi. Hanya akunmu yang dapat melihatnya.</p><form id="pin-form"><label>Nama tempat<input name="name" required maxlength="160" placeholder="Contoh: Masjid Al-Ikhlas"/></label><fieldset class="pin-categories"><legend>Ikon / kategori</legend>${PIN_CATEGORIES.map((category, index) => `<label class="pin-category" style="--pin:${PIN_STYLES[category].color}"><input type="radio" name="category" value="${category}" ${index === 0 ? "checked" : ""}/><span>${pinIcon(category, 18)}</span>${PIN_STYLES[category].label}</label>`).join("")}</fieldset><div class="form-grid"><label>Latitude<input id="pin-lat" name="lat" type="number" step="any" min="-6.85" max="-5.75" required value="-6.3"/></label><label>Longitude<input id="pin-lng" name="lng" type="number" step="any" min="106.3" max="107.31" required value="106.8"/></label></div><button type="button" id="pin-pick-map" class="text-button">${icon("pin")} Pilih titik di peta</button><label>Catatan (opsional)<textarea name="notes" maxlength="2000" rows="2" placeholder="Jam buka, akses jalan, alasan penting…"></textarea></label><p id="pin-error" class="form-error" role="alert"></p><button class="button primary wide" type="submit">Simpan pin ${icon("arrow")}</button></form></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 `;
 
@@ -95,11 +100,12 @@ let map: HousingMap | undefined;
 let stations: Station[] = [];
 let transportStops: Station[] = [];
 let privateListings: Listing[] = [];
-let collection: "demo" | "private" = "demo";
+let collection: "demo" | "private" | "pins" = "demo";
+let pins: Pin[] = [];
 let selectedArea = "Semua";
 let selectedListing: Listing | undefined;
 let listingsVisible = true;
-let pickingPoint = false;
+let pickingPoint: "listing" | "pin" | undefined;
 let toastTimer: ReturnType<typeof setTimeout>;
 
 function toast(message: string): void {
@@ -158,7 +164,14 @@ function render(): void {
     "aria-pressed",
     String(collection === "private"),
   );
-  if (collection === "private" && !getUser()) {
+  $("pins-tab").classList.toggle("active", collection === "pins");
+  $("pins-tab").setAttribute("aria-pressed", String(collection === "pins"));
+  $("sort").hidden = collection === "pins";
+  if (collection === "pins") {
+    $("result-count").textContent = `${pins.length} pin`;
+    $("result-scope").textContent = " tempat penting";
+    renderPinList();
+  } else if (collection === "private" && !getUser()) {
     $("listing-list").innerHTML =
       `<div class="empty-state"><span class="empty-icon">${icon("bookmark")}</span><h2>Ruang untuk pilihanmu.</h2><p>Masuk dengan Google untuk menyimpan dan memetakan listing pribadi. Koleksimu hanya dapat diakses oleh akunmu.</p><button class="button primary" id="empty-login">Masuk dengan Google ${icon("arrow")}</button></div>`;
     $("empty-login").onclick = doLogin;
@@ -200,6 +213,105 @@ function render(): void {
   );
 }
 
+function renderPinList(): void {
+  if (!getUser()) {
+    $("listing-list").innerHTML =
+      `<div class="empty-state"><span class="empty-icon">${icon("pin")}</span><h2>Tandai tempat pentingmu.</h2><p>Masuk dengan Google untuk menyimpan masjid, sekolah, tempat kerja, dan tempat lain sebagai pin di peta.</p><button class="button primary" id="empty-login">Masuk dengan Google ${icon("arrow")}</button></div>`;
+    $("empty-login").onclick = doLogin;
+    return;
+  }
+  if (!pins.length) {
+    $("listing-list").innerHTML =
+      `<div class="empty-state"><span class="empty-icon">${icon("pin")}</span><h2>Belum ada pin.</h2><p>Cari tempat lalu pilih "Simpan sebagai pin", atau tandai titik langsung di peta.</p><button class="button" id="empty-action">Tambah pin</button></div>`;
+    $("empty-action").onclick = () => showPinForm();
+    return;
+  }
+  $("listing-list").innerHTML = pins
+    .map(
+      (pin) =>
+        `<button class="pin-card" data-pin="${esc(pin.id)}" style="--pin:${PIN_STYLES[pin.category].color}"><span class="pin-badge">${pinIcon(pin.category)}</span><span class="pin-text"><strong>${esc(pin.name)}</strong><small>${esc(PIN_STYLES[pin.category].label)}${pin.notes ? ` · ${esc(pin.notes)}` : ""}</small></span><span class="card-arrow">↗</span></button>`,
+    )
+    .join("");
+  for (const button of document.querySelectorAll<HTMLButtonElement>(
+    "[data-pin]",
+  ))
+    button.onclick = () => {
+      const pin = pins.find((item) => item.id === button.dataset.pin);
+      if (!pin) return;
+      void map?.openPin(pin, pinPopup);
+      if (matchMedia("(max-width: 760px)").matches) setMobileView("map");
+    };
+}
+
+function pinPopup(pin: Pin, close: () => void): HTMLElement {
+  const style = PIN_STYLES[pin.category];
+  const distance = selectedListing
+    ? `<p class="pin-distance">${distanceKm(selectedListing, pin).toLocaleString("id-ID", { maximumFractionDigits: 1 })} km garis lurus dari ${esc(selectedListing.title)}</p>`
+    : "";
+  const element = document.createElement("div");
+  element.className = "pin-popup";
+  element.innerHTML = `<span class="pin-popup-label" style="--pin:${style.color}">${pinIcon(pin.category, 13)} ${esc(style.label)}</span><strong>${esc(pin.name)}</strong>${pin.notes ? `<p>${esc(pin.notes)}</p>` : ""}<p>${pin.lat.toFixed(5)}, ${pin.lng.toFixed(5)}</p>${distance}<a href="${esc(googleMapsLocation(pin))}" target="_blank" rel="noopener noreferrer">Buka Google Maps ↗</a> · <a href="${esc(selectedListing ? googleMapsRoute(selectedListing, pin) : googleMapsDirections(pin))}" target="_blank" rel="noopener noreferrer">${selectedListing ? "Rute dari hunian ↗" : "Rute ↗"}</a><button type="button" class="popup-action danger" data-delete-pin>Hapus pin</button>`;
+  element
+    .querySelector<HTMLButtonElement>("[data-delete-pin]")
+    ?.addEventListener("click", async () => {
+      if (!confirm(`Hapus pin "${pin.name}"?`)) return;
+      try {
+        await privateAPI(`/api/pins/${encodeURIComponent(pin.id)}`, {
+          method: "DELETE",
+        });
+        close();
+        toast("Pin sudah dihapus.");
+        await loadPins();
+      } catch (error) {
+        toast(error instanceof Error ? error.message : "Pin belum terhapus.");
+      }
+    });
+  return element;
+}
+
+async function loadPins(): Promise<void> {
+  const uid = getUser()?.uid;
+  if (!uid) return;
+  try {
+    const result = await privateAPI<{ pins: Pin[] }>("/api/pins");
+    if (getUser()?.uid !== uid) return;
+    pins = result.pins;
+  } catch (error) {
+    if (getUser()?.uid !== uid) return;
+    pins = [];
+    toast(error instanceof Error ? error.message : "Pin belum termuat.");
+  }
+  void map?.updatePins(pins, pinPopup);
+  render();
+}
+
+function showPinForm(
+  preset?: Partial<Pick<Pin, "name" | "lat" | "lng" | "category">>,
+): void {
+  if (!getUser()) {
+    collection = "pins";
+    render();
+    void doLogin();
+    return;
+  }
+  const form = $<HTMLFormElement>("pin-form");
+  if (preset) {
+    form.reset();
+    if (preset.name)
+      (form.elements.namedItem("name") as HTMLInputElement).value = preset.name;
+    if (preset.lat !== undefined)
+      $<HTMLInputElement>("pin-lat").value = preset.lat.toFixed(6);
+    if (preset.lng !== undefined)
+      $<HTMLInputElement>("pin-lng").value = preset.lng.toFixed(6);
+    const radio = form.querySelector<HTMLInputElement>(
+      `input[name="category"][value="${preset.category ?? "masjid"}"]`,
+    );
+    if (radio) radio.checked = true;
+  }
+  $("pin-error").textContent = "";
+  $<HTMLDialogElement>("pin-dialog").showModal();
+}
+
 function clearSelection(): void {
   selectedListing = undefined;
   $("detail-card").hidden = true;
@@ -232,7 +344,15 @@ function selectListing(listing: Listing): void {
       ${nearest ? `<a class="button wide" data-map-link="station" href="${esc(googleMapsWalkToStation(listing, nearest.station))}" target="_blank" rel="noopener noreferrer">${icon("train")} Jalan ke ${esc(nearest.station.name)} ↗</a>` : ""}
       <p>Pilih titik asal, lalu cek jarak dan waktu perjalanan di Google Maps.${collection === "demo" ? " Lokasi hunian ini hanya ilustrasi." : ""}</p>
     </div>
+    ${nearbyPins(listing)}
     <p class="detail-notes">${esc(listing.notes || "Belum ada catatan survei.")}</p>${listing.sourceUrl ? `<a class="source-link" href="${esc(listing.sourceUrl)}" target="_blank" rel="noopener noreferrer">Buka sumber listing ↗</a>` : ""}<button id="detail-action" class="button ${collection === "demo" ? "primary" : "danger"} wide">${collection === "demo" ? `${icon("bookmark")} Simpan ke Listingku` : "Hapus dari Listingku"}</button>`;
+  for (const button of detail.querySelectorAll<HTMLButtonElement>(
+    "[data-near-pin]",
+  ))
+    button.onclick = () => {
+      const pin = pins.find((item) => item.id === button.dataset.nearPin);
+      if (pin) void map?.openPin(pin, pinPopup);
+    };
   $("detail-close").onclick = () => {
     clearSelection();
     render();
@@ -274,6 +394,20 @@ function selectListing(listing: Listing): void {
   void map?.focus(listing.lng, listing.lat);
   if (matchMedia("(max-width: 760px)").matches) setMobileView("map");
   render();
+}
+
+function nearbyPins(listing: Listing): string {
+  if (!pins.length) return "";
+  const nearest = pins
+    .map((pin) => ({ pin, distance: distanceKm(listing, pin) }))
+    .sort((a, b) => a.distance - b.distance)
+    .slice(0, 3);
+  return `<div class="detail-pins"><strong>Tempat penting terdekat</strong>${nearest
+    .map(
+      ({ pin, distance }) =>
+        `<button type="button" data-near-pin="${esc(pin.id)}" style="--pin:${PIN_STYLES[pin.category].color}"><span class="pin-badge">${pinIcon(pin.category, 13)}</span><span>${esc(pin.name)}</span><em>${distance.toLocaleString("id-ID", { maximumFractionDigits: 1 })} km</em></button>`,
+    )
+    .join("")}<small>Jarak garis lurus, bukan rute.</small></div>`;
 }
 
 async function doLogin(): Promise<void> {
@@ -392,7 +526,14 @@ function searchPlaces(query: string): void {
       button.onclick = () => {
         const place = places[Number(button.dataset.place)];
         if (!place) return;
-        void map?.showPlace(place);
+        void map?.showPlace(place, () =>
+          showPinForm({
+            name: place.name,
+            lat: place.lat,
+            lng: place.lng,
+            category: guessCategory(place.name, place.kind),
+          }),
+        );
         if (matchMedia("(max-width: 760px)").matches) setMobileView("map");
       };
   }, 350);
@@ -495,6 +636,45 @@ function openPrivate(): void {
   if (getUser()) void loadPrivateListings();
 }
 $("private-tab").onclick = openPrivate;
+$("pins-tab").onclick = () => {
+  collection = "pins";
+  render();
+  if (getUser()) void loadPins();
+};
+$("add-pin").onclick = () => showPinForm();
+$("pin-pick-map").onclick = () => {
+  pickingPoint = "pin";
+  $<HTMLDialogElement>("pin-dialog").close();
+  setMobileView("map");
+  toast("Klik titik tempat pada peta. Koordinat akan diisi otomatis.");
+};
+$("pin-form").onsubmit = async (event) => {
+  event.preventDefault();
+  const form = $<HTMLFormElement>("pin-form");
+  const data = Object.fromEntries(new FormData(form));
+  const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+  if (button) button.disabled = true;
+  try {
+    const result = await privateAPI<{ pin: Pin }>("/api/pins", {
+      method: "POST",
+      body: JSON.stringify({
+        ...data,
+        lat: Number(data.lat),
+        lng: Number(data.lng),
+      }),
+    });
+    $<HTMLDialogElement>("pin-dialog").close();
+    form.reset();
+    await loadPins();
+    void map?.openPin(result.pin, pinPopup);
+    toast("Pin tersimpan.");
+  } catch (error) {
+    $("pin-error").textContent =
+      error instanceof Error ? error.message : "Pin belum tersimpan.";
+  } finally {
+    if (button) button.disabled = false;
+  }
+};
 $("nav-saved").onclick = openPrivate;
 $("account-button").onclick = async () => {
   if (getUser()) {
@@ -506,7 +686,7 @@ $("add-listing").onclick = showListingForm;
 $("mobile-map").onclick = () => setMobileView("map");
 $("mobile-list").onclick = () => setMobileView("list");
 $("pick-map").onclick = () => {
-  pickingPoint = true;
+  pickingPoint = "listing";
   $<HTMLDialogElement>("listing-dialog").close();
   setMobileView("map");
   toast("Klik titik lokasi hunian pada peta. Koordinat akan diisi otomatis.");
@@ -640,10 +820,12 @@ async function start(): Promise<void> {
       },
       (lng, lat) => {
         if (!pickingPoint) return;
-        pickingPoint = false;
-        $<HTMLInputElement>("form-lng").value = lng.toFixed(6);
-        $<HTMLInputElement>("form-lat").value = lat.toFixed(6);
-        $<HTMLDialogElement>("listing-dialog").showModal();
+        const target = pickingPoint;
+        pickingPoint = undefined;
+        const prefix = target === "pin" ? "pin" : "form";
+        $<HTMLInputElement>(`${prefix}-lng`).value = lng.toFixed(6);
+        $<HTMLInputElement>(`${prefix}-lat`).value = lat.toFixed(6);
+        $<HTMLDialogElement>(`${target}-dialog`).showModal();
       },
     );
     void map.showBuildings($<HTMLInputElement>("buildings-toggle").checked);
@@ -664,9 +846,13 @@ async function start(): Promise<void> {
         $("account-label").textContent = user
           ? `${user.displayName?.split(" ")[0] || "Akun"} · Keluar`
           : "Masuk dengan Google";
-        if (user) void loadPrivateListings();
-        else {
+        if (user) {
+          void loadPrivateListings();
+          void loadPins();
+        } else {
           privateListings = [];
+          pins = [];
+          void map?.updatePins(pins, pinPopup);
           render();
         }
       });

@@ -34,6 +34,30 @@ export interface Station {
   lat: number;
 }
 
+export const PIN_CATEGORIES = [
+  "masjid",
+  "ibadah",
+  "sekolah",
+  "kampus",
+  "kesehatan",
+  "belanja",
+  "taman",
+  "publik",
+  "kantor",
+  "lainnya",
+] as const;
+export type PinCategory = (typeof PIN_CATEGORIES)[number];
+
+export interface Pin {
+  id: string;
+  name: string;
+  category: PinCategory;
+  lat: number;
+  lng: number;
+  notes?: string;
+  createdAt: string;
+}
+
 export interface Place {
   id: string;
   name: string;

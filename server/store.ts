@@ -8,9 +8,10 @@ import {
 } from "node:fs";
 import { join, resolve } from "node:path";
 import { DatabaseSync as Database } from "node:sqlite";
-import type { Listing } from "../src/types.ts";
+import type { Listing, Pin } from "../src/types.ts";
 
 export const MAX_LISTINGS_PER_OWNER = 500;
+export const MAX_PINS_PER_OWNER = 500;
 
 export class ListingStore {
   private database: Database;
@@ -52,6 +53,14 @@ export class ListingStore {
       );
       CREATE INDEX IF NOT EXISTS listings_owner_created
         ON listings(owner_uid, created_at DESC);
+      CREATE TABLE IF NOT EXISTS pins (
+        id TEXT PRIMARY KEY,
+        owner_uid TEXT NOT NULL,
+        content_json TEXT NOT NULL,
+        created_at TEXT NOT NULL
+      );
+      CREATE INDEX IF NOT EXISTS pins_owner_created
+        ON pins(owner_uid, created_at DESC);
     `);
   }
 
@@ -87,6 +96,42 @@ export class ListingStore {
     return (
       this.database
         .prepare("DELETE FROM listings WHERE owner_uid = ? AND id = ?")
+        .run(uid, id).changes === 1
+    );
+  }
+
+  listPins(uid: string): Pin[] {
+    const rows = this.database
+      .prepare(
+        "SELECT content_json FROM pins WHERE owner_uid = ? ORDER BY created_at DESC, id",
+      )
+      .all(uid);
+    return rows.map((row) => JSON.parse(row.content_json as string) as Pin);
+  }
+
+  addPin(uid: string, pin: Pin): boolean {
+    return (
+      this.database
+        .prepare(
+          `INSERT INTO pins (id, owner_uid, content_json, created_at)
+           SELECT ?, ?, ?, ?
+           WHERE (SELECT COUNT(*) FROM pins WHERE owner_uid = ?) < ?`,
+        )
+        .run(
+          pin.id,
+          uid,
+          JSON.stringify(pin),
+          pin.createdAt,
+          uid,
+          MAX_PINS_PER_OWNER,
+        ).changes === 1
+    );
+  }
+
+  removePin(uid: string, id: string): boolean {
+    return (
+      this.database
+        .prepare("DELETE FROM pins WHERE owner_uid = ? AND id = ?")
         .run(uid, id).changes === 1
     );
   }
