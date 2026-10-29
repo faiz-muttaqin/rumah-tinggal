@@ -1,0 +1,41 @@
+{
+  "name": "rumah-tinggal",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.16.1",
+  "engines": {
+    "node": "26.13.x",
+    "pnpm": "12.16.x"
+  },
+  "scripts": {
+    "prepare": "node scripts/install-hooks.mjs",
+    "dev": "vite --host 127.0.0.1 --port 3101 --strictPort",
+    "dev:api": "node --env-file-if-exists=.env --watch server/index.ts",
+    "build": "vite build",
+    "start": "node --env-file-if-exists=.env server/index.ts",
+    "test": "node --test scripts/security.test.mjs server/*.test.ts",
+    "test:e2e": "playwright test",
+    "doctor": "node scripts/doctor.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "biome check . && tsc --noEmit",
+    "format": "biome format --write .",
+    "security:staged": "node scripts/security.mjs staged",
+    "security:history": "node scripts/security.mjs history",
+    "test:security": "node --test scripts/security.test.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.4",
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.6",
+    "@types/geojson": "7946.0.16",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  },
+  "dependencies": {
+    "@fontsource-variable/plus-jakarta-sans": "5.3.0",
+    "firebase": "13.1.0",
+    "jose": "6.2.14",
+    "maplibre-gl": "6.16.0"
+  }
+}

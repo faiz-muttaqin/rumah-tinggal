@@ -1,0 +1,11 @@
+title = "Rumah Tinggal secret protection"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "application-private-config"
+description = "Private application settings must not be committed"
+regex = '''(?i)(?:client_secret|session_secret|cookie_secret|database_url|connection_string|private_key)\s*["']?\s*[:=]\s*["']?([a-z0-9_./+=:@?&%~-]{12,})'''
+secretGroup = 1
+entropy = 3.0

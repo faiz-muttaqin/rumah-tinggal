@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+project_dir=$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd)
+export PATH="$project_dir/.tools/node_modules/.bin:$project_dir/node_modules/.bin:$PATH"
+export XDG_CACHE_HOME="$project_dir/.tools/cache"
+export XDG_STATE_HOME="$project_dir/.tools/state"
+if [ ! -x "$project_dir/.tools/node_modules/.bin/node" ] || [ ! -x "$project_dir/.tools/node_modules/.bin/pnpm" ]; then
+  echo 'Toolchain belum tersedia. Jalankan: sh scripts/bootstrap.sh' >&2
+  exit 1
+fi
+cd "$project_dir"
+exec "$project_dir/.tools/node_modules/.bin/pnpm" "$@"

@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+cd "$(git rev-parse --show-toplevel)"
+# Ignore remote arguments/stdin: scan every local ref, including old/deleted secrets.
+node scripts/security.mjs history

@@ -1,0 +1,13 @@
+packages:
+  - .
+
+# Keep downloads local to this checkout and do not run dependency lifecycle scripts.
+storeDir: .tools/pnpm-store
+cacheDir: .tools/pnpm-cache
+verifyDepsBeforeRun: error
+strictDepBuilds: true
+allowBuilds:
+  "@firebase/util": false
+  protobufjs: false
+# Exact current releases are deliberately pinned in package.json and pnpm-lock.yaml.
+minimumReleaseAge: 0

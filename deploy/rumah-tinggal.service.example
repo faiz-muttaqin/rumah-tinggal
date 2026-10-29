@@ -1,0 +1,35 @@
+# TEMPLATE TIDAK AKTIF. Jangan pasang sebelum akun, rilis, dan env tersedia.
+# Salin rilis dari /root/projects ke /opt/rumah-tinggal terlebih dahulu.
+# Ganti origin/domain pada /etc/rumah-tinggal.env; file dimiliki root, mode 0600.
+# Pastikan DATA_DIR dalam env file tetap /var/lib/rumah-tinggal.
+# Akun rumah-tinggal harus dapat membaca rilis dan mengeksekusi Node lokal.
+
+[Unit]
+Description=Rumah Tinggal HTTP application
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=rumah-tinggal
+Group=rumah-tinggal
+WorkingDirectory=/opt/rumah-tinggal
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=PORT=3100
+Environment=DATA_DIR=/var/lib/rumah-tinggal
+EnvironmentFile=/etc/rumah-tinggal.env
+ExecStart=/opt/rumah-tinggal/.tools/node_modules/.bin/node /opt/rumah-tinggal/server/index.ts
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=30
+UMask=0077
+StateDirectory=rumah-tinggal
+StateDirectoryMode=0700
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

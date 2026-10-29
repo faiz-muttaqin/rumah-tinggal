@@ -1,0 +1,290 @@
+import { expect, type Page, test } from "@playwright/test";
+
+const pageErrors = new WeakMap<Page, string[]>();
+const blockedTileRequests = new WeakMap<Page, number>();
+
+function mapRegion(page: Page) {
+  return page.getByRole("region", {
+    name: "Peta hunian Jabodetabek",
+    includeHidden: true,
+  });
+}
+
+function cards(page: Page) {
+  return page.getByTestId("listing-card");
+}
+
+async function expectRenderedVectors(page: Page) {
+  for (const attribute of ["data-region-features", "data-station-features"]) {
+    await expect
+      .poll(
+        async () =>
+          Number((await page.locator("#map").getAttribute(attribute)) ?? 0),
+        {
+          message: `The map must actually render vector features: ${attribute}`,
+        },
+      )
+      .toBeGreaterThan(0);
+  }
+}
+
+async function expectNoHorizontalOverflow(page: Page) {
+  const dimensions = await page.evaluate(() => ({
+    viewport: window.innerWidth,
+    document: document.documentElement.scrollWidth,
+    body: document.body.scrollWidth,
+  }));
+  expect(dimensions.document).toBeLessThanOrEqual(dimensions.viewport);
+  expect(dimensions.body).toBeLessThanOrEqual(dimensions.viewport);
+}
+
+test.beforeEach(async ({ page }) => {
+  const errors: string[] = [];
+  pageErrors.set(page, errors);
+  blockedTileRequests.set(page, 0);
+  page.on("pageerror", (error) => errors.push(error.message));
+  page.on("console", (message) => {
+    if (/Worker failed/i.test(message.text())) errors.push(message.text());
+  });
+  // Automated browser runs use local vectors only. Never request public OSM
+  // raster tiles while the suite pans, fits bounds, or creates fresh contexts.
+  await page.route("**/tile.openstreetmap.org/**", async (route) => {
+    blockedTileRequests.set(page, (blockedTileRequests.get(page) ?? 0) + 1);
+    await route.abort("blockedbyclient");
+  });
+  await page.goto("/");
+  // Phones initially show the list; the hidden map remains mounted.
+  await expect(mapRegion(page)).toBeAttached();
+});
+
+test.afterEach(async ({ page }) => {
+  // Tile fetch failures can emit console/network events. Unhandled application
+  // JavaScript errors and failed map workers are still failures.
+  expect(
+    pageErrors.get(page) ?? [],
+    "Unhandled browser JavaScript errors",
+  ).toEqual([]);
+});
+
+test("shows eight explicitly illustrative homes and a visible map", async ({
+  page,
+}, testInfo) => {
+  await expect(page.locator("#demo-tab")).toBeVisible();
+  await expect(page.locator("#demo-tab")).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await expect(page.locator("#example-note")).toContainText(/ilustratif/i);
+  await expect(cards(page)).toHaveCount(8);
+  await expect(cards(page).first()).toBeVisible();
+  await expect(
+    mapRegion(page).locator("canvas.maplibregl-canvas"),
+  ).toBeVisible();
+  await expectRenderedVectors(page);
+  await page.screenshot({
+    path: testInfo.outputPath("explorer-desktop.png"),
+    fullPage: true,
+  });
+});
+
+test("keeps price pins absolutely positioned in their geographic order", async ({
+  page,
+}) => {
+  await expectRenderedVectors(page);
+  const pins = page.locator("#map .price-pin");
+  await expect(pins).toHaveCount(8);
+  for (const pin of await pins.all()) {
+    await expect(pin).toHaveCSS("position", "absolute");
+  }
+
+  async function markerCenter(title: string) {
+    const pin = page
+      .locator("#map")
+      .getByRole("button", { name: new RegExp(`^${title},`) });
+    await expect(pin).toBeVisible();
+    const bounds = await pin.boundingBox();
+    if (!bounds)
+      throw new Error(`The map marker has no rendered bounds: ${title}`);
+    return { x: bounds.x + bounds.width / 2, y: bounds.y + bounds.height / 2 };
+  }
+
+  const [serpong, bintaro, bekasi, bogor, depok] = await Promise.all([
+    markerCenter("Apartemen kompak di Serpong"),
+    markerCenter("Rumah kompak di Bintaro"),
+    markerCenter("Rumah pertama di Bekasi"),
+    markerCenter("Sudut tenang di Bogor"),
+    markerCenter("Ruang tumbuh di Depok"),
+  ]);
+  expect(serpong.x, "Serpong is west of Bintaro").toBeLessThan(bintaro.x);
+  expect(bekasi.x, "Bekasi is east of Bintaro").toBeGreaterThan(bintaro.x);
+  expect(bogor.y, "Bogor is south of Depok").toBeGreaterThan(depok.y);
+});
+
+test("filters the illustrative homes by Depok", async ({ page }) => {
+  for (const area of ["Jakarta", "Bogor", "Depok", "Tangerang", "Bekasi"]) {
+    await expect(
+      page.getByRole("button", { name: area, exact: true }),
+    ).toBeVisible();
+  }
+  await page.getByRole("button", { name: "Depok", exact: true }).click();
+  await expect(cards(page)).toHaveCount(1);
+  await expect(cards(page).first()).toContainText(/Depok/i);
+});
+
+test("shows an empty state for an unmatched search", async ({ page }) => {
+  await page
+    .getByLabel("Cari wilayah, hunian, atau stasiun", { exact: true })
+    .fill("wilayah-yang-tidak-ada-9f538f");
+  await expect(cards(page)).toHaveCount(0);
+  await expect(page.getByTestId("empty-state")).toBeVisible();
+});
+
+test("a five-hundred-million-rupiah budget leaves only the Serpong example", async ({
+  page,
+}) => {
+  await page
+    .getByLabel("Anggaran maksimum", { exact: true })
+    .selectOption("500000000");
+  await expect(cards(page)).toHaveCount(1);
+  await expect(cards(page).first()).toContainText(/Serpong/i);
+});
+
+test("filters by apartment type", async ({ page }) => {
+  const typeSelect = page.getByLabel("Jenis hunian", { exact: true });
+  await typeSelect.selectOption({ label: "Apartemen" });
+  await expect(cards(page)).not.toHaveCount(0);
+  expect(await cards(page).count()).toBeLessThan(8);
+  for (const card of await cards(page).all()) {
+    await expect(card).toContainText(/Apartemen/i);
+  }
+});
+
+test("toggles actual rendered KRL station features while keeping regions visible", async ({
+  page,
+}) => {
+  const checkbox = page.getByRole("checkbox", {
+    name: "Jalur KRL",
+    exact: true,
+  });
+  await checkbox.setChecked(true);
+  await expectRenderedVectors(page);
+  await checkbox.setChecked(false);
+  await expect(checkbox).not.toBeChecked();
+  await expect
+    .poll(async () =>
+      Number(await page.locator("#map").getAttribute("data-station-features")),
+    )
+    .toBe(0);
+  await expect
+    .poll(async () =>
+      Number(
+        (await page.locator("#map").getAttribute("data-region-features")) ?? 0,
+      ),
+    )
+    .toBeGreaterThan(0);
+  await expect(
+    mapRegion(page).locator("canvas.maplibregl-canvas"),
+  ).toBeVisible();
+  await checkbox.setChecked(true);
+  await expect(checkbox).toBeChecked();
+  await expectRenderedVectors(page);
+});
+
+test("local regions and KRL remain usable when every OSM raster tile is blocked", async ({
+  page,
+}) => {
+  await expect
+    .poll(() => blockedTileRequests.get(page) ?? 0)
+    .toBeGreaterThan(0);
+  await expectRenderedVectors(page);
+  await expect(page.locator("#map-status")).toHaveClass(/visible/);
+  await expect(page.locator("#map-status")).toContainText(
+    /Wilayah dan KRL tetap bisa dijelajahi/i,
+  );
+  await page.getByRole("button", { name: "Depok", exact: true }).click();
+  await expect(cards(page)).toHaveCount(1);
+  await expectRenderedVectors(page);
+});
+
+test("explains attribution and illustrative straight-line estimates in the source dialog", async ({
+  page,
+}) => {
+  const sourceButton = page.getByRole("button", {
+    name: "Sumber data",
+    exact: true,
+  });
+  await sourceButton.focus();
+  await page.keyboard.press("Enter");
+  const dialog = page.getByRole("dialog", {
+    name: "Sumber & catatan data",
+    exact: true,
+  });
+  await expect(dialog).toBeVisible();
+  await expect(dialog).toContainText(/OpenStreetMap/i);
+  await expect(dialog).toContainText(/ilustratif/i);
+  await expect(dialog).toContainText(/garis lurus/i);
+  await page.keyboard.press("Escape");
+  await expect(dialog).not.toBeVisible();
+  await expect(sourceButton).toBeFocused();
+});
+
+test("anonymous Listingku offers Google sign-in without requesting private listings", async ({
+  page,
+}) => {
+  const privateRequests: string[] = [];
+  page.on("request", (request) => {
+    if (/^\/api\/listings(?:\/|$)/.test(new URL(request.url()).pathname)) {
+      privateRequests.push(request.method());
+    }
+  });
+  await page.locator("#private-tab").click();
+  await expect(
+    page.locator("#listing-list").getByRole("button", { name: /Google/i }),
+  ).toBeVisible();
+  await expect(cards(page)).toHaveCount(0);
+  expect(
+    privateRequests,
+    "Anonymous visitors must not fetch private listings",
+  ).toEqual([]);
+  // Google OAuth/popup interaction requires real credentials and is deliberately
+  // outside this public, unauthenticated browser regression suite.
+});
+
+test.describe("mobile explorer", () => {
+  test.use({
+    viewport: { width: 390, height: 844 },
+    isMobile: true,
+    hasTouch: true,
+  });
+
+  test("switches map/list without horizontal overflow and supports keyboard controls", async ({
+    page,
+  }, testInfo) => {
+    await expectNoHorizontalOverflow(page);
+    await page.getByRole("button", { name: "Daftar", exact: true }).click();
+    await expect(cards(page)).toHaveCount(8);
+    await expect(cards(page).first()).toBeVisible();
+    await expectNoHorizontalOverflow(page);
+
+    const mapButton = page.getByRole("button", { name: "Peta", exact: true });
+    await mapButton.focus();
+    await page.keyboard.press("Enter");
+    await expect(mapRegion(page)).toBeVisible();
+    const resetButton = page.getByRole("button", {
+      name: "Tampilkan seluruh Jabodetabek",
+      exact: true,
+    });
+    await expect(resetButton).toBeVisible();
+    await resetButton.focus();
+    await page.keyboard.press("Enter");
+    await expect(
+      mapRegion(page).locator("canvas.maplibregl-canvas"),
+    ).toBeVisible();
+    await expectRenderedVectors(page);
+    await expectNoHorizontalOverflow(page);
+    await page.screenshot({
+      path: testInfo.outputPath("explorer-mobile.png"),
+      fullPage: true,
+    });
+  });
+});
