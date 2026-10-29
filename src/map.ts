@@ -9,7 +9,7 @@ import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
 import { BASEMAP_GLYPHS, BASEMAP_LAYERS, BASEMAP_SOURCE } from "./basemap.ts";
 import { escapeHTML, money } from "./geo.ts";
 import { googleMapsLocation } from "./maps-links.ts";
-import type { Area, Listing } from "./types.ts";
+import type { Area, Listing, Place } from "./types.ts";
 
 // MapLibre 6 requires an explicit bundled worker URL with Vite.
 maplibregl.setWorkerUrl(workerUrl);
@@ -38,6 +38,7 @@ export class HousingMap {
   ready: Promise<void>;
   private mobilityPopup?: Popup;
   private mobilityPopupMode?: TransitMode;
+  private placePopup?: Popup;
   constructor(
     regions: GeoJSON.FeatureCollection,
     transitKRL: GeoJSON.FeatureCollection,
@@ -414,6 +415,18 @@ export class HousingMap {
         ? 0
         : 650,
     });
+  }
+
+  async showPlace(place: Place): Promise<void> {
+    await this.focus(place.lng, place.lat, 16);
+    this.placePopup?.remove();
+    const detail = [place.kind, place.detail].filter(Boolean).join(" · ");
+    this.placePopup = new maplibregl.Popup({ closeButton: true })
+      .setLngLat([place.lng, place.lat])
+      .setHTML(
+        `<strong>${escapeHTML(place.name)}</strong>${detail ? `<p>${escapeHTML(detail)}</p>` : ""}<p>${place.lat.toFixed(5)}, ${place.lng.toFixed(5)}</p><a href="${escapeHTML(googleMapsLocation(place))}" target="_blank" rel="noopener noreferrer">Buka Google Maps ↗</a>`,
+      )
+      .addTo(this.map);
   }
 
   async clearFocus(): Promise<void> {

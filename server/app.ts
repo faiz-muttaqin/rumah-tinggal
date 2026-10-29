@@ -8,6 +8,11 @@ import {
 import { extname, isAbsolute, relative, resolve } from "node:path";
 import { type AppConfig, AREAS, type Listing } from "../src/types.ts";
 import { AuthError, createTokenVerifier, type TokenVerifier } from "./auth.ts";
+import {
+  createPhotonSearch,
+  createRateLimiter,
+  type PlaceSearch,
+} from "./places.ts";
 import { ListingStore, MAX_LISTINGS_PER_OWNER } from "./store.ts";
 
 const BODY_LIMIT = 32 * 1024;
@@ -353,6 +358,7 @@ export interface AppOptions {
   dataDir?: string;
   distDir?: string;
   verifyToken?: TokenVerifier;
+  searchPlaces?: PlaceSearch;
 }
 
 export function createApp(options: AppOptions = {}) {
@@ -364,6 +370,9 @@ export function createApp(options: AppOptions = {}) {
   const verify =
     options.verifyToken ??
     createTokenVerifier(config.firebase.projectId, config.allowedEmails);
+  const searchPlaces = options.searchPlaces ?? createPhotonSearch();
+  const clientLimit = createRateLimiter(40);
+  const globalLimit = createRateLimiter(300);
   const server = createServer((request, response) => {
     response.setHeader("X-Content-Type-Options", "nosniff");
     response.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
@@ -378,6 +387,31 @@ export function createApp(options: AppOptions = {}) {
           firebase: config.firebase,
           authConfigured: config.authConfigured,
         });
+        return;
+      }
+      if (path === "/api/places" && request.method === "GET") {
+        const query = (
+          new URL(request.url ?? "/", "http://local").searchParams.get("q") ??
+          ""
+        )
+          .replace(/\s+/g, " ")
+          .trim();
+        if (query.length < 3 || query.length > 120)
+          throw new HttpError(400, "Kata kunci 3–120 karakter.");
+        const realIp = request.headers["x-real-ip"];
+        const client =
+          (typeof realIp === "string" && realIp) ||
+          request.socket.remoteAddress ||
+          "";
+        if (!clientLimit(client) || !globalLimit("*"))
+          throw new HttpError(429, "Terlalu banyak pencarian, coba lagi.");
+        let places: Awaited<ReturnType<PlaceSearch>>;
+        try {
+          places = await searchPlaces(query);
+        } catch {
+          throw new HttpError(502, "Pencarian tempat belum tersedia.");
+        }
+        json(response, 200, { places });
         return;
       }
       if (path === "/api/listings" || path.startsWith("/api/listings/")) {

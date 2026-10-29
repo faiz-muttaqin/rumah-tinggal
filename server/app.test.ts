@@ -16,6 +16,7 @@ import { type TestContext, test } from "node:test";
 import type { Listing } from "../src/types.ts";
 import { createApp, readConfig } from "./app.ts";
 import { AuthError } from "./auth.ts";
+import { createPhotonSearch, parsePhoton } from "./places.ts";
 import { ListingStore, MAX_LISTINGS_PER_OWNER } from "./store.ts";
 
 const APP_ORIGIN = "http://localhost:3100";
@@ -30,6 +31,8 @@ const validListing = {
   lat: -6.37,
   lng: 106.83,
 };
+
+const placeQueries: string[] = [];
 
 async function fixture(t: TestContext) {
   const directory = await mkdtemp(join(tmpdir(), "rumah-api-test-"));
@@ -55,6 +58,20 @@ async function fixture(t: TestContext) {
     verifyToken: async (value) => {
       if (!["alice", "bob"].includes(value)) throw new AuthError();
       return { uid: value, email: `${value}@example.invalid` };
+    },
+    searchPlaces: async (query) => {
+      placeQueries.push(query);
+      if (query === "upstream gagal") throw new Error("offline");
+      return [
+        {
+          id: "W1",
+          name: "Taman Uji",
+          detail: "Beji, Depok",
+          kind: "park",
+          lat: -6.37,
+          lng: 106.83,
+        },
+      ];
     },
   });
   t.after(async () => {
@@ -445,4 +462,82 @@ test("SQLite persists owner-scoped data with restricted filesystem permissions",
   } finally {
     await rm(directory, { recursive: true, force: true });
   }
+});
+
+test("place search validates queries, hides upstream errors, and rate limits", async (t) => {
+  const { api } = await fixture(t);
+  const response = await api(
+    "/api/places?q=%20taman%20%20uji%20",
+    "GET",
+    undefined,
+    null,
+    null,
+  );
+  assert.equal(response.status, 200);
+  assert.equal(response.headers.get("cache-control"), "no-store");
+  assert.equal((await response.json()).places[0].name, "Taman Uji");
+  assert.equal(placeQueries.at(-1), "taman uji");
+  for (const q of ["", "ab", "x".repeat(121)])
+    assert.equal(
+      (await api(`/api/places?q=${q}`, "GET", undefined, null)).status,
+      400,
+    );
+  assert.equal(
+    (await api("/api/places?q=taman", "POST", undefined, null)).status,
+    404,
+  );
+  const failed = await api(
+    "/api/places?q=upstream%20gagal",
+    "GET",
+    undefined,
+    null,
+  );
+  assert.equal(failed.status, 502);
+  assert.equal(JSON.stringify(await failed.json()).includes("offline"), false);
+  let status = 200;
+  for (let index = 0; index < 40 && status !== 429; index += 1)
+    status = (await api("/api/places?q=taman", "GET", undefined, null)).status;
+  assert.equal(status, 429);
+});
+
+test("Photon results are trimmed to Jabodetabek and cached", async () => {
+  const feature = (name: string, lng: number, lat: number) => ({
+    geometry: { type: "Point", coordinates: [lng, lat] },
+    properties: {
+      osm_type: "N",
+      osm_id: 7,
+      osm_value: "train_station",
+      name,
+      district: "Menteng",
+      city: "Jakarta",
+    },
+  });
+  const body = {
+    features: [
+      feature("Stasiun Uji", 106.8312345678, -6.1912345678),
+      feature("Stasiun Uji", 106.83, -6.19),
+      feature("Bandung", 107.6, -6.9),
+      { geometry: { coordinates: ["x", 1] }, properties: { name: "Rusak" } },
+    ],
+  };
+  assert.deepEqual(parsePhoton(body), [
+    {
+      id: "N7",
+      name: "Stasiun Uji",
+      detail: "Menteng, Jakarta",
+      kind: "train station",
+      lat: -6.191235,
+      lng: 106.831235,
+    },
+  ]);
+  assert.deepEqual(parsePhoton({ features: "x" }), []);
+  const urls: string[] = [];
+  const search = createPhotonSearch((async (url: URL) => {
+    urls.push(String(url));
+    return Response.json(body);
+  }) as typeof fetch);
+  await search("Stasiun Uji");
+  await search("stasiun uji");
+  assert.equal(urls.length, 1);
+  assert.match(urls[0] ?? "", /bbox=106\.3%2C-6\.85%2C107\.31%2C-5\.75/);
 });

@@ -92,6 +92,26 @@ test.beforeEach(async ({ page }) => {
   page.on("console", (message) => {
     if (/Worker failed/i.test(message.text())) errors.push(message.text());
   });
+  // Place search is stubbed so automation never calls the public geocoder.
+  await page.route("**/api/places?**", async (route) => {
+    const query = new URL(route.request().url()).searchParams.get("q") ?? "";
+    await route.fulfill({
+      json: {
+        places: /taman/i.test(query)
+          ? [
+              {
+                id: "W1",
+                name: "Taman Uji Menteng",
+                detail: "Menteng, Jakarta",
+                kind: "park",
+                lat: -6.196,
+                lng: 106.83,
+              },
+            ]
+          : [],
+      },
+    });
+  });
   // Never request public OSM raster tiles during automation.
   await page.route("**/tile.openstreetmap.org/**", async (route) => {
     blockedTileRequests.set(page, (blockedTileRequests.get(page) ?? 0) + 1);
@@ -198,7 +218,7 @@ test("filters the illustrative homes by Depok", async ({ page }) => {
 
 test("shows an empty state for an unmatched search", async ({ page }) => {
   await page
-    .getByLabel("Cari wilayah, hunian, atau stasiun", { exact: true })
+    .getByLabel("Cari wilayah, hunian, stasiun, atau tempat", { exact: true })
     .fill("wilayah-yang-tidak-ada-9f538f");
   await expect(cards(page)).toHaveCount(0);
   await expect(page.getByTestId("empty-state")).toBeVisible();
@@ -656,4 +676,23 @@ test.describe("mobile explorer", () => {
       fullPage: true,
     });
   });
+});
+
+test("place search focuses a geocoded place with a Google Maps link", async ({
+  page,
+}) => {
+  await page.locator("#search").fill("taman uji");
+  const result = page
+    .locator("#place-results")
+    .getByRole("button", { name: /Taman Uji Menteng/ });
+  await expect(result).toBeVisible();
+  await expect(result).toContainText("Menteng, Jakarta");
+  await result.click();
+  const popup = page.locator(".maplibregl-popup");
+  await expect(popup).toContainText("Taman Uji Menteng");
+  await expect(
+    popup.getByRole("link", { name: /Google Maps/ }),
+  ).toHaveAttribute("href", /query=-6\.196%2C106\.83/);
+  await page.locator("#search").fill("");
+  await expect(page.locator("#place-results")).toBeEmpty();
 });

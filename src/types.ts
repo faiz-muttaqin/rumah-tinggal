@@ -34,6 +34,15 @@ export interface Station {
   lat: number;
 }
 
+export interface Place {
+  id: string;
+  name: string;
+  detail: string;
+  kind: string;
+  lat: number;
+  lng: number;
+}
+
 export interface FirebaseSettings {
   apiKey: string;
   authDomain: string;

@@ -10,7 +10,13 @@ import {
   googleMapsLocation,
   googleMapsWalkToStation,
 } from "./maps-links.ts";
-import { type AppConfig, AREAS, type Listing, type Station } from "./types.ts";
+import {
+  type AppConfig,
+  AREAS,
+  type Listing,
+  type Place,
+  type Station,
+} from "./types.ts";
 
 const icons = {
   home: '<path d="m3 10 9-7 9 7v11H3z"/><path d="M9 21v-8h6v8"/>',
@@ -46,8 +52,8 @@ $("app").innerHTML = `
         <div class="eyebrow"><span class="tiny-line"></span> RUANG UNTUK PULANG</div>
         <h1>Rumah yang pas.<br/><span>Hidup lebih dekat.</span></h1>
         <p class="intro">Kenali wilayah dan akses transportasinya,<br class="desktop-break"/> lalu temukan tempatmu bertumbuh.</p>
-        <div class="search-box">${icon("search")}<input id="search" aria-label="Cari wilayah, hunian, atau stasiun" type="search" placeholder="Wilayah, hunian, atau stasiun…" autocomplete="off"/><kbd>/</kbd></div>
-        <div id="station-results" class="station-results"></div>
+        <div class="search-box">${icon("search")}<input id="search" aria-label="Cari wilayah, hunian, stasiun, atau tempat" type="search" placeholder="Wilayah, hunian, stasiun, atau tempat…" autocomplete="off"/><kbd>/</kbd></div>
+        <div id="station-results" class="station-results"></div><div id="place-results" class="station-results place-results" aria-live="polite"></div>
         <div class="area-chips" aria-label="Filter wilayah"><button class="chip selected" data-area="Semua" aria-pressed="true">Semua</button>${AREAS.map((area) => `<button class="chip" data-area="${area}" aria-pressed="false">${area}</button>`).join("")}</div>
         <div class="filter-grid"><label>Anggaran beli<select id="budget" aria-label="Anggaran maksimum"><option value="0">Semua anggaran</option><option value="500000000">Hingga Rp 500 juta</option><option value="750000000">Hingga Rp 750 juta</option><option value="1000000000">Hingga Rp 1 miliar</option></select></label><label>Jenis hunian<select id="housing-type" aria-label="Jenis hunian"><option value="Semua">Semua jenis</option><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label></div>
         <div class="commute-filter">${icon("train")}<label for="station-distance">Jarak ke stasiun KRL</label><select id="station-distance" aria-label="Jarak maksimum ke stasiun KRL"><option value="0">Bebas</option><option value="1">≤ 1 km</option><option value="3">≤ 3 km</option><option value="5">≤ 5 km</option></select></div>
@@ -327,6 +333,7 @@ function resetFilters(): void {
   $<HTMLSelectElement>("housing-type").value = "Semua";
   $<HTMLSelectElement>("station-distance").value = "0";
   $("station-results").innerHTML = "";
+  clearPlaces();
   selectArea("Semua");
 }
 
@@ -343,8 +350,56 @@ for (const button of document.querySelectorAll<HTMLButtonElement>(
   button.onclick = () => selectArea(button.dataset.area ?? "Semua");
 for (const id of ["budget", "housing-type", "station-distance", "sort"])
   $(id).onchange = render;
+let placeTimer: ReturnType<typeof setTimeout>;
+let placeRequest: AbortController | undefined;
+function clearPlaces(): void {
+  clearTimeout(placeTimer);
+  placeRequest?.abort();
+  $("place-results").innerHTML = "";
+}
+function searchPlaces(query: string): void {
+  clearPlaces();
+  if (query.length < 3) return;
+  placeTimer = setTimeout(async () => {
+    const request = new AbortController();
+    placeRequest = request;
+    let places: Place[];
+    try {
+      const response = await fetch(
+        `/api/places?${new URLSearchParams({ q: query })}`,
+        { signal: request.signal },
+      );
+      if (!response.ok) throw new Error();
+      places = ((await response.json()) as { places: Place[] }).places;
+    } catch {
+      if (!request.signal.aborted)
+        $("place-results").innerHTML =
+          '<p class="place-note">Pencarian tempat belum tersedia.</p>';
+      return;
+    }
+    if (request.signal.aborted) return;
+    $("place-results").innerHTML = places.length
+      ? `<p class="place-note">Tempat · OpenStreetMap</p>${places
+          .map(
+            (place, index) =>
+              `<button data-place="${index}">${icon("pin")} <span class="place-name"><strong>${esc(place.name)}</strong>${place.detail ? `<small>${esc(place.detail)}</small>` : ""}</span><span>lihat di peta ↗</span></button>`,
+          )
+          .join("")}`
+      : "";
+    for (const button of document.querySelectorAll<HTMLButtonElement>(
+      "[data-place]",
+    ))
+      button.onclick = () => {
+        const place = places[Number(button.dataset.place)];
+        if (!place) return;
+        void map?.showPlace(place);
+        if (matchMedia("(max-width: 760px)").matches) setMobileView("map");
+      };
+  }, 350);
+}
 $("search").oninput = () => {
   render();
+  searchPlaces($<HTMLInputElement>("search").value.trim());
   const query = $<HTMLInputElement>("search").value.trim().toLowerCase();
   const matches =
     query.length >= 3

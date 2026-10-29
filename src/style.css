@@ -1051,6 +1051,29 @@ select {
   margin-left: auto;
   color: #79886d;
 }
+.place-note {
+  margin: 8px 0 0;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: #79886d;
+}
+.place-results .place-name {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin: 0;
+  min-width: 0;
+  color: inherit;
+}
+.place-results .place-name small {
+  color: #79886d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.place-results .place-name + span {
+  flex-shrink: 0;
+}
 .mobile-view {
   display: none;
 }
