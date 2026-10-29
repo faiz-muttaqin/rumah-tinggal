@@ -711,7 +711,8 @@ select {
   margin-left: auto;
   flex-shrink: 0;
 }
-.transjakarta-label {
+.transjakarta-label,
+.community-label {
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1659,6 +1660,10 @@ dialog h3 {
   }
   .layer-control > svg {
     display: none;
+  }
+  .community-label {
+    white-space: normal;
+    line-height: 1.15;
   }
   .layer-control input {
     right: 8px;

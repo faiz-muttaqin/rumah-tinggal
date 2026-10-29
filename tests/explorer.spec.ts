@@ -3,11 +3,12 @@ import { expect, type Page, test } from "@playwright/test";
 const pageErrors = new WeakMap<Page, string[]>();
 const blockedTileRequests = new WeakMap<Page, number>();
 
-// Original synthetic MVT: two crossing streets and one rectangular building.
+// Original synthetic MVT: two crossing streets, one rectangular building, and
+// a grid of fictional mosques and schools in the poi layer.
 // It has no real-world data, labels, or glyph dependencies. Tests exercise
 // rendered vector layers without depending on external tile availability.
 const basemapTile = Buffer.from(
-  "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",
+  "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",
   "base64",
 );
 
@@ -541,7 +542,7 @@ test.describe("mobile explorer", () => {
     hasTouch: true,
   });
 
-  test("keeps six layer switches usable with hunian detail open on a phone", async ({
+  test("keeps seven layer switches usable with hunian detail open on a phone", async ({
     page,
   }) => {
     await cards(page).first().click();
@@ -556,7 +557,7 @@ test.describe("mobile explorer", () => {
       .click();
     await expect(detail).toBeVisible();
     const switches = page.getByRole("checkbox");
-    await expect(switches).toHaveCount(6);
+    await expect(switches).toHaveCount(7);
     for (const control of await switches.all())
       await expect(control).toBeVisible();
     const bounds = await Promise.all(
@@ -575,7 +576,7 @@ test.describe("mobile explorer", () => {
       if (row) row.count++;
       else rows.push({ top: bound.y, count: 1 });
     }
-    expect(rows.map((row) => row.count)).toEqual([3, 3]);
+    expect(rows.map((row) => row.count)).toEqual([3, 3, 1]);
     await expectNoHorizontalOverflow(page);
 
     const expected: Record<MobilityLayer, boolean> = {
@@ -726,4 +727,31 @@ test("anonymous pin tab and place popup ask for Google sign-in without fetching 
   // Clicking it would start the real Google popup, which stays out of this suite.
   await expect(page.locator("#add-pin")).toBeVisible();
   expect(pinRequests, "Anonymous visitors must not fetch pins").toEqual([]);
+});
+
+test("shows nearby mosques and schools from the basemap behind a toggle", async ({
+  page,
+}) => {
+  const toggle = page.getByRole("checkbox", {
+    name: "Masjid dan sekolah sekitar",
+    exact: true,
+  });
+  await expect(toggle).toBeChecked();
+  await expectRenderedAttribute(page, "data-community-features", false);
+  await page.locator("#search").fill("taman uji");
+  await page
+    .locator("#place-results")
+    .getByRole("button", { name: /Taman Uji Menteng/ })
+    .click();
+  await expectRenderedAttribute(page, "data-community-features", true);
+  await page.locator(".maplibregl-popup-close-button").click();
+  await toggle.setChecked(false);
+  await expectRenderedAttribute(page, "data-community-features", false);
+  await expect
+    .poll(async () =>
+      Number(await page.locator("#map").getAttribute("data-road-features")),
+    )
+    .toBeGreaterThan(0);
+  await toggle.setChecked(true);
+  await expectRenderedAttribute(page, "data-community-features", true);
 });

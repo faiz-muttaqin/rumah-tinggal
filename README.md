@@ -8,6 +8,9 @@ Eksplorasi calon hunian Jabodetabek melalui peta wilayah dan transportasi umum, 
 - Lapisan geografis 80 stasiun KRL dan geometri rel OpenStreetMap; pencarian stasiun serta fokus lokasi pada peta.
 - Lapisan MRT Utara–Selatan, LRT Jakarta, dan LRT Jabodebek Cibubur/Bekasi, dengan toggle masing-masing moda. Lapisan TransJakarta mencakup 14 koridor utama BRT dan awalnya tersembunyi. Pencarian mencakup stasiun/halte semua moda; memilih hasil menampilkan lapisan terkait.
 - Toggle bangunan dan marker/detail hunian secara terpisah, dengan jalan tetap terlihat. Bangunan awalnya disembunyikan dan tersedia saat zoom mendekat.
+- Pencarian tempat seperti Google Maps: kotak pencarian juga mencari tempat di Jabodetabek melalui `/api/places` (proksi server ke Photon, data OpenStreetMap, tanpa API key, cache 1 jam dan batas laju). Memilih hasil memfokuskan peta dan membuka popup dengan tautan Google Maps.
+- Masjid & sekolah sekitar: ikon masjid/musala serta sekolah/TK dari lapisan `poi` tile OpenFreeMap tampil otomatis mulai zoom 14, dengan toggle tersendiri (default aktif). Klik ikon untuk tautan Google Maps atau menyimpannya sebagai pin.
+- Pin tempat pribadi: setelah login, tandai tempat penting dengan 10 kategori ikon (masjid, ibadah lain, sekolah, kampus, kesehatan, belanja, taman/olahraga, layanan publik, kantor, lainnya). Pin dibuat dari tombol Tambah pin, titik di peta, atau popup hasil pencarian/masjid/sekolah; tab "Pin tempat" mendaftarnya, dan detail hunian menampilkan tiga pin terdekat (jarak garis lurus). Maksimal 500 pin per akun, disimpan di SQLite per UID.
 - Tautan Google Maps dari detail hunian: lokasi, rute ke hunian, serta rute berjalan ke stasiun terdekat. Jarak dan waktu rute diperiksa di Google Maps.
 - Filter wilayah, anggaran beli, jenis hunian, dan jarak garis lurus ke stasiun; pengurutan harga atau jarak KRL.
 - Delapan contoh hunian sintetis untuk mencoba antarmuka. Semuanya ilustrasi, bukan iklan atau penawaran properti.

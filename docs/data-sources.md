@@ -24,6 +24,12 @@ Peta dasar memakai [OpenFreeMap](https://openfreemap.org/quick_start/), metadata
 
 Bangunan disembunyikan secara default dan baru memiliki lapisan tampilan mulai zoom 12; cakupan bergantung pada pemetaan OSM. Toggle bangunan tidak mengubah jalan. Toggle hunian menyembunyikan marker harga/kartu detail tanpa menghapus daftar atau data; memilih kartu akan mengaktifkannya kembali. Lapisan jalan selalu aktif. Saat penyedia peta dasar tidak tersedia, wilayah, KRL, dan daftar lokal tetap dapat digunakan.
 
+Masjid dan sekolah sekitar berasal dari lapisan `poi` OpenMapTiles pada tile yang sama: `class=place_of_worship` dengan `subclass=muslim` (masjid/musala), serta `class=school` dengan `subclass` `school` atau `kindergarten`. Data ini hanya ada pada tile zoom 14, sehingga ikon tampil mulai zoom 14 dan nama mulai zoom 15,5. Toggle "Masjid & sekolah" hanya menyembunyikan dua lapisan tersebut. Kelengkapan, nama, dan status bergantung pada pemetaan OSM; titik bukan pintu masuk terverifikasi dan tidak membuktikan tempat masih beroperasi. Ikon digambar aplikasi, bukan sprite pihak ketiga.
+
+Pencarian tempat memakai [Photon](https://photon.komoot.io/) (komoot, data © OpenStreetMap contributors, ODbL) melalui endpoint server `/api/places`. Kueri 3–120 karakter dibatasi ke kotak Jabodetabek, hasil maksimal enam, cache memori satu jam, batas 40 permintaan/menit per IP klien dan 300/menit total. Layanan publik Photon tidak memiliki SLA; saat gagal, UI menampilkan bahwa pencarian tempat belum tersedia. Pengujian otomatis men-stub endpoint ini.
+
+Pin tempat adalah data pribadi pengguna (nama, kategori, koordinat, catatan) di tabel SQLite `pins`, terpisah per UID terverifikasi seperti Listingku. Kategori pin dari hasil pencarian hanya tebakan dari nama/jenis OSM dan dapat diubah sebelum disimpan.
+
 Tautan lokasi/rute mengikuti [Google Maps URLs](https://developers.google.com/maps/documentation/urls/get-started), tanpa API key. Koordinat hanya diteruskan ketika pengguna membuka tautan. Rute ke hunian tidak menetapkan asal; pengguna memilihnya di Maps. Rute berjalan ke KRL memakai titik hunian sebagai asal dan titik stasiun terdekat sebagai tujuan. Aplikasi tidak menghitung atau menyimpan jarak/waktu rute Google; jarak pada kartu tetap garis lurus. Lokasi contoh tetap ilustratif dan titik stasiun bukan pintu masuk terverifikasi.
 
 ## Transformasi dan batas ketelitian

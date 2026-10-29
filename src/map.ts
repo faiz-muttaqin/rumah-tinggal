@@ -1,4 +1,5 @@
 import type {
+  FilterSpecification,
   GeoJSONSource,
   Map as MapInstance,
   Marker,
@@ -33,6 +34,47 @@ const MOBILITY_LAYERS = {
 
 const MOBILITY_MODES = ["TransJakarta", "MRT", "LRT"] as const;
 
+// Masjid dan sekolah dari lapisan poi OpenMapTiles (data OSM), hanya ada
+// pada tile zoom 14, sehingga tampil sebagai fasilitas sekitar saat diperbesar.
+const COMMUNITY_FILTER: FilterSpecification = [
+  "any",
+  [
+    "all",
+    ["==", ["get", "class"], "place_of_worship"],
+    ["==", ["get", "subclass"], "muslim"],
+  ],
+  [
+    "all",
+    ["==", ["get", "class"], "school"],
+    ["match", ["get", "subclass"], ["school", "kindergarten"], true, false],
+  ],
+];
+const COMMUNITY_LAYERS = ["community-icons", "community-labels"];
+
+// Gambar ikon secara sinkron agar simbol langsung tersedia saat tile dimuat.
+function communityIcon(category: "masjid" | "sekolah"): ImageData {
+  const size = 48;
+  const canvas = document.createElement("canvas");
+  canvas.width = size;
+  canvas.height = size;
+  const context = canvas.getContext("2d") as CanvasRenderingContext2D;
+  context.fillStyle = PIN_STYLES[category].color;
+  context.strokeStyle = "white";
+  context.lineWidth = 4;
+  context.beginPath();
+  context.arc(size / 2, size / 2, size / 2 - 3, 0, Math.PI * 2);
+  context.fill();
+  context.stroke();
+  context.translate(10, 10);
+  context.scale(28 / 24, 28 / 24);
+  context.lineWidth = 2.2;
+  context.lineCap = "round";
+  context.lineJoin = "round";
+  for (const [, path] of PIN_STYLES[category].icon.matchAll(/ d="([^"]+)"/g))
+    context.stroke(new Path2D(path));
+  return context.getImageData(0, 0, size, size);
+}
+
 export class HousingMap {
   map: MapInstance;
   markers: Marker[] = [];
@@ -42,6 +84,7 @@ export class HousingMap {
   private mobilityPopupMode?: TransitMode;
   private placePopup?: Popup;
   private pinPopup?: Popup;
+  onPinPlace?: (place: Place) => void;
   constructor(
     regions: GeoJSON.FeatureCollection,
     transitKRL: GeoJSON.FeatureCollection,
@@ -115,6 +158,9 @@ export class HousingMap {
       }
       container.dataset.roadFeatures = String(
         this.map.queryRenderedFeatures({ layers: ["basemap-roads"] }).length,
+      );
+      container.dataset.communityFeatures = String(
+        this.map.queryRenderedFeatures({ layers: ["community-icons"] }).length,
       );
       container.dataset.buildingFeatures = String(
         this.map.queryRenderedFeatures({ layers: ["basemap-buildings"] })
@@ -273,6 +319,77 @@ export class HousingMap {
             "circle-stroke-width": 1.3,
           },
         });
+        for (const category of ["masjid", "sekolah"] as const)
+          this.map.addImage(`community-${category}`, communityIcon(category), {
+            pixelRatio: 2,
+          });
+        this.map.addLayer({
+          id: "community-icons",
+          type: "symbol",
+          source: "basemap",
+          "source-layer": "poi",
+          minzoom: 14,
+          filter: COMMUNITY_FILTER,
+          layout: {
+            "icon-image": [
+              "case",
+              ["==", ["get", "class"], "school"],
+              "community-sekolah",
+              "community-masjid",
+            ],
+            "icon-size": ["interpolate", ["linear"], ["zoom"], 14, 0.8, 17, 1],
+            "icon-allow-overlap": true,
+          },
+        });
+        // Label terpisah: jika glyph gagal dimuat, ikon tetap tampil.
+        this.map.addLayer({
+          id: "community-labels",
+          type: "symbol",
+          source: "basemap",
+          "source-layer": "poi",
+          minzoom: 15.5,
+          filter: COMMUNITY_FILTER,
+          layout: {
+            "text-field": ["get", "name"],
+            "text-font": ["Noto Sans Regular"],
+            "text-size": 10,
+            "text-offset": [0, 1.3],
+            "text-anchor": "top",
+            "text-max-width": 9,
+            "text-optional": true,
+          },
+          paint: {
+            "text-color": "#33443a",
+            "text-halo-color": "#fffef9",
+            "text-halo-width": 1.4,
+          },
+        });
+        this.map.on("click", "community-icons", (event) => {
+          const feature = event.features?.[0];
+          if (feature?.geometry.type !== "Point") return;
+          const [lng, lat] = feature.geometry.coordinates;
+          if (typeof lng !== "number" || typeof lat !== "number") return;
+          const school = feature.properties.class === "school";
+          const kind = school
+            ? feature.properties.subclass === "kindergarten"
+              ? "TK / PAUD"
+              : "Sekolah"
+            : "Masjid / musala";
+          this.openPlacePopup({
+            id: String(feature.id ?? ""),
+            name: String(feature.properties.name || kind),
+            detail: "OpenStreetMap",
+            kind,
+            lat,
+            lng,
+          });
+        });
+        this.map.on("mouseenter", "community-icons", () => {
+          this.map.getCanvas().style.cursor = "pointer";
+        });
+        this.map.on("mouseleave", "community-icons", () => {
+          this.map.getCanvas().style.cursor = "";
+        });
         this.map.addSource("focus", {
           type: "geojson",
           data: { type: "FeatureCollection", features: [] },
@@ -346,6 +463,7 @@ export class HousingMap {
             this.map.queryRenderedFeatures(event.point, {
               layers: [
                 "stations",
+                "community-icons",
                 ...MOBILITY_MODES.map(
                   (mode) => `${MOBILITY_LAYERS[mode].prefix}-stations`,
                 ),
@@ -420,8 +538,13 @@ export class HousingMap {
     });
   }
 
-  async showPlace(place: Place, onPin?: () => void): Promise<void> {
+  async showPlace(place: Place): Promise<void> {
     await this.focus(place.lng, place.lat, 16);
+    this.openPlacePopup(place);
+  }
+
+  private openPlacePopup(place: Place): void {
+    const onPin = this.onPinPlace && (() => this.onPinPlace?.(place));
     this.placePopup?.remove();
     const detail = [place.kind, place.detail].filter(Boolean).join(" · ");
     const content = document.createElement("div");
@@ -546,6 +669,17 @@ export class HousingMap {
       this.mobilityPopup = undefined;
       this.mobilityPopupMode = undefined;
     }
+  }
+
+  async showCommunity(visible: boolean): Promise<void> {
+    await this.ready;
+    for (const layer of COMMUNITY_LAYERS)
+      this.map.setLayoutProperty(
+        layer,
+        "visibility",
+        visible ? "visible" : "none",
+      );
+    if (!visible) this.placePopup?.remove();
   }
 
   async showBuildings(visible: boolean): Promise<void> {

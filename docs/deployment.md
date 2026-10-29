@@ -48,6 +48,8 @@ SQLite privat berada di `/var/lib/rumah-tinggal/rumah-tinggal.sqlite`, beserta s
 
 Unit aktif adalah `/etc/systemd/system/rumah-tinggal.service`, berstatus enabled agar berjalan saat boot. Pantau dengan `systemctl status rumah-tinggal` dan `journalctl -u rumah-tinggal`. Mengganti source checkout tidak memperbarui rilis aktif: build, siapkan rilis baru, pilih symlink `current`, kemudian restart service dan verifikasi health. Pertahankan direktori state dan konfigurasi saat memperbarui atau rollback.
 
+Setiap rilis produksi diberi tag Git beranotasi `release-YYYYMMDD-HHMM` (WIB) yang dipush ke origin. Untuk rollback cepat, arahkan `current` ke direktori rilis sebelumnya lalu restart; untuk perbaikan, mulai dari tag terkait. Perubahan skema saat ini hanya aditif (tabel `pins`), sehingga rilis lama tetap kompatibel dengan database baru. Ambil backup SQLite konsisten sebelum rilis yang mengubah skema.
+
 [nginx.conf.example](../deploy/nginx.conf.example) meneruskan HTTPS ke loopback port 3100 serta menolak dotfiles dan sejumlah path/ekstensi sensitif. Root ACME contoh adalah `/var/www/rumah-tinggal/public`, terpisah dari `/opt` dan database. Ganti `server_name` serta jalur sertifikat; sertifikat dan private key harus tersedia di luar repository sebelum konfigurasi HTTPS bisa lolos `nginx -t`.
 
 ## Peluncuran pada domain final
