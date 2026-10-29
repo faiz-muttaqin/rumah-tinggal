@@ -18,6 +18,14 @@
 
 Tampilkan atribusi tersebut pada informasi sumber peta atau panel sumber data. Atribusi peta dasar dari penyedia tile, bila dipakai, ditambahkan tersendiri.
 
+## Peta dasar dan tautan rute
+
+Peta dasar memakai [OpenFreeMap](https://openfreemap.org/quick_start/), metadata tile `https://tiles.openfreemap.org/planet`, dan skema [OpenMapTiles](https://openmaptiles.org/docs/schema/) dari data OpenStreetMap. Style `src/basemap.ts` ditulis untuk aplikasi: jalan, air, nama tempat, dan bangunan sebagai lapisan terpisah. Tidak menyalin style Positron/Liberty. Glyph Noto Sans disediakan oleh OpenFreeMap. Atribusi OpenFreeMap, © OpenMapTiles, dan © OpenStreetMap contributors ditampilkan pada peta dan dialog sumber.
+
+Bangunan disembunyikan secara default dan baru memiliki lapisan tampilan mulai zoom 12; cakupan bergantung pada pemetaan OSM. Toggle bangunan tidak mengubah jalan. Toggle hunian menyembunyikan marker harga/kartu detail tanpa menghapus daftar atau data; memilih kartu akan mengaktifkannya kembali. Lapisan jalan selalu aktif. Saat penyedia peta dasar tidak tersedia, wilayah, KRL, dan daftar lokal tetap dapat digunakan.
+
+Tautan lokasi/rute mengikuti [Google Maps URLs](https://developers.google.com/maps/documentation/urls/get-started), tanpa API key. Koordinat hanya diteruskan ketika pengguna membuka tautan. Rute ke hunian tidak menetapkan asal; pengguna memilihnya di Maps. Rute berjalan ke KRL memakai titik hunian sebagai asal dan titik stasiun terdekat sebagai tujuan. Aplikasi tidak menghitung atau menyimpan jarak/waktu rute Google; jarak pada kartu tetap garis lurus. Lokasi contoh tetap ilustratif dan titik stasiun bukan pintu masuk terverifikasi.
+
 ## Transformasi dan batas ketelitian
 
 1. Pilih kode `adm2_pcode` yang cocok dengan 14 kode pada tabel di bawah, lalu hilangkan prefiks `ID`.

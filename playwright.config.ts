@@ -1,6 +1,6 @@
 import { defineConfig, devices } from "@playwright/test";
 
-const baseURL = "http://127.0.0.1:3100";
+const baseURL = "http://127.0.0.1:13100";
 
 export default defineConfig({
   testDir: "./tests",
@@ -33,8 +33,13 @@ export default defineConfig({
   webServer: {
     command: "./dev start",
     url: baseURL,
-    reuseExistingServer: true,
+    reuseExistingServer: false,
     timeout: 120_000,
-    env: { HOST: "127.0.0.1", PORT: "3100" },
+    env: {
+      HOST: "127.0.0.1",
+      PORT: "13100",
+      APP_ORIGIN: baseURL,
+      DATA_DIR: ".runtime/e2e",
+    },
   },
 });

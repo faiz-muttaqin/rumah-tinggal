@@ -3,6 +3,14 @@ import { expect, type Page, test } from "@playwright/test";
 const pageErrors = new WeakMap<Page, string[]>();
 const blockedTileRequests = new WeakMap<Page, number>();
 
+// Original synthetic MVT: two crossing streets and one rectangular building.
+// It has no real-world data, labels, or glyph dependencies. Tests exercise
+// rendered vector layers without depending on external tile availability.
+const basemapTile = Buffer.from(
+  "GkJ4AgoOdHJhbnNwb3J0YXRpb24ogCASGwgBEgIAABgCIhEJAIAgCoBAAAn/H/8fCgCAQBoFY2xhc3MiBwoFbWlub3IaKXgCCghidWlsZGluZyiAIBIYCAISABgDIhAJgAiACBqAMAAAgDD/LwAP",
+  "base64",
+);
+
 function mapRegion(page: Page) {
   return page.getByRole("region", {
     name: "Peta hunian Jabodetabek",
@@ -46,11 +54,30 @@ test.beforeEach(async ({ page }) => {
   page.on("console", (message) => {
     if (/Worker failed/i.test(message.text())) errors.push(message.text());
   });
-  // Automated browser runs use local vectors only. Never request public OSM
-  // raster tiles while the suite pans, fits bounds, or creates fresh contexts.
+  // Never request public OSM raster tiles during automation.
   await page.route("**/tile.openstreetmap.org/**", async (route) => {
     blockedTileRequests.set(page, (blockedTileRequests.get(page) ?? 0) + 1);
     await route.abort("blockedbyclient");
+  });
+  await page.route("**/tiles.openfreemap.org/**", async (route) => {
+    const path = new URL(route.request().url()).pathname;
+    if (path === "/planet") {
+      await route.fulfill({
+        json: {
+          tilejson: "3.0.0",
+          tiles: ["https://tiles.openfreemap.org/test/{z}/{x}/{y}.pbf"],
+          minzoom: 0,
+          maxzoom: 14,
+        },
+      });
+    } else if (path.startsWith("/test/")) {
+      await route.fulfill({
+        contentType: "application/x-protobuf",
+        body: basemapTile,
+      });
+    } else {
+      await route.abort("blockedbyclient");
+    }
   });
   await page.goto("/");
   // Phones initially show the list; the hidden map remains mounted.
@@ -190,9 +217,14 @@ test("toggles actual rendered KRL station features while keeping regions visible
   await expectRenderedVectors(page);
 });
 
-test("local regions and KRL remain usable when every OSM raster tile is blocked", async ({
+test("local regions and KRL remain usable when the external basemap is unavailable", async ({
   page,
 }) => {
+  await page.route("**/tiles.openfreemap.org/**", async (route) => {
+    blockedTileRequests.set(page, (blockedTileRequests.get(page) ?? 0) + 1);
+    await route.abort("blockedbyclient");
+  });
+  await page.reload();
   await expect
     .poll(() => blockedTileRequests.get(page) ?? 0)
     .toBeGreaterThan(0);
@@ -204,6 +236,122 @@ test("local regions and KRL remain usable when every OSM raster tile is blocked"
   await page.getByRole("button", { name: "Depok", exact: true }).click();
   await expect(cards(page)).toHaveCount(1);
   await expectRenderedVectors(page);
+});
+
+test("hides hunian markers and details while preserving streets, KRL, and list filters", async ({
+  page,
+}) => {
+  await cards(page).first().click();
+  await expect(page.locator("#detail-card")).toBeVisible();
+  const toggle = page.getByRole("checkbox", {
+    name: "Marker dan detail hunian",
+    exact: true,
+  });
+  await toggle.setChecked(false);
+  await expect(page.locator(".price-pin")).toHaveCount(0);
+  await expect(page.locator("#detail-card")).toBeHidden();
+  await expect
+    .poll(async () =>
+      Number(await page.locator("#map").getAttribute("data-road-features")),
+    )
+    .toBeGreaterThan(0);
+  await page.getByRole("button", { name: "Depok", exact: true }).click();
+  await expect(cards(page)).toHaveCount(1);
+  await expect(page.locator(".price-pin")).toHaveCount(0);
+  await expectRenderedVectors(page);
+  await cards(page).first().click();
+  await expect(toggle).toBeChecked();
+  await expect(page.locator(".price-pin")).toHaveCount(1);
+  await expect(page.locator("#detail-card")).toBeVisible();
+  await page
+    .getByRole("button", { name: "Tutup detail hunian", exact: true })
+    .click();
+  await toggle.setChecked(false);
+  await toggle.setChecked(true);
+  await expect(page.locator(".price-pin")).toHaveCount(1);
+  await expect(page.locator("#detail-card")).toBeHidden();
+});
+
+test("toggles actually rendered buildings independently from roads and hunian", async ({
+  page,
+}) => {
+  await cards(page).first().click();
+  await page
+    .getByRole("button", { name: "Tutup detail hunian", exact: true })
+    .click();
+  const toggle = page.getByRole("checkbox", {
+    name: "Bangunan pada peta",
+    exact: true,
+  });
+  await expect(toggle).not.toBeChecked();
+  await toggle.setChecked(true);
+  await expect
+    .poll(async () =>
+      Number(await page.locator("#map").getAttribute("data-building-features")),
+    )
+    .toBeGreaterThan(0);
+  await expect
+    .poll(async () =>
+      Number(await page.locator("#map").getAttribute("data-road-features")),
+    )
+    .toBeGreaterThan(0);
+  await toggle.setChecked(false);
+  await expect
+    .poll(async () =>
+      Number(await page.locator("#map").getAttribute("data-building-features")),
+    )
+    .toBe(0);
+  await expect
+    .poll(async () =>
+      Number(await page.locator("#map").getAttribute("data-road-features")),
+    )
+    .toBeGreaterThan(0);
+  await expect(page.locator(".price-pin")).toHaveCount(8);
+});
+
+test("links the selected hunian to Google Maps location, directions, and a walking route to KRL", async ({
+  page,
+}) => {
+  await page
+    .getByTestId("listing-card")
+    .filter({ hasText: "Rumah kompak di Bintaro" })
+    .click();
+  const detail = page.locator("#detail-card");
+  const links = detail.locator("[data-map-link]");
+  await expect(links).toHaveCount(3);
+  for (const link of await links.all()) {
+    const url = new URL((await link.getAttribute("href")) ?? "");
+    expect(url.origin).toBe("https://www.google.com");
+    expect(url.searchParams.get("api")).toBe("1");
+    await expect(link).toHaveAttribute("target", "_blank");
+    await expect(link).toHaveAttribute("rel", "noopener noreferrer");
+  }
+  const location = new URL(
+    (await detail.locator('[data-map-link="location"]').getAttribute("href")) ??
+      "",
+  );
+  expect(location.pathname).toBe("/maps/search/");
+  expect(location.searchParams.get("query")).toBe("-6.279,106.737");
+  const directions = new URL(
+    (await detail
+      .locator('[data-map-link="directions"]')
+      .getAttribute("href")) ?? "",
+  );
+  expect(directions.pathname).toBe("/maps/dir/");
+  expect(directions.searchParams.get("destination")).toBe("-6.279,106.737");
+  expect(directions.searchParams.has("origin")).toBe(false);
+  const walk = new URL(
+    (await detail.locator('[data-map-link="station"]').getAttribute("href")) ??
+      "",
+  );
+  expect(walk.searchParams.get("origin")).toBe("-6.279,106.737");
+  expect(walk.searchParams.get("travelmode")).toBe("walking");
+  await expect(detail.locator('[data-map-link="station"]')).toContainText(
+    "Pondok Ranji",
+  );
+  expect(walk.searchParams.get("destination")).toBe("-6.2766831,106.7446926");
+  await expect(detail).toContainText("garis lurus");
+  await expect(detail).toContainText("ilustrasi");
 });
 
 test("explains attribution and illustrative straight-line estimates in the source dialog", async ({
@@ -255,6 +403,49 @@ test.describe("mobile explorer", () => {
     viewport: { width: 390, height: 844 },
     isMobile: true,
     hasTouch: true,
+  });
+
+  test("offers Maps links and usable layer toggles with a hunian selected", async ({
+    page,
+  }, testInfo) => {
+    await cards(page).first().click();
+    await expect(mapRegion(page)).toBeVisible();
+    const detail = page.locator("#detail-card");
+    await expect(detail).toBeVisible();
+    await detail
+      .locator('[data-map-link="directions"]')
+      .scrollIntoViewIfNeeded();
+    await expect(detail.locator('[data-map-link="directions"]')).toBeVisible();
+    await expectNoHorizontalOverflow(page);
+    await page.screenshot({
+      path: testInfo.outputPath("mobile-hunian-detail.png"),
+      fullPage: true,
+    });
+    const toggle = page.getByRole("checkbox", {
+      name: "Marker dan detail hunian",
+      exact: true,
+    });
+    await toggle.setChecked(false);
+    await expect(detail).toBeHidden();
+    await expect(page.locator(".price-pin")).toHaveCount(0);
+    const buildings = page.getByRole("checkbox", {
+      name: "Bangunan pada peta",
+      exact: true,
+    });
+    await buildings.setChecked(true);
+    await expect
+      .poll(async () =>
+        Number(
+          await page.locator("#map").getAttribute("data-building-features"),
+        ),
+      )
+      .toBeGreaterThan(0);
+    await expect
+      .poll(async () =>
+        Number(await page.locator("#map").getAttribute("data-road-features")),
+      )
+      .toBeGreaterThan(0);
+    await expectNoHorizontalOverflow(page);
   });
 
   test("switches map/list without horizontal overflow and supports keyboard controls", async ({

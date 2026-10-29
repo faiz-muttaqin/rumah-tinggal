@@ -10,12 +10,14 @@ Gunakan Node.js 26.13.0 LTS dan dependency yang dipin pada lockfile. Dari checko
 ./dev install --frozen-lockfile
 ./dev check
 ./dev test
-./dev test:e2e
 ./dev build
+./dev test:e2e
 ./dev start
 ```
 
 Backend berjalan pada `127.0.0.1:3100`, melayani hasil build `dist/` dan API. `GET /api/health` memberi status proses; endpoint tersebut tidak membuktikan bahwa login Google dan domain OAuth sudah siap. Jangan menjalankan Vite dev server sebagai proses produksi.
+
+Playwright memakai server QA sendiri pada `127.0.0.1:13100`, `APP_ORIGIN` yang sesuai, dan database `.runtime/e2e`. Suite menolak memakai server yang sudah ada pada port QA dan tidak memakai state produksi. Tes peta memakai tile sintetis; jalankan build sebelum suite agar kode terbaru yang diuji.
 
 Untuk pengembangan, `./dev dev:api` memakai port 3100 dan `./dev dev` memakai port 3101. Atur `.env` secara eksplisit menjadi `APP_ORIGIN=http://127.0.0.1:3101` lalu buka origin tersebut. Saat menjalankan hasil build lokal, gunakan `APP_ORIGIN=http://127.0.0.1:3100`. Domain produksi memakai origin HTTPS final. Jangan membuka pengecualian origin untuk mengatasi perbedaan port.
 

@@ -679,7 +679,9 @@ select {
   background: #fffef9f5;
   border: 1px solid #dde4d8;
   border-radius: 10px;
-  padding: 14px;
+  padding: 11px;
+  min-width: 165px;
+  min-height: 42px;
   box-shadow: 0 4px 20px #304a3810;
   position: relative;
   cursor: pointer;
@@ -704,6 +706,7 @@ select {
   background: #b8c2b1;
   display: block;
   pointer-events: none;
+  margin-left: auto;
 }
 .switch:after {
   content: "";
@@ -725,19 +728,15 @@ select {
   outline: 3px solid var(--focus);
   outline-offset: 3px;
 }
-.basemap-control {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  padding: 8px 10px;
-  border-radius: 6px;
-  font-size: 11px;
+.map-road-note {
   background: #fffef9ee;
-  cursor: pointer;
-  color: #65775d;
-}
-.basemap-control input {
-  accent-color: var(--green);
+  border-radius: 5px;
+  padding: 5px 7px;
+  color: #52644d;
+  font-size: 10px;
+  max-width: 180px;
+  text-align: right;
+  line-height: 1.5;
 }
 .rail-legend {
   position: absolute;
@@ -788,9 +787,6 @@ select {
   height: 11px;
 }
 .add-floating {
-  position: absolute;
-  top: 121px;
-  right: 24px;
   display: flex;
   align-items: center;
   gap: 7px;
@@ -946,6 +942,24 @@ select {
 }
 .detail-card .button {
   margin-top: 6px;
+}
+.maps-links {
+  margin-top: 10px;
+}
+.maps-links .button {
+  font-size: 11px;
+  line-height: 1.6;
+  text-decoration: none;
+  justify-content: flex-start;
+}
+.maps-links .button svg {
+  flex-shrink: 0;
+}
+.maps-links p {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #52644d;
+  margin: 9px 0;
 }
 .empty-state {
   padding: 35px 6px;
@@ -1409,20 +1423,33 @@ dialog h3 {
   }
   .map-tools {
     top: 96px;
+    left: 14px;
     right: 14px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
   }
   .layer-control {
     font-size: 11px;
-    padding: 11px;
+    padding: 8px;
+    min-width: 0;
+    flex: 1;
+    gap: 5px;
+  }
+  .layer-control > svg {
+    display: none;
   }
   .layer-control input {
-    right: 11px;
+    right: 8px;
+  }
+  .map-road-note {
+    flex-basis: 100%;
+    max-width: none;
   }
   .add-floating {
-    top: 192px;
-    right: 14px;
     font-size: 11px;
     min-height: 40px;
+    margin-left: auto;
   }
   .map-bottom-note {
     bottom: 98px;
@@ -1443,10 +1470,10 @@ dialog h3 {
   }
   .detail-card {
     left: 14px;
-    bottom: 174px;
+    bottom: 104px;
     width: calc(100% - 28px);
     max-width: calc(100% - 28px);
-    max-height: calc(100% - 280px);
+    max-height: calc(100% - 340px);
     padding: 17px;
   }
   .detail-card h2 {

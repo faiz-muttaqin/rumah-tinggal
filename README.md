@@ -6,13 +6,15 @@ Eksplorasi calon hunian Jabodetabek melalui peta wilayah dan akses KRL, dengan k
 
 - Peta interaktif dengan 14 batas kabupaten/kota, dikelompokkan menjadi Jakarta, Bogor, Depok, Tangerang, dan Bekasi.
 - Lapisan geografis 80 stasiun KRL dan geometri rel OpenStreetMap; pencarian stasiun serta fokus lokasi pada peta.
+- Toggle bangunan dan marker/detail hunian secara terpisah, dengan jalan tetap terlihat. Bangunan awalnya disembunyikan dan tersedia saat zoom mendekat.
+- Tautan Google Maps dari detail hunian: lokasi, rute ke hunian, serta rute berjalan ke stasiun terdekat. Jarak dan waktu rute diperiksa di Google Maps.
 - Filter wilayah, anggaran beli, jenis hunian, dan jarak garis lurus ke stasiun; pengurutan harga atau jarak KRL.
 - Delapan contoh hunian sintetis untuk mencoba antarmuka. Semuanya ilustrasi, bukan iklan atau penawaran properti.
 - Listingku: tambah lokasi dan catatan survei, simpan contoh sebagai titik awal, serta hapus listing. Data disimpan di SQLite per UID pengguna terverifikasi.
 - Setiap akun dapat menyimpan hingga 500 listing; menghapus listing membuka slot kembali.
 - Tampilan responsif dengan pilihan daftar/peta pada layar kecil. Daftar tetap dapat digunakan jika WebGL tidak tersedia.
 
-Belum ada katalog properti nyata, pengambilan iklan otomatis, jadwal/tarif KRL, rute perjalanan, atau estimasi waktu tempuh. Jarak adalah garis lurus ke titik stasiun OSM, bukan jarak menuju pintu masuk atau rute berjalan. Integrasi popup Google sudah dibuat; alur OAuth Google nyata belum diuji melalui browser karena pengaturan domain masih perlu diselesaikan.
+Belum ada katalog properti nyata, pengambilan iklan otomatis, jadwal/tarif KRL, atau perhitungan rute/waktu tempuh di dalam aplikasi. Jarak pada kartu adalah garis lurus ke titik stasiun OSM. Tautan Google Maps memakai koordinat hunian dan titik stasiun, bukan pintu masuk yang telah diverifikasi. Integrasi popup Google sudah dibuat; alur OAuth Google nyata belum diuji melalui browser karena pengaturan domain masih perlu diselesaikan.
 
 Lihat [sumber batas wilayah](docs/data-sources.md) dan [sumber serta keterbatasan data KRL](docs/transit-data.md). Pola peta Nafkah dipakai sebagai referensi; analisis kode dengan Graphify dilakukan di direktori sementara dan keluarannya tidak dimasukkan repository.
 
@@ -60,16 +62,18 @@ Buka `http://127.0.0.1:3101`; Vite meneruskan `/api` ke backend port 3100. Untuk
 ./dev install --frozen-lockfile
 ./dev check
 ./dev test
-./dev test:e2e
 ./dev build
+./dev test:e2e
 ```
 
 Tes keamanan berjalan pada repository Git sementara; tes backend memakai token bertanda tangan offline, HTTP loopback, dan SQLite sementara. Tes browser memeriksa antarmuka publik; login Google nyata memerlukan pengujian terpisah setelah authorized domain/OAuth siap. Playwright memerlukan browser Chromium yang sesuai pada mesin pengujian.
 
-Worker MapLibre 6 dibundel dan di-host bersama aplikasi. Peta jalan memakai tile
-OpenStreetMap dengan cache browser standar dan atribusi; lapisan wilayah/KRL tetap
-lokal saat tile tidak tersedia. Tes browser memblokir request tile eksternal,
-sesuai [kebijakan tile OSM](https://operations.osmfoundation.org/policies/tiles/).
+Worker MapLibre 6 dibundel dan di-host bersama aplikasi. Peta jalan/bangunan memakai
+tile vektor OpenFreeMap dengan atribusi OpenMapTiles dan OpenStreetMap; style ringkas
+dibuat di aplikasi, tanpa API key. Wilayah/KRL tetap lokal saat tile tidak tersedia.
+Tes browser memakai tile sintetis lokal dan memblokir seluruh request tile eksternal.
+Playwright berjalan di port QA 13100 dengan database `.runtime/e2e`, terpisah dari
+layanan produksi 3100. Lihat [catatan peta dasar](docs/data-sources.md#peta-dasar-dan-tautan-rute).
 
 ## Privasi dan Git
 

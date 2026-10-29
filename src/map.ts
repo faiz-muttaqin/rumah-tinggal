@@ -1,6 +1,7 @@
 import type { GeoJSONSource, Map as MapInstance, Marker } from "maplibre-gl";
 import * as maplibregl from "maplibre-gl";
 import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
+import { BASEMAP_GLYPHS, BASEMAP_LAYERS, BASEMAP_SOURCE } from "./basemap.ts";
 import { escapeHTML, money } from "./geo.ts";
 import type { Area, Listing } from "./types.ts";
 
@@ -37,6 +38,7 @@ export class HousingMap {
       ],
       style: {
         version: 8,
+        glyphs: BASEMAP_GLYPHS,
         sources: {},
         layers: [
           {
@@ -77,10 +79,19 @@ export class HousingMap {
       }).length;
       container.dataset.regionFeatures = String(regionsCount);
       container.dataset.stationFeatures = String(stationsCount);
+      container.dataset.roadFeatures = String(
+        this.map.queryRenderedFeatures({ layers: ["basemap-roads"] }).length,
+      );
+      container.dataset.buildingFeatures = String(
+        this.map.queryRenderedFeatures({ layers: ["basemap-buildings"] })
+          .length,
+      );
       container.setAttribute("aria-busy", "false");
     });
     this.ready = new Promise((resolve) =>
       this.map.once("load", () => {
+        this.map.addSource("basemap", BASEMAP_SOURCE);
+        for (const layer of BASEMAP_LAYERS) this.map.addLayer(layer);
         this.map.addSource("regions", { type: "geojson", data: regions });
         this.map.addLayer({
           id: "region-fill",
@@ -203,22 +214,6 @@ export class HousingMap {
         this.map.on("mouseleave", "stations", () => {
           this.map.getCanvas().style.cursor = "";
         });
-        this.map.addSource("basemap", {
-          type: "raster",
-          tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
-          tileSize: 256,
-          attribution:
-            '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a>',
-        });
-        this.map.addLayer(
-          {
-            id: "basemap",
-            type: "raster",
-            source: "basemap",
-            paint: { "raster-opacity": 0.8, "raster-saturation": -0.7 },
-          },
-          "region-fill",
-        );
         resolve();
       }),
     );
@@ -274,6 +269,14 @@ export class HousingMap {
     });
   }
 
+  async clearFocus(): Promise<void> {
+    await this.ready;
+    (this.map.getSource("focus") as GeoJSONSource).setData({
+      type: "FeatureCollection",
+      features: [],
+    });
+  }
+
   async showArea(area: string): Promise<void> {
     await this.ready;
     this.map.setPaintProperty(
@@ -304,10 +307,10 @@ export class HousingMap {
       );
   }
 
-  async showBasemap(visible: boolean): Promise<void> {
+  async showBuildings(visible: boolean): Promise<void> {
     await this.ready;
     this.map.setLayoutProperty(
-      "basemap",
+      "basemap-buildings",
       "visibility",
       visible ? "visible" : "none",
     );

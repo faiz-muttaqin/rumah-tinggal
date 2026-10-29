@@ -5,6 +5,11 @@ import { getUser, initializeAuth, login, logout, privateAPI } from "./auth.ts";
 import { demoListings } from "./demo.ts";
 import { escapeHTML as esc, money, nearestStation } from "./geo.ts";
 import { HousingMap } from "./map.ts";
+import {
+  googleMapsDirections,
+  googleMapsLocation,
+  googleMapsWalkToStation,
+} from "./maps-links.ts";
 import { type AppConfig, AREAS, type Listing, type Station } from "./types.ts";
 
 const icons = {
@@ -58,15 +63,20 @@ $("app").innerHTML = `
       <div id="map" class="map" aria-label="Peta interaktif, gunakan tombol panah untuk menggeser"></div>
       <div class="map-heading"><span class="map-heading-icon">${icon("pin")}</span><div><strong>Jabodetabek</strong><span>5 area · <span id="station-count">Memuat</span> stasiun KRL</span></div><button id="map-reset" class="icon-button" aria-label="Tampilkan seluruh Jabodetabek">${icon("target")}</button></div>
       <div id="map-status" class="map-status" role="status">Peta dasar belum termuat. Wilayah dan KRL tetap bisa dijelajahi.</div>
-      <div class="map-tools"><label class="layer-control">${icon("train")} Jalur KRL <input id="rail-toggle" aria-label="Jalur KRL" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label><label class="basemap-control"><input id="basemap-toggle" type="checkbox" checked/> Peta jalan</label></div>
+      <div class="map-tools" role="group" aria-label="Lapisan peta">
+        <label class="layer-control">${icon("train")} Jalur KRL <input id="rail-toggle" aria-label="Jalur KRL" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
+        <label class="layer-control">${icon("home")} Bangunan <input id="buildings-toggle" aria-label="Bangunan pada peta" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
+        <label class="layer-control">${icon("pin")} Hunian <input id="listings-toggle" aria-label="Marker dan detail hunian" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
+        <span class="map-road-note">Jalan selalu tampil · bangunan saat diperbesar</span>
+        <button class="add-floating" id="add-listing">${icon("plus")} Tambah listing</button>
+      </div>
       <div class="rail-legend" id="rail-legend"><span><i style="--line:#b33c39"></i>Bogor / Nambo</span><span><i style="--line:#2d6da6"></i>Cikarang</span><span><i style="--line:#278365"></i>Rangkasbitung</span><span><i style="--line:#956542"></i>Tangerang</span><span><i style="--line:#c95d9a"></i>Tj. Priok</span></div>
       <div class="map-bottom-note">${icon("info")} Jarak stasiun dihitung garis lurus, bukan rute berjalan kaki.</div>
-      <button class="add-floating" id="add-listing">${icon("plus")} Tambah listing</button>
       <div id="detail-card" class="detail-card" hidden></div>
     </section>
   </main>
   <div class="mobile-view"><button id="mobile-map">${icon("pin")} Peta</button><button id="mobile-list" class="active">${icon("home")} Daftar</button></div>
-  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><span class="eyebrow">TRANSPARANSI DATA</span><button class="icon-button" data-close="sources-dialog" aria-label="Tutup sumber data">${icon("close")}</button></div><h2 id="sources-title">Sumber & catatan data</h2><div class="source-block"><h3>Wilayah Jabodetabek</h3><p>14 batas kabupaten/kota dari geometri Nafkah / HDX COD-AB, disederhanakan untuk gambaran wilayah. Batas ini tidak cukup rinci untuk memastikan alamat atau batas bidang tanah. Kepulauan Seribu sangat disederhanakan pada sumber.</p><a href="https://gitlab.com/adenaufal/nafkah" target="_blank" rel="noopener noreferrer">Nafkah · Ade Naufal · CC BY 4.0 ↗</a></div><div class="source-block"><h3>Jalur & stasiun KRL</h3><p>Geometri rel dan titik stasiun dari OpenStreetMap, snapshot 29 Oktober 2026. Lapisan ini memberi konteks spasial, tanpa jadwal, tarif, status operasi, atau waktu tempuh aktual.</p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL ↗</a></div><div class="source-block"><h3>Listing & jarak</h3><p>Semua hunian pada tab Contoh hunian adalah data ilustratif, bukan iklan atau penawaran properti. Listingku berisi data pribadi yang kamu masukkan sendiri. Jarak ke KRL adalah garis lurus ke titik stasiun terdekat, bukan akses pintu masuk atau rute berjalan.</p></div><p class="fine-print">Peta dasar © OpenStreetMap contributors. Tampilan terinspirasi pola peta Nafkah; implementasi aplikasi dibuat untuk Rumah Tinggal.</p></dialog>
+  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><span class="eyebrow">TRANSPARANSI DATA</span><button class="icon-button" data-close="sources-dialog" aria-label="Tutup sumber data">${icon("close")}</button></div><h2 id="sources-title">Sumber & catatan data</h2><div class="source-block"><h3>Wilayah Jabodetabek</h3><p>14 batas kabupaten/kota dari geometri Nafkah / HDX COD-AB, disederhanakan untuk gambaran wilayah. Batas ini tidak cukup rinci untuk memastikan alamat atau batas bidang tanah. Kepulauan Seribu sangat disederhanakan pada sumber.</p><a href="https://gitlab.com/adenaufal/nafkah" target="_blank" rel="noopener noreferrer">Nafkah · Ade Naufal · CC BY 4.0 ↗</a></div><div class="source-block"><h3>Jalur & stasiun KRL</h3><p>Geometri rel dan titik stasiun dari OpenStreetMap, snapshot 29 Oktober 2026. Lapisan ini memberi konteks spasial, tanpa jadwal, tarif, status operasi, atau waktu tempuh aktual.</p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL ↗</a></div><div class="source-block"><h3>Listing & jarak</h3><p>Semua hunian pada tab Contoh hunian adalah data ilustratif, bukan iklan atau penawaran properti. Listingku berisi data pribadi yang kamu masukkan sendiri. Jarak ke KRL adalah garis lurus ke titik stasiun terdekat, bukan akses pintu masuk atau rute berjalan.</p></div><div class="source-block"><h3>Peta jalan & bangunan</h3><p>Peta vektor OpenFreeMap, skema © OpenMapTiles, data © OpenStreetMap contributors. Bangunan dapat disembunyikan terpisah; jalan tetap tampil. Cakupan bangunan mengikuti data OSM.</p><a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">OpenFreeMap · OpenMapTiles · OpenStreetMap ↗</a></div><p class="fine-print">Peta dasar OpenFreeMap · © OpenMapTiles · © OpenStreetMap contributors. Tampilan terinspirasi pola peta Nafkah; implementasi aplikasi dibuat untuk Rumah Tinggal.</p></dialog>
   <dialog id="listing-dialog" aria-labelledby="listing-title"><div class="dialog-header"><span class="eyebrow">KOLEKSI PRIBADIMU</span><button class="icon-button" data-close="listing-dialog" aria-label="Tutup tambah listing">${icon("close")}</button></div><h2 id="listing-title">Tambahkan calon rumah</h2><p class="dialog-intro">Simpan lokasi, harga beli, dan catatan survei. Hanya akunmu yang dapat melihatnya.</p><form id="listing-form"><label>Nama hunian<input name="title" required maxlength="160" placeholder="Contoh: Rumah dekat Stasiun Pondok Ranji"/></label><div class="form-grid"><label>Wilayah<select name="area">${AREAS.map((area) => `<option>${area}</option>`).join("")}</select></label><label>Kecamatan / lingkungan<input name="district" required maxlength="100"/></label><label>Harga beli (Rp)<input name="price" type="number" min="1" max="1000000000000" required/></label><label>Jenis<select name="type"><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label><label>Kamar tidur<input name="bedrooms" type="number" min="0" max="30" value="2" required/></label><label>Luas tanah / unit (m²)<input name="landArea" type="number" min="1" max="100000" required/></label><label>Latitude<input id="form-lat" name="lat" type="number" step="any" min="-6.85" max="-5.75" required value="-6.3"/></label><label>Longitude<input id="form-lng" name="lng" type="number" step="any" min="106.3" max="107.31" required value="106.8"/></label></div><button type="button" id="pick-map" class="text-button">${icon("pin")} Pilih koordinat di peta</button><label>Tautan sumber (opsional)<input name="sourceUrl" type="url" maxlength="2000" placeholder="https://…"/></label><label>Catatan survei (opsional)<textarea name="notes" maxlength="3000" rows="3" placeholder="Akses jalan, kondisi lingkungan, hal yang perlu dicek…"></textarea></label><p id="form-error" class="form-error" role="alert"></p><button class="button primary wide" type="submit">Simpan ke Listingku ${icon("arrow")}</button></form></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 `;
@@ -77,6 +87,7 @@ let privateListings: Listing[] = [];
 let collection: "demo" | "private" = "demo";
 let selectedArea = "Semua";
 let selectedListing: Listing | undefined;
+let listingsVisible = true;
 let pickingPoint = false;
 let toastTimer: ReturnType<typeof setTimeout>;
 
@@ -169,10 +180,19 @@ function render(): void {
     selectedListing &&
     !listings.some((listing) => listing.id === selectedListing?.id)
   ) {
-    selectedListing = undefined;
-    $("detail-card").hidden = true;
+    clearSelection();
   }
-  void map?.update(listings, selectedListing?.id, selectListing);
+  void map?.update(
+    listingsVisible ? listings : [],
+    selectedListing?.id,
+    selectListing,
+  );
+}
+
+function clearSelection(): void {
+  selectedListing = undefined;
+  $("detail-card").hidden = true;
+  void map?.clearFocus();
 }
 
 function selectArea(area: string): void {
@@ -188,14 +208,22 @@ function selectArea(area: string): void {
 }
 
 function selectListing(listing: Listing): void {
+  listingsVisible = true;
+  $<HTMLInputElement>("listings-toggle").checked = true;
   selectedListing = listing;
   const nearest = nearestStation(listing, stations);
   const detail = $("detail-card");
   detail.hidden = false;
-  detail.innerHTML = `<div class="detail-top"><span class="eyebrow">${collection === "demo" ? "CONTOH HUNIAN" : "LISTING PRIBADI"} · ${esc(listing.area)}</span><button id="detail-close" class="icon-button" aria-label="Tutup detail hunian">${icon("close")}</button></div><h2>${esc(listing.title)}</h2><strong class="detail-price">${money(listing.price)}</strong><div class="card-specs"><span>${listing.type}</span><span>${listing.bedrooms} kamar</span><span>${listing.landArea} m²</span></div><div class="detail-transit">${icon("train")}<div><strong>${nearest ? esc(nearest.station.name) : "Stasiun belum ditemukan"}</strong><span>${nearest ? `${nearest.distance.toLocaleString("id-ID", { maximumFractionDigits: 1 })} km garis lurus dari titik hunian` : "Periksa data stasiun terlebih dahulu"}</span></div></div><p class="detail-notes">${esc(listing.notes || "Belum ada catatan survei.")}</p>${listing.sourceUrl ? `<a class="source-link" href="${esc(listing.sourceUrl)}" target="_blank" rel="noopener noreferrer">Buka sumber listing ↗</a>` : ""}<button id="detail-action" class="button ${collection === "demo" ? "primary" : "danger"} wide">${collection === "demo" ? `${icon("bookmark")} Simpan ke Listingku` : "Hapus dari Listingku"}</button>`;
+  detail.innerHTML = `<div class="detail-top"><span class="eyebrow">${collection === "demo" ? "CONTOH HUNIAN" : "LISTING PRIBADI"} · ${esc(listing.area)}</span><button id="detail-close" class="icon-button" aria-label="Tutup detail hunian">${icon("close")}</button></div><h2>${esc(listing.title)}</h2><strong class="detail-price">${money(listing.price)}</strong><div class="card-specs"><span>${listing.type}</span><span>${listing.bedrooms} kamar</span><span>${listing.landArea} m²</span></div><div class="detail-transit">${icon("train")}<div><strong>${nearest ? esc(nearest.station.name) : "Stasiun belum ditemukan"}</strong><span>${nearest ? `${nearest.distance.toLocaleString("id-ID", { maximumFractionDigits: 1 })} km garis lurus dari titik hunian` : "Periksa data stasiun terlebih dahulu"}</span></div></div>
+    <div class="maps-links" aria-label="Google Maps">
+      <a class="button wide" data-map-link="location" href="${esc(googleMapsLocation(listing))}" target="_blank" rel="noopener noreferrer">${icon("pin")} Lokasi di Google Maps ↗</a>
+      <a class="button wide" data-map-link="directions" href="${esc(googleMapsDirections(listing))}" target="_blank" rel="noopener noreferrer">${icon("arrow")} Rute ke hunian ↗</a>
+      ${nearest ? `<a class="button wide" data-map-link="station" href="${esc(googleMapsWalkToStation(listing, nearest.station))}" target="_blank" rel="noopener noreferrer">${icon("train")} Jalan ke ${esc(nearest.station.name)} ↗</a>` : ""}
+      <p>Pilih titik asal, lalu cek jarak dan waktu perjalanan di Google Maps.${collection === "demo" ? " Lokasi hunian ini hanya ilustrasi." : ""}</p>
+    </div>
+    <p class="detail-notes">${esc(listing.notes || "Belum ada catatan survei.")}</p>${listing.sourceUrl ? `<a class="source-link" href="${esc(listing.sourceUrl)}" target="_blank" rel="noopener noreferrer">Buka sumber listing ↗</a>` : ""}<button id="detail-action" class="button ${collection === "demo" ? "primary" : "danger"} wide">${collection === "demo" ? `${icon("bookmark")} Simpan ke Listingku` : "Hapus dari Listingku"}</button>`;
   $("detail-close").onclick = () => {
-    selectedListing = undefined;
-    detail.hidden = true;
+    clearSelection();
     render();
   };
   $("detail-action").onclick = async () => {
@@ -222,8 +250,7 @@ function selectListing(listing: Listing): void {
         toast("Listing sudah dihapus.");
       }
       await loadPrivateListings();
-      $("detail-card").hidden = true;
-      selectedListing = undefined;
+      clearSelection();
       render();
     } catch (error) {
       toast(
@@ -344,9 +371,13 @@ $("rail-toggle").onchange = () => {
   void map?.showRail(checked);
   $("rail-legend").hidden = !checked;
 };
-$("basemap-toggle").onchange = () => {
-  void map?.showBasemap($<HTMLInputElement>("basemap-toggle").checked);
-  $("map-status").classList.remove("visible");
+$("buildings-toggle").onchange = () => {
+  void map?.showBuildings($<HTMLInputElement>("buildings-toggle").checked);
+};
+$("listings-toggle").onchange = () => {
+  listingsVisible = $<HTMLInputElement>("listings-toggle").checked;
+  if (!listingsVisible) clearSelection();
+  render();
 };
 $("map-reset").onclick = resetFilters;
 $("sources-button").onclick = () =>
@@ -429,8 +460,7 @@ document.addEventListener("keydown", (event) => {
     $("search").focus();
   }
   if (event.key === "Escape" && selectedListing) {
-    selectedListing = undefined;
-    $("detail-card").hidden = true;
+    clearSelection();
     render();
   }
 });
@@ -495,6 +525,8 @@ async function start(): Promise<void> {
         $<HTMLDialogElement>("listing-dialog").showModal();
       },
     );
+    void map.showBuildings($<HTMLInputElement>("buildings-toggle").checked);
+    void map.showRail($<HTMLInputElement>("rail-toggle").checked);
     render();
   } catch {
     $("map").innerHTML =
