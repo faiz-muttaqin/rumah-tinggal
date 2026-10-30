@@ -1,0 +1,528 @@
+{
+  "checkedAt": "2026-10-30",
+  "note": "Rencana perluasan LRT dan KRL Jabodetabek dari sumber bertanggal, diperiksa ulang oleh pemeriksa terpisah. Hanya stasiun dengan titik dari OpenStreetMap atau dokumen resmi yang dipetakan.",
+  "lines": [
+    {
+      "id": "lrt-jakarta-1c",
+      "name": "LRT Jakarta fase 1C",
+      "mode": "LRT",
+      "operator": "PT Jakarta Propertindo (Jakpro)",
+      "segment": "Manggarai sampai Dukuh Atas (sekitar 2,4 km)",
+      "status": "tendering-or-preparation",
+      "statusAsOf": "2026-10-30",
+      "statusQuote": "Pengembangan LRT Jakarta hingga kawasan Dukuh Atas itu rencananya akan mulai dikerjakan pada 2027.",
+      "targetOpening": "Gubernur DKI kepada ANTARA (17 September 2026): mulai 'paling lama Januari' 2027 agar 'tahun 2028 bulan Agustus sudah bisa selesai sampai dengan Dukuh Atas'.",
+      "note": "Belum ada pekerjaan fisik yang ditemukan. Titik Dukuh Atas adalah titik proyek pada portal investasi DKI, bukan tapak stasiun, dan terpisah dari stasiun LRT Jabodebek Dukuh Atas.",
+      "sources": [
+        {
+          "url": "https://news.republika.co.id/berita/tnpmbk487/lrt-jakarta-bakal-terus-dikembangkan-hingga-dukuh-atas-jis-dan-stasiun-whoosh-halim",
+          "title": "LRT Jakarta Bakal Terus Dikembangkan hingga Dukuh Atas, JIS, dan Stasiun Whoosh Halim",
+          "publisher": "Republika",
+          "kind": "news",
+          "pageDate": "2026-10-30"
+        },
+        {
+          "url": "https://www.antaranews.com/berita/5745253/lrt-manggaraidukuh-atas-mulai-dibangun-januari-2027agustus-2028",
+          "title": "LRT Manggarai-Dukuh Atas mulai dibangun Januari 2027-Agustus 2028",
+          "publisher": "ANTARA",
+          "kind": "news",
+          "pageDate": "2026-09-17"
+        },
+        {
+          "url": "https://m.beritajakarta.id/en/read/152817/LRT%20Extension%20from%20Manggarai%20to%20Dukuh%20Atas%20Named%20a%20Top%20Priority",
+          "title": "LRT Extension from Manggarai to Dukuh Atas Named a Top Priority",
+          "publisher": "Beritajakarta (Pemprov DKI Jakarta)",
+          "kind": "regional-government",
+          "pageDate": "2026-05-21"
+        },
+        {
+          "url": "https://invest.jakarta.go.id/potential-projects/35/transportation/143/lrt-jakarta-phase-1c-manggarai-dukuh-atas",
+          "title": "LRT Jakarta Phase 1C (Manggarai - Dukuh Atas)",
+          "publisher": "Jakarta Investment Centre (Pemprov DKI Jakarta)",
+          "kind": "regional-government",
+          "pageDate": null
+        },
+        {
+          "url": "https://www.antaranews.com/berita/5807695/didukung-danantara-dki-mulai-hitung-biaya-pembangunan-lrt-jis-halim",
+          "title": "Didukung Danantara, DKI mulai hitung biaya pembangunan LRT JIS-Halim",
+          "publisher": "ANTARA",
+          "kind": "news",
+          "pageDate": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "lrt-jakarta-2a",
+      "name": "LRT Jakarta fase 2A",
+      "mode": "LRT",
+      "operator": "PT Jakarta Propertindo (Jakpro)",
+      "segment": "Kelapa Gading sampai Jakarta International Stadium (sekitar 8,2 km)",
+      "status": "tendering-or-preparation",
+      "statusAsOf": "2026-10-30",
+      "statusQuote": "Proyek ini ditargetkan bisa dimulai pada 2027 mendatang.",
+      "targetOpening": "Mulai pembangunan ditargetkan 2027 (portal investasi DKI; CNBC Indonesia, 10 September 2026). Tanggal operasi belum ditemukan.",
+      "note": "Enam stasiun bernama (Kelapa Nias, Boulevard Gading, Sunter Timur, Gelanggang Remaja, Sunter Barat, Danau Sunter Barat/JIS) belum punya titik resmi, sehingga belum dipetakan.",
+      "sources": [
+        {
+          "url": "https://invest.jakarta.go.id/potential-projects/35/transportation/144/lrt-jakarta-phase-2a-kelapa-gading-jis",
+          "title": "LRT Jakarta Phase 2A (Kelapa Gading - JIS)",
+          "publisher": "Jakarta Investment Centre (Pemprov DKI Jakarta)",
+          "kind": "regional-government",
+          "pageDate": null
+        },
+        {
+          "url": "https://www.cnbcindonesia.com/news/20260909175756-4-766682/pramono-tawarkan-ke-investor-proyek-lrt-kelapa-gading-jis-rp-78-t",
+          "title": "Pramono Tawarkan ke Investor Proyek LRT Kelapa Gading-JIS Rp 7,8 T",
+          "publisher": "CNBC Indonesia",
+          "kind": "news",
+          "pageDate": "2026-09-10"
+        },
+        {
+          "url": "https://www.antaranews.com/berita/5807695/didukung-danantara-dki-mulai-hitung-biaya-pembangunan-lrt-jis-halim",
+          "title": "Didukung Danantara, DKI mulai hitung biaya pembangunan LRT JIS-Halim",
+          "publisher": "ANTARA",
+          "kind": "news",
+          "pageDate": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "lrt-jakarta-jangka-panjang",
+      "name": "Jaringan LRT Jakarta jangka panjang",
+      "mode": "LRT",
+      "operator": "Pemprov DKI Jakarta dan Jakpro",
+      "segment": "JIS ke Ancol, PIK 2, dan Soekarno-Hatta; arah stasiun Whoosh Halim",
+      "status": "proposed-study",
+      "statusAsOf": "2026-10-30",
+      "statusQuote": "Rencana tersebut merupakan bagian dari roadmap pengembangan jaringan LRT dalam jangka panjang.",
+      "targetOpening": null,
+      "note": "Belum ada trase, daftar stasiun, atau pendanaan yang ditemukan.",
+      "sources": [
+        {
+          "url": "https://news.republika.co.id/berita/tnpmbk487/lrt-jakarta-bakal-terus-dikembangkan-hingga-dukuh-atas-jis-dan-stasiun-whoosh-halim",
+          "title": "LRT Jakarta Bakal Terus Dikembangkan hingga Dukuh Atas, JIS, dan Stasiun Whoosh Halim",
+          "publisher": "Republika",
+          "kind": "news",
+          "pageDate": "2026-10-30"
+        },
+        {
+          "url": "https://www.antaranews.com/berita/5816239/pramono-sebut-kelapa-gading-akan-menjadi-hub-jakarta-di-masa-depan",
+          "title": "Pramono sebut Kelapa Gading akan menjadi hub Jakarta di masa depan",
+          "publisher": "ANTARA",
+          "kind": "news",
+          "pageDate": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "id": "lrt-jabodebek-cibubur-bogor",
+      "name": "Perpanjangan LRT Jabodebek ke Bogor",
+      "mode": "LRT",
+      "operator": "KAI bersama DJKA",
+      "segment": "Harjamukti (Cibubur) sampai Bogor",
+      "status": "approved-plan",
+      "statusAsOf": "2026-05-22",
+      "statusQuote": "Kami dengan DJKA tentunya sedang mengkaji kembali potensi bisnis, potensi TOD, dan lain sebagainya ya",
+      "targetOpening": null,
+      "note": "Koridor tercantum dalam Perpres 98/2015 menurut detikFinance (2023); KAI dan DJKA masih mengkaji rutenya (CNBC Indonesia, 22 Mei 2026). Titik stasiun belum ditetapkan.",
+      "sources": [
+        {
+          "url": "https://www.cnbcindonesia.com/news/20260522122949-4-737036/kapan-lrt-jabodebek-tembus-bogor-kai-kasih-jawaban-begini",
+          "title": "Kapan LRT Jabodebek Tembus Bogor? KAI Kasih Jawaban Begini",
+          "publisher": "CNBC Indonesia",
+          "kind": "news",
+          "pageDate": "2026-05-22"
+        },
+        {
+          "url": "https://finance.detik.com/infrastruktur/d-6788181/lrt-jabodebek-jadi-diperpanjang-sampai-bogor-ini-kata-kai",
+          "title": "LRT Jabodebek Jadi Diperpanjang Sampai Bogor? Ini Kata KAI",
+          "publisher": "detikFinance",
+          "kind": "news",
+          "pageDate": "2023-06-23"
+        }
+      ]
+    },
+    {
+      "id": "lrt-jabodebek-senayan-grogol",
+      "name": "Koridor LRT Jabodebek Dukuh Atas sampai Senayan dan Grogol",
+      "mode": "LRT",
+      "operator": "KAI",
+      "segment": "Dukuh Atas ke Palmerah dan Senayan; Palmerah ke Grogol",
+      "status": "approved-plan",
+      "statusAsOf": "2023-06-23",
+      "statusQuote": "Kemudian dari Dukuh Atas sampai dengan Palmerah, Senayan, dan Grogol",
+      "targetOpening": null,
+      "note": "Hanya bukti sekunder (detikFinance 2023 membaca Perpres 98/2015); tidak ditemukan kajian, dana, atau pekerjaan 2024 sampai 2026.",
+      "sources": [
+        {
+          "url": "https://finance.detik.com/infrastruktur/d-6788181/lrt-jabodebek-jadi-diperpanjang-sampai-bogor-ini-kata-kai",
+          "title": "LRT Jabodebek Jadi Diperpanjang Sampai Bogor? Ini Kata KAI",
+          "publisher": "detikFinance",
+          "kind": "news",
+          "pageDate": "2023-06-23"
+        },
+        {
+          "url": "https://setkab.go.id/perpres-no-492017-inilah-revisi-baru-percepatan-penyelenggaraan-lrt-di-wilayah-jabodebek/",
+          "title": "Perpres No. 49/2017: Inilah Revisi Baru Percepatan Penyelenggaraan LRT di Wilayah Jabodebek",
+          "publisher": "Sekretariat Kabinet RI",
+          "kind": "regulation",
+          "pageDate": "2017-05-22"
+        }
+      ]
+    },
+    {
+      "id": "krl-cikarang-cikampek",
+      "name": "Perpanjangan KRL Cikarang sampai Cikampek",
+      "mode": "KRL",
+      "operator": "KAI, KAI Commuter, dan DJKA",
+      "segment": "Cikarang sampai Cikampek melalui Karawang (sekitar 42 km)",
+      "status": "approved-plan",
+      "statusAsOf": "2026-09-26",
+      "statusQuote": "Elektrifikasi jalur Cikarang - Cikampek merupakan salah satu kegiatan peningkatan yang telah masuk di dalam Renstra DJKA Tahun 2025 - 2029",
+      "targetOpening": "Target berbeda: DJKA menyebut selesai akhir 2029 (CNBC Indonesia, 9 Mei 2026); Dirut KAI menyebut pekerjaan mulai 2027 dan 'harusnya sudah selesai di 2028' (Katadata, 23 September 2026).",
+      "note": "Lemahabang dan Karawang adalah stasiun KAI yang sudah ada dan kini dilayani kereta lokal; titik dari OpenStreetMap. Cikampek berada di luar batas peta aplikasi.",
+      "sources": [
+        {
+          "url": "https://www.cnbcindonesia.com/news/20260508195622-4-733595/ini-bocoran-proyek-krl-cikarang-karawang",
+          "title": "Ini Bocoran Proyek KRL Cikarang-Karawang",
+          "publisher": "CNBC Indonesia",
+          "kind": "news",
+          "pageDate": "2026-05-09"
+        },
+        {
+          "url": "https://katadata.co.id/berita/industri/6ab3da6adbfd3/kai-perpanjang-rute-krl-sampai-cikampek-dan-cigombong-rampung-2028",
+          "title": "KAI Perpanjang Rute KRL sampai Cikampek dan Cigombong, Rampung 2028",
+          "publisher": "Katadata",
+          "kind": "news",
+          "pageDate": "2026-09-23"
+        },
+        {
+          "url": "https://www.cnbcindonesia.com/news/20260627122118-4-746181/proyek-krl-green-line-dan-cikampek-digeber-sukabumi-harap-bersabar",
+          "title": "Proyek KRL Green Line dan Cikampek Digeber, Sukabumi Harap Bersabar",
+          "publisher": "CNBC Indonesia",
+          "kind": "news",
+          "pageDate": "2026-06-27"
+        }
+      ]
+    },
+    {
+      "id": "krl-bogor-cigombong",
+      "name": "Perpanjangan KRL Bogor sampai Cigombong",
+      "mode": "KRL",
+      "operator": "KAI dan KAI Commuter",
+      "segment": "Bogor sampai Cigombong (kawasan Lido)",
+      "status": "proposed-study",
+      "statusAsOf": "2026-09-26",
+      "statusQuote": "Kami tambahkan (mulai) 2027 sampai ke arah Cikampek, begitu juga yang sekarang hanya sampai Bogor kami tambah hingga Cigombong",
+      "targetOpening": "Dirut KAI: '2028 harusnya udah selesai' (MerahPutih, 24 September 2026). Dirjen Perkeretaapian menyebut belum prioritas dekat (CNBC Indonesia, 27 Juni 2026).",
+      "note": "Belum ada regulasi, keputusan dana, atau daftar stasiun antara yang dibaca.",
+      "sources": [
+        {
+          "url": "https://katadata.co.id/berita/industri/6ab3da6adbfd3/kai-perpanjang-rute-krl-sampai-cikampek-dan-cigombong-rampung-2028",
+          "title": "KAI Perpanjang Rute KRL sampai Cikampek dan Cigombong, Rampung 2028",
+          "publisher": "Katadata",
+          "kind": "news",
+          "pageDate": "2026-09-23"
+        },
+        {
+          "url": "https://www.merahputih.com/post/read/krl-jabodetabek-cikampek-lido-2028",
+          "title": "KRL Diperluas hingga Cikampek dan Lido, Ditargetkan Beroperasi 2028",
+          "publisher": "MerahPutih.com",
+          "kind": "news",
+          "pageDate": "2026-09-24"
+        },
+        {
+          "url": "https://www.cnbcindonesia.com/news/20260627122118-4-746181/proyek-krl-green-line-dan-cikampek-digeber-sukabumi-harap-bersabar",
+          "title": "Proyek KRL Green Line dan Cikampek Digeber, Sukabumi Harap Bersabar",
+          "publisher": "CNBC Indonesia",
+          "kind": "news",
+          "pageDate": "2026-06-27"
+        }
+      ]
+    },
+    {
+      "id": "krl-rangkasbitung-merak",
+      "name": "Perpanjangan KRL Rangkasbitung sampai Merak",
+      "mode": "KRL",
+      "operator": "KAI dan KAI Commuter",
+      "segment": "Rangkasbitung sampai Merak",
+      "status": "proposed-study",
+      "statusAsOf": "2026-09-26",
+      "statusQuote": "Termasuk Merak begitu ya, itu kemarin (suratnya) sudah dikirim oleh KAI ke Bappenas",
+      "targetOpening": null,
+      "note": "Di luar Jabodetabek. Menhub (CNBC Indonesia, 18 Februari 2026): elektrifikasi sampai Serang atau Merak belum dilakukan tahun ini.",
+      "sources": [
+        {
+          "url": "https://investortrust.id/business/92620/rencana-krl-tembus-ke-cikampek-dan-merak-masuk-pembahasan-bappenas",
+          "title": "Rencana KRL Tembus ke Cikampek dan Merak Masuk Pembahasan Bappenas",
+          "publisher": "Investortrust",
+          "kind": "news",
+          "pageDate": "2026-01-27"
+        },
+        {
+          "url": "https://www.cnbcindonesia.com/news/20260218152854-4-711843/jalur-krl-di-ri-makin-banyak-ada-di-karawang-bandung-sampai-surabaya",
+          "title": "Jalur KRL di RI Makin Banyak, Ada di Karawang, Bandung Sampai Surabaya",
+          "publisher": "CNBC Indonesia",
+          "kind": "news",
+          "pageDate": "2026-02-18"
+        }
+      ]
+    },
+    {
+      "id": "krl-tigaraksa-ekstensi",
+      "name": "Ekstensi Stasiun Tigaraksa (Kota Podomoro Tenjo)",
+      "mode": "KRL",
+      "operator": "KAI bersama Agung Podomoro Land",
+      "segment": "Antara Tenjo dan Tigaraksa, jalur Rangkasbitung",
+      "status": "under-construction",
+      "statusAsOf": "2024-10-12",
+      "statusQuote": "pembangunan ekstensi Stasiun Tigaraksa dan Flyover Tenjo di antara Stasiun Tenjo dan Stasiun Cikaya telah dilakukan",
+      "targetOpening": null,
+      "note": "Bukti status terbaru dari KAI bertanggal 2024; Wikipedia (revisi 18 Oktober 2026) menyebut pembangunan peron dimulai Mei 2026 tanpa sumber. Bisa berupa perluasan Stasiun Tigaraksa, sekitar 0,8 km di timurnya.",
+      "sources": [
+        {
+          "url": "https://www.kompas.tv/regional/545331/kai-bangun-2-stasiun-baru-di-jalur-krl-lintas-tanah-abang-rangkasbitung",
+          "title": "KAI Bangun 2 Stasiun Baru di Jalur KRL Lintas Tanah Abang-Rangkasbitung",
+          "publisher": "Kompas TV",
+          "kind": "news",
+          "pageDate": "2024-10-12"
+        },
+        {
+          "url": "https://id.wikipedia.org/wiki/Stasiun_Tigaraksa_Kota_Podomoro",
+          "title": "Stasiun Tigaraksa Kota Podomoro",
+          "publisher": "Wikipedia bahasa Indonesia",
+          "kind": "other",
+          "pageDate": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "krl-lumpang-parayasa",
+      "name": "Stasiun Lumpang Parayasa",
+      "mode": "KRL",
+      "operator": "KAI bersama Perum Perumnas",
+      "segment": "Antara Parungpanjang dan Cilejit, jalur Rangkasbitung",
+      "status": "approved-plan",
+      "statusAsOf": "2026-08-29",
+      "statusQuote": "Perum Perumnas akan membangun stasiun KRL mandiri di kawasan Samesta Parayasa, Parung Panjang, untuk mempermudah mobilitas penghuni.",
+      "targetOpening": null,
+      "note": "Pernyataan bersama KAI dan Perumnas 17 Januari 2024; belum ada bukti pekerjaan fisik. Titik dari OpenStreetMap, sekitar 25 m dari koordinat Wikipedia.",
+      "sources": [
+        {
+          "url": "https://katadata.co.id/berita/industri/65aa2c7d82788/parung-panjang-akan-punya-stasiun-krl-baru-lumpang-parayasa",
+          "title": "Parung Panjang akan Punya Stasiun KRL Baru, Lumpang Parayasa",
+          "publisher": "Katadata",
+          "kind": "news",
+          "pageDate": "2024-01-19"
+        },
+        {
+          "url": "https://investortrust.id/business/114570/perumnas-akan-bangun-stasiun-krl-bagi-penghuni-kompleks-perumahan-di-parung",
+          "title": "Perumnas Akan Bangun Stasiun KRL bagi Penghuni Kompleks Perumahan di Parung Panjang",
+          "publisher": "Investortrust",
+          "kind": "news",
+          "pageDate": "2026-08-29"
+        },
+        {
+          "url": "https://perumnas.co.id/perum-perumnas-kai-builds-new-lumpang-parayasa-krl-station-in-parung-panjang/",
+          "title": "Perum Perumnas-KAI builds new Lumpang Parayasa KRL station in Parung Panjang",
+          "publisher": "Perum Perumnas",
+          "kind": "developer",
+          "pageDate": null
+        }
+      ]
+    },
+    {
+      "id": "lrt-jakarta-1b",
+      "name": "LRT Jakarta fase 1B (baru beroperasi)",
+      "mode": "LRT",
+      "operator": "PT LRT Jakarta (Jakpro)",
+      "segment": "Velodrome sampai Manggarai: Rawamangun, Pramuka, Matraman, Proklamasi, Manggarai",
+      "status": "operating",
+      "statusAsOf": "2026-10-30",
+      "statusQuote": "peresmian operasional jalur LRT Jakarta rute Kelapa Gading-Manggarai merupakan langkah penting",
+      "targetOpening": null,
+      "note": "Diresmikan 16 September 2026. detikFinance (10 September 2026) mencatat uji coba umum 12 Oktober sampai 30 November 2026. Stasiun LRT Manggarai terpisah dari stasiun KRL Manggarai; sambungan langsung masih dikerjakan.",
+      "sources": [
+        {
+          "url": "https://katadata.co.id/berita/nasional/6aaa59b071bfc/prabowo-resmikan-lrt-rute-kelapa-gading-manggarai-tarif-rp-8-selama-8-hari",
+          "title": "Prabowo Resmikan LRT Rute Kelapa Gading-Manggarai, Tarif Rp 8 Selama 8 Hari",
+          "publisher": "Katadata",
+          "kind": "news",
+          "pageDate": "2026-09-16"
+        },
+        {
+          "url": "https://finance.detik.com/infrastruktur/d-8656762/lrt-jakarta-velodrome-manggarai-beroperasi-mulai-hari-ini",
+          "title": "LRT Jakarta Velodrome-Manggarai Beroperasi Mulai Hari Ini",
+          "publisher": "detikFinance",
+          "kind": "news",
+          "pageDate": "2026-09-10"
+        },
+        {
+          "url": "https://www.lrtjakarta.co.id/",
+          "title": "Beranda LRT Jakarta (jadwal dan siaran pers)",
+          "publisher": "PT LRT Jakarta",
+          "kind": "operator",
+          "pageDate": null
+        }
+      ]
+    },
+    {
+      "id": "krl-jatake",
+      "name": "Stasiun Jatake (baru beroperasi)",
+      "mode": "KRL",
+      "operator": "KAI Commuter",
+      "segment": "Antara Cicayur dan Parungpanjang",
+      "status": "operating",
+      "statusAsOf": "2026-01-28",
+      "statusQuote": "Stasiun Jatake resmi beroperasi sebagai stasiun pemberhentian KRL Tanah Abang–Rangkasbitung pada Rabu (28/1/2026).",
+      "targetOpening": null,
+      "note": null,
+      "sources": [
+        {
+          "url": "https://www.kompas.tv/regional/646792/stasiun-jatake-mulai-beroperasi-tambah-akses-krl-tanah-abang-rangkasbitung",
+          "title": "Stasiun Jatake Mulai Beroperasi, Tambah Akses KRL Tanah Abang-Rangkasbitung",
+          "publisher": "Kompas TV",
+          "kind": "news",
+          "pageDate": "2026-01-28"
+        }
+      ]
+    },
+    {
+      "id": "krl-jis",
+      "name": "Stasiun Jakarta International Stadium (layanan terbatas)",
+      "mode": "KRL",
+      "operator": "KAI Commuter",
+      "segment": "Jalur Tanjung Priok, antara Ancol dan Tanjung Priok",
+      "status": "partially-operating",
+      "statusAsOf": "2026-06-26",
+      "statusQuote": "mulai melayani penumpang kereta rel listrik (KRL) atau commuter line relasi Tanjung Priok–Jakarta Kota (pink line) secara terbatas",
+      "targetOpening": "Peron kedua: Menhub (26 Juni 2026) menyebut Pemprov DKI berkomitmen membangunnya paling lama satu tahun.",
+      "note": "Baru satu peron; penumpang dari Jakarta Kota transit di Tanjung Priok.",
+      "sources": [
+        {
+          "url": "https://investortrust.id/business/107156/stasiun-jis-mulai-beroperasi-dengan-tarif-krl-khusus-rp-1-hingga-28-juni",
+          "title": "Stasiun JIS Mulai Beroperasi dengan Tarif KRL Khusus Rp 1 hingga 28 Juni",
+          "publisher": "Investortrust",
+          "kind": "news",
+          "pageDate": "2026-06-22"
+        },
+        {
+          "url": "https://investortrust.id/business/107674/peron-kedua-stasiun-jis-ditargetkan-rampung-setahun-menhub-yakin-bisa-lebih-cepat",
+          "title": "Peron Kedua Stasiun JIS Ditargetkan Rampung Setahun, Menhub Yakin Bisa Lebih Cepat",
+          "publisher": "Investortrust",
+          "kind": "news",
+          "pageDate": "2026-06-26"
+        }
+      ]
+    },
+    {
+      "id": "krl-karet-sudirman-baru",
+      "name": "Integrasi Karet dan Sudirman Baru (BNI City)",
+      "mode": "KRL",
+      "operator": "KAI",
+      "segment": "Layanan naik-turun KRL dipindah dari Karet ke Sudirman Baru",
+      "status": "under-construction",
+      "statusAsOf": "2026-10-24",
+      "statusQuote": "Seluruh pekerjaan kawasan tersebut dijadwalkan berlangsung hingga 31 Desember 2026.",
+      "targetOpening": null,
+      "note": "Sejak 1 September 2026 penumpang KRL naik dan turun di Sudirman Baru (BNI City), bukan Karet.",
+      "sources": [
+        {
+          "url": "https://www.kai.id/publikasi/artikel-berita/struktur-baja-mulai-terpasang-kai-benahi-akses-karetsudirman-baru-hingga-akhir-tahun",
+          "title": "Struktur Baja Mulai Terpasang, KAI Benahi Akses Karet–Sudirman Baru hingga Akhir Tahun",
+          "publisher": "KAI",
+          "kind": "operator",
+          "pageDate": "2026-10-24"
+        },
+        {
+          "url": "https://www.kai.id/publikasi/artikel-berita/makin-nyambung-karetsudirman-baru-hadirkan-akses-commuter-line-yang-lebih-praktis",
+          "title": "Makin Nyambung! Karet–Sudirman Baru Hadirkan Akses Commuter Line yang Lebih Praktis",
+          "publisher": "KAI",
+          "kind": "operator",
+          "pageDate": "2026-09-04"
+        }
+      ]
+    },
+    {
+      "id": "krl-rawajati-tanjung-priok",
+      "name": "Usulan jalur KRL Rawajati sampai Tanjung Priok",
+      "mode": "KRL",
+      "operator": null,
+      "segment": "Rawajati (Jakarta Selatan) sampai Tanjung Priok, sekitar 16 km",
+      "status": "proposed-study",
+      "statusAsOf": "2026-04-09",
+      "statusQuote": "Rencana tersebut mencakup pembangunan jalur sepanjang 16 kilometer yang akan menghubungkan Rawajati hingga Tanjung Priok.",
+      "targetOpening": null,
+      "note": "Hanya pernyataan Gubernur DKI yang dikutip media; belum ada operator, trase, atau stasiun.",
+      "sources": [
+        {
+          "url": "https://www.cna.id/indonesia/jalur-krl-rawajati-tanjung-priok-dki-jakarta-46026",
+          "title": "DKI siapkan jalur KRL Rawajati-Tanjung Priok",
+          "publisher": "CNA Indonesia",
+          "kind": "news",
+          "pageDate": "2026-04-09"
+        }
+      ]
+    }
+  ],
+  "stations": [
+    {
+      "name": "Dukuh Atas (LRT Jakarta)",
+      "line": "lrt-jakarta-1c",
+      "status": "tendering-or-preparation",
+      "lat": -6.203261,
+      "lng": 106.82425,
+      "precision": "titik proyek portal investasi",
+      "coordinateUrl": "https://invest.jakarta.go.id/potential-projects/35/transportation/143/lrt-jakarta-phase-1c-manggarai-dukuh-atas",
+      "locationText": "Kawasan Dukuh Atas, Sudirman"
+    },
+    {
+      "name": "Lemahabang",
+      "line": "krl-cikarang-cikampek",
+      "status": "approved-plan",
+      "lat": -6.270684,
+      "lng": 107.179632,
+      "precision": "stasiun KAI eksisting (OSM)",
+      "coordinateUrl": "https://www.openstreetmap.org/node/7835804486",
+      "locationText": "Cikarang Timur, Kabupaten Bekasi"
+    },
+    {
+      "name": "Karawang",
+      "line": "krl-cikarang-cikampek",
+      "status": "approved-plan",
+      "lat": -6.305083,
+      "lng": 107.300259,
+      "precision": "stasiun KAI eksisting (OSM)",
+      "coordinateUrl": "https://www.openstreetmap.org/node/1228413279",
+      "locationText": "Karawang"
+    },
+    {
+      "name": "Tigaraksa Kota Podomoro (ekstensi)",
+      "line": "krl-tigaraksa-ekstensi",
+      "status": "under-construction",
+      "lat": -6.3268317,
+      "lng": 106.4409297,
+      "precision": "titik OSM stasiun rencana",
+      "coordinateUrl": "https://www.openstreetmap.org/node/13972546045",
+      "locationText": "Kawasan Kota Podomoro Tenjo"
+    },
+    {
+      "name": "Lumpang Parayasa",
+      "line": "krl-lumpang-parayasa",
+      "status": "approved-plan",
+      "lat": -6.3518027,
+      "lng": 106.5427637,
+      "precision": "titik OSM stasiun rencana",
+      "coordinateUrl": "https://www.openstreetmap.org/node/13972601885",
+      "locationText": "Kawasan Samesta Parayasa, Parung Panjang"
+    }
+  ],
+  "appStatus": [
+    {
+      "mode": "KRL",
+      "name": "Jakarta International Stadium",
+      "status": "partially-operating",
+      "line": "krl-jis"
+    }
+  ]
+}

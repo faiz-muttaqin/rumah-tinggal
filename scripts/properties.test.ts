@@ -36,15 +36,26 @@ test("published research keeps sourced prices, evidence and computed distances",
   const ids = new Set();
   for (const feature of features) {
     const property = feature.properties;
-    const [lng, lat] = feature.geometry.coordinates;
     ids.add(property.id);
-    assert.ok(lng >= 106.3 && lng <= 107.31 && lat >= -6.85 && lat <= -5.75);
+    if (feature.geometry) {
+      const [lng, lat] = feature.geometry.coordinates;
+      assert.ok(lng >= 106.3 && lng <= 107.31 && lat >= -6.85 && lat <= -5.75);
+    } else assert.equal(property.listingBasis, "islamic", property.id);
     assert.ok(Number.isInteger(property.price.min), property.id);
     assert.ok(property.price.min >= 50_000_000, property.id);
     assert.equal(property.price.currency, "IDR");
     assert.match(property.price.url, /^https?:\/\//);
     assert.ok(property.price.quote.length <= 150, property.id);
-    assert.ok(property.nearest[0].km <= metadata.maxDistanceKm, property.id);
+    const closest = property.nearest[0] ?? property.nearestPlanned[0];
+    if (property.listingBasis === "islamic")
+      assert.ok(property.islamic?.claims.length, `${property.id} needs claims`);
+    else
+      assert.ok(closest && closest.km <= metadata.maxDistanceKm, property.id);
+    for (const station of property.nearestPlanned)
+      assert.ok(
+        metadata.planned.qualifyingStatuses.includes(station.status),
+        `${property.id} planned station status`,
+      );
     assert.ok(property.lastChecked <= metadata.checkedAt, property.id);
     assert.ok(
       property.sources.some(
@@ -174,6 +185,20 @@ test("the builder rejects unsafe or unsupported entries", {
     ],
     [{ ...valid, price: { ...valid.price, min: 450 } }, /rentang wajar/],
     [{ ...valid, coordinate: { lat: "x" } }, /coordinate/],
+    [
+      {
+        ...valid,
+        social: [
+          {
+            platform: "instagram",
+            url: "https://www.facebook.com/uji",
+            owner: "project",
+            via: "search-result",
+          },
+        ],
+      },
+      /bukan instagram/,
+    ],
   ] as const) {
     const { result } = await run(entry);
     assert.notEqual(result.status, 0, String(message));
@@ -233,4 +258,115 @@ test("population estimates stay tied to the point they were computed for", {
     lat: entry.coordinate.lat + 0.002,
   });
   assert.equal(moved.properties.population, null);
+});
+
+test("planned stations qualify a project only when formally planned or being built", {
+  skip: python,
+}, async (t) => {
+  const directory = await mkdtemp(join(tmpdir(), "rumah-planned-test-"));
+  t.after(() => rm(directory, { recursive: true, force: true }));
+  const entry = {
+    id: "prj-uji-rencana",
+    name: "Hunian Uji Rencana",
+    kind: "Rumah",
+    locationText: "Wilayah uji",
+    status: "dipasarkan",
+    verdict: "partial",
+    lastChecked: "2026-10-30",
+    corridor: "uji",
+    price: {
+      min: 900_000_000,
+      basis: "harga mulai",
+      quote: "Mulai Rp 900 Juta",
+      url: "https://portal.example.invalid/rencana",
+    },
+    // Lebih dari 3 km dari stasiun aplikasi mana pun.
+    coordinate: {
+      lat: -6.62,
+      lng: 106.86,
+      method: "uji",
+      url: "https://osm.example.invalid/rencana",
+      precision: "titik uji",
+    },
+    sources: [
+      {
+        url: "https://portal.example.invalid/rencana",
+        kind: "portal",
+        title: "Portal uji",
+        fetched: true,
+        supports: ["harga"],
+      },
+    ],
+  };
+  const plan = (status: string) => ({
+    checkedAt: "2026-10-30",
+    lines: [
+      {
+        id: "lrt-uji",
+        name: "LRT Uji",
+        mode: "LRT",
+        segment: "A sampai B",
+        status,
+        statusAsOf: "2026-10-01",
+        sources: [
+          {
+            url: "https://operator.example.invalid/rencana",
+            title: "Rencana uji",
+            publisher: "Operator Uji",
+            kind: "operator",
+          },
+        ],
+      },
+    ],
+    stations: [
+      {
+        name: "Stasiun Uji",
+        line: "lrt-uji",
+        status,
+        lat: -6.61,
+        lng: 106.86,
+        precision: "osm-station-node",
+        coordinateUrl: "https://www.openstreetmap.org/node/1",
+      },
+    ],
+    appStatus: [{ mode: "KRL", name: "Bogor", status: "under-construction" }],
+  });
+  const run = async (status: string, entries: object[] = [entry]) => {
+    const input = join(directory, "input.json");
+    const planned = join(directory, "planned.json");
+    const output = join(directory, "output.geojson");
+    await writeFile(
+      input,
+      JSON.stringify({ checkedAt: "2026-10-30", properties: entries }),
+    );
+    await writeFile(planned, JSON.stringify(plan(status)));
+    const result = build([input, output, "--planned", planned]);
+    assert.equal(result.status, 0, result.stderr);
+    return JSON.parse(await readFile(output, "utf8"));
+  };
+  const built = await run("under-construction");
+  assert.equal(built.features.length, 1);
+  const property = built.features[0].properties;
+  assert.deepEqual(property.nearest, []);
+  assert.equal(property.nearestPlanned[0].name, "Stasiun Uji");
+  assert.equal(property.nearestPlanned[0].status, "under-construction");
+  assert.ok(property.nearestPlanned[0].km < 1.2);
+  assert.equal(built.metadata.planned.lines[0].id, "lrt-uji");
+
+  const study = await run("proposed-study");
+  assert.equal(study.features.length, 0, "a proposal alone must not publish");
+  assert.match(study.metadata.excluded[0].reason, /di luar radius/);
+
+  // Stasiun aplikasi yang ditandai belum beroperasi membawa statusnya.
+  const nearBogor = await run("under-construction", [
+    {
+      ...entry,
+      id: "prj-uji-bogor",
+      coordinate: { ...entry.coordinate, lat: -6.6, lng: 106.795 },
+    },
+  ]);
+  const bogor = nearBogor.features[0].properties.nearest.find(
+    (s: { name: string }) => s.name === "Bogor",
+  );
+  assert.equal(bogor.status, "under-construction");
 });

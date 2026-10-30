@@ -27,8 +27,8 @@ test.afterEach(async ({ page }) => {
 test("lists sourced projects with prices, evidence and computed distances", async ({
   page,
 }) => {
-  await expect(cards(page)).toHaveCount(3);
-  await expect(page.locator("#research-count")).toHaveText("3 proyek");
+  await expect(cards(page)).toHaveCount(4);
+  await expect(page.locator("#research-count")).toHaveText("4 proyek");
   await expect(page.locator("#research-stats")).toContainText("30 Okt 2026");
   const first = cards(page).first();
   await expect(first).toContainText("Hunian Uji Cisauk");
@@ -101,6 +101,15 @@ test("documents reusable methods and coverage gaps", async ({ page }) => {
   await expect(page.locator("#coverage")).toContainText("Celah cakupan uji.");
   await page.getByText(/Ditemukan tetapi belum masuk daftar \(1\)/).click();
   await expect(page.locator("#coverage")).toContainText("Proyek Uji Jauh");
+  await expect(page.locator("#coverage")).toContainText("Rp 650 jt");
+  await expect(
+    page.locator("#coverage").getByRole("link", { name: "sumber harga ↗" }),
+  ).toHaveAttribute("href", "https://portal.example.invalid/uji-jauh");
+  await expect(
+    page
+      .locator("#coverage")
+      .getByRole("link", { name: "Instagram (belum diverifikasi) ↗" }),
+  ).toHaveAttribute("href", "https://www.instagram.com/proyek.uji.jauh/");
 });
 
 test("a hash link highlights the project", async ({ page }) => {
@@ -116,7 +125,7 @@ test.describe("mobile research page", () => {
   });
 
   test("fits a phone and keeps a way back to the map", async ({ page }) => {
-    await expect(cards(page)).toHaveCount(3);
+    await expect(cards(page)).toHaveCount(4);
     await expect(
       page.getByRole("link", { name: /Kembali ke peta/ }),
     ).toBeVisible();
@@ -126,4 +135,78 @@ test.describe("mobile research page", () => {
     }));
     expect(dimensions.document).toBeLessThanOrEqual(dimensions.viewport);
   });
+});
+
+test("shows planned stations, extension plans and poin plus with sources", async ({
+  page,
+}) => {
+  const bekasi = page.locator("#prj-uji-bekasi-timur");
+  await expect(bekasi.locator(".research-stations li.planned")).toContainText(
+    "Stasiun Rencana Uji",
+  );
+  await expect(bekasi.locator(".research-stations li.planned")).toContainText(
+    "Dalam pembangunan",
+  );
+  await page.locator("#research-station-scope").selectOption("planned");
+  await expect(cards(page)).toHaveCount(1);
+  await expect(cards(page)).toContainText("Rumah Uji Bekasi Timur");
+  await page.locator("#research-station-scope").selectOption("operating");
+  await expect(cards(page)).toHaveCount(3);
+  await page.locator("#research-station-scope").selectOption("all");
+
+  const plan = page.getByTestId("planned-line");
+  await expect(page.locator("#rencana")).toBeVisible();
+  await expect(plan).toContainText("LRT Uji Perpanjangan");
+  await expect(plan).toContainText("Target uji 2028 menurut operator");
+  await expect(
+    plan.getByRole("link", { name: /Operator Uji/ }),
+  ).toHaveAttribute("href", "https://operator.example.invalid/rencana");
+
+  const plus = bekasi.getByTestId("research-plus");
+  await expect(plus).toContainText("Masjid Uji");
+  await expect(plus).toContainText("Kajian rutin Ahad pagi");
+  await expect(plus).toContainText("TPQ Uji");
+  await expect(plus).toContainText("SPP Rp 150.000/bulan (2026/2027)");
+  await expect(plus).toContainText("Masjid di dalam kawasan (uji)");
+  await expect(
+    page.locator("#prj-uji-cisauk").getByTestId("research-plus"),
+  ).toHaveCount(0);
+  await expect(plus).toContainText("Konsep islami (klaim pemasaran)");
+  await expect(plus).toContainText("tidak diverifikasi");
+  await expect(plus.getByRole("link", { name: "Instagram ↗" })).toHaveAttribute(
+    "href",
+    "https://www.instagram.com/masjid.uji/",
+  );
+  const social = bekasi.getByTestId("research-social");
+  await expect(social).toContainText("isi belum dibuka otomatis");
+  await expect(
+    social.getByRole("link", { name: "Instagram ↗" }),
+  ).toHaveAttribute("href", "https://www.instagram.com/rumah.uji.bekasi/");
+  for (const option of ["kajian", "education", "both", "concept"]) {
+    await page.locator("#research-plus").selectOption(option);
+    await expect(cards(page)).toHaveCount(1);
+  }
+  await page.locator("#research-plus").selectOption("");
+  await expect(cards(page)).toHaveCount(4);
+});
+
+test("lists Islamic projects far from stations or without a verified point", async ({
+  page,
+}) => {
+  const far = page.locator("#prj-uji-islami-jauh");
+  await expect(far.getByTestId("research-islamic-basis")).toContainText(
+    "Dicantumkan karena fasilitas atau konsep islami",
+  );
+  await expect(far.getByTestId("research-islamic-basis")).toContainText(
+    "belum terverifikasi",
+  );
+  await expect(far.getByTestId("research-plus")).toContainText(
+    "Masjid di tengah kawasan (uji)",
+  );
+  await expect(far).toContainText("Lokasi belum dipetakan");
+  await page.locator("#research-distance").selectOption("3");
+  await expect(far).toHaveCount(0);
+  await page.locator("#research-distance").selectOption("any");
+  await page.locator("#research-mode").selectOption("KRL");
+  await expect(far).toHaveCount(0);
 });

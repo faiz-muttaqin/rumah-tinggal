@@ -460,8 +460,8 @@ test("research saves to private listings and pins with provenance and account is
   const feature = researchFixture.features[0];
   const property = {
     ...feature.properties,
-    lng: feature.geometry.coordinates[0],
-    lat: feature.geometry.coordinates[1],
+    lng: (feature.geometry?.coordinates ?? [])[0],
+    lat: (feature.geometry?.coordinates ?? [])[1],
   } as unknown as ResearchProperty;
   for (const [path, entry, key] of [
     ["/api/listings", researchToListing(property), "listing"],

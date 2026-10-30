@@ -183,6 +183,59 @@
 .research-quote small {
   color: var(--muted);
 }
+.research-social {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.research-social a {
+  color: var(--green);
+  font-weight: 650;
+  margin-right: 6px;
+}
+.research-social small {
+  display: block;
+}
+.research-plus {
+  display: grid;
+  gap: 4px;
+  padding: 8px 10px;
+  border-left: 3px solid #8fae6b;
+  background: #f4f8ee;
+  border-radius: 4px;
+  font-size: 11px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.research-plus ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+.research-plus li small {
+  display: block;
+  color: var(--muted);
+}
+.research-plus em {
+  font-style: normal;
+  color: var(--muted);
+}
+.research-plus a {
+  color: var(--green);
+  font-weight: 650;
+}
+.plus-kind {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 0 5px;
+  border-radius: 4px;
+  background: #e2ecd5;
+  font-size: 10px;
+  font-weight: 700;
+}
 .research-context {
   display: grid;
   gap: 2px;
@@ -225,6 +278,14 @@
   background: #f1f4ec;
   border-radius: 6px;
   padding: 4px 7px;
+}
+.research-stations li.planned {
+  background: transparent;
+  border: 1px dashed #b9c4ad;
+}
+.research-stations li.planned small {
+  color: var(--muted);
+  font-size: 10px;
 }
 .research-stations em {
   font-style: normal;
@@ -416,4 +477,17 @@
   .research-footer {
     padding: 16px 16px 30px;
   }
+}
+.excluded-claim {
+  display: block;
+  color: var(--muted);
+}
+.research-islamic-basis {
+  margin: 0;
+  padding: 6px 9px;
+  border-radius: 4px;
+  background: #fff7e6;
+  border: 1px solid #f0dcb2;
+  font-size: 11px;
+  line-height: 1.6;
 }

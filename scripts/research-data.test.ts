@@ -11,8 +11,8 @@ import { researchFixture } from "../tests/research-fixture.ts";
 const feature = researchFixture.features[0];
 const property = {
   ...feature.properties,
-  lng: feature.geometry.coordinates[0],
-  lat: feature.geometry.coordinates[1],
+  lng: (feature.geometry?.coordinates ?? [])[0],
+  lat: (feature.geometry?.coordinates ?? [])[1],
 } as unknown as ResearchProperty;
 
 test("research transfers price provenance and coordinates to private listings and pins", () => {

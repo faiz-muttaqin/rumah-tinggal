@@ -575,6 +575,14 @@ test("a research deep link opens the project on the map", async ({ page }) => {
   await expect(page.getByTestId("detail-population")).toContainText(
     "bukan keramaian siang hari",
   );
+  await page.goto("/?riset=prj-uji-bekasi-timur");
+  await expect(page.getByTestId("detail-plus")).toContainText(
+    "1 masjid dengan pengajian rutin · 1 pendidikan Islam anak",
+  );
+  await expect(page.getByTestId("detail-social")).toHaveAttribute(
+    "href",
+    "https://www.instagram.com/rumah.uji.bekasi/",
+  );
 });
 
 test("anonymous Listingku offers Google sign-in without requesting private listings", async ({

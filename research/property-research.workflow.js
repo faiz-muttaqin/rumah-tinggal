@@ -1,5 +1,5 @@
 // Satu cara (tidak wajib) menjalankan ulang riset properti dengan Workflow
-// Claude Code. Argumen: {group, today, scratch, withMethods, allStations,
+// Claude Code. Argumen: {group, today, scratch, withMethods, allStations, verifyBatch,
 // items: [{id, label, stations: [[nama, lat, lng]]}]}. Hasilnya diproses
 // scripts/merge-research.py. Lihat docs/property-research.md.
 
@@ -242,7 +242,7 @@ For each candidate:
 2. Status: is it currently marketed for purchase (price list, "dijual", "tersedia", launch or promo dated 2025-2026, portal updatedAt within about 12 months)? Sold out, cancelled or only rumoured means rejected.
 3. Location: confirm kelurahan/kecamatan and city, and that it plausibly lies within about 3 km of the claimed station(s). Correct the record if it is wrong.
 4. Official site: if missing, try to find the developer's official project page. You may add Instagram links seen in search results (fetched=false).
-5. Coordinates: keep only explicit ones (see rules) and check they fall in the stated area; otherwise null. Keep or improve osmQuery.
+5. Coordinates: keep only explicit ones (see rules) and check they fall in the stated area; otherwise null. Actively look for them, because a project without a verified point cannot be shown on the map: search Pinhome for the project (its page JSON __PROJECT_DETAIL__ has a coordinate), check rumah123 locationPin, cariproperti, and Google Maps links or iframes on the developer site. Reject a pin shared by unrelated projects or one that contradicts the address. Keep or improve osmQuery.
 6. Units: up to 4 representative unit types with bedrooms, land and building area (m2) and price, only where stated.
 Verdict: "confirmed" = price found today + marketed status evidenced + location consistent; "partial" = price found today but status or location only partly evidenced; "rejected" = no price found today, out of scope, sold out, unreachable, or duplicate of another candidate in this batch (explain in rejectReason).
 In record.sources list every URL you relied on with fetched true/false, httpStatus if known, pageDate if visible, and what it supports. Return one result per candidate, key = candidate name exactly as given. Keep within about 30 tool calls.
@@ -278,7 +278,7 @@ const work = pipeline(
       return { item: item.id, found, verified: [] }
     }
     log(`${item.id}: ${found.candidates.length} candidates, verifying`)
-    const batches = chunk(found.candidates, 4)
+    const batches = chunk(found.candidates, A.verifyBatch || 4)
     return parallel(
       batches.map((batch, index) => () =>
         agent(verifyPrompt(item, batch, index), { label: `verify:${item.id}#${index + 1}`, phase: 'Verify', schema: VERIFY }),

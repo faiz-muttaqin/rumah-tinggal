@@ -156,6 +156,11 @@ export class HousingMap {
             .length,
         );
       }
+      if (this.map.getLayer("planned-stations"))
+        container.dataset.plannedFeatures = String(
+          this.map.queryRenderedFeatures({ layers: ["planned-stations"] })
+            .length,
+        );
       container.dataset.roadFeatures = String(
         this.map.queryRenderedFeatures({ layers: ["basemap-roads"] }).length,
       );
@@ -669,6 +674,67 @@ export class HousingMap {
       this.mobilityPopup = undefined;
       this.mobilityPopupMode = undefined;
     }
+  }
+
+  // Stasiun rencana LRT/KRL: lingkaran berongga, hanya saat koleksi Riset aktif.
+  async showPlanned(
+    points: GeoJSON.FeatureCollection,
+    visible: boolean,
+  ): Promise<void> {
+    await this.ready;
+    const source = this.map.getSource("planned") as
+      | maplibregl.GeoJSONSource
+      | undefined;
+    if (source) source.setData(points);
+    else {
+      this.map.addSource("planned", { type: "geojson", data: points });
+      this.map.addLayer({
+        id: "planned-stations",
+        type: "circle",
+        source: "planned",
+        paint: {
+          "circle-radius": ["interpolate", ["linear"], ["zoom"], 9, 3, 14, 7],
+          "circle-color": "#fffef7",
+          "circle-opacity": 0.6,
+          "circle-stroke-color": [
+            "match",
+            ["get", "mode"],
+            "LRT",
+            MOBILITY_LAYERS.LRT.color,
+            "MRT",
+            MOBILITY_LAYERS.MRT.color,
+            "#486157",
+          ],
+          "circle-stroke-width": 2,
+          "circle-stroke-opacity": 0.9,
+        },
+      });
+      this.map.addLayer({
+        id: "planned-labels",
+        type: "symbol",
+        source: "planned",
+        minzoom: 12,
+        layout: {
+          "text-field": ["get", "label"],
+          "text-font": ["Noto Sans Regular"],
+          "text-size": 10,
+          "text-offset": [0, 1.2],
+          "text-anchor": "top",
+          "text-optional": true,
+        },
+        paint: {
+          "text-color": "#4d5c52",
+          "text-halo-color": "#fffef7",
+          "text-halo-width": 1.2,
+        },
+      });
+    }
+    for (const id of ["planned-stations", "planned-labels"])
+      this.map.setLayoutProperty(
+        id,
+        "visibility",
+        visible ? "visible" : "none",
+      );
   }
 
   async showCommunity(visible: boolean): Promise<void> {

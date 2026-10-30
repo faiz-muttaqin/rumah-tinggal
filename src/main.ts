@@ -23,15 +23,21 @@ import { guessCategory, PIN_STYLES, pinIcon } from "./pins.ts";
 import {
   checkedDate,
   distanceText,
+  isOperating,
   loadResearch,
   nearestRail,
+  type PlannedContext,
   type PopulationContext,
+  plusSummary,
   populationText,
   priceRange,
   type ResearchProperty,
   researchToListing,
   researchToPin,
+  SOCIAL_LABELS,
+  STATION_STATUS_LABELS,
   safeUrl,
+  stationLabel,
 } from "./research-data.ts";
 import {
   type AppConfig,
@@ -107,6 +113,7 @@ let privateListings: Listing[] = [];
 let collection: "demo" | "private" | "pins" | "research" = "demo";
 let researchProperties: ResearchProperty[] = [];
 let researchPopulation: PopulationContext | null = null;
+let researchPlanned: PlannedContext | null = null;
 let researchListings: Listing[] = [];
 let pins: Pin[] = [];
 let selectedArea = "Semua";
@@ -204,8 +211,11 @@ function render(): void {
       .map((listing, index) => {
         const nearest = nearestStation(listing, stations);
         const research = researchFor(listing);
-        const rail = research && nearestRail(research);
-        return `<button class="listing-card ${selectedListing?.id === listing.id ? "selected" : ""}" data-testid="listing-card" data-listing="${esc(listing.id)}"><span class="card-top"><span class="card-area"><i class="area-dot area-${listing.area.toLowerCase()}"></i>${listing.area} <span>· ${esc(listing.district)}</span></span><span class="card-number">${String(index + 1).padStart(2, "0")}</span></span><span class="card-title">${esc(listing.title)}</span><span class="card-price">${money(listing.price)} <span>${research ? esc(research.price.basis) : `harga beli${collection === "demo" ? " contoh" : ""}`}</span></span><span class="card-specs">${research ? `<span>${listing.type}</span><span>${research.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span><span>dicek ${esc(checkedDate(research.lastChecked))}</span>` : `<span>${listing.type}</span><span>${listing.bedrooms} kamar</span><span>${listing.landArea} m²</span>`}</span><span class="card-commute">${icon("train")}<span>${rail ? `${distanceText(rail.km)} · ${rail.mode} ${esc(rail.name)}` : nearest ? `${nearest.distance.toLocaleString("id-ID", { maximumFractionDigits: 1 })} km · ${esc(nearest.station.name)}` : "Data jarak stasiun belum tersedia"}</span><span class="card-arrow">↗</span></span></button>`;
+        const rail =
+          research &&
+          (nearestRail(research) ??
+            nearestRail(research, undefined, "planned"));
+        return `<button class="listing-card ${selectedListing?.id === listing.id ? "selected" : ""}" data-testid="listing-card" data-listing="${esc(listing.id)}"><span class="card-top"><span class="card-area"><i class="area-dot area-${listing.area.toLowerCase()}"></i>${listing.area} <span>· ${esc(listing.district)}</span></span><span class="card-number">${String(index + 1).padStart(2, "0")}</span></span><span class="card-title">${esc(listing.title)}</span><span class="card-price">${money(listing.price)} <span>${research ? esc(research.price.basis) : `harga beli${collection === "demo" ? " contoh" : ""}`}</span></span><span class="card-specs">${research ? `<span>${listing.type}</span><span>${research.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span><span>dicek ${esc(checkedDate(research.lastChecked))}</span>` : `<span>${listing.type}</span><span>${listing.bedrooms} kamar</span><span>${listing.landArea} m²</span>`}</span><span class="card-commute">${icon("train")}<span>${rail ? `${distanceText(rail.km)} · ${esc(stationLabel(rail))}` : nearest ? `${nearest.distance.toLocaleString("id-ID", { maximumFractionDigits: 1 })} km · ${esc(nearest.station.name)}` : "Data jarak stasiun belum tersedia"}</span><span class="card-arrow">↗</span></span></button>`;
       })
       .join("");
     for (const button of document.querySelectorAll<HTMLButtonElement>(
@@ -230,6 +240,25 @@ function render(): void {
     selectedListing?.id,
     selectListing,
   );
+  if (researchPlanned)
+    void map?.showPlanned(
+      plannedPoints(researchPlanned),
+      collection === "research",
+    );
+}
+
+function plannedPoints(planned: PlannedContext): GeoJSON.FeatureCollection {
+  return {
+    type: "FeatureCollection",
+    features: planned.stations.map((station) => ({
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [station.lng, station.lat] },
+      properties: {
+        mode: station.mode,
+        label: `${station.mode} ${station.name} (${STATION_STATUS_LABELS[station.status].toLocaleLowerCase("id-ID")})`,
+      },
+    })),
+  };
 }
 
 function renderPinList(): void {
@@ -359,10 +388,12 @@ function selectListing(listing: Listing): void {
   $<HTMLInputElement>("listings-toggle").checked = true;
   selectedListing = listing;
   const research = researchFor(listing);
-  const rail = research && nearestRail(research);
+  const rail =
+    research &&
+    (nearestRail(research) ?? nearestRail(research, undefined, "planned"));
   const krl = nearestStation(listing, stations);
   const nearest = rail
-    ? { station: rail, distance: rail.km, label: `${rail.mode} ${rail.name}` }
+    ? { station: rail, distance: rail.km, label: stationLabel(rail) }
     : krl && { ...krl, label: krl.station.name };
   const saveable = collection === "demo" || research !== undefined;
   const eyebrow = research
@@ -376,7 +407,7 @@ function selectListing(listing: Listing): void {
     <div class="maps-links" aria-label="Google Maps">
       <a class="button wide" data-map-link="location" href="${esc(googleMapsLocation(listing))}" target="_blank" rel="noopener noreferrer">${icon("pin")} Lokasi di Google Maps ↗</a>
       <a class="button wide" data-map-link="directions" href="${esc(googleMapsDirections(listing))}" target="_blank" rel="noopener noreferrer">${icon("arrow")} Rute ke hunian ↗</a>
-      ${nearest ? `<a class="button wide" data-map-link="station" href="${esc(googleMapsWalkToStation(listing, nearest.station))}" target="_blank" rel="noopener noreferrer">${icon("train")} Jalan ke ${esc(nearest.station.name)} ↗</a>` : ""}
+      ${nearest ? `<a class="button wide" data-map-link="station" href="${esc(googleMapsWalkToStation(listing, nearest.station))}" target="_blank" rel="noopener noreferrer">${icon("train")} ${rail && !isOperating(rail) ? `Arah ke lokasi stasiun rencana ${esc(rail.name)}` : `Jalan ke ${esc(nearest.station.name)}`} ↗</a>` : ""}
       <p>Pilih titik asal, lalu cek jarak dan waktu perjalanan di Google Maps.${collection === "demo" ? " Lokasi hunian ini hanya ilustrasi." : ""}${research?.coordinate ? ` Titik ${esc(research.coordinate.precision)} dari ${esc(research.coordinate.method)}; pastikan lokasi persis ke developer.` : ""}</p>
     </div>
     ${nearbyPins(listing)}
@@ -447,7 +478,7 @@ function researchFor(listing: Listing): ResearchProperty | undefined {
 }
 
 function researchEvidence(property: ResearchProperty): string {
-  return `<div class="detail-evidence"><strong>Bukti harga</strong><p>“${esc(property.price.quote)}”</p><a class="source-link" href="${esc(safeUrl(property.price.url))}" target="_blank" rel="noopener noreferrer">Sumber harga ↗</a>${property.officialUrl ? ` · <a class="source-link" href="${esc(safeUrl(property.officialUrl))}" target="_blank" rel="noopener noreferrer">Situs resmi ↗</a>` : ""}<small>Dicek ${esc(checkedDate(property.lastChecked))} · ${property.sources.length} sumber · <a href="/riset#${encodeURIComponent(property.id)}">bukti lengkap ↗</a></small>${property.population && researchPopulation ? `<small data-testid="detail-population">Penduduk sekitar: ${esc(populationText(property.population, researchPopulation))}; bukan keramaian siang hari.</small>` : ""}</div>`;
+  return `<div class="detail-evidence"><strong>Bukti harga</strong><p>“${esc(property.price.quote)}”</p><a class="source-link" href="${esc(safeUrl(property.price.url))}" target="_blank" rel="noopener noreferrer">Sumber harga ↗</a>${property.officialUrl ? ` · <a class="source-link" href="${esc(safeUrl(property.officialUrl))}" target="_blank" rel="noopener noreferrer">Situs resmi ↗</a>` : ""}${(property.social ?? []).map((link) => ` · <a class="source-link" data-testid="detail-social" href="${esc(safeUrl(link.url))}" target="_blank" rel="noopener noreferrer">${esc(SOCIAL_LABELS[link.platform])} ↗</a>`).join("")}<small>Dicek ${esc(checkedDate(property.lastChecked))} · ${property.sources.length} sumber · <a href="/riset#${encodeURIComponent(property.id)}">bukti lengkap ↗</a></small>${plusSummary(property) ? `<small data-testid="detail-plus">Poin plus: ${esc(plusSummary(property))} · <a href="/riset#${encodeURIComponent(property.id)}">rincian ↗</a></small>` : ""}${property.population && researchPopulation ? `<small data-testid="detail-population">Penduduk sekitar: ${esc(populationText(property.population, researchPopulation))}; bukan keramaian siang hari.</small>` : ""}</div>`;
 }
 
 function nearbyPins(listing: Listing): string {
@@ -813,6 +844,7 @@ async function start(): Promise<void> {
   if (researchResult.status === "fulfilled") {
     researchProperties = researchResult.value.properties;
     researchPopulation = researchResult.value.population;
+    researchPlanned = researchResult.value.planned;
     researchListings = researchProperties.flatMap((property) => {
       const listing = researchToListing(property);
       return listing ? [listing] : [];

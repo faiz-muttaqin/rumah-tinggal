@@ -11,6 +11,7 @@ Perluasan berikutnya dicatat di [ruang riset hunian Jakarta](../research/jakarta
 - **Masuk:** proyek baru (rumah tapak atau apartemen/rusunami, termasuk subsidi dan TOD) yang sedang dipasarkan untuk dibeli, dengan titik proyek paling jauh **3 km garis lurus** dari salah satu stasiun dalam dataset aplikasi (80 KRL, 13 MRT, 29 LRT; lihat [data transportasi](transit-data.md)).
 - **Belum dicakup oleh riset awal:** sewa, kos, ruko/komersial, kavling, dan iklan resale perorangan. Tautan web atau Instagram dari pemilik/agen tetap bisa disimpan sendiri lewat **Tambah listing**, dengan koordinat yang dipilih di peta. Proyek habis terjual dan proyek tanpa harga tidak masuk kurasi peta.
 - Stasiun di luar dataset (misalnya Maja dan Rangkasbitung) belum tercakup.
+- **Pengecualian radius untuk proyek islami (sejak 30 Oktober 2026, atas arahan pengguna):** proyek dengan klaim terverifikasi berupa masjid atau musholla di kawasan, kajian rutin, TPQ, rumah tahfidz, atau sekolah Islam di kawasan, atau konsep islami, tetap dicantumkan walau lebih dari 3 km dari stasiun atau titiknya belum terverifikasi. Kartunya menyebut alasan pencantuman dan jarak ke stasiun terdekat; proyek tanpa titik tidak tampil di peta. Klaim dikutip verbatim dari halaman yang dibuka ulang; skema pembayaran syariah dan legalitasnya tidak diverifikasi.
 - Harga dalam IDR. Basis harga dicatat apa adanya: "harga mulai", "rentang price list", "harga unit tertentu", "harga subsidi", atau "harga promo". Harga bukan penawaran dan dapat berubah; pengguna diminta mengonfirmasi ke developer.
 
 ## Tingkat bukti
@@ -104,10 +105,30 @@ Setiap proyek yang terbit menampilkan estimasi penduduk dalam radius 500 m dan 1
 
 Angka ini estimasi model penduduk tempat tinggal: bukan sensus, bukan registrasi Dukcapil, dan bukan keramaian siang hari atau arus komuter. Sumber banjir, penduduk resmi, komuter, dan keramaian yang sudah dicek tetapi belum ditampilkan dicatat di [sumber konteks wilayah](../research/jakarta/sumber-konteks.md).
 
+## Stasiun rencana LRT dan KRL
+
+`research/planned-stations.json` mencatat rencana perluasan per jalur: status (beroperasi, dalam pembangunan, persiapan atau lelang, rencana resmi, usulan atau kajian, tertunda, belum jelas), tanggal bukti terakhir, kutipan verbatim, target yang dikutip beserta siapa dan kapan menyatakannya, serta sumber bertanggal. Status diperiksa ulang oleh pemeriksa terpisah; target operasi bukan kepastian.
+
+Hanya stasiun dengan titik yang dapat ditelusuri yang dipetakan: node OpenStreetMap (stasiun rencana atau stasiun KAI yang sudah ada) atau titik pada dokumen resmi. Stasiun yang hanya bernama, misalnya enam stasiun LRT Jakarta fase 2A, tidak diberi titik tebakan. Proyek boleh terbit karena dekat stasiun rencana bila segmennya dalam pembangunan, persiapan, atau rencana resmi; stasiun rencana selalu ditandai terpisah dari stasiun beroperasi dan tidak dipakai untuk usulan atau kajian.
+
+## Masjid berkajian dan pendidikan Islam anak
+
+Poin plus tiap proyek berasal dari `research/context/islamic.json`. Inventaris awal diambil dari OpenStreetMap (Overpass, dengan jeda dan backoff): masjid bernama dan sekolah yang namanya atau tag-nya menunjukkan pendidikan Islam, dalam 1,5 km dari titik proyek. Peneliti lalu mencari bukti di halaman yang dibuka langsung:
+
+- Kajian rutin: jadwal berulang di situs masjid, profil SIMAS Kemenag, direktori kajian, situs yayasan, atau berita, bertanggal sekitar November 2024 atau sesudahnya. Kegiatan sekali jalan tidak dihitung.
+- Pendidikan anak: TPQ/TPA, RA/TK Islam, MI/SD Islam, madrasah diniyah, rumah tahfidz, pesantren anak, dan MTs/SMP Islam; biaya hanya bila dipublikasikan resmi, dikutip apa adanya beserta tahun ajarannya.
+- Klaim proyek: fasilitas atau konsep islami yang disebut halaman proyek, ditandai sebagai klaim pemasaran. Skema pembayaran syariah dan legalitasnya tidak diverifikasi.
+
+Pemeriksa terpisah membuka ulang bukti, menolak yang tidak berulang, kedaluwarsa, salah lembaga, atau memuat data pribadi. Nama penceramah, imam, pengurus, guru, nomor telepon, WhatsApp, dan rekening donasi tidak disimpan. Jarak adalah garis lurus.
+
+## Media sosial resmi
+
+Tautan Instagram, Facebook, TikTok, YouTube, X, atau Threads milik proyek, developer, masjid, atau sekolah dicatat dari tautan di situs resmi atau dari hasil mesin pencari, lalu diperiksa ulang tanpa membuka halaman media sosial. Akun pribadi agen, marketing, atau perantara tidak dicatat. `build-properties.py` menolak tautan yang host-nya tidak sesuai platform. Halaman menampilkan tautan dengan keterangan bahwa isinya belum dibuka otomatis.
+
 ## Hasil kurasi 30 Oktober 2026
 
 171 kandidat ditemukan pada 13 koridor pencarian (termasuk duplikat lintas koridor; 152 nama unik). Batch awal mencatat 64 proyek kurasi dan menerbitkan 28.
 
 Tahap verifikasi workflow awal terhenti pada 7 koridor. Lanjutan 30 Oktober memeriksa ulang 48 kandidat Jakarta yang tertunda: 47 lolos dengan harga dari halaman yang dibuka hari itu (23 confirmed, 24 partial) dan 1 ditolak karena pemasaran terkini tidak terbukti (proyek 10 unit yang selesai Desember 2021). Empat lagi dicatat tetapi tidak diterbitkan karena belum tahap penjualan atau hanya bersumber dari halaman Referensi Proyek untuk gedung yang sudah lama selesai.
 
-Kini 111 proyek dicatat pada berkas kurasi; 46 terbit di peta (29 Jakarta) dan 65 belum masuk. Alasan terbanyak adalah belum ada titik proyek terverifikasi: OpenStreetMap tidak mengenal nama proyek kecil, dan pin portal yang dipakai bersama oleh proyek berbeda ditolak. Stasiun KRL/MRT/LRT di wilayah Jakarta tanpa proyek terbit dalam 3 km turun dari 39 menjadi 15 dari 81. Sekitar 35 kandidat di luar Jakarta dari batch awal masih belum diperiksa ulang. Halaman menampilkan cakupan aktual dan alasan belum masuk; tidak mengklaim seluruh kandidat telah selesai diperiksa.
+Pembaruan akhir 30 Oktober: 176 entri kurasi; 98 terbit (Jakarta 48, Bogor 14, Bekasi 14, Tangerang 13, Depok 9; 37 confirmed). Dari jumlah itu 14 dicantumkan karena fasilitas atau konsep islami walau jauh dari stasiun, 6 di antaranya tanpa titik. 78 belum masuk; 64 di antaranya tetap menampilkan harga bersumber. Lokasi 18 proyek ditemukan lewat pencari titik dan pemeriksa terpisah; 11 usulan titik ditolak. Stasiun KRL/MRT/LRT di wilayah Jakarta tanpa proyek terbit dalam 3 km kini 9 dari 81 (Angke, Buaran, Duri, Grogol, Pesing, Pondok Jati, Tanjung Priok, Halim, Pramuka). Daftar perumahan islami dari pengguna (hasil Meta AI) diperlakukan sebagai petunjuk: sebagian benar, sebagian keliru (platform yang menyamarkan nama proyek, agen, proyek resale, proyek tidak ditemukan), dan hanya yang terverifikasi yang dicatat.
