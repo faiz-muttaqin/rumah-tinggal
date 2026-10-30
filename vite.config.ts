@@ -11,6 +11,7 @@ export default defineConfig({
     target: "es2023",
     sourcemap: false,
     rolldownOptions: {
+      input: { main: "index.html", riset: "riset.html" },
       output: {
         codeSplitting: {
           groups: [

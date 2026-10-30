@@ -377,14 +377,17 @@ select {
   flex: 0 0 auto;
 }
 .data-tabs {
-  display: flex;
-  gap: 23px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 18px;
   border-bottom: 1px solid var(--line);
 }
 .data-tabs button {
   display: flex;
   align-items: center;
   gap: 6px;
+  flex-shrink: 0;
+  white-space: nowrap;
   padding: 12px 0;
   font-size: 11px;
   font-weight: 700;
@@ -1123,6 +1126,34 @@ select {
   font-size: 11px;
   color: #748267;
   margin-top: 5px;
+}
+.research-note a {
+  color: var(--green);
+  font-weight: 700;
+}
+.detail-evidence {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 12px 0;
+  padding: 10px 12px;
+  background: #f6f8f1;
+  border-left: 3px solid #c9d6b8;
+  border-radius: 4px;
+  overflow-wrap: anywhere;
+}
+.detail-evidence p {
+  margin: 0;
+}
+.detail-evidence .source-link {
+  display: inline;
+  margin: 0;
+}
+.detail-evidence small,
+.detail-evidence small a {
+  color: var(--muted);
 }
 .detail-notes {
   font-size: 11px;

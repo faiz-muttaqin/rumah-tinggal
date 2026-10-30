@@ -1,4 +1,5 @@
 import { expect, type Page, test } from "@playwright/test";
+import { researchFixture } from "./research-fixture.ts";
 
 const pageErrors = new WeakMap<Page, string[]>();
 const blockedTileRequests = new WeakMap<Page, number>();
@@ -112,6 +113,10 @@ test.beforeEach(async ({ page }) => {
           : [],
       },
     });
+  });
+  // Research data is a fictional fixture so tests never depend on live prices.
+  await page.route("**/data/properties.geojson", async (route) => {
+    await route.fulfill({ json: researchFixture });
   });
   // Never request public OSM raster tiles during automation.
   await page.route("**/tile.openstreetmap.org/**", async (route) => {
@@ -513,6 +518,57 @@ test("explains attribution and illustrative straight-line estimates in the sourc
   await expect(sourceButton).toBeFocused();
 });
 
+test("research tab maps sourced projects and links back to the evidence", async ({
+  page,
+}) => {
+  await expect(page.locator("#research-count")).toHaveText("3");
+  await page.locator("#research-tab").click();
+  await expect(page.locator("#research-tab")).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await expect(cards(page)).toHaveCount(3);
+  await expect(page.locator("#map .price-pin")).toHaveCount(3);
+  await expect(page.locator("#research-note")).toBeVisible();
+  await expect(page.locator("#example-note")).toBeHidden();
+  await cards(page).filter({ hasText: "Hunian Uji Cisauk" }).click();
+  const detail = page.locator("#detail-card");
+  await expect(detail).toContainText("RISET PROPERTI");
+  await expect(detail).toContainText("Rp 450 jt – Rp 620 jt");
+  await expect(detail).toContainText("KRL Cisauk");
+  await expect(
+    detail.getByRole("link", { name: /Sumber harga/ }),
+  ).toHaveAttribute("href", "https://portal.example.invalid/uji-cisauk");
+  await expect(
+    detail.getByRole("link", { name: /bukti lengkap/ }),
+  ).toHaveAttribute("href", "/riset#prj-uji-cisauk");
+  await expect(detail.locator('[data-map-link="station"]')).toHaveAttribute(
+    "href",
+    /destination=-6\.32444%2C106\.64163/,
+  );
+  await expect(
+    detail.getByRole("button", { name: /Simpan ke Listingku/ }),
+  ).toBeVisible();
+  await expect(
+    detail.getByRole("button", { name: "Simpan sebagai pin" }),
+  ).toBeVisible();
+  // Saving needs a real Google sign-in, which stays outside this suite.
+});
+
+test("a research deep link opens the project on the map", async ({ page }) => {
+  await page.goto("/?riset=prj-uji-lebak-bulus");
+  await expect(page.locator("#detail-card")).toContainText(
+    "Apartemen Uji Lebak Bulus",
+  );
+  await expect(page.locator("#detail-card")).toContainText(
+    "MRT Lebak Bulus Bank Syariah Indonesia",
+  );
+  await expect(page.locator("#research-tab")).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+});
+
 test("anonymous Listingku offers Google sign-in without requesting private listings", async ({
   page,
 }) => {
@@ -652,6 +708,11 @@ test.describe("mobile explorer", () => {
   }, testInfo) => {
     await expectNoHorizontalOverflow(page);
     await page.getByRole("button", { name: "Daftar", exact: true }).click();
+    const researchMenu = await page.locator("#research-tab").boundingBox();
+    expect(researchMenu).not.toBeNull();
+    expect(
+      (researchMenu?.x ?? 0) + (researchMenu?.width ?? 0),
+    ).toBeLessThanOrEqual(390);
     await expect(cards(page)).toHaveCount(8);
     await expect(cards(page).first()).toBeVisible();
     await expectNoHorizontalOverflow(page);

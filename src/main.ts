@@ -1,9 +1,17 @@
 import "@fontsource-variable/plus-jakarta-sans";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
-import { getUser, initializeAuth, login, logout, privateAPI } from "./auth.ts";
+import {
+  getUser,
+  initializeAuth,
+  login,
+  loginErrorMessage,
+  logout,
+  privateAPI,
+} from "./auth.ts";
 import { demoListings } from "./demo.ts";
 import { distanceKm, escapeHTML as esc, money, nearestStation } from "./geo.ts";
+import { icon } from "./icons.ts";
 import { HousingMap, type TransitMode } from "./map.ts";
 import {
   googleMapsDirections,
@@ -12,6 +20,17 @@ import {
   googleMapsWalkToStation,
 } from "./maps-links.ts";
 import { guessCategory, PIN_STYLES, pinIcon } from "./pins.ts";
+import {
+  checkedDate,
+  distanceText,
+  loadResearch,
+  nearestRail,
+  priceRange,
+  type ResearchProperty,
+  researchToListing,
+  researchToPin,
+  safeUrl,
+} from "./research-data.ts";
 import {
   type AppConfig,
   AREAS,
@@ -22,24 +41,6 @@ import {
   type Station,
 } from "./types.ts";
 
-const icons = {
-  home: '<path d="m3 10 9-7 9 7v11H3z"/><path d="M9 21v-8h6v8"/>',
-  search: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>',
-  train:
-    '<rect x="5" y="3" width="14" height="15" rx="4"/><path d="M5 10h14M9 18l-2 3m8-3 2 3M9 14h.01M15 14h.01"/>',
-  bus: '<rect x="4" y="3" width="16" height="16" rx="3"/><path d="M4 11h16M8 3v8m8-8v8M7 15h.01M17 15h.01M7 19v2m10-2v2"/>',
-  bookmark: '<path d="M6 3h12v18l-6-4-6 4z"/>',
-  arrow: '<path d="M5 12h14m-5-5 5 5-5 5"/>',
-  close: '<path d="m6 6 12 12M6 18 18 6"/>',
-  pin: '<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>',
-  plus: '<path d="M12 5v14M5 12h14"/>',
-  info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/>',
-  target:
-    '<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3"/>',
-};
-function icon(name: keyof typeof icons): string {
-  return `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name]}</svg>`;
-}
 const $ = <T extends HTMLElement = HTMLElement>(id: string): T =>
   document.getElementById(id) as T;
 
@@ -47,7 +48,7 @@ $("app").innerHTML = `
   <a class="skip-link" href="#results">Langsung ke daftar hunian</a>
   <header class="masthead">
     <a class="brand" href="/" aria-label="Rumah Tinggal, beranda"><span class="brand-mark">${icon("home")}</span><span>rumah<span class="brand-light">tinggal</span><span class="brand-dot">.</span></span></a>
-    <nav class="main-nav" aria-label="Navigasi utama"><a class="active" href="#explorer">Jelajahi peta</a><button id="nav-saved">${icon("bookmark")} Listingku</button></nav>
+    <nav class="main-nav" aria-label="Navigasi utama"><a class="active" href="#explorer">Jelajahi peta</a><a href="/riset">${icon("research")} Riset properti</a><button id="nav-saved">${icon("bookmark")} Listingku</button></nav>
     <div class="header-right"><span class="coverage">Jabodetabek <span class="live-dot"></span></span><button class="button login-button" id="account-button"><span class="google-g" aria-hidden="true">G</span><span id="account-label">Masuk dengan Google</span></button></div>
   </header>
   <main id="explorer" class="explorer">
@@ -61,11 +62,11 @@ $("app").innerHTML = `
         <div class="area-chips" aria-label="Filter wilayah"><button class="chip selected" data-area="Semua" aria-pressed="true">Semua</button>${AREAS.map((area) => `<button class="chip" data-area="${area}" aria-pressed="false">${area}</button>`).join("")}</div>
         <div class="filter-grid"><label>Anggaran beli<select id="budget" aria-label="Anggaran maksimum"><option value="0">Semua anggaran</option><option value="500000000">Hingga Rp 500 juta</option><option value="750000000">Hingga Rp 750 juta</option><option value="1000000000">Hingga Rp 1 miliar</option></select></label><label>Jenis hunian<select id="housing-type" aria-label="Jenis hunian"><option value="Semua">Semua jenis</option><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label></div>
         <div class="commute-filter">${icon("train")}<label for="station-distance">Jarak ke stasiun KRL</label><select id="station-distance" aria-label="Jarak maksimum ke stasiun KRL"><option value="0">Bebas</option><option value="1">≤ 1 km</option><option value="3">≤ 3 km</option><option value="5">≤ 5 km</option></select></div>
-        <div class="data-tabs" aria-label="Koleksi hunian"><button id="demo-tab" class="active" aria-pressed="true">Contoh hunian <span>8</span></button><button id="private-tab" aria-pressed="false">${icon("bookmark")} Listingku</button><button id="pins-tab" aria-pressed="false">${icon("pin")} Pin tempat</button></div>
+        <div class="data-tabs" aria-label="Koleksi hunian"><button id="demo-tab" class="active" aria-pressed="true">Contoh hunian <span>8</span></button><button id="private-tab" aria-pressed="false">${icon("bookmark")} Listingku</button><button id="pins-tab" aria-pressed="false">${icon("pin")} Pin tempat</button><button id="research-tab" aria-pressed="false">${icon("research")} Riset <span id="research-count">…</span></button></div>
       </div>
       <section id="results" class="results" tabindex="-1" aria-label="Hasil pencarian">
         <div class="results-toolbar"><div><strong id="result-count">8 hunian</strong><span id="result-scope"> di Jabodetabek</span></div><select id="sort" aria-label="Urutkan hunian"><option value="recommended">Rekomendasi</option><option value="price">Harga terendah</option><option value="station">Terdekat KRL</option></select></div>
-        <div class="example-note" id="example-note"><span class="sample-dot"></span> Data contoh · harga & lokasi ilustratif</div>
+        <div class="example-note" id="example-note"><span class="sample-dot"></span> Data contoh · harga & lokasi ilustratif</div><div class="example-note research-note" id="research-note" hidden><span class="sample-dot"></span> Data nyata · harga dari sumber per tanggal cek · <a href="/riset">bukti lengkap ↗</a></div>
         <div id="listing-list" class="listing-list" aria-live="polite"></div>
       </section>
       <footer class="sidebar-footer"><span>Pilihan baik dimulai dari mengenal tempat.</span><button id="sources-button">${icon("info")} Sumber data</button></footer>
@@ -91,7 +92,7 @@ $("app").innerHTML = `
     </section>
   </main>
   <div class="mobile-view"><button id="mobile-map">${icon("pin")} Peta</button><button id="mobile-list" class="active">${icon("home")} Daftar</button></div>
-  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><span class="eyebrow">TRANSPARANSI DATA</span><button class="icon-button" data-close="sources-dialog" aria-label="Tutup sumber data">${icon("close")}</button></div><h2 id="sources-title">Sumber & catatan data</h2><div class="source-block"><h3>Wilayah Jabodetabek</h3><p>14 batas kabupaten/kota dari geometri Nafkah / HDX COD-AB, disederhanakan untuk gambaran wilayah. Batas ini tidak cukup rinci untuk memastikan alamat atau batas bidang tanah. Kepulauan Seribu sangat disederhanakan pada sumber.</p><a href="https://gitlab.com/adenaufal/nafkah" target="_blank" rel="noopener noreferrer">Nafkah · Ade Naufal · CC BY 4.0 ↗</a></div><div class="source-block"><h3>KRL, MRT, LRT & TransJakarta</h3><p>Snapshot geografis OpenStreetMap, 29 Oktober 2026: 80 titik KRL, 13 MRT, 29 LRT, serta 251 titik halte pada 14 koridor utama BRT TransJakarta. LRT mencakup LRT Jakarta dan LRT Jabodebek. TransJakarta belum mencakup pengumpan/Mikrotrans dan awalnya disembunyikan.</p><p>Geometri mengikuti rel/jalan yang dipetakan; titik stasiun/halte bukan pintu masuk terverifikasi. Data ini bukan jadwal, tarif, status operasi, atau waktu tempuh aktual. Periksa perjalanan ke operator.</p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL ↗</a></div><div class="source-block"><h3>Listing & jarak</h3><p>Semua hunian pada tab Contoh hunian adalah data ilustratif, bukan iklan atau penawaran properti. Listingku berisi data pribadi yang kamu masukkan sendiri. Jarak ke KRL adalah garis lurus ke titik stasiun terdekat, bukan akses pintu masuk atau rute berjalan.</p></div><div class="source-block"><h3>Peta jalan & bangunan</h3><p>Peta vektor OpenFreeMap, skema © OpenMapTiles, data © OpenStreetMap contributors. Bangunan dapat disembunyikan terpisah; jalan tetap tampil. Ikon masjid & sekolah sekitar berasal dari titik POI tile yang sama (zoom 14 ke atas). Cakupan bangunan, masjid, dan sekolah mengikuti data OSM dan tidak membuktikan status operasi.</p><a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">OpenFreeMap · OpenMapTiles · OpenStreetMap ↗</a></div><div class="source-block"><h3>Pencarian tempat</h3><p>Hasil pencarian tempat berasal dari Photon (komoot) berbasis OpenStreetMap, dibatasi wilayah Jabodetabek. Pin tempat yang kamu simpan hanya dapat dilihat akunmu.</p><a href="https://photon.komoot.io/" target="_blank" rel="noopener noreferrer">Photon · © OpenStreetMap contributors ↗</a></div><p class="fine-print">Peta dasar OpenFreeMap · © OpenMapTiles · © OpenStreetMap contributors. Tampilan terinspirasi pola peta Nafkah; implementasi aplikasi dibuat untuk Rumah Tinggal.</p></dialog>
+  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><span class="eyebrow">TRANSPARANSI DATA</span><button class="icon-button" data-close="sources-dialog" aria-label="Tutup sumber data">${icon("close")}</button></div><h2 id="sources-title">Sumber & catatan data</h2><div class="source-block"><h3>Wilayah Jabodetabek</h3><p>14 batas kabupaten/kota dari geometri Nafkah / HDX COD-AB, disederhanakan untuk gambaran wilayah. Batas ini tidak cukup rinci untuk memastikan alamat atau batas bidang tanah. Kepulauan Seribu sangat disederhanakan pada sumber.</p><a href="https://gitlab.com/adenaufal/nafkah" target="_blank" rel="noopener noreferrer">Nafkah · Ade Naufal · CC BY 4.0 ↗</a></div><div class="source-block"><h3>KRL, MRT, LRT & TransJakarta</h3><p>Snapshot geografis OpenStreetMap, 29 Oktober 2026: 80 titik KRL, 13 MRT, 29 LRT, serta 251 titik halte pada 14 koridor utama BRT TransJakarta. LRT mencakup LRT Jakarta dan LRT Jabodebek. TransJakarta belum mencakup pengumpan/Mikrotrans dan awalnya disembunyikan.</p><p>Geometri mengikuti rel/jalan yang dipetakan; titik stasiun/halte bukan pintu masuk terverifikasi. Data ini bukan jadwal, tarif, status operasi, atau waktu tempuh aktual. Periksa perjalanan ke operator.</p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL ↗</a></div><div class="source-block"><h3>Listing & jarak</h3><p>Semua hunian pada tab Contoh hunian adalah data ilustratif, bukan iklan atau penawaran properti. Listingku berisi data pribadi yang kamu masukkan sendiri. Jarak ke KRL adalah garis lurus ke titik stasiun terdekat, bukan akses pintu masuk atau rute berjalan.</p></div><div class="source-block"><h3>Peta jalan & bangunan</h3><p>Peta vektor OpenFreeMap, skema © OpenMapTiles, data © OpenStreetMap contributors. Bangunan dapat disembunyikan terpisah; jalan tetap tampil. Ikon masjid & sekolah sekitar berasal dari titik POI tile yang sama (zoom 14 ke atas). Cakupan bangunan, masjid, dan sekolah mengikuti data OSM dan tidak membuktikan status operasi.</p><a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">OpenFreeMap · OpenMapTiles · OpenStreetMap ↗</a></div><div class="source-block"><h3>Riset properti</h3><p>Kandidat proyek nyata di sekitar KRL, MRT, dan LRT. Harga dan status mengikuti sumber bertanggal; bukti yang belum lengkap diberi label sebagian terverifikasi. Nama developer dari sumber publik belum membuktikan kepemilikan unit. Jarak dihitung aplikasi secara garis lurus ke titik stasiun OSM. Bukan iklan atau penawaran; konfirmasi ke developer.</p><a href="/riset#metode">Metode dan bukti lengkap ↗</a></div><div class="source-block"><h3>Pencarian tempat</h3><p>Hasil pencarian tempat berasal dari Photon (komoot) berbasis OpenStreetMap, dibatasi wilayah Jabodetabek. Pin tempat yang kamu simpan hanya dapat dilihat akunmu.</p><a href="https://photon.komoot.io/" target="_blank" rel="noopener noreferrer">Photon · © OpenStreetMap contributors ↗</a></div><p class="fine-print">Peta dasar OpenFreeMap · © OpenMapTiles · © OpenStreetMap contributors. Tampilan terinspirasi pola peta Nafkah; implementasi aplikasi dibuat untuk Rumah Tinggal.</p></dialog>
   <dialog id="listing-dialog" aria-labelledby="listing-title"><div class="dialog-header"><span class="eyebrow">KOLEKSI PRIBADIMU</span><button class="icon-button" data-close="listing-dialog" aria-label="Tutup tambah listing">${icon("close")}</button></div><h2 id="listing-title">Tambahkan calon rumah</h2><p class="dialog-intro">Simpan lokasi, harga beli, dan catatan survei. Hanya akunmu yang dapat melihatnya.</p><form id="listing-form"><label>Nama hunian<input name="title" required maxlength="160" placeholder="Contoh: Rumah dekat Stasiun Pondok Ranji"/></label><div class="form-grid"><label>Wilayah<select name="area">${AREAS.map((area) => `<option>${area}</option>`).join("")}</select></label><label>Kecamatan / lingkungan<input name="district" required maxlength="100"/></label><label>Harga beli (Rp)<input name="price" type="number" min="1" max="1000000000000" required/></label><label>Jenis<select name="type"><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label><label>Kamar tidur<input name="bedrooms" type="number" min="0" max="30" value="2" required/></label><label>Luas tanah / unit (m²)<input name="landArea" type="number" min="1" max="100000" required/></label><label>Latitude<input id="form-lat" name="lat" type="number" step="any" min="-6.85" max="-5.75" required value="-6.3"/></label><label>Longitude<input id="form-lng" name="lng" type="number" step="any" min="106.3" max="107.31" required value="106.8"/></label></div><button type="button" id="pick-map" class="text-button">${icon("pin")} Pilih koordinat di peta</button><label>Tautan sumber (opsional)<input name="sourceUrl" type="url" maxlength="2000" placeholder="https://…"/></label><label>Catatan survei (opsional)<textarea name="notes" maxlength="3000" rows="3" placeholder="Akses jalan, kondisi lingkungan, hal yang perlu dicek…"></textarea></label><p id="form-error" class="form-error" role="alert"></p><button class="button primary wide" type="submit">Simpan ke Listingku ${icon("arrow")}</button></form></dialog>
   <dialog id="pin-dialog" aria-labelledby="pin-title"><div class="dialog-header"><span class="eyebrow">TEMPAT PENTING</span><button class="icon-button" data-close="pin-dialog" aria-label="Tutup tambah pin">${icon("close")}</button></div><h2 id="pin-title">Tandai tempat penting</h2><p class="dialog-intro">Masjid, sekolah, tempat kerja, atau tempat lain yang sering kamu datangi. Hanya akunmu yang dapat melihatnya.</p><form id="pin-form"><label>Nama tempat<input name="name" required maxlength="160" placeholder="Contoh: Masjid Al-Ikhlas"/></label><fieldset class="pin-categories"><legend>Ikon / kategori</legend>${PIN_CATEGORIES.map((category, index) => `<label class="pin-category" style="--pin:${PIN_STYLES[category].color}"><input type="radio" name="category" value="${category}" ${index === 0 ? "checked" : ""}/><span>${pinIcon(category, 18)}</span>${PIN_STYLES[category].label}</label>`).join("")}</fieldset><div class="form-grid"><label>Latitude<input id="pin-lat" name="lat" type="number" step="any" min="-6.85" max="-5.75" required value="-6.3"/></label><label>Longitude<input id="pin-lng" name="lng" type="number" step="any" min="106.3" max="107.31" required value="106.8"/></label></div><button type="button" id="pin-pick-map" class="text-button">${icon("pin")} Pilih titik di peta</button><label>Catatan (opsional)<textarea name="notes" maxlength="2000" rows="2" placeholder="Jam buka, akses jalan, alasan penting…"></textarea></label><p id="pin-error" class="form-error" role="alert"></p><button class="button primary wide" type="submit">Simpan pin ${icon("arrow")}</button></form></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
@@ -101,7 +102,9 @@ let map: HousingMap | undefined;
 let stations: Station[] = [];
 let transportStops: Station[] = [];
 let privateListings: Listing[] = [];
-let collection: "demo" | "private" | "pins" = "demo";
+let collection: "demo" | "private" | "pins" | "research" = "demo";
+let researchProperties: ResearchProperty[] = [];
+let researchListings: Listing[] = [];
 let pins: Pin[] = [];
 let selectedArea = "Semua";
 let selectedListing: Listing | undefined;
@@ -126,7 +129,11 @@ function filteredListings(): Listing[] {
     $<HTMLSelectElement>("station-distance").value,
   );
   const listings = (
-    collection === "demo" ? demoListings : privateListings
+    collection === "demo"
+      ? demoListings
+      : collection === "research"
+        ? researchListings
+        : privateListings
   ).filter((listing) => {
     const nearest = nearestStation(listing, stations);
     const text =
@@ -158,6 +165,12 @@ function render(): void {
   $("result-scope").textContent =
     ` di ${selectedArea === "Semua" ? "Jabodetabek" : selectedArea}`;
   $("example-note").hidden = collection !== "demo";
+  $("research-note").hidden = collection !== "research";
+  $("research-tab").classList.toggle("active", collection === "research");
+  $("research-tab").setAttribute(
+    "aria-pressed",
+    String(collection === "research"),
+  );
   $("demo-tab").classList.toggle("active", collection === "demo");
   $("private-tab").classList.toggle("active", collection === "private");
   $("demo-tab").setAttribute("aria-pressed", String(collection === "demo"));
@@ -187,7 +200,9 @@ function render(): void {
     $("listing-list").innerHTML = listings
       .map((listing, index) => {
         const nearest = nearestStation(listing, stations);
-        return `<button class="listing-card ${selectedListing?.id === listing.id ? "selected" : ""}" data-testid="listing-card" data-listing="${esc(listing.id)}"><span class="card-top"><span class="card-area"><i class="area-dot area-${listing.area.toLowerCase()}"></i>${listing.area} <span>· ${esc(listing.district)}</span></span><span class="card-number">${String(index + 1).padStart(2, "0")}</span></span><span class="card-title">${esc(listing.title)}</span><span class="card-price">${money(listing.price)} <span>harga beli${collection === "demo" ? " contoh" : ""}</span></span><span class="card-specs"><span>${listing.type}</span><span>${listing.bedrooms} kamar</span><span>${listing.landArea} m²</span></span><span class="card-commute">${icon("train")}<span>${nearest ? `${nearest.distance.toLocaleString("id-ID", { maximumFractionDigits: 1 })} km · ${esc(nearest.station.name)}` : "Data jarak stasiun belum tersedia"}</span><span class="card-arrow">↗</span></span></button>`;
+        const research = researchFor(listing);
+        const rail = research && nearestRail(research);
+        return `<button class="listing-card ${selectedListing?.id === listing.id ? "selected" : ""}" data-testid="listing-card" data-listing="${esc(listing.id)}"><span class="card-top"><span class="card-area"><i class="area-dot area-${listing.area.toLowerCase()}"></i>${listing.area} <span>· ${esc(listing.district)}</span></span><span class="card-number">${String(index + 1).padStart(2, "0")}</span></span><span class="card-title">${esc(listing.title)}</span><span class="card-price">${money(listing.price)} <span>${research ? esc(research.price.basis) : `harga beli${collection === "demo" ? " contoh" : ""}`}</span></span><span class="card-specs">${research ? `<span>${listing.type}</span><span>${research.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span><span>dicek ${esc(checkedDate(research.lastChecked))}</span>` : `<span>${listing.type}</span><span>${listing.bedrooms} kamar</span><span>${listing.landArea} m²</span>`}</span><span class="card-commute">${icon("train")}<span>${rail ? `${distanceText(rail.km)} · ${rail.mode} ${esc(rail.name)}` : nearest ? `${nearest.distance.toLocaleString("id-ID", { maximumFractionDigits: 1 })} km · ${esc(nearest.station.name)}` : "Data jarak stasiun belum tersedia"}</span><span class="card-arrow">↗</span></span></button>`;
       })
       .join("");
     for (const button of document.querySelectorAll<HTMLButtonElement>(
@@ -287,12 +302,14 @@ async function loadPins(): Promise<void> {
 }
 
 function showPinForm(
-  preset?: Partial<Pick<Pin, "name" | "lat" | "lng" | "category">>,
+  preset?: Partial<Pick<Pin, "name" | "lat" | "lng" | "category" | "notes">>,
 ): void {
   if (!getUser()) {
     collection = "pins";
     render();
-    void doLogin();
+    void doLogin().then(() => {
+      if (getUser()) showPinForm(preset);
+    });
     return;
   }
   const form = $<HTMLFormElement>("pin-form");
@@ -304,6 +321,9 @@ function showPinForm(
       $<HTMLInputElement>("pin-lat").value = preset.lat.toFixed(6);
     if (preset.lng !== undefined)
       $<HTMLInputElement>("pin-lng").value = preset.lng.toFixed(6);
+    if (preset.notes)
+      (form.elements.namedItem("notes") as HTMLTextAreaElement).value =
+        preset.notes;
     const radio = form.querySelector<HTMLInputElement>(
       `input[name="category"][value="${preset.category ?? "masjid"}"]`,
     );
@@ -335,18 +355,36 @@ function selectListing(listing: Listing): void {
   listingsVisible = true;
   $<HTMLInputElement>("listings-toggle").checked = true;
   selectedListing = listing;
-  const nearest = nearestStation(listing, stations);
+  const research = researchFor(listing);
+  const rail = research && nearestRail(research);
+  const krl = nearestStation(listing, stations);
+  const nearest = rail
+    ? { station: rail, distance: rail.km, label: `${rail.mode} ${rail.name}` }
+    : krl && { ...krl, label: krl.station.name };
+  const saveable = collection === "demo" || research !== undefined;
+  const eyebrow = research
+    ? "RISET PROPERTI"
+    : collection === "demo"
+      ? "CONTOH HUNIAN"
+      : "LISTING PRIBADI";
   const detail = $("detail-card");
   detail.hidden = false;
-  detail.innerHTML = `<div class="detail-top"><span class="eyebrow">${collection === "demo" ? "CONTOH HUNIAN" : "LISTING PRIBADI"} · ${esc(listing.area)}</span><button id="detail-close" class="icon-button" aria-label="Tutup detail hunian">${icon("close")}</button></div><h2>${esc(listing.title)}</h2><strong class="detail-price">${money(listing.price)}</strong><div class="card-specs"><span>${listing.type}</span><span>${listing.bedrooms} kamar</span><span>${listing.landArea} m²</span></div><div class="detail-transit">${icon("train")}<div><strong>${nearest ? esc(nearest.station.name) : "Stasiun belum ditemukan"}</strong><span>${nearest ? `${nearest.distance.toLocaleString("id-ID", { maximumFractionDigits: 1 })} km garis lurus dari titik hunian` : "Periksa data stasiun terlebih dahulu"}</span></div></div>
+  detail.innerHTML = `<div class="detail-top"><span class="eyebrow">${eyebrow} · ${esc(listing.area)}</span><button id="detail-close" class="icon-button" aria-label="Tutup detail hunian">${icon("close")}</button></div><h2>${esc(listing.title)}</h2><strong class="detail-price">${research ? priceRange(research) : money(listing.price)}</strong>${research ? `<div class="card-specs"><span>${listing.type}</span><span>${esc(research.price.basis)}</span><span>${research.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span></div>` : `<div class="card-specs"><span>${listing.type}</span><span>${listing.bedrooms} kamar</span><span>${listing.landArea} m²</span></div>`}<div class="detail-transit">${icon("train")}<div><strong>${nearest ? esc(nearest.label) : "Stasiun belum ditemukan"}</strong><span>${nearest ? `${nearest.distance.toLocaleString("id-ID", { maximumFractionDigits: 1 })} km garis lurus dari titik hunian` : "Periksa data stasiun terlebih dahulu"}</span></div></div>
     <div class="maps-links" aria-label="Google Maps">
       <a class="button wide" data-map-link="location" href="${esc(googleMapsLocation(listing))}" target="_blank" rel="noopener noreferrer">${icon("pin")} Lokasi di Google Maps ↗</a>
       <a class="button wide" data-map-link="directions" href="${esc(googleMapsDirections(listing))}" target="_blank" rel="noopener noreferrer">${icon("arrow")} Rute ke hunian ↗</a>
       ${nearest ? `<a class="button wide" data-map-link="station" href="${esc(googleMapsWalkToStation(listing, nearest.station))}" target="_blank" rel="noopener noreferrer">${icon("train")} Jalan ke ${esc(nearest.station.name)} ↗</a>` : ""}
-      <p>Pilih titik asal, lalu cek jarak dan waktu perjalanan di Google Maps.${collection === "demo" ? " Lokasi hunian ini hanya ilustrasi." : ""}</p>
+      <p>Pilih titik asal, lalu cek jarak dan waktu perjalanan di Google Maps.${collection === "demo" ? " Lokasi hunian ini hanya ilustrasi." : ""}${research?.coordinate ? ` Titik ${esc(research.coordinate.precision)} dari ${esc(research.coordinate.method)}; pastikan lokasi persis ke developer.` : ""}</p>
     </div>
     ${nearbyPins(listing)}
-    <p class="detail-notes">${esc(listing.notes || "Belum ada catatan survei.")}</p>${listing.sourceUrl ? `<a class="source-link" href="${esc(listing.sourceUrl)}" target="_blank" rel="noopener noreferrer">Buka sumber listing ↗</a>` : ""}<button id="detail-action" class="button ${collection === "demo" ? "primary" : "danger"} wide">${collection === "demo" ? `${icon("bookmark")} Simpan ke Listingku` : "Hapus dari Listingku"}</button>`;
+    ${research ? researchEvidence(research) : `<p class="detail-notes">${esc(listing.notes || "Belum ada catatan survei.")}</p>${listing.sourceUrl ? `<a class="source-link" href="${esc(safeUrl(listing.sourceUrl))}" target="_blank" rel="noopener noreferrer">Buka sumber listing ↗</a>` : ""}`}<button id="detail-action" class="button ${saveable ? "primary" : "danger"} wide">${saveable ? `${icon("bookmark")} Simpan ke Listingku` : "Hapus dari Listingku"}</button>`;
+  if (research) {
+    detail.insertAdjacentHTML(
+      "beforeend",
+      `<button id="detail-pin" class="button wide">${icon("pin")} Simpan sebagai pin</button>`,
+    );
+    $("detail-pin").onclick = () => showPinForm(researchToPin(research));
+  }
   for (const button of detail.querySelectorAll<HTMLButtonElement>(
     "[data-near-pin]",
   ))
@@ -361,18 +399,20 @@ function selectListing(listing: Listing): void {
   $("detail-action").onclick = async () => {
     if (!getUser()) {
       await doLogin();
-      return;
+      if (!getUser()) return;
     }
     const button = $<HTMLButtonElement>("detail-action");
     button.disabled = true;
     try {
-      if (collection === "demo") {
+      if (saveable) {
         await privateAPI("/api/listings", {
           method: "POST",
           body: JSON.stringify(listing),
         });
         toast(
-          "Contoh disimpan ke Listingku. Lengkapi dengan data hasil surveimu.",
+          research
+            ? "Disimpan ke Listingku dengan tautan sumber dan tanggal cek."
+            : "Contoh disimpan ke Listingku. Lengkapi dengan data hasil surveimu.",
         );
       } else {
         if (!confirm("Hapus listing ini dari koleksi pribadimu?")) return;
@@ -397,6 +437,16 @@ function selectListing(listing: Listing): void {
   render();
 }
 
+function researchFor(listing: Listing): ResearchProperty | undefined {
+  return collection === "research"
+    ? researchProperties.find((property) => property.id === listing.id)
+    : undefined;
+}
+
+function researchEvidence(property: ResearchProperty): string {
+  return `<div class="detail-evidence"><strong>Bukti harga</strong><p>“${esc(property.price.quote)}”</p><a class="source-link" href="${esc(safeUrl(property.price.url))}" target="_blank" rel="noopener noreferrer">Sumber harga ↗</a>${property.officialUrl ? ` · <a class="source-link" href="${esc(safeUrl(property.officialUrl))}" target="_blank" rel="noopener noreferrer">Situs resmi ↗</a>` : ""}<small>Dicek ${esc(checkedDate(property.lastChecked))} · ${property.sources.length} sumber · <a href="/riset#${encodeURIComponent(property.id)}">bukti lengkap ↗</a></small></div>`;
+}
+
 function nearbyPins(listing: Listing): string {
   if (!pins.length) return "";
   const nearest = pins
@@ -416,21 +466,7 @@ async function doLogin(): Promise<void> {
   try {
     await login();
   } catch (error) {
-    const code =
-      error && typeof error === "object" && "code" in error
-        ? String(error.code)
-        : "";
-    toast(
-      code === "auth/popup-closed-by-user"
-        ? "Jendela login ditutup. Kamu bisa mencoba lagi."
-        : code === "auth/unauthorized-domain"
-          ? "Domain ini perlu ditambahkan ke Authorized domains Firebase."
-          : code === "auth/popup-blocked"
-            ? "Izinkan popup untuk masuk dengan Google."
-            : error instanceof Error && !code
-              ? error.message
-              : "Login belum berhasil. Periksa koneksi dan pengaturan Google/Firebase.",
-    );
+    toast(loginErrorMessage(error));
   } finally {
     $<HTMLButtonElement>("account-button").disabled = false;
   }
@@ -633,6 +669,12 @@ function openPrivate(): void {
   if (getUser()) void loadPrivateListings();
 }
 $("private-tab").onclick = openPrivate;
+$("research-tab").onclick = () => {
+  collection = "research";
+  selectedListing = undefined;
+  $("detail-card").hidden = true;
+  render();
+};
 $("pins-tab").onclick = () => {
   collection = "pins";
   render();
@@ -756,9 +798,26 @@ async function start(): Promise<void> {
       if (!response.ok) throw new Error("Konfigurasi gagal dimuat");
       return response.json() as Promise<AppConfig>;
     }),
+    loadResearch(),
   ]);
-  const [regionsResult, transitResult, mobilityResult, configResult] =
-    resources;
+  const [
+    regionsResult,
+    transitResult,
+    mobilityResult,
+    configResult,
+    researchResult,
+  ] = resources;
+  if (researchResult.status === "fulfilled") {
+    researchProperties = researchResult.value.properties;
+    researchListings = researchProperties.flatMap((property) => {
+      const listing = researchToListing(property);
+      return listing ? [listing] : [];
+    });
+  }
+  $("research-count").textContent =
+    researchResult.status === "fulfilled"
+      ? String(researchListings.length)
+      : "–";
   const empty: GeoJSON.FeatureCollection = {
     type: "FeatureCollection",
     features: [],
@@ -845,6 +904,14 @@ async function start(): Promise<void> {
     toast("Peta memerlukan WebGL. Kamu tetap bisa menggunakan daftar hunian.");
     render();
   }
+  const params = new URLSearchParams(location.search);
+  const researchId = params.get("riset");
+  if (researchId || params.get("koleksi") === "riset") {
+    collection = "research";
+    const listing = researchListings.find((item) => item.id === researchId);
+    if (listing) selectListing(listing);
+    else render();
+  } else if (params.get("koleksi") === "listingku") openPrivate();
   if (configResult.status === "fulfilled") {
     try {
       await initializeAuth(configResult.value, (user) => {

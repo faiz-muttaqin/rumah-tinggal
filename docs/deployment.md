@@ -40,7 +40,7 @@ DATA_DIR=/var/lib/rumah-tinggal
 
 Ganti hostname placeholder dengan domain final. `DATA_DIR` pada file environment harus tetap menunjuk ke direktori state absolut di atas; jangan menyalin nilai relatif dari `.env.example` tanpa penyesuaian. `EnvironmentFile` systemd dapat menimpa default `Environment` pada unit.
 
-SQLite privat berada di `/var/lib/rumah-tinggal/rumah-tinggal.sqlite`, beserta sidecar WAL/SHM saat digunakan. Aplikasi memakai direktori `0700` dan database `0600`. Data ini tidak masuk repository atau `dist/`; tiga file geografis publik di `public/data/` tetap terpisah. Siapkan backup SQLite yang konsisten dengan mekanisme backup SQLite atau saat service berhenti, bukan hanya menyalin file utama ketika WAL masih aktif.
+SQLite privat berada di `/var/lib/rumah-tinggal/rumah-tinggal.sqlite`, beserta sidecar WAL/SHM saat digunakan. Aplikasi memakai direktori `0700` dan database `0600`. Data ini tidak masuk repository atau `dist/`; empat dataset publik di `public/data/` tetap terpisah. Siapkan backup SQLite yang konsisten dengan mekanisme backup SQLite atau saat service berhenti, bukan hanya menyalin file utama ketika WAL masih aktif.
 
 ## Template systemd dan nginx
 

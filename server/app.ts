@@ -47,6 +47,12 @@ const publicGeoJsonPaths = new Set([
   "/data/regions.geojson",
   "/data/transit.geojson",
   "/data/mobility.geojson",
+  "/data/properties.geojson",
+]);
+// Halaman statis tambahan hasil build Vite multi-page.
+const pagePaths = new Map([
+  ["/riset", "/riset.html"],
+  ["/riset/", "/riset.html"],
 ]);
 const privateSegments = new Set([
   "data",
@@ -526,7 +532,12 @@ export function createApp(options: AppOptions = {}) {
       }
       if (path === "/api" || path.startsWith("/api/"))
         throw new HttpError(404, "Tidak ditemukan.");
-      await serveStatic(request, response, path, distDir);
+      await serveStatic(
+        request,
+        response,
+        pagePaths.get(path) ?? path,
+        distDir,
+      );
     })().catch((error: unknown) => {
       if (response.headersSent || response.destroyed) return;
       if (error instanceof HttpError || error instanceof AuthError) {

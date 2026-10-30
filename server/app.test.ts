@@ -13,7 +13,13 @@ import type { AddressInfo } from "node:net";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { type TestContext, test } from "node:test";
+import {
+  type ResearchProperty,
+  researchToListing,
+  researchToPin,
+} from "../src/research-data.ts";
 import type { Listing } from "../src/types.ts";
+import { researchFixture } from "../tests/research-fixture.ts";
 import { createApp, readConfig } from "./app.ts";
 import { AuthError } from "./auth.ts";
 import { createPhotonSearch, parsePhoton } from "./places.ts";
@@ -381,7 +387,7 @@ test("static files stay inside dist and private paths cannot use SPA fallback", 
   );
 });
 
-test("only the three public map files are served as GeoJSON without symlink aliases", async (t) => {
+test("only the four public map files are served as GeoJSON without symlink aliases", async (t) => {
   const { directory, distDir, origin } = await fixture(t);
   const dataDir = join(distDir, "data");
   await mkdir(dataDir);
@@ -390,6 +396,7 @@ test("only the three public map files are served as GeoJSON without symlink alia
     "regions.geojson",
     "transit.geojson",
     "mobility.geojson",
+    "properties.geojson",
   ]) {
     await writeFile(join(dataDir, filename), geojson);
     const response = await fetch(`${origin}/data/${filename}`);
@@ -430,6 +437,57 @@ test("only the three public map files are served as GeoJSON without symlink alia
     (await rawRequest(origin, "/assets/other-alias.js")).status,
     404,
   );
+});
+
+test("serves the research page at /riset without widening static access", async (t) => {
+  const { distDir, origin } = await fixture(t);
+  await writeFile(join(distDir, "riset.html"), "<html>offline-research</html>");
+  for (const path of ["/riset", "/riset/", "/riset.html"]) {
+    const response = await rawRequest(origin, path);
+    assert.equal(response.status, 200, path);
+    assert.equal(response.body, "<html>offline-research</html>", path);
+  }
+  assert.equal(
+    (await rawRequest(origin, "/riset/lainnya")).body,
+    "<html>offline-test-app</html>",
+  );
+  for (const path of ["/riset.geojson", "/riset/.env", "/data/riset.html"])
+    assert.equal((await rawRequest(origin, path)).status, 404, path);
+});
+
+test("research saves to private listings and pins with provenance and account isolation", async (t) => {
+  const { api } = await fixture(t);
+  const feature = researchFixture.features[0];
+  const property = {
+    ...feature.properties,
+    lng: feature.geometry.coordinates[0],
+    lat: feature.geometry.coordinates[1],
+  } as unknown as ResearchProperty;
+  for (const [path, entry, key] of [
+    ["/api/listings", researchToListing(property), "listing"],
+    ["/api/pins", researchToPin(property), "pin"],
+  ] as const) {
+    assert.ok(entry);
+    assert.equal((await api(path, "POST", entry, null)).status, 401);
+    const response = await api(path, "POST", entry);
+    assert.equal(response.status, 201);
+    const saved = (await response.json())[key];
+    assert.equal(saved.lat, property.lat);
+    assert.equal(saved.lng, property.lng);
+    assert.ok(saved.notes.includes(property.price.url));
+    assert.ok(saved.notes.includes("30 Okt 2026"));
+    const collectionKey = key === "pin" ? "pins" : "listings";
+    assert.deepEqual((await (await api(path)).json())[collectionKey], [saved]);
+    assert.deepEqual(
+      (await (await api(path, "GET", undefined, "bob")).json())[collectionKey],
+      [],
+    );
+    assert.equal(
+      (await api(`${path}/${saved.id}`, "DELETE", undefined, "bob")).status,
+      404,
+    );
+    assert.equal((await api(`${path}/${saved.id}`, "DELETE")).status, 200);
+  }
 });
 
 test("SQLite persists owner-scoped data with restricted filesystem permissions", async () => {

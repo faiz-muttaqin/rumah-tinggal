@@ -54,6 +54,8 @@ dist/
 build/
 coverage/
 *.tsbuildinfo
+__pycache__/
+*.pyc
 playwright-report/
 test-results/
 
@@ -64,6 +66,7 @@ data/
 !/public/data/regions.geojson
 !/public/data/transit.geojson
 !/public/data/mobility.geojson
+!/public/data/properties.geojson
 storage/
 uploads/
 backups/

@@ -40,6 +40,22 @@ export async function login(): Promise<void> {
   await signInWithPopup(auth, provider);
 }
 
+export function loginErrorMessage(error: unknown): string {
+  const code =
+    error && typeof error === "object" && "code" in error
+      ? String(error.code)
+      : "";
+  return code === "auth/popup-closed-by-user"
+    ? "Jendela login ditutup. Kamu bisa mencoba lagi."
+    : code === "auth/unauthorized-domain"
+      ? "Domain ini perlu ditambahkan ke Authorized domains Firebase."
+      : code === "auth/popup-blocked"
+        ? "Izinkan popup untuk masuk dengan Google."
+        : error instanceof Error && !code
+          ? error.message
+          : "Login belum berhasil. Periksa koneksi dan pengaturan Google/Firebase.";
+}
+
 export async function logout(): Promise<void> {
   if (authPromise)
     await (await import("firebase/auth")).signOut(await authPromise);
