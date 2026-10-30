@@ -5926,7 +5926,7 @@
     {
       "id": "prj-grand-al-ihsan-premiere",
       "name": "Grand Al Ihsan Premiere",
-      "developer": "PT. Nuraria Properti Indonesia (NPROSYAR) menurut rumah123; Pinhome: Idera Cipta Propertindo",
+      "developer": "PT Nuraira Properti Indonesia (Maxirecon) menurut TAAT dan rumah123",
       "kind": "Rumah",
       "subsidized": false,
       "locationText": "Jl. Barin Raya No.130, Mustikasari, Kec. Mustika Jaya, Kota Bekasi (alamat Pinhome)",
@@ -5935,40 +5935,40 @@
       "statusUrl": "https://www.pinhome.id/dijual/rumah-baru/grand-al-ihsan-premiere-1",
       "price": {
         "min": 935000000,
-        "max": 1255000000,
-        "basis": "rentang harga listing Pinhome; Referensi Proyek rumah123 menulis Rp 669 sampai 969 juta",
-        "quote": "Rp 935 Juta - Rp 1,26 Miliar",
-        "url": "https://www.pinhome.id/dijual/rumah-baru/grand-al-ihsan-premiere-1",
-        "pageDate": null
+        "max": 1445000000,
+        "basis": "rentang harga TAAT (developer PT Nuraira Properti Indonesia), diperbarui 30 September 2026",
+        "quote": "Rp 935 Jt - 1,445 M",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikasari-1",
+        "pageDate": "2026-09-30"
       },
       "units": [
         {
-          "label": "Sakura (Pinhome, stok 4)",
-          "bedrooms": 2,
-          "landArea": 54,
-          "buildingArea": 42,
-          "price": 935000000
+          "label": "Tabebuya (TAAT, 1 unit tersisa)",
+          "bedrooms": 3,
+          "landArea": 90.0,
+          "buildingArea": 60.0,
+          "price": 1445000000
         },
         {
-          "label": "Summer Breeze (Pinhome Rp 1,05 Miliar, stok 8)",
+          "label": "The Spring (TAAT, 1 unit tersisa)",
           "bedrooms": 3,
-          "landArea": 60,
-          "buildingArea": 53,
+          "landArea": 72.0,
+          "buildingArea": 52.0,
+          "price": 1235000000
+        },
+        {
+          "label": "Summer Breeze (TAAT, 1 unit tersisa)",
+          "bedrooms": 3,
+          "landArea": 60.0,
+          "buildingArea": 53.0,
           "price": 1050000000
         },
         {
-          "label": "Spring (Pinhome Rp 1,24 Miliar, stok 1)",
+          "label": "Sakura (TAAT, 1 unit tersisa)",
           "bedrooms": 2,
-          "landArea": 72,
-          "buildingArea": 53,
-          "price": 1240000000
-        },
-        {
-          "label": "Tabebuya (Pinhome Rp 1,26 Miliar, stok 6)",
-          "bedrooms": 3,
-          "landArea": 72,
-          "buildingArea": 60,
-          "price": 1260000000
+          "landArea": 54.0,
+          "buildingArea": 42.0,
+          "price": 935000000
         }
       ],
       "transitClaim": {
@@ -6023,6 +6023,15 @@
           "kind": "developer",
           "title": "Mitra Thayyibah Properti (unit pemasaran Maxirecon)",
           "note": "Unit pemasaran Maxirecon (PT Jakarta Properti Utama) mencantumkan Grand Al Ihsan Premiere Type Sakura Rp 995 Juta dan Summer Breeze Rp 1,4 Miliar; memuat kontak pemasaran (tidak disimpan)."
+        },
+        {
+          "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikasari-1",
+          "kind": "portal",
+          "title": "Perumahan Islami Mustikasari (TAAT)",
+          "fetched": true,
+          "pageDate": "2026-09-30",
+          "supports": ["harga", "status", "unit"],
+          "note": "TAAT menyamarkan nama proyek; cocok lewat developer, alamat Jl. Barin Raya No.130 dan nama tipe (Tabebuya, The Spring, Summer Breeze, Sakura). FAQ: 90% terjual, masjid beroperasi dengan kajian rutin."
         }
       ],
       "verdict": "partial",
@@ -6761,7 +6770,7 @@
           "fetched": true,
           "pageDate": "2026-07-30",
           "supports": ["harga", "status", "unit"],
-          "note": "Agency listing, developer Berkah Group, Jl. Kona No.23; project name not shown; Rp 614 Jt - 869 Jt; types Aqsa, Quba, Quba Plus, Nabawi"
+          "note": "TAAT menyamarkan nama proyek; cocok lewat developer dan tipe (Aqsa, Quba). Rentang TAAT Rp 614 Jt - 869 Jt, diperbarui 30 Juli 2026; harga utama tetap dari situs resmi."
         }
       ],
       "verdict": "confirmed",
@@ -11995,41 +12004,48 @@
       "statusQuote": "Available Raudhatul Jannah (Bekasi)",
       "statusUrl": "https://berkahlandgroup.com/",
       "price": {
-        "min": 544000000,
-        "max": 1120000000,
-        "basis": "rentang harga di Referensi Proyek rumah123 (pemasar Enam Property), diperbarui 24 Juli 2026",
-        "quote": "Harga Rp 544 Juta - 1,12 Miliar",
-        "url": "https://www.rumah123.com/perumahan-baru/properti/bekasi/raudhatul-jannah-residence/nps8578/",
-        "pageDate": "2026-07-24"
+        "min": 721111111,
+        "max": 1164534000,
+        "basis": "rentang harga TAAT (developer PT Berkah Bumi Sinergi), 30 Juli 2026; rumah123: Rp 544 jt - 1,12 M",
+        "quote": "Rp 721,1 Jt - 1,165 M",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-babelan--6",
+        "pageDate": "2026-07-30"
       },
       "units": [
         {
-          "label": "Al Ayubi 40 (rumah123)",
+          "label": "Ayubi (TAAT, 3 unit tersisa)",
           "bedrooms": 2,
-          "landArea": 75,
-          "buildingArea": 40,
-          "price": 775000000
+          "landArea": 75.0,
+          "buildingArea": 40.0,
+          "price": 797513000
         },
         {
-          "label": "Al Ayubi 70 (rumah123)",
+          "label": "Ayubi (TAAT, 8 unit tersisa)",
           "bedrooms": 3,
-          "landArea": 75,
-          "buildingArea": 70,
-          "price": 975000000
+          "landArea": 75.0,
+          "buildingArea": 70.0,
+          "price": 981200556
         },
         {
-          "label": "Al Fatih 70 (rumah123)",
-          "bedrooms": 3,
-          "landArea": 98,
-          "buildingArea": 70,
-          "price": 1120000000
+          "label": "Ayubi Lite (TAAT, 4 unit tersisa)",
+          "bedrooms": 2,
+          "landArea": 56.0,
+          "buildingArea": 36.0,
+          "price": 721111111
         },
         {
-          "label": "Rinjani (rumah123, LB tidak tampil)",
+          "label": "Ayubi Lite (TAAT, 8 unit tersisa)",
           "bedrooms": 3,
-          "landArea": 55,
-          "buildingArea": null,
-          "price": 544000000
+          "landArea": 65.0,
+          "buildingArea": 50.0,
+          "price": 865555555
+        },
+        {
+          "label": "Al Fatih (TAAT, 1 unit tersisa)",
+          "bedrooms": 3,
+          "landArea": 98.0,
+          "buildingArea": 72.0,
+          "price": 1164534000
         }
       ],
       "transitClaim": {
@@ -12081,7 +12097,7 @@
           "fetched": true,
           "pageDate": "2026-07-30",
           "supports": ["harga", "status", "unit"],
-          "note": "Agency listing, developer Berkah Group; project name not shown, matched by unit names Ayubi and Al Fatih; Rp 721,1 Jt - 1,165 M, status ready, Unit Tersisa 24 unit"
+          "note": "TAAT menyamarkan nama proyek; cocok lewat developer, Kel. Kebalen, dan tipe Ayubi serta Ayubi Lite."
         },
         {
           "fetched": true,
@@ -13641,34 +13657,41 @@
       "statusQuote": "Status Konstruksi: Dalam Pembangunan",
       "statusUrl": "https://www.pinhome.id/dijual/rumah-baru/selasar-madina-bekasi",
       "price": {
-        "min": 987500000,
-        "max": 1267000000,
-        "basis": "harga Tipe Nabawi di Pinhome, satu-satunya tipe tersedia; tipe lain habis terjual",
-        "quote": "Tipe Nabawi Rp 987,5 Juta - Rp 1,27 Miliar",
-        "url": "https://www.pinhome.id/dijual/rumah-baru/selasar-madina-bekasi",
-        "pageDate": null
+        "min": 840000000,
+        "max": 1095000000,
+        "basis": "rentang harga TAAT (developer PT Nuraira Properti Indonesia), diperbarui 30 Juli 2026",
+        "quote": "Rp 840 Jt - 1,095 M",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-perwira-8",
+        "pageDate": "2026-07-30"
       },
       "units": [
         {
-          "label": "Tipe Nabawi (Pinhome, stok 45)",
+          "label": "Nabawi (TAAT, 4 unit tersisa)",
           "bedrooms": 3,
-          "landArea": 55,
-          "buildingArea": 56,
-          "price": 987500000
+          "landArea": 55.0,
+          "buildingArea": 62.0,
+          "price": 1045000000
         },
         {
-          "label": "Tipe Quba (Pinhome, HABIS TERJUAL)",
+          "label": "New Nabawi (TAAT, 5 unit tersisa)",
           "bedrooms": 3,
-          "landArea": 60,
-          "buildingArea": 61,
-          "price": null
+          "landArea": 55.0,
+          "buildingArea": 50.0,
+          "price": 955000000
         },
         {
-          "label": "Tipe Haramain (Pinhome, HABIS TERJUAL, sebelumnya Rp 780 Juta - Rp 820 Juta)",
+          "label": "Quba (TAAT, 4 unit tersisa)",
+          "bedrooms": 3,
+          "landArea": 60.0,
+          "buildingArea": 64.0,
+          "price": 1095000000
+        },
+        {
+          "label": "Haramain (TAAT, 2 unit tersisa)",
           "bedrooms": 2,
-          "landArea": 55,
-          "buildingArea": 34,
-          "price": null
+          "landArea": 55.0,
+          "buildingArea": 34.0,
+          "price": 840000000
         }
       ],
       "transitClaim": {
@@ -13712,6 +13735,15 @@
           "pageDate": null,
           "supports": ["harga", "status", "lokasi", "transit", "unit"],
           "note": "Listing createdAt 2025-12-24, developer group Maxirecon, status active, 45 active units (Tipe Nabawi), under construction; Tipe Quba and Haramain stock 0."
+        },
+        {
+          "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-perwira-8",
+          "kind": "portal",
+          "title": "Perumahan Islami Perwira (TAAT)",
+          "fetched": true,
+          "pageDate": "2026-07-30",
+          "supports": ["harga", "status", "unit"],
+          "note": "TAAT menyamarkan nama proyek; cocok lewat developer, Kel. Perwira, dan nama tipe (Nabawi, New Nabawi, Quba, Haramain). Rencana 30 unit di lahan 3.400 m2; Pinhome sebelumnya Rp 987,5 Juta - Rp 1,27 Miliar."
         }
       ],
       "verdict": "confirmed",
@@ -15013,39 +15045,53 @@
       "developer": "Maxirecon (PT Nuraira Properti Indonesia)",
       "kind": "Rumah",
       "subsidized": false,
-      "locationText": "Desa Limus Nunggal, Kec. Cileungsi, Kabupaten Bogor (dipasarkan sebagai Cibubur)",
+      "locationText": "Desa Limus Nunggal, Kec. Cileungsi, Kabupaten Bogor (dipasarkan sebagai Cibubur; menurut TAAT 5,8 km ke Masjid Al Barkah Rodja)",
       "status": "inden",
       "statusQuote": "Status Konstruksi: Dalam Pembangunan",
       "statusUrl": "https://www.pinhome.id/dijual/rumah-baru/teras-madina-cibubur",
       "price": {
-        "min": 780000000,
-        "max": 1267000000,
-        "basis": "rentang harga listing Pinhome; listing agensi TAAT menulis Rp 545 sampai 717 juta",
-        "quote": "Rp 780 Juta - Rp 1,27 Miliar",
-        "url": "https://www.pinhome.id/dijual/rumah-baru/teras-madina-cibubur",
-        "pageDate": null
+        "min": 545000000,
+        "max": 717000000,
+        "basis": "rentang harga TAAT (developer PT Nuraira Properti Indonesia), 30 Juli 2026; Pinhome: Rp 780 jt - 1,27 M",
+        "quote": "Rp 545 Jt - 717 Jt",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cileungsi-2",
+        "pageDate": "2026-07-30"
       },
       "units": [
         {
-          "label": "Tipe Ruhtob (Pinhome, Rp 780 Juta - Rp 820 Juta)",
+          "label": "Sukkari (TAAT, 1 unit tersisa)",
           "bedrooms": 2,
-          "landArea": 55,
-          "buildingArea": 34,
-          "price": 780000000
+          "landArea": 60.0,
+          "buildingArea": 44.0,
+          "price": 625000000
         },
         {
-          "label": "Tipe Ajwa (Pinhome, Rp 987,5 Juta - Rp 1,27 Miliar)",
+          "label": "Ajwa (TAAT, 13 unit tersisa)",
           "bedrooms": 3,
-          "landArea": 55,
-          "buildingArea": 56,
-          "price": 987500000
+          "landArea": 60.0,
+          "buildingArea": 55.0,
+          "price": 697000000
         },
         {
-          "label": "Tipe Sukkari (Pinhome, Rp 1,06 Miliar - Rp 1,21 Miliar)",
+          "label": "Ajwa (TAAT, 13 unit tersisa)",
           "bedrooms": 3,
-          "landArea": 60,
-          "buildingArea": 61,
-          "price": 1060000000
+          "landArea": 60.0,
+          "buildingArea": 61.0,
+          "price": 717000000
+        },
+        {
+          "label": "Ajwa Z (TAAT, 11 unit tersisa)",
+          "bedrooms": 3,
+          "landArea": 50.0,
+          "buildingArea": 60.0,
+          "price": 672000000
+        },
+        {
+          "label": "Ruthob (TAAT, 6 unit tersisa)",
+          "bedrooms": 2,
+          "landArea": 60.0,
+          "buildingArea": 32.0,
+          "price": 545000000
         }
       ],
       "transitClaim": {
@@ -15089,8 +15135,8 @@
           "title": "Perumahan Islami Cileungsi (TAAT)",
           "fetched": true,
           "pageDate": "2026-07-30",
-          "supports": ["harga", "status", "unit", "transit"],
-          "note": "Agency listing described as Cibubur, developer Maxirecon, Desa Limus Nunggal; project name not shown; Rp 545 Jt - 717 Jt; Unit Tersisa 44 unit"
+          "supports": ["harga", "status", "unit"],
+          "note": "TAAT menyamarkan nama proyek; cocok lewat developer, Desa Limus Nunggal, dan tipe (Sukkari, Ajwa, Ajwa Z). Harga sejalan dengan pemasaran Maxirecon (Ajwa Z Rp 672 Juta). TAAT menulis Masjid Al Barkah Rodja 5,8 km."
         },
         {
           "url": "https://taat.co.id/tentang-kami",
@@ -16995,6 +17041,188 @@
           "pageDate": "2025-12-04",
           "supports": ["harga", "status", "lokasi"],
           "note": "Siap huni, satu lantai 64/72, 3 kamar. Halaman juga menampilkan 'Sisa 0 Unit' yang tampak sebagai artefak data portal (Cotton Premiere yang aktif juga 0); ketersediaan perlu dikonfirmasi. Titik listing adalah titik bawaan Kec. Cileungsi sehingga tidak dipakai."
+        }
+      ],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30",
+      "corridor": "sweep-syariah-meta",
+      "methods": ["portal-proyek-baru"],
+      "social": []
+    },
+    {
+      "id": "prj-taat-islami-mustika-jaya",
+      "name": "Perumahan Islami Mustika Jaya (Mumtaz Property)",
+      "developer": "Mumtaz Property (menurut TAAT)",
+      "kind": "Rumah",
+      "subsidized": false,
+      "locationText": "Kel. Mustika Jaya, Kec. Mustikajaya, Kota Bekasi (TAAT; alamat jalan tidak ditampilkan)",
+      "status": "dipasarkan",
+      "statusQuote": "1 Unit Tersisa",
+      "statusUrl": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikajaya-13",
+      "price": {
+        "min": 847600000,
+        "max": 1051600000,
+        "basis": "rentang harga TAAT, diperbarui 30 Juli 2026",
+        "quote": "Rp 847,6 Jt - 1,052 M",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikajaya-13",
+        "pageDate": "2026-07-30"
+      },
+      "units": [
+        {
+          "label": "Skandinavia (TAAT, 1 unit tersisa)",
+          "bedrooms": 2,
+          "landArea": 70.0,
+          "buildingArea": 65.0,
+          "price": 847600000
+        },
+        {
+          "label": "Skandinavia (TAAT, 1 unit tersisa)",
+          "bedrooms": 3,
+          "landArea": 70.0,
+          "buildingArea": 60.0,
+          "price": 897600000
+        },
+        {
+          "label": "Skandinavia (TAAT, 1 unit tersisa)",
+          "bedrooms": 2,
+          "landArea": 104.0,
+          "buildingArea": 65.0,
+          "price": 1051600000
+        }
+      ],
+      "transitClaim": null,
+      "officialUrl": null,
+      "contactUrl": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikajaya-13",
+      "coordinate": null,
+      "osmQuery": "Kel. Mustika Jaya, Kec. Mustikajaya, Kota Bekasi (TAAT; alamat jalan tidak ditampilkan)",
+      "sources": [
+        {
+          "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikajaya-13",
+          "kind": "portal",
+          "title": "Perumahan Islami MustikaJaya (TAAT)",
+          "fetched": true,
+          "pageDate": "2026-07-30",
+          "supports": ["harga", "status", "unit"],
+          "note": "Nama proyek disamarkan TAAT dan titik tidak ditampilkan. Dalam pembangunan; FAQ: 60% terjual, masjid beroperasi dengan kegiatan TPQ khusus warga."
+        }
+      ],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30",
+      "corridor": "sweep-syariah-meta",
+      "methods": ["portal-proyek-baru"],
+      "social": []
+    },
+    {
+      "id": "prj-taat-islami-kukusan",
+      "name": "Perumahan Islami Kukusan (PT Bangun Negeri Bahagia)",
+      "developer": "PT Bangun Negeri Bahagia (menurut TAAT)",
+      "kind": "Rumah",
+      "subsidized": false,
+      "locationText": "Kel. Kukusan, Kec. Beji, Kota Depok (TAAT; alamat jalan tidak ditampilkan)",
+      "status": "inden",
+      "statusQuote": "1 Unit Tersisa",
+      "statusUrl": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-kukusan-21",
+      "price": {
+        "min": 824000000,
+        "max": 964000000,
+        "basis": "rentang harga TAAT, diperbarui 30 Juli 2026",
+        "quote": "Rp 824 Jt - 964 Jt",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-kukusan-21",
+        "pageDate": "2026-07-30"
+      },
+      "units": [
+        {
+          "label": "Tipe 54 (TAAT, 1 unit tersisa)",
+          "bedrooms": 3,
+          "landArea": 42.0,
+          "buildingArea": 54.0,
+          "price": 824000000
+        },
+        {
+          "label": "Tipe 61 (TAAT, 2 unit tersisa)",
+          "bedrooms": 3,
+          "landArea": 50.0,
+          "buildingArea": 61.0,
+          "price": 964000000
+        }
+      ],
+      "transitClaim": null,
+      "officialUrl": null,
+      "contactUrl": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-kukusan-21",
+      "coordinate": null,
+      "osmQuery": "Kel. Kukusan, Kec. Beji, Kota Depok (TAAT; alamat jalan tidak ditampilkan)",
+      "sources": [
+        {
+          "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-kukusan-21",
+          "kind": "portal",
+          "title": "Perumahan Islami Kukusan (TAAT)",
+          "fetched": true,
+          "pageDate": "2026-07-30",
+          "supports": ["harga", "status", "unit"],
+          "note": "Nama proyek disamarkan TAAT dan titik tidak ditampilkan. Rumah vertikal dalam pembangunan; fasilitas menyebut masjid 30 m dari lokasi."
+        }
+      ],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30",
+      "corridor": "sweep-syariah-meta",
+      "methods": ["portal-proyek-baru"],
+      "social": []
+    },
+    {
+      "id": "prj-taat-exclusive-cluster-pejaten",
+      "name": "Exclusive Cluster Pejaten (Mumtaz Property)",
+      "developer": "Mumtaz Property (menurut TAAT)",
+      "kind": "Rumah",
+      "subsidized": false,
+      "locationText": "Kel. Jati Padang, Kec. Pasar Minggu, Jakarta Selatan (TAAT; alamat jalan tidak ditampilkan)",
+      "status": "inden",
+      "statusQuote": "1 Unit Tersisa",
+      "statusUrl": "https://taat.co.id/dijual/perumahan-syariah/exclusive-cluster-pejaten-12",
+      "price": {
+        "min": 2850000000,
+        "max": 4050000000,
+        "basis": "rentang harga TAAT, diperbarui 30 Juli 2026",
+        "quote": "Rp 2,850 M - 4,050 M",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/exclusive-cluster-pejaten-12",
+        "pageDate": "2026-07-30"
+      },
+      "units": [
+        {
+          "label": "JADE (TAAT, 1 unit tersisa)",
+          "bedrooms": 4,
+          "landArea": 60.0,
+          "buildingArea": 80.0,
+          "price": 2850000000
+        },
+        {
+          "label": "TOPAS (TAAT, 1 unit tersisa)",
+          "bedrooms": 6,
+          "landArea": 72.0,
+          "buildingArea": 120.0,
+          "price": 4050000000
+        },
+        {
+          "label": "SAPPHIRE (TAAT, 1 unit tersisa)",
+          "bedrooms": 4,
+          "landArea": 72.0,
+          "buildingArea": 100.0,
+          "price": 3500000000
+        }
+      ],
+      "transitClaim": null,
+      "officialUrl": null,
+      "contactUrl": "https://taat.co.id/dijual/perumahan-syariah/exclusive-cluster-pejaten-12",
+      "coordinate": null,
+      "osmQuery": "Kel. Jati Padang, Kec. Pasar Minggu, Jakarta Selatan (TAAT; alamat jalan tidak ditampilkan)",
+      "sources": [
+        {
+          "url": "https://taat.co.id/dijual/perumahan-syariah/exclusive-cluster-pejaten-12",
+          "kind": "portal",
+          "title": "Exclusive Cluster Pejaten (TAAT)",
+          "fetched": true,
+          "pageDate": "2026-07-30",
+          "supports": ["harga", "status", "unit"],
+          "note": "Nama proyek disamarkan TAAT dan titik tidak ditampilkan. Dalam pembangunan, belum dihuni; skema syariah. Fasilitas menyebut Masjid Jami Sa'adatuddarain 0 km."
         }
       ],
       "verdict": "partial",

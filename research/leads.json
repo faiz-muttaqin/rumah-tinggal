@@ -158,19 +158,23 @@
       "type": "account",
       "status": "unreached",
       "area": null,
-      "claim": "Disebut membangun masjid, program tahfidz anak, dan kelas bahasa Arab di proyek Cibubur.",
+      "claim": "Agensi properti syariah (PT Indonesia Taat Berkarya) yang memasarkan perumahan syariah dan rumah baru dengan KPR syariah di Jabodetabek.",
       "links": [
         {
           "label": "Instagram @taat.co.id",
           "url": "https://www.instagram.com/taat.co.id/"
         },
         {
-          "label": "Situs taat.co.id",
-          "url": "https://taat.co.id/"
+          "label": "TAAT: perumahan syariah",
+          "url": "https://taat.co.id/dijual/perumahan-syariah"
+        },
+        {
+          "label": "TAAT: rumah baru (KPR syariah)",
+          "url": "https://taat.co.id/dijual/rumah-baru"
         }
       ],
       "related": "prj-teras-madina-cibubur",
-      "check": "TAAT adalah agen dan situs listing; proyek Cibubur yang dimaksud terverifikasi sebagai Teras Madina Cibubur (Maxirecon) di Cileungsi."
+      "check": "Situs dicek 2026-10-30: 8 perumahan syariah aktif, semuanya kini di katalog (nama proyek disamarkan TAAT, dicocokkan lewat developer dan tipe). 15 rumah baru KPR syariah dari developer umum belum dikurasi karena tanpa titik dan tanpa klaim islami di dalam kawasan."
     },
     {
       "id": "lead-rumahbekasi-info",
@@ -289,7 +293,7 @@
         }
       ],
       "related": "prj-grand-al-ihsan-premiere",
-      "check": "rumahhalalindonesia.com dialihkan ke rumahhalal.com yang menyamarkan nama proyek. Lokasi dan nama masjid mirip Grand Al Ihsan Premiere, tetapi kaitannya belum terbukti. Akun penasihat perorangan tidak dicatat."
+      "check": "TAAT mengonfirmasi Grand Al Ihsan Premiere (Mustikasari) punya masjid berkajian rutin dan rumah tahfidz; kaitan @quintamanah dengan proyek itu belum terbukti. Akun penasihat perorangan tidak dicatat."
     },
     {
       "id": "lead-sekitar-al-barkah-cileungsi",

@@ -7914,9 +7914,21 @@
         "quote": "Seluruh penghuni di pada hunian ini Wajib muslim",
         "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cileungsi-2",
         "pageDate": "2026-07-30"
+      },
+      {
+        "kind": "other",
+        "quote": "Masjid Jami Al Barkah Rodja TV & Radio - 5.8 KM",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cileungsi-2",
+        "pageDate": "2026-07-30"
       }
     ],
     "prj-selasar-madina-bekasi": [
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Rumah Tahfidz",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-perwira-8",
+        "pageDate": "2026-07-30"
+      },
       {
         "kind": "musholla-in-estate",
         "quote": "FASILITAS - Mushalla - One Gate System - Taman Bermain",
@@ -7940,6 +7952,12 @@
         "quote": "Bingung cari perumahan dengan konsep Islam di kota besar?",
         "url": "https://selasarmadinabekasi.com/",
         "pageDate": "2025-03-20"
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "dirancang khusus untuk memenuhi kebutuhan keluarga muslim",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-perwira-8",
+        "pageDate": "2026-07-30"
       },
       {
         "kind": "islamic-school-nearby",
@@ -8090,10 +8108,22 @@
         "pageDate": "2026-06-11"
       },
       {
+        "kind": "kajian",
+        "quote": "masjid sudah beroperasional dengan kajian rutin",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikasari-1",
+        "pageDate": "2026-09-30"
+      },
+      {
         "kind": "tpq-or-school-in-estate",
         "quote": "Nikmati Fasilitas Islami Exclusive Perumahan : ✅ Masjid Jami' Al Ihsan ✅ Rumah Tahfizh",
         "url": "https://www.pinhome.id/dijual/rumah-baru/grand-al-ihsan-premiere-1",
         "pageDate": null
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Rumah Tahfidz",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikasari-1",
+        "pageDate": "2026-09-30"
       },
       {
         "kind": "syariah-concept",
@@ -8220,6 +8250,48 @@
         "quote": "10 menit ke Masjid Albarkah Radio Rodja",
         "url": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
         "pageDate": "2025-12-04"
+      }
+    ],
+    "prj-taat-islami-mustika-jaya": [
+      {
+        "kind": "mosque-in-estate",
+        "quote": "masjid sudah beroperasional dengan kegiatan TPQ Khusus warga",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikajaya-13",
+        "pageDate": "2026-07-30"
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Dilengkapi TPQ di dalam perumahan",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikajaya-13",
+        "pageDate": "2026-07-30"
+      }
+    ],
+    "prj-taat-islami-kukusan": [
+      {
+        "kind": "syariah-concept",
+        "quote": "Hunian perumahan muslim di Beji Depok",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-kukusan-21",
+        "pageDate": "2026-07-30"
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Ini adalah rumah syariah di Depok",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-kukusan-21",
+        "pageDate": "2026-07-30"
+      }
+    ],
+    "prj-taat-exclusive-cluster-pejaten": [
+      {
+        "kind": "syariah-concept",
+        "quote": "solusi beli rumah tanpa riba",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/exclusive-cluster-pejaten-12",
+        "pageDate": "2026-07-30"
+      },
+      {
+        "kind": "other",
+        "quote": "0 Km ke Masjid Jami' Sa'adatuddarain",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/exclusive-cluster-pejaten-12",
+        "pageDate": "2026-07-30"
       }
     ]
   }

@@ -332,6 +332,10 @@ def load_islamic(path=ROOT / "research/context/islamic.json"):
         })
     claims = {}
     for pid, items in (data.get("projectClaims") or {}).items():
+        # Satu klaim per jenis lebih dulu, baru klaim tambahan, agar jenis lain tidak tergeser.
+        kinds = set()
+        first = [c for c in items if not (c.get("kind") in kinds or kinds.add(c.get("kind")))]
+        items = first + [c for c in items if c not in first]
         claims[pid] = [
             {
                 "kind": text(c.get("kind"), f"islamic.claims.{pid}.kind", 40),
@@ -339,7 +343,7 @@ def load_islamic(path=ROOT / "research/context/islamic.json"):
                 "url": url(c.get("url"), f"islamic.claims.{pid}.url"),
                 "pageDate": dated(c.get("pageDate"), f"islamic.claims.{pid}.pageDate"),
             }
-            for c in items[:3]
+            for c in items[:4]
         ]
     return {
         "checkedAt": data["checkedAt"],

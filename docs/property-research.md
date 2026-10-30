@@ -147,6 +147,10 @@ Privasi: nama dan kontak pemilik, agen, atau pengelola tidak disimpan. Iklan pem
 
 Pinhome memberi banyak proyek di Cileungsi titik bawaan yang sama (-6.3993925, 106.9624239). Titik itu tidak dipakai sebagai titik proyek; proyek tanpa titik lain tetap tercantum lewat basis islami tanpa jarak.
 
+## TAAT (agensi properti syariah)
+
+taat.co.id tidak memiliki robots.txt yang membatasi dan menyediakan sitemap per kategori (perumahan syariah, rumah baru, rumah bekas, kavling). Halaman dirender di peramban; data lengkap ada di JSON halaman (`__NEXT_DATA__`): status, rentang harga, tipe dengan stok, fasilitas, FAQ, developer, dan tanggal pembaruan. Kutipan harga diambil dari teks yang terlihat setelah halaman dirender peramban lokal, sedangkan klaim fasilitas dan FAQ dari data halaman. TAAT menyamarkan nama proyek, jadi proyek dicocokkan lewat developer, kelurahan, dan nama tipe. Koordinat yang dicantumkan TAAT adalah titik tengah kelurahan, bukan titik proyek, sehingga tidak dipakai. Nomor WhatsApp pada halaman tidak disimpan; tombol kontak menaut ke halaman TAAT.
+
 ## Hasil kurasi 30 Oktober 2026
 
 171 kandidat ditemukan pada 13 koridor pencarian (termasuk duplikat lintas koridor; 152 nama unik). Batch awal mencatat 64 proyek kurasi dan menerbitkan 28.
@@ -160,3 +164,5 @@ Sewa dan petunjuk (30 Oktober malam): 26 iklan sewa ramah keluarga muslim tercat
 Pemeriksaan kajian lanjutan (S14) untuk Bekasi dan proyek basis islami menambah 35 fasilitas (total 303) dan 25 klaim proyek (total 125); proyek Bekasi dengan masjid berkajian atau klaim kajian naik dari 1 menjadi 5. Filter harga di `/riset` kini berupa rentang budget (dari dan sampai): proyek tampil bila rentang harganya beririsan dengan budget, bukan hanya harga mulai. Sewa memakai rentang budget per bulan (sewa tahunan dibagi 12).
 
 Sekitar Masjid Al-Barkah Cileungsi (BARKAH-01): pencarian proyek baru, iklan rumah/kavling, dan sewa yang masih buka. Ditambahkan Cotton Premiere Syariah (Cileungsi Hijau, 1,27 km dari masjid lewat pin kawasan) dan Adreena House Cileungsi ke katalog, harga dan lokasi Bumi Sakinah diperbarui, 9 iklan dijual, dan 2 sewa. Titik Teras Madina Cibubur dihapus karena ternyata titik bawaan Pinhome; jarak 0,61 km yang sempat dilaporkan tidak berlaku. Semua kutipan baru cocok saat dibuka ulang (26 iklan, 80 sewa).
+
+TAAT (30 Oktober malam): 8 perumahan syariah aktif di taat.co.id kini semuanya ada di katalog. Tiga baru (Perumahan Islami Mustika Jaya dengan TPQ di dalam perumahan, Kukusan Depok, Exclusive Cluster Pejaten) dan empat diperbarui harganya dengan data bertanggal TAAT (Grand Al Ihsan, Selasar Madina, Teras Madina, Raudhatul Jannah). Grand Al Ihsan kini punya klaim kajian rutin di masjid kawasan. Kartu menampilkan hingga 4 klaim, satu per jenis lebih dulu. 15 rumah baru KPR syariah dari developer umum belum dikurasi.
