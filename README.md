@@ -23,6 +23,8 @@ Riset properti adalah kurasi berkala, bukan katalog lengkap atau pengambilan ikl
 
 Lihat [sumber batas wilayah](docs/data-sources.md) dan [sumber serta keterbatasan data transportasi](docs/transit-data.md). Pola peta Nafkah dipakai sebagai referensi; analisis kode dengan Graphify dilakukan di direktori sementara dan keluarannya tidak dimasukkan repository.
 
+[Ruang riset hunian](research/README.md) memuat bahan yang sudah dikurasi serta [rencana perluasan Jakarta](research/jakarta/README.md). Rencana berikutnya mencakup penambahan listing, konteks banjir/kriminalitas dan berita, Google Maps, populasi, serta arus komuter; pembagian tugas multi-agent akan ditentukan pengguna.
+
 ## Menjalankan lokal
 
 Toolchain proyek berada di `.tools/`, terpisah dari Node/npm global dan aplikasi lain di server. Pada checkout baru, sediakan npm dan Gitleaks di `PATH`, lalu:

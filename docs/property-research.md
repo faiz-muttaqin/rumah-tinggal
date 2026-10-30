@@ -4,6 +4,8 @@ Halaman `/riset` dan tab **Riset** di peta menampilkan kurasi kandidat proyek hu
 
 Dokumen ini mencatat cara data ditemukan agar dapat dipakai ulang. Metode di sini **tidak wajib**: cara baru boleh dipakai selama mengikuti batas di bagian [Etika dan batas](#etika-dan-batas), lalu dicatat di katalog metode.
 
+Perluasan berikutnya dicatat di [ruang riset hunian Jakarta](../research/jakarta/README.md): penambahan listing dan pengayaan banjir, kriminalitas, berita, Google Maps, populasi, serta arus komuter. Seluruh pengayaan tersebut masih rencana; pengguna akan menyusun delegasinya kemudian.
+
 ## Cakupan
 
 - **Masuk:** proyek baru (rumah tapak atau apartemen/rusunami, termasuk subsidi dan TOD) yang sedang dipasarkan untuk dibeli, dengan titik proyek paling jauh **3 km garis lurus** dari salah satu stasiun dalam dataset aplikasi (80 KRL, 13 MRT, 29 LRT; lihat [data transportasi](transit-data.md)).
