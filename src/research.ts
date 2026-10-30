@@ -29,6 +29,7 @@ import {
   RENTAL_LABELS,
   type ResearchData,
   type ResearchProperty,
+  type ResearchSaleAd,
   rentText,
   researchToListing,
   researchToPin,
@@ -73,7 +74,7 @@ $("app").innerHTML = `
       <p class="intro">Temukan proyek hunian di sekitar stasiun Jabodetabek, lengkap dengan harga, developer, tautan asli, dan tanggal cek. Simpan pilihanmu ke Listingku atau sebagai pin pribadi. Harga dan ketersediaan perlu dikonfirmasi ke developer.</p>
       <p class="research-note">Verifikasi mencakup sumber harga dan lokasi. Nama developer mengikuti sumber publik; kepemilikan unit belum diverifikasi.</p>
       <dl class="research-stats" id="research-stats"></dl>
-      <div class="research-links"><a class="button primary" href="/?koleksi=riset">${icon("pin")} Lihat semua di peta</a><a class="button" href="#sewa">Sewa ramah keluarga muslim</a><a class="button" href="#belum-diverifikasi">Petunjuk belum diverifikasi</a><a class="button" href="#metode">${icon("info")} Cara riset ini dibuat</a></div>
+      <div class="research-links"><a class="button primary" href="/?koleksi=riset">${icon("pin")} Lihat semua di peta</a><a class="button" href="#sewa">Sewa ramah keluarga muslim</a><a class="button" href="#iklan-dijual">Iklan dijual dekat masjid kajian</a><a class="button" href="#belum-diverifikasi">Petunjuk belum diverifikasi</a><a class="button" href="#metode">${icon("info")} Cara riset ini dibuat</a></div>
     </section>
     <section class="research-filters" aria-label="Filter riset properti">
       <div class="search-box">${icon("search")}<input id="research-search" type="search" aria-label="Cari proyek, developer, lokasi, atau stasiun" placeholder="Proyek, developer, lokasi, atau stasiun…" autocomplete="off"/></div>
@@ -104,6 +105,16 @@ $("app").innerHTML = `
         <label>sampai<select id="rental-budget-max">${budgetOptions(RENT_STEPS, "Tanpa batas", rentMoney)}</select></label>
       </div>
       <div id="rental-list" class="research-list" aria-live="polite"></div>
+    </section>
+    <section class="research-section" id="iklan-dijual" aria-labelledby="sale-ads-title" hidden>
+      <div class="eyebrow"><span class="tiny-line"></span> IKLAN DIJUAL</div>
+      <h2 id="sale-ads-title">Rumah dan kavling dijual dekat masjid kajian</h2>
+      <p class="section-intro" id="sale-ads-intro"></p>
+      <div class="research-filters rental-filters">
+        <label>Budget dari<select id="sale-budget-min">${budgetOptions(SALE_STEPS, "Rp 0")}</select></label>
+        <label>sampai<select id="sale-budget-max">${budgetOptions(SALE_STEPS, "Tanpa batas")}</select></label>
+      </div>
+      <div id="sale-ad-list" class="research-list" aria-live="polite"></div>
     </section>
     <section class="research-section" id="belum-diverifikasi" aria-labelledby="leads-title" hidden>
       <div class="eyebrow"><span class="tiny-line"></span> PETUNJUK</div>
@@ -400,6 +411,7 @@ function renderStatic(research: ResearchData): void {
   renderPlanned(research);
   renderLeads(research);
   renderRentals(research, "Semua");
+  renderSaleAds(research);
   $("method-list").innerHTML = research.methods
     .map(
       (method) =>
@@ -430,6 +442,41 @@ function renderLeads(research: ResearchData): void {
         `<article class="method-card lead-card" data-testid="lead-card" id="${esc(lead.id)}"><div class="method-top"><span class="source-kind">${esc(lead.area ?? "Jabodetabek")}</span><span class="verdict verdict-unverified">${lead.status === "unreached" ? "Belum terjangkau otomatis" : "Belum diverifikasi"}</span></div><h3>${esc(lead.name)}</h3><p>Menurut daftar pengguna: ${esc(lead.claim)}</p>${lead.check ? `<p class="method-label">Hasil cek</p><p>${esc(lead.check)}</p>` : ""}${lead.related && names.has(lead.related) ? `<p><a href="#${esc(lead.related)}">Lihat proyek terverifikasi: ${esc(names.get(lead.related))} ↓</a></p>` : ""}<p class="method-sources">${lead.links.map((link) => `<a href="${esc(safeUrl(link.url))}" ${external}>${esc(link.label)} ↗</a>`).join("")}${contactLink(lead.contactUrl, "")}</p><small>Buka tautan Instagram saat masuk ke akun Instagram untuk memeriksa sendiri.</small></article>`,
     )
     .join("");
+}
+
+function renderSaleAds(research: ResearchData): void {
+  const sale = research.saleAds;
+  if (!sale?.ads.length) return;
+  $("iklan-dijual").hidden = false;
+  $("sale-ads-intro").textContent =
+    `${sale.note} Dicek ${checkedDate(sale.checkedAt)}.`;
+  const [low, high] = budgetBounds(
+    value("sale-budget-min"),
+    value("sale-budget-max"),
+  );
+  const list = sale.ads
+    .filter((ad) =>
+      withinBudget({ min: ad.price.amount, max: null }, low, high),
+    )
+    .sort((a, b) => a.price.amount - b.price.amount);
+  const size = (ad: ResearchSaleAd) =>
+    [
+      ad.landM2 ? `LT ${ad.landM2} m²` : "",
+      ad.buildingM2 ? `LB ${ad.buildingM2} m²` : "",
+      ad.bedrooms ? `${ad.bedrooms} kamar` : "",
+    ]
+      .filter(Boolean)
+      .join(" · ");
+  $("sale-ad-list").innerHTML = list.length
+    ? list
+        .map(
+          (ad) =>
+            `<article class="research-card rental-card" data-testid="sale-ad-card" id="${esc(ad.id)}"><div class="research-card-top"><span class="card-area"><i class="area-dot area-${esc(ad.area.toLowerCase())}"></i>${esc(ad.area)} <span>· ${esc(ad.locationText)}</span></span><span class="verdict verdict-${ad.verdict}">${ad.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span></div><h3>${esc(ad.title)}</h3><p class="research-meta">${ad.category === "kavling" ? "Kavling" : "Rumah"}${ad.projectOrCluster ? ` · ${esc(ad.projectOrCluster)}` : ""}${size(ad) ? ` · ${esc(size(ad))}` : ""}</p><div class="research-price"><strong>${esc(money(ad.price.amount))}</strong><span>${esc(ad.sourcePortal)}${ad.postedOrUpdated ? ` · terdaftar ${esc(checkedDate(ad.postedOrUpdated))}` : ""}</span></div><blockquote class="research-quote">“${esc(ad.price.quote)}” <a href="${esc(safeUrl(ad.price.url))}" ${external}>sumber harga ↗</a></blockquote>${ad.nearMosque ? `<p class="research-claim">Menurut iklan, dekat ${esc(ad.nearMosque.name)}: “${esc(ad.nearMosque.quote)}” <a href="${esc(safeUrl(ad.nearMosque.url))}" ${external}>↗</a></p>` : ""}${ad.evidence.length ? `<div class="research-plus"><strong>Poin keluarga muslim</strong><ul>${ad.evidence.map((e) => `<li>“${esc(e.quote)}” <a href="${esc(safeUrl(e.url))}" ${external}>↗</a></li>`).join("")}</ul></div>` : ""}${ad.note ? `<p class="research-note">${esc(ad.note)}</p>` : ""}<div class="research-actions"><a class="button" href="${esc(safeUrl(ad.listingUrl))}" ${external}>Buka iklan ↗</a></div><p class="research-checked">Dicek ${esc(checkedDate(ad.lastChecked))} · lokasi sampai tingkat kawasan; konfirmasi langsung lewat portal.</p></article>`,
+        )
+        .join("")
+    : '<p class="research-note" data-testid="sale-ad-empty">Belum ada iklan dalam budget ini.</p>';
+  for (const id of ["sale-budget-min", "sale-budget-max"])
+    $(id).onchange = () => renderSaleAds(research);
 }
 
 function renderRentals(research: ResearchData, area = rentalArea): void {

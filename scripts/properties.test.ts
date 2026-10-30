@@ -506,3 +506,63 @@ test("rentals and unverified leads keep privacy and labels", {
   const bare = await run([rental], [{ ...lead, links: [] }]);
   assert.match(bare.result.stderr, /links wajib/);
 });
+
+test("sale ads need Islamic evidence and never carry a coordinate", {
+  skip: python,
+}, async (t) => {
+  const directory = await mkdtemp(join(tmpdir(), "rumah-sale-test-"));
+  t.after(() => rm(directory, { recursive: true, force: true }));
+  const ad = {
+    id: "jual-uji",
+    title: "Rumah uji",
+    category: "rumah",
+    kind: "Rumah",
+    area: "Bogor",
+    locationText: "Kampung Uji",
+    price: {
+      amount: 650_000_000,
+      quote: "Rp 650 JT",
+      url: "https://portal.example.invalid/jual",
+    },
+    nearMosque: {
+      name: "Masjid Uji",
+      quote: "dekat Masjid Uji",
+      url: "https://portal.example.invalid/jual",
+    },
+    listingUrl: "https://portal.example.invalid/jual",
+    sourcePortal: "Portal uji",
+    verdict: "partial",
+    lastChecked: "2026-10-30",
+  };
+  const run = async (ads: object[]) => {
+    const input = join(directory, "input.json");
+    const sale = join(directory, "sale.json");
+    const output = join(directory, "output.geojson");
+    await writeFile(
+      input,
+      JSON.stringify({ checkedAt: "2026-10-30", properties: [] }),
+    );
+    await writeFile(
+      sale,
+      JSON.stringify({
+        checkedAt: "2026-10-30",
+        hub: "Masjid Uji",
+        note: "Uji.",
+        ads,
+      }),
+    );
+    const result = build([input, output, "--sale-ads", sale]);
+    return {
+      result,
+      data:
+        result.status === 0 ? JSON.parse(await readFile(output, "utf8")) : null,
+    };
+  };
+  const ok = await run([ad]);
+  assert.equal(ok.result.status, 0, ok.result.stderr);
+  assert.equal(ok.data.metadata.saleAds.ads[0].price.amount, 650_000_000);
+  const pinned = await run([{ ...ad, coordinate: { lat: -6.4, lng: 106.96 } }]);
+  assert.match(pinned.result.stderr, /tidak boleh berkoordinat/);
+  const bare = await run([{ ...ad, nearMosque: null, evidence: [] }]);
+  assert.match(bare.result.stderr, /wajib ada bukti/);
+});

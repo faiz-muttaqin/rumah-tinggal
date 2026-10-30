@@ -483,6 +483,75 @@ def load_rentals(path=ROOT / "research/rentals.json"):
     return {"checkedAt": data["checkedAt"], "note": text(data.get("note"), "rentals.note", 600), "rentals": rentals}
 
 
+SALE_CATEGORIES = {"rumah", "kavling"}
+
+
+def load_sale_ads(path=ROOT / "research/sale-ads.json"):
+    # Iklan unit dan kavling dijual: tanpa data penjual dan tanpa koordinat.
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text())
+    ads = []
+    for i, item in enumerate(data.get("ads", [])):
+        field = f"saleAds[{i}]"
+        if item.get("category") not in SALE_CATEGORIES or item.get("kind") not in ("Rumah", "Tanah") or item.get("area") not in AREAS:
+            raise Invalid(f"{field}: category, kind, atau area tidak dikenal")
+        if item.get("verdict") not in VERDICTS or not is_date(item.get("lastChecked")):
+            raise Invalid(f"{field}: verdict atau lastChecked tidak valid")
+        if "coordinate" in item or "coordinates" in item:
+            raise Invalid(f"{field}: iklan unit tidak boleh berkoordinat")
+        price = item.get("price") or {}
+        amount = number(price.get("amount"), f"{field}.price.amount", integer=True)
+        if not 10_000_000 <= amount <= 20_000_000_000:
+            raise Invalid(f"{field}.price di luar rentang wajar")
+        near = item.get("nearMosque")
+        if near:
+            near = {
+                "name": text(near.get("name"), f"{field}.nearMosque.name", 120),
+                "quote": text(near.get("quote"), f"{field}.nearMosque.quote", QUOTE_LIMIT),
+                "url": url(near.get("url"), f"{field}.nearMosque.url"),
+            }
+        evidence = [
+            {"quote": text(e.get("quote"), f"{field}.evidence[{j}].quote", QUOTE_LIMIT), "url": url(e.get("url"), f"{field}.evidence[{j}].url")}
+            for j, e in enumerate(item.get("evidence") or [])
+        ]
+        if not near and not evidence:
+            raise Invalid(f"{field}: wajib ada bukti masjid atau lingkungan islami")
+        ads.append({
+            "id": text(item.get("id"), f"{field}.id", 90),
+            "title": text(item.get("title"), f"{field}.title", 160),
+            "category": item["category"],
+            "kind": item["kind"],
+            "area": item["area"],
+            "locationText": text(item.get("locationText"), f"{field}.locationText", 160),
+            "projectOrCluster": text(item.get("projectOrCluster"), f"{field}.projectOrCluster", 120, optional=True),
+            "price": {
+                "amount": amount,
+                "quote": text(price.get("quote"), f"{field}.price.quote", QUOTE_LIMIT),
+                "url": url(price.get("url"), f"{field}.price.url"),
+                "pageDate": dated(price.get("pageDate"), f"{field}.price.pageDate"),
+            },
+            "landM2": number(item.get("landM2"), f"{field}.landM2", optional=True),
+            "buildingM2": number(item.get("buildingM2"), f"{field}.buildingM2", optional=True),
+            "bedrooms": item.get("bedrooms") if isinstance(item.get("bedrooms"), int) else None,
+            "nearMosque": near,
+            "evidence": evidence[:3],
+            "listingUrl": url(item.get("listingUrl"), f"{field}.listingUrl"),
+            "sourcePortal": text(item.get("sourcePortal"), f"{field}.sourcePortal", 60),
+            "postedOrUpdated": dated(item.get("postedOrUpdated"), f"{field}.postedOrUpdated"),
+            "ownerType": item.get("ownerType") if item.get("ownerType") in ("individual", "agent", "developer") else "unknown",
+            "verdict": item["verdict"],
+            "lastChecked": item["lastChecked"][:10],
+            "note": text(item.get("note"), f"{field}.note", 300, optional=True),
+        })
+    return {
+        "checkedAt": data["checkedAt"] if is_date(data.get("checkedAt")) else None,
+        "hub": text(data.get("hub"), "saleAds.hub", 120),
+        "note": text(data.get("note"), "saleAds.note", 600),
+        "ads": ads,
+    }
+
+
 def load_planned(path=ROOT / "research/planned-stations.json"):
     if not path.exists():
         return None
@@ -741,6 +810,7 @@ def build(
     planned_path=ROOT / "research/planned-stations.json",
     leads_path=ROOT / "research/leads.json",
     rentals_path=ROOT / "research/rentals.json",
+    sale_ads_path=ROOT / "research/sale-ads.json",
 ):
     regions = json.loads((ROOT / "public/data/regions.geojson").read_text())["features"]
     stations = load_stations()
@@ -749,6 +819,7 @@ def build(
     islamic = load_islamic()
     leads = load_leads(leads_path)
     rentals = load_rentals(rentals_path)
+    sale_ads = load_sale_ads(sale_ads_path)
     max_km = source.get("maxDistanceKm", 3)
     features, dropped, seen = [], [], set()
     for entry in source.get("properties", []):
@@ -809,6 +880,7 @@ def build(
             } if population else None,
             "leads": leads,
             "rentals": rentals,
+            "saleAds": sale_ads,
             "islamic": {
                 "checkedAt": islamic["checkedAt"],
                 "radiusKm": islamic["radiusKm"],
@@ -835,9 +907,10 @@ def main():
     parser.add_argument("--planned", type=pathlib.Path, default=ROOT / "research/planned-stations.json")
     parser.add_argument("--leads", type=pathlib.Path, default=ROOT / "research/leads.json")
     parser.add_argument("--rentals", type=pathlib.Path, default=ROOT / "research/rentals.json")
+    parser.add_argument("--sale-ads", type=pathlib.Path, default=ROOT / "research/sale-ads.json")
     args = parser.parse_args()
     try:
-        result, dropped = build(json.loads(args.input.read_text()), args.planned, args.leads, args.rentals)
+        result, dropped = build(json.loads(args.input.read_text()), args.planned, args.leads, args.rentals, args.sale_ads)
     except Invalid as error:
         sys.exit(f"Data riset tidak valid: {error}")
     body = json.dumps(result, ensure_ascii=False, indent=1) + "\n"

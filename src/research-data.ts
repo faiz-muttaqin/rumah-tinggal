@@ -386,6 +386,42 @@ export function rentText(rental: ResearchRental): string {
     : `${amount}/tahun (≈ Rp ${monthlyRent(rental).toLocaleString("id-ID")}/bulan)`;
 }
 
+// Iklan unit dan kavling dijual (bukan proyek developer); tanpa data penjual dan tanpa titik.
+export interface ResearchSaleAd {
+  id: string;
+  title: string;
+  category: "rumah" | "kavling";
+  kind: "Rumah" | "Tanah";
+  area: Area;
+  locationText: string;
+  projectOrCluster: string | null;
+  price: {
+    amount: number;
+    quote: string;
+    url: string;
+    pageDate: string | null;
+  };
+  landM2: number | null;
+  buildingM2: number | null;
+  bedrooms: number | null;
+  nearMosque: { name: string; quote: string; url: string } | null;
+  evidence: { quote: string; url: string }[];
+  listingUrl: string;
+  sourcePortal: string;
+  postedOrUpdated: string | null;
+  ownerType: "individual" | "agent" | "developer" | "unknown";
+  verdict: "confirmed" | "partial";
+  lastChecked: string;
+  note: string | null;
+}
+
+export interface ResearchSaleAds {
+  checkedAt: string | null;
+  hub: string;
+  note: string;
+  ads: ResearchSaleAd[];
+}
+
 export interface ResearchData {
   checkedAt: string;
   maxDistanceKm: number;
@@ -408,6 +444,7 @@ export interface ResearchData {
   islamic: IslamicMeta | null;
   leads: ResearchLeads | null;
   rentals: ResearchRentals | null;
+  saleAds?: ResearchSaleAds | null;
 }
 
 export const STATUS_LABELS: Record<ResearchStatus, string> = {
@@ -544,6 +581,7 @@ export async function loadResearch(): Promise<ResearchData> {
     islamic: metadata.islamic ?? null,
     leads: metadata.leads ?? null,
     rentals: metadata.rentals ?? null,
+    saleAds: metadata.saleAds ?? null,
     properties,
   };
 }

@@ -141,6 +141,12 @@ Iklan dicantumkan hanya bila kutipannya menyebut lingkungan muslim (masjid, mush
 
 Privasi: nama dan kontak pemilik, agen, atau pengelola tidak disimpan. Iklan pemilik perorangan hanya dicatat sampai tingkat kelurahan atau kecamatan, dan `build-properties.py` menolak koordinat untuk iklan perorangan. Sewa tidak ditampilkan di peta. Akun Instagram sewa yang hanya ditemukan lewat mesin pencari masuk ke petunjuk belum diverifikasi dengan jenis `rental`.
 
+## Iklan dijual dekat masjid kajian
+
+`research/sale-ads.json` menampung iklan rumah dan kavling (bukan proyek developer) di sekitar masjid berkajian, saat ini Masjid Jami' Al-Barkah Cileungsi. Syaratnya sama dengan sewa: halaman iklan dibuka langsung, harga dari halaman itu, kutipan verbatim yang menyebut masjid atau lingkungan islami, status masih ditawarkan, dan pemeriksa terpisah. Nama dan kontak penjual tidak disimpan, lokasi hanya sampai kawasan, dan builder menolak koordinat. Jarak ke masjid ditampilkan sebagai klaim iklan; perkiraan jarak tanpa titik diberi label asumsi.
+
+Pinhome memberi banyak proyek di Cileungsi titik bawaan yang sama (-6.3993925, 106.9624239). Titik itu tidak dipakai sebagai titik proyek; proyek tanpa titik lain tetap tercantum lewat basis islami tanpa jarak.
+
 ## Hasil kurasi 30 Oktober 2026
 
 171 kandidat ditemukan pada 13 koridor pencarian (termasuk duplikat lintas koridor; 152 nama unik). Batch awal mencatat 64 proyek kurasi dan menerbitkan 28.
@@ -152,3 +158,5 @@ Pembaruan akhir 30 Oktober: 176 entri kurasi; 98 terbit (Jakarta 48, Bogor 14, B
 Sewa dan petunjuk (30 Oktober malam): 26 iklan sewa ramah keluarga muslim tercatat (Jakarta 11, Depok 5, Bekasi 4, Tangerang 4, Bogor 2; 6 confirmed, 20 partial; kos keluarga 7, rumah sewa 7, kontrakan 6, apartemen 6). Pemeriksa menolak 13 (kebanyakan sudah tersewa atau tanpa bukti), dan 3 lagi tidak dicantumkan karena hanya ramah keluarga. Semua 76 kutipan harga dan bukti cocok saat dibuka ulang. Pencarian tidak menemukan akun Instagram sewa yang layak dicatat. Petunjuk belum diverifikasi: 21. Empat daftar Meta AI dari pengguna menambah Bumi Sakinah Cileungsi ke katalog (99 terbit), fasilitas Masjid Jami' Al-Barkah Cileungsi, dan tombol kontak untuk 6 proyek; beberapa situs yang disebut daftar tersebut tidak terdaftar di DNS.
 
 Pemeriksaan kajian lanjutan (S14) untuk Bekasi dan proyek basis islami menambah 35 fasilitas (total 303) dan 25 klaim proyek (total 125); proyek Bekasi dengan masjid berkajian atau klaim kajian naik dari 1 menjadi 5. Filter harga di `/riset` kini berupa rentang budget (dari dan sampai): proyek tampil bila rentang harganya beririsan dengan budget, bukan hanya harga mulai. Sewa memakai rentang budget per bulan (sewa tahunan dibagi 12).
+
+Sekitar Masjid Al-Barkah Cileungsi (BARKAH-01): pencarian proyek baru, iklan rumah/kavling, dan sewa yang masih buka. Ditambahkan Cotton Premiere Syariah (Cileungsi Hijau, 1,27 km dari masjid lewat pin kawasan) dan Adreena House Cileungsi ke katalog, harga dan lokasi Bumi Sakinah diperbarui, 9 iklan dijual, dan 2 sewa. Titik Teras Madina Cibubur dihapus karena ternyata titik bawaan Pinhome; jarak 0,61 km yang sempat dilaporkan tidak berlaku. Semua kutipan baru cocok saat dibuka ulang (26 iklan, 80 sewa).

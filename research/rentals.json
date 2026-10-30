@@ -1031,6 +1031,72 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-kost-mahasin-2-cileungsi",
+      "title": "Kost Mahasin 2 Cileungsi (kost campur syariah, pasutri dan anak boleh)",
+      "rentalType": "kos-keluarga",
+      "kind": "Rumah",
+      "area": "Bogor",
+      "locationText": "Kec. Cileungsi, Kabupaten Bogor",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1250000,
+        "period": "monthly",
+        "quote": "1.250.000",
+        "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-mahasin-2-cileungsi-bogor",
+        "pageDate": "2026-10-25"
+      },
+      "bedrooms": 1,
+      "sizeM2": null,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost Campur Syariah, bangunan baru dan terletak di dekat Masjid Al-Barkah Cileungsi",
+          "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-mahasin-2-cileungsi-bogor"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-mahasin-2-cileungsi-bogor",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-10-25",
+      "ownerType": "individual",
+      "social": [],
+      "verdict": "confirmed",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-rumah-griya-kenari-mas-cileungsi-kidul",
+      "title": "Rumah 1 KT di Griya Kenari Mas, Cileungsi Kidul",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bogor",
+      "locationText": "Kel. Cileungsi Kidul, Kec. Cileungsi, Kabupaten Bogor",
+      "buildingOrCluster": "Griya Kenari Mas",
+      "rent": {
+        "amount": 10500000,
+        "period": "yearly",
+        "quote": "Rp 10,5 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cileungsi-kidul-1",
+        "pageDate": "2025-06-11"
+      },
+      "bedrooms": 1,
+      "sizeM2": 40,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Fasum terdekat ada masjid, sekolahan, pasar cileungsi, mall metland cileungsi",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cileungsi-kidul-1"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cileungsi-kidul-1",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "individual",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
     }
   ]
 }

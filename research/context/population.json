@@ -203,6 +203,13 @@
       "within1km": 59000,
       "densityKm2": 18780
     },
+    "prj-cotton-premiere-cileungsi-hijau": {
+      "lat": -6.3994864,
+      "lng": 106.9695595,
+      "within500m": 10600,
+      "within1km": 32870,
+      "densityKm2": 10460
+    },
     "prj-d-garden-pulo-gebang-kirana": {
       "lat": -6.2040041,
       "lng": 106.957848,
@@ -685,13 +692,6 @@
       "within500m": 13760,
       "within1km": 58810,
       "densityKm2": 18720
-    },
-    "prj-teras-madina-cibubur": {
-      "lat": -6.3993925,
-      "lng": 106.9624239,
-      "within500m": 12530,
-      "within1km": 35460,
-      "densityKm2": 11290
     },
     "prj-the-brawijaya": {
       "lat": -6.323682,

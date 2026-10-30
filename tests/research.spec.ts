@@ -280,3 +280,20 @@ test("/riset is marked noindex for search engines", async ({ page }) => {
     "noindex, nofollow",
   );
 });
+
+test("lists sale ads near a kajian mosque with a budget range and no seller data", async ({
+  page,
+}) => {
+  const ads = page.getByTestId("sale-ad-card");
+  await expect(page.locator("#iklan-dijual")).toBeVisible();
+  await expect(ads).toHaveCount(2);
+  await expect(ads.first()).toContainText("Kavling Syariah Uji");
+  await expect(ads.first()).toContainText("Catatan asumsi uji.");
+  await expect(ads.last()).toContainText("Menurut iklan, dekat Masjid Uji");
+  await expect(ads.last()).toContainText("Rp 1,65 M");
+  await page.locator("#sale-budget-max").selectOption("1000000000");
+  await expect(ads).toHaveCount(1);
+  await page.locator("#sale-budget-min").selectOption("2000000000");
+  await page.locator("#sale-budget-max").selectOption("0");
+  await expect(page.getByTestId("sale-ad-empty")).toBeVisible();
+});

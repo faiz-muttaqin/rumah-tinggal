@@ -15053,14 +15053,7 @@
         "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cileungsi-2"
       },
       "officialUrl": "https://maxirecon.com/",
-      "coordinate": {
-        "lat": -6.3993925,
-        "lng": 106.9624239,
-        "method": "Pin proyek Pinhome",
-        "url": "https://www.pinhome.id/dijual/rumah-baru/teras-madina-cibubur",
-        "precision": "pin portal",
-        "note": null
-      },
+      "coordinate": null,
       "osmQuery": "Teras Madina Cibubur, Limus Nunggal, Cileungsi, Kabupaten Bogor",
       "sources": [
         {
@@ -15088,7 +15081,7 @@
           "fetched": true,
           "pageDate": null,
           "supports": ["harga", "status", "lokasi", "unit"],
-          "note": "Rp 780 Juta - Rp 1,27 Miliar, Dalam Pembangunan; posted 2025-01-30; advertiser PT AD Rumah Sejahtera Properti; coordinate source"
+          "note": "Rp 780 Juta - Rp 1,27 Miliar, Dalam Pembangunan; diunggah 2025-01-30; pengiklan PT AD Rumah Sejahtera Properti. Titik -6.3993925, 106.9624239 ternyata titik bawaan Pinhome untuk Kec. Cileungsi (dicek 2026-10-30), jadi tidak dipakai."
         },
         {
           "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cileungsi-2",
@@ -16801,19 +16794,27 @@
       "developer": null,
       "kind": "Rumah",
       "subsidized": false,
-      "locationText": "Cileungsi, Kabupaten Bogor (situs proyek tidak menyebut alamat jalan)",
+      "locationText": "Jl. Bojong Kaso, Desa Cileungsi Kidul, Kec. Cileungsi, Kabupaten Bogor (iklan pemasar)",
       "status": "dipasarkan",
       "statusQuote": "UNIT TERBATAS!!",
       "statusUrl": "https://bumisakinahcileungsi.com/",
       "price": {
-        "min": 400000000,
+        "min": 388000000,
         "max": null,
-        "basis": "harga mulai menurut artikel Mamikos 4 Mei 2026; situs proyek tidak mencantumkan harga",
-        "quote": "Ditawarkan dengan harga mulai dari Rp 400 jutaan",
-        "url": "https://mamikos.com/info/perumahan-di-cileungsi-gnr/?halaman=2",
-        "pageDate": "2026-05-04"
+        "basis": "harga cash Type 42 di iklan Realoka (diperbarui sekitar Juli 2026); Mamikos Mei 2026: mulai Rp 400 jutaan",
+        "quote": "Rp 388.000.000",
+        "url": "https://www.realoka.com/687738-perumahan-syariah-tanpa-bi-cheking-tanpa-bank-cash-300-jutaan",
+        "pageDate": null
       },
-      "units": [],
+      "units": [
+        {
+          "label": "Type 42 (iklan Realoka dan Pinhome, harga cash)",
+          "bedrooms": 2,
+          "landArea": 72,
+          "buildingArea": 42,
+          "price": 388000000
+        }
+      ],
       "transitClaim": null,
       "officialUrl": "https://bumisakinahcileungsi.com/",
       "coordinate": null,
@@ -16836,6 +16837,24 @@
           "pageDate": "2026-05-04",
           "supports": ["harga"],
           "note": "Artikel informasi, bukan listing developer; menyebut harga mulai Rp 400 jutaan dan skema angsuran syariah."
+        },
+        {
+          "url": "https://www.realoka.com/687738-perumahan-syariah-tanpa-bi-cheking-tanpa-bank-cash-300-jutaan",
+          "kind": "portal",
+          "title": "Perumahan Syariah tanpa BI Checking tanpa Bank (Realoka)",
+          "fetched": true,
+          "pageDate": null,
+          "supports": ["harga", "status", "unit", "lokasi"],
+          "note": "Iklan pemasar bertagar #bumisakinahcileungsi; 'Type 42 hanya beberapa unit lagi'; diperbarui sekitar 3 bulan sebelum dicek. Nama dan nomor pemasar tidak disimpan."
+        },
+        {
+          "url": "https://www.pinhome.id/dijual/rumah-sekunder/unit/dijual-rumah-murah-syariah-belilah-rumah-di-lokasi-premium-di-jl-bojong-kaso",
+          "kind": "portal",
+          "title": "Dijual Rumah Murah Syariah di Jl. Bojong Kaso (Pinhome)",
+          "fetched": true,
+          "pageDate": "2025-09-19",
+          "supports": ["harga"],
+          "note": "Iklan aktif (InStock) dengan harga cash 388 juta; diunggah 19 September 2025 tanpa tanggal pembaruan."
         }
       ],
       "verdict": "partial",
@@ -16858,7 +16877,131 @@
           "seenAt": "https://bumisakinahcileungsi.com/"
         }
       ],
-      "contactUrl": "https://bumisakinahcileungsi.com/"
+      "contactUrl": "https://www.realoka.com/687738-perumahan-syariah-tanpa-bi-cheking-tanpa-bank-cash-300-jutaan"
+    },
+    {
+      "id": "prj-cotton-premiere-cileungsi-hijau",
+      "name": "Cotton Premiere Syariah (Cileungsi Hijau)",
+      "developer": "IP Land menurut blog pemasar; Pinhome mencantumkan agensi TAMR Realty",
+      "kind": "Rumah",
+      "subsidized": false,
+      "locationText": "Cluster Cotton Premiere, Perumahan Cileungsi Hijau, Desa Cileungsi Kidul, Kec. Cileungsi, Kabupaten Bogor",
+      "status": "dipasarkan",
+      "statusQuote": "Status Konstruksi: Siap Huni",
+      "statusUrl": "https://www.pinhome.id/dijual/rumah-baru/cotton-premiere",
+      "price": {
+        "min": 827000000,
+        "max": 1450000000,
+        "basis": "rentang harga Pinhome (diunggah Oktober 2025, aktif saat dicek); iklan Realoka 74/74 Rp 851 juta",
+        "quote": "Rp 827 Juta - Rp 1,45 Miliar",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/cotton-premiere",
+        "pageDate": "2025-10-29"
+      },
+      "units": [
+        {
+          "label": "Cotton Wood 2 lantai 74/74 (iklan Realoka, diperbarui sekitar April 2026)",
+          "bedrooms": 3,
+          "landArea": 74,
+          "buildingArea": 74,
+          "price": 851000000
+        }
+      ],
+      "transitClaim": null,
+      "officialUrl": null,
+      "contactUrl": "https://www.pinhome.id/dijual/rumah-baru/cotton-premiere",
+      "coordinate": {
+        "lat": -6.3994864,
+        "lng": 106.9695595,
+        "method": "Pin kawasan Cottonwood Cileungsi Hijau di Pinhome",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/cottonwood-perumahan-cileungsi-hijau",
+        "precision": "pin kawasan",
+        "note": "Listing Cottonwood sudah tidak dijual; titiknya dipakai sebagai lokasi kawasan. Titik listing Cotton Premiere adalah titik bawaan Kec. Cileungsi sehingga tidak dipakai."
+      },
+      "osmQuery": "Cileungsi Hijau, Cileungsi Kidul, Cileungsi, Kabupaten Bogor",
+      "sources": [
+        {
+          "url": "https://www.pinhome.id/dijual/rumah-baru/cotton-premiere",
+          "kind": "portal",
+          "title": "Cotton Premiere by TAMR Realty (Pinhome)",
+          "fetched": true,
+          "pageDate": "2025-10-29",
+          "supports": ["harga", "status"],
+          "note": "Status aktif dan InStock saat dicek 2026-10-30; tidak ada tipe unit yang dirinci. Titik listing adalah titik bawaan Kec. Cileungsi."
+        },
+        {
+          "url": "https://rumahsunnah.puspawijaya.com/2025/10/rumah-syariah-di-cotton-premier-syariah.html",
+          "kind": "other",
+          "title": "Rumah Syariah di Cotton Premier Syariah (blog pemasar)",
+          "fetched": true,
+          "pageDate": "2025-11-11",
+          "supports": ["lokasi"],
+          "note": "Blog pemasar: cluster syariah bagian dari Perumahan Cileungsi Hijau, lanjutan Cottonwood East Cibubur; menyebut jarak 8 menit ke Masjid Al Barkah Rodja."
+        },
+        {
+          "url": "https://www.realoka.com/604720-rumah-baru-syariah-tanpa-riba-siap-huni-dekat-radio-rodja-cileungsi",
+          "kind": "portal",
+          "title": "Rumah Baru Syariah tanpa Riba Siap Huni dekat Radio Rodja Cileungsi (Realoka)",
+          "fetched": true,
+          "pageDate": null,
+          "supports": ["harga", "unit"],
+          "note": "Iklan pemasar Cotton Wood 74/74, ready stock; diperbarui sekitar 6 bulan sebelum dicek. Nama dan nomor pemasar tidak disimpan."
+        },
+        {
+          "url": "https://www.pinhome.id/dijual/rumah-baru/cottonwood-perumahan-cileungsi-hijau",
+          "kind": "portal",
+          "title": "Cottonwood - Perumahan Cileungsi Hijau (Pinhome)",
+          "fetched": true,
+          "pageDate": null,
+          "supports": ["lokasi"],
+          "note": "Listing tidak lagi dijual; sumber titik kawasan."
+        }
+      ],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30",
+      "corridor": "sweep-syariah-meta",
+      "methods": ["portal-proyek-baru"],
+      "social": []
+    },
+    {
+      "id": "prj-adreena-house-cileungsi",
+      "name": "Adreena House Cileungsi",
+      "developer": null,
+      "kind": "Rumah",
+      "subsidized": false,
+      "locationText": "Kel. Cileungsi, Kec. Cileungsi, Kabupaten Bogor (menurut Pinhome; dekat Taman Buah Mekarsari)",
+      "status": "dipasarkan",
+      "statusQuote": "Status Konstruksi: Siap Huni",
+      "statusUrl": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
+      "price": {
+        "min": 834000000,
+        "max": 1150000000,
+        "basis": "rentang harga Pinhome (diunggah Desember 2025, aktif saat dicek)",
+        "quote": "Rp 834 Juta - Rp 1,15 Miliar",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
+        "pageDate": "2025-12-04"
+      },
+      "units": [],
+      "transitClaim": null,
+      "officialUrl": null,
+      "contactUrl": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
+      "coordinate": null,
+      "osmQuery": "Adreena Village, Cileungsi, Kabupaten Bogor",
+      "sources": [
+        {
+          "url": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
+          "kind": "portal",
+          "title": "Adreena House Cileungsi by TAMR Realty (Pinhome)",
+          "fetched": true,
+          "pageDate": "2025-12-04",
+          "supports": ["harga", "status", "lokasi"],
+          "note": "Siap huni, satu lantai 64/72, 3 kamar. Halaman juga menampilkan 'Sisa 0 Unit' yang tampak sebagai artefak data portal (Cotton Premiere yang aktif juga 0); ketersediaan perlu dikonfirmasi. Titik listing adalah titik bawaan Kec. Cileungsi sehingga tidak dipakai."
+        }
+      ],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30",
+      "corridor": "sweep-syariah-meta",
+      "methods": ["portal-proyek-baru"],
+      "social": []
     }
   ]
 }

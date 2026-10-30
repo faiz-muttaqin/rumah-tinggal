@@ -300,15 +300,27 @@
       "claim": "Disebut: kavling Jl. H. Syathiby ±500 m dari masjid (83 m², Rp 250 juta), Griya Cileungsi Asri ±700 m (90/52, Rp 625 juta nego), townhouse Cileungsi Hijau ±2,8 km, rumah Rp 388 juta dekat Kota Wisata, dan kavling Cluster Syariah Cottonwood dan Rosewood di Narogong.",
       "links": [
         {
-          "label": "Cileungsi Hijau di rumah123 (Rodja TV 1,3 km)",
-          "url": "https://www.rumah123.com/venue/cileungsi-hijau-vcm14608/"
+          "label": "rumah123: dijual dekat Radio Rodja",
+          "url": "https://www.rumah123.com/jual/bogor/poi/radio-rodja/rumah/"
+        },
+        {
+          "label": "rumah123: disewa dekat Radio Rodja",
+          "url": "https://www.rumah123.com/sewa/bogor/poi/radio-rodja/rumah/"
+        },
+        {
+          "label": "99.co: dijual dekat Radio Rodja",
+          "url": "https://www.99.co/id/jual/rumah/bogor/dekat-radio-rodja"
+        },
+        {
+          "label": "Waa2: disewakan dekat Masjid Rodja",
+          "url": "https://rumah.waa2.co.id/disewakan/dekat-masjid-rodja"
         },
         {
           "label": "Threads Masjid Al-Barkah (info kajian)",
           "url": "https://www.threads.com/@masjidalbarkahcileungsi"
         }
       ],
-      "check": "Iklan perorangan atau resale; akun Instagram pribadi yang memposting tidak dicatat. Listing Lamudi, Griya Cileungsi Asri, dan cluster Cottonwood/Rosewood tidak ditemukan di halaman yang bisa dibuka. Status tanah perlu dicek ke notaris atau PPAT."
+      "check": "Iklan yang terbuka dan masih aktif kini tercantum di bagian Iklan dijual, Sewa, dan katalog (Cotton Premiere, Adreena House, Bumi Sakinah). Item daftar Meta AI belum ditemukan di halaman yang terbuka; rumah123, 99.co, dan Lamudi memblokir pemeriksaan otomatis, jadi tautan di atas untuk dicek manual."
     },
     {
       "id": "lead-kampung-islami-thoyibah",

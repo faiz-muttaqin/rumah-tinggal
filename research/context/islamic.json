@@ -8152,6 +8152,18 @@
     ],
     "prj-bumi-sakinah-cileungsi": [
       {
+        "kind": "mosque-in-estate",
+        "quote": "Tersedia Masjid, TK, Taman dan sarana olah raga.",
+        "url": "https://www.realoka.com/687738-perumahan-syariah-tanpa-bi-cheking-tanpa-bank-cash-300-jutaan",
+        "pageDate": null
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Sudah tersedia Rumah Tahfidz",
+        "url": "https://www.pinhome.id/dijual/rumah-sekunder/unit/dijual-rumah-murah-syariah-belilah-rumah-di-lokasi-premium-di-jl-bojong-kaso",
+        "pageDate": "2025-09-19"
+      },
+      {
         "kind": "syariah-concept",
         "quote": "Perumahan Syariah di Cileungsi",
         "url": "https://bumisakinahcileungsi.com/",
@@ -8162,6 +8174,52 @@
         "quote": "skema dan akad yang digunakan sesuai dengan prinsip syariah",
         "url": "https://bumisakinahcileungsi.com/",
         "pageDate": null
+      },
+      {
+        "kind": "other",
+        "quote": "Sekitar 10 menit dari Komplek Masjid Al-barkah/ Rodja Cileungsi.",
+        "url": "https://www.realoka.com/687738-perumahan-syariah-tanpa-bi-cheking-tanpa-bank-cash-300-jutaan",
+        "pageDate": null
+      }
+    ],
+    "prj-cotton-premiere-cileungsi-hijau": [
+      {
+        "kind": "mosque-in-estate",
+        "quote": "Fasilitas lengkap: taman luas, masjid jami, playground, dan GOR olahraga",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/cotton-premiere",
+        "pageDate": "2025-10-29"
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Kini hadir Rumah Syariah Cibubur dengan cicilan flat tanpa riba, tanpa bank, dan akad murni syariah langsung ke developer.",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/cotton-premiere",
+        "pageDate": "2025-10-29"
+      },
+      {
+        "kind": "other",
+        "quote": "Berlokasi hanya berjarak 8 menit dari Masjid Al Barkah Rodja Cileungsi",
+        "url": "https://rumahsunnah.puspawijaya.com/2025/10/rumah-syariah-di-cotton-premier-syariah.html",
+        "pageDate": "2025-11-11"
+      }
+    ],
+    "prj-adreena-house-cileungsi": [
+      {
+        "kind": "mosque-in-estate",
+        "quote": "Masjid dalam cluster",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
+        "pageDate": "2025-12-04"
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Program lingkungan islami seperti tahsin dan tahfidz",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
+        "pageDate": "2025-12-04"
+      },
+      {
+        "kind": "other",
+        "quote": "10 menit ke Masjid Albarkah Radio Rodja",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
+        "pageDate": "2025-12-04"
       }
     ]
   }

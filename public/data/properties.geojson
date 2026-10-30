@@ -334,7 +334,7 @@
     "id": "sweep-syariah-meta",
     "label": "Petunjuk perumahan islami dari daftar pengguna (Meta AI), diverifikasi ulang",
     "found": 16,
-    "included": 10
+    "included": 12
    },
    {
     "id": "sweep-tod",
@@ -1683,13 +1683,25 @@
      "status": "unverified",
      "area": "Bogor",
      "claim": "Disebut: kavling Jl. H. Syathiby ±500 m dari masjid (83 m², Rp 250 juta), Griya Cileungsi Asri ±700 m (90/52, Rp 625 juta nego), townhouse Cileungsi Hijau ±2,8 km, rumah Rp 388 juta dekat Kota Wisata, dan kavling Cluster Syariah Cottonwood dan Rosewood di Narogong.",
-     "check": "Iklan perorangan atau resale; akun Instagram pribadi yang memposting tidak dicatat. Listing Lamudi, Griya Cileungsi Asri, dan cluster Cottonwood/Rosewood tidak ditemukan di halaman yang bisa dibuka. Status tanah perlu dicek ke notaris atau PPAT.",
+     "check": "Iklan yang terbuka dan masih aktif kini tercantum di bagian Iklan dijual, Sewa, dan katalog (Cotton Premiere, Adreena House, Bumi Sakinah). Item daftar Meta AI belum ditemukan di halaman yang terbuka; rumah123, 99.co, dan Lamudi memblokir pemeriksaan otomatis, jadi tautan di atas untuk dicek manual.",
      "related": null,
      "contactUrl": null,
      "links": [
       {
-       "label": "Cileungsi Hijau di rumah123 (Rodja TV 1,3 km)",
-       "url": "https://www.rumah123.com/venue/cileungsi-hijau-vcm14608/"
+       "label": "rumah123: dijual dekat Radio Rodja",
+       "url": "https://www.rumah123.com/jual/bogor/poi/radio-rodja/rumah/"
+      },
+      {
+       "label": "rumah123: disewa dekat Radio Rodja",
+       "url": "https://www.rumah123.com/sewa/bogor/poi/radio-rodja/rumah/"
+      },
+      {
+       "label": "99.co: dijual dekat Radio Rodja",
+       "url": "https://www.99.co/id/jual/rumah/bogor/dekat-radio-rodja"
+      },
+      {
+       "label": "Waa2: disewakan dekat Masjid Rodja",
+       "url": "https://rumah.waa2.co.id/disewakan/dekat-masjid-rodja"
       },
       {
        "label": "Threads Masjid Al-Barkah (info kajian)",
@@ -2798,6 +2810,395 @@
      "social": [],
      "verdict": "partial",
      "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-kost-mahasin-2-cileungsi",
+     "title": "Kost Mahasin 2 Cileungsi (kost campur syariah, pasutri dan anak boleh)",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Kec. Cileungsi, Kabupaten Bogor",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1250000,
+      "period": "monthly",
+      "quote": "1.250.000",
+      "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-mahasin-2-cileungsi-bogor",
+      "pageDate": "2026-10-25"
+     },
+     "bedrooms": 1,
+     "sizeM2": null,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kost Campur Syariah, bangunan baru dan terletak di dekat Masjid Al-Barkah Cileungsi",
+       "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-mahasin-2-cileungsi-bogor"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-mahasin-2-cileungsi-bogor",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-10-25",
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "confirmed",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-rumah-griya-kenari-mas-cileungsi-kidul",
+     "title": "Rumah 1 KT di Griya Kenari Mas, Cileungsi Kidul",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Kel. Cileungsi Kidul, Kec. Cileungsi, Kabupaten Bogor",
+     "buildingOrCluster": "Griya Kenari Mas",
+     "rent": {
+      "amount": 10500000,
+      "period": "yearly",
+      "quote": "Rp 10,5 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cileungsi-kidul-1",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 1,
+     "sizeM2": 40,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Fasum terdekat ada masjid, sekolahan, pasar cileungsi, mall metland cileungsi",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cileungsi-kidul-1"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cileungsi-kidul-1",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    }
+   ]
+  },
+  "saleAds": {
+   "checkedAt": "2026-10-30",
+   "hub": "Masjid Jami' Al-Barkah Cileungsi",
+   "note": "Iklan rumah dan kavling dari portal publik (Brighton, Pinhome, Realoka) yang dibuka langsung, diperiksa ulang pemeriksa terpisah, dan kutipannya dicocokkan ulang. Ini iklan unit, bukan proyek developer; nama dan kontak penjual tidak disimpan dan lokasi hanya sampai kawasan. Jarak ke masjid adalah klaim iklan kecuali disebut lain.",
+   "ads": [
+    {
+     "id": "jual-rumah-kp-tengah-dekat-al-barkah-rodja",
+     "title": "Rumah siap huni dekat Masjid Al Barkah Rodja",
+     "category": "rumah",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Kampung Tengah, Desa Cileungsi, Kec. Cileungsi, Kabupaten Bogor",
+     "projectOrCluster": null,
+     "price": {
+      "amount": 1650000000,
+      "quote": "Harga: Rp 1,65 Miliar ( Nego )",
+      "url": "https://www.brighton.co.id/cari-properti/view/kp-tengah-cileungsi",
+      "pageDate": "2026-07-10"
+     },
+     "landM2": 130,
+     "buildingM2": 130,
+     "bedrooms": 2,
+     "nearMosque": {
+      "name": "Masjid Jami' Al-Barkah Cileungsi",
+      "quote": "Dekat Masjid Al Barkah – Komplek Radio Rodja & RodjaTV",
+      "url": "https://www.brighton.co.id/cari-properti/view/kp-tengah-cileungsi"
+     },
+     "evidence": [
+      {
+       "quote": "Dekat SDIT Cahaya Sunnah",
+       "url": "https://www.brighton.co.id/cari-properti/view/kp-tengah-cileungsi"
+      },
+      {
+       "quote": "Dekat Pesantren Imam Asyitiby",
+       "url": "https://www.brighton.co.id/cari-properti/view/kp-tengah-cileungsi"
+      }
+     ],
+     "listingUrl": "https://www.brighton.co.id/cari-properti/view/kp-tengah-cileungsi",
+     "sourcePortal": "Brighton",
+     "postedOrUpdated": "2026-07-10",
+     "ownerType": "agent",
+     "verdict": "confirmed",
+     "lastChecked": "2026-10-30",
+     "note": null
+    },
+    {
+     "id": "jual-rumah-3kt-kampung-tengah",
+     "title": "Rumah 3 KT strategis Kampung Tengah, SHM, hadap timur",
+     "category": "rumah",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Kampung Tengah, Desa Cileungsi, Kec. Cileungsi, Kabupaten Bogor",
+     "projectOrCluster": null,
+     "price": {
+      "amount": 2000000000,
+      "quote": "Harga Rp2M, bisa KPR",
+      "url": "https://www.brighton.co.id/cari-properti/view/rumah-3kt-strategis-kampung-tengah-shm-hadap-timur",
+      "pageDate": "2026-10-21"
+     },
+     "landM2": 130,
+     "buildingM2": 125,
+     "bedrooms": 3,
+     "nearMosque": {
+      "name": "Masjid Jami' Al-Barkah Cileungsi",
+      "quote": "strategis dekat Masjid Al Barkah, sekolah, dan akses tol",
+      "url": "https://www.brighton.co.id/cari-properti/view/rumah-3kt-strategis-kampung-tengah-shm-hadap-timur"
+     },
+     "evidence": [],
+     "listingUrl": "https://www.brighton.co.id/cari-properti/view/rumah-3kt-strategis-kampung-tengah-shm-hadap-timur",
+     "sourcePortal": "Brighton",
+     "postedOrUpdated": "2026-10-21",
+     "ownerType": "agent",
+     "verdict": "confirmed",
+     "lastChecked": "2026-10-30",
+     "note": null
+    },
+    {
+     "id": "jual-rumah-kampung-tengah-desa-cileungsi",
+     "title": "Rumah di Kampung Tengah, Desa Cileungsi",
+     "category": "rumah",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Kampung Tengah, Desa Cileungsi, Kec. Cileungsi, Kabupaten Bogor",
+     "projectOrCluster": null,
+     "price": {
+      "amount": 2000000000,
+      "quote": "Rp 2 M",
+      "url": "https://www.brighton.co.id/cari-properti/view/di-jual-rumah-di-kampung-tengah-desa-cileungsi-kabupaten-bog",
+      "pageDate": "2026-08-18"
+     },
+     "landM2": 135,
+     "buildingM2": 135,
+     "bedrooms": 2,
+     "nearMosque": {
+      "name": "Masjid Jami' Al-Barkah Cileungsi",
+      "quote": "lokasi dekat dengan Masjid Al-Barkah Cileungsi",
+      "url": "https://www.brighton.co.id/cari-properti/view/di-jual-rumah-di-kampung-tengah-desa-cileungsi-kabupaten-bog"
+     },
+     "evidence": [],
+     "listingUrl": "https://www.brighton.co.id/cari-properti/view/di-jual-rumah-di-kampung-tengah-desa-cileungsi-kabupaten-bog",
+     "sourcePortal": "Brighton",
+     "postedOrUpdated": "2026-08-18",
+     "ownerType": "agent",
+     "verdict": "confirmed",
+     "lastChecked": "2026-10-30",
+     "note": null
+    },
+    {
+     "id": "jual-tanah-91m2-poksek-cileungsi",
+     "title": "Tanah SHM 91 m² dekat Poksek Cileungsi (tepi Jl. Transyogi)",
+     "category": "kavling",
+     "kind": "Tanah",
+     "area": "Bogor",
+     "locationText": "Kel. Cileungsi, Kec. Cileungsi, Kabupaten Bogor",
+     "projectOrCluster": null,
+     "price": {
+      "amount": 1365000000,
+      "quote": "Tanah Shm 91 M² Dekat Poksek Cileungsi, Harga Rp 1,365 M",
+      "url": "https://www.brighton.co.id/cari-properti/view/tanah-shm-91-m-dekat-poksek-cileungsi-harga-rp-1-365-m",
+      "pageDate": "2026-10-13"
+     },
+     "landM2": 91,
+     "buildingM2": null,
+     "bedrooms": null,
+     "nearMosque": {
+      "name": "Masjid Jami' Al-Barkah Cileungsi",
+      "quote": "Dekat Masjid Agung Al-Barkah",
+      "url": "https://www.brighton.co.id/cari-properti/view/tanah-shm-91-m-dekat-poksek-cileungsi-harga-rp-1-365-m"
+     },
+     "evidence": [],
+     "listingUrl": "https://www.brighton.co.id/cari-properti/view/tanah-shm-91-m-dekat-poksek-cileungsi-harga-rp-1-365-m",
+     "sourcePortal": "Brighton",
+     "postedOrUpdated": "2026-10-13",
+     "ownerType": "agent",
+     "verdict": "partial",
+     "lastChecked": "2026-10-30",
+     "note": "Iklan menulis Masjid Agung Al-Barkah; diasumsikan masjid di Cileungsi karena lokasi di tepi Jl. Transyogi. Harga setara tanah komersial tepi jalan."
+    },
+    {
+     "id": "jual-rumah-cileungsi-hijau-650",
+     "title": "Rumah siap huni Cileungsi Hijau",
+     "category": "rumah",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Perumahan Cileungsi Hijau, Kec. Cileungsi, Kabupaten Bogor",
+     "projectOrCluster": "Perumahan Cileungsi Hijau",
+     "price": {
+      "amount": 650000000,
+      "quote": "Rp 650 JT",
+      "url": "https://www.brighton.co.id/cari-properti/view/cileungsi-hijau-6",
+      "pageDate": "2026-07-27"
+     },
+     "landM2": 90,
+     "buildingM2": 90,
+     "bedrooms": 2,
+     "nearMosque": {
+      "name": "Masjid Jami' Al-Barkah Cileungsi",
+      "quote": "kota wisata, pintu tol bekasi, mesjid Al barkah",
+      "url": "https://www.brighton.co.id/cari-properti/view/cileungsi-hijau-6"
+     },
+     "evidence": [],
+     "listingUrl": "https://www.brighton.co.id/cari-properti/view/cileungsi-hijau-6",
+     "sourcePortal": "Brighton",
+     "postedOrUpdated": "2026-07-27",
+     "ownerType": "agent",
+     "verdict": "partial",
+     "lastChecked": "2026-10-30",
+     "note": "Iklan hanya menyebut masjid dalam daftar tempat terdekat tanpa jarak."
+    },
+    {
+     "id": "jual-rumah-cileungsi-hijau-tanpa-bunga",
+     "title": "Rumah dekat Masjid Al Barkah Rodja, cicilan tanpa bunga, Cileungsi Hijau",
+     "category": "rumah",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Kawasan Cileungsi Hijau, Kec. Cileungsi, Kabupaten Bogor",
+     "projectOrCluster": "Cileungsi Hijau",
+     "price": {
+      "amount": 747500000,
+      "quote": "Rp 747,5 Juta",
+      "url": "https://www.pinhome.id/dijual/rumah-sekunder/unit/dijual-rumah-dekat-masjid-al-barkah-rodja-tanpa-bunga-di-cileungsi-hijau",
+      "pageDate": "2025-02-18"
+     },
+     "landM2": 55,
+     "buildingM2": 60,
+     "bedrooms": 3,
+     "nearMosque": {
+      "name": "Masjid Jami' Al-Barkah Cileungsi",
+      "quote": "Dijual Rumah Dekat Masjid Al Barkah Rodja Tanpa Bunga di Cileungsi Hijau",
+      "url": "https://www.pinhome.id/dijual/rumah-sekunder/unit/dijual-rumah-dekat-masjid-al-barkah-rodja-tanpa-bunga-di-cileungsi-hijau"
+     },
+     "evidence": [
+      {
+       "quote": "Bayar ringan, tanpa riba, tanpa sita!",
+       "url": "https://www.pinhome.id/dijual/rumah-sekunder/unit/dijual-rumah-dekat-masjid-al-barkah-rodja-tanpa-bunga-di-cileungsi-hijau"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/dijual/rumah-sekunder/unit/dijual-rumah-dekat-masjid-al-barkah-rodja-tanpa-bunga-di-cileungsi-hijau",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2025-02-18",
+     "ownerType": "developer",
+     "verdict": "partial",
+     "lastChecked": "2026-10-30",
+     "note": "Iklan aktif di portal, tetapi diunggah Februari 2025 tanpa tanggal pembaruan; skema pembayaran tidak diverifikasi."
+    },
+    {
+     "id": "jual-kavling-55m2-cileungsi-hijau",
+     "title": "Kavling residensial 55 m² dekat Cibubur Timur, Cileungsi Hijau",
+     "category": "kavling",
+     "kind": "Tanah",
+     "area": "Bogor",
+     "locationText": "Kawasan Cileungsi Hijau, Kec. Cileungsi, Kabupaten Bogor",
+     "projectOrCluster": "Cileungsi Hijau",
+     "price": {
+      "amount": 409200000,
+      "quote": "Rp 409,2 Juta",
+      "url": "https://www.pinhome.id/dijual/tanah-residensial-sekunder/unit/dijual-tanah-residensial-dekat-cibubur-timur-di-cileungsi-hijau",
+      "pageDate": "2025-03-08"
+     },
+     "landM2": 55,
+     "buildingM2": null,
+     "bedrooms": null,
+     "nearMosque": {
+      "name": "Masjid Jami' Al-Barkah Cileungsi",
+      "quote": "3 Km ke masjid al Barkah rodja Cileungsi",
+      "url": "https://www.pinhome.id/dijual/tanah-residensial-sekunder/unit/dijual-tanah-residensial-dekat-cibubur-timur-di-cileungsi-hijau"
+     },
+     "evidence": [
+      {
+       "quote": "Akad murni syariah tanpa riba",
+       "url": "https://www.pinhome.id/dijual/tanah-residensial-sekunder/unit/dijual-tanah-residensial-dekat-cibubur-timur-di-cileungsi-hijau"
+      },
+      {
+       "quote": "Dekat sekolah islami",
+       "url": "https://www.pinhome.id/dijual/tanah-residensial-sekunder/unit/dijual-tanah-residensial-dekat-cibubur-timur-di-cileungsi-hijau"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/dijual/tanah-residensial-sekunder/unit/dijual-tanah-residensial-dekat-cibubur-timur-di-cileungsi-hijau",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2025-03-08",
+     "ownerType": "developer",
+     "verdict": "partial",
+     "lastChecked": "2026-10-30",
+     "note": "Iklan aktif di portal, tetapi diunggah Maret 2025 tanpa tanggal pembaruan; skema pembayaran tidak diverifikasi."
+    },
+    {
+     "id": "jual-rumah-syariah-mekarsari-72-40",
+     "title": "Rumah syariah seberang Taman Buah Mekarsari (tahap 2), 72/40",
+     "category": "rumah",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Kawasan Mekarsari, Kec. Cileungsi, Kabupaten Bogor",
+     "projectOrCluster": null,
+     "price": {
+      "amount": 520992000,
+      "quote": "Rp 520.992.000",
+      "url": "https://www.realoka.com/90052-rumah-cantik-minimalis-taman-buah-mekarsari-cileungsi-kpr-syariah",
+      "pageDate": null
+     },
+     "landM2": 72,
+     "buildingM2": 40,
+     "bedrooms": 2,
+     "nearMosque": {
+      "name": "Masjid Jami' Al-Barkah Cileungsi",
+      "quote": "LEBIH KENTAL konsep lingkungan islaminya krn dekat dg Masjid Darussalam Kotawisata, Kampung Rodja dll",
+      "url": "https://www.realoka.com/90052-rumah-cantik-minimalis-taman-buah-mekarsari-cileungsi-kpr-syariah"
+     },
+     "evidence": [
+      {
+       "quote": "gerbang AV bersebelahan persis dg majelis zikir & masjid at-Taubah",
+       "url": "https://www.realoka.com/90052-rumah-cantik-minimalis-taman-buah-mekarsari-cileungsi-kpr-syariah"
+      }
+     ],
+     "listingUrl": "https://www.realoka.com/90052-rumah-cantik-minimalis-taman-buah-mekarsari-cileungsi-kpr-syariah",
+     "sourcePortal": "Realoka",
+     "postedOrUpdated": null,
+     "ownerType": "agent",
+     "verdict": "partial",
+     "lastChecked": "2026-10-30",
+     "note": "Nama proyek tidak disebut iklan. Lokasi seberang Taman Buah Mekarsari, diperkirakan 3,5 sampai 4,5 km dari Masjid Al-Barkah (asumsi, tanpa titik). Diperbarui sekitar 6 bulan sebelum dicek."
+    },
+    {
+     "id": "jual-rumah-syariah-mekarsari-60-40",
+     "title": "Rumah syariah strategis Cileungsi tanpa bank (tahap 2), 60/40",
+     "category": "rumah",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Kawasan Mekarsari, Kec. Cileungsi, Kabupaten Bogor",
+     "projectOrCluster": null,
+     "price": {
+      "amount": 470000000,
+      "quote": "Rp 470.000.000",
+      "url": "https://www.realoka.com/95383-rumah-syariah-strategis-cileungsi-tanpa-bank-tahap-2",
+      "pageDate": null
+     },
+     "landM2": 60,
+     "buildingM2": 40,
+     "bedrooms": 2,
+     "nearMosque": {
+      "name": "Masjid Jami' Al-Barkah Cileungsi",
+      "quote": "LEBIH KENTAL konsep lingkungan islaminya krn dekat dg Masjid Darussalam Kotawisata, Kampung Rodja dll",
+      "url": "https://www.realoka.com/95383-rumah-syariah-strategis-cileungsi-tanpa-bank-tahap-2"
+     },
+     "evidence": [
+      {
+       "quote": "Rumah Tahfizh",
+       "url": "https://www.realoka.com/95383-rumah-syariah-strategis-cileungsi-tanpa-bank-tahap-2"
+      },
+      {
+       "quote": "Alhamdulillah semakin banyak keluarga yang bergabung di perumahan islami dekat SEKOLAH sunnah",
+       "url": "https://www.realoka.com/95383-rumah-syariah-strategis-cileungsi-tanpa-bank-tahap-2"
+      }
+     ],
+     "listingUrl": "https://www.realoka.com/95383-rumah-syariah-strategis-cileungsi-tanpa-bank-tahap-2",
+     "sourcePortal": "Realoka",
+     "postedOrUpdated": null,
+     "ownerType": "agent",
+     "verdict": "partial",
+     "lastChecked": "2026-10-30",
+     "note": "Penjual dan teks sama dengan iklan 72/40; diperkirakan 3,5 sampai 4,5 km dari Masjid Al-Barkah (asumsi). Diperbarui sekitar 7 bulan sebelum dicek."
     }
    ]
   },
@@ -3344,6 +3745,89 @@
   }
  },
  "features": [
+  {
+   "type": "Feature",
+   "id": "prj-adreena-house-cileungsi",
+   "geometry": null,
+   "properties": {
+    "id": "prj-adreena-house-cileungsi",
+    "name": "Adreena House Cileungsi",
+    "developer": null,
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Kel. Cileungsi, Kec. Cileungsi, Kabupaten Bogor (menurut Pinhome; dekat Taman Buah Mekarsari)",
+    "region": null,
+    "area": "Bogor",
+    "status": "dipasarkan",
+    "statusQuote": "Status Konstruksi: Siap Huni",
+    "statusUrl": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
+    "price": {
+     "min": 834000000,
+     "max": 1150000000,
+     "basis": "rentang harga Pinhome (diunggah Desember 2025, aktif saat dicek)",
+     "quote": "Rp 834 Juta - Rp 1,15 Miliar",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
+     "pageDate": "2025-12-04",
+     "currency": "IDR"
+    },
+    "units": [],
+    "transitClaim": null,
+    "officialUrl": null,
+    "contactUrl": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
+    "social": [],
+    "coordinate": null,
+    "listingBasis": "islamic",
+    "nearestAny": null,
+    "nearest": [],
+    "nearestPlanned": [],
+    "population": null,
+    "islamic": {
+     "kajian": [],
+     "education": [],
+     "claims": [
+      {
+       "kind": "mosque-in-estate",
+       "quote": "Masjid dalam cluster",
+       "url": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
+       "pageDate": "2025-12-04"
+      },
+      {
+       "kind": "tpq-or-school-in-estate",
+       "quote": "Program lingkungan islami seperti tahsin dan tahfidz",
+       "url": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
+       "pageDate": "2025-12-04"
+      },
+      {
+       "kind": "other",
+       "quote": "10 menit ke Masjid Albarkah Radio Rodja",
+       "url": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
+       "pageDate": "2025-12-04"
+      }
+     ]
+    },
+    "verdict": "partial",
+    "sources": [
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-baru/adreena-house-cileungsi",
+      "kind": "portal",
+      "title": "Adreena House Cileungsi by TAMR Realty (Pinhome)",
+      "fetched": true,
+      "pageDate": "2025-12-04",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi"
+      ],
+      "note": "Siap huni, satu lantai 64/72, 3 kamar. Halaman juga menampilkan 'Sisa 0 Unit' yang tampak sebagai artefak data portal (Cotton Premiere yang aktif juga 0); ketersediaan perlu dikonfirmasi. Titik listing adalah titik bawaan Kec. Cileungsi sehingga tidak dipakai."
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "sweep-syariah-meta",
+    "methods": [
+     "portal-proyek-baru"
+    ]
+   }
+  },
   {
    "type": "Feature",
    "id": "prj-aerium-residence",
@@ -8588,25 +9072,33 @@
     "developer": null,
     "kind": "Rumah",
     "subsidized": false,
-    "locationText": "Cileungsi, Kabupaten Bogor (situs proyek tidak menyebut alamat jalan)",
+    "locationText": "Jl. Bojong Kaso, Desa Cileungsi Kidul, Kec. Cileungsi, Kabupaten Bogor (iklan pemasar)",
     "region": null,
     "area": "Bogor",
     "status": "dipasarkan",
     "statusQuote": "UNIT TERBATAS!!",
     "statusUrl": "https://bumisakinahcileungsi.com/",
     "price": {
-     "min": 400000000,
+     "min": 388000000,
      "max": null,
-     "basis": "harga mulai menurut artikel Mamikos 4 Mei 2026; situs proyek tidak mencantumkan harga",
-     "quote": "Ditawarkan dengan harga mulai dari Rp 400 jutaan",
-     "url": "https://mamikos.com/info/perumahan-di-cileungsi-gnr/?halaman=2",
-     "pageDate": "2026-05-04",
+     "basis": "harga cash Type 42 di iklan Realoka (diperbarui sekitar Juli 2026); Mamikos Mei 2026: mulai Rp 400 jutaan",
+     "quote": "Rp 388.000.000",
+     "url": "https://www.realoka.com/687738-perumahan-syariah-tanpa-bi-cheking-tanpa-bank-cash-300-jutaan",
+     "pageDate": null,
      "currency": "IDR"
     },
-    "units": [],
+    "units": [
+     {
+      "label": "Type 42 (iklan Realoka dan Pinhome, harga cash)",
+      "bedrooms": 2,
+      "landArea": 72,
+      "buildingArea": 42,
+      "price": 388000000
+     }
+    ],
     "transitClaim": null,
     "officialUrl": "https://bumisakinahcileungsi.com/",
-    "contactUrl": "https://bumisakinahcileungsi.com/",
+    "contactUrl": "https://www.realoka.com/687738-perumahan-syariah-tanpa-bi-cheking-tanpa-bank-cash-300-jutaan",
     "social": [
      {
       "platform": "instagram",
@@ -8634,14 +9126,20 @@
      "education": [],
      "claims": [
       {
-       "kind": "syariah-concept",
-       "quote": "Perumahan Syariah di Cileungsi",
-       "url": "https://bumisakinahcileungsi.com/",
+       "kind": "mosque-in-estate",
+       "quote": "Tersedia Masjid, TK, Taman dan sarana olah raga.",
+       "url": "https://www.realoka.com/687738-perumahan-syariah-tanpa-bi-cheking-tanpa-bank-cash-300-jutaan",
        "pageDate": null
       },
       {
+       "kind": "tpq-or-school-in-estate",
+       "quote": "Sudah tersedia Rumah Tahfidz",
+       "url": "https://www.pinhome.id/dijual/rumah-sekunder/unit/dijual-rumah-murah-syariah-belilah-rumah-di-lokasi-premium-di-jl-bojong-kaso",
+       "pageDate": "2025-09-19"
+      },
+      {
        "kind": "syariah-concept",
-       "quote": "skema dan akad yang digunakan sesuai dengan prinsip syariah",
+       "quote": "Perumahan Syariah di Cileungsi",
        "url": "https://bumisakinahcileungsi.com/",
        "pageDate": null
       }
@@ -8671,6 +9169,31 @@
        "harga"
       ],
       "note": "Artikel informasi, bukan listing developer; menyebut harga mulai Rp 400 jutaan dan skema angsuran syariah."
+     },
+     {
+      "url": "https://www.realoka.com/687738-perumahan-syariah-tanpa-bi-cheking-tanpa-bank-cash-300-jutaan",
+      "kind": "portal",
+      "title": "Perumahan Syariah tanpa BI Checking tanpa Bank (Realoka)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Iklan pemasar bertagar #bumisakinahcileungsi; 'Type 42 hanya beberapa unit lagi'; diperbarui sekitar 3 bulan sebelum dicek. Nama dan nomor pemasar tidak disimpan."
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-sekunder/unit/dijual-rumah-murah-syariah-belilah-rumah-di-lokasi-premium-di-jl-bojong-kaso",
+      "kind": "portal",
+      "title": "Dijual Rumah Murah Syariah di Jl. Bojong Kaso (Pinhome)",
+      "fetched": true,
+      "pageDate": "2025-09-19",
+      "supports": [
+       "harga"
+      ],
+      "note": "Iklan aktif (InStock) dengan harga cash 388 juta; diunggah 19 September 2025 tanpa tanggal pembaruan."
      }
     ],
     "lastChecked": "2026-10-30",
@@ -9830,6 +10353,205 @@
     "methods": [
      "portal-proyek-baru",
      "situs-developer"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-cotton-premiere-cileungsi-hijau",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.96956,
+     -6.399486
+    ]
+   },
+   "properties": {
+    "id": "prj-cotton-premiere-cileungsi-hijau",
+    "name": "Cotton Premiere Syariah (Cileungsi Hijau)",
+    "developer": "IP Land menurut blog pemasar; Pinhome mencantumkan agensi TAMR Realty",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Cluster Cotton Premiere, Perumahan Cileungsi Hijau, Desa Cileungsi Kidul, Kec. Cileungsi, Kabupaten Bogor",
+    "region": "Kabupaten Bogor",
+    "area": "Bogor",
+    "status": "dipasarkan",
+    "statusQuote": "Status Konstruksi: Siap Huni",
+    "statusUrl": "https://www.pinhome.id/dijual/rumah-baru/cotton-premiere",
+    "price": {
+     "min": 827000000,
+     "max": 1450000000,
+     "basis": "rentang harga Pinhome (diunggah Oktober 2025, aktif saat dicek); iklan Realoka 74/74 Rp 851 juta",
+     "quote": "Rp 827 Juta - Rp 1,45 Miliar",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/cotton-premiere",
+     "pageDate": "2025-10-29",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Cotton Wood 2 lantai 74/74 (iklan Realoka, diperbarui sekitar April 2026)",
+      "bedrooms": 3,
+      "landArea": 74,
+      "buildingArea": 74,
+      "price": 851000000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": null,
+    "contactUrl": "https://www.pinhome.id/dijual/rumah-baru/cotton-premiere",
+    "social": [],
+    "coordinate": {
+     "method": "Pin kawasan Cottonwood Cileungsi Hijau di Pinhome",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/cottonwood-perumahan-cileungsi-hijau",
+     "precision": "pin kawasan",
+     "note": "Listing Cottonwood sudah tidak dijual; titiknya dipakai sebagai lokasi kawasan. Titik listing Cotton Premiere adalah titik bawaan Kec. Cileungsi sehingga tidak dipakai."
+    },
+    "listingBasis": "islamic",
+    "nearestAny": {
+     "mode": "LRT",
+     "name": "Harjamukti",
+     "km": 8.65,
+     "lat": -6.3738897,
+     "lng": 106.8956864
+    },
+    "nearest": [],
+    "nearestPlanned": [],
+    "population": {
+     "within500m": 10600,
+     "within1km": 32870,
+     "densityKm2": 10460
+    },
+    "islamic": {
+     "kajian": [
+      {
+       "id": "osm-node-10756081291",
+       "name": "Masjid Jami' Al-Barkah Cileungsi (kompleks Rodja, Kampung Tengah)",
+       "kind": "masjid",
+       "km": 1.27,
+       "evidence": "partial",
+       "lat": -6.395208,
+       "lng": 106.95889,
+       "social": [
+        {
+         "platform": "threads",
+         "url": "https://www.threads.com/@masjidalbarkahcileungsi",
+         "owner": "facility",
+         "via": "search-result",
+         "seenAt": null
+        },
+        {
+         "platform": "facebook",
+         "url": "https://www.facebook.com/masjidalbarkahcileungsi/",
+         "owner": "facility",
+         "via": "search-result",
+         "seenAt": null
+        }
+       ],
+       "kajian": [
+        {
+         "schedule": "Biasanya kajian rutin digelar setiap Sabtu dan Minggu setelah sholat Magrib.",
+         "frequency": "mingguan",
+         "audience": "umum",
+         "url": "https://chanelmuslim.com/wisata/ini-lima-masjid-referensi-kajian-sunnah-di-jabodetabek",
+         "pageDate": "2017-12-08"
+        }
+       ]
+      }
+     ],
+     "education": [
+      {
+       "id": "osm-node-13438936983",
+       "name": "SDIT Cahaya Sunnah",
+       "kind": "mi-sd-islam",
+       "km": 1.22,
+       "evidence": "partial",
+       "lat": -6.396,
+       "lng": 106.9591,
+       "social": [],
+       "education": {
+        "levels": [
+         "SD"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://www.cahayasunnah.sch.id/"
+       }
+      }
+     ],
+     "claims": [
+      {
+       "kind": "mosque-in-estate",
+       "quote": "Fasilitas lengkap: taman luas, masjid jami, playground, dan GOR olahraga",
+       "url": "https://www.pinhome.id/dijual/rumah-baru/cotton-premiere",
+       "pageDate": "2025-10-29"
+      },
+      {
+       "kind": "syariah-concept",
+       "quote": "Kini hadir Rumah Syariah Cibubur dengan cicilan flat tanpa riba, tanpa bank, dan akad murni syariah langsung ke developer.",
+       "url": "https://www.pinhome.id/dijual/rumah-baru/cotton-premiere",
+       "pageDate": "2025-10-29"
+      },
+      {
+       "kind": "other",
+       "quote": "Berlokasi hanya berjarak 8 menit dari Masjid Al Barkah Rodja Cileungsi",
+       "url": "https://rumahsunnah.puspawijaya.com/2025/10/rumah-syariah-di-cotton-premier-syariah.html",
+       "pageDate": "2025-11-11"
+      }
+     ]
+    },
+    "verdict": "partial",
+    "sources": [
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-baru/cotton-premiere",
+      "kind": "portal",
+      "title": "Cotton Premiere by TAMR Realty (Pinhome)",
+      "fetched": true,
+      "pageDate": "2025-10-29",
+      "supports": [
+       "harga",
+       "status"
+      ],
+      "note": "Status aktif dan InStock saat dicek 2026-10-30; tidak ada tipe unit yang dirinci. Titik listing adalah titik bawaan Kec. Cileungsi."
+     },
+     {
+      "url": "https://rumahsunnah.puspawijaya.com/2025/10/rumah-syariah-di-cotton-premier-syariah.html",
+      "kind": "other",
+      "title": "Rumah Syariah di Cotton Premier Syariah (blog pemasar)",
+      "fetched": true,
+      "pageDate": "2025-11-11",
+      "supports": [
+       "lokasi"
+      ],
+      "note": "Blog pemasar: cluster syariah bagian dari Perumahan Cileungsi Hijau, lanjutan Cottonwood East Cibubur; menyebut jarak 8 menit ke Masjid Al Barkah Rodja."
+     },
+     {
+      "url": "https://www.realoka.com/604720-rumah-baru-syariah-tanpa-riba-siap-huni-dekat-radio-rodja-cileungsi",
+      "kind": "portal",
+      "title": "Rumah Baru Syariah tanpa Riba Siap Huni dekat Radio Rodja Cileungsi (Realoka)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "unit"
+      ],
+      "note": "Iklan pemasar Cotton Wood 74/74, ready stock; diperbarui sekitar 6 bulan sebelum dicek. Nama dan nomor pemasar tidak disimpan."
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-baru/cottonwood-perumahan-cileungsi-hijau",
+      "kind": "portal",
+      "title": "Cottonwood - Perumahan Cileungsi Hijau (Pinhome)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "lokasi"
+      ],
+      "note": "Listing tidak lagi dijual; sumber titik kawasan."
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "sweep-syariah-meta",
+    "methods": [
+     "portal-proyek-baru"
     ]
    }
   },
@@ -26497,13 +27219,7 @@
   {
    "type": "Feature",
    "id": "prj-teras-madina-cibubur",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     106.962424,
-     -6.399393
-    ]
-   },
+   "geometry": null,
    "properties": {
     "id": "prj-teras-madina-cibubur",
     "name": "Teras Madina Cibubur",
@@ -26511,7 +27227,7 @@
     "kind": "Rumah",
     "subsidized": false,
     "locationText": "Desa Limus Nunggal, Kec. Cileungsi, Kabupaten Bogor (dipasarkan sebagai Cibubur)",
-    "region": "Kabupaten Bogor",
+    "region": null,
     "area": "Bogor",
     "status": "inden",
     "statusQuote": "Status Konstruksi: Dalam Pembangunan",
@@ -26577,84 +27293,15 @@
       "seenAt": "https://maxirecon.com/"
      }
     ],
-    "coordinate": {
-     "method": "Pin proyek Pinhome",
-     "url": "https://www.pinhome.id/dijual/rumah-baru/teras-madina-cibubur",
-     "precision": "pin portal",
-     "note": null
-    },
+    "coordinate": null,
     "listingBasis": "islamic",
-    "nearestAny": {
-     "mode": "LRT",
-     "name": "Harjamukti",
-     "km": 7.9,
-     "lat": -6.3738897,
-     "lng": 106.8956864
-    },
+    "nearestAny": null,
     "nearest": [],
     "nearestPlanned": [],
-    "population": {
-     "within500m": 12530,
-     "within1km": 35460,
-     "densityKm2": 11290
-    },
+    "population": null,
     "islamic": {
-     "kajian": [
-      {
-       "id": "osm-node-10756081291",
-       "name": "Masjid Jami' Al-Barkah Cileungsi (kompleks Rodja, Kampung Tengah)",
-       "kind": "masjid",
-       "km": 0.61,
-       "evidence": "partial",
-       "lat": -6.395208,
-       "lng": 106.95889,
-       "social": [
-        {
-         "platform": "threads",
-         "url": "https://www.threads.com/@masjidalbarkahcileungsi",
-         "owner": "facility",
-         "via": "search-result",
-         "seenAt": null
-        },
-        {
-         "platform": "facebook",
-         "url": "https://www.facebook.com/masjidalbarkahcileungsi/",
-         "owner": "facility",
-         "via": "search-result",
-         "seenAt": null
-        }
-       ],
-       "kajian": [
-        {
-         "schedule": "Biasanya kajian rutin digelar setiap Sabtu dan Minggu setelah sholat Magrib.",
-         "frequency": "mingguan",
-         "audience": "umum",
-         "url": "https://chanelmuslim.com/wisata/ini-lima-masjid-referensi-kajian-sunnah-di-jabodetabek",
-         "pageDate": "2017-12-08"
-        }
-       ]
-      }
-     ],
-     "education": [
-      {
-       "id": "osm-node-13438936983",
-       "name": "SDIT Cahaya Sunnah",
-       "kind": "mi-sd-islam",
-       "km": 0.53,
-       "evidence": "partial",
-       "lat": -6.396,
-       "lng": 106.9591,
-       "social": [],
-       "education": {
-        "levels": [
-         "SD"
-        ],
-        "program": null,
-        "fees": [],
-        "url": "https://www.cahayasunnah.sch.id/"
-       }
-      }
-     ],
+     "kajian": [],
+     "education": [],
      "claims": [
       {
        "kind": "mosque-in-estate",
@@ -26711,7 +27358,7 @@
        "lokasi",
        "unit"
       ],
-      "note": "Rp 780 Juta - Rp 1,27 Miliar, Dalam Pembangunan; posted 2025-01-30; advertiser PT AD Rumah Sejahtera Properti; coordinate source"
+      "note": "Rp 780 Juta - Rp 1,27 Miliar, Dalam Pembangunan; diunggah 2025-01-30; pengiklan PT AD Rumah Sejahtera Properti. Titik -6.3993925, 106.9624239 ternyata titik bawaan Pinhome untuk Kec. Cileungsi (dicek 2026-10-30), jadi tidak dipakai."
      },
      {
       "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cileungsi-2",
