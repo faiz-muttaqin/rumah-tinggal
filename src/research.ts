@@ -12,18 +12,24 @@ import {
 import { escapeHTML as esc, money } from "./geo.ts";
 import { icon } from "./icons.ts";
 import {
+  budgetBounds,
   checkedDate,
   distanceText,
   FACILITY_LABELS,
   feeText,
+  hasIslamicEducation,
+  hasKajian,
   isOperating,
   loadResearch,
+  monthlyRent,
   nearestRail,
   populationText,
   priceRange,
   type RailMode,
+  RENTAL_LABELS,
   type ResearchData,
   type ResearchProperty,
+  rentText,
   researchToListing,
   researchToPin,
   SOCIAL_LABELS,
@@ -35,8 +41,18 @@ import {
   safeUrl,
   stationLabel,
   stationsFor,
+  withinBudget,
 } from "./research-data.ts";
 import { type AppConfig, AREAS } from "./types.ts";
+
+const SALE_STEPS = [
+  200_000_000, 300_000_000, 500_000_000, 750_000_000, 1_000_000_000,
+  1_500_000_000, 2_000_000_000, 3_000_000_000, 5_000_000_000,
+];
+const RENT_STEPS = [
+  500_000, 1_000_000, 1_500_000, 2_000_000, 3_000_000, 5_000_000,
+];
+let rentalArea = "Semua";
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string): T =>
   document.getElementById(id) as T;
@@ -57,7 +73,7 @@ $("app").innerHTML = `
       <p class="intro">Temukan proyek hunian di sekitar stasiun Jabodetabek, lengkap dengan harga, developer, tautan asli, dan tanggal cek. Simpan pilihanmu ke Listingku atau sebagai pin pribadi. Harga dan ketersediaan perlu dikonfirmasi ke developer.</p>
       <p class="research-note">Verifikasi mencakup sumber harga dan lokasi. Nama developer mengikuti sumber publik; kepemilikan unit belum diverifikasi.</p>
       <dl class="research-stats" id="research-stats"></dl>
-      <div class="research-links"><a class="button primary" href="/?koleksi=riset">${icon("pin")} Lihat semua di peta</a><a class="button" href="#metode">${icon("info")} Cara riset ini dibuat</a></div>
+      <div class="research-links"><a class="button primary" href="/?koleksi=riset">${icon("pin")} Lihat semua di peta</a><a class="button" href="#sewa">Sewa ramah keluarga muslim</a><a class="button" href="#belum-diverifikasi">Petunjuk belum diverifikasi</a><a class="button" href="#metode">${icon("info")} Cara riset ini dibuat</a></div>
     </section>
     <section class="research-filters" aria-label="Filter riset properti">
       <div class="search-box">${icon("search")}<input id="research-search" type="search" aria-label="Cari proyek, developer, lokasi, atau stasiun" placeholder="Proyek, developer, lokasi, atau stasiun…" autocomplete="off"/></div>
@@ -67,7 +83,8 @@ $("app").innerHTML = `
         <label>Stasiun<select id="research-station-scope"><option value="all">Beroperasi & rencana</option><option value="operating">Beroperasi saja</option><option value="planned">Rencana saja</option></select></label>
         <label>Jarak garis lurus<select id="research-distance"><option value="any">Semua jarak</option><option value="3">≤ 3 km</option><option value="2">≤ 2 km</option><option value="1">≤ 1 km</option></select></label>
         <label>Jenis<select id="research-type"><option value="">Semua jenis</option><option>Rumah</option><option>Apartemen</option></select></label>
-        <label>Harga mulai<select id="research-budget"><option value="0">Semua harga</option><option value="500000000">≤ Rp 500 jt</option><option value="1000000000">≤ Rp 1 M</option><option value="2000000000">≤ Rp 2 M</option></select></label>
+        <label>Budget dari<select id="research-budget-min">${budgetOptions(SALE_STEPS, "Rp 0")}</select></label>
+        <label>Budget sampai<select id="research-budget-max">${budgetOptions(SALE_STEPS, "Tanpa batas")}</select></label>
         <label>Poin plus<select id="research-plus"><option value="">Semua</option><option value="kajian">Ada masjid dengan pengajian rutin</option><option value="education">Ada pendidikan Islam anak</option><option value="both">Keduanya</option><option value="concept">Konsep islami (klaim proyek)</option></select></label>
         <label>Bukti<select id="research-verdict"><option value="">Semua bukti</option><option value="confirmed">Terverifikasi penuh</option></select></label>
         <label>Urutkan<select id="research-sort"><option value="price">Harga terendah</option><option value="distance">Terdekat stasiun</option><option value="name">Nama A–Z</option></select></label>
@@ -76,6 +93,23 @@ $("app").innerHTML = `
     <section id="research-results" class="research-results" tabindex="-1" aria-label="Daftar proyek">
       <div class="results-toolbar"><strong id="research-count">Memuat data riset…</strong><span id="research-scope"></span></div>
       <div id="research-list" class="research-list" aria-live="polite"></div>
+    </section>
+    <section class="research-section" id="sewa" aria-labelledby="rentals-title" hidden>
+      <div class="eyebrow"><span class="tiny-line"></span> SEWA</div>
+      <h2 id="rentals-title">Sewa ramah keluarga muslim</h2>
+      <p class="section-intro" id="rentals-intro"></p>
+      <div class="area-chips" aria-label="Filter wilayah sewa" id="rental-areas"></div>
+      <div class="research-filters rental-filters">
+        <label>Sewa per bulan dari<select id="rental-budget-min">${budgetOptions(RENT_STEPS, "Rp 0", rentMoney)}</select></label>
+        <label>sampai<select id="rental-budget-max">${budgetOptions(RENT_STEPS, "Tanpa batas", rentMoney)}</select></label>
+      </div>
+      <div id="rental-list" class="research-list" aria-live="polite"></div>
+    </section>
+    <section class="research-section" id="belum-diverifikasi" aria-labelledby="leads-title" hidden>
+      <div class="eyebrow"><span class="tiny-line"></span> PETUNJUK</div>
+      <h2 id="leads-title">Belum diverifikasi atau belum terjangkau</h2>
+      <p class="section-intro" id="leads-intro"></p>
+      <div id="lead-list" class="method-list"></div>
     </section>
     <section class="research-section" id="rencana" aria-labelledby="planned-title" hidden>
       <div class="eyebrow"><span class="tiny-line"></span> RENCANA PERLUASAN</div>
@@ -122,7 +156,10 @@ function filtered(): ResearchProperty[] {
   const anyDistance = value("research-distance") === "any";
   const maxKm = anyDistance ? Infinity : Number(value("research-distance"));
   const type = value("research-type");
-  const budget = Number(value("research-budget"));
+  const [low, high] = budgetBounds(
+    value("research-budget-min"),
+    value("research-budget-max"),
+  );
   const verdict = value("research-verdict");
   const plus = value("research-plus");
   const list = data.properties.filter((property) => {
@@ -145,7 +182,7 @@ function filtered(): ResearchProperty[] {
       (selectedArea === "Semua" || property.area === selectedArea) &&
       (!query || text.includes(query)) &&
       (!type || property.kind === type) &&
-      (!budget || property.price.min <= budget) &&
+      withinBudget(property.price, low, high) &&
       (!verdict || property.verdict === verdict) &&
       matchesPlus(property, plus)
     );
@@ -184,8 +221,8 @@ function sources(property: ResearchProperty): string {
 }
 
 function matchesPlus(property: ResearchProperty, plus: string): boolean {
-  const kajian = Boolean(property.islamic?.kajian.length);
-  const education = Boolean(property.islamic?.education.length);
+  const kajian = hasKajian(property);
+  const education = hasIslamicEducation(property);
   return plus === "kajian"
     ? kajian
     : plus === "education"
@@ -208,6 +245,34 @@ function socialLinks(links: SocialLink[] | undefined): string {
         `<a href="${esc(safeUrl(link.url))}" ${external} title="${link.via === "official-site" ? "Ditautkan dari situs resmi" : link.via === "osm-tag" ? "Dari tag OpenStreetMap" : link.via === "user-lead" ? "Dari daftar pengguna; kepemilikan akun belum diverifikasi" : "Ditemukan lewat hasil pencarian"}; isi belum dibuka otomatis">${esc(SOCIAL_LABELS[link.platform])}${link.via === "user-lead" ? " (belum diverifikasi)" : ""} ↗</a>`,
     )
     .join(" ");
+}
+
+function rentMoney(amount: number): string {
+  return amount >= 1_000_000
+    ? `Rp ${(amount / 1_000_000).toLocaleString("id-ID")} jt`
+    : `Rp ${amount / 1000} rb`;
+}
+
+function budgetOptions(
+  steps: number[],
+  empty: string,
+  format: (amount: number) => string = money,
+): string {
+  return [`<option value="0">${empty}</option>`]
+    .concat(
+      steps.map((step) => `<option value="${step}">${format(step)}</option>`),
+    )
+    .join("");
+}
+
+// Nomor kontak tidak disimpan; tombol membuka halaman publik yang memuatnya.
+function contactLink(
+  href: string | null | undefined,
+  className = "button",
+): string {
+  return href
+    ? `<a class="${className}" data-testid="contact-link" href="${esc(safeUrl(href))}" title="Nomor kontak ada di halaman sumber dan belum diverifikasi" ${external}>☎ Kontak (belum diverifikasi) ↗</a>`
+    : "";
 }
 
 function projectSocial(property: ResearchProperty): string {
@@ -286,6 +351,7 @@ function card(property: ResearchProperty): string {
       ${mappable ? `<a class="button" href="/?riset=${encodeURIComponent(property.id)}">${icon("pin")} Lihat di peta</a><button class="button primary" type="button" data-save="${esc(property.id)}">${icon("bookmark")} Simpan ke Listingku</button>` : '<span class="button" aria-disabled="true">Lokasi belum dipetakan</span>'}
       ${researchToPin(property) ? `<button class="button" type="button" data-save-pin="${esc(property.id)}">${icon("pin")} Simpan sebagai pin</button>` : ""}
       ${property.officialUrl ? `<a class="button" href="${esc(safeUrl(property.officialUrl))}" ${external}>Situs resmi ↗</a>` : ""}
+      ${contactLink(property.contactUrl)}
     </div>
     <p class="research-checked">Dicek ${esc(checkedDate(property.lastChecked))}</p>
   </article>`;
@@ -332,6 +398,8 @@ function renderStatic(research: ResearchData): void {
     <div><dt>Cek terakhir</dt><dd>${esc(checkedDate(research.checkedAt))}</dd></div>
     <div><dt>Radius</dt><dd>≤ ${research.maxDistanceKm} km garis lurus</dd></div>`;
   renderPlanned(research);
+  renderLeads(research);
+  renderRentals(research, "Semua");
   $("method-list").innerHTML = research.methods
     .map(
       (method) =>
@@ -348,6 +416,66 @@ function renderStatic(research: ResearchData): void {
           .join("")}</tbody></table>`
       : ""
   }${research.gaps.length ? `<ul class="coverage-gaps">${research.gaps.map((gap) => `<li>${esc(gap)}</li>`).join("")}</ul>` : ""}${research.excluded.length ? `<details class="coverage-excluded"><summary>Ditemukan tetapi belum masuk daftar (${research.excluded.length})</summary><ul>${research.excluded.map((item) => `<li><strong>${esc(item.name)}</strong>: ${esc(item.reason)}${item.price ? ` <span class="excluded-price">· ${esc(item.kind ?? "")} ${item.price.max && item.price.max > item.price.min ? `${money(item.price.min)} – ${money(item.price.max)}` : money(item.price.min)} <a href="${esc(safeUrl(item.price.url))}" ${external}>sumber harga ↗</a></span>` : ""}${item.social?.length ? ` · ${socialLinks(item.social)}` : ""}${(item.claims ?? []).map((claim) => `<small class="excluded-claim">${claim.kind === "syariah-concept" ? "Konsep islami (klaim pemasaran)" : "Klaim proyek"}: “${esc(claim.quote)}” <a href="${esc(safeUrl(claim.url))}" ${external}>↗</a></small>`).join("")}</li>`).join("")}</ul></details>` : ""}`;
+}
+
+function renderLeads(research: ResearchData): void {
+  const leads = research.leads;
+  if (!leads?.leads.length) return;
+  $("belum-diverifikasi").hidden = false;
+  $("leads-intro").textContent = `${leads.note} Sumber: ${leads.source}.`;
+  const names = new Map(research.properties.map((p) => [p.id, p.name]));
+  $("lead-list").innerHTML = leads.leads
+    .map(
+      (lead) =>
+        `<article class="method-card lead-card" data-testid="lead-card" id="${esc(lead.id)}"><div class="method-top"><span class="source-kind">${esc(lead.area ?? "Jabodetabek")}</span><span class="verdict verdict-unverified">${lead.status === "unreached" ? "Belum terjangkau otomatis" : "Belum diverifikasi"}</span></div><h3>${esc(lead.name)}</h3><p>Menurut daftar pengguna: ${esc(lead.claim)}</p>${lead.check ? `<p class="method-label">Hasil cek</p><p>${esc(lead.check)}</p>` : ""}${lead.related && names.has(lead.related) ? `<p><a href="#${esc(lead.related)}">Lihat proyek terverifikasi: ${esc(names.get(lead.related))} ↓</a></p>` : ""}<p class="method-sources">${lead.links.map((link) => `<a href="${esc(safeUrl(link.url))}" ${external}>${esc(link.label)} ↗</a>`).join("")}${contactLink(lead.contactUrl, "")}</p><small>Buka tautan Instagram saat masuk ke akun Instagram untuk memeriksa sendiri.</small></article>`,
+    )
+    .join("");
+}
+
+function renderRentals(research: ResearchData, area = rentalArea): void {
+  const rentals = research.rentals;
+  if (!rentals?.rentals.length) return;
+  rentalArea = area;
+  const [low, high] = budgetBounds(
+    value("rental-budget-min"),
+    value("rental-budget-max"),
+  );
+  $("sewa").hidden = false;
+  $("rentals-intro").textContent =
+    `${rentals.note} Dicek ${checkedDate(rentals.checkedAt)}.`;
+  const areas = [
+    "Semua",
+    ...AREAS.filter((a) => rentals.rentals.some((r) => r.area === a)),
+  ];
+  $("rental-areas").innerHTML = areas
+    .map(
+      (a) =>
+        `<button class="chip ${a === area ? "selected" : ""}" data-rental-area="${esc(a)}" aria-pressed="${a === area}">${esc(a)}</button>`,
+    )
+    .join("");
+  const list = rentals.rentals
+    .filter(
+      (r) =>
+        (area === "Semua" || r.area === area) &&
+        withinBudget({ min: monthlyRent(r), max: null }, low, high),
+    )
+    .sort((a, b) => monthlyRent(a) - monthlyRent(b));
+  $("rental-list").innerHTML = list
+    .map(
+      (r) =>
+        `<article class="research-card rental-card" data-testid="rental-card" id="${esc(r.id)}"><div class="research-card-top"><span class="card-area"><i class="area-dot area-${esc(r.area.toLowerCase())}"></i>${esc(r.area)} <span>· ${esc(r.locationText)}</span></span><span class="verdict verdict-${r.verdict}">${r.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span></div><h3>${esc(r.title)}</h3><p class="research-meta">${esc(RENTAL_LABELS[r.rentalType])}${r.buildingOrCluster ? ` · ${esc(r.buildingOrCluster)}` : ""}${r.bedrooms ? ` · ${r.bedrooms} kamar` : ""}${r.sizeM2 ? ` · ${r.sizeM2} m²` : ""}</p><div class="research-price"><strong>${esc(rentText(r))}</strong><span>${esc(r.sourcePortal)}${r.postedOrUpdated ? ` · diperbarui ${esc(checkedDate(r.postedOrUpdated))}` : ""}</span></div><blockquote class="research-quote">“${esc(r.rent.quote)}” <a href="${esc(safeUrl(r.rent.url))}" ${external}>sumber harga ↗</a></blockquote><div class="research-plus"><strong>Poin keluarga muslim</strong><ul>${r.evidence.map((e) => `<li>“${esc(e.quote)}” <a href="${esc(safeUrl(e.url))}" ${external}>↗</a></li>`).join("")}</ul></div>${r.nearStationsClaim.length ? `<p class="research-claim">Klaim dekat stasiun: ${r.nearStationsClaim.map((c) => `“${esc(c.quote)}”`).join("; ")}</p>` : ""}${r.social.length ? `<p class="research-social">Media sosial: ${socialLinks(r.social)}</p>` : ""}<div class="research-actions"><a class="button" href="${esc(safeUrl(r.listingUrl))}" ${external}>Buka listing ↗</a></div><p class="research-checked">Dicek ${esc(checkedDate(r.lastChecked))} · lokasi sampai tingkat kawasan; konfirmasi langsung ke pemilik lewat portal.</p></article>`,
+    )
+    .join("");
+  if (!list.length)
+    $("rental-list").innerHTML =
+      '<p class="research-note" data-testid="rental-empty">Belum ada sewa dalam wilayah dan budget ini.</p>';
+  for (const button of document.querySelectorAll<HTMLButtonElement>(
+    "[data-rental-area]",
+  ))
+    button.onclick = () =>
+      renderRentals(research, button.dataset.rentalArea ?? "Semua");
+  for (const id of ["rental-budget-min", "rental-budget-max"])
+    $(id).onchange = () => renderRentals(research);
 }
 
 function renderPlanned(research: ResearchData): void {
@@ -410,7 +538,8 @@ for (const id of [
   "research-station-scope",
   "research-distance",
   "research-type",
-  "research-budget",
+  "research-budget-min",
+  "research-budget-max",
   "research-verdict",
   "research-plus",
   "research-sort",

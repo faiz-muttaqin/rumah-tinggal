@@ -125,6 +125,22 @@ Pemeriksa terpisah membuka ulang bukti, menolak yang tidak berulang, kedaluwarsa
 
 Tautan Instagram, Facebook, TikTok, YouTube, X, atau Threads milik proyek, developer, masjid, atau sekolah dicatat dari tautan di situs resmi atau dari hasil mesin pencari, lalu diperiksa ulang tanpa membuka halaman media sosial. Akun pribadi agen, marketing, atau perantara tidak dicatat. `build-properties.py` menolak tautan yang host-nya tidak sesuai platform. Halaman menampilkan tautan dengan keterangan bahwa isinya belum dibuka otomatis.
 
+## Petunjuk belum diverifikasi
+
+`research/leads.json` menampung petunjuk yang belum bisa dibuktikan dari halaman yang dibuka otomatis, misalnya akun Instagram dari daftar Meta AI yang ditempel pengguna atau akun sewa yang hanya muncul di hasil pencarian. Setiap petunjuk wajib punya tautan dan status `unverified` (ada sumber tetapi belum cukup) atau `unreached` (hanya bisa dicek lewat media sosial). Halaman `/riset#belum-diverifikasi` menampilkannya terpisah dari katalog dengan label status, sehingga pengguna yang masuk ke Instagram bisa memeriksa sendiri. Petunjuk tidak pernah dihitung sebagai listing, harga, atau poin plus. Akun penasihat atau marketing perorangan tidak dicatat.
+
+## Kontak dan tautan bio
+
+Nomor telepon dan WhatsApp tidak disimpan. Bila halaman resmi, halaman pemasaran, atau tautan bio memuat kontak, kartu menampilkan tombol "☎ Kontak (belum diverifikasi)" yang membuka halaman tersebut (`contactUrl`). `build-properties.py` menolak tautan wa.me, WhatsApp, wa.link, dan URL yang berisi nomor. Tautan bio (Linktree, lynk.id, ini.bio, berbagi.link, DAV DIGI, dan sejenisnya) dicatat sebagai platform `linkbio` dengan daftar host tetap.
+
+## Sewa ramah keluarga muslim
+
+`research/rentals.json` berisi iklan kontrakan, rumah sewa, apartemen sewa, dan kos keluarga di Jabodetabek yang halaman iklannya dibuka langsung. Setiap iklan wajib punya harga sewa dari halaman itu (bulanan atau tahunan), maksimal tiga kutipan verbatim tentang lingkungan ramah keluarga muslim (misalnya dekat masjid, TPQ, atau sekolah Islam), portal, dan tanggal cek. Pemeriksa terpisah membuka ulang iklan dan menolak yang kedaluwarsa, kutipannya tidak ada, atau memuat data pribadi.
+
+Iklan dicantumkan hanya bila kutipannya menyebut lingkungan muslim (masjid, musholla, syariah, muslim, TPQ, atau sejenisnya). Iklan yang hanya ramah keluarga atau sudah tersewa tidak dicantumkan. Kutipan yang berasal dari data JSON halaman dipangkas menjadi substring verbatim yang terbaca, lalu semua kutipan harga dan bukti dibuka ulang dan dicocokkan. Kartu diurutkan menurut setara sewa bulanan.
+
+Privasi: nama dan kontak pemilik, agen, atau pengelola tidak disimpan. Iklan pemilik perorangan hanya dicatat sampai tingkat kelurahan atau kecamatan, dan `build-properties.py` menolak koordinat untuk iklan perorangan. Sewa tidak ditampilkan di peta. Akun Instagram sewa yang hanya ditemukan lewat mesin pencari masuk ke petunjuk belum diverifikasi dengan jenis `rental`.
+
 ## Hasil kurasi 30 Oktober 2026
 
 171 kandidat ditemukan pada 13 koridor pencarian (termasuk duplikat lintas koridor; 152 nama unik). Batch awal mencatat 64 proyek kurasi dan menerbitkan 28.
@@ -132,3 +148,7 @@ Tautan Instagram, Facebook, TikTok, YouTube, X, atau Threads milik proyek, devel
 Tahap verifikasi workflow awal terhenti pada 7 koridor. Lanjutan 30 Oktober memeriksa ulang 48 kandidat Jakarta yang tertunda: 47 lolos dengan harga dari halaman yang dibuka hari itu (23 confirmed, 24 partial) dan 1 ditolak karena pemasaran terkini tidak terbukti (proyek 10 unit yang selesai Desember 2021). Empat lagi dicatat tetapi tidak diterbitkan karena belum tahap penjualan atau hanya bersumber dari halaman Referensi Proyek untuk gedung yang sudah lama selesai.
 
 Pembaruan akhir 30 Oktober: 176 entri kurasi; 98 terbit (Jakarta 48, Bogor 14, Bekasi 14, Tangerang 13, Depok 9; 37 confirmed). Dari jumlah itu 14 dicantumkan karena fasilitas atau konsep islami walau jauh dari stasiun, 6 di antaranya tanpa titik. 78 belum masuk; 64 di antaranya tetap menampilkan harga bersumber. Lokasi 18 proyek ditemukan lewat pencari titik dan pemeriksa terpisah; 11 usulan titik ditolak. Stasiun KRL/MRT/LRT di wilayah Jakarta tanpa proyek terbit dalam 3 km kini 9 dari 81 (Angke, Buaran, Duri, Grogol, Pesing, Pondok Jati, Tanjung Priok, Halim, Pramuka). Daftar perumahan islami dari pengguna (hasil Meta AI) diperlakukan sebagai petunjuk: sebagian benar, sebagian keliru (platform yang menyamarkan nama proyek, agen, proyek resale, proyek tidak ditemukan), dan hanya yang terverifikasi yang dicatat.
+
+Sewa dan petunjuk (30 Oktober malam): 26 iklan sewa ramah keluarga muslim tercatat (Jakarta 11, Depok 5, Bekasi 4, Tangerang 4, Bogor 2; 6 confirmed, 20 partial; kos keluarga 7, rumah sewa 7, kontrakan 6, apartemen 6). Pemeriksa menolak 13 (kebanyakan sudah tersewa atau tanpa bukti), dan 3 lagi tidak dicantumkan karena hanya ramah keluarga. Semua 76 kutipan harga dan bukti cocok saat dibuka ulang. Pencarian tidak menemukan akun Instagram sewa yang layak dicatat. Petunjuk belum diverifikasi: 21. Empat daftar Meta AI dari pengguna menambah Bumi Sakinah Cileungsi ke katalog (99 terbit), fasilitas Masjid Jami' Al-Barkah Cileungsi, dan tombol kontak untuk 6 proyek; beberapa situs yang disebut daftar tersebut tidak terdaftar di DNS.
+
+Pemeriksaan kajian lanjutan (S14) untuk Bekasi dan proyek basis islami menambah 35 fasilitas (total 303) dan 25 klaim proyek (total 125); proyek Bekasi dengan masjid berkajian atau klaim kajian naik dari 1 menjadi 5. Filter harga di `/riset` kini berupa rentang budget (dari dan sampai): proyek tampil bila rentang harganya beririsan dengan budget, bukan hanya harga mulai. Sewa memakai rentang budget per bulan (sewa tahunan dibagi 12).

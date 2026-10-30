@@ -64,8 +64,22 @@ SOCIAL_PLATFORMS = {
     "tiktok": ("tiktok.com",),
     "youtube": ("youtube.com", "youtu.be"),
     "x": ("x.com", "twitter.com"),
-    "threads": ("threads.net",),
+    "threads": ("threads.net", "threads.com"),
+    # Halaman tautan bio (pengganti Linktree) milik proyek, developer, atau masjid.
+    "linkbio": ("linktr.ee", "lynk.id", "ini.bio", "pamer.bio", "berbagi.link", "bio.link", "heylink.me", "msha.ke", "s.id", "davdigi.com"),
 }
+CONTACT_HOSTS = ("wa.me", "whatsapp.com", "wa.link")
+
+
+def contact_page(value, field):
+    # Hanya tautan ke halaman publik yang memuat kontak; nomor tidak pernah disimpan.
+    if not value:
+        return None
+    link = url(value, field)
+    host = urllib.parse.urlsplit(link).netloc.lower()
+    if any(host == h or host.endswith("." + h) for h in CONTACT_HOSTS) or re.search(r"\d{9,}", link):
+        raise Invalid(f"{field}: tautan kontak harus ke halaman sumber, bukan nomor atau WhatsApp")
+    return link
 
 
 class Invalid(ValueError):
@@ -306,8 +320,9 @@ def load_islamic(path=ROOT / "research/context/islamic.json"):
             "id": text(item.get("id"), f"{field}.id", 80),
             "name": text(item.get("name"), f"{field}.name", 160),
             "kind": item["kind"],
-            "lat": lat,
-            "lng": lng,
+            # 6 desimal (sekitar 0,1 m) cukup; digit panjang juga menyerupai nomor telepon.
+            "lat": round(lat, 6),
+            "lng": round(lng, 6),
             "coordinateSource": text(item.get("coordinateSource"), f"{field}.coordinateSource", 40),
             "coordinateUrl": url(item.get("coordinateUrl"), f"{field}.coordinateUrl"),
             "evidence": item.get("evidence") if item.get("evidence") in ("strong", "partial") else "partial",
@@ -363,6 +378,109 @@ def islamic_of(pid, point, islamic):
     if not (kajian or education or claims):
         return None
     return {"kajian": kajian, "education": education, "claims": claims}
+
+
+LEAD_TYPES = {"project", "account", "service", "hashtag", "rental"}
+LEAD_STATUSES = {"unverified", "unreached"}
+
+
+def load_leads(path=ROOT / "research/leads.json"):
+    # Petunjuk belum terverifikasi (misalnya akun Instagram) ditampilkan terpisah dan berlabel.
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text())
+    leads = []
+    for i, lead in enumerate(data.get("leads", [])):
+        field = f"leads[{i}]"
+        if lead.get("type") not in LEAD_TYPES or lead.get("status") not in LEAD_STATUSES:
+            raise Invalid(f"{field}: type atau status tidak dikenal")
+        if lead.get("area") is not None and lead["area"] not in AREAS:
+            raise Invalid(f"{field}.area tidak dikenal")
+        links = [
+            {"label": text(link.get("label"), f"{field}.links[{j}].label", 80), "url": url(link.get("url"), f"{field}.links[{j}].url")}
+            for j, link in enumerate(lead.get("links") or [])
+        ]
+        if not links:
+            raise Invalid(f"{field}.links wajib diisi")
+        leads.append({
+            "id": text(lead.get("id"), f"{field}.id", 80),
+            "name": text(lead.get("name"), f"{field}.name", 160),
+            "type": lead["type"],
+            "status": lead["status"],
+            "area": lead.get("area"),
+            "claim": text(lead.get("claim"), f"{field}.claim", 400),
+            "check": text(lead.get("check"), f"{field}.check", 300, optional=True),
+            "related": lead.get("related"),
+            "contactUrl": contact_page(lead.get("contactUrl"), f"{field}.contactUrl"),
+            "links": links,
+        })
+    return {
+        "checkedAt": data["checkedAt"] if is_date(data.get("checkedAt")) else None,
+        "source": text(data.get("source"), "leads.source", 200),
+        "note": text(data.get("note"), "leads.note", 600),
+        "leads": leads,
+    }
+
+
+RENTAL_TYPES = {"kontrakan", "rumah-sewa", "apartemen-sewa", "kos-keluarga", "lainnya"}
+
+
+def load_rentals(path=ROOT / "research/rentals.json"):
+    # Sewa: tanpa nama/kontak pemilik; rumah perorangan tanpa koordinat.
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text())
+    rentals = []
+    for i, item in enumerate(data.get("rentals", [])):
+        field = f"rentals[{i}]"
+        if item.get("rentalType") not in RENTAL_TYPES or item.get("kind") not in KINDS or item.get("area") not in AREAS:
+            raise Invalid(f"{field}: rentalType, kind, atau area tidak dikenal")
+        if item.get("verdict") not in VERDICTS or not is_date(item.get("lastChecked")):
+            raise Invalid(f"{field}: verdict atau lastChecked tidak valid")
+        if item.get("coordinates") and item.get("ownerType") == "individual":
+            raise Invalid(f"{field}: rumah perorangan tidak boleh berkoordinat")
+        rent = item.get("rent") or {}
+        amount = number(rent.get("amount"), f"{field}.rent.amount", integer=True)
+        if rent.get("period") not in ("monthly", "yearly") or not 100_000 <= amount <= 200_000_000:
+            raise Invalid(f"{field}.rent di luar rentang wajar atau periode tidak dikenal")
+        evidence = [
+            {"quote": text(e.get("quote"), f"{field}.evidence[{j}].quote", QUOTE_LIMIT), "url": url(e.get("url"), f"{field}.evidence[{j}].url")}
+            for j, e in enumerate(item.get("evidence") or [])
+        ]
+        if not evidence:
+            raise Invalid(f"{field}.evidence wajib diisi")
+        rentals.append({
+            "id": text(item.get("id"), f"{field}.id", 90),
+            "title": text(item.get("title"), f"{field}.title", 160),
+            "rentalType": item["rentalType"],
+            "kind": item["kind"],
+            "area": item["area"],
+            "locationText": text(item.get("locationText"), f"{field}.locationText", 160),
+            "buildingOrCluster": text(item.get("buildingOrCluster"), f"{field}.buildingOrCluster", 120, optional=True),
+            "rent": {
+                "amount": amount,
+                "period": rent["period"],
+                "quote": text(rent.get("quote"), f"{field}.rent.quote", QUOTE_LIMIT),
+                "url": url(rent.get("url"), f"{field}.rent.url"),
+                "pageDate": dated(rent.get("pageDate"), f"{field}.rent.pageDate"),
+            },
+            "bedrooms": item.get("bedrooms") if isinstance(item.get("bedrooms"), int) else None,
+            "sizeM2": number(item.get("sizeM2"), f"{field}.sizeM2", optional=True),
+            "furnished": item.get("furnished") if item.get("furnished") in ("unfurnished", "semi", "full") else None,
+            "evidence": evidence[:3],
+            "nearStationsClaim": [
+                {"station": text(c.get("station"), f"{field}.station", 80), "quote": text(c.get("quote"), f"{field}.station.quote", QUOTE_LIMIT), "url": url(c.get("url"), f"{field}.station.url")}
+                for c in (item.get("nearStationsClaim") or [])[:2]
+            ],
+            "listingUrl": url(item.get("listingUrl"), f"{field}.listingUrl"),
+            "sourcePortal": text(item.get("sourcePortal"), f"{field}.sourcePortal", 60),
+            "postedOrUpdated": dated(item.get("postedOrUpdated"), f"{field}.postedOrUpdated"),
+            "ownerType": item.get("ownerType") if item.get("ownerType") in ("individual", "agent", "management", "developer") else "unknown",
+            "social": social_links(item.get("social"), f"{field}.social", owners=("building", "management", "developer")),
+            "verdict": item["verdict"],
+            "lastChecked": item["lastChecked"][:10],
+        })
+    return {"checkedAt": data["checkedAt"], "note": text(data.get("note"), "rentals.note", 600), "rentals": rentals}
 
 
 def load_planned(path=ROOT / "research/planned-stations.json"):
@@ -572,6 +690,7 @@ def build_property(entry, stations, regions, max_km, population=None, planned=No
             "url": url(claim.get("url"), field("transitClaim.url")),
         } if claim else None,
         "officialUrl": url(official, field("officialUrl")) if official else None,
+        "contactUrl": contact_page(entry.get("contactUrl"), field("contactUrl")),
         "social": social_links(entry.get("social"), field("social")),
         "coordinate": {
             "method": text(coordinate.get("method"), field("coordinate.method"), 80),
@@ -617,12 +736,19 @@ def excluded_summary(entry, reason, islamic=None):
     return item
 
 
-def build(source, planned_path=ROOT / "research/planned-stations.json"):
+def build(
+    source,
+    planned_path=ROOT / "research/planned-stations.json",
+    leads_path=ROOT / "research/leads.json",
+    rentals_path=ROOT / "research/rentals.json",
+):
     regions = json.loads((ROOT / "public/data/regions.geojson").read_text())["features"]
     stations = load_stations()
     population = load_population()
     planned = load_planned(planned_path)
     islamic = load_islamic()
+    leads = load_leads(leads_path)
+    rentals = load_rentals(rentals_path)
     max_km = source.get("maxDistanceKm", 3)
     features, dropped, seen = [], [], set()
     for entry in source.get("properties", []):
@@ -681,6 +807,8 @@ def build(source, planned_path=ROOT / "research/planned-stations.json"):
                 "caveats": [text(c, "population.caveats", 300) for c in population["caveats"]],
                 "radiiKm": population["radiiKm"],
             } if population else None,
+            "leads": leads,
+            "rentals": rentals,
             "islamic": {
                 "checkedAt": islamic["checkedAt"],
                 "radiusKm": islamic["radiusKm"],
@@ -705,9 +833,11 @@ def main():
     parser.add_argument("output", nargs="?", type=pathlib.Path, default=ROOT / "public/data/properties.geojson")
     parser.add_argument("--check", action="store_true", help="fail if OUTPUT is not up to date")
     parser.add_argument("--planned", type=pathlib.Path, default=ROOT / "research/planned-stations.json")
+    parser.add_argument("--leads", type=pathlib.Path, default=ROOT / "research/leads.json")
+    parser.add_argument("--rentals", type=pathlib.Path, default=ROOT / "research/rentals.json")
     args = parser.parse_args()
     try:
-        result, dropped = build(json.loads(args.input.read_text()), args.planned)
+        result, dropped = build(json.loads(args.input.read_text()), args.planned, args.leads, args.rentals)
     except Invalid as error:
         sys.exit(f"Data riset tidak valid: {error}")
     body = json.dumps(result, ensure_ascii=False, indent=1) + "\n"

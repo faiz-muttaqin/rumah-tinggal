@@ -52,7 +52,7 @@ Semua item berikut berstatus **PLANNED**. ID dipakai untuk merujuk pekerjaan nan
 
 ## Rencana lanjutan
 
-Dicatat 2026-10-30 atas permintaan pengguna. **Status: rencana, belum dimulai; menunggu perintah pengguna.**
+Dicatat 2026-10-30 atas permintaan pengguna. **Status JKT-NEXT-01: sebagian, dieksekusi 30 Oktober malam atas permintaan pengguna.** 26 iklan sewa ramah keluarga muslim tampil di `/riset#sewa`; petunjuk Instagram yang belum diverifikasi tampil di `/riset#belum-diverifikasi`. Belum dicakup: pembaruan berkala, sewa di luar lima koridor pencarian, dan akun Instagram sewa.
 
 | ID          | Rencana                                                                                                                                                                                                                                         | Hal yang perlu diputuskan sebelum mulai                                                                                                                                                                                                                              |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

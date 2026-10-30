@@ -370,3 +370,139 @@ test("planned stations qualify a project only when formally planned or being bui
   );
   assert.equal(bogor.status, "under-construction");
 });
+
+test("rentals and unverified leads keep privacy and labels", {
+  skip: python,
+}, async (t) => {
+  const directory = await mkdtemp(join(tmpdir(), "rumah-rental-test-"));
+  t.after(() => rm(directory, { recursive: true, force: true }));
+  const rental = {
+    id: "sewa-uji",
+    title: "Kontrakan Uji",
+    rentalType: "kontrakan",
+    kind: "Rumah",
+    area: "Bekasi",
+    locationText: "Bekasi Timur, Kota Bekasi",
+    rent: {
+      amount: 2_500_000,
+      period: "monthly",
+      quote: "Rp 2,5 Juta/bulan",
+      url: "https://portal.example.invalid/sewa",
+      pageDate: "2026-10-20",
+    },
+    evidence: [
+      {
+        quote: "Dekat masjid, lingkungan keluarga muslim",
+        url: "https://portal.example.invalid/sewa",
+      },
+    ],
+    listingUrl: "https://portal.example.invalid/sewa",
+    sourcePortal: "Portal uji",
+    ownerType: "individual",
+    social: [],
+    verdict: "partial",
+    lastChecked: "2026-10-30",
+  };
+  const lead = {
+    id: "lead-uji",
+    name: "Akun Uji",
+    type: "rental",
+    status: "unreached",
+    area: "Depok",
+    claim: "Disebut kontrakan keluarga muslim.",
+    links: [
+      {
+        label: "Instagram @akun.uji",
+        url: "https://www.instagram.com/akun.uji/",
+      },
+    ],
+  };
+  const run = async (rentals: object[], leads: object[] = [lead]) => {
+    const files = {
+      input: join(directory, "input.json"),
+      leads: join(directory, "leads.json"),
+      rentals: join(directory, "rentals.json"),
+      output: join(directory, "output.geojson"),
+    };
+    await writeFile(
+      files.input,
+      JSON.stringify({ checkedAt: "2026-10-30", properties: [] }),
+    );
+    await writeFile(
+      files.leads,
+      JSON.stringify({
+        checkedAt: "2026-10-30",
+        source: "Uji",
+        note: "Belum diverifikasi.",
+        leads,
+      }),
+    );
+    await writeFile(
+      files.rentals,
+      JSON.stringify({ checkedAt: "2026-10-30", note: "Uji.", rentals }),
+    );
+    const result = build([
+      files.input,
+      files.output,
+      "--leads",
+      files.leads,
+      "--rentals",
+      files.rentals,
+    ]);
+    return {
+      result,
+      data:
+        result.status === 0
+          ? JSON.parse(await readFile(files.output, "utf8"))
+          : null,
+    };
+  };
+  const ok = await run([rental]);
+  assert.equal(ok.result.status, 0, ok.result.stderr);
+  assert.equal(ok.data.metadata.rentals.rentals[0].rent.amount, 2_500_000);
+  assert.equal(ok.data.metadata.rentals.rentals[0].coordinates, undefined);
+  assert.equal(ok.data.metadata.leads.leads[0].status, "unreached");
+
+  const pinned = await run([
+    {
+      ...rental,
+      coordinates: {
+        lat: -6.2,
+        lng: 107,
+        url: "https://x.invalid",
+        method: "uji",
+      },
+    },
+  ]);
+  assert.notEqual(pinned.result.status, 0);
+  assert.match(pinned.result.stderr, /perorangan tidak boleh berkoordinat/);
+
+  const noEvidence = await run([{ ...rental, evidence: [] }]);
+  assert.match(noEvidence.result.stderr, /evidence wajib/);
+
+  const odd = await run([{ ...rental, rent: { ...rental.rent, amount: 50 } }]);
+  assert.match(odd.result.stderr, /rentang wajar/);
+
+  const withContact = await run(
+    [rental],
+    [{ ...lead, contactUrl: "https://ini.bio/akun-uji" }],
+  );
+  assert.equal(
+    withContact.data.metadata.leads.leads[0].contactUrl,
+    "https://ini.bio/akun-uji",
+  );
+  for (const contactUrl of [
+    "https://wa.me/6281200000000",
+    "https://api.whatsapp.com/send?phone=6281200000000",
+    "https://bio.example.invalid/kontak?no=081200000000",
+  ]) {
+    const phone = await run([rental], [{ ...lead, contactUrl }]);
+    assert.match(phone.result.stderr, /bukan nomor atau WhatsApp/);
+  }
+
+  const verified = await run([rental], [{ ...lead, status: "confirmed" }]);
+  assert.match(verified.result.stderr, /type atau status/);
+
+  const bare = await run([rental], [{ ...lead, links: [] }]);
+  assert.match(bare.result.stderr, /links wajib/);
+});

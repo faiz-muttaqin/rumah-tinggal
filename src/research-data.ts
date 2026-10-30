@@ -155,9 +155,16 @@ export interface IslamicFee {
 // Tautan media sosial resmi dicatat dari situs resmi atau hasil pencarian;
 // isinya tidak pernah dibuka otomatis.
 export interface SocialLink {
-  platform: "instagram" | "facebook" | "tiktok" | "youtube" | "x" | "threads";
+  platform:
+    | "instagram"
+    | "facebook"
+    | "tiktok"
+    | "youtube"
+    | "x"
+    | "threads"
+    | "linkbio";
   url: string;
-  owner: "project" | "developer" | "facility";
+  owner: "project" | "developer" | "facility" | "building" | "management";
   via: "official-site" | "search-result" | "osm-tag" | "user-lead";
   seenAt: string | null;
 }
@@ -169,6 +176,7 @@ export const SOCIAL_LABELS: Record<SocialLink["platform"], string> = {
   youtube: "YouTube",
   x: "X",
   threads: "Threads",
+  linkbio: "Link bio",
 };
 
 export interface IslamicPlace {
@@ -237,6 +245,8 @@ export interface ResearchProperty {
   units: ResearchUnit[];
   transitClaim: { quote: string; url: string } | null;
   officialUrl: string | null;
+  /** Halaman publik yang memuat nomor kontak; nomornya sendiri tidak disimpan. */
+  contactUrl?: string | null;
   social?: SocialLink[];
   coordinate: {
     method: string;
@@ -279,6 +289,103 @@ export interface ResearchCoverage {
   included: number;
 }
 
+export interface ResearchLead {
+  id: string;
+  name: string;
+  type: "project" | "account" | "service" | "hashtag" | "rental";
+  status: "unverified" | "unreached";
+  area: Area | null;
+  claim: string;
+  check: string | null;
+  related: string | null;
+  contactUrl?: string | null;
+  links: { label: string; url: string }[];
+}
+
+export interface ResearchLeads {
+  checkedAt: string | null;
+  source: string;
+  note: string;
+  leads: ResearchLead[];
+}
+
+// Sewa ramah keluarga muslim: lokasi rumah perorangan hanya sampai kelurahan.
+export interface ResearchRental {
+  id: string;
+  title: string;
+  rentalType:
+    | "kontrakan"
+    | "rumah-sewa"
+    | "apartemen-sewa"
+    | "kos-keluarga"
+    | "lainnya";
+  kind: "Rumah" | "Apartemen";
+  area: Area;
+  locationText: string;
+  buildingOrCluster: string | null;
+  rent: {
+    amount: number;
+    period: "monthly" | "yearly";
+    quote: string;
+    url: string;
+    pageDate: string | null;
+  };
+  bedrooms: number | null;
+  sizeM2: number | null;
+  furnished: "unfurnished" | "semi" | "full" | null;
+  evidence: { quote: string; url: string }[];
+  nearStationsClaim: { station: string; quote: string; url: string }[];
+  listingUrl: string;
+  sourcePortal: string;
+  postedOrUpdated: string | null;
+  ownerType: "individual" | "agent" | "management" | "developer" | "unknown";
+  social: SocialLink[];
+  verdict: "confirmed" | "partial";
+  lastChecked: string;
+}
+
+export interface ResearchRentals {
+  checkedAt: string;
+  note: string;
+  rentals: ResearchRental[];
+}
+
+export const RENTAL_LABELS: Record<ResearchRental["rentalType"], string> = {
+  kontrakan: "Kontrakan",
+  "rumah-sewa": "Rumah sewa",
+  "apartemen-sewa": "Apartemen sewa",
+  "kos-keluarga": "Kos keluarga",
+  lainnya: "Sewa lainnya",
+};
+
+/** Rentang harga beririsan dengan budget: ada harga yang masuk, bukan hanya harga mulai. */
+export function withinBudget(
+  price: { min: number; max: number | null },
+  low: number,
+  high: number,
+): boolean {
+  return price.min <= high && (price.max ?? price.min) >= low;
+}
+
+export function budgetBounds(low: string, high: string): [number, number] {
+  const from = Number(low) || 0;
+  const to = Number(high) || Number.POSITIVE_INFINITY;
+  return from <= to ? [from, to] : [to, from];
+}
+
+export function monthlyRent(rental: ResearchRental): number {
+  return rental.rent.period === "monthly"
+    ? rental.rent.amount
+    : Math.round(rental.rent.amount / 12);
+}
+
+export function rentText(rental: ResearchRental): string {
+  const amount = `Rp ${rental.rent.amount.toLocaleString("id-ID")}`;
+  return rental.rent.period === "monthly"
+    ? `${amount}/bulan`
+    : `${amount}/tahun (≈ Rp ${monthlyRent(rental).toLocaleString("id-ID")}/bulan)`;
+}
+
 export interface ResearchData {
   checkedAt: string;
   maxDistanceKm: number;
@@ -299,6 +406,8 @@ export interface ResearchData {
   population: PopulationContext | null;
   planned: PlannedContext | null;
   islamic: IslamicMeta | null;
+  leads: ResearchLeads | null;
+  rentals: ResearchRentals | null;
 }
 
 export const STATUS_LABELS: Record<ResearchStatus, string> = {
@@ -350,16 +459,41 @@ export function feeText(fee: IslamicFee): string {
   return `${fee.label} ${amount}${fee.academicYear ? ` (${fee.academicYear})` : ""}`;
 }
 
+// Klaim proyek tentang kajian atau TPQ/sekolah di kawasan ikut dihitung.
+export function hasKajian(property: ResearchProperty): boolean {
+  const islamic = property.islamic;
+  return Boolean(
+    islamic?.kajian.length ||
+      islamic?.claims.some(
+        (claim) =>
+          claim.kind === "kajian" ||
+          /\b(pengajian|kajian)\b/i.test(claim.quote),
+      ),
+  );
+}
+
+export function hasIslamicEducation(property: ResearchProperty): boolean {
+  const islamic = property.islamic;
+  return Boolean(
+    islamic?.education.length ||
+      islamic?.claims.some((claim) => claim.kind === "tpq-or-school-in-estate"),
+  );
+}
+
 export function plusSummary(property: ResearchProperty): string {
   const islamic = property.islamic;
   if (!islamic) return "";
   return [
     islamic.kajian.length
       ? `${islamic.kajian.length} masjid dengan pengajian rutin`
-      : "",
+      : hasKajian(property)
+        ? "kajian di kawasan (klaim proyek)"
+        : "",
     islamic.education.length
       ? `${islamic.education.length} pendidikan Islam anak`
-      : "",
+      : hasIslamicEducation(property)
+        ? "TPQ atau sekolah Islam di kawasan (klaim proyek)"
+        : "",
     islamic.claims.some((claim) => claim.kind === "syariah-concept")
       ? "konsep islami (klaim pemasaran)"
       : islamic.claims.length
@@ -408,6 +542,8 @@ export async function loadResearch(): Promise<ResearchData> {
     population: metadata.population ?? null,
     planned: metadata.planned ?? null,
     islamic: metadata.islamic ?? null,
+    leads: metadata.leads ?? null,
+    rentals: metadata.rentals ?? null,
     properties,
   };
 }

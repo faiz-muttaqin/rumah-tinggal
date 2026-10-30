@@ -334,7 +334,7 @@
     "id": "sweep-syariah-meta",
     "label": "Petunjuk perumahan islami dari daftar pengguna (Meta AI), diverifikasi ulang",
     "found": 16,
-    "included": 9
+    "included": 10
    },
    {
     "id": "sweep-tod",
@@ -1354,6 +1354,1453 @@
     1.0
    ]
   },
+  "leads": {
+   "checkedAt": "2026-10-30",
+   "source": "Tiga daftar perumahan islami hasil Meta AI yang ditempel pengguna pada 30 Oktober 2026",
+   "note": "Petunjuk ini belum diverifikasi dari sumber yang bisa dibuka otomatis. Akses otomatis ke Instagram dibatasi, jadi tautan disediakan agar pengguna yang masuk ke Instagram bisa memeriksa sendiri. Klaim di bawah adalah ringkasan isi daftar tersebut, bukan fakta yang sudah dicek. Akun penasihat atau marketing perorangan tidak dicantumkan karena berisi data pribadi.",
+   "leads": [
+    {
+     "id": "lead-al-madina-premiere",
+     "name": "Al Madina Premiere",
+     "type": "project",
+     "status": "unverified",
+     "area": "Tangerang",
+     "claim": "Disebut cluster islami dengan masjid, taman bermain anak, dan area komersial; satu cuplikan pencarian menyebut Serpong.",
+     "check": "Tidak ada halaman proyek yang bisa dibuka saat dicek; harga, status, dan lokasi belum diketahui.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Tagar #perumahanislami",
+       "url": "https://www.instagram.com/explore/tags/perumahanislami/"
+      }
+     ]
+    },
+    {
+     "id": "lead-cluster-muslim-hankam-cipayung",
+     "name": "Cluster Muslim Hankam Cipayung",
+     "type": "project",
+     "status": "unreached",
+     "area": "Jakarta",
+     "claim": "Disebut tipe 45/30 sekitar Rp 599 juta, 2 km dari Tol Bambu Apus 2, skema syariah tanpa riba; dipasarkan lewat akun sinergypropertysyariah.",
+     "check": "Tidak ditemukan di sitemap proyek Pinhome maupun portal lain; hanya bisa dicek lewat Instagram.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Instagram @sinergypropertysyariah",
+       "url": "https://www.instagram.com/sinergypropertysyariah/"
+      }
+     ]
+    },
+    {
+     "id": "lead-fazama-summer-breeze",
+     "name": "Proyek FAZAMA Properti (tipe Summer Breeze 54/60)",
+     "type": "project",
+     "status": "unreached",
+     "area": "Bekasi",
+     "claim": "Disebut sekitar Rp 1 miliar di Bekasi Timur dekat RS Puspa Husada, LRT, dan tol. Tipe Summer Breeze juga muncul di Grand Al Ihsan Premiere (Pinhome Rp 1,05 Miliar), jadi kemungkinan proyek yang sama.",
+     "check": "Domain FAZAMA tidak ditemukan; dugaan kaitan dengan Grand Al Ihsan Premiere belum terbukti.",
+     "related": "prj-grand-al-ihsan-premiere",
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Instagram @rumahsyariah_info",
+       "url": "https://www.instagram.com/rumahsyariah_info/"
+      }
+     ]
+    },
+    {
+     "id": "lead-rabbani-bintaro-residence",
+     "name": "Rabbani Bintaro Residence",
+     "type": "project",
+     "status": "unverified",
+     "area": "Tangerang",
+     "claim": "Disebut dekat masjid pusat kajian sunnah, dengan masjid, rumah tahfidz, kajian sunnah rutin, dan klinik thibbun nabawi.",
+     "check": "Listing Pinhome dari agen menunjukkan 0 unit aktif dan pin dipakai bersama proyek lain; situs rabbaniland.com yang disebut daftar tidak terdaftar di DNS saat dicek.",
+     "related": null,
+     "contactUrl": "https://griyarumahsyariah.com/rabbani-bintaro/",
+     "links": [
+      {
+       "label": "Listing Pinhome",
+       "url": "https://www.pinhome.id/dijual/rumah-baru/rabbani-bintaro-residence"
+      },
+      {
+       "label": "Instagram @rabbani_land",
+       "url": "https://www.instagram.com/rabbani_land/"
+      },
+      {
+       "label": "Halaman pemasar griyarumahsyariah.com",
+       "url": "https://griyarumahsyariah.com/rabbani-bintaro/"
+      }
+     ]
+    },
+    {
+     "id": "lead-griya-be-hasanah",
+     "name": "Griya Be Hasanah",
+     "type": "project",
+     "status": "unverified",
+     "area": "Tangerang",
+     "claim": "Disebut perumahan dengan masjid dan taman bermain anak di Batuceper.",
+     "check": "Hanya ditemukan listing rumah bekas (resale) dari agen atau pemilik, bukan proyek baru.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Tagar #perumahanislami",
+       "url": "https://www.instagram.com/explore/tags/perumahanislami/"
+      }
+     ]
+    },
+    {
+     "id": "lead-royal-bestari-yasmin",
+     "name": "Royal Bestari Yasmin (Perumahan Syariah 2 Lantai di Kota Bogor)",
+     "type": "project",
+     "status": "unverified",
+     "area": "Bogor",
+     "claim": "Satu listing menyebut cluster islami dengan transaksi sesuai syariah, Rp 930 juta sampai Rp 1,15 miliar.",
+     "check": "Tiga listing Pinhome bertentangan harga dan status; fasilitas islami selain skema pembayaran tidak disebut.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Listing Pinhome",
+       "url": "https://www.pinhome.id/dijual/rumah-baru/royal-bestari-yasmin"
+      }
+     ]
+    },
+    {
+     "id": "lead-rumah-halal-indonesia",
+     "name": "Rumah Halal Indonesia (platform)",
+     "type": "account",
+     "status": "unreached",
+     "area": null,
+     "claim": "Disebut jaringan perumahan syariah tanpa riba, denda, sita, dan gharar dengan listing di Setu, Babelan, Limo, Bubulak, dan Pasar Minggu.",
+     "check": "Situsnya adalah platform pendampingan; nama proyek dan developer pada listing disamarkan, jadi tidak bisa dicek per proyek.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Instagram @rumahhalal_id",
+       "url": "https://www.instagram.com/rumahhalal_id/"
+      },
+      {
+       "label": "Situs rumahhalal.com",
+       "url": "https://rumahhalal.com/"
+      }
+     ]
+    },
+    {
+     "id": "lead-muslimproperti-id",
+     "name": "Muslim Properti (akun agregator)",
+     "type": "account",
+     "status": "unreached",
+     "area": null,
+     "claim": "Disebut pusat info perumahan islami Jabodetabek, termasuk Berkah Cimuning Residence dan Selasar Madina.",
+     "check": "Akun agregator; proyek yang disebut dan sudah terverifikasi tercantum di daftar riset.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Instagram @muslimproperti.id",
+       "url": "https://www.instagram.com/muslimproperti.id/"
+      }
+     ]
+    },
+    {
+     "id": "lead-kprrumahsyariah",
+     "name": "KPR Rumah Syariah (akun)",
+     "type": "account",
+     "status": "unreached",
+     "area": "Bekasi",
+     "claim": "Disebut ready stock di Bekasi Timur dekat KRL Tambun dan LRT Jatimulya, tipe 77/59 tiga kamar, pembiayaan developer tanpa bank.",
+     "check": "Nama proyek tidak disebut; belum bisa dicocokkan dengan proyek bersumber.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Instagram @kprrumahsyariah",
+       "url": "https://www.instagram.com/kprrumahsyariah/"
+      }
+     ]
+    },
+    {
+     "id": "lead-taat",
+     "name": "TAAT (agen properti syariah)",
+     "type": "account",
+     "status": "unreached",
+     "area": null,
+     "claim": "Disebut membangun masjid, program tahfidz anak, dan kelas bahasa Arab di proyek Cibubur.",
+     "check": "TAAT adalah agen dan situs listing; proyek Cibubur yang dimaksud terverifikasi sebagai Teras Madina Cibubur (Maxirecon) di Cileungsi.",
+     "related": "prj-teras-madina-cibubur",
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Instagram @taat.co.id",
+       "url": "https://www.instagram.com/taat.co.id/"
+      },
+      {
+       "label": "Situs taat.co.id",
+       "url": "https://taat.co.id/"
+      }
+     ]
+    },
+    {
+     "id": "lead-rumahbekasi-info",
+     "name": "Info Rumah Bekasi (akun)",
+     "type": "account",
+     "status": "unreached",
+     "area": "Bekasi",
+     "claim": "Disebut campuran perumahan syariah dan konvensional di Bekasi, misalnya Jatimulya 10 menit ke Commuter Line.",
+     "check": "Akun info atau agregator; tiap proyek perlu dicek terpisah.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Instagram @rumahbekasi.info",
+       "url": "https://www.instagram.com/rumahbekasi.info/"
+      }
+     ]
+    },
+    {
+     "id": "lead-propertitour",
+     "name": "Properti Tour (akun)",
+     "type": "account",
+     "status": "unreached",
+     "area": null,
+     "claim": "Disebut rumah siap huni sekitar Rp 980 juta dekat TB Simatupang dan LRT Cibubur.",
+     "check": "Nama proyek tidak disebut; belum bisa dicocokkan.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Instagram @propertitour.official",
+       "url": "https://www.instagram.com/propertitour.official/"
+      }
+     ]
+    },
+    {
+     "id": "lead-pesona-kahuripan",
+     "name": "Pesona Kahuripan (grup developer)",
+     "type": "account",
+     "status": "unreached",
+     "area": "Bogor",
+     "claim": "Disebut rumah subsidi dan komersial untuk warga Jabodetabek dengan pembiayaan syariah.",
+     "check": "Grup developer nyata di Cileungsi dan Klapanunggal; Pesona Kahuripan 18 tercantum di daftar riset.",
+     "related": "prj-pesona-kahuripan-18",
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Instagram @pesonakahuripan.official",
+       "url": "https://www.instagram.com/pesonakahuripan.official/"
+      },
+      {
+       "label": "Situs pesonakahuripan.com",
+       "url": "https://pesonakahuripan.com/"
+      }
+     ]
+    },
+    {
+     "id": "lead-amnahomes",
+     "name": "Amna Homes (jasa bangun rumah syariah)",
+     "type": "service",
+     "status": "unreached",
+     "area": null,
+     "claim": "Disebut jasa bangun atau renovasi rumah dengan akad syariah di Jabodetabek, bukan developer perumahan.",
+     "check": "Layanan, bukan listing hunian; dicantumkan sebagai rujukan.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Instagram @amnahomes",
+       "url": "https://www.instagram.com/amnahomes/"
+      }
+     ]
+    },
+    {
+     "id": "lead-sumu",
+     "name": "Serikat Usaha Muhammadiyah, Blip Home (jasa bangun rumah)",
+     "type": "service",
+     "status": "unreached",
+     "area": null,
+     "claim": "Disebut solusi bangun dan renovasi rumah dengan prinsip syariah di Jabodetabek.",
+     "check": "Layanan, bukan listing hunian; dicantumkan sebagai rujukan.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Instagram @sumu.or.id",
+       "url": "https://www.instagram.com/sumu.or.id/"
+      }
+     ]
+    },
+    {
+     "id": "lead-the-padjadjaran-residence",
+     "name": "The Padjadjaran Residence (Arsanta)",
+     "type": "project",
+     "status": "unreached",
+     "area": "Bekasi",
+     "claim": "Disebut perumahan subsidi bergaya cluster 5 hektare di Desa Sukamanah, Sukatani, Cikarang dengan masjid, rumah tahfidz, taman bermain, dan pengajian rutin warga.",
+     "check": "Situs thepadjadjaran.id dan padjadjaranresidence.com yang disebut tidak terdaftar di DNS; proyek tidak ditemukan di portal atau mesin pencari.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Instagram @arsantaofficial",
+       "url": "https://www.instagram.com/arsantaofficial/"
+      },
+      {
+       "label": "Instagram @kprsyariah",
+       "url": "https://www.instagram.com/kprsyariah/"
+      },
+      {
+       "label": "Instagram @muslimproperti.id",
+       "url": "https://www.instagram.com/muslimproperti.id/"
+      }
+     ]
+    },
+    {
+     "id": "lead-cluster-mustikasari-quint-amanah",
+     "name": "Cluster Mustikasari (Quint Amanah)",
+     "type": "project",
+     "status": "unreached",
+     "area": "Bekasi",
+     "claim": "Disebut cluster di Mustikasari, Mustika Jaya dengan Masjid Al Ihsan, lapangan olahraga, taman bermain, dan program tahsin serta tahfidz anak (dari video Instagram).",
+     "check": "rumahhalalindonesia.com dialihkan ke rumahhalal.com yang menyamarkan nama proyek. Lokasi dan nama masjid mirip Grand Al Ihsan Premiere, tetapi kaitannya belum terbukti. Akun penasihat perorangan tidak dicatat.",
+     "related": "prj-grand-al-ihsan-premiere",
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Instagram @quintamanah",
+       "url": "https://www.instagram.com/quintamanah/"
+      }
+     ]
+    },
+    {
+     "id": "lead-sekitar-al-barkah-cileungsi",
+     "name": "Rumah dan kavling dekat Masjid Al-Barkah (Rodja) Cileungsi",
+     "type": "project",
+     "status": "unverified",
+     "area": "Bogor",
+     "claim": "Disebut: kavling Jl. H. Syathiby ±500 m dari masjid (83 m², Rp 250 juta), Griya Cileungsi Asri ±700 m (90/52, Rp 625 juta nego), townhouse Cileungsi Hijau ±2,8 km, rumah Rp 388 juta dekat Kota Wisata, dan kavling Cluster Syariah Cottonwood dan Rosewood di Narogong.",
+     "check": "Iklan perorangan atau resale; akun Instagram pribadi yang memposting tidak dicatat. Listing Lamudi, Griya Cileungsi Asri, dan cluster Cottonwood/Rosewood tidak ditemukan di halaman yang bisa dibuka. Status tanah perlu dicek ke notaris atau PPAT.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Cileungsi Hijau di rumah123 (Rodja TV 1,3 km)",
+       "url": "https://www.rumah123.com/venue/cileungsi-hijau-vcm14608/"
+      },
+      {
+       "label": "Threads Masjid Al-Barkah (info kajian)",
+       "url": "https://www.threads.com/@masjidalbarkahcileungsi"
+      }
+     ]
+    },
+    {
+     "id": "lead-kampung-islami-thoyibah",
+     "name": "Kampung Islami Thoyibah dan Masjid Abu Bakr Ash-Shiddiq (MABAS) Cibitung",
+     "type": "project",
+     "status": "unverified",
+     "area": "Bekasi",
+     "claim": "Disebut kawasan islami 9,5 ha (tahap kedua 5 ha) di Cibitung dekat tol, dengan masjid MABAS, pesantren tahfidz, TPA anak, aula pengajian, dan klinik thibbun nabawi.",
+     "check": "Halaman bio masjid terbuka dan memuat menu Info Kajian MABAS, tetapi tanpa jadwal. kampungislamithoyibah.com tidak terdaftar di DNS; tidak ada listing rumah aktif yang ditemukan. mitrathayyibahproperti.com milik pemasar Maxirecon, bukan kawasan ini.",
+     "related": null,
+     "contactUrl": "https://ini.bio/MABAScibitung",
+     "links": [
+      {
+       "label": "Instagram @mabascibitung",
+       "url": "https://www.instagram.com/mabascibitung/"
+      },
+      {
+       "label": "Link bio masjid (ini.bio)",
+       "url": "https://ini.bio/MABAScibitung"
+      },
+      {
+       "label": "Link bio masjid (berbagi.link)",
+       "url": "https://berbagi.link/mabascibitungofficial"
+      },
+      {
+       "label": "Kawasan di OpenStreetMap",
+       "url": "https://www.openstreetmap.org/way/549605370"
+      }
+     ]
+    },
+    {
+     "id": "lead-hashtags",
+     "name": "Tagar pencarian perumahan syariah di Instagram",
+     "type": "hashtag",
+     "status": "unreached",
+     "area": null,
+     "claim": "Tagar yang disarankan daftar Meta AI untuk menelusuri sendiri. Kata kunci bio yang disarankan: tanpa riba, akad syariah, one gate system, SDIT dan masjid dalam cluster.",
+     "check": "Tagar hanya bisa dibuka oleh pengguna yang masuk ke Instagram.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "#perumahansyariahbekasi",
+       "url": "https://www.instagram.com/explore/tags/perumahansyariahbekasi/"
+      },
+      {
+       "label": "#perumahansyariahjabodetabek",
+       "url": "https://www.instagram.com/explore/tags/perumahansyariahjabodetabek/"
+      },
+      {
+       "label": "#rumahsyariahtanpariba",
+       "url": "https://www.instagram.com/explore/tags/rumahsyariahtanpariba/"
+      },
+      {
+       "label": "#rumahhalalindonesia",
+       "url": "https://www.instagram.com/explore/tags/rumahhalalindonesia/"
+      },
+      {
+       "label": "#perumahanislami",
+       "url": "https://www.instagram.com/explore/tags/perumahanislami/"
+      },
+      {
+       "label": "#kprsyariah",
+       "url": "https://www.instagram.com/explore/tags/kprsyariah/"
+      }
+     ]
+    }
+   ]
+  },
+  "rentals": {
+   "checkedAt": "2026-10-30",
+   "note": "Iklan sewa dari portal publik (rumah123, Mamikos, Pinhome, Travelio, Jendela360) yang dibuka langsung dan diperiksa ulang pemeriksa terpisah. Bukti lingkungan muslim adalah kutipan iklan, bukan survei. Nama dan kontak pemilik atau agen tidak disimpan; iklan perorangan hanya sampai tingkat kawasan. Harga dan ketersediaan sewa cepat berubah.",
+   "rentals": [
+    {
+     "id": "sewa-rumah-kluster-keluarga-muslim-furnish-dkt-tol-grand-wisata-bekasi",
+     "title": "Rumah Kluster Keluarga Muslim Furnish Dkt Tol Grand Wisata Bekasi",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Bekasi Timur, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1500000,
+      "period": "monthly",
+      "quote": "Rp 1,5 Juta /bulan",
+      "url": "https://www.rumah123.com/kost/dekat-pasar-modern-grandwisata/di-bekasi/",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": null,
+     "sizeM2": null,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Disewakan Rumah BARU utk suami istri, Furnish, Siap Huni di Cluster Keluarga Muslim",
+       "url": "https://www.rumah123.com/kost/dekat-pasar-modern-grandwisata/di-bekasi/"
+      },
+      {
+       "quote": "Dekat Tempat Ibadah",
+       "url": "https://www.rumah123.com/kost/dekat-pasar-modern-grandwisata/di-bekasi/"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.rumah123.com/properti/bekasi-bekasi-timur/rumah-kluster-keluarga-muslim-furnish-dkt-tol-grand-wisata-bekasi-ksr42170/",
+     "sourcePortal": "rumah123",
+     "postedOrUpdated": "2026-10-24",
+     "ownerType": "agent",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-rumah-kontrakan-d-thani-house-jatiasih-bekasi",
+     "title": "Rumah Kontrakan D Thani House Jatiasih Bekasi",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Kecamatan Jatiasih, Kota Bekasi",
+     "buildingOrCluster": "Perum. Puri Nusaphala",
+     "rent": {
+      "amount": 2300000,
+      "period": "monthly",
+      "quote": "2.300.000",
+      "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-rumah-kontrakan-d-thani-house-jatiasih-bekasi-2",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 3,
+     "sizeM2": null,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Bismilahirrahmannirrahim Dikontrakan rumah 1,5 lantai Lokasi di Perum. Puri Nusaphala, Jatiasih, Bekasi 3 kamar tidur 3 kamar mandi",
+       "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-rumah-kontrakan-d-thani-house-jatiasih-bekasi-2"
+      },
+      {
+       "quote": "Mushola",
+       "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-rumah-kontrakan-d-thani-house-jatiasih-bekasi-2"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-rumah-kontrakan-d-thani-house-jatiasih-bekasi-2",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-09-03",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-grand-center-point-bekasi-apartment-2br",
+     "title": "Grand Center Point Bekasi Apartment (2BR)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Bekasi",
+     "locationText": "Marga Jaya, Bekasi Selatan, Kota Bekasi",
+     "buildingOrCluster": "Grand Center Point Bekasi",
+     "rent": {
+      "amount": 3350000,
+      "period": "monthly",
+      "quote": "Monthly IDR 3,350,000",
+      "url": "https://www.travelio.com/en/sewa-apartemen/grand-center-point-apartment-bekasi/2bedroom/bulanan",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 2,
+     "sizeM2": 33,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Masjid Raya Al-Azhar Summarecon Bekasi (2.57 km)",
+       "url": "https://www.travelio.com/en/sewa-apartemen/grand-center-point-apartment-bekasi"
+      },
+      {
+       "quote": "2BR : Suitable for small families or those who require extra space for comfort.",
+       "url": "https://www.travelio.com/en/sewa-apartemen/grand-center-point-apartment-bekasi"
+      }
+     ],
+     "nearStationsClaim": [
+      {
+       "station": "KRL Bekasi",
+       "quote": "Bekasi Station Distance: 1.8 km",
+       "url": "https://www.travelio.com/en/sewa-apartemen/grand-center-point-apartment-bekasi"
+      }
+     ],
+     "listingUrl": "https://www.travelio.com/en/sewa-apartemen/grand-center-point-apartment-bekasi",
+     "sourcePortal": "travelio",
+     "postedOrUpdated": null,
+     "ownerType": "management",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-sewa-rumah-razbi-prima-mansion-dekat-grand-wisata-bekasi-timur-2-lanta",
+     "title": "Sewa Rumah Razbi Prima Mansion - Dekat Grand Wisata Bekasi Timur, 2 Lantai, Bebas Banjir",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Tambun Selatan area, Kabupaten Bekasi",
+     "buildingOrCluster": "Razbi Prima Mansion",
+     "rent": {
+      "amount": 36000000,
+      "period": "yearly",
+      "quote": "Rp 36 Juta /tahun",
+      "url": "https://www.rumah123.com/venue/razbi-prima-mansion-vcm19190/",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 4,
+     "sizeM2": 140,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Dekat Tempat Ibadah",
+       "url": "https://www.rumah123.com/venue/razbi-prima-mansion-vcm19190/"
+      },
+      {
+       "quote": "Rumah di Cluster Keluarga Muslim Dekat Tol Grand Wisata Bekasi",
+       "url": "https://www.rumah123.com/venue/razbi-prima-mansion-vcm19190/"
+      },
+      {
+       "quote": "Sedang mencari sewa rumah di dekat Grand Wisata dengan lingkungan nyaman dan aman untuk keluarga?",
+       "url": "https://www.rumah123.com/venue/razbi-prima-mansion-vcm19190/"
+      }
+     ],
+     "nearStationsClaim": [
+      {
+       "station": "LRT Jatimulya",
+       "quote": "Stasiun LRT Jatimulya 2,5 Km",
+       "url": "https://www.rumah123.com/venue/razbi-prima-mansion-vcm19190/"
+      },
+      {
+       "station": "KRL Tambun",
+       "quote": "Stasiun Tambun 2,8 Km",
+       "url": "https://www.rumah123.com/venue/razbi-prima-mansion-vcm19190/"
+      }
+     ],
+     "listingUrl": "https://www.rumah123.com/properti/bekasi-grand-wisata/sewa-rumah-razbi-prima-mansion-dekat-grand-wisata-bekasi-timur-2-lantai-bebas-banjir-hor41586749/",
+     "sourcePortal": "rumah123",
+     "postedOrUpdated": null,
+     "ownerType": "agent",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-kontrakan-2-kt-dekat-masjid-al-baidho-lubang-buaya",
+     "title": "Kontrakan 2 KT dekat Masjid Al Baidho, Lubang Buaya",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Kel. Lubang Buaya, Kec. Cipayung, Kota Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1500000,
+      "period": "monthly",
+      "quote": "Rp 1,5 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gg-sukadamai-1",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 2,
+     "sizeM2": 45,
+     "furnished": "unfurnished",
+     "evidence": [
+      {
+       "quote": "New, Kontrakan rumah di masjid Al Baidho Lubang Buaya Jakarta Timur",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gg-sukadamai-1"
+      }
+     ],
+     "nearStationsClaim": [
+      {
+       "station": "LRT (nama stasiun tidak disebut)",
+       "quote": "- Dekat dengan stasiun LRT",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gg-sukadamai-1"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gg-sukadamai-1",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2024-12-16",
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-rumah-5-kt-di-kompleks-taman-buaran-indah-klender",
+     "title": "Rumah 5 KT di kompleks Taman Buaran Indah, Klender",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Kel. Klender, Kec. Duren Sawit, Kota Jakarta Timur",
+     "buildingOrCluster": "Taman Buaran Indah",
+     "rent": {
+      "amount": 125000000,
+      "period": "yearly",
+      "quote": "Rp 125 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-taman-buaran-indah-siap-huni-di-sewa-rumah-taman-buaran-indah-jakarta-timur",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 5,
+     "sizeM2": 280,
+     "furnished": "semi",
+     "evidence": [
+      {
+       "quote": "Masjid, Puskesmas, keamanan 24 jam( satpam dan cctv)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-taman-buaran-indah-siap-huni-di-sewa-rumah-taman-buaran-indah-jakarta-timur"
+      }
+     ],
+     "nearStationsClaim": [
+      {
+       "station": "KRL Buaran",
+       "quote": "- stasiun kereta (st. Buaran)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-taman-buaran-indah-siap-huni-di-sewa-rumah-taman-buaran-indah-jakarta-timur"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-taman-buaran-indah-siap-huni-di-sewa-rumah-taman-buaran-indah-jakarta-timur",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-02-02",
+     "ownerType": "agent",
+     "social": [],
+     "verdict": "confirmed",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-rumah-2-kt-dekat-masjid-dan-sekolah-islam-ciracas",
+     "title": "Rumah 2 KT dekat masjid dan sekolah Islam, Ciracas",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Kel. Ciracas, Kec. Ciracas, Kota Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1600000,
+      "period": "monthly",
+      "quote": "Rp 1,6 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkomp-kebersihan-rt-17-09-no295-ciracas",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 2,
+     "sizeM2": 60,
+     "furnished": "unfurnished",
+     "evidence": [
+      {
+       "quote": "Dekat dgn Mesjid, Toserba, Minimarket, Warung sembako & sayuran segar",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkomp-kebersihan-rt-17-09-no295-ciracas"
+      },
+      {
+       "quote": "Dekat Sekolah favorit Jakarta Islamic School, SMA Al Azhar",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkomp-kebersihan-rt-17-09-no295-ciracas"
+      }
+     ],
+     "nearStationsClaim": [
+      {
+       "station": "LRT (nama stasiun tidak disebut)",
+       "quote": "Lokasi strategis: dekat akses 6 ruas Jalan Toll + LRT",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkomp-kebersihan-rt-17-09-no295-ciracas"
+      },
+      {
+       "station": "KRL Tanjung Barat",
+       "quote": "Stasiun kereta Tanjung Barat dan Psr. Minggu",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkomp-kebersihan-rt-17-09-no295-ciracas"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkomp-kebersihan-rt-17-09-no295-ciracas",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2024-06-11",
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-rumah-kontrakan-2-kt-rambutan-5-menit-ke-masjid",
+     "title": "Rumah kontrakan 2 KT Rambutan, 5 menit ke masjid",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Kel. Rambutan, Kec. Ciracas, Kota Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 25000000,
+      "period": "yearly",
+      "quote": "Rp 25 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-pasar-rebo-di-jlgudang-air-rt002-001-no-50-jaktim",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 2,
+     "sizeM2": 80,
+     "furnished": "unfurnished",
+     "evidence": [
+      {
+       "quote": "- 5 menit dari Masjid Terdekat.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-pasar-rebo-di-jlgudang-air-rt002-001-no-50-jaktim"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-pasar-rebo-di-jlgudang-air-rt002-001-no-50-jaktim",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2024-04-25",
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-apartemen-sentra-timur-residence-2-kt-pulo-gebang",
+     "title": "Apartemen Sentra Timur Residence 2 KT, Pulo Gebang",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Kel. Pulo Gebang, Kec. Cakung, Kota Jakarta Timur",
+     "buildingOrCluster": "Apartemen Sentra Timur Residence",
+     "rent": {
+      "amount": 1650000,
+      "period": "monthly",
+      "quote": "Rp 1,65 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sentra-timur-dekat-walikota-jakarta-timur-di-apartemen-sentra-timur",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 2,
+     "sizeM2": 36,
+     "furnished": "semi",
+     "evidence": [
+      {
+       "quote": "Musholla",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sentra-timur-dekat-walikota-jakarta-timur-di-apartemen-sentra-timur"
+      },
+      {
+       "quote": "ideal untuk keluarga kecil atau pasangan yang mencari tempat tinggal yang nyaman",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sentra-timur-dekat-walikota-jakarta-timur-di-apartemen-sentra-timur"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sentra-timur-dekat-walikota-jakarta-timur-di-apartemen-sentra-timur",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-10-15",
+     "ownerType": "agent",
+     "social": [],
+     "verdict": "confirmed",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-rumah-2-lantai-3-kt-dekat-lrt-kampung-rambutan",
+     "title": "Rumah 2 lantai 3 KT dekat LRT Kampung Rambutan",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Kel. Rambutan, Kec. Ciracas, Kota Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 50000000,
+      "period": "yearly",
+      "quote": "Rp 50 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-siap-huni-di-jalan-smp-188",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 3,
+     "sizeM2": 125,
+     "furnished": "semi",
+     "evidence": [
+      {
+       "quote": "Alfamart, Indomaret, Superindo, Masjid",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-siap-huni-di-jalan-smp-188"
+      }
+     ],
+     "nearStationsClaim": [
+      {
+       "station": "LRT Kampung Rambutan",
+       "quote": "LRT Kampung Rambutan ≈1km",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-siap-huni-di-jalan-smp-188"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-siap-huni-di-jalan-smp-188",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-04-26",
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-rumah-3-kt-posisi-hook-dekat-masjid-hijau-nurul-iman-cilangkap",
+     "title": "Rumah 3 KT posisi hook dekat Masjid Hijau Nurul Iman, Cilangkap",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Kel. Cilangkap, Kec. Cipayung, Kota Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 40000000,
+      "period": "yearly",
+      "quote": "Rp 40 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-posisi-hok-di-cilangkap",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 3,
+     "sizeM2": 72,
+     "furnished": "unfurnished",
+     "evidence": [
+      {
+       "quote": "Mesjid Hijau Nurul Iman Cilangkap",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-posisi-hok-di-cilangkap"
+      }
+     ],
+     "nearStationsClaim": [
+      {
+       "station": "LRT Ciracas",
+       "quote": "Stasiun LRT Ciracas",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-posisi-hok-di-cilangkap"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-posisi-hok-di-cilangkap",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2024-07-03",
+     "ownerType": "agent",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-rumah-2-lantai-3-kt-cluster-shinano-jakarta-garden-city",
+     "title": "Rumah 2 lantai 3 KT Cluster Shinano, Jakarta Garden City",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Kel. Cakung Timur, Kec. Cakung, Kota Jakarta Timur",
+     "buildingOrCluster": "Jakarta Garden City",
+     "rent": {
+      "amount": 40000000,
+      "period": "yearly",
+      "quote": "Rp 40 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-3-kamar-harga-40-juta-carport-2-mobil-di-cluster-shinano-jakarta-garden-city-jgc-cakung",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 3,
+     "sizeM2": 69,
+     "furnished": "unfurnished",
+     "evidence": [
+      {
+       "quote": "Masjid Raya JGC",
+       "url": "https://jakartagardencity.com/id"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-3-kamar-harga-40-juta-carport-2-mobil-di-cluster-shinano-jakarta-garden-city-jgc-cakung",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-05-20",
+     "ownerType": "agent",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-rumah-2-lantai-3-kt-dekat-masjid-cilangkap",
+     "title": "Rumah 2 lantai 3 KT dekat masjid, Cilangkap",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Kel. Cilangkap, Kec. Cipayung, Kota Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 55000000,
+      "period": "yearly",
+      "quote": "Rp 55 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-malaka-cipayung",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 3,
+     "sizeM2": 90,
+     "furnished": "semi",
+     "evidence": [
+      {
+       "quote": "Dekat dengan Sekolah, Masjid, Gereja, Toll Gate Cibubur",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-malaka-cipayung"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-malaka-cipayung",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-04-06",
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-kost-berkah-family-sukmajaya-khusus-keluarga-muslim",
+     "title": "Kost Berkah Family Sukmajaya, khusus keluarga muslim",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Sukmajaya, Kota Depok",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 800000,
+      "period": "monthly",
+      "quote": "800000",
+      "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-berkah-family-sukma-jaya-depok-1",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": null,
+     "sizeM2": 24,
+     "furnished": "unfurnished",
+     "evidence": [
+      {
+       "quote": "asri, nyaman dan khusus utk keluarga muslim",
+       "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-berkah-family-sukma-jaya-depok-1"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-berkah-family-sukma-jaya-depok-1",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-05-07",
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-kost-syariah-beji-rumah-kontrakan-keluarga-1-kamar",
+     "title": "Kost Syariah Beji, rumah kontrakan keluarga 1 kamar",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Beji, Kota Depok",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1100000,
+      "period": "monthly",
+      "quote": "Harga sewa Rp1. 100.000 per bulan",
+      "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-syariah-beji-depok",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 1,
+     "sizeM2": 24,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kost Syariah Beji Depok",
+       "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-syariah-beji-depok"
+      },
+      {
+       "quote": "Masjid",
+       "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-syariah-beji-depok"
+      },
+      {
+       "quote": "Rumah kontrakan keluarga",
+       "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-syariah-beji-depok"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-syariah-beji-depok",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-08-29",
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-kost-syariah-matoa-golf-tipe-a-jagakarsa-pasutri-tanpa-anak",
+     "title": "Kost Syariah Matoa Golf Tipe A, Jagakarsa (pasutri, tanpa anak)",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Jagakarsa, Kota Jakarta Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1000000,
+      "period": "monthly",
+      "quote": "1000000",
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-syariah-matoa-golf-tipe-a-jagakarsa-jakarta-selatan",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": null,
+     "sizeM2": 21,
+     "furnished": "semi",
+     "evidence": [
+      {
+       "quote": "Kost Syariah Matoa Golf Tipe A Jagakarsa Jakarta Selatan",
+       "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-syariah-matoa-golf-tipe-a-jagakarsa-jakarta-selatan"
+      },
+      {
+       "quote": "bisa BERDUA",
+       "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-syariah-matoa-golf-tipe-a-jagakarsa-jakarta-selatan"
+      },
+      {
+       "quote": "pasutri akan dimintai surat nikah",
+       "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-syariah-matoa-golf-tipe-a-jagakarsa-jakarta-selatan"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-syariah-matoa-golf-tipe-a-jagakarsa-jakarta-selatan",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-10-01",
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "confirmed",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-rumah-kontrakan-dekat-musholah-sukmajaya-depok",
+     "title": "Rumah kontrakan dekat musholah, Sukmajaya Depok",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Sukmajaya, Kota Depok",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1200000,
+      "period": "monthly",
+      "quote": "1200000",
+      "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kontrakan-pak-kodir-sukmajaya-depok",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": null,
+     "sizeM2": 21,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Berdekatan dengan tempat ibadah (musholah)",
+       "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kontrakan-pak-kodir-sukmajaya-depok"
+      },
+      {
+       "quote": "Dekat dengan Superindo, Toko Daging Nusantara, Sekolah Al Haraki, dan Universitas JGU",
+       "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kontrakan-pak-kodir-sukmajaya-depok"
+      }
+     ],
+     "nearStationsClaim": [
+      {
+       "station": "KRL Depok",
+       "quote": "hanya 10 menit dari Stasiun Depok",
+       "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kontrakan-pak-kodir-sukmajaya-depok"
+      }
+     ],
+     "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kontrakan-pak-kodir-sukmajaya-depok",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2023-08-07",
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-kalibata-city-2br-tower-akasia-masjid-di-basement",
+     "title": "Kalibata City 2BR Tower Akasia (masjid di basement)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Rawajati, Pancoran, Kota Jakarta Selatan",
+     "buildingOrCluster": "Kalibata City",
+     "rent": {
+      "amount": 32120000,
+      "period": "yearly",
+      "quote": "Bayar Langsung 12 Bulan Harga Mulai Rp 32,120,000 Setara Rp 2,680,000 / bulan",
+      "url": "https://jendela360.com/sewa-apartemen-kalibata-city-apartment/KLCC371",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 2,
+     "sizeM2": 40,
+     "furnished": "unfurnished",
+     "evidence": [
+      {
+       "quote": "Ada Masjid Nurullah yang terletak di basement",
+       "url": "https://jendela360.com/review/kalibata-city"
+      },
+      {
+       "quote": "menawarkan tempat tinggal yang ideal bagi keluarga dengan satu anak atau pasangan muda",
+       "url": "https://jendela360.com/sewa-apartemen-kalibata-city-apartment/KLCC371"
+      }
+     ],
+     "nearStationsClaim": [
+      {
+       "station": "KRL Duren Kalibata",
+       "quote": "\"name\":\"Stasiun KRL Duren Kalibata\",\"distance\":\"475m\"",
+       "url": "https://jendela360.com/sewa-apartemen-kalibata-city-apartment/KLCC371"
+      }
+     ],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-kalibata-city-apartment/KLCC371",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "agent",
+     "social": [],
+     "verdict": "confirmed",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-margonda-residence-1br-low-floor-mushola-di-kawasan",
+     "title": "Margonda Residence 1BR low floor (mushola di kawasan)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Depok",
+     "locationText": "Pondok Cina, Beji, Kota Depok",
+     "buildingOrCluster": "Margonda Residence",
+     "rent": {
+      "amount": 22700000,
+      "period": "yearly",
+      "quote": "Masa Sewa 12 Bulan Bayar Langsung 12 Bulan Harga Mulai Rp 22,700,000 Setara Rp 1,900,000 / bulan",
+      "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB007",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 1,
+     "sizeM2": 25,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "kolam renang, lapangan tennis, jogging track, mini market, tempat ibadah (mushola), dan area parkir",
+       "url": "https://jendela360.com/sewa-apartemen-margonda-residence"
+      },
+      {
+       "quote": "Masjid Al Khairatul Islam Tempat Ibadah 1 KM",
+       "url": "https://jendela360.com/sewa-apartemen-margonda-residence"
+      },
+      {
+       "quote": "apartemen ini cocok diperuntukkan bagi kalangan mahasiswa, keluarga maupun pasangan muda",
+       "url": "https://jendela360.com/sewa-apartemen-margonda-residence"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB007",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "confirmed",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-taman-melati-margonda-2br-tower-a-low-floor",
+     "title": "Taman Melati Margonda 2BR Tower A low floor",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Depok",
+     "locationText": "Pondok Cina, Beji, Kota Depok",
+     "buildingOrCluster": "Taman Melati Margonda",
+     "rent": {
+      "amount": 45450000,
+      "period": "yearly",
+      "quote": "Bayar Langsung 12 Bulan Rp 45,450,000 Setara Rp 3,790,000 / bulan",
+      "url": "https://jendela360.com/sewa-apartemen-taman-melati-margonda-apartment/TMMC005",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 2,
+     "sizeM2": 47,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Masjid Al Khairatul Islam Tempat Ibadah 1 KM",
+       "url": "https://jendela360.com/sewa-apartemen-taman-melati-margonda-apartment"
+      },
+      {
+       "quote": "unit apartemen 2 Bedroom fully furnished yang sempurna bagi ekspatriat dengan keluarga kecil",
+       "url": "https://jendela360.com/sewa-apartemen-taman-melati-margonda-apartment/TMMC005"
+      },
+      {
+       "quote": "Dua kamar tidur yang tersedia sangat ideal untuk anak-anak",
+       "url": "https://jendela360.com/sewa-apartemen-taman-melati-margonda-apartment/TMMC005"
+      }
+     ],
+     "nearStationsClaim": [
+      {
+       "station": "Universitas Indonesia (KRL)",
+       "quote": "hanya selangkah dari Universitas Indonesia dan Stasiun KRL Universitas Indonesia",
+       "url": "https://jendela360.com/sewa-apartemen-taman-melati-margonda-apartment"
+      }
+     ],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-taman-melati-margonda-apartment/TMMC005",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "agent",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-apartemen-medina-karawaci-unit-2br",
+     "title": "Apartemen Medina Karawaci, unit 2BR",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Tangerang",
+     "locationText": "Kelapa Dua, Kabupaten Tangerang",
+     "buildingOrCluster": "Apartemen Medina",
+     "rent": {
+      "amount": 3350000,
+      "period": "monthly",
+      "quote": "2BR (1 unit) IDR 290,000 / malam IDR 3,350,000 / bulan IDR 28,000,000 / tahun",
+      "url": "https://www.travelio.com/sewa-apartemen/medina-apartment-karawaci",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 2,
+     "sizeM2": null,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "dilengkapi dengan mall syariah di lantai dasar , lounge di setiap lantai untuk bersantai atau halaqoh",
+       "url": "https://www.travelio.com/sewa-apartemen/medina-apartment-karawaci"
+      },
+      {
+       "quote": "kolam renang terpisah untuk pria (Ikhwan) dan wanita (Akhwat)",
+       "url": "https://www.travelio.com/sewa-apartemen/medina-apartment-karawaci"
+      },
+      {
+       "quote": "Apartemen ini menawarkan pengalaman hidup syariah dengan akses mudah ke belanja dan hiburan.",
+       "url": "https://www.travelio.com/sewa-apartemen/medina-apartment-karawaci"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.travelio.com/sewa-apartemen/medina-apartment-karawaci",
+     "sourcePortal": "travelio",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-kost-exclusive-syariah-cimanggu-permai-tipe-a",
+     "title": "Kost Exclusive Syariah Cimanggu Permai Tipe A",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Tanah Sereal, Kota Bogor",
+     "buildingOrCluster": "Kost Exclusive Syariah Cimanggu Permai",
+     "rent": {
+      "amount": 2000000,
+      "period": "monthly",
+      "quote": "2.000.000",
+      "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-exclusive-syariah-cimanggu-permai-tipe-a-tanah-sareal-bogor",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 1,
+     "sizeM2": 21,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kost Exclusive Syariah Cimanggu Permai Tipe A",
+       "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-exclusive-syariah-cimanggu-permai-tipe-a-tanah-sareal-bogor"
+      },
+      {
+       "quote": "5. Dekat Masjid serta Sekolah At-Taufiq dan SD Negeri",
+       "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-exclusive-syariah-cimanggu-permai-tipe-a-tanah-sareal-bogor"
+      }
+     ],
+     "nearStationsClaim": [
+      {
+       "station": "KRL Bogor",
+       "quote": "4. Dekat dengan stasiun kereta KRL Bogor",
+       "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-exclusive-syariah-cimanggu-permai-tipe-a-tanah-sareal-bogor"
+      }
+     ],
+     "listingUrl": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-exclusive-syariah-cimanggu-permai-tipe-a-tanah-sareal-bogor",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-07-23",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-kost-cozzy-syariah-tipe-a",
+     "title": "Kost Cozzy Syariah Tipe A",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Bogor Selatan, Kota Bogor",
+     "buildingOrCluster": "Kost Cozzy Syariah",
+     "rent": {
+      "amount": 1300000,
+      "period": "monthly",
+      "quote": "1.300.000",
+      "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-cozzy-syariah-tipe-a-bogor-selatan-bogor-1",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": null,
+     "sizeM2": 12,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Kost Cozzy Syariah Tipe A Bogor Selatan Bogor",
+       "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-cozzy-syariah-tipe-a-bogor-selatan-bogor-1"
+      },
+      {
+       "quote": "Bisa BERDUA +100rb | Beda Jenis Kusus Pasangan Suami Istri.",
+       "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-cozzy-syariah-tipe-a-bogor-selatan-bogor-1"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-cozzy-syariah-tipe-a-bogor-selatan-bogor-1",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-10-30",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "confirmed",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-rumah-kontrakan-dean-residence-tipe-rumah-2-5-lantai",
+     "title": "Rumah Kontrakan Dean Residence (tipe rumah 2,5 lantai)",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Karang Tengah, Kota Tangerang",
+     "buildingOrCluster": "Dean Residence",
+     "rent": {
+      "amount": 4900000,
+      "period": "monthly",
+      "quote": "4.900.000",
+      "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-rumah-kontrakan-dean-residence-karang-tengah-tangerang-2",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 2,
+     "sizeM2": 40,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Mushola",
+       "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-rumah-kontrakan-dean-residence-karang-tengah-tangerang-2"
+      },
+      {
+       "quote": "Kamar tidur anak",
+       "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-rumah-kontrakan-dean-residence-karang-tengah-tangerang-2"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-rumah-kontrakan-dean-residence-karang-tengah-tangerang-2",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-03-02",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-kost-rumah-mawaddah-kelapa-dua",
+     "title": "Kost Rumah Mawaddah Kelapa Dua",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Kelapa Dua, Kabupaten Tangerang",
+     "buildingOrCluster": "Kost Rumah Mawaddah",
+     "rent": {
+      "amount": 1900000,
+      "period": "monthly",
+      "quote": "1.900.000",
+      "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-rumah-mawaddah-kelapa-dua-tangerang-2",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": null,
+     "sizeM2": 16,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Posisi Kost di dalam perumahan Islamic dan ada akses masuk kartu 24 jam ke dalam perumahan",
+       "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-rumah-mawaddah-kelapa-dua-tangerang-2"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-rumah-mawaddah-kelapa-dua-tangerang-2",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-08-08",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-kost-k-key-deluxe-syariah-ciledug-tangerang",
+     "title": "Kost K Key Deluxe Syariah Ciledug Tangerang",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Kecamatan Ciledug, Kota Tangerang",
+     "buildingOrCluster": "Kost K Key",
+     "rent": {
+      "amount": 1650000,
+      "period": "monthly",
+      "quote": "1.650.000",
+      "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-k-key-deluxe-syariah-ciledug-tangerang-2.md",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": null,
+     "sizeM2": 12,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kost K Key Deluxe Syariah Ciledug Tangerang",
+       "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-k-key-deluxe-syariah-ciledug-tangerang-2"
+      },
+      {
+       "quote": "Mushola",
+       "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-k-key-deluxe-syariah-ciledug-tangerang-2"
+      },
+      {
+       "quote": "Masjid : 30 detik jalan kaki",
+       "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-k-key-deluxe-syariah-ciledug-tangerang-2"
+      }
+     ],
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-k-key-deluxe-syariah-ciledug-tangerang-2",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-08-22",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-30"
+    }
+   ]
+  },
   "islamic": {
    "checkedAt": "2026-10-30",
    "radiusKm": 1.5,
@@ -1960,6 +3407,7 @@
     ],
     "transitClaim": null,
     "officialUrl": "https://www.sinarmasland.com/id/development/residential/aerium-residence",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -2209,6 +3657,7 @@
      "url": "https://cariproperti.com/agrapana-estate"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin portal cariproperti",
@@ -2444,6 +3893,7 @@
     ],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin cluster cariproperti",
@@ -2694,7 +4144,30 @@
      "url": "https://www.pinhome.id/dijual/rumah-baru/al-marina-residence"
     },
     "officialUrl": null,
-    "social": [],
+    "contactUrl": null,
+    "social": [
+     {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/almarinaresidence/",
+      "owner": "project",
+      "via": "search-result",
+      "seenAt": null
+     },
+     {
+      "platform": "facebook",
+      "url": "https://www.facebook.com/al.marina.residence/",
+      "owner": "project",
+      "via": "search-result",
+      "seenAt": null
+     },
+     {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCTu7URCnRmdQdZMiUQVoW5w",
+      "owner": "project",
+      "via": "search-result",
+      "seenAt": null
+     }
+    ],
     "coordinate": {
      "method": "Koordinat Pinhome (schema.org Place)",
      "url": "https://www.pinhome.id/dijual/rumah-baru/al-marina-residence",
@@ -2718,8 +4191,104 @@
     },
     "islamic": {
      "kajian": [],
-     "education": [],
+     "education": [
+      {
+       "id": "osm-way-308080185",
+       "name": "Pesantren dan Yayasan Islam Al-Hamidiyah Depok",
+       "kind": "pesantren",
+       "km": 0.64,
+       "evidence": "strong",
+       "lat": -6.394037,
+       "lng": 106.791886,
+       "social": [
+        {
+         "platform": "instagram",
+         "url": "https://www.instagram.com/alhamidiyah_official",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": null
+        },
+        {
+         "platform": "tiktok",
+         "url": "https://www.tiktok.com/@alhamidiyah_official",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": null
+        },
+        {
+         "platform": "youtube",
+         "url": "https://www.youtube.com/@alhamidiyah_official",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": null
+        },
+        {
+         "platform": "x",
+         "url": "https://x.com/alhamidiyah_",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": null
+        }
+       ],
+       "education": {
+        "levels": [
+         "KB",
+         "TK",
+         "SD",
+         "SMP",
+         "MTs",
+         "MA",
+         "TPQ"
+        ],
+        "program": "SDIT memakai metode STEAMMI, Montessori dan Kurikulum Cambridge; MTs dan MA berbasis pesantren dengan asrama; program tahfidz LPPA (berita April 2026: target 1…",
+        "fees": [],
+        "url": "https://al-hamidiyah.sch.id/sdit/"
+       }
+      },
+      {
+       "id": "osm-way-309885399",
+       "name": "MIS Hidayatul Athfal Mampang",
+       "kind": "mi-sd-islam",
+       "km": 1.05,
+       "evidence": "partial",
+       "lat": -6.395751,
+       "lng": 106.795159,
+       "social": [],
+       "education": {
+        "levels": [
+         "MI"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/dikdas/026602/3"
+       }
+      },
+      {
+       "id": "osm-node-12695067748",
+       "name": "MTs Yasmine",
+       "kind": "smp-mts-islam",
+       "km": 1.26,
+       "evidence": "partial",
+       "lat": -6.395999,
+       "lng": 106.797115,
+       "social": [],
+       "education": {
+        "levels": [
+         "MTs"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/dikdas/026602/3"
+       }
+      }
+     ],
      "claims": [
+      {
+       "kind": "mosque-in-estate",
+       "quote": "Sebagai penunjang ibadah umat Muslim, perumahan ini dilengkapi dengan fasilitas masjid.",
+       "url": "https://www.pinhome.id/dijual/rumah-baru/al-marina-residence",
+       "pageDate": null
+      },
       {
        "kind": "mosque-in-estate",
        "quote": "Tak hanya dilengkapi dengan fasilitas masjid",
@@ -2728,7 +4297,7 @@
       },
       {
        "kind": "syariah-concept",
-       "quote": "kawasan syariah",
+       "quote": "sebuah kawasan syariah dengan lingkungan yang nyaman dan berkualitas",
        "url": "https://www.pinhome.id/dijual/rumah-baru/al-marina-residence",
        "pageDate": null
       }
@@ -2808,6 +4377,7 @@
     ],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin cluster cariproperti",
@@ -3128,6 +4698,7 @@
      "url": "https://cariproperti.com/angsana-foresthill"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Plus code alamat cariproperti, didekode",
@@ -3217,8 +4788,8 @@
        "kind": "smp-mts-islam",
        "km": 0.68,
        "evidence": "partial",
-       "lat": -6.4671897,
-       "lng": 106.8029351,
+       "lat": -6.46719,
+       "lng": 106.802935,
        "social": [],
        "education": {
         "levels": [
@@ -3346,6 +4917,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/antasari-place/nps3596/"
     },
     "officialUrl": "https://antasariplace.com/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -3719,6 +5291,7 @@
      "url": "https://www.brighton.co.id/perumahan-baru/viewdetail/anwa-residence-bintaro-3"
     },
     "officialUrl": "https://www.anwaresidence.com/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -3801,8 +5374,8 @@
        "kind": "mi-sd-islam",
        "km": 0.72,
        "evidence": "partial",
-       "lat": -6.2964543,
-       "lng": 106.7371559,
+       "lat": -6.296454,
+       "lng": 106.737156,
        "social": [],
        "education": {
         "levels": [
@@ -3986,6 +5559,7 @@
      "url": "https://www.pinhome.id/dijual/apartemen-baru/apartemen-sedayu-city"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek Pinhome",
@@ -4167,7 +5741,16 @@
      "url": "https://www.pinhome.id/dijual/rumah-baru/aqilla-sharia-village"
     },
     "officialUrl": null,
-    "social": [],
+    "contactUrl": null,
+    "social": [
+     {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/aqillashariavillageofficial/",
+      "owner": "project",
+      "via": "user-lead",
+      "seenAt": null
+     }
+    ],
     "coordinate": {
      "method": "Koordinat Pinhome (schema.org Place)",
      "url": "https://www.pinhome.id/dijual/rumah-baru/aqilla-sharia-village",
@@ -4190,9 +5773,134 @@
      "densityKm2": 5630
     },
     "islamic": {
-     "kajian": [],
-     "education": [],
+     "kajian": [
+      {
+       "id": "web-masjid-al-hijri-perum-sukaraya-regency",
+       "name": "Masjid Al-Hijri (Perum Sukaraya Regency)",
+       "kind": "masjid",
+       "km": 0.48,
+       "evidence": "partial",
+       "lat": -6.229758,
+       "lng": 107.157217,
+       "social": [],
+       "kajian": [
+        {
+         "schedule": "Menyelenggarakan Pengajian Rutin",
+         "frequency": "unknown",
+         "audience": "unknown",
+         "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.10.000067",
+         "pageDate": null
+        }
+       ]
+      },
+      {
+       "id": "web-masjid-an-namirah-kp-jagawana-sukarukun",
+       "name": "Masjid An-Namirah (Kp. Jagawana, Sukarukun)",
+       "kind": "masjid",
+       "km": 0.57,
+       "evidence": "partial",
+       "lat": -6.220612,
+       "lng": 107.155623,
+       "social": [],
+       "kajian": [
+        {
+         "schedule": "Menyelenggarakan Pengajian Rutin",
+         "frequency": "unknown",
+         "audience": "unknown",
+         "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000078",
+         "pageDate": null
+        }
+       ]
+      },
+      {
+       "id": "web-masjid-nurul-hasanah-perumahan-puri-cikarang-asri",
+       "name": "Masjid Nurul Hasanah (Perumahan Puri Cikarang Asri)",
+       "kind": "masjid",
+       "km": 0.93,
+       "evidence": "partial",
+       "lat": -6.232968,
+       "lng": 107.15145,
+       "social": [],
+       "kajian": [
+        {
+         "schedule": "Menyelenggarakan Pengajian Rutin",
+         "frequency": "unknown",
+         "audience": "unknown",
+         "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000038",
+         "pageDate": null
+        }
+       ]
+      }
+     ],
+     "education": [
+      {
+       "id": "web-masjid-an-namirah-kp-jagawana-sukarukun",
+       "name": "Masjid An-Namirah (Kp. Jagawana, Sukarukun)",
+       "kind": "masjid",
+       "km": 0.57,
+       "evidence": "partial",
+       "lat": -6.220612,
+       "lng": 107.155623,
+       "social": [],
+       "education": {
+        "levels": [
+         "TPA/Madrasah/PKBM (jenis tidak dirinci)"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000078"
+       }
+      },
+      {
+       "id": "web-masjid-nurul-hasanah-perumahan-puri-cikarang-asri",
+       "name": "Masjid Nurul Hasanah (Perumahan Puri Cikarang Asri)",
+       "kind": "masjid",
+       "km": 0.93,
+       "evidence": "partial",
+       "lat": -6.232968,
+       "lng": 107.15145,
+       "social": [],
+       "education": {
+        "levels": [
+         "TPA/Madrasah/PKBM (jenis tidak dirinci)"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000038"
+       }
+      },
+      {
+       "id": "web-masjid-at-taqwa-kp-ceger-sukaasih",
+       "name": "Masjid At-Taqwa (Kp. Ceger, Sukaasih)",
+       "kind": "masjid",
+       "km": 0.94,
+       "evidence": "partial",
+       "lat": -6.227195,
+       "lng": 107.147158,
+       "social": [],
+       "education": {
+        "levels": [
+         "TPA/Madrasah/PKBM (jenis tidak dirinci)"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000083"
+       }
+      }
+     ],
      "claims": [
+      {
+       "kind": "musholla-in-estate",
+       "quote": "Area Umum, Taman, Arena Bermain, Tempat Parkir, Musholla dan Keamanan 24 Jam",
+       "url": "https://www.pinhome.id/dijual/rumah-baru/aqilla-sharia-village",
+       "pageDate": null
+      },
+      {
+       "kind": "syariah-concept",
+       "quote": "Proyek perumahan ini hadir dengan konsep hunian nyaman dan bernuansa islami",
+       "url": "https://www.pinhome.id/dijual/rumah-baru/aqilla-sharia-village",
+       "pageDate": null
+      },
       {
        "kind": "syariah-concept",
        "quote": "konsep hunian nyaman dan bernuansa islami",
@@ -4228,6 +5936,15 @@
        "unit"
       ],
       "note": "Lists only this project; card shows HGB, LT 60-120, LB 27-40."
+     },
+     {
+      "url": "https://aqillashariavillage.id/",
+      "kind": "developer",
+      "title": "aqillashariavillage.id (disebut daftar Meta AI pengguna)",
+      "fetched": false,
+      "pageDate": null,
+      "supports": [],
+      "note": "Dicek 2026-10-30: domain tidak terdaftar di DNS. Halaman DAV DIGI yang disebut sebagai tautan bio adalah template agensi dengan nomor contoh, sehingga tidak dipakai."
      }
     ],
     "lastChecked": "2026-10-30",
@@ -4286,6 +6003,7 @@
     ],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek Pinhome",
@@ -4570,6 +6288,7 @@
      "url": "https://synthesis-development.id/project/arsa-homes/"
     },
     "officialUrl": "https://synthesis-development.id/project/arsa-homes/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -4893,6 +6612,7 @@
     ],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Koordinat venue rumah123 (schema.org GeoCoordinates)",
@@ -5068,6 +6788,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/bekasi/avana-residence/nps8026/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek Pinhome",
@@ -5292,6 +7013,7 @@
      "url": "https://www.pinhome.id/dijual/rumah-baru/mampang-heritage-by-ayalis"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek Pinhome",
@@ -5630,6 +7352,7 @@
     ],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin cluster cariproperti",
@@ -5907,6 +7630,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/bamboo-premium-residence/nps8037/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin cluster cariproperti",
@@ -6187,6 +7911,7 @@
     ],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -6448,6 +8173,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/botany-hills-at-fatmawati-city-center/nps8043/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -6742,6 +8468,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/tangerang/bumi-bantar-panjang/nps8371/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin portal Pinhome",
@@ -6792,7 +8519,7 @@
        "km": 0.39,
        "evidence": "strong",
        "lat": -6.308815,
-       "lng": 106.4373167,
+       "lng": 106.437317,
        "social": [],
        "education": {
         "levels": [
@@ -6848,6 +8575,108 @@
     "corridor": "krl-rangkasbitung-outer",
     "methods": [
      "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-bumi-sakinah-cileungsi",
+   "geometry": null,
+   "properties": {
+    "id": "prj-bumi-sakinah-cileungsi",
+    "name": "Bumi Sakinah Cileungsi",
+    "developer": null,
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Cileungsi, Kabupaten Bogor (situs proyek tidak menyebut alamat jalan)",
+    "region": null,
+    "area": "Bogor",
+    "status": "dipasarkan",
+    "statusQuote": "UNIT TERBATAS!!",
+    "statusUrl": "https://bumisakinahcileungsi.com/",
+    "price": {
+     "min": 400000000,
+     "max": null,
+     "basis": "harga mulai menurut artikel Mamikos 4 Mei 2026; situs proyek tidak mencantumkan harga",
+     "quote": "Ditawarkan dengan harga mulai dari Rp 400 jutaan",
+     "url": "https://mamikos.com/info/perumahan-di-cileungsi-gnr/?halaman=2",
+     "pageDate": "2026-05-04",
+     "currency": "IDR"
+    },
+    "units": [],
+    "transitClaim": null,
+    "officialUrl": "https://bumisakinahcileungsi.com/",
+    "contactUrl": "https://bumisakinahcileungsi.com/",
+    "social": [
+     {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/bumisakinah_cileungsi/",
+      "owner": "project",
+      "via": "official-site",
+      "seenAt": "https://bumisakinahcileungsi.com/"
+     },
+     {
+      "platform": "facebook",
+      "url": "https://www.facebook.com/bumisakinahcileungsibsc",
+      "owner": "project",
+      "via": "official-site",
+      "seenAt": "https://bumisakinahcileungsi.com/"
+     }
+    ],
+    "coordinate": null,
+    "listingBasis": "islamic",
+    "nearestAny": null,
+    "nearest": [],
+    "nearestPlanned": [],
+    "population": null,
+    "islamic": {
+     "kajian": [],
+     "education": [],
+     "claims": [
+      {
+       "kind": "syariah-concept",
+       "quote": "Perumahan Syariah di Cileungsi",
+       "url": "https://bumisakinahcileungsi.com/",
+       "pageDate": null
+      },
+      {
+       "kind": "syariah-concept",
+       "quote": "skema dan akad yang digunakan sesuai dengan prinsip syariah",
+       "url": "https://bumisakinahcileungsi.com/",
+       "pageDate": null
+      }
+     ]
+    },
+    "verdict": "partial",
+    "sources": [
+     {
+      "url": "https://bumisakinahcileungsi.com/",
+      "kind": "developer",
+      "title": "Bumi Sakinah Cileungsi",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "status",
+       "lokasi"
+      ],
+      "note": "Situs proyek: perumahan syariah, 100+ unit dan setengahnya sudah dihuni, unit terbatas. Alamat hanya 'Cileungsi – Bogor'; tidak ada peta atau harga. Ditemukan dari daftar Meta AI pengguna (sekitar Masjid Al-Barkah Cileungsi)."
+     },
+     {
+      "url": "https://mamikos.com/info/perumahan-di-cileungsi-gnr/?halaman=2",
+      "kind": "news",
+      "title": "Rekomendasi Perumahan di Cileungsi (Mamikos)",
+      "fetched": true,
+      "pageDate": "2026-05-04",
+      "supports": [
+       "harga"
+      ],
+      "note": "Artikel informasi, bukan listing developer; menyebut harga mulai Rp 400 jutaan dan skema angsuran syariah."
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "sweep-syariah-meta",
+    "methods": [
+     "situs-developer"
     ]
    }
   },
@@ -6917,6 +8746,7 @@
      "url": "https://cariproperti.com/casa-de-sirsak"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek cariproperti",
@@ -7248,6 +9078,7 @@
      "url": "https://cariproperti.com/casavaya-rindang-jagakarsa"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek Pinhome",
@@ -7474,6 +9305,7 @@
      "url": "https://cavanalebakbulus.com/"
     },
     "officialUrl": "https://cavanalebakbulus.com/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -7801,6 +9633,7 @@
     ],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -8045,6 +9878,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-timur/dgarden-pulo-gebang-kirana/nps2063/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -8112,8 +9946,8 @@
        "kind": "masjid",
        "km": 0.55,
        "evidence": "partial",
-       "lat": -6.2050071,
-       "lng": 106.9529554,
+       "lat": -6.205007,
+       "lng": 106.952955,
        "social": [],
        "kajian": [
         {
@@ -8131,7 +9965,7 @@
        "kind": "masjid",
        "km": 1.1,
        "evidence": "partial",
-       "lat": -6.2007442,
+       "lat": -6.200744,
        "lng": 106.948463,
        "social": [],
        "kajian": [
@@ -8150,8 +9984,8 @@
        "kind": "masjid",
        "km": 1.34,
        "evidence": "partial",
-       "lat": -6.2040426,
-       "lng": 106.9457245,
+       "lat": -6.204043,
+       "lng": 106.945724,
        "social": [],
        "kajian": [
         {
@@ -8310,6 +10144,7 @@
      "url": "https://cariproperti.com/d-palm-residence"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -8542,6 +10377,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/tangerang/daru-capital/nps8436/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek Pinhome (halaman asli)",
@@ -8809,6 +10645,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/tangerang-selatan/dharmawangsa-at-bintaro-jaya/nps8165/"
     },
     "officialUrl": "https://www.bintarojaya.id/developments/residential/dharmawangsa-home",
+    "contactUrl": null,
     "social": [
      {
       "platform": "facebook",
@@ -9062,6 +10899,7 @@
      "url": "https://www.pinhome.id/dijual/rumah-baru/eastwell-avenue-jakarta"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin portal Pinhome",
@@ -9121,8 +10959,8 @@
        "kind": "masjid",
        "km": 0.18,
        "evidence": "partial",
-       "lat": -6.2128593,
-       "lng": 106.8942864,
+       "lat": -6.212859,
+       "lng": 106.894286,
        "social": [],
        "kajian": [
         {
@@ -9140,8 +10978,8 @@
        "kind": "masjid",
        "km": 0.29,
        "evidence": "partial",
-       "lat": -6.2088096,
-       "lng": 106.8947431,
+       "lat": -6.20881,
+       "lng": 106.894743,
        "social": [],
        "kajian": [
         {
@@ -9159,8 +10997,8 @@
        "kind": "masjid",
        "km": 0.3,
        "evidence": "partial",
-       "lat": -6.2087143,
-       "lng": 106.8930995,
+       "lat": -6.208714,
+       "lng": 106.8931,
        "social": [],
        "kajian": [
         {
@@ -9290,6 +11128,7 @@
      "url": "https://cariproperti.com/eunoia-luxury-residence"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek cariproperti",
@@ -9580,6 +11419,7 @@
     ],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -9931,6 +11771,7 @@
      "url": "https://www.pinhome.id/dijual/rumah-baru/grand-al-ihsan-premiere-1"
     },
     "officialUrl": null,
+    "contactUrl": "https://mitrathayyibahproperti.com/",
     "social": [
      {
       "platform": "instagram",
@@ -10009,6 +11850,24 @@
       "pageDate": null,
       "supports": [],
       "note": "Domain named in a search result for the developer; DNS does not resolve (www and bare). grandalihsanpremiere.com also does not resolve."
+     },
+     {
+      "url": "https://grandalihsanpremiere.id/",
+      "kind": "developer",
+      "title": "grandalihsanpremiere.id (disebut daftar Meta AI pengguna)",
+      "fetched": false,
+      "pageDate": null,
+      "supports": [],
+      "note": "Dicek 2026-10-30: sertifikat TLS milik host lain dan versi http dialihkan ke penyedia hosting, jadi situs tidak tayang. Klaim 'akan diadakan kajian Sunnah yang rutin' dari daftar Meta AI belum bisa dibuktikan."
+     },
+     {
+      "url": "https://mitrathayyibahproperti.com/",
+      "kind": "developer",
+      "title": "Mitra Thayyibah Properti (unit pemasaran Maxirecon)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [],
+      "note": "Unit pemasaran Maxirecon (PT Jakarta Properti Utama) mencantumkan Grand Al Ihsan Premiere Type Sakura Rp 995 Juta dan Summer Breeze Rp 1,4 Miliar; memuat kontak pemasaran (tidak disimpan)."
      }
     ],
     "lastChecked": "2026-10-30",
@@ -10078,6 +11937,7 @@
      "url": "https://cariproperti.com/grand-jagakarsa"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek cariproperti",
@@ -10381,6 +12241,7 @@
      "url": "https://www.grandsuryaestate.com/"
     },
     "officialUrl": "https://www.grandsuryaestate.com/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -10482,6 +12343,90 @@
         "fees": [],
         "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20254163"
        }
+      },
+      {
+       "id": "web-sdit-tahfizh-bunga-bangsa-islamic-school-with-kb-tk-bbis",
+       "name": "SDIT Tahfizh Bunga Bangsa Islamic School (with KB & TK BBIS)",
+       "kind": "mi-sd-islam",
+       "km": 1.09,
+       "evidence": "strong",
+       "lat": -6.2261,
+       "lng": 107.0153,
+       "social": [
+        {
+         "platform": "instagram",
+         "url": "https://www.instagram.com/bbis.school/",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": "https://bbis.sch.id/"
+        },
+        {
+         "platform": "facebook",
+         "url": "https://www.facebook.com/profile.php?id=100083276800190",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": "https://bbis.sch.id/"
+        },
+        {
+         "platform": "youtube",
+         "url": "https://www.youtube.com/channel/UCJ1wf3zLEiRg-BY69eMQcRw",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": "https://bbis.sch.id/"
+        }
+       ],
+       "education": {
+        "levels": [
+         "KB",
+         "TK A",
+         "TK B",
+         "SD"
+        ],
+        "program": "SDIT Tahfizh (hafalan Al-Qur'an dan Hadits)",
+        "fees": [
+         {
+          "label": "SDIT: SPP per bulan",
+          "amount": 900000,
+          "currency": "IDR",
+          "period": "monthly",
+          "academicYear": "2027/2028",
+          "quote": "SPP Juli 2027 900.000",
+          "url": "https://bbis.sch.id/pendaftaran-sdit/",
+          "pageDate": "2026-10-19"
+         },
+         {
+          "label": "KB/TK: SPP per bulan (row labelled 'SPP Juli 2025' on a 2027-2028 page)",
+          "amount": 750000,
+          "currency": "IDR",
+          "period": "monthly",
+          "academicYear": "2027/2028",
+          "quote": "SPP Juli 2025 750.000 750.000 750.000",
+          "url": "https://bbis.sch.id/pendaftaran-kb-tk/",
+          "pageDate": "2026-10-19"
+         },
+         {
+          "label": "SDIT: total biaya masuk",
+          "amount": 24850000,
+          "currency": "IDR",
+          "period": "one-time",
+          "academicYear": "2027/2028",
+          "quote": "Total 24.850.000",
+          "url": "https://bbis.sch.id/pendaftaran-sdit/",
+          "pageDate": "2026-10-19"
+         },
+         {
+          "label": "KB/TK A: total biaya masuk",
+          "amount": 17750000,
+          "currency": "IDR",
+          "period": "one-time",
+          "academicYear": "2027/2028",
+          "quote": "Total 17.750.000 17.750.000 17.350.000",
+          "url": "https://bbis.sch.id/pendaftaran-kb-tk/",
+          "pageDate": "2026-10-19"
+         }
+        ],
+        "url": "https://bbis.sch.id/pendaftaran-sdit/"
+       }
       }
      ],
      "claims": [
@@ -10490,6 +12435,12 @@
        "quote": "Sekolah Strada (2 menit) Global (2 menit) Bani Saleh (2 menit)",
        "url": "https://www.grandsuryaestate.com/",
        "pageDate": null
+      },
+      {
+       "kind": "islamic-school-nearby",
+       "quote": "Bani Saleh (2 menit)",
+       "url": "https://www.grandsuryaestate.com/",
+       "pageDate": "2026-01-12"
       }
      ]
     },
@@ -10591,6 +12542,7 @@
      "url": "https://greenjatimulyaresidence.com/"
     },
     "officialUrl": "https://greenjatimulyaresidence.com/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -10743,6 +12695,7 @@
     ],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek Pinhome",
@@ -11011,6 +12964,7 @@
     ],
     "transitClaim": null,
     "officialUrl": "https://greenmadanicinangka.com/",
+    "contactUrl": "https://greenmadanicinangka.com/",
     "social": [
      {
       "platform": "instagram",
@@ -11018,6 +12972,13 @@
       "owner": "project",
       "via": "official-site",
       "seenAt": "https://greenmadanicinangka.com/"
+     },
+     {
+      "platform": "linkbio",
+      "url": "https://cinangka.davdigi.com/",
+      "owner": "project",
+      "via": "user-lead",
+      "seenAt": null
      }
     ],
     "coordinate": {
@@ -11043,25 +13004,80 @@
     },
     "islamic": {
      "kajian": [],
-     "education": [],
+     "education": [
+      {
+       "id": "web-mis-raudlatul-ulum-cinangka",
+       "name": "MIS Raudlatul Ulum (Cinangka)",
+       "kind": "mi-sd-islam",
+       "km": 0.28,
+       "evidence": "partial",
+       "lat": -6.366639,
+       "lng": 106.753431,
+       "social": [],
+       "education": {
+        "levels": [
+         "MI"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60710033"
+       }
+      },
+      {
+       "id": "web-mis-hayatul-islamiyah-cinangka",
+       "name": "MIS Hayatul Islamiyah Cinangka",
+       "kind": "mi-sd-islam",
+       "km": 0.93,
+       "evidence": "partial",
+       "lat": -6.371279,
+       "lng": 106.757464,
+       "social": [],
+       "education": {
+        "levels": [
+         "MI"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60710018"
+       }
+      },
+      {
+       "id": "web-smp-islam-al-maarif-cinangka",
+       "name": "SMP Islam Al Maarif (Cinangka)",
+       "kind": "smp-mts-islam",
+       "km": 0.95,
+       "evidence": "partial",
+       "lat": -6.369728,
+       "lng": 106.759683,
+       "social": [],
+       "education": {
+        "levels": [
+         "SMP"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20229039"
+       }
+      }
+     ],
      "claims": [
       {
        "kind": "mosque-in-estate",
+       "quote": "Masjid + Sekolah Sunnah dalam kawasan",
+       "url": "https://greenmadanicinangka.com/",
+       "pageDate": null
+      },
+      {
+       "kind": "kajian",
        "quote": "Masjid Kawasan Pusat ibadah & kajian rutin di tengah perumahan.",
        "url": "https://greenmadanicinangka.com/",
-       "pageDate": "2026-09-25"
+       "pageDate": null
       },
       {
        "kind": "tpq-or-school-in-estate",
-       "quote": "Area TPQ Tempat anak belajar Al-Qur'an setelah maghrib.",
+       "quote": "Dilengkapi fasilitas yang akan dibangun seperti ; Masjid Jami', Rumah Tahfiz, serta Sekolah Dasar Islam Terpadu.",
        "url": "https://greenmadanicinangka.com/",
-       "pageDate": "2026-09-25"
-      },
-      {
-       "kind": "tpq-or-school-in-estate",
-       "quote": "Sekolah Sunnah Rencana TKIT/SDIT",
-       "url": "https://greenmadanicinangka.com/",
-       "pageDate": "2026-09-25"
+       "pageDate": null
       }
      ]
     },
@@ -11171,6 +13187,7 @@
      "url": "https://cariproperti.com/griya-fairus-diamond"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin cluster cariproperti",
@@ -11304,8 +13321,8 @@
        "kind": "mi-sd-islam",
        "km": 0.63,
        "evidence": "partial",
-       "lat": -6.529266863696,
-       "lng": 106.810946166515,
+       "lat": -6.529267,
+       "lng": 106.810946,
        "social": [],
        "education": {
         "levels": [
@@ -11439,6 +13456,7 @@
      "url": "https://griyapesonamadani.com/"
     },
     "officialUrl": "https://griyapesonamadani.com/",
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Tautan Google Maps dari situs resmi",
@@ -11740,6 +13758,7 @@
      "url": "https://www.pinhome.id/dijual/rumah-baru/hisan-madinah-village"
     },
     "officialUrl": "https://hisanmadinahvillage.com/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -11870,6 +13889,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/tangerang-selatan/hunni-at-bintaro/nps7763/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -12108,6 +14128,7 @@
      "url": "https://www.pinhome.id/dijual/rumah-baru/ikon-tenjo-resort-homes"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -12259,6 +14280,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/tangerang/infinihauz-banjar-wijaya/nps2178/"
     },
     "officialUrl": "https://www.sinarmasland.com/id/development/residential/infinihauz",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -12291,6 +14313,13 @@
      {
       "platform": "x",
       "url": "https://x.com/sinarmas_land",
+      "owner": "developer",
+      "via": "official-site",
+      "seenAt": "https://www.sinarmasland.com/id/development/residential/infinihauz"
+     },
+     {
+      "platform": "x",
+      "url": "https://twitter.com/sinarmas_land",
       "owner": "developer",
       "via": "official-site",
       "seenAt": "https://www.sinarmasland.com/id/development/residential/infinihauz"
@@ -12496,6 +14525,7 @@
      "url": "https://www.pinhome.id/dijual/rumah-baru/islamic-grand-village-bogor-1"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": null,
     "listingBasis": "islamic",
@@ -12654,6 +14684,7 @@
      "url": "https://cariproperti.com/joyglo-jagakarsa"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -12930,6 +14961,7 @@
     ],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek Pinhome",
@@ -13010,8 +15042,8 @@
        "kind": "mi-sd-islam",
        "km": 0.4,
        "evidence": "partial",
-       "lat": -6.3492606,
-       "lng": 106.8411692,
+       "lat": -6.349261,
+       "lng": 106.841169,
        "social": [],
        "education": {
         "levels": [
@@ -13047,8 +15079,8 @@
        "kind": "ra-tk-islam",
        "km": 0.8,
        "evidence": "partial",
-       "lat": -6.3446155,
-       "lng": 106.8502487,
+       "lat": -6.344615,
+       "lng": 106.850249,
        "social": [],
        "education": {
         "levels": [
@@ -13183,6 +15215,7 @@
      "url": "https://kotapodomorotenjo.co.id/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -13434,6 +15467,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/bekasi/lrt-city-bekasi-eastern-green/nps1534/"
     },
     "officialUrl": "https://lrtcity.com/id-lrt-city-bekasi-eastern-green",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -13739,6 +15773,7 @@
      "url": "https://lrtcity.com/id-lrt-city-jatibening"
     },
     "officialUrl": "https://lrtcity.com/id-lrt-city-jatibening",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -13888,7 +15923,22 @@
        "evidence": "strong",
        "lat": -6.249139,
        "lng": 106.929144,
-       "social": [],
+       "social": [
+        {
+         "platform": "instagram",
+         "url": "https://www.instagram.com/embunpagischool",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": "https://embunpagi.sch.id/"
+        },
+        {
+         "platform": "youtube",
+         "url": "https://www.youtube.com/@embunpagischool",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": "https://embunpagi.sch.id/"
+        }
+       ],
        "education": {
         "levels": [
          "SD",
@@ -13898,6 +15948,42 @@
         "program": "EPIS curicullum (Islamic Studies, Tahsin and Tahfizh); Cambridge (English, Math, Science); Kurikulum Merdeka",
         "fees": [],
         "url": "https://embunpagi.sch.id/enrollment"
+       }
+      },
+      {
+       "id": "osm-way-504916982",
+       "name": "Jakarta Islamic School (JISc Kodam, Cipinang Melayu)",
+       "kind": "mi-sd-islam",
+       "km": 1.17,
+       "evidence": "partial",
+       "lat": -6.248442,
+       "lng": 106.923091,
+       "social": [
+        {
+         "platform": "instagram",
+         "url": "https://www.instagram.com/jiscjibbsjigsc/",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": "https://www.jakartaislamicschool.com/"
+        },
+        {
+         "platform": "facebook",
+         "url": "https://www.facebook.com/jakartaislamicschool/",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": "https://www.jakartaislamicschool.com/"
+        }
+       ],
+       "education": {
+        "levels": [
+         "TK",
+         "SD",
+         "SMP",
+         "SMA"
+        ],
+        "program": "Full day; boarding (JIBBS/JIGSc) is at a separate Bogor campus",
+        "fees": [],
+        "url": "https://www.jakartaislamicschool.com/"
        }
       }
      ],
@@ -14033,6 +16119,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/lrt-city-tebet/nps1635/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -14271,6 +16358,7 @@
      "url": "https://www.pinhome.id/dijual/rumah-baru/luxe-court-permata-hijau"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek Pinhome",
@@ -14466,6 +16554,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/mansion-8/nps8202/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -14784,6 +16873,7 @@
      "url": "https://metlandcibitung.co.id/"
     },
     "officialUrl": "https://metlandcibitung.co.id/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -14858,7 +16948,72 @@
      "densityKm2": 6550
     },
     "islamic": {
-     "kajian": [],
+     "kajian": [
+      {
+       "id": "osm-way-504321768",
+       "name": "Masjid Baitul Mukhlisin (Perum Pesona Gading Cibitung I)",
+       "kind": "masjid",
+       "km": 0.31,
+       "evidence": "partial",
+       "lat": -6.246778,
+       "lng": 107.108993,
+       "social": [],
+       "kajian": [
+        {
+         "schedule": "Menyelenggarakan Pengajian Rutin",
+         "frequency": "unknown",
+         "audience": "unknown",
+         "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000086",
+         "pageDate": null
+        }
+       ]
+      },
+      {
+       "id": "osm-way-643721195",
+       "name": "Masjid Az-Zumar Metland Cibitung",
+       "kind": "masjid",
+       "km": 0.57,
+       "evidence": "partial",
+       "lat": -6.254023,
+       "lng": 107.10724,
+       "social": [],
+       "kajian": [
+        {
+         "schedule": "Menyelenggarakan Pengajian Rutin",
+         "frequency": "unknown",
+         "audience": "unknown",
+         "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.08.000029",
+         "pageDate": null
+        },
+        {
+         "schedule": "Jadwal Kajian: Kajian Bapak-Bapak, Kajian Muslimah, Kajian HAMAZ",
+         "frequency": "unknown",
+         "audience": "unknown",
+         "url": "https://az-zumar.id/jadwal/",
+         "pageDate": null
+        }
+       ]
+      },
+      {
+       "id": "web-masjid-al-muqhim-perumahan-pesona-gading-2",
+       "name": "Masjid Al-Muqhim (Perumahan Pesona Gading 2)",
+       "kind": "masjid",
+       "km": 1.39,
+       "evidence": "partial",
+       "lat": -6.242271,
+       "lng": 107.119942,
+       "social": [],
+       "kajian": [
+        {
+         "schedule": "Menyelenggarakan Pengajian Rutin",
+         "frequency": "unknown",
+         "audience": "unknown",
+         "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000167",
+         "pageDate": null
+        }
+       ]
+      }
+     ],
      "education": [
       {
        "id": "web-sdit-al-ghaisani",
@@ -14879,6 +17034,93 @@
        }
       },
       {
+       "id": "osm-way-1530958932",
+       "name": "Sekolah Islam Al-Azhar BSD@Cibitung",
+       "kind": "mi-sd-islam",
+       "km": 0.36,
+       "evidence": "strong",
+       "lat": -6.252683,
+       "lng": 107.110016,
+       "social": [
+        {
+         "platform": "instagram",
+         "url": "https://www.instagram.com/alazharbsd_cibitung/",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": "https://cibitung.alazhar-bsd.sch.id/"
+        },
+        {
+         "platform": "instagram",
+         "url": "https://www.instagram.com/alazhar_bsd",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": "https://www.alazhar-bsd.sch.id/"
+        },
+        {
+         "platform": "facebook",
+         "url": "https://facebook.com/ALBESD/",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": "https://www.alazhar-bsd.sch.id/"
+        },
+        {
+         "platform": "youtube",
+         "url": "https://www.youtube.com/@al-azharbsdofficial7101",
+         "owner": "facility",
+         "via": "official-site",
+         "seenAt": "https://www.alazhar-bsd.sch.id/"
+        }
+       ],
+       "education": {
+        "levels": [
+         "SD",
+         "SMP"
+        ],
+        "program": "Program unggulan Tahfidz Al-Qur'an, bilingual/English, STEM (official campus site); SMA planned later",
+        "fees": [
+         {
+          "label": "Uang pendaftaran SD",
+          "amount": 350000,
+          "currency": "IDR",
+          "period": "one-time",
+          "academicYear": "2027/2028",
+          "quote": "Membayar uang pendaftaran Rp. 350.000,-",
+          "url": "https://spmb-cibitung.alazhar-bsd.sch.id/beranda/persyaratan_sd",
+          "pageDate": null
+         },
+         {
+          "label": "Uang pendaftaran SMP",
+          "amount": 350000,
+          "currency": "IDR",
+          "period": "one-time",
+          "academicYear": "2027/2028",
+          "quote": "Membayar uang pendaftaran Rp. 350.000,-",
+          "url": "https://spmb-cibitung.alazhar-bsd.sch.id/beranda/persyaratan_smp",
+          "pageDate": null
+         }
+        ],
+        "url": "https://www.alazhar-bsd.sch.id/berita/sekolah-islam-al-azhar-bsd-resmi-membuka-kampus-al-azhar-bsd-at-cibitung-untuk-tahun-ajaran-20262027"
+       }
+      },
+      {
+       "id": "osm-way-643721195",
+       "name": "Masjid Az-Zumar Metland Cibitung",
+       "kind": "masjid",
+       "km": 0.57,
+       "evidence": "partial",
+       "lat": -6.254023,
+       "lng": 107.10724,
+       "social": [],
+       "education": {
+        "levels": [
+         "TPQ"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://az-zumar.id/"
+       }
+      },
+      {
        "id": "web-sdit-az-zahra",
        "name": "SDIT Az-Zahra",
        "kind": "mi-sd-islam",
@@ -14895,27 +17137,15 @@
         "fees": [],
         "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/69774550"
        }
-      },
-      {
-       "id": "web-sd-islam-terpadu-al-fath-cibitung",
-       "name": "SD Islam Terpadu Al-Fath Cibitung",
-       "kind": "mi-sd-islam",
-       "km": 1.28,
-       "evidence": "partial",
-       "lat": -6.2466,
-       "lng": 107.0984,
-       "social": [],
-       "education": {
-        "levels": [
-         "SD"
-        ],
-        "program": null,
-        "fees": [],
-        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/69757386"
-       }
       }
      ],
      "claims": [
+      {
+       "kind": "tpq-or-school-in-estate",
+       "quote": "Sekolah Al Azhar BSD Metland Cibitung",
+       "url": "https://metlandcibitung.co.id/",
+       "pageDate": null
+      },
       {
        "kind": "tpq-or-school-in-estate",
        "quote": "Sekolah Al Azhar BSD Metland Cibitung",
@@ -15116,6 +17346,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/bekasi/metland-cikarang/nps3351/"
     },
     "officialUrl": "https://metlandcikarang.co.id/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -15190,9 +17421,110 @@
      "densityKm2": 730
     },
     "islamic": {
-     "kajian": [],
-     "education": [],
+     "kajian": [
+      {
+       "id": "web-masjid-baitul-ikhwan-perum-villa-mutiara-jaya",
+       "name": "Masjid Baitul Ikhwan (Perum Villa Mutiara Jaya)",
+       "kind": "masjid",
+       "km": 0.34,
+       "evidence": "partial",
+       "lat": -6.231562,
+       "lng": 107.127548,
+       "social": [],
+       "kajian": [
+        {
+         "schedule": "Menyelenggarakan Pengajian Rutin",
+         "frequency": "unknown",
+         "audience": "unknown",
+         "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000168",
+         "pageDate": null
+        }
+       ]
+      },
+      {
+       "id": "web-masjid-al-muqhim-perumahan-pesona-gading-2",
+       "name": "Masjid Al-Muqhim (Perumahan Pesona Gading 2)",
+       "kind": "masjid",
+       "km": 1.31,
+       "evidence": "partial",
+       "lat": -6.242271,
+       "lng": 107.119942,
+       "social": [],
+       "kajian": [
+        {
+         "schedule": "Menyelenggarakan Pengajian Rutin",
+         "frequency": "unknown",
+         "audience": "unknown",
+         "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000167",
+         "pageDate": null
+        }
+       ]
+      },
+      {
+       "id": "web-masjid-al-hidayah-kp-penyambelan-sukaasih",
+       "name": "Masjid Al-Hidayah (Kp. Penyambelan, Sukaasih)",
+       "kind": "masjid",
+       "km": 1.35,
+       "evidence": "partial",
+       "lat": -6.223518,
+       "lng": 107.134096,
+       "social": [],
+       "kajian": [
+        {
+         "schedule": "Menyelenggarakan Pengajian Rutin",
+         "frequency": "unknown",
+         "audience": "unknown",
+         "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000082",
+         "pageDate": null
+        }
+       ]
+      }
+     ],
+     "education": [
+      {
+       "id": "web-masjid-al-muqhim-perumahan-pesona-gading-2",
+       "name": "Masjid Al-Muqhim (Perumahan Pesona Gading 2)",
+       "kind": "masjid",
+       "km": 1.31,
+       "evidence": "partial",
+       "lat": -6.242271,
+       "lng": 107.119942,
+       "social": [],
+       "education": {
+        "levels": [
+         "TPA/Madrasah/PKBM (jenis tidak dirinci)"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000167"
+       }
+      },
+      {
+       "id": "web-masjid-al-hidayah-kp-penyambelan-sukaasih",
+       "name": "Masjid Al-Hidayah (Kp. Penyambelan, Sukaasih)",
+       "kind": "masjid",
+       "km": 1.35,
+       "evidence": "partial",
+       "lat": -6.223518,
+       "lng": 107.134096,
+       "social": [],
+       "education": {
+        "levels": [
+         "TPA/Madrasah/PKBM (jenis tidak dirinci)"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000082"
+       }
+      }
+     ],
      "claims": [
+      {
+       "kind": "islamic-school-nearby",
+       "quote": "Sekolah Al Azhar BSD Metland Cibitung",
+       "url": "https://metlandcikarang.co.id/",
+       "pageDate": null
+      },
       {
        "kind": "islamic-school-nearby",
        "quote": "Sekolah Al Azhar BSD Metland Cibitung",
@@ -15362,6 +17694,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/bekasi/metland-tambun-bekasi/nps1947/"
     },
     "officialUrl": "https://metlandtambun.co.id/welcome/id",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -15443,7 +17776,65 @@
      "densityKm2": 12730
     },
     "islamic": {
-     "kajian": [],
+     "kajian": [
+      {
+       "id": "web-masjid-baiturrohim-perum-metland-tambun-ii",
+       "name": "Masjid Baiturrohim (Perum Metland Tambun II)",
+       "kind": "masjid",
+       "km": 0.66,
+       "evidence": "partial",
+       "lat": -6.2713,
+       "lng": 107.07212,
+       "social": [],
+       "kajian": [
+        {
+         "schedule": "Menyelenggarakan Pengajian Rutin",
+         "frequency": "unknown",
+         "audience": "unknown",
+         "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.06.000290",
+         "pageDate": null
+        }
+       ]
+      },
+      {
+       "id": "web-masjid-al-mukhlishin-jl-stadion-mini-tambun",
+       "name": "Masjid Al-Mukhlishin (Jl. Stadion Mini Tambun)",
+       "kind": "masjid",
+       "km": 0.79,
+       "evidence": "partial",
+       "lat": -6.26306,
+       "lng": 107.066032,
+       "social": [],
+       "kajian": [
+        {
+         "schedule": "Menyelenggarakan Pengajian Rutin",
+         "frequency": "unknown",
+         "audience": "unknown",
+         "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.06.000038",
+         "pageDate": null
+        }
+       ]
+      },
+      {
+       "id": "web-masjid-nurul-huda-perum-pondok-tanah-mas-wanasari",
+       "name": "Masjid Nurul Huda (Perum Pondok Tanah Mas, Wanasari)",
+       "kind": "masjid",
+       "km": 0.92,
+       "evidence": "partial",
+       "lat": -6.264411,
+       "lng": 107.08103,
+       "social": [],
+       "kajian": [
+        {
+         "schedule": "Menyelenggarakan Pengajian Rutin",
+         "frequency": "unknown",
+         "audience": "unknown",
+         "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000176",
+         "pageDate": null
+        }
+       ]
+      }
+     ],
      "education": [
       {
        "id": "web-sdit-nur-el-ghazy",
@@ -15482,13 +17873,31 @@
        }
       },
       {
+       "id": "web-masjid-baiturrohim-perum-metland-tambun-ii",
+       "name": "Masjid Baiturrohim (Perum Metland Tambun II)",
+       "kind": "masjid",
+       "km": 0.66,
+       "evidence": "partial",
+       "lat": -6.2713,
+       "lng": 107.07212,
+       "social": [],
+       "education": {
+        "levels": [
+         "TPA/Madrasah/PKBM (jenis tidak dirinci)"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.06.000290"
+       }
+      },
+      {
        "id": "web-al-wildan-islamic-school-15-bekasi-kompas-tambun",
        "name": "Al-Wildan Islamic School 15 Bekasi (Kompas Tambun)",
        "kind": "mi-sd-islam",
        "km": 0.9,
        "evidence": "strong",
-       "lat": -6.2572998,
-       "lng": 107.0724475,
+       "lat": -6.2573,
+       "lng": 107.072447,
        "social": [
         {
          "platform": "instagram",
@@ -15677,6 +18086,7 @@
      "url": "https://www.pinhome.id/dijual/rumah-baru/nirwana-townhouse-jagakarsa"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek cariproperti",
@@ -15893,8 +18303,8 @@
        "kind": "mi-sd-islam",
        "km": 1.2,
        "evidence": "strong",
-       "lat": -6.3263604,
-       "lng": 106.8206297,
+       "lat": -6.32636,
+       "lng": 106.82063,
        "social": [
         {
          "platform": "instagram",
@@ -16025,6 +18435,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-timur/nuansa-pondok-kelapa/nps1985/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -16312,6 +18723,7 @@
     ],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek Pinhome",
@@ -16595,6 +19007,7 @@
      "url": "https://padina.co.id/"
     },
     "officialUrl": "https://padina.co.id/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -16844,6 +19257,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/padmavilla-pejaten/nps7621/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Embed Google Maps situs proyek",
@@ -17124,6 +19538,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-timur/panca-residence-ciracas/nps8227/"
     },
     "officialUrl": "https://pancaresidence.com/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -17455,6 +19870,7 @@
     ],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin portal Pinhome",
@@ -17718,6 +20134,7 @@
      "url": "https://cariproperti.com/permata-bogor-residence-2"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "facebook",
@@ -18016,6 +20433,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/permata-hijau-suites/nps1644/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -18272,10 +20690,18 @@
      "url": "https://tasnimproperty.com/"
     },
     "officialUrl": "https://tasnimproperty.id/",
+    "contactUrl": "https://tasnimproperty.com/",
     "social": [
      {
       "platform": "instagram",
       "url": "https://www.instagram.com/tasnimproperty/",
+      "owner": "developer",
+      "via": "user-lead",
+      "seenAt": null
+     },
+     {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/tasnimproperty.id/",
       "owner": "developer",
       "via": "user-lead",
       "seenAt": null
@@ -18304,23 +20730,78 @@
     },
     "islamic": {
      "kajian": [],
-     "education": [],
+     "education": [
+      {
+       "id": "web-mis-al-ittihad-bojong-rangkas",
+       "name": "MIS Al Ittihad (Bojong Rangkas)",
+       "kind": "mi-sd-islam",
+       "km": 0.13,
+       "evidence": "partial",
+       "lat": -6.5549,
+       "lng": 106.6957,
+       "social": [],
+       "education": {
+        "levels": [
+         "MI"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60706663"
+       }
+      },
+      {
+       "id": "osm-node-13438935950",
+       "name": "SMP Islam Terpadu Al Ittihad Ciampea",
+       "kind": "smp-mts-islam",
+       "km": 0.48,
+       "evidence": "partial",
+       "lat": -6.558635,
+       "lng": 106.695661,
+       "social": [],
+       "education": {
+        "levels": [
+         "SMP"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/69964389"
+       }
+      },
+      {
+       "id": "web-mis-nuruttaqwa",
+       "name": "MIS Nuruttaqwa",
+       "kind": "mi-sd-islam",
+       "km": 0.66,
+       "evidence": "partial",
+       "lat": -6.5588,
+       "lng": 106.6927,
+       "social": [],
+       "education": {
+        "levels": [
+         "MI"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60706657"
+       }
+      }
+     ],
      "claims": [
       {
        "kind": "mosque-in-estate",
        "quote": "Masjid Pusat kegiatan ibadah di dalam kawasan.",
        "url": "https://tasnimproperty.id/",
-       "pageDate": "2026-08-02"
+       "pageDate": null
+      },
+      {
+       "kind": "kajian",
+       "quote": "Rumah dekat masjid, berkahnya banyak. Selain lebih disiplin sholat berjamaah, juga bisa ikut kajian dan kegiatan keagamaan lainnya.",
+       "url": "https://tasnimproperty.com/",
+       "pageDate": null
       },
       {
        "kind": "kajian",
        "quote": "Selain lebih disiplin sholat berjamaah, juga bisa ikut kajian dan kegiatan keagamaan lainnya.",
-       "url": "https://tasnimproperty.com/",
-       "pageDate": "2026-05-13"
-      },
-      {
-       "kind": "tpq-or-school-in-estate",
-       "quote": "Ada 3 Pesantren bertaraf international didalam kawasan perumahan",
        "url": "https://tasnimproperty.com/",
        "pageDate": "2026-05-13"
       }
@@ -18429,6 +20910,7 @@
      "url": "https://pesonakahuripan18.pesonakahuripan.id/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -18556,6 +21038,7 @@
      "url": "https://www.brighton.co.id/perumahan-baru/viewdetail/praja-nirbana-living"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Tautan Google Maps halaman proyek agensi Brighton",
@@ -18787,6 +21270,7 @@
     ],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek Pinhome",
@@ -18976,6 +21460,7 @@
     "units": [],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": null,
     "listingBasis": "islamic",
@@ -19102,7 +21587,16 @@
      "url": "https://www.pinhome.id/dijual/rumah-baru/raudhatul-jannah-residence"
     },
     "officialUrl": "https://berkahlandgroup.com/",
-    "social": [],
+    "contactUrl": "https://sites.google.com/view/rumahsyariahkebalenbekasi/home",
+    "social": [
+     {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/raudhatuljannahresidence/",
+      "owner": "project",
+      "via": "user-lead",
+      "seenAt": null
+     }
+    ],
     "coordinate": {
      "method": "Pin proyek Pinhome",
      "url": "https://www.pinhome.id/dijual/rumah-baru/raudhatul-jannah-residence",
@@ -19126,7 +21620,62 @@
     },
     "islamic": {
      "kajian": [],
-     "education": [],
+     "education": [
+      {
+       "id": "web-mis-at-taqwa-15-kebalen-babelan",
+       "name": "MIS At-Taqwa 15 (Kebalen, Babelan)",
+       "kind": "mi-sd-islam",
+       "km": 0.85,
+       "evidence": "partial",
+       "lat": -6.1677,
+       "lng": 107.0452,
+       "social": [],
+       "education": {
+        "levels": [
+         "MI"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60709253"
+       }
+      },
+      {
+       "id": "web-mts-at-taqwa-03-babelan-kota",
+       "name": "MTs At Taqwa 03 (Babelan Kota)",
+       "kind": "smp-mts-islam",
+       "km": 1.03,
+       "evidence": "partial",
+       "lat": -6.1659,
+       "lng": 107.0446,
+       "social": [],
+       "education": {
+        "levels": [
+         "MTs"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20279253"
+       }
+      },
+      {
+       "id": "web-mts-attaqwa-19-kebalen-babelan",
+       "name": "MTs Attaqwa 19 (Kebalen, Babelan)",
+       "kind": "smp-mts-islam",
+       "km": 1.44,
+       "evidence": "partial",
+       "lat": -6.1873,
+       "lng": 107.0389,
+       "social": [],
+       "education": {
+        "levels": [
+         "MTs"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20279257"
+       }
+      }
+     ],
      "claims": [
       {
        "kind": "mosque-in-estate",
@@ -19199,6 +21748,15 @@
        "unit"
       ],
       "note": "Agency listing, developer Berkah Group; project name not shown, matched by unit names Ayubi and Al Fatih; Rp 721,1 Jt - 1,165 M, status ready, Unit Tersisa 24 unit"
+     },
+     {
+      "url": "https://sites.google.com/view/rumahsyariahkebalenbekasi/home",
+      "kind": "other",
+      "title": "Rumah Syariah Kebalen Bekasi (Google Sites)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [],
+      "note": "Situs pemasaran yang disebut daftar Meta AI; fasilitas tertulis Area Berkuda, Area Memanah, Masjid, Rumah Tahfidz, Mini Market, One Gate System. Kalimat kajian sunnah rutin tidak ada di halaman. Memuat kontak pemasar (tidak disimpan)."
      }
     ],
     "lastChecked": "2026-10-30",
@@ -19275,6 +21833,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/ruma-antasari/nps8254/"
     },
     "officialUrl": "https://ruma.id/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -19545,6 +22104,7 @@
      "url": "https://intiland.com/en/house/jakarta/sakha-semanan/"
     },
     "officialUrl": "https://intiland.com/en/house/jakarta/sakha-semanan/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -19882,6 +22442,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/bogor/samanea-hill/nps2180/"
     },
     "officialUrl": "https://farpoint.co.id/credentials/samanea/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -20113,6 +22674,7 @@
      "url": "https://homeownershipprogram.perumnas.co.id/en/alonia-ev/"
     },
     "officialUrl": "https://homeownershipprogram.perumnas.co.id/en/alonia-ev/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -20145,6 +22707,13 @@
      {
       "platform": "x",
       "url": "https://twitter.com/infoperumnas",
+      "owner": "developer",
+      "via": "official-site",
+      "seenAt": "https://homeownershipprogram.perumnas.co.id/en/alonia-ev/"
+     },
+     {
+      "platform": "instagram",
+      "url": "https://instagram.com/infoperumnas",
       "owner": "developer",
       "via": "official-site",
       "seenAt": "https://homeownershipprogram.perumnas.co.id/en/alonia-ev/"
@@ -20363,6 +22932,7 @@
      "url": "https://produk.perumnas.co.id/produk/studio-room"
     },
     "officialUrl": "https://produk.perumnas.co.id/produk/studio-room",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -20444,8 +23014,8 @@
        "kind": "masjid",
        "km": 0.36,
        "evidence": "partial",
-       "lat": -6.2040426,
-       "lng": 106.9457245,
+       "lat": -6.204043,
+       "lng": 106.945724,
        "social": [],
        "kajian": [
         {
@@ -20463,8 +23033,8 @@
        "kind": "masjid",
        "km": 0.45,
        "evidence": "partial",
-       "lat": -6.2050071,
-       "lng": 106.9529554,
+       "lat": -6.205007,
+       "lng": 106.952955,
        "social": [],
        "kajian": [
         {
@@ -20482,7 +23052,7 @@
        "kind": "masjid",
        "km": 0.47,
        "evidence": "partial",
-       "lat": -6.2007442,
+       "lat": -6.200744,
        "lng": 106.948463,
        "social": [],
        "kajian": [
@@ -20671,6 +23241,7 @@
      "url": "https://produk.perumnas.co.id/lokasi/samesta-mahata-margonda"
     },
     "officialUrl": "https://mahatamargonda.id/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -21056,6 +23627,7 @@
     ],
     "transitClaim": null,
     "officialUrl": "https://produk.perumnas.co.id/lokasi/samesta-mahata-serpong",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -21303,6 +23875,7 @@
      "url": "https://produk.perumnas.co.id/lokasi/samesta-mahata-tanjung-barat"
     },
     "officialUrl": "https://produk.perumnas.co.id/lokasi/samesta-mahata-tanjung-barat",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -21568,6 +24141,7 @@
      "url": "https://investortrust.id/business/114558/modal-dp-1-perumnas-tawarkan-rumah-rp-300-jutaan-di-danantara-housing-expo-2026"
     },
     "officialUrl": "https://produk.perumnas.co.id/lokasi/samesta-parayasa",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -21883,6 +24457,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/savyavasa/nps2531/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -22203,6 +24778,7 @@
      "url": "https://selasarmadinabekasi.com/"
     },
     "officialUrl": "https://selasarmadinabekasi.com/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -22271,6 +24847,26 @@
         "fees": [],
         "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/69774553"
        }
+      },
+      {
+       "id": "osm-way-1274570647",
+       "name": "Sekolah Islam Al-Azhar Summarecon Bekasi (SDIA 44, SMPIA 31, SMAIA 8)",
+       "kind": "mi-sd-islam",
+       "km": 1.29,
+       "evidence": "partial",
+       "lat": -6.220995,
+       "lng": 107.001982,
+       "social": [],
+       "education": {
+        "levels": [
+         "SD",
+         "SMP",
+         "SMA"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://www.summareconbekasi.com/facilities"
+       }
       }
      ],
      "claims": [
@@ -22278,17 +24874,17 @@
        "kind": "musholla-in-estate",
        "quote": "FASILITAS - Mushalla - One Gate System - Taman Bermain",
        "url": "https://selasarmadinabekasi.com/",
-       "pageDate": "2025-03-20"
+       "pageDate": null
+      },
+      {
+       "kind": "syariah-concept",
+       "quote": "Bingung cari perumahan dengan konsep Islam di kota besar? Selasar Madina Bekasi jawabannya!",
+       "url": "https://selasarmadinabekasi.com/",
+       "pageDate": null
       },
       {
        "kind": "syariah-concept",
        "quote": "Perumahan Islami dipusat Kota Bekasi",
-       "url": "https://selasarmadinabekasi.com/",
-       "pageDate": "2025-03-20"
-      },
-      {
-       "kind": "syariah-concept",
-       "quote": "Bingung cari perumahan dengan konsep Islam di kota besar?",
        "url": "https://selasarmadinabekasi.com/",
        "pageDate": "2025-03-20"
       }
@@ -22388,6 +24984,7 @@
      "url": "https://cariproperti.com/selasar-kota-depok"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin portal cariproperti",
@@ -22600,6 +25197,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/tangerang/serpong-garden-residence/nps2049/"
     },
     "officialUrl": "https://serponggarden.com/",
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "OSM Nominatim",
@@ -22682,8 +25280,8 @@
        "kind": "ra-tk-islam",
        "km": 0.89,
        "evidence": "partial",
-       "lat": -6.328915941558,
-       "lng": 106.64691567421,
+       "lat": -6.328916,
+       "lng": 106.646916,
        "social": [],
        "education": {
         "levels": [
@@ -22845,6 +25443,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/southgate-residence/nps1688/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -23121,6 +25720,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/sq-rs/nps1554/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -23378,6 +25978,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/bekasi/summarecon-bekasi/nps1788/"
     },
     "officialUrl": "https://www.summareconbekasi.com/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -23403,6 +26004,13 @@
      {
       "platform": "x",
       "url": "https://twitter.com/summareconbkasi",
+      "owner": "project",
+      "via": "official-site",
+      "seenAt": "https://www.summareconbekasi.com/"
+     },
+     {
+      "platform": "instagram",
+      "url": "https://instagram.com/summareconbekasi/",
       "owner": "project",
       "via": "official-site",
       "seenAt": "https://www.summareconbekasi.com/"
@@ -23455,6 +26063,26 @@
      "kajian": [],
      "education": [
       {
+       "id": "osm-way-1274570647",
+       "name": "Sekolah Islam Al-Azhar Summarecon Bekasi (SDIA 44, SMPIA 31, SMAIA 8)",
+       "kind": "mi-sd-islam",
+       "km": 0.58,
+       "evidence": "partial",
+       "lat": -6.220995,
+       "lng": 107.001982,
+       "social": [],
+       "education": {
+        "levels": [
+         "SD",
+         "SMP",
+         "SMA"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://www.summareconbekasi.com/facilities"
+       }
+      },
+      {
        "id": "osm-node-10873445169",
        "name": "SMP Islam Al-Azhar 31 Summarecon Bekasi",
        "kind": "smp-mts-islam",
@@ -23499,15 +26127,15 @@
        "pageDate": null
       },
       {
-       "kind": "tpq-or-school-in-estate",
-       "quote": "Sekolah Islam Al-Azhar Summarecon Bekasi Sebagai pusat pendidikan agama Islam dengan fasilitas yang lengkap dan memadai.",
+       "kind": "mosque-in-estate",
+       "quote": "Masjid Raya Al-Azhar Pusat ibadah dan syiar agama islam di Kota Summarecon Bekasi.",
        "url": "https://www.summareconbekasi.com/facilities",
        "pageDate": null
       },
       {
-       "kind": "other",
-       "quote": "Karena letaknya yang berdampingan dengan Sekolah Islam Al Azhar, maka Masjid Raya ini juga dapat dimanfaatkan sebagai laboratorium ahlak",
-       "url": "https://www.summareconbekasi.com/facilities/masjid-raya-al-azhar",
+       "kind": "tpq-or-school-in-estate",
+       "quote": "Sekolah Islam Al-Azhar Summarecon Bekasi Sebagai pusat pendidikan agama Islam dengan fasilitas yang lengkap dan memadai.",
+       "url": "https://www.summareconbekasi.com/facilities",
        "pageDate": null
       }
      ]
@@ -23648,6 +26276,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-timur/synthesis-huis/nps2887/"
     },
     "officialUrl": "https://synthesis-development.id/project/synthesis-huis/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -23752,8 +26381,8 @@
        "kind": "mi-sd-islam",
        "km": 0.9,
        "evidence": "strong",
-       "lat": -6.314584095430017,
-       "lng": 106.86010901432395,
+       "lat": -6.314584,
+       "lng": 106.860109,
        "social": [],
        "education": {
         "levels": [
@@ -23924,6 +26553,7 @@
      "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cileungsi-2"
     },
     "officialUrl": "https://maxirecon.com/",
+    "contactUrl": "https://mitrathayyibahproperti.com/",
     "social": [
      {
       "platform": "instagram",
@@ -23969,8 +26599,62 @@
      "densityKm2": 11290
     },
     "islamic": {
-     "kajian": [],
-     "education": [],
+     "kajian": [
+      {
+       "id": "osm-node-10756081291",
+       "name": "Masjid Jami' Al-Barkah Cileungsi (kompleks Rodja, Kampung Tengah)",
+       "kind": "masjid",
+       "km": 0.61,
+       "evidence": "partial",
+       "lat": -6.395208,
+       "lng": 106.95889,
+       "social": [
+        {
+         "platform": "threads",
+         "url": "https://www.threads.com/@masjidalbarkahcileungsi",
+         "owner": "facility",
+         "via": "search-result",
+         "seenAt": null
+        },
+        {
+         "platform": "facebook",
+         "url": "https://www.facebook.com/masjidalbarkahcileungsi/",
+         "owner": "facility",
+         "via": "search-result",
+         "seenAt": null
+        }
+       ],
+       "kajian": [
+        {
+         "schedule": "Biasanya kajian rutin digelar setiap Sabtu dan Minggu setelah sholat Magrib.",
+         "frequency": "mingguan",
+         "audience": "umum",
+         "url": "https://chanelmuslim.com/wisata/ini-lima-masjid-referensi-kajian-sunnah-di-jabodetabek",
+         "pageDate": "2017-12-08"
+        }
+       ]
+      }
+     ],
+     "education": [
+      {
+       "id": "osm-node-13438936983",
+       "name": "SDIT Cahaya Sunnah",
+       "kind": "mi-sd-islam",
+       "km": 0.53,
+       "evidence": "partial",
+       "lat": -6.396,
+       "lng": 106.9591,
+       "social": [],
+       "education": {
+        "levels": [
+         "SD"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://www.cahayasunnah.sch.id/"
+       }
+      }
+     ],
      "claims": [
       {
        "kind": "mosque-in-estate",
@@ -24051,6 +26735,15 @@
       "pageDate": null,
       "supports": [],
       "note": "PT Indonesia Taat Berkarya, 'Shariah Compliant Property Solutions Agency, Developer, Architect & Contractor'; acts as agent on its listings"
+     },
+     {
+      "url": "https://mitrathayyibahproperti.com/",
+      "kind": "developer",
+      "title": "Mitra Thayyibah Properti (unit pemasaran Maxirecon)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [],
+      "note": "Unit pemasaran Maxirecon (PT Jakarta Properti Utama) mencantumkan Teras Madina Cibubur Type Ajwa Rp 740 Juta dan Type Ajwa Z Rp 672 Juta; memuat kontak pemasaran (tidak disimpan)."
      }
     ],
     "lastChecked": "2026-10-30",
@@ -24120,6 +26813,7 @@
      "url": "https://www.rumah123.com/perumahan-baru/properti/tangerang-selatan/the-brawijaya/nps7979/"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -24404,6 +27098,7 @@
      "url": "https://cariproperti.com/the-conifer-town"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek Pinhome",
@@ -24752,6 +27447,7 @@
      "url": "https://www.pinhome.id/dijual/apartemen-baru/the-elements"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -24876,8 +27572,8 @@
        "kind": "masjid",
        "km": 0.63,
        "evidence": "partial",
-       "lat": -6.2215246,
-       "lng": 106.8299202,
+       "lat": -6.221525,
+       "lng": 106.82992,
        "social": [],
        "kajian": [
         {
@@ -25093,6 +27789,7 @@
      "url": "https://cariproperti.com/the-loft-house"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin proyek Pinhome, cocok dengan cariproperti",
@@ -25405,6 +28102,7 @@
     ],
     "transitClaim": null,
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Pin portal BCA",
@@ -25734,6 +28432,7 @@
      "url": "https://www.pinhome.id/dijual/apartemen-baru/the-premiere-series-by-oak-tower"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [],
     "coordinate": {
      "method": "Koordinat halaman gedung Travelio",
@@ -25987,7 +28686,23 @@
      "url": "https://www.pinhome.id/dijual/rumah-baru/townhouse-syariah-mutiara-serpong"
     },
     "officialUrl": null,
-    "social": [],
+    "contactUrl": null,
+    "social": [
+     {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/townhouse_syariah/",
+      "owner": "project",
+      "via": "search-result",
+      "seenAt": null
+     },
+     {
+      "platform": "facebook",
+      "url": "https://www.facebook.com/p/Townhouse-Syariah-Mutiara-Serpong-100076504761650/",
+      "owner": "project",
+      "via": "search-result",
+      "seenAt": null
+     }
+    ],
     "coordinate": {
      "method": "Koordinat Pinhome (schema.org Place)",
      "url": "https://www.pinhome.id/dijual/rumah-baru/townhouse-syariah-mutiara-serpong",
@@ -26011,11 +28726,78 @@
     },
     "islamic": {
      "kajian": [],
-     "education": [],
+     "education": [
+      {
+       "id": "web-mis-mathlaul-huda-lengkong-kulon",
+       "name": "MIS Mathlaul Huda Lengkong Kulon",
+       "kind": "mi-sd-islam",
+       "km": 0.42,
+       "evidence": "partial",
+       "lat": -6.2971,
+       "lng": 106.6138,
+       "social": [],
+       "education": {
+        "levels": [
+         "MI"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60721283"
+       }
+      },
+      {
+       "id": "web-mis-darul-muttaqin",
+       "name": "MIS Darul Muttaqin",
+       "kind": "mi-sd-islam",
+       "km": 1.03,
+       "evidence": "partial",
+       "lat": -6.29551,
+       "lng": 106.608007,
+       "social": [],
+       "education": {
+        "levels": [
+         "MI"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60721295"
+       }
+      },
+      {
+       "id": "web-smp-islam-nurul-falah",
+       "name": "SMP Islam Nurul Falah",
+       "kind": "smp-mts-islam",
+       "km": 1.38,
+       "evidence": "partial",
+       "lat": -6.2937,
+       "lng": 106.6297,
+       "social": [],
+       "education": {
+        "levels": [
+         "SMP"
+        ],
+        "program": null,
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20603535"
+       }
+      }
+     ],
      "claims": [
       {
        "kind": "syariah-concept",
+       "quote": "Proyek ini mengusung konsep syariah Islam tanpa riba, memberikan solusi hunian yang nyaman, sesuai prinsip Islami, dan bebas dari transaksi bunga.",
+       "url": "https://www.pinhome.id/dijual/rumah-baru/townhouse-syariah-mutiara-serpong",
+       "pageDate": null
+      },
+      {
+       "kind": "syariah-concept",
        "quote": "sesuai prinsip Islami",
+       "url": "https://www.pinhome.id/dijual/rumah-baru/townhouse-syariah-mutiara-serpong",
+       "pageDate": null
+      },
+      {
+       "kind": "islamic-school-nearby",
+       "quote": "MI Darul Muttaqin 0,23 KM",
        "url": "https://www.pinhome.id/dijual/rumah-baru/townhouse-syariah-mutiara-serpong",
        "pageDate": null
       }
@@ -26121,6 +28903,7 @@
      "url": "https://invest.jakarta.go.id/potential-projects/40/mixed-use-tod/188/lrt-city-ciracas"
     },
     "officialUrl": "https://adcp.co.id/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -26492,6 +29275,7 @@
      "url": "https://cariproperti.com/vertihome-jagakarsa"
     },
     "officialUrl": null,
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",
@@ -26843,6 +29627,7 @@
     ],
     "transitClaim": null,
     "officialUrl": "https://intiland.com/en/house/jakarta/virya-semanan/",
+    "contactUrl": null,
     "social": [
      {
       "platform": "instagram",

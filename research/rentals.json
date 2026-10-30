@@ -1,0 +1,1036 @@
+{
+  "checkedAt": "2026-10-30",
+  "note": "Iklan sewa dari portal publik (rumah123, Mamikos, Pinhome, Travelio, Jendela360) yang dibuka langsung dan diperiksa ulang pemeriksa terpisah. Bukti lingkungan muslim adalah kutipan iklan, bukan survei. Nama dan kontak pemilik atau agen tidak disimpan; iklan perorangan hanya sampai tingkat kawasan. Harga dan ketersediaan sewa cepat berubah.",
+  "rentals": [
+    {
+      "id": "sewa-rumah-kluster-keluarga-muslim-furnish-dkt-tol-grand-wisata-bekasi",
+      "title": "Rumah Kluster Keluarga Muslim Furnish Dkt Tol Grand Wisata Bekasi",
+      "rentalType": "kos-keluarga",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Bekasi Timur, Kota Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1500000,
+        "period": "monthly",
+        "quote": "Rp 1,5 Juta /bulan",
+        "url": "https://www.rumah123.com/kost/dekat-pasar-modern-grandwisata/di-bekasi/",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": null,
+      "sizeM2": null,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Disewakan Rumah BARU utk suami istri, Furnish, Siap Huni di Cluster Keluarga Muslim",
+          "url": "https://www.rumah123.com/kost/dekat-pasar-modern-grandwisata/di-bekasi/"
+        },
+        {
+          "quote": "Dekat Tempat Ibadah",
+          "url": "https://www.rumah123.com/kost/dekat-pasar-modern-grandwisata/di-bekasi/"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.rumah123.com/properti/bekasi-bekasi-timur/rumah-kluster-keluarga-muslim-furnish-dkt-tol-grand-wisata-bekasi-ksr42170/",
+      "sourcePortal": "rumah123",
+      "postedOrUpdated": "2026-10-24",
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-rumah-kontrakan-d-thani-house-jatiasih-bekasi",
+      "title": "Rumah Kontrakan D Thani House Jatiasih Bekasi",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Kecamatan Jatiasih, Kota Bekasi",
+      "buildingOrCluster": "Perum. Puri Nusaphala",
+      "rent": {
+        "amount": 2300000,
+        "period": "monthly",
+        "quote": "2.300.000",
+        "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-rumah-kontrakan-d-thani-house-jatiasih-bekasi-2",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 3,
+      "sizeM2": null,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Bismilahirrahmannirrahim Dikontrakan rumah 1,5 lantai Lokasi di Perum. Puri Nusaphala, Jatiasih, Bekasi 3 kamar tidur 3 kamar mandi",
+          "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-rumah-kontrakan-d-thani-house-jatiasih-bekasi-2"
+        },
+        {
+          "quote": "Mushola",
+          "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-rumah-kontrakan-d-thani-house-jatiasih-bekasi-2"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-rumah-kontrakan-d-thani-house-jatiasih-bekasi-2",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-09-03",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-grand-center-point-bekasi-apartment-2br",
+      "title": "Grand Center Point Bekasi Apartment (2BR)",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Bekasi",
+      "locationText": "Marga Jaya, Bekasi Selatan, Kota Bekasi",
+      "buildingOrCluster": "Grand Center Point Bekasi",
+      "rent": {
+        "amount": 3350000,
+        "period": "monthly",
+        "quote": "Monthly IDR 3,350,000",
+        "url": "https://www.travelio.com/en/sewa-apartemen/grand-center-point-apartment-bekasi/2bedroom/bulanan",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 2,
+      "sizeM2": 33,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Masjid Raya Al-Azhar Summarecon Bekasi (2.57 km)",
+          "url": "https://www.travelio.com/en/sewa-apartemen/grand-center-point-apartment-bekasi"
+        },
+        {
+          "quote": "2BR : Suitable for small families or those who require extra space for comfort.",
+          "url": "https://www.travelio.com/en/sewa-apartemen/grand-center-point-apartment-bekasi"
+        }
+      ],
+      "nearStationsClaim": [
+        {
+          "station": "KRL Bekasi",
+          "quote": "Bekasi Station Distance: 1.8 km",
+          "url": "https://www.travelio.com/en/sewa-apartemen/grand-center-point-apartment-bekasi"
+        }
+      ],
+      "listingUrl": "https://www.travelio.com/en/sewa-apartemen/grand-center-point-apartment-bekasi",
+      "sourcePortal": "travelio",
+      "postedOrUpdated": null,
+      "ownerType": "management",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-sewa-rumah-razbi-prima-mansion-dekat-grand-wisata-bekasi-timur-2-lanta",
+      "title": "Sewa Rumah Razbi Prima Mansion - Dekat Grand Wisata Bekasi Timur, 2 Lantai, Bebas Banjir",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Tambun Selatan area, Kabupaten Bekasi",
+      "buildingOrCluster": "Razbi Prima Mansion",
+      "rent": {
+        "amount": 36000000,
+        "period": "yearly",
+        "quote": "Rp 36 Juta /tahun",
+        "url": "https://www.rumah123.com/venue/razbi-prima-mansion-vcm19190/",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 4,
+      "sizeM2": 140,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Dekat Tempat Ibadah",
+          "url": "https://www.rumah123.com/venue/razbi-prima-mansion-vcm19190/"
+        },
+        {
+          "quote": "Rumah di Cluster Keluarga Muslim Dekat Tol Grand Wisata Bekasi",
+          "url": "https://www.rumah123.com/venue/razbi-prima-mansion-vcm19190/"
+        },
+        {
+          "quote": "Sedang mencari sewa rumah di dekat Grand Wisata dengan lingkungan nyaman dan aman untuk keluarga?",
+          "url": "https://www.rumah123.com/venue/razbi-prima-mansion-vcm19190/"
+        }
+      ],
+      "nearStationsClaim": [
+        {
+          "station": "LRT Jatimulya",
+          "quote": "Stasiun LRT Jatimulya 2,5 Km",
+          "url": "https://www.rumah123.com/venue/razbi-prima-mansion-vcm19190/"
+        },
+        {
+          "station": "KRL Tambun",
+          "quote": "Stasiun Tambun 2,8 Km",
+          "url": "https://www.rumah123.com/venue/razbi-prima-mansion-vcm19190/"
+        }
+      ],
+      "listingUrl": "https://www.rumah123.com/properti/bekasi-grand-wisata/sewa-rumah-razbi-prima-mansion-dekat-grand-wisata-bekasi-timur-2-lantai-bebas-banjir-hor41586749/",
+      "sourcePortal": "rumah123",
+      "postedOrUpdated": null,
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-kontrakan-2-kt-dekat-masjid-al-baidho-lubang-buaya",
+      "title": "Kontrakan 2 KT dekat Masjid Al Baidho, Lubang Buaya",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Kel. Lubang Buaya, Kec. Cipayung, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1500000,
+        "period": "monthly",
+        "quote": "Rp 1,5 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gg-sukadamai-1",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 2,
+      "sizeM2": 45,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "New, Kontrakan rumah di masjid Al Baidho Lubang Buaya Jakarta Timur",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gg-sukadamai-1"
+        }
+      ],
+      "nearStationsClaim": [
+        {
+          "station": "LRT (nama stasiun tidak disebut)",
+          "quote": "- Dekat dengan stasiun LRT",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gg-sukadamai-1"
+        }
+      ],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gg-sukadamai-1",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2024-12-16",
+      "ownerType": "individual",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-rumah-5-kt-di-kompleks-taman-buaran-indah-klender",
+      "title": "Rumah 5 KT di kompleks Taman Buaran Indah, Klender",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Kel. Klender, Kec. Duren Sawit, Kota Jakarta Timur",
+      "buildingOrCluster": "Taman Buaran Indah",
+      "rent": {
+        "amount": 125000000,
+        "period": "yearly",
+        "quote": "Rp 125 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-taman-buaran-indah-siap-huni-di-sewa-rumah-taman-buaran-indah-jakarta-timur",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 5,
+      "sizeM2": 280,
+      "furnished": "semi",
+      "evidence": [
+        {
+          "quote": "Masjid, Puskesmas, keamanan 24 jam( satpam dan cctv)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-taman-buaran-indah-siap-huni-di-sewa-rumah-taman-buaran-indah-jakarta-timur"
+        }
+      ],
+      "nearStationsClaim": [
+        {
+          "station": "KRL Buaran",
+          "quote": "- stasiun kereta (st. Buaran)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-taman-buaran-indah-siap-huni-di-sewa-rumah-taman-buaran-indah-jakarta-timur"
+        }
+      ],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-taman-buaran-indah-siap-huni-di-sewa-rumah-taman-buaran-indah-jakarta-timur",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-02-02",
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "confirmed",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-rumah-2-kt-dekat-masjid-dan-sekolah-islam-ciracas",
+      "title": "Rumah 2 KT dekat masjid dan sekolah Islam, Ciracas",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Kel. Ciracas, Kec. Ciracas, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1600000,
+        "period": "monthly",
+        "quote": "Rp 1,6 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkomp-kebersihan-rt-17-09-no295-ciracas",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 2,
+      "sizeM2": 60,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Dekat dgn Mesjid, Toserba, Minimarket, Warung sembako & sayuran segar",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkomp-kebersihan-rt-17-09-no295-ciracas"
+        },
+        {
+          "quote": "Dekat Sekolah favorit Jakarta Islamic School, SMA Al Azhar",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkomp-kebersihan-rt-17-09-no295-ciracas"
+        }
+      ],
+      "nearStationsClaim": [
+        {
+          "station": "LRT (nama stasiun tidak disebut)",
+          "quote": "Lokasi strategis: dekat akses 6 ruas Jalan Toll + LRT",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkomp-kebersihan-rt-17-09-no295-ciracas"
+        },
+        {
+          "station": "KRL Tanjung Barat",
+          "quote": "Stasiun kereta Tanjung Barat dan Psr. Minggu",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkomp-kebersihan-rt-17-09-no295-ciracas"
+        }
+      ],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkomp-kebersihan-rt-17-09-no295-ciracas",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2024-06-11",
+      "ownerType": "individual",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-rumah-kontrakan-2-kt-rambutan-5-menit-ke-masjid",
+      "title": "Rumah kontrakan 2 KT Rambutan, 5 menit ke masjid",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Kel. Rambutan, Kec. Ciracas, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 25000000,
+        "period": "yearly",
+        "quote": "Rp 25 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-pasar-rebo-di-jlgudang-air-rt002-001-no-50-jaktim",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 2,
+      "sizeM2": 80,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "- 5 menit dari Masjid Terdekat.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-pasar-rebo-di-jlgudang-air-rt002-001-no-50-jaktim"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-pasar-rebo-di-jlgudang-air-rt002-001-no-50-jaktim",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2024-04-25",
+      "ownerType": "individual",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-apartemen-sentra-timur-residence-2-kt-pulo-gebang",
+      "title": "Apartemen Sentra Timur Residence 2 KT, Pulo Gebang",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Jakarta",
+      "locationText": "Kel. Pulo Gebang, Kec. Cakung, Kota Jakarta Timur",
+      "buildingOrCluster": "Apartemen Sentra Timur Residence",
+      "rent": {
+        "amount": 1650000,
+        "period": "monthly",
+        "quote": "Rp 1,65 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sentra-timur-dekat-walikota-jakarta-timur-di-apartemen-sentra-timur",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 2,
+      "sizeM2": 36,
+      "furnished": "semi",
+      "evidence": [
+        {
+          "quote": "Musholla",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sentra-timur-dekat-walikota-jakarta-timur-di-apartemen-sentra-timur"
+        },
+        {
+          "quote": "ideal untuk keluarga kecil atau pasangan yang mencari tempat tinggal yang nyaman",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sentra-timur-dekat-walikota-jakarta-timur-di-apartemen-sentra-timur"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sentra-timur-dekat-walikota-jakarta-timur-di-apartemen-sentra-timur",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-10-15",
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "confirmed",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-rumah-2-lantai-3-kt-dekat-lrt-kampung-rambutan",
+      "title": "Rumah 2 lantai 3 KT dekat LRT Kampung Rambutan",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Kel. Rambutan, Kec. Ciracas, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 50000000,
+        "period": "yearly",
+        "quote": "Rp 50 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-siap-huni-di-jalan-smp-188",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 3,
+      "sizeM2": 125,
+      "furnished": "semi",
+      "evidence": [
+        {
+          "quote": "Alfamart, Indomaret, Superindo, Masjid",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-siap-huni-di-jalan-smp-188"
+        }
+      ],
+      "nearStationsClaim": [
+        {
+          "station": "LRT Kampung Rambutan",
+          "quote": "LRT Kampung Rambutan ≈1km",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-siap-huni-di-jalan-smp-188"
+        }
+      ],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-siap-huni-di-jalan-smp-188",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-04-26",
+      "ownerType": "individual",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-rumah-3-kt-posisi-hook-dekat-masjid-hijau-nurul-iman-cilangkap",
+      "title": "Rumah 3 KT posisi hook dekat Masjid Hijau Nurul Iman, Cilangkap",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Kel. Cilangkap, Kec. Cipayung, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 40000000,
+        "period": "yearly",
+        "quote": "Rp 40 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-posisi-hok-di-cilangkap",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 3,
+      "sizeM2": 72,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Mesjid Hijau Nurul Iman Cilangkap",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-posisi-hok-di-cilangkap"
+        }
+      ],
+      "nearStationsClaim": [
+        {
+          "station": "LRT Ciracas",
+          "quote": "Stasiun LRT Ciracas",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-posisi-hok-di-cilangkap"
+        }
+      ],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-posisi-hok-di-cilangkap",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2024-07-03",
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-rumah-2-lantai-3-kt-cluster-shinano-jakarta-garden-city",
+      "title": "Rumah 2 lantai 3 KT Cluster Shinano, Jakarta Garden City",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Kel. Cakung Timur, Kec. Cakung, Kota Jakarta Timur",
+      "buildingOrCluster": "Jakarta Garden City",
+      "rent": {
+        "amount": 40000000,
+        "period": "yearly",
+        "quote": "Rp 40 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-3-kamar-harga-40-juta-carport-2-mobil-di-cluster-shinano-jakarta-garden-city-jgc-cakung",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 3,
+      "sizeM2": 69,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Masjid Raya JGC",
+          "url": "https://jakartagardencity.com/id"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-3-kamar-harga-40-juta-carport-2-mobil-di-cluster-shinano-jakarta-garden-city-jgc-cakung",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-05-20",
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-rumah-2-lantai-3-kt-dekat-masjid-cilangkap",
+      "title": "Rumah 2 lantai 3 KT dekat masjid, Cilangkap",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Kel. Cilangkap, Kec. Cipayung, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 55000000,
+        "period": "yearly",
+        "quote": "Rp 55 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-malaka-cipayung",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 3,
+      "sizeM2": 90,
+      "furnished": "semi",
+      "evidence": [
+        {
+          "quote": "Dekat dengan Sekolah, Masjid, Gereja, Toll Gate Cibubur",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-malaka-cipayung"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-malaka-cipayung",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-04-06",
+      "ownerType": "individual",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-kost-berkah-family-sukmajaya-khusus-keluarga-muslim",
+      "title": "Kost Berkah Family Sukmajaya, khusus keluarga muslim",
+      "rentalType": "kos-keluarga",
+      "kind": "Rumah",
+      "area": "Depok",
+      "locationText": "Sukmajaya, Kota Depok",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 800000,
+        "period": "monthly",
+        "quote": "800000",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-berkah-family-sukma-jaya-depok-1",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": null,
+      "sizeM2": 24,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "asri, nyaman dan khusus utk keluarga muslim",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-berkah-family-sukma-jaya-depok-1"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-berkah-family-sukma-jaya-depok-1",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-05-07",
+      "ownerType": "individual",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-kost-syariah-beji-rumah-kontrakan-keluarga-1-kamar",
+      "title": "Kost Syariah Beji, rumah kontrakan keluarga 1 kamar",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Depok",
+      "locationText": "Beji, Kota Depok",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1100000,
+        "period": "monthly",
+        "quote": "Harga sewa Rp1. 100.000 per bulan",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-syariah-beji-depok",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 1,
+      "sizeM2": 24,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost Syariah Beji Depok",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-syariah-beji-depok"
+        },
+        {
+          "quote": "Masjid",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-syariah-beji-depok"
+        },
+        {
+          "quote": "Rumah kontrakan keluarga",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-syariah-beji-depok"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-syariah-beji-depok",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-08-29",
+      "ownerType": "individual",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-kost-syariah-matoa-golf-tipe-a-jagakarsa-pasutri-tanpa-anak",
+      "title": "Kost Syariah Matoa Golf Tipe A, Jagakarsa (pasutri, tanpa anak)",
+      "rentalType": "kos-keluarga",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Jagakarsa, Kota Jakarta Selatan",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1000000,
+        "period": "monthly",
+        "quote": "1000000",
+        "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-syariah-matoa-golf-tipe-a-jagakarsa-jakarta-selatan",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": null,
+      "sizeM2": 21,
+      "furnished": "semi",
+      "evidence": [
+        {
+          "quote": "Kost Syariah Matoa Golf Tipe A Jagakarsa Jakarta Selatan",
+          "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-syariah-matoa-golf-tipe-a-jagakarsa-jakarta-selatan"
+        },
+        {
+          "quote": "bisa BERDUA",
+          "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-syariah-matoa-golf-tipe-a-jagakarsa-jakarta-selatan"
+        },
+        {
+          "quote": "pasutri akan dimintai surat nikah",
+          "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-syariah-matoa-golf-tipe-a-jagakarsa-jakarta-selatan"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-syariah-matoa-golf-tipe-a-jagakarsa-jakarta-selatan",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-10-01",
+      "ownerType": "individual",
+      "social": [],
+      "verdict": "confirmed",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-rumah-kontrakan-dekat-musholah-sukmajaya-depok",
+      "title": "Rumah kontrakan dekat musholah, Sukmajaya Depok",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Depok",
+      "locationText": "Sukmajaya, Kota Depok",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1200000,
+        "period": "monthly",
+        "quote": "1200000",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kontrakan-pak-kodir-sukmajaya-depok",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": null,
+      "sizeM2": 21,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Berdekatan dengan tempat ibadah (musholah)",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kontrakan-pak-kodir-sukmajaya-depok"
+        },
+        {
+          "quote": "Dekat dengan Superindo, Toko Daging Nusantara, Sekolah Al Haraki, dan Universitas JGU",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kontrakan-pak-kodir-sukmajaya-depok"
+        }
+      ],
+      "nearStationsClaim": [
+        {
+          "station": "KRL Depok",
+          "quote": "hanya 10 menit dari Stasiun Depok",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kontrakan-pak-kodir-sukmajaya-depok"
+        }
+      ],
+      "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kontrakan-pak-kodir-sukmajaya-depok",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2023-08-07",
+      "ownerType": "individual",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-kalibata-city-2br-tower-akasia-masjid-di-basement",
+      "title": "Kalibata City 2BR Tower Akasia (masjid di basement)",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Jakarta",
+      "locationText": "Rawajati, Pancoran, Kota Jakarta Selatan",
+      "buildingOrCluster": "Kalibata City",
+      "rent": {
+        "amount": 32120000,
+        "period": "yearly",
+        "quote": "Bayar Langsung 12 Bulan Harga Mulai Rp 32,120,000 Setara Rp 2,680,000 / bulan",
+        "url": "https://jendela360.com/sewa-apartemen-kalibata-city-apartment/KLCC371",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 2,
+      "sizeM2": 40,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Ada Masjid Nurullah yang terletak di basement",
+          "url": "https://jendela360.com/review/kalibata-city"
+        },
+        {
+          "quote": "menawarkan tempat tinggal yang ideal bagi keluarga dengan satu anak atau pasangan muda",
+          "url": "https://jendela360.com/sewa-apartemen-kalibata-city-apartment/KLCC371"
+        }
+      ],
+      "nearStationsClaim": [
+        {
+          "station": "KRL Duren Kalibata",
+          "quote": "\"name\":\"Stasiun KRL Duren Kalibata\",\"distance\":\"475m\"",
+          "url": "https://jendela360.com/sewa-apartemen-kalibata-city-apartment/KLCC371"
+        }
+      ],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-kalibata-city-apartment/KLCC371",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "confirmed",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-margonda-residence-1br-low-floor-mushola-di-kawasan",
+      "title": "Margonda Residence 1BR low floor (mushola di kawasan)",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Depok",
+      "locationText": "Pondok Cina, Beji, Kota Depok",
+      "buildingOrCluster": "Margonda Residence",
+      "rent": {
+        "amount": 22700000,
+        "period": "yearly",
+        "quote": "Masa Sewa 12 Bulan Bayar Langsung 12 Bulan Harga Mulai Rp 22,700,000 Setara Rp 1,900,000 / bulan",
+        "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB007",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 1,
+      "sizeM2": 25,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "kolam renang, lapangan tennis, jogging track, mini market, tempat ibadah (mushola), dan area parkir",
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence"
+        },
+        {
+          "quote": "Masjid Al Khairatul Islam Tempat Ibadah 1 KM",
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence"
+        },
+        {
+          "quote": "apartemen ini cocok diperuntukkan bagi kalangan mahasiswa, keluarga maupun pasangan muda",
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB007",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "individual",
+      "social": [],
+      "verdict": "confirmed",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-taman-melati-margonda-2br-tower-a-low-floor",
+      "title": "Taman Melati Margonda 2BR Tower A low floor",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Depok",
+      "locationText": "Pondok Cina, Beji, Kota Depok",
+      "buildingOrCluster": "Taman Melati Margonda",
+      "rent": {
+        "amount": 45450000,
+        "period": "yearly",
+        "quote": "Bayar Langsung 12 Bulan Rp 45,450,000 Setara Rp 3,790,000 / bulan",
+        "url": "https://jendela360.com/sewa-apartemen-taman-melati-margonda-apartment/TMMC005",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 2,
+      "sizeM2": 47,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Masjid Al Khairatul Islam Tempat Ibadah 1 KM",
+          "url": "https://jendela360.com/sewa-apartemen-taman-melati-margonda-apartment"
+        },
+        {
+          "quote": "unit apartemen 2 Bedroom fully furnished yang sempurna bagi ekspatriat dengan keluarga kecil",
+          "url": "https://jendela360.com/sewa-apartemen-taman-melati-margonda-apartment/TMMC005"
+        },
+        {
+          "quote": "Dua kamar tidur yang tersedia sangat ideal untuk anak-anak",
+          "url": "https://jendela360.com/sewa-apartemen-taman-melati-margonda-apartment/TMMC005"
+        }
+      ],
+      "nearStationsClaim": [
+        {
+          "station": "Universitas Indonesia (KRL)",
+          "quote": "hanya selangkah dari Universitas Indonesia dan Stasiun KRL Universitas Indonesia",
+          "url": "https://jendela360.com/sewa-apartemen-taman-melati-margonda-apartment"
+        }
+      ],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-taman-melati-margonda-apartment/TMMC005",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-apartemen-medina-karawaci-unit-2br",
+      "title": "Apartemen Medina Karawaci, unit 2BR",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Tangerang",
+      "locationText": "Kelapa Dua, Kabupaten Tangerang",
+      "buildingOrCluster": "Apartemen Medina",
+      "rent": {
+        "amount": 3350000,
+        "period": "monthly",
+        "quote": "2BR (1 unit) IDR 290,000 / malam IDR 3,350,000 / bulan IDR 28,000,000 / tahun",
+        "url": "https://www.travelio.com/sewa-apartemen/medina-apartment-karawaci",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 2,
+      "sizeM2": null,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "dilengkapi dengan mall syariah di lantai dasar , lounge di setiap lantai untuk bersantai atau halaqoh",
+          "url": "https://www.travelio.com/sewa-apartemen/medina-apartment-karawaci"
+        },
+        {
+          "quote": "kolam renang terpisah untuk pria (Ikhwan) dan wanita (Akhwat)",
+          "url": "https://www.travelio.com/sewa-apartemen/medina-apartment-karawaci"
+        },
+        {
+          "quote": "Apartemen ini menawarkan pengalaman hidup syariah dengan akses mudah ke belanja dan hiburan.",
+          "url": "https://www.travelio.com/sewa-apartemen/medina-apartment-karawaci"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.travelio.com/sewa-apartemen/medina-apartment-karawaci",
+      "sourcePortal": "travelio",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-kost-exclusive-syariah-cimanggu-permai-tipe-a",
+      "title": "Kost Exclusive Syariah Cimanggu Permai Tipe A",
+      "rentalType": "kos-keluarga",
+      "kind": "Rumah",
+      "area": "Bogor",
+      "locationText": "Tanah Sereal, Kota Bogor",
+      "buildingOrCluster": "Kost Exclusive Syariah Cimanggu Permai",
+      "rent": {
+        "amount": 2000000,
+        "period": "monthly",
+        "quote": "2.000.000",
+        "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-exclusive-syariah-cimanggu-permai-tipe-a-tanah-sareal-bogor",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 1,
+      "sizeM2": 21,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost Exclusive Syariah Cimanggu Permai Tipe A",
+          "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-exclusive-syariah-cimanggu-permai-tipe-a-tanah-sareal-bogor"
+        },
+        {
+          "quote": "5. Dekat Masjid serta Sekolah At-Taufiq dan SD Negeri",
+          "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-exclusive-syariah-cimanggu-permai-tipe-a-tanah-sareal-bogor"
+        }
+      ],
+      "nearStationsClaim": [
+        {
+          "station": "KRL Bogor",
+          "quote": "4. Dekat dengan stasiun kereta KRL Bogor",
+          "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-exclusive-syariah-cimanggu-permai-tipe-a-tanah-sareal-bogor"
+        }
+      ],
+      "listingUrl": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-exclusive-syariah-cimanggu-permai-tipe-a-tanah-sareal-bogor",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-07-23",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-kost-cozzy-syariah-tipe-a",
+      "title": "Kost Cozzy Syariah Tipe A",
+      "rentalType": "kos-keluarga",
+      "kind": "Rumah",
+      "area": "Bogor",
+      "locationText": "Bogor Selatan, Kota Bogor",
+      "buildingOrCluster": "Kost Cozzy Syariah",
+      "rent": {
+        "amount": 1300000,
+        "period": "monthly",
+        "quote": "1.300.000",
+        "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-cozzy-syariah-tipe-a-bogor-selatan-bogor-1",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": null,
+      "sizeM2": 12,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Kost Cozzy Syariah Tipe A Bogor Selatan Bogor",
+          "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-cozzy-syariah-tipe-a-bogor-selatan-bogor-1"
+        },
+        {
+          "quote": "Bisa BERDUA +100rb | Beda Jenis Kusus Pasangan Suami Istri.",
+          "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-cozzy-syariah-tipe-a-bogor-selatan-bogor-1"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-cozzy-syariah-tipe-a-bogor-selatan-bogor-1",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-10-30",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "confirmed",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-rumah-kontrakan-dean-residence-tipe-rumah-2-5-lantai",
+      "title": "Rumah Kontrakan Dean Residence (tipe rumah 2,5 lantai)",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Karang Tengah, Kota Tangerang",
+      "buildingOrCluster": "Dean Residence",
+      "rent": {
+        "amount": 4900000,
+        "period": "monthly",
+        "quote": "4.900.000",
+        "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-rumah-kontrakan-dean-residence-karang-tengah-tangerang-2",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 2,
+      "sizeM2": 40,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Mushola",
+          "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-rumah-kontrakan-dean-residence-karang-tengah-tangerang-2"
+        },
+        {
+          "quote": "Kamar tidur anak",
+          "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-rumah-kontrakan-dean-residence-karang-tengah-tangerang-2"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-rumah-kontrakan-dean-residence-karang-tengah-tangerang-2",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-03-02",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-kost-rumah-mawaddah-kelapa-dua",
+      "title": "Kost Rumah Mawaddah Kelapa Dua",
+      "rentalType": "kos-keluarga",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Kelapa Dua, Kabupaten Tangerang",
+      "buildingOrCluster": "Kost Rumah Mawaddah",
+      "rent": {
+        "amount": 1900000,
+        "period": "monthly",
+        "quote": "1.900.000",
+        "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-rumah-mawaddah-kelapa-dua-tangerang-2",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": null,
+      "sizeM2": 16,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Posisi Kost di dalam perumahan Islamic dan ada akses masuk kartu 24 jam ke dalam perumahan",
+          "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-rumah-mawaddah-kelapa-dua-tangerang-2"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-rumah-mawaddah-kelapa-dua-tangerang-2",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-08-08",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "id": "sewa-kost-k-key-deluxe-syariah-ciledug-tangerang",
+      "title": "Kost K Key Deluxe Syariah Ciledug Tangerang",
+      "rentalType": "kos-keluarga",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Kecamatan Ciledug, Kota Tangerang",
+      "buildingOrCluster": "Kost K Key",
+      "rent": {
+        "amount": 1650000,
+        "period": "monthly",
+        "quote": "1.650.000",
+        "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-k-key-deluxe-syariah-ciledug-tangerang-2.md",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": null,
+      "sizeM2": 12,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost K Key Deluxe Syariah Ciledug Tangerang",
+          "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-k-key-deluxe-syariah-ciledug-tangerang-2"
+        },
+        {
+          "quote": "Mushola",
+          "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-k-key-deluxe-syariah-ciledug-tangerang-2"
+        },
+        {
+          "quote": "Masjid : 30 detik jalan kaki",
+          "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-k-key-deluxe-syariah-ciledug-tangerang-2"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-k-key-deluxe-syariah-ciledug-tangerang-2",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-08-22",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30"
+    }
+  ]
+}

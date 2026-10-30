@@ -27,6 +27,42 @@
       "social": []
     },
     {
+      "id": "osm-node-10756081291",
+      "name": "Masjid Jami' Al-Barkah Cileungsi (kompleks Rodja, Kampung Tengah)",
+      "kind": "masjid",
+      "lat": -6.3952078,
+      "lng": 106.9588901,
+      "coordinateSource": "osm",
+      "coordinateUrl": "https://www.openstreetmap.org/node/10756081291",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Biasanya kajian rutin digelar setiap Sabtu dan Minggu setelah sholat Magrib.",
+          "frequency": "mingguan",
+          "audience": "umum",
+          "url": "https://chanelmuslim.com/wisata/ini-lima-masjid-referensi-kajian-sunnah-di-jabodetabek",
+          "pageDate": "2017-12-08"
+        }
+      ],
+      "education": null,
+      "social": [
+        {
+          "platform": "threads",
+          "url": "https://www.threads.com/@masjidalbarkahcileungsi",
+          "owner": "facility",
+          "via": "search-result",
+          "seenAt": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/masjidalbarkahcileungsi/",
+          "owner": "facility",
+          "via": "search-result",
+          "seenAt": null
+        }
+      ]
+    },
+    {
       "id": "osm-node-10873445169",
       "name": "SMP Islam Al-Azhar 31 Summarecon Bekasi",
       "kind": "smp-mts-islam",
@@ -117,6 +153,24 @@
       "social": []
     },
     {
+      "id": "osm-node-12695067748",
+      "name": "MTs Yasmine",
+      "kind": "smp-mts-islam",
+      "lat": -6.395999,
+      "lng": 106.797115,
+      "coordinateSource": "osm",
+      "coordinateUrl": "https://www.openstreetmap.org/node/12695067748",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["MTs"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/dikdas/026602/3",
+        "fees": []
+      },
+      "social": []
+    },
+    {
       "id": "osm-node-13438935256",
       "name": "SMP IT Al-Habim",
       "kind": "smp-mts-islam",
@@ -148,6 +202,42 @@
         "levels": ["SMP"],
         "program": null,
         "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20253397",
+        "fees": []
+      },
+      "social": []
+    },
+    {
+      "id": "osm-node-13438935950",
+      "name": "SMP Islam Terpadu Al Ittihad Ciampea",
+      "kind": "smp-mts-islam",
+      "lat": -6.558635,
+      "lng": 106.695661,
+      "coordinateSource": "osm",
+      "coordinateUrl": "https://www.openstreetmap.org/node/13438935950",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["SMP"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/69964389",
+        "fees": []
+      },
+      "social": []
+    },
+    {
+      "id": "osm-node-13438936983",
+      "name": "SDIT Cahaya Sunnah",
+      "kind": "mi-sd-islam",
+      "lat": -6.396,
+      "lng": 106.9591,
+      "coordinateSource": "osm",
+      "coordinateUrl": "https://www.openstreetmap.org/node/13438936983",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["SD"],
+        "program": null,
+        "url": "https://www.cahayasunnah.sch.id/",
         "fees": []
       },
       "social": []
@@ -637,6 +727,24 @@
       "social": []
     },
     {
+      "id": "osm-way-1274570647",
+      "name": "Sekolah Islam Al-Azhar Summarecon Bekasi (SDIA 44, SMPIA 31, SMAIA 8)",
+      "kind": "mi-sd-islam",
+      "lat": -6.220995,
+      "lng": 107.001982,
+      "coordinateSource": "osm",
+      "coordinateUrl": "https://www.openstreetmap.org/way/1274570647",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["SD", "SMP", "SMA"],
+        "program": null,
+        "url": "https://www.summareconbekasi.com/facilities",
+        "fees": []
+      },
+      "social": []
+    },
+    {
       "id": "osm-way-1352485251",
       "name": "Masjid An-Nur (Perum Daru Indah)",
       "kind": "masjid",
@@ -695,6 +803,72 @@
       ],
       "education": null,
       "social": []
+    },
+    {
+      "id": "osm-way-1530958932",
+      "name": "Sekolah Islam Al-Azhar BSD@Cibitung",
+      "kind": "mi-sd-islam",
+      "lat": -6.252683,
+      "lng": 107.110016,
+      "coordinateSource": "osm",
+      "coordinateUrl": "https://www.openstreetmap.org/way/1530958932",
+      "evidence": "strong",
+      "kajian": [],
+      "education": {
+        "levels": ["SD", "SMP"],
+        "program": "Program unggulan Tahfidz Al-Qur'an, bilingual/English, STEM (official campus site); SMA planned later",
+        "url": "https://www.alazhar-bsd.sch.id/berita/sekolah-islam-al-azhar-bsd-resmi-membuka-kampus-al-azhar-bsd-at-cibitung-untuk-tahun-ajaran-20262027",
+        "fees": [
+          {
+            "label": "Uang pendaftaran SD",
+            "amount": 350000,
+            "period": "one-time",
+            "quote": "Membayar uang pendaftaran Rp. 350.000,-",
+            "url": "https://spmb-cibitung.alazhar-bsd.sch.id/beranda/persyaratan_sd",
+            "pageDate": null,
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "Uang pendaftaran SMP",
+            "amount": 350000,
+            "period": "one-time",
+            "quote": "Membayar uang pendaftaran Rp. 350.000,-",
+            "url": "https://spmb-cibitung.alazhar-bsd.sch.id/beranda/persyaratan_smp",
+            "pageDate": null,
+            "academicYear": "2027/2028"
+          }
+        ]
+      },
+      "social": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/alazharbsd_cibitung/",
+          "via": "official-site",
+          "seenAt": "https://cibitung.alazhar-bsd.sch.id/",
+          "owner": "facility"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/alazhar_bsd",
+          "via": "official-site",
+          "seenAt": "https://www.alazhar-bsd.sch.id/",
+          "owner": "facility"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/ALBESD/",
+          "via": "official-site",
+          "seenAt": "https://www.alazhar-bsd.sch.id/",
+          "owner": "facility"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@al-azharbsdofficial7101",
+          "via": "official-site",
+          "seenAt": "https://www.alazhar-bsd.sch.id/",
+          "owner": "facility"
+        }
+      ]
     },
     {
       "id": "osm-way-154831553",
@@ -1394,6 +1568,71 @@
         "levels": ["MI"],
         "program": null,
         "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60721464",
+        "fees": []
+      },
+      "social": []
+    },
+    {
+      "id": "osm-way-308080185",
+      "name": "Pesantren dan Yayasan Islam Al-Hamidiyah Depok",
+      "kind": "pesantren",
+      "lat": -6.394037,
+      "lng": 106.791886,
+      "coordinateSource": "osm",
+      "coordinateUrl": "https://www.openstreetmap.org/way/308080185",
+      "evidence": "strong",
+      "kajian": [],
+      "education": {
+        "levels": ["KB", "TK", "SD", "SMP", "MTs", "MA", "TPQ"],
+        "program": "SDIT memakai metode STEAMMI, Montessori dan Kurikulum Cambridge; MTs dan MA berbasis pesantren dengan asrama; program tahfidz LPPA (berita April 2026: target 1…",
+        "url": "https://al-hamidiyah.sch.id/sdit/",
+        "fees": []
+      },
+      "social": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/alhamidiyah_official",
+          "via": "official-site",
+          "seenAt": "2026-10-30",
+          "owner": "facility"
+        },
+        {
+          "platform": "tiktok",
+          "url": "https://www.tiktok.com/@alhamidiyah_official",
+          "via": "official-site",
+          "seenAt": "2026-10-30",
+          "owner": "facility"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@alhamidiyah_official",
+          "via": "official-site",
+          "seenAt": "2026-10-30",
+          "owner": "facility"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/alhamidiyah_",
+          "via": "official-site",
+          "seenAt": "2026-10-30",
+          "owner": "facility"
+        }
+      ]
+    },
+    {
+      "id": "osm-way-309885399",
+      "name": "MIS Hidayatul Athfal Mampang",
+      "kind": "mi-sd-islam",
+      "lat": -6.395751,
+      "lng": 106.795159,
+      "coordinateSource": "osm",
+      "coordinateUrl": "https://www.openstreetmap.org/way/309885399",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["MI"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/dikdas/026602/3",
         "fees": []
       },
       "social": []
@@ -2585,6 +2824,27 @@
       "social": []
     },
     {
+      "id": "osm-way-504321768",
+      "name": "Masjid Baitul Mukhlisin (Perum Pesona Gading Cibitung I)",
+      "kind": "masjid",
+      "lat": -6.246778,
+      "lng": 107.108993,
+      "coordinateSource": "osm",
+      "coordinateUrl": "https://www.openstreetmap.org/way/504321768",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Menyelenggarakan Pengajian Rutin",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000086",
+          "pageDate": null
+        }
+      ],
+      "education": null,
+      "social": []
+    },
+    {
       "id": "osm-way-504899471",
       "name": "Masjid An Nuur (Perum Permata Timur, Curug)",
       "kind": "masjid",
@@ -2604,6 +2864,39 @@
       ],
       "education": null,
       "social": []
+    },
+    {
+      "id": "osm-way-504916982",
+      "name": "Jakarta Islamic School (JISc Kodam, Cipinang Melayu)",
+      "kind": "mi-sd-islam",
+      "lat": -6.248442,
+      "lng": 106.923091,
+      "coordinateSource": "osm",
+      "coordinateUrl": "https://www.openstreetmap.org/way/504916982",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["TK", "SD", "SMP", "SMA"],
+        "program": "Full day; boarding (JIBBS/JIGSc) is at a separate Bogor campus",
+        "url": "https://www.jakartaislamicschool.com/",
+        "fees": []
+      },
+      "social": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/jiscjibbsjigsc/",
+          "via": "official-site",
+          "seenAt": "https://www.jakartaislamicschool.com/",
+          "owner": "facility"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/jakartaislamicschool/",
+          "via": "official-site",
+          "seenAt": "https://www.jakartaislamicschool.com/",
+          "owner": "facility"
+        }
+      ]
     },
     {
       "id": "osm-way-506602461",
@@ -3575,7 +3868,22 @@
         "url": "https://embunpagi.sch.id/enrollment",
         "fees": []
       },
-      "social": []
+      "social": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/embunpagischool",
+          "via": "official-site",
+          "seenAt": "https://embunpagi.sch.id/",
+          "owner": "facility"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@embunpagischool",
+          "via": "official-site",
+          "seenAt": "https://embunpagi.sch.id/",
+          "owner": "facility"
+        }
+      ]
     },
     {
       "id": "osm-way-512761906",
@@ -3990,6 +4298,39 @@
           "owner": "facility"
         }
       ]
+    },
+    {
+      "id": "osm-way-643721195",
+      "name": "Masjid Az-Zumar Metland Cibitung",
+      "kind": "masjid",
+      "lat": -6.254023,
+      "lng": 107.10724,
+      "coordinateSource": "osm",
+      "coordinateUrl": "https://www.openstreetmap.org/way/643721195",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Menyelenggarakan Pengajian Rutin",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.08.000029",
+          "pageDate": null
+        },
+        {
+          "schedule": "Jadwal Kajian: Kajian Bapak-Bapak, Kajian Muslimah, Kajian HAMAZ",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://az-zumar.id/jadwal/",
+          "pageDate": null
+        }
+      ],
+      "education": {
+        "levels": ["TPQ"],
+        "program": null,
+        "url": "https://az-zumar.id/",
+        "fees": []
+      },
+      "social": []
     },
     {
       "id": "osm-way-829047060",
@@ -4431,6 +4772,32 @@
       "social": []
     },
     {
+      "id": "web-masjid-al-hakim-mekarsari-permai",
+      "name": "Masjid Al-Hakim (Mekarsari Permai)",
+      "kind": "masjid",
+      "lat": -6.2566953729488,
+      "lng": 107.06771403551,
+      "coordinateSource": "kemenag",
+      "coordinateUrl": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.06.000032",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Menyelenggarakan Pengajian Rutin",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.06.000032",
+          "pageDate": null
+        }
+      ],
+      "education": {
+        "levels": ["TPA/Madrasah/PKBM (jenis tidak dirinci)"],
+        "program": null,
+        "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.06.000032",
+        "fees": []
+      },
+      "social": []
+    },
+    {
       "id": "web-masjid-al-hidayah-jl-bambon-raya",
       "name": "Masjid Al-Hidayah (Jl. Bambon Raya)",
       "kind": "masjid",
@@ -4452,6 +4819,32 @@
       "social": []
     },
     {
+      "id": "web-masjid-al-hidayah-kp-penyambelan-sukaasih",
+      "name": "Masjid Al-Hidayah (Kp. Penyambelan, Sukaasih)",
+      "kind": "masjid",
+      "lat": -6.223518387863,
+      "lng": 107.13409602642,
+      "coordinateSource": "kemenag",
+      "coordinateUrl": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000082",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Menyelenggarakan Pengajian Rutin",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000082",
+          "pageDate": null
+        }
+      ],
+      "education": {
+        "levels": ["TPA/Madrasah/PKBM (jenis tidak dirinci)"],
+        "program": null,
+        "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000082",
+        "fees": []
+      },
+      "social": []
+    },
+    {
       "id": "web-masjid-al-hijrah-kp-cilangkap-lumpang",
       "name": "Masjid Al-Hijrah (Kp. Cilangkap, Lumpang)",
       "kind": "masjid",
@@ -4466,6 +4859,27 @@
           "frequency": "unknown",
           "audience": "unknown",
           "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.01.20.000045",
+          "pageDate": null
+        }
+      ],
+      "education": null,
+      "social": []
+    },
+    {
+      "id": "web-masjid-al-hijri-perum-sukaraya-regency",
+      "name": "Masjid Al-Hijri (Perum Sukaraya Regency)",
+      "kind": "masjid",
+      "lat": -6.229757730427,
+      "lng": 107.15721666813,
+      "coordinateSource": "kemenag",
+      "coordinateUrl": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.10.000067",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Menyelenggarakan Pengajian Rutin",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.10.000067",
           "pageDate": null
         }
       ],
@@ -4656,6 +5070,53 @@
       "social": []
     },
     {
+      "id": "web-masjid-al-mukhlishin-jl-stadion-mini-tambun",
+      "name": "Masjid Al-Mukhlishin (Jl. Stadion Mini Tambun)",
+      "kind": "masjid",
+      "lat": -6.2630596317122,
+      "lng": 107.06603229046,
+      "coordinateSource": "kemenag",
+      "coordinateUrl": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.06.000038",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Menyelenggarakan Pengajian Rutin",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.06.000038",
+          "pageDate": null
+        }
+      ],
+      "education": null,
+      "social": []
+    },
+    {
+      "id": "web-masjid-al-muqhim-perumahan-pesona-gading-2",
+      "name": "Masjid Al-Muqhim (Perumahan Pesona Gading 2)",
+      "kind": "masjid",
+      "lat": -6.2422708549612,
+      "lng": 107.11994200945,
+      "coordinateSource": "kemenag",
+      "coordinateUrl": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000167",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Menyelenggarakan Pengajian Rutin",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000167",
+          "pageDate": null
+        }
+      ],
+      "education": {
+        "levels": ["TPA/Madrasah/PKBM (jenis tidak dirinci)"],
+        "program": null,
+        "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000167",
+        "fees": []
+      },
+      "social": []
+    },
+    {
       "id": "web-masjid-al-muttaqin-jl-siaga-pejaten-barat",
       "name": "Masjid Al-Muttaqin (Jl. Siaga, Pejaten Barat)",
       "kind": "masjid",
@@ -4695,6 +5156,32 @@
       "social": []
     },
     {
+      "id": "web-masjid-an-namirah-kp-jagawana-sukarukun",
+      "name": "Masjid An-Namirah (Kp. Jagawana, Sukarukun)",
+      "kind": "masjid",
+      "lat": -6.220612,
+      "lng": 107.155623,
+      "coordinateSource": "kemenag",
+      "coordinateUrl": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000078",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Menyelenggarakan Pengajian Rutin",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000078",
+          "pageDate": null
+        }
+      ],
+      "education": {
+        "levels": ["TPA/Madrasah/PKBM (jenis tidak dirinci)"],
+        "program": null,
+        "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000078",
+        "fees": []
+      },
+      "social": []
+    },
+    {
       "id": "web-masjid-arrahmah-cilebut-timur",
       "name": "Masjid Arrahmah (Cilebut Timur)",
       "kind": "masjid",
@@ -4716,6 +5203,32 @@
       "social": []
     },
     {
+      "id": "web-masjid-at-taqwa-kp-ceger-sukaasih",
+      "name": "Masjid At-Taqwa (Kp. Ceger, Sukaasih)",
+      "kind": "masjid",
+      "lat": -6.2271953427296,
+      "lng": 107.14715838432,
+      "coordinateSource": "kemenag",
+      "coordinateUrl": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000083",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Menyelenggarakan Pengajian Rutin",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000083",
+          "pageDate": null
+        }
+      ],
+      "education": {
+        "levels": ["TPA/Madrasah/PKBM (jenis tidak dirinci)"],
+        "program": null,
+        "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000083",
+        "fees": []
+      },
+      "social": []
+    },
+    {
       "id": "web-masjid-baitul-firdaus-lenteng-agung",
       "name": "Masjid Baitul Firdaus (Lenteng Agung)",
       "kind": "masjid",
@@ -4730,6 +5243,27 @@
           "frequency": "unknown",
           "audience": "unknown",
           "url": "https://simas.kemenag.go.id/profil/masjid/01.4.11.06.10.000060",
+          "pageDate": null
+        }
+      ],
+      "education": null,
+      "social": []
+    },
+    {
+      "id": "web-masjid-baitul-ikhwan-perum-villa-mutiara-jaya",
+      "name": "Masjid Baitul Ikhwan (Perum Villa Mutiara Jaya)",
+      "kind": "masjid",
+      "lat": -6.231562232576,
+      "lng": 107.12754750127,
+      "coordinateSource": "kemenag",
+      "coordinateUrl": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000168",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Menyelenggarakan Pengajian Rutin",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000168",
           "pageDate": null
         }
       ],
@@ -4779,6 +5313,32 @@
         "levels": ["TPA/madrasah (jenjang tidak dirinci)"],
         "program": null,
         "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.23.06.000032",
+        "fees": []
+      },
+      "social": []
+    },
+    {
+      "id": "web-masjid-baiturrohim-perum-metland-tambun-ii",
+      "name": "Masjid Baiturrohim (Perum Metland Tambun II)",
+      "kind": "masjid",
+      "lat": -6.2713,
+      "lng": 107.07212,
+      "coordinateSource": "kemenag",
+      "coordinateUrl": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.06.000290",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Menyelenggarakan Pengajian Rutin",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.06.000290",
+          "pageDate": null
+        }
+      ],
+      "education": {
+        "levels": ["TPA/Madrasah/PKBM (jenis tidak dirinci)"],
+        "program": null,
+        "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.06.000290",
         "fees": []
       },
       "social": []
@@ -5068,6 +5628,58 @@
       ]
     },
     {
+      "id": "web-masjid-nurul-hasanah-perumahan-puri-cikarang-asri",
+      "name": "Masjid Nurul Hasanah (Perumahan Puri Cikarang Asri)",
+      "kind": "masjid",
+      "lat": -6.2329680299295,
+      "lng": 107.15144991875,
+      "coordinateSource": "kemenag",
+      "coordinateUrl": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000038",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Menyelenggarakan Pengajian Rutin",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000038",
+          "pageDate": null
+        }
+      ],
+      "education": {
+        "levels": ["TPA/Madrasah/PKBM (jenis tidak dirinci)"],
+        "program": null,
+        "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.15.000038",
+        "fees": []
+      },
+      "social": []
+    },
+    {
+      "id": "web-masjid-nurul-hidayah-jl-lingkar-cibuntu",
+      "name": "Masjid Nurul Hidayah (Jl. Lingkar Cibuntu)",
+      "kind": "masjid",
+      "lat": -6.274480453976,
+      "lng": 107.07710342277,
+      "coordinateSource": "kemenag",
+      "coordinateUrl": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000136",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Menyelenggarakan Pengajian Rutin",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000136",
+          "pageDate": null
+        }
+      ],
+      "education": {
+        "levels": ["TPA/Madrasah/PKBM (jenis tidak dirinci)"],
+        "program": null,
+        "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000136",
+        "fees": []
+      },
+      "social": []
+    },
+    {
       "id": "web-masjid-nurul-hidayah-kp-pitara",
       "name": "Masjid Nurul Hidayah (Kp. Pitara)",
       "kind": "masjid",
@@ -5086,6 +5698,63 @@
         }
       ],
       "education": null,
+      "social": []
+    },
+    {
+      "id": "web-masjid-nurul-huda-perum-pondok-tanah-mas-wanasari",
+      "name": "Masjid Nurul Huda (Perum Pondok Tanah Mas, Wanasari)",
+      "kind": "masjid",
+      "lat": -6.2644113934862,
+      "lng": 107.08102986217,
+      "coordinateSource": "kemenag",
+      "coordinateUrl": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000176",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Menyelenggarakan Pengajian Rutin",
+          "frequency": "unknown",
+          "audience": "unknown",
+          "url": "https://simas.kemenag.go.id/profil/masjid/01.4.13.16.07.000176",
+          "pageDate": null
+        }
+      ],
+      "education": null,
+      "social": []
+    },
+    {
+      "id": "web-mis-al-huda-rawasapi-jatimulya",
+      "name": "MIS Al Huda (Rawasapi, Jatimulya)",
+      "kind": "mi-sd-islam",
+      "lat": -6.2771,
+      "lng": 107.0227,
+      "coordinateSource": "kemdikbud",
+      "coordinateUrl": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60709403",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["MI"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60709403",
+        "fees": []
+      },
+      "social": []
+    },
+    {
+      "id": "web-mis-al-ittihad-bojong-rangkas",
+      "name": "MIS Al Ittihad (Bojong Rangkas)",
+      "kind": "mi-sd-islam",
+      "lat": -6.5549,
+      "lng": 106.6957,
+      "coordinateSource": "kemdikbud",
+      "coordinateUrl": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60706663",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["MI"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60706663",
+        "fees": []
+      },
       "social": []
     },
     {
@@ -5143,6 +5812,24 @@
       "social": []
     },
     {
+      "id": "web-mis-at-taqwa-15-kebalen-babelan",
+      "name": "MIS At-Taqwa 15 (Kebalen, Babelan)",
+      "kind": "mi-sd-islam",
+      "lat": -6.1677,
+      "lng": 107.0452,
+      "coordinateSource": "kemdikbud",
+      "coordinateUrl": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60709253",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["MI"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60709253",
+        "fees": []
+      },
+      "social": []
+    },
+    {
       "id": "web-mis-dan-mtss-nurul-huda-rumbut",
       "name": "MIS dan MTsS Nurul Huda Rumbut",
       "kind": "mi-sd-islam",
@@ -5161,6 +5848,24 @@
       "social": []
     },
     {
+      "id": "web-mis-darul-muttaqin",
+      "name": "MIS Darul Muttaqin",
+      "kind": "mi-sd-islam",
+      "lat": -6.29551,
+      "lng": 106.608007,
+      "coordinateSource": "kemdikbud",
+      "coordinateUrl": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60721295",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["MI"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60721295",
+        "fees": []
+      },
+      "social": []
+    },
+    {
       "id": "web-mis-darussalam",
       "name": "MIS Darussalam",
       "kind": "mi-sd-islam",
@@ -5174,6 +5879,24 @@
         "levels": ["MI"],
         "program": null,
         "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60707083",
+        "fees": []
+      },
+      "social": []
+    },
+    {
+      "id": "web-mis-hayatul-islamiyah-cinangka",
+      "name": "MIS Hayatul Islamiyah Cinangka",
+      "kind": "mi-sd-islam",
+      "lat": -6.371278538387,
+      "lng": 106.757464040954,
+      "coordinateSource": "kemdikbud",
+      "coordinateUrl": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60710018",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["MI"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60710018",
         "fees": []
       },
       "social": []
@@ -5210,6 +5933,24 @@
         "levels": ["MI"],
         "program": null,
         "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60707018",
+        "fees": []
+      },
+      "social": []
+    },
+    {
+      "id": "web-mis-mathlaul-huda-lengkong-kulon",
+      "name": "MIS Mathlaul Huda Lengkong Kulon",
+      "kind": "mi-sd-islam",
+      "lat": -6.2971,
+      "lng": 106.6138,
+      "coordinateSource": "kemdikbud",
+      "coordinateUrl": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60721283",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["MI"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60721283",
         "fees": []
       },
       "social": []
@@ -5305,6 +6046,24 @@
       "social": []
     },
     {
+      "id": "web-mis-nuruttaqwa",
+      "name": "MIS Nuruttaqwa",
+      "kind": "mi-sd-islam",
+      "lat": -6.5588,
+      "lng": 106.6927,
+      "coordinateSource": "kemdikbud",
+      "coordinateUrl": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60706657",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["MI"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60706657",
+        "fees": []
+      },
+      "social": []
+    },
+    {
       "id": "web-mis-raudlatul-falah-i",
       "name": "MIS Raudlatul Falah I",
       "kind": "mi-sd-islam",
@@ -5323,6 +6082,24 @@
       "social": []
     },
     {
+      "id": "web-mis-raudlatul-ulum-cinangka",
+      "name": "MIS Raudlatul Ulum (Cinangka)",
+      "kind": "mi-sd-islam",
+      "lat": -6.366639,
+      "lng": 106.753431,
+      "coordinateSource": "kemdikbud",
+      "coordinateUrl": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60710033",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["MI"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/60710033",
+        "fees": []
+      },
+      "social": []
+    },
+    {
       "id": "web-mis-roudhotul-islamiyah",
       "name": "MIS Roudhotul Islamiyah",
       "kind": "mi-sd-islam",
@@ -5336,6 +6113,42 @@
         "levels": ["MI"],
         "program": null,
         "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/69727508",
+        "fees": []
+      },
+      "social": []
+    },
+    {
+      "id": "web-mts-at-taqwa-03-babelan-kota",
+      "name": "MTs At Taqwa 03 (Babelan Kota)",
+      "kind": "smp-mts-islam",
+      "lat": -6.1659,
+      "lng": 107.0446,
+      "coordinateSource": "kemdikbud",
+      "coordinateUrl": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20279253",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["MTs"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20279253",
+        "fees": []
+      },
+      "social": []
+    },
+    {
+      "id": "web-mts-attaqwa-19-kebalen-babelan",
+      "name": "MTs Attaqwa 19 (Kebalen, Babelan)",
+      "kind": "smp-mts-islam",
+      "lat": -6.1873,
+      "lng": 107.0389,
+      "coordinateSource": "kemdikbud",
+      "coordinateUrl": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20279257",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["MTs"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20279257",
         "fees": []
       },
       "social": []
@@ -5870,6 +6683,191 @@
       "social": []
     },
     {
+      "id": "web-sdit-tahfizh-bunga-bangsa-islamic-school-with-kb-tk-bbis",
+      "name": "SDIT Tahfizh Bunga Bangsa Islamic School (with KB & TK BBIS)",
+      "kind": "mi-sd-islam",
+      "lat": -6.2261,
+      "lng": 107.0153,
+      "coordinateSource": "kemdikbud",
+      "coordinateUrl": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/70009052",
+      "evidence": "strong",
+      "kajian": [],
+      "education": {
+        "levels": ["KB", "TK A", "TK B", "SD"],
+        "program": "SDIT Tahfizh (hafalan Al-Qur'an dan Hadits)",
+        "url": "https://bbis.sch.id/pendaftaran-sdit/",
+        "fees": [
+          {
+            "label": "SDIT: SPP per bulan",
+            "amount": 900000,
+            "period": "monthly",
+            "quote": "SPP Juli 2027 900.000",
+            "url": "https://bbis.sch.id/pendaftaran-sdit/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "KB/TK: SPP per bulan (row labelled 'SPP Juli 2025' on a 2027-2028 page)",
+            "amount": 750000,
+            "period": "monthly",
+            "quote": "SPP Juli 2025 750.000 750.000 750.000",
+            "url": "https://bbis.sch.id/pendaftaran-kb-tk/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "SDIT: total biaya masuk",
+            "amount": 24850000,
+            "period": "one-time",
+            "quote": "Total 24.850.000",
+            "url": "https://bbis.sch.id/pendaftaran-sdit/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "KB/TK A: total biaya masuk",
+            "amount": 17750000,
+            "period": "one-time",
+            "quote": "Total 17.750.000 17.750.000 17.350.000",
+            "url": "https://bbis.sch.id/pendaftaran-kb-tk/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "TK B: total biaya masuk",
+            "amount": 17350000,
+            "period": "one-time",
+            "quote": "Total 17.750.000 17.750.000 17.350.000",
+            "url": "https://bbis.sch.id/pendaftaran-kb-tk/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "KB/TK A/TK B: biaya kegiatan pendukung pembelajaran",
+            "amount": 4400000,
+            "period": "unknown",
+            "quote": "Biaya Kegiatan Pendukung Pembelajaran 4.400.000 4.400.000 4.400.000",
+            "url": "https://bbis.sch.id/pendaftaran-kb-tk/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "SDIT: biaya perlengkapan siswa/i",
+            "amount": 4100000,
+            "period": "yearly",
+            "quote": "Biaya Perlengkapan Siswa/i (selama 1 tahun) 4.100.000",
+            "url": "https://bbis.sch.id/pendaftaran-sdit/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "TK B: biaya perlengkapan anak",
+            "amount": 4100000,
+            "period": "yearly",
+            "quote": "Biaya Perlengkapan Anak (selama 1 tahun) 3.500.000 4.000.000 4.100.000",
+            "url": "https://bbis.sch.id/pendaftaran-kb-tk/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "TK A: biaya perlengkapan anak",
+            "amount": 4000000,
+            "period": "yearly",
+            "quote": "Biaya Perlengkapan Anak (selama 1 tahun) 3.500.000 4.000.000 4.100.000",
+            "url": "https://bbis.sch.id/pendaftaran-kb-tk/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "SDIT: biaya kegiatan pendukung siswa/i",
+            "amount": 3500000,
+            "period": "yearly",
+            "quote": "Biaya Kegiatan Pendukung Siswa/i (selama 1 tahun) 3.500.000",
+            "url": "https://bbis.sch.id/pendaftaran-sdit/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "KB: biaya perlengkapan anak",
+            "amount": 3500000,
+            "period": "yearly",
+            "quote": "Biaya Perlengkapan Anak (selama 1 tahun) 3.500.000 4.000.000 4.100.000",
+            "url": "https://bbis.sch.id/pendaftaran-kb-tk/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "SDIT: seragam siswa/i",
+            "amount": 1350000,
+            "period": "one-time",
+            "quote": "Seragam Siswa/i 1.350.000",
+            "url": "https://bbis.sch.id/pendaftaran-sdit/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "TK A/TK B: seragam",
+            "amount": 1150000,
+            "period": "one-time",
+            "quote": "Seragam 900.000 1.150.000 1.150.000",
+            "url": "https://bbis.sch.id/pendaftaran-kb-tk/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "KB: seragam",
+            "amount": 900000,
+            "period": "one-time",
+            "quote": "Seragam 900.000 1.150.000 1.150.000",
+            "url": "https://bbis.sch.id/pendaftaran-kb-tk/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "SDIT: biaya formulir pendaftaran",
+            "amount": 800000,
+            "period": "one-time",
+            "quote": "Biaya formulir pendaftaran Rp. 800.000",
+            "url": "https://bbis.sch.id/pendaftaran-sdit/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          },
+          {
+            "label": "KB/TK: biaya formulir pendaftaran",
+            "amount": 400000,
+            "period": "one-time",
+            "quote": "Biaya formulir pendaftaran Rp. 400.000",
+            "url": "https://bbis.sch.id/pendaftaran-kb-tk/",
+            "pageDate": "2026-10-19",
+            "academicYear": "2027/2028"
+          }
+        ]
+      },
+      "social": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/bbis.school/",
+          "via": "official-site",
+          "seenAt": "https://bbis.sch.id/",
+          "owner": "facility"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/profile.php?id=100083276800190",
+          "via": "official-site",
+          "seenAt": "https://bbis.sch.id/",
+          "owner": "facility"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCJ1wf3zLEiRg-BY69eMQcRw",
+          "via": "official-site",
+          "seenAt": "https://bbis.sch.id/",
+          "owner": "facility"
+        }
+      ]
+    },
+    {
       "id": "web-sdit-thariq-bin-ziyad-jatimulya",
       "name": "SDIT Thariq Bin Ziyad Jatimulya",
       "kind": "mi-sd-islam",
@@ -5927,6 +6925,42 @@
         "levels": ["SDIT"],
         "program": null,
         "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/69765057",
+        "fees": []
+      },
+      "social": []
+    },
+    {
+      "id": "web-smp-islam-al-maarif-cinangka",
+      "name": "SMP Islam Al Maarif (Cinangka)",
+      "kind": "smp-mts-islam",
+      "lat": -6.3697283,
+      "lng": 106.7596833,
+      "coordinateSource": "kemdikbud",
+      "coordinateUrl": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20229039",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["SMP"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20229039",
+        "fees": []
+      },
+      "social": []
+    },
+    {
+      "id": "web-smp-islam-nurul-falah",
+      "name": "SMP Islam Nurul Falah",
+      "kind": "smp-mts-islam",
+      "lat": -6.2937,
+      "lng": 106.6297,
+      "coordinateSource": "kemdikbud",
+      "coordinateUrl": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20603535",
+      "evidence": "partial",
+      "kajian": [],
+      "education": {
+        "levels": ["SMP"],
+        "program": null,
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20603535",
         "fees": []
       },
       "social": []
@@ -6452,6 +7486,18 @@
         "pageDate": null
       },
       {
+        "kind": "mosque-in-estate",
+        "quote": "Masjid Raya Al-Azhar Pusat ibadah dan syiar agama islam di Kota Summarecon Bekasi.",
+        "url": "https://www.summareconbekasi.com/facilities",
+        "pageDate": null
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Sekolah Islam Al-Azhar Summarecon Bekasi Sebagai pusat pendidikan agama Islam dengan fasilitas yang lengkap dan memadai.",
+        "url": "https://www.summareconbekasi.com/facilities",
+        "pageDate": null
+      },
+      {
         "kind": "tpq-or-school-in-estate",
         "quote": "Sekolah Islam Al-Azhar Summarecon Bekasi Sebagai pusat pendidikan agama Islam dengan fasilitas yang lengkap dan memadai.",
         "url": "https://www.summareconbekasi.com/facilities",
@@ -6472,6 +7518,12 @@
         "pageDate": null
       },
       {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Sekolah Al Azhar BSD Metland Cibitung",
+        "url": "https://metlandcibitung.co.id/",
+        "pageDate": null
+      },
+      {
         "kind": "other",
         "quote": "Fasilitas Ibadah",
         "url": "https://metlandcibitung.co.id/",
@@ -6479,6 +7531,12 @@
       }
     ],
     "prj-metland-cikarang": [
+      {
+        "kind": "islamic-school-nearby",
+        "quote": "Sekolah Al Azhar BSD Metland Cibitung",
+        "url": "https://metlandcikarang.co.id/",
+        "pageDate": null
+      },
       {
         "kind": "islamic-school-nearby",
         "quote": "Sekolah Al Azhar BSD Metland Cibitung",
@@ -6636,9 +7694,153 @@
         "quote": "Sekolah Strada (2 menit) Global (2 menit) Bani Saleh (2 menit)",
         "url": "https://www.grandsuryaestate.com/",
         "pageDate": null
+      },
+      {
+        "kind": "islamic-school-nearby",
+        "quote": "Bani Saleh (2 menit)",
+        "url": "https://www.grandsuryaestate.com/",
+        "pageDate": "2026-01-12"
+      }
+    ],
+    "prj-townhouse-syariah-mutiara-serpong": [
+      {
+        "kind": "syariah-concept",
+        "quote": "Proyek ini mengusung konsep syariah Islam tanpa riba, memberikan solusi hunian yang nyaman, sesuai prinsip Islami, dan bebas dari transaksi bunga.",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/townhouse-syariah-mutiara-serpong",
+        "pageDate": null
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "sesuai prinsip Islami",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/townhouse-syariah-mutiara-serpong",
+        "pageDate": null
+      },
+      {
+        "kind": "islamic-school-nearby",
+        "quote": "MI Darul Muttaqin 0,23 KM",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/townhouse-syariah-mutiara-serpong",
+        "pageDate": null
+      },
+      {
+        "kind": "islamic-school-nearby",
+        "quote": "SMP Islam Nurul Falah 1,84 KM",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/townhouse-syariah-mutiara-serpong",
+        "pageDate": null
+      }
+    ],
+    "prj-perumahan-tasnim-bogor": [
+      {
+        "kind": "mosque-in-estate",
+        "quote": "Masjid Pusat kegiatan ibadah di dalam kawasan.",
+        "url": "https://tasnimproperty.id/",
+        "pageDate": null
+      },
+      {
+        "kind": "kajian",
+        "quote": "Rumah dekat masjid, berkahnya banyak. Selain lebih disiplin sholat berjamaah, juga bisa ikut kajian dan kegiatan keagamaan lainnya.",
+        "url": "https://tasnimproperty.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "kajian",
+        "quote": "Selain lebih disiplin sholat berjamaah, juga bisa ikut kajian dan kegiatan keagamaan lainnya.",
+        "url": "https://tasnimproperty.com/",
+        "pageDate": "2026-05-13"
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Ada 3 Pesantren bertaraf international didalam kawasan perumahan",
+        "url": "https://tasnimproperty.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "3 pondok pesantren setara SMP,SMA",
+        "url": "https://tasnimproperty.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Perumahan Khusus muslim Skema Pembayaran Tanpa Riba",
+        "url": "https://tasnimproperty.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "sebuah perumahan bernuansa Islami yang terletak di Bogor Barat dekat dengan IPB Dramaga. Mengusung konsep syariah",
+        "url": "https://tasnimproperty.com/",
+        "pageDate": "2026-05-13"
+      }
+    ],
+    "prj-green-madani-cinangka": [
+      {
+        "kind": "mosque-in-estate",
+        "quote": "Masjid + Sekolah Sunnah dalam kawasan",
+        "url": "https://greenmadanicinangka.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "kajian",
+        "quote": "Masjid Kawasan Pusat ibadah & kajian rutin di tengah perumahan.",
+        "url": "https://greenmadanicinangka.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Dilengkapi fasilitas yang akan dibangun seperti ; Masjid Jami', Rumah Tahfiz, serta Sekolah Dasar Islam Terpadu.",
+        "url": "https://greenmadanicinangka.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Area TPQ Tempat anak belajar Al-Qur'an setelah maghrib.",
+        "url": "https://greenmadanicinangka.com/",
+        "pageDate": "2026-09-25"
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Sekolah Sunnah Rencana TKIT/SDIT",
+        "url": "https://greenmadanicinangka.com/",
+        "pageDate": "2026-09-25"
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "fasilitas TK dan SD IT",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cinangka-5",
+        "pageDate": "2026-07-30"
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "KPR Syariah BSI — tanpa bunga, tanpa riba.",
+        "url": "https://greenmadanicinangka.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Hunian syariah pilihan keluarga!",
+        "url": "https://greenmadanicinangka.com/",
+        "pageDate": "2026-09-25"
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Akad sesuai prinsip syariah, tanpa bunga, tanpa riba.",
+        "url": "https://greenmadanicinangka.com/",
+        "pageDate": "2026-09-25"
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Berkah Land Group adalah developer perumahan yang berkonsep syariah",
+        "url": "https://berkahlandgroup.com/",
+        "pageDate": null
       }
     ],
     "prj-al-marina-residence": [
+      {
+        "kind": "mosque-in-estate",
+        "quote": "Sebagai penunjang ibadah umat Muslim, perumahan ini dilengkapi dengan fasilitas masjid.",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/al-marina-residence",
+        "pageDate": null
+      },
       {
         "kind": "mosque-in-estate",
         "quote": "Tak hanya dilengkapi dengan fasilitas masjid",
@@ -6647,15 +7849,201 @@
       },
       {
         "kind": "syariah-concept",
+        "quote": "sebuah kawasan syariah dengan lingkungan yang nyaman dan berkualitas",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/al-marina-residence",
+        "pageDate": null
+      },
+      {
+        "kind": "syariah-concept",
         "quote": "kawasan syariah",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/al-marina-residence",
+        "pageDate": null
+      },
+      {
+        "kind": "islamic-school-nearby",
+        "quote": "MI Sirojul Mubtadiin 0,24 KM",
         "url": "https://www.pinhome.id/dijual/rumah-baru/al-marina-residence",
         "pageDate": null
       }
     ],
+    "prj-teras-madina-cibubur": [
+      {
+        "kind": "mosque-in-estate",
+        "quote": "Fasilitas utama seperti Masjid Jami",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cileungsi-2",
+        "pageDate": "2026-07-30"
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Rumah Tahfidz",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cileungsi-2",
+        "pageDate": "2026-07-30"
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Teras Madina Cibubur persembahan Maxirecon, Perumahan Islami di wilayah Cibubur",
+        "url": "https://maxirecon.com/",
+        "pageDate": "2025-04-22"
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "memberikan kesempatan kepada masyarakat untuk memiliki hunian yang berkualitas dengan skema pembelian sesuai Syariah",
+        "url": "https://maxirecon.com/",
+        "pageDate": "2025-04-22"
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Tanpa Riba ~ Gharar ~ Dzhalim",
+        "url": "https://maxirecon.com/",
+        "pageDate": "2025-04-22"
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "skema pembelian sesuai Syariah",
+        "url": "https://maxirecon.com/",
+        "pageDate": "2025-04-22"
+      },
+      {
+        "kind": "other",
+        "quote": "11 menit menuju Darussalam Mosque – Masjid dengan suasana asri serta akses mudah bagi warga sekitar.",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/teras-madina-cibubur",
+        "pageDate": null
+      },
+      {
+        "kind": "other",
+        "quote": "Seluruh penghuni di pada hunian ini Wajib muslim",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cileungsi-2",
+        "pageDate": "2026-07-30"
+      }
+    ],
+    "prj-selasar-madina-bekasi": [
+      {
+        "kind": "musholla-in-estate",
+        "quote": "FASILITAS - Mushalla - One Gate System - Taman Bermain",
+        "url": "https://selasarmadinabekasi.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Bingung cari perumahan dengan konsep Islam di kota besar? Selasar Madina Bekasi jawabannya!",
+        "url": "https://selasarmadinabekasi.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Perumahan Islami dipusat Kota Bekasi",
+        "url": "https://selasarmadinabekasi.com/",
+        "pageDate": "2025-03-20"
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Bingung cari perumahan dengan konsep Islam di kota besar?",
+        "url": "https://selasarmadinabekasi.com/",
+        "pageDate": "2025-03-20"
+      },
+      {
+        "kind": "islamic-school-nearby",
+        "quote": "SMP Islam Annur 0,1 KM SMK Annur Bekasi 0,02 KM MI Plus Annur 0,1 KM",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/selasar-madina-bekasi",
+        "pageDate": null
+      },
+      {
+        "kind": "other",
+        "quote": "5 menit ke Masjid Al-Azhar Summarecon",
+        "url": "https://selasarmadinabekasi.com/",
+        "pageDate": null
+      }
+    ],
+    "prj-raudhatul-jannah-residence": [
+      {
+        "kind": "mosque-in-estate",
+        "quote": "Setiap proyek memiliki masjid yang bukan hanya tempat ibadah, tetapi pusat aktivitas keislaman.",
+        "url": "https://berkahlandgroup.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Rumah Tahfidz",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-babelan--6",
+        "pageDate": "2026-07-30"
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Sekolah Islam tingkat Dasar yang sudah selesai dibangun dan aktif beroperasi",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-babelan--6",
+        "pageDate": "2026-07-30"
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "SDIT Shalahuddin Al Ayubi - 0 KM",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-babelan--6",
+        "pageDate": "2026-07-30"
+      },
+      {
+        "kind": "musholla-in-estate",
+        "quote": "Ruangan Serbaguna Arena Bermain Musholla",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/raudhatul-jannah-residence",
+        "pageDate": null
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "adalah developer perumahan yang berkonsep syariah bagian dari Berkah Land Group.",
+        "url": "https://berkahlandgroup.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Cicilan Syariah Tanpa Riba",
+        "url": "https://berkahlandgroup.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "dengan akad syariah dan bebas riba melalui bank syariah",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-babelan--6",
+        "pageDate": "2026-07-30"
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Berkah Land Group adalah developer perumahan yang berkonsep syariah",
+        "url": "https://berkahlandgroup.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "other",
+        "quote": "Melalui Yayasan Sarana Muamalah Muslim, kami sedang membangun ekosistem pendidikan islam yang komprehensifdari TK,SD,SMP dan Insyaallah SMA",
+        "url": "https://berkahlandgroup.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "other",
+        "quote": "FREE SPP Sekolah Islam Al Ayyubi selama 6 tahun",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-babelan--6",
+        "pageDate": "2026-07-30"
+      }
+    ],
     "prj-aqilla-sharia-village": [
+      {
+        "kind": "musholla-in-estate",
+        "quote": "Area Umum, Taman, Arena Bermain, Tempat Parkir, Musholla dan Keamanan 24 Jam",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/aqilla-sharia-village",
+        "pageDate": null
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Proyek perumahan ini hadir dengan konsep hunian nyaman dan bernuansa islami",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/aqilla-sharia-village",
+        "pageDate": null
+      },
       {
         "kind": "syariah-concept",
         "quote": "konsep hunian nyaman dan bernuansa islami",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/aqilla-sharia-village",
+        "pageDate": null
+      },
+      {
+        "kind": "islamic-school-nearby",
+        "quote": "SMP Islam Al-Mu'min 0,81 KM",
         "url": "https://www.pinhome.id/dijual/rumah-baru/aqilla-sharia-village",
         "pageDate": null
       }
@@ -6665,14 +8053,6 @@
         "kind": "syariah-concept",
         "quote": "Hunian Islami di Bogor Kota",
         "url": "https://www.pinhome.id/dijual/rumah-baru/rabbani-townhouse-cimanggu-3",
-        "pageDate": null
-      }
-    ],
-    "prj-townhouse-syariah-mutiara-serpong": [
-      {
-        "kind": "syariah-concept",
-        "quote": "sesuai prinsip Islami",
-        "url": "https://www.pinhome.id/dijual/rumah-baru/townhouse-syariah-mutiara-serpong",
         "pageDate": null
       }
     ],
@@ -6728,32 +8108,6 @@
         "pageDate": "2026-06-11"
       }
     ],
-    "prj-selasar-madina-bekasi": [
-      {
-        "kind": "musholla-in-estate",
-        "quote": "FASILITAS - Mushalla - One Gate System - Taman Bermain",
-        "url": "https://selasarmadinabekasi.com/",
-        "pageDate": "2025-03-20"
-      },
-      {
-        "kind": "syariah-concept",
-        "quote": "Perumahan Islami dipusat Kota Bekasi",
-        "url": "https://selasarmadinabekasi.com/",
-        "pageDate": "2025-03-20"
-      },
-      {
-        "kind": "syariah-concept",
-        "quote": "Bingung cari perumahan dengan konsep Islam di kota besar?",
-        "url": "https://selasarmadinabekasi.com/",
-        "pageDate": "2025-03-20"
-      },
-      {
-        "kind": "other",
-        "quote": "5 menit ke Masjid Al-Azhar Summarecon",
-        "url": "https://selasarmadinabekasi.com/",
-        "pageDate": "2025-03-20"
-      }
-    ],
     "prj-hisan-madinah-village": [
       {
         "kind": "tpq-or-school-in-estate",
@@ -6788,138 +8142,6 @@
         "pageDate": null
       }
     ],
-    "prj-raudhatul-jannah-residence": [
-      {
-        "kind": "mosque-in-estate",
-        "quote": "Setiap proyek memiliki masjid yang bukan hanya tempat ibadah, tetapi pusat aktivitas keislaman.",
-        "url": "https://berkahlandgroup.com/",
-        "pageDate": null
-      },
-      {
-        "kind": "tpq-or-school-in-estate",
-        "quote": "Rumah Tahfidz",
-        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-babelan--6",
-        "pageDate": "2026-07-30"
-      },
-      {
-        "kind": "tpq-or-school-in-estate",
-        "quote": "Sekolah Islam tingkat Dasar yang sudah selesai dibangun dan aktif beroperasi",
-        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-babelan--6",
-        "pageDate": "2026-07-30"
-      },
-      {
-        "kind": "tpq-or-school-in-estate",
-        "quote": "SDIT Shalahuddin Al Ayubi - 0 KM",
-        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-babelan--6",
-        "pageDate": "2026-07-30"
-      },
-      {
-        "kind": "musholla-in-estate",
-        "quote": "Ruangan Serbaguna Arena Bermain Musholla",
-        "url": "https://www.pinhome.id/dijual/rumah-baru/raudhatul-jannah-residence",
-        "pageDate": null
-      },
-      {
-        "kind": "syariah-concept",
-        "quote": "dengan akad syariah dan bebas riba melalui bank syariah",
-        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-babelan--6",
-        "pageDate": "2026-07-30"
-      },
-      {
-        "kind": "syariah-concept",
-        "quote": "Berkah Land Group adalah developer perumahan yang berkonsep syariah",
-        "url": "https://berkahlandgroup.com/",
-        "pageDate": null
-      },
-      {
-        "kind": "other",
-        "quote": "FREE SPP Sekolah Islam Al Ayyubi selama 6 tahun",
-        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-babelan--6",
-        "pageDate": "2026-07-30"
-      }
-    ],
-    "prj-green-madani-cinangka": [
-      {
-        "kind": "mosque-in-estate",
-        "quote": "Masjid Kawasan Pusat ibadah & kajian rutin di tengah perumahan.",
-        "url": "https://greenmadanicinangka.com/",
-        "pageDate": "2026-09-25"
-      },
-      {
-        "kind": "tpq-or-school-in-estate",
-        "quote": "Area TPQ Tempat anak belajar Al-Qur'an setelah maghrib.",
-        "url": "https://greenmadanicinangka.com/",
-        "pageDate": "2026-09-25"
-      },
-      {
-        "kind": "tpq-or-school-in-estate",
-        "quote": "Sekolah Sunnah Rencana TKIT/SDIT",
-        "url": "https://greenmadanicinangka.com/",
-        "pageDate": "2026-09-25"
-      },
-      {
-        "kind": "tpq-or-school-in-estate",
-        "quote": "fasilitas TK dan SD IT",
-        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cinangka-5",
-        "pageDate": "2026-07-30"
-      },
-      {
-        "kind": "syariah-concept",
-        "quote": "Hunian syariah pilihan keluarga!",
-        "url": "https://greenmadanicinangka.com/",
-        "pageDate": "2026-09-25"
-      },
-      {
-        "kind": "syariah-concept",
-        "quote": "Akad sesuai prinsip syariah, tanpa bunga, tanpa riba.",
-        "url": "https://greenmadanicinangka.com/",
-        "pageDate": "2026-09-25"
-      },
-      {
-        "kind": "syariah-concept",
-        "quote": "Berkah Land Group adalah developer perumahan yang berkonsep syariah",
-        "url": "https://berkahlandgroup.com/",
-        "pageDate": null
-      },
-      {
-        "kind": "other",
-        "quote": "Dilengkapi fasilitas yang akan dibangun seperti ; Masjid Jami', Rumah Tahfiz, serta Sekolah Dasar Islam Terpadu.",
-        "url": "https://greenmadanicinangka.com/",
-        "pageDate": "2026-09-25"
-      }
-    ],
-    "prj-teras-madina-cibubur": [
-      {
-        "kind": "mosque-in-estate",
-        "quote": "Fasilitas utama seperti Masjid Jami",
-        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cileungsi-2",
-        "pageDate": "2026-07-30"
-      },
-      {
-        "kind": "tpq-or-school-in-estate",
-        "quote": "Rumah Tahfidz",
-        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cileungsi-2",
-        "pageDate": "2026-07-30"
-      },
-      {
-        "kind": "syariah-concept",
-        "quote": "Teras Madina Cibubur persembahan Maxirecon, Perumahan Islami di wilayah Cibubur",
-        "url": "https://maxirecon.com/",
-        "pageDate": "2025-04-22"
-      },
-      {
-        "kind": "syariah-concept",
-        "quote": "skema pembelian sesuai Syariah",
-        "url": "https://maxirecon.com/",
-        "pageDate": "2025-04-22"
-      },
-      {
-        "kind": "other",
-        "quote": "Seluruh penghuni di pada hunian ini Wajib muslim",
-        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cileungsi-2",
-        "pageDate": "2026-07-30"
-      }
-    ],
     "prj-pesona-kahuripan-18": [
       {
         "kind": "mosque-in-estate",
@@ -6928,42 +8150,18 @@
         "pageDate": "2026-08-05"
       }
     ],
-    "prj-perumahan-tasnim-bogor": [
+    "prj-bumi-sakinah-cileungsi": [
       {
-        "kind": "mosque-in-estate",
-        "quote": "Masjid Pusat kegiatan ibadah di dalam kawasan.",
-        "url": "https://tasnimproperty.id/",
-        "pageDate": "2026-08-02"
-      },
-      {
-        "kind": "kajian",
-        "quote": "Selain lebih disiplin sholat berjamaah, juga bisa ikut kajian dan kegiatan keagamaan lainnya.",
-        "url": "https://tasnimproperty.com/",
-        "pageDate": "2026-05-13"
-      },
-      {
-        "kind": "tpq-or-school-in-estate",
-        "quote": "Ada 3 Pesantren bertaraf international didalam kawasan perumahan",
-        "url": "https://tasnimproperty.com/",
-        "pageDate": "2026-05-13"
-      },
-      {
-        "kind": "tpq-or-school-in-estate",
-        "quote": "3 pondok pesantren setara SMP,SMA",
-        "url": "https://tasnimproperty.com/",
-        "pageDate": "2026-05-13"
+        "kind": "syariah-concept",
+        "quote": "Perumahan Syariah di Cileungsi",
+        "url": "https://bumisakinahcileungsi.com/",
+        "pageDate": null
       },
       {
         "kind": "syariah-concept",
-        "quote": "sebuah perumahan bernuansa Islami yang terletak di Bogor Barat dekat dengan IPB Dramaga. Mengusung konsep syariah",
-        "url": "https://tasnimproperty.com/",
-        "pageDate": "2026-05-13"
-      },
-      {
-        "kind": "syariah-concept",
-        "quote": "Perumahan Khusus muslim Skema Pembayaran Tanpa Riba",
-        "url": "https://tasnimproperty.com/",
-        "pageDate": "2026-05-13"
+        "quote": "skema dan akad yang digunakan sesuai dengan prinsip syariah",
+        "url": "https://bumisakinahcileungsi.com/",
+        "pageDate": null
       }
     ]
   }

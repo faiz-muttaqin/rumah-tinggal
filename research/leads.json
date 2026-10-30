@@ -1,0 +1,377 @@
+{
+  "checkedAt": "2026-10-30",
+  "source": "Tiga daftar perumahan islami hasil Meta AI yang ditempel pengguna pada 30 Oktober 2026",
+  "note": "Petunjuk ini belum diverifikasi dari sumber yang bisa dibuka otomatis. Akses otomatis ke Instagram dibatasi, jadi tautan disediakan agar pengguna yang masuk ke Instagram bisa memeriksa sendiri. Klaim di bawah adalah ringkasan isi daftar tersebut, bukan fakta yang sudah dicek. Akun penasihat atau marketing perorangan tidak dicantumkan karena berisi data pribadi.",
+  "leads": [
+    {
+      "id": "lead-al-madina-premiere",
+      "name": "Al Madina Premiere",
+      "type": "project",
+      "status": "unverified",
+      "area": "Tangerang",
+      "claim": "Disebut cluster islami dengan masjid, taman bermain anak, dan area komersial; satu cuplikan pencarian menyebut Serpong.",
+      "links": [
+        {
+          "label": "Tagar #perumahanislami",
+          "url": "https://www.instagram.com/explore/tags/perumahanislami/"
+        }
+      ],
+      "check": "Tidak ada halaman proyek yang bisa dibuka saat dicek; harga, status, dan lokasi belum diketahui."
+    },
+    {
+      "id": "lead-cluster-muslim-hankam-cipayung",
+      "name": "Cluster Muslim Hankam Cipayung",
+      "type": "project",
+      "status": "unreached",
+      "area": "Jakarta",
+      "claim": "Disebut tipe 45/30 sekitar Rp 599 juta, 2 km dari Tol Bambu Apus 2, skema syariah tanpa riba; dipasarkan lewat akun sinergypropertysyariah.",
+      "links": [
+        {
+          "label": "Instagram @sinergypropertysyariah",
+          "url": "https://www.instagram.com/sinergypropertysyariah/"
+        }
+      ],
+      "check": "Tidak ditemukan di sitemap proyek Pinhome maupun portal lain; hanya bisa dicek lewat Instagram."
+    },
+    {
+      "id": "lead-fazama-summer-breeze",
+      "name": "Proyek FAZAMA Properti (tipe Summer Breeze 54/60)",
+      "type": "project",
+      "status": "unreached",
+      "area": "Bekasi",
+      "claim": "Disebut sekitar Rp 1 miliar di Bekasi Timur dekat RS Puspa Husada, LRT, dan tol. Tipe Summer Breeze juga muncul di Grand Al Ihsan Premiere (Pinhome Rp 1,05 Miliar), jadi kemungkinan proyek yang sama.",
+      "links": [
+        {
+          "label": "Instagram @rumahsyariah_info",
+          "url": "https://www.instagram.com/rumahsyariah_info/"
+        }
+      ],
+      "related": "prj-grand-al-ihsan-premiere",
+      "check": "Domain FAZAMA tidak ditemukan; dugaan kaitan dengan Grand Al Ihsan Premiere belum terbukti."
+    },
+    {
+      "id": "lead-rabbani-bintaro-residence",
+      "name": "Rabbani Bintaro Residence",
+      "type": "project",
+      "status": "unverified",
+      "area": "Tangerang",
+      "claim": "Disebut dekat masjid pusat kajian sunnah, dengan masjid, rumah tahfidz, kajian sunnah rutin, dan klinik thibbun nabawi.",
+      "links": [
+        {
+          "label": "Listing Pinhome",
+          "url": "https://www.pinhome.id/dijual/rumah-baru/rabbani-bintaro-residence"
+        },
+        {
+          "label": "Instagram @rabbani_land",
+          "url": "https://www.instagram.com/rabbani_land/"
+        },
+        {
+          "label": "Halaman pemasar griyarumahsyariah.com",
+          "url": "https://griyarumahsyariah.com/rabbani-bintaro/"
+        }
+      ],
+      "check": "Listing Pinhome dari agen menunjukkan 0 unit aktif dan pin dipakai bersama proyek lain; situs rabbaniland.com yang disebut daftar tidak terdaftar di DNS saat dicek.",
+      "contactUrl": "https://griyarumahsyariah.com/rabbani-bintaro/"
+    },
+    {
+      "id": "lead-griya-be-hasanah",
+      "name": "Griya Be Hasanah",
+      "type": "project",
+      "status": "unverified",
+      "area": "Tangerang",
+      "claim": "Disebut perumahan dengan masjid dan taman bermain anak di Batuceper.",
+      "links": [
+        {
+          "label": "Tagar #perumahanislami",
+          "url": "https://www.instagram.com/explore/tags/perumahanislami/"
+        }
+      ],
+      "check": "Hanya ditemukan listing rumah bekas (resale) dari agen atau pemilik, bukan proyek baru."
+    },
+    {
+      "id": "lead-royal-bestari-yasmin",
+      "name": "Royal Bestari Yasmin (Perumahan Syariah 2 Lantai di Kota Bogor)",
+      "type": "project",
+      "status": "unverified",
+      "area": "Bogor",
+      "claim": "Satu listing menyebut cluster islami dengan transaksi sesuai syariah, Rp 930 juta sampai Rp 1,15 miliar.",
+      "links": [
+        {
+          "label": "Listing Pinhome",
+          "url": "https://www.pinhome.id/dijual/rumah-baru/royal-bestari-yasmin"
+        }
+      ],
+      "check": "Tiga listing Pinhome bertentangan harga dan status; fasilitas islami selain skema pembayaran tidak disebut."
+    },
+    {
+      "id": "lead-rumah-halal-indonesia",
+      "name": "Rumah Halal Indonesia (platform)",
+      "type": "account",
+      "status": "unreached",
+      "area": null,
+      "claim": "Disebut jaringan perumahan syariah tanpa riba, denda, sita, dan gharar dengan listing di Setu, Babelan, Limo, Bubulak, dan Pasar Minggu.",
+      "links": [
+        {
+          "label": "Instagram @rumahhalal_id",
+          "url": "https://www.instagram.com/rumahhalal_id/"
+        },
+        {
+          "label": "Situs rumahhalal.com",
+          "url": "https://rumahhalal.com/"
+        }
+      ],
+      "check": "Situsnya adalah platform pendampingan; nama proyek dan developer pada listing disamarkan, jadi tidak bisa dicek per proyek."
+    },
+    {
+      "id": "lead-muslimproperti-id",
+      "name": "Muslim Properti (akun agregator)",
+      "type": "account",
+      "status": "unreached",
+      "area": null,
+      "claim": "Disebut pusat info perumahan islami Jabodetabek, termasuk Berkah Cimuning Residence dan Selasar Madina.",
+      "links": [
+        {
+          "label": "Instagram @muslimproperti.id",
+          "url": "https://www.instagram.com/muslimproperti.id/"
+        }
+      ],
+      "check": "Akun agregator; proyek yang disebut dan sudah terverifikasi tercantum di daftar riset."
+    },
+    {
+      "id": "lead-kprrumahsyariah",
+      "name": "KPR Rumah Syariah (akun)",
+      "type": "account",
+      "status": "unreached",
+      "area": "Bekasi",
+      "claim": "Disebut ready stock di Bekasi Timur dekat KRL Tambun dan LRT Jatimulya, tipe 77/59 tiga kamar, pembiayaan developer tanpa bank.",
+      "links": [
+        {
+          "label": "Instagram @kprrumahsyariah",
+          "url": "https://www.instagram.com/kprrumahsyariah/"
+        }
+      ],
+      "check": "Nama proyek tidak disebut; belum bisa dicocokkan dengan proyek bersumber."
+    },
+    {
+      "id": "lead-taat",
+      "name": "TAAT (agen properti syariah)",
+      "type": "account",
+      "status": "unreached",
+      "area": null,
+      "claim": "Disebut membangun masjid, program tahfidz anak, dan kelas bahasa Arab di proyek Cibubur.",
+      "links": [
+        {
+          "label": "Instagram @taat.co.id",
+          "url": "https://www.instagram.com/taat.co.id/"
+        },
+        {
+          "label": "Situs taat.co.id",
+          "url": "https://taat.co.id/"
+        }
+      ],
+      "related": "prj-teras-madina-cibubur",
+      "check": "TAAT adalah agen dan situs listing; proyek Cibubur yang dimaksud terverifikasi sebagai Teras Madina Cibubur (Maxirecon) di Cileungsi."
+    },
+    {
+      "id": "lead-rumahbekasi-info",
+      "name": "Info Rumah Bekasi (akun)",
+      "type": "account",
+      "status": "unreached",
+      "area": "Bekasi",
+      "claim": "Disebut campuran perumahan syariah dan konvensional di Bekasi, misalnya Jatimulya 10 menit ke Commuter Line.",
+      "links": [
+        {
+          "label": "Instagram @rumahbekasi.info",
+          "url": "https://www.instagram.com/rumahbekasi.info/"
+        }
+      ],
+      "check": "Akun info atau agregator; tiap proyek perlu dicek terpisah."
+    },
+    {
+      "id": "lead-propertitour",
+      "name": "Properti Tour (akun)",
+      "type": "account",
+      "status": "unreached",
+      "area": null,
+      "claim": "Disebut rumah siap huni sekitar Rp 980 juta dekat TB Simatupang dan LRT Cibubur.",
+      "links": [
+        {
+          "label": "Instagram @propertitour.official",
+          "url": "https://www.instagram.com/propertitour.official/"
+        }
+      ],
+      "check": "Nama proyek tidak disebut; belum bisa dicocokkan."
+    },
+    {
+      "id": "lead-pesona-kahuripan",
+      "name": "Pesona Kahuripan (grup developer)",
+      "type": "account",
+      "status": "unreached",
+      "area": "Bogor",
+      "claim": "Disebut rumah subsidi dan komersial untuk warga Jabodetabek dengan pembiayaan syariah.",
+      "links": [
+        {
+          "label": "Instagram @pesonakahuripan.official",
+          "url": "https://www.instagram.com/pesonakahuripan.official/"
+        },
+        {
+          "label": "Situs pesonakahuripan.com",
+          "url": "https://pesonakahuripan.com/"
+        }
+      ],
+      "related": "prj-pesona-kahuripan-18",
+      "check": "Grup developer nyata di Cileungsi dan Klapanunggal; Pesona Kahuripan 18 tercantum di daftar riset."
+    },
+    {
+      "id": "lead-amnahomes",
+      "name": "Amna Homes (jasa bangun rumah syariah)",
+      "type": "service",
+      "status": "unreached",
+      "area": null,
+      "claim": "Disebut jasa bangun atau renovasi rumah dengan akad syariah di Jabodetabek, bukan developer perumahan.",
+      "links": [
+        {
+          "label": "Instagram @amnahomes",
+          "url": "https://www.instagram.com/amnahomes/"
+        }
+      ],
+      "check": "Layanan, bukan listing hunian; dicantumkan sebagai rujukan."
+    },
+    {
+      "id": "lead-sumu",
+      "name": "Serikat Usaha Muhammadiyah, Blip Home (jasa bangun rumah)",
+      "type": "service",
+      "status": "unreached",
+      "area": null,
+      "claim": "Disebut solusi bangun dan renovasi rumah dengan prinsip syariah di Jabodetabek.",
+      "links": [
+        {
+          "label": "Instagram @sumu.or.id",
+          "url": "https://www.instagram.com/sumu.or.id/"
+        }
+      ],
+      "check": "Layanan, bukan listing hunian; dicantumkan sebagai rujukan."
+    },
+    {
+      "id": "lead-the-padjadjaran-residence",
+      "name": "The Padjadjaran Residence (Arsanta)",
+      "type": "project",
+      "status": "unreached",
+      "area": "Bekasi",
+      "claim": "Disebut perumahan subsidi bergaya cluster 5 hektare di Desa Sukamanah, Sukatani, Cikarang dengan masjid, rumah tahfidz, taman bermain, dan pengajian rutin warga.",
+      "links": [
+        {
+          "label": "Instagram @arsantaofficial",
+          "url": "https://www.instagram.com/arsantaofficial/"
+        },
+        {
+          "label": "Instagram @kprsyariah",
+          "url": "https://www.instagram.com/kprsyariah/"
+        },
+        {
+          "label": "Instagram @muslimproperti.id",
+          "url": "https://www.instagram.com/muslimproperti.id/"
+        }
+      ],
+      "check": "Situs thepadjadjaran.id dan padjadjaranresidence.com yang disebut tidak terdaftar di DNS; proyek tidak ditemukan di portal atau mesin pencari."
+    },
+    {
+      "id": "lead-cluster-mustikasari-quint-amanah",
+      "name": "Cluster Mustikasari (Quint Amanah)",
+      "type": "project",
+      "status": "unreached",
+      "area": "Bekasi",
+      "claim": "Disebut cluster di Mustikasari, Mustika Jaya dengan Masjid Al Ihsan, lapangan olahraga, taman bermain, dan program tahsin serta tahfidz anak (dari video Instagram).",
+      "links": [
+        {
+          "label": "Instagram @quintamanah",
+          "url": "https://www.instagram.com/quintamanah/"
+        }
+      ],
+      "related": "prj-grand-al-ihsan-premiere",
+      "check": "rumahhalalindonesia.com dialihkan ke rumahhalal.com yang menyamarkan nama proyek. Lokasi dan nama masjid mirip Grand Al Ihsan Premiere, tetapi kaitannya belum terbukti. Akun penasihat perorangan tidak dicatat."
+    },
+    {
+      "id": "lead-sekitar-al-barkah-cileungsi",
+      "name": "Rumah dan kavling dekat Masjid Al-Barkah (Rodja) Cileungsi",
+      "type": "project",
+      "status": "unverified",
+      "area": "Bogor",
+      "claim": "Disebut: kavling Jl. H. Syathiby ±500 m dari masjid (83 m², Rp 250 juta), Griya Cileungsi Asri ±700 m (90/52, Rp 625 juta nego), townhouse Cileungsi Hijau ±2,8 km, rumah Rp 388 juta dekat Kota Wisata, dan kavling Cluster Syariah Cottonwood dan Rosewood di Narogong.",
+      "links": [
+        {
+          "label": "Cileungsi Hijau di rumah123 (Rodja TV 1,3 km)",
+          "url": "https://www.rumah123.com/venue/cileungsi-hijau-vcm14608/"
+        },
+        {
+          "label": "Threads Masjid Al-Barkah (info kajian)",
+          "url": "https://www.threads.com/@masjidalbarkahcileungsi"
+        }
+      ],
+      "check": "Iklan perorangan atau resale; akun Instagram pribadi yang memposting tidak dicatat. Listing Lamudi, Griya Cileungsi Asri, dan cluster Cottonwood/Rosewood tidak ditemukan di halaman yang bisa dibuka. Status tanah perlu dicek ke notaris atau PPAT."
+    },
+    {
+      "id": "lead-kampung-islami-thoyibah",
+      "name": "Kampung Islami Thoyibah dan Masjid Abu Bakr Ash-Shiddiq (MABAS) Cibitung",
+      "type": "project",
+      "status": "unverified",
+      "area": "Bekasi",
+      "claim": "Disebut kawasan islami 9,5 ha (tahap kedua 5 ha) di Cibitung dekat tol, dengan masjid MABAS, pesantren tahfidz, TPA anak, aula pengajian, dan klinik thibbun nabawi.",
+      "links": [
+        {
+          "label": "Instagram @mabascibitung",
+          "url": "https://www.instagram.com/mabascibitung/"
+        },
+        {
+          "label": "Link bio masjid (ini.bio)",
+          "url": "https://ini.bio/MABAScibitung"
+        },
+        {
+          "label": "Link bio masjid (berbagi.link)",
+          "url": "https://berbagi.link/mabascibitungofficial"
+        },
+        {
+          "label": "Kawasan di OpenStreetMap",
+          "url": "https://www.openstreetmap.org/way/549605370"
+        }
+      ],
+      "contactUrl": "https://ini.bio/MABAScibitung",
+      "check": "Halaman bio masjid terbuka dan memuat menu Info Kajian MABAS, tetapi tanpa jadwal. kampungislamithoyibah.com tidak terdaftar di DNS; tidak ada listing rumah aktif yang ditemukan. mitrathayyibahproperti.com milik pemasar Maxirecon, bukan kawasan ini."
+    },
+    {
+      "id": "lead-hashtags",
+      "name": "Tagar pencarian perumahan syariah di Instagram",
+      "type": "hashtag",
+      "status": "unreached",
+      "area": null,
+      "claim": "Tagar yang disarankan daftar Meta AI untuk menelusuri sendiri. Kata kunci bio yang disarankan: tanpa riba, akad syariah, one gate system, SDIT dan masjid dalam cluster.",
+      "links": [
+        {
+          "label": "#perumahansyariahbekasi",
+          "url": "https://www.instagram.com/explore/tags/perumahansyariahbekasi/"
+        },
+        {
+          "label": "#perumahansyariahjabodetabek",
+          "url": "https://www.instagram.com/explore/tags/perumahansyariahjabodetabek/"
+        },
+        {
+          "label": "#rumahsyariahtanpariba",
+          "url": "https://www.instagram.com/explore/tags/rumahsyariahtanpariba/"
+        },
+        {
+          "label": "#rumahhalalindonesia",
+          "url": "https://www.instagram.com/explore/tags/rumahhalalindonesia/"
+        },
+        {
+          "label": "#perumahanislami",
+          "url": "https://www.instagram.com/explore/tags/perumahanislami/"
+        },
+        {
+          "label": "#kprsyariah",
+          "url": "https://www.instagram.com/explore/tags/kprsyariah/"
+        }
+      ],
+      "check": "Tagar hanya bisa dibuka oleh pengguna yang masuk ke Instagram."
+    }
+  ]
+}

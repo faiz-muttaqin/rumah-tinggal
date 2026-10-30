@@ -734,7 +734,30 @@
       "verdict": "partial",
       "lastChecked": "2026-10-30",
       "corridor": "sweep-syariah",
-      "methods": ["portal-proyek-baru"]
+      "methods": ["portal-proyek-baru"],
+      "social": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/almarinaresidence/",
+          "owner": "project",
+          "via": "search-result",
+          "seenAt": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/al.marina.residence/",
+          "owner": "project",
+          "via": "search-result",
+          "seenAt": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCTu7URCnRmdQdZMiUQVoW5w",
+          "owner": "project",
+          "via": "search-result",
+          "seenAt": null
+        }
+      ]
     },
     {
       "id": "prj-alif-premiere-jatibening",
@@ -1611,12 +1634,30 @@
           "pageDate": null,
           "supports": ["unit"],
           "note": "Lists only this project; card shows HGB, LT 60-120, LB 27-40."
+        },
+        {
+          "url": "https://aqillashariavillage.id/",
+          "kind": "developer",
+          "title": "aqillashariavillage.id (disebut daftar Meta AI pengguna)",
+          "fetched": false,
+          "pageDate": null,
+          "supports": [],
+          "note": "Dicek 2026-10-30: domain tidak terdaftar di DNS. Halaman DAV DIGI yang disebut sebagai tautan bio adalah template agensi dengan nomor contoh, sehingga tidak dipakai."
         }
       ],
       "verdict": "partial",
       "lastChecked": "2026-10-30",
       "corridor": "sweep-syariah",
-      "methods": ["portal-proyek-baru"]
+      "methods": ["portal-proyek-baru"],
+      "social": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/aqillashariavillageofficial/",
+          "owner": "project",
+          "via": "user-lead",
+          "seenAt": null
+        }
+      ]
     },
     {
       "id": "prj-arabika-mansion",
@@ -5964,6 +6005,24 @@
           "pageDate": null,
           "supports": [],
           "note": "Domain named in a search result for the developer; DNS does not resolve (www and bare). grandalihsanpremiere.com also does not resolve."
+        },
+        {
+          "url": "https://grandalihsanpremiere.id/",
+          "kind": "developer",
+          "title": "grandalihsanpremiere.id (disebut daftar Meta AI pengguna)",
+          "fetched": false,
+          "pageDate": null,
+          "supports": [],
+          "note": "Dicek 2026-10-30: sertifikat TLS milik host lain dan versi http dialihkan ke penyedia hosting, jadi situs tidak tayang. Klaim 'akan diadakan kajian Sunnah yang rutin' dari daftar Meta AI belum bisa dibuktikan."
+        },
+        {
+          "fetched": true,
+          "pageDate": null,
+          "supports": [],
+          "url": "https://mitrathayyibahproperti.com/",
+          "kind": "developer",
+          "title": "Mitra Thayyibah Properti (unit pemasaran Maxirecon)",
+          "note": "Unit pemasaran Maxirecon (PT Jakarta Properti Utama) mencantumkan Grand Al Ihsan Premiere Type Sakura Rp 995 Juta dan Summer Breeze Rp 1,4 Miliar; memuat kontak pemasaran (tidak disimpan)."
         }
       ],
       "verdict": "partial",
@@ -5978,7 +6037,8 @@
           "via": "user-lead",
           "seenAt": null
         }
-      ]
+      ],
+      "contactUrl": "https://mitrathayyibahproperti.com/"
     },
     {
       "id": "prj-grand-almas-residence-tigaraksa",
@@ -6715,8 +6775,16 @@
           "owner": "project",
           "via": "official-site",
           "seenAt": "https://greenmadanicinangka.com/"
+        },
+        {
+          "seenAt": null,
+          "platform": "linkbio",
+          "url": "https://cinangka.davdigi.com/",
+          "owner": "project",
+          "via": "user-lead"
         }
-      ]
+      ],
+      "contactUrl": "https://greenmadanicinangka.com/"
     },
     {
       "id": "prj-griya-fairus-diamond",
@@ -7358,6 +7426,13 @@
         {
           "platform": "x",
           "url": "https://x.com/sinarmas_land",
+          "owner": "developer",
+          "via": "official-site",
+          "seenAt": "https://www.sinarmasland.com/id/development/residential/infinihauz"
+        },
+        {
+          "platform": "x",
+          "url": "https://twitter.com/sinarmas_land",
           "owner": "developer",
           "via": "official-site",
           "seenAt": "https://www.sinarmasland.com/id/development/residential/infinihauz"
@@ -8686,6 +8761,20 @@
           "owner": "developer",
           "via": "official-site",
           "seenAt": "https://lrtcity.com/"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/lrtcityjatibening",
+          "owner": "project",
+          "via": "official-site",
+          "seenAt": "https://lrtcity.com/id-lrt-city-jatibening"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/GatewayParkLRTCity",
+          "owner": "project",
+          "via": "official-site",
+          "seenAt": "https://lrtcity.com/id-lrt-city-jatibening"
         }
       ]
     },
@@ -11112,8 +11201,16 @@
           "owner": "developer",
           "via": "user-lead",
           "seenAt": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/tasnimproperty.id/",
+          "owner": "developer",
+          "via": "user-lead",
+          "seenAt": null
         }
-      ]
+      ],
+      "contactUrl": "https://tasnimproperty.com/"
     },
     {
       "id": "prj-pesona-kahuripan-11",
@@ -11741,13 +11838,31 @@
           "pageDate": null,
           "supports": [],
           "note": "No Rabbani or Bintaro project on the homepage. The link to the Pinhome developer claim is unconfirmed."
+        },
+        {
+          "fetched": true,
+          "pageDate": null,
+          "supports": [],
+          "url": "https://griyarumahsyariah.com/rabbani-bintaro/",
+          "kind": "other",
+          "title": "Rabbani Bintaro - Perumahan Syariah (griyarumahsyariah.com)",
+          "note": "Halaman pemasar tanpa tanggal (hak cipta 2024): SOHO Rp 950 Juta, rumah Rp 1,3 Milyaran, unit indent, musholla. Tidak membuktikan pemasaran developer terkini."
         }
       ],
       "verdict": "partial",
       "lastChecked": "2026-10-30",
       "corridor": "sweep-syariah-meta",
       "methods": ["portal-proyek-baru", "situs-developer"],
-      "excludeReason": "Kedua listing Pinhome dari agen menunjukkan 0 unit aktif; pemasaran developer terkini belum terbukti dan pin dipakai bersama proyek lain."
+      "excludeReason": "Kedua listing Pinhome dari agen menunjukkan 0 unit aktif; pemasaran developer terkini belum terbukti dan pin dipakai bersama proyek lain.",
+      "social": [
+        {
+          "seenAt": null,
+          "platform": "instagram",
+          "url": "https://www.instagram.com/rabbani_land/",
+          "owner": "developer",
+          "via": "user-lead"
+        }
+      ]
     },
     {
       "id": "prj-rabbani-townhouse-cimanggu",
@@ -11967,12 +12082,31 @@
           "pageDate": "2026-07-30",
           "supports": ["harga", "status", "unit"],
           "note": "Agency listing, developer Berkah Group; project name not shown, matched by unit names Ayubi and Al Fatih; Rp 721,1 Jt - 1,165 M, status ready, Unit Tersisa 24 unit"
+        },
+        {
+          "fetched": true,
+          "pageDate": null,
+          "supports": [],
+          "url": "https://sites.google.com/view/rumahsyariahkebalenbekasi/home",
+          "kind": "other",
+          "title": "Rumah Syariah Kebalen Bekasi (Google Sites)",
+          "note": "Situs pemasaran yang disebut daftar Meta AI; fasilitas tertulis Area Berkuda, Area Memanah, Masjid, Rumah Tahfidz, Mini Market, One Gate System. Kalimat kajian sunnah rutin tidak ada di halaman. Memuat kontak pemasar (tidak disimpan)."
         }
       ],
       "verdict": "confirmed",
       "lastChecked": "2026-10-30",
       "corridor": "sweep-syariah-meta",
-      "methods": ["portal-proyek-baru", "situs-developer"]
+      "methods": ["portal-proyek-baru", "situs-developer"],
+      "contactUrl": "https://sites.google.com/view/rumahsyariahkebalenbekasi/home",
+      "social": [
+        {
+          "seenAt": null,
+          "platform": "instagram",
+          "url": "https://www.instagram.com/raudhatuljannahresidence/",
+          "owner": "project",
+          "via": "user-lead"
+        }
+      ]
     },
     {
       "id": "prj-royal-galaxy-city-bekasi",
@@ -12597,6 +12731,20 @@
         {
           "platform": "x",
           "url": "https://twitter.com/infoperumnas",
+          "owner": "developer",
+          "via": "official-site",
+          "seenAt": "https://homeownershipprogram.perumnas.co.id/en/alonia-ev/"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/infoperumnas",
+          "owner": "developer",
+          "via": "official-site",
+          "seenAt": "https://homeownershipprogram.perumnas.co.id/en/alonia-ev/"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://youtube.com/infoperumnas",
           "owner": "developer",
           "via": "official-site",
           "seenAt": "https://homeownershipprogram.perumnas.co.id/en/alonia-ev/"
@@ -14551,6 +14699,13 @@
           "owner": "project",
           "via": "official-site",
           "seenAt": "https://www.summareconbekasi.com/"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/summareconbekasi/",
+          "owner": "project",
+          "via": "official-site",
+          "seenAt": "https://www.summareconbekasi.com/"
         }
       ]
     },
@@ -14952,6 +15107,15 @@
           "pageDate": null,
           "supports": [],
           "note": "PT Indonesia Taat Berkarya, 'Shariah Compliant Property Solutions Agency, Developer, Architect & Contractor'; acts as agent on its listings"
+        },
+        {
+          "fetched": true,
+          "pageDate": null,
+          "supports": [],
+          "url": "https://mitrathayyibahproperti.com/",
+          "kind": "developer",
+          "title": "Mitra Thayyibah Properti (unit pemasaran Maxirecon)",
+          "note": "Unit pemasaran Maxirecon (PT Jakarta Properti Utama) mencantumkan Teras Madina Cibubur Type Ajwa Rp 740 Juta dan Type Ajwa Z Rp 672 Juta; memuat kontak pemasaran (tidak disimpan)."
         }
       ],
       "verdict": "partial",
@@ -14980,7 +15144,8 @@
           "via": "official-site",
           "seenAt": "https://maxirecon.com/"
         }
-      ]
+      ],
+      "contactUrl": "https://mitrathayyibahproperti.com/"
     },
     {
       "id": "prj-the-ainani-residence-bintaro",
@@ -15961,7 +16126,23 @@
       "verdict": "partial",
       "lastChecked": "2026-10-30",
       "corridor": "sweep-syariah",
-      "methods": ["portal-proyek-baru"]
+      "methods": ["portal-proyek-baru"],
+      "social": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/townhouse_syariah/",
+          "owner": "project",
+          "via": "search-result",
+          "seenAt": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Townhouse-Syariah-Mutiara-Serpong-100076504761650/",
+          "owner": "project",
+          "via": "search-result",
+          "seenAt": null
+        }
+      ]
     },
     {
       "id": "prj-urban-signature-lrt-city-ciracas",
@@ -16613,6 +16794,71 @@
       "lastChecked": "2026-10-30",
       "corridor": "krl-bogor-outer",
       "methods": ["portal-proyek-baru"]
+    },
+    {
+      "id": "prj-bumi-sakinah-cileungsi",
+      "name": "Bumi Sakinah Cileungsi",
+      "developer": null,
+      "kind": "Rumah",
+      "subsidized": false,
+      "locationText": "Cileungsi, Kabupaten Bogor (situs proyek tidak menyebut alamat jalan)",
+      "status": "dipasarkan",
+      "statusQuote": "UNIT TERBATAS!!",
+      "statusUrl": "https://bumisakinahcileungsi.com/",
+      "price": {
+        "min": 400000000,
+        "max": null,
+        "basis": "harga mulai menurut artikel Mamikos 4 Mei 2026; situs proyek tidak mencantumkan harga",
+        "quote": "Ditawarkan dengan harga mulai dari Rp 400 jutaan",
+        "url": "https://mamikos.com/info/perumahan-di-cileungsi-gnr/?halaman=2",
+        "pageDate": "2026-05-04"
+      },
+      "units": [],
+      "transitClaim": null,
+      "officialUrl": "https://bumisakinahcileungsi.com/",
+      "coordinate": null,
+      "osmQuery": "Bumi Sakinah Cileungsi, Cileungsi, Kabupaten Bogor",
+      "sources": [
+        {
+          "url": "https://bumisakinahcileungsi.com/",
+          "kind": "developer",
+          "title": "Bumi Sakinah Cileungsi",
+          "fetched": true,
+          "pageDate": null,
+          "supports": ["status", "lokasi"],
+          "note": "Situs proyek: perumahan syariah, 100+ unit dan setengahnya sudah dihuni, unit terbatas. Alamat hanya 'Cileungsi – Bogor'; tidak ada peta atau harga. Ditemukan dari daftar Meta AI pengguna (sekitar Masjid Al-Barkah Cileungsi)."
+        },
+        {
+          "url": "https://mamikos.com/info/perumahan-di-cileungsi-gnr/?halaman=2",
+          "kind": "news",
+          "title": "Rekomendasi Perumahan di Cileungsi (Mamikos)",
+          "fetched": true,
+          "pageDate": "2026-05-04",
+          "supports": ["harga"],
+          "note": "Artikel informasi, bukan listing developer; menyebut harga mulai Rp 400 jutaan dan skema angsuran syariah."
+        }
+      ],
+      "verdict": "partial",
+      "lastChecked": "2026-10-30",
+      "corridor": "sweep-syariah-meta",
+      "methods": ["situs-developer"],
+      "social": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/bumisakinah_cileungsi/",
+          "owner": "project",
+          "via": "official-site",
+          "seenAt": "https://bumisakinahcileungsi.com/"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/bumisakinahcileungsibsc",
+          "owner": "project",
+          "via": "official-site",
+          "seenAt": "https://bumisakinahcileungsi.com/"
+        }
+      ],
+      "contactUrl": "https://bumisakinahcileungsi.com/"
     }
   ]
 }

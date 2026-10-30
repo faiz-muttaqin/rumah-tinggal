@@ -88,7 +88,7 @@ test("filters by mode, straight-line distance, evidence and text", async ({
   await page.locator("#research-search").fill("tidak ada proyek");
   await expect(page.getByTestId("research-empty")).toBeVisible();
   await page.locator("#research-search").fill("");
-  await page.getByRole("button", { name: "Bekasi", exact: true }).click();
+  await page.locator("[data-area=Bekasi]").click();
   await expect(cards(page)).toHaveCount(1);
 });
 
@@ -209,4 +209,66 @@ test("lists Islamic projects far from stations or without a verified point", asy
   await page.locator("#research-distance").selectOption("any");
   await page.locator("#research-mode").selectOption("KRL");
   await expect(far).toHaveCount(0);
+});
+
+test("shows Muslim-family rentals and unverified Instagram leads with links", async ({
+  page,
+}) => {
+  const rentals = page.getByTestId("rental-card");
+  await expect(page.locator("#sewa")).toBeVisible();
+  await expect(rentals).toHaveCount(2);
+  await expect(rentals.first()).toContainText("Rp 2.500.000/bulan");
+  await expect(rentals.first()).toContainText(
+    "Lingkungan keluarga muslim (uji)",
+  );
+  await expect(rentals.first()).toContainText("lokasi sampai tingkat kawasan");
+  await page.locator("[data-rental-area=Depok]").click();
+  await expect(rentals).toHaveCount(1);
+  await expect(rentals.first()).toContainText("Apartemen Sewa Uji");
+
+  const lead = page.getByTestId("lead-card");
+  await expect(page.locator("#belum-diverifikasi")).toBeVisible();
+  await expect(lead).toContainText("Belum terjangkau otomatis");
+  await expect(lead).toContainText("Menurut daftar pengguna");
+  await expect(
+    lead.getByRole("link", { name: "Instagram @petunjuk.uji ↗" }),
+  ).toHaveAttribute("href", "https://www.instagram.com/petunjuk.uji/");
+  await expect(
+    lead.getByRole("link", { name: /Rumah Uji Bekasi Timur/ }),
+  ).toHaveAttribute("href", "#prj-uji-bekasi-timur");
+  await expect(lead.getByTestId("contact-link")).toHaveAttribute(
+    "href",
+    "https://bio.example.invalid/petunjuk-uji",
+  );
+  const contact = page
+    .locator("#prj-uji-bekasi-timur")
+    .getByTestId("contact-link");
+  await expect(contact).toContainText("Kontak (belum diverifikasi)");
+  await expect(contact).toHaveAttribute(
+    "href",
+    "https://developer.example.invalid/prj-uji-bekasi-timur/kontak",
+  );
+  await expect(page.locator("body")).not.toContainText(/wa\.me|\+62\s?8/);
+});
+
+test("budget is a range that matches any price inside it, for projects and rentals", async ({
+  page,
+}) => {
+  await page.locator("#research-budget-min").selectOption("500000000");
+  await page.locator("#research-budget-max").selectOption("750000000");
+  await expect(cards(page)).toHaveCount(2);
+  await expect(page.locator("#prj-uji-cisauk")).toBeVisible();
+  await expect(page.locator("#prj-uji-islami-jauh")).toBeVisible();
+  await page.locator("#research-budget-min").selectOption("1000000000");
+  await page.locator("#research-budget-max").selectOption("0");
+  await expect(cards(page)).toHaveCount(1);
+  await expect(page.locator("#prj-uji-lebak-bulus")).toBeVisible();
+
+  const rentals = page.getByTestId("rental-card");
+  await page.locator("#rental-budget-max").selectOption("3000000");
+  await expect(rentals).toHaveCount(1);
+  await expect(rentals.first()).toContainText("Kontrakan Keluarga Uji");
+  await page.locator("#rental-budget-min").selectOption("5000000");
+  await page.locator("#rental-budget-max").selectOption("0");
+  await expect(page.getByTestId("rental-empty")).toBeVisible();
 });
