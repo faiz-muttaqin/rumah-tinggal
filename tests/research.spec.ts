@@ -272,3 +272,11 @@ test("budget is a range that matches any price inside it, for projects and renta
   await page.locator("#rental-budget-max").selectOption("0");
   await expect(page.getByTestId("rental-empty")).toBeVisible();
 });
+
+test("/riset is marked noindex for search engines", async ({ page }) => {
+  await page.goto("/riset");
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+    "content",
+    "noindex, nofollow",
+  );
+});

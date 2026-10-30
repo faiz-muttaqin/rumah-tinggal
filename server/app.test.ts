@@ -163,6 +163,24 @@ test("health and browser config expose only public settings", async (t) => {
   assert.equal(response.headers.get("cache-control"), "no-store");
 });
 
+test("every response asks search engines not to index the site", async (t) => {
+  const { api } = await fixture(t);
+  for (const path of ["/api/health", "/api/listings", "/missing.txt"]) {
+    assert.equal(
+      (await api(path)).headers.get("x-robots-tag"),
+      "noindex, nofollow, noarchive",
+      path,
+    );
+  }
+  const robots = await api("/robots.txt");
+  assert.equal(robots.status, 200);
+  assert.match(robots.headers.get("content-type") ?? "", /^text\/plain/);
+  const body = await robots.text();
+  assert.match(body, /^User-agent: \*$/m);
+  // Perayapan tidak diblokir, agar noindex dapat dibaca.
+  assert.doesNotMatch(body, /^Disallow: \/$/m);
+});
+
 test("private listings reject missing and invalid bearer tokens", async (t) => {
   const { api } = await fixture(t);
   for (const user of [null, "invalid"]) {

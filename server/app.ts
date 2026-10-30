@@ -43,6 +43,18 @@ const contentTypes = new Map([
   [".ttf", "font/ttf"],
   [".geojson", "application/geo+json; charset=utf-8"],
 ]);
+// Situs tidak untuk mesin pencari: noindex di setiap respons (header) dan halaman (meta).
+// Perayapan sengaja tidak diblokir agar noindex terbaca dan halaman lama terhapus dari indeks.
+const ROBOTS_TAG = "noindex, nofollow, noarchive";
+const ROBOTS_TXT = [
+  "# Rumah Tinggal tidak untuk mesin pencari.",
+  "# Setiap halaman memakai noindex (header X-Robots-Tag dan meta robots).",
+  "# Perayapan tidak diblokir agar noindex terbaca dan halaman lama terhapus dari indeks.",
+  "User-agent: *",
+  "Disallow:",
+  "",
+].join("\n");
+
 const publicGeoJsonPaths = new Set([
   "/data/regions.geojson",
   "/data/transit.geojson",
@@ -430,8 +442,17 @@ export function createApp(options: AppOptions = {}) {
   const server = createServer((request, response) => {
     response.setHeader("X-Content-Type-Options", "nosniff");
     response.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+    response.setHeader("X-Robots-Tag", ROBOTS_TAG);
     void (async () => {
       const path = safePath(request.url ?? "/");
+      if (path === "/robots.txt" && request.method === "GET") {
+        response.writeHead(200, {
+          "Content-Type": "text/plain; charset=utf-8",
+          "Cache-Control": "public, max-age=3600",
+        });
+        response.end(ROBOTS_TXT);
+        return;
+      }
       if (path === "/api/health" && request.method === "GET") {
         json(response, 200, { ok: true, port: config.port });
         return;

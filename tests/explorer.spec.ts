@@ -832,3 +832,11 @@ test("shows nearby mosques and schools from the basemap behind a toggle", async 
   await toggle.setChecked(true);
   await expectRenderedAttribute(page, "data-community-features", true);
 });
+
+test("/ is marked noindex for search engines", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+    "content",
+    "noindex, nofollow",
+  );
+});
