@@ -183,6 +183,32 @@
 .research-quote small {
   color: var(--muted);
 }
+.research-context {
+  display: grid;
+  gap: 2px;
+  padding: 8px 10px;
+  border: 1px solid #e3e8dc;
+  border-radius: 4px;
+  font-size: 11px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.research-context strong {
+  font-size: 10px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.research-context p {
+  margin: 0;
+}
+.research-context small,
+.research-context a {
+  color: var(--muted);
+}
+.research-context a {
+  font-weight: 650;
+}
 .research-stations {
   list-style: none;
   margin: 0;

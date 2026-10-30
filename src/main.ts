@@ -25,6 +25,8 @@ import {
   distanceText,
   loadResearch,
   nearestRail,
+  type PopulationContext,
+  populationText,
   priceRange,
   type ResearchProperty,
   researchToListing,
@@ -104,6 +106,7 @@ let transportStops: Station[] = [];
 let privateListings: Listing[] = [];
 let collection: "demo" | "private" | "pins" | "research" = "demo";
 let researchProperties: ResearchProperty[] = [];
+let researchPopulation: PopulationContext | null = null;
 let researchListings: Listing[] = [];
 let pins: Pin[] = [];
 let selectedArea = "Semua";
@@ -444,7 +447,7 @@ function researchFor(listing: Listing): ResearchProperty | undefined {
 }
 
 function researchEvidence(property: ResearchProperty): string {
-  return `<div class="detail-evidence"><strong>Bukti harga</strong><p>“${esc(property.price.quote)}”</p><a class="source-link" href="${esc(safeUrl(property.price.url))}" target="_blank" rel="noopener noreferrer">Sumber harga ↗</a>${property.officialUrl ? ` · <a class="source-link" href="${esc(safeUrl(property.officialUrl))}" target="_blank" rel="noopener noreferrer">Situs resmi ↗</a>` : ""}<small>Dicek ${esc(checkedDate(property.lastChecked))} · ${property.sources.length} sumber · <a href="/riset#${encodeURIComponent(property.id)}">bukti lengkap ↗</a></small></div>`;
+  return `<div class="detail-evidence"><strong>Bukti harga</strong><p>“${esc(property.price.quote)}”</p><a class="source-link" href="${esc(safeUrl(property.price.url))}" target="_blank" rel="noopener noreferrer">Sumber harga ↗</a>${property.officialUrl ? ` · <a class="source-link" href="${esc(safeUrl(property.officialUrl))}" target="_blank" rel="noopener noreferrer">Situs resmi ↗</a>` : ""}<small>Dicek ${esc(checkedDate(property.lastChecked))} · ${property.sources.length} sumber · <a href="/riset#${encodeURIComponent(property.id)}">bukti lengkap ↗</a></small>${property.population && researchPopulation ? `<small data-testid="detail-population">Penduduk sekitar: ${esc(populationText(property.population, researchPopulation))}; bukan keramaian siang hari.</small>` : ""}</div>`;
 }
 
 function nearbyPins(listing: Listing): string {
@@ -809,6 +812,7 @@ async function start(): Promise<void> {
   ] = resources;
   if (researchResult.status === "fulfilled") {
     researchProperties = researchResult.value.properties;
+    researchPopulation = researchResult.value.population;
     researchListings = researchProperties.flatMap((property) => {
       const listing = researchToListing(property);
       return listing ? [listing] : [];

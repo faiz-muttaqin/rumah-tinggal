@@ -4,7 +4,7 @@ Halaman `/riset` dan tab **Riset** di peta menampilkan kurasi kandidat proyek hu
 
 Dokumen ini mencatat cara data ditemukan agar dapat dipakai ulang. Metode di sini **tidak wajib**: cara baru boleh dipakai selama mengikuti batas di bagian [Etika dan batas](#etika-dan-batas), lalu dicatat di katalog metode.
 
-Perluasan berikutnya dicatat di [ruang riset hunian Jakarta](../research/jakarta/README.md): penambahan listing dan pengayaan banjir, kriminalitas, berita, Google Maps, populasi, serta arus komuter. Seluruh pengayaan tersebut masih rencana; pengguna akan menyusun delegasinya kemudian.
+Perluasan berikutnya dicatat di [ruang riset hunian Jakarta](../research/jakarta/README.md): penambahan listing dan pengayaan banjir, kriminalitas, berita, Google Maps, populasi, serta arus komuter. Per 30 Oktober 2026 estimasi penduduk sekitar sudah tampil; sumber banjir, penduduk resmi, dan komuter sudah ditinjau tetapi belum ditampilkan, sedangkan kriminalitas, berita, dan Google Maps masih rencana.
 
 ## Cakupan
 
@@ -32,6 +32,8 @@ Kandidat tanpa harga yang dapat dibaca saat cek tidak dimasukkan. Setiap sumber 
 6. **Uji**: `./dev test` menjalankan `scripts/properties.test.ts` (dataset sinkron dengan sumber kurasi, bukti harga, jarak, tanpa kontak pribadi) dan tes skrip; `./dev test:e2e` memakai data fiktif `tests/research-fixture.ts`.
 
 Satu cara menjalankan langkah 1 dan 2 sekaligus adalah [research/property-research.workflow.js](../research/property-research.workflow.js) dengan Workflow Claude Code. Argumennya berisi daftar koridor dan stasiun; keluarannya langsung bisa diproses `merge-research.py`.
+
+Bila penemuan sudah ada tetapi verifikasi terhenti, [research/verify-backlog.workflow.js](../research/verify-backlog.workflow.js) memeriksa ulang kandidat tertunda dari berkas batch (5 sampai 6 kandidat per agen). Agen mencari pin eksplisit secara aktif (Pinhome `__PROJECT_DETAIL__`, `locationPin` rumah123, cariproperti, embed Google Maps developer) karena proyek tanpa titik terverifikasi tidak bisa tampil di peta. Hasilnya dikelompokkan per koridor asal, lalu diproses `merge-research.py`. Kutipan yang ditulis agen sebagai potongan JSON atau rangkuman diganti dengan potongan verbatim yang lebih pendek sebelum diterbitkan.
 
 ## Skema `research/properties.json`
 
@@ -96,6 +98,16 @@ Jalankan ulang langkah 1 sampai 6 secara berkala atau untuk koridor tertentu. En
 - Keduanya memerlukan login dan memakai API per UID yang sama dengan koleksi pribadi. Memilih atau menyimpan proyek tidak mempublikasikan koleksi pengguna.
 - Verifikasi sumber dan developer bukan verifikasi identitas pemilik, hak atas tanah, atau kepemilikan unit.
 
+## Konteks penduduk sekitar
+
+Setiap proyek yang terbit menampilkan estimasi penduduk dalam radius 500 m dan 1 km beserta kepadatannya, dari raster [WorldPop Indonesia 2025](https://hub.worldpop.org/geodata/summary?id=73823) (rilis R2025A, CC BY 4.0). Raster tidak disimpan di Git; `python3 scripts/build-population-context.py RASTER.tif --checked-at YYYY-MM-DD` hanya memakai pustaka standar Python, membaca tile di sekitar titik proyek, dan menulis `research/context/population.json` beserta sha256 raster dan titik yang dipakai. `build-properties.py` membuang estimasi bila titik proyek berubah sesudahnya.
+
+Angka ini estimasi model penduduk tempat tinggal: bukan sensus, bukan registrasi Dukcapil, dan bukan keramaian siang hari atau arus komuter. Sumber banjir, penduduk resmi, komuter, dan keramaian yang sudah dicek tetapi belum ditampilkan dicatat di [sumber konteks wilayah](../research/jakarta/sumber-konteks.md).
+
 ## Hasil kurasi 30 Oktober 2026
 
-171 kandidat ditemukan pada 13 koridor pencarian (termasuk duplikat lintas koridor). Dari hasil pemeriksaan yang selesai, 64 proyek dicatat pada berkas kurasi; 28 dapat diterbitkan pada peta, sementara 36 belum masuk karena titik belum pasti, di luar radius, atau sumber tidak tersedia. Ada 4 proyek dengan bukti confirmed dan 24 partial. Halaman menampilkan cakupan aktual dan alasan belum masuk; tidak mengklaim seluruh kandidat telah selesai diperiksa.
+171 kandidat ditemukan pada 13 koridor pencarian (termasuk duplikat lintas koridor; 152 nama unik). Batch awal mencatat 64 proyek kurasi dan menerbitkan 28.
+
+Tahap verifikasi workflow awal terhenti pada 7 koridor. Lanjutan 30 Oktober memeriksa ulang 48 kandidat Jakarta yang tertunda: 47 lolos dengan harga dari halaman yang dibuka hari itu (23 confirmed, 24 partial) dan 1 ditolak karena pemasaran terkini tidak terbukti (proyek 10 unit yang selesai Desember 2021). Empat lagi dicatat tetapi tidak diterbitkan karena belum tahap penjualan atau hanya bersumber dari halaman Referensi Proyek untuk gedung yang sudah lama selesai.
+
+Kini 111 proyek dicatat pada berkas kurasi; 46 terbit di peta (29 Jakarta) dan 65 belum masuk. Alasan terbanyak adalah belum ada titik proyek terverifikasi: OpenStreetMap tidak mengenal nama proyek kecil, dan pin portal yang dipakai bersama oleh proyek berbeda ditolak. Stasiun KRL/MRT/LRT di wilayah Jakarta tanpa proyek terbit dalam 3 km turun dari 39 menjadi 15 dari 81. Sekitar 35 kandidat di luar Jakarta dari batch awal masih belum diperiksa ulang. Halaman menampilkan cakupan aktual dan alasan belum masuk; tidak mengklaim seluruh kandidat telah selesai diperiksa.

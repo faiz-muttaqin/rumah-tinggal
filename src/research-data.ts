@@ -47,6 +47,30 @@ export interface ResearchUnit {
   price: number | null;
 }
 
+// Estimasi penduduk tempat tinggal di sekitar titik proyek, dari raster
+// WorldPop yang dihitung scripts/build-population-context.py.
+export interface ResearchPopulation {
+  within500m: number;
+  within1km: number;
+  densityKm2: number;
+}
+
+export interface PopulationContext {
+  source: {
+    id: string;
+    name: string;
+    publisher: string;
+    url: string;
+    licence: string;
+    licenceUrl: string;
+    year: number;
+    checkedAt: string;
+  };
+  method: string;
+  caveats: string[];
+  radiiKm: number[];
+}
+
 export interface ResearchProperty {
   id: string;
   name: string;
@@ -78,6 +102,7 @@ export interface ResearchProperty {
     note: string | null;
   } | null;
   nearest: ResearchStation[];
+  population?: ResearchPopulation | null;
   verdict: "confirmed" | "partial";
   sources: ResearchSource[];
   lastChecked: string;
@@ -114,6 +139,7 @@ export interface ResearchData {
   coverage: ResearchCoverage[];
   gaps: string[];
   excluded: { id: string; name: string; reason: string }[];
+  population: PopulationContext | null;
 }
 
 export const STATUS_LABELS: Record<ResearchStatus, string> = {
@@ -159,6 +185,7 @@ export async function loadResearch(): Promise<ResearchData> {
     coverage: metadata.coverage ?? [],
     gaps: metadata.gaps ?? [],
     excluded: metadata.excluded ?? [],
+    population: metadata.population ?? null,
     properties,
   };
 }
@@ -179,6 +206,20 @@ export function checkedDate(value: string | null): string {
       timeZone: "Asia/Jakarta",
     },
   );
+}
+
+// Estimasi model dibulatkan ke ratusan agar tidak terbaca sebagai hitungan pasti.
+export function peopleText(value: number): string {
+  return value < 100
+    ? "<100"
+    : `±${(Math.round(value / 100) * 100).toLocaleString("id-ID")}`;
+}
+
+export function populationText(
+  population: ResearchPopulation,
+  context: PopulationContext,
+): string {
+  return `${peopleText(population.within1km)} jiwa dalam 1 km · ${peopleText(population.within500m)} dalam 500 m · ${peopleText(population.densityKm2)}/km² (estimasi ${context.source.publisher.split(",")[0]} ${context.source.year})`;
 }
 
 export function distanceText(km: number): string {

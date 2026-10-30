@@ -1,6 +1,6 @@
 # Rencana riset hunian Jakarta
 
-Dicatat **2026-10-30 WIB**, atas arahan pengguna. **Status: rencana, belum dimulai.** Pengguna akan menentukan pembagian tugas dan delegasi multi-agent kemudian. Dokumen ini mencatat ruang lingkup dan pertanyaan riset, bukan penugasan agen atau aktivasi pengumpulan data.
+Dicatat **2026-10-30 WIB**, atas arahan pengguna. **Status: berjalan bertahap sejak 2026-10-30.** Pelaksanaan memakai sedikit agen per langkah dengan hasil dicatat sebelum langkah berikutnya; lihat [progres](#progres-2026-10-30).
 
 ## Tujuan
 
@@ -38,6 +38,16 @@ Semua item berikut berstatus **PLANNED**. ID dipakai untuk merujuk pekerjaan nan
 | JKT-06 | Google Maps, ulasan, dan aktivitas tempat | Pengayaan referensi tempat, ulasan, pola jam ramai/sepi bila tersedia, serta akses dari hunian; kelayakan akses dan penyimpanan data diperiksa saat pelaksanaan                                |
 | JKT-07 | Populasi dan arus ke tempat kerja         | Penduduk dan kepadatan menurut wilayah/periode; kajian perbedaan aktivitas siang/malam, asal–tujuan komuter, pusat pekerjaan, dan akses transportasi                                           |
 | JKT-08 | Penyajian dan pemeliharaan data           | Rancangan hubungan listing–wilayah–tempat–kejadian–sumber; cara menampilkan bukti, ketidakpastian, umur data, pembaruan, dan koreksi pada aplikasi                                             |
+
+## Progres 2026-10-30
+
+| ID                 | Status          | Hasil                                                                                                                                                                                                                                                                                               |
+| ------------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| JKT-01             | Sebagian        | 81 stasiun KRL/MRT/LRT di wilayah Jakarta; tanpa proyek terbit dalam 3 km turun dari 39 menjadi 15 (Ancol, Angke, Buaran, Duri, Grogol, Jakarta International Stadium, Pesing, Pondok Jati, Tanjung Priok, Universitas Pancasila, serta LRT Boulevard Selatan, Equestrian, Halim, Pramuka, Pulomas) |
+| JKT-02             | Sebagian        | 48 kandidat Jakarta yang verifikasinya tertunda diperiksa ulang: 23 confirmed, 24 partial, 1 ditolak. Katalog terbit 46 proyek, 29 di Jakarta (sebelumnya 12). Sebagian besar sisanya belum punya titik proyek terverifikasi                                                                        |
+| JKT-03             | Sumber ditinjau | Belum ditampilkan; menunggu keputusan lisensi dan data BPBD. Rincian di [sumber konteks wilayah](sumber-konteks.md)                                                                                                                                                                                 |
+| JKT-07             | Sebagian        | Estimasi penduduk dalam 500 m dan 1 km dari WorldPop 2025 tampil per proyek. Penduduk resmi BPS/Dukcapil dan komuter BPS 2023 memerlukan kunci atau unduhan manual                                                                                                                                  |
+| JKT-04, 05, 06, 08 | Rencana         | Belum dimulai; Google Places API resmi tidak menyediakan jam ramai                                                                                                                                                                                                                                  |
 
 ## Calon sumber untuk diperiksa nanti
 

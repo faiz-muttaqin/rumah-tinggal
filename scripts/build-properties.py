@@ -8,6 +8,10 @@ price, dates, quotes, no personal contact data), then computes the region
 and the nearest KRL/MRT/LRT stations itself from the app's own GeoJSON, so
 the published distance never relies on a marketing claim. Entries farther
 than maxDistanceKm from every station are dropped and reported.
+
+Area context is merged from research/context/population.json, written by
+scripts/build-population-context.py. An estimate is kept only when it was
+computed for the project's current coordinate.
 """
 
 import argparse
@@ -162,7 +166,33 @@ def validate_source(source, field):
     }
 
 
-def build_property(entry, stations, regions, max_km):
+def load_population():
+    path = ROOT / "research/context/population.json"
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text())
+    source = data.get("source") or {}
+    for key in ("id", "name", "publisher", "licence"):
+        text(source.get(key), f"population.source.{key}", 160)
+    for key in ("url", "fileUrl", "licenceUrl"):
+        url(source.get(key), f"population.source.{key}")
+    if not is_date(source.get("checkedAt")) or not is_date(source.get("published")):
+        raise Invalid("population.source: checkedAt/published harus YYYY-MM-DD")
+    return data
+
+
+def population_of(pid, point, population):
+    estimate = (population or {}).get("properties", {}).get(pid)
+    # Estimasi dibuang bila titik proyek berubah sesudah raster dihitung.
+    if not estimate or (round(estimate["lng"], 6), round(estimate["lat"], 6)) != point:
+        return None
+    values = {k: estimate.get(k) for k in ("within500m", "within1km", "densityKm2")}
+    if not all(isinstance(v, int) and v >= 0 for v in values.values()):
+        raise Invalid(f"{pid}.population: nilai harus bilangan bulat >= 0")
+    return values
+
+
+def build_property(entry, stations, regions, max_km, population=None):
     pid = entry.get("id")
     if not isinstance(pid, str) or not re.fullmatch(r"prj-[a-z0-9-]{3,80}", pid):
         raise Invalid(f"id tidak valid: {pid}")
@@ -262,6 +292,7 @@ def build_property(entry, stations, regions, max_km):
             if fallback else text(coordinate.get("note"), field("coordinate.note"), 200, optional=True),
         },
         "nearest": nearest,
+        "population": population_of(pid, point, population),
         "verdict": entry["verdict"],
         "sources": sources,
         "lastChecked": entry["lastChecked"][:10],
@@ -279,13 +310,14 @@ def build_property(entry, stations, regions, max_km):
 def build(source):
     regions = json.loads((ROOT / "public/data/regions.geojson").read_text())["features"]
     stations = load_stations()
+    population = load_population()
     max_km = source.get("maxDistanceKm", 3)
     features, dropped, seen = [], [], set()
     for entry in source.get("properties", []):
         if entry.get("id") in seen:
             raise Invalid(f"id ganda: {entry.get('id')}")
         seen.add(entry.get("id"))
-        feature, reason = build_property(entry, stations, regions, max_km)
+        feature, reason = build_property(entry, stations, regions, max_km, population)
         if feature:
             features.append(feature)
         else:
@@ -330,6 +362,12 @@ def build(source):
             ],
             "gaps": [text(g, "gaps", 400) for g in source.get("gaps", [])],
             "excluded": sorted(dropped, key=lambda d: d["id"]),
+            "population": {
+                "source": population["source"],
+                "method": text(population["method"], "population.method", 400),
+                "caveats": [text(c, "population.caveats", 300) for c in population["caveats"]],
+                "radiiKm": population["radiiKm"],
+            } if population else None,
         },
         "features": features,
     }, dropped

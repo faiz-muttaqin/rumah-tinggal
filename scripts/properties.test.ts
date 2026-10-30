@@ -180,3 +180,57 @@ test("the builder rejects unsafe or unsupported entries", {
     assert.match(result.stderr, message);
   }
 });
+
+test("population estimates stay tied to the point they were computed for", {
+  skip: python,
+}, async (t) => {
+  const directory = await mkdtemp(join(tmpdir(), "rumah-population-test-"));
+  t.after(() => rm(directory, { recursive: true, force: true }));
+  const context = JSON.parse(
+    await readFile("research/context/population.json", "utf8"),
+  );
+  assert.equal(context.source.licence, "CC BY 4.0");
+  assert.match(context.source.sha256, /^[0-9a-f]{64}$/);
+  const published = JSON.parse(
+    await readFile("public/data/properties.geojson", "utf8"),
+  );
+  assert.equal(published.metadata.population.source.id, context.source.id);
+  for (const feature of published.features) {
+    const estimate = context.properties[feature.properties.id];
+    if (!feature.properties.population) continue;
+    const [lng, lat] = feature.geometry.coordinates;
+    assert.equal(Number(estimate.lng.toFixed(6)), lng, feature.properties.id);
+    assert.equal(Number(estimate.lat.toFixed(6)), lat, feature.properties.id);
+    assert.ok(
+      feature.properties.population.within500m <=
+        feature.properties.population.within1km,
+      feature.properties.id,
+    );
+  }
+
+  const research = JSON.parse(
+    await readFile("research/properties.json", "utf8"),
+  );
+  const entry = research.properties.find(
+    (item: { id: string }) => context.properties[item.id],
+  );
+  const run = async (coordinate: object) => {
+    const input = join(directory, "input.json");
+    const output = join(directory, "output.geojson");
+    await writeFile(
+      input,
+      JSON.stringify({
+        checkedAt: research.checkedAt,
+        properties: [{ ...entry, coordinate }],
+      }),
+    );
+    assert.equal(build([input, output]).status, 0);
+    return JSON.parse(await readFile(output, "utf8")).features[0];
+  };
+  assert.ok((await run(entry.coordinate)).properties.population);
+  const moved = await run({
+    ...entry.coordinate,
+    lat: entry.coordinate.lat + 0.002,
+  });
+  assert.equal(moved.properties.population, null);
+});

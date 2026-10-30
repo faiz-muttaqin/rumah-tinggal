@@ -56,6 +56,17 @@ test("lists sourced projects with prices, evidence and computed distances", asyn
   );
   await first.getByText(/Tipe unit dari sumber/).click();
   await expect(first.locator("table")).toContainText("Tipe uji 36/60");
+  const population = first.getByTestId("research-population");
+  await expect(population).toContainText("±15.900 jiwa dalam 1 km");
+  await expect(population).toContainText("±4.200 dalam 500 m");
+  await expect(population).toContainText("estimasi Penerbit Uji 2025");
+  await expect(population).toContainText("bukan sensus atau keramaian");
+  await expect(
+    population.getByRole("link", { name: /CC BY 4.0/ }),
+  ).toHaveAttribute("href", "https://raster.example.invalid/uji");
+  await expect(
+    cards(page).nth(1).getByTestId("research-population"),
+  ).toHaveCount(0);
 });
 
 test("filters by mode, straight-line distance, evidence and text", async ({

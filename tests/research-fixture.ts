@@ -69,6 +69,21 @@ export const researchFixture = {
     excluded: [
       { id: "prj-uji-jauh", name: "Proyek Uji Jauh", reason: "di luar radius" },
     ],
+    population: {
+      source: {
+        id: "raster-uji",
+        name: "Raster penduduk uji",
+        publisher: "Penerbit Uji, Universitas Uji",
+        url: "https://raster.example.invalid/uji",
+        licence: "CC BY 4.0",
+        licenceUrl: "https://raster.example.invalid/lisensi",
+        year: 2025,
+        checkedAt: "2026-10-30",
+      },
+      method: "Metode uji penjumlahan piksel.",
+      caveats: ["Estimasi uji."],
+      radiiKm: [0.5, 1],
+    },
   },
   features: [
     project(
@@ -110,6 +125,7 @@ export const researchFixture = {
             lng: 106.64163,
           },
         ],
+        population: { within500m: 4230, within1km: 15870, densityKm2: 5050 },
         sources: [
           source("portal", "https://portal.example.invalid/uji-cisauk"),
           source("instagram", "https://instagram.example.invalid/p/uji", false),

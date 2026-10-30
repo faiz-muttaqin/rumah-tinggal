@@ -567,6 +567,14 @@ test("a research deep link opens the project on the map", async ({ page }) => {
     "aria-pressed",
     "true",
   );
+  await expect(page.getByTestId("detail-population")).toHaveCount(0);
+  await page.goto("/?riset=prj-uji-cisauk");
+  await expect(page.getByTestId("detail-population")).toContainText(
+    "±15.900 jiwa dalam 1 km",
+  );
+  await expect(page.getByTestId("detail-population")).toContainText(
+    "bukan keramaian siang hari",
+  );
 });
 
 test("anonymous Listingku offers Google sign-in without requesting private listings", async ({

@@ -1,0 +1,389 @@
+{
+  "source": {
+    "id": "worldpop-r2025a-idn-2025",
+    "name": "WorldPop Global2, Indonesia 100 m constrained, tahun 2025 (rilis R2025A)",
+    "publisher": "WorldPop, University of Southampton",
+    "url": "https://hub.worldpop.org/geodata/summary?id=73823",
+    "fileUrl": "https://data.worldpop.org/GIS/Population/Global_2015_2030/R2025A/2025/IDN/v1/100m/constrained/idn_pop_2025_CN_100m_R2025A_v1.tif",
+    "doi": "10.5258/SOTON/WP00839",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://hub.worldpop.org/data/licence.txt",
+    "published": "2025-09-01",
+    "year": 2025,
+    "sha256": "b428a90c3cd2b74b515becd6ad089a0212398636165ed3837a637c6f7e6a9a30",
+    "checkedAt": "2026-10-30"
+  },
+  "method": "Jumlah orang per piksel WorldPop (sekitar 100 m) yang titik tengahnya berada dalam radius 500 m dan 1 km dari titik proyek; kepadatan = jumlah dalam 1 km dibagi luas lingkaran 3,14 km2.",
+  "caveats": [
+    "Estimasi model penduduk tempat tinggal, bukan hasil sensus atau registrasi penduduk.",
+    "Tidak menggambarkan keramaian siang hari, pengunjung, atau arus komuter.",
+    "Ketelitian mengikuti titik proyek; titik kawasan atau pin portal dapat bergeser dari lokasi unit."
+  ],
+  "radiiKm": [0.5, 1.0],
+  "properties": {
+    "prj-aerium-residence": {
+      "lat": -6.16745,
+      "lng": 106.74288,
+      "within500m": 18380,
+      "within1km": 70620,
+      "densityKm2": 22480
+    },
+    "prj-agrapana-estate": {
+      "lat": -6.382704,
+      "lng": 106.82122,
+      "within500m": 12630,
+      "within1km": 48160,
+      "densityKm2": 15330
+    },
+    "prj-anwa-residence-bintaro-incl-achillea-cluster": {
+      "lat": -6.293697623071136,
+      "lng": 106.73126822142636,
+      "within500m": 7180,
+      "within1km": 24890,
+      "densityKm2": 7920
+    },
+    "prj-aria-puri": {
+      "lat": -6.1782914,
+      "lng": 106.7128199,
+      "within500m": 18890,
+      "within1km": 70800,
+      "densityKm2": 22540
+    },
+    "prj-arsa-homes": {
+      "lat": -6.303743746616999,
+      "lng": 106.76849743530937,
+      "within500m": 7760,
+      "within1km": 29100,
+      "densityKm2": 9260
+    },
+    "prj-arsa-residence": {
+      "lat": -6.294015159,
+      "lng": 106.8787845,
+      "within500m": 13450,
+      "within1km": 53360,
+      "densityKm2": 16990
+    },
+    "prj-ayalis-mampang-heritage": {
+      "lat": -6.2506144,
+      "lng": 106.8207875,
+      "within500m": 15720,
+      "within1km": 64830,
+      "densityKm2": 20640
+    },
+    "prj-ayalis-residence": {
+      "lat": -6.18387523,
+      "lng": 106.83718662,
+      "within500m": 20400,
+      "within1km": 70930,
+      "densityKm2": 22580
+    },
+    "prj-botany-hills-at-fatmawati-city-center": {
+      "lat": -6.2999589,
+      "lng": 106.7936352,
+      "within500m": 11370,
+      "within1km": 42900,
+      "densityKm2": 13660
+    },
+    "prj-bumi-bantar-panjang": {
+      "lat": -6.3054122,
+      "lng": 106.4380514,
+      "within500m": 1190,
+      "within1km": 4230,
+      "densityKm2": 1350
+    },
+    "prj-casa-grande-residence-kota-kasablanka": {
+      "lat": -6.223325,
+      "lng": 106.8415975,
+      "within500m": 10850,
+      "within1km": 53200,
+      "densityKm2": 16930
+    },
+    "prj-cavana-lebak-bulus": {
+      "lat": -6.3077627,
+      "lng": 106.7824004,
+      "within500m": 12500,
+      "within1km": 44570,
+      "densityKm2": 14190
+    },
+    "prj-ciputra-international": {
+      "lat": -6.173535662761256,
+      "lng": 106.73017746827374,
+      "within500m": 12510,
+      "within1km": 59000,
+      "densityKm2": 18780
+    },
+    "prj-d-palm-residence": {
+      "lat": -6.41674196,
+      "lng": 106.81030648,
+      "within500m": 10250,
+      "within1km": 40580,
+      "densityKm2": 12920
+    },
+    "prj-dharmawangsa-at-bintaro-jaya-dharmawangsa-home": {
+      "lat": -6.273217,
+      "lng": 106.720275,
+      "within500m": 5910,
+      "within1km": 28950,
+      "densityKm2": 9220
+    },
+    "prj-discovery-aluvia-at-bintaro-jaya": {
+      "lat": -6.26545,
+      "lng": 106.700203,
+      "within500m": 9740,
+      "within1km": 32330,
+      "densityKm2": 10290
+    },
+    "prj-eastwell-avenue-jakarta": {
+      "lat": -6.2112890467678215,
+      "lng": 106.89383944635249,
+      "within500m": 21360,
+      "within1km": 78030,
+      "densityKm2": 24840
+    },
+    "prj-fifty-seven-promenade": {
+      "lat": -6.196773406449771,
+      "lng": 106.81958588610073,
+      "within500m": 14270,
+      "within1km": 67190,
+      "densityKm2": 21390
+    },
+    "prj-grand-almas-residence-tigaraksa": {
+      "lat": -6.261817,
+      "lng": 106.459793,
+      "within500m": 2920,
+      "within1km": 15660,
+      "densityKm2": 4980
+    },
+    "prj-grand-cikarang-city": {
+      "lat": -6.247413118787043,
+      "lng": 107.16671804102482,
+      "within500m": 4430,
+      "within1km": 19650,
+      "densityKm2": 6250
+    },
+    "prj-ikon-tenjo-resort-homes": {
+      "lat": -6.3466295,
+      "lng": 106.4374366,
+      "within500m": 730,
+      "within1km": 2760,
+      "densityKm2": 880
+    },
+    "prj-lrt-city-bekasi-eastern-green": {
+      "lat": -6.26205999971671,
+      "lng": 107.01869782922783,
+      "within500m": 9860,
+      "within1km": 46220,
+      "densityKm2": 14710
+    },
+    "prj-lrt-city-jatibening-gateway-park": {
+      "lat": -6.257449778976028,
+      "lng": 106.92847487548062,
+      "within500m": 12150,
+      "within1km": 52620,
+      "densityKm2": 16750
+    },
+    "prj-lrt-city-tebet": {
+      "lat": -6.242617,
+      "lng": 106.853595,
+      "within500m": 13400,
+      "within1km": 58690,
+      "densityKm2": 18680
+    },
+    "prj-luxe-court-permata-hijau": {
+      "lat": -6.2292348,
+      "lng": 106.7721341,
+      "within500m": 17670,
+      "within1km": 67180,
+      "densityKm2": 21380
+    },
+    "prj-mansion-8": {
+      "lat": -6.296885,
+      "lng": 106.792062,
+      "within500m": 10740,
+      "within1km": 39820,
+      "densityKm2": 12680
+    },
+    "prj-metland-cibitung": {
+      "lat": -6.249489,
+      "lng": 107.109628,
+      "within500m": 6550,
+      "within1km": 20580,
+      "densityKm2": 6550
+    },
+    "prj-metland-cikarang": {
+      "lat": -6.234399,
+      "lng": 107.12877,
+      "within500m": 70,
+      "within1km": 2280,
+      "densityKm2": 730
+    },
+    "prj-nuansa-pondok-kelapa": {
+      "lat": -6.2381714220159195,
+      "lng": 106.94151675429333,
+      "within500m": 15940,
+      "within1km": 70740,
+      "densityKm2": 22520
+    },
+    "prj-onasis-industri-town-house": {
+      "lat": -6.1531936,
+      "lng": 106.8325872,
+      "within500m": 23500,
+      "within1km": 86470,
+      "densityKm2": 27520
+    },
+    "prj-park-spring-gading": {
+      "lat": -6.1382366,
+      "lng": 106.9191605,
+      "within500m": 18290,
+      "within1km": 63560,
+      "densityKm2": 20230
+    },
+    "prj-permata-bogor-residence-2": {
+      "lat": -6.53040512,
+      "lng": 106.79767492,
+      "within500m": 11560,
+      "within1km": 39250,
+      "densityKm2": 12490
+    },
+    "prj-permata-hijau-suites": {
+      "lat": -6.2124374,
+      "lng": 106.7845895,
+      "within500m": 18640,
+      "within1km": 74840,
+      "densityKm2": 23820
+    },
+    "prj-puri-orchard-apartemen": {
+      "lat": -6.1669474,
+      "lng": 106.728873716,
+      "within500m": 15280,
+      "within1km": 58040,
+      "densityKm2": 18470
+    },
+    "prj-ruma-antasari": {
+      "lat": -6.26473205559756,
+      "lng": 106.80945475475873,
+      "within500m": 14240,
+      "within1km": 55840,
+      "densityKm2": 17770
+    },
+    "prj-sakha-semanan": {
+      "lat": -6.1709155,
+      "lng": 106.71184094,
+      "within500m": 18190,
+      "within1km": 66790,
+      "densityKm2": 21260
+    },
+    "prj-samanea-hill": {
+      "lat": -6.37482,
+      "lng": 106.54027,
+      "within500m": 1000,
+      "within1km": 6450,
+      "densityKm2": 2050
+    },
+    "prj-samesta-east-point": {
+      "lat": -6.204972757,
+      "lng": 106.9488666,
+      "within500m": 15130,
+      "within1km": 64220,
+      "densityKm2": 20440
+    },
+    "prj-samesta-mahata-margonda": {
+      "lat": -6.3713494,
+      "lng": 106.8310857,
+      "within500m": 6200,
+      "within1km": 29160,
+      "densityKm2": 9280
+    },
+    "prj-samesta-mahata-serpong": {
+      "lat": -6.31481619364816,
+      "lng": 106.67408621088967,
+      "within500m": 5150,
+      "within1km": 25820,
+      "densityKm2": 8220
+    },
+    "prj-samesta-mahata-tanjung-barat": {
+      "lat": -6.3093805,
+      "lng": 106.8381766,
+      "within500m": 12450,
+      "within1km": 50930,
+      "densityKm2": 16210
+    },
+    "prj-samesta-parayasa": {
+      "lat": -6.353063,
+      "lng": 106.543464,
+      "within500m": 2280,
+      "within1km": 8820,
+      "densityKm2": 2810
+    },
+    "prj-selasarkota-depok": {
+      "lat": -6.413,
+      "lng": 106.8168,
+      "within500m": 10840,
+      "within1km": 44500,
+      "densityKm2": 14160
+    },
+    "prj-serpong-garden-residence": {
+      "lat": -6.33348,
+      "lng": 106.640303,
+      "within500m": 7940,
+      "within1km": 24090,
+      "densityKm2": 7670
+    },
+    "prj-southgate-residence": {
+      "lat": -6.3061747,
+      "lng": 106.8319876,
+      "within500m": 13470,
+      "within1km": 44340,
+      "densityKm2": 14110
+    },
+    "prj-sq-res-south-quarter-residence": {
+      "lat": -6.2945255,
+      "lng": 106.7857401,
+      "within500m": 7360,
+      "within1km": 42160,
+      "densityKm2": 13420
+    },
+    "prj-summarecon-bekasi": {
+      "lat": -6.226128,
+      "lng": 107.001076,
+      "within500m": 5510,
+      "within1km": 31940,
+      "densityKm2": 10170
+    },
+    "prj-synthesis-huis": {
+      "lat": -6.3214563,
+      "lng": 106.8643868,
+      "within500m": 13760,
+      "within1km": 58810,
+      "densityKm2": 18720
+    },
+    "prj-the-elements-rasuna-epicentrum": {
+      "lat": -6.218544259,
+      "lng": 106.83478608,
+      "within500m": 7410,
+      "within1km": 41580,
+      "densityKm2": 13230
+    },
+    "prj-the-newton-2": {
+      "lat": -6.220378,
+      "lng": 106.817315,
+      "within500m": 7240,
+      "within1km": 40690,
+      "densityKm2": 12950
+    },
+    "prj-urban-signature-lrt-city-ciracas": {
+      "lat": -6.3222753,
+      "lng": 106.8833474,
+      "within500m": 11560,
+      "within1km": 55510,
+      "densityKm2": 17670
+    },
+    "prj-virya-semanan": {
+      "lat": -6.1635232080074465,
+      "lng": 106.72128346126138,
+      "within500m": 12820,
+      "within1km": 50420,
+      "densityKm2": 16050
+    }
+  }
+}

@@ -137,6 +137,99 @@
       "title": "Meta · Business Discovery"
      }
     ]
+   },
+   {
+    "id": "konteks-penduduk-worldpop",
+    "name": "Penduduk sekitar dari raster WorldPop",
+    "category": "Konteks wilayah",
+    "summary": "Jumlahkan estimasi orang per piksel (sekitar 100 m) WorldPop 2025 dalam radius 500 m dan 1 km dari titik proyek. Satu-satunya sumber seragam untuk seluruh Jabodetabek yang lisensinya jelas saat dicek (CC BY 4.0).",
+    "steps": [
+     "Unduh GeoTIFF Indonesia R2025A dari hub WorldPop, catat sha256, simpan di luar Git (.runtime/context/).",
+     "Jalankan scripts/build-population-context.py RASTER --checked-at YYYY-MM-DD; skrip hanya membaca tile sekitar titik proyek.",
+     "Bangun ulang properties.geojson; nilai dibuang otomatis bila titik proyek berubah sesudah dihitung."
+    ],
+    "limits": [
+     "Estimasi model penduduk tempat tinggal, bukan sensus, registrasi Dukcapil, atau keramaian siang hari.",
+     "Ketelitian mengikuti titik proyek; pin portal atau titik kawasan dapat bergeser dari unit.",
+     "Tahun 2025 adalah estimasi model dari rilis 2025, bukan hitungan lapangan."
+    ],
+    "recommended": true,
+    "lastUsed": "2026-10-30",
+    "sources": [
+     {
+      "url": "https://hub.worldpop.org/geodata/summary?id=73823",
+      "title": "WorldPop Indonesia 2025, 100 m constrained (R2025A)"
+     },
+     {
+      "url": "https://hub.worldpop.org/data/licence.txt",
+      "title": "Lisensi WorldPop (CC BY 4.0)"
+     }
+    ]
+   },
+   {
+    "id": "sumber-banjir-ditinjau",
+    "name": "Sumber data banjir yang sudah ditinjau",
+    "category": "Konteks wilayah",
+    "summary": "Pemeriksaan 30 Oktober 2026 menemukan tiga jalur. Belum ditampilkan per proyek sampai lisensi dan arti datanya jelas.",
+    "steps": [
+     "PetaBencana.id Open API: poligon RT berkode kelurahan dan arsip kejadian (contoh kuat Januari 2020); lisensi CC BY-NC 4.0.",
+     "BNPB InaRISK: layanan ArcGIS indeks bahaya banjir (model, bukan kejadian) yang dapat ditanya per titik.",
+     "Satu Data Jakarta (data BPBD): robots.txt melarang API dan ekspor otomatis; unduh manual lewat peramban lalu catat lisensi dan periode."
+    ],
+    "limits": [
+     "Arsip area PetaBencana tampak tidak diperbarui setelah 2022; kejadian 2024 sampai 2026 belum tercakup dari sumber ini.",
+     "Layanan InaRISK tidak menyatakan lisensi dan arti nilai NoData belum terdokumentasi.",
+     "Model bahaya dan catatan kejadian tidak boleh digabung menjadi satu skor; kejadian di kelurahan tidak membuktikan kondisi setiap alamat."
+    ],
+    "recommended": false,
+    "lastUsed": "2026-10-30",
+    "sources": [
+     {
+      "url": "https://data.petabencana.id/floods/archive?start=2020-01-01T00:00:00%2B0700&end=2020-01-03T23:59:59%2B0700",
+      "title": "PetaBencana.id arsip banjir Jakarta, 1 sampai 3 Januari 2020"
+     },
+     {
+      "url": "https://gis.bnpb.go.id/server/rest/services/inarisk/INDEKS_BAHAYA_BANJIR_JBTBPJ/MapServer?f=pjson",
+      "title": "BNPB InaRISK indeks bahaya banjir Jabodetabekpunjur"
+     },
+     {
+      "url": "https://satudata.jakarta.go.id/open-data/detail?kategori=dataset&page_url=jumlah-titik-genangan-banjir",
+      "title": "Satu Data Jakarta, jumlah titik genangan banjir"
+     }
+    ]
+   },
+   {
+    "id": "sumber-penduduk-resmi-komuter",
+    "name": "Penduduk resmi, komuter, dan keramaian tempat",
+    "category": "Konteks wilayah",
+    "summary": "Jalur data resmi yang sudah dicek beserta hambatan aksesnya. Belum dipakai otomatis.",
+    "steps": [
+     "BPS WebAPI (webapi.bps.go.id): tabel kecamatan lewat SIMDASI, memerlukan registrasi dan kunci gratis; simpan kunci di variabel lingkungan, bukan Git.",
+     "Situs BPS provinsi dan kabupaten/kota menampilkan tantangan Cloudflare untuk permintaan skrip; buka manual, jangan diakali.",
+     "Statistik Komuter Jabodetabek 2023 (BPS): unduh PDF lewat peramban lalu salin tabel asal dan tujuan per kabupaten/kota beserta halamannya.",
+     "Dukcapil DKI: DKB Semester 2 2025 Jakarta Pusat tersedia sebagai PDF per kecamatan/kelurahan (penduduk terdaftar, bukan proyeksi BPS)."
+    ],
+    "limits": [
+     "Google Places API resmi tidak menyediakan jam ramai (popular times); keramaian tempat tidak diambil dari Google Maps.",
+     "Data ridership per stasiun KAI Commuter, MRT, atau LRT belum ditemukan sebagai data terbuka.",
+     "Penduduk tempat tinggal, aktivitas tempat, dan arus komuter adalah ukuran berbeda dan tidak boleh disamakan."
+    ],
+    "recommended": false,
+    "lastUsed": "2026-10-30",
+    "sources": [
+     {
+      "url": "https://webapi.bps.go.id/documentation/",
+      "title": "Dokumentasi BPS WebAPI"
+     },
+     {
+      "url": "https://www.bps.go.id/id/publication/2024/03/28/33b6bef825944e576e7ea3ba/commuter-statistics-of-jabodetabek-results-of-jabodetabek-commuter-surveys-2023.html",
+      "title": "BPS, Statistik Komuter Jabodetabek 2023"
+     },
+     {
+      "url": "https://developers.google.com/maps/documentation/places/web-service/data-fields",
+      "title": "Google Places API, daftar field data"
+     }
+    ]
    }
   ],
   "coverage": [
@@ -144,7 +237,7 @@
     "id": "krl-bogor-inner",
     "label": "KRL Bogor dalam (Tebet sampai Pondok Cina)",
     "found": 15,
-    "included": 3
+    "included": 4
    },
    {
     "id": "krl-bogor-outer",
@@ -156,7 +249,7 @@
     "id": "krl-central",
     "label": "KRL Jakarta pusat dan utara, termasuk Tanjung Priok",
     "found": 6,
-    "included": 0
+    "included": 3
    },
    {
     "id": "krl-cikarang-east",
@@ -168,7 +261,7 @@
     "id": "krl-rangkasbitung-inner",
     "label": "KRL Rangkasbitung dalam (Palmerah sampai Serpong)",
     "found": 15,
-    "included": 2
+    "included": 4
    },
    {
     "id": "krl-rangkasbitung-outer",
@@ -180,7 +273,7 @@
     "id": "krl-tangerang",
     "label": "KRL Tangerang (Grogol sampai Tangerang)",
     "found": 15,
-    "included": 0
+    "included": 6
    },
    {
     "id": "lrt-jabodebek-bekasi",
@@ -192,7 +285,7 @@
     "id": "lrt-jabodebek-cibubur",
     "label": "LRT Jabodebek Cibubur",
     "found": 15,
-    "included": 1
+    "included": 2
    },
    {
     "id": "lrt-jakarta",
@@ -204,13 +297,13 @@
     "id": "mrt",
     "label": "MRT Utara–Selatan",
     "found": 15,
-    "included": 3
+    "included": 7
    },
    {
     "id": "sweep-instagram",
     "label": "Penyisiran tautan Instagram melalui mesin pencari",
     "found": 12,
-    "included": 0
+    "included": 1
    },
    {
     "id": "sweep-tod",
@@ -229,6 +322,11 @@
   ],
   "excluded": [
    {
+    "id": "prj-al-hidayah-2",
+    "name": "Al Hidayah 2",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
     "id": "prj-alif-premiere-jatibening",
     "name": "Alif Premiere Jatibening",
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
@@ -239,9 +337,24 @@
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
    },
    {
+    "id": "prj-andava-aparthouse",
+    "name": "Andava Aparthouse",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
     "id": "prj-angsana-foresthill-the-angsana-forest-hill",
     "name": "Angsana Foresthill (The Angsana Forest Hill)",
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-antasari-place",
+    "name": "Antasari Place",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-apartemen-bellagio-mansion",
+    "name": "Apartemen Bellagio Mansion",
+    "reason": "Selesai dibangun 2020; harga hanya dari halaman Referensi Proyek rumah123 (pembaruan massal), pemasaran developer 2025 sampai 2026 belum terbukti."
    },
    {
     "id": "prj-arosa-residence-bintaro",
@@ -254,8 +367,28 @@
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
    },
    {
+    "id": "prj-arts-rabbani-lenteng-agung",
+    "name": "Arts Rabbani Lenteng Agung",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-aryawangsa-residence",
+    "name": "Aryawangsa Residence",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
     "id": "prj-avana-residence",
     "name": "Avana Residence",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-ayalis-menteng",
+    "name": "Ayalis Menteng",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-bamboo-premium-residence",
+    "name": "Bamboo Premium Residence",
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
    },
    {
@@ -271,6 +404,26 @@
    {
     "id": "prj-bukit-podomoro-jakarta",
     "name": "Bukit Podomoro Jakarta",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-casa-grande-residence-kota-kasablanka",
+    "name": "Casa Grande Residence (Kota Kasablanka)",
+    "reason": "Selesai dibangun 2018; harga dari dua unit tertentu di halaman Referensi Proyek rumah123 yang bisa berupa stok jual kembali, pemasaran developer terkini belum terbukti."
+   },
+   {
+    "id": "prj-cibubur-essence",
+    "name": "Cibubur Essence",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-ciracas-green-view",
+    "name": "Ciracas Green View",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-citra-homes-halim",
+    "name": "Citra Homes Halim",
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
    },
    {
@@ -309,6 +462,21 @@
     "reason": "di luar radius: stasiun terdekat KRL Sudimara 3.75 km"
    },
    {
+    "id": "prj-edencia-condohouse",
+    "name": "Edencia Condohouse",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-elysian-residence",
+    "name": "Elysian Residence",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-golden-puri",
+    "name": "Golden Puri",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
     "id": "prj-graha-adelia",
     "name": "Graha Adelia",
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
@@ -322,6 +490,16 @@
     "id": "prj-grand-cikarang-city",
     "name": "Grand Cikarang City",
     "reason": "Sumber harga Pinhome menampilkan properti tidak tersedia; belum ada bukti harga dan ketersediaan aktif pengganti."
+   },
+   {
+    "id": "prj-green-lake-city-west-coast",
+    "name": "Green Lake City (West Coast)",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-green-leaf-jagakarsa-residence",
+    "name": "Green Leaf Jagakarsa Residence",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
    },
    {
     "id": "prj-hunni-at-bintaro",
@@ -339,6 +517,11 @@
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
    },
    {
+    "id": "prj-maraya-residences",
+    "name": "Maraya Residences",
+    "reason": "Belum tahap penjualan menurut berita detik 5 Oktober 2026; harga mulai Rp 294 juta hanya indikasi dan belum ada titik proyek resmi."
+   },
+   {
     "id": "prj-mega-city-bekasi",
     "name": "Mega City Bekasi",
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
@@ -349,13 +532,33 @@
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
    },
    {
+    "id": "prj-nivara-resort-townhouse-at-wijaya",
+    "name": "Nivara Resort Townhouse at Wijaya",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
     "id": "prj-omah-kodau",
     "name": "Omah Kodau",
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
    },
    {
+    "id": "prj-padmavilla-pejaten",
+    "name": "Padmavilla Pejaten",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
     "id": "prj-panca-residence-ciracas",
     "name": "Panca Residence Ciracas",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-precium-lebak-bulus",
+    "name": "Precium Lebak Bulus",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-ranca-asri-house",
+    "name": "Ranca Asri House",
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
    },
    {
@@ -374,9 +577,19 @@
     "reason": "di luar radius: stasiun terdekat KRL Cilejit 4.08 km"
    },
    {
+    "id": "prj-samesta-alonia-jakarta",
+    "name": "Samesta Alonia Jakarta",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
     "id": "prj-samesta-parayasa",
     "name": "Samesta Parayasa",
     "reason": "di luar radius: stasiun terdekat KRL Parungpanjang 3.07 km"
+   },
+   {
+    "id": "prj-savyavasa",
+    "name": "Savyavasa",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
    },
    {
     "id": "prj-sejahtera-residence-sumberjaya",
@@ -394,8 +607,33 @@
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
    },
    {
+    "id": "prj-tamaya-residence",
+    "name": "Tamaya Residence",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
     "id": "prj-the-ainani-residence-bintaro",
     "name": "The Ainani Residence Bintaro",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-the-executive-milan-metro-park-residence",
+    "name": "The Executive Milan (Metro Park Residence)",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-the-leaves-rempoa",
+    "name": "The Leaves Rempoa",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
+   },
+   {
+    "id": "prj-the-residences-at-the-st-regis-jakarta",
+    "name": "The Residences at The St. Regis Jakarta",
+    "reason": "Selesai dibangun 2021; harga hanya dari halaman Referensi Proyek rumah123 (pembaruan massal), pemasaran developer 2025 sampai 2026 belum terbukti."
+   },
+   {
+    "id": "prj-townhouse-mutiara-lenteng-agung",
+    "name": "Townhouse Mutiara Lenteng Agung",
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
    },
    {
@@ -408,9 +646,195 @@
     "name": "Yarra Homes",
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung"
    }
-  ]
+  ],
+  "population": {
+   "source": {
+    "id": "worldpop-r2025a-idn-2025",
+    "name": "WorldPop Global2, Indonesia 100 m constrained, tahun 2025 (rilis R2025A)",
+    "publisher": "WorldPop, University of Southampton",
+    "url": "https://hub.worldpop.org/geodata/summary?id=73823",
+    "fileUrl": "https://data.worldpop.org/GIS/Population/Global_2015_2030/R2025A/2025/IDN/v1/100m/constrained/idn_pop_2025_CN_100m_R2025A_v1.tif",
+    "doi": "10.5258/SOTON/WP00839",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://hub.worldpop.org/data/licence.txt",
+    "published": "2025-09-01",
+    "year": 2025,
+    "sha256": "b428a90c3cd2b74b515becd6ad089a0212398636165ed3837a637c6f7e6a9a30",
+    "checkedAt": "2026-10-30"
+   },
+   "method": "Jumlah orang per piksel WorldPop (sekitar 100 m) yang titik tengahnya berada dalam radius 500 m dan 1 km dari titik proyek; kepadatan = jumlah dalam 1 km dibagi luas lingkaran 3,14 km2.",
+   "caveats": [
+    "Estimasi model penduduk tempat tinggal, bukan hasil sensus atau registrasi penduduk.",
+    "Tidak menggambarkan keramaian siang hari, pengunjung, atau arus komuter.",
+    "Ketelitian mengikuti titik proyek; titik kawasan atau pin portal dapat bergeser dari lokasi unit."
+   ],
+   "radiiKm": [
+    0.5,
+    1.0
+   ]
+  }
  },
  "features": [
+  {
+   "type": "Feature",
+   "id": "prj-aerium-residence",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.74288,
+     -6.16745
+    ]
+   },
+   "properties": {
+    "id": "prj-aerium-residence",
+    "name": "Aerium Residence",
+    "developer": "Sinar Mas Land",
+    "kind": "Apartemen",
+    "subsidized": false,
+    "locationText": "Kembangan Utara, Kembangan, Jakarta Barat",
+    "region": "Kota Jakarta Barat",
+    "area": "Jakarta",
+    "status": "dipasarkan",
+    "statusQuote": "Free PPN DTP up to Rp220 Juta",
+    "statusUrl": "https://www.sinarmasland.com/id/development/residential/aerium-residence",
+    "price": {
+     "min": 3000000000,
+     "max": 5300000000,
+     "basis": "rentang harga per tipe South Tower (2BR sampai 3BR) di rumah123, developer Sinar Mas Land; PPN tidak disebut",
+     "quote": "Rp 3 Miliar - 5,3 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-barat/aerium-residence/nps1686/",
+     "pageDate": "2026-10-07",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "2BR-C (South Tower)",
+      "bedrooms": 2,
+      "landArea": null,
+      "buildingArea": 91.11,
+      "price": 3000000000
+     },
+     {
+      "label": "2BR-B (South Tower)",
+      "bedrooms": 2,
+      "landArea": null,
+      "buildingArea": 98.01,
+      "price": 3100000000
+     },
+     {
+      "label": "2BR-A (South Tower)",
+      "bedrooms": 2,
+      "landArea": null,
+      "buildingArea": 99.12,
+      "price": 3600000000
+     },
+     {
+      "label": "3BR-A (South Tower)",
+      "bedrooms": 3,
+      "landArea": null,
+      "buildingArea": 165.68,
+      "price": 5300000000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": "https://www.sinarmasland.com/id/development/residential/aerium-residence",
+    "coordinate": {
+     "method": "Koordinat eCatalog developer Sinar Mas Land",
+     "url": "https://ecatalog.sinarmasland.com/project/aerium/cluster/south-tower-at-aerium",
+     "precision": "titik proyek",
+     "note": "Selisih sekitar 160 m dari pin Pinhome."
+    },
+    "nearest": [
+     {
+      "mode": "KRL",
+      "name": "Bojong Indah",
+      "km": 1.1,
+      "lat": -6.1602142,
+      "lng": 106.7361338
+     },
+     {
+      "mode": "KRL",
+      "name": "Taman Kota",
+      "km": 1.8,
+      "lat": -6.158627,
+      "lng": 106.7565728
+     },
+     {
+      "mode": "KRL",
+      "name": "Rawa Buaya",
+      "km": 2.29,
+      "lat": -6.1627437,
+      "lng": 106.7227543
+     }
+    ],
+    "population": {
+     "within500m": 18380,
+     "within1km": 70620,
+     "densityKm2": 22480
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-barat/aerium-residence/nps1686/",
+      "kind": "portal",
+      "title": "Aerium Residence - rumah123 perumahan baru",
+      "fetched": true,
+      "pageDate": "2026-10-07",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "transit",
+       "unit"
+      ],
+      "note": "Price range, six South Tower types, promo Agustus 2026, locationPin null"
+     },
+     {
+      "url": "https://www.sinarmasland.com/id/development/residential/aerium-residence",
+      "kind": "developer",
+      "title": "Aerium Apartment - Sinar Mas Land",
+      "fetched": true,
+      "pageDate": "2026-08-21",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi"
+      ],
+      "note": "Starts From Rp 3.096.933.300; promo Agustus 2026"
+     },
+     {
+      "url": "https://ecatalog.sinarmasland.com/project/aerium/cluster/south-tower-at-aerium",
+      "kind": "developer",
+      "title": "South Tower at Aerium - Sinar Mas Land eCatalog",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "lokasi"
+      ],
+      "note": "Project latitude/longitude and address; harga mulai Rp 3.010.741.800"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/apartemen-baru/aerium-at-taman-permata-buana",
+      "kind": "portal",
+      "title": "Apartemen Aerium at Taman Permata Buana - Pinhome",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "status",
+       "lokasi"
+      ],
+      "note": "Coordinate -6.1660386,106.7424330; subdistrict Kembangan Utara; status active; Rp 2,9-6,15 Miliar"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "krl-tangerang",
+    "methods": [
+     "portal-proyek-baru",
+     "situs-developer"
+    ]
+   }
+  },
   {
    "type": "Feature",
    "id": "prj-agrapana-estate",
@@ -492,6 +916,11 @@
       "lng": 106.831782
      }
     ],
+    "population": {
+     "within500m": 12630,
+     "within1km": 48160,
+     "densityKm2": 15330
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -622,6 +1051,11 @@
       "lng": 106.7446926
      }
     ],
+    "population": {
+     "within500m": 7180,
+     "within1km": 24890,
+     "densityKm2": 7920
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -668,6 +1102,701 @@
     "methods": [
      "portal-proyek-baru",
      "situs-developer"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-aria-puri",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.71282,
+     -6.178291
+    ]
+   },
+   "properties": {
+    "id": "prj-aria-puri",
+    "name": "Aria Puri",
+    "developer": "Greenwoods Group",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Duri Kosambi, Cengkareng, Jakarta Barat",
+    "region": "Kota Jakarta Barat",
+    "area": "Jakarta",
+    "status": "inden",
+    "statusQuote": null,
+    "statusUrl": "https://www.rumah123.com/perumahan-baru/properti/jakarta-barat/aria-puri/nps8014/",
+    "price": {
+     "min": 2822000000,
+     "max": 2907000000,
+     "basis": "rentang harga per tipe (Type A, Type B) di halaman proyek rumah123; PPN/BPHTB tidak disebut",
+     "quote": "Rp 2,82 Miliar - 2,9 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-barat/aria-puri/nps8014/",
+     "pageDate": "2026-07-23",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Type A",
+      "bedrooms": 4,
+      "landArea": 66,
+      "buildingArea": 130,
+      "price": 2822000000
+     },
+     {
+      "label": "Type B",
+      "bedrooms": 5,
+      "landArea": 66,
+      "buildingArea": 130,
+      "price": 2907000000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": null,
+    "coordinate": {
+     "method": "Pin proyek Pinhome",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/aria-puri",
+     "precision": "pin portal",
+     "note": null
+    },
+    "nearest": [
+     {
+      "mode": "KRL",
+      "name": "Kalideres",
+      "km": 1.7,
+      "lat": -6.1659662,
+      "lng": 106.7037283
+     },
+     {
+      "mode": "KRL",
+      "name": "Rawa Buaya",
+      "km": 2.05,
+      "lat": -6.1627437,
+      "lng": 106.7227543
+     }
+    ],
+    "population": {
+     "within500m": 18890,
+     "within1km": 70800,
+     "densityKm2": 22540
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-barat/aria-puri/nps8014/",
+      "kind": "portal",
+      "title": "Aria Puri - rumah123 perumahan baru",
+      "fetched": true,
+      "pageDate": "2026-07-23",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Price range, Type A/B specs, completion 12-2026, address Jl. Kresek Raya No 8; locationPin null"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-baru/aria-puri",
+      "kind": "portal",
+      "title": "Perumahan Aria Puri, Jakarta Barat - Pinhome",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "status",
+       "lokasi"
+      ],
+      "note": "Project coordinate, subdistrict Duri Kosambi, status developer_project_status.active, price Rp 2,49-3,16 Miliar"
+     },
+     {
+      "url": "https://rumahsaya.bca.co.id/developer/greenwoods/jakarta-barat/aria-puri",
+      "kind": "portal",
+      "title": "Aria Puri - BCA rumahsaya",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga"
+      ],
+      "note": "Shows 'Rp 2,9 M - 4 M' harga mulai; map coordinate contradicts address, dropped"
+     },
+     {
+      "url": "https://ekonomi.republika.co.id/berita/rsakdq349/greenwoods-group-pasarkan-aria-puri-di-jakarta-barat",
+      "kind": "news",
+      "title": "Greenwoods Group pasarkan Aria Puri di Jakarta Barat (Republika)",
+      "fetched": false,
+      "pageDate": "2023-03-29",
+      "supports": [
+       "status"
+      ],
+      "note": "Seen in search results only; launch news, not used for price"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "krl-tangerang",
+    "methods": [
+     "berita",
+     "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-arsa-homes",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.768497,
+     -6.303744
+    ]
+   },
+   "properties": {
+    "id": "prj-arsa-homes",
+    "name": "Arsa Homes",
+    "developer": "Synthesis Development",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Cireundeu, Ciputat Timur, Kota Tangerang Selatan",
+    "region": "Kota Tangerang Selatan",
+    "area": "Tangerang",
+    "status": "dipasarkan",
+    "statusQuote": "unit yang masih tersedia. Booking fee atau tanda jadi yang tercantum dalam materi adalah Rp15 juta",
+    "statusUrl": "https://synthesis-development.id/project/arsa-homes/",
+    "price": {
+     "min": 2056830000,
+     "max": 2415360000,
+     "basis": "rentang harga per tipe di rumah123 (Asha Rp 2,05 M, Naya Rp 2,41 M); PPN/BPHTB tidak disebut",
+     "quote": "Rp 2,05 Miliar - 2,41 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/tangerang-selatan/arsa-homes/nps7721/",
+     "pageDate": "2026-10-20",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Asha (2 lantai)",
+      "bedrooms": 3,
+      "landArea": 53,
+      "buildingArea": 63,
+      "price": 2056830000
+     },
+     {
+      "label": "Naya (2 lantai)",
+      "bedrooms": 3,
+      "landArea": 61,
+      "buildingArea": 68,
+      "price": 2415360000
+     }
+    ],
+    "transitClaim": {
+     "quote": "5 menit ke transportasi massal MRT Lebak Bulus dan 10 menit ke kawasan bisnis TB Simatupang",
+     "url": "https://synthesis-development.id/project/arsa-homes/"
+    },
+    "officialUrl": "https://synthesis-development.id/project/arsa-homes/",
+    "coordinate": {
+     "method": "Embed Google Maps di halaman resmi proyek",
+     "url": "https://synthesis-development.id/project/arsa-homes/",
+     "precision": "titik proyek",
+     "note": null
+    },
+    "nearest": [
+     {
+      "mode": "MRT",
+      "name": "Lebak Bulus Bank Syariah Indonesia",
+      "km": 1.76,
+      "lat": -6.2892542,
+      "lng": 106.7749374
+     },
+     {
+      "mode": "MRT",
+      "name": "Fatmawati Indomaret",
+      "km": 2.93,
+      "lat": -6.2924285,
+      "lng": 106.7924656
+     }
+    ],
+    "population": {
+     "within500m": 7760,
+     "within1km": 29100,
+     "densityKm2": 9260
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/tangerang-selatan/arsa-homes/nps7721/",
+      "kind": "portal",
+      "title": "ARSA HOMES | Info Harga & Pemesanan (rumah123)",
+      "fetched": true,
+      "pageDate": "2026-10-20",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "transit",
+       "unit"
+      ],
+      "note": "dateModified 2026-10-20; priceMin/priceMax and per-type offers; stations list includes Stasiun MRT Lebak Bulus (3 Menit)"
+     },
+     {
+      "url": "https://synthesis-development.id/project/arsa-homes/",
+      "kind": "developer",
+      "title": "Arsa Homes - Synthesis Development official project page",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "status",
+       "lokasi",
+       "transit",
+       "unit"
+      ],
+      "note": "Reached via redirect from https://arsahomes.id/; no purchase price on page; Google Maps embed with q= coordinates"
+     },
+     {
+      "url": "https://www.industry.co.id/read/155108/arsa-homes-tawarkan-hunian-dekat-mrt-lebak-bulus-harga-mulai-rp16-miliar",
+      "kind": "news",
+      "title": "Arsa Homes Tawarkan Hunian Dekat MRT Lebak Bulus, Harga Mulai Rp1,6 Miliar (Industry.co.id)",
+      "fetched": true,
+      "pageDate": "2026-08-28",
+      "supports": [
+       "harga",
+       "lokasi",
+       "transit"
+      ],
+      "note": "News article; launch price claims only, not used as the recorded price"
+     },
+     {
+      "url": "https://momsmoney.kontan.co.id/news/rumah-dekat-mrt-lebak-bulus-mulai-rp-16-miliar-ini-pilihan-tipenya",
+      "kind": "news",
+      "title": "Rumah dekat MRT Lebak Bulus mulai Rp 1,6 miliar (Kontan MomsMoney)",
+      "fetched": false,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "transit"
+      ],
+      "note": "Seen in search results only"
+     },
+     {
+      "url": "https://disway.id/read/965342/disway.id",
+      "kind": "news",
+      "title": "Arsa Homes Tawarkan Hunian Modern dengan Akses Cepat ke MRT Lebak Bulus (Disway)",
+      "fetched": false,
+      "pageDate": null,
+      "supports": [
+       "transit"
+      ],
+      "note": "Seen in search results only"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "mrt",
+    "methods": [
+     "berita",
+     "portal-proyek-baru",
+     "situs-developer"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-arsa-residence",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.878784,
+     -6.294015
+    ]
+   },
+   "properties": {
+    "id": "prj-arsa-residence",
+    "name": "Arsa Residence",
+    "developer": "KSO Sumber Sukses Mandiri (as named on rumah123; not independently verified)",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Jl. Dukuh V, Kramat Jati, Jakarta Timur (kelurahan tidak disebut sumber)",
+    "region": "Kota Jakarta Timur",
+    "area": "Jakarta",
+    "status": "dipasarkan",
+    "statusQuote": "Terakhir diperbarui 23 Juli 2026",
+    "statusUrl": "https://www.rumah123.com/perumahan-baru/properti/jakarta-timur/arsa-residence/nps8017/",
+    "price": {
+     "min": 1845000000,
+     "max": 2155000000,
+     "basis": "rentang harga per tipe (2 tipe) di halaman proyek portal rumah123, priceType 'Dijual'; PPN/BPHTB tidak disebut",
+     "quote": "Rp 1,84 Miliar - 2,15 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-timur/arsa-residence/nps8017/",
+     "pageDate": "2026-07-23",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "92/84",
+      "bedrooms": 4,
+      "landArea": 92,
+      "buildingArea": 84,
+      "price": 1845000000
+     },
+     {
+      "label": "93/130",
+      "bedrooms": 4,
+      "landArea": 93,
+      "buildingArea": 130,
+      "price": 2155000000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": null,
+    "coordinate": {
+     "method": "Koordinat venue rumah123 (schema.org GeoCoordinates)",
+     "url": "https://www.rumah123.com/venue/arsa-residence-vcm21614/",
+     "precision": "pin portal",
+     "note": "Pin halaman venue portal; belum dicocokkan dengan sumber kedua."
+    },
+    "nearest": [
+     {
+      "mode": "LRT",
+      "name": "Taman Mini",
+      "km": 0.23,
+      "lat": -6.2929044,
+      "lng": 106.8805779
+     },
+     {
+      "mode": "LRT",
+      "name": "Kampung Rambutan",
+      "km": 1.84,
+      "lat": -6.3095464,
+      "lng": 106.8844039
+     }
+    ],
+    "population": {
+     "within500m": 13450,
+     "within1km": 53360,
+     "densityKm2": 16990
+    },
+    "verdict": "partial",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-timur/arsa-residence/nps8017/",
+      "kind": "portal",
+      "title": "Arsa Residence | Info Harga & Pemesanan (rumah123)",
+      "fetched": true,
+      "pageDate": "2026-07-23",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "ld+json AggregateOffer lowPrice 1845000000, highPrice 2155000000; address Jl. Dukuh V, Kramat Jati; locationPin null"
+     },
+     {
+      "url": "https://www.rumah123.com/venue/arsa-residence-vcm21614/",
+      "kind": "portal",
+      "title": "Arsa Residence venue page (rumah123)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "lokasi"
+      ],
+      "note": "schema.org Place geo -6.294015159, 106.8787845; listings on the page are agent listings and were not used"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "krl-bogor-inner",
+    "methods": [
+     "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-ayalis-mampang-heritage",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.820787,
+     -6.250614
+    ]
+   },
+   "properties": {
+    "id": "prj-ayalis-mampang-heritage",
+    "name": "Ayalis Mampang Heritage",
+    "developer": "Ayalis Putra Membangun",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Jl. Mampang Prapatan VIII, Kelurahan Tegal Parang, Kecamatan Mampang Prapatan, Kota Jakarta Selatan",
+    "region": "Kota Jakarta Selatan",
+    "area": "Jakarta",
+    "status": "inden",
+    "statusQuote": "Sisa 17 Unit",
+    "statusUrl": "https://www.pinhome.id/dijual/rumah-baru/mampang-heritage-by-ayalis",
+    "price": {
+     "min": 3500000000,
+     "max": 3630000000,
+     "basis": "rentang harga proyek di portal (rumah123 perumahan baru), dari 3 tipe unit; PPN/BPHTB tidak disebut",
+     "quote": "Rp 3,5 Miliar - 3,63 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/ayalis-mampang-heritage/nps8029/",
+     "pageDate": "2026-07-23",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Crystal",
+      "bedrooms": 4,
+      "landArea": 52,
+      "buildingArea": 177,
+      "price": 3630000000
+     },
+     {
+      "label": "Topaz",
+      "bedrooms": 4,
+      "landArea": 48,
+      "buildingArea": 169,
+      "price": 3555000000
+     },
+     {
+      "label": "Diamond",
+      "bedrooms": 4,
+      "landArea": 53,
+      "buildingArea": 158,
+      "price": 3500000000
+     }
+    ],
+    "transitClaim": {
+     "quote": "10 menit menuju Stasiun LRT Pancoran",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/mampang-heritage-by-ayalis"
+    },
+    "officialUrl": null,
+    "coordinate": {
+     "method": "Pin proyek Pinhome",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/mampang-heritage-by-ayalis",
+     "precision": "pin portal",
+     "note": "Pin sama pada listing Pinhome lain untuk proyek dan alamat yang sama."
+    },
+    "nearest": [
+     {
+      "mode": "LRT",
+      "name": "Pancoran",
+      "km": 2.18,
+      "lat": -6.2421132,
+      "lng": 106.8385223
+     },
+     {
+      "mode": "MRT",
+      "name": "Blok M BCA",
+      "km": 2.61,
+      "lat": -6.2444225,
+      "lng": 106.7980099
+     },
+     {
+      "mode": "MRT",
+      "name": "Blok A VISA",
+      "km": 2.68,
+      "lat": -6.2557819,
+      "lng": 106.7971191
+     },
+     {
+      "mode": "LRT",
+      "name": "Kuningan",
+      "km": 2.79,
+      "lat": -6.2287823,
+      "lng": 106.8332233
+     }
+    ],
+    "population": {
+     "within500m": 15720,
+     "within1km": 64830,
+     "densityKm2": 20640
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/ayalis-mampang-heritage/nps8029/",
+      "kind": "portal",
+      "title": "Ayalis Mampang Heritage - rumah123 perumahan baru",
+      "fetched": true,
+      "pageDate": "2026-07-23",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "fullAddress 'Jl. Mampang Prapatan VIII No 23, Tegal Parang, Mampang Prapatan, Jakarta Selatan.'; locationPin null"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-baru/mampang-heritage-by-ayalis",
+      "kind": "portal",
+      "title": "Mampang Heritage by Ayalis - Pinhome",
+      "fetched": true,
+      "pageDate": "2024-07-26",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "transit"
+      ],
+      "note": "createdAt 2024-07-26, status active, 17 active units, coordinate, subDistrict Tegal Parang"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-baru/mampang-heritage-2",
+      "kind": "portal",
+      "title": "Mampang Heritage by Zian Propertindo - Pinhome",
+      "fetched": true,
+      "pageDate": "2025-08-20",
+      "supports": [
+       "status",
+       "lokasi"
+      ],
+      "note": "Same name, address (No.35), description and coordinate; 'Sisa 20 Unit', Dalam Pembangunan"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "lrt-jabodebek-cibubur",
+    "methods": [
+     "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-ayalis-residence",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.837187,
+     -6.183875
+    ]
+   },
+   "properties": {
+    "id": "prj-ayalis-residence",
+    "name": "Ayalis Residence",
+    "developer": "Ayalis (Ayalis Property per cariproperti)",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Jl. Kembang IV, Kwitang, Senen, Jakarta Pusat",
+    "region": "Kota Jakarta Pusat",
+    "area": "Jakarta",
+    "status": "inden",
+    "statusQuote": "Dijual",
+    "statusUrl": "https://www.rumah123.com/perumahan-baru/properti/jakarta-pusat/ayalis-residence/nps8031/",
+    "price": {
+     "min": 900000000,
+     "max": 1950000000,
+     "basis": "rentang harga per tipe pada listing proyek baru rumah123 (Tipe 47, 71, 123); PPN/BPHTB tidak disebutkan",
+     "quote": "Rp 900 Juta - 1,95 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-pusat/ayalis-residence/nps8031/",
+     "pageDate": "2026-07-23",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Tipe 47",
+      "bedrooms": 2,
+      "landArea": 26,
+      "buildingArea": 47,
+      "price": 900000000
+     },
+     {
+      "label": "Tipe 71",
+      "bedrooms": 2,
+      "landArea": 25,
+      "buildingArea": 71,
+      "price": 1050000000
+     },
+     {
+      "label": "Tipe 123",
+      "bedrooms": 2,
+      "landArea": 42,
+      "buildingArea": 123,
+      "price": 1950000000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": null,
+    "coordinate": {
+     "method": "Pin cluster cariproperti",
+     "url": "https://cariproperti.com/ayalis-residence",
+     "precision": "pin portal",
+     "note": "Jarak POI rumah123 cocok dengan titik ini."
+    },
+    "nearest": [
+     {
+      "mode": "KRL",
+      "name": "Gondangdia",
+      "km": 0.56,
+      "lat": -6.1859109,
+      "lng": 106.8325657
+     },
+     {
+      "mode": "KRL",
+      "name": "Pasar Senen",
+      "km": 1.33,
+      "lat": -6.1744233,
+      "lng": 106.8445744
+     },
+     {
+      "mode": "KRL",
+      "name": "Gang Sentiong",
+      "km": 1.53,
+      "lat": -6.1861531,
+      "lng": 106.8508709
+     },
+     {
+      "mode": "KRL",
+      "name": "Cikini",
+      "km": 1.69,
+      "lat": -6.1985052,
+      "lng": 106.8412799
+     }
+    ],
+    "population": {
+     "within500m": 20400,
+     "within1km": 70930,
+     "densityKm2": 22580
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-pusat/ayalis-residence/nps8031/",
+      "kind": "portal",
+      "title": "Ayalis Residence | Info Harga & Pemesanan (rumah123)",
+      "fetched": true,
+      "pageDate": "2026-07-23",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "fullAddress Jl. Kembang IV, Kwitang, Senen; developerName Ayalis; locationPin null"
+     },
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/jakarta-pusat/",
+      "kind": "portal",
+      "title": "rumah123 perumahan baru Jakarta Pusat (list)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "status"
+      ],
+      "note": "nps8031 appears in today's active list"
+     },
+     {
+      "url": "https://cariproperti.com/ayalis-residence",
+      "kind": "portal",
+      "title": "Ayalis Residence - Cari Properti",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "lokasi"
+      ],
+      "note": "lat -6.18387523, lng 106.83718662; Kec. Senen 10420; older price data Rp 1 M"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "krl-central",
+    "methods": [
+     "portal-proyek-baru"
     ]
    }
   },
@@ -766,6 +1895,11 @@
       "lng": 106.7973012
      }
     ],
+    "population": {
+     "within500m": 11370,
+     "within1km": 42900,
+     "densityKm2": 13660
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -883,6 +2017,11 @@
       "lng": 106.4340596
      }
     ],
+    "population": {
+     "within500m": 1190,
+     "within1km": 4230,
+     "densityKm2": 1350
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -918,6 +2057,257 @@
     "corridor": "krl-rangkasbitung-outer",
     "methods": [
      "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-cavana-lebak-bulus",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.7824,
+     -6.307763
+    ]
+   },
+   "properties": {
+    "id": "prj-cavana-lebak-bulus",
+    "name": "Cavana Lebak Bulus",
+    "developer": "Cava Property",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Lebak Bulus, Cilandak, Jakarta Selatan",
+    "region": "Kota Jakarta Selatan",
+    "area": "Jakarta",
+    "status": "dipasarkan",
+    "statusQuote": "Dijual",
+    "statusUrl": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/cavana-lebak-bulus/nps8059/",
+    "price": {
+     "min": 2766138000,
+     "max": null,
+     "basis": "harga mulai di portal rumah123 (satu tipe unit tercantum); PPN/BPHTB tidak disebut",
+     "quote": "Mulai dari Rp 2,76 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/cavana-lebak-bulus/nps8059/",
+     "pageDate": "2026-07-23",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Cavana",
+      "bedrooms": 4,
+      "landArea": 72,
+      "buildingArea": 141,
+      "price": 2766137900
+     }
+    ],
+    "transitClaim": {
+     "quote": "► 10 menit – Stasiun MRT Lebak Bulus, Pondok Indah, CBD simatupang",
+     "url": "https://cavanalebakbulus.com/"
+    },
+    "officialUrl": "https://cavanalebakbulus.com/",
+    "coordinate": {
+     "method": "Pin proyek Pinhome",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/cavana-lebak-bulus",
+     "precision": "pin portal",
+     "note": null
+    },
+    "nearest": [
+     {
+      "mode": "MRT",
+      "name": "Fatmawati Indomaret",
+      "km": 2.04,
+      "lat": -6.2924285,
+      "lng": 106.7924656
+     },
+     {
+      "mode": "MRT",
+      "name": "Lebak Bulus Bank Syariah Indonesia",
+      "km": 2.22,
+      "lat": -6.2892542,
+      "lng": 106.7749374
+     }
+    ],
+    "population": {
+     "within500m": 12500,
+     "within1km": 44570,
+     "densityKm2": 14190
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/cavana-lebak-bulus/nps8059/",
+      "kind": "portal",
+      "title": "Cavana Lebak Bulus (rumah123)",
+      "fetched": true,
+      "pageDate": "2026-07-23",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "price display 'Mulai dari Rp 2,76 Miliar'; minValue 2766138000; locationPin null"
+     },
+     {
+      "url": "https://cavanalebakbulus.com/",
+      "kind": "developer",
+      "title": "Official Website CAVANA LEBAK BULUS",
+      "fetched": true,
+      "pageDate": "2026-10-26",
+      "supports": [
+       "status",
+       "lokasi",
+       "transit"
+      ],
+      "note": "pageDate is the LiteSpeed cache timestamp; no price on page"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-baru/cavana-lebak-bulus",
+      "kind": "portal",
+      "title": "Cavana Lebak Bulus (Pinhome)",
+      "fetched": true,
+      "pageDate": "2024-03-15",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi"
+      ],
+      "note": "pageDate is listing createdAt. minPrice 3370000000 maxPrice 4670000000; coordinate used"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "mrt",
+    "methods": [
+     "portal-proyek-baru",
+     "situs-developer"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-ciputra-international",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.730177,
+     -6.173536
+    ]
+   },
+   "properties": {
+    "id": "prj-ciputra-international",
+    "name": "Ciputra International",
+    "developer": "Ciputra Group",
+    "kind": "Apartemen",
+    "subsidized": false,
+    "locationText": "Rawa Buaya, Cengkareng, Jakarta Barat",
+    "region": "Kota Jakarta Barat",
+    "area": "Jakarta",
+    "status": "dipasarkan",
+    "statusQuote": "Free PPN up to 220 Juta",
+    "statusUrl": "https://www.rumah123.com/perumahan-baru/properti/jakarta-barat/ciputra-international/nps2046/",
+    "price": {
+     "min": 1186680000,
+     "max": 3438300000,
+     "basis": "harga tipe hunian 1BR Rp 1,18 M sampai 3BR Rp 3,43 M di rumah123; unit kantor dikecualikan; PPN/BPHTB tidak disebut",
+     "quote": "Rp 1,18 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-barat/ciputra-international/nps2046/",
+     "pageDate": "2026-10-19",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "TIPE 1BR (Tower San Fransisco)",
+      "bedrooms": 1,
+      "landArea": null,
+      "buildingArea": 40,
+      "price": 1186680000
+     },
+     {
+      "label": "TIPE 2BR (Tower San Fransisco)",
+      "bedrooms": 2,
+      "landArea": null,
+      "buildingArea": 69,
+      "price": 2003100000
+     },
+     {
+      "label": "TIPE 3BR (Tower San Fransisco)",
+      "bedrooms": 3,
+      "landArea": null,
+      "buildingArea": 118,
+      "price": 3438300000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": null,
+    "coordinate": {
+     "method": "Pin proyek Pinhome",
+     "url": "https://www.pinhome.id/dijual/apartemen-baru/ciputra-international",
+     "precision": "pin portal",
+     "note": null
+    },
+    "nearest": [
+     {
+      "mode": "KRL",
+      "name": "Rawa Buaya",
+      "km": 1.45,
+      "lat": -6.1627437,
+      "lng": 106.7227543
+     },
+     {
+      "mode": "KRL",
+      "name": "Bojong Indah",
+      "km": 1.62,
+      "lat": -6.1602142,
+      "lng": 106.7361338
+     }
+    ],
+    "population": {
+     "within500m": 12510,
+     "within1km": 59000,
+     "densityKm2": 18780
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-barat/ciputra-international/nps2046/",
+      "kind": "portal",
+      "title": "Ciputra International | Info Harga & Pemesanan (rumah123)",
+      "fetched": true,
+      "pageDate": "2026-10-19",
+      "supports": [
+       "harga",
+       "status",
+       "transit",
+       "unit"
+      ],
+      "note": "time.updated 2026-10-19; developerName Ciputra Group; locationPin null"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/apartemen-baru/ciputra-international",
+      "kind": "portal",
+      "title": "Apartemen Ciputra International (Pinhome)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "lokasi"
+      ],
+      "note": "coordinate and kelurahan; status field says sold_out (undated), price range Rp 930,8 Juta - Rp 4,01 Miliar not used"
+     },
+     {
+      "url": "https://www.ciputra.com/?p=1338",
+      "kind": "developer",
+      "title": "Ciputra (search result, 403 Nginx Proxy Guard)",
+      "fetched": false,
+      "pageDate": null,
+      "supports": [],
+      "note": "blocked; host not retried"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "krl-tangerang",
+    "methods": [
+     "portal-proyek-baru",
+     "situs-developer"
     ]
    }
   },
@@ -988,6 +2378,11 @@
       "lng": 106.8170842
      }
     ],
+    "population": {
+     "within500m": 10250,
+     "within1km": 40580,
+     "densityKm2": 12920
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -1120,6 +2515,11 @@
       "lng": 106.7126471
      }
     ],
+    "population": {
+     "within500m": 5910,
+     "within1km": 28950,
+     "densityKm2": 9220
+    },
     "verdict": "confirmed",
     "sources": [
      {
@@ -1283,6 +2683,11 @@
       "lng": 106.8703394
      }
     ],
+    "population": {
+     "within500m": 21360,
+     "within1km": 78030,
+     "densityKm2": 24840
+    },
     "verdict": "confirmed",
     "sources": [
      {
@@ -1316,6 +2721,179 @@
     "corridor": "krl-cikarang-east",
     "methods": [
      "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-fifty-seven-promenade",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.819586,
+     -6.196773
+    ]
+   },
+   "properties": {
+    "id": "prj-fifty-seven-promenade",
+    "name": "Fifty Seven Promenade",
+    "developer": "Intiland",
+    "kind": "Apartemen",
+    "subsidized": false,
+    "locationText": "Jl. Teluk Betung I, Kebon Melati, Tanah Abang, Jakarta Pusat",
+    "region": "Kota Jakarta Pusat",
+    "area": "Jakarta",
+    "status": "siap-huni",
+    "statusQuote": "Dijual",
+    "statusUrl": "https://www.rumah123.com/perumahan-baru/properti/jakarta-pusat/fifty-seven-promenade/nps7720/",
+    "price": {
+     "min": 4500000000,
+     "max": 12790000000,
+     "basis": "rentang harga unit pada listing proyek baru rumah123 (3 unit tower SKY57: S3AB, S5C, S30A); PPN/BPHTB tidak disebutkan",
+     "quote": "Rp 4,5 Miliar - 12,7 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-pusat/fifty-seven-promenade/nps7720/",
+     "pageDate": "2026-10-13",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "SKY57 S3AB (1 KT)",
+      "bedrooms": 1,
+      "landArea": null,
+      "buildingArea": 81.91,
+      "price": 4500000000
+     },
+     {
+      "label": "SKY57 S5C (1 KT)",
+      "bedrooms": 1,
+      "landArea": null,
+      "buildingArea": 81.91,
+      "price": 4500000000
+     },
+     {
+      "label": "SKY57 S30A (3 KT)",
+      "bedrooms": 3,
+      "landArea": null,
+      "buildingArea": 182.91,
+      "price": 12790000000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": null,
+    "coordinate": {
+     "method": "Pin proyek Pinhome",
+     "url": "https://www.pinhome.id/dijual/apartemen-baru/fifty-seven-promenade",
+     "precision": "pin portal",
+     "note": null
+    },
+    "nearest": [
+     {
+      "mode": "KRL",
+      "name": "BNI City",
+      "km": 0.54,
+      "lat": -6.2015938,
+      "lng": 106.8197174
+     },
+     {
+      "mode": "MRT",
+      "name": "Dukuh Atas BNI",
+      "km": 0.57,
+      "lat": -6.2007864,
+      "lng": 106.8227462
+     },
+     {
+      "mode": "MRT",
+      "name": "Bundaran HI Bank Jakarta",
+      "km": 0.66,
+      "lat": -6.1918519,
+      "lng": 106.8229594
+     },
+     {
+      "mode": "KRL",
+      "name": "Sudirman",
+      "km": 0.76,
+      "lat": -6.2024081,
+      "lng": 106.8234493
+     }
+    ],
+    "population": {
+     "within500m": 14270,
+     "within1km": 67190,
+     "densityKm2": 21390
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-pusat/fifty-seven-promenade/nps7720/",
+      "kind": "portal",
+      "title": "FIFTY SEVEN PROMENADE | Info Harga & Pemesanan (rumah123)",
+      "fetched": true,
+      "pageDate": "2026-10-13",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "transit",
+       "unit"
+      ],
+      "note": "time.updated 2026-10-13; fullAddress Jl. Teluk Betung I No.49, Kebon Melati, Tanah Abang; developerName Intiland; locationPin null"
+     },
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/jakarta-pusat/",
+      "kind": "portal",
+      "title": "rumah123 perumahan baru Jakarta Pusat (list)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "status"
+      ],
+      "note": "nps7720 appears in today's active list"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/apartemen-baru/fifty-seven-promenade",
+      "kind": "portal",
+      "title": "Apartemen Fifty Seven Promenade (Pinhome)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "status",
+       "lokasi"
+      ],
+      "note": "coordinate [-6.19677, 106.81959]; Rp 3,2 Miliar - Rp 14 Miliar; construction_complete; created 2023-02-03"
+     },
+     {
+      "url": "https://www.intiland.com/en/apartment/jakarta/fifty-seven-promenade/",
+      "kind": "developer",
+      "title": "Intiland Fifty Seven Promenade page",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [],
+      "note": "redirected to intiland.com/id/ homepage; project page not available"
+     },
+     {
+      "url": "https://www.intiland.com/en/intiland-holds-topping-off-of-fifty-seven-promenade-apartments-second-tower/",
+      "kind": "developer",
+      "title": "Intiland topping off second tower (news)",
+      "fetched": false,
+      "pageDate": null,
+      "supports": [],
+      "note": "listed by earlier agent; not read today"
+     },
+     {
+      "url": "https://pustaka.bca.co.id/rumahsaya/DEVELOPER/INTILAND/Fifty%20Seven%20Promenade/Pricelist/pricelist.pdf",
+      "kind": "other",
+      "title": "BCA rumahsaya pricelist PDF",
+      "fetched": false,
+      "pageDate": null,
+      "supports": [],
+      "note": "not read today"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "krl-central",
+    "methods": [
+     "portal-proyek-baru",
+     "situs-developer"
     ]
    }
   },
@@ -1400,6 +2978,11 @@
       "lng": 106.4340596
      }
     ],
+    "population": {
+     "within500m": 730,
+     "within1km": 2760,
+     "densityKm2": 880
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -1520,6 +3103,11 @@
       "lng": 107.0181046
      }
     ],
+    "population": {
+     "within500m": 9860,
+     "within1km": 46220,
+     "densityKm2": 14710
+    },
     "verdict": "confirmed",
     "sources": [
      {
@@ -1673,6 +3261,11 @@
       "lng": 106.9518542
      }
     ],
+    "population": {
+     "within500m": 12150,
+     "within1km": 52620,
+     "densityKm2": 16750
+    },
     "verdict": "confirmed",
     "sources": [
      {
@@ -1839,6 +3432,11 @@
       "lng": 106.8551672
      }
     ],
+    "population": {
+     "within500m": 13400,
+     "within1km": 58690,
+     "densityKm2": 18680
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -1885,6 +3483,281 @@
     "corridor": "krl-bogor-inner",
     "methods": [
      "berita",
+     "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-luxe-court-permata-hijau",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.772134,
+     -6.229235
+    ]
+   },
+   "properties": {
+    "id": "prj-luxe-court-permata-hijau",
+    "name": "Luxe Court Permata Hijau",
+    "developer": "PT Toyota Housing Indonesia",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Jl. Cidodol Raya No. 62, Grogol Selatan, Kebayoran Lama, Jakarta Selatan",
+    "region": "Kota Jakarta Selatan",
+    "area": "Jakarta",
+    "status": "inden",
+    "statusQuote": "Status Konstruksi: Dalam Pembangunan",
+    "statusUrl": "https://www.pinhome.id/dijual/rumah-baru/luxe-court-permata-hijau",
+    "price": {
+     "min": 5039000000,
+     "max": 5916700000,
+     "basis": "rentang harga per tipe unit (Type A-D) di rumah123 'Referensi Proyek'; PPN/BPHTB tidak disebut",
+     "quote": "Harga Rp 5,03 Miliar - 5,91 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/luxe-court/nps8195/",
+     "pageDate": "2026-07-24",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Type A (3+1 KT per Pinhome)",
+      "bedrooms": null,
+      "landArea": 90,
+      "buildingArea": 205,
+      "price": 5222000000
+     },
+     {
+      "label": "Type B",
+      "bedrooms": null,
+      "landArea": 90,
+      "buildingArea": 186,
+      "price": 5561100000
+     },
+     {
+      "label": "Type C",
+      "bedrooms": null,
+      "landArea": 85,
+      "buildingArea": 145,
+      "price": 5039000000
+     },
+     {
+      "label": "Type D",
+      "bedrooms": null,
+      "landArea": 112,
+      "buildingArea": 200,
+      "price": 5916700000
+     }
+    ],
+    "transitClaim": {
+     "quote": "Kebayoran 1,16 KM",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/luxe-court-permata-hijau"
+    },
+    "officialUrl": null,
+    "coordinate": {
+     "method": "Pin proyek Pinhome",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/luxe-court-permata-hijau",
+     "precision": "pin portal",
+     "note": null
+    },
+    "nearest": [
+     {
+      "mode": "KRL",
+      "name": "Kebayoran",
+      "km": 1.45,
+      "lat": -6.23723,
+      "lng": 106.7825345
+     }
+    ],
+    "population": {
+     "within500m": 17670,
+     "within1km": 67180,
+     "densityKm2": 21380
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/luxe-court/nps8195/",
+      "kind": "portal",
+      "title": "Luxe Court | Info Harga & Pemesanan (rumah123, Referensi Proyek)",
+      "fetched": true,
+      "pageDate": "2026-07-24",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "locationPin null; POI list inconsistent with address"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-baru/luxe-court-permata-hijau",
+      "kind": "portal",
+      "title": "Perumahan Luxe Court Permata Hijau, Jakarta Selatan (Pinhome)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "transit",
+       "unit"
+      ],
+      "note": "Rp 4,99 Miliar - Rp 5,31 Miliar (Type A); Sisa 4 Unit; coordinate from __PROJECT_DETAIL__"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "krl-rangkasbitung-inner",
+    "methods": [
+     "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-mansion-8",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.792062,
+     -6.296885
+    ]
+   },
+   "properties": {
+    "id": "prj-mansion-8",
+    "name": "Mansion 8",
+    "developer": "PT Johawaki",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Cilandak Barat, Cilandak, Jakarta Selatan",
+    "region": "Kota Jakarta Selatan",
+    "area": "Jakarta",
+    "status": "dipasarkan",
+    "statusQuote": "Dijual",
+    "statusUrl": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/mansion-8/nps8202/",
+    "price": {
+     "min": 7500000000,
+     "max": 11500000000,
+     "basis": "rentang price list per tipe unit di portal rumah123 (8 tipe, semua InStock); PPN/BPHTB tidak disebut",
+     "quote": "Rp 7,5 Miliar - 11,5 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/mansion-8/nps8202/",
+     "pageDate": "2026-07-24",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Tipe C",
+      "bedrooms": 3,
+      "landArea": 134,
+      "buildingArea": 364,
+      "price": 7500000000
+     },
+     {
+      "label": "Tipe H",
+      "bedrooms": 4,
+      "landArea": 154,
+      "buildingArea": 308,
+      "price": 7500000000
+     },
+     {
+      "label": "Tipe E",
+      "bedrooms": 4,
+      "landArea": 137,
+      "buildingArea": 379,
+      "price": 10100000000
+     },
+     {
+      "label": "Tipe B",
+      "bedrooms": 3,
+      "landArea": 134,
+      "buildingArea": 364,
+      "price": 11500000000
+     }
+    ],
+    "transitClaim": {
+     "quote": "Stasiun MRT Fatmawati (1 Menit)",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/mansion-8/nps8202/"
+    },
+    "officialUrl": null,
+    "coordinate": {
+     "method": "Pin proyek Pinhome (slug mansion-8-1)",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/mansion-8-1",
+     "precision": "pin portal",
+     "note": "Listing Pinhome lain (slug mansion-8) memakai pin di Tangerang Selatan yang bertentangan dengan alamat; tidak dipakai."
+    },
+    "nearest": [
+     {
+      "mode": "MRT",
+      "name": "Fatmawati Indomaret",
+      "km": 0.5,
+      "lat": -6.2924285,
+      "lng": 106.7924656
+     },
+     {
+      "mode": "MRT",
+      "name": "Lebak Bulus Bank Syariah Indonesia",
+      "km": 2.07,
+      "lat": -6.2892542,
+      "lng": 106.7749374
+     },
+     {
+      "mode": "MRT",
+      "name": "Cipete Raya TUKU",
+      "km": 2.14,
+      "lat": -6.2783627,
+      "lng": 106.7973012
+     }
+    ],
+    "population": {
+     "within500m": 10740,
+     "within1km": 39820,
+     "densityKm2": 12680
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/mansion-8/nps8202/",
+      "kind": "portal",
+      "title": "Mansion 8 | Info Harga & Pemesanan (rumah123)",
+      "fetched": true,
+      "pageDate": "2026-07-24",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "transit",
+       "unit"
+      ],
+      "note": "JSON-LD AggregateOffer lowPrice 7500000000 highPrice 11500000000, offerCount 8; priceType Dijual; time.posted 2026-07-24"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-baru/mansion-8-1",
+      "kind": "portal",
+      "title": "Mansion 8 (Pinhome, slug mansion-8-1)",
+      "fetched": true,
+      "pageDate": "2025-05-16",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi"
+      ],
+      "note": "pageDate is listing createdAt. minPrice 7510000000, maxPrice 8300000000; coordinate used"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-baru/mansion-8",
+      "kind": "portal",
+      "title": "Mansion 8 (Pinhome, slug mansion-8)",
+      "fetched": true,
+      "pageDate": "2024-08-07",
+      "supports": [
+       "harga",
+       "status"
+      ],
+      "note": "pageDate is listing createdAt. Same price range, 3 active units; its coordinate contradicts the address and was not used"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "mrt",
+    "methods": [
      "portal-proyek-baru"
     ]
    }
@@ -1970,6 +3843,11 @@
       "lng": 107.111227
      }
     ],
+    "population": {
+     "within500m": 6550,
+     "within1km": 20580,
+     "densityKm2": 6550
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -2171,6 +4049,11 @@
       "lng": 107.1450733
      }
     ],
+    "population": {
+     "within500m": 70,
+     "within1km": 2280,
+     "densityKm2": 730
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -2354,6 +4237,11 @@
       "lng": 106.9279154
      }
     ],
+    "population": {
+     "within500m": 15940,
+     "within1km": 70740,
+     "densityKm2": 22520
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -2405,6 +4293,163 @@
     "corridor": "krl-cikarang-east",
     "methods": [
      "berita",
+     "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-onasis-industri-town-house",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.832587,
+     -6.153194
+    ]
+   },
+   "properties": {
+    "id": "prj-onasis-industri-town-house",
+    "name": "Onasis Industri Town House",
+    "developer": "Aghatos Property",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Jalan Industri, Gunung Sahari Utara, Sawah Besar, Jakarta Pusat",
+    "region": "Kota Jakarta Pusat",
+    "area": "Jakarta",
+    "status": "inden",
+    "statusQuote": "Dijual",
+    "statusUrl": "https://www.rumah123.com/perumahan-baru/properti/jakarta-pusat/onasis-industri-town-house/nps8544/",
+    "price": {
+     "min": 528000000,
+     "max": 630600000,
+     "basis": "rentang harga per tipe pada listing proyek baru rumah123 (Tipe 41, 43, 47); PPN/BPHTB tidak disebutkan",
+     "quote": "Rp 528 Juta - 630 Juta",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-pusat/onasis-industri-town-house/nps8544/",
+     "pageDate": "2026-07-24",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Tipe 41",
+      "bedrooms": 2,
+      "landArea": 21,
+      "buildingArea": 41,
+      "price": 528000000
+     },
+     {
+      "label": "Tipe 43",
+      "bedrooms": 2,
+      "landArea": 22,
+      "buildingArea": 43,
+      "price": 553500000
+     },
+     {
+      "label": "Tipe 47",
+      "bedrooms": 2,
+      "landArea": 24,
+      "buildingArea": 47,
+      "price": 630600000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": null,
+    "coordinate": {
+     "method": "Pin proyek Pinhome",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/onasis-industri-town-house",
+     "precision": "pin portal",
+     "note": "Jarak POI rumah123 cocok dengan titik ini."
+    },
+    "nearest": [
+     {
+      "mode": "KRL",
+      "name": "Mangga Besar",
+      "km": 0.73,
+      "lat": -6.1498037,
+      "lng": 106.8269826
+     },
+     {
+      "mode": "KRL",
+      "name": "Sawah Besar",
+      "km": 0.99,
+      "lat": -6.1606672,
+      "lng": 106.8276549
+     },
+     {
+      "mode": "KRL",
+      "name": "Rajawali",
+      "km": 1.02,
+      "lat": -6.1450996,
+      "lng": 106.8368325
+     },
+     {
+      "mode": "KRL",
+      "name": "Kemayoran",
+      "km": 1.36,
+      "lat": -6.1617033,
+      "lng": 106.8414012
+     }
+    ],
+    "population": {
+     "within500m": 23500,
+     "within1km": 86470,
+     "densityKm2": 27520
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-pusat/onasis-industri-town-house/nps8544/",
+      "kind": "portal",
+      "title": "Onasis Industri Town House | Info Harga & Pemesanan (rumah123)",
+      "fetched": true,
+      "pageDate": "2026-07-24",
+      "supports": [
+       "harga",
+       "status",
+       "transit",
+       "unit"
+      ],
+      "note": "developerName Aghatos Property; fullAddress 'Jalan Industri'; locationPin null"
+     },
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/jakarta-pusat/",
+      "kind": "portal",
+      "title": "rumah123 perumahan baru Jakarta Pusat (list)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "status"
+      ],
+      "note": "nps8544 appears in today's active list"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-baru/onasis-industri-town-house",
+      "kind": "portal",
+      "title": "Perumahan Onasis Industri Town House, Jakarta Pusat (Pinhome)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "coordinate [-6.1531936, 106.8325872]; Gunung Sahari Utara; created 2024-09-08"
+     },
+     {
+      "url": "https://www.brighton.co.id/about/articles-all/rumah-onasis-jakarta-pusat",
+      "kind": "other",
+      "title": "Rumah Onasis Gunung Sahari: Analisis Investasi (Brighton article)",
+      "fetched": true,
+      "pageDate": "2025-10-01",
+      "supports": [
+       "lokasi"
+      ],
+      "note": "agency article: Jalan Industri, Gunung Sahari Utara; developed by Aghatos Property"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "krl-central",
+    "methods": [
      "portal-proyek-baru"
     ]
    }
@@ -2487,6 +4532,11 @@
       "lng": 106.9058583
      }
     ],
+    "population": {
+     "within500m": 18290,
+     "within1km": 63560,
+     "densityKm2": 20230
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -2597,6 +4647,11 @@
       "lng": 106.8006884
      }
     ],
+    "population": {
+     "within500m": 11560,
+     "within1km": 39250,
+     "densityKm2": 12490
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -2645,6 +4700,737 @@
     "methods": [
      "berita",
      "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-permata-hijau-suites",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.784589,
+     -6.212437
+    ]
+   },
+   "properties": {
+    "id": "prj-permata-hijau-suites",
+    "name": "Permata Hijau Suites",
+    "developer": "PT Palmerindo Properti (rumah123); Pinhome names Pulau Intan Development",
+    "kind": "Apartemen",
+    "subsidized": false,
+    "locationText": "Jl. Raya Kebayoran Lama No. 55, Grogol Utara, Kebayoran Lama, Jakarta Selatan",
+    "region": "Kota Jakarta Selatan",
+    "area": "Jakarta",
+    "status": "siap-huni",
+    "statusQuote": "Status Konstruksi: Siap Huni",
+    "statusUrl": "https://www.pinhome.id/dijual/apartemen-baru/permata-hijau-suites",
+    "price": {
+     "min": 2000000000,
+     "max": 5300000000,
+     "basis": "rentang harga per tipe unit (2 BR, 3 BR, Combo 5BR) di rumah123 'Referensi Proyek'; PPN/BPHTB tidak disebut",
+     "quote": "Harga Rp 2 Miliar - 5,3 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/permata-hijau-suites/nps1644/",
+     "pageDate": "2026-06-22",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "2 BR Tower Ebony/Ivory",
+      "bedrooms": 2,
+      "landArea": null,
+      "buildingArea": 60.29,
+      "price": 2000000000
+     },
+     {
+      "label": "3 BR",
+      "bedrooms": 3,
+      "landArea": null,
+      "buildingArea": 91.4,
+      "price": 3000000000
+     },
+     {
+      "label": "Combo 5BR (2+3 BR)",
+      "bedrooms": 5,
+      "landArea": null,
+      "buildingArea": 151.69,
+      "price": 5300000000
+     }
+    ],
+    "transitClaim": {
+     "quote": "Stasiun PalMerah ± 20 menit",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/permata-hijau-suites/nps1644/"
+    },
+    "officialUrl": null,
+    "coordinate": {
+     "method": "Pin proyek Pinhome",
+     "url": "https://www.pinhome.id/dijual/apartemen-baru/permata-hijau-suites",
+     "precision": "pin portal",
+     "note": null
+    },
+    "nearest": [
+     {
+      "mode": "KRL",
+      "name": "Palmerah",
+      "km": 1.49,
+      "lat": -6.2079197,
+      "lng": 106.7972321
+     },
+     {
+      "mode": "MRT",
+      "name": "Senayan Mastercard",
+      "km": 2.53,
+      "lat": -6.2266833,
+      "lng": 106.8024556
+     },
+     {
+      "mode": "KRL",
+      "name": "Kebayoran",
+      "km": 2.77,
+      "lat": -6.23723,
+      "lng": 106.7825345
+     },
+     {
+      "mode": "MRT",
+      "name": "Istora Mandiri",
+      "km": 2.87,
+      "lat": -6.2223339,
+      "lng": 106.8085784
+     }
+    ],
+    "population": {
+     "within500m": 18640,
+     "within1km": 74840,
+     "densityKm2": 23820
+    },
+    "verdict": "partial",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/permata-hijau-suites/nps1644/",
+      "kind": "portal",
+      "title": "Permata Hijau Suites | Info Harga & Pemesanan (rumah123, Referensi Proyek)",
+      "fetched": true,
+      "pageDate": "2026-06-22",
+      "supports": [
+       "harga",
+       "lokasi",
+       "transit",
+       "unit"
+      ],
+      "note": "locationPin null; lat/lng is district centroid"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/apartemen-baru/permata-hijau-suites",
+      "kind": "portal",
+      "title": "Apartemen Permata Hijau Suites (Pinhome)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Rp 1,29 Miliar - Rp 3,42 Miliar; Siap Huni; coordinate from __PROJECT_DETAIL__"
+     },
+     {
+      "url": "https://www.industry.co.id/read/25110/pt-palmerindo-properti-jalin-kerja-sama-dengan-btn-untuk-kepemilikan-phs",
+      "kind": "news",
+      "title": "PT Palmerindo Properti jalin kerja sama dengan BTN untuk kepemilikan PHS",
+      "fetched": false,
+      "pageDate": null,
+      "supports": [],
+      "note": "Search result only; supports developer identity, date unknown"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "krl-rangkasbitung-inner",
+    "methods": [
+     "berita",
+     "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-puri-orchard-apartemen",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.728874,
+     -6.166947
+    ]
+   },
+   "properties": {
+    "id": "prj-puri-orchard-apartemen",
+    "name": "Puri Orchard Apartemen",
+    "developer": "PT. Adicipta Graha Kencana",
+    "kind": "Apartemen",
+    "subsidized": false,
+    "locationText": "Rawa Buaya, Cengkareng, Jakarta Barat",
+    "region": "Kota Jakarta Barat",
+    "area": "Jakarta",
+    "status": "dipasarkan",
+    "statusQuote": "Dijual",
+    "statusUrl": "https://www.rumah123.com/perumahan-baru/properti/jakarta-barat/puri-orchard-apartemen/nps2366/",
+    "price": {
+     "min": 1580000000,
+     "max": 1780000000,
+     "basis": "harga per tipe hunian Junior Suite Rp 1,58 M sampai Family Suite Rp 1,78 M di rumah123; kantor/ruko dikecualikan",
+     "quote": "Rp 1,58 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-barat/puri-orchard-apartemen/nps2366/",
+     "pageDate": "2026-06-11",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Junior Suite (Magnolia Spring)",
+      "bedrooms": 2,
+      "landArea": null,
+      "buildingArea": 70.5,
+      "price": 1580000000
+     },
+     {
+      "label": "Family Suite (Magnolia Spring)",
+      "bedrooms": 3,
+      "landArea": null,
+      "buildingArea": 80,
+      "price": 1780000000
+     },
+     {
+      "label": "Presidential Suite (Magnolia Spring)",
+      "bedrooms": 2,
+      "landArea": null,
+      "buildingArea": 80,
+      "price": 1780000000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": null,
+    "coordinate": {
+     "method": "Pin proyek Pinhome",
+     "url": "https://www.pinhome.id/dijual/apartemen-baru/apartment-puri-orchard/",
+     "precision": "pin portal",
+     "note": null
+    },
+    "nearest": [
+     {
+      "mode": "KRL",
+      "name": "Rawa Buaya",
+      "km": 0.82,
+      "lat": -6.1627437,
+      "lng": 106.7227543
+     },
+     {
+      "mode": "KRL",
+      "name": "Bojong Indah",
+      "km": 1.1,
+      "lat": -6.1602142,
+      "lng": 106.7361338
+     },
+     {
+      "mode": "KRL",
+      "name": "Kalideres",
+      "km": 2.78,
+      "lat": -6.1659662,
+      "lng": 106.7037283
+     }
+    ],
+    "population": {
+     "within500m": 15280,
+     "within1km": 58040,
+     "densityKm2": 18470
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-barat/puri-orchard-apartemen/nps2366/",
+      "kind": "portal",
+      "title": "Puri Orchard Apartemen | Info Harga & Pemesanan (rumah123)",
+      "fetched": true,
+      "pageDate": "2026-06-11",
+      "supports": [
+       "harga",
+       "status",
+       "transit",
+       "unit"
+      ],
+      "note": "campaignStartDate 2025-09-02; developerName PT. Adicipta Graha Kencana; locationPin null"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/apartemen-baru/apartment-puri-orchard/",
+      "kind": "portal",
+      "title": "Apartemen Apartment Puri Orchard (Pinhome)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "status",
+       "lokasi"
+      ],
+      "note": "coordinate, kelurahan Rawa Buaya, status active, primary market"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "krl-tangerang",
+    "methods": [
+     "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-ruma-antasari",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.809455,
+     -6.264732
+    ]
+   },
+   "properties": {
+    "id": "prj-ruma-antasari",
+    "name": "Ruma Antasari",
+    "developer": "Ruma.id",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Cipete Utara, Kebayoran Baru, Jakarta Selatan",
+    "region": "Kota Jakarta Selatan",
+    "area": "Jakarta",
+    "status": "dipasarkan",
+    "statusQuote": "Dijual",
+    "statusUrl": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/ruma-antasari/nps8254/",
+    "price": {
+     "min": 4023013000,
+     "max": 7137256000,
+     "basis": "rentang price list per tipe unit di portal rumah123 (4 tipe); PPN/BPHTB tidak disebut",
+     "quote": "Rp 4,02 Miliar - 7,13 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/ruma-antasari/nps8254/",
+     "pageDate": "2026-07-24",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "LT 84",
+      "bedrooms": 4,
+      "landArea": 84,
+      "buildingArea": 200,
+      "price": 4023013000
+     },
+     {
+      "label": "LT 92",
+      "bedrooms": 4,
+      "landArea": 92,
+      "buildingArea": 200,
+      "price": 4271312100
+     },
+     {
+      "label": "LT 114",
+      "bedrooms": 4,
+      "landArea": 114,
+      "buildingArea": 300,
+      "price": 5456835000
+     },
+     {
+      "label": "LT 180",
+      "bedrooms": 4,
+      "landArea": 180,
+      "buildingArea": 300,
+      "price": 7137256000
+     }
+    ],
+    "transitClaim": {
+     "quote": "Stasiun MRT Cipete Raya (2 Menit)",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/ruma-antasari/nps8254/"
+    },
+    "officialUrl": "https://ruma.id/",
+    "coordinate": {
+     "method": "Pin proyek Pinhome (New Ruma Antasari)",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/new-ruma-antasari",
+     "precision": "pin portal",
+     "note": null
+    },
+    "nearest": [
+     {
+      "mode": "MRT",
+      "name": "Haji Nawi",
+      "km": 1.36,
+      "lat": -6.2666928,
+      "lng": 106.7973045
+     },
+     {
+      "mode": "MRT",
+      "name": "Blok A VISA",
+      "km": 1.69,
+      "lat": -6.2557819,
+      "lng": 106.7971191
+     },
+     {
+      "mode": "MRT",
+      "name": "Cipete Raya TUKU",
+      "km": 2.03,
+      "lat": -6.2783627,
+      "lng": 106.7973012
+     },
+     {
+      "mode": "MRT",
+      "name": "Blok M BCA",
+      "km": 2.59,
+      "lat": -6.2444225,
+      "lng": 106.7980099
+     }
+    ],
+    "population": {
+     "within500m": 14240,
+     "within1km": 55840,
+     "densityKm2": 17770
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-selatan/ruma-antasari/nps8254/",
+      "kind": "portal",
+      "title": "Ruma Antasari (rumah123)",
+      "fetched": true,
+      "pageDate": "2026-07-24",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "transit",
+       "unit"
+      ],
+      "note": "AggregateOffer 4023013000 to 7137256000; address Jl. KHM Naim III, Cipete Utara"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-baru/new-ruma-antasari",
+      "kind": "portal",
+      "title": "New Ruma Antasari (Pinhome)",
+      "fetched": true,
+      "pageDate": "2024-04-17",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi"
+      ],
+      "note": "pageDate is listing createdAt. minPrice 4040000000 maxPrice 7240000000; one cluster HABIS TERJUAL; coordinate used"
+     },
+     {
+      "url": "https://ruma.id/propertys/find?area=south-jakarta&type=&price_range=&page=1",
+      "kind": "developer",
+      "title": "Properties | Ruma.Id",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [],
+      "note": "Developer site; listing content is loaded by JavaScript, project not visible in fetched HTML"
+     },
+     {
+      "url": "https://www.instagram.com/ruma.id/",
+      "kind": "instagram",
+      "title": "Ruma.id Instagram (linked from ruma.id)",
+      "fetched": false,
+      "pageDate": null,
+      "supports": [],
+      "note": "Not fetched by policy"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "mrt",
+    "methods": [
+     "portal-proyek-baru",
+     "situs-developer",
+     "tautan-instagram-dari-pencarian"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-sakha-semanan",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.711841,
+     -6.170916
+    ]
+   },
+   "properties": {
+    "id": "prj-sakha-semanan",
+    "name": "Sakha Semanan",
+    "developer": "PT Intiland Development Tbk",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Taman Semanan Indah, Semanan, Kalideres, Jakarta Barat",
+    "region": "Kota Jakarta Barat",
+    "area": "Jakarta",
+    "status": "dipasarkan",
+    "statusQuote": "Perseroan memasarkan dua tipe pilihan",
+    "statusUrl": "https://bcasekuritas.co.id/latest-news/news/dild-perkenalkan-sakha-semanan-hunian-tapak-di-jakarta-barat",
+    "price": {
+     "min": 1900000000,
+     "max": null,
+     "basis": "harga mulai per unit dari berita peluncuran (IQPlus, 24 Februari 2026), bukan price list developer",
+     "quote": "Total hunian yang dipasarkan pada tahap ini sebanyak 32 unit dengan harga mulai Rp1,9 miliar per unit.",
+     "url": "https://bcasekuritas.co.id/latest-news/news/dild-perkenalkan-sakha-semanan-hunian-tapak-di-jakarta-barat",
+     "pageDate": "2026-02-24",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Tipe standar (28 unit)",
+      "bedrooms": 3,
+      "landArea": 90,
+      "buildingArea": 122,
+      "price": null
+     },
+     {
+      "label": "Tipe hoek (4 unit)",
+      "bedrooms": null,
+      "landArea": 146.5,
+      "buildingArea": 125,
+      "price": null
+     }
+    ],
+    "transitClaim": {
+     "quote": "Near Kalideres KRL Station",
+     "url": "https://intiland.com/en/house/jakarta/sakha-semanan/"
+    },
+    "officialUrl": "https://intiland.com/en/house/jakarta/sakha-semanan/",
+    "coordinate": {
+     "method": "Pin cluster cariproperti",
+     "url": "https://cariproperti.com/sakha-semanan",
+     "precision": "pin portal",
+     "note": "Cocok dengan plus code alamat di halaman yang sama (sekitar 30 m)."
+    },
+    "nearest": [
+     {
+      "mode": "KRL",
+      "name": "Kalideres",
+      "km": 1.05,
+      "lat": -6.1659662,
+      "lng": 106.7037283
+     },
+     {
+      "mode": "KRL",
+      "name": "Rawa Buaya",
+      "km": 1.51,
+      "lat": -6.1627437,
+      "lng": 106.7227543
+     },
+     {
+      "mode": "KRL",
+      "name": "Bojong Indah",
+      "km": 2.94,
+      "lat": -6.1602142,
+      "lng": 106.7361338
+     }
+    ],
+    "population": {
+     "within500m": 18190,
+     "within1km": 66790,
+     "densityKm2": 21260
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://intiland.com/en/house/jakarta/sakha-semanan/",
+      "kind": "developer",
+      "title": "Sakha Semanan - Intiland",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "status",
+       "lokasi",
+       "transit",
+       "unit"
+      ],
+      "note": "live project page with enquiry form; no price; map embed is marketing office"
+     },
+     {
+      "url": "https://bcasekuritas.co.id/latest-news/news/dild-perkenalkan-sakha-semanan-hunian-tapak-di-jakarta-barat",
+      "kind": "news",
+      "title": "DILD perkenalkan Sakha Semanan hunian tapak di Jakarta Barat (IQPlus via BCA Sekuritas)",
+      "fetched": true,
+      "pageDate": "2026-02-24",
+      "supports": [
+       "harga",
+       "status",
+       "transit",
+       "unit"
+      ],
+      "note": "news article dated 24 Feb 2026"
+     },
+     {
+      "url": "https://cariproperti.com/sakha-semanan",
+      "kind": "portal",
+      "title": "Sakha Semanan - Cari Properti",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "lokasi"
+      ],
+      "note": "coordinate and address; undated price 1,800,000,000 not used as primary"
+     },
+     {
+      "url": "https://industri.kontan.co.id/news/intiland-luncurkan-sakha-semanan-di-jakbar-rumah-tapak-harga-rp-19-miliaran",
+      "kind": "news",
+      "title": "Intiland luncurkan Sakha Semanan di Jakbar (Kontan)",
+      "fetched": false,
+      "pageDate": null,
+      "supports": [],
+      "note": "blocked; not read"
+     },
+     {
+      "url": "https://ekonomi.bisnis.com/read/20260224/47/1955186/intiland-dild-perkuat-penetrasi-di-jakarta-barat",
+      "kind": "news",
+      "title": "Intiland (DILD) Perkuat Penetrasi di Jakarta Barat (Bisnis)",
+      "fetched": false,
+      "pageDate": "2026-02-24",
+      "supports": [],
+      "note": "seen in search results only"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "krl-tangerang",
+    "methods": [
+     "berita",
+     "portal-proyek-baru",
+     "situs-developer"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-samesta-east-point",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.948867,
+     -6.204973
+    ]
+   },
+   "properties": {
+    "id": "prj-samesta-east-point",
+    "name": "Samesta East Point",
+    "developer": "Perum Perumnas",
+    "kind": "Apartemen",
+    "subsidized": false,
+    "locationText": "Pulo Gebang, Kecamatan Cakung, Kota Jakarta Timur (dekat Terminal Pulo Gebang)",
+    "region": "Kota Jakarta Timur",
+    "area": "Jakarta",
+    "status": "dipasarkan",
+    "statusQuote": "PROMO MENARIK",
+    "statusUrl": "https://produk.perumnas.co.id/produk/studio-room",
+    "price": {
+     "min": 570697500,
+     "max": 877057500,
+     "basis": "harga per tipe di katalog produk resmi Perumnas (label Komersil); PPN/BPHTB tidak disebut",
+     "quote": "Harga Rp 570.697.500",
+     "url": "https://produk.perumnas.co.id/produk/?tipe_lokasi=high_rise",
+     "pageDate": null,
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Studio Room",
+      "bedrooms": 1,
+      "landArea": null,
+      "buildingArea": 28.77,
+      "price": 570697500
+     },
+     {
+      "label": "2 Bedroom",
+      "bedrooms": 2,
+      "landArea": null,
+      "buildingArea": 44.95,
+      "price": 877057500
+     }
+    ],
+    "transitClaim": {
+     "quote": "1 Menit ke Stasiun KRL Cakung",
+     "url": "https://produk.perumnas.co.id/produk/studio-room"
+    },
+    "officialUrl": "https://produk.perumnas.co.id/produk/studio-room",
+    "coordinate": {
+     "method": "Koordinat venue rumah123 (schema.org GeoCoordinates)",
+     "url": "https://www.rumah123.com/venue/samesta-east-point-apartment-vmi35213/",
+     "precision": "pin portal",
+     "note": null
+    },
+    "nearest": [
+     {
+      "mode": "KRL",
+      "name": "Cakung",
+      "km": 1.62,
+      "lat": -6.219081,
+      "lng": 106.9524791
+     },
+     {
+      "mode": "KRL",
+      "name": "Klender Baru",
+      "km": 1.71,
+      "lat": -6.2176591,
+      "lng": 106.9401833
+     }
+    ],
+    "population": {
+     "within500m": 15130,
+     "within1km": 64220,
+     "densityKm2": 20440
+    },
+    "verdict": "confirmed",
+    "sources": [
+     {
+      "url": "https://produk.perumnas.co.id/produk/studio-room",
+      "kind": "developer",
+      "title": "Studio Room - Samesta East Point - Perum Perumnas",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "transit",
+       "unit"
+      ],
+      "note": "Harga Rp 570.697.500, 28,77 m2, label Komersil, Kota Jakarta Timur"
+     },
+     {
+      "url": "https://produk.perumnas.co.id/produk/?tipe_lokasi=high_rise",
+      "kind": "developer",
+      "title": "Perumnas product catalogue (high rise)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "unit"
+      ],
+      "note": "Cards for Samesta East Point: Studio Room Rp 570.697.500 and 2 Bedroom Rp 877.057.500 (44,95 m2)"
+     },
+     {
+      "url": "https://produk.perumnas.co.id/produk/2-bedroom",
+      "kind": "developer",
+      "title": "2 Bedroom - Samesta East Point (Perumnas)",
+      "fetched": false,
+      "pageDate": null,
+      "supports": [],
+      "note": "Linked from the catalogue card; not fetched"
+     },
+     {
+      "url": "https://www.rumah123.com/venue/samesta-east-point-apartment-vmi35213/",
+      "kind": "portal",
+      "title": "Samesta East Point Apartment - rumah123 venue",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "lokasi"
+      ],
+      "note": "JSON-LD geo latitude -6.204972757, longitude 106.9488666; nearby POIs in Pulo Gebang"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "sweep-instagram",
+    "methods": [
+     "portal-proyek-baru",
+     "situs-developer"
     ]
    }
   },
@@ -2736,6 +5522,11 @@
       "lng": 106.8216412
      }
     ],
+    "population": {
+     "within500m": 6200,
+     "within1km": 29160,
+     "densityKm2": 9280
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -2870,6 +5661,11 @@
       "lng": 106.6655836
      }
     ],
+    "population": {
+     "within500m": 5150,
+     "within1km": 25820,
+     "densityKm2": 8220
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -3004,6 +5800,11 @@
       "lng": 106.8448558
      }
     ],
+    "population": {
+     "within500m": 12450,
+     "within1km": 50930,
+     "densityKm2": 16210
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -3096,6 +5897,11 @@
       "lng": 106.8216412
      }
     ],
+    "population": {
+     "within500m": 10840,
+     "within1km": 44500,
+     "densityKm2": 14160
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -3212,6 +6018,11 @@
       "lng": 106.6189713
      }
     ],
+    "population": {
+     "within500m": 7940,
+     "within1km": 24090,
+     "densityKm2": 7670
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -3389,6 +6200,11 @@
       "lng": 106.8448558
      }
     ],
+    "population": {
+     "within500m": 13470,
+     "within1km": 44340,
+     "densityKm2": 14110
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -3534,6 +6350,11 @@
       "lng": 106.7973012
      }
     ],
+    "population": {
+     "within500m": 7360,
+     "within1km": 42160,
+     "densityKm2": 13420
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -3656,6 +6477,11 @@
       "lng": 107.0181046
      }
     ],
+    "population": {
+     "within500m": 5510,
+     "within1km": 31940,
+     "densityKm2": 10170
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -3814,6 +6640,11 @@
       "lng": 106.8844039
      }
     ],
+    "population": {
+     "within500m": 13760,
+     "within1km": 58810,
+     "densityKm2": 18720
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -3966,6 +6797,11 @@
       "lng": 106.8454986
      }
     ],
+    "population": {
+     "within500m": 7410,
+     "within1km": 41580,
+     "densityKm2": 13230
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -4088,6 +6924,11 @@
       "lng": 106.8322652
      }
     ],
+    "population": {
+     "within500m": 7240,
+     "within1km": 40690,
+     "densityKm2": 12950
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -4212,6 +7053,11 @@
       "lng": 106.8844039
      }
     ],
+    "population": {
+     "within500m": 11560,
+     "within1km": 55510,
+     "densityKm2": 17670
+    },
     "verdict": "partial",
     "sources": [
      {
@@ -4305,6 +7151,153 @@
      "berita",
      "portal-proyek-baru",
      "program-pemerintah",
+     "situs-developer"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-virya-semanan",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.721283,
+     -6.163523
+    ]
+   },
+   "properties": {
+    "id": "prj-virya-semanan",
+    "name": "Virya Semanan",
+    "developer": "PT Intiland Development Tbk",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Jl. Taman Semanan Raya No.8, Duri Kosambi, Cengkareng, Jakarta Barat",
+    "region": "Kota Jakarta Barat",
+    "area": "Jakarta",
+    "status": "inden",
+    "statusQuote": "sudah hampir seluruhnya terjual saat ini",
+    "statusUrl": "https://bcasekuritas.co.id/latest-news/news/dild-perkenalkan-sakha-semanan-hunian-tapak-di-jakarta-barat",
+    "price": {
+     "min": 3550000000,
+     "max": null,
+     "basis": "harga mulai satu tipe (Tipe 6, satu-satunya yang tampil) di halaman proyek rumah123; PPN/BPHTB tidak disebut",
+     "quote": "Mulai dari Rp 3,55 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-barat/virya-semanan/nps8307/",
+     "pageDate": "2026-07-24",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Tipe 6",
+      "bedrooms": 3,
+      "landArea": 120,
+      "buildingArea": 136,
+      "price": 3550000000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": "https://intiland.com/en/house/jakarta/virya-semanan/",
+    "coordinate": {
+     "method": "Pin proyek Pinhome",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/virya-semanan",
+     "precision": "pin portal",
+     "note": "Didukung pin cariproperti dan embed Google Maps developer (sekitar 240 m)."
+    },
+    "nearest": [
+     {
+      "mode": "KRL",
+      "name": "Rawa Buaya",
+      "km": 0.18,
+      "lat": -6.1627437,
+      "lng": 106.7227543
+     },
+     {
+      "mode": "KRL",
+      "name": "Bojong Indah",
+      "km": 1.68,
+      "lat": -6.1602142,
+      "lng": 106.7361338
+     },
+     {
+      "mode": "KRL",
+      "name": "Kalideres",
+      "km": 1.96,
+      "lat": -6.1659662,
+      "lng": 106.7037283
+     }
+    ],
+    "population": {
+     "within500m": 12820,
+     "within1km": 50420,
+     "densityKm2": 16050
+    },
+    "verdict": "partial",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/jakarta-barat/virya-semanan/nps8307/",
+      "kind": "portal",
+      "title": "Virya Semanan | Info Harga & Pemesanan (rumah123)",
+      "fetched": true,
+      "pageDate": "2026-07-24",
+      "supports": [
+       "harga",
+       "status",
+       "unit"
+      ],
+      "note": "locationPin null; developerName INTILAND Development 1"
+     },
+     {
+      "url": "https://intiland.com/en/house/jakarta/virya-semanan/",
+      "kind": "developer",
+      "title": "Virya Semanan - Intiland",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "lokasi",
+       "transit"
+      ],
+      "note": "address Jl. Taman Semanan Raya No.8, RW.11, Duri Kosambi; Google Maps embed 'Cluster Virya Semanan'; no price"
+     },
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-baru/virya-semanan",
+      "kind": "portal",
+      "title": "Perumahan Virya Semanan, Jakarta Barat (Pinhome)",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "status",
+       "lokasi"
+      ],
+      "note": "coordinate; status active, under_construction, totalActiveUnits 15 (undated)"
+     },
+     {
+      "url": "https://cariproperti.com/virya-semanan",
+      "kind": "portal",
+      "title": "Virya Semanan - Cari Properti",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "lokasi"
+      ],
+      "note": "coordinate -6.1632, 106.7213; Tipe 6 2,750,000,000 and Tipe 7 3,167,000,000 undated"
+     },
+     {
+      "url": "https://bcasekuritas.co.id/latest-news/news/dild-perkenalkan-sakha-semanan-hunian-tapak-di-jakarta-barat",
+      "kind": "news",
+      "title": "DILD perkenalkan Sakha Semanan (IQPlus via BCA Sekuritas)",
+      "fetched": true,
+      "pageDate": "2026-02-24",
+      "supports": [
+       "status"
+      ],
+      "note": "states Virya Semanan 30 units almost entirely sold"
+     }
+    ],
+    "lastChecked": "2026-10-30",
+    "corridor": "krl-tangerang",
+    "methods": [
+     "berita",
+     "portal-proyek-baru",
      "situs-developer"
     ]
    }

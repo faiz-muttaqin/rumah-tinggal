@@ -16,6 +16,7 @@ import {
   distanceText,
   loadResearch,
   nearestRail,
+  populationText,
   priceRange,
   type RailMode,
   type ResearchData,
@@ -158,6 +159,12 @@ function sources(property: ResearchProperty): string {
     .join("")}</ul></details>`;
 }
 
+function population(property: ResearchProperty): string {
+  const context = data?.population;
+  if (!property.population || !context) return "";
+  return `<div class="research-context" data-testid="research-population"><strong>Penduduk sekitar</strong><p>${esc(populationText(property.population, context))}</p><small>Penduduk tempat tinggal hasil model, bukan sensus atau keramaian siang hari. <a href="${esc(safeUrl(context.source.url))}" ${external}>${esc(context.source.licence)} ↗</a></small></div>`;
+}
+
 function card(property: ResearchProperty): string {
   const mappable = researchToListing(property) !== undefined;
   const precision = property.coordinate
@@ -177,6 +184,7 @@ function card(property: ResearchProperty): string {
       .join("")}</ul>
     <p class="research-note">Jarak garis lurus dari titik ${esc(precision)} ke titik stasiun OSM, bukan rute berjalan.</p>
     ${property.transitClaim ? `<p class="research-claim">Klaim sumber: “${esc(property.transitClaim.quote)}” <a href="${esc(safeUrl(property.transitClaim.url))}" ${external}>↗</a></p>` : ""}
+    ${population(property)}
     ${units(property)}
     ${sources(property)}
     <div class="research-actions">
