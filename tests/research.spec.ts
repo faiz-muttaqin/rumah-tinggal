@@ -51,9 +51,7 @@ test("lists sourced projects with prices, evidence and computed distances", asyn
     "kepemilikan unit belum diverifikasi",
   );
   await first.getByText(/Bukti & sumber/).click();
-  await expect(first).toContainText(
-    "Tautan dari hasil pencarian, isi belum dibuka",
-  );
+  await expect(first).toContainText("Halaman sumber belum dibuka langsung");
   await first.getByText(/Tipe unit dari sumber/).click();
   await expect(first.locator("table")).toContainText("Tipe uji 36/60");
   const population = first.getByTestId("research-population");
@@ -229,7 +227,7 @@ test("shows Muslim-family rentals and unverified Instagram leads with links", as
   const lead = page.getByTestId("lead-card");
   await expect(page.locator("#belum-diverifikasi")).toBeVisible();
   await expect(lead).toContainText("Belum terjangkau otomatis");
-  await expect(lead).toContainText("Menurut daftar pengguna");
+  await expect(lead).toContainText("Petunjuk:");
   await expect(
     lead.getByRole("link", { name: "Instagram @petunjuk.uji ↗" }),
   ).toHaveAttribute("href", "https://www.instagram.com/petunjuk.uji/");

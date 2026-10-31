@@ -26,3 +26,13 @@ Sudah ada di katalog sebagai satu proyek di Cinangka, Depok. [Pinhome](https://w
 ## Instagram / Bright Data
 
 Hasil pilot Bright Data sebelumnya berisi 79 unggahan sukses dan 14 kandidat tersaring dari akun yang telah dipilih. Tinjauan metadata menunjukkan tidak ada kandidat tersebut yang memiliki sinyal stasiun; hasil lama tidak membuktikan adanya iklan sewa baru di koridor ini. Key pilot tidak disimpan dan pengambilan baru memerlukan akses kembali. Kontak, data akun privat, dan respons mentah tidak diterbitkan di katalog.
+
+## Lanjutan Instagram dan Duta Kranji — 31 Oktober 2026
+
+Masjid Nurul I’tishom, Duta Kranji, Bintara, adalah titik awal yang kuat untuk pencarian keluarga: melalui Bright Data, caption [akun masjid](https://www.instagram.com/p/DfCDKRyKcWB/) menampilkan pengumuman kajian pekan kelima Oktober yang terbuka untuk umum. [Ihrish](https://ihrish.app/kajian/2026-10-31-kholid-maulana-masjid-nurul-i-tishom/) mencatat pembahasan _Riyadhus Shalihin_ pada 24 dan 31 Oktober, serta [praktik baca kitab](https://ihrish.app/kajian/2026-10-31-abdurrahman-yahya-masjid-nurul-i-tishom/) pada empat Sabtu Oktober. Jadwal berikutnya dan akses aktual tetap harus dikonfirmasi; caption jadwal mingguan tidak merinci isi poster dalam teks yang diperoleh.
+
+[Registri pendidikan](https://referensi.data.kemendikdasmen.go.id/tabs.php?npsn=69966427) mencatat SMP Islam Nurul Itishom (NPSN 69966427) di Duta Kranji. [JSIT Kota Bekasi](https://www.jsitkotabekasi.org/2022/12/berikut-ini-sekolah-islam-terpadu.html) mencatat SDIT Insan Rabbani di kawasan yang sama. Program saat ini, biaya, dan jarak dari unit tertentu belum diverifikasi.
+
+Dua iklan sewa disimpan sebagai **petunjuk, bukan listing aktif**: rumah 3+1 kamar Rp49 juta/tahun dalam [iklan Januari 2026](https://www.rumah123.com/properti/bekasi-kranji/disewakan-rumah-2-lantai-di-duta-kranji-beksi-barat-hor40868625/) yang hanya terbaca melalui indeks pencarian; dan [kontrakan lama 2023](https://www.iklanrumah.com/list/detail/59649/sewa-kontrakan-kost-kosan-cantik-bersih-duta-kranji-bekasi) Rp1–1,5 juta/bulan per ruang. Harga dan stok keduanya perlu konfirmasi. Iklan lama menyebut dekat masjid dan stasiun, tetapi belum ada jarak atau rute unit yang diverifikasi.
+
+Untuk Green Madani Cinangka, caption [unggahan 21 Oktober](https://www.instagram.com/reel/Dev166lCdDa/) yang diperoleh lewat Bright Data menyebut Rp599 juta tanpa tipe unit jelas. [Unggahan 15 Oktober](https://www.instagram.com/reel/DegrcmRiO5k/) menyebut Aqso satu lantai pada kisaran Rp500 jutaan, berbeda dari keterangan dua lantai dan harga lain di situs proyek. Caption bukan pricelist yang dikonfirmasi; video belum diperiksa dan angka tidak menggantikan harga acuan katalog.

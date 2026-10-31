@@ -6696,7 +6696,7 @@
       "price": {
         "min": 600000000,
         "max": null,
-        "basis": "Situs 600 jt, FAQ 800 jt; Pinhome 584–764 jt tanpa tanggal. Harga, tipe, stok, dan promo perlu konfirmasi.",
+        "basis": "Situs 600 jt, FAQ 800 jt; Pinhome 584–764 jt; IG 21 Okt 599 jt (klaim). Tipe dan stok perlu konfirmasi.",
         "quote": "Hunian Islami di Selatan Jakarta · DP 0%, Mulai 600 Jt-an",
         "url": "https://greenmadanicinangka.com/",
         "pageDate": "2026-09-25"
@@ -6778,6 +6778,15 @@
           "pageDate": "2026-07-30",
           "supports": ["harga", "status", "unit"],
           "note": "TAAT menyamarkan nama proyek; cocok lewat developer dan tipe (Aqsa, Quba). Rentang TAAT Rp 614 Jt - 869 Jt, diperbarui 30 Juli 2026; harga utama tetap dari situs resmi."
+        },
+        {
+          "url": "https://www.instagram.com/reel/Dev166lCdDa",
+          "kind": "instagram",
+          "title": "Green Madani: unggahan 21 Oktober 2026",
+          "fetched": false,
+          "pageDate": "2026-10-21",
+          "supports": [],
+          "note": "Caption diperoleh lewat Bright Data, menyebut harga Rp599 juta tanpa tipe jelas; video belum diperiksa. Tidak dipakai sebagai harga acuan."
         }
       ],
       "verdict": "partial",

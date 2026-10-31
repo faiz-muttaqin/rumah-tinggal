@@ -1406,7 +1406,7 @@
   },
   "leads": {
    "checkedAt": "2026-10-31",
-   "source": "Daftar perumahan dari pengguna (30 Oktober 2026) dan riset web Jabar (31 Oktober 2026)",
+   "source": "Daftar pengguna, riset web Jabodetabek dan kurasi Instagram Bright Data",
    "note": "Petunjuk ini belum cukup untuk menjadi listing aktif. Sumber dapat berasal dari daftar pengguna, hasil pencarian, atau halaman lama. Klaim diringkas dari masing-masing sumber; harga, stok, lokasi, dan kegiatan terkini tetap perlu diperiksa. Tautan Instagram belum dibuka otomatis. Akun penasihat atau marketing perorangan tidak dicantumkan.",
    "leads": [
     {
@@ -1860,6 +1860,52 @@
       {
        "label": "Taman Rahmani — halaman pemasaran lama",
        "url": "https://davpropertysyariah.com/taman-rahmani/"
+      }
+     ]
+    },
+    {
+     "id": "lead-duta-kranji-rumah-sewa",
+     "name": "Rumah sewa 3+1 kamar Duta Kranji",
+     "type": "rental",
+     "status": "unverified",
+     "area": "Bekasi",
+     "claim": "Iklan Januari 2026 menyebut Rp49 juta/tahun dan SMP Islam Nurul I’tishom di sekitar; rumah berada di Duta Kranji.",
+     "check": "Iklan lama hanya terbaca dari indeks pencarian, jadi ketersediaan dan harga belum pasti. Kajian kitab di Masjid Nurul I’tishom ada di kawasan yang sama, tetapi jarak unit ke masjid dan KRL belum dihitung.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Iklan Rumah123, Januari 2026",
+       "url": "https://www.rumah123.com/properti/bekasi-kranji/disewakan-rumah-2-lantai-di-duta-kranji-beksi-barat-hor40868625/"
+      },
+      {
+       "label": "Kajian kitab, jadwal Oktober",
+       "url": "https://ihrish.app/kajian/2026-10-31-kholid-maulana-masjid-nurul-i-tishom/"
+      },
+      {
+       "label": "SMP Islam Nurul Itishom, registri",
+       "url": "https://referensi.data.kemendikdasmen.go.id/tabs.php?npsn=69966427"
+      }
+     ]
+    },
+    {
+     "id": "lead-duta-kranji-kontrakan-lama",
+     "name": "Kontrakan keluarga Duta Kranji, iklan lama",
+     "type": "rental",
+     "status": "unverified",
+     "area": "Bekasi",
+     "claim": "Iklan 2023 menyebut kontrakan atau kos untuk keluarga muda, Rp1–1,5 juta/bulan per ruang, dekat masjid dan KRL menurut pengiklan.",
+     "check": "Harga dan ketersediaan terkini belum terbukti. Pastikan menerima anak, harga, serta rute ke masjid dan stasiun sebelum survei.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Iklan lama kontrakan",
+       "url": "https://www.iklanrumah.com/list/detail/59649/sewa-kontrakan-kost-kosan-cantik-bersih-duta-kranji-bekasi"
+      },
+      {
+       "label": "Jadwal kajian Oktober",
+       "url": "https://ihrish.app/kajian/2026-10-31-kholid-maulana-masjid-nurul-i-tishom/"
       }
      ]
     }
@@ -14875,7 +14921,7 @@
     "price": {
      "min": 600000000,
      "max": null,
-     "basis": "Situs 600 jt, FAQ 800 jt; Pinhome 584–764 jt tanpa tanggal. Harga, tipe, stok, dan promo perlu konfirmasi.",
+     "basis": "Situs 600 jt, FAQ 800 jt; Pinhome 584–764 jt; IG 21 Okt 599 jt (klaim). Tipe dan stok perlu konfirmasi.",
      "quote": "Hunian Islami di Selatan Jakarta · DP 0%, Mulai 600 Jt-an",
      "url": "https://greenmadanicinangka.com/",
      "pageDate": "2026-09-25",
@@ -15087,6 +15133,15 @@
        "unit"
       ],
       "note": "TAAT menyamarkan nama proyek; cocok lewat developer dan tipe (Aqsa, Quba). Rentang TAAT Rp 614 Jt - 869 Jt, diperbarui 30 Juli 2026; harga utama tetap dari situs resmi."
+     },
+     {
+      "url": "https://www.instagram.com/reel/Dev166lCdDa",
+      "kind": "instagram",
+      "title": "Green Madani: unggahan 21 Oktober 2026",
+      "fetched": false,
+      "pageDate": "2026-10-21",
+      "supports": [],
+      "note": "Caption diperoleh lewat Bright Data, menyebut harga Rp599 juta tanpa tipe jelas; video belum diperiksa. Tidak dipakai sebagai harga acuan."
      }
     ],
     "lastChecked": "2026-10-31",

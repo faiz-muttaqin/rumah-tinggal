@@ -233,7 +233,7 @@ function sources(property: ResearchProperty): string {
   return `<details class="research-sources"><summary>Bukti & sumber (${property.sources.length})</summary><ul>${property.sources
     .map(
       (source) =>
-        `<li><span class="source-kind kind-${source.kind}">${SOURCE_LABELS[source.kind] ?? source.kind}</span><a href="${esc(safeUrl(source.url))}" ${external}>${esc(source.title)} ↗</a><small>${source.fetched ? "Dibuka saat pengecekan" : "Tautan dari hasil pencarian, isi belum dibuka"}${source.pageDate ? ` · tanggal halaman ${esc(checkedDate(source.pageDate))}` : ""}${source.supports.length ? ` · mendukung ${esc(source.supports.join(", "))}` : ""}${source.note ? ` · ${esc(source.note)}` : ""}</small></li>`,
+        `<li><span class="source-kind kind-${source.kind}">${SOURCE_LABELS[source.kind] ?? source.kind}</span><a href="${esc(safeUrl(source.url))}" ${external}>${esc(source.title)} ↗</a><small>${source.fetched ? "Dibuka saat pengecekan" : "Halaman sumber belum dibuka langsung"}${source.pageDate ? ` · tanggal halaman ${esc(checkedDate(source.pageDate))}` : ""}${source.supports.length ? ` · mendukung ${esc(source.supports.join(", "))}` : ""}${source.note ? ` · ${esc(source.note)}` : ""}</small></li>`,
     )
     .join("")}</ul></details>`;
 }
@@ -447,7 +447,7 @@ function renderLeads(research: ResearchData): void {
   $("lead-list").innerHTML = leads.leads
     .map(
       (lead) =>
-        `<article class="method-card lead-card" data-testid="lead-card" id="${esc(lead.id)}"><div class="method-top"><span class="source-kind">${esc(lead.area ?? "Jabodetabek")}</span><span class="verdict verdict-unverified">${lead.status === "unreached" ? "Belum terjangkau otomatis" : "Belum diverifikasi"}</span></div><h3>${esc(lead.name)}</h3><p>Menurut daftar pengguna: ${esc(lead.claim)}</p>${lead.check ? `<p class="method-label">Hasil cek</p><p>${esc(lead.check)}</p>` : ""}${lead.related && names.has(lead.related) ? `<p><a href="#${esc(lead.related)}">Lihat proyek terverifikasi: ${esc(names.get(lead.related))} ↓</a></p>` : ""}<p class="method-sources">${lead.links.map((link) => `<a href="${esc(safeUrl(link.url))}" ${external}>${esc(link.label)} ↗</a>`).join("")}${contactLink(lead.contactUrl, "")}</p><small>Buka tautan Instagram saat masuk ke akun Instagram untuk memeriksa sendiri.</small></article>`,
+        `<article class="method-card lead-card" data-testid="lead-card" id="${esc(lead.id)}"><div class="method-top"><span class="source-kind">${esc(lead.area ?? "Jabodetabek")}</span><span class="verdict verdict-unverified">${lead.status === "unreached" ? "Belum terjangkau otomatis" : "Belum diverifikasi"}</span></div><h3>${esc(lead.name)}</h3><p>Petunjuk: ${esc(lead.claim)}</p>${lead.check ? `<p class="method-label">Hasil cek</p><p>${esc(lead.check)}</p>` : ""}${lead.related && names.has(lead.related) ? `<p><a href="#${esc(lead.related)}">Lihat proyek terverifikasi: ${esc(names.get(lead.related))} ↓</a></p>` : ""}<p class="method-sources">${lead.links.map((link) => `<a href="${esc(safeUrl(link.url))}" ${external}>${esc(link.label)} ↗</a>`).join("")}${contactLink(lead.contactUrl, "")}</p>${lead.links.some((link) => link.url.includes("instagram.com")) ? "<small>Buka tautan Instagram saat masuk ke akun Instagram untuk memeriksa sendiri.</small>" : ""}</article>`,
     )
     .join("");
 }
