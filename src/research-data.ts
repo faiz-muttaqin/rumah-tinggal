@@ -334,6 +334,15 @@ export interface ResearchRental {
   sizeM2: number | null;
   furnished: "unfurnished" | "semi" | "full" | null;
   evidence: { quote: string; url: string }[];
+  areaHighlights?: {
+    kind: string;
+    name: string;
+    description: string;
+    url: string;
+    relation: string;
+    relationUrl: string;
+  }[];
+  note?: string | null;
   nearStationsClaim: { station: string; quote: string; url: string }[];
   listingUrl: string;
   sourcePortal: string;

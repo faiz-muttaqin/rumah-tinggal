@@ -29,6 +29,7 @@ import {
   RENTAL_LABELS,
   type ResearchData,
   type ResearchProperty,
+  type ResearchRental,
   type ResearchSaleAd,
   rentText,
   researchToListing,
@@ -73,8 +74,9 @@ $("app").innerHTML = `
       <h1>Hunian dekat KRL, MRT & LRT.<br/><span>Lengkap dengan buktinya.</span></h1>
       <p class="intro">Temukan proyek hunian di sekitar stasiun Jabodetabek, lengkap dengan harga, developer, tautan asli, dan tanggal cek. Simpan pilihanmu ke Listingku atau sebagai pin pribadi. Harga dan ketersediaan perlu dikonfirmasi ke developer.</p>
       <p class="research-note">Verifikasi mencakup sumber harga dan lokasi. Nama developer mengikuti sumber publik; kepemilikan unit belum diverifikasi.</p>
+      <div class="card-legend" aria-label="Penanda jenis properti"><span class="type-badge type-house-sale">Rumah dijual</span><span class="type-badge type-apartment">Apartemen</span><span class="type-badge type-rental">Kontrakan / rumah sewa</span></div>
       <dl class="research-stats" id="research-stats"></dl>
-      <div class="research-links"><a class="button primary" href="/?koleksi=riset">${icon("pin")} Lihat semua di peta</a><a class="button" href="#sewa">Sewa ramah keluarga muslim</a><a class="button" href="#iklan-dijual">Iklan dijual dekat masjid kajian</a><a class="button" href="#belum-diverifikasi">Petunjuk belum diverifikasi</a><a class="button" href="#metode">${icon("info")} Cara riset ini dibuat</a></div>
+      <div class="research-links"><a class="button primary" href="/?koleksi=riset">${icon("pin")} Lihat proyek di peta</a><a class="button" href="#sewa">Sewa apartemen & kontrakan</a><a class="button" href="#iklan-dijual">Iklan dijual dekat masjid kajian</a><a class="button" href="#belum-diverifikasi">Petunjuk belum diverifikasi</a><a class="button" href="#metode">${icon("info")} Cara riset ini dibuat</a></div>
     </section>
     <section class="research-filters" aria-label="Filter riset properti">
       <div class="search-box">${icon("search")}<input id="research-search" type="search" aria-label="Cari proyek, developer, lokasi, masjid, sekolah, atau stasiun" placeholder="Proyek, lokasi, masjid, sekolah, atau stasiun…" autocomplete="off"/></div>
@@ -97,10 +99,12 @@ $("app").innerHTML = `
     </section>
     <section class="research-section" id="sewa" aria-labelledby="rentals-title" hidden>
       <div class="eyebrow"><span class="tiny-line"></span> SEWA</div>
-      <h2 id="rentals-title">Sewa ramah keluarga muslim</h2>
+      <h2 id="rentals-title">Sewa apartemen dan kontrakan</h2>
       <p class="section-intro" id="rentals-intro"></p>
       <div class="area-chips" aria-label="Filter wilayah sewa" id="rental-areas"></div>
       <div class="research-filters rental-filters">
+        <label>Cari sewa<input id="rental-search" type="search" placeholder="Lokasi, stasiun, masjid, sekolah…"/></label>
+        <label>Jenis sewa<select id="rental-type"><option value="">Semua jenis</option><option value="house">Kontrakan / rumah sewa</option><option value="apartment">Apartemen</option></select></label>
         <label>Sewa per bulan dari<select id="rental-budget-min">${budgetOptions(RENT_STEPS, "Rp 0", rentMoney)}</select></label>
         <label>sampai<select id="rental-budget-max">${budgetOptions(RENT_STEPS, "Tanpa batas", rentMoney)}</select></label>
       </div>
@@ -333,8 +337,9 @@ function card(property: ResearchProperty): string {
   const precision = property.coordinate
     ? `${property.coordinate.precision} (${property.coordinate.method})`
     : "lokasi";
-  return `<article class="research-card" id="${esc(property.id)}" data-testid="research-card">
+  return `<article class="research-card card-${property.kind === "Apartemen" ? "apartment" : "house-sale"}" id="${esc(property.id)}" data-testid="research-card">
     <div class="research-card-top"><span class="card-area"><i class="area-dot area-${esc((property.area ?? "luar").toLowerCase())}"></i>${esc(property.area ?? "Di luar 14 wilayah")} <span>· ${esc(property.locationText)}</span></span><span class="verdict verdict-${property.verdict}">${property.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span></div>
+    <span class="type-badge type-${property.kind === "Apartemen" ? "apartment" : "house-sale"}">${property.kind === "Apartemen" ? "Apartemen dijual" : "Rumah dijual"}</span>
     <h3>${esc(property.name)}</h3>
     <p class="research-meta">${esc(property.developer ?? "Developer belum tercatat")} · ${esc(property.kind)}${property.subsidized ? " subsidi" : ""} · ${STATUS_LABELS[property.status] ?? esc(property.status)}</p>
     <div class="research-price"><strong>${priceRange(property)}</strong><span>${esc(property.price.basis)}</span></div>
@@ -474,12 +479,18 @@ function renderSaleAds(research: ResearchData): void {
     ? list
         .map(
           (ad) =>
-            `<article class="research-card rental-card" data-testid="sale-ad-card" id="${esc(ad.id)}"><div class="research-card-top"><span class="card-area"><i class="area-dot area-${esc(ad.area.toLowerCase())}"></i>${esc(ad.area)} <span>· ${esc(ad.locationText)}</span></span><span class="verdict verdict-${ad.verdict}">${ad.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span></div><h3>${esc(ad.title)}</h3><p class="research-meta">${ad.category === "kavling" ? "Kavling" : "Rumah"}${ad.projectOrCluster ? ` · ${esc(ad.projectOrCluster)}` : ""}${size(ad) ? ` · ${esc(size(ad))}` : ""}</p><div class="research-price"><strong>${esc(money(ad.price.amount))}</strong><span>${esc(ad.sourcePortal)}${ad.postedOrUpdated ? ` · terdaftar ${esc(checkedDate(ad.postedOrUpdated))}` : ""}</span></div><blockquote class="research-quote">“${esc(ad.price.quote)}” <a href="${esc(safeUrl(ad.price.url))}" ${external}>sumber harga ↗</a></blockquote>${ad.nearMosque ? `<p class="research-claim">Menurut iklan, dekat ${esc(ad.nearMosque.name)}: “${esc(ad.nearMosque.quote)}” <a href="${esc(safeUrl(ad.nearMosque.url))}" ${external}>↗</a></p>` : ""}${ad.evidence.length ? `<div class="research-plus"><strong>Poin keluarga muslim</strong><ul>${ad.evidence.map((e) => `<li>“${esc(e.quote)}” <a href="${esc(safeUrl(e.url))}" ${external}>↗</a></li>`).join("")}</ul></div>` : ""}${ad.note ? `<p class="research-note">${esc(ad.note)}</p>` : ""}<div class="research-actions"><a class="button" href="${esc(safeUrl(ad.listingUrl))}" ${external}>Buka iklan ↗</a></div><p class="research-checked">Dicek ${esc(checkedDate(ad.lastChecked))} · lokasi sampai tingkat kawasan; konfirmasi langsung lewat portal.</p></article>`,
+            `<article class="research-card card-${ad.category === "rumah" ? "house-sale" : "land"}" data-testid="sale-ad-card" id="${esc(ad.id)}"><div class="research-card-top"><span class="card-area"><i class="area-dot area-${esc(ad.area.toLowerCase())}"></i>${esc(ad.area)} <span>· ${esc(ad.locationText)}</span></span><span class="verdict verdict-${ad.verdict}">${ad.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span></div><span class="type-badge type-${ad.category === "rumah" ? "house-sale" : "land"}">${ad.category === "rumah" ? "Rumah dijual" : "Kavling dijual"}</span><h3>${esc(ad.title)}</h3><p class="research-meta">${ad.category === "kavling" ? "Kavling" : "Rumah"}${ad.projectOrCluster ? ` · ${esc(ad.projectOrCluster)}` : ""}${size(ad) ? ` · ${esc(size(ad))}` : ""}</p><div class="research-price"><strong>${esc(money(ad.price.amount))}</strong><span>${esc(ad.sourcePortal)}${ad.postedOrUpdated ? ` · terdaftar ${esc(checkedDate(ad.postedOrUpdated))}` : ""}</span></div><blockquote class="research-quote">“${esc(ad.price.quote)}” <a href="${esc(safeUrl(ad.price.url))}" ${external}>sumber harga ↗</a></blockquote>${ad.nearMosque ? `<p class="research-claim">Menurut iklan, dekat ${esc(ad.nearMosque.name)}: “${esc(ad.nearMosque.quote)}” <a href="${esc(safeUrl(ad.nearMosque.url))}" ${external}>↗</a></p>` : ""}${ad.evidence.length ? `<div class="research-plus"><strong>Poin keluarga muslim</strong><ul>${ad.evidence.map((e) => `<li>“${esc(e.quote)}” <a href="${esc(safeUrl(e.url))}" ${external}>↗</a></li>`).join("")}</ul></div>` : ""}${ad.note ? `<p class="research-note">${esc(ad.note)}</p>` : ""}<div class="research-actions"><a class="button" href="${esc(safeUrl(ad.listingUrl))}" ${external}>Buka iklan ↗</a></div><p class="research-checked">Dicek ${esc(checkedDate(ad.lastChecked))} · lokasi sampai tingkat kawasan; konfirmasi langsung lewat portal.</p></article>`,
         )
         .join("")
     : '<p class="research-note" data-testid="sale-ad-empty">Belum ada iklan dalam budget ini.</p>';
   for (const id of ["sale-budget-min", "sale-budget-max"])
     $(id).onchange = () => renderSaleAds(research);
+}
+
+function rentalHighlights(rental: ResearchRental): string {
+  const highlights = rental.areaHighlights ?? [];
+  if (!highlights.length) return "";
+  return `<div class="research-plus" data-testid="rental-highlights"><strong>Tempat untuk ditelusuri</strong><ul>${highlights.map((item) => `<li><strong>${esc(item.name)}</strong> <span class="plus-kind">${esc(item.kind)}</span><small>${esc(item.description)} <a href="${esc(safeUrl(item.url))}" ${external}>sumber ↗</a></small><small>${esc(item.relation)} <a href="${esc(safeUrl(item.relationUrl))}" ${external}>sumber lokasi ↗</a></small></li>`).join("")}</ul></div>`;
 }
 
 function renderRentals(research: ResearchData, area = rentalArea): void {
@@ -490,6 +501,8 @@ function renderRentals(research: ResearchData, area = rentalArea): void {
     value("rental-budget-min"),
     value("rental-budget-max"),
   );
+  const query = value("rental-search").trim().toLocaleLowerCase("id-ID");
+  const type = value("rental-type");
   $("sewa").hidden = false;
   $("rentals-intro").textContent =
     `${rentals.note} Dicek ${checkedDate(rentals.checkedAt)}.`;
@@ -507,25 +520,41 @@ function renderRentals(research: ResearchData, area = rentalArea): void {
     .filter(
       (r) =>
         (area === "Semua" || r.area === area) &&
+        (!type || (type === "apartment") === (r.kind === "Apartemen")) &&
+        (!query ||
+          [
+            r.title,
+            r.locationText,
+            r.buildingOrCluster ?? "",
+            ...r.evidence.map((e) => e.quote),
+            ...r.nearStationsClaim.map((c) => `${c.station} ${c.quote}`),
+            ...(r.areaHighlights ?? []).map(
+              (h) => `${h.name} ${h.description} ${h.relation}`,
+            ),
+          ]
+            .join(" ")
+            .toLocaleLowerCase("id-ID")
+            .includes(query)) &&
         withinBudget({ min: monthlyRent(r), max: null }, low, high),
     )
     .sort((a, b) => monthlyRent(a) - monthlyRent(b));
   $("rental-list").innerHTML = list
     .map(
       (r) =>
-        `<article class="research-card rental-card" data-testid="rental-card" id="${esc(r.id)}"><div class="research-card-top"><span class="card-area"><i class="area-dot area-${esc(r.area.toLowerCase())}"></i>${esc(r.area)} <span>· ${esc(r.locationText)}</span></span><span class="verdict verdict-${r.verdict}">${r.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span></div><h3>${esc(r.title)}</h3><p class="research-meta">${esc(RENTAL_LABELS[r.rentalType])}${r.buildingOrCluster ? ` · ${esc(r.buildingOrCluster)}` : ""}${r.bedrooms ? ` · ${r.bedrooms} kamar` : ""}${r.sizeM2 ? ` · ${r.sizeM2} m²` : ""}</p><div class="research-price"><strong>${esc(rentText(r))}</strong><span>${esc(r.sourcePortal)}${r.postedOrUpdated ? ` · diperbarui ${esc(checkedDate(r.postedOrUpdated))}` : ""}</span></div><blockquote class="research-quote">“${esc(r.rent.quote)}” <a href="${esc(safeUrl(r.rent.url))}" ${external}>sumber harga ↗</a></blockquote><div class="research-plus"><strong>Poin keluarga muslim</strong><ul>${r.evidence.map((e) => `<li>“${esc(e.quote)}” <a href="${esc(safeUrl(e.url))}" ${external}>↗</a></li>`).join("")}</ul></div>${r.nearStationsClaim.length ? `<p class="research-claim">Klaim dekat stasiun: ${r.nearStationsClaim.map((c) => `“${esc(c.quote)}”`).join("; ")}</p>` : ""}${r.social.length ? `<p class="research-social">Media sosial: ${socialLinks(r.social)}</p>` : ""}<div class="research-actions"><a class="button" href="${esc(safeUrl(r.listingUrl))}" ${external}>Buka listing ↗</a></div><p class="research-checked">Dicek ${esc(checkedDate(r.lastChecked))} · lokasi sampai tingkat kawasan; konfirmasi langsung ke pemilik lewat portal.</p></article>`,
+        `<article class="research-card card-${r.kind === "Apartemen" ? "apartment" : "rental"}" data-testid="rental-card" id="${esc(r.id)}"><div class="research-card-top"><span class="card-area"><i class="area-dot area-${esc(r.area.toLowerCase())}"></i>${esc(r.area)} <span>· ${esc(r.locationText)}</span></span><span class="verdict verdict-${r.verdict}">${r.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span></div><span class="type-badge type-${r.kind === "Apartemen" ? "apartment" : "rental"}">${esc(RENTAL_LABELS[r.rentalType])}</span><h3>${esc(r.title)}</h3><p class="research-meta">${esc(RENTAL_LABELS[r.rentalType])}${r.buildingOrCluster ? ` · ${esc(r.buildingOrCluster)}` : ""}${r.bedrooms ? ` · ${r.bedrooms} kamar` : ""}${r.sizeM2 ? ` · ${r.sizeM2} m²` : ""}</p><div class="research-price"><strong>${esc(rentText(r))}</strong><span>${esc(r.sourcePortal)}${r.postedOrUpdated ? ` · tanggal iklan ${esc(checkedDate(r.postedOrUpdated))}` : ""}</span></div><blockquote class="research-quote">“${esc(r.rent.quote)}” <a href="${esc(safeUrl(r.rent.url))}" ${external}>sumber harga ↗</a></blockquote><div class="research-plus"><strong>Keterangan dari sumber</strong><ul>${r.evidence.map((e) => `<li>“${esc(e.quote)}” <a href="${esc(safeUrl(e.url))}" ${external}>↗</a></li>`).join("")}</ul></div>${r.nearStationsClaim.length ? `<p class="research-claim">Klaim dekat stasiun: ${r.nearStationsClaim.map((c) => `“${esc(c.quote)}” <a href="${esc(safeUrl(c.url))}" ${external}>sumber ↗</a>`).join("; ")}</p>` : ""}${rentalHighlights(r)}${r.note ? `<p class="research-note">${esc(r.note)}</p>` : ""}${r.social.length ? `<p class="research-social">Media sosial: ${socialLinks(r.social)}</p>` : ""}<div class="research-actions"><a class="button" href="${esc(safeUrl(r.listingUrl))}" ${external}>Buka listing ↗</a></div><p class="research-checked">Dicek ${esc(checkedDate(r.lastChecked))} · lokasi sampai tingkat kawasan; konfirmasi langsung ke pemilik lewat portal.</p></article>`,
     )
     .join("");
   if (!list.length)
     $("rental-list").innerHTML =
-      '<p class="research-note" data-testid="rental-empty">Belum ada sewa dalam wilayah dan budget ini.</p>';
+      '<p class="research-note" data-testid="rental-empty">Belum ada sewa yang cocok dengan filter ini.</p>';
   for (const button of document.querySelectorAll<HTMLButtonElement>(
     "[data-rental-area]",
   ))
     button.onclick = () =>
       renderRentals(research, button.dataset.rentalArea ?? "Semua");
-  for (const id of ["rental-budget-min", "rental-budget-max"])
+  for (const id of ["rental-budget-min", "rental-budget-max", "rental-type"])
     $(id).onchange = () => renderRentals(research);
+  $("rental-search").oninput = () => renderRentals(research);
 }
 
 function renderPlanned(research: ResearchData): void {

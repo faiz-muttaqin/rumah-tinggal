@@ -48,6 +48,36 @@
   flex-wrap: wrap;
   gap: 10px;
 }
+.card-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 14px 0;
+}
+.type-badge {
+  align-self: flex-start;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 750;
+  line-height: 1.4;
+}
+.type-house-sale {
+  color: #245a3a;
+  background: #e5f1e8;
+}
+.type-apartment {
+  color: #24527d;
+  background: #e5effa;
+}
+.type-rental {
+  color: #8b4e17;
+  background: #fff0dc;
+}
+.type-land {
+  color: #615339;
+  background: #f2ecdf;
+}
 .research-links .button svg,
 .research-actions .button svg {
   width: 16px;
@@ -104,6 +134,43 @@
   gap: 10px;
   min-width: 0;
   scroll-margin-top: 100px;
+}
+.research-card.card-house-sale {
+  border-left: 4px solid #59966c;
+}
+.research-card.card-apartment {
+  border-left: 4px solid #5d8cbd;
+}
+.research-card.card-rental {
+  border-left: 4px solid #d49749;
+}
+.research-card.card-land {
+  border-left: 4px solid #a8956e;
+}
+.rental-filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+.rental-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 650;
+  color: var(--muted);
+}
+.rental-filters input,
+.rental-filters select {
+  width: 100%;
+  min-width: 0;
+  height: 40px;
+  border: 1px solid #cdd7c9;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  padding: 0 8px;
 }
 .research-card.highlight {
   border-color: #93ac83;

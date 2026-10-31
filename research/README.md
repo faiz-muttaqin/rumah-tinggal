@@ -22,6 +22,8 @@ Dataset yang dipakai aplikasi dibangun ke [properties.geojson](../public/data/pr
 
 [Lanjutan Bekasi](bekasi/README.md) memprioritaskan keluarga muslim: bukti kajian, pendidikan anak, perbedaan harga per tipe, status inden, serta fasilitas yang masih perlu dikonfirmasi.
 
+[Koridor Sudirman–Bekasi](koridor-sudirman-bekasi.md) mencatat tambahan sewa, syaratnya, lokasi kajian kitab, dan hubungan fasilitas dengan iklan yang belum dapat diukur.
+
 [Riset dari lokasi masjid](masjid/README.md) mencatat empat titik awal Bekasi/Depok, lima proyek Bekasi tambahan, serta kandidat dengan pin portal yang ditolak. Nama masjid/sekolah pada bukti kartu dapat dicari di `/riset`.
 
 [Pengumpulan data dan akses agen AI](../docs/property-agent-access.md) menjelaskan pilihan Scraper API/HTTP/browser, akses JSON publik yang sudah tersedia, serta rancangan MCP opsional.

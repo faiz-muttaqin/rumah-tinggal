@@ -472,6 +472,18 @@ def load_rentals(path=ROOT / "research/rentals.json"):
             "sizeM2": number(item.get("sizeM2"), f"{field}.sizeM2", optional=True),
             "furnished": item.get("furnished") if item.get("furnished") in ("unfurnished", "semi", "full") else None,
             "evidence": evidence[:3],
+            "areaHighlights": [
+                {
+                    "kind": text(h.get("kind"), f"{field}.areaHighlights[{j}].kind", 30),
+                    "name": text(h.get("name"), f"{field}.areaHighlights[{j}].name", 120),
+                    "description": text(h.get("description"), f"{field}.areaHighlights[{j}].description", 350),
+                    "url": url(h.get("url"), f"{field}.areaHighlights[{j}].url"),
+                    "relation": text(h.get("relation"), f"{field}.areaHighlights[{j}].relation", 300),
+                    "relationUrl": url(h.get("relationUrl"), f"{field}.areaHighlights[{j}].relationUrl"),
+                }
+                for j, h in enumerate((item.get("areaHighlights") or [])[:4])
+            ],
+            "note": text(item.get("note"), f"{field}.note", 500, optional=True),
             "nearStationsClaim": [
                 {"station": text(c.get("station"), f"{field}.station", 80), "quote": text(c.get("quote"), f"{field}.station.quote", QUOTE_LIMIT), "url": url(c.get("url"), f"{field}.station.url")}
                 for c in (item.get("nearStationsClaim") or [])[:2]

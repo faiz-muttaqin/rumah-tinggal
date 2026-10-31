@@ -268,6 +268,17 @@ export const researchFixture = {
               url: "https://portal.example.invalid/sewa-uji",
             },
           ],
+          areaHighlights: [
+            {
+              kind: "Kajian kitab",
+              name: "Masjid Uji Kitab",
+              description: "Keterangan kajian uji.",
+              url: "https://masjid.example.invalid/kajian",
+              relation: "Jarak dari unit belum diketahui.",
+              relationUrl: "https://portal.example.invalid/sewa-uji",
+            },
+          ],
+          note: "Minimum sewa tiga bulan (uji).",
           nearStationsClaim: [],
           listingUrl: "https://portal.example.invalid/sewa-uji",
           sourcePortal: "Portal uji",

@@ -1866,8 +1866,8 @@
    ]
   },
   "rentals": {
-   "checkedAt": "2026-10-30",
-   "note": "Iklan sewa dari portal publik (rumah123, Mamikos, Pinhome, Travelio, Jendela360) yang dibuka langsung dan diperiksa ulang pemeriksa terpisah. Bukti lingkungan muslim adalah kutipan iklan, bukan survei. Nama dan kontak pemilik atau agen tidak disimpan; iklan perorangan hanya sampai tingkat kawasan. Harga dan ketersediaan sewa cepat berubah.",
+   "checkedAt": "2026-10-31",
+   "note": "Iklan sewa publik diperiksa pada tanggal di masing-masing kartu. Keterangan fasilitas dan transit dapat berasal dari iklan atau sumber kawasan, bukan survei; cek hubungan lokasinya. Nama dan kontak pemilik tidak disimpan. Harga dan ketersediaan cepat berubah.",
    "rentals": [
     {
      "id": "sewa-rumah-kluster-keluarga-muslim-furnish-dkt-tol-grand-wisata-bekasi",
@@ -1897,6 +1897,8 @@
        "url": "https://www.rumah123.com/kost/dekat-pasar-modern-grandwisata/di-bekasi/"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://www.rumah123.com/properti/bekasi-bekasi-timur/rumah-kluster-keluarga-muslim-furnish-dkt-tol-grand-wisata-bekasi-ksr42170/",
      "sourcePortal": "rumah123",
@@ -1934,6 +1936,8 @@
        "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-rumah-kontrakan-d-thani-house-jatiasih-bekasi-2"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-rumah-kontrakan-d-thani-house-jatiasih-bekasi-2",
      "sourcePortal": "mamikos",
@@ -1971,6 +1975,8 @@
        "url": "https://www.travelio.com/en/sewa-apartemen/grand-center-point-apartment-bekasi"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [
       {
        "station": "KRL Bekasi",
@@ -2018,6 +2024,8 @@
        "url": "https://www.rumah123.com/venue/razbi-prima-mansion-vcm19190/"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [
       {
        "station": "LRT Jatimulya",
@@ -2062,6 +2070,8 @@
        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gg-sukadamai-1"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [
       {
        "station": "LRT (nama stasiun tidak disebut)",
@@ -2101,6 +2111,8 @@
        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-taman-buaran-indah-siap-huni-di-sewa-rumah-taman-buaran-indah-jakarta-timur"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [
       {
        "station": "KRL Buaran",
@@ -2144,6 +2156,8 @@
        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkomp-kebersihan-rt-17-09-no295-ciracas"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [
       {
        "station": "LRT (nama stasiun tidak disebut)",
@@ -2188,6 +2202,8 @@
        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-pasar-rebo-di-jlgudang-air-rt002-001-no-50-jaktim"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-pasar-rebo-di-jlgudang-air-rt002-001-no-50-jaktim",
      "sourcePortal": "pinhome",
@@ -2225,6 +2241,8 @@
        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sentra-timur-dekat-walikota-jakarta-timur-di-apartemen-sentra-timur"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sentra-timur-dekat-walikota-jakarta-timur-di-apartemen-sentra-timur",
      "sourcePortal": "pinhome",
@@ -2258,6 +2276,8 @@
        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-siap-huni-di-jalan-smp-188"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [
       {
        "station": "LRT Kampung Rambutan",
@@ -2297,6 +2317,8 @@
        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-posisi-hok-di-cilangkap"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [
       {
        "station": "LRT Ciracas",
@@ -2336,6 +2358,8 @@
        "url": "https://jakartagardencity.com/id"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-3-kamar-harga-40-juta-carport-2-mobil-di-cluster-shinano-jakarta-garden-city-jgc-cakung",
      "sourcePortal": "pinhome",
@@ -2369,6 +2393,8 @@
        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-malaka-cipayung"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-malaka-cipayung",
      "sourcePortal": "pinhome",
@@ -2402,6 +2428,8 @@
        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-berkah-family-sukma-jaya-depok-1"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-berkah-family-sukma-jaya-depok-1",
      "sourcePortal": "mamikos",
@@ -2443,6 +2471,8 @@
        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-syariah-beji-depok"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-syariah-beji-depok",
      "sourcePortal": "mamikos",
@@ -2484,6 +2514,8 @@
        "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-syariah-matoa-golf-tipe-a-jagakarsa-jakarta-selatan"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-syariah-matoa-golf-tipe-a-jagakarsa-jakarta-selatan",
      "sourcePortal": "mamikos",
@@ -2521,6 +2553,8 @@
        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kontrakan-pak-kodir-sukmajaya-depok"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [
       {
        "station": "KRL Depok",
@@ -2564,6 +2598,8 @@
        "url": "https://jendela360.com/sewa-apartemen-kalibata-city-apartment/KLCC371"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [
       {
        "station": "KRL Duren Kalibata",
@@ -2611,6 +2647,8 @@
        "url": "https://jendela360.com/sewa-apartemen-margonda-residence"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB007",
      "sourcePortal": "jendela360",
@@ -2652,6 +2690,8 @@
        "url": "https://jendela360.com/sewa-apartemen-taman-melati-margonda-apartment/TMMC005"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [
       {
        "station": "Universitas Indonesia (KRL)",
@@ -2699,6 +2739,8 @@
        "url": "https://www.travelio.com/sewa-apartemen/medina-apartment-karawaci"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://www.travelio.com/sewa-apartemen/medina-apartment-karawaci",
      "sourcePortal": "travelio",
@@ -2736,6 +2778,8 @@
        "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-exclusive-syariah-cimanggu-permai-tipe-a-tanah-sareal-bogor"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [
       {
        "station": "KRL Bogor",
@@ -2779,6 +2823,8 @@
        "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-cozzy-syariah-tipe-a-bogor-selatan-bogor-1"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-cozzy-syariah-tipe-a-bogor-selatan-bogor-1",
      "sourcePortal": "mamikos",
@@ -2816,6 +2862,8 @@
        "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-rumah-kontrakan-dean-residence-karang-tengah-tangerang-2"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-rumah-kontrakan-dean-residence-karang-tengah-tangerang-2",
      "sourcePortal": "mamikos",
@@ -2849,6 +2897,8 @@
        "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-rumah-mawaddah-kelapa-dua-tangerang-2"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-rumah-mawaddah-kelapa-dua-tangerang-2",
      "sourcePortal": "mamikos",
@@ -2890,6 +2940,8 @@
        "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-k-key-deluxe-syariah-ciledug-tangerang-2"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-k-key-deluxe-syariah-ciledug-tangerang-2",
      "sourcePortal": "mamikos",
@@ -2923,6 +2975,8 @@
        "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-mahasin-2-cileungsi-bogor"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-mahasin-2-cileungsi-bogor",
      "sourcePortal": "mamikos",
@@ -2956,6 +3010,8 @@
        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cileungsi-kidul-1"
       }
      ],
+     "areaHighlights": [],
+     "note": null,
      "nearStationsClaim": [],
      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cileungsi-kidul-1",
      "sourcePortal": "pinhome",
@@ -2964,6 +3020,342 @@
      "social": [],
      "verdict": "partial",
      "lastChecked": "2026-10-30"
+    },
+    {
+     "id": "sewa-jakasampurna-keluarga-kranji",
+     "title": "Kontrakan 1 kamar di Jakasampurna",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Jakasampurna, Bekasi Barat",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1350000,
+      "period": "monthly",
+      "quote": "Rp 1,35 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-3-rt-002-rw-010-jakasampurna",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 40,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Sekolah Swasta : Al-Azhar Jakapermai",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-3-rt-002-rw-010-jakasampurna"
+      },
+      {
+       "quote": "dekat masjid",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-3-rt-002-rw-010-jakasampurna"
+      }
+     ],
+     "areaHighlights": [
+      {
+       "kind": "Kajian kitab",
+       "name": "Masjid Jami Al Azhar Jakapermai",
+       "description": "Situs masjid memuat kajian kitab Bulughul Marom; jadwal terbaru belum dipastikan.",
+       "url": "https://alazharjp.or.id/",
+       "relation": "Iklan menyebut lokasi di belakang kawasan Al-Azhar Jakapermai; jarak dari unit ke masjid belum dihitung.",
+       "relationUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-3-rt-002-rw-010-jakasampurna"
+      },
+      {
+       "kind": "Pendidikan",
+       "name": "KB/TK Al Azhar 8 dan SD Islam Al Azhar 6",
+       "description": "Yayasan mencantumkan jenjang KB/TK dan SD di Jakapermai; biaya belum diketahui.",
+       "url": "https://muhajirien.org/",
+       "relation": "Iklan menyebut sekolah Al-Azhar Jakapermai di sekitar, tanpa rute atau jarak pasti.",
+       "relationUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-3-rt-002-rw-010-jakasampurna"
+      }
+     ],
+     "note": "Minimum sewa 3 bulan menurut portal. Deskripsi menyebut Rp8 juta per 6 bulan; tidak ada parkir mobil. Kesesuaian untuk anak dan ketersediaan perlu dikonfirmasi.",
+     "nearStationsClaim": [
+      {
+       "station": "KRL Kranji",
+       "quote": "5menit stasiun KRL Kranji",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-3-rt-002-rw-010-jakasampurna"
+      },
+      {
+       "station": "LRT Cikunir 2",
+       "quote": "5menit stasiun LRT Cikunir 2",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-3-rt-002-rw-010-jakasampurna"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-3-rt-002-rw-010-jakasampurna",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": null,
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-31"
+    },
+    {
+     "id": "sewa-griya-anindya-jatibening",
+     "title": "Kontrakan 2 kamar Griya Anindya, Jatibening",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Jatibening, Pondok Gede, Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 2250000,
+      "period": "monthly",
+      "quote": "Rp 2,25Jt",
+      "url": "https://www.nestoria.co.id/jatibening/properti/disewakan",
+      "pageDate": "2026-09-23"
+     },
+     "bedrooms": 2,
+     "sizeM2": null,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "ke mesjid 100 m",
+       "url": "https://www.nestoria.co.id/jatibening/properti/disewakan"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Iklan menyebut masjid tanpa nama; jadwal kajian, sekolah Islam, rute berjalan, dan ketersediaan belum dibuktikan. Tautan membuka daftar; cari Griya Anindya.",
+     "nearStationsClaim": [
+      {
+       "station": "LRT Jatibening Baru",
+       "quote": "dekat dengan statiun lrt jatibening baru bisa jalan kaki 3 menit",
+       "url": "https://www.nestoria.co.id/jatibening/properti/disewakan"
+      }
+     ],
+     "listingUrl": "https://www.nestoria.co.id/jatibening/properti/disewakan",
+     "sourcePortal": "Nestoria",
+     "postedOrUpdated": "2026-09-23",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-31"
+    },
+    {
+     "id": "sewa-kontrakan-mini-jatimulya",
+     "title": "Kontrakan mini berperabot, Jatimulya",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Jatimulya, Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1700000,
+      "period": "monthly",
+      "quote": "Rp 1,7 Juta /bulan",
+      "url": "https://www.rumah123.com/properti/bekasi-jatimulya/disewa-kontrakan-3-sekat-furnish-strategis-dekat-lrt-tol-timur-ksr114705/",
+      "pageDate": "2026-10-19"
+     },
+     "bedrooms": 1,
+     "sizeM2": 35,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Dekat Tempat Ibadah",
+       "url": "https://www.rumah123.com/properti/bekasi-jatimulya/disewa-kontrakan-3-sekat-furnish-strategis-dekat-lrt-tol-timur-ksr114705/"
+      }
+     ],
+     "areaHighlights": [
+      {
+       "kind": "Pendidikan",
+       "name": "MIS Al Huda",
+       "description": "Madrasah ibtidaiyah tercantum dalam registri pemerintah di Jatimulya.",
+       "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/dikdas/022216/3",
+       "relation": "Iklan hanya menunjukkan wilayah Jatimulya; jarak dari unit ke sekolah belum diketahui.",
+       "relationUrl": "https://www.rumah123.com/properti/bekasi-jatimulya/disewa-kontrakan-3-sekat-furnish-strategis-dekat-lrt-tol-timur-ksr114705/"
+      }
+     ],
+     "note": "Portal mengelompokkan iklan sebagai kost; deskripsinya menyebut kontrakan mini dengan dapur dan kamar mandi pribadi. Tidak ada parkir mobil; izin anak perlu dikonfirmasi.",
+     "nearStationsClaim": [
+      {
+       "station": "LRT Jatimulya",
+       "quote": "±1 km dari LRT Jatimulya",
+       "url": "https://www.rumah123.com/properti/bekasi-jatimulya/disewa-kontrakan-3-sekat-furnish-strategis-dekat-lrt-tol-timur-ksr114705/"
+      }
+     ],
+     "listingUrl": "https://www.rumah123.com/properti/bekasi-jatimulya/disewa-kontrakan-3-sekat-furnish-strategis-dekat-lrt-tol-timur-ksr114705/",
+     "sourcePortal": "Rumah123",
+     "postedOrUpdated": "2026-10-19",
+     "ownerType": "agent",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-31"
+    },
+    {
+     "id": "sewa-mutiara-bekasi-2-kamar",
+     "title": "Apartemen Mutiara Bekasi 2 kamar",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Bekasi",
+     "locationText": "Pekayon Jaya, Bekasi Selatan",
+     "buildingOrCluster": "Mutiara Bekasi",
+     "rent": {
+      "amount": 2500000,
+      "period": "monthly",
+      "quote": "Rp 2.500.000 per bulan",
+      "url": "https://www.sewa-apartemen.net/category/apartment/mutiara-bekasi/",
+      "pageDate": "2026-06-20"
+     },
+     "bedrooms": 2,
+     "sizeM2": 30,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "SD Islam At-Taqwa",
+       "url": "https://www.99.co/id/komplek-apartemen/22972-mutiara-bekasi/units"
+      }
+     ],
+     "areaHighlights": [
+      {
+       "kind": "Pendidikan",
+       "name": "SD Islam At-Taqwa",
+       "description": "Portal 99.co menyebut sekolah ini sebagai fasilitas sekitar apartemen.",
+       "url": "https://www.99.co/id/komplek-apartemen/22972-mutiara-bekasi/units",
+       "relation": "Portal memperkirakan 1,2 km dari apartemen; metode pengukuran dan rute belum diketahui.",
+       "relationUrl": "https://www.99.co/id/komplek-apartemen/22972-mutiara-bekasi/units"
+      }
+     ],
+     "note": "Iklan Juni 2026; belum ada tanda ketersediaan terkini. Pastikan biaya IPL, listrik, air, deposit dan kondisi unit. Jadwal kajian belum ditemukan.",
+     "nearStationsClaim": [
+      {
+       "station": "LRT Bekasi Barat",
+       "quote": "Di depan Stasiun LRT Bekasi Barat",
+       "url": "https://www.sewa-apartemen.net/category/apartment/mutiara-bekasi/"
+      }
+     ],
+     "listingUrl": "https://www.sewa-apartemen.net/category/apartment/mutiara-bekasi/",
+     "sourcePortal": "Sewa-apartemen.net",
+     "postedOrUpdated": "2026-06-20",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-31"
+    },
+    {
+     "id": "sewa-menara-cawang-2-kamar",
+     "title": "Apartemen Menara Cawang 2 kamar",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Cawang, Kramat Jati, Jakarta Timur",
+     "buildingOrCluster": "Menara Cawang",
+     "rent": {
+      "amount": 35000000,
+      "period": "yearly",
+      "quote": "Rp 35 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartmen-menara-cawang",
+      "pageDate": null
+     },
+     "bedrooms": 2,
+     "sizeM2": 33,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Dekat Halte Busway, Rumah Sakit, Masjid, Gereja",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartmen-menara-cawang"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Kepala iklan Rp35 juta/tahun dan minimum 12 bulan, tetapi deskripsi menyebut Rp30 juta/tahun; konfirmasi harga. Service charge, listrik dan air di luar sewa. Portal menaksir LRT 0,99 km, bukan jarak jalan.",
+     "nearStationsClaim": [
+      {
+       "station": "LRT Cawang",
+       "quote": "Stasiun LRT Bnn Cawang",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartmen-menara-cawang"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartmen-menara-cawang",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": null,
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-31"
+    },
+    {
+     "id": "sewa-sentra-timur-studio-cakung",
+     "title": "Apartemen Sentra Timur studio, Pulo Gebang",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Pulo Gebang, Cakung, Jakarta Timur",
+     "buildingOrCluster": "Sentra Timur Residence",
+     "rent": {
+      "amount": 3000000,
+      "period": "monthly",
+      "quote": "3juta/bulan",
+      "url": "https://www.realoka.com/749282-disewakan-sentra-timur-residence",
+      "pageDate": null
+     },
+     "bedrooms": null,
+     "sizeM2": 21,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Masjid",
+       "url": "https://www.realoka.com/749282-disewakan-sentra-timur-residence"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Studio 21 m²: kemungkinan lebih cocok untuk satu orang atau pasangan; kebijakan anak perlu ditanyakan. Harga belum termasuk IPL, deposit Rp2 juta. Jarak stasiun dan kajian belum dibuktikan.",
+     "nearStationsClaim": [
+      {
+       "station": "KRL Cakung",
+       "quote": "Stasiun Cakung",
+       "url": "https://www.realoka.com/749282-disewakan-sentra-timur-residence"
+      }
+     ],
+     "listingUrl": "https://www.realoka.com/749282-disewakan-sentra-timur-residence",
+     "sourcePortal": "Realoka",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-31"
+    },
+    {
+     "id": "sewa-bellevue-cikoko-2-kamar",
+     "title": "Apartemen Bellevue Place 2 kamar",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Tebet Barat, Jakarta Selatan",
+     "buildingOrCluster": "Bellevue Place",
+     "rent": {
+      "amount": 12500000,
+      "period": "monthly",
+      "quote": "Rp12.500.000 /bulan",
+      "url": "https://www.rukita.co/place/apartemen-belleuve-place-2br-city-view-1",
+      "pageDate": null
+     },
+     "bedrooms": 2,
+     "sizeM2": 53,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Anak-anak Diperbolehkan Tinggal",
+       "url": "https://www.rukita.co/place/apartemen-belleuve-place-2br-city-view-1"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Portal mencantumkan LRT Cikoko 0,37 km dan KRL Cawang 0,55 km; metode jarak belum jelas. IPL dan air termasuk; listrik dan internet tidak. Deposit setara sewa satu bulan. Kajian dan sekolah Islam belum dibuktikan.",
+     "nearStationsClaim": [
+      {
+       "station": "LRT Cikoko",
+       "quote": "Stasiun LRT Cikoko",
+       "url": "https://www.rukita.co/place/apartemen-belleuve-place-2br-city-view-1"
+      },
+      {
+       "station": "KRL Cawang",
+       "quote": "Stasiun Cawang",
+       "url": "https://www.rukita.co/place/apartemen-belleuve-place-2br-city-view-1"
+      }
+     ],
+     "listingUrl": "https://www.rukita.co/place/apartemen-belleuve-place-2br-city-view-1",
+     "sourcePortal": "Rukita",
+     "postedOrUpdated": null,
+     "ownerType": "management",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-10-31"
     }
    ]
   },
@@ -14483,7 +14875,7 @@
     "price": {
      "min": 600000000,
      "max": null,
-     "basis": "Situs menyebut mulai 600 jt, FAQ termurah 800 jt; konflik harga belum terselesaikan; promo September berakhir.",
+     "basis": "Situs 600 jt, FAQ 800 jt; Pinhome 584–764 jt tanpa tanggal. Harga, tipe, stok, dan promo perlu konfirmasi.",
      "quote": "Hunian Islami di Selatan Jakarta · DP 0%, Mulai 600 Jt-an",
      "url": "https://greenmadanicinangka.com/",
      "pageDate": "2026-09-25",
@@ -14681,7 +15073,7 @@
        "lokasi",
        "unit"
       ],
-      "note": "Rp 584 Juta - Rp 764 Juta, Dalam Pembangunan; posted 2024-12-05, probably outdated; Jl Kona No.23; coordinate source"
+      "note": "Dibaca ulang 31 Oktober 2026: Rp584–764 juta, tanggal pembaruan tidak jelas. Pinhome menyebut Aqsa 1 lantai dan HGB; situs proyek menyebut 2 lantai dan SHM. Stok serta status sertifikat belum diverifikasi."
      },
      {
       "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-cinangka-5",

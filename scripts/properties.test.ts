@@ -480,6 +480,24 @@ test("rentals and unverified leads keep privacy and labels", {
   const noEvidence = await run([{ ...rental, evidence: [] }]);
   assert.match(noEvidence.result.stderr, /evidence wajib/);
 
+  const unsafeHighlight = await run([
+    {
+      ...rental,
+      areaHighlights: [
+        {
+          kind: "Kajian",
+          name: "Masjid Uji",
+          description: "Jadwal belum dikonfirmasi.",
+          url: "https://masjid.example.invalid/",
+          relation: "Jarak belum diketahui.",
+          relationUrl: "javascript:alert(1)",
+        },
+      ],
+    },
+  ]);
+  assert.notEqual(unsafeHighlight.result.status, 0);
+  assert.match(unsafeHighlight.result.stderr, /URL/);
+
   const odd = await run([{ ...rental, rent: { ...rental.rent, amount: 50 } }]);
   assert.match(odd.result.stderr, /rentang wajar/);
 

@@ -251,6 +251,35 @@ test("shows Muslim-family rentals and unverified Instagram leads with links", as
   await expect(page.locator("body")).not.toContainText(/wa\.me|\+62\s?8/);
 });
 
+test("distinguishes sale, apartment and rental cards and searches rental context", async ({
+  page,
+}) => {
+  const house = page.locator("#prj-uji-cisauk");
+  const apartment = page.locator("#rent-uji-depok");
+  const rental = page.locator("#rent-uji-bekasi");
+  await expect(house).toContainText("Rumah dijual");
+  await expect(apartment).toContainText("Apartemen sewa");
+  await expect(rental).toContainText("Kontrakan");
+  const borders = await Promise.all(
+    [house, apartment, rental].map((card) =>
+      card.evaluate((element) => getComputedStyle(element).borderLeftColor),
+    ),
+  );
+  expect(new Set(borders).size).toBe(3);
+  await page.locator("#rental-search").fill("Masjid Uji Kitab");
+  await expect(page.getByTestId("rental-card")).toHaveCount(1);
+  await expect(rental).toContainText("Jarak dari unit belum diketahui");
+  await expect(rental).toContainText("Minimum sewa tiga bulan");
+  await expect(
+    rental.getByRole("link", { name: "sumber lokasi ↗" }),
+  ).toHaveAttribute("href", "https://portal.example.invalid/sewa-uji");
+  await page.locator("#rental-type").selectOption("apartment");
+  await expect(page.getByTestId("rental-empty")).toBeVisible();
+  await page.locator("#rental-search").fill("");
+  await expect(page.getByTestId("rental-card")).toHaveCount(1);
+  await expect(apartment).toBeVisible();
+});
+
 test("budget is a range that matches any price inside it, for projects and rentals", async ({
   page,
 }) => {
