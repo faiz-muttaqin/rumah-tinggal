@@ -223,6 +223,7 @@ test("shows Muslim-family rentals and unverified Instagram leads with links", as
   await page.locator("[data-rental-area=Depok]").click();
   await expect(rentals).toHaveCount(1);
   await expect(rentals.first()).toContainText("Apartemen Sewa Uji");
+  await page.locator("#catalog-area").selectOption("Semua");
 
   const lead = page.getByTestId("lead-card");
   await expect(page.locator("#belum-diverifikasi")).toBeVisible();
@@ -400,4 +401,184 @@ test("keeps older research datasets without mosque metadata usable", async ({
   await expect(page.locator("#masjid")).toBeHidden();
   await expect(page.locator("#mosques-shortcut")).toBeHidden();
   await expect(page.getByTestId("mosque-card")).toHaveCount(0);
+});
+
+test("shares the regional filter across catalog sections and offer types", async ({
+  page,
+}) => {
+  const rentals = page.getByTestId("rental-card");
+  const sales = page.getByTestId("sale-ad-card");
+  const leads = page.getByTestId("lead-card");
+  const mosques = page.getByTestId("mosque-card");
+  await expect(page.locator("#catalog-area")).toHaveValue("Semua");
+  await expect(page.locator("#catalog-offer")).toHaveValue("all");
+  await page.locator("#catalog-area").selectOption("Bekasi");
+  await expect(cards(page)).toHaveCount(1);
+  await expect(rentals).toHaveCount(1);
+  await expect(sales).toHaveCount(0);
+  await expect(leads).toHaveCount(1);
+  await expect(mosques).toHaveCount(1);
+  await expect(page.locator("[data-area=Bekasi]")).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await expect(page.locator("[data-rental-area=Bekasi]")).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await expect(page.locator("#mosque-area")).toHaveValue("Bekasi");
+
+  await page.locator("#catalog-offer").selectOption("developer");
+  await expect(cards(page)).toHaveCount(1);
+  await expect(rentals).toHaveCount(0);
+  await expect(sales).toHaveCount(0);
+  await expect(leads).toHaveCount(0);
+  await expect(page.locator("#sewa")).toBeHidden();
+  await expect(mosques).toHaveCount(1);
+  await page.locator("#catalog-area").selectOption("Bogor");
+  await expect(cards(page)).toHaveCount(1);
+  await expect(cards(page)).toContainText("Perumahan Islami Uji Jauh");
+  await page.locator("#catalog-offer").selectOption("all");
+  await expect(sales).toHaveCount(2);
+  await expect(rentals).toHaveCount(0);
+  await expect(leads).toHaveCount(0);
+  await expect(mosques).toHaveCount(0);
+
+  await page.locator("#catalog-area").selectOption("Semua");
+  await expect(cards(page)).toHaveCount(4);
+  await expect(rentals).toHaveCount(2);
+  await expect(sales).toHaveCount(2);
+  await expect(leads).toHaveCount(1);
+  await expect(mosques).toHaveCount(2);
+  await page.locator("[data-area=Bekasi]").click();
+  await expect(page.locator("#catalog-area")).toHaveValue("Bekasi");
+  await page.locator("[data-rental-area=Depok]").click();
+  await expect(page.locator("#catalog-area")).toHaveValue("Depok");
+  await expect(page.locator("#mosque-area")).toHaveValue("Depok");
+  await expect(cards(page)).toHaveCount(0);
+  await expect(rentals).toHaveCount(1);
+  await expect(leads).toHaveCount(0);
+  await page.locator("#mosque-area").selectOption("outside");
+  await expect(page.locator("#catalog-area")).toHaveValue("outside");
+  await expect(rentals).toHaveCount(0);
+  await expect(mosques).toHaveCount(1);
+  await expect(mosques).toContainText("Masjid Uji Bandung");
+  await page.locator("#mosque-area").selectOption("");
+  await expect(page.locator("#catalog-area")).toHaveValue("Semua");
+  await expect(cards(page)).toHaveCount(4);
+});
+
+test("house rental mode excludes family kos, apartments and sale inventory", async ({
+  page,
+}) => {
+  const fixture = structuredClone(researchFixture);
+  fixture.metadata.rentals.rentals.push({
+    ...fixture.metadata.rentals.rentals[0],
+    id: "rent-uji-kos-bekasi",
+    title: "Kos Keluarga Uji",
+    rentalType: "kos-keluarga",
+  });
+  await page.route("**/data/properties.geojson", async (route) => {
+    await route.fulfill({ json: fixture });
+  });
+  await page.reload();
+  await expect(page.getByTestId("rental-card")).toHaveCount(3);
+  await page.locator("#catalog-area").selectOption("Bekasi");
+  await expect(page.getByTestId("rental-card")).toHaveCount(2);
+  await page.locator("#catalog-offer").selectOption("rental-house");
+  await expect(page.getByTestId("rental-card")).toHaveCount(1);
+  await expect(page.getByTestId("rental-card")).toContainText(
+    "Kontrakan Keluarga Uji",
+  );
+  await expect(page.locator("#rent-uji-kos-bekasi")).toHaveCount(0);
+  await expect(cards(page)).toHaveCount(0);
+  await expect(page.getByTestId("sale-ad-card")).toHaveCount(0);
+  await expect(page.getByTestId("lead-card")).toHaveCount(0);
+  await expect(page.locator("#iklan-dijual")).toBeHidden();
+  await page.locator("#catalog-area").selectOption("Semua");
+  await expect(page.getByTestId("rental-card")).toHaveCount(1);
+  await expect(page.locator("#rent-uji-depok")).toHaveCount(0);
+  await page.locator("#catalog-offer").selectOption("developer");
+  await expect(cards(page)).toHaveCount(4);
+  await expect(page.getByTestId("rental-card")).toHaveCount(0);
+  await page.locator("#catalog-offer").selectOption("all");
+  await expect(page.getByTestId("rental-card")).toHaveCount(3);
+  await expect(page.getByTestId("sale-ad-card")).toHaveCount(2);
+});
+
+test("filters mosque property relations with the shared catalog and restores linked rentals", async ({
+  page,
+}) => {
+  const fixture = structuredClone(researchFixture);
+  const mosqueFixture = fixture.metadata.mosques.items[0];
+  mosqueFixture.nearbyProperties = [
+    ...mosqueFixture.nearbyProperties,
+    {
+      id: "prj-uji-cisauk",
+      name: "Hunian Uji Cisauk",
+      km: 1.2,
+    },
+  ];
+  mosqueFixture.relatedListings = [
+    ...mosqueFixture.relatedListings,
+    {
+      id: "jual-uji-rumah",
+      title: "Rumah Dijual Uji dekat Masjid",
+      kind: "sale",
+      relation: "Kawasan uji menurut iklan.",
+      note: "Jarak belum dihitung.",
+    },
+    {
+      id: "lead-uji",
+      title: "Perumahan Petunjuk Uji",
+      kind: "lead",
+      relation: "Petunjuk proyek kawasan uji.",
+      note: "Belum diverifikasi.",
+    },
+  ];
+  await page.route("**/data/properties.geojson", async (route) => {
+    await route.fulfill({ json: fixture });
+  });
+  await page.reload();
+  const mosque = page.locator("#masjid-uji-satu");
+  const project = mosque.getByRole("link", {
+    name: "Rumah Uji Bekasi Timur",
+  });
+  const rental = mosque.getByRole("link", {
+    name: "Kontrakan Keluarga Uji",
+  });
+  const otherAreaProject = mosque.getByRole("link", {
+    name: "Hunian Uji Cisauk",
+  });
+  const sale = mosque.getByRole("link", {
+    name: "Rumah Dijual Uji dekat Masjid",
+  });
+  const lead = mosque.getByRole("link", {
+    name: "Perumahan Petunjuk Uji",
+  });
+  await expect(otherAreaProject).toHaveCount(1);
+  await expect(sale).toHaveCount(1);
+  await page.locator("#catalog-area").selectOption("Bekasi");
+  await expect(project).toHaveCount(1);
+  await expect(rental).toHaveCount(1);
+  await expect(otherAreaProject).toHaveCount(0);
+  await expect(sale).toHaveCount(0);
+  await page.locator("#catalog-offer").selectOption("rental-house");
+  await expect(project).toHaveCount(0);
+  await expect(rental).toHaveCount(1);
+  await expect(lead).toHaveCount(0);
+  await page.locator("#catalog-offer").selectOption("developer");
+  await expect(project).toHaveCount(1);
+  await expect(rental).toHaveCount(0);
+  await expect(lead).toHaveCount(0);
+  await page.locator("#catalog-offer").selectOption("all");
+  await page.locator("#catalog-area").selectOption("Semua");
+  await expect(otherAreaProject).toHaveCount(1);
+  await expect(sale).toHaveCount(1);
+  await expect(lead).toHaveCount(1);
+  await page.locator("#rental-budget-max").selectOption("1000000");
+  await expect(page.locator("#rent-uji-bekasi")).toHaveCount(0);
+  await rental.click();
+  await expect(page.locator("#rent-uji-bekasi")).toBeVisible();
+  await expect(page.locator("#rent-uji-bekasi")).toHaveClass(/highlight/);
 });

@@ -553,6 +553,9 @@
   .research-selects {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .research-selects.catalog-selects {
+    grid-template-columns: minmax(0, 1fr);
+  }
   .research-list,
   .method-list {
     grid-template-columns: minmax(0, 1fr);

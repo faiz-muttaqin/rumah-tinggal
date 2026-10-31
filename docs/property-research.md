@@ -8,6 +8,8 @@ Perluasan berikutnya dicatat di [ruang riset hunian Jakarta](../research/jakarta
 
 ## Cakupan
 
+Filter **Daerah** di bagian atas `/riset` berlaku bersama untuk proyek, sewa, iklan dijual, petunjuk, masjid, dan hubungan properti pada kartu masjid. Pilihan wilayah pada bagian sewa dan masjid tersinkron dengan filter tersebut. **Tipe penawaran** menyediakan semua penawaran, **Kontrakan / rumah sewa**, dan **Properti developer**. Kontrakan / rumah sewa hanya memakai kategori tersebut, tanpa kos keluarga atau apartemen sewa; properti developer memakai katalog proyek baru, tanpa menganggap iklan rumah sekunder atau petunjuk sebagai proyek developer. Saat memilih kontrakan, daftar sewa tampil sebelum direktori masjid. Budget dan pencarian di masing-masing bagian tetap dapat digunakan.
+
 - **Masuk:** proyek baru (rumah tapak atau apartemen/rusunami, termasuk subsidi dan TOD) yang sedang dipasarkan untuk dibeli, dengan titik proyek paling jauh **3 km garis lurus** dari salah satu stasiun dalam dataset aplikasi (80 KRL, 13 MRT, 29 LRT; lihat [data transportasi](transit-data.md)).
 - **Belum dicakup oleh riset awal:** sewa, kos, ruko/komersial, kavling, dan iklan resale perorangan. Tautan web atau Instagram dari pemilik/agen tetap bisa disimpan sendiri lewat **Tambah listing**, dengan koordinat yang dipilih di peta. Proyek habis terjual dan proyek tanpa harga tidak masuk kurasi peta.
 - Stasiun di luar dataset (misalnya Maja dan Rangkasbitung) belum tercakup.

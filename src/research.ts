@@ -28,6 +28,7 @@ import {
   type RailMode,
   RENTAL_LABELS,
   type ResearchData,
+  type ResearchLead,
   type ResearchMosque,
   type ResearchProperty,
   type ResearchRental,
@@ -55,14 +56,12 @@ const SALE_STEPS = [
 const RENT_STEPS = [
   500_000, 1_000_000, 1_500_000, 2_000_000, 3_000_000, 5_000_000,
 ];
-let rentalArea = "Semua";
-
 const $ = <T extends HTMLElement = HTMLElement>(id: string): T =>
   document.getElementById(id) as T;
 const external = 'target="_blank" rel="noopener noreferrer"';
 
 $("app").innerHTML = `
-  <a class="skip-link" href="#research-results">Langsung ke daftar proyek</a>
+  <a class="skip-link" id="catalog-skip" href="#research-results">Langsung ke daftar hunian</a>
   <header class="masthead">
     <a class="brand" href="/" aria-label="Rumah Tinggal, beranda"><span class="brand-mark">${icon("home")}</span><span>rumah<span class="brand-light">tinggal</span><span class="brand-dot">.</span></span></a>
     <nav class="main-nav" aria-label="Navigasi utama"><a href="/">Jelajahi peta</a><a class="active" href="/riset" aria-current="page">${icon("research")} Riset properti</a><a href="/?koleksi=listingku">${icon("bookmark")} Listingku</a></nav>
@@ -77,16 +76,25 @@ $("app").innerHTML = `
       <p class="research-note">Verifikasi mencakup sumber harga dan lokasi. Nama developer mengikuti sumber publik; kepemilikan unit belum diverifikasi.</p>
       <div class="card-legend" aria-label="Penanda jenis properti"><span class="type-badge type-house-sale">Rumah dijual</span><span class="type-badge type-apartment">Apartemen</span><span class="type-badge type-rental">Kontrakan / rumah sewa</span></div>
       <dl class="research-stats" id="research-stats"></dl>
-      <div class="research-links"><a class="button primary" href="/?koleksi=riset">${icon("pin")} Lihat proyek di peta</a><a class="button" href="#masjid" id="mosques-shortcut" hidden>Masjid dengan kajian</a><a class="button" href="#sewa">Sewa apartemen & kontrakan</a><a class="button" href="#iklan-dijual">Iklan dijual dekat masjid kajian</a><a class="button" href="#belum-diverifikasi">Petunjuk belum diverifikasi</a><a class="button" href="#metode">${icon("info")} Cara riset ini dibuat</a></div>
+      <div class="research-links"><a class="button primary" href="/?koleksi=riset">${icon("pin")} Lihat proyek di peta</a><a class="button" href="#masjid" id="mosques-shortcut" hidden>Masjid dengan kajian</a><a class="button" href="#sewa" id="rentals-shortcut">Sewa apartemen & kontrakan</a><a class="button" href="#iklan-dijual" id="sale-ads-shortcut">Iklan dijual dekat masjid kajian</a><a class="button" href="#belum-diverifikasi" id="leads-shortcut">Petunjuk belum diverifikasi</a><a class="button" href="#metode">${icon("info")} Cara riset ini dibuat</a></div>
     </section>
-    <section class="research-filters" aria-label="Filter riset properti">
-      <div class="search-box">${icon("search")}<input id="research-search" type="search" aria-label="Cari proyek, developer, lokasi, masjid, sekolah, atau stasiun" placeholder="Proyek, lokasi, masjid, sekolah, atau stasiun…" autocomplete="off"/></div>
+    <section class="research-filters" id="catalog-filters" aria-label="Filter seluruh daftar">
+      <div class="research-selects catalog-selects">
+        <label>Daerah<select id="catalog-area"><option>Semua</option>${AREAS.map((area) => `<option>${area}</option>`).join("")}<option value="outside">Luar Jabodetabek</option></select></label>
+        <label>Tipe penawaran<select id="catalog-offer"><option value="all">Semua penawaran</option><option value="rental-house">Kontrakan / rumah sewa</option><option value="developer">Properti developer</option></select></label>
+      </div>
       <div class="area-chips" aria-label="Filter wilayah"><button class="chip selected" data-area="Semua" aria-pressed="true">Semua</button>${AREAS.map((area) => `<button class="chip" data-area="${area}" aria-pressed="false">${area}</button>`).join("")}</div>
+      <p class="research-note">Daerah berlaku untuk seluruh daftar hunian dan masjid. Properti developer berisi proyek baru; kontrakan / rumah sewa tidak mencakup kos atau apartemen sewa.</p>
+      <p class="research-note" id="catalog-status" role="status"></p>
+    </section>
+    <section class="research-filters" id="developer-filters" aria-label="Filter riset properti">
+      <p class="research-note">Filter tambahan untuk properti developer</p>
+      <div class="search-box">${icon("search")}<input id="research-search" type="search" aria-label="Cari proyek, developer, lokasi, masjid, sekolah, atau stasiun" placeholder="Proyek, lokasi, masjid, sekolah, atau stasiun…" autocomplete="off"/></div>
       <div class="research-selects">
         <label>Moda<select id="research-mode"><option value="">KRL, MRT & LRT</option><option>KRL</option><option>MRT</option><option>LRT</option></select></label>
         <label>Stasiun<select id="research-station-scope"><option value="all">Beroperasi & rencana</option><option value="operating">Beroperasi saja</option><option value="planned">Rencana saja</option></select></label>
         <label>Jarak garis lurus<select id="research-distance"><option value="any">Semua jarak</option><option value="3">≤ 3 km</option><option value="2">≤ 2 km</option><option value="1">≤ 1 km</option></select></label>
-        <label>Jenis<select id="research-type"><option value="">Semua jenis</option><option>Rumah</option><option>Apartemen</option></select></label>
+        <label>Bangunan developer<select id="research-type"><option value="">Semua jenis</option><option>Rumah</option><option>Apartemen</option></select></label>
         <label>Budget dari<select id="research-budget-min">${budgetOptions(SALE_STEPS, "Rp 0")}</select></label>
         <label>Budget sampai<select id="research-budget-max">${budgetOptions(SALE_STEPS, "Tanpa batas")}</select></label>
         <label>Poin plus<select id="research-plus"><option value="">Semua</option><option value="kajian">Ada masjid dengan kajian</option><option value="education">Ada pendidikan Islam anak</option><option value="both">Keduanya</option><option value="concept">Konsep islami (klaim proyek)</option></select></label>
@@ -109,17 +117,18 @@ $("app").innerHTML = `
       <div class="results-toolbar"><strong id="mosque-count" aria-live="polite"></strong></div>
       <div id="mosque-list" class="research-list" aria-live="polite"></div>
     </section>
-    <section class="research-section" id="sewa" aria-labelledby="rentals-title" hidden>
+    <section class="research-section" id="sewa" aria-labelledby="rentals-title" tabindex="-1" hidden>
       <div class="eyebrow"><span class="tiny-line"></span> SEWA</div>
       <h2 id="rentals-title">Sewa apartemen dan kontrakan</h2>
       <p class="section-intro" id="rentals-intro"></p>
       <div class="area-chips" aria-label="Filter wilayah sewa" id="rental-areas"></div>
       <div class="research-filters rental-filters">
         <label>Cari sewa<input id="rental-search" type="search" placeholder="Lokasi, stasiun, masjid, sekolah…"/></label>
-        <label>Jenis sewa<select id="rental-type"><option value="">Semua jenis</option><option value="house">Kontrakan / rumah sewa</option><option value="apartment">Apartemen</option></select></label>
+        <label id="rental-type-control">Jenis sewa<select id="rental-type"><option value="">Semua jenis</option><option value="house">Kontrakan / rumah sewa</option><option value="apartment">Apartemen</option></select></label>
         <label>Sewa per bulan dari<select id="rental-budget-min">${budgetOptions(RENT_STEPS, "Rp 0", rentMoney)}</select></label>
         <label>sampai<select id="rental-budget-max">${budgetOptions(RENT_STEPS, "Tanpa batas", rentMoney)}</select></label>
       </div>
+      <div class="results-toolbar"><strong id="rental-count" aria-live="polite"></strong></div>
       <div id="rental-list" class="research-list" aria-live="polite"></div>
     </section>
     <section class="research-section" id="iklan-dijual" aria-labelledby="sale-ads-title" hidden>
@@ -130,6 +139,7 @@ $("app").innerHTML = `
         <label>Budget dari<select id="sale-budget-min">${budgetOptions(SALE_STEPS, "Rp 0")}</select></label>
         <label>sampai<select id="sale-budget-max">${budgetOptions(SALE_STEPS, "Tanpa batas")}</select></label>
       </div>
+      <div class="results-toolbar"><strong id="sale-ad-count" aria-live="polite"></strong></div>
       <div id="sale-ad-list" class="research-list" aria-live="polite"></div>
     </section>
     <section class="research-section" id="belum-diverifikasi" aria-labelledby="leads-title" hidden>
@@ -175,8 +185,89 @@ function value(id: string): string {
   return $<HTMLInputElement | HTMLSelectElement>(id).value;
 }
 
+function inArea(area: string | null): boolean {
+  return selectedArea === "Semua" || area === selectedArea;
+}
+
+function isHouseRental(rental: ResearchRental): boolean {
+  return ["kontrakan", "rumah-sewa"].includes(rental.rentalType);
+}
+
+function rentalInCatalogue(rental: ResearchRental): boolean {
+  return (
+    inArea(rental.area) &&
+    value("catalog-offer") !== "developer" &&
+    (value("catalog-offer") !== "rental-house" || isHouseRental(rental))
+  );
+}
+
+function leadInCatalogue(lead: ResearchLead): boolean {
+  return (
+    inArea(lead.area) &&
+    (value("catalog-offer") === "all" ||
+      (value("catalog-offer") === "rental-house" && lead.type === "rental"))
+  );
+}
+
+function relatedInCatalogue(
+  listing: ResearchMosque["relatedListings"][number],
+): boolean {
+  if (!data) return false;
+  if (listing.kind === "rental") {
+    const rental = data.rentals?.rentals.find((r) => r.id === listing.id);
+    return Boolean(rental && rentalInCatalogue(rental));
+  }
+  if (listing.kind === "lead") {
+    const lead = data.leads?.leads.find((lead) => lead.id === listing.id);
+    return Boolean(lead && leadInCatalogue(lead));
+  }
+  const ad = data.saleAds?.ads.find((ad) => ad.id === listing.id);
+  return value("catalog-offer") === "all" && Boolean(ad && inArea(ad.area));
+}
+
+function setCatalogueArea(area: string): void {
+  selectedArea = area;
+  renderCatalogue();
+}
+
+function renderCatalogue(): void {
+  if (!data) return;
+  $<HTMLSelectElement>("catalog-area").value = selectedArea;
+  $<HTMLSelectElement>("mosque-area").value =
+    selectedArea === "Semua" ? "" : selectedArea;
+  for (const chip of document.querySelectorAll<HTMLButtonElement>(
+    "[data-area]",
+  )) {
+    const selected = chip.dataset.area === selectedArea;
+    chip.classList.toggle("selected", selected);
+    chip.setAttribute("aria-pressed", String(selected));
+  }
+  const offer = value("catalog-offer");
+  const area = selectedArea === "outside" ? "Luar Jabodetabek" : selectedArea;
+  const label = $<HTMLSelectElement>("catalog-offer").selectedOptions[0]?.text;
+  $("catalog-status").textContent = `Daerah: ${area} · ${label}`;
+  $<HTMLAnchorElement>("catalog-skip").href =
+    offer === "rental-house" ? "#sewa" : "#research-results";
+  render();
+  renderRentals(data);
+  renderSaleAds(data);
+  renderLeads(data);
+  renderMosques(data);
+  const rentals = $("sewa");
+  const mosques = $("masjid");
+  if (offer === "rental-house") {
+    if (rentals.nextElementSibling !== mosques) mosques.before(rentals);
+  } else if (mosques.nextElementSibling !== rentals) mosques.after(rentals);
+  for (const [shortcut, section] of [
+    ["rentals-shortcut", "sewa"],
+    ["sale-ads-shortcut", "iklan-dijual"],
+    ["leads-shortcut", "belum-diverifikasi"],
+  ])
+    $(shortcut).hidden = $(section).hidden;
+}
+
 function filtered(): ResearchProperty[] {
-  if (!data) return [];
+  if (!data || value("catalog-offer") === "rental-house") return [];
   const query = value("research-search").trim().toLocaleLowerCase("id-ID");
   const mode = (value("research-mode") || undefined) as RailMode | undefined;
   const scope = (value("research-station-scope") || "all") as StationScope;
@@ -209,7 +300,7 @@ function filtered(): ResearchProperty[] {
       (station
         ? station.km <= maxKm
         : anyDistance && !mode && scope === "all") &&
-      (selectedArea === "Semua" || property.area === selectedArea) &&
+      inArea(property.area) &&
       (!query || text.includes(query)) &&
       (!type || property.kind === type) &&
       withinBudget(property.price, low, high) &&
@@ -390,13 +481,18 @@ function card(property: ResearchProperty): string {
 
 function render(): void {
   if (!data) return;
+  const onlyRentals = value("catalog-offer") === "rental-house";
+  $("developer-filters").hidden = onlyRentals;
+  $("research-results").hidden = onlyRentals;
   const list = filtered();
   $("research-count").textContent = `${list.length} proyek`;
   $("research-scope").textContent =
     ` dari ${data.properties.length} · ${selectedArea === "Semua" ? "Jabodetabek" : selectedArea}`;
-  $("research-list").innerHTML = list.length
-    ? list.map(card).join("")
-    : `<div class="empty-state" data-testid="research-empty"><span class="empty-icon">${icon("search")}</span><h2>Belum ada proyek yang cocok</h2><p>Coba perluas jarak, moda, wilayah, atau harga.</p></div>`;
+  $("research-list").innerHTML = onlyRentals
+    ? ""
+    : list.length
+      ? list.map(card).join("")
+      : `<div class="empty-state" data-testid="research-empty"><span class="empty-icon">${icon("search")}</span><h2>Belum ada proyek yang cocok</h2><p>Coba perluas jarak, moda, wilayah, atau harga.</p></div>`;
   for (const button of document.querySelectorAll<HTMLButtonElement>(
     "[data-save]",
   ))
@@ -423,16 +519,12 @@ function renderStatic(research: ResearchData): void {
   ).length;
   const prices = research.properties.map((property) => property.price.min);
   $("research-stats").innerHTML = `
-    <div><dt>Proyek</dt><dd>${research.properties.length}</dd></div>
+    <div><dt>Proyek di katalog</dt><dd>${research.properties.length}</dd></div>
     <div><dt>Terverifikasi penuh</dt><dd>${confirmed}</dd></div>
     <div><dt>Harga mulai</dt><dd>${prices.length ? `${money(Math.min(...prices))} – ${money(Math.max(...prices))}` : "–"}</dd></div>
     <div><dt>Cek terakhir</dt><dd>${esc(checkedDate(research.checkedAt))}</dd></div>
     <div><dt>Radius</dt><dd>≤ ${research.maxDistanceKm} km garis lurus</dd></div>`;
   renderPlanned(research);
-  renderLeads(research);
-  renderRentals(research, "Semua");
-  renderSaleAds(research);
-  renderMosques(research);
   $("method-list").innerHTML = research.methods
     .map(
       (method) =>
@@ -464,7 +556,8 @@ function mosqueCard(mosque: ResearchMosque, radiusKm: number): string {
     <h3>${esc(mosque.name)}</h3>
     <p class="research-meta">${esc(mosque.address)}</p>
     ${cancelled ? `<p class="research-note" data-testid="mosque-cancelled">${cancelled} jadwal dibatalkan pada profil yang diperiksa. Jumlah jadwal tercatat dapat mencakup pembatalan.</p>` : ""}
-    <div class="research-context"><strong>Proyek bertitik ≤ ${radius} km</strong>${mosque.nearbyProperties.length ? `<ul class="mosque-related">${mosque.nearbyProperties.map((property) => `<li><a href="/?riset=${encodeURIComponent(property.id)}">${esc(property.name)}</a> · ${esc(distanceText(property.km))} garis lurus</li>`).join("")}</ul><small>Dihitung dari titik proyek dan masjid; akses dari setiap unit perlu dicek.</small>` : `<p>Belum ada proyek bertitik dalam radius ${radius} km di katalog.</p>`}</div>
+    ${value("catalog-offer") === "rental-house" ? "" : `<div class="research-context"><strong>Proyek bertitik ≤ ${radius} km</strong>${mosque.nearbyProperties.length ? `<ul class="mosque-related">${mosque.nearbyProperties.map((property) => `<li><a href="/?riset=${encodeURIComponent(property.id)}">${esc(property.name)}</a> · ${esc(distanceText(property.km))} garis lurus</li>`).join("")}</ul><small>Dihitung dari titik proyek dan masjid; akses dari setiap unit perlu dicek.</small>` : `<p>Belum ada proyek bertitik dalam radius ${radius} km di katalog.</p>`}</div>`}
+    ${value("catalog-offer") === "rental-house" && !mosque.relatedListings.length ? '<p class="research-note">Belum ada kontrakan / rumah sewa yang terhubung dalam katalog.</p>' : ""}
     ${mosque.relatedListings.length ? `<div class="research-context"><strong>Iklan & petunjuk kawasan</strong><ul class="mosque-related">${mosque.relatedListings.map((listing) => `<li><a href="/riset#${encodeURIComponent(listing.id)}" data-mosque-listing="${esc(listing.id)}" data-listing-kind="${listing.kind}">${esc(listing.title)}</a><small>${listingLabels[listing.kind]} · ${esc(listing.relation)}</small><small>${esc(listing.note)}</small></li>`).join("")}</ul></div>` : ""}
     <div class="research-actions"><a class="button" href="${esc(safeUrl(mosque.googleMapsUrl))}" ${external}>${icon("pin")} Titik Google Maps ↗</a><a class="button" href="${esc(safeUrl(mosque.sourceUrl))}" ${external}>Jadwal di Ihrish ↗</a></div>
   </article>`;
@@ -491,7 +584,27 @@ function renderMosques(research: ResearchData): void {
   $("mosque-count").textContent =
     `${items.length} dari ${mosques.items.length} masjid`;
   $("mosque-list").innerHTML = items.length
-    ? items.map((mosque) => mosqueCard(mosque, mosques.radiusKm)).join("")
+    ? items
+        .map((mosque) =>
+          mosqueCard(
+            {
+              ...mosque,
+              nearbyProperties:
+                value("catalog-offer") === "rental-house"
+                  ? []
+                  : mosque.nearbyProperties.filter((nearby) => {
+                      const property = research.properties.find(
+                        (p) => p.id === nearby.id,
+                      );
+                      return property && inArea(property.area);
+                    }),
+              relatedListings:
+                mosque.relatedListings.filter(relatedInCatalogue),
+            },
+            mosques.radiusKm,
+          ),
+        )
+        .join("")
     : '<p class="research-note" data-testid="mosque-empty">Belum ada masjid yang cocok. Coba nama, alamat, atau wilayah lain.</p>';
   for (const link of $("mosque-list").querySelectorAll<HTMLAnchorElement>(
     "[data-mosque-listing]",
@@ -503,7 +616,7 @@ function renderMosques(research: ResearchData): void {
             $<HTMLInputElement>(id).value = "";
           for (const id of ["rental-budget-min", "rental-budget-max"])
             $<HTMLSelectElement>(id).value = "0";
-          renderRentals(research, "Semua");
+          renderRentals(research);
         } else if (link.dataset.listingKind === "sale") {
           for (const id of ["sale-budget-min", "sale-budget-max"])
             $<HTMLSelectElement>(id).value = "0";
@@ -514,16 +627,18 @@ function renderMosques(research: ResearchData): void {
     };
   }
   $("mosque-search").oninput = () => renderMosques(research);
-  $("mosque-area").onchange = () => renderMosques(research);
+  $("mosque-area").onchange = () =>
+    setCatalogueArea(value("mosque-area") || "Semua");
 }
 
 function renderLeads(research: ResearchData): void {
   const leads = research.leads;
   if (!leads?.leads.length) return;
-  $("belum-diverifikasi").hidden = false;
+  const items = leads.leads.filter(leadInCatalogue);
+  $("belum-diverifikasi").hidden = !items.length;
   $("leads-intro").textContent = `${leads.note} Sumber: ${leads.source}.`;
   const names = new Map(research.properties.map((p) => [p.id, p.name]));
-  $("lead-list").innerHTML = leads.leads
+  $("lead-list").innerHTML = items
     .map(
       (lead) =>
         `<article class="method-card lead-card" data-testid="lead-card" id="${esc(lead.id)}"><div class="method-top"><span class="source-kind">${esc(lead.area ?? "Jabodetabek")}</span><span class="verdict verdict-unverified">${lead.status === "unreached" ? "Belum terjangkau otomatis" : "Belum diverifikasi"}</span></div><h3>${esc(lead.name)}</h3><p>Petunjuk: ${esc(lead.claim)}</p>${lead.check ? `<p class="method-label">Hasil cek</p><p>${esc(lead.check)}</p>` : ""}${lead.related && names.has(lead.related) ? `<p><a href="#${esc(lead.related)}">Lihat proyek terverifikasi: ${esc(names.get(lead.related))} ↓</a></p>` : ""}<p class="method-sources">${lead.links.map((link) => `<a href="${esc(safeUrl(link.url))}" ${external}>${esc(link.label)} ↗</a>`).join("")}${contactLink(lead.contactUrl, "")}</p>${lead.links.some((link) => link.url.includes("instagram.com")) ? "<small>Buka tautan Instagram saat masuk ke akun Instagram untuk memeriksa sendiri.</small>" : ""}</article>`,
@@ -534,6 +649,11 @@ function renderLeads(research: ResearchData): void {
 function renderSaleAds(research: ResearchData): void {
   const sale = research.saleAds;
   if (!sale?.ads.length) return;
+  if (value("catalog-offer") !== "all") {
+    $("iklan-dijual").hidden = true;
+    $("sale-ad-list").replaceChildren();
+    return;
+  }
   $("iklan-dijual").hidden = false;
   $("sale-ads-intro").textContent =
     `${sale.note} Dicek ${checkedDate(sale.checkedAt)}.`;
@@ -542,8 +662,10 @@ function renderSaleAds(research: ResearchData): void {
     value("sale-budget-max"),
   );
   const list = sale.ads
-    .filter((ad) =>
-      withinBudget({ min: ad.price.amount, max: null }, low, high),
+    .filter(
+      (ad) =>
+        inArea(ad.area) &&
+        withinBudget({ min: ad.price.amount, max: null }, low, high),
     )
     .sort((a, b) => a.price.amount - b.price.amount);
   const size = (ad: ResearchSaleAd) =>
@@ -554,6 +676,7 @@ function renderSaleAds(research: ResearchData): void {
     ]
       .filter(Boolean)
       .join(" · ");
+  $("sale-ad-count").textContent = `${list.length} iklan dijual`;
   $("sale-ad-list").innerHTML = list.length
     ? list
         .map(
@@ -561,7 +684,7 @@ function renderSaleAds(research: ResearchData): void {
             `<article class="research-card card-${ad.category === "rumah" ? "house-sale" : "land"}" data-testid="sale-ad-card" id="${esc(ad.id)}"><div class="research-card-top"><span class="card-area"><i class="area-dot area-${esc(ad.area.toLowerCase())}"></i>${esc(ad.area)} <span>· ${esc(ad.locationText)}</span></span><span class="verdict verdict-${ad.verdict}">${ad.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span></div><span class="type-badge type-${ad.category === "rumah" ? "house-sale" : "land"}">${ad.category === "rumah" ? "Rumah dijual" : "Kavling dijual"}</span><h3>${esc(ad.title)}</h3><p class="research-meta">${ad.category === "kavling" ? "Kavling" : "Rumah"}${ad.projectOrCluster ? ` · ${esc(ad.projectOrCluster)}` : ""}${size(ad) ? ` · ${esc(size(ad))}` : ""}</p><div class="research-price"><strong>${esc(money(ad.price.amount))}</strong><span>${esc(ad.sourcePortal)}${ad.postedOrUpdated ? ` · terdaftar ${esc(checkedDate(ad.postedOrUpdated))}` : ""}</span></div><blockquote class="research-quote">“${esc(ad.price.quote)}” <a href="${esc(safeUrl(ad.price.url))}" ${external}>sumber harga ↗</a></blockquote>${ad.nearMosque ? `<p class="research-claim">Menurut iklan, dekat ${esc(ad.nearMosque.name)}: “${esc(ad.nearMosque.quote)}” <a href="${esc(safeUrl(ad.nearMosque.url))}" ${external}>↗</a></p>` : ""}${ad.evidence.length ? `<div class="research-plus"><strong>Poin keluarga muslim</strong><ul>${ad.evidence.map((e) => `<li>“${esc(e.quote)}” <a href="${esc(safeUrl(e.url))}" ${external}>↗</a></li>`).join("")}</ul></div>` : ""}${ad.note ? `<p class="research-note">${esc(ad.note)}</p>` : ""}<div class="research-actions"><a class="button" href="${esc(safeUrl(ad.listingUrl))}" ${external}>Buka iklan ↗</a></div><p class="research-checked">Dicek ${esc(checkedDate(ad.lastChecked))} · lokasi sampai tingkat kawasan; konfirmasi langsung lewat portal.</p></article>`,
         )
         .join("")
-    : '<p class="research-note" data-testid="sale-ad-empty">Belum ada iklan dalam budget ini.</p>';
+    : '<p class="research-note" data-testid="sale-ad-empty">Belum ada iklan yang cocok dengan daerah dan budget ini.</p>';
   for (const id of ["sale-budget-min", "sale-budget-max"])
     $(id).onchange = () => renderSaleAds(research);
 }
@@ -572,10 +695,14 @@ function rentalHighlights(rental: ResearchRental): string {
   return `<div class="research-plus" data-testid="rental-highlights"><strong>Tempat untuk ditelusuri</strong><ul>${highlights.map((item) => `<li><strong>${esc(item.name)}</strong> <span class="plus-kind">${esc(item.kind)}</span><small>${esc(item.description)} <a href="${esc(safeUrl(item.url))}" ${external}>sumber ↗</a></small><small>${esc(item.relation)} <a href="${esc(safeUrl(item.relationUrl))}" ${external}>sumber lokasi ↗</a></small></li>`).join("")}</ul></div>`;
 }
 
-function renderRentals(research: ResearchData, area = rentalArea): void {
+function renderRentals(research: ResearchData): void {
   const rentals = research.rentals;
   if (!rentals?.rentals.length) return;
-  rentalArea = area;
+  if (value("catalog-offer") === "developer") {
+    $("sewa").hidden = true;
+    $("rental-list").replaceChildren();
+    return;
+  }
   const [low, high] = budgetBounds(
     value("rental-budget-min"),
     value("rental-budget-max"),
@@ -583,6 +710,7 @@ function renderRentals(research: ResearchData, area = rentalArea): void {
   const query = value("rental-search").trim().toLocaleLowerCase("id-ID");
   const type = value("rental-type");
   $("sewa").hidden = false;
+  $("rental-type-control").hidden = value("catalog-offer") === "rental-house";
   $("rentals-intro").textContent =
     `${rentals.note} Dicek ${checkedDate(rentals.checkedAt)}.`;
   const areas = [
@@ -592,14 +720,15 @@ function renderRentals(research: ResearchData, area = rentalArea): void {
   $("rental-areas").innerHTML = areas
     .map(
       (a) =>
-        `<button class="chip ${a === area ? "selected" : ""}" data-rental-area="${esc(a)}" aria-pressed="${a === area}">${esc(a)}</button>`,
+        `<button class="chip ${a === selectedArea ? "selected" : ""}" data-rental-area="${esc(a)}" aria-pressed="${a === selectedArea}">${esc(a)}</button>`,
     )
     .join("");
   const list = rentals.rentals
     .filter(
       (r) =>
-        (area === "Semua" || r.area === area) &&
-        (!type || (type === "apartment") === (r.kind === "Apartemen")) &&
+        rentalInCatalogue(r) &&
+        (!type ||
+          (type === "house" ? isHouseRental(r) : r.kind === "Apartemen")) &&
         (!query ||
           [
             r.title,
@@ -617,6 +746,7 @@ function renderRentals(research: ResearchData, area = rentalArea): void {
         withinBudget({ min: monthlyRent(r), max: null }, low, high),
     )
     .sort((a, b) => monthlyRent(a) - monthlyRent(b));
+  $("rental-count").textContent = `${list.length} sewa`;
   $("rental-list").innerHTML = list
     .map(
       (r) =>
@@ -630,7 +760,7 @@ function renderRentals(research: ResearchData, area = rentalArea): void {
     "[data-rental-area]",
   ))
     button.onclick = () =>
-      renderRentals(research, button.dataset.rentalArea ?? "Semua");
+      setCatalogueArea(button.dataset.rentalArea ?? "Semua");
   for (const id of ["rental-budget-min", "rental-budget-max", "rental-type"])
     $(id).onchange = () => renderRentals(research);
   $("rental-search").oninput = () => renderRentals(research);
@@ -704,19 +834,15 @@ for (const id of [
 ])
   $(id).onchange = render;
 $("research-search").oninput = render;
+$("catalog-area").onchange = () => setCatalogueArea(value("catalog-area"));
+$("catalog-offer").onchange = () => {
+  $<HTMLSelectElement>("rental-type").value = "";
+  renderCatalogue();
+};
 for (const button of document.querySelectorAll<HTMLButtonElement>(
   "[data-area]",
 ))
-  button.onclick = () => {
-    selectedArea = button.dataset.area ?? "Semua";
-    for (const chip of document.querySelectorAll<HTMLButtonElement>(
-      "[data-area]",
-    )) {
-      chip.classList.toggle("selected", chip === button);
-      chip.setAttribute("aria-pressed", String(chip === button));
-    }
-    render();
-  };
+  button.onclick = () => setCatalogueArea(button.dataset.area ?? "Semua");
 $("account-button").onclick = async () => {
   if (getUser()) {
     await logout();
@@ -733,7 +859,7 @@ async function start(): Promise<void> {
     return;
   }
   renderStatic(data);
-  render();
+  renderCatalogue();
   highlight();
 }
 
