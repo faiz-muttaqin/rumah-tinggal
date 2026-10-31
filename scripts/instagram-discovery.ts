@@ -54,7 +54,8 @@ const STOP_CODES = new Map([
   [10, "izin aplikasi belum tersedia"],
   [200, "izin akses belum tersedia"],
 ]);
-const PRICE = /\b(?:Rp\.?|IDR)\s?[\d.,]+\s?(?:juta|jt|miliar|milyar|m)?\b/gi;
+const PRICE =
+  /\b(?:(?:Rp\.?|IDR)\s?\d+(?:[.,]\d+)*\s?(?:juta(?:an)?|jt(?:-?an)?|miliar(?:an)?|milyar(?:an)?|m)?|\d+(?:[.,]\d+)*\s?(?:juta(?:an)?|jt(?:-?an)?|miliar(?:an)?|milyar(?:an)?))\b/gi;
 const STATION =
   /\b(?:stasiun|st\.|krl|mrt|lrt)\s+[A-Z][\w-]*(?:\s+[A-Z][\w-]*)?/gi;
 const CONTACT =
@@ -126,7 +127,7 @@ export function toCandidate(
   media: GraphMedia,
   focus: Focus = "transit",
 ): Candidate | undefined {
-  const caption = media.caption ?? "";
+  const caption = redact(media.caption ?? "");
   const prices = [...caption.matchAll(PRICE)].map((match) => match[0].trim());
   const permalink = instagramPermalink(media.permalink);
   const familySignals = FAMILY_SIGNALS.filter(([, pattern]) =>

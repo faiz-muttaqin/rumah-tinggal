@@ -28,8 +28,10 @@ Keduanya masuk [petunjuk belum diverifikasi](../leads.json). Harga historisnya t
 
 ## Instagram dan pekerjaan berikutnya
 
-[Panduan koneksi](../../docs/instagram-research.md) dan [watchlist 9 akun](../instagram-watchlist.json) tersedia. Tautan akun diperiksa dari situs asal; isi Instagram dan tipe akun API belum diuji. Tidak ada konektor atau pengambilan berkala yang sudah aktif.
+[Lanjutan Bekasi BEKASI-01](../bekasi/README.md) memprioritaskan bukti keluarga muslim, kajian, dan pendidikan anak. Hasil lanjutannya memperbarui harga/status/catatan lima entri, memperkuat fasilitas Metland Cibitung, serta menemukan registrasi TK di Raudhatul Jannah. Harga Hisan lama Rp570 jutaan tidak dapat dibaca ulang dan diganti sumber Pinhome mulai Rp887 juta.
 
-Prioritas berikutnya: autentikasi resmi dengan akun profesional dan Facebook Page; satu permintaan Business Discovery untuk membuktikan izin; lalu periksa unggahan terbaru yang menyebut proyek di tiga wilayah ini. Untuk tiap kandidat, lengkapi stok dan harga terbaru, operasional fasilitas, jadwal kajian berulang, usia/jenjang pendidikan anak, dan biaya bila terpublikasi. Batas harga dan preferensi beli/sewa belum ditetapkan untuk putaran ini; penemuan proyek membeli dilanjutkan dari katalog yang ada.
+[Panduan koneksi](../../docs/instagram-research.md) dan [watchlist 9 akun](../instagram-watchlist.json) tersedia. Uji penyedia Bright Data sudah berhasil menghasilkan 79 unggahan dan satu error; 14 kandidat tersaring, lalu caption terkait Bekasi ditelaah lebih lanjut. Business Discovery resmi Meta belum diaktifkan. Belum ada pengambilan berkala.
+
+Prioritas berikutnya: konfirmasi harga/stok per tipe, jadwal kajian langsung pengelola, usia/jenjang pendidikan anak, dan biaya bila terpublikasi. Batas harga dan preferensi beli/sewa belum ditetapkan; riset membeli dilanjutkan dari katalog yang ada dengan fokus Bekasi.
 
 Validasi sumber putaran ini dilakukan proses utama dengan pengambilan halaman publik dan pencocokan kutipan. Tidak ada verifikator kedua yang dijalankan. Keberadaan klaim di situs pemasaran membuktikan isi sumber tersebut, bukan kondisi lapangan.

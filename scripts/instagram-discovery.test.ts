@@ -54,6 +54,24 @@ test("reads the highest usage from Graph rate limit headers", () => {
   assert.equal(usagePercent(new Headers({ "X-App-Usage": "{bad" })), 0);
 });
 
+test("keeps Indonesian price units and removes contacts before price extraction", () => {
+  const candidate = toCandidate(
+    "developer.contoh",
+    media(
+      "Rumah dekat masjid mulai Rp900 jutaan, pilihan 800 Jt-an atau 1,2 miliar. DP Rp 10.000.000. Referensi Rp 081234567890",
+    ),
+    "muslim-family",
+  );
+  assert.ok(candidate);
+  assert.deepEqual(candidate.prices, [
+    "Rp900 jutaan",
+    "800 Jt-an",
+    "1,2 miliar",
+    "Rp 10.000.000",
+  ]);
+  assert.doesNotMatch(JSON.stringify(candidate), /081234567890/);
+});
+
 test("stops before the rate limit and on throttling errors without retrying", async () => {
   const requested: string[] = [];
   const fetcher = (async (input: URL | RequestInfo, init?: RequestInit) => {

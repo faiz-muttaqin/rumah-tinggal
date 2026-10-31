@@ -350,7 +350,8 @@
    "Nama developer berasal dari sumber publik. Identitas pemasang iklan dan kepemilikan unit belum diverifikasi.",
    "Instagram berupa tautan akun/unggahan untuk dibuka manual; belum ada sinkronisasi Instagram atau pemindaian berkala otomatis.",
    "Stasiun mengacu pada snapshot geometri OSM aplikasi, termasuk geometri yang belum membuktikan layanan beroperasi. Cek operator sebelum merencanakan perjalanan.",
-   "Berita KabarBursa 31 Agustus 2026 melaporkan sebagian proyek LRT City (Adhi Commuter Properti) mangkrak tanpa menyebut menara mana; proyek LRT City lain yang terbit belum diperiksa ulang terhadap laporan ini."
+   "Berita KabarBursa 31 Agustus 2026 melaporkan sebagian proyek LRT City (Adhi Commuter Properti) mangkrak tanpa menyebut menara mana; proyek LRT City lain yang terbit belum diperiksa ulang terhadap laporan ini.",
+   "Riset Bekasi 31 Oktober 2026: fokus bukti kajian/TPQ/sekolah; harga Hisan lama tidak terbaca ulang; potensi alias Hisan–entri TAAT Mustika Jaya belum terkonfirmasi. Lihat research/bekasi/README.md."
   ],
   "excluded": [
    {
@@ -3243,7 +3244,7 @@
   "islamic": {
    "checkedAt": "2026-10-31",
    "radiusKm": 1.5,
-   "method": "Inventaris masjid dan sekolah dari OpenStreetMap dalam 1,5 km, lalu bukti kajian rutin dan pendidikan Islam anak dari halaman yang dibuka langsung; setiap fasilitas diperiksa ulang pemeriksa terpisah. Jarak garis lurus.",
+   "method": "Inventaris OSM dan registri Kemendikdasmen dalam 1,5 km, lalu bukti kajian serta pendidikan dari sumber publik. Batch awal memakai pemeriksa terpisah; pembaruan Bekasi 31 Oktober 2026 diperiksa proses utama. Jarak garis lurus.",
    "caveats": [
     "Jadwal kajian dan biaya dapat berubah; konfirmasi ke pengurus masjid atau sekolah.",
     "Daftar tidak lengkap: masjid atau sekolah tanpa bukti daring yang dapat dibuka tidak tercantum.",
@@ -12724,8 +12725,8 @@
     "region": null,
     "area": "Bekasi",
     "status": "dipasarkan",
-    "statusQuote": "Status Konstruksi: Dalam Pembangunan | Sisa 19 Unit",
-    "statusUrl": "https://www.pinhome.id/dijual/rumah-baru/grand-al-ihsan-premiere-1",
+    "statusQuote": "Sudah banyak yang menghuni karena 90% sold out, keamanan sudah aktif dan masjid sudah beroperasional dengan kajian rutin",
+    "statusUrl": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikasari-1",
     "price": {
      "min": 935000000,
      "max": 1445000000,
@@ -12737,28 +12738,28 @@
     },
     "units": [
      {
-      "label": "Tabebuya (TAAT, 1 unit tersisa)",
+      "label": "Tabebuya (TAAT; stok tercantum 1, belum dikonfirmasi)",
       "bedrooms": 3,
       "landArea": 90.0,
       "buildingArea": 60.0,
       "price": 1445000000
      },
      {
-      "label": "The Spring (TAAT, 1 unit tersisa)",
+      "label": "The Spring (TAAT; stok tercantum 1, belum dikonfirmasi)",
       "bedrooms": 3,
       "landArea": 72.0,
       "buildingArea": 52.0,
       "price": 1235000000
      },
      {
-      "label": "Summer Breeze (TAAT, 1 unit tersisa)",
+      "label": "Summer Breeze (TAAT; stok tercantum 1, belum dikonfirmasi)",
       "bedrooms": 3,
       "landArea": 60.0,
       "buildingArea": 53.0,
       "price": 1050000000
      },
      {
-      "label": "Sakura (TAAT, 1 unit tersisa)",
+      "label": "Sakura (TAAT; stok tercantum 1, belum dikonfirmasi)",
       "bedrooms": 2,
       "landArea": 54.0,
       "buildingArea": 42.0,
@@ -12791,28 +12792,28 @@
      "education": [],
      "claims": [
       {
-       "kind": "mosque-in-estate",
-       "quote": "Fasilitas - fasilitas unggulan yang ada area perumahan Grand Al Ihsan Premiere yakni : Masjid Jami’ Al Ihsan, Rumah Tahfizh, Klinik Thibbun Nabawi",
-       "url": "https://www.rumah123.com/perumahan-baru/properti/bekasi/grand-al-ihsan-premiere/nps2425/",
-       "pageDate": "2026-06-11"
-      },
-      {
        "kind": "kajian",
        "quote": "masjid sudah beroperasional dengan kajian rutin",
        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikasari-1",
        "pageDate": "2026-09-30"
       },
       {
-       "kind": "tpq-or-school-in-estate",
-       "quote": "Nikmati Fasilitas Islami Exclusive Perumahan : ✅ Masjid Jami' Al Ihsan ✅ Rumah Tahfizh",
-       "url": "https://www.pinhome.id/dijual/rumah-baru/grand-al-ihsan-premiere-1",
-       "pageDate": null
+       "kind": "mosque-in-estate",
+       "quote": "masjid sudah beroperasional",
+       "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikasari-1",
+       "pageDate": "2026-09-30"
       },
       {
-       "kind": "syariah-concept",
-       "quote": "Grand Al Ihsan Premiere perumahan Islami Terbesar di Kota Bekasi",
-       "url": "https://www.pinhome.id/dijual/rumah-baru/grand-al-ihsan-premiere-1",
-       "pageDate": null
+       "kind": "tpq-or-school-in-estate",
+       "quote": "Rumah Tahfidz",
+       "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikasari-1",
+       "pageDate": "2026-09-30"
+      },
+      {
+       "kind": "islamic-school-nearby",
+       "quote": "TKIT SDIT SMPIT Al Hilal Rawa Lumbu - 2 KM",
+       "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikasari-1",
+       "pageDate": "2026-09-30"
       }
      ]
     },
@@ -12885,7 +12886,7 @@
        "status",
        "unit"
       ],
-      "note": "TAAT menyamarkan nama proyek; cocok lewat developer, alamat Jl. Barin Raya No.130 dan nama tipe (Tabebuya, The Spring, Summer Breeze, Sakura). FAQ: 90% terjual, masjid beroperasi dengan kajian rutin."
+      "note": "Dibuka ulang 31 Oktober 2026, pembaruan 30 September. FAQ menyebut masjid aktif dengan kajian rutin; rumah tahfidz tercantum. Jadwal, usia penerimaan dan biaya belum tersedia. Pinhome berbeda rentang/stok; konfirmasi per tipe."
      }
     ],
     "lastChecked": "2026-10-31",
@@ -14745,42 +14746,21 @@
     "statusQuote": "Sisa 14 Unit",
     "statusUrl": "https://www.pinhome.id/dijual/rumah-baru/hisan-madinah-village",
     "price": {
-     "min": 570000000,
+     "min": 887000000,
      "max": null,
-     "basis": "harga terendah per tipe (Tipe 52, 1 lantai plus mezzanine) di situs proyek, ditulis 570 jutaan",
-     "quote": "Tipe 52 (1lt + Mezzanine) Rp 570jt-an",
-     "url": "https://hisanmadinahvillage.com/",
+     "basis": "Harga mulai Tipe 60 Pinhome; Rp570jt lama tidak terbaca ulang di situs proyek pada 31 Oktober 2026.",
+     "quote": "Rp 887 Juta - Rp 1,1 Miliar",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/hisan-madinah-village",
      "pageDate": null,
      "currency": "IDR"
     },
     "units": [
      {
-      "label": "Tipe 52 (1lt + Mezzanine), landing page 'Rp 570jt-an'",
+      "label": "Tipe 60 (Pinhome: 2 lantai, LT/LB 60–70 m²; stok 14 belum dikonfirmasi)",
       "bedrooms": 2,
       "landArea": null,
       "buildingArea": null,
-      "price": 570000000
-     },
-     {
-      "label": "Tipe 60 (2lt), landing page 'Rp 889jt - 1 M-an'",
-      "bedrooms": 3,
-      "landArea": null,
-      "buildingArea": null,
-      "price": 889000000
-     },
-     {
-      "label": "Tipe 60 (Pinhome, LT/LB 60-70 m2, stok 14)",
-      "bedrooms": 2,
-      "landArea": 60,
-      "buildingArea": 60,
       "price": 887000000
-     },
-     {
-      "label": "Tipe 70 (2lt), landing page SOLD OUT",
-      "bedrooms": null,
-      "landArea": null,
-      "buildingArea": null,
-      "price": null
      }
     ],
     "transitClaim": {
@@ -14810,13 +14790,13 @@
      "claims": [
       {
        "kind": "tpq-or-school-in-estate",
-       "quote": "✅ Fasilitas Musholla, TPQ, Bebas Banjir",
+       "quote": "Fasilitas TPQ Anak",
        "url": "https://hisanmadinahvillage.com/",
        "pageDate": null
       },
       {
        "kind": "musholla-in-estate",
-       "quote": "Untuk itu kami bangun dan siapkan Musholla Al-Madinah dalam cluster, serta menjalankan program TPQ Anak",
+       "quote": "Fasilitas Musholla, TPQ",
        "url": "https://hisanmadinahvillage.com/",
        "pageDate": null
       },
@@ -14828,7 +14808,7 @@
       }
      ]
     },
-    "verdict": "confirmed",
+    "verdict": "partial",
     "sources": [
      {
       "url": "https://hisanmadinahvillage.com/",
@@ -14836,12 +14816,8 @@
       "title": "Home (hisanmadinahvillage.com)",
       "fetched": true,
       "pageDate": null,
-      "supports": [
-       "harga",
-       "status",
-       "unit"
-      ],
-      "note": "Project-named landing page on a site builder, written in the builder's voice ('kami bangun'), but no company name is stated, so operator ownership is not proven. No date, no address, no map. Shows per-type prices, Tipe 70 SOLD OUT, 'DAPATKAN UNIT SEBELUM KEHABISAN !'."
+      "supports": [],
+      "note": "Dibuka ulang HTTP dan browser 31 Oktober 2026: hanya judul, klaim TPQ/musholla dan cicilan 7–8jt terbaca; harga rumah Rp570jt dari cek sebelumnya tidak muncul. Tidak dijadikan harga terkini."
      },
      {
       "url": "https://www.pinhome.id/dijual/rumah-baru/hisan-madinah-village",
@@ -14856,10 +14832,10 @@
        "transit",
        "unit"
       ],
-      "note": "Listing createdAt 2025-01-21, developer group PT. Hisan Sinergi Utama, for_sale_by_developer, status active, 14 units in stock, under construction, SHM. Coordinate -6.2948976,107.0273695 is shared with Grand Al-Ihsan Premiere and Berkah Cimuning Residence (different addresses), so it was rejected."
+      "note": "Dibuka ulang 31 Oktober 2026: Tipe60 Rp887jt–1,1M, 14unit, 2lantai/2KT. Titik portal pernah ditolak karena dipakai bersama proyek lain. Alamat Asem Jaya III mungkin sama dengan entri TAAT Mumtaz; identitas belum terkonfirmasi."
      }
     ],
-    "lastChecked": "2026-10-30",
+    "lastChecked": "2026-10-31",
     "corridor": "sweep-syariah-meta",
     "methods": [
      "portal-proyek-baru",
@@ -18119,7 +18095,7 @@
           "amount": 350000,
           "currency": "IDR",
           "period": "one-time",
-          "academicYear": "2027/2028",
+          "academicYear": null,
           "quote": "Membayar uang pendaftaran Rp. 350.000,-",
           "url": "https://spmb-cibitung.alazhar-bsd.sch.id/beranda/persyaratan_sd",
           "pageDate": null
@@ -18129,7 +18105,7 @@
           "amount": 350000,
           "currency": "IDR",
           "period": "one-time",
-          "academicYear": "2027/2028",
+          "academicYear": null,
           "quote": "Membayar uang pendaftaran Rp. 350.000,-",
           "url": "https://spmb-cibitung.alazhar-bsd.sch.id/beranda/persyaratan_smp",
           "pageDate": null
@@ -18177,15 +18153,27 @@
      ],
      "claims": [
       {
+       "kind": "mosque-in-estate",
+       "quote": "Masjid Az-Zumar berdiri di lingkungan perumahan Metland Cibitung",
+       "url": "https://az-zumar.id/",
+       "pageDate": null
+      },
+      {
+       "kind": "kajian",
+       "quote": "Kajian Bapak-Bapak",
+       "url": "https://az-zumar.id/jadwal/",
+       "pageDate": null
+      },
+      {
        "kind": "tpq-or-school-in-estate",
-       "quote": "Sekolah Al Azhar BSD Metland Cibitung",
-       "url": "https://metlandcibitung.co.id/",
+       "quote": "telah membuka jenjang Sekolah Dasar (SD) dan Sekolah Menengah Pertama (SMP)",
+       "url": "https://cibitung.alazhar-bsd.sch.id/hello-world/",
        "pageDate": null
       },
       {
        "kind": "other",
-       "quote": "Fasilitas Ibadah",
-       "url": "https://metlandcibitung.co.id/",
+       "quote": "Taman Pendidikan Al-Qur’an (TPQ)",
+       "url": "https://az-zumar.id/",
        "pageDate": null
       }
      ]
@@ -22595,35 +22583,28 @@
     },
     "units": [
      {
-      "label": "Ayubi (TAAT, 3 unit tersisa)",
+      "label": "Ayubi 1 Lantai (TAAT; stok tercantum 3, belum dikonfirmasi)",
       "bedrooms": 2,
       "landArea": 75.0,
       "buildingArea": 40.0,
       "price": 797513000
      },
      {
-      "label": "Ayubi (TAAT, 8 unit tersisa)",
+      "label": "Ayubi 2 Lantai (TAAT; stok tercantum 8, belum dikonfirmasi)",
       "bedrooms": 3,
       "landArea": 75.0,
       "buildingArea": 70.0,
       "price": 981200556
      },
      {
-      "label": "Ayubi Lite (TAAT, 4 unit tersisa)",
+      "label": "Ayubi Lite 1 Lantai (TAAT; stok tercantum 4, belum dikonfirmasi)",
       "bedrooms": 2,
       "landArea": 56.0,
       "buildingArea": 36.0,
       "price": 721111111
      },
      {
-      "label": "Ayubi Lite (TAAT, 8 unit tersisa)",
-      "bedrooms": 3,
-      "landArea": 65.0,
-      "buildingArea": 50.0,
-      "price": 865555555
-     },
-     {
-      "label": "Al Fatih (TAAT, 1 unit tersisa)",
+      "label": "Al Fatih Standar (TAAT; stok tercantum 1, belum dikonfirmasi)",
       "bedrooms": 3,
       "landArea": 98.0,
       "buildingArea": 72.0,
@@ -22669,6 +22650,24 @@
     "islamic": {
      "kajian": [],
      "education": [
+      {
+       "id": "gov-npsn-74203770",
+       "name": "TK Shalahuddin Al Ayyubi Islamic School (Raudhatul Jannah Residence)",
+       "kind": "ra-tk-islam",
+       "km": 0.33,
+       "evidence": "strong",
+       "lat": -6.174944,
+       "lng": 107.040279,
+       "social": [],
+       "education": {
+        "levels": [
+         "TK"
+        ],
+        "program": "TK/PAUD terdaftar di Raudhatul Jannah Residence; izin operasional 27 Juli 2026. Biaya dan jadwal belum terkonfirmasi.",
+        "fees": [],
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/74203770"
+       }
+      },
       {
        "id": "web-mis-at-taqwa-15-kebalen-babelan",
        "name": "MIS At-Taqwa 15 (Kebalen, Babelan)",
@@ -22726,32 +22725,32 @@
      ],
      "claims": [
       {
-       "kind": "mosque-in-estate",
-       "quote": "Setiap proyek memiliki masjid yang bukan hanya tempat ibadah, tetapi pusat aktivitas keislaman.",
-       "url": "https://berkahlandgroup.com/",
+       "kind": "tpq-or-school-in-estate",
+       "quote": "TK SHALAHUDDIN AL AYYUBI ISLAMIC SCHOOL",
+       "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/74203770",
        "pageDate": null
       },
       {
-       "kind": "tpq-or-school-in-estate",
-       "quote": "Rumah Tahfidz",
+       "kind": "mosque-in-estate",
+       "quote": "Masjid & Mushalla",
        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-babelan--6",
        "pageDate": "2026-07-30"
       },
       {
-       "kind": "musholla-in-estate",
-       "quote": "Ruangan Serbaguna Arena Bermain Musholla",
-       "url": "https://www.pinhome.id/dijual/rumah-baru/raudhatul-jannah-residence",
+       "kind": "syariah-concept",
+       "quote": "Wujudkan Hunian Dengan Ekosistem Islami",
+       "url": "https://berkahlandgroup.com/",
        "pageDate": null
       },
       {
-       "kind": "syariah-concept",
-       "quote": "adalah developer perumahan yang berkonsep syariah bagian dari Berkah Land Group.",
-       "url": "https://berkahlandgroup.com/",
+       "kind": "other",
+       "quote": "program tahfidz, ekstrakurikuler Islami, dan kegiatan sosial.",
+       "url": "https://saaisc.com/",
        "pageDate": null
       }
      ]
     },
-    "verdict": "confirmed",
+    "verdict": "partial",
     "sources": [
      {
       "url": "https://www.rumah123.com/perumahan-baru/properti/bekasi/raudhatul-jannah-residence/nps8578/",
@@ -22788,7 +22787,7 @@
        "transit",
        "unit"
       ],
-      "note": "Rp 550 Juta - Rp 776,02 Juta, Siap Huni; posted 2020-10-21, probably outdated; developer group PT Berkah Bumi Sinergi; coordinate source"
+      "note": "Dibuka ulang 31 Oktober 2026: halaman ini bertanda Properti tidak tersedia. Harga lama Rp550–776,02jt tidak dipakai sebagai stok aktif. TAAT dan situs Berkah Land masih memasarkan; bukan bukti seluruh proyek habis."
      },
      {
       "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-babelan--6",
@@ -22801,7 +22800,7 @@
        "status",
        "unit"
       ],
-      "note": "TAAT menyamarkan nama proyek; cocok lewat developer, Kel. Kebalen, dan tipe Ayubi serta Ayubi Lite."
+      "note": "Dibuka ulang 31 Oktober 2026: deskripsi sekolah aktif tetapi FAQ masih menyebut pembangunan SD. Registri mengonfirmasi TK di RJR, bukan status SD. Promo pilihan gratis SPP 6 tahun bersyarat; biaya lain belum jelas. Pinhome ini tidak tersedia; TAAT/developer masih memasarkan."
      },
      {
       "url": "https://sites.google.com/view/rumahsyariahkebalenbekasi/home",
@@ -22811,9 +22810,29 @@
       "pageDate": null,
       "supports": [],
       "note": "Situs pemasaran yang disebut daftar Meta AI; fasilitas tertulis Area Berkuda, Area Memanah, Masjid, Rumah Tahfidz, Mini Market, One Gate System. Kalimat kajian sunnah rutin tidak ada di halaman. Memuat kontak pemasar (tidak disimpan)."
+     },
+     {
+      "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/74203770",
+      "kind": "government",
+      "title": "TK Shalahuddin Al Ayyubi Islamic School — Kemendikdasmen",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "lokasi"
+      ],
+      "note": "Dibaca melalui web 31 Oktober 2026. NPSN74203770; alamat Perumahan Raudhatul Jannah Residence Kebalen; TK/PAUD, izin operasional 27 Juli 2026. Registrasi ini tidak membuktikan izin SD/SMP."
+     },
+     {
+      "url": "https://saaisc.com/",
+      "kind": "other",
+      "title": "Shalahuddin Al Ayyubi Islamic School — situs sekolah",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [],
+      "note": "Dirender browser 31 Oktober 2026. Halaman SPMB2026/2027 menyebut kindergarten/SD/SMP serta program tahfidz. Halaman masih memuat bagian under construction; biaya dan status formal per jenjang perlu konfirmasi."
      }
     ],
-    "lastChecked": "2026-10-30",
+    "lastChecked": "2026-10-31",
     "corridor": "sweep-syariah-meta",
     "methods": [
      "portal-proyek-baru",
@@ -25798,7 +25817,7 @@
     "price": {
      "min": 840000000,
      "max": 1095000000,
-     "basis": "rentang harga TAAT (developer PT Nuraira Properti Indonesia), diperbarui 30 Juli 2026",
+     "basis": "Daftar TAAT 30 Juli; Haramain 1 lantai Rp840jt, New Nabawi 2 lantai Rp955jt. Stok berbeda dari Pinhome.",
      "quote": "Rp 840 Jt - 1,095 M",
      "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-perwira-8",
      "pageDate": "2026-07-30",
@@ -25806,28 +25825,28 @@
     },
     "units": [
      {
-      "label": "Nabawi (TAAT, 4 unit tersisa)",
+      "label": "Nabawi (TAAT; stok tercantum 4, belum dikonfirmasi)",
       "bedrooms": 3,
       "landArea": 55.0,
       "buildingArea": 62.0,
       "price": 1045000000
      },
      {
-      "label": "New Nabawi (TAAT, 5 unit tersisa)",
+      "label": "New Nabawi Standar (TAAT; stok tercantum 5, belum dikonfirmasi)",
       "bedrooms": 3,
       "landArea": 55.0,
       "buildingArea": 50.0,
       "price": 955000000
      },
      {
-      "label": "Quba (TAAT, 4 unit tersisa)",
+      "label": "Quba (TAAT; stok tercantum 4, belum dikonfirmasi)",
       "bedrooms": 3,
       "landArea": 60.0,
       "buildingArea": 64.0,
       "price": 1095000000
      },
      {
-      "label": "Haramain (TAAT, 2 unit tersisa)",
+      "label": "Haramain (TAAT; stok tercantum 2, belum dikonfirmasi)",
       "bedrooms": 2,
       "landArea": 55.0,
       "buildingArea": 34.0,
@@ -25957,7 +25976,7 @@
       }
      ]
     },
-    "verdict": "confirmed",
+    "verdict": "partial",
     "sources": [
      {
       "url": "https://selasarmadinabekasi.com/",
@@ -25995,7 +26014,7 @@
        "transit",
        "unit"
       ],
-      "note": "Listing createdAt 2025-12-24, developer group Maxirecon, status active, 45 active units (Tipe Nabawi), under construction; Tipe Quba and Haramain stock 0."
+      "note": "Dibuka ulang 31 Oktober 2026: Nabawi Rp987,5jt–1,27M; Haramain dan Quba ditandai HABIS TERJUAL. Deskripsi menyebut pengembang lain (TAMR REALTY), sehingga identitas tipe, harga dan stok perlu konfirmasi."
      },
      {
       "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-perwira-8",
@@ -26008,10 +26027,10 @@
        "status",
        "unit"
       ],
-      "note": "TAAT menyamarkan nama proyek; cocok lewat developer, Kel. Perwira, dan nama tipe (Nabawi, New Nabawi, Quba, Haramain). Rencana 30 unit di lahan 3.400 m2; Pinhome sebelumnya Rp 987,5 Juta - Rp 1,27 Miliar."
+      "note": "Dibuka ulang 31 Oktober 2026: daftar TAAT masih 30 Juli. Haramain 1 lantai Rp840jt, New Nabawi 2 lantai Rp955jt. Pinhome menandai Haramain habis; rentang, stok dan tahap pembangunan perlu konfirmasi per tipe."
      }
     ],
-    "lastChecked": "2026-10-30",
+    "lastChecked": "2026-10-31",
     "corridor": "sweep-syariah-meta",
     "methods": [
      "portal-proyek-baru",
@@ -27781,11 +27800,11 @@
     "developer": "Mumtaz Property (menurut TAAT)",
     "kind": "Rumah",
     "subsidized": false,
-    "locationText": "Kel. Mustika Jaya, Kec. Mustikajaya, Kota Bekasi (TAAT; alamat jalan tidak ditampilkan)",
+    "locationText": "Jl. Raya Asem Jaya III, RT.003/RW.05, Kel. Mustika Jaya, Kec. Mustikajaya, Kota Bekasi (TAAT; kemungkinan alias Hisan belum terkonfirmasi)",
     "region": null,
     "area": "Bekasi",
-    "status": "dipasarkan",
-    "statusQuote": "1 Unit Tersisa",
+    "status": "inden",
+    "statusQuote": "untuk unit ready belum tersedia, indent sekitar 8 bulan",
     "statusUrl": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikajaya-13",
     "price": {
      "min": 847600000,
@@ -27798,21 +27817,21 @@
     },
     "units": [
      {
-      "label": "Skandinavia (TAAT, 1 unit tersisa)",
+      "label": "Skandinavia Standar (TAAT; stok tercantum 1, belum dikonfirmasi)",
       "bedrooms": 2,
       "landArea": 70.0,
       "buildingArea": 65.0,
       "price": 847600000
      },
      {
-      "label": "Skandinavia (TAAT, 1 unit tersisa)",
+      "label": "Skandinavia 3 Kamar (TAAT; stok tercantum 1, belum dikonfirmasi)",
       "bedrooms": 3,
       "landArea": 70.0,
       "buildingArea": 60.0,
       "price": 897600000
      },
      {
-      "label": "Skandinavia (TAAT, 1 unit tersisa)",
+      "label": "Skandinavia HOOK (TAAT; stok tercantum 1, belum dikonfirmasi)",
       "bedrooms": 2,
       "landArea": 104.0,
       "buildingArea": 65.0,
@@ -27860,10 +27879,10 @@
        "status",
        "unit"
       ],
-      "note": "Nama proyek disamarkan TAAT dan titik tidak ditampilkan. Dalam pembangunan; FAQ: 60% terjual, masjid beroperasi dengan kegiatan TPQ khusus warga."
+      "note": "Dibuka ulang 31 Oktober 2026: FAQ menyebut TPQ khusus warga, unit ready belum tersedia dan inden sekitar 8 bulan. Alamat Asem Jaya III juga dipakai Hisan; kemungkinan alias belum terverifikasi, jangan dihitung sebagai alternatif independen."
      }
     ],
-    "lastChecked": "2026-10-30",
+    "lastChecked": "2026-10-31",
     "corridor": "sweep-syariah-meta",
     "methods": [
      "portal-proyek-baru"

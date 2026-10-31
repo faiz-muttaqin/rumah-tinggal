@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-10-31",
   "scope": ["Bogor", "Depok", "Bekasi"],
-  "note": "Tautan ditemukan ulang di situs organisasi; halaman Instagram dan jenis akun Business/Creator belum diuji. Ini target riset manual/API, bukan daftar akun yang sudah terkoneksi.",
+  "note": "Tautan berasal dari situs organisasi. apiStatus menyatakan jalur Meta Business Discovery yang belum diuji. Bright Data Scraper API sudah diuji terbatas; hasil tetap kandidat privat, tanpa jadwal otomatis.",
   "accounts": [
     {
       "name": "Ahsanu Amala Residence",
@@ -102,5 +102,14 @@
       "checkedAt": "2026-10-31",
       "apiStatus": "not-tested"
     }
-  ]
+  ],
+  "providerPilot": {
+    "provider": "brightdata",
+    "checkedAt": "2026-10-31",
+    "inputs": 9,
+    "successfulPosts": 79,
+    "errorRows": 1,
+    "candidates": 14,
+    "scheduleEnabled": false
+  }
 }

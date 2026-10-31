@@ -2,6 +2,8 @@
 
 Diperiksa **31 Oktober 2026 WIB**. Cakupan putaran ini: Kota/Kabupaten Bogor, Kota Depok, serta Kota/Kabupaten Bekasi. Belum mencakup seluruh Jawa Barat.
 
+Untuk pilihan tanpa langganan penyedia berbayar, lihat [uji gratis Bright Data/Apify](instagram-free-pilot.md). Pengguna mengonfirmasi 5.000 kredit; uji REST Bright Data menghasilkan 79 unggahan dan 1 error, dengan 14 kandidat tersaring untuk diperiksa. Impor ekspor JSON juga tersedia tanpa koneksi jaringan.
+
 ## Jalur koneksi yang sesuai
 
 Untuk membaca unggahan akun developer lain yang sudah diketahui namanya, gunakan **Instagram API with Facebook Login / Business Discovery**. Koleksi resmi [Meta di Postman](https://www.postman.com/meta/instagram/documentation/6yqw8pt/instagram-api?entity=request-23987686-1ff01566-3509-48bd-a0f4-8571a91ccfdf) menjelaskan akses metadata akun Business/Creator lain, akun profesional sendiri yang terhubung ke Facebook Page, dan ketidaktersediaan akses akun konsumen/pribadi.
@@ -62,4 +64,4 @@ Token dikirim lewat header, keluaran menghapus kontak, dan hasil ditulis dengan 
 - Harga di poster gambar, suara Reels, caption yang tidak tersedia, serta unggahan di luar halaman media pertama belum dianalisis. Hasil kosong bukan bukti tidak ada hunian atau kegiatan.
 - Sumber harga, alamat administratif, titik proyek, jadwal kajian, dan pendidikan anak diperiksa terpisah sebelum dimasukkan ke katalog. Hasil API tidak diterbitkan otomatis.
 
-Status akhir putaran ini: **dry-run dan pengujian offline tersedia; koneksi akun nyata belum aktif** karena kredensial belum ada. Tidak ada jadwal pengambilan berkala yang diaktifkan.
+Status terbaru: **akuisisi penyedia Bright Data berhasil diuji**, hasil tetap kandidat privat. Koneksi resmi Meta Business Discovery belum diaktifkan. Tidak ada jadwal pengambilan berkala yang diaktifkan.

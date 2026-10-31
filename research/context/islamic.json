@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-10-31",
   "radiusKm": 1.5,
-  "method": "Inventaris masjid dan sekolah dari OpenStreetMap dalam 1,5 km, lalu bukti kajian rutin dan pendidikan Islam anak dari halaman yang dibuka langsung; setiap fasilitas diperiksa ulang pemeriksa terpisah. Jarak garis lurus.",
+  "method": "Inventaris OSM dan registri Kemendikdasmen dalam 1,5 km, lalu bukti kajian serta pendidikan dari sumber publik. Batch awal memakai pemeriksa terpisah; pembaruan Bekasi 31 Oktober 2026 diperiksa proses utama. Jarak garis lurus.",
   "caveats": [
     "Jadwal kajian dan biaya dapat berubah; konfirmasi ke pengurus masjid atau sekolah.",
     "Daftar tidak lengkap: masjid atau sekolah tanpa bukti daring yang dapat dibuka tidak tercantum.",
@@ -826,7 +826,7 @@
             "quote": "Membayar uang pendaftaran Rp. 350.000,-",
             "url": "https://spmb-cibitung.alazhar-bsd.sch.id/beranda/persyaratan_sd",
             "pageDate": null,
-            "academicYear": "2027/2028"
+            "academicYear": null
           },
           {
             "label": "Uang pendaftaran SMP",
@@ -835,7 +835,7 @@
             "quote": "Membayar uang pendaftaran Rp. 350.000,-",
             "url": "https://spmb-cibitung.alazhar-bsd.sch.id/beranda/persyaratan_smp",
             "pageDate": null,
-            "academicYear": "2027/2028"
+            "academicYear": null
           }
         ]
       },
@@ -7315,6 +7315,24 @@
         "fees": []
       },
       "social": []
+    },
+    {
+      "id": "gov-npsn-74203770",
+      "name": "TK Shalahuddin Al Ayyubi Islamic School (Raudhatul Jannah Residence)",
+      "kind": "ra-tk-islam",
+      "lat": -6.174944,
+      "lng": 107.040279,
+      "coordinateSource": "Kemendikdasmen",
+      "coordinateUrl": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/74203770",
+      "evidence": "strong",
+      "kajian": [],
+      "education": {
+        "levels": ["TK"],
+        "program": "TK/PAUD terdaftar di Raudhatul Jannah Residence; izin operasional 27 Juli 2026. Biaya dan jadwal belum terkonfirmasi.",
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/74203770",
+        "fees": []
+      },
+      "social": []
     }
   ],
   "projectClaims": {
@@ -7511,6 +7529,30 @@
       }
     ],
     "prj-metland-cibitung": [
+      {
+        "kind": "mosque-in-estate",
+        "quote": "Masjid Az-Zumar berdiri di lingkungan perumahan Metland Cibitung",
+        "url": "https://az-zumar.id/",
+        "pageDate": null
+      },
+      {
+        "kind": "kajian",
+        "quote": "Kajian Bapak-Bapak",
+        "url": "https://az-zumar.id/jadwal/",
+        "pageDate": null
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "telah membuka jenjang Sekolah Dasar (SD) dan Sekolah Menengah Pertama (SMP)",
+        "url": "https://cibitung.alazhar-bsd.sch.id/hello-world/",
+        "pageDate": null
+      },
+      {
+        "kind": "other",
+        "quote": "Taman Pendidikan Al-Qur’an (TPQ)",
+        "url": "https://az-zumar.id/",
+        "pageDate": null
+      },
       {
         "kind": "tpq-or-school-in-estate",
         "quote": "Sekolah Al Azhar BSD Metland Cibitung",
@@ -7962,6 +8004,30 @@
     ],
     "prj-raudhatul-jannah-residence": [
       {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "TK SHALAHUDDIN AL AYYUBI ISLAMIC SCHOOL",
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/74203770",
+        "pageDate": null
+      },
+      {
+        "kind": "mosque-in-estate",
+        "quote": "Masjid & Mushalla",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-babelan--6",
+        "pageDate": "2026-07-30"
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Wujudkan Hunian Dengan Ekosistem Islami",
+        "url": "https://berkahlandgroup.com/",
+        "pageDate": null
+      },
+      {
+        "kind": "other",
+        "quote": "program tahfidz, ekstrakurikuler Islami, dan kegiatan sosial.",
+        "url": "https://saaisc.com/",
+        "pageDate": null
+      },
+      {
         "kind": "mosque-in-estate",
         "quote": "Setiap proyek memiliki masjid yang bukan hanya tempat ibadah, tetapi pusat aktivitas keislaman.",
         "url": "https://berkahlandgroup.com/",
@@ -8090,28 +8156,40 @@
     ],
     "prj-grand-al-ihsan-premiere": [
       {
-        "kind": "mosque-in-estate",
-        "quote": "Fasilitas - fasilitas unggulan yang ada area perumahan Grand Al Ihsan Premiere yakni : Masjid Jami’ Al Ihsan, Rumah Tahfizh, Klinik Thibbun Nabawi",
-        "url": "https://www.rumah123.com/perumahan-baru/properti/bekasi/grand-al-ihsan-premiere/nps2425/",
-        "pageDate": "2026-06-11"
-      },
-      {
         "kind": "kajian",
         "quote": "masjid sudah beroperasional dengan kajian rutin",
         "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikasari-1",
         "pageDate": "2026-09-30"
       },
       {
-        "kind": "tpq-or-school-in-estate",
-        "quote": "Nikmati Fasilitas Islami Exclusive Perumahan : ✅ Masjid Jami' Al Ihsan ✅ Rumah Tahfizh",
-        "url": "https://www.pinhome.id/dijual/rumah-baru/grand-al-ihsan-premiere-1",
-        "pageDate": null
+        "kind": "mosque-in-estate",
+        "quote": "masjid sudah beroperasional",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikasari-1",
+        "pageDate": "2026-09-30"
       },
       {
         "kind": "tpq-or-school-in-estate",
         "quote": "Rumah Tahfidz",
         "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikasari-1",
         "pageDate": "2026-09-30"
+      },
+      {
+        "kind": "islamic-school-nearby",
+        "quote": "TKIT SDIT SMPIT Al Hilal Rawa Lumbu - 2 KM",
+        "url": "https://taat.co.id/dijual/perumahan-syariah/perumahan-islami-mustikasari-1",
+        "pageDate": "2026-09-30"
+      },
+      {
+        "kind": "mosque-in-estate",
+        "quote": "Fasilitas - fasilitas unggulan yang ada area perumahan Grand Al Ihsan Premiere yakni : Masjid Jami’ Al Ihsan, Rumah Tahfizh, Klinik Thibbun Nabawi",
+        "url": "https://www.rumah123.com/perumahan-baru/properti/bekasi/grand-al-ihsan-premiere/nps2425/",
+        "pageDate": "2026-06-11"
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Nikmati Fasilitas Islami Exclusive Perumahan : ✅ Masjid Jami' Al Ihsan ✅ Rumah Tahfizh",
+        "url": "https://www.pinhome.id/dijual/rumah-baru/grand-al-ihsan-premiere-1",
+        "pageDate": null
       },
       {
         "kind": "syariah-concept",
@@ -8129,13 +8207,13 @@
     "prj-hisan-madinah-village": [
       {
         "kind": "tpq-or-school-in-estate",
-        "quote": "✅ Fasilitas Musholla, TPQ, Bebas Banjir",
+        "quote": "Fasilitas TPQ Anak",
         "url": "https://hisanmadinahvillage.com/",
         "pageDate": null
       },
       {
         "kind": "musholla-in-estate",
-        "quote": "Untuk itu kami bangun dan siapkan Musholla Al-Madinah dalam cluster, serta menjalankan program TPQ Anak",
+        "quote": "Fasilitas Musholla, TPQ",
         "url": "https://hisanmadinahvillage.com/",
         "pageDate": null
       },
