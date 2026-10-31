@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-30",
+  "checkedAt": "2026-10-31",
   "radiusKm": 1.5,
   "method": "Inventaris masjid dan sekolah dari OpenStreetMap dalam 1,5 km, lalu bukti kajian rutin dan pendidikan Islam anak dari halaman yang dibuka langsung; setiap fasilitas diperiksa ulang pemeriksa terpisah. Jarak garis lurus.",
   "caveats": [
@@ -7737,26 +7737,14 @@
       },
       {
         "kind": "kajian",
-        "quote": "Rumah dekat masjid, berkahnya banyak. Selain lebih disiplin sholat berjamaah, juga bisa ikut kajian dan kegiatan keagamaan lainnya.",
-        "url": "https://tasnimproperty.com/",
-        "pageDate": null
-      },
-      {
-        "kind": "kajian",
-        "quote": "Selain lebih disiplin sholat berjamaah, juga bisa ikut kajian dan kegiatan keagamaan lainnya.",
-        "url": "https://tasnimproperty.com/",
-        "pageDate": "2026-05-13"
-      },
-      {
-        "kind": "tpq-or-school-in-estate",
-        "quote": "Ada 3 Pesantren bertaraf international didalam kawasan perumahan",
-        "url": "https://tasnimproperty.com/",
+        "quote": "Tempat salat berjamaah, kajian rutin, dan aktivitas komunitas Islam",
+        "url": "https://tasnimproperty.id/artikel-proyek-tasnim-vintage/",
         "pageDate": null
       },
       {
         "kind": "tpq-or-school-in-estate",
-        "quote": "3 pondok pesantren setara SMP,SMA",
-        "url": "https://tasnimproperty.com/",
+        "quote": "Pesantren Lingkungan Islami yang mendukung pendidikan keluarga.",
+        "url": "https://tasnimproperty.id/",
         "pageDate": null
       },
       {
@@ -7787,7 +7775,7 @@
       },
       {
         "kind": "tpq-or-school-in-estate",
-        "quote": "Dilengkapi fasilitas yang akan dibangun seperti ; Masjid Jami', Rumah Tahfiz, serta Sekolah Dasar Islam Terpadu.",
+        "quote": "Sekolah Sunnah Rencana TKIT/SDIT — jarak berjalan kaki.",
         "url": "https://greenmadanicinangka.com/",
         "pageDate": null
       },
@@ -8292,6 +8280,58 @@
         "quote": "0 Km ke Masjid Jami' Sa'adatuddarain",
         "url": "https://taat.co.id/dijual/perumahan-syariah/exclusive-cluster-pejaten-12",
         "pageDate": "2026-07-30"
+      }
+    ],
+    "prj-ahsanu-amala-residence-depok": [
+      {
+        "kind": "mosque-in-estate",
+        "quote": "Masjid 2 Lantai",
+        "url": "https://ahsanuamalaproperty.com/ahsanu-amala-residence/",
+        "pageDate": null
+      },
+      {
+        "kind": "kajian",
+        "quote": "Kajian Tahsin Warga Kajian Bahasa Arab Kajian Tahfidz Warga Kajian Tematik Dhuha",
+        "url": "https://ahsanuamalaproperty.com/ahsanu-amala-residence/",
+        "pageDate": null
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Mengikuti program Tahsin/Tahfidz selama 5 tahun",
+        "url": "https://ahsanuamalaproperty.com/ahsanu-amala-residence/",
+        "pageDate": null
+      },
+      {
+        "kind": "islamic-school-nearby",
+        "quote": "550 m / 3 menit Rumah Tahfidz Zubair bin Awwam",
+        "url": "https://ahsanuamalaproperty.com/ahsanu-amala-residence/",
+        "pageDate": null
+      }
+    ],
+    "prj-ahsanu-residence-cinangka": [
+      {
+        "kind": "musholla-in-estate",
+        "quote": "Mushola eksklusif",
+        "url": "https://ahsanuamalaproperty.com/ahsanu-residence/",
+        "pageDate": null
+      },
+      {
+        "kind": "kajian",
+        "quote": "Tempat ibadah dan kajian rutin di dalam komplek, khusus untuk penghuni.",
+        "url": "https://ahsanuamalaproperty.com/ahsanu-residence/",
+        "pageDate": null
+      },
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Gratis kajian Islami Tahsin/Tahfidz dan Bahasa Arab selama 1 Tahun.",
+        "url": "https://ahsanuamalaproperty.com/ahsanu-residence/",
+        "pageDate": null
+      },
+      {
+        "kind": "islamic-school-nearby",
+        "quote": "400 m Anja Global Islamic School",
+        "url": "https://ahsanuamalaproperty.com/ahsanu-residence/",
+        "pageDate": null
       }
     ]
   }

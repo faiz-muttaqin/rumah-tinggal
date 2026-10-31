@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-10-30",
-  "source": "Tiga daftar perumahan islami hasil Meta AI yang ditempel pengguna pada 30 Oktober 2026",
-  "note": "Petunjuk ini belum diverifikasi dari sumber yang bisa dibuka otomatis. Akses otomatis ke Instagram dibatasi, jadi tautan disediakan agar pengguna yang masuk ke Instagram bisa memeriksa sendiri. Klaim di bawah adalah ringkasan isi daftar tersebut, bukan fakta yang sudah dicek. Akun penasihat atau marketing perorangan tidak dicantumkan karena berisi data pribadi.",
+  "checkedAt": "2026-10-31",
+  "source": "Daftar perumahan dari pengguna (30 Oktober 2026) dan riset web Jabar (31 Oktober 2026)",
+  "note": "Petunjuk ini belum cukup untuk menjadi listing aktif. Sumber dapat berasal dari daftar pengguna, hasil pencarian, atau halaman lama. Klaim diringkas dari masing-masing sumber; harga, stok, lokasi, dan kegiatan terkini tetap perlu diperiksa. Tautan Instagram belum dibuka otomatis. Akun penasihat atau marketing perorangan tidak dicantumkan.",
   "leads": [
     {
       "id": "lead-al-madina-premiere",
@@ -388,6 +388,36 @@
         }
       ],
       "check": "Tagar hanya bisa dibuka oleh pengguna yang masuk ke Instagram."
+    },
+    {
+      "id": "lead-islamic-green-park-gunung-sindur",
+      "name": "Islamic Green Park Gunung Sindur",
+      "type": "project",
+      "status": "unverified",
+      "area": "Bogor",
+      "claim": "Petunjuk kawasan Gunung Sindur dengan masjid, rumah Quran, sekolah Islam, dan program kajian keluarga. Hasil pencarian memuat harga yang saling berbeda; tidak dipakai sebagai harga aktif.",
+      "links": [
+        {
+          "label": "Halaman pemasar (harga lama, perlu konfirmasi)",
+          "url": "https://homesyariah.com/properti/perumahan-gunung-sindur-islamic-green-park-bogor/"
+        }
+      ],
+      "check": "Ditemukan lewat pencarian. robots.txt mengembalikan 403 saat cek langsung; halaman tidak diambil lewat jalur tersebut. Ketersediaan rumah baru dan operasional fasilitas belum terverifikasi."
+    },
+    {
+      "id": "lead-taman-rahmani-cibitung",
+      "name": "Taman Rahmani Cibitung (kavling)",
+      "type": "project",
+      "status": "unverified",
+      "area": "Bekasi",
+      "claim": "Halaman menyebut masjid berkajian, rumah tahfizh, serta akses ke TPIQ dan SDIT. Produk yang ditawarkan berupa kavling siap bangun, bukan rumah baru siap huni.",
+      "links": [
+        {
+          "label": "Taman Rahmani — halaman pemasaran lama",
+          "url": "https://davpropertysyariah.com/taman-rahmani/"
+        }
+      ],
+      "check": "Halaman dibuka 31 Oktober 2026; masih merujuk Januari 2020 dan harga kavling lama. Tidak ada bukti stok, harga, atau jadwal kajian terkini. Belum dimasukkan ke katalog rumah."
     }
   ]
 }

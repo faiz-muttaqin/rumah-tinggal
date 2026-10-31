@@ -2,7 +2,7 @@
  "type": "FeatureCollection",
  "metadata": {
   "title": "Riset proyek hunian dekat KRL, MRT, dan LRT",
-  "checkedAt": "2026-10-30",
+  "checkedAt": "2026-10-31",
   "timezone": "Asia/Jakarta",
   "currency": "IDR",
   "maxDistanceKm": 3,
@@ -1355,9 +1355,9 @@
    ]
   },
   "leads": {
-   "checkedAt": "2026-10-30",
-   "source": "Tiga daftar perumahan islami hasil Meta AI yang ditempel pengguna pada 30 Oktober 2026",
-   "note": "Petunjuk ini belum diverifikasi dari sumber yang bisa dibuka otomatis. Akses otomatis ke Instagram dibatasi, jadi tautan disediakan agar pengguna yang masuk ke Instagram bisa memeriksa sendiri. Klaim di bawah adalah ringkasan isi daftar tersebut, bukan fakta yang sudah dicek. Akun penasihat atau marketing perorangan tidak dicantumkan karena berisi data pribadi.",
+   "checkedAt": "2026-10-31",
+   "source": "Daftar perumahan dari pengguna (30 Oktober 2026) dan riset web Jabar (31 Oktober 2026)",
+   "note": "Petunjuk ini belum cukup untuk menjadi listing aktif. Sumber dapat berasal dari daftar pengguna, hasil pencarian, atau halaman lama. Klaim diringkas dari masing-masing sumber; harga, stok, lokasi, dan kegiatan terkini tetap perlu diperiksa. Tautan Instagram belum dibuka otomatis. Akun penasihat atau marketing perorangan tidak dicantumkan.",
    "leads": [
     {
      "id": "lead-al-madina-premiere",
@@ -1776,6 +1776,40 @@
       {
        "label": "#kprsyariah",
        "url": "https://www.instagram.com/explore/tags/kprsyariah/"
+      }
+     ]
+    },
+    {
+     "id": "lead-islamic-green-park-gunung-sindur",
+     "name": "Islamic Green Park Gunung Sindur",
+     "type": "project",
+     "status": "unverified",
+     "area": "Bogor",
+     "claim": "Petunjuk kawasan Gunung Sindur dengan masjid, rumah Quran, sekolah Islam, dan program kajian keluarga. Hasil pencarian memuat harga yang saling berbeda; tidak dipakai sebagai harga aktif.",
+     "check": "Ditemukan lewat pencarian. robots.txt mengembalikan 403 saat cek langsung; halaman tidak diambil lewat jalur tersebut. Ketersediaan rumah baru dan operasional fasilitas belum terverifikasi.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Halaman pemasar (harga lama, perlu konfirmasi)",
+       "url": "https://homesyariah.com/properti/perumahan-gunung-sindur-islamic-green-park-bogor/"
+      }
+     ]
+    },
+    {
+     "id": "lead-taman-rahmani-cibitung",
+     "name": "Taman Rahmani Cibitung (kavling)",
+     "type": "project",
+     "status": "unverified",
+     "area": "Bekasi",
+     "claim": "Halaman menyebut masjid berkajian, rumah tahfizh, serta akses ke TPIQ dan SDIT. Produk yang ditawarkan berupa kavling siap bangun, bukan rumah baru siap huni.",
+     "check": "Halaman dibuka 31 Oktober 2026; masih merujuk Januari 2020 dan harga kavling lama. Tidak ada bukti stok, harga, atau jadwal kajian terkini. Belum dimasukkan ke katalog rumah.",
+     "related": null,
+     "contactUrl": null,
+     "links": [
+      {
+       "label": "Taman Rahmani — halaman pemasaran lama",
+       "url": "https://davpropertysyariah.com/taman-rahmani/"
       }
      ]
     }
@@ -3207,7 +3241,7 @@
    ]
   },
   "islamic": {
-   "checkedAt": "2026-10-30",
+   "checkedAt": "2026-10-31",
    "radiusKm": 1.5,
    "method": "Inventaris masjid dan sekolah dari OpenStreetMap dalam 1,5 km, lalu bukti kajian rutin dan pendidikan Islam anak dari halaman yang dibuka langsung; setiap fasilitas diperiksa ulang pemeriksa terpisah. Jarak garis lurus.",
    "caveats": [
@@ -4328,6 +4362,227 @@
     "lastChecked": "2026-10-30",
     "corridor": "krl-bogor-outer",
     "methods": [
+     "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-ahsanu-amala-residence-depok",
+   "geometry": null,
+   "properties": {
+    "id": "prj-ahsanu-amala-residence-depok",
+    "name": "Ahsanu Amala Residence (Cinangka)",
+    "developer": "Ahsanu Amala Property",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Jl. H. Miing, Cinangka, Kec. Sawangan, Kota Depok (situs developer)",
+    "region": null,
+    "area": "Depok",
+    "status": "dipasarkan",
+    "statusQuote": "Inden Aflaha (A1 & A2)",
+    "statusUrl": "https://ahsanuamalaproperty.com/ahsanu-amala-residence/",
+    "price": {
+     "min": 755000000,
+     "max": 815000000,
+     "basis": "Harga promo pemasar tanpa tanggal; pricelist developer tidak dipublikasikan, perlu konfirmasi.",
+     "quote": "Rp. 755 Jt",
+     "url": "https://griyarumahsyariah.com/ahsanu-amala-residence/",
+     "pageDate": null,
+     "currency": "IDR"
+    },
+    "units": [],
+    "transitClaim": null,
+    "officialUrl": "https://ahsanuamalaproperty.com/ahsanu-amala-residence/",
+    "contactUrl": "https://ahsanuamalaproperty.com/ahsanu-amala-residence/",
+    "social": [
+     {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/ahsanuamalaproperti/",
+      "owner": "project",
+      "via": "official-site",
+      "seenAt": "https://ahsanuamalaproperty.com/ahsanu-amala-residence/"
+     }
+    ],
+    "coordinate": null,
+    "listingBasis": "islamic",
+    "nearestAny": null,
+    "nearest": [],
+    "nearestPlanned": [],
+    "population": null,
+    "islamic": {
+     "kajian": [],
+     "education": [],
+     "claims": [
+      {
+       "kind": "mosque-in-estate",
+       "quote": "Masjid 2 Lantai",
+       "url": "https://ahsanuamalaproperty.com/ahsanu-amala-residence/",
+       "pageDate": null
+      },
+      {
+       "kind": "kajian",
+       "quote": "Kajian Tahsin Warga Kajian Bahasa Arab Kajian Tahfidz Warga Kajian Tematik Dhuha",
+       "url": "https://ahsanuamalaproperty.com/ahsanu-amala-residence/",
+       "pageDate": null
+      },
+      {
+       "kind": "tpq-or-school-in-estate",
+       "quote": "Mengikuti program Tahsin/Tahfidz selama 5 tahun",
+       "url": "https://ahsanuamalaproperty.com/ahsanu-amala-residence/",
+       "pageDate": null
+      },
+      {
+       "kind": "islamic-school-nearby",
+       "quote": "550 m / 3 menit Rumah Tahfidz Zubair bin Awwam",
+       "url": "https://ahsanuamalaproperty.com/ahsanu-amala-residence/",
+       "pageDate": null
+      }
+     ]
+    },
+    "verdict": "partial",
+    "sources": [
+     {
+      "url": "https://ahsanuamalaproperty.com/ahsanu-amala-residence/",
+      "kind": "developer",
+      "title": "Ahsanu Amala Residence — situs developer",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Program tahsin/tahfidz dan bahasa Arab 5 tahun; developer meminta konfirmasi harga. Tipe pada pemasar berbeda; tidak diasumsikan stok yang sama."
+     },
+     {
+      "url": "https://griyarumahsyariah.com/ahsanu-amala-residence/",
+      "kind": "other",
+      "title": "Ahsanu Amala Residence — Griya Rumah Syariah",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "unit"
+      ],
+      "note": "Halaman pemasar tanpa tanggal harga: promo Rp 755 juta dan Rp 815 juta. Bukan konfirmasi harga atau stok developer saat ini; koordinat belum terverifikasi."
+     }
+    ],
+    "lastChecked": "2026-10-31",
+    "corridor": "jabar-muslim-family",
+    "methods": [
+     "situs-developer",
+     "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-ahsanu-residence-cinangka",
+   "geometry": null,
+   "properties": {
+    "id": "prj-ahsanu-residence-cinangka",
+    "name": "Ahsanu Residence (Jl. Abdul Wahab)",
+    "developer": "Ahsanu Amala Property",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Jl. Abdul Wahab, Cinangka, Kec. Sawangan, Kota Depok (situs developer)",
+    "region": null,
+    "area": "Depok",
+    "status": "dipasarkan",
+    "statusQuote": "Sisa unit terbatas.",
+    "statusUrl": "https://ahsanuamalaproperty.com/ahsanu-residence/",
+    "price": {
+     "min": 650000000,
+     "max": 1200000000,
+     "basis": "Rentang portal tanpa tanggal; tipe berbeda dari situs developer; harga dan stok perlu konfirmasi.",
+     "quote": "Rp. 650 Juta - 1.2 Milyar",
+     "url": "https://cariproperti.com/ahsanu-residence",
+     "pageDate": null,
+     "currency": "IDR"
+    },
+    "units": [],
+    "transitClaim": null,
+    "officialUrl": "https://ahsanuamalaproperty.com/ahsanu-residence/",
+    "contactUrl": "https://ahsanuamalaproperty.com/ahsanu-residence/",
+    "social": [
+     {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/ahsanuamala.id_/",
+      "owner": "project",
+      "via": "official-site",
+      "seenAt": "https://ahsanuamalaproperty.com/ahsanu-residence/"
+     }
+    ],
+    "coordinate": null,
+    "listingBasis": "islamic",
+    "nearestAny": null,
+    "nearest": [],
+    "nearestPlanned": [],
+    "population": null,
+    "islamic": {
+     "kajian": [],
+     "education": [],
+     "claims": [
+      {
+       "kind": "musholla-in-estate",
+       "quote": "Mushola eksklusif",
+       "url": "https://ahsanuamalaproperty.com/ahsanu-residence/",
+       "pageDate": null
+      },
+      {
+       "kind": "kajian",
+       "quote": "Tempat ibadah dan kajian rutin di dalam komplek, khusus untuk penghuni.",
+       "url": "https://ahsanuamalaproperty.com/ahsanu-residence/",
+       "pageDate": null
+      },
+      {
+       "kind": "tpq-or-school-in-estate",
+       "quote": "Gratis kajian Islami Tahsin/Tahfidz dan Bahasa Arab selama 1 Tahun.",
+       "url": "https://ahsanuamalaproperty.com/ahsanu-residence/",
+       "pageDate": null
+      },
+      {
+       "kind": "islamic-school-nearby",
+       "quote": "400 m Anja Global Islamic School",
+       "url": "https://ahsanuamalaproperty.com/ahsanu-residence/",
+       "pageDate": null
+      }
+     ]
+    },
+    "verdict": "partial",
+    "sources": [
+     {
+      "url": "https://ahsanuamalaproperty.com/ahsanu-residence/",
+      "kind": "developer",
+      "title": "Ahsanu Residence — situs developer",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Enam tipe ditampilkan tanpa harga; program tahsin/tahfidz dan bahasa Arab 1 tahun. Daftar tipe berbeda dengan portal, sehingga harga tidak dikaitkan ke stok terkini."
+     },
+     {
+      "url": "https://cariproperti.com/ahsanu-residence",
+      "kind": "portal",
+      "title": "Ahsanu Residence — Cari Properti",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Lima tipe portal memberi rentang Rp 650 juta–1,2 miliar tanpa tanggal; situs developer memberi enam tipe berbeda. Titik portal belum diverifikasi dan tidak digunakan."
+     }
+    ],
+    "lastChecked": "2026-10-31",
+    "corridor": "jabar-muslim-family",
+    "methods": [
+     "situs-developer",
      "portal-proyek-baru"
     ]
    }
@@ -12633,7 +12888,7 @@
       "note": "TAAT menyamarkan nama proyek; cocok lewat developer, alamat Jl. Barin Raya No.130 dan nama tipe (Tabebuya, The Spring, Summer Breeze, Sakura). FAQ: 90% terjual, masjid beroperasi dengan kajian rutin."
      }
     ],
-    "lastChecked": "2026-10-30",
+    "lastChecked": "2026-10-31",
     "corridor": "sweep-syariah-meta",
     "methods": [
      "portal-proyek-baru",
@@ -13689,7 +13944,7 @@
     "price": {
      "min": 600000000,
      "max": null,
-     "basis": "harga mulai 600 jutaan (tipe Aqsa) di situs resmi; DP 0% disebut",
+     "basis": "Situs menyebut mulai 600 jt, FAQ termurah 800 jt; konflik harga belum terselesaikan; promo September berakhir.",
      "quote": "Hunian Islami di Selatan Jakarta · DP 0%, Mulai 600 Jt-an",
      "url": "https://greenmadanicinangka.com/",
      "pageDate": "2026-09-25",
@@ -13838,7 +14093,7 @@
       },
       {
        "kind": "tpq-or-school-in-estate",
-       "quote": "Dilengkapi fasilitas yang akan dibangun seperti ; Masjid Jami', Rumah Tahfiz, serta Sekolah Dasar Islam Terpadu.",
+       "quote": "Sekolah Sunnah Rencana TKIT/SDIT — jarak berjalan kaki.",
        "url": "https://greenmadanicinangka.com/",
        "pageDate": null
       },
@@ -13850,7 +14105,7 @@
       }
      ]
     },
-    "verdict": "confirmed",
+    "verdict": "partial",
     "sources": [
      {
       "url": "https://greenmadanicinangka.com/",
@@ -13864,7 +14119,7 @@
        "lokasi",
        "unit"
       ],
-      "note": "Official project site; stock 'Update terakhir 25 September 2026'; developer not named on the site"
+      "note": "Konflik internal: kartu Aqsa mulai 600 jt, FAQ termurah 800 jt; promo berakhir 30 September 2026. TKIT/SDIT disebut rencana, bukan bukti sekolah sudah beroperasi."
      },
      {
       "url": "https://berkahlandgroup.com/",
@@ -13903,7 +14158,7 @@
       "note": "TAAT menyamarkan nama proyek; cocok lewat developer dan tipe (Aqsa, Quba). Rentang TAAT Rp 614 Jt - 869 Jt, diperbarui 30 Juli 2026; harga utama tetap dari situs resmi."
      }
     ],
-    "lastChecked": "2026-10-30",
+    "lastChecked": "2026-10-31",
     "corridor": "sweep-syariah-meta",
     "methods": [
      "portal-proyek-baru",
@@ -21564,14 +21819,14 @@
       },
       {
        "kind": "kajian",
-       "quote": "Rumah dekat masjid, berkahnya banyak. Selain lebih disiplin sholat berjamaah, juga bisa ikut kajian dan kegiatan keagamaan lainnya.",
-       "url": "https://tasnimproperty.com/",
+       "quote": "Tempat salat berjamaah, kajian rutin, dan aktivitas komunitas Islam",
+       "url": "https://tasnimproperty.id/artikel-proyek-tasnim-vintage/",
        "pageDate": null
       },
       {
        "kind": "tpq-or-school-in-estate",
-       "quote": "Ada 3 Pesantren bertaraf international didalam kawasan perumahan",
-       "url": "https://tasnimproperty.com/",
+       "quote": "Pesantren Lingkungan Islami yang mendukung pendidikan keluarga.",
+       "url": "https://tasnimproperty.id/",
        "pageDate": null
       },
       {
@@ -21636,9 +21891,20 @@
        "unit"
       ],
       "note": "Older 2025 Ramadhan prices (Hanok Rp. 330 Juta, Otsmani Rp. 320 Juta). Not used for the current price."
+     },
+     {
+      "url": "https://tasnimproperty.id/artikel-proyek-tasnim-vintage/",
+      "kind": "developer",
+      "title": "Tasnim Vintage — fasilitas dan kajian di situs developer",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "status"
+      ],
+      "note": "Klaim masjid kawasan dan kajian rutin, tanpa jadwal terkini atau biaya/jenjang pesantren. Harga tetap dari halaman pemasar; bukan konfirmasi ketersediaan."
      }
     ],
-    "lastChecked": "2026-10-30",
+    "lastChecked": "2026-10-31",
     "corridor": "sweep-syariah-meta",
     "methods": [
      "portal-proyek-baru",

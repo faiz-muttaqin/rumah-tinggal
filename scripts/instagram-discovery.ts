@@ -5,12 +5,16 @@
 // berhenti sebelum batas laju, dan hanya menulis kandidat untuk dicek manual.
 //
 // Pemakaian:
-//   IG_USER_ID=… IG_ACCESS_TOKEN=… node scripts/instagram-discovery.ts akun1 akun2
-// Opsional: IG_GRAPH_VERSION (bawaan v26.0), IG_MEDIA_LIMIT (bawaan 25),
-// IG_STOP_PERCENT (bawaan 75). Hasil: .runtime/instagram/discovery-<tanggal>.json
+//   node --env-file=.runtime/instagram/private.env scripts/instagram-discovery.ts akun1 akun2
+// Wajib: IG_GRAPH_VERSION sesuai versi yang tersedia di dasbor aplikasi Meta.
+// Opsional: IG_MEDIA_LIMIT (bawaan 25),
+// IG_STOP_PERCENT (bawaan 75). Hasil: .runtime/instagram/discovery-<waktu>.json
 
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
+import { parseArgs } from "node:util";
+
+export type Focus = "transit" | "muslim-family";
 
 export interface Candidate {
   account: string;
@@ -20,6 +24,8 @@ export interface Candidate {
   excerpt: string;
   prices: string[];
   stations: string[];
+  familySignals: string[];
+  areas: string[];
 }
 
 export interface DiscoveryResult {
@@ -45,6 +51,8 @@ const STOP_CODES = new Map([
   [613, "batas laju khusus"],
   [80002, "batas laju Instagram"],
   [190, "token tidak berlaku"],
+  [10, "izin aplikasi belum tersedia"],
+  [200, "izin akses belum tersedia"],
 ]);
 const PRICE = /\b(?:Rp\.?|IDR)\s?[\d.,]+\s?(?:juta|jt|miliar|milyar|m)?\b/gi;
 const STATION =
@@ -52,6 +60,34 @@ const STATION =
 const CONTACT =
   /(?:\+?62|\b0)8\d{2}[\s.-]?\d{3,4}[\s.-]?\d{3,5}|wa\.me\/\S+|[\w.+-]+@[\w-]+\.[\w.]+/gi;
 const KEYWORDS = /\b(?:stasiun|krl|mrt|lrt|commuter|tod)\b/i;
+const FAMILY_SIGNALS = [
+  ["masjid", /\b(?:masjid|mush?[oa]l{1,2}a|musala)\b/i],
+  ["kajian", /\b(?:kajian|pengajian|taklim|ta[’']?lim)\b/i],
+  [
+    "pendidikan-anak",
+    /\b(?:tpq|tpa|tahfi[dzs]+|tahfizh|tahsin|pesantren|kutt?ab|tkit|sdit|smpit|sekolah\s+(?:islam|sunnah)|rumah\s+qur[’']?an)\b/i,
+  ],
+  ["lingkungan-muslim", /\b(?:muslim|islami)\b/i],
+] as const;
+
+function instagramPermalink(value?: string): string | undefined {
+  if (!value) return undefined;
+  try {
+    const url = new URL(value);
+    if (
+      url.protocol !== "https:" ||
+      !["instagram.com", "www.instagram.com"].includes(url.hostname) ||
+      url.username ||
+      url.password ||
+      url.port ||
+      !/^\/(?:p|reel|tv)\/[A-Za-z0-9_-]+\/?$/.test(url.pathname)
+    )
+      return undefined;
+    return `${url.origin}${url.pathname}`;
+  } catch {
+    return undefined;
+  }
+}
 
 export function redact(text: string): string {
   return text.replace(CONTACT, "[kontak dihapus]");
@@ -88,14 +124,23 @@ export function usagePercent(headers: Headers): number {
 export function toCandidate(
   account: string,
   media: GraphMedia,
+  focus: Focus = "transit",
 ): Candidate | undefined {
   const caption = media.caption ?? "";
   const prices = [...caption.matchAll(PRICE)].map((match) => match[0].trim());
-  if (!media.permalink || !prices.length || !KEYWORDS.test(caption))
+  const permalink = instagramPermalink(media.permalink);
+  const familySignals = FAMILY_SIGNALS.filter(([, pattern]) =>
+    pattern.test(caption),
+  ).map(([name]) => name);
+  if (
+    !permalink ||
+    (focus === "transit" && (!prices.length || !KEYWORDS.test(caption))) ||
+    (focus === "muslim-family" && !familySignals.length)
+  )
     return undefined;
   return {
     account,
-    permalink: media.permalink,
+    permalink,
     timestamp: media.timestamp ?? "",
     mediaType: media.media_type ?? "",
     excerpt: redact(caption.replace(/\s+/g, " ").trim()).slice(0, 280),
@@ -103,6 +148,11 @@ export function toCandidate(
     stations: [
       ...new Set([...caption.matchAll(STATION)].map((m) => m[0].trim())),
     ],
+    familySignals,
+    // Hanya nama wilayah yang tertulis; bukan hasil geocoding atau bukti lokasi.
+    areas: ["Bogor", "Depok", "Bekasi"].filter((area) =>
+      new RegExp(`\\b${area}\\b`, "i").test(caption),
+    ),
   };
 }
 
@@ -110,19 +160,34 @@ export async function discover(options: {
   userId: string;
   token: string;
   usernames: string[];
-  version?: string;
+  version: string;
+  focus?: Focus;
   limit?: number;
   stopPercent?: number;
   fetcher?: typeof fetch;
 }): Promise<DiscoveryResult> {
   const fetcher = options.fetcher ?? fetch;
-  const version = options.version ?? "v26.0";
+  const version = options.version;
   const limit = options.limit ?? 25;
   const stopPercent = options.stopPercent ?? 75;
+  if (
+    !/^v\d+\.\d+$/.test(version) ||
+    !/^\d+$/.test(options.userId) ||
+    !Number.isInteger(limit) ||
+    limit < 1 ||
+    limit > 100 ||
+    !Number.isFinite(stopPercent) ||
+    stopPercent <= 0 ||
+    stopPercent > 100
+  )
+    throw new Error("Konfigurasi Graph API tidak valid; belum ada permintaan.");
   const result: DiscoveryResult = { candidates: [], accounts: [], requests: 0 };
-  for (const username of options.usernames) {
+  for (const username of new Set(options.usernames)) {
     if (!/^[A-Za-z0-9._]{1,30}$/.test(username)) {
-      result.accounts.push({ username, status: "nama akun tidak valid" });
+      result.accounts.push({
+        username: "[tidak valid]",
+        status: "nama akun tidak valid",
+      });
       continue;
     }
     const url = new URL(
@@ -132,10 +197,24 @@ export async function discover(options: {
       "fields",
       `business_discovery.username(${username}){username,media.limit(${limit}){caption,permalink,timestamp,media_type}}`,
     );
-    url.searchParams.set("access_token", options.token);
-    const response = await fetcher(url);
     result.requests += 1;
-    const body = (await response.json().catch(() => ({}))) as {
+    let response: Response;
+    try {
+      response = await fetcher(url, {
+        headers: { Authorization: `Bearer ${options.token}` },
+        signal: AbortSignal.timeout(20_000),
+        redirect: "error",
+      });
+    } catch {
+      // Jangan mencetak error transport yang mungkin memuat URL atau kredensial.
+      result.stopped = "koneksi API gagal atau waktu habis; tidak dicoba ulang";
+      break;
+    }
+    if (response.status === 429) {
+      result.stopped = "batas laju HTTP 429; tidak dicoba ulang";
+      break;
+    }
+    const body = ((await response.json().catch(() => ({}))) ?? {}) as {
       error?: { code?: number; message?: string };
       business_discovery?: { media?: { data?: GraphMedia[] } };
     };
@@ -145,15 +224,22 @@ export async function discover(options: {
       result.stopped = `${STOP_CODES.get(code)} (kode ${code})`;
       break;
     }
-    if (!response.ok || body.error) {
+    if (
+      !response.ok ||
+      body.error ||
+      !Array.isArray(body.business_discovery?.media?.data)
+    ) {
       result.accounts.push({
         username,
-        status: `dilewati (kode ${code ?? response.status})`,
+        status:
+          !response.ok || body.error
+            ? `dilewati (kode ${code ?? response.status})`
+            : "dilewati (data media tidak tersedia)",
       });
     } else {
       const media = body.business_discovery?.media?.data ?? [];
       const found = media.flatMap((item) => {
-        const candidate = toCandidate(username, item);
+        const candidate = toCandidate(username, item, options.focus);
         return candidate ? [candidate] : [];
       });
       result.candidates.push(...found);
@@ -172,12 +258,57 @@ export async function discover(options: {
 }
 
 async function main(): Promise<void> {
+  const { values, positionals } = parseArgs({
+    allowPositionals: true,
+    options: {
+      focus: { type: "string", default: "transit" },
+      watchlist: { type: "string" },
+      "dry-run": { type: "boolean", default: false },
+    },
+  });
+  if (!["transit", "muslim-family"].includes(values.focus))
+    throw new Error("Pilih --focus transit atau muslim-family.");
+  const focus = values.focus as Focus;
   const userId = process.env.IG_USER_ID;
   const token = process.env.IG_ACCESS_TOKEN;
-  const usernames = process.argv.slice(2);
-  if (!userId || !token || !usernames.length) {
+  const version = process.env.IG_GRAPH_VERSION;
+  const usernames = [...positionals];
+  if (values.watchlist) {
+    const watchlist = JSON.parse(await readFile(values.watchlist, "utf8")) as {
+      accounts?: { username: string; owner: string; area: string }[];
+    };
+    if (
+      !Array.isArray(watchlist.accounts) ||
+      watchlist.accounts.some(
+        (account) =>
+          !/^[A-Za-z0-9._]{1,30}$/.test(account.username) ||
+          !["project", "developer", "facility"].includes(account.owner) ||
+          !["Bogor", "Depok", "Bekasi"].includes(account.area),
+      )
+    )
+      throw new Error(
+        "Watchlist wajib berisi akun organisasi di Bogor/Depok/Bekasi.",
+      );
+    usernames.push(...watchlist.accounts.map((account) => account.username));
+  }
+  if (values["dry-run"]) {
+    console.log(
+      JSON.stringify({
+        focus,
+        accounts: [...new Set(usernames)],
+        networkRequests: 0,
+        missingConfig: [
+          "IG_USER_ID",
+          "IG_ACCESS_TOKEN",
+          "IG_GRAPH_VERSION",
+        ].filter((key) => !process.env[key]),
+      }),
+    );
+    return;
+  }
+  if (!userId || !token || !version || !usernames.length) {
     console.error(
-      "Butuh IG_USER_ID, IG_ACCESS_TOKEN, dan minimal satu nama akun developer.",
+      "Butuh IG_USER_ID, IG_ACCESS_TOKEN, IG_GRAPH_VERSION, dan minimal satu nama akun organisasi.",
     );
     process.exitCode = 1;
     return;
@@ -186,22 +317,37 @@ async function main(): Promise<void> {
     userId,
     token,
     usernames,
-    version: process.env.IG_GRAPH_VERSION,
-    limit: Number(process.env.IG_MEDIA_LIMIT) || undefined,
-    stopPercent: Number(process.env.IG_STOP_PERCENT) || undefined,
+    version,
+    focus,
+    limit: process.env.IG_MEDIA_LIMIT
+      ? Number(process.env.IG_MEDIA_LIMIT)
+      : undefined,
+    stopPercent: process.env.IG_STOP_PERCENT
+      ? Number(process.env.IG_STOP_PERCENT)
+      : undefined,
   });
   const directory = join(".runtime", "instagram");
   await mkdir(directory, { recursive: true, mode: 0o700 });
   const file = join(
     directory,
-    `discovery-${new Date().toISOString().slice(0, 10)}.json`,
+    `discovery-${new Date().toISOString().replace(/[:.]/g, "-")}.json`,
   );
-  await writeFile(file, `${JSON.stringify(result, null, 2)}\n`, {
+  await writeFile(file, `${JSON.stringify({ focus, ...result }, null, 2)}\n`, {
     mode: 0o600,
+    flag: "wx",
   });
   console.log(
     `${result.candidates.length} kandidat dari ${result.accounts.length} akun, ${result.requests} permintaan${result.stopped ? `; berhenti: ${result.stopped}` : ""}. Ditulis ke ${file}. Cek manual sebelum masuk research/properties.json.`,
   );
 }
 
-if (import.meta.main) await main();
+if (import.meta.main) {
+  try {
+    await main();
+  } catch {
+    console.error(
+      "Riset Instagram gagal: periksa argumen, berkas watchlist, dan konfigurasi privat. Detail error tidak dicetak agar kredensial tetap privat.",
+    );
+    process.exitCode = 1;
+  }
+}

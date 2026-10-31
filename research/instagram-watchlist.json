@@ -1,0 +1,106 @@
+{
+  "checkedAt": "2026-10-31",
+  "scope": ["Bogor", "Depok", "Bekasi"],
+  "note": "Tautan ditemukan ulang di situs organisasi; halaman Instagram dan jenis akun Business/Creator belum diuji. Ini target riset manual/API, bukan daftar akun yang sudah terkoneksi.",
+  "accounts": [
+    {
+      "name": "Ahsanu Amala Residence",
+      "username": "ahsanuamalaproperti",
+      "owner": "project",
+      "area": "Depok",
+      "url": "https://www.instagram.com/ahsanuamalaproperti/",
+      "via": "official-site",
+      "seenAt": "https://ahsanuamalaproperty.com/ahsanu-amala-residence/",
+      "checkedAt": "2026-10-31",
+      "apiStatus": "not-tested"
+    },
+    {
+      "name": "Ahsanu Residence",
+      "username": "ahsanuamala.id_",
+      "owner": "project",
+      "area": "Depok",
+      "url": "https://www.instagram.com/ahsanuamala.id_/",
+      "via": "official-site",
+      "seenAt": "https://ahsanuamalaproperty.com/ahsanu-residence/",
+      "checkedAt": "2026-10-31",
+      "apiStatus": "not-tested"
+    },
+    {
+      "name": "Maxirecon — Teras Madina Cibubur",
+      "username": "maxirecon.official",
+      "owner": "developer",
+      "area": "Bogor",
+      "url": "https://www.instagram.com/maxirecon.official/",
+      "via": "official-site",
+      "seenAt": "https://maxirecon.com/",
+      "checkedAt": "2026-10-31",
+      "apiStatus": "not-tested"
+    },
+    {
+      "name": "Bumi Sakinah Cileungsi",
+      "username": "bumisakinah_cileungsi",
+      "owner": "project",
+      "area": "Bogor",
+      "url": "https://www.instagram.com/bumisakinah_cileungsi/",
+      "via": "official-site",
+      "seenAt": "https://bumisakinahcileungsi.com/",
+      "checkedAt": "2026-10-31",
+      "apiStatus": "not-tested"
+    },
+    {
+      "name": "Metland Cibitung",
+      "username": "metlandcibitungofficial",
+      "owner": "project",
+      "area": "Bekasi",
+      "url": "https://www.instagram.com/metlandcibitungofficial/",
+      "via": "official-site",
+      "seenAt": "https://metlandcibitung.co.id/",
+      "checkedAt": "2026-10-31",
+      "apiStatus": "not-tested"
+    },
+    {
+      "name": "Metland Cikarang",
+      "username": "metlandcikarang.official",
+      "owner": "project",
+      "area": "Bekasi",
+      "url": "https://www.instagram.com/metlandcikarang.official/",
+      "via": "official-site",
+      "seenAt": "https://metlandcikarang.co.id/",
+      "checkedAt": "2026-10-31",
+      "apiStatus": "not-tested"
+    },
+    {
+      "name": "TKIT Nurul Fikri",
+      "username": "tkitnf_",
+      "owner": "facility",
+      "area": "Depok",
+      "url": "https://www.instagram.com/tkitnf_/",
+      "via": "official-site",
+      "seenAt": "https://ppdb.nurulfikri.sch.id/",
+      "checkedAt": "2026-10-31",
+      "apiStatus": "not-tested"
+    },
+    {
+      "name": "SDIT Nurul Fikri",
+      "username": "sditnf_",
+      "owner": "facility",
+      "area": "Depok",
+      "url": "https://www.instagram.com/sditnf_/",
+      "via": "official-site",
+      "seenAt": "https://ppdb.nurulfikri.sch.id/",
+      "checkedAt": "2026-10-31",
+      "apiStatus": "not-tested"
+    },
+    {
+      "name": "SMPIT Nurul Fikri",
+      "username": "smpitnf",
+      "owner": "facility",
+      "area": "Depok",
+      "url": "https://www.instagram.com/smpitnf/",
+      "via": "official-site",
+      "seenAt": "https://ppdb.nurulfikri.sch.id/",
+      "checkedAt": "2026-10-31",
+      "apiStatus": "not-tested"
+    }
+  ]
+}

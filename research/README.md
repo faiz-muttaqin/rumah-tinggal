@@ -15,6 +15,8 @@ Ruang kerja untuk memperkaya katalog properti dan menghubungkan listing dengan k
 | [Petunjuk belum diverifikasi](leads.json)           | Akun Instagram dan proyek dari daftar pengguna atau hasil pencarian yang belum bisa dibuka otomatis, dengan tautan dan status | Dicek 2026-10-30; tampil berlabel di `/riset#belum-diverifikasi`      |
 | [Sewa ramah keluarga muslim](rentals.json)          | Kontrakan, rumah sewa, dan apartemen sewa dengan harga sewa dan kutipan lingkungan dari iklan yang dibuka                     | Dicek 2026-10-30; tampil di `/riset#sewa`, tanpa data pemilik         |
 | [Iklan dijual dekat masjid kajian](sale-ads.json)   | Rumah dan kavling dijual di sekitar Masjid Al-Barkah Cileungsi dengan harga dan kutipan dari iklan yang dibuka                | Dicek 2026-10-30; tampil di `/riset#iklan-dijual`, tanpa data penjual |
+| [Riset Bogor, Depok, Bekasi](jabar/README.md)       | Kandidat keluarga muslim, kajian, pendidikan anak, serta batas bukti harga dan operasional fasilitas                          | Putaran IG-JABAR-01, 2026-10-31 WIB                                   |
+| [Watchlist Instagram](instagram-watchlist.json)     | 9 akun proyek, developer, dan pendidikan anak dari tautan situs resmi                                                         | Akun/API belum terhubung; lihat panduan koneksi                       |
 
 Dataset yang dipakai aplikasi dibangun ke [properties.geojson](../public/data/properties.geojson). Menambah catatan di ruang riset tidak otomatis menambah listing atau lapisan pada aplikasi.
 
