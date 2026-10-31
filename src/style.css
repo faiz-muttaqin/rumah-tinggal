@@ -450,6 +450,20 @@ select {
   border-radius: 5px;
   margin: 0 0 12px;
 }
+.export-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin: 0 0 14px;
+}
+.export-tools > span {
+  color: var(--muted);
+  font-size: 11px;
+}
+.export-tools .button {
+  min-height: 38px;
+}
 .sample-dot {
   height: 5px;
   width: 5px;

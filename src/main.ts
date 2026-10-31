@@ -10,6 +10,12 @@ import {
   privateAPI,
 } from "./auth.ts";
 import { demoListings } from "./demo.ts";
+import {
+  createExcelBlob,
+  downloadExcel,
+  listingSheets,
+  researchSheets,
+} from "./excel-export.ts";
 import { distanceKm, escapeHTML as esc, money, nearestStation } from "./geo.ts";
 import { icon } from "./icons.ts";
 import { HousingMap, type TransitMode } from "./map.ts";
@@ -31,6 +37,7 @@ import {
   plusSummary,
   populationText,
   priceRange,
+  type ResearchData,
   type ResearchProperty,
   researchToListing,
   researchToPin,
@@ -74,6 +81,7 @@ $("app").innerHTML = `
       </div>
       <section id="results" class="results" tabindex="-1" aria-label="Hasil pencarian">
         <div class="results-toolbar"><div><strong id="result-count">8 hunian</strong><span id="result-scope"> di Jabodetabek</span></div><select id="sort" aria-label="Urutkan hunian"><option value="recommended">Rekomendasi</option><option value="price">Harga terendah</option><option value="station">Terdekat KRL</option></select></div>
+        <div class="export-tools" id="listing-export-tools" hidden><button class="button" id="listing-export" type="button" disabled>${icon("download")} Export Excel</button><span>Hasil sesuai filter aktif</span></div>
         <div class="example-note" id="example-note"><span class="sample-dot"></span> Data contoh · harga & lokasi ilustratif</div><div class="example-note research-note" id="research-note" hidden><span class="sample-dot"></span> Data nyata · harga dari sumber per tanggal cek · <a href="/riset">bukti lengkap ↗</a></div>
         <div id="listing-list" class="listing-list" aria-live="polite"></div>
       </section>
@@ -110,8 +118,10 @@ let map: HousingMap | undefined;
 let stations: Station[] = [];
 let transportStops: Station[] = [];
 let privateListings: Listing[] = [];
+let privateOwnerUid: string | undefined;
 let collection: "demo" | "private" | "pins" | "research" = "demo";
 let researchProperties: ResearchProperty[] = [];
+let researchData: ResearchData | undefined;
 let researchPopulation: PopulationContext | null = null;
 let researchPlanned: PlannedContext | null = null;
 let researchListings: Listing[] = [];
@@ -121,6 +131,7 @@ let selectedListing: Listing | undefined;
 let listingsVisible = true;
 let pickingPoint: "listing" | "pin" | undefined;
 let toastTimer: ReturnType<typeof setTimeout>;
+let exporting = false;
 
 function toast(message: string): void {
   $("toast").textContent = message;
@@ -171,6 +182,13 @@ function filteredListings(): Listing[] {
 
 function render(): void {
   const listings = filteredListings();
+  const canExportPrivate = collection === "private" && Boolean(getUser());
+  $("listing-export-tools").hidden =
+    !canExportPrivate && collection !== "research";
+  $<HTMLButtonElement>("listing-export").disabled =
+    exporting ||
+    !listings.length ||
+    (canExportPrivate && privateOwnerUid !== getUser()?.uid);
   $("result-count").textContent = `${listings.length} hunian`;
   $("result-scope").textContent =
     ` di ${selectedArea === "Semua" ? "Jabodetabek" : selectedArea}`;
@@ -246,6 +264,66 @@ function render(): void {
       collection === "research",
     );
 }
+
+$("listing-export").onclick = async () => {
+  if (exporting || !["private", "research"].includes(collection)) return;
+  const isPrivate = collection === "private";
+  const uid = getUser()?.uid;
+  if (isPrivate && (!uid || privateOwnerUid !== uid)) return;
+  const listings = filteredListings();
+  if (!listings.length) return;
+  const filters: [string, string][] = [
+    ["Daerah", selectedArea],
+    ["Pencarian", $<HTMLInputElement>("search").value],
+    ...["budget", "housing-type", "station-distance", "sort"].map(
+      (id): [string, string] => {
+        const select = $<HTMLSelectElement>(id);
+        return [
+          select.getAttribute("aria-label") ?? id,
+          select.selectedOptions[0].text,
+        ];
+      },
+    ),
+  ];
+  const sheets = isPrivate
+    ? listingSheets(listings, stations, filters)
+    : researchData
+      ? researchSheets(
+          {
+            properties: listings.flatMap((listing) =>
+              researchProperties.filter(
+                (property) => property.id === listing.id,
+              ),
+            ),
+            rentals: [],
+            saleAds: [],
+            mosques: [],
+            leads: [],
+          },
+          researchData,
+          filters,
+        )
+      : [];
+  if (!sheets.length) return;
+  exporting = true;
+  render();
+  try {
+    const blob = await createExcelBlob(sheets);
+    if (isPrivate && (getUser()?.uid !== uid || privateOwnerUid !== uid)) {
+      toast("Akun berubah. Buka Listingku untuk mengekspor ulang.");
+      return;
+    }
+    downloadExcel(blob, isPrivate ? "listingku" : "riset-properti");
+    toast(
+      `${listings.length} ${isPrivate ? "listing" : "proyek"} diekspor ke Excel.`,
+    );
+  } catch {
+    toast("Ekspor Excel belum berhasil. Coba lagi.");
+  } finally {
+    exporting = false;
+    render();
+  }
+};
 
 function plannedPoints(planned: PlannedContext): GeoJSON.FeatureCollection {
   return {
@@ -513,9 +591,11 @@ async function loadPrivateListings(): Promise<void> {
     const result = await privateAPI<{ listings: Listing[] }>("/api/listings");
     if (getUser()?.uid !== uid) return;
     privateListings = result.listings;
+    privateOwnerUid = uid;
   } catch (error) {
     if (getUser()?.uid !== uid) return;
     privateListings = [];
+    privateOwnerUid = undefined;
     toast(error instanceof Error ? error.message : "Koleksi belum termuat.");
   }
   render();
@@ -842,6 +922,7 @@ async function start(): Promise<void> {
     researchResult,
   ] = resources;
   if (researchResult.status === "fulfilled") {
+    researchData = researchResult.value;
     researchProperties = researchResult.value.properties;
     researchPopulation = researchResult.value.population;
     researchPlanned = researchResult.value.planned;
@@ -951,17 +1032,18 @@ async function start(): Promise<void> {
   if (configResult.status === "fulfilled") {
     try {
       await initializeAuth(configResult.value, (user) => {
+        privateListings = [];
+        privateOwnerUid = undefined;
+        pins = [];
+        if (collection === "private") clearSelection();
+        void map?.updatePins(pins, pinPopup);
+        render();
         $("account-label").textContent = user
           ? `${user.displayName?.split(" ")[0] || "Akun"} · Keluar`
           : "Masuk dengan Google";
         if (user) {
           void loadPrivateListings();
           void loadPins();
-        } else {
-          privateListings = [];
-          pins = [];
-          void map?.updatePins(pins, pinPopup);
-          render();
         }
       });
     } catch {

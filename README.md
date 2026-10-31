@@ -16,6 +16,7 @@ Eksplorasi calon hunian Jabodetabek melalui peta wilayah dan transportasi umum, 
 - Riset properti nyata di halaman `/riset` dan tab **Riset** pada peta: kurasi kandidat proyek dalam radius 3 km garis lurus dari stasiun KRL, MRT, atau LRT, dengan harga dari halaman sumber yang dibuka saat cek, tautan bukti, tingkat verifikasi, dan tanggal cek. Proyek dapat dibuka di peta, disimpan ke Listingku, atau dijadikan pin pribadi dengan sumber dan tanggal cek. Nama developer mengikuti sumber publik; kepemilikan unit belum diverifikasi. Metode riset (termasuk opsi Instagram resmi) dicatat agar dapat dipakai ulang tanpa diwajibkan; lihat [riset properti](docs/property-research.md).
 - Delapan contoh hunian sintetis untuk mencoba antarmuka. Semuanya ilustrasi, bukan iklan atau penawaran properti.
 - Listingku: tambah lokasi dan catatan survei, simpan contoh sebagai titik awal, serta hapus listing. Data disimpan di SQLite per UID pengguna terverifikasi.
+- **Export Excel** (`.xlsx`) pada Riset properti dan Listingku mengikuti filter serta urutan aktif. Halaman riset memisahkan proyek developer, sewa, iklan dijual, masjid, dan petunjuk ke sheet masing-masing, lengkap dengan sumber dan tanggal cek. Listingku mengekspor koleksi akun yang sedang masuk; file dibuat langsung di browser.
 - Setiap akun dapat menyimpan hingga 500 listing; menghapus listing membuka slot kembali.
 - Tampilan responsif dengan pilihan daftar/peta pada layar kecil. Daftar tetap dapat digunakan jika WebGL tidak tersedia.
 

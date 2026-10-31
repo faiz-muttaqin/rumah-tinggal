@@ -101,6 +101,14 @@ Jalankan ulang langkah 1 sampai 6 secara berkala atau untuk koridor tertentu. En
 - Keduanya memerlukan login dan memakai API per UID yang sama dengan koleksi pribadi. Memilih atau menyimpan proyek tidak mempublikasikan koleksi pengguna.
 - Verifikasi sumber dan developer bukan verifikasi identitas pemilik, hak atas tanah, atau kepemilikan unit.
 
+## Ekspor Excel
+
+Tombol **Export Excel** pada `/riset` mengunduh workbook `.xlsx` sesuai filter daerah, tipe penawaran, dan filter tambahan tiap daftar. Daftar yang memiliki hasil mendapat sheet sendiri: **Proyek Developer**, **Sewa**, **Iklan Dijual**, **Masjid**, dan **Petunjuk**. Sheet **Catatan** merekam filter, jumlah hasil, tanggal cek dataset, dan batas bukti. Filter proyek berlaku pada proyek; pencarian sewa dan masjid tetap berlaku pada daftar masing-masing.
+
+Ekspor menyertakan harga numerik dalam rupiah, periode sewa, sumber harga, tanggal cek, status verifikasi, dan bukti hubungan fasilitas. Koordinat proyek yang belum terverifikasi tetap kosong. Jarak stasiun beroperasi dipisahkan dari stasiun rencana; jarak selalu garis lurus. Petunjuk mempertahankan label belum diverifikasi.
+
+Tab **Riset** di peta mengekspor proyek yang tampil dalam daftar peta. **Listingku** menyediakan tombol yang sama setelah login, mengikuti filter dan urutan koleksi pribadi. Jika akun berubah atau keluar saat file sedang dibuat, unduhan Listingku dibatalkan. File dibuat di browser tanpa endpoint ekspor atau penyalinan state SQLite; teks catatan disimpan sebagai teks Excel, termasuk bila diawali tanda `=`.
+
 ## Konteks penduduk sekitar
 
 Setiap proyek yang terbit menampilkan estimasi penduduk dalam radius 500 m dan 1 km beserta kepadatannya, dari raster [WorldPop Indonesia 2025](https://hub.worldpop.org/geodata/summary?id=73823) (rilis R2025A, CC BY 4.0). Raster tidak disimpan di Git; `python3 scripts/build-population-context.py RASTER.tif --checked-at YYYY-MM-DD` hanya memakai pustaka standar Python, membaca tile di sekitar titik proyek, dan menulis `research/context/population.json` beserta sha256 raster dan titik yang dipakai. `build-properties.py` membuang estimasi bila titik proyek berubah sesudahnya.

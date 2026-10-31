@@ -1,4 +1,6 @@
+import { readFile } from "node:fs/promises";
 import { expect, type Page, test } from "@playwright/test";
+import { readExcel } from "./excel-workbook.ts";
 import { researchFixture } from "./research-fixture.ts";
 
 const pageErrors = new WeakMap<Page, string[]>();
@@ -22,6 +24,108 @@ test.afterEach(async ({ page }) => {
     pageErrors.get(page) ?? [],
     "Unhandled browser JavaScript errors",
   ).toEqual([]);
+});
+
+test("Excel downloads contain the displayed research rows and respect each section's filters", async ({
+  page,
+}, testInfo) => {
+  const privateRequests: string[] = [];
+  page.on("request", (request) => {
+    if (/^\/api\/(listings|pins)(?:\/|$)/.test(new URL(request.url()).pathname))
+      privateRequests.push(request.url());
+  });
+  await expect(page.locator("#research-export")).toBeEnabled();
+  const downloadEvent = page.waitForEvent("download");
+  await page.locator("#research-export").click();
+  const download = await downloadEvent;
+  expect(download.suggestedFilename()).toMatch(
+    /^riset-properti-\d{4}-\d{2}-\d{2}\.xlsx$/,
+  );
+  const path = testInfo.outputPath("research.xlsx");
+  await download.saveAs(path);
+  const workbook = readExcel(await readFile(path));
+  for (const [sheet, testId] of [
+    ["Proyek Developer", "research-card"],
+    ["Sewa", "rental-card"],
+    ["Iklan Dijual", "sale-ad-card"],
+    ["Masjid", "mosque-card"],
+    ["Petunjuk", "lead-card"],
+  ]) {
+    expect(workbook[sheet].rows.map((row) => row.ID)).toEqual(
+      await page
+        .getByTestId(testId)
+        .evaluateAll((elements) => elements.map((element) => element.id)),
+    );
+    expect(workbook[sheet].formulaCount).toBe(0);
+  }
+
+  await page.locator("#research-search").fill("Bekasi");
+  await page.locator("#research-plus").selectOption("kajian");
+  await page.locator("#rental-budget-max").selectOption("2000000");
+  await page.locator("#sale-budget-max").selectOption("500000000");
+  await page.locator("#mosque-search").fill("Bandung");
+  const filteredEvent = page.waitForEvent("download");
+  await page.locator("#research-export").click();
+  const filteredDownload = await filteredEvent;
+  const filteredPath = testInfo.outputPath("research-filtered.xlsx");
+  await filteredDownload.saveAs(filteredPath);
+  const filteredWorkbook = readExcel(await readFile(filteredPath));
+  expect(
+    filteredWorkbook["Proyek Developer"].rows.map((row) => row.ID),
+  ).toEqual(["prj-uji-bekasi-timur"]);
+  expect(filteredWorkbook.Sewa).toBeUndefined();
+  expect(filteredWorkbook["Iklan Dijual"].rows.map((row) => row.ID)).toEqual([
+    "jual-uji-kavling",
+  ]);
+  expect(filteredWorkbook.Masjid.rows.map((row) => row.ID)).toEqual([
+    "masjid-uji-bandung",
+  ]);
+  expect(
+    filteredWorkbook.Catatan.rows.some(
+      (row) =>
+        row.Nilai === "Bekasi" &&
+        String(row.Keterangan).includes("Cari proyek"),
+    ),
+  ).toBe(true);
+  expect(privateRequests).toEqual([]);
+});
+
+test("mobile Excel export follows area and offer type and handles empty results", async ({
+  page,
+}, testInfo) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.locator("#catalog-area").selectOption("Bekasi");
+  await page.locator("#catalog-offer").selectOption("rental-house");
+  await page.locator("#research-export").scrollIntoViewIfNeeded();
+  await expect(page.locator("#research-export")).toBeInViewport();
+  const downloadEvent = page.waitForEvent("download");
+  await page.locator("#research-export").click();
+  const path = testInfo.outputPath("rentals-mobile.xlsx");
+  await (await downloadEvent).saveAs(path);
+  const workbook = readExcel(await readFile(path));
+  expect(Object.keys(workbook)).toEqual(["Sewa", "Masjid", "Catatan"]);
+  expect(workbook.Sewa.rows.map((row) => row.ID)).toEqual(["rent-uji-bekasi"]);
+  expect(workbook.Masjid.rows[0]["Proyek sekitar (km garis lurus)"]).toBeNull();
+  expect(workbook.Masjid.rows[0]["Iklan dan petunjuk kawasan"]).toContain(
+    "Kontrakan Keluarga Uji",
+  );
+  expect(
+    await page.evaluate(() => document.documentElement.scrollWidth),
+  ).toBeLessThanOrEqual(390);
+  await page.locator("#research-export").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: testInfo.outputPath("excel-mobile.png") });
+
+  await page.locator("#catalog-area").selectOption("Jakarta");
+  const downloads: string[] = [];
+  page.on("download", (download) =>
+    downloads.push(download.suggestedFilename()),
+  );
+  await page.locator("#research-export").click();
+  await expect(page.locator("#toast")).toContainText(
+    "Belum ada hasil untuk diekspor",
+  );
+  expect(downloads).toEqual([]);
+  await expect(page.locator("#research-export")).toBeEnabled();
 });
 
 test("lists sourced projects with prices, evidence and computed distances", async ({

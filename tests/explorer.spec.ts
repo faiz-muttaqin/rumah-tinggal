@@ -1,4 +1,8 @@
+import { readFile } from "node:fs/promises";
 import { expect, type Page, test } from "@playwright/test";
+import type { Listing } from "../src/types.ts";
+import { readExcel } from "./excel-workbook.ts";
+import { mockListingAccount } from "./listing-account.ts";
 import { researchFixture } from "./research-fixture.ts";
 
 const pageErrors = new WeakMap<Page, string[]>();
@@ -599,12 +603,135 @@ test("anonymous Listingku offers Google sign-in without requesting private listi
     page.locator("#listing-list").getByRole("button", { name: /Google/i }),
   ).toBeVisible();
   await expect(cards(page)).toHaveCount(0);
+  await expect(page.locator("#listing-export")).toBeHidden();
   expect(
     privateRequests,
     "Anonymous visitors must not fetch private listings",
   ).toEqual([]);
   // Google OAuth/popup interaction requires real credentials and is deliberately
   // outside this public, unauthenticated browser regression suite.
+});
+
+const excelListings: Listing[] = [
+  {
+    id: "excel-uji-1",
+    title: "Rumah Uji Bekasi Mahal",
+    area: "Bekasi",
+    district: "Bekasi Timur",
+    type: "Rumah",
+    price: 700_000_000,
+    bedrooms: 2,
+    landArea: 70,
+    lat: -6.25,
+    lng: 107.01,
+    notes: "=SUM(1,2)\nMasjid & sekolah",
+    createdAt: "2026-10-31T00:00:00.000Z",
+  },
+  {
+    id: "excel-uji-2",
+    title: "Rumah Uji Bekasi Murah",
+    area: "Bekasi",
+    district: "Bekasi Timur",
+    type: "Rumah",
+    price: 450_000_000,
+    bedrooms: 0,
+    landArea: 60,
+    lat: -6.24,
+    lng: 107.02,
+    createdAt: "2026-10-31T00:00:00.000Z",
+  },
+  {
+    id: "excel-uji-3",
+    title: "Rumah Uji Bogor",
+    area: "Bogor",
+    district: "Uji",
+    type: "Rumah",
+    price: 300_000_000,
+    bedrooms: 2,
+    landArea: 60,
+    lat: -6.5,
+    lng: 106.8,
+    createdAt: "2026-10-31T00:00:00.000Z",
+  },
+];
+
+test("Listingku Excel exports only the signed-in collection in active filter and sort order", async ({
+  page,
+}, testInfo) => {
+  await mockListingAccount(page, excelListings);
+  await page.goto("/?koleksi=listingku");
+  await expect(page.locator("#account-label")).toContainText("Akun · Keluar");
+  await expect(cards(page)).toHaveCount(3);
+  await page.locator('[data-area="Bekasi"]').click();
+  await page.locator("#sort").selectOption("price");
+  await expect(cards(page)).toHaveCount(2);
+  const downloadEvent = page.waitForEvent("download");
+  await page.locator("#listing-export").click();
+  const download = await downloadEvent;
+  expect(download.suggestedFilename()).toMatch(
+    /^listingku-\d{4}-\d{2}-\d{2}\.xlsx$/,
+  );
+  const path = testInfo.outputPath("listingku.xlsx");
+  await download.saveAs(path);
+  const workbook = readExcel(await readFile(path));
+  expect(workbook.Listingku.rows.map((row) => row.ID)).toEqual([
+    "excel-uji-2",
+    "excel-uji-1",
+  ]);
+  expect(workbook.Listingku.rows[0]["Harga beli (Rp)"]).toBe(450_000_000);
+  expect(workbook.Listingku.rows[1]["Catatan survei"]).toBe(
+    excelListings[0].notes,
+  );
+  expect(workbook.Listingku.formulaCount).toBe(0);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.locator("#budget").selectOption("500000000");
+  await expect(cards(page)).toHaveCount(1);
+  const mobileEvent = page.waitForEvent("download");
+  await page.locator("#listing-export").click();
+  const mobilePath = testInfo.outputPath("listingku-mobile.xlsx");
+  await (await mobileEvent).saveAs(mobilePath);
+  expect(
+    readExcel(await readFile(mobilePath)).Listingku.rows.map((row) => row.ID),
+  ).toEqual(["excel-uji-2"]);
+  await expectNoHorizontalOverflow(page);
+  await page.locator("#search").fill("Tidak ada hunian");
+  await expect(page.locator("#listing-export")).toBeDisabled();
+  await page.locator("#account-button").click();
+  await expect(page.locator("#listing-export")).toBeHidden();
+  await page.goto("/?riset=prj-uji-cisauk");
+  await expect(page.locator("#account-label")).toContainText("Akun · Keluar");
+  await expect(page.locator("#detail-card")).toContainText("Hunian Uji Cisauk");
+});
+
+test("Listingku cancels a pending Excel download when the account signs out", async ({
+  page,
+}) => {
+  await mockListingAccount(page, excelListings);
+  await page.goto("/?koleksi=listingku");
+  await expect(page.locator("#listing-export")).toBeEnabled();
+  let resume = () => {};
+  const gate = new Promise<void>((resolve) => {
+    resume = resolve;
+  });
+  await page.route("**/assets/universal-*.js", async (route) => {
+    await gate;
+    await route.continue();
+  });
+  const downloads: string[] = [];
+  page.on("download", (download) =>
+    downloads.push(download.suggestedFilename()),
+  );
+  try {
+    await page.locator("#listing-export").click();
+    await expect(page.locator("#listing-export")).toBeDisabled();
+    await page.locator("#account-button").click();
+    await expect(page.locator("#listing-export")).toBeHidden();
+    resume();
+    await expect(page.locator("#toast")).toContainText("Akun berubah");
+    expect(downloads).toEqual([]);
+  } finally {
+    resume();
+  }
 });
 
 test.describe("mobile explorer", () => {
