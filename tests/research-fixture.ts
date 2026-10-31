@@ -329,6 +329,66 @@ export const researchFixture = {
       method: "Metode uji masjid dan pendidikan.",
       caveats: ["Catatan uji."],
     },
+    mosques: {
+      checkedAt: "2026-10-31",
+      sourceUrl: "https://ihrish.example.invalid/peta/?kapan=semua",
+      note: "Pin dari direktori uji, belum disurvei.",
+      radiusKm: 1.5,
+      items: [
+        {
+          id: "masjid-uji-satu",
+          name: "Masjid Uji Satu Kajian",
+          address: "Jalan Kebun Uji, Bekasi",
+          area: "Bekasi",
+          lat: -6.256,
+          lng: 107.032,
+          eventCount: 1,
+          sourceUrl: "https://ihrish.example.invalid/masjid/uji-satu/",
+          googleMapsUrl:
+            "https://www.google.com/maps/search/?api=1&query=-6.256%2C107.032",
+          profile: null,
+          nearbyProperties: [
+            {
+              id: "prj-uji-bekasi-timur",
+              name: "Rumah Uji Bekasi Timur",
+              km: 0.4,
+            },
+          ],
+          relatedListings: [
+            {
+              id: "rent-uji-bekasi",
+              title: "Kontrakan Keluarga Uji",
+              kind: "rental",
+              relation: "Satu kawasan menurut iklan uji.",
+              note: "Jarak dari unit belum dihitung.",
+            },
+          ],
+        },
+        {
+          id: "masjid-uji-bandung",
+          name: "Masjid Uji Bandung",
+          address: "Jalan Bunga Uji, Bandung",
+          area: null,
+          lat: -6.9,
+          lng: 107.6,
+          eventCount: 3,
+          sourceUrl: "https://ihrish.example.invalid/masjid/uji-bandung/",
+          googleMapsUrl:
+            "https://www.google.com/maps/search/?api=1&query=-6.9%2C107.6",
+          profile: {
+            listedUpcoming: 3,
+            notCancelledUpcoming: 2,
+            cancelledUpcoming: 1,
+            regularNotCancelled: 0,
+            distinctDates: ["2026-11-01", "2026-11-02"],
+            firstDate: "2026-11-01",
+            lastDate: "2026-11-02",
+          },
+          nearbyProperties: [],
+          relatedListings: [],
+        },
+      ],
+    },
   },
   features: [
     project(

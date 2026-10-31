@@ -113,15 +113,19 @@ Hanya stasiun dengan titik yang dapat ditelusuri yang dipetakan: node OpenStreet
 
 ## Masjid berkajian dan pendidikan Islam anak
 
+Sejak IHRISH-01 (31 Oktober 2026), sesuai arahan pengguna, **adanya kajian cukup untuk pencantuman; tidak harus rutin**. Direktori `/riset#masjid` memakai [ekstrak peta Ihrish](../research/masjid/ihrish.md): 78 lokasi beserta pin, 267 jadwal snapshot, dan agregat tujuh profil terpilih. Hitungan dapat mencakup pembatalan dan bukan frekuensi. Jadwal tunggal tetap masuk; penanda rutin hanya informasi tambahan. Seluruh lokasi dipertahankan di direktori, sedangkan fasilitas sekitar proyek hanya ditautkan dalam cakupan Jabodetabek dan radius 1,5 km.
+
+`scripts/build-properties.py` membaca `research/masjid/ihrish-mosques.json` dan menghitung hubungan ke proyek berkoordinat, lalu menambahkannya ke `metadata.mosques` dan bukti kajian sekitar proyek. Hubungan iklan tanpa koordinat dari `ihrish-property-links.json` diberi label satu kawasan atau klaim sumber. Builder menolak hubungan ke iklan yang hilang. Lima iklan baru berasal dari halaman Pinhome/Brighton yang terbuka; iklan tidak tersedia ditolak, dan sumber HTTP403 tetap petunjuk. Tidak menambahkan titik rumah perorangan, tidak memecah proyek lama, dan tidak mengubah harga proyek yang tidak dicek ulang.
+
 Pencarian teks di `/riset` juga mencakup nama masjid/sekolah di fasilitas sekitar serta kutipan klaim proyek. Misalnya `Az-Zumar` menampilkan proyek yang terhubung dengan bukti masjid itu. Hasil mengikuti radius/klaim yang tercatat, bukan pencarian semua lokasi atau pengukuran rute. Catatan [riset dari masjid](../research/masjid/README.md) memisahkan jadwal rutin, acara sekali jalan, dan titik yang belum terbukti.
 
 Poin plus tiap proyek berasal dari `research/context/islamic.json`. Inventaris awal diambil dari OpenStreetMap (Overpass, dengan jeda dan backoff): masjid bernama dan sekolah yang namanya atau tag-nya menunjukkan pendidikan Islam, dalam 1,5 km dari titik proyek. Peneliti lalu mencari bukti di halaman yang dibuka langsung:
 
-- Kajian rutin: jadwal berulang di situs masjid, profil SIMAS Kemenag, direktori kajian, situs yayasan, atau berita, bertanggal sekitar November 2024 atau sesudahnya. Kegiatan sekali jalan tidak dihitung.
+- Kajian: bukti kegiatan di situs masjid, profil SIMAS Kemenag, direktori kajian, situs yayasan, atau berita. Riset awal mensyaratkan kegiatan berulang; sejak IHRISH-01 kegiatan sekali jalan juga cukup, dengan tanggal dan batas bukti dijelaskan.
 - Pendidikan anak: TPQ/TPA, RA/TK Islam, MI/SD Islam, madrasah diniyah, rumah tahfidz, pesantren anak, dan MTs/SMP Islam; biaya hanya bila dipublikasikan resmi, dikutip apa adanya beserta tahun ajarannya.
 - Klaim proyek: fasilitas atau konsep islami yang disebut halaman proyek, ditandai sebagai klaim pemasaran. Skema pembayaran syariah dan legalitasnya tidak diverifikasi.
 
-Pemeriksa terpisah membuka ulang bukti, menolak yang tidak berulang, kedaluwarsa, salah lembaga, atau memuat data pribadi. Nama penceramah, imam, pengurus, guru, nomor telepon, WhatsApp, dan rekening donasi tidak disimpan. Jarak adalah garis lurus.
+Batch awal menggunakan pemeriksa terpisah; IHRISH-01 diperiksa proses utama dari atribut peta dan profil terpilih. Bukti salah lembaga atau memuat data pribadi ditolak; kegiatan lampau dan pembatalan tidak disebut jadwal aktif. Nama penceramah, imam, pengurus, guru, nomor telepon, WhatsApp, dan rekening donasi tidak disimpan. Jarak adalah garis lurus.
 
 ## Media sosial resmi
 

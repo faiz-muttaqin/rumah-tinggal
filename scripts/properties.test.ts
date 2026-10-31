@@ -12,9 +12,26 @@ const python =
 const CONTACT = /(?:\+?62|\b0)8\d{2}[\s.-]?\d{3,4}[\s.-]?\d{3,5}|wa\.me\//;
 
 function build(args: string[]) {
-  return spawnSync("python3", ["-I", "scripts/build-properties.py", ...args], {
-    encoding: "utf8",
-  });
+  // Synthetic catalogues supply their own relationships; do not bind them to
+  // the curated real-world rentals/leads when one of those inputs is replaced.
+  const isolated = args.some((arg) =>
+    ["--leads", "--rentals", "--sale-ads"].includes(arg),
+  );
+  const options =
+    isolated && !args.includes("--mosque-links")
+      ? [
+          ...args,
+          "--mosque-links",
+          join(tmpdir(), "no-curated-mosque-links.json"),
+        ]
+      : args;
+  return spawnSync(
+    "python3",
+    ["-I", "scripts/build-properties.py", ...options],
+    {
+      encoding: "utf8",
+    },
+  );
 }
 
 test("published research data matches its curated source", {
@@ -22,6 +39,140 @@ test("published research data matches its curated source", {
 }, () => {
   const result = build(["--check"]);
   assert.equal(result.status, 0, result.stderr || result.stdout);
+});
+
+test("mosque evidence accepts one-off kajian and never invents proximity for unlocated houses", {
+  skip: python,
+}, async (t) => {
+  const directory = await mkdtemp(join(tmpdir(), "rumah-mosque-links-"));
+  t.after(() => rm(directory, { recursive: true, force: true }));
+  const curated = JSON.parse(
+    await readFile("research/properties.json", "utf8"),
+  );
+  const published = JSON.parse(
+    await readFile("public/data/properties.geojson", "utf8"),
+  );
+  const located = published.features.find(
+    (f: { geometry: object | null }) => f.geometry,
+  );
+  const unlocated = published.features.find(
+    (f: { geometry: object | null }) => !f.geometry,
+  );
+  const ids = new Set([located.id, unlocated.id]);
+  const [lng, lat] = located.geometry.coordinates;
+  const mosque = (id: string, offset: number, cancelled = false) => ({
+    id,
+    name: `Masjid ${id}`,
+    address: "Kawasan uji",
+    lat: Number((lat + offset).toFixed(6)),
+    lng,
+    sourceUrl: `https://ihrish.app/masjid/${id}/`,
+    googleMapsUrl: `https://www.google.com/maps/search/?api=1&query=${(lat + offset).toFixed(6)},${lng.toFixed(6)}`,
+    eventCount: 1,
+    profile: {
+      listedUpcoming: 1,
+      notCancelledUpcoming: cancelled ? 0 : 1,
+      cancelledUpcoming: cancelled ? 1 : 0,
+      regularNotCancelled: 0,
+      distinctDates: cancelled ? [] : ["2026-10-31"],
+      firstDate: cancelled ? null : "2026-10-31",
+      lastDate: cancelled ? null : "2026-10-31",
+    },
+  });
+  const inventory = {
+    schemaVersion: 1,
+    checkedAt: "2026-10-31",
+    source: {
+      url: "https://ihrish.app/peta/?kapan=semua",
+      reportedMosques: 4,
+      reportedEvents: 4,
+    },
+    mosques: [
+      mosque("masjid-uji-sekali", 0),
+      mosque("masjid-uji-batal", 0.0001, true),
+      mosque("masjid-uji-jauh", 0.02),
+      mosque("masjid-uji-batas", 1.504 / 111.2),
+    ],
+  };
+  const input = join(directory, "input.json");
+  const output = join(directory, "output.geojson");
+  const mosques = join(directory, "mosques.json");
+  const links = join(directory, "links.json");
+  await writeFile(
+    input,
+    JSON.stringify({
+      checkedAt: "2026-10-31",
+      properties: curated.properties.filter((p: { id: string }) =>
+        ids.has(p.id),
+      ),
+    }),
+  );
+  await writeFile(mosques, JSON.stringify(inventory));
+  await writeFile(links, JSON.stringify({ links: [] }));
+  const args = [input, output, "--mosques", mosques, "--mosque-links", links];
+  const result = build(args);
+  assert.equal(result.status, 0, result.stderr);
+  const data = JSON.parse(await readFile(output, "utf8"));
+  const items = data.metadata.mosques.items;
+  assert.deepEqual(items[0].nearbyProperties, [
+    { id: located.id, name: located.properties.name, km: 0 },
+  ]);
+  assert.deepEqual(items[2].nearbyProperties, []);
+  assert.deepEqual(items[3].nearbyProperties, []);
+  assert.equal(items[0].profile.regularNotCancelled, 0);
+  const facilities = data.features.find(
+    (f: { id: string }) => f.id === located.id,
+  ).properties.islamic.kajian;
+  assert.ok(
+    facilities.some((f: { id: string }) => f.id === "ihrish-masjid-uji-sekali"),
+  );
+  assert.ok(
+    !facilities.some((f: { id: string }) => f.id === "ihrish-masjid-uji-batal"),
+  );
+  const boundary = spawnSync(
+    "python3",
+    [
+      "-I",
+      "-c",
+      `import importlib.util, json, pathlib, sys
+s = importlib.util.spec_from_file_location('builder', 'scripts/build-properties.py')
+b = importlib.util.module_from_spec(s)
+s.loader.exec_module(b)
+regions = json.loads(pathlib.Path('public/data/regions.geojson').read_text())['features']
+m = b.load_mosques(pathlib.Path(sys.argv[1]), regions)
+c = b.add_mosques_to_islamic(None, m)
+c['facilities'] = [f for f in c['facilities'] if f['id'] == 'ihrish-masjid-uji-batas']
+print(json.dumps(b.islamic_of('unit', (float(sys.argv[2]), float(sys.argv[3])), c)))`,
+      mosques,
+      String(lng),
+      String(lat),
+    ],
+    { encoding: "utf8" },
+  );
+  assert.equal(boundary.status, 0, boundary.stderr);
+  assert.equal(JSON.parse(boundary.stdout), null, "1.504 km is outside 1.5 km");
+  assert.equal(
+    data.features.find((f: { id: string }) => f.id === unlocated.id).geometry,
+    null,
+  );
+
+  await writeFile(
+    links,
+    JSON.stringify({
+      links: [
+        { mosqueId: "masjid-uji-sekali", listingId: "missing", kind: "sale" },
+      ],
+    }),
+  );
+  const dangling = build(args);
+  assert.notEqual(dangling.status, 0);
+  assert.match(dangling.stderr, /hubungan iklan/);
+  await writeFile(links, JSON.stringify({ links: [] }));
+  inventory.mosques[0].googleMapsUrl = inventory.mosques[2].googleMapsUrl;
+  await writeFile(mosques, JSON.stringify(inventory));
+  const wrongPoint = build(args);
+  assert.notEqual(wrongPoint.status, 0);
+  assert.match(wrongPoint.stderr, /Maps berbeda/);
 });
 
 test("published research keeps sourced prices, evidence and computed distances", async () => {

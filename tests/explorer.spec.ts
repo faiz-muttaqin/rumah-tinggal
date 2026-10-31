@@ -577,7 +577,7 @@ test("a research deep link opens the project on the map", async ({ page }) => {
   );
   await page.goto("/?riset=prj-uji-bekasi-timur");
   await expect(page.getByTestId("detail-plus")).toContainText(
-    "1 masjid dengan pengajian rutin · 1 pendidikan Islam anak",
+    "1 masjid dengan kajian · 1 pendidikan Islam anak",
   );
   await expect(page.getByTestId("detail-social")).toHaveAttribute(
     "href",

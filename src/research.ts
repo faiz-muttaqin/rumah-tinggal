@@ -28,6 +28,7 @@ import {
   type RailMode,
   RENTAL_LABELS,
   type ResearchData,
+  type ResearchMosque,
   type ResearchProperty,
   type ResearchRental,
   type ResearchSaleAd,
@@ -76,7 +77,7 @@ $("app").innerHTML = `
       <p class="research-note">Verifikasi mencakup sumber harga dan lokasi. Nama developer mengikuti sumber publik; kepemilikan unit belum diverifikasi.</p>
       <div class="card-legend" aria-label="Penanda jenis properti"><span class="type-badge type-house-sale">Rumah dijual</span><span class="type-badge type-apartment">Apartemen</span><span class="type-badge type-rental">Kontrakan / rumah sewa</span></div>
       <dl class="research-stats" id="research-stats"></dl>
-      <div class="research-links"><a class="button primary" href="/?koleksi=riset">${icon("pin")} Lihat proyek di peta</a><a class="button" href="#sewa">Sewa apartemen & kontrakan</a><a class="button" href="#iklan-dijual">Iklan dijual dekat masjid kajian</a><a class="button" href="#belum-diverifikasi">Petunjuk belum diverifikasi</a><a class="button" href="#metode">${icon("info")} Cara riset ini dibuat</a></div>
+      <div class="research-links"><a class="button primary" href="/?koleksi=riset">${icon("pin")} Lihat proyek di peta</a><a class="button" href="#masjid" id="mosques-shortcut" hidden>Masjid dengan kajian</a><a class="button" href="#sewa">Sewa apartemen & kontrakan</a><a class="button" href="#iklan-dijual">Iklan dijual dekat masjid kajian</a><a class="button" href="#belum-diverifikasi">Petunjuk belum diverifikasi</a><a class="button" href="#metode">${icon("info")} Cara riset ini dibuat</a></div>
     </section>
     <section class="research-filters" aria-label="Filter riset properti">
       <div class="search-box">${icon("search")}<input id="research-search" type="search" aria-label="Cari proyek, developer, lokasi, masjid, sekolah, atau stasiun" placeholder="Proyek, lokasi, masjid, sekolah, atau stasiun…" autocomplete="off"/></div>
@@ -88,7 +89,7 @@ $("app").innerHTML = `
         <label>Jenis<select id="research-type"><option value="">Semua jenis</option><option>Rumah</option><option>Apartemen</option></select></label>
         <label>Budget dari<select id="research-budget-min">${budgetOptions(SALE_STEPS, "Rp 0")}</select></label>
         <label>Budget sampai<select id="research-budget-max">${budgetOptions(SALE_STEPS, "Tanpa batas")}</select></label>
-        <label>Poin plus<select id="research-plus"><option value="">Semua</option><option value="kajian">Ada masjid dengan pengajian rutin</option><option value="education">Ada pendidikan Islam anak</option><option value="both">Keduanya</option><option value="concept">Konsep islami (klaim proyek)</option></select></label>
+        <label>Poin plus<select id="research-plus"><option value="">Semua</option><option value="kajian">Ada masjid dengan kajian</option><option value="education">Ada pendidikan Islam anak</option><option value="both">Keduanya</option><option value="concept">Konsep islami (klaim proyek)</option></select></label>
         <label>Bukti<select id="research-verdict"><option value="">Semua bukti</option><option value="confirmed">Terverifikasi penuh</option></select></label>
         <label>Urutkan<select id="research-sort"><option value="price">Harga terendah</option><option value="distance">Terdekat stasiun</option><option value="name">Nama A–Z</option></select></label>
       </div>
@@ -96,6 +97,17 @@ $("app").innerHTML = `
     <section id="research-results" class="research-results" tabindex="-1" aria-label="Daftar proyek">
       <div class="results-toolbar"><strong id="research-count">Memuat data riset…</strong><span id="research-scope"></span></div>
       <div id="research-list" class="research-list" aria-live="polite"></div>
+    </section>
+    <section class="research-section" id="masjid" aria-labelledby="mosques-title" hidden>
+      <div class="eyebrow"><span class="tiny-line"></span> MASJID & HUNIAN</div>
+      <h2 id="mosques-title">Masjid dengan kajian</h2>
+      <p class="section-intro" id="mosques-intro"></p>
+      <div class="research-filters rental-filters">
+        <label>Cari masjid<input id="mosque-search" type="search" placeholder="Nama masjid atau alamat…" autocomplete="off"/></label>
+        <label>Wilayah masjid<select id="mosque-area"><option value="">Semua wilayah</option>${AREAS.map((area) => `<option>${area}</option>`).join("")}<option value="outside">Luar Jabodetabek</option></select></label>
+      </div>
+      <div class="results-toolbar"><strong id="mosque-count" aria-live="polite"></strong></div>
+      <div id="mosque-list" class="research-list" aria-live="polite"></div>
     </section>
     <section class="research-section" id="sewa" aria-labelledby="rentals-title" hidden>
       <div class="eyebrow"><span class="tiny-line"></span> SEWA</div>
@@ -420,6 +432,7 @@ function renderStatic(research: ResearchData): void {
   renderLeads(research);
   renderRentals(research, "Semua");
   renderSaleAds(research);
+  renderMosques(research);
   $("method-list").innerHTML = research.methods
     .map(
       (method) =>
@@ -436,6 +449,72 @@ function renderStatic(research: ResearchData): void {
           .join("")}</tbody></table>`
       : ""
   }${research.gaps.length ? `<ul class="coverage-gaps">${research.gaps.map((gap) => `<li>${esc(gap)}</li>`).join("")}</ul>` : ""}${research.excluded.length ? `<details class="coverage-excluded"><summary>Ditemukan tetapi belum masuk daftar (${research.excluded.length})</summary><ul>${research.excluded.map((item) => `<li><strong>${esc(item.name)}</strong>: ${esc(item.reason)}${item.price ? ` <span class="excluded-price">· ${esc(item.kind ?? "")} ${item.price.max && item.price.max > item.price.min ? `${money(item.price.min)} – ${money(item.price.max)}` : money(item.price.min)} <a href="${esc(safeUrl(item.price.url))}" ${external}>sumber harga ↗</a></span>` : ""}${item.social?.length ? ` · ${socialLinks(item.social)}` : ""}${(item.claims ?? []).map((claim) => `<small class="excluded-claim">${claim.kind === "syariah-concept" ? "Konsep islami (klaim pemasaran)" : "Klaim proyek"}: “${esc(claim.quote)}” <a href="${esc(safeUrl(claim.url))}" ${external}>↗</a></small>`).join("")}</li>`).join("")}</ul></details>` : ""}`;
+}
+
+function mosqueCard(mosque: ResearchMosque, radiusKm: number): string {
+  const radius = radiusKm.toLocaleString("id-ID");
+  const cancelled = mosque.profile?.cancelledUpcoming ?? 0;
+  const listingLabels = {
+    rental: "Sewa",
+    sale: "Dijual",
+    lead: "Petunjuk belum diverifikasi",
+  };
+  return `<article class="research-card mosque-card" data-testid="mosque-card" id="${esc(mosque.id)}">
+    <div class="research-card-top"><span class="source-kind">${esc(mosque.area ?? "Luar Jabodetabek")}</span><span class="verdict verdict-partial">${mosque.eventCount} jadwal tercatat</span></div>
+    <h3>${esc(mosque.name)}</h3>
+    <p class="research-meta">${esc(mosque.address)}</p>
+    ${cancelled ? `<p class="research-note" data-testid="mosque-cancelled">${cancelled} jadwal dibatalkan pada profil yang diperiksa. Jumlah jadwal tercatat dapat mencakup pembatalan.</p>` : ""}
+    <div class="research-context"><strong>Proyek bertitik ≤ ${radius} km</strong>${mosque.nearbyProperties.length ? `<ul class="mosque-related">${mosque.nearbyProperties.map((property) => `<li><a href="/?riset=${encodeURIComponent(property.id)}">${esc(property.name)}</a> · ${esc(distanceText(property.km))} garis lurus</li>`).join("")}</ul><small>Dihitung dari titik proyek dan masjid; akses dari setiap unit perlu dicek.</small>` : `<p>Belum ada proyek bertitik dalam radius ${radius} km di katalog.</p>`}</div>
+    ${mosque.relatedListings.length ? `<div class="research-context"><strong>Iklan & petunjuk kawasan</strong><ul class="mosque-related">${mosque.relatedListings.map((listing) => `<li><a href="/riset#${encodeURIComponent(listing.id)}" data-mosque-listing="${esc(listing.id)}" data-listing-kind="${listing.kind}">${esc(listing.title)}</a><small>${listingLabels[listing.kind]} · ${esc(listing.relation)}</small><small>${esc(listing.note)}</small></li>`).join("")}</ul></div>` : ""}
+    <div class="research-actions"><a class="button" href="${esc(safeUrl(mosque.googleMapsUrl))}" ${external}>${icon("pin")} Titik Google Maps ↗</a><a class="button" href="${esc(safeUrl(mosque.sourceUrl))}" ${external}>Jadwal di Ihrish ↗</a></div>
+  </article>`;
+}
+
+function renderMosques(research: ResearchData): void {
+  const mosques = research.mosques;
+  if (!mosques?.items.length) return;
+  $("masjid").hidden = false;
+  $("mosques-shortcut").hidden = false;
+  $("mosques-intro").textContent =
+    `${mosques.note} Ada kajian tercatat sudah cukup; tidak harus rutin. Dicek ${checkedDate(mosques.checkedAt)}.`;
+  const query = value("mosque-search").trim().toLocaleLowerCase("id-ID");
+  const area = value("mosque-area");
+  const items = mosques.items.filter(
+    (mosque) =>
+      (!area ||
+        (area === "outside" ? mosque.area === null : mosque.area === area)) &&
+      (!query ||
+        `${mosque.name} ${mosque.address}`
+          .toLocaleLowerCase("id-ID")
+          .includes(query)),
+  );
+  $("mosque-count").textContent =
+    `${items.length} dari ${mosques.items.length} masjid`;
+  $("mosque-list").innerHTML = items.length
+    ? items.map((mosque) => mosqueCard(mosque, mosques.radiusKm)).join("")
+    : '<p class="research-note" data-testid="mosque-empty">Belum ada masjid yang cocok. Coba nama, alamat, atau wilayah lain.</p>';
+  for (const link of $("mosque-list").querySelectorAll<HTMLAnchorElement>(
+    "[data-mosque-listing]",
+  )) {
+    link.onclick = () => {
+      if (!document.getElementById(link.dataset.mosqueListing ?? "")) {
+        if (link.dataset.listingKind === "rental") {
+          for (const id of ["rental-search", "rental-type"])
+            $<HTMLInputElement>(id).value = "";
+          for (const id of ["rental-budget-min", "rental-budget-max"])
+            $<HTMLSelectElement>(id).value = "0";
+          renderRentals(research, "Semua");
+        } else if (link.dataset.listingKind === "sale") {
+          for (const id of ["sale-budget-min", "sale-budget-max"])
+            $<HTMLSelectElement>(id).value = "0";
+          renderSaleAds(research);
+        }
+      }
+      requestAnimationFrame(highlight);
+    };
+  }
+  $("mosque-search").oninput = () => renderMosques(research);
+  $("mosque-area").onchange = () => renderMosques(research);
 }
 
 function renderLeads(research: ResearchData): void {

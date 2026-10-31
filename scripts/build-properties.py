@@ -369,19 +369,151 @@ def islamic_of(pid, point, islamic):
         return None
     near = [] if point is None else sorted(
         (
-            dict(f, km=round(distance(point, (f["lng"], f["lat"])), 2))
+            dict(f, km=distance(point, (f["lng"], f["lat"])))
             for f in islamic["facilities"]
         ),
         key=lambda f: f["km"],
     )
     near = [f for f in near if f["km"] <= islamic["radiusKm"]]
-    pick = lambda f: {k: f[k] for k in ("id", "name", "kind", "km", "evidence", "lat", "lng", "social")}  # noqa: E731
+    def pick(f):
+        return dict({k: f[k] for k in ("id", "name", "kind", "evidence", "lat", "lng", "social")}, km=round(f["km"], 2))
     kajian = [dict(pick(f), kajian=f["kajian"]) for f in near if f["kajian"]][:3]
     education = [dict(pick(f), education=f["education"]) for f in near if f["education"]][:4]
     claims = islamic["claims"].get(pid, [])
     if not (kajian or education or claims):
         return None
     return {"kajian": kajian, "education": education, "claims": claims}
+
+
+def load_mosques(path, regions):
+    """Only curated map facts, never event captions or speaker/contact details."""
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text())
+    if data.get("schemaVersion") != 1 or not is_date(data.get("checkedAt")):
+        raise Invalid("mosques: versi atau tanggal tidak valid")
+    source = data.get("source") or {}
+    source_url = url(source.get("url"), "mosques.source.url")
+    if source_url != "https://ihrish.app/peta/?kapan=semua":
+        raise Invalid("mosques: sumber bukan peta Ihrish yang dikurasi")
+    items, seen = [], set()
+    for raw in data.get("mosques", []):
+        mid = text(raw.get("id"), "mosques.id", 100)
+        if mid in seen or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", mid):
+            raise Invalid("mosques: ID ganda atau tidak valid")
+        seen.add(mid)
+        lat, lng = raw.get("lat"), raw.get("lng")
+        if any(isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v) for v in (lat, lng)) or not (-90 <= lat <= 90 and -180 <= lng <= 180):
+            raise Invalid(f"mosques.{mid}: koordinat tidak valid")
+        count = number(raw.get("eventCount"), f"mosques.{mid}.eventCount", integer=True)
+        profile = raw.get("profile")
+        if profile is not None:
+            fields = ("listedUpcoming", "notCancelledUpcoming", "cancelledUpcoming", "regularNotCancelled")
+            if any(type(profile.get(k)) is not int or profile[k] < 0 for k in fields):
+                raise Invalid(f"mosques.{mid}: jumlah profil tidak valid")
+            if profile["listedUpcoming"] != count or profile["notCancelledUpcoming"] + profile["cancelledUpcoming"] != count or profile["regularNotCancelled"] > profile["notCancelledUpcoming"]:
+                raise Invalid(f"mosques.{mid}: jumlah profil tidak cocok dengan snapshot")
+            dates = profile.get("distinctDates")
+            if not isinstance(dates, list) or any(not is_date(d) or len(d) != 10 for d in dates) or dates != sorted(set(dates)):
+                raise Invalid(f"mosques.{mid}: tanggal profil tidak valid")
+            if profile.get("firstDate") != (dates[0] if dates else None) or profile.get("lastDate") != (dates[-1] if dates else None):
+                raise Invalid(f"mosques.{mid}: rentang profil tidak cocok")
+            profile = {k: profile[k] for k in (*fields, "distinctDates", "firstDate", "lastDate")}
+        point = (round(lng, 6), round(lat, 6))
+        region, _ = locate_region(point, regions)
+        profile_url = url(raw.get("sourceUrl"), f"mosques.{mid}.sourceUrl")
+        if profile_url != f"https://ihrish.app/masjid/{mid}/":
+            raise Invalid(f"mosques.{mid}: tautan profil tidak cocok")
+        maps = url(raw.get("googleMapsUrl"), f"mosques.{mid}.googleMapsUrl")
+        expected_maps = f"https://www.google.com/maps/search/?api=1&query={point[1]:.6f},{point[0]:.6f}"
+        if maps != expected_maps:
+            raise Invalid(f"mosques.{mid}: tautan Maps berbeda dari titik")
+        items.append({
+            "id": mid,
+            "name": text(raw.get("name"), f"mosques.{mid}.name", 160),
+            "address": text(raw.get("address"), f"mosques.{mid}.address", 300),
+            "lat": point[1], "lng": point[0],
+            "area": region["area"] if region else None,
+            "eventCount": count,
+            "sourceUrl": profile_url,
+            "googleMapsUrl": maps,
+            "profile": profile,
+            "nearbyProperties": [],
+            "relatedListings": [],
+        })
+    if len(items) != source.get("reportedMosques") or sum(m["eventCount"] for m in items) != source.get("reportedEvents"):
+        raise Invalid("mosques: jumlah lokasi/jadwal berbeda dari snapshot")
+    return {
+        "checkedAt": data["checkedAt"],
+        "sourceUrl": source_url,
+        "radiusKm": 1.5,
+        "note": "Masjid dengan kajian tercatat di peta Ihrish. Jumlah jadwal adalah snapshot, dapat mencakup pembatalan, bukan frekuensi mingguan. Pin berasal dari direktori dan belum disurvei. Jarak proyek dihitung garis lurus; hubungan iklan tanpa titik hanya sampai kawasan.",
+        "items": items,
+    }
+
+
+def add_mosques_to_islamic(islamic, mosques):
+    if not mosques:
+        return islamic
+    if islamic is None:
+        islamic = {"checkedAt": mosques["checkedAt"], "radiusKm": 1.5, "method": "", "caveats": [], "facilities": [], "claims": {}}
+    islamic["method"] = "Fasilitas dari OSM/registri dan bukti publik, ditambah pin masjid berkajian dari snapshot peta Ihrish. Adanya kajian cukup untuk pencantuman; tidak harus rutin. Jarak garis lurus dalam 1,5 km."
+    islamic["caveats"].append("Jumlah jadwal Ihrish adalah snapshot dan dapat mencakup pembatalan, bukan frekuensi mingguan. Pin direktori belum disurvei.")
+    for mosque in mosques["items"]:
+        lat, lng = mosque["lat"], mosque["lng"]
+        if not (BBOX[0] <= lng <= BBOX[2] and BBOX[1] <= lat <= BBOX[3]):
+            continue
+        profile = mosque["profile"]
+        if profile is not None and profile["notCancelledUpcoming"] == 0:
+            continue
+        islamic["facilities"].append({
+            "id": "ihrish-" + mosque["id"], "name": mosque["name"], "kind": "masjid",
+            "lat": lat, "lng": lng, "coordinateSource": "ihrish-map",
+            "coordinateUrl": mosques["sourceUrl"], "evidence": "partial", "social": [],
+            "kajian": [{
+                "schedule": f"{mosque['eventCount']} jadwal tercatat pada {mosques['checkedAt']}; periksa tanggal dan pembatalan di Ihrish.",
+                "frequency": "belum diketahui", "audience": "belum diketahui",
+                "url": mosques["sourceUrl"], "pageDate": None,
+            }],
+            "education": None,
+        })
+    return islamic
+
+
+def mosque_property_links(mosques, features, leads, rentals, sale_ads, links_path):
+    if not mosques:
+        return None
+    # Radius is checked before rounding; no proximity inferred for unlocated units.
+    for mosque in mosques["items"]:
+        near = []
+        for feature in features:
+            if feature["geometry"] is None:
+                continue
+            km = distance((mosque["lng"], mosque["lat"]), feature["geometry"]["coordinates"])
+            if km <= mosques["radiusKm"]:
+                p = feature["properties"]
+                near.append({"id": p["id"], "name": p["name"], "km": round(km, 2)})
+        mosque["nearbyProperties"] = sorted(near, key=lambda p: (p["km"], p["id"]))
+    by_id = {m["id"]: m for m in mosques["items"]}
+    catalogues = {
+        "rental": {r["id"]: r["title"] for r in (rentals or {}).get("rentals", [])},
+        "sale": {a["id"]: a["title"] for a in (sale_ads or {}).get("ads", [])},
+        "lead": {lead["id"]: lead["name"] for lead in (leads or {}).get("leads", [])},
+    }
+    links = json.loads(links_path.read_text()).get("links", []) if links_path.exists() else []
+    seen = set()
+    for link in links:
+        mid, lid, kind = link.get("mosqueId"), link.get("listingId"), link.get("kind")
+        key = (mid, lid, kind)
+        if mid not in by_id or kind not in catalogues or lid not in catalogues[kind] or key in seen:
+            raise Invalid("mosques: hubungan iklan hilang, salah jenis, atau duplikat")
+        seen.add(key)
+        by_id[mid]["relatedListings"].append({
+            "id": lid, "title": catalogues[kind][lid], "kind": kind,
+            "relation": text(link.get("relation"), "mosques.links.relation", 160),
+            "note": text(link.get("note"), "mosques.links.note", 350),
+        })
+    return mosques
 
 
 LEAD_TYPES = {"project", "account", "service", "hashtag", "rental"}
@@ -827,12 +959,15 @@ def build(
     leads_path=ROOT / "research/leads.json",
     rentals_path=ROOT / "research/rentals.json",
     sale_ads_path=ROOT / "research/sale-ads.json",
+    mosques_path=ROOT / "research/masjid/ihrish-mosques.json",
+    mosque_links_path=ROOT / "research/masjid/ihrish-property-links.json",
 ):
     regions = json.loads((ROOT / "public/data/regions.geojson").read_text())["features"]
     stations = load_stations()
     population = load_population()
     planned = load_planned(planned_path)
-    islamic = load_islamic()
+    mosques = load_mosques(mosques_path, regions)
+    islamic = add_mosques_to_islamic(load_islamic(), mosques)
     leads = load_leads(leads_path)
     rentals = load_rentals(rentals_path)
     sale_ads = load_sale_ads(sale_ads_path)
@@ -848,6 +983,7 @@ def build(
         else:
             dropped.append(excluded_summary(entry, reason, islamic))
     features.sort(key=lambda f: f["id"])
+    mosques = mosque_property_links(mosques, features, leads, rentals, sale_ads, mosque_links_path)
     included = {}
     for feature in features:
         corridor = feature["properties"]["corridor"]
@@ -897,6 +1033,7 @@ def build(
             "leads": leads,
             "rentals": rentals,
             "saleAds": sale_ads,
+            "mosques": mosques,
             "islamic": {
                 "checkedAt": islamic["checkedAt"],
                 "radiusKm": islamic["radiusKm"],
@@ -924,9 +1061,11 @@ def main():
     parser.add_argument("--leads", type=pathlib.Path, default=ROOT / "research/leads.json")
     parser.add_argument("--rentals", type=pathlib.Path, default=ROOT / "research/rentals.json")
     parser.add_argument("--sale-ads", type=pathlib.Path, default=ROOT / "research/sale-ads.json")
+    parser.add_argument("--mosques", type=pathlib.Path, default=ROOT / "research/masjid/ihrish-mosques.json")
+    parser.add_argument("--mosque-links", type=pathlib.Path, default=ROOT / "research/masjid/ihrish-property-links.json")
     args = parser.parse_args()
     try:
-        result, dropped = build(json.loads(args.input.read_text()), args.planned, args.leads, args.rentals, args.sale_ads)
+        result, dropped = build(json.loads(args.input.read_text()), args.planned, args.leads, args.rentals, args.sale_ads, args.mosques, args.mosque_links)
     except Invalid as error:
         sys.exit(f"Data riset tidak valid: {error}")
     body = json.dumps(result, ensure_ascii=False, indent=1) + "\n"

@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-31",
+  "note": "Hubungan editorial hanya sampai kawasan atau klaim bernama, bukan geocode unit pribadi. Proyek berkoordinat dicocokkan otomatis oleh builder dalam radius 1,5 km garis lurus.",
+  "sources": [
+    {
+      "url": "https://www.bekasikota.go.id/detail/masjid-al-ahdhar-perum-green-park-diresmikan-oleh-wali-kota-bekasi",
+      "supports": "Masjid Al Ahdhar di Green Park Jatimelati"
+    },
+    {
+      "url": "https://ihrish.app/peta/?kapan=semua",
+      "supports": "Nama, titik masjid, dan jumlah jadwal snapshot"
+    }
+  ],
+  "links": [
+    {
+      "mosqueId": "masjid-al-ahdhar",
+      "listingId": "sewa-ihrish-greenpark43",
+      "kind": "rental",
+      "relation": "Satu kawasan Green Park Jatimelati",
+      "note": "Iklan dan sumber pemerintah menempatkan rumah/masjid di Green Park. Jarak dari unit tidak dihitung; stok perlu dikonfirmasi."
+    },
+    {
+      "mosqueId": "masjid-al-ahdhar",
+      "listingId": "sewa-ihrish-greenpark60",
+      "kind": "rental",
+      "relation": "Satu kawasan Green Park Jatimelati",
+      "note": "Iklan dan sumber pemerintah menempatkan rumah/masjid di Green Park. Jarak dari unit tidak dihitung; stok perlu dikonfirmasi."
+    },
+    {
+      "mosqueId": "masjid-al-ahdhar",
+      "listingId": "sewa-ihrish-greenpark75",
+      "kind": "rental",
+      "relation": "Satu kawasan Green Park Jatimelati",
+      "note": "Iklan dan sumber pemerintah menempatkan rumah/masjid di Green Park. Jarak dari unit tidak dihitung; stok perlu dikonfirmasi."
+    },
+    {
+      "mosqueId": "masjid-al-ahdhar",
+      "listingId": "jual-ihrish-greenpark-2100",
+      "kind": "sale",
+      "relation": "Nama masjid disebut dalam iklan",
+      "note": "Sumber Brighton mencantumkan Masjid Al Ahdhar sebagai fasilitas klaster. Jarak dari unit dan stok belum diverifikasi."
+    },
+    {
+      "mosqueId": "masjid-nurul-i-tishom",
+      "listingId": "jual-ihrish-dutakranji-900",
+      "kind": "sale",
+      "relation": "Satu kawasan Duta Kranji",
+      "note": "Portal menyebut Yayasan Nurul Itishom; angka 0,15 km bukan jarak terverifikasi ke masjid. Rute unit dan stok belum diketahui."
+    },
+    {
+      "mosqueId": "masjid-nurul-i-tishom",
+      "listingId": "lead-duta-kranji-rumah-sewa",
+      "kind": "lead",
+      "relation": "Petunjuk sewa lama, belum diverifikasi",
+      "note": "Masih berupa petunjuk dari pekerjaan sebelumnya. Harga/stok terkini dan jarak dari unit ke masjid belum terbukti."
+    },
+    {
+      "mosqueId": "masjid-nurul-i-tishom",
+      "listingId": "lead-duta-kranji-kontrakan-lama",
+      "kind": "lead",
+      "relation": "Petunjuk sewa lama, belum diverifikasi",
+      "note": "Masih berupa petunjuk dari pekerjaan sebelumnya. Harga/stok terkini dan jarak dari unit ke masjid belum terbukti."
+    },
+    {
+      "mosqueId": "masjid-al-furqan-grand-galaxy-city",
+      "listingId": "lead-ihrish-galaxy-599",
+      "kind": "lead",
+      "relation": "Klaim indeks pencarian, belum diverifikasi",
+      "note": "Klaim 500 m belum diukur. Halaman portal403; bukan listing aktif terverifikasi."
+    }
+  ]
+}

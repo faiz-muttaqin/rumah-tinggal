@@ -1433,6 +1433,150 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-10-31"
+    },
+    {
+      "id": "sewa-ihrish-greenpark43",
+      "title": "Rumah Green Park Jatimelati 2 kamar + ruang ART",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Jatimelati, Pondokmelati, Kota Bekasi",
+      "buildingOrCluster": "Green Park Residence",
+      "rent": {
+        "amount": 43000000,
+        "period": "yearly",
+        "quote": "Rp 43 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-dalam-cluster-komplek-green-park-di-jatimelati",
+        "pageDate": null
+      },
+      "bedrooms": 2,
+      "sizeM2": 100,
+      "furnished": "semi",
+      "evidence": [
+        {
+          "quote": "SMP Islam Terpadu Iqro",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-dalam-cluster-komplek-green-park-di-jatimelati"
+        },
+        {
+          "quote": "SD Islam Nurul Hikmah Ii",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-dalam-cluster-komplek-green-park-di-jatimelati"
+        }
+      ],
+      "nearStationsClaim": [],
+      "areaHighlights": [
+        {
+          "kind": "Masjid dengan kajian",
+          "name": "Masjid Al Ahdhar",
+          "description": "Profil Ihrish menampilkan lima jadwal pada 31 Oktober–1 November 2026; jadwal perlu dicek kembali.",
+          "url": "https://ihrish.app/masjid/masjid-al-ahdhar/",
+          "relation": "Iklan menyebut Green Park Jatimelati. Masjid Al Ahdhar berada di perumahan itu; jarak dan rute unit belum diketahui.",
+          "relationUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-dalam-cluster-komplek-green-park-di-jatimelati"
+        }
+      ],
+      "note": "Minimum sewa 12 bulan. Halaman masih menawarkan unit saat dicek; stok belum dikonfirmasi. Nama sekolah berasal dari fasilitas sekitar portal; angka jaraknya belum diverifikasi. Hubungan masjid hanya satu kawasan, bukan hasil pengukuran dari unit.",
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-dalam-cluster-komplek-green-park-di-jatimelati",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": null,
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-31"
+    },
+    {
+      "id": "sewa-ihrish-greenpark60",
+      "title": "Rumah Green Park Jatimelati 4 kamar, dua lantai",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Jatimelati, Pondokmelati, Kota Bekasi",
+      "buildingOrCluster": "Green Park Residence",
+      "rent": {
+        "amount": 60000000,
+        "period": "yearly",
+        "quote": "Rp 60 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bagus-2-lantai-di-perumahan-green-park-jatimelati-di-jatimelati",
+        "pageDate": null
+      },
+      "bedrooms": 4,
+      "sizeM2": 220,
+      "furnished": "semi",
+      "evidence": [
+        {
+          "quote": "SMP Islam Terpadu Iqro",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bagus-2-lantai-di-perumahan-green-park-jatimelati-di-jatimelati"
+        },
+        {
+          "quote": "SD Islam Nurul Hikmah Ii",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bagus-2-lantai-di-perumahan-green-park-jatimelati-di-jatimelati"
+        }
+      ],
+      "nearStationsClaim": [],
+      "areaHighlights": [
+        {
+          "kind": "Masjid dengan kajian",
+          "name": "Masjid Al Ahdhar",
+          "description": "Profil Ihrish menampilkan lima jadwal pada 31 Oktober–1 November 2026; jadwal perlu dicek kembali.",
+          "url": "https://ihrish.app/masjid/masjid-al-ahdhar/",
+          "relation": "Iklan menyebut Green Park Jatimelati. Masjid Al Ahdhar berada di perumahan itu; jarak dan rute unit belum diketahui.",
+          "relationUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bagus-2-lantai-di-perumahan-green-park-jatimelati-di-jatimelati"
+        }
+      ],
+      "note": "Minimum sewa 12 bulan. Halaman masih menawarkan unit saat dicek; stok belum dikonfirmasi. Nama sekolah berasal dari fasilitas sekitar portal; angka jaraknya belum diverifikasi. Hubungan masjid hanya satu kawasan, bukan hasil pengukuran dari unit.",
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bagus-2-lantai-di-perumahan-green-park-jatimelati-di-jatimelati",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": null,
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-31"
+    },
+    {
+      "id": "sewa-ihrish-greenpark75",
+      "title": "Rumah Green Park Jatimelati 4 kamar, 170 m²",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Jatimelati, Pondokmelati, Kota Bekasi",
+      "buildingOrCluster": "Green Park Residence",
+      "rent": {
+        "amount": 75000000,
+        "period": "yearly",
+        "quote": "Rp 75 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-mewah-di-green-park-kota-bekasi-dekat-pintu-tol-di-jatimelati",
+        "pageDate": null
+      },
+      "bedrooms": 4,
+      "sizeM2": 170,
+      "furnished": "semi",
+      "evidence": [
+        {
+          "quote": "SMP Islam Terpadu Iqro",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-mewah-di-green-park-kota-bekasi-dekat-pintu-tol-di-jatimelati"
+        },
+        {
+          "quote": "SD Islam Nurul Hikmah Ii",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-mewah-di-green-park-kota-bekasi-dekat-pintu-tol-di-jatimelati"
+        }
+      ],
+      "nearStationsClaim": [],
+      "areaHighlights": [
+        {
+          "kind": "Masjid dengan kajian",
+          "name": "Masjid Al Ahdhar",
+          "description": "Profil Ihrish menampilkan lima jadwal pada 31 Oktober–1 November 2026; jadwal perlu dicek kembali.",
+          "url": "https://ihrish.app/masjid/masjid-al-ahdhar/",
+          "relation": "Iklan menyebut Green Park Jatimelati. Masjid Al Ahdhar berada di perumahan itu; jarak dan rute unit belum diketahui.",
+          "relationUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-mewah-di-green-park-kota-bekasi-dekat-pintu-tol-di-jatimelati"
+        }
+      ],
+      "note": "Minimum sewa 12 bulan. Halaman masih menawarkan unit saat dicek; stok belum dikonfirmasi. Nama sekolah berasal dari fasilitas sekitar portal; angka jaraknya belum diverifikasi. Hubungan masjid hanya satu kawasan, bukan hasil pengukuran dari unit.",
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-mewah-di-green-park-kota-bekasi-dekat-pintu-tol-di-jatimelati",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": null,
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-10-31"
     }
   ]
 }

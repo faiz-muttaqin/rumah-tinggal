@@ -1,0 +1,1835 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "schemaVersion": 1,
+    "checkedAt": "2026-10-31",
+    "source": {
+      "url": "https://ihrish.app/peta/?kapan=semua",
+      "sha256": "bdf8f9dcce3715c7325df43593eb3b36151e0fa40f1c3e91b3e3b27ae6ba35c9",
+      "scope": "mapped-upcoming-snapshot",
+      "headline": "267 kajian di 78 masjid",
+      "reportedMosques": 78,
+      "reportedEvents": 267
+    },
+    "notes": [
+      "Daftar diambil dari satu halaman peta publik yang disimpan, tanpa crawling atau permintaan jaringan oleh importer.",
+      "Snapshot berisi lokasi dengan jadwal yang ditampilkan pada peta; bukan seluruh direktori masjid atau riwayat kajian Ihrish.",
+      "eventCount adalah jumlah jadwal pada snapshot, bukan frekuensi kajian rutin; hitungan peta dapat mencakup jadwal dibatalkan.",
+      "Adanya kajian sudah cukup untuk pencantuman. Penanda rutin pada profil hanya informasi tambahan, bukan syarat rekomendasi.",
+      "Agregat profil hanya tersedia untuk halaman yang diperiksa terpisah; pembatalan dikeluarkan dari hitungan aktif dan rutin.",
+      "Jadwal hari pengecekan dan sesudahnya dihitung menurut tanggal WIB, bukan kepastian bahwa acara belum dimulai atau masih tersedia.",
+      "Koordinat berasal dari direktori pihak ketiga, dibulatkan enam desimal, dan belum disurvei atau diverifikasi di lapangan.",
+      "Konfirmasi jadwal dan akses kepada pengelola sebelum berangkat. Nama pemateri, kontak, rekening, poster, dan caption tidak disimpan."
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6942,
+          -6.24383
+        ]
+      },
+      "properties": {
+        "id": "masjid-abu-bakar-ash-shiddiq-tangerang",
+        "name": "Masjid Abu Bakar Ash Shiddiq Tangerang",
+        "address": "Jl. Akasia No.1",
+        "sourceId": "m_masjid-abu-bakar-ash-shiddiq-tangerang_31",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-abu-bakar-ash-shiddiq-tangerang/",
+        "sourceMapUrl": "https://maps.app.goo.gl/FXqw4UqPMQ51Gm5v9",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.243830,106.694200",
+        "eventCount": 2,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.118786,
+          -6.235691
+        ]
+      },
+      "properties": {
+        "id": "masjid-abu-bakr-ash-shiddiq-cibitung",
+        "name": "Masjid Abu Bakr Ash-Shiddiq Cibitung",
+        "address": "Kampung Islami Thoyibah & Taman Rahmani",
+        "sourceId": "m_masjid-abu-bakr-ash-shiddiq-cibitung_29",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-abu-bakr-ash-shiddiq-cibitung/",
+        "sourceMapUrl": "https://maps.app.goo.gl/U2hfFqhb7yfx3cqX6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.235691,107.118786",
+        "eventCount": 2,
+        "profile": {
+          "url": "https://ihrish.app/masjid/masjid-abu-bakr-ash-shiddiq-cibitung/",
+          "sha256": "fc67d48c0581cbf9c73c345c0ce98eb0307200aae712e00189557fc95d91c5d5",
+          "listedUpcoming": 2,
+          "notCancelledUpcoming": 2,
+          "cancelledUpcoming": 0,
+          "regularNotCancelled": 0,
+          "distinctDates": [
+            "2026-10-31",
+            "2026-11-01"
+          ],
+          "firstDate": "2026-10-31",
+          "lastDate": "2026-11-01",
+          "topics": {
+            "tafsir": 1,
+            "umum": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.803121,
+          -6.320236
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-adhim",
+        "name": "Masjid Al Adhim",
+        "address": "Jl. Andara Raya No.32",
+        "sourceId": "m_masjid-al-adhim_8",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-adhim/",
+        "sourceMapUrl": "https://maps.app.goo.gl/eeVVzsV4ALoSSaZX9",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.320236,106.803121",
+        "eventCount": 5,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.934222,
+          -6.314063
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-ahdhar",
+        "name": "Masjid Al Ahdhar",
+        "address": "Greenpark Residence, Jatimelati, Pondok Melati, Bekasi",
+        "sourceId": "m_masjid-al-ahdhar_9",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-ahdhar/",
+        "sourceMapUrl": "https://maps.app.goo.gl/7HjSr2FZHmvMD8vX8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.314063,106.934222",
+        "eventCount": 5,
+        "profile": {
+          "url": "https://ihrish.app/masjid/masjid-al-ahdhar/",
+          "sha256": "04004a91164cf68d10d3c8e5ab9d46bf92bb7c7c9477b27b2ebfb27863b83b9f",
+          "listedUpcoming": 5,
+          "notCancelledUpcoming": 5,
+          "cancelledUpcoming": 0,
+          "regularNotCancelled": 3,
+          "distinctDates": [
+            "2026-10-31",
+            "2026-11-01"
+          ],
+          "firstDate": "2026-10-31",
+          "lastDate": "2026-11-01",
+          "topics": {
+            "anak-keluarga": 1,
+            "fiqih": 1,
+            "hadits": 1,
+            "sirah": 1,
+            "umum": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.714602,
+          -6.307229
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-amanah",
+        "name": "Masjid Al Amanah",
+        "address": "Jl. Kakak Tua, Serua, Ciputat, Tangerang Selatan",
+        "sourceId": "m_masjid-al-amanah_9",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-amanah/",
+        "sourceMapUrl": "https://maps.app.goo.gl/gByyM4bfkwv2aLtB8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.307229,106.714602",
+        "eventCount": 4,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.862043,
+          -6.174492
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-azhar-cpb",
+        "name": "Masjid Al Azhar CPB",
+        "address": "Jl. Cempaka Putih Barat III No. 25",
+        "sourceId": "m_masjid-al-azhar-cpb_12",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-azhar-cpb/",
+        "sourceMapUrl": "https://maps.app.goo.gl/cNpr8gFGWq5uq31x6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.174492,106.862043",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.496959,
+          -6.923126
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-barkah-batujajar",
+        "name": "Masjid Al Barkah Batujajar",
+        "address": "Jl. Sinarjaya",
+        "sourceId": "m_masjid-al-barkah-batujajar_19",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-barkah-batujajar/",
+        "sourceMapUrl": "https://maps.app.goo.gl/n6YPJ9vCx4Rm48Hz9",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.923126,107.496959",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.722744,
+          -6.303839
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-barkah-ciputat",
+        "name": "Masjid Al Barkah Sawah Baru",
+        "address": "Jl. Merpati 2, Sawah Baru, Ciputat, Tangerang Selatan",
+        "sourceId": "m_masjid-al-barkah-ciputat_17",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-barkah-ciputat/",
+        "sourceMapUrl": "https://maps.app.goo.gl/uZZLTXxnvGTFYsh28",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.303839,106.722744",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.86742,
+          -6.219388
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-fattah",
+        "name": "Masjid Al Fattah",
+        "address": "Jl. Jatinegara Timur, Jatinegara, Jakarta Timur",
+        "sourceId": "m_masjid-al-fattah_9",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-fattah/",
+        "sourceMapUrl": "https://maps.app.goo.gl/bSE2TVEZpTgcvH4x9",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.219388,106.867420",
+        "eventCount": 11,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.972871,
+          -6.261034
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-furqan-grand-galaxy-city",
+        "name": "Masjid Al Furqan Grand Galaxy City",
+        "address": "Jl. Pulosirih Tengah 12",
+        "sourceId": "m_masjid-al-furqan-grand-galaxy-city_27",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-furqan-grand-galaxy-city/",
+        "sourceMapUrl": "https://maps.app.goo.gl/MtuNFBaHP4Q1iGSs6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.261034,106.972871",
+        "eventCount": 6,
+        "profile": {
+          "url": "https://ihrish.app/masjid/masjid-al-furqan-grand-galaxy-city/",
+          "sha256": "9ef477b7e9fb333ea106f6df72beed657fa1da11d62c24fcb22cabf232111879",
+          "listedUpcoming": 6,
+          "notCancelledUpcoming": 6,
+          "cancelledUpcoming": 0,
+          "regularNotCancelled": 0,
+          "distinctDates": [
+            "2026-11-05",
+            "2026-11-07",
+            "2026-11-12",
+            "2026-11-17",
+            "2026-11-19",
+            "2026-11-26"
+          ],
+          "firstDate": "2026-11-05",
+          "lastDate": "2026-11-26",
+          "topics": {
+            "hadits": 1,
+            "umum": 5
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.721228,
+          -6.268504
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-hasanah-bintaro",
+        "name": "Masjid Al Hasanah Bintaro",
+        "address": "Jl. Cilosari I No.24",
+        "sourceId": "m_masjid-al-hasanah-bintaro_18",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-hasanah-bintaro/",
+        "sourceMapUrl": "https://maps.app.goo.gl/whJcRXic4PaZywvv8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.268504,106.721228",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.804235,
+          -6.17871
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-hidayah-tomang",
+        "name": "Masjid Al Hidayah Tomang",
+        "address": "Jl. Bidara II",
+        "sourceId": "m_masjid-al-hidayah-tomang_17",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-hidayah-tomang/",
+        "sourceMapUrl": "https://maps.app.goo.gl/Qdj9GbbZyKXWzocR7",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.178710,106.804235",
+        "eventCount": 2,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.695277,
+          -6.263323
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-hijrah-discovery-flamine",
+        "name": "Masjid Al Hijrah Discovery Flamine",
+        "address": "Discovery Flamine",
+        "sourceId": "m_masjid-al-hijrah-discovery-flamine_27",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-hijrah-discovery-flamine/",
+        "sourceMapUrl": "https://maps.app.goo.gl/cS82VTjBaNFk5SW37",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.263323,106.695277",
+        "eventCount": 6,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.796217,
+          -6.313404
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-hikmah-ddn-2",
+        "name": "Masjid Al Hikmah DDN 2",
+        "address": "Komplek DDN II, Jl. Pangkalan Jati, Pondok Labu, Cilandak, Jakarta Selatan",
+        "sourceId": "m_masjid-al-hikmah-ddn-2_15",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-hikmah-ddn-2/",
+        "sourceMapUrl": "https://maps.app.goo.gl/aTXSAmkwrrAo1pRE8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.313404,106.796217",
+        "eventCount": 3,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.034905,
+          -6.271268
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-ikhlas-dukuh-bima",
+        "name": "Masjid Al Ikhlas Dukuh Bima",
+        "address": "Jl. Raya Dukuh Bima, Kab. Bekasi",
+        "sourceId": "m_masjid-al-ikhlas-dukuh-bima_20",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-ikhlas-dukuh-bima/",
+        "sourceMapUrl": "https://maps.app.goo.gl/rGgwbej9mZqd4C5i8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.271268,107.034905",
+        "eventCount": 4,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.841093,
+          -6.459324
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-ikhlas-nirwana-2",
+        "name": "Masjid Al Ikhlas Nirwana 2",
+        "address": "Perumahan Puri Nirwana 2, Cibinong, Bogor",
+        "sourceId": "m_masjid-al-ikhlas-nirwana-2_19",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-ikhlas-nirwana-2/",
+        "sourceMapUrl": "https://maps.app.goo.gl/kuFQNtwJkiTubvGF7",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.459324,106.841093",
+        "eventCount": 3,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.800441,
+          -6.524356
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-jannah-gcc",
+        "name": "Masjid Al Jannah GCC",
+        "address": "Jl. Graha Cilebut Cluster, Blk. A",
+        "sourceId": "m_masjid-al-jannah-gcc_13",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-jannah-gcc/",
+        "sourceMapUrl": "https://maps.app.goo.gl/jJHXAgnVSAf18h957",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.524356,106.800441",
+        "eventCount": 3,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.85837,
+          -6.212293
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-kautsar-matraman",
+        "name": "Masjid Al Kautsar Matraman",
+        "address": "Jl. Slamet Riyadi Raya No. 21, Kebon Manggis, Matraman, Jakarta Timur",
+        "sourceId": "m_masjid-al-kautsar-matraman_19",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-kautsar-matraman/",
+        "sourceMapUrl": "https://maps.app.goo.gl/McxqC48SxAzCBf6V6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.212293,106.858370",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.844527,
+          -6.380313
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-lathiif",
+        "name": "Masjid Al Lathiif",
+        "address": "Pesona Square Mall Lantai 3, Depok",
+        "sourceId": "m_masjid-al-lathiif_10",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-lathiif/",
+        "sourceMapUrl": "https://maps.app.goo.gl/o6xH7Geg8GLeTpA87",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.380313,106.844527",
+        "eventCount": 10,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.896717,
+          -6.199731
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-mizan",
+        "name": "Masjid Al Mizan",
+        "address": "Jl. Gabus II",
+        "sourceId": "m_masjid-al-mizan_8",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-mizan/",
+        "sourceMapUrl": "https://maps.app.goo.gl/ekdWDNk7nvPmgavX9",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.199731,106.896717",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.817297,
+          -6.154406
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-mubarak",
+        "name": "Masjid Al Mubarak",
+        "address": "Jl. Kebahagiaan, Krukut, Taman Sari, Jakarta Barat",
+        "sourceId": "m_masjid-al-mubarak_10",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-mubarak/",
+        "sourceMapUrl": "https://maps.app.goo.gl/bKH5S2QvQcRxkaYd8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.154406,106.817297",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.790367,
+          -6.372917
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-muhajirin-wal-anshar",
+        "name": "Masjid Al Muhajirin Wal Anshar",
+        "address": "Jl. Raya Grogol No.121",
+        "sourceId": "m_masjid-al-muhajirin-wal-anshar_23",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-muhajirin-wal-anshar/",
+        "sourceMapUrl": "https://maps.app.goo.gl/ZcwReYvwrsNJaDNA8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.372917,106.790367",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.654285,
+          -6.315312
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-ukhuwah",
+        "name": "Masjid Al Ukhuwah",
+        "address": "Jl. Raya Cisauk Lapan, BSD, Cisauk, Tangerang",
+        "sourceId": "m_masjid-al-ukhuwah_10",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-ukhuwah/",
+        "sourceMapUrl": "https://maps.app.goo.gl/uRBeWuGMVZ1iTw3u9",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.315312,106.654285",
+        "eventCount": 8,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.95636,
+          -6.251989
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-aqsho",
+        "name": "Masjid Al-Aqsho",
+        "address": "Jl. Prima Lkr. Asri Blok B2, Jatibening, Bekasi",
+        "sourceId": "m_masjid-al-aqsho_8",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-aqsho/",
+        "sourceMapUrl": "https://maps.app.goo.gl/1Cu41pr3GqmzhVSs8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.251989,106.956360",
+        "eventCount": 2,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.629822,
+          -6.882183
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-hafidz-cigadung",
+        "name": "Masjid Al-Hafidz Cigadung",
+        "address": "Cigadung Valley Residence",
+        "sourceId": "m_masjid-al-hafidz-cigadung_18",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-hafidz-cigadung/",
+        "sourceMapUrl": "https://maps.app.goo.gl/JVLiLUJZGgnFRRdk6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.882183,107.629822",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.644489,
+          -6.169065
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-hakim",
+        "name": "Masjid Al-Hakim",
+        "address": "Komplek Kehakiman",
+        "sourceId": "m_masjid-al-hakim_8",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-hakim/",
+        "sourceMapUrl": "https://maps.app.goo.gl/dAV866oMymjhjv5b9",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.169065,106.644489",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.725643,
+          -6.354163
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-hakim-pamulang",
+        "name": "Masjid Al-Hakim Pamulang",
+        "address": "Pondok Hanifa",
+        "sourceId": "m_masjid-al-hakim-pamulang_17",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-hakim-pamulang/",
+        "sourceMapUrl": "https://maps.app.goo.gl/uutXoeDJM21aH9W38",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.354163,106.725643",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.946843,
+          -6.189708
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-hidayah",
+        "name": "Masjid Al-Hidayah",
+        "address": "Jl. Gebang Mas V, Taman Pulo Gebang, Cakung Timur, Cakung, Jakarta Timur",
+        "sourceId": "m_masjid-al-hidayah_10",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-hidayah/",
+        "sourceMapUrl": "https://maps.app.goo.gl/6QwrvZejPsEV5dk26",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.189708,106.946843",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.893163,
+          -6.217447
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-ihsan",
+        "name": "Masjid Al-Ihsan Cipinang",
+        "address": "Jl. Batas, Cipinang Muara, Jakarta Timur",
+        "sourceId": "m_masjid-al-ihsan_8",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-ihsan/",
+        "sourceMapUrl": "https://maps.app.goo.gl/DWSVQSPSBEM5Woy19",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.217447,106.893163",
+        "eventCount": 4,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.777186,
+          -6.541509
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-ikhlas-tamansari-persada",
+        "name": "Masjid Al-Ikhlas Tamansari Persada",
+        "address": "Jl. Taman Sari Persada",
+        "sourceId": "m_masjid-al-ikhlas-tamansari-persada_27",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-ikhlas-tamansari-persada/",
+        "sourceMapUrl": "https://maps.app.goo.gl/uUNXfBGtQR4qhus29",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.541509,106.777186",
+        "eventCount": 3,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.773404,
+          -6.559626
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-istiqomah-taman-yasmin",
+        "name": "Masjid Al-Istiqomah Taman Yasmin",
+        "address": "Jl. Seroja Raya No.10",
+        "sourceId": "m_masjid-al-istiqomah-taman-yasmin_25",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-istiqomah-taman-yasmin/",
+        "sourceMapUrl": "https://maps.app.goo.gl/8tJPbNf5KMv4CyCfA",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.559626,106.773404",
+        "eventCount": 5,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.161945,
+          -6.311161
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-jihad-cikarang-baru",
+        "name": "Masjid Al-Jihad Cikarang Baru",
+        "address": "Jl. Beruang X Blok G",
+        "sourceId": "m_masjid-al-jihad-cikarang-baru_22",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-jihad-cikarang-baru/",
+        "sourceMapUrl": "https://maps.app.goo.gl/KkyDeD3uEfis4DCg6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.311161,107.161945",
+        "eventCount": 2,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.711207,
+          -6.30367
+        ]
+      },
+      "properties": {
+        "id": "masjid-al-muhajirin-villa-gunung-lestari",
+        "name": "Masjid Al-Muhajirin Villa Gunung Lestari",
+        "address": "Komplek Villa Gunung Lestari",
+        "sourceId": "m_masjid-al-muhajirin-villa-gunung-lestari_33",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-al-muhajirin-villa-gunung-lestari/",
+        "sourceMapUrl": "https://maps.app.goo.gl/eMrAmEPxENL4DnVZ7",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.303670,106.711207",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.912637,
+          -6.27067
+        ]
+      },
+      "properties": {
+        "id": "masjid-aminussalam",
+        "name": "Masjid Aminussalam",
+        "address": "Jl. Setia 2",
+        "sourceId": "m_masjid-aminussalam_11",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-aminussalam/",
+        "sourceMapUrl": "https://maps.app.goo.gl/y5gnQxpXhTBbmx8Q8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.270670,106.912637",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.683338,
+          -6.229024
+        ]
+      },
+      "properties": {
+        "id": "masjid-an-naba",
+        "name": "Masjid An Naba'",
+        "address": "Jl. Akses Graha Raya, Pinang, Tangerang, Banten",
+        "sourceId": "m_masjid-an-naba_7",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-an-naba/",
+        "sourceMapUrl": "https://maps.app.goo.gl/Hc6g59aWScZ8ymDc7",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.229024,106.683338",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.781173,
+          -6.199527
+        ]
+      },
+      "properties": {
+        "id": "masjid-an-nur-casagoya",
+        "name": "Masjid An Nur Casagoya",
+        "address": "Jl. Kebon Jeruk, Kemanggisan, Palmerah, Jakarta Barat",
+        "sourceId": "m_masjid-an-nur-casagoya_15",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-an-nur-casagoya/",
+        "sourceMapUrl": "https://maps.app.goo.gl/Y35KCVzXxhAPLqoA6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.199527,106.781173",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.697534,
+          -6.266355
+        ]
+      },
+      "properties": {
+        "id": "masjid-ar-rahman-discovery-lumina",
+        "name": "Masjid Ar Rahman Discovery Lumina",
+        "address": "Discovery Lumina",
+        "sourceId": "m_masjid-ar-rahman-discovery-lumina_26",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-ar-rahman-discovery-lumina/",
+        "sourceMapUrl": "https://maps.app.goo.gl/LphqpwtS5kfPcRef7",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.266355,106.697534",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.840882,
+          -6.393089
+        ]
+      },
+      "properties": {
+        "id": "masjid-ar-riyadh",
+        "name": "Masjid Ar-Riyadh",
+        "address": "Jl. Kolintang II, Mekar Jaya, Depok",
+        "sourceId": "m_masjid-ar-riyadh_9",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-ar-riyadh/",
+        "sourceMapUrl": "https://maps.app.goo.gl/FbR6HJjDF5Aosxsm7",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.393089,106.840882",
+        "eventCount": 2,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.773632,
+          -6.37919
+        ]
+      },
+      "properties": {
+        "id": "masjid-as-sunnah-meruyung",
+        "name": "Masjid As Sunnah Meruyung",
+        "address": "Jl. Tiga Putra No.1",
+        "sourceId": "m_masjid-as-sunnah-meruyung_18",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-as-sunnah-meruyung/",
+        "sourceMapUrl": "https://maps.app.goo.gl/xir26wSqWHNyYXjy5",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.379190,106.773632",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.772954,
+          -6.317779
+        ]
+      },
+      "properties": {
+        "id": "masjid-as-sunnah-vcm",
+        "name": "Masjid As Sunnah VCM",
+        "address": "Jl. Matahari Raya-Gelagah, Ciputat, Tangerang Selatan",
+        "sourceId": "m_masjid-as-sunnah-vcm_13",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-as-sunnah-vcm/",
+        "sourceMapUrl": "https://maps.app.goo.gl/L4k2NQrKGQf8pi7t8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.317779,106.772954",
+        "eventCount": 25,
+        "profile": {
+          "url": "https://ihrish.app/masjid/masjid-as-sunnah-vcm/",
+          "sha256": "3fdeb6cb319252a37c023aa93d80e2b03911372074bece046650343d4af91b52",
+          "listedUpcoming": 25,
+          "notCancelledUpcoming": 24,
+          "cancelledUpcoming": 1,
+          "regularNotCancelled": 22,
+          "distinctDates": [
+            "2026-10-31",
+            "2026-11-01",
+            "2026-11-02",
+            "2026-11-07",
+            "2026-11-08",
+            "2026-11-09",
+            "2026-11-10",
+            "2026-11-14",
+            "2026-11-15",
+            "2026-11-16",
+            "2026-11-21",
+            "2026-11-22",
+            "2026-11-23",
+            "2026-11-28",
+            "2026-11-29"
+          ],
+          "firstDate": "2026-10-31",
+          "lastDate": "2026-11-29",
+          "topics": {
+            "anak-keluarga": 2,
+            "fiqih": 2,
+            "hadits": 6,
+            "muslimah": 1,
+            "sirah": 3,
+            "umum": 10
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.700611,
+          -6.277825
+        ]
+      },
+      "properties": {
+        "id": "masjid-ash-shaff",
+        "name": "Masjid Ash Shaff",
+        "address": "Jl. Emerald Boulevard, Emerald Bintaro, Pd. Aren, Tangerang Selatan",
+        "sourceId": "m_masjid-ash-shaff_9",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-ash-shaff/",
+        "sourceMapUrl": "https://maps.app.goo.gl/mSQWwkZsHCvLtwLH9",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.277825,106.700611",
+        "eventCount": 10,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.642357,
+          -6.930097
+        ]
+      },
+      "properties": {
+        "id": "masjid-ash-shiddiq-bandung",
+        "name": "Masjid Ash Shiddiq Bandung",
+        "address": "Jl. Kebon Gedang",
+        "sourceId": "m_masjid-ash-shiddiq-bandung_19",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-ash-shiddiq-bandung/",
+        "sourceMapUrl": "https://maps.app.goo.gl/67kXJxKNh6GQ97GH6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.930097,107.642357",
+        "eventCount": 2,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.863804,
+          -6.359179
+        ]
+      },
+      "properties": {
+        "id": "masjid-asy-syakirin-depok",
+        "name": "Masjid Asy-Syakirin Depok",
+        "address": "Jl. Bulak Permai I No.12 Blok S",
+        "sourceId": "m_masjid-asy-syakirin-depok_18",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-asy-syakirin-depok/",
+        "sourceMapUrl": "https://maps.app.goo.gl/dfGm5XUgMwDTZmS88",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.359179,106.863804",
+        "eventCount": 3,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.726097,
+          -6.210029
+        ]
+      },
+      "properties": {
+        "id": "masjid-at-tabayyun",
+        "name": "Masjid At Tabayyun",
+        "address": "Jl. Palem Raya, Meruya, Jakarta Barat",
+        "sourceId": "m_masjid-at-tabayyun_11",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-at-tabayyun/",
+        "sourceMapUrl": "https://maps.app.goo.gl/MZAfC8LTBAGbUyhx9",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.210029,106.726097",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.875276,
+          -6.172183
+        ]
+      },
+      "properties": {
+        "id": "masjid-at-taufiq",
+        "name": "Masjid At Taufiq",
+        "address": "Jl. Cempaka Putih Timur VI, Cempaka Putih, Jakarta Pusat",
+        "sourceId": "m_masjid-at-taufiq_9",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-at-taufiq/",
+        "sourceMapUrl": "https://maps.app.goo.gl/s61z12qfAxMgGKJ6A",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.172183,106.875276",
+        "eventCount": 3,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.81491,
+          -6.501471
+        ]
+      },
+      "properties": {
+        "id": "masjid-at-tauhid",
+        "name": "Masjid At-Tauhid",
+        "address": "Jl. Pajeleran Gunung",
+        "sourceId": "m_masjid-at-tauhid_9",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-at-tauhid/",
+        "sourceMapUrl": "https://maps.app.goo.gl/qXH3Epxnf7ZtNoiCA",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.501471,106.814910",
+        "eventCount": 2,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.638597,
+          -6.818785
+        ]
+      },
+      "properties": {
+        "id": "masjid-at-tauhid-lembang",
+        "name": "Masjid At-Tauhid Lembang",
+        "address": "Gang Babakan 1",
+        "sourceId": "m_masjid-at-tauhid-lembang_17",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-at-tauhid-lembang/",
+        "sourceMapUrl": "https://maps.app.goo.gl/jc5iH7ZDpHHzTYMQ9",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.818785,107.638597",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.926573,
+          -6.237459
+        ]
+      },
+      "properties": {
+        "id": "masjid-baiturrahim-kavling-marinir",
+        "name": "Masjid Baiturrahim Kavling Marinir",
+        "address": "Jl. Kav. Marinir Blok AF",
+        "sourceId": "m_masjid-baiturrahim-kavling-marinir_27",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-baiturrahim-kavling-marinir/",
+        "sourceMapUrl": "https://maps.app.goo.gl/ouyqAMPHzXrJqgrq5",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.237459,106.926573",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.770513,
+          -6.278323
+        ]
+      },
+      "properties": {
+        "id": "masjid-baiturrahman",
+        "name": "Masjid Baiturrahman",
+        "address": "Jl. Buana Raya, Pondok Pinang, Jakarta Selatan",
+        "sourceId": "m_masjid-baiturrahman_12",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-baiturrahman/",
+        "sourceMapUrl": "https://maps.app.goo.gl/3GTUxXKNbxjUCpoi7",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.278323,106.770513",
+        "eventCount": 3,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.79359,
+          -6.287057
+        ]
+      },
+      "properties": {
+        "id": "masjid-baitussalam-cilandak",
+        "name": "Masjid Baitussalam Cilandak",
+        "address": "Jl. BNI Raya No.4",
+        "sourceId": "m_masjid-baitussalam-cilandak_20",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-baitussalam-cilandak/",
+        "sourceMapUrl": "https://maps.app.goo.gl/nzhDRdve64Yf93158",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.287057,106.793590",
+        "eventCount": 2,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.0151,
+          -6.225987
+        ]
+      },
+      "properties": {
+        "id": "masjid-bunga-bangsa",
+        "name": "Masjid Bunga Bangsa",
+        "address": "Jl. KH. Agus Salim No.206",
+        "sourceId": "m_masjid-bunga-bangsa_12",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-bunga-bangsa/",
+        "sourceMapUrl": "https://maps.app.goo.gl/6KUoU9QRAYSZxQAw8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.225987,107.015100",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.904668,
+          -6.34146
+        ]
+      },
+      "properties": {
+        "id": "masjid-hijau-nurul-iman",
+        "name": "Masjid Hijau Nurul Iman",
+        "address": "Jl. Raya Cilangkap, Cilangkap, Jakarta Timur",
+        "sourceId": "m_masjid-hijau-nurul-iman_16",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-hijau-nurul-iman/",
+        "sourceMapUrl": "https://maps.app.goo.gl/fLxPc6RpXddbD7Y37",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.341460,106.904668",
+        "eventCount": 2,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.838145,
+          -6.414188
+        ]
+      },
+      "properties": {
+        "id": "masjid-imam-asy-syafi-i",
+        "name": "Masjid Imam Asy-Syafi'i",
+        "address": "Jl. Persahabatan, Sukmajaya, Depok",
+        "sourceId": "m_masjid-imam-asy-syafi-i_16",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-imam-asy-syafi-i/",
+        "sourceMapUrl": "https://maps.app.goo.gl/6zToQ6HeGbkM3BfU6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.414188,106.838145",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.873895,
+          -6.229537
+        ]
+      },
+      "properties": {
+        "id": "masjid-imam-nawawi",
+        "name": "Masjid Imam Nawawi",
+        "address": "Jl. Panti Asuhan, Cipinang Cempedak, Jatinegara, Jakarta Timur",
+        "sourceId": "m_masjid-imam-nawawi_11",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-imam-nawawi/",
+        "sourceMapUrl": "https://maps.app.goo.gl/1K59SKRGD1fbJPmQ8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.229537,106.873895",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.855295,
+          -6.566789
+        ]
+      },
+      "properties": {
+        "id": "masjid-istiqomah-ikea-sentul-city",
+        "name": "Masjid Istiqomah IKEA Sentul City",
+        "address": "Jl. MH. Thamrin No.57",
+        "sourceId": "m_masjid-istiqomah-ikea-sentul-city_26",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-istiqomah-ikea-sentul-city/",
+        "sourceMapUrl": "https://maps.app.goo.gl/o4ooAgeWWstQD18s7",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.566789,106.855295",
+        "eventCount": 2,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.907458,
+          -6.221451
+        ]
+      },
+      "properties": {
+        "id": "masjid-istiqomah-kavling-pengadilan",
+        "name": "Masjid Istiqomah Kavling Pengadilan",
+        "address": "Jl. Dermaga Kavling Pengadilan No.26",
+        "sourceId": "m_masjid-istiqomah-kavling-pengadilan_28",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-istiqomah-kavling-pengadilan/",
+        "sourceMapUrl": "https://maps.app.goo.gl/7znch6LZwhEn4gE5A",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.221451,106.907458",
+        "eventCount": 3,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.716845,
+          -6.238903
+        ]
+      },
+      "properties": {
+        "id": "masjid-jami-al-jihad",
+        "name": "Masjid Jami Al Jihad",
+        "address": "Jl. Cipto Mangunkusumo No. 1, Paninggilan Utara, Ciledug, Kota Tangerang",
+        "sourceId": "m_masjid-jami-al-jihad_8",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-jami-al-jihad/",
+        "sourceMapUrl": "https://maps.app.goo.gl/NzYDjESkBfShCV877",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.238903,106.716845",
+        "eventCount": 6,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.724657,
+          -6.25345
+        ]
+      },
+      "properties": {
+        "id": "masjid-jami-utsman-bin-affan",
+        "name": "Masjid Jami' Utsman bin Affan",
+        "address": "Jl. Murjaya No.14",
+        "sourceId": "m_masjid-jami-utsman-bin-affan_16",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-jami-utsman-bin-affan/",
+        "sourceMapUrl": "https://maps.app.goo.gl/KBNAqKvhHiJgJLZS7",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.253450,106.724657",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.028888,
+          -6.210325
+        ]
+      },
+      "properties": {
+        "id": "masjid-miftahu-khairil-ummah",
+        "name": "Masjid Miftahu Khairil Ummah",
+        "address": "Taman Wisma Asri 1",
+        "sourceId": "m_masjid-miftahu-khairil-ummah_21",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-miftahu-khairil-ummah/",
+        "sourceMapUrl": "https://maps.app.goo.gl/qRqof5ioXczC81kWA",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.210325,107.028888",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.965851,
+          -6.328148
+        ]
+      },
+      "properties": {
+        "id": "masjid-muadz-bin-jabal",
+        "name": "Masjid Muadz Bin Jabal",
+        "address": "Jl. Kav. Bulog, Bojong Kulur, Gn. Putri, Bogor",
+        "sourceId": "m_masjid-muadz-bin-jabal_15",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-muadz-bin-jabal/",
+        "sourceMapUrl": "https://maps.app.goo.gl/wC5LKRE8M4YLiwcA8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.328148,106.965851",
+        "eventCount": 4,
+        "profile": {
+          "url": "https://ihrish.app/masjid/masjid-muadz-bin-jabal/",
+          "sha256": "61ab7e30f9c8a87b0b501b141e1d4489bb36431ea5e53721cf71bd7f082d1b8d",
+          "listedUpcoming": 4,
+          "notCancelledUpcoming": 4,
+          "cancelledUpcoming": 0,
+          "regularNotCancelled": 2,
+          "distinctDates": [
+            "2026-10-31",
+            "2026-11-01"
+          ],
+          "firstDate": "2026-10-31",
+          "lastDate": "2026-11-01",
+          "topics": {
+            "fiqih": 1,
+            "hadits": 1,
+            "quran": 1,
+            "umum": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.856001,
+          -6.658618
+        ]
+      },
+      "properties": {
+        "id": "masjid-nur-ilahi",
+        "name": "Masjid Nur Ilahi",
+        "address": "Jl. Raya Puncak Ciawi",
+        "sourceId": "m_masjid-nur-ilahi_9",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-nur-ilahi/",
+        "sourceMapUrl": "https://maps.app.goo.gl/ft5QC4uVuGiozNbz6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.658618,106.856001",
+        "eventCount": 8,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.820833,
+          -6.22996
+        ]
+      },
+      "properties": {
+        "id": "masjid-nur-salma",
+        "name": "Masjid Nur Salma",
+        "address": "Centennial Tower Lantai 22, Jakarta Selatan",
+        "sourceId": "m_masjid-nur-salma_9",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-nur-salma/",
+        "sourceMapUrl": "https://maps.app.goo.gl/rLooet2CwTAqkPJu5",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.229960,106.820833",
+        "eventCount": 3,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.836576,
+          -6.291832
+        ]
+      },
+      "properties": {
+        "id": "masjid-nurul-amal",
+        "name": "Masjid Nurul Amal",
+        "address": "Jl. Aup No.1",
+        "sourceId": "m_masjid-nurul-amal_10",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-nurul-amal/",
+        "sourceMapUrl": "https://maps.app.goo.gl/JGrzpnjqPJ6TKp928",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.291832,106.836576",
+        "eventCount": 4,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.967035,
+          -6.230097
+        ]
+      },
+      "properties": {
+        "id": "masjid-nurul-i-tishom",
+        "name": "Masjid Nurul I'tishom",
+        "address": "Jl. Borobudur Raya Blok A, Bintara, Bekasi",
+        "sourceId": "m_masjid-nurul-i-tishom_14",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-nurul-i-tishom/",
+        "sourceMapUrl": "https://maps.app.goo.gl/Ga577MJ8Eg2hPiSCA",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.230097,106.967035",
+        "eventCount": 5,
+        "profile": {
+          "url": "https://ihrish.app/masjid/masjid-nurul-i-tishom/",
+          "sha256": "a73740de5d1096d0f639d82a35560593634d144c54c2675210625cc86bba1b50",
+          "listedUpcoming": 5,
+          "notCancelledUpcoming": 5,
+          "cancelledUpcoming": 0,
+          "regularNotCancelled": 5,
+          "distinctDates": [
+            "2026-10-31",
+            "2026-11-01",
+            "2026-11-04"
+          ],
+          "firstDate": "2026-10-31",
+          "lastDate": "2026-11-04",
+          "topics": {
+            "hadits": 1,
+            "quran": 1,
+            "tafsir": 1,
+            "umum": 2
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.800616,
+          -6.244574
+        ]
+      },
+      "properties": {
+        "id": "masjid-nurul-iman-blok-m",
+        "name": "Masjid Nurul Iman Blok M",
+        "address": "Blok M Square Lantai 7, Jakarta Selatan",
+        "sourceId": "m_masjid-nurul-iman-blok-m_17",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-nurul-iman-blok-m/",
+        "sourceMapUrl": "https://maps.app.goo.gl/jZzNtZxYzVGvPnQE6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.244574,106.800616",
+        "eventCount": 12,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.680636,
+          -6.234112
+        ]
+      },
+      "properties": {
+        "id": "masjid-nurul-iman-valencia",
+        "name": "Masjid Nurul Iman Valencia",
+        "address": "Jl. Valencia I",
+        "sourceId": "m_masjid-nurul-iman-valencia_19",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-nurul-iman-valencia/",
+        "sourceMapUrl": "https://maps.app.goo.gl/7zeuu6RoTtaAG7Xj6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.234112,106.680636",
+        "eventCount": 3,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.007833,
+          -6.176769
+        ]
+      },
+      "properties": {
+        "id": "masjid-nurul-jannah-pup",
+        "name": "Masjid Nurul Jannah PUP",
+        "address": "Perum. PUP, Blok AB/F",
+        "sourceId": "m_masjid-nurul-jannah-pup_16",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-nurul-jannah-pup/",
+        "sourceMapUrl": "https://maps.app.goo.gl/25199QwzmV4GYaK99",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.176769,107.007833",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.830981,
+          -6.591884
+        ]
+      },
+      "properties": {
+        "id": "masjid-nurut-tauhid",
+        "name": "Masjid Nurut Tauhid",
+        "address": "Perumahan Griya Nuraida, Cimahpar, Bogor",
+        "sourceId": "m_masjid-nurut-tauhid_12",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-nurut-tauhid/",
+        "sourceMapUrl": "https://maps.app.goo.gl/thAcy3USdZ95dPYC6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.591884,106.830981",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.078476,
+          -6.243178
+        ]
+      },
+      "properties": {
+        "id": "masjid-nuur-alaa-nuur-masnan",
+        "name": "Masjid Nuur 'Alaa Nuur (MASNAN)",
+        "address": "Jl. Buwek Jaya No. 2B",
+        "sourceId": "m_masjid-nuur-alaa-nuur-masnan_21",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-nuur-alaa-nuur-masnan/",
+        "sourceMapUrl": "https://maps.app.goo.gl/pnNMbNvjFRmL616c7",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.243178,107.078476",
+        "eventCount": 4,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.864217,
+          -6.205959
+        ]
+      },
+      "properties": {
+        "id": "masjid-raya-al-fatah",
+        "name": "Masjid Raya Al Fatah",
+        "address": "Jl. Kayu Manis VIII No.16",
+        "sourceId": "m_masjid-raya-al-fatah_13",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-raya-al-fatah/",
+        "sourceMapUrl": "https://maps.app.goo.gl/fx7rKYv9aXEuSzL4A",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.205959,106.864217",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.99986,
+          -6.284814
+        ]
+      },
+      "properties": {
+        "id": "masjid-raya-at-taqwa-rawalumbu",
+        "name": "Masjid Raya At Taqwa Rawalumbu",
+        "address": "Jl. Lumbu Utara Raya Jembatan 11 No.2",
+        "sourceId": "m_masjid-raya-at-taqwa-rawalumbu_23",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-raya-at-taqwa-rawalumbu/",
+        "sourceMapUrl": "https://maps.app.goo.gl/CtKKCaVWbfTSoiZg8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.284814,106.999860",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.884478,
+          -6.230924
+        ]
+      },
+      "properties": {
+        "id": "masjid-raya-cipinang-muara",
+        "name": "Masjid Raya Cipinang Muara",
+        "address": "Jl. Nusa Indah, Cipinang Muara, Jakarta Timur",
+        "sourceId": "m_masjid-raya-cipinang-muara_19",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-raya-cipinang-muara/",
+        "sourceMapUrl": "https://maps.app.goo.gl/3Zobn8BPLsv5uUbL6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.230924,106.884478",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.648615,
+          -6.185689
+        ]
+      },
+      "properties": {
+        "id": "masjid-raya-rahmatan-lil-alamin",
+        "name": "Masjid Raya Rahmatan Lil'alamin",
+        "address": "Jl. Taman Golf Raya",
+        "sourceId": "m_masjid-raya-rahmatan-lil-alamin_24",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-raya-rahmatan-lil-alamin/",
+        "sourceMapUrl": "https://maps.app.goo.gl/8MfMMaUSEaF7NWBj6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.185689,106.648615",
+        "eventCount": 31,
+        "profile": {
+          "url": "https://ihrish.app/masjid/masjid-raya-rahmatan-lil-alamin/",
+          "sha256": "141d3a96f8204fb73f7a116c25409dcba74658a3ef885e7e0635b4696301fdb7",
+          "listedUpcoming": 31,
+          "notCancelledUpcoming": 31,
+          "cancelledUpcoming": 0,
+          "regularNotCancelled": 12,
+          "distinctDates": [
+            "2026-10-31",
+            "2026-11-01",
+            "2026-11-06",
+            "2026-11-07",
+            "2026-11-08",
+            "2026-11-09",
+            "2026-11-13",
+            "2026-11-14",
+            "2026-11-15",
+            "2026-11-16",
+            "2026-11-18",
+            "2026-11-19",
+            "2026-11-20",
+            "2026-11-21",
+            "2026-11-22",
+            "2026-11-26",
+            "2026-11-27",
+            "2026-11-28"
+          ],
+          "firstDate": "2026-10-31",
+          "lastDate": "2026-11-28",
+          "topics": {
+            "anak-keluarga": 1,
+            "fiqih": 3,
+            "hadits": 5,
+            "khutbah-jumat": 2,
+            "muslimah": 1,
+            "sirah": 1,
+            "tafsir": 1,
+            "umum": 17
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.767995,
+          -6.485616
+        ]
+      },
+      "properties": {
+        "id": "masjid-rihlatul-jannah",
+        "name": "Masjid Rihlatul Jannah",
+        "address": "Perum Safa Residence",
+        "sourceId": "m_masjid-rihlatul-jannah_15",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-rihlatul-jannah/",
+        "sourceMapUrl": "https://maps.app.goo.gl/sUyqmYpkuukvLmuU7",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.485616,106.767995",
+        "eventCount": 2,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.878383,
+          -6.188729
+        ]
+      },
+      "properties": {
+        "id": "masjid-salman-al-farisi",
+        "name": "Masjid Salman Al Farisi",
+        "address": "Jl. H. Ten, Komp. Bulog, Kayu Putih, Jakarta Timur",
+        "sourceId": "m_masjid-salman-al-farisi_16",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-salman-al-farisi/",
+        "sourceMapUrl": "https://maps.app.goo.gl/NdX5zEFQYXjAuiFV6",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.188729,106.878383",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.707673,
+          -6.957937
+        ]
+      },
+      "properties": {
+        "id": "masjid-umar-bin-khattab-griya-cempaka-arum",
+        "name": "Masjid Umar Bin Khattab Griya Cempaka Arum",
+        "address": "Jl. Utsman bin Affan No.90",
+        "sourceId": "m_masjid-umar-bin-khattab-griya-cempaka-ar_35",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-umar-bin-khattab-griya-cempaka-arum/",
+        "sourceMapUrl": "https://maps.app.goo.gl/hZLKt3W93k9gMj7y9",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.957937,107.707673",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.50794,
+          -6.932275
+        ]
+      },
+      "properties": {
+        "id": "masjid-umar-bin-khattab",
+        "name": "Masjid Umar bin Khattab Selacau",
+        "address": "Desa Selacau",
+        "sourceId": "m_masjid-umar-bin-khattab_16",
+        "sourceUrl": "https://ihrish.app/masjid/masjid-umar-bin-khattab/",
+        "sourceMapUrl": "https://maps.app.goo.gl/ZUoBegzdL1qMwgC99",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.932275,107.507940",
+        "eventCount": 1,
+        "profile": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.906676,
+          -6.269538
+        ]
+      },
+      "properties": {
+        "id": "rumah-al-qur-an-rsb",
+        "name": "Rumah Al-Qur'an RSB",
+        "address": "Jl. Binayasa No.2",
+        "sourceId": "m_rumah-al-qur-an-rsb_19",
+        "sourceUrl": "https://ihrish.app/masjid/rumah-al-qur-an-rsb/",
+        "sourceMapUrl": "https://maps.app.goo.gl/w4ei2kdamcvfPjxA8",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-6.269538,106.906676",
+        "eventCount": 2,
+        "profile": null
+      }
+    }
+  ]
+}

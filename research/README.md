@@ -26,6 +26,8 @@ Dataset yang dipakai aplikasi dibangun ke [properties.geojson](../public/data/pr
 
 [Riset dari lokasi masjid](masjid/README.md) mencatat empat titik awal Bekasi/Depok, lima proyek Bekasi tambahan, serta kandidat dengan pin portal yang ditolak. Nama masjid/sekolah pada bukti kartu dapat dicari di `/riset`.
 
+[Ekstrak peta Ihrish](masjid/ihrish.md) menyimpan 78 masjid dan pin dalam JSON, GeoJSON, dan CSV. Adanya kajian cukup untuk pencantuman, tidak harus rutin. Direktori `/riset#masjid` menghubungkan masjid dengan 15 proyek dalam 1,5 km garis lurus, lima iklan baru, serta petunjuk yang masih perlu diperiksa.
+
 [Pengumpulan data dan akses agen AI](../docs/property-agent-access.md) menjelaskan pilihan Scraper API/HTTP/browser, akses JSON publik yang sudah tersedia, serta rancangan MCP opsional.
 
 [Uji gratis Instagram](../docs/instagram-free-pilot.md) menjalankan akuisisi terbatas dari 9 akun dan impor JSON/NDJSON privat. Hasil tetap kandidat untuk diperiksa; belum ada listing scraper baru pada katalog.

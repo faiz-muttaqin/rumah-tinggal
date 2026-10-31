@@ -460,6 +460,25 @@
           "url": "https://ihrish.app/kajian/2026-10-31-kholid-maulana-masjid-nurul-i-tishom/"
         }
       ]
+    },
+    {
+      "id": "lead-ihrish-galaxy-599",
+      "name": "Petunjuk rumah satu kamar Taman Galaxy dekat Al Furqon",
+      "type": "project",
+      "status": "unverified",
+      "area": "Bekasi",
+      "claim": "Indeks pencarian menyebut rumah Rp599 juta, LT60/LB55, satu kamar, dan klaim 500 m dari Masjid Al-Furqon Galaxy.",
+      "check": "Halaman 99.co mengembalikan HTTP403 pada pengecekan langsung. Harga, tanggal, stok, serta klaim jarak belum terverifikasi; tidak masuk katalog iklan dijual.",
+      "links": [
+        {
+          "label": "Iklan pada portal",
+          "url": "https://www.99.co/id/properti/rumah-dijual-599jt-taman-galaxy-cp-1014854586"
+        },
+        {
+          "label": "Jadwal masjid di Ihrish",
+          "url": "https://ihrish.app/masjid/masjid-al-furqan-grand-galaxy-city/"
+        }
+      ]
     }
   ]
 }

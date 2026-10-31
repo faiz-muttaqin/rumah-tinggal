@@ -324,3 +324,80 @@ test("lists sale ads near a kajian mosque with a budget range and no seller data
   await page.locator("#sale-budget-max").selectOption("0");
   await expect(page.getByTestId("sale-ad-empty")).toBeVisible();
 });
+
+test("lists mosques with one kajian and separates mapped projects from area leads", async ({
+  page,
+}) => {
+  await expect(page.getByTestId("mosque-card")).toHaveCount(2);
+  await expect(page.locator("#mosque-count")).toHaveText("2 dari 2 masjid");
+  const mosque = page.locator("#masjid-uji-satu");
+  await expect(mosque).toContainText("1 jadwal tercatat");
+  await expect(page.locator("#mosques-intro")).toContainText(
+    "tidak harus rutin",
+  );
+  await expect(
+    mosque.getByRole("link", { name: "Titik Google Maps ↗" }),
+  ).toHaveAttribute(
+    "href",
+    "https://www.google.com/maps/search/?api=1&query=-6.256%2C107.032",
+  );
+  await expect(
+    mosque.getByRole("link", { name: "Jadwal di Ihrish ↗" }),
+  ).toHaveAttribute("href", "https://ihrish.example.invalid/masjid/uji-satu/");
+  await expect(
+    mosque.getByRole("link", { name: "Rumah Uji Bekasi Timur" }),
+  ).toHaveAttribute("href", "/?riset=prj-uji-bekasi-timur");
+  await expect(mosque).toContainText("0,4 km garis lurus");
+  await expect(
+    mosque.getByRole("link", { name: "Kontrakan Keluarga Uji" }),
+  ).toHaveAttribute("href", "/riset#rent-uji-bekasi");
+  await expect(mosque).toContainText("Satu kawasan menurut iklan uji.");
+  await expect(mosque).toContainText("Jarak dari unit belum dihitung.");
+
+  const bandung = page.locator("#masjid-uji-bandung");
+  await expect(bandung).toContainText("3 jadwal tercatat");
+  await expect(bandung).toContainText("1 jadwal dibatalkan");
+  await expect(bandung).not.toContainText("3 jadwal aktif");
+  await expect(bandung).toContainText(
+    "Belum ada proyek bertitik dalam radius 1,5 km di katalog",
+  );
+  await page.locator("#rental-budget-max").selectOption("1000000");
+  await expect(page.locator("#rent-uji-bekasi")).toHaveCount(0);
+  await mosque.getByRole("link", { name: "Kontrakan Keluarga Uji" }).click();
+  await expect(page.locator("#rent-uji-bekasi")).toBeVisible();
+  await expect(page.locator("#rent-uji-bekasi")).toHaveClass(/highlight/);
+});
+
+test("filters mosques by name, address and area without hiding one-off kajian", async ({
+  page,
+}) => {
+  const mosques = page.getByTestId("mosque-card");
+  await page.locator("#mosque-area").selectOption("Bekasi");
+  await expect(mosques).toHaveCount(1);
+  await expect(mosques).toContainText("Masjid Uji Satu Kajian");
+  await page.locator("#mosque-search").fill("bandung");
+  await expect(page.getByTestId("mosque-empty")).toBeVisible();
+  await page.locator("#mosque-area").selectOption("outside");
+  await expect(mosques).toHaveCount(1);
+  await expect(mosques).toContainText("Masjid Uji Bandung");
+  await page.locator("#mosque-area").selectOption("");
+  await page.locator("#mosque-search").fill("jalan kebun");
+  await expect(mosques).toHaveCount(1);
+  await expect(page.locator("#mosque-count")).toHaveText("1 dari 2 masjid");
+  await page.locator("#mosque-search").fill("");
+  await expect(mosques).toHaveCount(2);
+});
+
+test("keeps older research datasets without mosque metadata usable", async ({
+  page,
+}) => {
+  const legacy = { ...researchFixture.metadata, mosques: undefined };
+  await page.route("**/data/properties.geojson", async (route) => {
+    await route.fulfill({ json: { ...researchFixture, metadata: legacy } });
+  });
+  await page.reload();
+  await expect(cards(page)).toHaveCount(4);
+  await expect(page.locator("#masjid")).toBeHidden();
+  await expect(page.locator("#mosques-shortcut")).toBeHidden();
+  await expect(page.getByTestId("mosque-card")).toHaveCount(0);
+});

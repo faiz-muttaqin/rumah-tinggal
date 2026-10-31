@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-10-30",
-  "hub": "Masjid Jami' Al-Barkah Cileungsi",
-  "note": "Iklan rumah dan kavling dari portal publik (Brighton, Pinhome, Realoka) yang dibuka langsung, diperiksa ulang pemeriksa terpisah, dan kutipannya dicocokkan ulang. Ini iklan unit, bukan proyek developer; nama dan kontak penjual tidak disimpan dan lokasi hanya sampai kawasan. Jarak ke masjid adalah klaim iklan kecuali disebut lain.",
+  "checkedAt": "2026-10-31",
+  "hub": "Masjid berkajian di Cileungsi, Duta Kranji, dan Jatimelati",
+  "note": "Iklan rumah dan kavling dari halaman publik yang dibuka, di kawasan masjid dengan kajian. Adanya kajian cukup, tidak harus rutin. Harga dan stok belum dikonfirmasi; lokasi rumah hanya sampai kawasan. Jarak yang diklaim portal dibedakan dari jarak terukur.",
   "ads": [
     {
       "id": "jual-rumah-kp-tengah-dekat-al-barkah-rodja",
@@ -318,6 +318,74 @@
       "verdict": "partial",
       "lastChecked": "2026-10-30",
       "note": "Penjual dan teks sama dengan iklan 72/40; diperkirakan 3,5 sampai 4,5 km dari Masjid Al-Barkah (asumsi). Diperbarui sekitar 7 bulan sebelum dicek."
+    },
+    {
+      "id": "jual-ihrish-greenpark-2100",
+      "title": "Rumah Green Park Residence, fasilitas Masjid Al Ahdhar",
+      "category": "rumah",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Jatimelati, Pondokmelati, Kota Bekasi",
+      "projectOrCluster": "Green Park Residence",
+      "price": {
+        "amount": 2100000000,
+        "quote": "Harga Jual 2,1 M (Nego)",
+        "url": "https://www.brighton.co.id/cari-properti/view/green-park-residence-hufp",
+        "pageDate": null
+      },
+      "landM2": 120,
+      "buildingM2": 180,
+      "bedrooms": 5,
+      "nearMosque": {
+        "name": "Masjid Al Ahdhar",
+        "quote": "Sarana Ibadah (Masjid Al Ahdhar)",
+        "url": "https://www.brighton.co.id/cari-properti/view/green-park-residence-hufp"
+      },
+      "evidence": [
+        {
+          "quote": "Taman Bermain Anak",
+          "url": "https://www.brighton.co.id/cari-properti/view/green-park-residence-hufp"
+        }
+      ],
+      "listingUrl": "https://www.brighton.co.id/cari-properti/view/green-park-residence-hufp",
+      "sourcePortal": "Brighton",
+      "postedOrUpdated": null,
+      "ownerType": "agent",
+      "verdict": "partial",
+      "lastChecked": "2026-10-31",
+      "note": "Spesifikasi sumber: 3+2 kamar (termasuk kamar ART). Iklan menyebut masjid sebagai fasilitas klaster; jarak/rute unit dan stok belum dikonfirmasi. Tidak dihitung sebagai proyek developer baru."
+    },
+    {
+      "id": "jual-ihrish-dutakranji-900",
+      "title": "Rumah Duta Kranji 6 kamar, sekitar Yayasan Nurul Itishom menurut portal",
+      "category": "rumah",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Kawasan Duta Kranji, Bekasi Barat, Kota Bekasi",
+      "projectOrCluster": "Duta Kranji",
+      "price": {
+        "amount": 900000000,
+        "quote": "Rp 900 Juta",
+        "url": "https://www.pinhome.id/dijual/rumah-sekunder/unit/dijual-rumah-di-jalan-utama-duta-kranji",
+        "pageDate": null
+      },
+      "landM2": 107,
+      "buildingM2": 200,
+      "bedrooms": 6,
+      "nearMosque": null,
+      "evidence": [
+        {
+          "quote": "Yayasan Nurul Itishom",
+          "url": "https://www.pinhome.id/dijual/rumah-sekunder/unit/dijual-rumah-di-jalan-utama-duta-kranji"
+        }
+      ],
+      "listingUrl": "https://www.pinhome.id/dijual/rumah-sekunder/unit/dijual-rumah-di-jalan-utama-duta-kranji",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": null,
+      "ownerType": "individual",
+      "verdict": "partial",
+      "lastChecked": "2026-10-31",
+      "note": "Portal menampilkan Yayasan Nurul Itishom 0,15 km; itu bukan bukti jarak ke masjid. Iklan berada di kawasan Duta Kranji yang sama; jarak/rute unit ke Masjid Nurul I’tishom dan stok belum dikonfirmasi."
     }
   ]
 }

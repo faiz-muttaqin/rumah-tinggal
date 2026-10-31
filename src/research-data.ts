@@ -126,7 +126,7 @@ export interface PopulationContext {
   radiiKm: number[];
 }
 
-// Masjid dengan kajian rutin dan pendidikan Islam anak di sekitar proyek,
+// Masjid dengan kajian dan pendidikan Islam anak di sekitar proyek,
 // dari research/context/islamic.json. Jadwal dan biaya dikutip dari sumber
 // bertanggal dan dapat berubah.
 export type FacilityKind =
@@ -431,6 +431,43 @@ export interface ResearchSaleAds {
   ads: ResearchSaleAd[];
 }
 
+export interface ResearchMosque {
+  id: string;
+  name: string;
+  address: string;
+  area: Area | null;
+  lat: number;
+  lng: number;
+  eventCount: number;
+  sourceUrl: string;
+  googleMapsUrl: string;
+  profile: {
+    listedUpcoming: number;
+    notCancelledUpcoming: number;
+    cancelledUpcoming: number;
+    regularNotCancelled: number;
+    distinctDates: string[];
+    firstDate: string | null;
+    lastDate: string | null;
+  } | null;
+  nearbyProperties: { id: string; name: string; km: number }[];
+  relatedListings: {
+    id: string;
+    title: string;
+    kind: "rental" | "sale" | "lead";
+    relation: string;
+    note: string;
+  }[];
+}
+
+export interface ResearchMosques {
+  checkedAt: string;
+  sourceUrl: string;
+  note: string;
+  radiusKm: number;
+  items: ResearchMosque[];
+}
+
 export interface ResearchData {
   checkedAt: string;
   maxDistanceKm: number;
@@ -454,6 +491,7 @@ export interface ResearchData {
   leads: ResearchLeads | null;
   rentals: ResearchRentals | null;
   saleAds?: ResearchSaleAds | null;
+  mosques?: ResearchMosques | null;
 }
 
 export const STATUS_LABELS: Record<ResearchStatus, string> = {
@@ -531,7 +569,7 @@ export function plusSummary(property: ResearchProperty): string {
   if (!islamic) return "";
   return [
     islamic.kajian.length
-      ? `${islamic.kajian.length} masjid dengan pengajian rutin`
+      ? `${islamic.kajian.length} masjid dengan kajian`
       : hasKajian(property)
         ? "kajian di kawasan (klaim proyek)"
         : "",
@@ -591,6 +629,7 @@ export async function loadResearch(): Promise<ResearchData> {
     leads: metadata.leads ?? null,
     rentals: metadata.rentals ?? null,
     saleAds: metadata.saleAds ?? null,
+    mosques: metadata.mosques ?? null,
     properties,
   };
 }
