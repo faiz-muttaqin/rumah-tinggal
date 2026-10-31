@@ -5,7 +5,8 @@
   "caveats": [
     "Jadwal kajian dan biaya dapat berubah; konfirmasi ke pengurus masjid atau sekolah.",
     "Daftar tidak lengkap: masjid atau sekolah tanpa bukti daring yang dapat dibuka tidak tercantum.",
-    "Klaim konsep islami adalah klaim pemasaran; skema pembayaran dan legalitasnya tidak diverifikasi."
+    "Klaim konsep islami adalah klaim pemasaran; skema pembayaran dan legalitasnya tidak diverifikasi.",
+    "Al-Ghodfan TBZ: nama pada OSM berbeda ejaan; alamat Karangsatria dan plus code direktori cocok. Titik diberi partial. Pengumuman 23 Agustus 2026 bukan jaminan jam kajian setiap Ahad."
   ],
   "facilities": [
     {
@@ -7333,6 +7334,31 @@
         "fees": []
       },
       "social": []
+    },
+    {
+      "id": "osm-node-5057830113",
+      "name": "Masjid Al-Ghodfan TBZ (Karangsatria, Tambun Utara)",
+      "kind": "masjid",
+      "lat": -6.213634,
+      "lng": 107.03409,
+      "coordinateSource": "osm",
+      "coordinateUrl": "https://www.openstreetmap.org/node/5057830113",
+      "evidence": "partial",
+      "kajian": [
+        {
+          "schedule": "Ahad sore, pekan 1–4; jam perlu konfirmasi ke pengelola.",
+          "frequency": "weekly",
+          "audience": "umum",
+          "url": "https://masjidalghodfan.id/",
+          "pageDate": null
+        }
+      ],
+      "education": {
+        "levels": ["Tahfidz"],
+        "program": "Penerimaan santri tahfidz diumumkan pengelola; usia, jadwal anak dan biaya belum tersedia.",
+        "url": "https://masjidalghodfan.id/",
+        "fees": []
+      }
     }
   ],
   "projectClaims": {
@@ -8409,6 +8435,76 @@
         "kind": "islamic-school-nearby",
         "quote": "400 m Anja Global Islamic School",
         "url": "https://ahsanuamalaproperty.com/ahsanu-residence/",
+        "pageDate": null
+      }
+    ],
+    "prj-taman-maryam-setu": [
+      {
+        "kind": "tpq-or-school-in-estate",
+        "quote": "Pesantren Tahfidz AlQuran",
+        "url": "https://griyarumahsyariah.com/maryam-residence-3/",
+        "pageDate": null
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Perumahan Syariah di Kawasan Islami",
+        "url": "https://griyarumahsyariah.com/maryam-residence-3/",
+        "pageDate": null
+      }
+    ],
+    "prj-cluster-sa-2-setu": [
+      {
+        "kind": "musholla-in-estate",
+        "quote": "Musholla",
+        "url": "https://griyarumahsyariah.com/sabrina-azzura-ii/",
+        "pageDate": null
+      },
+      {
+        "kind": "syariah-concept",
+        "quote": "Perumahan Islami dengan desain elegan",
+        "url": "https://griyarumahsyariah.com/sabrina-azzura-ii/",
+        "pageDate": null
+      }
+    ],
+    "prj-ash-shiddiq-residence-babelan": [
+      {
+        "kind": "syariah-concept",
+        "quote": "Ash-Shiddiq Residence merupakan perumahan syariah di Bekasi, Jawa Barat.",
+        "url": "https://www.rumah123.com/en/new-launch/property/bekasi/ash-shiddiq-residence/nps2962/",
+        "pageDate": "2025-12-12"
+      },
+      {
+        "kind": "pendidikan-sekitar",
+        "quote": "Komplek tinggal pun dekat dengan rumah tahfidz, sebagai fasilitas pendidikan berbasis agama bagi sang buah hati.",
+        "url": "https://www.rumah123.com/en/new-launch/property/bekasi/ash-shiddiq-residence/nps2962/",
+        "pageDate": "2025-12-12"
+      }
+    ],
+    "prj-grand-wisata-bekasi": [
+      {
+        "kind": "mosque-in-estate",
+        "quote": "Masjid Izzatul Islam, Grand Wisata, Kecamatan Tambun Selatan.",
+        "url": "https://nubekasi.or.id/lbmpcnu-bekasi-sukses-menggelar-kajian-menjelang-buka-puasa-di-masjid-izzatul-islam-grand-wisata/",
+        "pageDate": "2024-03-26"
+      },
+      {
+        "kind": "mosque-in-estate",
+        "quote": "Masjid",
+        "url": "https://rumahsaya.bca.co.id/developer/sinar-mas-land/bekasi/grand-wisata",
+        "pageDate": null
+      },
+      {
+        "kind": "pendidikan-sekitar",
+        "quote": "Dekat dari AL-AZHAR",
+        "url": "https://rumahsaya.bca.co.id/developer/sinar-mas-land/bekasi/grand-wisata",
+        "pageDate": null
+      }
+    ],
+    "prj-familia-urban-bekasi": [
+      {
+        "kind": "mosque-in-estate",
+        "quote": "Aula besar Masjid Playground",
+        "url": "https://realoka.com/732771-dijual-rumah-di-familia-urban-cluster-amethyst-bekasi-murah",
         "pageDate": null
       }
     ]

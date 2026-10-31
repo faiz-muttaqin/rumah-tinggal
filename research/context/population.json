@@ -11,7 +11,7 @@
     "published": "2025-09-01",
     "year": 2025,
     "sha256": "b428a90c3cd2b74b515becd6ad089a0212398636165ed3837a637c6f7e6a9a30",
-    "checkedAt": "2026-10-30"
+    "checkedAt": "2026-10-31"
   },
   "method": "Jumlah orang per piksel WorldPop (sekitar 100 m) yang titik tengahnya berada dalam radius 500 m dan 1 km dari titik proyek; kepadatan = jumlah dalam 1 km dibagi luas lingkaran 3,14 km2.",
   "caveats": [
@@ -266,6 +266,13 @@
       "within1km": 30470,
       "densityKm2": 9700
     },
+    "prj-familia-urban-bekasi": {
+      "lat": -6.302043,
+      "lng": 107.007774,
+      "within500m": 5620,
+      "within1km": 21350,
+      "densityKm2": 6800
+    },
     "prj-fifty-seven-promenade": {
       "lat": -6.196773406449771,
       "lng": 106.81958588610073,
@@ -300,6 +307,13 @@
       "within500m": 12560,
       "within1km": 49400,
       "densityKm2": 15720
+    },
+    "prj-grand-wisata-bekasi": {
+      "lat": -6.292382,
+      "lng": 107.047102,
+      "within500m": 4660,
+      "within1km": 17600,
+      "densityKm2": 5600
     },
     "prj-green-leaf-jagakarsa-residence": {
       "lat": -6.3293341,

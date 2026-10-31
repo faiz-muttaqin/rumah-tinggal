@@ -341,6 +341,12 @@
     "label": "Penyisiran TOD dan program pemerintah/BUMN",
     "found": 10,
     "included": 5
+   },
+   {
+    "id": "bekasi-masjid-family",
+    "label": "Tambahan proyek keluarga muslim Bekasi dan kandidat sekitar masjid Depok",
+    "found": 8,
+    "included": 5
    }
   ],
   "gaps": [
@@ -351,7 +357,8 @@
    "Instagram berupa tautan akun/unggahan untuk dibuka manual; belum ada sinkronisasi Instagram atau pemindaian berkala otomatis.",
    "Stasiun mengacu pada snapshot geometri OSM aplikasi, termasuk geometri yang belum membuktikan layanan beroperasi. Cek operator sebelum merencanakan perjalanan.",
    "Berita KabarBursa 31 Agustus 2026 melaporkan sebagian proyek LRT City (Adhi Commuter Properti) mangkrak tanpa menyebut menara mana; proyek LRT City lain yang terbit belum diperiksa ulang terhadap laporan ini.",
-   "Riset Bekasi 31 Oktober 2026: fokus bukti kajian/TPQ/sekolah; harga Hisan lama tidak terbaca ulang; potensi alias Hisan–entri TAAT Mustika Jaya belum terkonfirmasi. Lihat research/bekasi/README.md."
+   "Riset Bekasi 31 Oktober 2026: fokus bukti kajian/TPQ/sekolah; harga Hisan lama tidak terbaca ulang; potensi alias Hisan–entri TAAT Mustika Jaya belum terkonfirmasi. Lihat research/bekasi/README.md.",
+   "Tambahan 31 Oktober: 5 proyek Bekasi baru; promo tanpa tanggal diberi partial. Tiga kandidat Depok belum terbit karena memakai pin kelurahan sama. Kajian dan operasional fasilitas tidak otomatis terbukti dari konsep syariah."
   ],
   "excluded": [
    {
@@ -715,6 +722,20 @@
     "claims": []
    },
    {
+    "id": "prj-cluster-kelapa-dua",
+    "name": "Cluster Kelapa Dua",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung",
+    "price": {
+     "min": 970000000,
+     "max": 1130000000,
+     "url": "https://www.pinhome.id/dijual/rumah-baru/cluster-kelapa-dua"
+    },
+    "kind": "Rumah",
+    "locationText": "Tugu, Cimanggis, Kota Depok (pin portal ditolak karena dipakai bersama)",
+    "social": [],
+    "claims": []
+   },
+   {
     "id": "prj-cluster-rosella",
     "name": "Cluster Rosella",
     "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung",
@@ -725,6 +746,20 @@
     },
     "kind": "Rumah",
     "locationText": "Address text: Jl. Raya Kalimalang, Kelurahan Jakasampurna (postal code 17145), Kecamatan Bekasi Barat, Kota Bekasi; portal map pin conflicts (near Jatiwaringin)",
+    "social": [],
+    "claims": []
+   },
+   {
+    "id": "prj-cluster-salama",
+    "name": "Cluster Salama",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung",
+    "price": {
+     "min": 695000000,
+     "max": 892000000,
+     "url": "https://www.pinhome.id/dijual/rumah-baru/cluster-salama"
+    },
+    "kind": "Rumah",
+    "locationText": "Tugu, Cimanggis, Kota Depok (pin portal ditolak karena dipakai bersama)",
     "social": [],
     "claims": []
    },
@@ -1018,6 +1053,20 @@
     "id": "prj-naputa-house",
     "name": "Naputa House",
     "reason": "Kemungkinan habis terjual: Pinhome menandai Tipe 85 HABIS TERJUAL dengan 0 unit aktif; titik proyek juga belum terverifikasi."
+   },
+   {
+    "id": "prj-narita-premier",
+    "name": "Narita Premier",
+    "reason": "belum ada koordinat terverifikasi, jarak stasiun belum bisa dihitung",
+    "price": {
+     "min": 987000000,
+     "max": 1105100000,
+     "url": "https://www.pinhome.id/dijual/rumah-baru/narita-premier"
+    },
+    "kind": "Rumah",
+    "locationText": "Tugu, Cimanggis, Kota Depok (pin portal ditolak karena dipakai bersama)",
+    "social": [],
+    "claims": []
    },
    {
     "id": "prj-nivara-resort-townhouse-at-wijaya",
@@ -1342,7 +1391,7 @@
     "published": "2025-09-01",
     "year": 2025,
     "sha256": "b428a90c3cd2b74b515becd6ad089a0212398636165ed3837a637c6f7e6a9a30",
-    "checkedAt": "2026-10-30"
+    "checkedAt": "2026-10-31"
    },
    "method": "Jumlah orang per piksel WorldPop (sekitar 100 m) yang titik tengahnya berada dalam radius 500 m dan 1 km dari titik proyek; kepadatan = jumlah dalam 1 km dibagi luas lingkaran 3,14 km2.",
    "caveats": [
@@ -3248,7 +3297,8 @@
    "caveats": [
     "Jadwal kajian dan biaya dapat berubah; konfirmasi ke pengurus masjid atau sekolah.",
     "Daftar tidak lengkap: masjid atau sekolah tanpa bukti daring yang dapat dibuka tidak tercantum.",
-    "Klaim konsep islami adalah klaim pemasaran; skema pembayaran dan legalitasnya tidak diverifikasi."
+    "Klaim konsep islami adalah klaim pemasaran; skema pembayaran dan legalitasnya tidak diverifikasi.",
+    "Al-Ghodfan TBZ: nama pada OSM berbeda ejaan; alamat Karangsatria dan plus code direktori cocok. Titik diberi partial. Pengumuman 23 Agustus 2026 bukan jaminan jam kajian setiap Ahad."
    ]
   },
   "planned": {
@@ -7487,6 +7537,100 @@
   },
   {
    "type": "Feature",
+   "id": "prj-ash-shiddiq-residence-babelan",
+   "geometry": null,
+   "properties": {
+    "id": "prj-ash-shiddiq-residence-babelan",
+    "name": "Ash-Shiddiq Residence",
+    "developer": "PT Bentang Karya Inti",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Babelan, Kabupaten Bekasi (portal proyek; titik belum terverifikasi)",
+    "region": null,
+    "area": "Bekasi",
+    "status": "dipasarkan",
+    "statusQuote": "Available Unit 2 Unit Type",
+    "statusUrl": "https://www.rumah123.com/en/new-launch/property/bekasi/ash-shiddiq-residence/nps2962/",
+    "price": {
+     "min": 489000000,
+     "max": 524000000,
+     "basis": "Rentang portal diperbarui 12 Desember 2025; dua tipe, bukan dua rumah tersisa.",
+     "quote": "IDR 489 Million - 524 Million",
+     "url": "https://www.rumah123.com/en/new-launch/property/bekasi/ash-shiddiq-residence/nps2962/",
+     "pageDate": "2025-12-12",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Tipe 30",
+      "bedrooms": 2,
+      "landArea": 66,
+      "buildingArea": 30,
+      "price": 489000000
+     },
+     {
+      "label": "Tipe 40",
+      "bedrooms": 2,
+      "landArea": 66,
+      "buildingArea": 40,
+      "price": 524000000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": null,
+    "contactUrl": "https://www.rumah123.com/en/new-launch/property/bekasi/ash-shiddiq-residence/nps2962/",
+    "social": [],
+    "coordinate": null,
+    "listingBasis": "islamic",
+    "nearestAny": null,
+    "nearest": [],
+    "nearestPlanned": [],
+    "population": null,
+    "islamic": {
+     "kajian": [],
+     "education": [],
+     "claims": [
+      {
+       "kind": "syariah-concept",
+       "quote": "Ash-Shiddiq Residence merupakan perumahan syariah di Bekasi, Jawa Barat.",
+       "url": "https://www.rumah123.com/en/new-launch/property/bekasi/ash-shiddiq-residence/nps2962/",
+       "pageDate": "2025-12-12"
+      },
+      {
+       "kind": "pendidikan-sekitar",
+       "quote": "Komplek tinggal pun dekat dengan rumah tahfidz, sebagai fasilitas pendidikan berbasis agama bagi sang buah hati.",
+       "url": "https://www.rumah123.com/en/new-launch/property/bekasi/ash-shiddiq-residence/nps2962/",
+       "pageDate": "2025-12-12"
+      }
+     ]
+    },
+    "verdict": "partial",
+    "sources": [
+     {
+      "url": "https://www.rumah123.com/en/new-launch/property/bekasi/ash-shiddiq-residence/nps2962/",
+      "kind": "portal",
+      "title": "Ash-Shiddiq Residence — Rumah123",
+      "fetched": true,
+      "pageDate": "2025-12-12",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Dibuka 31 Oktober 2026: portal diperbarui 12 Desember 2025; pembangunan selesai Desember 2022. Dua tipe tersedia bukan hitungan stok. Rumah tahfidz diklaim di sekitar kawasan; nama/jadwal/biaya belum ada."
+     }
+    ],
+    "lastChecked": "2026-10-31",
+    "corridor": "bekasi-masjid-family",
+    "methods": [
+     "portal-proyek-baru",
+     "situs-developer"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
    "id": "prj-avana-residence",
    "geometry": {
     "type": "Point",
@@ -10636,6 +10780,100 @@
   },
   {
    "type": "Feature",
+   "id": "prj-cluster-sa-2-setu",
+   "geometry": null,
+   "properties": {
+    "id": "prj-cluster-sa-2-setu",
+    "name": "Cluster SA 2 (Sabrina Azzura II)",
+    "developer": null,
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Cijengkol, Kec. Setu, Kabupaten Bekasi (pemasar; titik belum terverifikasi)",
+    "region": null,
+    "area": "Bekasi",
+    "status": "dipasarkan",
+    "statusQuote": "Tersedia luas tanah 67 – 120 M²",
+    "statusUrl": "https://griyarumahsyariah.com/sabrina-azzura-ii/",
+    "price": {
+     "min": 350000000,
+     "max": 410000000,
+     "basis": "Harga pemasar tanpa tanggal; Rp350jt 2 lantai LB50/LT30; stok perlu konfirmasi.",
+     "quote": "Rp. 350 Jt",
+     "url": "https://griyarumahsyariah.com/sabrina-azzura-ii/",
+     "pageDate": null,
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "2 lantai LB50/LT30 — ukuran sesuai pemasar, perlu konfirmasi",
+      "bedrooms": 2,
+      "landArea": 30,
+      "buildingArea": 50,
+      "price": 350000000
+     },
+     {
+      "label": "LB30/LT67 — harga pemasar",
+      "bedrooms": 2,
+      "landArea": 67,
+      "buildingArea": 30,
+      "price": 410000000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": null,
+    "contactUrl": "https://griyarumahsyariah.com/sabrina-azzura-ii/",
+    "social": [],
+    "coordinate": null,
+    "listingBasis": "islamic",
+    "nearestAny": null,
+    "nearest": [],
+    "nearestPlanned": [],
+    "population": null,
+    "islamic": {
+     "kajian": [],
+     "education": [],
+     "claims": [
+      {
+       "kind": "musholla-in-estate",
+       "quote": "Musholla",
+       "url": "https://griyarumahsyariah.com/sabrina-azzura-ii/",
+       "pageDate": null
+      },
+      {
+       "kind": "syariah-concept",
+       "quote": "Perumahan Islami dengan desain elegan",
+       "url": "https://griyarumahsyariah.com/sabrina-azzura-ii/",
+       "pageDate": null
+      }
+     ]
+    },
+    "verdict": "partial",
+    "sources": [
+     {
+      "url": "https://griyarumahsyariah.com/sabrina-azzura-ii/",
+      "kind": "other",
+      "title": "Cluster SA 2 — Griya Rumah Syariah",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Halaman memakai judul Cluster SA 2 dan slug Sabrina Azzura II; tidak disamakan dengan Sabrina Azzura I yang telah habis. Musholla dan taman anak adalah klaim pemasar; jadwal kajian/TPQ belum ditemukan."
+     }
+    ],
+    "lastChecked": "2026-10-31",
+    "corridor": "bekasi-masjid-family",
+    "methods": [
+     "portal-proyek-baru",
+     "situs-developer"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
    "id": "prj-cotton-premiere-cileungsi-hijau",
    "geometry": {
     "type": "Point",
@@ -12365,6 +12603,160 @@
   },
   {
    "type": "Feature",
+   "id": "prj-familia-urban-bekasi",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.007774,
+     -6.302043
+    ]
+   },
+   "properties": {
+    "id": "prj-familia-urban-bekasi",
+    "name": "Familia Urban",
+    "developer": "PT Timah Karya Persada Properti",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Jl. Mandor Demong, Mustikasari, Mustikajaya, Kota Bekasi",
+    "region": "Kota Bekasi",
+    "area": "Bekasi",
+    "status": "dipasarkan",
+    "statusQuote": "Tipe Tersedia 5 Tipe Unit",
+    "statusUrl": "https://www.rumah123.com/perumahan-baru/properti/bekasi/familia-urban/nps1627/",
+    "price": {
+     "min": 1120000000,
+     "max": 1960000000,
+     "basis": "Harga lima tipe rumah pada portal 26 Mei 2026; tipe termurah Pinhome ditandai habis.",
+     "quote": "Rp 1,12 Miliar - 1,96 Miliar",
+     "url": "https://www.rumah123.com/perumahan-baru/properti/bekasi/familia-urban/nps1627/",
+     "pageDate": "2026-05-26",
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Tipe5 — situs penjualan/Rumah123",
+      "bedrooms": 3,
+      "landArea": 60,
+      "buildingArea": 60,
+      "price": 1120000000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": "https://www.timahproperti.co.id/",
+    "contactUrl": "https://www.timahproperti.co.id/",
+    "social": [],
+    "coordinate": {
+     "method": "Pin spesifik proyek pada data Pinhome",
+     "url": "https://www.pinhome.id/dijual/rumah-baru/familia-urban",
+     "precision": "pin portal",
+     "note": "Pin kawasan di Jl. Mandor Demong, bukan titik tiap rumah; belum verifikasi lapangan."
+    },
+    "listingBasis": "islamic",
+    "nearestAny": {
+     "mode": "LRT",
+     "name": "Jatimulya",
+     "km": 4.49,
+     "lat": -6.2641263,
+     "lng": 107.0216652
+    },
+    "nearest": [],
+    "nearestPlanned": [],
+    "population": {
+     "within500m": 5620,
+     "within1km": 21350,
+     "densityKm2": 6800
+    },
+    "islamic": {
+     "kajian": [],
+     "education": [],
+     "claims": [
+      {
+       "kind": "mosque-in-estate",
+       "quote": "Aula besar Masjid Playground",
+       "url": "https://realoka.com/732771-dijual-rumah-di-familia-urban-cluster-amethyst-bekasi-murah",
+       "pageDate": null
+      }
+     ]
+    },
+    "verdict": "partial",
+    "sources": [
+     {
+      "url": "https://www.pinhome.id/dijual/rumah-baru/familia-urban",
+      "kind": "portal",
+      "title": "Familia Urban — Pinhome",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Data aktif 122 unit portal, bukan konfirmasi stok. Tipe6 termurah Rp936jt ditandai habis sehingga tidak dijadikan harga minimum. Pin spesifik Jl.Mandor Demong, belum diverifikasi lapangan."
+     },
+     {
+      "url": "https://www.familia-urban.com/",
+      "kind": "other",
+      "title": "Familia Urban — situs penjualan",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Mengaku situs penjualan; hubungan operator dengan developer belum diverifikasi. Tipe5 LT60/LB60 mulai Rp1,12M; menyebut Islamic Green School, waktu tempuh klaim pemasar."
+     },
+     {
+      "url": "https://www.timahproperti.co.id/kegiatan/kegiatan/launching-cluster-amethys",
+      "kind": "developer",
+      "title": "Peluncuran Cluster Amethyst — Timah Properti",
+      "fetched": true,
+      "pageDate": "2023-03-18",
+      "supports": [
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Sumber developer mengonfirmasi proyek/klaster dan pengembang. Harga Rp1,1–1,6M adalah peluncuran Maret2023, tidak dianggap harga/stok terkini."
+     },
+     {
+      "url": "https://www.rumah123.com/perumahan-baru/properti/bekasi/familia-urban/nps1627/",
+      "kind": "portal",
+      "title": "Familia Urban — Rumah123",
+      "fetched": true,
+      "pageDate": "2026-05-26",
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Portal menawarkan lima tipe rumah Rp1,12–1,96M; diperbarui 26 Mei 2026. Ukuran beberapa tipe berbeda dengan penjual, unit minimum Tipe5 LT60/LB60 konsisten."
+     },
+     {
+      "url": "https://realoka.com/732771-dijual-rumah-di-familia-urban-cluster-amethyst-bekasi-murah",
+      "kind": "portal",
+      "title": "Fasilitas klaster Amethyst Familia Urban — Realoka",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "lokasi"
+      ],
+      "note": "Iklan unit berlabel baru dipakai hanya untuk klaim masjid di dalam klaster, belum bukti operasional/kajian. Harga/kontak/identitas pemasang tidak digunakan untuk katalog proyek."
+     }
+    ],
+    "lastChecked": "2026-10-31",
+    "corridor": "bekasi-masjid-family",
+    "methods": [
+     "portal-proyek-baru",
+     "situs-developer"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
    "id": "prj-fifty-seven-promenade",
    "geometry": {
     "type": "Point",
@@ -13516,6 +13908,152 @@
     ],
     "lastChecked": "2026-10-30",
     "corridor": "lrt-jabodebek-bekasi",
+    "methods": [
+     "portal-proyek-baru",
+     "situs-developer"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-grand-wisata-bekasi",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.047102,
+     -6.292382
+    ]
+   },
+   "properties": {
+    "id": "prj-grand-wisata-bekasi",
+    "name": "Grand Wisata Bekasi",
+    "developer": "Sinar Mas Land",
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Jl. Celebration Boulevard, Lambangjaya, Tambun Selatan, Kabupaten Bekasi",
+    "region": "Kabupaten Bekasi",
+    "area": "Bekasi",
+    "status": "dipasarkan",
+    "statusQuote": "Start from Rp 1.500.000.000",
+    "statusUrl": "https://www.sinarmasland.com/development/township/grand-wisata",
+    "price": {
+     "min": 1500000000,
+     "max": null,
+     "basis": "Mulai klaster hunian Klasika di situs developer; ruko dan home office tidak dihitung.",
+     "quote": "Start from Rp 1.500.000.000",
+     "url": "https://www.sinarmasland.com/development/township/grand-wisata",
+     "pageDate": null,
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "Klasika — harga mulai developer",
+      "bedrooms": null,
+      "landArea": null,
+      "buildingArea": null,
+      "price": 1500000000
+     },
+     {
+      "label": "Tanamas — harga mulai developer",
+      "bedrooms": null,
+      "landArea": null,
+      "buildingArea": null,
+      "price": 1600000000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": "https://www.sinarmasland.com/development/township/grand-wisata",
+    "contactUrl": "https://www.sinarmasland.com/development/township/grand-wisata",
+    "social": [],
+    "coordinate": {
+     "method": "Pusat kawasan residential OSM dari Photon",
+     "url": "https://www.openstreetmap.org/relation/18946534",
+     "precision": "kawasan",
+     "note": "Pusat area hunian bernama Grand Wisata; bukan titik klaster, rumah atau pintu masuk. Jarak berubah menurut unit."
+    },
+    "listingBasis": "islamic",
+    "nearestAny": {
+     "mode": "KRL",
+     "name": "Tambun",
+     "km": 3.88,
+     "lat": -6.2585496,
+     "lng": 107.0558044
+    },
+    "nearest": [],
+    "nearestPlanned": [],
+    "population": {
+     "within500m": 4660,
+     "within1km": 17600,
+     "densityKm2": 5600
+    },
+    "islamic": {
+     "kajian": [],
+     "education": [],
+     "claims": [
+      {
+       "kind": "mosque-in-estate",
+       "quote": "Masjid Izzatul Islam, Grand Wisata, Kecamatan Tambun Selatan.",
+       "url": "https://nubekasi.or.id/lbmpcnu-bekasi-sukses-menggelar-kajian-menjelang-buka-puasa-di-masjid-izzatul-islam-grand-wisata/",
+       "pageDate": "2024-03-26"
+      },
+      {
+       "kind": "pendidikan-sekitar",
+       "quote": "Dekat dari AL-AZHAR",
+       "url": "https://rumahsaya.bca.co.id/developer/sinar-mas-land/bekasi/grand-wisata",
+       "pageDate": null
+      },
+      {
+       "kind": "mosque-in-estate",
+       "quote": "Masjid",
+       "url": "https://rumahsaya.bca.co.id/developer/sinar-mas-land/bekasi/grand-wisata",
+       "pageDate": null
+      }
+     ]
+    },
+    "verdict": "partial",
+    "sources": [
+     {
+      "url": "https://www.sinarmasland.com/development/township/grand-wisata",
+      "kind": "developer",
+      "title": "Grand Wisata — Sinar Mas Land",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Harga Klasika Rp1,5M, Tanamas Rp1,6M; ruko Almandine, loft komersial dan home office dikeluarkan dari basis minimum. Harga/stok klaster perlu konfirmasi. Titik OSM mewakili kawasan, bukan gerbang atau unit."
+     },
+     {
+      "url": "https://rumahsaya.bca.co.id/developer/sinar-mas-land/bekasi/grand-wisata",
+      "kind": "portal",
+      "title": "Grand Wisata — Rumahsaya BCA",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Fasilitas bersama mencantumkan masjid dan sekolah; Al-Azhar disebut di sekitar. Rentang Rp1,5–7,5M bercampur rumah/ruko/soho sehingga tidak dijadikan rentang harga rumah."
+     },
+     {
+      "url": "https://nubekasi.or.id/lbmpcnu-bekasi-sukses-menggelar-kajian-menjelang-buka-puasa-di-masjid-izzatul-islam-grand-wisata/",
+      "kind": "other",
+      "title": "Lokasi kajian Izzatul Islam — NU Bekasi",
+      "fetched": true,
+      "pageDate": "2024-03-26",
+      "supports": [
+       "lokasi"
+      ],
+      "note": "Laporan penyelenggara mendukung lokasi/nama masjid di Grand Wisata. Acara Ramadan 2024 bukan bukti jadwal rutin yang masih berlaku."
+     }
+    ],
+    "lastChecked": "2026-10-31",
+    "corridor": "bekasi-masjid-family",
     "methods": [
      "portal-proyek-baru",
      "situs-developer"
@@ -27886,6 +28424,107 @@
     "corridor": "sweep-syariah-meta",
     "methods": [
      "portal-proyek-baru"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prj-taman-maryam-setu",
+   "geometry": null,
+   "properties": {
+    "id": "prj-taman-maryam-setu",
+    "name": "Taman Maryam (Maryam Residence 3)",
+    "developer": null,
+    "kind": "Rumah",
+    "subsidized": false,
+    "locationText": "Taman Rahayu, Kec. Setu, Kabupaten Bekasi (alamat pemasar; titik belum terverifikasi)",
+    "region": null,
+    "area": "Bekasi",
+    "status": "inden",
+    "statusQuote": "Unit Indent",
+    "statusUrl": "https://griyarumahsyariah.com/maryam-residence-3/",
+    "price": {
+     "min": 290000000,
+     "max": 550000000,
+     "basis": "Promo pemasar tanpa tanggal; stok dan masa berlaku belum dikonfirmasi.",
+     "quote": "Rp.290 Jtan",
+     "url": "https://griyarumahsyariah.com/maryam-residence-3/",
+     "pageDate": null,
+     "currency": "IDR"
+    },
+    "units": [
+     {
+      "label": "LB30/LT48 — promo pemasar, inden",
+      "bedrooms": 2,
+      "landArea": 48,
+      "buildingArea": 30,
+      "price": 290000000
+     },
+     {
+      "label": "LB36/LT67 — promo pemasar, inden",
+      "bedrooms": 2,
+      "landArea": 67,
+      "buildingArea": 36,
+      "price": 380000000
+     },
+     {
+      "label": "LB60/LT67 — promo pemasar, inden",
+      "bedrooms": 3,
+      "landArea": 67,
+      "buildingArea": 60,
+      "price": 550000000
+     }
+    ],
+    "transitClaim": null,
+    "officialUrl": null,
+    "contactUrl": "https://griyarumahsyariah.com/maryam-residence-3/",
+    "social": [],
+    "coordinate": null,
+    "listingBasis": "islamic",
+    "nearestAny": null,
+    "nearest": [],
+    "nearestPlanned": [],
+    "population": null,
+    "islamic": {
+     "kajian": [],
+     "education": [],
+     "claims": [
+      {
+       "kind": "tpq-or-school-in-estate",
+       "quote": "Pesantren Tahfidz AlQuran",
+       "url": "https://griyarumahsyariah.com/maryam-residence-3/",
+       "pageDate": null
+      },
+      {
+       "kind": "syariah-concept",
+       "quote": "Perumahan Syariah di Kawasan Islami",
+       "url": "https://griyarumahsyariah.com/maryam-residence-3/",
+       "pageDate": null
+      }
+     ]
+    },
+    "verdict": "partial",
+    "sources": [
+     {
+      "url": "https://griyarumahsyariah.com/maryam-residence-3/",
+      "kind": "other",
+      "title": "Taman Maryam — Griya Rumah Syariah",
+      "fetched": true,
+      "pageDate": null,
+      "supports": [
+       "harga",
+       "status",
+       "lokasi",
+       "unit"
+      ],
+      "note": "Pemasar menawarkan inden dan pesantren tahfidz. Promo September tanpa tahun; penghitung Rumah 0 Unit dapat berupa placeholder. Harga/stok, pengembang dan operasional fasilitas belum dikonfirmasi."
+     }
+    ],
+    "lastChecked": "2026-10-31",
+    "corridor": "bekasi-masjid-family",
+    "methods": [
+     "portal-proyek-baru",
+     "situs-developer"
     ]
    }
   },

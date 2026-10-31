@@ -77,7 +77,7 @@ $("app").innerHTML = `
       <div class="research-links"><a class="button primary" href="/?koleksi=riset">${icon("pin")} Lihat semua di peta</a><a class="button" href="#sewa">Sewa ramah keluarga muslim</a><a class="button" href="#iklan-dijual">Iklan dijual dekat masjid kajian</a><a class="button" href="#belum-diverifikasi">Petunjuk belum diverifikasi</a><a class="button" href="#metode">${icon("info")} Cara riset ini dibuat</a></div>
     </section>
     <section class="research-filters" aria-label="Filter riset properti">
-      <div class="search-box">${icon("search")}<input id="research-search" type="search" aria-label="Cari proyek, developer, lokasi, atau stasiun" placeholder="Proyek, developer, lokasi, atau stasiun…" autocomplete="off"/></div>
+      <div class="search-box">${icon("search")}<input id="research-search" type="search" aria-label="Cari proyek, developer, lokasi, masjid, sekolah, atau stasiun" placeholder="Proyek, lokasi, masjid, sekolah, atau stasiun…" autocomplete="off"/></div>
       <div class="area-chips" aria-label="Filter wilayah"><button class="chip selected" data-area="Semua" aria-pressed="true">Semua</button>${AREAS.map((area) => `<button class="chip" data-area="${area}" aria-pressed="false">${area}</button>`).join("")}</div>
       <div class="research-selects">
         <label>Moda<select id="research-mode"><option value="">KRL, MRT & LRT</option><option>KRL</option><option>MRT</option><option>LRT</option></select></label>
@@ -180,6 +180,9 @@ function filtered(): ResearchProperty[] {
       property.developer ?? "",
       property.locationText,
       property.region ?? "",
+      ...(property.islamic?.kajian ?? []).map((place) => place.name),
+      ...(property.islamic?.education ?? []).map((place) => place.name),
+      ...(property.islamic?.claims ?? []).map((claim) => claim.quote),
       ...stationsFor(property, "all").map(
         (item) => `${item.mode} ${item.name}`,
       ),

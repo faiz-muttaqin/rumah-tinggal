@@ -113,6 +113,8 @@ Hanya stasiun dengan titik yang dapat ditelusuri yang dipetakan: node OpenStreet
 
 ## Masjid berkajian dan pendidikan Islam anak
 
+Pencarian teks di `/riset` juga mencakup nama masjid/sekolah di fasilitas sekitar serta kutipan klaim proyek. Misalnya `Az-Zumar` menampilkan proyek yang terhubung dengan bukti masjid itu. Hasil mengikuti radius/klaim yang tercatat, bukan pencarian semua lokasi atau pengukuran rute. Catatan [riset dari masjid](../research/masjid/README.md) memisahkan jadwal rutin, acara sekali jalan, dan titik yang belum terbukti.
+
 Poin plus tiap proyek berasal dari `research/context/islamic.json`. Inventaris awal diambil dari OpenStreetMap (Overpass, dengan jeda dan backoff): masjid bernama dan sekolah yang namanya atau tag-nya menunjukkan pendidikan Islam, dalam 1,5 km dari titik proyek. Peneliti lalu mencari bukti di halaman yang dibuka langsung:
 
 - Kajian rutin: jadwal berulang di situs masjid, profil SIMAS Kemenag, direktori kajian, situs yayasan, atau berita, bertanggal sekitar November 2024 atau sesudahnya. Kegiatan sekali jalan tidak dihitung.
