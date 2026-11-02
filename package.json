@@ -22,7 +22,10 @@
     "format": "biome format --write .",
     "security:staged": "node scripts/security.mjs staged",
     "security:history": "node scripts/security.mjs history",
-    "test:security": "node --test scripts/security.test.mjs"
+    "test:security": "node --test scripts/security.test.mjs",
+    "rentals:plan": "python3 -I scripts/rental_crawler.py",
+    "rentals:crawl": "python3 -I scripts/rental_crawler.py --run",
+    "test:rental-crawler": "python3 -I scripts/test_rental_crawler.py"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.4",

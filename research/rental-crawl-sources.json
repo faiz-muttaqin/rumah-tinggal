@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "note": "Area pencarian awal, bukan bukti alamat unit. Rumah dan apartemen dicari terpisah; kedekatan hanya dari koordinat iklan. Urutan dihitung dari transportasi dalam dataset dan kedekatan ke Blok M.",
+  "radiusKm": 1.5,
+  "delaySeconds": 1.5,
+  "searchCacheHours": 24,
+  "detailCacheHours": 72,
+  "maxSearchRequests": 150,
+  "maxDetailRequests": 240,
+  "maxPagesPerArea": 20,
+  "targets": {
+    "masjid-abu-bakar-ash-shiddiq-tangerang": ["banten/tangerang/ciledug"],
+    "masjid-abu-bakr-ash-shiddiq-cibitung": ["jawa-barat/kab-bekasi/cibitung"],
+    "masjid-al-adhim": ["jawa-barat/depok/cinere"],
+    "masjid-al-ahdhar": ["jawa-barat/bekasi/pondokmelati"],
+    "masjid-al-amanah": ["banten/tangerang-selatan/ciputat"],
+    "masjid-al-azhar-cpb": ["dki-jakarta/jakarta-pusat/cempaka-putih"],
+    "masjid-al-barkah-batujajar": ["jawa-barat/kab-bandung-barat/batujajar"],
+    "masjid-al-barkah-ciputat": ["banten/tangerang-selatan/ciputat"],
+    "masjid-al-fattah": ["dki-jakarta/jakarta-timur/jatinegara"],
+    "masjid-al-furqan-grand-galaxy-city": ["jawa-barat/bekasi/bekasi-selatan"],
+    "masjid-al-hasanah-bintaro": ["banten/tangerang-selatan/pondok-aren"],
+    "masjid-al-hidayah-tomang": ["dki-jakarta/jakarta-barat/palmerah"],
+    "masjid-al-hijrah-discovery-flamine": [
+      "banten/tangerang-selatan/pondok-aren"
+    ],
+    "masjid-al-hikmah-ddn-2": ["dki-jakarta/jakarta-selatan/cilandak"],
+    "masjid-al-ikhlas-dukuh-bima": ["jawa-barat/kab-bekasi/tambun-selatan"],
+    "masjid-al-ikhlas-nirwana-2": ["jawa-barat/kab-bogor/cibinong"],
+    "masjid-al-jannah-gcc": ["jawa-barat/kab-bogor/sukaraja"],
+    "masjid-al-kautsar-matraman": ["dki-jakarta/jakarta-timur/matraman"],
+    "masjid-al-lathiif": ["jawa-barat/depok/sukmajaya"],
+    "masjid-al-mizan": ["dki-jakarta/jakarta-timur/pulogadung"],
+    "masjid-al-mubarak": ["dki-jakarta/jakarta-barat/taman-sari"],
+    "masjid-al-muhajirin-wal-anshar": ["jawa-barat/depok/limo"],
+    "masjid-al-ukhuwah": ["banten/kab-tangerang/pagedangan"],
+    "masjid-al-aqsho": ["jawa-barat/bekasi/pondokgede"],
+    "masjid-al-hafidz-cigadung": ["jawa-barat/bandung/cibeunying-kaler"],
+    "masjid-al-hakim": ["banten/tangerang/tangerang"],
+    "masjid-al-hakim-pamulang": ["banten/tangerang-selatan/pamulang"],
+    "masjid-al-hidayah": ["dki-jakarta/jakarta-timur/cakung"],
+    "masjid-al-ihsan": ["dki-jakarta/jakarta-timur/jatinegara"],
+    "masjid-al-ikhlas-tamansari-persada": ["jawa-barat/bogor/tanah-sareal"],
+    "masjid-al-istiqomah-taman-yasmin": ["jawa-barat/bogor/bogor-barat"],
+    "masjid-al-jihad-cikarang-baru": ["jawa-barat/kab-bekasi/cikarang-selatan"],
+    "masjid-al-muhajirin-villa-gunung-lestari": [
+      "banten/tangerang-selatan/ciputat"
+    ],
+    "masjid-aminussalam": ["jawa-barat/bekasi/pondokgede"],
+    "masjid-an-naba": ["banten/tangerang/pinang"],
+    "masjid-an-nur-casagoya": ["dki-jakarta/jakarta-barat/kebon-jeruk"],
+    "masjid-ar-rahman-discovery-lumina": [
+      "banten/tangerang-selatan/pondok-aren"
+    ],
+    "masjid-ar-riyadh": ["jawa-barat/depok/sukmajaya"],
+    "masjid-as-sunnah-meruyung": ["jawa-barat/depok/limo"],
+    "masjid-as-sunnah-vcm": ["banten/tangerang-selatan/ciputat-timur"],
+    "masjid-ash-shaff": ["banten/tangerang-selatan/pondok-aren"],
+    "masjid-ash-shiddiq-bandung": ["jawa-barat/bandung/batununggal"],
+    "masjid-asy-syakirin-depok": ["jawa-barat/depok/cimanggis"],
+    "masjid-at-tabayyun": ["dki-jakarta/jakarta-barat/kembangan"],
+    "masjid-at-taufiq": ["dki-jakarta/jakarta-pusat/cempaka-putih"],
+    "masjid-at-tauhid": ["jawa-barat/kab-bogor/cibinong"],
+    "masjid-at-tauhid-lembang": ["jawa-barat/kab-bandung-barat/lembang"],
+    "masjid-baiturrahim-kavling-marinir": [
+      "dki-jakarta/jakarta-timur/duren-sawit"
+    ],
+    "masjid-baiturrahman": ["dki-jakarta/jakarta-selatan/kebayoran-lama"],
+    "masjid-baitussalam-cilandak": ["dki-jakarta/jakarta-selatan/cilandak"],
+    "masjid-bunga-bangsa": ["jawa-barat/bekasi/bekasi-timur"],
+    "masjid-hijau-nurul-iman": ["dki-jakarta/jakarta-timur/cipayung"],
+    "masjid-imam-asy-syafi-i": ["jawa-barat/depok/sukmajaya"],
+    "masjid-imam-nawawi": ["dki-jakarta/jakarta-timur/jatinegara"],
+    "masjid-istiqomah-ikea-sentul-city": [
+      "jawa-barat/kab-bogor/babakan-madang"
+    ],
+    "masjid-istiqomah-kavling-pengadilan": [
+      "dki-jakarta/jakarta-timur/duren-sawit"
+    ],
+    "masjid-jami-al-jihad": ["banten/tangerang/ciledug"],
+    "masjid-jami-utsman-bin-affan": ["banten/tangerang-selatan/pondok-aren"],
+    "masjid-miftahu-khairil-ummah": ["jawa-barat/bekasi/bekasi-utara"],
+    "masjid-muadz-bin-jabal": [
+      "jawa-barat/kab-bogor/gunung-putri/bojong-kulur"
+    ],
+    "masjid-nur-ilahi": ["jawa-barat/kab-bogor/ciawi"],
+    "masjid-nur-salma": ["dki-jakarta/jakarta-selatan/setiabudi"],
+    "masjid-nurul-amal": ["dki-jakarta/jakarta-selatan/pasar-minggu"],
+    "masjid-nurul-i-tishom": ["jawa-barat/bekasi/bekasi-barat/kranji"],
+    "masjid-nurul-iman-blok-m": ["dki-jakarta/jakarta-selatan/kebayoran-baru"],
+    "masjid-nurul-iman-valencia": ["banten/tangerang-selatan/pondok-aren"],
+    "masjid-nurul-jannah-pup": ["jawa-barat/bekasi/bekasi-utara"],
+    "masjid-nurut-tauhid": ["jawa-barat/bogor/bogor-utara"],
+    "masjid-nuur-alaa-nuur-masnan": ["jawa-barat/kab-bekasi/tambun-selatan"],
+    "masjid-raya-al-fatah": ["dki-jakarta/jakarta-timur/matraman"],
+    "masjid-raya-at-taqwa-rawalumbu": ["jawa-barat/bekasi/rawalumbu"],
+    "masjid-raya-cipinang-muara": ["dki-jakarta/jakarta-timur/jatinegara"],
+    "masjid-raya-rahmatan-lil-alamin": ["banten/tangerang/tangerang"],
+    "masjid-rihlatul-jannah": ["jawa-barat/kab-bogor/tajurhalang"],
+    "masjid-salman-al-farisi": ["dki-jakarta/jakarta-timur/pulogadung"],
+    "masjid-umar-bin-khattab-griya-cempaka-arum": [
+      "jawa-barat/bandung/gedebage"
+    ],
+    "masjid-umar-bin-khattab": ["jawa-barat/kab-bandung-barat/batujajar"],
+    "rumah-al-qur-an-rsb": ["jawa-barat/bekasi/pondokgede"]
+  }
+}

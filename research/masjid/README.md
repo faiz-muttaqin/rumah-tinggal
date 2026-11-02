@@ -1,5 +1,7 @@
 # Hunian dari titik awal masjid
 
+[Worker pantauan sewa](../../docs/rental-crawler.md) menelusuri rumah dan apartemen dari kawasan seluruh 78 masjid Ihrish, dengan prioritas transportasi umum dan Jakarta Selatan. Hasilnya kandidat privat dengan bukti harga, tanggal, dan jarak perkiraan; penerbitan katalog tetap melalui kurasi.
+
 Putaran **IHRISH-01, 31 Oktober 2026** menambah [daftar dan hunian sekitar dari peta Ihrish](ihrish.md): **78 masjid dengan pin**, ekspor [CSV](ihrish-mosques.csv), [JSON](ihrish-mosques.json), dan [GeoJSON](ihrish-mosques.geojson). Sesuai arahan terbaru, **ada kajian sudah cukup; tidak harus rutin**. Direktori `/riset#masjid` menampilkan semua lokasi, termasuk yang hanya punya satu jadwal, beserta 16 hubungan ke 15 proyek bertitik dan lima iklan jual/sewa baru. Jumlah jadwal adalah snapshot dan dapat mencakup pembatalan.
 
 Putaran **MASJID-01**, diperiksa **31 Oktober 2026 WIB** oleh proses utama. Mulai dari bukti kegiatan pengelola, cocokkan alamat/titik, baru hubungkan dengan hunian. Jarak yang dapat dihitung adalah garis lurus; survei akses jalan dan jam kegiatan tetap diperlukan.

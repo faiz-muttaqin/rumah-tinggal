@@ -20,6 +20,8 @@ Ruang kerja untuk memperkaya katalog properti dan menghubungkan listing dengan k
 
 Dataset yang dipakai aplikasi dibangun ke [properties.geojson](../public/data/properties.geojson). Menambah catatan di ruang riset tidak otomatis menambah listing atau lapisan pada aplikasi.
 
+[Pantauan sewa otomatis](../docs/rental-crawler.md) mencari rumah dan apartemen untuk semua 78 masjid Ihrish. Prioritasnya masjid dekat transportasi umum, mulai Jakarta Selatan lalu melebar. Konfigurasi kawasan ada di [rental-crawl-sources.json](rental-crawl-sources.json); hasil dan progres disimpan privat untuk kurasi.
+
 [Lanjutan Bekasi](bekasi/README.md) memprioritaskan keluarga muslim: bukti kajian, pendidikan anak, perbedaan harga per tipe, status inden, serta fasilitas yang masih perlu dikonfirmasi.
 
 [Koridor Sudirman–Bekasi](koridor-sudirman-bekasi.md) mencatat tambahan sewa, syaratnya, lokasi kajian kitab, dan hubungan fasilitas dengan iklan yang belum dapat diukur.

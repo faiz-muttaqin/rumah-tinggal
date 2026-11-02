@@ -25,7 +25,7 @@ Repositori sudah memakai Node/TypeScript dan Playwright untuk pengujian browser.
 4. Periksa alamat, harga dan stok, status fasilitas, serta tanggal kegiatan. Harga dalam poster dan suara video memerlukan pembacaan tambahan; caption saja belum mencakup semuanya.
 5. Masukkan hasil terverifikasi melalui alur kurasi dan pembangunan dataset yang sudah ada. Akuisisi tidak langsung menerbitkan listing.
 
-[Importer Instagram](../scripts/instagram-import.ts) sudah menjalankan sebagian langkah normalisasi untuk Bright Data/Apify. Hasilnya kandidat privat, bukan katalog publik. [Uji gratis](instagram-free-pilot.md) mencatat hasil akuisisi aktual. Worker terjadwal dan penerbitan otomatis belum diaktifkan.
+[Importer Instagram](../scripts/instagram-import.ts) sudah menjalankan sebagian langkah normalisasi untuk Bright Data/Apify. Hasilnya kandidat privat, bukan katalog publik. [Uji gratis](instagram-free-pilot.md) mencatat hasil akuisisi aktual. Instagram belum memiliki worker terjadwal. Untuk rumah dan apartemen sekitar 78 masjid Ihrish, [worker sewa](rental-crawler.md) menyediakan penemuan dari kategori Pinhome, pengurutan transportasi/Jakarta Selatan, cache, pagination, deduplikasi, dan laporan kandidat privat. Penerbitan tetap melalui kurasi.
 
 ## Akses agen AI yang sudah tersedia
 

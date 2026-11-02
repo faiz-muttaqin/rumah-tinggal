@@ -1,0 +1,25 @@
+[Unit]
+Description=Pantau sewa sekitar masjid Ihrish
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+DynamicUser=yes
+StateDirectory=rumah-tinggal-rental-crawl
+StateDirectoryMode=0700
+WorkingDirectory=/opt/rumah-tinggal/research-worker
+ExecStart=/usr/bin/python3 -I scripts/rental_crawler.py --run --output-dir /var/lib/rumah-tinggal-rental-crawl
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/rumah-tinggal-rental-crawl
+InaccessiblePaths=-/etc/rumah-tinggal.env -/var/lib/rumah-tinggal
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+MemoryMax=192M
+CPUQuota=25%
+Nice=10
+TimeoutStartSec=45min
+TimeoutStopSec=30s
