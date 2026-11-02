@@ -1,5 +1,7 @@
 # Hunian dari titik awal masjid
 
+[Publikasi 3 November 2026](publikasi-sewa-ihrish-2026-11-03.md) menambah **61 penawaran terkurasi** dari hasil worker menjadi **109 sewa**. Harga, periode, minimum sewa, dan acuan lokasi diperiksa; stok dan akses unit tetap perlu konfirmasi. Sebanyak 32 kandidat otomatis ditahan dengan alasan per sumber.
+
 [Worker pantauan sewa](../../docs/rental-crawler.md) menelusuri rumah dan apartemen dari kawasan seluruh 78 masjid Ihrish, dengan prioritas transportasi umum dan Jakarta Selatan. Hasilnya kandidat privat dengan bukti harga, tanggal, dan jarak perkiraan; penerbitan katalog tetap melalui kurasi.
 
 Putaran **IHRISH-01, 31 Oktober 2026** menambah [daftar dan hunian sekitar dari peta Ihrish](ihrish.md): **78 masjid dengan pin**, ekspor [CSV](ihrish-mosques.csv), [JSON](ihrish-mosques.json), dan [GeoJSON](ihrish-mosques.geojson). Sesuai arahan terbaru, **ada kajian sudah cukup; tidak harus rutin**. Direktori `/riset#masjid` menampilkan semua lokasi, termasuk yang hanya punya satu jadwal, beserta 16 hubungan ke 15 proyek bertitik dan lima iklan jual/sewa baru. Jumlah jadwal adalah snapshot dan dapat mencakup pembatalan.
