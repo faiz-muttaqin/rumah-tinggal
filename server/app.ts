@@ -376,7 +376,9 @@ async function serveStatic(
     "Content-Type": contentTypes.get(extname(file).toLowerCase()),
     "Content-Length": body.length,
     "Cache-Control":
-      extname(file) === ".html" ? "no-cache" : "public, max-age=3600",
+      extname(file) === ".html" || isPublicGeoJson
+        ? "no-cache"
+        : "public, max-age=3600",
   });
   response.end(request.method === "HEAD" ? undefined : body);
 }

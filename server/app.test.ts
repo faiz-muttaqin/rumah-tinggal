@@ -419,6 +419,7 @@ test("only the four public map files are served as GeoJSON without symlink alias
     await writeFile(join(dataDir, filename), geojson);
     const response = await fetch(`${origin}/data/${filename}`);
     assert.equal(response.status, 200);
+    assert.equal(response.headers.get("cache-control"), "no-cache");
     assert.equal(
       response.headers.get("content-type"),
       "application/geo+json; charset=utf-8",
@@ -426,6 +427,7 @@ test("only the four public map files are served as GeoJSON without symlink alias
     assert.equal(await response.text(), geojson);
     const head = await fetch(`${origin}/data/${filename}`, { method: "HEAD" });
     assert.equal(head.status, 200);
+    assert.equal(head.headers.get("cache-control"), "no-cache");
     assert.equal(head.headers.get("content-length"), String(geojson.length));
     assert.equal(await head.text(), "");
   }

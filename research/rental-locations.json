@@ -661,6 +661,91 @@
         "sha256": "cfcb60e1e5e59523f1d3878cc9f93d8bf343949643f5d1f744a0598eb71f1388",
         "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
       }
+    },
+    {
+      "rentalId": "sewa-ihrish-kiara2-30",
+      "location": {
+        "lat": -6.332946,
+        "lng": 106.969225,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-gn-putri-bojong-kulur",
+        "method": "Pin publik location.coordinate pada halaman iklan aktif; bukan centroid administratif",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin perkiraan pengiklan/portal, belum disurvei. Jarak dihitung dari titik acuan, bukan dari pintu unit.",
+      "evidence": {
+        "sha256": "96e8ddca1d08a489a4735d638f2278cb737f9e6484de949c9f200a6e5c2ef957",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-ihrish-vni3-45",
+      "location": {
+        "lat": -6.31993,
+        "lng": 106.968694,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-villa-nusa-indah-3-di-bojong-kulur",
+        "method": "Pin publik location.coordinate pada halaman iklan aktif; bukan centroid administratif",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin perkiraan pengiklan/portal, belum disurvei. Jarak dihitung dari titik acuan, bukan dari pintu unit.",
+      "evidence": {
+        "sha256": "df983e6dbae17d9907ad722290f54048f8f8bdfd6317d13c3e39bc83cbdcf4e0",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-ihrish-bumi-mutiara-15",
+      "location": {
+        "lat": -6.335202,
+        "lng": 106.9726,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bumi-mutiara-blok-je5-no16-rt05-32",
+        "method": "Pin publik location.coordinate pada halaman iklan aktif; bukan centroid administratif",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin perkiraan pengiklan/portal, belum disurvei. Jarak dihitung dari titik acuan, bukan dari pintu unit.",
+      "evidence": {
+        "sha256": "a99dd07d1cd36eac5c698710adcf0210989ff0f7f1dcec508aa8b528de8f9ed5",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-ihrish-mahkota-20",
+      "location": {
+        "lat": -6.323686,
+        "lng": 106.963777,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-vila-mahkota-pesona-blok-ii-2-no-9",
+        "method": "Pin publik location.coordinate pada halaman iklan aktif; bukan centroid administratif",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin perkiraan pengiklan/portal, belum disurvei. Jarak dihitung dari titik acuan, bukan dari pintu unit.",
+      "evidence": {
+        "sha256": "36bd00cf5c3430c44cc8e10690f2425653fe1e5b374b13e473111e1a6c2c9c2b",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-ihrish-mahkota-r123-50",
+      "location": {
+        "lat": -6.323686,
+        "lng": 106.963777,
+        "precision": "complex",
+        "label": "Acuan kompleks Vila Mahkota Pesona",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-vila-mahkota-pesona-blok-ii-2-no-9",
+        "method": "Acuan kompleks dari iklan publik lain di Vila Mahkota Pesona",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Acuan kompleks berasal dari iklan Pinhome rumah berbeda di Vila Mahkota Pesona. Bukan koordinat unit Rumah123; jarak dari rumah ini perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "36bd00cf5c3430c44cc8e10690f2425653fe1e5b374b13e473111e1a6c2c9c2b",
+        "selector": "__UNIT_DETAIL__.location.coordinate; nama kompleks sama, rumah berbeda"
+      }
     }
   ]
 }

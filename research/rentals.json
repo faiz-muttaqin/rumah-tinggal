@@ -1747,6 +1747,176 @@
       "verdict": "partial",
       "lastChecked": "2026-11-02",
       "note": "Dicantumkan karena titik portal berada sekitar 0.85 km garis lurus dari Masjid Al Furqan Grand Galaxy City dalam direktori Ihrish, bukan klaim kajian oleh pengiklan. Pembaruan iklan 2025-06-11; harga dibaca ulang 2 November 2026. Ketersediaan belum dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-ihrish-kiara2-30",
+      "title": "Rumah sewa Kiara 2 Bojong Kulur 2 kamar",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bogor",
+      "locationText": "Bojong Kulur, Gunung Putri, Kabupaten Bogor",
+      "buildingOrCluster": "Kiara 2",
+      "rent": {
+        "amount": 30000000,
+        "period": "yearly",
+        "quote": "Rp 30 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-gn-putri-bojong-kulur",
+        "pageDate": "2026-10-10"
+      },
+      "bedrooms": 2,
+      "sizeM2": 46,
+      "furnished": "semi",
+      "evidence": [
+        {
+          "quote": "DISEWAKAN RUMAH KIARA 2 DALAM CLUSTER",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-gn-putri-bojong-kulur"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-gn-putri-bojong-kulur",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-10-10",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-02",
+      "note": "Sekitar 0.65 km garis lurus dari acuan portal ke Masjid Muadz Bin Jabal (Ihrish). Pembaruan iklan 2026-10-10; harga diperiksa 2 November 2026. Stok belum dikonfirmasi langsung. Harga utama tahunan; deskripsi juga menawarkan Rp3 juta/bulan, deposit dan iuran terpisah."
+    },
+    {
+      "id": "sewa-ihrish-vni3-45",
+      "title": "Rumah sewa Vila Nusa Indah 3, 2+1 kamar",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bogor",
+      "locationText": "Bojong Kulur, Gunung Putri, Kabupaten Bogor",
+      "buildingOrCluster": "Villa Nusa Indah 3",
+      "rent": {
+        "amount": 45000000,
+        "period": "yearly",
+        "quote": "Rp 45 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-villa-nusa-indah-3-di-bojong-kulur",
+        "pageDate": "2026-06-02"
+      },
+      "bedrooms": 3,
+      "sizeM2": 100,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Villa Nusa Indah 3",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-villa-nusa-indah-3-di-bojong-kulur"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-villa-nusa-indah-3-di-bojong-kulur",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-06-02",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-02",
+      "note": "Sekitar 0.97 km garis lurus dari acuan portal ke Masjid Muadz Bin Jabal (Ihrish). Pembaruan iklan 2026-06-02; harga diperiksa 2 November 2026. Stok belum dikonfirmasi langsung. Kolom portal menghitung 3 kamar; deskripsi merinci 2+1."
+    },
+    {
+      "id": "sewa-ihrish-bumi-mutiara-15",
+      "title": "Rumah sewa Bumi Mutiara 2 kamar",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bogor",
+      "locationText": "Bojong Kulur, Gunung Putri, Kabupaten Bogor",
+      "buildingOrCluster": "Bumi Mutiara",
+      "rent": {
+        "amount": 15000000,
+        "period": "yearly",
+        "quote": "Rp 15 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bumi-mutiara-blok-je5-no16-rt05-32",
+        "pageDate": "2025-06-11"
+      },
+      "bedrooms": 2,
+      "sizeM2": 54,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Jl. Bumi Mutiara",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bumi-mutiara-blok-je5-no16-rt05-32"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bumi-mutiara-blok-je5-no16-rt05-32",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-02",
+      "note": "Sekitar 1.08 km garis lurus dari acuan portal ke Masjid Muadz Bin Jabal (Ihrish). Pembaruan iklan 2025-06-11; harga diperiksa 2 November 2026. Stok belum dikonfirmasi langsung. Luas bangunan memakai spesifikasi 54 m², bukan angka 60 m² pada judul."
+    },
+    {
+      "id": "sewa-ihrish-mahkota-20",
+      "title": "Rumah sewa Vila Mahkota Pesona 2 kamar",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bogor",
+      "locationText": "Bojong Kulur, Gunung Putri, Kabupaten Bogor",
+      "buildingOrCluster": "Vila Mahkota Pesona",
+      "rent": {
+        "amount": 20000000,
+        "period": "yearly",
+        "quote": "Rp 20 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-vila-mahkota-pesona-blok-ii-2-no-9",
+        "pageDate": "2025-06-11"
+      },
+      "bedrooms": 2,
+      "sizeM2": 72,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Vila Mahkota Pesona",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-vila-mahkota-pesona-blok-ii-2-no-9"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-vila-mahkota-pesona-blok-ii-2-no-9",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-02",
+      "note": "Sekitar 0.55 km garis lurus dari acuan portal ke Masjid Muadz Bin Jabal (Ihrish). Pembaruan iklan 2025-06-11; harga diperiksa 2 November 2026. Stok belum dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-ihrish-mahkota-r123-50",
+      "title": "Rumah sewa Vila Mahkota Pesona 2 lantai (Rumah123)",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bogor",
+      "locationText": "Vila Mahkota Pesona, Bojong Kulur, Gunung Putri, Kabupaten Bogor",
+      "buildingOrCluster": "Vila Mahkota Pesona",
+      "rent": {
+        "amount": 50000000,
+        "period": "yearly",
+        "quote": "Rp 50 Juta /tahun",
+        "url": "https://www.rumah123.com/properti/bogor-gunung-putri/rumah-bangunan-2-lantai-vila-mahkota-pesona-bojong-kulur-gn-putri-hor42353720/",
+        "pageDate": "2026-09-07"
+      },
+      "bedrooms": 2,
+      "sizeM2": 200,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Vila Mahkota Pesona",
+          "url": "https://www.rumah123.com/properti/bogor-gunung-putri/rumah-bangunan-2-lantai-vila-mahkota-pesona-bojong-kulur-gn-putri-hor42353720/"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.rumah123.com/properti/bogor-gunung-putri/rumah-bangunan-2-lantai-vila-mahkota-pesona-bojong-kulur-gn-putri-hor42353720/",
+      "sourcePortal": "Rumah123",
+      "postedOrUpdated": "2026-09-07",
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-02",
+      "note": "Penawaran 2+1 kamar, bangunan 200 m², kondisi apa adanya menurut iklan. Sekitar 0,55 km dari acuan kompleks ke Masjid Muadz Bin Jabal (Ihrish); bukan jarak unit. Acuan memakai iklan Pinhome berbeda dalam kompleks yang sama. Harga diperiksa 2 November 2026; stok belum dikonfirmasi."
     }
   ]
 }

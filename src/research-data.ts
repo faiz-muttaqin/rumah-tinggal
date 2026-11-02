@@ -623,7 +623,10 @@ export const SOURCE_LABELS: Record<ResearchSourceKind, string> = {
 };
 
 export async function loadResearch(): Promise<ResearchData> {
-  const response = await fetch("/data/properties.geojson");
+  // Periksa ulang juga cache dari rilis lama yang memberi TTL satu jam.
+  const response = await fetch("/data/properties.geojson", {
+    cache: "no-cache",
+  });
   if (!response.ok) throw new Error("Data riset properti belum termuat.");
   const data = (await response.json()) as GeoJSON.FeatureCollection & {
     metadata?: Partial<Omit<ResearchData, "properties">>;

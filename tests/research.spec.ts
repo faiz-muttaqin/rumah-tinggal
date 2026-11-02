@@ -1,9 +1,73 @@
 import { readFile } from "node:fs/promises";
+import { createServer } from "node:http";
 import { expect, type Page, test } from "@playwright/test";
 import { readExcel } from "./excel-workbook.ts";
 import { researchFixture } from "./research-fixture.ts";
 
 const pageErrors = new WeakMap<Page, string[]>();
+
+test("revalidates research data cached by an earlier release", async ({
+  browser,
+  baseURL,
+}) => {
+  const cached = structuredClone(researchFixture);
+  const fresh = structuredClone(researchFixture);
+  cached.features[0].properties.name = "Katalog sebelum rilis";
+  fresh.features[0].properties.name = "Katalog sesudah rilis";
+  let deployed = false;
+  let datasetRequests = 0;
+  const server = createServer(async (request, response) => {
+    try {
+      if (request.url === "/warm") {
+        response.writeHead(200, { "Content-Type": "text/html" });
+        response.end("<!doctype html><title>Cache fixture</title>");
+      } else if (request.url === "/data/properties.geojson") {
+        datasetRequests++;
+        response.writeHead(200, {
+          "Content-Type": "application/geo+json",
+          "Cache-Control": "public, max-age=3600",
+        });
+        response.end(JSON.stringify(deployed ? fresh : cached));
+      } else {
+        const upstream = await fetch(new URL(request.url ?? "/", baseURL));
+        response.writeHead(upstream.status, {
+          "Content-Type":
+            upstream.headers.get("content-type") ?? "application/octet-stream",
+        });
+        response.end(new Uint8Array(await upstream.arrayBuffer()));
+      }
+    } catch {
+      response.writeHead(500);
+      response.end();
+    }
+  });
+  await new Promise<void>((resolve) => server.listen(0, "127.0.0.1", resolve));
+  const address = server.address();
+  if (!address || typeof address === "string") throw new Error("No test port");
+  // Routing disables Chromium's HTTP cache, so use a separate, unrouted context.
+  const context = await browser.newContext();
+  try {
+    const page = await context.newPage();
+    const origin = `http://127.0.0.1:${address.port}`;
+    await page.goto(`${origin}/warm`);
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const name = await page.evaluate(async () => {
+        const response = await fetch("/data/properties.geojson");
+        return (await response.json()).features[0].properties.name;
+      });
+      expect(name).toBe("Katalog sebelum rilis");
+    }
+    expect(datasetRequests, "The old dataset is actually cached").toBe(1);
+    deployed = true;
+    await page.goto(`${origin}/riset`);
+    await expect(cards(page).first()).toContainText("Katalog sesudah rilis");
+    expect(datasetRequests).toBe(2);
+  } finally {
+    await context.close();
+    server.closeAllConnections();
+    await new Promise<void>((resolve) => server.close(() => resolve()));
+  }
+});
 
 function cards(page: Page) {
   return page.getByTestId("research-card");
