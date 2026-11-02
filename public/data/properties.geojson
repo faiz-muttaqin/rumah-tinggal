@@ -4320,6 +4320,7 @@
      "rent": {
       "amount": 30000000,
       "period": "yearly",
+      "minimumMonths": 12,
       "quote": "Rp 30 Juta/Tahun",
       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-gn-putri-bojong-kulur",
       "pageDate": "2026-10-10"
@@ -4373,6 +4374,7 @@
      "rent": {
       "amount": 45000000,
       "period": "yearly",
+      "minimumMonths": 12,
       "quote": "Rp 45 Juta/Tahun",
       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-villa-nusa-indah-3-di-bojong-kulur",
       "pageDate": "2026-06-02"
@@ -4426,6 +4428,7 @@
      "rent": {
       "amount": 15000000,
       "period": "yearly",
+      "minimumMonths": 12,
       "quote": "Rp 15 Juta/Tahun",
       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bumi-mutiara-blok-je5-no16-rt05-32",
       "pageDate": "2025-06-11"
@@ -4479,6 +4482,7 @@
      "rent": {
       "amount": 20000000,
       "period": "yearly",
+      "minimumMonths": 12,
       "quote": "Rp 20 Juta/Tahun",
       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-vila-mahkota-pesona-blok-ii-2-no-9",
       "pageDate": "2025-06-11"

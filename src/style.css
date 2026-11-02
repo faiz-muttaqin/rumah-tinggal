@@ -533,6 +533,38 @@ select {
 .map-rental-card .card-title {
   margin: 0;
 }
+
+.rent-term-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 7px 0;
+}
+.rent-term-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 9px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1.5;
+}
+.rent-term-monthly {
+  color: #245e3d;
+  background: #e9f5ed;
+  border-color: #c9e3d2;
+}
+.rent-term-yearly {
+  color: #795017;
+  background: #fff4d9;
+  border-color: #eed9a9;
+}
+.rent-term-minimum {
+  color: #46546a;
+  background: #edf1f6;
+  border-color: #d7dfe9;
+}
 .rental-tag {
   color: var(--rental-color);
   font-size: 10px;

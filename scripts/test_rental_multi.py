@@ -1,0 +1,240 @@
+"""Provider isolation, rental payment semantics, privacy and cross-site matching."""
+
+from concurrent.futures import ThreadPoolExecutor
+import importlib.util
+import json
+from pathlib import Path
+import tempfile
+import threading
+import unittest
+from unittest.mock import patch
+
+SPEC = importlib.util.spec_from_file_location("rental_multi_crawler", Path(__file__).with_name("rental_multi_crawler.py"))
+m = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(m)
+c = m.core
+
+
+def script(identifier, value):
+    return f'<script id="{identifier}">{json.dumps(value)}</script>'
+
+
+def j_unit():
+    return {"code": "ABCA001", "apartment_name": "Gedung Uji", "latitude": -6.29, "longitude": 106.79,
+            "is_available": 1, "price_per_1_month": 0, "price_per_3_months": 9_000_000,
+            "price_per_6_months": 16_000_000, "price_per_12_months": 30_000_000,
+            "display_price": 2_490_000, "bedroom": 1, "unit_area": 30,
+            "photos": [{"image": "https://images.example.invalid/a.jpg", "caption": "PRIVATE"}],
+            "pic_unit": {"name": "PRIVATE", "phone": "081234567891"}, "address": "PRIVATE HOUSE NUMBER",
+            "breadcrumb": {"district": {"name": "Cilandak"}, "area": {"name": "Jakarta Selatan"}}}
+
+
+def brighton_page(function="LeaseOut", description="Harga sewa 30 juta per tahun"):
+    return '<script type="application/ld+json">' + json.dumps([
+        {"@type": "BreadcrumbList", "itemListElement": []},
+        {"@type": "RealEstateListing", "offers": {"price": 30_000_000, "priceCurrency": "IDR",
+          "businessFunction": {"@id": "https://schema.org/"+function}, "availability": "https://schema.org/InStock"},
+         "description": description, "datePosted": "2026-10-01T00:00:00Z",
+         "provider": {"name": "PRIVATE", "email": "private@example.invalid"},
+         "mainEntity": {"@type": "SingleFamilyResidence", "address": {"addressLocality": "Jakarta Selatan", "streetAddress": "PRIVATE"},
+                        "numberOfRooms": 2, "floorSize": {"value": 50}}, "image": ["https://images.example.invalid/b.jpg"]}
+    ]) + '</script><a href="/ads?Latitude=-6.29&Longitude=106.79">Ad</a>'
+
+
+class ProviderTest(unittest.TestCase):
+    def adapter(self, name):
+        return m.adapters.Adapter(name, c)
+
+    def test_jendela_uses_rendered_rentals_instead_of_initial_sale_inventory(self):
+        a = self.adapter("jendela360")
+        data = {"initial_units": [{"code": "SALE001", "is_sell": 1, "selling_price": 1_000_000_000}],
+                "server_side_initial_units": [{"code": "ABCA001", "apartment_slug": "gedung-uji", "is_available": 1}],
+                "server_side_total_units": 100}
+        result = a.parse_search(script("__NEXT_DATA__", {"props": {"pageProps": {"data": data}}}), a.origin+"/apartemen/jakarta-selatan")
+        self.assertEqual(len(result["cards"]), 1)
+        self.assertIn("ABCA001", result["cards"][0]["url"])
+        self.assertNotIn("SALE", json.dumps(result))
+        self.assertEqual(result["pages"], 1)
+
+    def test_jendela_never_converts_yearly_marketing_price_into_monthly_payment(self):
+        a = self.adapter("jendela360")
+        row = a.parse_detail(script("__NEXT_DATA__", {"props": {"pageProps": {"unitDetailProps": {"data": j_unit()}}}}), a.origin+"/sewa-apartemen-gedung-uji/ABCA001")
+        self.assertEqual((row["amount"], row["period"], row["monthlyEquivalent"]), (30_000_000, "yearly", 2_500_000))
+        self.assertEqual(row["minimumRentMonths"], 3)
+        self.assertEqual(row["location"]["precision"], "building")
+        self.assertIsNone(row["sourceUpdatedAt"])
+        for private in ["PRIVATE", "081234567891", "2490000"]:
+            self.assertNotIn(private, json.dumps(row))
+
+    def test_jendela_monthly_option_and_currency_status_are_separate(self):
+        a = self.adapter("jendela360")
+        data = j_unit()
+        data.update(price_per_1_month=3_500_000, is_available=0, is_dollar=1)
+        row = a.parse_detail(script("__NEXT_DATA__", {"props": {"pageProps": {"unitDetailProps": {"data": data}}}}), a.origin+"/sewa-apartemen-gedung-uji/ABCA001")
+        self.assertEqual((row["amount"], row["period"], row["minimumRentMonths"]), (3_500_000, "monthly", 1))
+        self.assertIn("inactive-or-rented", row["issues"])
+        self.assertIn("non-idr-price-needs-review", row["issues"])
+
+    def test_brighton_does_not_take_banner_coordinates_or_guess_a_period(self):
+        a = self.adapter("brighton")
+        row = a.parse_detail(brighton_page(description="Rumah nyaman untuk keluarga"), a.origin+"/cari-properti/view/rumah-uji")
+        self.assertIsNone(row["location"])
+        self.assertIsNone(row["period"])
+        self.assertIn("unknown-rent-period", row["issues"])
+        self.assertNotIn("PRIVATE", json.dumps(row))
+        self.assertEqual(row["sourceDateKind"], "posted")
+
+    def test_brighton_requires_lease_and_reads_explicit_yearly_period(self):
+        a = self.adapter("brighton")
+        row = a.parse_detail(brighton_page(function="Sell"), a.origin+"/cari-properti/view/rumah-uji")
+        self.assertIn("not-a-rental-offer", row["issues"])
+        self.assertEqual(row["period"], "yearly")
+        with self.assertRaises(ValueError):
+            a.canonical(a.origin+"/disewa/rumah/jakarta-selatan?page=2")
+
+    def test_realoka_keeps_monthly_yearly_and_daily_separate_and_date_relative(self):
+        a = self.adapter("realoka")
+        page = '<h1>Disewakan Apartemen Uji</h1>'
+        for amount, label in [("3.000.000", "Bulanan"), ("300.000", "Harian"), ("30.000.000", "Tahunan")]:
+            page += f'<span class="detailpage-angka">{amount}</span> <span class="harian">{label}</span>'
+        page += '<span class="p-f-box-head">Diperbarui</span><span class="p-f-box-info">7 bulan yang lalu</span>'
+        page += '<span class="post-address2">PRIVATE No 123, Jakarta Selatan</span>'
+        row = a.parse_detail(page, a.origin+"/123456-apartemen-uji")
+        self.assertEqual((row["amount"], row["period"]), (3_000_000, "monthly"))
+        self.assertEqual(len(row["priceOptions"]), 3)
+        self.assertEqual(row["sourceUpdatedLabel"], "7 bulan yang lalu")
+        self.assertIsNone(row["sourceUpdatedAt"])
+        self.assertIn("no-proven-location", row["issues"])
+        self.assertNotIn("PRIVATE", json.dumps(row))
+
+    def test_all_adapter_allowlists_reject_accounts_other_sites_and_sale_routes(self):
+        for name in ["realoka", "brighton", "jendela360"]:
+            a = self.adapter(name)
+            for suffix in ["/api/items", "/login", "/account", "/disewa/rumah/test?token=secret"]:
+                with self.assertRaises(ValueError):
+                    a.canonical(a.origin+suffix)
+            with self.assertRaises(ValueError):
+                a.canonical("https://evil.example.invalid/robots.txt")
+            with self.assertRaises(ValueError):
+                a.parse_search("<html><h1>Changed layout</h1></html>", a.origin+"/robots.txt")
+
+    def test_same_building_with_different_units_is_not_a_duplicate_coordinate(self):
+        rows = [{"url": f"https://example.invalid/{n}", "issues": [], "reviewStatus": "candidate", "imageHashes": [str(n)],
+                 "location": {"lat": -6.29, "lng": 106.79, "precision": "building"}} for n in [1, 2]]
+        c.mark_duplicates(rows)
+        self.assertTrue(all(r["reviewStatus"] == "candidate" for r in rows))
+        self.assertTrue(all(r["sharedBuildingReference"] for r in rows))
+
+    def test_cross_source_syndication_is_flagged_with_both_links(self):
+        rows = {f"https://example.invalid/{n}": {"url": f"https://example.invalid/{n}", "provider": name, "issues": [],
+                "kind": "Rumah", "bedrooms": 2, "buildingAreaM2": 50, "monthlyEquivalent": 2_500_000,
+                "location": {"lat": -6.29, "lng": 106.79}} for n, name in [(1, "pinhome"), (2, "realoka")]}
+        pairs = m.cross_source_matches(rows)
+        self.assertEqual(len(pairs), 1)
+        self.assertTrue(all("possible-cross-source-duplicate" in r["issues"] for r in rows.values()))
+        self.assertEqual(len(rows), 2)
+
+    def test_two_providers_really_overlap_and_a_403_stops_only_its_own_client(self):
+        barrier = threading.Barrier(2)
+        realoka, brighton = self.adapter("realoka"), self.adapter("brighton")
+        first, second = c.Client(0, realoka), c.Client(0, brighton)
+        class Response:
+            def __init__(self, url):
+                self.url = url
+            def __enter__(self):
+                return self
+            def __exit__(self, *_):
+                return False
+            def geturl(self):
+                return self.url
+            def read(self, _):
+                return b"public page"
+        class Opener:
+            def open(self, request, timeout):
+                barrier.wait(timeout=3)
+                if "realoka" in request.full_url:
+                    raise c.urllib.error.HTTPError(request.full_url, 403, "blocked", {}, None)
+                return Response(request.full_url)
+        with patch.object(c.urllib.request, "build_opener", return_value=Opener()):
+            with ThreadPoolExecutor(max_workers=2) as pool:
+                bad = pool.submit(first.get, realoka.origin+"/robots.txt")
+                good = pool.submit(second.get, brighton.origin+"/robots.txt")
+                with self.assertRaises(c.StopSource):
+                    bad.result()
+                self.assertEqual(good.result(), "public page")
+        self.assertTrue(first.stopped)
+        self.assertIsNone(second.stopped)
+
+    def test_provider_lock_prevents_duplicate_jobs_in_the_same_state(self):
+        entered, release = threading.Event(), threading.Event()
+        def fake_run(config, mosques, path, *args):
+            entered.set()
+            release.wait(timeout=3)
+            c.save(path/"latest.json", {"run": {"status": "complete-with-limits"}, "summary": {}})
+            return 0
+        with tempfile.TemporaryDirectory() as tmp, patch.object(c, "run", fake_run):
+            with ThreadPoolExecutor(max_workers=2) as pool:
+                first = pool.submit(m.run_one, "pinhome", None, [], {}, Path(tmp))
+                self.assertTrue(entered.wait(timeout=3))
+                second = pool.submit(m.run_one, "pinhome", None, [], {}, Path(tmp))
+                self.assertEqual(second.result()["status"], "already-running")
+                release.set()
+                self.assertEqual(first.result()["exitCode"], 0)
+
+    def test_cancelled_pinhome_client_does_not_make_another_request(self):
+        client = c.Client()
+        client.cancel = threading.Event()
+        client.cancel.set()
+        with patch.object(c.urllib.request, "build_opener") as opener:
+            with self.assertRaises(c.StopSource):
+                client.get(c.ORIGIN+"/robots.txt")
+            opener.assert_not_called()
+
+    def test_report_badges_keep_yearly_and_minimum_term_separate(self):
+        badge = m.period_badges({"period": "yearly", "minimumRentMonths": 3, "monthlyEquivalent": 2_500_000})
+        self.assertIn("Tahunan", badge)
+        self.assertIn("Minimal 3 bulan", badge)
+        self.assertNotIn("Bulanan", badge)
+
+    def test_merge_keeps_inactive_ads_out_of_area_leads_and_preserves_provider_state(self):
+        mosque = {"id": "m", "name": "Masjid Uji", "lat": -6.29, "lng": 106.79,
+                  "sources": [], "priority": {"tier": 0, "fromBlokMKm": 4, "transit": []}}
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            c.save(root/"research/rentals.json", {"rentals": []})
+            directory = root/"output"
+            row = {"url": "https://example.invalid/a", "provider": "pinhome", "amount": 2_000_000,
+                   "period": "monthly", "monthlyEquivalent": 2_000_000, "kind": "Rumah", "locality": "Jakarta Selatan",
+                   "retrievedAtUTC": c.now(), "adapterVersion": c.ADAPTER_VERSION, "issues": ["inactive-or-rented", "no-proven-location"]}
+            c.save(directory/"state.json", {"details": {row["url"]: row}, "pages": {}})
+            other = {**row, "url": "https://example.invalid/b", "provider": "realoka", "issues": ["no-proven-location"]}
+            c.save(directory/"providers/realoka/state.json", {"details": {other["url"]: other}, "pages": {}})
+            original = (directory/"state.json").read_bytes()
+            with patch.object(c, "ROOT", root):
+                result = m.merge(directory, {"pinhome": (None, [mosque]), "realoka": (None, [mosque])},
+                                 {"detailCacheHours": 72, "searchCacheHours": 24, "radiusKm": 1.5}, [])
+            self.assertEqual(result["summary"]["areaLeads"], 1)
+            self.assertEqual(result["areaLeads"][0]["provider"], "realoka")
+            self.assertEqual((directory/"state.json").read_bytes(), original)
+            self.assertEqual(result["summary"]["candidates"], 0)
+
+    def test_optional_curated_minimum_is_bounded_and_does_not_change_existing_data(self):
+        spec = importlib.util.spec_from_file_location("builder", Path(__file__).with_name("build-properties.py"))
+        builder = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(builder)
+        data = json.loads((c.ROOT/"research/rentals.json").read_text())
+        data["rentals"] = data["rentals"][:1]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)/"rentals.json"
+            for value in [0, 121, True, "3"]:
+                data["rentals"][0]["rent"]["minimumMonths"] = value
+                path.write_text(json.dumps(data))
+                with self.assertRaises(builder.Invalid):
+                    builder.load_rentals(path)
+            data["rentals"][0]["rent"]["minimumMonths"] = 3
+            path.write_text(json.dumps(data))
+            self.assertEqual(builder.load_rentals(path)["rentals"][0]["rent"]["minimumMonths"], 3)
+
+
+if __name__ == "__main__":
+    unittest.main()

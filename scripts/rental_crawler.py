@@ -247,6 +247,7 @@ def parse_detail(text, url):
         "url": url, "adapterVersion": ADAPTER_VERSION, "kind": kind, "amount": amount, "period": period,
         "monthlyEquivalent": amount / (12 if period == "yearly" else 1) if amount and period else None,
         "sourceUpdatedAt": updated, "sourceStatus": data.get("status"),
+        "minimumRentMonths": data.get("minimumRentTermMonth") if type(data.get("minimumRentTermMonth")) is int and 1 <= data["minimumRentTermMonth"] <= 120 else None,
         "locality": ", ".join(v for v in labels if v),
         "location": {"lat": round(coords[0], 6), "lng": round(coords[1], 6), "precision": "approximate"} if coords else None,
         "bedrooms": number("total_bedroom"), "buildingAreaM2": number("building_area"),
@@ -302,37 +303,43 @@ class StopSource(Exception):
 
 
 class RedirectGuard(urllib.request.HTTPRedirectHandler):
-    def __init__(self, allowed):
+    def __init__(self, allowed, normalize=canonical):
         self.allowed = allowed
+        self.normalize = normalize
 
     def redirect_request(self, req, fp, code, msg, headers, newurl):
-        target = canonical(newurl)
+        target = self.normalize(newurl)
         if not self.allowed(target):
             raise ValueError("Redirect disallowed by robots")
         return super().redirect_request(req, fp, code, msg, headers, target)
 
 
 class Client:
-    def __init__(self, delay_seconds=1.5):
+    def __init__(self, delay_seconds=1.5, adapter=None):
         self.robots = None
         self.delay = delay_seconds
         self.last_request = 0
         self.requests = 0
         self.stopped = None
+        self.normalize = adapter.canonical if adapter else canonical
+        self.origin = adapter.origin if adapter else ORIGIN
+        self.cancel = getattr(adapter, "cancel", None)
 
     def get(self, url):
+        if self.cancel and self.cancel.is_set():
+            raise StopSource("operator-or-time-limit")
         if self.stopped:
             raise StopSource(self.stopped)
-        url = canonical(url)
+        url = self.normalize(url)
         if self.robots and not self.robots.allowed(url):
             raise ValueError("robots-disallowed")
         time.sleep(max(0, self.last_request + self.delay - time.monotonic()))
         self.last_request = time.monotonic()
         self.requests += 1
-        opener = urllib.request.build_opener(RedirectGuard(lambda target: not self.robots or self.robots.allowed(target)))
+        opener = urllib.request.build_opener(RedirectGuard(lambda target: not self.robots or self.robots.allowed(target), self.normalize))
         try:
             with opener.open(urllib.request.Request(url, headers={"User-Agent": AGENT, "Accept": "text/html,text/plain"}), timeout=20) as response:
-                if canonical(response.geturl()) != url:
+                if self.normalize(response.geturl()) != url:
                     raise ValueError("redirected-page-needs-review")
                 raw = response.read(5_000_001)
                 if len(raw) > 5_000_000:
@@ -349,10 +356,10 @@ class Client:
             raise ValueError("http-" + str(exc.code)) from None
 
     def start(self):
-        text = self.get(ORIGIN + "/robots.txt")
+        text = self.get(self.origin + "/robots.txt")
         self.robots = Robots(text)
         self.delay = max(self.delay, self.robots.delay)
-        return {"checkedAt": now(), "sha256": digest(text), "url": ORIGIN + "/robots.txt"}
+        return {"checkedAt": now(), "sha256": digest(text), "url": self.origin + "/robots.txt"}
 
 
 def priority(mosque, stops, paths):
@@ -440,7 +447,10 @@ def mark_duplicates(rows):
     for group in by_point.values():
         if len(group) > 1:
             for row in group:
-                row["issues"].append("shared-point-needs-review")
+                if all(r["location"].get("precision") == "building" for r in group):
+                    row["sharedBuildingReference"] = True
+                elif "shared-point-needs-review" not in row["issues"]:
+                    row["issues"].append("shared-point-needs-review")
     for group in images.values():
         if len(group) > 1:
             for row in group:
@@ -501,16 +511,22 @@ def markdown(result):
         if r["reviewStatus"] != "candidate" or r["alreadyCatalogued"]:
             continue
         near = r["nearbyMosques"][0]
-        lines.append(f"- [{r['kind']} {r.get('bedrooms') or '?'} kamar, {r['locality']}]({r['url']}) — Rp{r['amount']:,.0f}/{r['period']}; {near['name']} ≈{near['km']} km. Pembaruan sumber {r['sourceUpdatedAt'][:10]}.")
+        date = r.get("sourceUpdatedAt")
+        date = date[:10] if date else "tidak ditampilkan"
+        lines.append(f"- [{r['kind']} {r.get('bedrooms') or '?'} kamar, {r['locality']}]({r['url']}) — Rp{r['amount']:,.0f}/{r['period']}; {near['name']} ≈{near['km']} km. Pembaruan sumber {date}.")
     return "\n".join(lines) + "\n"
 
 
-def run(config, mosques, directory, source_limit=None, detail_limit=None):
+def run(config, mosques, directory, source_limit=None, detail_limit=None, adapter=None, cancel=None):
     path = directory / "state.json"
     state = json.loads(path.read_text()) if path.exists() else {"schemaVersion": 1, "pages": {}, "details": {}, "cursors": {}}
     if state.get("schemaVersion") != 1:
         raise ValueError("Unknown state version")
-    client = Client(config["delaySeconds"])
+    client = Client(config["delaySeconds"], adapter) if adapter else Client(config["delaySeconds"])
+    if cancel is not None:
+        client.cancel = cancel
+    search_parser = adapter.parse_search if adapter else parse_search
+    detail_parser = adapter.parse_detail if adapter else parse_detail
     state["lastRun"] = {"startedAtUTC": now(), "status": "running"}
     save(path, state)
     sources = list(dict.fromkeys(s for m in mosques for s in m["sources"]))
@@ -528,7 +544,7 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None):
             for url in pages:
                 try:
                     text = client.get(url)
-                    parsed = parse_search(text, url)
+                    parsed = search_parser(text, url)
                     state["pages"][url] = {**parsed, "retrievedAtUTC": now(), "sha256": digest(text)}
                 except (ValueError, KeyError, TypeError, OSError, TimeoutError) as exc:
                     state["pages"][url] = {"retrievedAtUTC": now(), "error": safe_error(exc), "cards": []}
@@ -552,7 +568,7 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None):
             if not fresh(state["pages"].get(url), config["searchCacheHours"]):
                 try:
                     text = client.get(url)
-                    state["pages"][url] = {**parse_search(text, url), "retrievedAtUTC": now(), "sha256": digest(text)}
+                    state["pages"][url] = {**search_parser(text, url), "retrievedAtUTC": now(), "sha256": digest(text)}
                 except (ValueError, KeyError, TypeError, OSError, TimeoutError) as exc:
                     state["pages"][url] = {"retrievedAtUTC": now(), "error": safe_error(exc), "cards": []}
                 count += 1
@@ -576,7 +592,7 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None):
                 seen.add(url)
                 try:
                     text = client.get(url)
-                    state["details"][url] = {**parse_detail(text, url), "retrievedAtUTC": now(), "sha256": digest(text)}
+                    state["details"][url] = {**detail_parser(text, url), "retrievedAtUTC": now(), "sha256": digest(text)}
                 except (ValueError, KeyError, TypeError, OSError, TimeoutError) as exc:
                     state["details"][url] = {"url": url, "retrievedAtUTC": now(), "error": safe_error(exc), "issues": ["detail-unavailable"]}
                 detail_count += 1

@@ -384,6 +384,12 @@ test("shows Muslim-family rentals and unverified Instagram leads with links", as
   await expect(page.locator("#sewa")).toBeVisible();
   await expect(rentals).toHaveCount(2);
   await expect(rentals.first()).toContainText("Rp 2.500.000/bulan");
+  await expect(rentals.first().getByTestId("rental-period-badge")).toHaveText(
+    "Bulanan",
+  );
+  await expect(rentals.first().getByTestId("rental-minimum-badge")).toHaveText(
+    "Minimal 3 bulan",
+  );
   await expect(rentals.first()).toContainText(
     "Lingkungan keluarga muslim (uji)",
   );
@@ -418,6 +424,32 @@ test("shows Muslim-family rentals and unverified Instagram leads with links", as
     "https://developer.example.invalid/prj-uji-bekasi-timur/kontak",
   );
   await expect(page.locator("body")).not.toContainText(/wa\.me|\+62\s?8/);
+});
+
+test("keeps a yearly badge beside a monthly equivalent on narrow screens", async ({
+  page,
+}) => {
+  const fixture = structuredClone(researchFixture);
+  const annual = fixture.metadata.rentals.rentals[1];
+  annual.rent.period = "yearly";
+  annual.rent.amount = 42000000;
+  await page.route("**/data/properties.geojson", async (route) => {
+    await route.fulfill({ json: fixture });
+  });
+  await page.setViewportSize({ width: 360, height: 780 });
+  await page.reload();
+  const card = page.locator("#rent-uji-depok");
+  const badge = card.getByTestId("rental-period-badge");
+  await badge.scrollIntoViewIfNeeded();
+  await expect(badge).toHaveText("Tahunan");
+  await expect(card).toContainText("Rp 42.000.000/tahun");
+  await expect(card).toContainText("≈ Rp 3.500.000/bulan");
+  await expect(card.getByTestId("rental-minimum-badge")).toHaveCount(0);
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= window.innerWidth,
+    ),
+  ).toBe(true);
 });
 
 test("distinguishes sale, apartment and rental cards and searches rental context", async ({

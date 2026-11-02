@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "parallelProviders": 2,
+  "note": "Maksimal dua situs bersamaan; request dalam satu situs tetap serial. Kegagalan satu situs tidak menghentikan situs lain. Harga dan lokasi harus sesuai sumber masing-masing.",
+  "providers": {
+    "pinhome": {
+      "enabled": true,
+      "maxSearchRequests": 150,
+      "maxDetailRequests": 240
+    },
+    "jendela360": {
+      "enabled": true,
+      "maxSearchRequests": 30,
+      "maxDetailRequests": 60,
+      "cities": [
+        "jakarta-selatan",
+        "jakarta-pusat",
+        "jakarta-barat",
+        "jakarta-timur",
+        "depok",
+        "bekasi",
+        "bogor",
+        "tangerang",
+        "tangerang-selatan",
+        "bandung"
+      ],
+      "cityAliases": {
+        "kab-bogor": "bogor",
+        "kab-bekasi": "bekasi",
+        "kab-tangerang": "tangerang",
+        "kab-bandung-barat": "bandung"
+      },
+      "districts": [
+        "kebayoran-baru",
+        "kebayoran-lama",
+        "setiabudi",
+        "cilandak",
+        "pasar-minggu"
+      ]
+    },
+    "realoka": {
+      "enabled": true,
+      "maxSearchRequests": 30,
+      "maxDetailRequests": 80,
+      "cities": [
+        "jakarta-selatan",
+        "jakarta-pusat",
+        "jakarta-barat",
+        "jakarta-timur",
+        "depok-kota",
+        "bekasi-kota",
+        "bekasi-kab",
+        "bogor-kota",
+        "bogor-kab",
+        "tangerang-kota",
+        "tangerang-kab",
+        "tangerang-selatan-kota",
+        "bandung-kota",
+        "bandung-barat-kab"
+      ],
+      "cityAliases": {
+        "depok": "depok-kota",
+        "bekasi": "bekasi-kota",
+        "kab-bekasi": "bekasi-kab",
+        "bogor": "bogor-kota",
+        "kab-bogor": "bogor-kab",
+        "tangerang": "tangerang-kota",
+        "kab-tangerang": "tangerang-kab",
+        "tangerang-selatan": "tangerang-selatan-kota",
+        "bandung": "bandung-kota",
+        "kab-bandung-barat": "bandung-barat-kab"
+      }
+    },
+    "brighton": {
+      "enabled": true,
+      "maxSearchRequests": 20,
+      "maxDetailRequests": 60,
+      "cities": [
+        "jakarta-selatan",
+        "jakarta-pusat",
+        "jakarta-barat",
+        "jakarta-timur",
+        "depok",
+        "bekasi",
+        "bogor",
+        "tangerang",
+        "tangerang-selatan",
+        "bandung"
+      ],
+      "cityAliases": {
+        "kab-bogor": "bogor",
+        "kab-bekasi": "bekasi",
+        "kab-tangerang": "tangerang",
+        "kab-bandung-barat": "bandung"
+      }
+    }
+  },
+  "manualSources": [
+    {
+      "name": "Rumah123",
+      "status": "http-403",
+      "note": "Permintaan kategori dari server ditolak; tidak diakali."
+    },
+    {
+      "name": "Properti1",
+      "status": "http-403",
+      "note": "Permintaan kategori dari server ditolak; tidak diakali."
+    },
+    {
+      "name": "OLX",
+      "status": "timeout",
+      "note": "Kategori tidak selesai dibaca; belum dijadwalkan otomatis."
+    }
+  ]
+}

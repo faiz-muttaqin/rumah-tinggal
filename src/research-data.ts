@@ -337,6 +337,7 @@ export interface ResearchRental {
   rent: {
     amount: number;
     period: "monthly" | "yearly";
+    minimumMonths?: number | null;
     quote: string;
     url: string;
     pageDate: string | null;

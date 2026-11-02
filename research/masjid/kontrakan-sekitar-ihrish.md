@@ -18,6 +18,8 @@ Penawaran Pulo Sirih Tengah yang menyebut Al Furqan tidak ditambahkan karena dat
 
 Kurasi tersimpan di `research/rentals.json` dan `research/rental-locations.json`, dengan sumber dan tanggal per entri. Lima tambahan juga disimpan di masukan tambahan konverter lokal agar tidak hilang saat regenerasi harga. Hash/selector sumber lokasi berada dalam sidecar; HTML mentah hanya di cache ignored.
 
+Kartu sewa kini memakai badge **Bulanan** atau **Tahunan** sesuai periode harga sumber. Nilai tahunan yang dibagi 12 tetap berlabel Tahunan. Untuk empat iklan Pinhome Bojong Kulur di bawah, data halaman yang diperiksa sebelumnya juga menyatakan **Minimum sewa 12 bulan**; badge **Minimal 12 bulan** ditambahkan tanpa mengganti harga, tanggal pembaruan sumber, atau tanggal pemeriksaan yang sudah tercatat. Itu tidak berarti stok telah dikonfirmasi ulang hari ini. Masukan minimum sewa yang belum tersedia tidak ditebak dari harga atau nama kawasan.
+
 ## Penelusuran lanjutan Bojong Kulur — 2 November 2026
 
 Pencarian nama masjid dan kawasan diperluas ke OLX, Rumah123, Pinhome, serta Brighton. Lima penawaran berikut ditambahkan di sekitar **Masjid Muadz Bin Jabal, Jalan Kavling Bulog, Bojong Kulur, Gunung Putri, Kabupaten Bogor**. Nama kawasan ini dipertahankan agar pencarian tidak keliru menganggap seluruh Bojong Kulur berada di Kota Bekasi.

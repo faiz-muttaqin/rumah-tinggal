@@ -611,6 +611,9 @@ def load_rentals(path=ROOT / "research/rentals.json"):
         amount = number(rent.get("amount"), f"{field}.rent.amount", integer=True)
         if rent.get("period") not in ("monthly", "yearly") or not 100_000 <= amount <= 200_000_000:
             raise Invalid(f"{field}.rent di luar rentang wajar atau periode tidak dikenal")
+        minimum = rent.get("minimumMonths")
+        if minimum is not None and (type(minimum) is not int or not 1 <= minimum <= 120):
+            raise Invalid(f"{field}.rent.minimumMonths harus 1–120 bulan")
         evidence = [
             {"quote": text(e.get("quote"), f"{field}.evidence[{j}].quote", QUOTE_LIMIT), "url": url(e.get("url"), f"{field}.evidence[{j}].url")}
             for j, e in enumerate(item.get("evidence") or [])
@@ -628,6 +631,7 @@ def load_rentals(path=ROOT / "research/rentals.json"):
             "rent": {
                 "amount": amount,
                 "period": rent["period"],
+                **({"minimumMonths": minimum} if minimum is not None else {}),
                 "quote": text(rent.get("quote"), f"{field}.rent.quote", QUOTE_LIMIT),
                 "url": url(rent.get("url"), f"{field}.rent.url"),
                 "pageDate": dated(rent.get("pageDate"), f"{field}.rent.pageDate"),

@@ -255,6 +255,7 @@ export const researchFixture = {
           rent: {
             amount: 2500000,
             period: "monthly",
+            minimumMonths: 3,
             quote: "Rp 2,5 Juta/bulan (uji)",
             url: "https://portal.example.invalid/sewa-uji",
             pageDate: "2026-10-20",
