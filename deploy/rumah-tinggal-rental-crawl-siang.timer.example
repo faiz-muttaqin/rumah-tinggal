@@ -1,0 +1,13 @@
+[Unit]
+Description=Pantauan sewa siang pukul 12.30-13.00 WIB
+
+[Timer]
+OnCalendar=*-*-* 12:30:00 Asia/Jakarta
+RandomizedDelaySec=30min
+AccuracySec=1us
+FixedRandomDelay=no
+Persistent=no
+Unit=rumah-tinggal-rental-crawl.service
+
+[Install]
+WantedBy=timers.target

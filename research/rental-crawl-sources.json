@@ -3,7 +3,7 @@
   "note": "Area pencarian awal, bukan bukti alamat unit. Rumah dan apartemen dicari terpisah; kedekatan hanya dari koordinat iklan. Urutan dihitung dari transportasi dalam dataset dan kedekatan ke Blok M.",
   "radiusKm": 1.5,
   "delaySeconds": 1.5,
-  "searchCacheHours": 24,
+  "searchCacheHours": 4,
   "detailCacheHours": 72,
   "maxSearchRequests": 150,
   "maxDetailRequests": 240,

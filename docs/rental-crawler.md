@@ -48,7 +48,7 @@ Batas request berlaku **per situs**, bukan total gabungan. Keluaran lokal berada
 5. Tahan status tidak aktif/tersewa, periode tidak dikenal, harga tidak wajar, indikasi penggunaan komersial/harian, pin perkiraan yang dipakai bersama, dan foto yang dipakai lebih dari satu iklan. Beberapa unit apartemen boleh berbagi titik gedung; itu tidak otomatis berarti unitnya sama. Kemiripan koordinat, luas, kamar dan harga antarsitus menandai dugaan sindikasi beserta kedua URL; iklan tidak digabung atau dihapus diam-diam. Kandidat lain juga masih memerlukan kurasi lokasi, isi iklan, dan ketersediaan.
 6. Pertahankan tanggal pembaruan sumber terpisah dari waktu pengambilan. Pembagian harga tahunan dengan 12 hanya pembanding; bukan janji pembayaran bulanan. Nama/kontak pengiklan, alamat unit lengkap, cookies, gambar, deskripsi penuh, dan HTML mentah tidak disimpan oleh worker.
 
-Batas pencarian/detail per putaran: Pinhome150/240, Jendela36030/60, Realoka30/80, dan Brighton20/60. Jeda dalam tiap situs minimal1,5detik. Pinhome dan Realoka memutar pagination; Brighton hanya memakai halaman tanpa query sesuai robots, sedangkan Jendela360 memakai unit sewa SSR yang tersedia pada halaman publik (data awal lain dapat memuat unit dijual). Cache pencarian24jam dan detail72jam mengurangi pengambilan ulang. Cache kedaluwarsa ditandai dan tidak menjadi kandidat siap diperiksa. Pengambilan dengan batas tersebut adalah sampel, bukan inventaris seluruh unit. Nol kandidat tidak membuktikan tidak ada sewa di sekitar masjid. Laporan menyertakan jumlah detail dibaca, jumlah tautan ditemukan, tanggal pengambilan, dan kegagalan per sumber.
+Batas pencarian/detail per putaran: Pinhome150/240, Jendela36030/60, Realoka30/80, dan Brighton20/60. Jeda dalam tiap situs minimal1,5detik. Pinhome dan Realoka memutar pagination; Brighton hanya memakai halaman tanpa query sesuai robots, sedangkan Jendela360 memakai unit sewa SSR yang tersedia pada halaman publik (data awal lain dapat memuat unit dijual). Cache pencarian **4 jam** memungkinkan halaman kategori diperbarui pada putaran pagi, siang, dan sore. Cache detail tetap **72 jam**; URL baru didahulukan, sehingga tiga putaran tidak berarti seluruh iklan lama diperiksa ulang tiga kali sehari. Cache kedaluwarsa ditandai dan tidak menjadi kandidat siap diperiksa. Pengambilan dengan batas tersebut adalah sampel, bukan inventaris seluruh unit. Nol kandidat tidak membuktikan tidak ada sewa di sekitar masjid. Laporan menyertakan jumlah detail dibaca, jumlah tautan ditemukan, tanggal pengambilan, dan kegagalan per sumber.
 
 Badge **Bulanan** dan **Tahunan** mengikuti periode harga sumber; ekuivalen tahunan/12 tidak mengubah badge menjadi Bulanan. Badge **Minimal N bulan** hanya muncul jika durasi minimum tersedia secara terstruktur. Untuk Jendela360, harga kontrak tahunan, harga bulanan langsung, dan opsi3/6bulan disimpan terpisah; `display_price` tidak dipakai sebagai janji pembayaran bulanan. Tanggal relatif Realoka dipertahankan tanpa diubah menjadi tanggal hari pengambilan. Penawaran kawasan tanpa titik berada di bagian terpisah dan tidak dihitung sebagai hasil radius masjid.
 
@@ -58,12 +58,22 @@ HTTP401/403/429 atau halaman tantangan menghentikan situs terkait untuk putaran 
 
 Template [service](../deploy/rumah-tinggal-rental-crawl.service.example) menjalankan salinan worker di `/opt/rumah-tinggal/research-worker` sebagai `DynamicUser`, dengan state sendiri di `/var/lib/rumah-tinggal-rental-crawl`. Bundle memuat9file: ketiga script crawler/adapter, dua konfigurasi, inventori masjid, `research/rentals.json` publik untuk deduplikasi, dan dua dataset transit. Worker tidak membutuhkan `.env`, kredensial, server aplikasi, atau database produksi. `ProtectHome` menutup akses `/root`; konfigurasi dan state aplikasi juga diblokir eksplisit.
 
-Template [timer](../deploy/rumah-tinggal-rental-crawl.timer.example) berjalan pukul **06.20–06.30 WIB setiap hari**, termasuk sesudah reboot bila jadwal terlewat. Worker tidak membuka port dan tidak me-restart `rumah-tinggal.service`.
+Tiga timer memulai worker **tiga kali sehari**, dengan waktu acak baru di dalam masing-masing rentang WIB:
+
+| Waktu | Rentang mulai   | Template timer                                                    |
+| ----- | --------------- | ----------------------------------------------------------------- |
+| Pagi  | **06.20–06.30** | [pagi](../deploy/rumah-tinggal-rental-crawl.timer.example)        |
+| Siang | **12.30–13.00** | [siang](../deploy/rumah-tinggal-rental-crawl-siang.timer.example) |
+| Sore  | **17.10–17.50** | [sore](../deploy/rumah-tinggal-rental-crawl-sore.timer.example)   |
+
+Semua menunjuk `rumah-tinggal-rental-crawl.service` yang sama; service dan lock mencegah proses ganda. `RandomizedDelaySec` masing-masing 10/30/40 menit dengan `AccuracySec=1us` dan `FixedRandomDelay=no`, sesuai [dokumentasi systemd.timer](https://www.freedesktop.org/software/systemd/man/255/systemd.timer.html). `Persistent=no` melewati jadwal saat server mati, sehingga reboot malam tidak mengejar jadwal yang terlewat. Tidak ada jadwal malam. Rentang di atas adalah waktu mulai; satu proses dibatasi 45 menit. Worker tidak membuka port dan tidak me-restart `rumah-tinggal.service`.
+
+Pasang ketiga template sebagai nama yang sama tanpa akhiran `.example`, lalu aktifkan seluruh timer:
 
 ```sh
-systemctl status rumah-tinggal-rental-crawl.timer
-systemctl list-timers rumah-tinggal-rental-crawl.timer
-systemctl start rumah-tinggal-rental-crawl.service
+systemctl daemon-reload
+systemctl enable --now rumah-tinggal-rental-crawl.timer rumah-tinggal-rental-crawl-siang.timer rumah-tinggal-rental-crawl-sore.timer
+systemctl list-timers 'rumah-tinggal-rental-crawl*.timer'
 ```
 
 Periksa `latest.json` dan `lastRun.status` untuk membedakan run selesai dengan batas, berhenti karena sumber, dan terinterupsi. Status selesai tidak berarti seluruh detail atau halaman semua kawasan telah habis ditelusuri. Salinan worker perlu disinkronkan ulang setelah script, konfigurasi, inventori masjid, katalog, atau dataset transit berubah; jangan menyinkronkan direktori proyek secara keseluruhan.
