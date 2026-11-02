@@ -28,6 +28,12 @@ function cards(page: Page) {
   return page.getByTestId("listing-card");
 }
 
+async function openMapLayers(page: Page) {
+  const panel = page.locator("#map-layer-panel");
+  if ((await panel.getAttribute("open")) === null)
+    await panel.locator("summary").click();
+}
+
 async function expectRenderedVectors(page: Page) {
   for (const attribute of ["data-region-features", "data-station-features"]) {
     await expect
@@ -159,6 +165,349 @@ test.afterEach(async ({ page }) => {
     pageErrors.get(page) ?? [],
     "Unhandled browser JavaScript errors",
   ).toEqual([]);
+});
+
+for (const [device, viewport] of [
+  ["desktop", { width: 1440, height: 1000 }],
+  ["mobile", { width: 390, height: 844 }],
+] as const) {
+  test(`independent rental toggles, area, monthly budget and export work on ${device}`, async ({
+    page,
+  }, testInfo) => {
+    await page.setViewportSize(viewport);
+    const baseRental = researchFixture.metadata.rentals.rentals[0];
+    await page.route("**/data/properties.geojson", (route) =>
+      route.fulfill({
+        json: {
+          ...researchFixture,
+          metadata: {
+            ...researchFixture.metadata,
+            rentals: {
+              ...researchFixture.metadata.rentals,
+              rentals: [
+                ...researchFixture.metadata.rentals.rentals,
+                {
+                  ...baseRental,
+                  id: "rent-uji-kos",
+                  title: "Kos Keluarga Uji",
+                  rentalType: "kos-keluarga",
+                  area: "Jakarta",
+                  locationText: "Pasar Minggu, Jakarta Selatan",
+                  rent: { ...baseRental.rent, amount: 1000000 },
+                },
+                {
+                  ...baseRental,
+                  id: "rent-uji-tahunan",
+                  title: "Rumah Sewa Tahunan Uji",
+                  rentalType: "rumah-sewa",
+                  rent: {
+                    ...baseRental.rent,
+                    amount: 24000000,
+                    period: "yearly",
+                  },
+                },
+              ],
+            },
+          },
+        },
+      }),
+    );
+    const privateRequests: string[] = [];
+    page.on("request", (request) => {
+      if (
+        /^\/api\/(listings|pins)(?:\/|$)/.test(new URL(request.url()).pathname)
+      )
+        privateRequests.push(request.url());
+    });
+    await page.goto("/");
+    await expect(page.locator("#rentals-count")).toHaveText("4");
+    await cards(page).first().click();
+    await expect(page.locator("#detail-card")).toBeVisible();
+    await page.locator("#rental-layers > summary").click();
+    await expect(page.locator("#map-layer-panel")).not.toHaveAttribute("open");
+    for (const kind of ["kos", "kontrakan", "apartemen"])
+      await expect(page.locator(`#rental-toggle-${kind}`)).not.toBeChecked();
+    await expect(page.locator("#rental-count-kontrakan")).toHaveText("2");
+
+    const rentalCards = page.getByTestId("map-rental-card");
+    await page.locator("#rental-toggle-kos").check();
+    await expect(rentalCards).toHaveCount(1);
+    await expect(rentalCards.first()).toContainText("Kos Keluarga Uji");
+    await expect(page.locator("#detail-card")).toBeHidden();
+    await expect(page.locator("#map .price-pin")).toHaveCount(0);
+    await expect(page.locator("#rental-map-status")).toContainText(
+      "belum dipetakan",
+    );
+    await page.locator("#rental-toggle-kontrakan").check();
+    await expect(rentalCards).toHaveCount(3);
+    await page.locator("#rental-toggle-kos").uncheck();
+    await expect(rentalCards).toHaveCount(2);
+    await expect(page.locator("#rental-toggle-kontrakan")).toBeChecked();
+    await page.locator("#rental-toggle-apartemen").check();
+    await expect(rentalCards).toHaveCount(3);
+    await page.locator("#rental-toggle-kontrakan").uncheck();
+    await expect(rentalCards).toHaveCount(1);
+    await expect(rentalCards.first()).toContainText("Apartemen Sewa Uji");
+    await expect(page.locator("#rental-toggle-apartemen")).toBeChecked();
+    await expectRenderedVectors(page);
+    await expectRenderedAttribute(page, "data-road-features", true);
+    await expectNoHorizontalOverflow(page);
+    await page.screenshot({
+      path: testInfo.outputPath(`rental-map-${device}.png`),
+    });
+
+    await page.locator("#view-rentals").click();
+    await expect(rentalCards.first()).toBeVisible();
+    await expect(page.locator("#rental-filters")).toBeVisible();
+    await expect(page.locator("#purchase-filters")).toBeHidden();
+    await expect(page.locator("#commute-filter")).toBeHidden();
+    await expect(
+      page.locator('[data-rental-filter="apartemen"]'),
+    ).toHaveAttribute("aria-pressed", "true");
+    await expect(page.locator('[data-rental-filter="kos"]')).toHaveAttribute(
+      "aria-pressed",
+      "false",
+    );
+    await page.locator('[data-rental-filter="kontrakan"]').click();
+    await page.locator("#rental-budget").selectOption("2000000");
+    await expect(rentalCards).toHaveCount(1);
+    await expect(rentalCards.first()).toHaveAttribute(
+      "data-rental-id",
+      "rent-uji-tahunan",
+    );
+    await expect(rentalCards.first()).toContainText("Rp 24.000.000/tahun");
+    await expect(rentalCards.first()).toContainText("Rp 2.000.000/bulan");
+    await page.locator("#rental-budget").selectOption("0");
+    await page.locator('.area-chips [data-area="Bekasi"]').click();
+    await expect(rentalCards).toHaveCount(2);
+    await page.locator("#search").fill("rumah sewa tahunan");
+    await expect(rentalCards).toHaveCount(1);
+    await page.locator("#search").fill("");
+    await page.locator('[data-rental-filter="kontrakan"]').click();
+    await page.locator('[data-rental-filter="apartemen"]').click();
+    await expect(rentalCards).toHaveCount(0);
+    await expect(page.getByTestId("rental-empty")).toContainText(
+      "Semua jenis sewa disembunyikan",
+    );
+    await expect(page.locator("#listing-export")).toBeDisabled();
+    await page.locator("#reset-rentals").click();
+    await expect(rentalCards).toHaveCount(4);
+    await page.locator("#sort").selectOption("price");
+    await expect(rentalCards.first()).toHaveAttribute(
+      "data-rental-id",
+      "rent-uji-kos",
+    );
+    await page.locator('[data-rental-filter="apartemen"]').click();
+    const downloadEvent = page.waitForEvent("download");
+    await page.locator("#listing-export").click();
+    const download = await downloadEvent;
+    expect(download.suggestedFilename()).toMatch(/^sewa-hunian-.*\.xlsx$/);
+    const path = testInfo.outputPath(`rentals-${device}.xlsx`);
+    await download.saveAs(path);
+    const workbook = readExcel(await readFile(path));
+    expect(workbook.Sewa.rows.map((row) => row.ID)).toEqual([
+      "rent-uji-kos",
+      "rent-uji-tahunan",
+      "rent-uji-bekasi",
+    ]);
+    expect(workbook["Proyek Developer"]).toBeUndefined();
+    await expectNoHorizontalOverflow(page);
+    await page.screenshot({
+      path: testInfo.outputPath(`rental-list-${device}.png`),
+    });
+    await page.locator("#demo-tab").click();
+    await expect(cards(page)).toHaveCount(8);
+    await expect(page.locator("#map .price-pin")).toHaveCount(8);
+    await expect(page.locator("#rental-note")).toBeHidden();
+    await expect(page.locator("#rental-toggle-kos")).not.toBeChecked();
+    await page.locator("#rentals-tab").click();
+    await expect(rentalCards).toHaveCount(3);
+    expect(privateRequests).toEqual([]);
+  });
+}
+
+for (const [device, viewport] of [
+  ["desktop", { width: 1440, height: 1000 }],
+  ["mobile", { width: 390, height: 844 }],
+] as const) {
+  test(`rental pins, shared locations, mosque focus and coordinate export work on ${device}`, async ({
+    page,
+  }, testInfo) => {
+    test.setTimeout(60_000);
+    await page.setViewportSize(viewport);
+    const base = researchFixture.metadata.rentals.rentals[0];
+    const mosque = researchFixture.metadata.mosques.items[0];
+    const location = {
+      lat: mosque.lat,
+      lng: mosque.lng + 0.002,
+      precision: "complex",
+      label: "Kompleks uji",
+      url: "https://portal.example.invalid/pin",
+      method: "Peta publik",
+      note: "Titik kompleks, bukan posisi unit",
+      checkedAt: "2026-11-02",
+    };
+    const nearbyMosques = [{ id: mosque.id, name: mosque.name, km: 0.221 }];
+    await page.route("**/data/properties.geojson", (route) =>
+      route.fulfill({
+        json: {
+          ...researchFixture,
+          metadata: {
+            ...researchFixture.metadata,
+            rentals: {
+              ...researchFixture.metadata.rentals,
+              rentals: [
+                { ...base, location, nearbyMosques },
+                {
+                  ...base,
+                  id: "rent-pin-kos",
+                  title: "Kos Uji Satu Kompleks",
+                  rentalType: "kos-keluarga",
+                  location,
+                  nearbyMosques,
+                },
+                {
+                  ...base,
+                  id: "rent-pin-far",
+                  title: "Apartemen Jauh Uji",
+                  rentalType: "apartemen-sewa",
+                  location: {
+                    ...location,
+                    lat: -6.36,
+                    lng: 106.83,
+                    precision: "approximate",
+                  },
+                  nearbyMosques: [],
+                },
+                {
+                  ...base,
+                  id: "rent-unlocated",
+                  title: "Rumah Tanpa Titik",
+                  location: null,
+                  locationNote: "Centroid kecamatan ditolak",
+                  nearbyMosques: [],
+                },
+              ],
+            },
+          },
+        },
+      }),
+    );
+    const requests: string[] = [];
+    page.on("request", (request) => {
+      if (
+        /^\/api\/(listings|pins)(?:\/|$)/.test(new URL(request.url()).pathname)
+      )
+        requests.push(request.url());
+    });
+    await page.goto("/?koleksi=sewa");
+    const rentalCards = page.getByTestId("map-rental-card");
+    await expect(rentalCards).toHaveCount(4);
+    await expect(page.locator("#map")).toHaveAttribute(
+      "data-rental-features",
+      "3",
+    );
+    await expect(page.locator("#map .rental-pin")).toHaveCount(2);
+    await expect(page.locator("#map .rental-pin.is-approximate")).toHaveCount(
+      1,
+    );
+    await expect(page.locator("#kajian-toggle")).toBeChecked();
+    await page.locator("#rental-mosque").selectOption("near");
+    await expect(rentalCards).toHaveCount(2);
+    await expect(page.locator("#map .rental-pin")).toHaveCount(1);
+    const downloadEvent = page.waitForEvent("download");
+    await page.locator("#listing-export").click();
+    const download = await downloadEvent;
+    const path = testInfo.outputPath(`rental-pins-${device}.xlsx`);
+    await download.saveAs(path);
+    const workbook = readExcel(await readFile(path));
+    expect(workbook.Sewa.rows).toHaveLength(2);
+    expect(workbook.Sewa.rows[0]["Latitude titik acuan"]).toBe(location.lat);
+    expect(workbook.Sewa.rows[0]["Sumber titik"]).toBe(location.url);
+    expect(workbook.Sewa.rows[0]["Tanggal cek"]).toBe(base.lastChecked);
+    expect(workbook.Sewa.rows[0]["Tanggal cek lokasi"]).toBe("2026-11-02");
+    if (device === "mobile") await page.locator("#mobile-map").click();
+    await page.locator("#map .rental-pin").click();
+    const popup = page.getByTestId("rental-popup");
+    await expect(popup).toContainText("2 sewa pada titik yang sama");
+    await expect(
+      popup.getByRole("heading", { name: "2 sewa pada titik yang sama" }),
+    ).toBeInViewport();
+    await expect(popup).toContainText("bukan jarak dari pintu unit");
+    const route = popup
+      .getByRole("link", { name: "Rute dari titik acuan" })
+      .first();
+    expect(
+      new URL((await route.getAttribute("href")) ?? "").searchParams.get(
+        "destination",
+      ),
+    ).toBe(`${mosque.lat},${mosque.lng}`);
+    await popup.locator("[data-rental-mosque]").first().click();
+    await expect(popup).toHaveCount(0);
+    await page.locator("[data-focus-rentals]").click();
+    await expect(page.locator("#rental-mosque")).toHaveValue(mosque.id);
+    await expect(rentalCards).toHaveCount(2);
+    await page.locator("#view-rentals").click();
+    await page.locator('[data-rental-filter="kos"]').click();
+    await expect(rentalCards).toHaveCount(1);
+    await page.locator("#rental-mosque").selectOption("all");
+    await expect(rentalCards).toHaveCount(3);
+    await expect(
+      page.locator('[data-rental-id="rent-unlocated"]'),
+    ).toContainText("Centroid kecamatan ditolak");
+    await expect(
+      page.locator('[data-rental-id="rent-unlocated"] [data-view-rental]'),
+    ).toHaveCount(0);
+    await page.locator('[data-view-rental="rent-pin-far"]').click();
+    await expect(popup).toContainText("Pin perkiraan portal");
+    await expect(popup).toContainText("Belum ada masjid Ihrish");
+    await expectNoHorizontalOverflow(page);
+    await page.screenshot({
+      path: testInfo.outputPath(`rental-pin-popup-${device}.png`),
+    });
+    await page.goto("/?koleksi=sewa&sewa=rent-pin-far");
+    await expect(popup).toContainText("Apartemen Jauh Uji");
+    if (device === "mobile") await page.locator("#mobile-list").click();
+    await page.locator("#demo-tab").click();
+    await expect(page.locator("#map .rental-pin")).toHaveCount(0);
+    await expect(popup).toHaveCount(0);
+    expect(requests).toEqual([]);
+  });
+}
+
+test("rental deep links work and unavailable rental data leaves the map usable", async ({
+  page,
+}) => {
+  await page.goto("/?koleksi=sewa");
+  await expect(page.locator("#rentals-tab")).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await expect(page.getByTestId("map-rental-card")).toHaveCount(2);
+  await page.locator('[data-rental-filter="kontrakan"]').click();
+  await page.locator('[data-rental-filter="apartemen"]').click();
+  await expect(page.getByTestId("rental-empty")).toContainText(
+    "Semua jenis sewa disembunyikan",
+  );
+  await page.route("**/data/properties.geojson", (route) =>
+    route.fulfill({
+      json: {
+        ...researchFixture,
+        metadata: { ...researchFixture.metadata, rentals: null },
+      },
+    }),
+  );
+  await page.goto("/");
+  await expect(page.locator("#rentals-tab")).toBeDisabled();
+  await page.locator("#rental-layers > summary").click();
+  for (const kind of ["kos", "kontrakan", "apartemen"])
+    await expect(page.locator(`#rental-toggle-${kind}`)).toBeDisabled();
+  await expect(cards(page)).toHaveCount(8);
+  await expectRenderedVectors(page);
+  await page.goto("/?koleksi=sewa");
+  await expect(page.getByTestId("rental-empty")).toContainText(
+    "Data sewa belum tersedia",
+  );
 });
 
 test("shows eight explicitly illustrative homes and a visible map", async ({
@@ -755,6 +1104,7 @@ test.describe("mobile explorer", () => {
       })
       .click();
     await expect(detail).toBeVisible();
+    await openMapLayers(page);
     const switches = page.getByRole("checkbox");
     await expect(switches).toHaveCount(8);
     for (const control of await switches.all())
@@ -819,6 +1169,7 @@ test.describe("mobile explorer", () => {
       path: testInfo.outputPath("mobile-hunian-detail.png"),
       fullPage: true,
     });
+    await openMapLayers(page);
     const toggle = page.getByRole("checkbox", {
       name: "Marker dan detail hunian",
       exact: true,
@@ -1019,6 +1370,7 @@ for (const [device, viewport] of [
     await expect(page.locator("#kajian-toggle")).not.toBeChecked();
     await expect(page.locator("#community-toggle")).not.toBeChecked();
     if (device === "mobile") await page.locator("#mobile-map").click();
+    await openMapLayers(page);
     await expectRenderedAttribute(page, "data-kajian-features", false);
     await page.locator("#kajian-toggle").check();
     await expectRenderedAttribute(page, "data-kajian-features", true);
@@ -1068,6 +1420,7 @@ for (const [device, viewport] of [
       position: { x: bounds.width / 2, y: bounds.height / 2 },
     });
     await expect(popup).toBeVisible();
+    await openMapLayers(page);
     await page.locator("#kajian-toggle").uncheck();
     await expect(popup).toHaveCount(0);
     await expectRenderedAttribute(page, "data-kajian-features", false);

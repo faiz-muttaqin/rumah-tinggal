@@ -309,7 +309,18 @@ export interface ResearchLeads {
   leads: ResearchLead[];
 }
 
-// Sewa ramah keluarga muslim: lokasi rumah perorangan hanya sampai kelurahan.
+// Titik publik dari portal/gedung/kompleks; tidak menyatakan posisi unit atau pintu masuk.
+export interface RentalLocation {
+  lat: number;
+  lng: number;
+  precision: "approximate" | "building" | "complex";
+  label: string;
+  url: string;
+  method: string;
+  note: string;
+  checkedAt: string;
+}
+
 export interface ResearchRental {
   id: string;
   title: string;
@@ -351,11 +362,15 @@ export interface ResearchRental {
   social: SocialLink[];
   verdict: "confirmed" | "partial";
   lastChecked: string;
+  location?: RentalLocation | null;
+  locationNote?: string;
+  nearbyMosques?: { id: string; name: string; km: number }[];
 }
 
 export interface ResearchRentals {
   checkedAt: string;
   note: string;
+  locationsCheckedAt?: string;
   rentals: ResearchRental[];
 }
 

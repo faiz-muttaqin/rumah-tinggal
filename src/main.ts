@@ -28,6 +28,15 @@ import {
 import { mappedMosques, mosquePopupHTML } from "./mosques.ts";
 import { guessCategory, PIN_STYLES, pinIcon } from "./pins.ts";
 import {
+  filterMapRentals,
+  RENTAL_MAP_GROUPS,
+  type RentalMapKind,
+  rentalLocationLabel,
+  rentalMapKind,
+  rentalMosqueSummary,
+  rentalPopupHTML,
+} from "./rental-map.ts";
+import {
   checkedDate,
   distanceText,
   isOperating,
@@ -38,9 +47,12 @@ import {
   plusSummary,
   populationText,
   priceRange,
+  RENTAL_LABELS,
   type ResearchData,
   type ResearchMosque,
   type ResearchProperty,
+  type ResearchRental,
+  rentText,
   researchToListing,
   researchToPin,
   SOCIAL_LABELS,
@@ -72,28 +84,31 @@ $("app").innerHTML = `
     <aside class="sidebar" aria-label="Pencarian dan daftar hunian">
       <div class="sidebar-top">
         <div class="eyebrow"><span class="tiny-line"></span> RUANG UNTUK PULANG</div>
-        <h1>Rumah yang pas.<br/><span>Hidup lebih dekat.</span></h1>
+        <h1 id="explorer-title">Rumah yang pas.<br/><span>Hidup lebih dekat.</span></h1>
         <p class="intro">Kenali wilayah dan akses transportasinya,<br class="desktop-break"/> lalu temukan tempatmu bertumbuh.</p>
         <div class="search-box">${icon("search")}<input id="search" aria-label="Cari wilayah, hunian, stasiun, atau tempat" type="search" placeholder="Wilayah, hunian, stasiun, atau tempat…" autocomplete="off"/><kbd>/</kbd></div>
         <div id="station-results" class="station-results"></div><div id="mosque-results" class="station-results place-results" aria-live="polite"></div><div id="place-results" class="station-results place-results" aria-live="polite"></div>
         <div class="area-chips" aria-label="Filter wilayah"><button class="chip selected" data-area="Semua" aria-pressed="true">Semua</button>${AREAS.map((area) => `<button class="chip" data-area="${area}" aria-pressed="false">${area}</button>`).join("")}</div>
-        <div class="filter-grid"><label>Anggaran beli<select id="budget" aria-label="Anggaran maksimum"><option value="0">Semua anggaran</option><option value="500000000">Hingga Rp 500 juta</option><option value="750000000">Hingga Rp 750 juta</option><option value="1000000000">Hingga Rp 1 miliar</option></select></label><label>Jenis hunian<select id="housing-type" aria-label="Jenis hunian"><option value="Semua">Semua jenis</option><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label></div>
-        <div class="commute-filter">${icon("train")}<label for="station-distance">Jarak ke stasiun KRL</label><select id="station-distance" aria-label="Jarak maksimum ke stasiun KRL"><option value="0">Bebas</option><option value="1">≤ 1 km</option><option value="3">≤ 3 km</option><option value="5">≤ 5 km</option></select></div>
-        <div class="data-tabs" aria-label="Koleksi hunian"><button id="demo-tab" class="active" aria-pressed="true">Contoh hunian <span>8</span></button><button id="private-tab" aria-pressed="false">${icon("bookmark")} Listingku</button><button id="pins-tab" aria-pressed="false">${icon("pin")} Pin tempat</button><button id="research-tab" aria-pressed="false">${icon("research")} Riset <span id="research-count">…</span></button></div>
+        <div class="filter-grid" id="purchase-filters"><label>Anggaran beli<select id="budget" aria-label="Anggaran maksimum"><option value="0">Semua anggaran</option><option value="500000000">Hingga Rp 500 juta</option><option value="750000000">Hingga Rp 750 juta</option><option value="1000000000">Hingga Rp 1 miliar</option></select></label><label>Jenis hunian<select id="housing-type" aria-label="Jenis hunian"><option value="Semua">Semua jenis</option><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label></div>
+        <div class="commute-filter" id="commute-filter">${icon("train")}<label for="station-distance">Jarak ke stasiun KRL</label><select id="station-distance" aria-label="Jarak maksimum ke stasiun KRL"><option value="0">Bebas</option><option value="1">≤ 1 km</option><option value="3">≤ 3 km</option><option value="5">≤ 5 km</option></select></div>
+        <div class="data-tabs" aria-label="Koleksi hunian"><button id="demo-tab" class="active" aria-pressed="true">Contoh hunian <span>8</span></button><button id="private-tab" aria-pressed="false">${icon("bookmark")} Listingku</button><button id="pins-tab" aria-pressed="false">${icon("pin")} Pin tempat</button><button id="research-tab" aria-pressed="false">${icon("research")} Riset <span id="research-count">…</span></button><button id="rentals-tab" aria-pressed="false" disabled>${icon("home")} Sewa · kos, kontrakan & apartemen <span id="rentals-count">…</span></button></div>
+        <div id="rental-filters" class="rental-filters" hidden><div class="rental-type-filters" role="group" aria-label="Jenis sewa">${RENTAL_MAP_GROUPS.map((group) => `<button type="button" class="chip" data-rental-filter="${group.id}" aria-pressed="true" style="--rental-color:${group.color}" ${group.id === "lainnya" ? "hidden" : ""}><i class="rental-kind-dot"></i>${group.label}</button>`).join("")}</div><label>Sewa per bulan<select id="rental-budget" aria-label="Sewa maksimum per bulan"><option value="0">Semua anggaran sewa</option><option value="1000000">Hingga Rp 1 juta</option><option value="2000000">Hingga Rp 2 juta</option><option value="3500000">Hingga Rp 3,5 juta</option><option value="5000000">Hingga Rp 5 juta</option><option value="10000000">Hingga Rp 10 juta</option></select></label><label>Fokus masjid Ihrish<select id="rental-mosque" aria-label="Fokus masjid Ihrish"></select></label></div>
       </div>
       <section id="results" class="results" tabindex="-1" aria-label="Hasil pencarian">
         <div class="results-toolbar"><div><strong id="result-count">8 hunian</strong><span id="result-scope"> di Jabodetabek</span></div><select id="sort" aria-label="Urutkan hunian"><option value="recommended">Rekomendasi</option><option value="price">Harga terendah</option><option value="station">Terdekat KRL</option></select></div>
         <div class="export-tools" id="listing-export-tools" hidden><button class="button" id="listing-export" type="button" disabled>${icon("download")} Export Excel</button><span>Hasil sesuai filter aktif</span></div>
         <div class="example-note" id="example-note"><span class="sample-dot"></span> Data contoh · harga & lokasi ilustratif</div><div class="example-note research-note" id="research-note" hidden><span class="sample-dot"></span> Data nyata · harga dari sumber per tanggal cek · <a href="/riset">bukti lengkap ↗</a></div>
+        <p class="rental-location-note" id="rental-note" hidden>Rekomendasi mengutamakan sewa sekitar masjid Ihrish. Pin bergaris putus adalah perkiraan portal; pin lainnya mengacu ke gedung atau kompleks. Jarak dari titik acuan, bukan pintu unit. Konfirmasi harga dan ketersediaan ke sumber.</p>
         <div id="listing-list" class="listing-list" aria-live="polite"></div>
       </section>
       <footer class="sidebar-footer"><span>Pilihan baik dimulai dari mengenal tempat.</span><button id="sources-button">${icon("info")} Sumber data</button></footer>
     </aside>
     <section class="map-panel" aria-label="Peta hunian Jabodetabek">
       <div id="map" class="map" aria-label="Peta interaktif, gunakan tombol panah untuk menggeser"></div>
-      <div class="map-heading"><span class="map-heading-icon">${icon("pin")}</span><div><strong>Jabodetabek</strong><span>KRL · MRT · LRT · TransJakarta</span></div><button id="map-reset" class="icon-button" aria-label="Tampilkan seluruh Jabodetabek">${icon("target")}</button></div>
+      <div class="map-heading"><span class="map-heading-icon">${icon("pin")}</span><div><strong>Jabodetabek</strong><span id="map-subtitle">KRL · MRT · LRT · TransJakarta</span></div><button id="map-reset" class="icon-button" aria-label="Tampilkan seluruh Jabodetabek">${icon("target")}</button></div>
       <div id="map-status" class="map-status" role="status">Peta dasar belum termuat. Wilayah dan KRL tetap bisa dijelajahi.</div>
       <div class="map-tools" role="group" aria-label="Lapisan peta">
+        <details class="map-layer-panel" id="map-layer-panel" name="map-layers" open><summary>${icon("pin")} Lapisan peta</summary><div class="map-layer-options">
         <label class="layer-control">${icon("train")} Jalur KRL <input id="rail-toggle" aria-label="Jalur KRL" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control">${icon("train")} MRT <input id="mrt-toggle" aria-label="Jalur MRT" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control" title="LRT Jakarta dan LRT Jabodebek">${icon("train")} LRT <input id="lrt-toggle" aria-label="Jalur LRT" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
@@ -103,6 +118,9 @@ $("app").innerHTML = `
         <label class="layer-control">${icon("home")} Bangunan <input id="buildings-toggle" aria-label="Bangunan pada peta" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control">${icon("pin")} Hunian <input id="listings-toggle" aria-label="Marker dan detail hunian" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
         <span class="map-road-note">Jalan selalu tampil · bangunan, masjid & sekolah saat diperbesar</span>
+        </div></details>
+        <details class="map-layer-panel rental-layers" id="rental-layers" name="map-layers"><summary>${icon("home")} Sewa <span id="rental-layer-count">…</span></summary><div class="rental-layer-options">${RENTAL_MAP_GROUPS.map((group) => `<label class="layer-control" style="--rental-color:${group.color}" ${group.id === "lainnya" ? "hidden" : ""}><i class="rental-kind-dot"></i>${group.label} <small id="rental-count-${group.id}">…</small><input id="rental-toggle-${group.id}" data-rental-toggle="${group.id}" aria-label="Sewa ${group.label.toLocaleLowerCase("id-ID")}" type="checkbox" disabled/><span class="switch" aria-hidden="true"></span></label>`).join("")}<label class="rental-map-focus">Fokus masjid Ihrish<select id="rental-mosque-map" aria-label="Fokus masjid Ihrish di peta"></select></label><p class="map-road-note">Kontrakan termasuk rumah sewa. Pin putus-putus: perkiraan portal; pin penuh: gedung/kompleks. Yang belum bertitik tetap ada di daftar.</p></div></details>
+        <div class="rental-map-summary" id="rental-map-summary" hidden><span id="rental-map-status" role="status"></span><button class="button" id="view-rentals">Lihat daftar sewa ${icon("arrow")}</button></div>
         <div class="add-actions"><button class="add-floating add-pin" id="add-pin">${icon("pin")} Tambah pin</button><button class="add-floating" id="add-listing">${icon("plus")} Tambah listing</button></div>
       </div>
       <details class="rail-legend" id="transit-legend"><summary>Legenda transportasi</summary><div id="rail-legend"><span data-legend-mode="KRL"><i style="--line:#DC2626"></i>KRL Bogor / Nambo</span><span data-legend-mode="KRL"><i style="--line:#2563EB"></i>KRL Cikarang</span><span data-legend-mode="KRL"><i style="--line:#16A34A"></i>KRL Rangkasbitung</span><span data-legend-mode="KRL"><i style="--line:#92400E"></i>KRL Tangerang</span><span data-legend-mode="KRL"><i style="--line:#DB2777"></i>KRL Tj. Priok</span><span data-legend-mode="MRT"><i style="--line:#CE0037"></i>MRT Utara–Selatan</span><span data-legend-mode="LRT"><i style="--line:#f16227"></i>LRT Jakarta</span><span data-legend-mode="LRT"><i style="--line:#20409A"></i>LRT Cibubur</span><span data-legend-mode="LRT"><i style="--line:#0E6938"></i>LRT Bekasi</span><span data-legend-mode="TransJakarta" hidden><i style="--line:#2477a8"></i>TransJakarta · warna per koridor</span></div></details>
@@ -117,18 +135,25 @@ $("app").innerHTML = `
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 `;
 
+if (matchMedia("(max-width: 760px)").matches)
+  $<HTMLDetailsElement>("map-layer-panel").open = false;
+
 let map: HousingMap | undefined;
 let stations: Station[] = [];
 let transportStops: Station[] = [];
 let privateListings: Listing[] = [];
 let privateOwnerUid: string | undefined;
-let collection: "demo" | "private" | "pins" | "research" = "demo";
+let collection: "demo" | "private" | "pins" | "research" | "rentals" = "demo";
 let researchProperties: ResearchProperty[] = [];
 let researchData: ResearchData | undefined;
 let kajianMosques: ResearchMosque[] = [];
 let researchPopulation: PopulationContext | null = null;
 let researchPlanned: PlannedContext | null = null;
 let researchListings: Listing[] = [];
+let rentalKinds = new Set<RentalMapKind>();
+let rentalMosqueFilter = "all";
+let selectedRentalIds: string[] = [];
+let rentalFitPending = false;
 let pins: Pin[] = [];
 let selectedArea = "Semua";
 let selectedListing: Listing | undefined;
@@ -145,6 +170,7 @@ function toast(message: string): void {
 }
 
 function filteredListings(): Listing[] {
+  if (collection === "rentals") return [];
   const query = $<HTMLInputElement>("search")
     .value.trim()
     .toLocaleLowerCase("id-ID");
@@ -184,20 +210,141 @@ function filteredListings(): Listing[] {
   return listings;
 }
 
+function filteredRentals(): ResearchRental[] {
+  return filterMapRentals(researchData?.rentals?.rentals ?? [], {
+    kinds: rentalKinds,
+    area: selectedArea,
+    query: $<HTMLInputElement>("search").value,
+    maxMonthlyRent: Number($<HTMLSelectElement>("rental-budget").value),
+    sort: $<HTMLSelectElement>("sort").value,
+    mosque: rentalMosqueFilter,
+  });
+}
+
+function renderRentalControls(): void {
+  const rentals = researchData?.rentals?.rentals ?? [];
+  const mosqueOptions = `<option value="all">Semua lokasi sewa</option><option value="near">Sekitar masjid Ihrish · ≤ 1,5 km</option>${kajianMosques
+    .filter((mosque) =>
+      rentals.some((rental) =>
+        rental.nearbyMosques?.some((item) => item.id === mosque.id),
+      ),
+    )
+    .map(
+      (mosque) =>
+        `<option value="${esc(mosque.id)}">${esc(mosque.name)}</option>`,
+    )
+    .join("")}`;
+  for (const id of ["rental-mosque", "rental-mosque-map"]) {
+    const select = $<HTMLSelectElement>(id);
+    select.innerHTML = mosqueOptions;
+    select.value = rentalMosqueFilter;
+  }
+  $("rentals-count").textContent = researchData ? String(rentals.length) : "–";
+  $<HTMLButtonElement>("rentals-tab").disabled = !rentals.length;
+  $("rentals-tab").title = rentals.length
+    ? "Daftar dan peta sewa dengan sumber serta ketelitian lokasi"
+    : "Data sewa belum tersedia. Coba muat ulang halaman.";
+  $("rental-layer-count").textContent =
+    collection === "rentals"
+      ? `${filteredRentals().length} aktif`
+      : String(rentals.length);
+  for (const group of RENTAL_MAP_GROUPS) {
+    const count = rentals.filter(
+      (rental) => rentalMapKind(rental) === group.id,
+    ).length;
+    const input = $<HTMLInputElement>(`rental-toggle-${group.id}`);
+    input.disabled = !count;
+    input.checked = collection === "rentals" && rentalKinds.has(group.id);
+    $(`rental-count-${group.id}`).textContent = String(count);
+    if (input.parentElement)
+      input.parentElement.hidden = group.id === "lainnya" && !count;
+    const button = document.querySelector<HTMLButtonElement>(
+      `[data-rental-filter="${group.id}"]`,
+    );
+    if (button) {
+      button.hidden = group.id === "lainnya" && !count;
+      button.disabled = !count;
+      button.classList.toggle("selected", rentalKinds.has(group.id));
+      button.setAttribute("aria-pressed", String(rentalKinds.has(group.id)));
+    }
+  }
+}
+
+function renderRentalCards(rentals: ResearchRental[]): void {
+  if (!researchData?.rentals?.rentals.length) {
+    $("listing-list").innerHTML =
+      `<div class="empty-state" data-testid="rental-empty"><span class="empty-icon">${icon("home")}</span><h2>Data sewa belum tersedia</h2><p>Coba muat ulang halaman untuk menampilkan daftar sewa.</p></div>`;
+    return;
+  }
+  $("listing-list").innerHTML = rentals.length
+    ? rentals
+        .map((rental) => {
+          const group = RENTAL_MAP_GROUPS.find(
+            (item) => item.id === rentalMapKind(rental),
+          );
+          return `<article class="listing-card map-rental-card" data-testid="map-rental-card" data-rental-id="${esc(rental.id)}" style="--rental-color:${group?.color}"><div class="card-top"><span class="card-area"><i class="area-dot area-${esc(rental.area.toLowerCase())}"></i>${esc(rental.area)}</span><span class="rental-tag">${esc(RENTAL_LABELS[rental.rentalType])}</span></div><h2 class="card-title">${esc(rental.title)}</h2><p class="card-price">${esc(rentText(rental))}</p><p class="rental-card-location">${icon("pin")} ${esc(rental.locationText)}</p><div class="card-specs">${rental.bedrooms !== null ? `<span>${rental.bedrooms} kamar</span>` : ""}${rental.sizeM2 !== null ? `<span>${rental.sizeM2} m²</span>` : ""}<span>${rental.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span></div><p class="rental-card-checked">${esc(rental.sourcePortal)} · dicek ${esc(checkedDate(rental.lastChecked))}</p><p class="rental-card-location">${esc(rentalLocationLabel(rental))}</p>${rental.location ? `<p class="rental-card-checked">${esc(rentalMosqueSummary(rental))}</p>` : `<p class="rental-card-checked">${esc(rental.locationNote ?? "Titik lokasi belum ditemukan dalam sumber.")}</p>`}<div class="rental-card-actions">${rental.location ? `<button class="button" data-view-rental="${esc(rental.id)}">Lihat pin ${icon("pin")}</button>` : ""}<a class="button" href="/riset#${encodeURIComponent(rental.id)}">Bukti & rincian ${icon("arrow")}</a><a class="source-link" href="${esc(safeUrl(rental.listingUrl))}" target="_blank" rel="noopener noreferrer">Buka listing ↗</a></div></article>`;
+        })
+        .join("")
+    : `<div class="empty-state" data-testid="rental-empty"><span class="empty-icon">${icon("search")}</span><h2>${rentalKinds.size ? "Belum ada sewa yang cocok" : "Semua jenis sewa disembunyikan"}</h2><p>Aktifkan Kos, Kontrakan, atau Apartemen, lalu sesuaikan wilayah dan anggaran sewa.</p><button class="button" id="reset-rentals">Reset filter sewa</button></div>`;
+  const reset = document.getElementById("reset-rentals");
+  if (reset) reset.onclick = resetFilters;
+  for (const button of document.querySelectorAll<HTMLButtonElement>(
+    "[data-view-rental]",
+  ))
+    button.onclick = () => {
+      const rental = rentals.find(
+        (item) => item.id === button.dataset.viewRental,
+      );
+      if (rental) selectRentals([rental]);
+    };
+}
+
 function render(): void {
+  const isRental = collection === "rentals";
+  document.querySelector(".sidebar")?.classList.toggle("is-rentals", isRental);
+  document
+    .querySelector(".map-panel")
+    ?.classList.toggle("is-rentals", isRental);
+  $("explorer-title").innerHTML = isRental
+    ? "Temukan tempat sewa."
+    : "Rumah yang pas.<br/><span>Hidup lebih dekat.</span>";
+  $("purchase-filters").hidden = isRental;
+  $("commute-filter").hidden = isRental;
+  $("rental-filters").hidden = !isRental;
+  $("rental-note").hidden = !isRental;
+  const stationSort =
+    $<HTMLSelectElement>("sort").querySelector<HTMLOptionElement>(
+      '[value="station"]',
+    );
+  if (stationSort) stationSort.disabled = isRental;
+  if (isRental && $<HTMLSelectElement>("sort").value === "station")
+    $<HTMLSelectElement>("sort").value = "recommended";
   const listings = filteredListings();
+  const rentals = isRental ? filteredRentals() : [];
+  const count = isRental ? rentals.length : listings.length;
+  renderRentalControls();
   const canExportPrivate = collection === "private" && Boolean(getUser());
   $("listing-export-tools").hidden =
-    !canExportPrivate && collection !== "research";
+    !canExportPrivate && collection !== "research" && !isRental;
   $<HTMLButtonElement>("listing-export").disabled =
     exporting ||
-    !listings.length ||
+    !count ||
     (canExportPrivate && privateOwnerUid !== getUser()?.uid);
-  $("result-count").textContent = `${listings.length} hunian`;
+  $("result-count").textContent = `${count} ${isRental ? "sewa" : "hunian"}`;
   $("result-scope").textContent =
     ` di ${selectedArea === "Semua" ? "Jabodetabek" : selectedArea}`;
   $("example-note").hidden = collection !== "demo";
   $("research-note").hidden = collection !== "research";
+  $("rentals-tab").classList.toggle("active", isRental);
+  $("rentals-tab").setAttribute("aria-pressed", String(isRental));
+  $("rental-map-summary").hidden = !isRental;
+  $("rental-map-status").textContent =
+    `${rentals.length} sewa · ${rentals.filter((rental) => rental.location).length} bertitik · ${rentals.filter((rental) => !rental.location).length} belum dipetakan.`;
+  $("view-rentals").textContent =
+    `Lihat ${rentals.length} sewa · ${rentals.filter((rental) => rental.location).length} bertitik →`;
+  $("map-subtitle").textContent = isRental
+    ? `${rentals.filter((rental) => rental.nearbyMosques?.length).length} sewa sekitar masjid Ihrish · ≤ 1,5 km dari titik acuan`
+    : "KRL · MRT · LRT · TransJakarta";
   $("research-tab").classList.toggle("active", collection === "research");
   $("research-tab").setAttribute(
     "aria-pressed",
@@ -213,7 +360,9 @@ function render(): void {
   $("pins-tab").classList.toggle("active", collection === "pins");
   $("pins-tab").setAttribute("aria-pressed", String(collection === "pins"));
   $("sort").hidden = collection === "pins";
-  if (collection === "pins") {
+  if (isRental) {
+    renderRentalCards(rentals);
+  } else if (collection === "pins") {
     $("result-count").textContent = `${pins.length} pin`;
     $("result-scope").textContent = " tempat penting";
     renderPinList();
@@ -262,6 +411,13 @@ function render(): void {
     selectedListing?.id,
     selectListing,
   );
+  if (
+    selectedRentalIds.some((id) => !rentals.some((rental) => rental.id === id))
+  ) {
+    selectedRentalIds = [];
+    map?.closeRental();
+  }
+  void map?.updateRentals(rentals, selectRentals);
   if (researchPlanned)
     void map?.showPlanned(
       plannedPoints(researchPlanned),
@@ -270,24 +426,39 @@ function render(): void {
 }
 
 $("listing-export").onclick = async () => {
-  if (exporting || !["private", "research"].includes(collection)) return;
+  if (exporting || !["private", "research", "rentals"].includes(collection))
+    return;
   const isPrivate = collection === "private";
+  const isRental = collection === "rentals";
   const uid = getUser()?.uid;
   if (isPrivate && (!uid || privateOwnerUid !== uid)) return;
   const listings = filteredListings();
-  if (!listings.length) return;
+  const rentals = isRental ? filteredRentals() : [];
+  const count = isRental ? rentals.length : listings.length;
+  if (!count) return;
   const filters: [string, string][] = [
     ["Daerah", selectedArea],
     ["Pencarian", $<HTMLInputElement>("search").value],
-    ...["budget", "housing-type", "station-distance", "sort"].map(
-      (id): [string, string] => {
-        const select = $<HTMLSelectElement>(id);
-        return [
-          select.getAttribute("aria-label") ?? id,
-          select.selectedOptions[0].text,
-        ];
-      },
-    ),
+    ...(isRental
+      ? ["rental-budget", "rental-mosque", "sort"]
+      : ["budget", "housing-type", "station-distance", "sort"]
+    ).map((id): [string, string] => {
+      const select = $<HTMLSelectElement>(id);
+      return [
+        select.getAttribute("aria-label") ?? id,
+        select.selectedOptions[0].text,
+      ];
+    }),
+    ...(isRental
+      ? [
+          [
+            "Jenis sewa",
+            RENTAL_MAP_GROUPS.filter((group) => rentalKinds.has(group.id))
+              .map((group) => group.label)
+              .join(", "),
+          ] as [string, string],
+        ]
+      : []),
   ];
   const sheets = isPrivate
     ? listingSheets(listings, stations, filters)
@@ -299,7 +470,7 @@ $("listing-export").onclick = async () => {
                 (property) => property.id === listing.id,
               ),
             ),
-            rentals: [],
+            rentals,
             saleAds: [],
             mosques: [],
             leads: [],
@@ -317,9 +488,12 @@ $("listing-export").onclick = async () => {
       toast("Akun berubah. Buka Listingku untuk mengekspor ulang.");
       return;
     }
-    downloadExcel(blob, isPrivate ? "listingku" : "riset-properti");
+    downloadExcel(
+      blob,
+      isPrivate ? "listingku" : isRental ? "sewa-hunian" : "riset-properti",
+    );
     toast(
-      `${listings.length} ${isPrivate ? "listing" : "proyek"} diekspor ke Excel.`,
+      `${count} ${isPrivate ? "listing" : isRental ? "sewa" : "proyek"} diekspor ke Excel.`,
     );
   } catch {
     toast("Ekspor Excel belum berhasil. Coba lagi.");
@@ -449,15 +623,47 @@ function showPinForm(
 
 function clearSelection(): void {
   selectedListing = undefined;
+  selectedRentalIds = [];
   $("detail-card").hidden = true;
   void map?.clearFocus();
   map?.closeMosque();
+  map?.closeRental();
+}
+
+function selectRentals(rentals: ResearchRental[]): void {
+  const point = rentals[0]?.location;
+  if (!point || !map) return;
+  clearSelection();
+  rentalFitPending = false;
+  selectedRentalIds = rentals.map((rental) => rental.id);
+  const content = document.createElement("div");
+  content.innerHTML = rentalPopupHTML(rentals, kajianMosques);
+  for (const button of content.querySelectorAll<HTMLButtonElement>(
+    "[data-rental-mosque]",
+  ))
+    button.onclick = () => selectMosque(button.dataset.rentalMosque ?? "");
+  if (matchMedia("(max-width: 760px)").matches) {
+    $<HTMLDetailsElement>("map-layer-panel").open = false;
+    $<HTMLDetailsElement>("rental-layers").open = false;
+    setMobileView("map");
+    map.resize();
+  }
+  void map.openRental(point, content);
+}
+
+function fitRentalResults(): void {
+  rentalFitPending =
+    matchMedia("(max-width: 760px)").matches &&
+    !document.body.classList.contains("show-map");
+  if (!rentalFitPending) void map?.fitRentals(filteredRentals());
 }
 
 function selectMosque(id: string): void {
   const mosque = kajianMosques.find((item) => item.id === id);
   const context = researchData?.mosques;
   if (!mosque || !context || !map) return;
+  selectedRentalIds = [];
+  map.closeRental();
   $<HTMLInputElement>("kajian-toggle").checked = true;
   void map.showKajian(true);
   const content = document.createElement("div");
@@ -471,6 +677,7 @@ function selectMosque(id: string): void {
     researchData?.leads?.leads
       .filter((lead) => lead.type === "rental")
       .map((lead) => lead.id),
+    researchData?.rentals?.rentals,
   );
   content
     .querySelector<HTMLButtonElement>("[data-pin-mosque]")
@@ -483,8 +690,29 @@ function selectMosque(id: string): void {
         notes: `Kajian Ihrish: ${mosque.sourceUrl}\nSnapshot ${checkedDate(context.checkedAt)}. Pin direktori belum disurvei; cek jadwal terbaru sebelum berangkat.`,
       }),
     );
+  const nearRentals = (researchData?.rentals?.rentals ?? []).filter((rental) =>
+    rental.nearbyMosques?.some((item) => item.id === mosque.id),
+  );
+  if (nearRentals.length) {
+    const button = document.createElement("button");
+    button.className = "popup-action";
+    button.dataset.focusRentals = mosque.id;
+    button.textContent = `Lihat ${nearRentals.length} sewa sekitar masjid`;
+    button.onclick = () => {
+      openRentals();
+      resetFilters();
+      rentalMosqueFilter = mosque.id;
+      render();
+      fitRentalResults();
+    };
+    content.querySelector(".mosque-actions")?.prepend(button);
+  }
   void map.openMosque(mosque, content);
-  if (matchMedia("(max-width: 760px)").matches) setMobileView("map");
+  if (matchMedia("(max-width: 760px)").matches) {
+    $<HTMLDetailsElement>("map-layer-panel").open = false;
+    $<HTMLDetailsElement>("rental-layers").open = false;
+    setMobileView("map");
+  }
 }
 
 function selectArea(area: string): void {
@@ -583,7 +811,11 @@ function selectListing(listing: Listing): void {
     }
   };
   void map?.focus(listing.lng, listing.lat);
-  if (matchMedia("(max-width: 760px)").matches) setMobileView("map");
+  if (matchMedia("(max-width: 760px)").matches) {
+    $<HTMLDetailsElement>("map-layer-panel").open = false;
+    $<HTMLDetailsElement>("rental-layers").open = false;
+    setMobileView("map");
+  }
   render();
 }
 
@@ -655,6 +887,13 @@ function resetFilters(): void {
   $<HTMLSelectElement>("budget").value = "0";
   $<HTMLSelectElement>("housing-type").value = "Semua";
   $<HTMLSelectElement>("station-distance").value = "0";
+  if (collection === "rentals") {
+    $<HTMLSelectElement>("rental-budget").value = "0";
+    rentalMosqueFilter = "all";
+    rentalKinds = new Set(
+      (researchData?.rentals?.rentals ?? []).map(rentalMapKind),
+    );
+  }
   $("station-results").innerHTML = "";
   $("mosque-results").innerHTML = "";
   clearPlaces();
@@ -665,14 +904,24 @@ function setMobileView(view: "map" | "list"): void {
   document.body.classList.toggle("show-map", view === "map");
   $("mobile-map").classList.toggle("active", view === "map");
   $("mobile-list").classList.toggle("active", view === "list");
-  setTimeout(() => map?.resize(), 30);
+  setTimeout(() => {
+    map?.resize();
+    if (view === "map" && rentalFitPending && collection === "rentals")
+      fitRentalResults();
+  }, 30);
 }
 
 for (const button of document.querySelectorAll<HTMLButtonElement>(
   "[data-area]",
 ))
   button.onclick = () => selectArea(button.dataset.area ?? "Semua");
-for (const id of ["budget", "housing-type", "station-distance", "sort"])
+for (const id of [
+  "budget",
+  "housing-type",
+  "station-distance",
+  "sort",
+  "rental-budget",
+])
   $(id).onchange = render;
 let placeTimer: ReturnType<typeof setTimeout>;
 let placeRequest: AbortController | undefined;
@@ -850,6 +1099,62 @@ $("research-tab").onclick = () => {
   selectedListing = undefined;
   $("detail-card").hidden = true;
   render();
+};
+function setRentalKind(kind: RentalMapKind, visible: boolean): void {
+  const entering = collection !== "rentals";
+  if (collection !== "rentals") {
+    rentalKinds = new Set();
+    showRentalMosques();
+  }
+  if (visible) rentalKinds.add(kind);
+  else rentalKinds.delete(kind);
+  collection = "rentals";
+  clearSelection();
+  render();
+  if (entering) fitRentalResults();
+}
+for (const group of RENTAL_MAP_GROUPS) {
+  $<HTMLInputElement>(`rental-toggle-${group.id}`).onchange = (event) =>
+    setRentalKind(group.id, (event.currentTarget as HTMLInputElement).checked);
+  const button = document.querySelector<HTMLButtonElement>(
+    `[data-rental-filter="${group.id}"]`,
+  );
+  if (button)
+    button.onclick = () => setRentalKind(group.id, !rentalKinds.has(group.id));
+}
+function openRentals(): void {
+  if (collection !== "rentals") showRentalMosques();
+  collection = "rentals";
+  if (!rentalKinds.size)
+    rentalKinds = new Set(
+      (researchData?.rentals?.rentals ?? []).map(rentalMapKind),
+    );
+  clearSelection();
+  render();
+  fitRentalResults();
+}
+$("rentals-tab").onclick = openRentals;
+function showRentalMosques(): void {
+  if (!kajianMosques.length) return;
+  $<HTMLInputElement>("kajian-toggle").checked = true;
+  void map?.showKajian(true);
+}
+for (const id of ["rental-mosque", "rental-mosque-map"])
+  $(id).onchange = (event) => {
+    rentalMosqueFilter = (event.currentTarget as HTMLSelectElement).value;
+    if (collection !== "rentals") openRentals();
+    if (rentalMosqueFilter !== "all") showRentalMosques();
+    clearSelection();
+    render();
+    fitRentalResults();
+  };
+$("view-rentals").onclick = () => {
+  if (matchMedia("(max-width: 760px)").matches) {
+    setMobileView("list");
+    $("results").scrollIntoView({ block: "start" });
+  }
+  $("results").scrollTop = 0;
+  $("results").focus({ preventScroll: true });
 };
 $("pins-tab").onclick = () => {
   collection = "pins";
@@ -1103,6 +1408,15 @@ async function start(): Promise<void> {
     if (listing) selectListing(listing);
     else render();
   } else if (params.get("koleksi") === "listingku") openPrivate();
+  else if (params.get("koleksi") === "sewa") openRentals();
+  const rentalId = params.get("sewa");
+  if (rentalId) {
+    openRentals();
+    const rental = researchData?.rentals?.rentals.find(
+      (item) => item.id === rentalId,
+    );
+    if (rental) selectRentals([rental]);
+  }
   const mosqueId = params.get("masjid");
   if (mosqueId) selectMosque(mosqueId);
   if (configResult.status === "fulfilled") {

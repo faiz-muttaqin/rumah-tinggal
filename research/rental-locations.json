@@ -1,0 +1,581 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02",
+  "note": "Kurasi titik publik dari 38 sewa. Pin perkiraan portal dibedakan dari titik gedung/kompleks; posisi unit tidak dijamin. Centroid administratif ditolak. Lokasi belum terbukti tetap di daftar tanpa pin. Harga dan stok tetap memakai tanggal cek iklan masing-masing.",
+  "items": [
+    {
+      "rentalId": "sewa-rumah-kluster-keluarga-muslim-furnish-dkt-tol-grand-wisata-bekasi",
+      "location": null,
+      "note": "Sumber iklan mengembalikan HTTP 403; nama klaster dan koordinat belum dapat dipastikan. Tidak memakai titik kawasan Bekasi Timur."
+    },
+    {
+      "rentalId": "sewa-rumah-kontrakan-d-thani-house-jatiasih-bekasi",
+      "location": {
+        "lat": -6.318543,
+        "lng": 106.961046,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-rumah-kontrakan-d-thani-house-jatiasih-bekasi-2",
+        "method": "Titik latitude/longitude publik pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik perkiraan portal. Tidak memakai field location yang berbeda; posisi unit perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "4af06e6e613e2a0d54c0d0d936004d7b345e92ad772cad08a8ac084e668e61b1",
+        "selector": "detail.latitude / detail.longitude (bukan detail.location)"
+      }
+    },
+    {
+      "rentalId": "sewa-grand-center-point-bekasi-apartment-2br",
+      "location": {
+        "lat": -6.244119,
+        "lng": 106.99374,
+        "precision": "building",
+        "label": "Grand Center Point Bekasi",
+        "url": "https://www.travelio.com/en/sewa-apartemen/grand-center-point-apartment-bekasi",
+        "method": "Titik gedung pada peta halaman Travelio",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik gedung apartemen, bukan posisi unit, tower, atau pintu masuk.",
+      "evidence": {
+        "sha256": "ee7e684d93deff61aea1768735302d031322204caff57745f22efaa73d3954d2",
+        "selector": "input#latitude / input#longitude; property-outer-box data-lat/data-lon cocok"
+      }
+    },
+    {
+      "rentalId": "sewa-sewa-rumah-razbi-prima-mansion-dekat-grand-wisata-bekasi-timur-2-lanta",
+      "location": {
+        "lat": -6.275195,
+        "lng": 107.040777,
+        "precision": "complex",
+        "label": "Razbi Prima Mansion",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-siap-huni-dekat-tol-stasiun-lrt-bekasi-timur-di-perumahan-razbi-prima-mansion-blok-d19",
+        "method": "Acuan kompleks dari iklan publik lain di Razbi Prima Mansion",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik acuan kompleks dari iklan lain di klaster yang sama. Tidak menyatakan lokasi unit iklan Rumah123.",
+      "evidence": {
+        "sha256": "68a92234419048391b969b2fc0b81cc736321ab41de3863d1795ff670b9a844e",
+        "selector": "__UNIT_DETAIL__.location.coordinate; klaster Razbi Prima Mansion sama"
+      }
+    },
+    {
+      "rentalId": "sewa-kontrakan-2-kt-dekat-masjid-al-baidho-lubang-buaya",
+      "location": {
+        "lat": -6.295101,
+        "lng": 106.900257,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gg-sukadamai-1",
+        "method": "Pin publik location.coordinate pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin dari pengiklan/portal, belum disurvei; posisi unit dan pintu masuk perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "44905c613820f3bbb54657468b2ccc9df541401083ebd5dd00f3c7f0d69444bc",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-rumah-5-kt-di-kompleks-taman-buaran-indah-klender",
+      "location": {
+        "lat": -6.219138,
+        "lng": 106.922983,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-taman-buaran-indah-siap-huni-di-sewa-rumah-taman-buaran-indah-jakarta-timur",
+        "method": "Pin publik location.coordinate pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin dari pengiklan/portal, belum disurvei; posisi unit dan pintu masuk perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "c949da400737426cb2d9e44dae159964a5d9266416fc42a66ed441a0c3ab5b4a",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-rumah-2-kt-dekat-masjid-dan-sekolah-islam-ciracas",
+      "location": {
+        "lat": -6.315757,
+        "lng": 106.875185,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkomp-kebersihan-rt-17-09-no295-ciracas",
+        "method": "Pin publik location.coordinate pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin dari pengiklan/portal, belum disurvei; posisi unit dan pintu masuk perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "089df09a125d07be94d0b7e493d3dcbd4c1a8023ee51236dc83d1df2cdfb7ed6",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-rumah-kontrakan-2-kt-rambutan-5-menit-ke-masjid",
+      "location": {
+        "lat": -6.299539,
+        "lng": 106.871884,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-pasar-rebo-di-jlgudang-air-rt002-001-no-50-jaktim",
+        "method": "Pin publik location.coordinate pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin dari pengiklan/portal, belum disurvei; posisi unit dan pintu masuk perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "c4b5a60f15ac271d597fa7cbe5cf69ccf746f54f781528a1ddbcd2da70c1ffe8",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-apartemen-sentra-timur-residence-2-kt-pulo-gebang",
+      "location": {
+        "lat": -6.204935,
+        "lng": 106.949404,
+        "precision": "approximate",
+        "label": "Sentra Timur Residence (pin portal)",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sentra-timur-dekat-walikota-jakarta-timur-di-apartemen-sentra-timur",
+        "method": "Pin publik apartemen yang sama dari iklan Pinhome",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik portal untuk Sentra Timur Residence; posisi tower/unit belum dipastikan.",
+      "evidence": {
+        "sha256": "8b5cc9617cc23d30688895022aae9755e8b15cc99923442dcbeb2299777d554f",
+        "selector": "__UNIT_DETAIL__.location.coordinate; nama gedung sesuai kedua iklan"
+      }
+    },
+    {
+      "rentalId": "sewa-rumah-2-lantai-3-kt-dekat-lrt-kampung-rambutan",
+      "location": null,
+      "note": "Pin portal sama persis dengan centroid Kecamatan Ciracas; ditolak. Belum ada titik unit yang dapat dibuktikan."
+    },
+    {
+      "rentalId": "sewa-rumah-3-kt-posisi-hook-dekat-masjid-hijau-nurul-iman-cilangkap",
+      "location": null,
+      "note": "Halaman iklan tidak menyediakan koordinat unit. Kedekatan Masjid Hijau Nurul Iman belum cukup untuk menempatkan unit."
+    },
+    {
+      "rentalId": "sewa-rumah-2-lantai-3-kt-cluster-shinano-jakarta-garden-city",
+      "location": {
+        "lat": -6.156656,
+        "lng": 106.968641,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-3-kamar-harga-40-juta-carport-2-mobil-di-cluster-shinano-jakarta-garden-city-jgc-cakung",
+        "method": "Pin publik location.coordinate pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin dari pengiklan/portal, belum disurvei; posisi unit dan pintu masuk perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "054ce6133ec384e2f9c8fa9b9f95d8c504b4311b9fcb168ce4d23cc3baf42882",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-rumah-2-lantai-3-kt-dekat-masjid-cilangkap",
+      "location": {
+        "lat": -6.338918,
+        "lng": 106.893929,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-malaka-cipayung",
+        "method": "Pin publik location.coordinate pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin dari pengiklan/portal, belum disurvei; posisi unit dan pintu masuk perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "1e4b16ecd939536c0618fe5d26f964fdaee4692833f09e692b518cdceb489c59",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-kost-berkah-family-sukmajaya-khusus-keluarga-muslim",
+      "location": {
+        "lat": -6.397246,
+        "lng": 106.858349,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-berkah-family-sukma-jaya-depok-1",
+        "method": "Titik latitude/longitude publik pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik perkiraan portal. Tidak memakai field location yang berbeda; posisi unit perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "7e7e2cd800bbf1d2a98fc6db525a3ab14597122cd3bd83dfebdecfe64234cc51",
+        "selector": "detail.latitude / detail.longitude (bukan detail.location)"
+      }
+    },
+    {
+      "rentalId": "sewa-kost-syariah-beji-rumah-kontrakan-keluarga-1-kamar",
+      "location": {
+        "lat": -6.379455,
+        "lng": 106.81323,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-syariah-beji-depok",
+        "method": "Titik latitude/longitude publik pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik perkiraan portal. Tidak memakai field location yang berbeda; posisi unit perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "c39e7688c6d359dc407de078a3c8b372ed2e9925f8e543e4005a01bb9f701213",
+        "selector": "detail.latitude / detail.longitude (bukan detail.location)"
+      }
+    },
+    {
+      "rentalId": "sewa-kost-syariah-matoa-golf-tipe-a-jagakarsa-pasutri-tanpa-anak",
+      "location": {
+        "lat": -6.364494,
+        "lng": 106.799716,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-syariah-matoa-golf-tipe-a-jagakarsa-jakarta-selatan",
+        "method": "Titik latitude/longitude publik pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik perkiraan portal. Tidak memakai field location yang berbeda; posisi unit perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "91db6de256e5f35317ce59879f9f30b58156d2da5981c193b2fa2053f905aa4d",
+        "selector": "detail.latitude / detail.longitude (bukan detail.location)"
+      }
+    },
+    {
+      "rentalId": "sewa-rumah-kontrakan-dekat-musholah-sukmajaya-depok",
+      "location": {
+        "lat": -6.407645,
+        "lng": 106.82066,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kontrakan-pak-kodir-sukmajaya-depok",
+        "method": "Titik latitude/longitude publik pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik perkiraan portal. Tidak memakai field location yang berbeda; posisi unit perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "c1c75acd3a5b016ddd11bc1121156366a59bc553c227b023da0b6b45b93611d7",
+        "selector": "detail.latitude / detail.longitude (bukan detail.location)"
+      }
+    },
+    {
+      "rentalId": "sewa-kalibata-city-2br-tower-akasia-masjid-di-basement",
+      "location": {
+        "lat": -6.257163,
+        "lng": 106.851836,
+        "precision": "building",
+        "label": "Kalibata City",
+        "url": "https://jendela360.com/sewa-apartemen-kalibata-city-apartment/KLCC371",
+        "method": "Titik apartemen pada rincian unit Jendela360",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik gedung/kawasan apartemen; tower dan posisi unit tidak dipastikan.",
+      "evidence": {
+        "sha256": "de7b86ede98907b3d25f3c720dcf6596e60ff45a402093437978c994a8451dbd",
+        "selector": "__NEXT_DATA__.props.pageProps.unitDetailProps.data.latitude / longitude; bukan popular_destinations"
+      }
+    },
+    {
+      "rentalId": "sewa-margonda-residence-1br-low-floor-mushola-di-kawasan",
+      "location": {
+        "lat": -6.3635,
+        "lng": 106.8345,
+        "precision": "building",
+        "label": "Margonda Residence",
+        "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB007",
+        "method": "Titik apartemen pada rincian unit Jendela360",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik gedung/kawasan apartemen; tower dan posisi unit tidak dipastikan.",
+      "evidence": {
+        "sha256": "e84f53a381690e68ebc743c845811a45ee98018c09ea263e515241db162a505c",
+        "selector": "__NEXT_DATA__.props.pageProps.unitDetailProps.data.latitude / longitude; bukan popular_destinations"
+      }
+    },
+    {
+      "rentalId": "sewa-taman-melati-margonda-2br-tower-a-low-floor",
+      "location": {
+        "lat": -6.360354,
+        "lng": 106.832472,
+        "precision": "building",
+        "label": "Taman Melati Margonda",
+        "url": "https://jendela360.com/sewa-apartemen-taman-melati-margonda-apartment/TMMC005",
+        "method": "Titik apartemen pada rincian unit Jendela360",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik gedung/kawasan apartemen; tower dan posisi unit tidak dipastikan.",
+      "evidence": {
+        "sha256": "02175ff64a589e9a99ea70cd9fea7daae495ff550051c07540d66ac71fe2f260",
+        "selector": "__NEXT_DATA__.props.pageProps.unitDetailProps.data.latitude / longitude; bukan popular_destinations"
+      }
+    },
+    {
+      "rentalId": "sewa-apartemen-medina-karawaci-unit-2br",
+      "location": {
+        "lat": -6.232329,
+        "lng": 106.617783,
+        "precision": "building",
+        "label": "Apartemen Medina",
+        "url": "https://www.travelio.com/sewa-apartemen/medina-apartment-karawaci",
+        "method": "Titik gedung pada peta halaman Travelio",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik gedung apartemen, bukan posisi unit, tower, atau pintu masuk.",
+      "evidence": {
+        "sha256": "a6d11b81f776ce4c11f63c07d7093e31abda4ac6c3f781e755dda8efdb274218",
+        "selector": "input#latitude / input#longitude; property-outer-box data-lat/data-lon cocok"
+      }
+    },
+    {
+      "rentalId": "sewa-kost-exclusive-syariah-cimanggu-permai-tipe-a",
+      "location": {
+        "lat": -6.562901,
+        "lng": 106.788434,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-exclusive-syariah-cimanggu-permai-tipe-a-tanah-sareal-bogor",
+        "method": "Titik latitude/longitude publik pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik perkiraan portal. Tidak memakai field location yang berbeda; posisi unit perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "f2375936a660e5dc416f271a0f784a86df6c862edff191842cf0ad697634ab44",
+        "selector": "detail.latitude / detail.longitude (bukan detail.location)"
+      }
+    },
+    {
+      "rentalId": "sewa-kost-cozzy-syariah-tipe-a",
+      "location": {
+        "lat": -6.636823,
+        "lng": 106.790957,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-cozzy-syariah-tipe-a-bogor-selatan-bogor-1",
+        "method": "Titik latitude/longitude publik pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik perkiraan portal. Tidak memakai field location yang berbeda; posisi unit perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "fee610c7c92cd27273fde9f20a37d51aca1c39614c12d346b0e44b7a8cb6b36e",
+        "selector": "detail.latitude / detail.longitude (bukan detail.location)"
+      }
+    },
+    {
+      "rentalId": "sewa-rumah-kontrakan-dean-residence-tipe-rumah-2-5-lantai",
+      "location": {
+        "lat": -6.203307,
+        "lng": 106.722856,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-rumah-kontrakan-dean-residence-karang-tengah-tangerang-2",
+        "method": "Titik latitude/longitude publik pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik perkiraan portal. Tidak memakai field location yang berbeda; posisi unit perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "b84c22e32eddd9b68ef3a20261ecfc089b47a59067d10460f8e8acd52cca86f6",
+        "selector": "detail.latitude / detail.longitude (bukan detail.location)"
+      }
+    },
+    {
+      "rentalId": "sewa-kost-rumah-mawaddah-kelapa-dua",
+      "location": {
+        "lat": -6.23356,
+        "lng": 106.618619,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-rumah-mawaddah-kelapa-dua-tangerang-2",
+        "method": "Titik latitude/longitude publik pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik perkiraan portal. Tidak memakai field location yang berbeda; posisi unit perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "bff1b2b61446ceb5aa5a7d9ba13ed99ffe5ba7e54be4c4084af42db32f73efd6",
+        "selector": "detail.latitude / detail.longitude (bukan detail.location)"
+      }
+    },
+    {
+      "rentalId": "sewa-kost-k-key-deluxe-syariah-ciledug-tangerang",
+      "location": {
+        "lat": -6.251179,
+        "lng": 106.715478,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-k-key-deluxe-syariah-ciledug-tangerang-2",
+        "method": "Titik latitude/longitude publik pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik perkiraan portal. Tidak memakai field location yang berbeda; posisi unit perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "8cdbe26a901a6b8baa1bb0c1fafb1bb13971fe80ec33a014cf12eae392a23de9",
+        "selector": "detail.latitude / detail.longitude (bukan detail.location)"
+      }
+    },
+    {
+      "rentalId": "sewa-kost-mahasin-2-cileungsi",
+      "location": {
+        "lat": -6.39465,
+        "lng": 106.960228,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-mahasin-2-cileungsi-bogor",
+        "method": "Titik latitude/longitude publik pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik perkiraan portal. Tidak memakai field location yang berbeda; posisi unit perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "163c3fd0157335062d22ff1085b5eb0ffe7cb5aa4aa3c2a7e9143bb23995362c",
+        "selector": "detail.latitude / detail.longitude (bukan detail.location)"
+      }
+    },
+    {
+      "rentalId": "sewa-rumah-griya-kenari-mas-cileungsi-kidul",
+      "location": {
+        "lat": -6.409934,
+        "lng": 106.957453,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cileungsi-kidul-1",
+        "method": "Pin publik location.coordinate pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin dari pengiklan/portal, belum disurvei; posisi unit dan pintu masuk perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "6d87db360f9956afec10124685522309c1f1c6f37c37147aa876c97f62e63d0a",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-jakasampurna-keluarga-kranji",
+      "location": {
+        "lat": -6.239758,
+        "lng": 106.975755,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-3-rt-002-rw-010-jakasampurna",
+        "method": "Pin publik location.coordinate pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin dari pengiklan/portal, belum disurvei; posisi unit dan pintu masuk perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "3aade8a5ea16a94fe35950f125b16e70514200b7df58ef7956002ede2b4c784b",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-griya-anindya-jatibening",
+      "location": null,
+      "note": "Sumber daftar mengembalikan HTTP 401. Griya Anindya belum memiliki titik bangunan terverifikasi; tidak memakai centroid Jatibening."
+    },
+    {
+      "rentalId": "sewa-kontrakan-mini-jatimulya",
+      "location": null,
+      "note": "Sumber iklan mengembalikan HTTP 403. Klaim sekitar 1 km LRT Jatimulya tidak dipakai untuk menebak posisi unit."
+    },
+    {
+      "rentalId": "sewa-mutiara-bekasi-2-kamar",
+      "location": {
+        "lat": -6.252352,
+        "lng": 106.990891,
+        "precision": "building",
+        "label": "Apartemen Mutiara Bekasi",
+        "url": "https://hotels.cloudbeds.com/reservation/Vmsc5m",
+        "method": "GeoCoordinates halaman reservasi pengelola Dreamzzz di Apartemen Mutiara Bekasi",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik gedung dari pengelola akomodasi di Apartemen Mutiara Bekasi, bukan verifikasi unit sewa/stock.",
+      "evidence": {
+        "sha256": "d77b0f7fc7f532ebc962e29bbcdd9aa6e5879373d09a350ec92971eb64e51501",
+        "selector": "JSON-LD LodgingBusiness.geo; nama/alamat Apartemen Mutiara Bekasi cocok"
+      }
+    },
+    {
+      "rentalId": "sewa-menara-cawang-2-kamar",
+      "location": {
+        "lat": -6.255992,
+        "lng": 106.867483,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartmen-menara-cawang",
+        "method": "Pin publik location.coordinate pada halaman iklan",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin dari pengiklan/portal, belum disurvei; posisi unit dan pintu masuk perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "d83e7e48433a2ca9308ed7546015df905f2bb6aa620c48b870ed1351b327aeab",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-sentra-timur-studio-cakung",
+      "location": {
+        "lat": -6.204935,
+        "lng": 106.949404,
+        "precision": "approximate",
+        "label": "Sentra Timur Residence (pin portal)",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sentra-timur-dekat-walikota-jakarta-timur-di-apartemen-sentra-timur",
+        "method": "Pin publik apartemen yang sama dari iklan Pinhome",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik portal untuk Sentra Timur Residence; posisi tower/unit belum dipastikan.",
+      "evidence": {
+        "sha256": "8b5cc9617cc23d30688895022aae9755e8b15cc99923442dcbeb2299777d554f",
+        "selector": "__UNIT_DETAIL__.location.coordinate; nama gedung sesuai kedua iklan"
+      }
+    },
+    {
+      "rentalId": "sewa-bellevue-cikoko-2-kamar",
+      "location": {
+        "lat": -6.242161,
+        "lng": 106.853826,
+        "precision": "building",
+        "label": "Bellevue Place",
+        "url": "https://www.rukita.co/place/apartemen-belleuve-place-2br-city-view-1",
+        "method": "GeoCoordinates gedung di halaman Rukita",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik gedung apartemen, bukan posisi unit atau pintu masuk.",
+      "evidence": {
+        "sha256": "690aace5d77cfef13e378c4036356be042b09d97ce4d5ac3e0e74a4cd72b890d",
+        "selector": "JSON-LD.geo.latitude / longitude"
+      }
+    },
+    {
+      "rentalId": "sewa-ihrish-greenpark43",
+      "location": {
+        "lat": -6.309006,
+        "lng": 106.934444,
+        "precision": "complex",
+        "label": "Green Park Residence",
+        "url": "https://sikumbang.tapera.go.id/lokasi-perumahan/BKS1210032025T001",
+        "method": "Tautan maps lokasi pada profil GREEN PARK RESIDENCE di Sikumbang",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik acuan kompleks dari Sikumbang. Tiga iklan berada di Green Park Jatimelati; jarak dihitung dari acuan kompleks, bukan unit."
+    },
+    {
+      "rentalId": "sewa-ihrish-greenpark60",
+      "location": {
+        "lat": -6.309006,
+        "lng": 106.934444,
+        "precision": "complex",
+        "label": "Green Park Residence",
+        "url": "https://sikumbang.tapera.go.id/lokasi-perumahan/BKS1210032025T001",
+        "method": "Tautan maps lokasi pada profil GREEN PARK RESIDENCE di Sikumbang",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik acuan kompleks dari Sikumbang. Tiga iklan berada di Green Park Jatimelati; jarak dihitung dari acuan kompleks, bukan unit."
+    },
+    {
+      "rentalId": "sewa-ihrish-greenpark75",
+      "location": {
+        "lat": -6.309006,
+        "lng": 106.934444,
+        "precision": "complex",
+        "label": "Green Park Residence",
+        "url": "https://sikumbang.tapera.go.id/lokasi-perumahan/BKS1210032025T001",
+        "method": "Tautan maps lokasi pada profil GREEN PARK RESIDENCE di Sikumbang",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Titik acuan kompleks dari Sikumbang. Tiga iklan berada di Green Park Jatimelati; jarak dihitung dari acuan kompleks, bukan unit."
+    }
+  ]
+}

@@ -323,7 +323,9 @@ test("shows Muslim-family rentals and unverified Instagram leads with links", as
   await expect(rentals.first()).toContainText(
     "Lingkungan keluarga muslim (uji)",
   );
-  await expect(rentals.first()).toContainText("lokasi sampai tingkat kawasan");
+  await expect(rentals.first()).toContainText(
+    "Lokasi belum terbukti · belum ada pin",
+  );
   await page.locator("[data-rental-area=Depok]").click();
   await expect(rentals).toHaveCount(1);
   await expect(rentals.first()).toContainText("Apartemen Sewa Uji");

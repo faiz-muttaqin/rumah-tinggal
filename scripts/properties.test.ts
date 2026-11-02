@@ -559,6 +559,114 @@ test("planned stations qualify a project only when formally planned or being bui
   assert.equal(bogor.status, "under-construction");
 });
 
+test("rental location curation requires complete provenance and links only within the raw radius", {
+  skip: python,
+}, async (t) => {
+  const directory = await mkdtemp(join(tmpdir(), "rumah-rental-locations-"));
+  t.after(() => rm(directory, { recursive: true, force: true }));
+  const catalogue = JSON.parse(await readFile("research/rentals.json", "utf8"));
+  const rental = catalogue.rentals[0];
+  const mosque = (id: string, lat: number) => ({
+    id,
+    name: id,
+    address: "Kawasan uji",
+    lat,
+    lng: 107,
+    eventCount: 1,
+    sourceUrl: `https://ihrish.app/masjid/${id}/`,
+    googleMapsUrl: `https://www.google.com/maps/search/?api=1&query=${lat.toFixed(6)},107.000000`,
+    profile: null,
+  });
+  const files = Object.fromEntries(
+    ["input", "rentals", "locations", "mosques", "output"].map((key) => [
+      key,
+      join(directory, `${key}.json`),
+    ]),
+  );
+  await writeFile(
+    files.input,
+    JSON.stringify({ checkedAt: "2026-11-02", properties: [] }),
+  );
+  await writeFile(
+    files.rentals,
+    JSON.stringify({ ...catalogue, rentals: [rental] }),
+  );
+  await writeFile(
+    files.mosques,
+    JSON.stringify({
+      schemaVersion: 1,
+      checkedAt: "2026-11-02",
+      source: {
+        url: "https://ihrish.app/peta/?kapan=semua",
+        reportedMosques: 2,
+        reportedEvents: 2,
+      },
+      mosques: [
+        mosque("uji-dekat", -6.25),
+        mosque("uji-batas", -6.25 + 1.504 / 111.2),
+      ],
+    }),
+  );
+  const location = {
+    lat: -6.25,
+    lng: 107,
+    precision: "approximate",
+    label: "Pin portal",
+    url: "https://example.invalid/pin",
+    method: "Pin publik",
+    checkedAt: "2026-11-02",
+  };
+  const entry = {
+    rentalId: rental.id,
+    note: "Pin perkiraan, bukan posisi unit.",
+    location,
+  };
+  const run = async (items: object[]) => {
+    await writeFile(
+      files.locations,
+      JSON.stringify({ schemaVersion: 1, checkedAt: "2026-11-02", items }),
+    );
+    return build([
+      files.input,
+      files.output,
+      "--rentals",
+      files.rentals,
+      "--rental-locations",
+      files.locations,
+      "--mosques",
+      files.mosques,
+    ]);
+  };
+  const ok = await run([entry]);
+  assert.equal(ok.status, 0, ok.stderr);
+  const published = JSON.parse(await readFile(files.output, "utf8")).metadata
+    .rentals.rentals[0];
+  assert.equal(
+    published.lastChecked,
+    rental.lastChecked,
+    "checking a location does not refresh price or stock",
+  );
+  assert.equal(published.location.checkedAt, "2026-11-02");
+  assert.deepEqual(published.nearbyMosques, [
+    { id: "uji-dekat", name: "uji-dekat", km: 0 },
+  ]);
+  for (const items of [
+    [],
+    [entry, entry],
+    [{ ...entry, rentalId: "missing" }],
+    [{ ...entry, location: { ...location, lat: null } }],
+    [{ ...entry, location: { ...location, precision: "centroid" } }],
+    [{ ...entry, location: { ...location, url: "javascript:fail()" } }],
+  ]) {
+    assert.notEqual((await run(items)).status, 0, JSON.stringify(items));
+  }
+  assert.equal((await run([{ ...entry, location: null }])).status, 0);
+  const empty = JSON.parse(await readFile(files.output, "utf8")).metadata
+    .rentals.rentals[0];
+  assert.equal(empty.location, null);
+  assert.deepEqual(empty.nearbyMosques, []);
+});
+
 test("rentals and unverified leads keep privacy and labels", {
   skip: python,
 }, async (t) => {

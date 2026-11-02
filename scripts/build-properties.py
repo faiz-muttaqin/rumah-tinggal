@@ -594,7 +594,7 @@ RENTAL_TYPES = {"kontrakan", "rumah-sewa", "apartemen-sewa", "kos-keluarga", "la
 
 
 def load_rentals(path=ROOT / "research/rentals.json"):
-    # Sewa: tanpa nama/kontak pemilik; rumah perorangan tanpa koordinat.
+    # Titik dikurasi terpisah agar regenerasi harga tidak menghapus provenans lokasi.
     if not path.exists():
         return None
     data = json.loads(path.read_text())
@@ -661,6 +661,57 @@ def load_rentals(path=ROOT / "research/rentals.json"):
             "lastChecked": item["lastChecked"][:10],
         })
     return {"checkedAt": data["checkedAt"], "note": text(data.get("note"), "rentals.note", 600), "rentals": rentals}
+
+
+def add_rental_locations(rentals, path, mosques):
+    if rentals is None or path is None or not path.exists():
+        return rentals
+    data = json.loads(path.read_text())
+    if data.get("schemaVersion") != 1 or not is_date(data.get("checkedAt")):
+        raise Invalid("rental-locations: versi atau tanggal tidak valid")
+    by_id = {r["id"]: r for r in rentals["rentals"]}
+    if len(by_id) != len(rentals["rentals"]):
+        raise Invalid("rental-locations: ID sewa ganda")
+    seen = set()
+    for entry in data.get("items", []):
+        rid = entry.get("rentalId")
+        if rid not in by_id or rid in seen:
+            raise Invalid("rental-locations: ID sewa hilang atau ganda")
+        seen.add(rid)
+        rental = by_id[rid]
+        rental["locationNote"] = text(entry.get("note"), "rental-locations.note", 500)
+        rental["location"] = None
+        rental["nearbyMosques"] = []
+        point = entry.get("location")
+        if point is None:
+            continue
+        lat, lng = point.get("lat"), point.get("lng")
+        if (isinstance(lat, bool) or isinstance(lng, bool)
+            or not isinstance(lat, (int, float)) or not isinstance(lng, (int, float))
+            or not BBOX[1] <= lat <= BBOX[3] or not BBOX[0] <= lng <= BBOX[2]):
+            raise Invalid("rental-locations: koordinat di luar cakupan atau tidak valid")
+        if point.get("precision") not in {"approximate", "building", "complex"} or not is_date(point.get("checkedAt")):
+            raise Invalid("rental-locations: ketelitian atau tanggal tidak valid")
+        rental["location"] = {
+            "lat": round(lat, 6), "lng": round(lng, 6),
+            "precision": point["precision"],
+            "label": text(point.get("label"), "rental-locations.label", 120),
+            "url": url(point.get("url"), "rental-locations.url"),
+            "method": text(point.get("method"), "rental-locations.method", 180),
+            "note": rental["locationNote"], "checkedAt": point["checkedAt"][:10],
+        }
+        for mosque in (mosques or {}).get("items", []):
+            if mosque["area"] is None:
+                continue
+            km = distance((lng, lat), (mosque["lng"], mosque["lat"]))
+            # Filter sebelum pembulatan: 1,504 km tidak masuk radius 1,5 km.
+            if km <= (mosques or {}).get("radiusKm", 1.5):
+                rental["nearbyMosques"].append({"id": mosque["id"], "name": mosque["name"], "km": round(km, 3)})
+        rental["nearbyMosques"].sort(key=lambda m: (m["km"], m["id"]))
+    if seen != set(by_id):
+        raise Invalid("rental-locations: setiap sewa wajib punya hasil cek lokasi")
+    rentals["locationsCheckedAt"] = data["checkedAt"][:10]
+    return rentals
 
 
 SALE_CATEGORIES = {"rumah", "kavling"}
@@ -993,6 +1044,7 @@ def build(
     sale_ads_path=ROOT / "research/sale-ads.json",
     mosques_path=ROOT / "research/masjid/ihrish-mosques.json",
     mosque_links_path=ROOT / "research/masjid/ihrish-property-links.json",
+    rental_locations_path=None,
 ):
     regions = json.loads((ROOT / "public/data/regions.geojson").read_text())["features"]
     stations = load_stations()
@@ -1001,7 +1053,9 @@ def build(
     mosques = load_mosques(mosques_path, regions)
     islamic = add_mosques_to_islamic(load_islamic(), mosques)
     leads = load_leads(leads_path)
-    rentals = load_rentals(rentals_path)
+    if rental_locations_path is None and rentals_path.resolve() == (ROOT / "research/rentals.json").resolve():
+        rental_locations_path = ROOT / "research/rental-locations.json"
+    rentals = add_rental_locations(load_rentals(rentals_path), rental_locations_path, mosques)
     sale_ads = load_sale_ads(sale_ads_path)
     max_km = source.get("maxDistanceKm", 3)
     features, dropped, seen = [], [], set()
@@ -1092,12 +1146,13 @@ def main():
     parser.add_argument("--planned", type=pathlib.Path, default=ROOT / "research/planned-stations.json")
     parser.add_argument("--leads", type=pathlib.Path, default=ROOT / "research/leads.json")
     parser.add_argument("--rentals", type=pathlib.Path, default=ROOT / "research/rentals.json")
+    parser.add_argument("--rental-locations", type=pathlib.Path, help="Kurasi titik publik sewa, terpisah dari harga")
     parser.add_argument("--sale-ads", type=pathlib.Path, default=ROOT / "research/sale-ads.json")
     parser.add_argument("--mosques", type=pathlib.Path, default=ROOT / "research/masjid/ihrish-mosques.json")
     parser.add_argument("--mosque-links", type=pathlib.Path, default=ROOT / "research/masjid/ihrish-property-links.json")
     args = parser.parse_args()
     try:
-        result, dropped = build(json.loads(args.input.read_text()), args.planned, args.leads, args.rentals, args.sale_ads, args.mosques, args.mosque_links)
+        result, dropped = build(json.loads(args.input.read_text()), args.planned, args.leads, args.rentals, args.sale_ads, args.mosques, args.mosque_links, args.rental_locations)
     except Invalid as error:
         sys.exit(f"Data riset tidak valid: {error}")
     body = json.dumps(result, ensure_ascii=False, indent=1) + "\n"

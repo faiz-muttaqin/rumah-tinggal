@@ -6,6 +6,8 @@ import {
   type MosqueEvent,
   type ResearchMosque,
   type ResearchMosques,
+  type ResearchRental,
+  rentText,
   safeUrl,
 } from "./research-data.ts";
 import type { Listing, Station } from "./types.ts";
@@ -90,12 +92,19 @@ export function mosquePopupHTML(
   stops: Station[],
   selection?: { home: Listing; example: boolean },
   rentalLeadIds: string[] = [],
+  locatedRentals: ResearchRental[] = [],
 ): string {
   const near = nearestMosqueStops(mosque, stops);
+  const mappedRentals = locatedRentals.filter(
+    (rental) =>
+      rental.location &&
+      rental.nearbyMosques?.some((item) => item.id === mosque.id),
+  );
   const rentals = mosque.relatedListings.filter(
     (listing) =>
-      listing.kind === "rental" ||
-      (listing.kind === "lead" && rentalLeadIds.includes(listing.id)),
+      !mappedRentals.some((rental) => rental.id === listing.id) &&
+      (listing.kind === "rental" ||
+        (listing.kind === "lead" && rentalLeadIds.includes(listing.id))),
   );
   return `<article class="mosque-popup" data-testid="mosque-popup">
     <span class="mosque-kicker">Masjid dengan kajian · Ihrish</span>
@@ -106,8 +115,9 @@ export function mosquePopupHTML(
     <h3>Transportasi terdekat per moda</h3>
     ${near.length ? `<ul class="mosque-transit">${near.map(({ mode, station, distance }) => `<li><a href="${esc(googleMapsWalkToStation(mosque, station))}" ${external}>${esc(mode)} · ${esc(station.name)} · ${esc(distanceText(distance))} ↗</a></li>`).join("")}</ul><p class="mosque-note">Jarak garis lurus ke titik dalam dataset. Tautan membuka rute berjalan di Google Maps; pintu masuk dan waktu tempuh perlu dicek.</p>` : '<p class="mosque-note">Data transportasi belum tersedia.</p>'}
     ${selection ? `<p class="mosque-home">${esc(selection.home.title)}${selection.example ? " (contoh hunian)" : ""}: ${esc(distanceText(distanceKm(mosque, selection.home)))} garis lurus dari masjid. <a href="${esc(googleMapsRoute(selection.home, mosque))}" ${external}>Cek rute hunian → masjid ↗</a></p>` : ""}
-    <h3>Kontrakan / sewa di kawasan</h3>
-    ${rentals.length ? `<ul class="mosque-rentals">${rentals.map((listing) => `<li><a href="/riset#${encodeURIComponent(listing.id)}">${esc(listing.title)}</a>${listing.kind === "lead" ? " · Petunjuk belum diverifikasi" : ""}<small>${esc(listing.relation)} ${esc(listing.note)}</small></li>`).join("")}</ul>` : '<p class="mosque-note">Belum ada kontrakan atau sewa yang terhubung dalam katalog. Cari dari kawasan masjid; jarak unit belum diketahui.</p>'}
+    <h3>Kontrakan / sewa sekitar</h3>
+    ${mappedRentals.length ? `<ul class="mosque-rentals">${mappedRentals.map((rental) => `<li><a href="/?koleksi=sewa&sewa=${encodeURIComponent(rental.id)}">${esc(rental.title)}</a><small>${esc(rentText(rental))} · ≈ ${esc(distanceText(rental.nearbyMosques?.find((item) => item.id === mosque.id)?.km ?? 0))} dari titik acuan ${rental.location?.precision === "approximate" ? "perkiraan portal" : rental.location?.precision === "complex" ? "kompleks" : "gedung"}, bukan posisi unit. Harga dicek ${esc(checkedDate(rental.lastChecked))}.</small></li>`).join("")}</ul>` : ""}
+    ${rentals.length ? `<ul class="mosque-rentals">${rentals.map((listing) => `<li><a href="/riset#${encodeURIComponent(listing.id)}">${esc(listing.title)}</a>${listing.kind === "lead" ? " · Petunjuk belum diverifikasi" : ""}<small>${esc(listing.relation)} ${esc(listing.note)}</small></li>`).join("")}</ul>` : mappedRentals.length ? "" : '<p class="mosque-note">Belum ada kontrakan atau sewa yang terhubung dalam katalog. Cari dari kawasan masjid; jarak unit belum diketahui.</p>'}
     <div class="mosque-actions"><a href="/riset#sewa">Jelajahi sewa & kontrakan ↗</a><a href="/riset#${encodeURIComponent(mosque.id)}">Hunian sekitar masjid ↗</a><a href="${esc(safeUrl(mosque.googleMapsUrl))}" ${external}>Titik Google Maps ↗</a><button type="button" class="popup-action" data-pin-mosque>Simpan sebagai pin</button></div>
   </article>`;
 }

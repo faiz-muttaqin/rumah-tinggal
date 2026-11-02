@@ -410,6 +410,155 @@ select {
   padding: 2px 5px;
   font-size: 11px;
 }
+#rentals-tab {
+  grid-column: 1 / -1;
+}
+.rental-filters {
+  padding-block: 12px;
+}
+.sidebar.is-rentals .sidebar-top > .eyebrow,
+.sidebar.is-rentals .intro {
+  display: none;
+}
+.sidebar.is-rentals h1 {
+  font-size: 24px;
+  line-height: 1.3;
+  margin: 0 0 18px;
+}
+.rental-filters > label {
+  display: grid;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 650;
+}
+.rental-filters > label + label {
+  margin-top: 10px;
+}
+.rental-map-focus {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 5px;
+  font-size: 11px;
+  margin-top: 10px;
+}
+.rental-map-focus select {
+  width: 100%;
+  max-width: 100%;
+  height: 38px;
+}
+.rental-pin {
+  color: white;
+  background: var(--rental-color);
+  border: 2px solid white;
+  border-radius: 18px 18px 18px 3px;
+  padding: 7px 10px;
+  font:
+    700 11px "Plus Jakarta Sans Variable",
+    sans-serif;
+  box-shadow: 0 2px 7px #24382e40;
+  cursor: pointer;
+}
+.rental-pin.is-approximate {
+  color: var(--rental-color);
+  border: 2px dashed var(--rental-color);
+  background: #fffef9;
+}
+.rental-pin:hover,
+.rental-pin:focus-visible {
+  outline: 3px solid #e8b670;
+  outline-offset: 2px;
+  z-index: 4;
+}
+.rental-popup-item + .rental-popup-item {
+  border-top: 1px solid #d7dfd4;
+  margin-top: 16px;
+  padding-top: 12px;
+}
+.rental-mosque-link {
+  padding: 0;
+  color: #175442;
+  border: 0;
+  text-align: left;
+  text-decoration: underline;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+.rental-popup .mosque-transit a {
+  display: block;
+  margin-top: 3px;
+}
+.rental-filters select {
+  width: 100%;
+  height: 40px;
+}
+.rental-type-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.rental-type-filters .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.rental-kind-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--rental-color);
+  flex-shrink: 0;
+}
+.rental-location-note {
+  margin: 0 0 14px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f0f2e9;
+  color: #596950;
+  font-size: 11px;
+  line-height: 1.7;
+}
+.listing-card.map-rental-card {
+  border-left: 3px solid var(--rental-color);
+  cursor: default;
+}
+.map-rental-card .card-price {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+.map-rental-card .card-title {
+  margin: 0;
+}
+.rental-tag {
+  color: var(--rental-color);
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.rental-card-location,
+.rental-card-checked {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #63705e;
+  margin: 0;
+}
+.rental-card-location svg {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+}
+.rental-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.rental-card-actions .button {
+  font-size: 11px;
+  min-height: 40px;
+}
 .results {
   min-height: 0;
   overflow-y: auto;
@@ -687,6 +836,90 @@ select {
   gap: 8px;
   align-items: flex-end;
   z-index: 2;
+  max-height: calc(100% - 120px);
+  overflow-y: auto;
+  padding: 3px;
+  margin: -3px;
+  scrollbar-width: thin;
+}
+.map-layer-panel {
+  width: 215px;
+  flex-shrink: 0;
+  border: 1px solid #dde4d8;
+  border-radius: 10px;
+  background: #fffef9f5;
+  box-shadow: 0 4px 20px #304a3810;
+}
+.map-layer-panel > summary {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  padding: 12px;
+  min-height: 44px;
+  font-size: 12px;
+  font-weight: 700;
+  list-style: none;
+}
+.map-layer-panel > summary::-webkit-details-marker {
+  display: none;
+}
+.map-layer-panel > summary::after {
+  content: "+";
+  margin-left: auto;
+  font-size: 17px;
+}
+.map-layer-panel[open] > summary::after {
+  content: "−";
+}
+.map-layer-panel > summary svg {
+  width: 16px;
+  height: 16px;
+}
+.map-layer-panel > summary > span {
+  font-size: 10px;
+  font-weight: 500;
+  color: #63705e;
+}
+.map-layer-options,
+.rental-layer-options {
+  display: grid;
+  gap: 6px;
+  padding: 0 8px 8px;
+  max-height: min(480px, calc(100dvh - 290px));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.map-layer-panel .layer-control {
+  min-width: 0;
+  box-shadow: none;
+}
+.rental-layer-options small {
+  font-size: 10px;
+  font-weight: 500;
+  color: #63705e;
+}
+.rental-layer-options .map-road-note {
+  max-width: none;
+  margin: 4px 0;
+  padding: 4px;
+  text-align: left;
+}
+.rental-map-summary {
+  width: 215px;
+  padding: 10px;
+  border: 1px solid #dde4d8;
+  border-radius: 8px;
+  background: #fffef9f5;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.rental-map-summary .button {
+  width: 100%;
+  min-height: 44px;
+  font-size: 11px;
+  margin-top: 6px;
 }
 .layer-control {
   display: flex;
@@ -703,6 +936,10 @@ select {
   box-shadow: 0 4px 20px #304a3810;
   position: relative;
   cursor: pointer;
+}
+.layer-control:has(input:disabled) {
+  opacity: 0.55;
+  cursor: default;
 }
 .layer-control > svg {
   width: 17px;
@@ -1639,6 +1876,9 @@ dialog h3 {
   .sidebar {
     height: 100%;
     padding-bottom: 55px;
+    display: block;
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
   .sidebar-top {
     padding: 23px 20px 0;
@@ -1686,6 +1926,8 @@ dialog h3 {
   }
   .results {
     padding-inline: 20px;
+    overflow-y: visible;
+    min-height: 240px;
   }
   .results-toolbar {
     padding-block: 15px;
@@ -1732,6 +1974,12 @@ dialog h3 {
   .map {
     height: 100%;
   }
+  .map-panel .maplibregl-control-container {
+    display: none;
+  }
+  .show-map .maplibregl-control-container {
+    display: block;
+  }
   .map-heading {
     top: 14px;
     left: 14px;
@@ -1748,9 +1996,48 @@ dialog h3 {
     top: 96px;
     left: 14px;
     right: 14px;
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 6px;
+    max-height: calc(100% - 200px);
+    align-items: stretch;
+  }
+  .map-layer-panel,
+  .rental-map-summary {
+    width: 100%;
+  }
+  .map-panel.is-rentals .add-actions,
+  .map-panel.is-rentals #rental-map-status {
+    display: none;
+  }
+  .map-panel.is-rentals .rental-map-summary {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+  }
+  .map-panel.is-rentals #view-rentals {
+    min-height: 34px;
+    padding: 6px 8px;
+  }
+  .map-layer-options,
+  .rental-layer-options {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-height: min(260px, calc(100dvh - 350px));
+  }
+  .rental-layer-options .layer-control {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px 2px;
+  }
+  .rental-layer-options .switch {
+    grid-column: 1 / -1;
+    justify-self: end;
+    margin-left: 0;
+  }
+  .rental-layer-options .layer-control input {
+    bottom: 6px;
+  }
+  .rental-layer-options .rental-kind-dot {
+    display: none;
   }
   .layer-control {
     font-size: 11px;
@@ -1773,7 +2060,7 @@ dialog h3 {
     right: 8px;
   }
   .map-road-note {
-    flex: 0 0 100%;
+    grid-column: 1 / -1;
     max-width: none;
     text-align: left;
   }
@@ -1808,6 +2095,9 @@ dialog h3 {
     max-width: calc(100% - 28px);
     max-height: calc(100% - 340px);
     padding: 17px;
+  }
+  .map-panel:has(.map-layer-panel[open]) .detail-card {
+    max-height: calc(100% - 500px);
   }
   .detail-card h2 {
     font-size: 19px;

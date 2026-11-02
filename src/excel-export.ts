@@ -1,6 +1,7 @@
 import type { Cell, Sheet } from "write-excel-file/universal";
 import { nearestStation } from "./geo.ts";
 import { googleMapsLocation } from "./maps-links.ts";
+import { rentalLocationLabel } from "./rental-map.ts";
 import {
   monthlyRent,
   nearestRail,
@@ -171,6 +172,13 @@ function rentalSheet(rentals: ResearchRental[]): ExportSheet {
       "Tanggal iklan",
       "Verifikasi",
       "Tanggal cek",
+      "Latitude titik acuan",
+      "Longitude titik acuan",
+      "Ketelitian lokasi",
+      "Sumber titik",
+      "Tanggal cek lokasi",
+      "Catatan lokasi",
+      "Masjid Ihrish ≤ 1,5 km (garis lurus dari titik acuan)",
     ],
     rows: rentals.map((rental) => [
       rental.id,
@@ -201,6 +209,15 @@ function rentalSheet(rentals: ResearchRental[]): ExportSheet {
       rental.postedOrUpdated,
       verdict(rental.verdict),
       rental.lastChecked,
+      rental.location?.lat,
+      rental.location?.lng,
+      rentalLocationLabel(rental),
+      url(rental.location?.url),
+      rental.location?.checkedAt,
+      rental.locationNote ?? rental.location?.note,
+      (rental.nearbyMosques ?? [])
+        .map((mosque) => `${mosque.name}: ≈ ${mosque.km} km`)
+        .join("\n"),
     ]),
   };
 }

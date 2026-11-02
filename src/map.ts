@@ -11,7 +11,16 @@ import { BASEMAP_GLYPHS, BASEMAP_LAYERS, BASEMAP_SOURCE } from "./basemap.ts";
 import { escapeHTML, money } from "./geo.ts";
 import { googleMapsLocation } from "./maps-links.ts";
 import { PIN_STYLES, pinIcon } from "./pins.ts";
-import type { ResearchMosque } from "./research-data.ts";
+import {
+  RENTAL_MAP_GROUPS,
+  rentalMapKind,
+  rentalPinGroups,
+} from "./rental-map.ts";
+import type {
+  RentalLocation,
+  ResearchMosque,
+  ResearchRental,
+} from "./research-data.ts";
 import type { Area, Listing, Pin, Place } from "./types.ts";
 
 // MapLibre 6 requires an explicit bundled worker URL with Vite.
@@ -81,12 +90,14 @@ export class HousingMap {
   map: MapInstance;
   markers: Marker[] = [];
   pinMarkers: Marker[] = [];
+  rentalMarkers: Marker[] = [];
   ready: Promise<void>;
   private mobilityPopup?: Popup;
   private mobilityPopupMode?: TransitMode;
   private placePopup?: Popup;
   private pinPopup?: Popup;
   private mosquePopup?: Popup;
+  private rentalPopup?: Popup;
   onPinPlace?: (place: Place) => void;
   onMosqueSelect?: (id: string) => void;
   constructor(
@@ -855,6 +866,95 @@ export class HousingMap {
 
   closeMosque(): void {
     this.mosquePopup?.remove();
+  }
+
+  async updateRentals(
+    rentals: ResearchRental[],
+    onSelect: (rentals: ResearchRental[]) => void,
+  ): Promise<void> {
+    await this.ready;
+    for (const marker of this.rentalMarkers) marker.remove();
+    this.rentalMarkers = rentalPinGroups(rentals).map((group) => {
+      const point = group[0]?.location;
+      if (!point) throw new Error("Titik sewa belum tersedia");
+      const kind = RENTAL_MAP_GROUPS.find(
+        (item) => item.id === rentalMapKind(group[0] as ResearchRental),
+      );
+      const button = document.createElement("button");
+      button.className = `rental-pin ${point.precision === "approximate" ? "is-approximate" : ""}`;
+      button.style.setProperty("--rental-color", kind?.color ?? "#65755b");
+      button.textContent =
+        group.length > 1 ? `${group.length} sewa` : (kind?.label ?? "Sewa");
+      button.dataset.rentalIds = group.map((rental) => rental.id).join(" ");
+      button.setAttribute(
+        "aria-label",
+        `${group.length} sewa: ${group.map((rental) => rental.title).join(", ")}`,
+      );
+      button.addEventListener("click", (event) => {
+        event.stopPropagation();
+        onSelect(group);
+      });
+      return new maplibregl.Marker({
+        element: button,
+        anchor: "bottom",
+        offset: [0, -5],
+      })
+        .setLngLat([point.lng, point.lat])
+        .addTo(this.map);
+    });
+    this.map.getContainer().dataset.rentalFeatures = String(
+      rentals.filter((rental) => rental.location).length,
+    );
+  }
+
+  async openRental(point: RentalLocation, content: HTMLElement): Promise<void> {
+    await this.ready;
+    this.map.flyTo({
+      center: [point.lng, point.lat],
+      zoom: 13.5,
+      duration: matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? 0
+        : 650,
+    });
+    this.closeRental();
+    this.closeMosque();
+    this.placePopup?.remove();
+    this.mobilityPopup?.remove();
+    this.rentalPopup = new maplibregl.Popup({
+      closeButton: true,
+      focusAfterOpen: false,
+      maxWidth: "340px",
+      anchor: "top",
+      className: "kajian-popup rental-popup",
+      offset: 18,
+    })
+      .setLngLat([point.lng, point.lat])
+      .setDOMContent(content)
+      .addTo(this.map);
+    // Fokus ke kontainer tanpa menggulir langsung ke tautan sumber di tengah rincian.
+    content.tabIndex = -1;
+    content.focus({ preventScroll: true });
+  }
+
+  closeRental(): void {
+    this.rentalPopup?.remove();
+  }
+
+  async fitRentals(rentals: ResearchRental[]): Promise<void> {
+    await this.ready;
+    const points = rentals.flatMap((rental) =>
+      rental.location ? [rental.location] : [],
+    );
+    if (!points.length) return;
+    const bounds = new maplibregl.LngLatBounds();
+    for (const point of points) bounds.extend([point.lng, point.lat]);
+    this.map.fitBounds(bounds, {
+      padding: { top: 120, bottom: 60, left: 45, right: 45 },
+      maxZoom: 13.5,
+      duration: matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? 0
+        : 500,
+    });
   }
 
   async showBuildings(visible: boolean): Promise<void> {
