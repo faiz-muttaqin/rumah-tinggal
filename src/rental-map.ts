@@ -62,6 +62,56 @@ export function rentalPinGroups(rentals: ResearchRental[]): ResearchRental[][] {
   return [...groups.values()];
 }
 
+/** Garis lurus dari acuan sewa ke masjid; bukan geometri rute jalan. */
+export function rentalConnections(
+  rentals: ResearchRental[],
+  mosques: ResearchMosque[],
+  focus?: ResearchMosque,
+): GeoJSON.FeatureCollection {
+  const features: GeoJSON.Feature[] = [];
+  const seen = new Set<string>();
+  for (const rental of rentals) {
+    const point = rental.location;
+    const relation = focus
+      ? rental.nearbyMosques?.find((item) => item.id === focus.id)
+      : rental.nearbyMosques?.[0];
+    const mosque = mosques.find((item) => item.id === relation?.id);
+    if (!point || !relation || !mosque) continue;
+    const key = `${point.lat},${point.lng},${mosque.id}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    features.push({
+      type: "Feature",
+      properties: { kind: "distance", label: `≈ ${distanceText(relation.km)}` },
+      geometry: {
+        type: "LineString",
+        coordinates: [
+          [point.lng, point.lat],
+          [mosque.lng, mosque.lat],
+        ],
+      },
+    });
+  }
+  if (focus) {
+    const ring: number[][] = [];
+    for (let step = 0; step <= 64; step++) {
+      const angle = (step * Math.PI) / 32;
+      ring.push([
+        focus.lng +
+          (1.5 * Math.cos(angle)) /
+            (111.2 * Math.cos((focus.lat * Math.PI) / 180)),
+        focus.lat + (1.5 * Math.sin(angle)) / 111.2,
+      ]);
+    }
+    features.push({
+      type: "Feature",
+      properties: { kind: "radius" },
+      geometry: { type: "Polygon", coordinates: [ring] },
+    });
+  }
+  return { type: "FeatureCollection", features };
+}
+
 export function rentalPopupHTML(
   rentals: ResearchRental[],
   mosques: ResearchMosque[] = [],

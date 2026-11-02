@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-31",
+  "checkedAt": "2026-11-02",
   "note": "Iklan sewa publik diperiksa pada tanggal di masing-masing kartu. Keterangan fasilitas dan transit dapat berasal dari iklan atau sumber kawasan, bukan survei; cek hubungan lokasinya. Nama dan kontak pemilik tidak disimpan. Harga dan ketersediaan cepat berubah.",
   "rentals": [
     {
@@ -1577,6 +1577,176 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-10-31"
+    },
+    {
+      "id": "sewa-ihrish-dutakranji-28",
+      "title": "Rumah sewa Duta Kranji 2 kamar",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Kranji, Bekasi Barat, Kota Bekasi",
+      "buildingOrCluster": "Perum Duta Kranji",
+      "rent": {
+        "amount": 28000000,
+        "period": "yearly",
+        "quote": "Rp 28 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perum-duta-kranji-jl-merak-543-kranji-bekasi",
+        "pageDate": "2026-06-07"
+      },
+      "bedrooms": 2,
+      "sizeM2": 60,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Perum Duta Kranji",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perum-duta-kranji-jl-merak-543-kranji-bekasi"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perum-duta-kranji-jl-merak-543-kranji-bekasi",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-06-07",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-02",
+      "note": "Dicantumkan karena titik portal berada sekitar 0.60 km garis lurus dari Masjid Nurul I'tishom dalam direktori Ihrish, bukan klaim kajian oleh pengiklan. Pembaruan iklan 2026-06-07; harga dibaca ulang 2 November 2026. Ketersediaan belum dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-ihrish-kranji-28-bulanan",
+      "title": "Rumah sewa Kranji 2 kamar dekat Nurul I’tishom",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Kranji, Bekasi Barat, Kota Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 2800000,
+        "period": "monthly",
+        "quote": "Rp 2,8 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcendrawaksih-8-kranji-bekasi-barat",
+        "pageDate": "2025-06-11"
+      },
+      "bedrooms": 2,
+      "sizeM2": 80,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Kranji Bekasi Barat",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcendrawaksih-8-kranji-bekasi-barat"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcendrawaksih-8-kranji-bekasi-barat",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-02",
+      "note": "Dicantumkan karena titik portal berada sekitar 0.11 km garis lurus dari Masjid Nurul I'tishom dalam direktori Ihrish, bukan klaim kajian oleh pengiklan. Pembaruan iklan 2025-06-11; harga dibaca ulang 2 November 2026. Ketersediaan belum dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-ihrish-alia-45",
+      "title": "Rumah sewa Alia Residence Jatiwarna 3 kamar",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Jatimelati, Pondokmelati, Kota Bekasi",
+      "buildingOrCluster": "Alia Residence Jatiwarna",
+      "rent": {
+        "amount": 45000000,
+        "period": "yearly",
+        "quote": "Rp 45 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jatimelati-2",
+        "pageDate": "2025-09-14"
+      },
+      "bedrooms": 3,
+      "sizeM2": 84,
+      "furnished": "semi",
+      "evidence": [
+        {
+          "quote": "Alia Residence Jatiwarna",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jatimelati-2"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jatimelati-2",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2025-09-14",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-02",
+      "note": "Dicantumkan karena titik portal berada sekitar 0.34 km garis lurus dari Masjid Al Ahdhar dalam direktori Ihrish, bukan klaim kajian oleh pengiklan. Pembaruan iklan 2025-09-14; harga dibaca ulang 2 November 2026. Ketersediaan belum dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-ihrish-galaxy-sirih-timur-35",
+      "title": "Rumah sewa Pulo Sirih Timur 2 kamar",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Pekayonjaya, Bekasi Selatan, Kota Bekasi",
+      "buildingOrCluster": "Grand Galaxy City",
+      "rent": {
+        "amount": 35000000,
+        "period": "yearly",
+        "quote": "Rp 35 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pulo-sirih-timur",
+        "pageDate": "2025-06-11"
+      },
+      "bedrooms": 2,
+      "sizeM2": 60,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Pulo Sirih Timur",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pulo-sirih-timur"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pulo-sirih-timur",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-02",
+      "note": "Dicantumkan karena titik portal berada sekitar 0.36 km garis lurus dari Masjid Al Furqan Grand Galaxy City dalam direktori Ihrish, bukan klaim kajian oleh pengiklan. Pembaruan iklan 2025-06-11; harga dibaca ulang 2 November 2026. Ketersediaan belum dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-ihrish-galaxy-raya-7-bulanan",
+      "title": "Rumah sewa Grand Galaxy 3 kamar",
+      "rentalType": "rumah-sewa",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Pekayonjaya, Bekasi Selatan, Kota Bekasi",
+      "buildingOrCluster": "Grand Galaxy City",
+      "rent": {
+        "amount": 7000000,
+        "period": "monthly",
+        "quote": "Rp 7 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-galaxy-raya",
+        "pageDate": "2025-06-11"
+      },
+      "bedrooms": 3,
+      "sizeM2": 99,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Grand Galaxy Bekasi",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-galaxy-raya"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-galaxy-raya",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-02",
+      "note": "Dicantumkan karena titik portal berada sekitar 0.85 km garis lurus dari Masjid Al Furqan Grand Galaxy City dalam direktori Ihrish, bukan klaim kajian oleh pengiklan. Pembaruan iklan 2025-06-11; harga dibaca ulang 2 November 2026. Ketersediaan belum dikonfirmasi langsung."
     }
   ]
 }

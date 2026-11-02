@@ -447,6 +447,8 @@ select {
   height: 38px;
 }
 .rental-pin {
+  position: absolute;
+  white-space: nowrap;
   color: white;
   background: var(--rental-color);
   border: 2px solid white;
@@ -920,6 +922,12 @@ select {
   min-height: 44px;
   font-size: 11px;
   margin-top: 6px;
+}
+.rental-map-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 36px;
+  align-items: center;
+  gap: 5px;
 }
 .layer-control {
   display: flex;
@@ -2007,6 +2015,15 @@ dialog h3 {
   .map-panel.is-rentals .add-actions,
   .map-panel.is-rentals #rental-map-status {
     display: none;
+  }
+  .map-panel.is-rentals .map-tools {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+  }
+  .map-panel.is-rentals .map-layer-panel[open],
+  .map-panel.is-rentals .rental-map-summary {
+    grid-column: 1 / -1;
   }
   .map-panel.is-rentals .rental-map-summary {
     padding: 0;

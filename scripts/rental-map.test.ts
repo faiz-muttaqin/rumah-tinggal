@@ -2,10 +2,11 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   filterMapRentals,
+  rentalConnections,
   rentalPinGroups,
   rentalPopupHTML,
 } from "../src/rental-map.ts";
-import type { ResearchRental } from "../src/research-data.ts";
+import type { ResearchMosque, ResearchRental } from "../src/research-data.ts";
 import { researchFixture } from "../tests/research-fixture.ts";
 
 test("rental pins group shared coordinates and filters preserve unlocated rentals", () => {
@@ -66,4 +67,51 @@ test("rental pins group shared coordinates and filters preserve unlocated rental
   assert.ok(
     rentalPopupHTML([unlocated]).includes('data-testid="rental-popup"'),
   );
+});
+
+test("map proximity draws one line per shared point and a 1.5 km mosque radius", () => {
+  const base = researchFixture.metadata.rentals.rentals[0] as ResearchRental;
+  const mosque = researchFixture.metadata.mosques.items[0] as ResearchMosque;
+  const located = {
+    ...base,
+    location: {
+      lat: mosque.lat + 0.003,
+      lng: mosque.lng,
+      precision: "approximate" as const,
+      label: "Pin portal",
+      url: "https://example.invalid/pin",
+      method: "Peta",
+      note: "Perkiraan",
+      checkedAt: "2026-11-02",
+    },
+    nearbyMosques: [{ id: mosque.id, name: mosque.name, km: 0.334 }],
+  };
+  const data = rentalConnections(
+    [located, { ...located, id: "same-point" }, { ...base, location: null }],
+    [mosque],
+    mosque,
+  );
+  assert.equal(data.features.length, 2);
+  const line = data.features[0];
+  assert.equal(line.geometry.type, "LineString");
+  if (line.geometry.type === "LineString")
+    assert.deepEqual(line.geometry.coordinates, [
+      [mosque.lng, mosque.lat + 0.003],
+      [mosque.lng, mosque.lat],
+    ]);
+  const radius = data.features[1];
+  assert.equal(radius.geometry.type, "Polygon");
+  if (radius.geometry.type === "Polygon") {
+    assert.equal(radius.geometry.coordinates[0].length, 65);
+    assert.deepEqual(
+      radius.geometry.coordinates[0][0],
+      radius.geometry.coordinates[0][64],
+    );
+    assert.ok(
+      Math.abs(
+        radius.geometry.coordinates[0][16][1] - mosque.lat - 1.5 / 111.2,
+      ) < 1e-8,
+    );
+  }
+  assert.equal(rentalConnections([], [mosque]).features.length, 0);
 });

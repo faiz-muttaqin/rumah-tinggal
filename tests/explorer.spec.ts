@@ -34,6 +34,43 @@ async function openMapLayers(page: Page) {
     await panel.locator("summary").click();
 }
 
+async function setRentalLayer(page: Page, kind: string, visible: boolean) {
+  const panel = page.locator("#rental-layers");
+  if ((await panel.getAttribute("open")) === null)
+    await panel.locator("summary").first().click();
+  await page.locator(`#rental-toggle-${kind}`).setChecked(visible);
+}
+
+async function expectClickableRentalPin(page: Page, kind: string) {
+  await expect
+    .poll(
+      () =>
+        page
+          .locator(`#map .rental-pin[data-rental-kind="${kind}"]`)
+          .evaluateAll((nodes) => {
+            const map = document.querySelector("#map")?.getBoundingClientRect();
+            if (!map) return 0;
+            return nodes.filter((node) => {
+              const r = node.getBoundingClientRect();
+              const x = r.x + r.width / 2,
+                y = r.y + r.height / 2;
+              const top = document.elementFromPoint(x, y);
+              return (
+                x > map.left &&
+                x < map.right &&
+                y > map.top &&
+                y < map.bottom &&
+                (top === node || node.contains(top))
+              );
+            }).length;
+          }),
+      {
+        message: `${kind} must have a visible map pin whose centre accepts clicks`,
+      },
+    )
+    .toBeGreaterThan(0);
+}
+
 async function expectRenderedVectors(page: Page) {
   for (const attribute of ["data-region-features", "data-station-features"]) {
     await expect
@@ -230,7 +267,7 @@ for (const [device, viewport] of [
     await expect(page.locator("#rental-count-kontrakan")).toHaveText("2");
 
     const rentalCards = page.getByTestId("map-rental-card");
-    await page.locator("#rental-toggle-kos").check();
+    await setRentalLayer(page, "kos", true);
     await expect(rentalCards).toHaveCount(1);
     await expect(rentalCards.first()).toContainText("Kos Keluarga Uji");
     await expect(page.locator("#detail-card")).toBeHidden();
@@ -238,14 +275,14 @@ for (const [device, viewport] of [
     await expect(page.locator("#rental-map-status")).toContainText(
       "belum dipetakan",
     );
-    await page.locator("#rental-toggle-kontrakan").check();
+    await setRentalLayer(page, "kontrakan", true);
     await expect(rentalCards).toHaveCount(3);
-    await page.locator("#rental-toggle-kos").uncheck();
+    await setRentalLayer(page, "kos", false);
     await expect(rentalCards).toHaveCount(2);
     await expect(page.locator("#rental-toggle-kontrakan")).toBeChecked();
-    await page.locator("#rental-toggle-apartemen").check();
+    await setRentalLayer(page, "apartemen", true);
     await expect(rentalCards).toHaveCount(3);
-    await page.locator("#rental-toggle-kontrakan").uncheck();
+    await setRentalLayer(page, "kontrakan", false);
     await expect(rentalCards).toHaveCount(1);
     await expect(rentalCards.first()).toContainText("Apartemen Sewa Uji");
     await expect(page.locator("#rental-toggle-apartemen")).toBeChecked();
@@ -472,6 +509,95 @@ for (const [device, viewport] of [
     await expect(page.locator("#map .rental-pin")).toHaveCount(0);
     await expect(popup).toHaveCount(0);
     expect(requests).toEqual([]);
+  });
+}
+
+for (const [device, viewport] of [
+  ["desktop", { width: 1440, height: 1000 }],
+  ["short-mobile", { width: 360, height: 667 }],
+] as const) {
+  test(`each rental toggle reveals real clickable pins after changing the viewport on ${device}`, async ({
+    page,
+  }, testInfo) => {
+    test.setTimeout(60_000);
+    await page.setViewportSize(viewport);
+    const base = researchFixture.metadata.rentals.rentals[0];
+    const mosque = researchFixture.metadata.mosques.items[0];
+    const location = {
+      lat: mosque.lat + 0.003,
+      lng: mosque.lng,
+      precision: "approximate",
+      label: "Pin uji",
+      url: "https://portal.example.invalid/pin",
+      method: "Peta uji",
+      note: "Perkiraan portal",
+      checkedAt: "2026-11-02",
+    };
+    await page.route("**/data/properties.geojson", (route) =>
+      route.fulfill({
+        json: {
+          ...researchFixture,
+          metadata: {
+            ...researchFixture.metadata,
+            rentals: {
+              ...researchFixture.metadata.rentals,
+              rentals: [
+                {
+                  ...base,
+                  id: "toggle-house",
+                  location,
+                  nearbyMosques: [
+                    { id: mosque.id, name: mosque.name, km: 0.334 },
+                  ],
+                },
+                {
+                  ...base,
+                  id: "toggle-apartment",
+                  rentalType: "apartemen-sewa",
+                  location: { ...location, lat: -6.36, lng: 106.83 },
+                  nearbyMosques: [],
+                },
+                {
+                  ...base,
+                  id: "toggle-kos",
+                  rentalType: "kos-keluarga",
+                  location: { ...location, lat: -6.24, lng: 106.68 },
+                  nearbyMosques: [],
+                },
+              ],
+            },
+          },
+        },
+      }),
+    );
+    await page.goto("/?koleksi=sewa");
+    for (const kind of ["kontrakan", "apartemen", "kos"])
+      await page.locator(`[data-rental-filter="${kind}"]`).click();
+    await expect(page.locator("#map .rental-pin")).toHaveCount(0);
+    if (device !== "desktop") await page.locator("#mobile-map").click();
+    for (const kind of ["kontrakan", "apartemen", "kos"]) {
+      await setRentalLayer(page, kind, true);
+      if (device !== "desktop")
+        await expect(page.locator("#rental-layers")).not.toHaveAttribute(
+          "open",
+        );
+      await expectClickableRentalPin(page, kind);
+    }
+    if ((await page.locator("#rental-layers").getAttribute("open")) === null)
+      await page.locator("#rental-layers > summary").click();
+    await page.locator("#rental-mosque-map").selectOption(mosque.id);
+    await page.locator("#fit-rentals").click();
+    await expectClickableRentalPin(page, "kontrakan");
+    await expect(page.getByTestId("map-rental-card")).toHaveCount(1);
+    await expectRenderedAttribute(page, "data-rental-distance-features", true);
+    await page
+      .locator('#map .rental-pin[data-rental-kind="kontrakan"]')
+      .click();
+    await expect(page.getByTestId("rental-popup")).toContainText(mosque.name);
+    await expectNoHorizontalOverflow(page);
+    await page.screenshot({
+      path: testInfo.outputPath(`visible-rental-${device}.png`),
+    });
   });
 }
 

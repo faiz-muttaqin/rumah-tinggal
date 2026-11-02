@@ -13,6 +13,7 @@ import { googleMapsLocation } from "./maps-links.ts";
 import { PIN_STYLES, pinIcon } from "./pins.ts";
 import {
   RENTAL_MAP_GROUPS,
+  rentalConnections,
   rentalMapKind,
   rentalPinGroups,
 } from "./rental-map.ts";
@@ -189,6 +190,15 @@ export class HousingMap {
         this.map.queryRenderedFeatures({ layers: ["basemap-buildings"] })
           .length,
       );
+      if (this.map.getLayer("rental-distance-lines")) {
+        container.dataset.rentalDistanceFeatures = String(
+          this.map.queryRenderedFeatures({ layers: ["rental-distance-lines"] })
+            .length,
+        );
+        container.dataset.rentalRadiusFeatures = String(
+          this.map.queryRenderedFeatures({ layers: ["rental-radius"] }).length,
+        );
+      }
       container.setAttribute("aria-busy", "false");
     });
     this.ready = new Promise((resolve) =>
@@ -886,6 +896,7 @@ export class HousingMap {
       button.textContent =
         group.length > 1 ? `${group.length} sewa` : (kind?.label ?? "Sewa");
       button.dataset.rentalIds = group.map((rental) => rental.id).join(" ");
+      button.dataset.rentalKind = rentalMapKind(group[0] as ResearchRental);
       button.setAttribute(
         "aria-label",
         `${group.length} sewa: ${group.map((rental) => rental.title).join(", ")}`,
@@ -940,16 +951,93 @@ export class HousingMap {
     this.rentalPopup?.remove();
   }
 
-  async fitRentals(rentals: ResearchRental[]): Promise<void> {
+  async showRentalConnections(
+    rentals: ResearchRental[],
+    mosques: ResearchMosque[],
+    focus?: ResearchMosque,
+  ): Promise<void> {
+    await this.ready;
+    if (!this.map.getSource("rental-distances")) {
+      this.map.addSource("rental-distances", {
+        type: "geojson",
+        data: { type: "FeatureCollection", features: [] },
+      });
+      this.map.addLayer({
+        id: "rental-radius",
+        type: "fill",
+        source: "rental-distances",
+        filter: ["==", ["get", "kind"], "radius"],
+        paint: { "fill-color": "#3a8062", "fill-opacity": 0.07 },
+      });
+      this.map.addLayer({
+        id: "rental-radius-edge",
+        type: "line",
+        source: "rental-distances",
+        filter: ["==", ["get", "kind"], "radius"],
+        paint: {
+          "line-color": "#39775d",
+          "line-width": 1.5,
+          "line-dasharray": [3, 2],
+        },
+      });
+      this.map.addLayer({
+        id: "rental-distance-lines",
+        type: "line",
+        source: "rental-distances",
+        filter: ["==", ["get", "kind"], "distance"],
+        paint: {
+          "line-color": "#8d532f",
+          "line-width": 2.5,
+          "line-dasharray": [2, 2],
+        },
+      });
+      this.map.addLayer({
+        id: "rental-distance-labels",
+        type: "symbol",
+        source: "rental-distances",
+        filter: ["==", ["get", "kind"], "distance"],
+        minzoom: 11,
+        layout: {
+          "symbol-placement": "line-center",
+          "text-field": ["get", "label"],
+          "text-font": ["Noto Sans Regular"],
+          "text-size": 12,
+          "text-allow-overlap": true,
+        },
+        paint: {
+          "text-color": "#703e23",
+          "text-halo-color": "#fffef9",
+          "text-halo-width": 2,
+        },
+      });
+    }
+    (this.map.getSource("rental-distances") as GeoJSONSource).setData(
+      rentalConnections(rentals, mosques, focus),
+    );
+  }
+
+  async fitRentals(
+    rentals: ResearchRental[],
+    focus?: ResearchMosque,
+  ): Promise<void> {
     await this.ready;
     const points = rentals.flatMap((rental) =>
       rental.location ? [rental.location] : [],
     );
-    if (!points.length) return;
+    if (!points.length && !focus) return;
     const bounds = new maplibregl.LngLatBounds();
     for (const point of points) bounds.extend([point.lng, point.lat]);
+    if (focus) {
+      const dlat = 1.5 / 111.2;
+      const dlng = dlat / Math.cos((focus.lat * Math.PI) / 180);
+      bounds.extend([focus.lng - dlng, focus.lat - dlat]);
+      bounds.extend([focus.lng + dlng, focus.lat + dlat]);
+    }
+    const mobile = matchMedia("(max-width: 760px)").matches;
     this.map.fitBounds(bounds, {
-      padding: { top: 120, bottom: 60, left: 45, right: 45 },
+      padding: mobile
+        ? { top: 215, bottom: 150, left: 35, right: 35 }
+        : { top: 105, bottom: 65, left: 45, right: 255 },
       maxZoom: 13.5,
       duration: matchMedia("(prefers-reduced-motion: reduce)").matches
         ? 0

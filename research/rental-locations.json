@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "checkedAt": "2026-11-02",
-  "note": "Kurasi titik publik dari 38 sewa. Pin perkiraan portal dibedakan dari titik gedung/kompleks; posisi unit tidak dijamin. Centroid administratif ditolak. Lokasi belum terbukti tetap di daftar tanpa pin. Harga dan stok tetap memakai tanggal cek iklan masing-masing.",
+  "note": "Kurasi titik publik seluruh sewa. Pin perkiraan portal dibedakan dari titik gedung/kompleks; posisi unit tidak dijamin. Centroid administratif ditolak. Lokasi belum terbukti tetap di daftar tanpa pin. Harga dan stok tetap memakai tanggal cek iklan masing-masing.",
   "items": [
     {
       "rentalId": "sewa-rumah-kluster-keluarga-muslim-furnish-dkt-tol-grand-wisata-bekasi",
@@ -576,6 +576,91 @@
         "checkedAt": "2026-11-02"
       },
       "note": "Titik acuan kompleks dari Sikumbang. Tiga iklan berada di Green Park Jatimelati; jarak dihitung dari acuan kompleks, bukan unit."
+    },
+    {
+      "rentalId": "sewa-ihrish-dutakranji-28",
+      "location": {
+        "lat": -6.22543,
+        "lng": 106.969845,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perum-duta-kranji-jl-merak-543-kranji-bekasi",
+        "method": "Pin publik location.coordinate pada halaman iklan aktif; bukan centroid administratif",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin perkiraan pengiklan/portal, belum disurvei. Jarak ke masjid dihitung dari titik acuan, bukan pintu unit.",
+      "evidence": {
+        "sha256": "dc5af3959f01d6b2e906a50f1ed6a3978c65d3ae8cb46517fb1d3712042fcc09",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-ihrish-kranji-28-bulanan",
+      "location": {
+        "lat": -6.230542,
+        "lng": 106.967927,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcendrawaksih-8-kranji-bekasi-barat",
+        "method": "Pin publik location.coordinate pada halaman iklan aktif; bukan centroid administratif",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin perkiraan pengiklan/portal, belum disurvei. Jarak ke masjid dihitung dari titik acuan, bukan pintu unit.",
+      "evidence": {
+        "sha256": "503f12094345582a0243865d49dc3dcbd02f5efe1b8342d892b67cff6a42bdea",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-ihrish-alia-45",
+      "location": {
+        "lat": -6.31348,
+        "lng": 106.937238,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jatimelati-2",
+        "method": "Pin publik location.coordinate pada halaman iklan aktif; bukan centroid administratif",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin perkiraan pengiklan/portal, belum disurvei. Jarak ke masjid dihitung dari titik acuan, bukan pintu unit.",
+      "evidence": {
+        "sha256": "f863222d82a79fdab80d85e6d4fed4bf6705a364b1d167a89f9d0aa8a6210eff",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-ihrish-galaxy-sirih-timur-35",
+      "location": {
+        "lat": -6.264167,
+        "lng": 106.973612,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pulo-sirih-timur",
+        "method": "Pin publik location.coordinate pada halaman iklan aktif; bukan centroid administratif",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin perkiraan pengiklan/portal, belum disurvei. Jarak ke masjid dihitung dari titik acuan, bukan pintu unit.",
+      "evidence": {
+        "sha256": "8d456904ec3110c0b2ad02456fa6ebfb075a7d11e843107639cacfdd8d97df69",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
+    },
+    {
+      "rentalId": "sewa-ihrish-galaxy-raya-7-bulanan",
+      "location": {
+        "lat": -6.268625,
+        "lng": 106.972113,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-galaxy-raya",
+        "method": "Pin publik location.coordinate pada halaman iklan aktif; bukan centroid administratif",
+        "checkedAt": "2026-11-02"
+      },
+      "note": "Pin perkiraan pengiklan/portal, belum disurvei. Jarak ke masjid dihitung dari titik acuan, bukan pintu unit.",
+      "evidence": {
+        "sha256": "cfcb60e1e5e59523f1d3878cc9f93d8bf343949643f5d1f744a0598eb71f1388",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif"
+      }
     }
   ]
 }
