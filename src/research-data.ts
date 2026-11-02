@@ -431,6 +431,14 @@ export interface ResearchSaleAds {
   ads: ResearchSaleAd[];
 }
 
+export interface MosqueEvent {
+  startsAt: string;
+  timeLabel: string | null;
+  cancelled: boolean;
+  regular: boolean;
+  topic: string;
+}
+
 export interface ResearchMosque {
   id: string;
   name: string;
@@ -449,6 +457,7 @@ export interface ResearchMosque {
     distinctDates: string[];
     firstDate: string | null;
     lastDate: string | null;
+    events?: MosqueEvent[];
   } | null;
   nearbyProperties: { id: string; name: string; km: number }[];
   relatedListings: {

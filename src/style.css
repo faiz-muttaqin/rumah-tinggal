@@ -1065,6 +1065,62 @@ select {
   border-radius: 9px;
   padding: 15px 25px 12px 14px;
 }
+.kajian-popup {
+  z-index: 5;
+}
+.kajian-popup .maplibregl-popup-content {
+  max-height: min(380px, calc(50dvh - 70px));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.mosque-popup h2 {
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 5px 0;
+}
+.mosque-popup h3 {
+  font-size: 12px;
+  margin: 16px 0 5px;
+}
+.mosque-popup p {
+  margin: 6px 0;
+}
+.mosque-popup a {
+  color: #175442;
+  overflow-wrap: anywhere;
+}
+.mosque-kicker {
+  color: #15803d;
+  font-weight: 700;
+}
+.mosque-note {
+  color: #667261;
+  font-size: 10px;
+}
+.mosque-events,
+.mosque-transit,
+.mosque-rentals {
+  padding-left: 16px;
+  margin: 6px 0;
+}
+.mosque-events li,
+.mosque-rentals li {
+  margin: 7px 0;
+}
+.mosque-events span,
+.mosque-rentals small {
+  display: block;
+}
+.mosque-event-cancelled {
+  color: #a23f3f;
+}
+.mosque-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+}
 .map-status {
   display: none;
   position: absolute;
@@ -1710,11 +1766,14 @@ dialog h3 {
     white-space: normal;
     line-height: 1.15;
   }
+  .kajian-popup .maplibregl-popup-content {
+    max-height: calc(50dvh - 112px);
+  }
   .layer-control input {
     right: 8px;
   }
   .map-road-note {
-    flex: 1;
+    flex: 0 0 100%;
     max-width: none;
     text-align: left;
   }

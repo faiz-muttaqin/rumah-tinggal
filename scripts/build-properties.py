@@ -418,7 +418,39 @@ def load_mosques(path, regions):
                 raise Invalid(f"mosques.{mid}: tanggal profil tidak valid")
             if profile.get("firstDate") != (dates[0] if dates else None) or profile.get("lastDate") != (dates[-1] if dates else None):
                 raise Invalid(f"mosques.{mid}: rentang profil tidak cocok")
+            events = profile.get("events")
             profile = {k: profile[k] for k in (*fields, "distinctDates", "firstDate", "lastDate")}
+            if events is not None:
+                if not isinstance(events, list) or len(events) != profile["listedUpcoming"]:
+                    raise Invalid(f"mosques.{mid}: jumlah jadwal rinci tidak cocok")
+                clean_events = []
+                for event in events:
+                    if not isinstance(event, dict):
+                        raise Invalid(f"mosques.{mid}: jadwal rinci tidak valid")
+                    starts = event.get("startsAt")
+                    if not isinstance(starts, str) or not re.fullmatch(r"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\+07:00", starts):
+                        raise Invalid(f"mosques.{mid}: tanggal/zona waktu jadwal tidak valid")
+                    try:
+                        datetime.datetime.fromisoformat(starts)
+                    except ValueError as error:
+                        raise Invalid(f"mosques.{mid}: tanggal jadwal tidak valid") from error
+                    if starts[:10] < data["checkedAt"][:10]:
+                        raise Invalid(f"mosques.{mid}: jadwal sebelum snapshot")
+                    if any(type(event.get(k)) is not bool for k in ("cancelled", "regular")):
+                        raise Invalid(f"mosques.{mid}: status jadwal tidak valid")
+                    topic = event.get("topic")
+                    if not isinstance(topic, str) or not re.fullmatch(r"[a-z][a-z0-9-]{0,39}", topic):
+                        raise Invalid(f"mosques.{mid}: kategori jadwal tidak valid")
+                    label = event.get("timeLabel")
+                    if label is not None and (not isinstance(label, str) or not re.fullmatch(r"(?:sekitar )?(?:[01][0-9]|2[0-3])\.[0-5][0-9]", label)):
+                        raise Invalid(f"mosques.{mid}: label waktu tidak valid")
+                    clean_events.append({k: event.get(k) for k in ("startsAt", "timeLabel", "cancelled", "regular", "topic")})
+                active_events = [e for e in clean_events if not e["cancelled"]]
+                if len(active_events) != profile["notCancelledUpcoming"] or sum(e["regular"] for e in active_events) != profile["regularNotCancelled"] or sorted({e["startsAt"][:10] for e in active_events}) != dates:
+                    raise Invalid(f"mosques.{mid}: status/tanggal jadwal tidak cocok dengan agregat")
+                if clean_events != sorted(clean_events, key=lambda e: (e["startsAt"], e["topic"], e["cancelled"], e["regular"])):
+                    raise Invalid(f"mosques.{mid}: jadwal belum terurut")
+                profile["events"] = clean_events
         point = (round(lng, 6), round(lat, 6))
         region, _ = locate_region(point, regions)
         profile_url = url(raw.get("sourceUrl"), f"mosques.{mid}.sourceUrl")

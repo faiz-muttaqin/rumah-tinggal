@@ -14,7 +14,8 @@
     "Snapshot berisi lokasi dengan jadwal yang ditampilkan pada peta; bukan seluruh direktori masjid atau riwayat kajian Ihrish.",
     "eventCount adalah jumlah jadwal pada snapshot, bukan frekuensi kajian rutin; hitungan peta dapat mencakup jadwal dibatalkan.",
     "Adanya kajian sudah cukup untuk pencantuman. Penanda rutin pada profil hanya informasi tambahan, bukan syarat rekomendasi.",
-    "Agregat profil hanya tersedia untuk halaman yang diperiksa terpisah; pembatalan dikeluarkan dari hitungan aktif dan rutin.",
+    "Jadwal waktu/kategori/status dan agregat profil hanya tersedia untuk halaman yang diperiksa terpisah; pembatalan dikeluarkan dari hitungan aktif dan rutin.",
+    "timeLabel mengikuti label sumber, termasuk kata sekitar untuk perkiraan waktu; startsAt dipakai untuk pengurutan, bukan kepastian jam mulai.",
     "Jadwal hari pengecekan dan sesudahnya dihitung menurut tanggal WIB, bukan kepastian bahwa acara belum dimulai atau masih tersedia.",
     "Koordinat berasal dari direktori pihak ketiga, dibulatkan enam desimal, dan belum disurvei atau diverifikasi di lapangan.",
     "Konfirmasi jadwal dan akses kepada pengelola sebelum berangkat. Nama pemateri, kontak, rekening, poster, dan caption tidak disimpan."
@@ -57,7 +58,23 @@
         "topics": {
           "tafsir": 1,
           "umum": 1
-        }
+        },
+        "events": [
+          {
+            "startsAt": "2026-10-31T17:57:00+07:00",
+            "timeLabel": "sekitar 17.57",
+            "cancelled": false,
+            "regular": false,
+            "topic": "tafsir"
+          },
+          {
+            "startsAt": "2026-11-01T17:58:00+07:00",
+            "timeLabel": "sekitar 17.58",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          }
+        ]
       }
     },
     {
@@ -100,7 +117,44 @@
           "hadits": 1,
           "sirah": 1,
           "umum": 1
-        }
+        },
+        "events": [
+          {
+            "startsAt": "2026-10-31T04:19:00+07:00",
+            "timeLabel": "sekitar 04.19",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-10-31T09:00:00+07:00",
+            "timeLabel": "09.00",
+            "cancelled": false,
+            "regular": true,
+            "topic": "fiqih"
+          },
+          {
+            "startsAt": "2026-10-31T17:58:00+07:00",
+            "timeLabel": "sekitar 17.58",
+            "cancelled": false,
+            "regular": false,
+            "topic": "anak-keluarga"
+          },
+          {
+            "startsAt": "2026-11-01T04:18:00+07:00",
+            "timeLabel": "sekitar 04.18",
+            "cancelled": false,
+            "regular": true,
+            "topic": "sirah"
+          },
+          {
+            "startsAt": "2026-11-01T17:58:00+07:00",
+            "timeLabel": "sekitar 17.58",
+            "cancelled": false,
+            "regular": true,
+            "topic": "hadits"
+          }
+        ]
       }
     },
     {
@@ -199,7 +253,51 @@
         "topics": {
           "hadits": 1,
           "umum": 5
-        }
+        },
+        "events": [
+          {
+            "startsAt": "2026-11-05T09:30:00+07:00",
+            "timeLabel": "09.30",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-07T04:16:00+07:00",
+            "timeLabel": "sekitar 04.16",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-12T09:30:00+07:00",
+            "timeLabel": "09.30",
+            "cancelled": false,
+            "regular": false,
+            "topic": "hadits"
+          },
+          {
+            "startsAt": "2026-11-17T09:30:00+07:00",
+            "timeLabel": "09.30",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-19T09:30:00+07:00",
+            "timeLabel": "09.30",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-26T09:30:00+07:00",
+            "timeLabel": "09.30",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          }
+        ]
       }
     },
     {
@@ -623,7 +721,184 @@
           "muslimah": 1,
           "sirah": 3,
           "umum": 10
-        }
+        },
+        "events": [
+          {
+            "startsAt": "2026-10-31T04:19:00+07:00",
+            "timeLabel": "sekitar 04.19",
+            "cancelled": true,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-10-31T09:30:00+07:00",
+            "timeLabel": "09.30",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-01T04:19:00+07:00",
+            "timeLabel": "sekitar 04.19",
+            "cancelled": false,
+            "regular": true,
+            "topic": "hadits"
+          },
+          {
+            "startsAt": "2026-11-01T17:59:00+07:00",
+            "timeLabel": "sekitar 17.59",
+            "cancelled": false,
+            "regular": true,
+            "topic": "sirah"
+          },
+          {
+            "startsAt": "2026-11-02T17:59:00+07:00",
+            "timeLabel": "sekitar 17.59",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-07T04:17:00+07:00",
+            "timeLabel": "sekitar 04.17",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-07T09:30:00+07:00",
+            "timeLabel": "09.30",
+            "cancelled": false,
+            "regular": false,
+            "topic": "hadits"
+          },
+          {
+            "startsAt": "2026-11-08T04:17:00+07:00",
+            "timeLabel": "sekitar 04.17",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-08T18:00:00+07:00",
+            "timeLabel": "sekitar 18.00",
+            "cancelled": false,
+            "regular": true,
+            "topic": "anak-keluarga"
+          },
+          {
+            "startsAt": "2026-11-09T18:00:00+07:00",
+            "timeLabel": "sekitar 18.00",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-10T11:49:00+07:00",
+            "timeLabel": "sekitar 11.49",
+            "cancelled": false,
+            "regular": true,
+            "topic": "muslimah"
+          },
+          {
+            "startsAt": "2026-11-14T11:50:00+07:00",
+            "timeLabel": "sekitar 11.50",
+            "cancelled": false,
+            "regular": true,
+            "topic": "anak-keluarga"
+          },
+          {
+            "startsAt": "2026-11-15T04:16:00+07:00",
+            "timeLabel": "sekitar 04.16",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-15T18:02:00+07:00",
+            "timeLabel": "sekitar 18.02",
+            "cancelled": false,
+            "regular": true,
+            "topic": "sirah"
+          },
+          {
+            "startsAt": "2026-11-16T18:02:00+07:00",
+            "timeLabel": "sekitar 18.02",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-21T04:15:00+07:00",
+            "timeLabel": "sekitar 04.15",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-21T07:30:00+07:00",
+            "timeLabel": "07.30",
+            "cancelled": false,
+            "regular": true,
+            "topic": "hadits"
+          },
+          {
+            "startsAt": "2026-11-22T04:15:00+07:00",
+            "timeLabel": "sekitar 04.15",
+            "cancelled": false,
+            "regular": true,
+            "topic": "hadits"
+          },
+          {
+            "startsAt": "2026-11-22T09:30:00+07:00",
+            "timeLabel": "09.30",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-22T13:00:00+07:00",
+            "timeLabel": "13.00",
+            "cancelled": false,
+            "regular": true,
+            "topic": "hadits"
+          },
+          {
+            "startsAt": "2026-11-22T18:04:00+07:00",
+            "timeLabel": "sekitar 18.04",
+            "cancelled": false,
+            "regular": true,
+            "topic": "sirah"
+          },
+          {
+            "startsAt": "2026-11-23T18:05:00+07:00",
+            "timeLabel": "sekitar 18.05",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-28T07:00:00+07:00",
+            "timeLabel": "07.00",
+            "cancelled": false,
+            "regular": true,
+            "topic": "hadits"
+          },
+          {
+            "startsAt": "2026-11-28T18:07:00+07:00",
+            "timeLabel": "sekitar 18.07",
+            "cancelled": false,
+            "regular": true,
+            "topic": "fiqih"
+          },
+          {
+            "startsAt": "2026-11-29T04:16:00+07:00",
+            "timeLabel": "sekitar 04.16",
+            "cancelled": false,
+            "regular": true,
+            "topic": "fiqih"
+          }
+        ]
       }
     },
     {
@@ -899,7 +1174,37 @@
           "hadits": 1,
           "quran": 1,
           "umum": 1
-        }
+        },
+        "events": [
+          {
+            "startsAt": "2026-10-31T04:18:00+07:00",
+            "timeLabel": "sekitar 04.18",
+            "cancelled": false,
+            "regular": false,
+            "topic": "quran"
+          },
+          {
+            "startsAt": "2026-10-31T17:58:00+07:00",
+            "timeLabel": "sekitar 17.58",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-01T04:18:00+07:00",
+            "timeLabel": "sekitar 04.18",
+            "cancelled": false,
+            "regular": true,
+            "topic": "fiqih"
+          },
+          {
+            "startsAt": "2026-11-01T17:58:00+07:00",
+            "timeLabel": "sekitar 17.58",
+            "cancelled": false,
+            "regular": true,
+            "topic": "hadits"
+          }
+        ]
       }
     },
     {
@@ -967,7 +1272,44 @@
           "quran": 1,
           "tafsir": 1,
           "umum": 2
-        }
+        },
+        "events": [
+          {
+            "startsAt": "2026-10-31T04:18:00+07:00",
+            "timeLabel": "sekitar 04.18",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-10-31T17:58:00+07:00",
+            "timeLabel": "sekitar 17.58",
+            "cancelled": false,
+            "regular": true,
+            "topic": "hadits"
+          },
+          {
+            "startsAt": "2026-11-01T04:18:00+07:00",
+            "timeLabel": "sekitar 04.18",
+            "cancelled": false,
+            "regular": true,
+            "topic": "quran"
+          },
+          {
+            "startsAt": "2026-11-01T17:58:00+07:00",
+            "timeLabel": "sekitar 17.58",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-04T04:17:00+07:00",
+            "timeLabel": "sekitar 04.17",
+            "cancelled": false,
+            "regular": true,
+            "topic": "tafsir"
+          }
+        ]
       }
     },
     {
@@ -1123,7 +1465,226 @@
           "sirah": 1,
           "tafsir": 1,
           "umum": 17
-        }
+        },
+        "events": [
+          {
+            "startsAt": "2026-10-31T15:05:00+07:00",
+            "timeLabel": "sekitar 15.05",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-10-31T17:59:00+07:00",
+            "timeLabel": "sekitar 17.59",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-01T11:49:00+07:00",
+            "timeLabel": "sekitar 11.49",
+            "cancelled": false,
+            "regular": false,
+            "topic": "fiqih"
+          },
+          {
+            "startsAt": "2026-11-01T17:59:00+07:00",
+            "timeLabel": "sekitar 17.59",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-06T18:00:00+07:00",
+            "timeLabel": "sekitar 18.00",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-07T11:50:00+07:00",
+            "timeLabel": "sekitar 11.50",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-07T18:00:00+07:00",
+            "timeLabel": "sekitar 18.00",
+            "cancelled": false,
+            "regular": false,
+            "topic": "sirah"
+          },
+          {
+            "startsAt": "2026-11-08T04:18:00+07:00",
+            "timeLabel": "sekitar 04.18",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-08T11:50:00+07:00",
+            "timeLabel": "sekitar 11.50",
+            "cancelled": false,
+            "regular": false,
+            "topic": "tafsir"
+          },
+          {
+            "startsAt": "2026-11-08T18:01:00+07:00",
+            "timeLabel": "sekitar 18.01",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-09T04:17:00+07:00",
+            "timeLabel": "sekitar 04.17",
+            "cancelled": false,
+            "regular": false,
+            "topic": "fiqih"
+          },
+          {
+            "startsAt": "2026-11-13T18:02:00+07:00",
+            "timeLabel": "sekitar 18.02",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-14T11:50:00+07:00",
+            "timeLabel": "sekitar 11.50",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-14T18:02:00+07:00",
+            "timeLabel": "sekitar 18.02",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-15T11:50:00+07:00",
+            "timeLabel": "sekitar 11.50",
+            "cancelled": false,
+            "regular": true,
+            "topic": "hadits"
+          },
+          {
+            "startsAt": "2026-11-15T18:02:00+07:00",
+            "timeLabel": "sekitar 18.02",
+            "cancelled": false,
+            "regular": true,
+            "topic": "fiqih"
+          },
+          {
+            "startsAt": "2026-11-16T05:35:00+07:00",
+            "timeLabel": "sekitar 05.35",
+            "cancelled": false,
+            "regular": false,
+            "topic": "muslimah"
+          },
+          {
+            "startsAt": "2026-11-18T04:16:00+07:00",
+            "timeLabel": "sekitar 04.16",
+            "cancelled": false,
+            "regular": true,
+            "topic": "hadits"
+          },
+          {
+            "startsAt": "2026-11-19T11:51:00+07:00",
+            "timeLabel": "sekitar 11.51",
+            "cancelled": false,
+            "regular": false,
+            "topic": "hadits"
+          },
+          {
+            "startsAt": "2026-11-20T11:51:00+07:00",
+            "timeLabel": "sekitar 11.51",
+            "cancelled": false,
+            "regular": false,
+            "topic": "khutbah-jumat"
+          },
+          {
+            "startsAt": "2026-11-20T18:04:00+07:00",
+            "timeLabel": "sekitar 18.04",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-21T05:35:00+07:00",
+            "timeLabel": "sekitar 05.35",
+            "cancelled": false,
+            "regular": true,
+            "topic": "hadits"
+          },
+          {
+            "startsAt": "2026-11-21T18:04:00+07:00",
+            "timeLabel": "sekitar 18.04",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-22T04:16:00+07:00",
+            "timeLabel": "sekitar 04.16",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-22T11:52:00+07:00",
+            "timeLabel": "sekitar 11.52",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-22T18:05:00+07:00",
+            "timeLabel": "sekitar 18.05",
+            "cancelled": false,
+            "regular": false,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-26T11:53:00+07:00",
+            "timeLabel": "sekitar 11.53",
+            "cancelled": false,
+            "regular": false,
+            "topic": "anak-keluarga"
+          },
+          {
+            "startsAt": "2026-11-27T04:16:00+07:00",
+            "timeLabel": "sekitar 04.16",
+            "cancelled": false,
+            "regular": true,
+            "topic": "hadits"
+          },
+          {
+            "startsAt": "2026-11-27T11:53:00+07:00",
+            "timeLabel": "sekitar 11.53",
+            "cancelled": false,
+            "regular": false,
+            "topic": "khutbah-jumat"
+          },
+          {
+            "startsAt": "2026-11-27T18:07:00+07:00",
+            "timeLabel": "sekitar 18.07",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          },
+          {
+            "startsAt": "2026-11-28T11:54:00+07:00",
+            "timeLabel": "sekitar 11.54",
+            "cancelled": false,
+            "regular": true,
+            "topic": "umum"
+          }
+        ]
       }
     },
     {

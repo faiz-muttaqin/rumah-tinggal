@@ -77,6 +77,15 @@ test("mosque evidence accepts one-off kajian and never invents proximity for unl
       distinctDates: cancelled ? [] : ["2026-10-31"],
       firstDate: cancelled ? null : "2026-10-31",
       lastDate: cancelled ? null : "2026-10-31",
+      events: [
+        {
+          startsAt: "2026-10-31T09:00:00+07:00",
+          timeLabel: "sekitar 09.00",
+          cancelled,
+          regular: false,
+          topic: "umum",
+        },
+      ],
     },
   });
   const inventory = {
@@ -173,6 +182,34 @@ print(json.dumps(b.islamic_of('unit', (float(sys.argv[2]), float(sys.argv[3])), 
   const wrongPoint = build(args);
   assert.notEqual(wrongPoint.status, 0);
   assert.match(wrongPoint.stderr, /Maps berbeda/);
+  inventory.mosques[0].googleMapsUrl = mosque(
+    "masjid-uji-sekali",
+    0,
+  ).googleMapsUrl;
+  for (const edit of [
+    (m: (typeof inventory.mosques)[number]) => {
+      m.profile.events.pop();
+    },
+    (m: (typeof inventory.mosques)[number]) => {
+      m.profile.events[0].startsAt = "2026-11-01T09:00:00+07:00";
+    },
+    (m: (typeof inventory.mosques)[number]) => {
+      m.profile.events[0].cancelled = true;
+    },
+    (m: (typeof inventory.mosques)[number]) => {
+      m.profile.events[0].startsAt = "2026-10-31T09:00:00";
+    },
+    (m: (typeof inventory.mosques)[number]) => {
+      m.profile.events[0].timeLabel = "hubungi 081234567890";
+    },
+  ]) {
+    const changed = structuredClone(inventory);
+    edit(changed.mosques[0]);
+    await writeFile(mosques, JSON.stringify(changed));
+    const invalidSchedule = build(args);
+    assert.notEqual(invalidSchedule.status, 0);
+    assert.match(invalidSchedule.stderr, /jadwal|label waktu/);
+  }
 });
 
 test("published research keeps sourced prices, evidence and computed distances", async () => {

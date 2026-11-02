@@ -11,6 +11,7 @@ import { BASEMAP_GLYPHS, BASEMAP_LAYERS, BASEMAP_SOURCE } from "./basemap.ts";
 import { escapeHTML, money } from "./geo.ts";
 import { googleMapsLocation } from "./maps-links.ts";
 import { PIN_STYLES, pinIcon } from "./pins.ts";
+import type { ResearchMosque } from "./research-data.ts";
 import type { Area, Listing, Pin, Place } from "./types.ts";
 
 // MapLibre 6 requires an explicit bundled worker URL with Vite.
@@ -50,6 +51,7 @@ const COMMUNITY_FILTER: FilterSpecification = [
   ],
 ];
 const COMMUNITY_LAYERS = ["community-icons", "community-labels"];
+const KAJIAN_LAYERS = ["kajian-icons", "kajian-labels"];
 
 // Gambar ikon secara sinkron agar simbol langsung tersedia saat tile dimuat.
 function communityIcon(category: "masjid" | "sekolah"): ImageData {
@@ -84,7 +86,9 @@ export class HousingMap {
   private mobilityPopupMode?: TransitMode;
   private placePopup?: Popup;
   private pinPopup?: Popup;
+  private mosquePopup?: Popup;
   onPinPlace?: (place: Place) => void;
+  onMosqueSelect?: (id: string) => void;
   constructor(
     regions: GeoJSON.FeatureCollection,
     transitKRL: GeoJSON.FeatureCollection,
@@ -166,6 +170,9 @@ export class HousingMap {
       );
       container.dataset.communityFeatures = String(
         this.map.queryRenderedFeatures({ layers: ["community-icons"] }).length,
+      );
+      container.dataset.kajianFeatures = String(
+        this.map.queryRenderedFeatures({ layers: ["kajian-icons"] }).length,
       );
       container.dataset.buildingFeatures = String(
         this.map.queryRenderedFeatures({ layers: ["basemap-buildings"] })
@@ -336,6 +343,7 @@ export class HousingMap {
           minzoom: 14,
           filter: COMMUNITY_FILTER,
           layout: {
+            visibility: "none",
             "icon-image": [
               "case",
               ["==", ["get", "class"], "school"],
@@ -355,6 +363,7 @@ export class HousingMap {
           minzoom: 15.5,
           filter: COMMUNITY_FILTER,
           layout: {
+            visibility: "none",
             "text-field": ["get", "name"],
             "text-font": ["Noto Sans Regular"],
             "text-size": 10,
@@ -393,6 +402,51 @@ export class HousingMap {
           this.map.getCanvas().style.cursor = "pointer";
         });
         this.map.on("mouseleave", "community-icons", () => {
+          this.map.getCanvas().style.cursor = "";
+        });
+        this.map.addSource("kajian", {
+          type: "geojson",
+          data: { type: "FeatureCollection", features: [] },
+        });
+        this.map.addLayer({
+          id: "kajian-icons",
+          type: "symbol",
+          source: "kajian",
+          layout: {
+            visibility: "none",
+            "icon-image": "community-masjid",
+            "icon-size": 1.2,
+            "icon-allow-overlap": true,
+          },
+        });
+        this.map.addLayer({
+          id: "kajian-labels",
+          type: "symbol",
+          source: "kajian",
+          minzoom: 12,
+          layout: {
+            visibility: "none",
+            "text-field": ["get", "name"],
+            "text-font": ["Noto Sans Regular"],
+            "text-size": 11,
+            "text-offset": [0, 1.7],
+            "text-anchor": "top",
+            "text-max-width": 12,
+          },
+          paint: {
+            "text-color": "#14532d",
+            "text-halo-color": "#fffef9",
+            "text-halo-width": 1.6,
+          },
+        });
+        this.map.on("click", "kajian-icons", (event) => {
+          const id = event.features?.[0]?.properties.mosqueId;
+          if (typeof id === "string") this.onMosqueSelect?.(id);
+        });
+        this.map.on("mouseenter", "kajian-icons", () => {
+          this.map.getCanvas().style.cursor = "pointer";
+        });
+        this.map.on("mouseleave", "kajian-icons", () => {
           this.map.getCanvas().style.cursor = "";
         });
         this.map.addSource("focus", {
@@ -469,6 +523,7 @@ export class HousingMap {
               layers: [
                 "stations",
                 "community-icons",
+                "kajian-icons",
                 ...MOBILITY_MODES.map(
                   (mode) => `${MOBILITY_LAYERS[mode].prefix}-stations`,
                 ),
@@ -746,6 +801,60 @@ export class HousingMap {
         visible ? "visible" : "none",
       );
     if (!visible) this.placePopup?.remove();
+  }
+
+  async setMosques(mosques: ResearchMosque[]): Promise<void> {
+    await this.ready;
+    (this.map.getSource("kajian") as GeoJSONSource).setData({
+      type: "FeatureCollection",
+      features: mosques.map((mosque) => ({
+        type: "Feature",
+        geometry: { type: "Point", coordinates: [mosque.lng, mosque.lat] },
+        properties: { mosqueId: mosque.id, name: mosque.name },
+      })),
+    });
+  }
+
+  async showKajian(visible: boolean): Promise<void> {
+    await this.ready;
+    for (const layer of KAJIAN_LAYERS)
+      this.map.setLayoutProperty(
+        layer,
+        "visibility",
+        visible ? "visible" : "none",
+      );
+    if (!visible) this.mosquePopup?.remove();
+  }
+
+  async openMosque(
+    mosque: ResearchMosque,
+    content: HTMLElement,
+  ): Promise<void> {
+    await this.ready;
+    this.map.flyTo({
+      center: [mosque.lng, mosque.lat],
+      zoom: 13.5,
+      duration: matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? 0
+        : 650,
+    });
+    this.mosquePopup?.remove();
+    this.placePopup?.remove();
+    this.mobilityPopup?.remove();
+    this.mosquePopup = new maplibregl.Popup({
+      closeButton: true,
+      maxWidth: "340px",
+      anchor: "top",
+      className: "kajian-popup",
+      offset: 18,
+    })
+      .setLngLat([mosque.lng, mosque.lat])
+      .setDOMContent(content)
+      .addTo(this.map);
+  }
+
+  closeMosque(): void {
+    this.mosquePopup?.remove();
   }
 
   async showBuildings(visible: boolean): Promise<void> {

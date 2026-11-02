@@ -16,6 +16,10 @@ Dari satu [halaman peta yang diberikan pengguna](https://ihrish.app/peta/?kapan=
 
 Koordinat adalah pin pada direktori Ihrish, dibulatkan enam desimal. Belum diperiksa di lapangan. Tautan Google Maps dibentuk dari koordinat tersebut, sedangkan tautan Maps asli sumber dipertahankan dalam ekspor. Nama penceramah, caption, poster, kontak/rekening, dan titik rumah pribadi tidak disalin ke dataset.
 
+Sejak **2 November 2026**, Jelajahi Peta menyediakan toggle **Kajian Ihrish**, terpisah dari **Masjid & sekolah** OSM. Keduanya **default mati**. Sebanyak 72 titik Jabodetabek tampil tanpa harus memperbesar sampai zoom 14. Cari nama masjid atau klik ikon untuk melihat jadwal tersimpan, titik KRL/MRT/LRT/TransJakarta terdekat per moda, tautan rute berjalan, serta iklan sewa/petunjuk sewa yang terhubung sampai kawasan. Hunian yang sedang dipilih dapat dibandingkan jaraknya dengan masjid. Tombol **Lihat di peta** pada kartu masjid membuka `/?masjid=<id>` dan mengaktifkan lapisan kajian.
+
+Tujuh HTML profil yang telah tersimpan menghasilkan **78 rincian jadwal**, termasuk **1 dibatalkan**. Hanya `startsAt`, `timeLabel`, `cancelled`, `regular`, dan `topic` yang diekspor; ID acara yang dapat berisi nama tidak ikut. Sebanyak 66 label jam memakai kata **sekitar** dan tetap diperlakukan sebagai perkiraan. Jadwal sebelum tanggal hari ini di WIB tidak ditawarkan sebagai jadwal mendatang; jadwal hari ini bisa sudah lewat. Masjid tanpa rincian menaut ke profil Ihrish. Pembaruan sumber pada 2 November mendapat HTTP403; **tanggal pengecekan data tetap 31 Oktober 2026**, tanpa klaim sinkronisasi langsung atau crawler baru.
+
 ## Titik awal yang diperiksa lebih lanjut
 
 Jumlah berikut adalah **jadwal yang tercatat**, bukan jumlah per pekan, jumlah peserta, atau jaminan kegiatan masih berjalan. Tujuh profil dibuka secara selektif; penanda rutin hanya informasi tambahan. Profil yang belum diperiksa memakai `profile: null`, bukan angka nol pembatalan.

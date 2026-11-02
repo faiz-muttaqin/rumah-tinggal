@@ -18,6 +18,7 @@ const row = `<a data-mosque-row data-mosque-id="m_uji_1"
 const html = `<h2 data-map-headline>3 kajian di 1 masjid</h2>${row}`;
 const profile = `<article data-id="personal-name-1" data-mosque-id="m_uji_1"
   data-starts="2026-10-31T09:00:00+07:00" data-cat="fiqih" data-rutin>
+  <button data-save-time="sekitar 09.00"></button>
   Nama pemateri rahasia, judul, caption dan kontak 081234567890</article>
   <article data-id="personal-name-2" data-mosque-id="m_uji_1"
     data-starts="2026-11-01T09:00:00+07:00" data-cat="fiqih" data-rutin data-cancelled></article>
@@ -61,7 +62,7 @@ async function fixture(t: { after: (fn: () => Promise<void>) => void }) {
   return { input, out, run };
 }
 
-test("Ihrish exports decoded coordinates and private-data-free schedule aggregates", {
+test("Ihrish exports coordinates, anonymous schedules and cancellations without event IDs or captions", {
   skip: python,
 }, async (t) => {
   const { out, run } = await fixture(t);
@@ -81,6 +82,29 @@ test("Ihrish exports decoded coordinates and private-data-free schedule aggregat
   assert.equal(summary.regularNotCancelled, 1);
   assert.deepEqual(summary.distinctDates, ["2026-10-31", "2026-11-02"]);
   assert.deepEqual(summary.topics, { fiqih: 1, umum: 1 });
+  assert.deepEqual(summary.events, [
+    {
+      startsAt: "2026-10-31T09:00:00+07:00",
+      timeLabel: "sekitar 09.00",
+      cancelled: false,
+      regular: true,
+      topic: "fiqih",
+    },
+    {
+      startsAt: "2026-11-01T09:00:00+07:00",
+      timeLabel: null,
+      cancelled: true,
+      regular: true,
+      topic: "fiqih",
+    },
+    {
+      startsAt: "2026-11-02T09:00:00+07:00",
+      timeLabel: null,
+      cancelled: false,
+      regular: false,
+      topic: "umum",
+    },
+  ]);
   const geo = JSON.parse(
     await readFile(join(out, "ihrish-mosques.geojson"), "utf8"),
   );

@@ -25,6 +25,7 @@ import {
   googleMapsRoute,
   googleMapsWalkToStation,
 } from "./maps-links.ts";
+import { mappedMosques, mosquePopupHTML } from "./mosques.ts";
 import { guessCategory, PIN_STYLES, pinIcon } from "./pins.ts";
 import {
   checkedDate,
@@ -38,6 +39,7 @@ import {
   populationText,
   priceRange,
   type ResearchData,
+  type ResearchMosque,
   type ResearchProperty,
   researchToListing,
   researchToPin,
@@ -73,7 +75,7 @@ $("app").innerHTML = `
         <h1>Rumah yang pas.<br/><span>Hidup lebih dekat.</span></h1>
         <p class="intro">Kenali wilayah dan akses transportasinya,<br class="desktop-break"/> lalu temukan tempatmu bertumbuh.</p>
         <div class="search-box">${icon("search")}<input id="search" aria-label="Cari wilayah, hunian, stasiun, atau tempat" type="search" placeholder="Wilayah, hunian, stasiun, atau tempat…" autocomplete="off"/><kbd>/</kbd></div>
-        <div id="station-results" class="station-results"></div><div id="place-results" class="station-results place-results" aria-live="polite"></div>
+        <div id="station-results" class="station-results"></div><div id="mosque-results" class="station-results place-results" aria-live="polite"></div><div id="place-results" class="station-results place-results" aria-live="polite"></div>
         <div class="area-chips" aria-label="Filter wilayah"><button class="chip selected" data-area="Semua" aria-pressed="true">Semua</button>${AREAS.map((area) => `<button class="chip" data-area="${area}" aria-pressed="false">${area}</button>`).join("")}</div>
         <div class="filter-grid"><label>Anggaran beli<select id="budget" aria-label="Anggaran maksimum"><option value="0">Semua anggaran</option><option value="500000000">Hingga Rp 500 juta</option><option value="750000000">Hingga Rp 750 juta</option><option value="1000000000">Hingga Rp 1 miliar</option></select></label><label>Jenis hunian<select id="housing-type" aria-label="Jenis hunian"><option value="Semua">Semua jenis</option><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label></div>
         <div class="commute-filter">${icon("train")}<label for="station-distance">Jarak ke stasiun KRL</label><select id="station-distance" aria-label="Jarak maksimum ke stasiun KRL"><option value="0">Bebas</option><option value="1">≤ 1 km</option><option value="3">≤ 3 km</option><option value="5">≤ 5 km</option></select></div>
@@ -96,7 +98,8 @@ $("app").innerHTML = `
         <label class="layer-control">${icon("train")} MRT <input id="mrt-toggle" aria-label="Jalur MRT" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control" title="LRT Jakarta dan LRT Jabodebek">${icon("train")} LRT <input id="lrt-toggle" aria-label="Jalur LRT" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control" title="TransJakarta · 14 koridor utama BRT">${icon("bus")} <span class="transjakarta-label">TransJakarta</span><input id="tj-toggle" aria-label="Jalur TransJakarta" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
-        <label class="layer-control" title="Masjid, sekolah, dan TK sekitar · tampil saat peta diperbesar">${icon("pin")} <span class="community-label">Masjid & sekolah</span><input id="community-toggle" aria-label="Masjid dan sekolah sekitar" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
+        <label class="layer-control" title="Masjid dengan kajian dari Ihrish · klik titik untuk jadwal dan akses transportasi">${pinIcon("masjid")} <span class="community-label">Kajian Ihrish</span><input id="kajian-toggle" aria-label="Masjid dengan kajian Ihrish" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
+        <label class="layer-control" title="Masjid, sekolah, dan TK dari OpenStreetMap · tampil saat peta diperbesar">${icon("pin")} <span class="community-label">Masjid & sekolah</span><input id="community-toggle" aria-label="Masjid dan sekolah sekitar" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control">${icon("home")} Bangunan <input id="buildings-toggle" aria-label="Bangunan pada peta" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control">${icon("pin")} Hunian <input id="listings-toggle" aria-label="Marker dan detail hunian" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
         <span class="map-road-note">Jalan selalu tampil · bangunan, masjid & sekolah saat diperbesar</span>
@@ -108,7 +111,7 @@ $("app").innerHTML = `
     </section>
   </main>
   <div class="mobile-view"><button id="mobile-map">${icon("pin")} Peta</button><button id="mobile-list" class="active">${icon("home")} Daftar</button></div>
-  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><span class="eyebrow">TRANSPARANSI DATA</span><button class="icon-button" data-close="sources-dialog" aria-label="Tutup sumber data">${icon("close")}</button></div><h2 id="sources-title">Sumber & catatan data</h2><div class="source-block"><h3>Wilayah Jabodetabek</h3><p>14 batas kabupaten/kota dari geometri Nafkah / HDX COD-AB, disederhanakan untuk gambaran wilayah. Batas ini tidak cukup rinci untuk memastikan alamat atau batas bidang tanah. Kepulauan Seribu sangat disederhanakan pada sumber.</p><a href="https://gitlab.com/adenaufal/nafkah" target="_blank" rel="noopener noreferrer">Nafkah · Ade Naufal · CC BY 4.0 ↗</a></div><div class="source-block"><h3>KRL, MRT, LRT & TransJakarta</h3><p>Snapshot geografis OpenStreetMap, 29 Oktober 2026: 80 titik KRL, 13 MRT, 29 LRT, serta 251 titik halte pada 14 koridor utama BRT TransJakarta. LRT mencakup LRT Jakarta dan LRT Jabodebek. TransJakarta belum mencakup pengumpan/Mikrotrans dan awalnya disembunyikan.</p><p>Geometri mengikuti rel/jalan yang dipetakan; titik stasiun/halte bukan pintu masuk terverifikasi. Data ini bukan jadwal, tarif, status operasi, atau waktu tempuh aktual. Periksa perjalanan ke operator.</p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL ↗</a></div><div class="source-block"><h3>Listing & jarak</h3><p>Semua hunian pada tab Contoh hunian adalah data ilustratif, bukan iklan atau penawaran properti. Listingku berisi data pribadi yang kamu masukkan sendiri. Jarak ke KRL adalah garis lurus ke titik stasiun terdekat, bukan akses pintu masuk atau rute berjalan.</p></div><div class="source-block"><h3>Peta jalan & bangunan</h3><p>Peta vektor OpenFreeMap, skema © OpenMapTiles, data © OpenStreetMap contributors. Bangunan dapat disembunyikan terpisah; jalan tetap tampil. Ikon masjid & sekolah sekitar berasal dari titik POI tile yang sama (zoom 14 ke atas). Cakupan bangunan, masjid, dan sekolah mengikuti data OSM dan tidak membuktikan status operasi.</p><a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">OpenFreeMap · OpenMapTiles · OpenStreetMap ↗</a></div><div class="source-block"><h3>Riset properti</h3><p>Kandidat proyek nyata di sekitar KRL, MRT, dan LRT. Harga dan status mengikuti sumber bertanggal; bukti yang belum lengkap diberi label sebagian terverifikasi. Nama developer dari sumber publik belum membuktikan kepemilikan unit. Jarak dihitung aplikasi secara garis lurus ke titik stasiun OSM. Bukan iklan atau penawaran; konfirmasi ke developer.</p><a href="/riset#metode">Metode dan bukti lengkap ↗</a></div><div class="source-block"><h3>Pencarian tempat</h3><p>Hasil pencarian tempat berasal dari Photon (komoot) berbasis OpenStreetMap, dibatasi wilayah Jabodetabek. Pin tempat yang kamu simpan hanya dapat dilihat akunmu.</p><a href="https://photon.komoot.io/" target="_blank" rel="noopener noreferrer">Photon · © OpenStreetMap contributors ↗</a></div><p class="fine-print">Peta dasar OpenFreeMap · © OpenMapTiles · © OpenStreetMap contributors. Tampilan terinspirasi pola peta Nafkah; implementasi aplikasi dibuat untuk Rumah Tinggal.</p></dialog>
+  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><span class="eyebrow">TRANSPARANSI DATA</span><button class="icon-button" data-close="sources-dialog" aria-label="Tutup sumber data">${icon("close")}</button></div><h2 id="sources-title">Sumber & catatan data</h2><div class="source-block"><h3>Wilayah Jabodetabek</h3><p>14 batas kabupaten/kota dari geometri Nafkah / HDX COD-AB, disederhanakan untuk gambaran wilayah. Batas ini tidak cukup rinci untuk memastikan alamat atau batas bidang tanah. Kepulauan Seribu sangat disederhanakan pada sumber.</p><a href="https://gitlab.com/adenaufal/nafkah" target="_blank" rel="noopener noreferrer">Nafkah · Ade Naufal · CC BY 4.0 ↗</a></div><div class="source-block"><h3>KRL, MRT, LRT & TransJakarta</h3><p>Snapshot geografis OpenStreetMap, 29 Oktober 2026: 80 titik KRL, 13 MRT, 29 LRT, serta 251 titik halte pada 14 koridor utama BRT TransJakarta. LRT mencakup LRT Jakarta dan LRT Jabodebek. TransJakarta belum mencakup pengumpan/Mikrotrans dan awalnya disembunyikan.</p><p>Geometri mengikuti rel/jalan yang dipetakan; titik stasiun/halte bukan pintu masuk terverifikasi. Data ini bukan jadwal, tarif, status operasi, atau waktu tempuh aktual. Periksa perjalanan ke operator.</p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL ↗</a></div><div class="source-block"><h3>Listing & jarak</h3><p>Semua hunian pada tab Contoh hunian adalah data ilustratif, bukan iklan atau penawaran properti. Listingku berisi data pribadi yang kamu masukkan sendiri. Jarak ke KRL adalah garis lurus ke titik stasiun terdekat, bukan akses pintu masuk atau rute berjalan.</p></div><div class="source-block"><h3>Peta jalan & bangunan</h3><p>Peta vektor OpenFreeMap, skema © OpenMapTiles, data © OpenStreetMap contributors. Bangunan dapat disembunyikan terpisah; jalan tetap tampil. Ikon masjid & sekolah sekitar berasal dari titik POI tile yang sama (zoom 14 ke atas). Cakupan bangunan, masjid, dan sekolah mengikuti data OSM dan tidak membuktikan status operasi.</p><a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">OpenFreeMap · OpenMapTiles · OpenStreetMap ↗</a></div><div class="source-block"><h3>Masjid dengan kajian · Ihrish</h3><p>Toggle Kajian Ihrish menampilkan pin masjid dari snapshot 31 Oktober 2026, terpisah dari masjid & sekolah OpenStreetMap. Keduanya awalnya disembunyikan. Jadwal waktu, kategori, dan pembatalan tersedia dari tujuh profil yang telah diperiksa; masjid lain menautkan jadwal sumber. Snapshot bukan konfirmasi kegiatan saat ini. Jarak transportasi dan hunian adalah garis lurus, sedangkan iklan tanpa titik hanya dihubungkan sampai kawasan.</p><a href="https://ihrish.app/peta/?kapan=semua" target="_blank" rel="noopener noreferrer">Sumber peta & jadwal Ihrish ↗</a></div><div class="source-block"><h3>Riset properti</h3><p>Kandidat proyek nyata di sekitar KRL, MRT, dan LRT. Harga dan status mengikuti sumber bertanggal; bukti yang belum lengkap diberi label sebagian terverifikasi. Nama developer dari sumber publik belum membuktikan kepemilikan unit. Jarak dihitung aplikasi secara garis lurus ke titik stasiun OSM. Bukan iklan atau penawaran; konfirmasi ke developer.</p><a href="/riset#metode">Metode dan bukti lengkap ↗</a></div><div class="source-block"><h3>Pencarian tempat</h3><p>Hasil pencarian tempat berasal dari Photon (komoot) berbasis OpenStreetMap, dibatasi wilayah Jabodetabek. Pin tempat yang kamu simpan hanya dapat dilihat akunmu.</p><a href="https://photon.komoot.io/" target="_blank" rel="noopener noreferrer">Photon · © OpenStreetMap contributors ↗</a></div><p class="fine-print">Peta dasar OpenFreeMap · © OpenMapTiles · © OpenStreetMap contributors. Tampilan terinspirasi pola peta Nafkah; implementasi aplikasi dibuat untuk Rumah Tinggal.</p></dialog>
   <dialog id="listing-dialog" aria-labelledby="listing-title"><div class="dialog-header"><span class="eyebrow">KOLEKSI PRIBADIMU</span><button class="icon-button" data-close="listing-dialog" aria-label="Tutup tambah listing">${icon("close")}</button></div><h2 id="listing-title">Tambahkan calon rumah</h2><p class="dialog-intro">Simpan lokasi, harga beli, dan catatan survei. Hanya akunmu yang dapat melihatnya.</p><form id="listing-form"><label>Nama hunian<input name="title" required maxlength="160" placeholder="Contoh: Rumah dekat Stasiun Pondok Ranji"/></label><div class="form-grid"><label>Wilayah<select name="area">${AREAS.map((area) => `<option>${area}</option>`).join("")}</select></label><label>Kecamatan / lingkungan<input name="district" required maxlength="100"/></label><label>Harga beli (Rp)<input name="price" type="number" min="1" max="1000000000000" required/></label><label>Jenis<select name="type"><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label><label>Kamar tidur<input name="bedrooms" type="number" min="0" max="30" value="2" required/></label><label>Luas tanah / unit (m²)<input name="landArea" type="number" min="1" max="100000" required/></label><label>Latitude<input id="form-lat" name="lat" type="number" step="any" min="-6.85" max="-5.75" required value="-6.3"/></label><label>Longitude<input id="form-lng" name="lng" type="number" step="any" min="106.3" max="107.31" required value="106.8"/></label></div><button type="button" id="pick-map" class="text-button">${icon("pin")} Pilih koordinat di peta</button><label>Tautan sumber (opsional)<input name="sourceUrl" type="url" maxlength="2000" placeholder="https://…"/></label><label>Catatan survei (opsional)<textarea name="notes" maxlength="3000" rows="3" placeholder="Akses jalan, kondisi lingkungan, hal yang perlu dicek…"></textarea></label><p id="form-error" class="form-error" role="alert"></p><button class="button primary wide" type="submit">Simpan ke Listingku ${icon("arrow")}</button></form></dialog>
   <dialog id="pin-dialog" aria-labelledby="pin-title"><div class="dialog-header"><span class="eyebrow">TEMPAT PENTING</span><button class="icon-button" data-close="pin-dialog" aria-label="Tutup tambah pin">${icon("close")}</button></div><h2 id="pin-title">Tandai tempat penting</h2><p class="dialog-intro">Masjid, sekolah, tempat kerja, atau tempat lain yang sering kamu datangi. Hanya akunmu yang dapat melihatnya.</p><form id="pin-form"><label>Nama tempat<input name="name" required maxlength="160" placeholder="Contoh: Masjid Al-Ikhlas"/></label><fieldset class="pin-categories"><legend>Ikon / kategori</legend>${PIN_CATEGORIES.map((category, index) => `<label class="pin-category" style="--pin:${PIN_STYLES[category].color}"><input type="radio" name="category" value="${category}" ${index === 0 ? "checked" : ""}/><span>${pinIcon(category, 18)}</span>${PIN_STYLES[category].label}</label>`).join("")}</fieldset><div class="form-grid"><label>Latitude<input id="pin-lat" name="lat" type="number" step="any" min="-6.85" max="-5.75" required value="-6.3"/></label><label>Longitude<input id="pin-lng" name="lng" type="number" step="any" min="106.3" max="107.31" required value="106.8"/></label></div><button type="button" id="pin-pick-map" class="text-button">${icon("pin")} Pilih titik di peta</button><label>Catatan (opsional)<textarea name="notes" maxlength="2000" rows="2" placeholder="Jam buka, akses jalan, alasan penting…"></textarea></label><p id="pin-error" class="form-error" role="alert"></p><button class="button primary wide" type="submit">Simpan pin ${icon("arrow")}</button></form></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
@@ -122,6 +125,7 @@ let privateOwnerUid: string | undefined;
 let collection: "demo" | "private" | "pins" | "research" = "demo";
 let researchProperties: ResearchProperty[] = [];
 let researchData: ResearchData | undefined;
+let kajianMosques: ResearchMosque[] = [];
 let researchPopulation: PopulationContext | null = null;
 let researchPlanned: PlannedContext | null = null;
 let researchListings: Listing[] = [];
@@ -447,6 +451,40 @@ function clearSelection(): void {
   selectedListing = undefined;
   $("detail-card").hidden = true;
   void map?.clearFocus();
+  map?.closeMosque();
+}
+
+function selectMosque(id: string): void {
+  const mosque = kajianMosques.find((item) => item.id === id);
+  const context = researchData?.mosques;
+  if (!mosque || !context || !map) return;
+  $<HTMLInputElement>("kajian-toggle").checked = true;
+  void map.showKajian(true);
+  const content = document.createElement("div");
+  content.innerHTML = mosquePopupHTML(
+    mosque,
+    context,
+    transportStops,
+    selectedListing
+      ? { home: selectedListing, example: collection === "demo" }
+      : undefined,
+    researchData?.leads?.leads
+      .filter((lead) => lead.type === "rental")
+      .map((lead) => lead.id),
+  );
+  content
+    .querySelector<HTMLButtonElement>("[data-pin-mosque]")
+    ?.addEventListener("click", () =>
+      showPinForm({
+        name: mosque.name,
+        lat: mosque.lat,
+        lng: mosque.lng,
+        category: "masjid",
+        notes: `Kajian Ihrish: ${mosque.sourceUrl}\nSnapshot ${checkedDate(context.checkedAt)}. Pin direktori belum disurvei; cek jadwal terbaru sebelum berangkat.`,
+      }),
+    );
+  void map.openMosque(mosque, content);
+  if (matchMedia("(max-width: 760px)").matches) setMobileView("map");
 }
 
 function selectArea(area: string): void {
@@ -618,6 +656,7 @@ function resetFilters(): void {
   $<HTMLSelectElement>("housing-type").value = "Semua";
   $<HTMLSelectElement>("station-distance").value = "0";
   $("station-results").innerHTML = "";
+  $("mosque-results").innerHTML = "";
   clearPlaces();
   selectArea("Semua");
 }
@@ -686,6 +725,21 @@ $("search").oninput = () => {
   render();
   searchPlaces($<HTMLInputElement>("search").value.trim());
   const query = $<HTMLInputElement>("search").value.trim().toLowerCase();
+  const mosqueMatches =
+    query.length >= 3
+      ? kajianMosques
+          .filter((mosque) =>
+            `${mosque.name} ${mosque.address}`.toLowerCase().includes(query),
+          )
+          .slice(0, 5)
+      : [];
+  $("mosque-results").innerHTML = mosqueMatches.length
+    ? `<p class="place-note">Masjid dengan kajian · Ihrish</p>${mosqueMatches.map((mosque) => `<button data-mosque="${esc(mosque.id)}">${pinIcon("masjid")} <span class="place-name"><strong>${esc(mosque.name)}</strong><small>${esc(mosque.area)}</small></span><span>jadwal & peta ↗</span></button>`).join("")}`
+    : "";
+  for (const button of $("mosque-results").querySelectorAll<HTMLButtonElement>(
+    "[data-mosque]",
+  ))
+    button.onclick = () => selectMosque(button.dataset.mosque ?? "");
   const matches =
     query.length >= 3
       ? transportStops
@@ -752,6 +806,14 @@ for (const [id, mode] of transitToggles)
   };
 $("community-toggle").onchange = () => {
   void map?.showCommunity($<HTMLInputElement>("community-toggle").checked);
+};
+$("kajian-toggle").onchange = () => {
+  const visible = $<HTMLInputElement>("kajian-toggle").checked;
+  void map?.showKajian(visible);
+  if (visible)
+    toast(
+      `${kajianMosques.length} masjid dengan kajian. Klik ikon masjid untuk jadwal tersimpan, transportasi, dan hunian sekitar.`,
+    );
 };
 $("buildings-toggle").onchange = () => {
   void map?.showBuildings($<HTMLInputElement>("buildings-toggle").checked);
@@ -923,6 +985,7 @@ async function start(): Promise<void> {
   ] = resources;
   if (researchResult.status === "fulfilled") {
     researchData = researchResult.value;
+    kajianMosques = mappedMosques(researchData.mosques?.items ?? []);
     researchProperties = researchResult.value.properties;
     researchPopulation = researchResult.value.population;
     researchPlanned = researchResult.value.planned;
@@ -935,6 +998,12 @@ async function start(): Promise<void> {
     researchResult.status === "fulfilled"
       ? String(researchListings.length)
       : "–";
+  $<HTMLInputElement>("kajian-toggle").disabled = !kajianMosques.length;
+  if (!kajianMosques.length)
+    $("kajian-toggle").parentElement?.setAttribute(
+      "title",
+      "Data masjid kajian belum tersedia. Coba muat ulang halaman.",
+    );
   const empty: GeoJSON.FeatureCollection = {
     type: "FeatureCollection",
     features: [],
@@ -1008,6 +1077,11 @@ async function start(): Promise<void> {
         lng: place.lng,
         category: guessCategory(place.name, place.kind),
       });
+    map.onMosqueSelect = (id) => {
+      if (!pickingPoint) selectMosque(id);
+    };
+    void map.setMosques(kajianMosques);
+    void map.showKajian($<HTMLInputElement>("kajian-toggle").checked);
     void map.showBuildings($<HTMLInputElement>("buildings-toggle").checked);
     void map.showCommunity($<HTMLInputElement>("community-toggle").checked);
     void map.showRail($<HTMLInputElement>("rail-toggle").checked);
@@ -1029,6 +1103,8 @@ async function start(): Promise<void> {
     if (listing) selectListing(listing);
     else render();
   } else if (params.get("koleksi") === "listingku") openPrivate();
+  const mosqueId = params.get("masjid");
+  if (mosqueId) selectMosque(mosqueId);
   if (configResult.status === "fulfilled") {
     try {
       await initializeAuth(configResult.value, (user) => {

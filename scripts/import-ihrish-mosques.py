@@ -4,7 +4,7 @@ Example:
     python3 -I scripts/import-ihrish-mosques.py peta.html \
         --checked-at 2026-10-31 --profiles-dir saved-pages --output-dir output
 
-Only map coordinates, mosque details, and anonymous schedule totals are kept.
+Only map coordinates, mosque details, and anonymous schedule facts are kept.
 Saved pages are parsed as untrusted HTML; their scripts are never executed.
 --check compares JSON content independently of repository formatting or object
 field order, preserving array order and values; CSV is compared byte for byte.
@@ -164,12 +164,21 @@ class ProfileParser(HTMLParser):
         self.checked_at = checked_at
         self.template_depth = 0
         self.events = {}
+        self.event = None
+        self.event_id = None
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         if tag == "template":
             self.template_depth += 1
-        if self.template_depth or tag != "article" or attrs.get("data-mosque-id") != self.source_id:
+        if self.template_depth:
+            return
+        if self.event is not None and "data-save-time" in attrs:
+            label = attrs["data-save-time"]
+            if not re.fullmatch(r"(?:sekitar )?(?:[01][0-9]|2[0-3])\.[0-5][0-9]", label):
+                raise Invalid("profil: label waktu tidak dikenali")
+            self.event["timeLabel"] = label
+        if tag != "article" or attrs.get("data-mosque-id") != self.source_id:
             return
         event_id = attrs.get("data-id")
         starts = attrs.get("data-starts")
@@ -187,19 +196,28 @@ class ProfileParser(HTMLParser):
         topic = attrs.get("data-cat") or "umum"
         if not re.fullmatch(r"[a-z][a-z0-9-]{0,39}", topic):
             raise Invalid("profil: kategori jadwal tidak valid")
-        event = {
+        self.event_id = event_id
+        self.event = {
             "date": date,
+            "startsAt": stamp.astimezone(WIB).isoformat(timespec="seconds"),
+            "timeLabel": None,
             "cancelled": "data-cancelled" in attrs,
             "regular": "data-rutin" in attrs,
             "topic": topic,
         }
-        if event_id in self.events and self.events[event_id] != event:
-            raise Invalid("profil: ID jadwal duplikat dengan nilai berbeda")
-        self.events[event_id] = event
 
     def handle_endtag(self, tag):
         if tag == "template" and self.template_depth:
             self.template_depth -= 1
+            return
+        if self.template_depth:
+            return
+        if tag == "article" and self.event is not None:
+            if self.event_id in self.events and self.events[self.event_id] != self.event:
+                raise Invalid("profil: ID jadwal duplikat dengan nilai berbeda")
+            self.events[self.event_id] = self.event
+            self.event = None
+            self.event_id = None
 
 
 def profile_summary(path, mosque, checked_at):
@@ -209,6 +227,8 @@ def profile_summary(path, mosque, checked_at):
     parser = ProfileParser(mosque["sourceId"], checked_at)
     parser.feed(raw.decode("utf-8"))
     parser.close()
+    if parser.event is not None or parser.template_depth:
+        raise Invalid("profil: HTML jadwal belum lengkap")
     events = list(parser.events.values())
     active = [e for e in events if not e["cancelled"]]
     dates = sorted({e["date"] for e in active})
@@ -223,6 +243,10 @@ def profile_summary(path, mosque, checked_at):
         "firstDate": dates[0] if dates else None,
         "lastDate": dates[-1] if dates else None,
         "topics": dict(sorted(collections.Counter(e["topic"] for e in active).items())),
+        "events": sorted(
+            ({k: e[k] for k in ("startsAt", "timeLabel", "cancelled", "regular", "topic")} for e in events),
+            key=lambda e: (e["startsAt"], e["topic"], e["cancelled"], e["regular"]),
+        ),
     }
 
 
@@ -294,7 +318,8 @@ def catalog(html_path, checked_at, profiles_dir):
             "Snapshot berisi lokasi dengan jadwal yang ditampilkan pada peta; bukan seluruh direktori masjid atau riwayat kajian Ihrish.",
             "eventCount adalah jumlah jadwal pada snapshot, bukan frekuensi kajian rutin; hitungan peta dapat mencakup jadwal dibatalkan.",
             "Adanya kajian sudah cukup untuk pencantuman. Penanda rutin pada profil hanya informasi tambahan, bukan syarat rekomendasi.",
-            "Agregat profil hanya tersedia untuk halaman yang diperiksa terpisah; pembatalan dikeluarkan dari hitungan aktif dan rutin.",
+            "Jadwal waktu/kategori/status dan agregat profil hanya tersedia untuk halaman yang diperiksa terpisah; pembatalan dikeluarkan dari hitungan aktif dan rutin.",
+            "timeLabel mengikuti label sumber, termasuk kata sekitar untuk perkiraan waktu; startsAt dipakai untuk pengurutan, bukan kepastian jam mulai.",
             "Jadwal hari pengecekan dan sesudahnya dihitung menurut tanggal WIB, bukan kepastian bahwa acara belum dimulai atau masih tersedia.",
             "Koordinat berasal dari direktori pihak ketiga, dibulatkan enam desimal, dan belum disurvei atau diverifikasi di lapangan.",
             "Konfirmasi jadwal dan akses kepada pengelola sebelum berangkat. Nama pemateri, kontak, rekening, poster, dan caption tidak disimpan.",

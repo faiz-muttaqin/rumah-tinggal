@@ -741,7 +741,7 @@ test.describe("mobile explorer", () => {
     hasTouch: true,
   });
 
-  test("keeps seven layer switches usable with hunian detail open on a phone", async ({
+  test("keeps eight layer switches usable with hunian detail open on a phone", async ({
     page,
   }) => {
     await cards(page).first().click();
@@ -756,7 +756,7 @@ test.describe("mobile explorer", () => {
       .click();
     await expect(detail).toBeVisible();
     const switches = page.getByRole("checkbox");
-    await expect(switches).toHaveCount(7);
+    await expect(switches).toHaveCount(8);
     for (const control of await switches.all())
       await expect(control).toBeVisible();
     const bounds = await Promise.all(
@@ -775,7 +775,7 @@ test.describe("mobile explorer", () => {
       if (row) row.count++;
       else rows.push({ top: bound.y, count: 1 });
     }
-    expect(rows.map((row) => row.count)).toEqual([3, 3, 1]);
+    expect(rows.map((row) => row.count)).toEqual([3, 3, 2]);
     await expectNoHorizontalOverflow(page);
 
     const expected: Record<MobilityLayer, boolean> = {
@@ -940,13 +940,15 @@ test("shows nearby mosques and schools from the basemap behind a toggle", async 
     name: "Masjid dan sekolah sekitar",
     exact: true,
   });
-  await expect(toggle).toBeChecked();
+  await expect(toggle).not.toBeChecked();
   await expectRenderedAttribute(page, "data-community-features", false);
   await page.locator("#search").fill("taman uji");
   await page
     .locator("#place-results")
     .getByRole("button", { name: /Taman Uji Menteng/ })
     .click();
+  await expectRenderedAttribute(page, "data-community-features", false);
+  await toggle.setChecked(true);
   await expectRenderedAttribute(page, "data-community-features", true);
   await page.locator(".maplibregl-popup-close-button").click();
   await toggle.setChecked(false);
@@ -958,6 +960,181 @@ test("shows nearby mosques and schools from the basemap behind a toggle", async 
     .toBeGreaterThan(0);
   await toggle.setChecked(true);
   await expectRenderedAttribute(page, "data-community-features", true);
+});
+
+for (const [device, viewport] of [
+  ["desktop", { width: 1440, height: 1000 }],
+  ["mobile", { width: 390, height: 844 }],
+] as const) {
+  test(`Ihrish mosque map, schedule, transit and rental links work on ${device}`, async ({
+    page,
+  }) => {
+    await page.setViewportSize(viewport);
+    await page.clock.setFixedTime(new Date("2026-11-02T01:00:00Z"));
+    await page.route("**/data/properties.geojson", (route) =>
+      route.fulfill({
+        json: {
+          ...researchFixture,
+          metadata: {
+            ...researchFixture.metadata,
+            mosques: {
+              ...researchFixture.metadata.mosques,
+              items: researchFixture.metadata.mosques.items.map((mosque) => ({
+                ...mosque,
+                profile:
+                  mosque.id === "masjid-uji-satu"
+                    ? {
+                        listedUpcoming: 1,
+                        notCancelledUpcoming: 1,
+                        cancelledUpcoming: 0,
+                        regularNotCancelled: 0,
+                        distinctDates: ["2026-11-02"],
+                        firstDate: "2026-11-02",
+                        lastDate: "2026-11-02",
+                        events: [
+                          {
+                            startsAt: "2026-11-02T09:30:00+07:00",
+                            timeLabel: "09.30",
+                            cancelled: false,
+                            regular: false,
+                            topic: "fiqih",
+                          },
+                        ],
+                      }
+                    : mosque.profile,
+              })),
+            },
+          },
+        },
+      }),
+    );
+    await page.goto("/");
+    const privateRequests: string[] = [];
+    page.on("request", (request) => {
+      if (
+        /^\/api\/(listings|pins)(?:\/|$)/.test(new URL(request.url()).pathname)
+      )
+        privateRequests.push(request.url());
+    });
+    await expect(page.locator("#kajian-toggle")).not.toBeChecked();
+    await expect(page.locator("#community-toggle")).not.toBeChecked();
+    if (device === "mobile") await page.locator("#mobile-map").click();
+    await expectRenderedAttribute(page, "data-kajian-features", false);
+    await page.locator("#kajian-toggle").check();
+    await expectRenderedAttribute(page, "data-kajian-features", true);
+    if (device === "mobile") await page.locator("#mobile-list").click();
+    await page.locator("#search").fill("masjid uji satu");
+    await page
+      .locator("#mosque-results")
+      .getByRole("button", { name: /Masjid Uji Satu Kajian/ })
+      .click();
+    const popup = page.getByTestId("mosque-popup");
+    await expect(popup).toBeVisible();
+    await expect(popup).toContainText("31 Okt 2026");
+    await expect(popup).toContainText("2 Nov 2026");
+    await expect(popup).toContainText("09.30 WIB · Fiqih");
+    await expect(popup).toContainText("garis lurus");
+    await expect(popup.getByRole("link", { name: /KRL ·/ })).toHaveAttribute(
+      "href",
+      /origin=-6\.256%2C107\.032.*travelmode=walking/,
+    );
+    await expect(
+      popup.getByRole("link", { name: /Cek jadwal terbaru/ }),
+    ).toHaveAttribute(
+      "href",
+      "https://ihrish.example.invalid/masjid/uji-satu/",
+    );
+    await expect(
+      popup.getByRole("link", { name: "Kontrakan Keluarga Uji" }),
+    ).toHaveAttribute("href", "/riset#rent-uji-bekasi");
+    await expect(popup).toContainText("Jarak dari unit belum dihitung");
+    await expectNoHorizontalOverflow(page);
+    // Test clicking the actual map symbol after closing its search popup.
+    await page.waitForTimeout(800);
+    const popupBounds = await page
+      .locator(".kajian-popup .maplibregl-popup-content")
+      .boundingBox();
+    expect(popupBounds).not.toBeNull();
+    if (!popupBounds) throw new Error("Mosque popup missing");
+    expect(popupBounds.y + popupBounds.height).toBeLessThanOrEqual(
+      viewport.height - (device === "mobile" ? 52 : 0),
+    );
+    await page.locator(".kajian-popup .maplibregl-popup-close-button").click();
+    const canvas = page.locator("canvas.maplibregl-canvas");
+    const bounds = await canvas.boundingBox();
+    expect(bounds).not.toBeNull();
+    if (!bounds) throw new Error("Map canvas missing");
+    await canvas.click({
+      position: { x: bounds.width / 2, y: bounds.height / 2 },
+    });
+    await expect(popup).toBeVisible();
+    await page.locator("#kajian-toggle").uncheck();
+    await expect(popup).toHaveCount(0);
+    await expectRenderedAttribute(page, "data-kajian-features", false);
+    await expect(page.locator("#community-toggle")).not.toBeChecked();
+    await expectRenderedAttribute(page, "data-road-features", true);
+    expect(privateRequests).toEqual([]);
+  });
+}
+
+test("mosque deep links enable only the Ihrish layer and old datasets keep the map usable", async ({
+  page,
+}) => {
+  await page.goto("/?masjid=masjid-uji-satu");
+  await expect(page.getByTestId("mosque-popup")).toContainText(
+    "Masjid Uji Satu Kajian",
+  );
+  await expect(page.locator("#kajian-toggle")).toBeChecked();
+  await expect(page.locator("#community-toggle")).not.toBeChecked();
+  await page.route("**/data/properties.geojson", (route) =>
+    route.fulfill({
+      json: {
+        ...researchFixture,
+        metadata: { ...researchFixture.metadata, mosques: null },
+      },
+    }),
+  );
+  await page.goto("/");
+  await expect(page.locator("#kajian-toggle")).toBeDisabled();
+  await expect(page.locator("#kajian-toggle")).not.toBeChecked();
+  await expectRenderedVectors(page);
+  await expect(cards(page)).toHaveCount(8);
+});
+
+test("signing out clears private home comparisons from the mosque popup", async ({
+  page,
+}) => {
+  const home = {
+    ...excelListings[0],
+    title: "Masjid Uji Satu dekat Rumah Privat Sintetis",
+  };
+  await mockListingAccount(page, [home]);
+  await page.goto("/?koleksi=listingku");
+  await expect(page.locator("#account-label")).toContainText("Akun · Keluar");
+  await expect(cards(page)).toHaveCount(1);
+  await cards(page).first().click();
+  // This search also matches the selected synthetic home, so its comparison remains active.
+  await page.locator("#search").fill("masjid uji satu");
+  await page
+    .locator("#mosque-results")
+    .getByRole("button", { name: /Masjid Uji Satu Kajian/ })
+    .click();
+  const popup = page.getByTestId("mosque-popup");
+  await expect(popup).toContainText(home.title);
+  const route = popup.getByRole("link", { name: /Cek rute hunian/ });
+  await expect(route).toHaveAttribute(
+    "href",
+    /origin=-6\.25%2C107\.01&destination=-6\.256%2C107\.032/,
+  );
+  await page.locator("#account-button").click();
+  await expect(page.locator("#account-label")).toHaveText(
+    "Masuk dengan Google",
+  );
+  await expect(popup).toHaveCount(0);
+  await expect(page.locator("#detail-card")).toBeHidden();
+  await expect(page.getByRole("link", { name: /Cek rute hunian/ })).toHaveCount(
+    0,
+  );
 });
 
 test("/ is marked noindex for search engines", async ({ page }) => {
