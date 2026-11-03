@@ -41,6 +41,20 @@ def brighton_page(function="LeaseOut", description="Harga sewa 30 juta per tahun
     ]) + '</script><a href="/ads?Latitude=-6.29&Longitude=106.79">Ad</a>'
 
 
+def prime_page(amount=7_000_000, currency="IDR", duration="P1M", name="Disewakan Apartemen Uji", **changes):
+    listing = {"@type": "RealEstateListing", "url": "https://jakartaprime.com/listing/disewakan-apartemen-uji",
+               "name": name, "description": "PRIVATE description, contact 081234567891",
+               "datePosted": "2026-11-01T08:00:00+00:00",
+               "offers": {"price": amount, "priceCurrency": currency, "availability": "https://schema.org/InStock",
+                          "priceSpecification": {"price": amount, "priceCurrency": currency, "billingDuration": duration}},
+               "address": {"addressLocality": "Cilandak", "addressRegion": "Jakarta Selatan", "streetAddress": "PRIVATE No 123"},
+               "image": ["https://images.example.invalid/unit.jpg"]}
+    listing.update(changes)
+    office = {"@type": "RealEstateAgent", "name": "PRIVATE", "geo": {"latitude": -6.29, "longitude": 106.79}}
+    return '<script type="application/ld+json">' + json.dumps([office, listing]) + '</script>' + \
+           '<dl><div><dd>Studio</dd><dt>Kamar tidur</dt></div></dl><p>± Rp 84 jt per tahun</p>'
+
+
 class ProviderTest(unittest.TestCase):
     def adapter(self, name):
         return m.adapters.Adapter(name, c)
@@ -108,7 +122,7 @@ class ProviderTest(unittest.TestCase):
         self.assertNotIn("PRIVATE", json.dumps(row))
 
     def test_all_adapter_allowlists_reject_accounts_other_sites_and_sale_routes(self):
-        for name in ["realoka", "brighton", "jendela360"]:
+        for name in ["realoka", "brighton", "jendela360", "jakartaprime"]:
             a = self.adapter(name)
             for suffix in ["/api/items", "/login", "/account", "/disewa/rumah/test?token=secret"]:
                 with self.assertRaises(ValueError):
@@ -117,6 +131,68 @@ class ProviderTest(unittest.TestCase):
                 a.canonical("https://evil.example.invalid/robots.txt")
             with self.assertRaises(ValueError):
                 a.parse_search("<html><h1>Changed layout</h1></html>", a.origin+"/robots.txt")
+
+    def test_prime_keeps_real_monthly_price_and_never_uses_office_geo_or_private_fields(self):
+        a = self.adapter("jakartaprime")
+        row = a.parse_detail(prime_page(), a.origin+"/listing/disewakan-apartemen-uji")
+        self.assertEqual((row["amount"], row["period"], row["bedrooms"]), (7_000_000, "monthly", 0))
+        self.assertEqual(row["sourceDateKind"], "posted")
+        self.assertEqual(row["locality"], "Cilandak, Jakarta Selatan")
+        self.assertIsNone(row["location"])
+        self.assertNotIn("minimumRentMonths", row)
+        self.assertIn("no-proven-location", row["issues"])
+        for private in ["PRIVATE", "081234567891", "84000000"]:
+            self.assertNotIn(private, json.dumps(row))
+
+    def test_prime_yearly_price_stays_yearly_and_date_is_not_filled_when_unpublished(self):
+        a = self.adapter("jakartaprime")
+        row = a.parse_detail(prime_page(130_000_000, duration="P1Y", datePosted=None), a.origin+"/listing/disewakan-apartemen-uji")
+        self.assertEqual((row["amount"], row["period"]), (130_000_000, "yearly"))
+        self.assertAlmostEqual(row["monthlyEquivalent"], 130_000_000 / 12)
+        self.assertIsNone(row["sourceUpdatedAt"])
+        self.assertEqual(row["sourceDateKind"], "not-published")
+        self.assertNotIn("minimumRentMonths", row)
+
+    def test_prime_holds_foreign_currency_and_missing_billing_period(self):
+        a = self.adapter("jakartaprime")
+        row = a.parse_detail(prime_page(300_000, currency="USD"), a.origin+"/listing/disewakan-apartemen-uji")
+        self.assertIsNone(row["amount"])
+        self.assertIsNone(row["monthlyEquivalent"])
+        self.assertIn("non-idr-price-needs-review", row["issues"])
+        row = a.parse_detail(prime_page(duration=None), a.origin+"/listing/disewakan-apartemen-uji")
+        self.assertIsNone(row["period"])
+        self.assertIn("unknown-rent-period", row["issues"])
+
+    def test_prime_holds_land_inactive_units_and_conflicting_primary_prices(self):
+        a = self.adapter("jakartaprime")
+        row = a.parse_detail(prime_page(name="Disewakan Tanah Uji"), a.origin+"/listing/disewakan-apartemen-uji")
+        self.assertIn("property-kind-needs-review", row["issues"])
+        offers = {"price": 7_000_000, "priceCurrency": "IDR", "availability": "https://schema.org/OutOfStock",
+                  "priceSpecification": {"price": 84_000_000, "priceCurrency": "IDR", "billingDuration": "P1M"}}
+        row = a.parse_detail(prime_page(offers=offers), a.origin+"/listing/disewakan-apartemen-uji")
+        self.assertIsNone(row["amount"])
+        self.assertIn("invalid-rent", row["issues"])
+        self.assertIn("inactive-or-rented", row["issues"])
+
+    def test_prime_validates_unit_url_and_does_not_accept_sale_or_query_routes(self):
+        a = self.adapter("jakartaprime")
+        with self.assertRaises(ValueError):
+            a.parse_detail(prime_page(url=a.origin+"/listing/disewakan-unit-lain"), a.origin+"/listing/disewakan-apartemen-uji")
+        for path in ["/listing/dijual-apartemen-uji", "/api/listings", "/sewa-rumah?page=2", "/sewa-apartemen/jakarta-utara"]:
+            with self.assertRaises(ValueError):
+                a.canonical(a.origin+path)
+
+    def test_prime_search_excludes_sales_and_maps_only_supported_cities(self):
+        a = self.adapter("jakartaprime")
+        page = '<h1>Sewa Rumah</h1><a href="/listing/disewakan-rumah-uji">Sewa</a>' + \
+               '<a href="/listing/dijual-rumah-uji">Jual</a>'
+        rows = a.parse_search(page, a.origin+"/sewa-rumah")
+        self.assertEqual([r["url"] for r in rows["cards"]], [a.origin+"/listing/disewakan-rumah-uji"])
+        self.assertEqual(rows["pages"], 1)
+        config = {"cities": ["jakarta-selatan", "jakarta-pusat"]}
+        self.assertEqual(a.sources(["jawa-barat/bekasi/pondokgede"], config), [])
+        self.assertEqual(a.sources(["dki-jakarta/jakarta-selatan/cilandak"], config),
+                         [a.origin+"/sewa-apartemen/jakarta-selatan", a.origin+"/sewa-rumah"])
 
     def test_same_building_with_different_units_is_not_a_duplicate_coordinate(self):
         rows = [{"url": f"https://example.invalid/{n}", "issues": [], "reviewStatus": "candidate", "imageHashes": [str(n)],

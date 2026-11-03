@@ -23,7 +23,7 @@ def load_module(name):
 
 core = load_module("rental_crawler")
 adapters = load_module("rental_adapters")
-PROVIDERS = ("pinhome", "jendela360", "realoka", "brighton")
+PROVIDERS = ("pinhome", "jendela360", "realoka", "brighton", "jakartaprime")
 
 
 def provider_plan(base, config, cancel=None):

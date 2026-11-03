@@ -35,7 +35,7 @@ class Adapter:
     def __init__(self, name, core, cancel=None):
         self.name, self.core, self.cancel = name, core, cancel
         self.origin = {"jendela360": "https://jendela360.com", "realoka": "https://www.realoka.com",
-                       "brighton": "https://www.brighton.co.id"}[name]
+                       "brighton": "https://www.brighton.co.id", "jakartaprime": "https://jakartaprime.com"}[name]
 
     def canonical(self, value):
         u = urllib.parse.urlsplit(urllib.parse.urljoin(self.origin + "/", value))
@@ -47,6 +47,7 @@ class Adapter:
             "realoka": r"/(?:robots\.txt|(?:rumah|apartemen)-disewakan/[a-z0-9-]+|[1-9][0-9]{3,}-[a-z0-9-]+)",
             "brighton": r"/(?:robots\.txt|disewa/(?:rumah|apartment)/[a-z0-9-]+|cari-properti/view/[a-z0-9-]+)",
             "jendela360": r"/(?:robots\.txt|apartemen/[a-z0-9-]+|apartemen-[a-z0-9-]+|sewa-apartemen-[a-z0-9-]+(?:/[A-Z][A-Z0-9]{3,11})?)",
+            "jakartaprime": r"/(?:robots\.txt|sewa-rumah|sewa-apartemen/(?:jakarta-selatan|jakarta-pusat)|listing/disewakan-[a-z0-9-]+)",
         }
         if not re.fullmatch(patterns[self.name], p):
             raise ValueError("URL outside public rental routes")
@@ -62,6 +63,8 @@ class Adapter:
             return bool(re.fullmatch(r"/[1-9][0-9]{3,}-[a-z0-9-]+", path))
         if self.name == "brighton":
             return path.startswith("/cari-properti/view/")
+        if self.name == "jakartaprime":
+            return path.startswith("/listing/disewakan-")
         return bool(re.fullmatch(r"/sewa-apartemen-[a-z0-9-]+/[A-Z][A-Z0-9]{3,11}", path))
 
     def sources(self, paths, config):
@@ -75,6 +78,8 @@ class Adapter:
                 urls += [self.origin + "/" + kind + "-disewakan/" + city for kind in ("rumah", "apartemen")]
             elif self.name == "brighton":
                 urls += [self.origin + "/disewa/" + kind + "/" + city for kind in ("rumah", "apartment")]
+            elif self.name == "jakartaprime":
+                urls += [self.origin + "/sewa-apartemen/" + city, self.origin + "/sewa-rumah"]
             else:
                 district = parts[2] if len(parts) > 2 else ""
                 if district in config.get("districts", []):
@@ -155,6 +160,8 @@ class Adapter:
         return self.core.digest(path)
 
     def parse_detail(self, text, url):
+        if self.name == "jakartaprime":
+            return self.parse_prime(text, url)
         if self.name == "jendela360":
             props = self.core.script_json(text, "__NEXT_DATA__")["props"]["pageProps"]
             data = props["unitDetailProps"]["data"]
@@ -259,4 +266,52 @@ class Adapter:
         image = re.search(r'<meta[^>]*property="og:image"[^>]*content="([^"]+)"', text)
         if image:
             row["imageHashes"] = [self.photo_hash(image[1])]
+        return self.finish(row)
+
+    def parse_prime(self, text, url):
+        nodes = []
+        for block in re.findall(r'<script\b[^>]*type=[\'"]application/ld\+json[\'"][^>]*>(.*?)</script>', text, re.S | re.I):
+            parsed = json.loads(block)
+            nodes += parsed if isinstance(parsed, list) else parsed.get("@graph", [parsed])
+        listing = next((n for n in nodes if n.get("@type") == "RealEstateListing"), None)
+        if not listing or self.canonical(listing.get("url", "")) != self.canonical(url):
+            raise ValueError("Source structure changed Jakarta Prime listing")
+        name = plain(listing.get("name"))
+        kind = "Apartemen" if re.search(r"\bapart(?:emen|ment)\b", name, re.I) else "Rumah"
+        row = self.base(url, kind)
+        if not re.search(r"\b(?:apartemen|apartment|rumah|house)\b", name, re.I):
+            row["issues"].append("property-kind-needs-review")
+        if not self.is_detail(self.canonical(url)) or not re.search(r"disewa|sewa|for rent", name, re.I):
+            row["issues"].append("not-a-rental-offer")
+        offer = listing.get("offers") or {}
+        spec = offer.get("priceSpecification") or {}
+        row["sourceCurrency"] = offer.get("priceCurrency")
+        if row["sourceCurrency"] != "IDR" or spec.get("priceCurrency", row["sourceCurrency"]) != "IDR":
+            row["issues"].append("non-idr-price-needs-review")
+        else:
+            amount = number(offer.get("price"))
+            if spec.get("price") is not None and number(spec["price"]) != amount:
+                row["issues"].append("invalid-rent")
+            else:
+                row["amount"] = amount
+        # Billing period is explicit; it is neither an equivalent nor a minimum term.
+        row["period"] = {"P1M": "monthly", "P1Y": "yearly", "P12M": "yearly"}.get(spec.get("billingDuration"))
+        if offer.get("availability") == "https://schema.org/InStock":
+            row["sourceStatus"] = "unit_type_status.active"
+        else:
+            row["issues"].append("inactive-or-rented")
+        row["sourceUpdatedAt"] = listing.get("dateModified") or listing.get("datePosted")
+        row["sourceDateKind"] = "modified" if listing.get("dateModified") else "posted" if listing.get("datePosted") else "not-published"
+        address = listing.get("address") or {}
+        row["locality"] = self.core.public_text(", ".join(str(address.get(k) or "") for k in ("addressLocality", "addressRegion")))
+        # Only the primary specification block, never related-unit cards or descriptions.
+        bedroom = re.search(r'<dd\b[^>]*>(.*?)</dd>\s*<dt\b[^>]*>Kamar tidur</dt>', text, re.S | re.I)
+        if bedroom:
+            label = plain(bedroom[1])
+            row["bedrooms"] = 0 if label.lower() == "studio" else number(label)
+        images = listing.get("image") or []
+        images = [images] if isinstance(images, str) else images
+        row["imageHashes"] = [self.photo_hash(v) for v in images[:5] if isinstance(v, str)]
+        # The RealEstateAgent geo is an office. No proven property pin in sampled HTML.
+        # Never publish the full description, street address, contact or agent identity.
         return self.finish(row)

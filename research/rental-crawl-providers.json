@@ -93,6 +93,12 @@
         "kab-tangerang": "tangerang",
         "kab-bandung-barat": "bandung"
       }
+    },
+    "jakartaprime": {
+      "enabled": true,
+      "maxSearchRequests": 6,
+      "maxDetailRequests": 40,
+      "cities": ["jakarta-selatan", "jakarta-pusat"]
     }
   },
   "manualSources": [
@@ -110,6 +116,30 @@
       "name": "OLX",
       "status": "timeout",
       "note": "Kategori tidak selesai dibaca; belum dijadwalkan otomatis."
+    },
+    {
+      "name": "99.co",
+      "status": "http-403",
+      "checkedAt": "2026-11-03",
+      "note": "Robots terbaca, tetapi kategori sewa dari server ditolak; tidak diakali."
+    },
+    {
+      "name": "Dot Property",
+      "status": "http-403",
+      "checkedAt": "2026-11-03",
+      "note": "Robots dari server ditolak; tidak melanjutkan pengambilan kategori."
+    },
+    {
+      "name": "Lamudi",
+      "status": "http-403",
+      "checkedAt": "2026-11-03",
+      "note": "Robots dari server ditolak; tidak melanjutkan pengambilan kategori."
+    },
+    {
+      "name": "Sewa-Apartemen.net",
+      "status": "http-403",
+      "checkedAt": "2026-11-03",
+      "note": "Robots dari server ditolak; belum menjadi sumber otomatis."
     }
   ]
 }
