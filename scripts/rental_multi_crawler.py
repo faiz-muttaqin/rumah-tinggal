@@ -23,7 +23,7 @@ def load_module(name):
 
 core = load_module("rental_crawler")
 adapters = load_module("rental_adapters")
-PROVIDERS = ("pinhome", "jendela360", "realoka", "brighton", "jakartaprime")
+PROVIDERS = ("pinhome", "jendela360", "realoka", "brighton", "jakartaprime", "mamikos")
 
 
 def provider_plan(base, config, cancel=None):
@@ -100,6 +100,7 @@ def merge(directory, plans, config, runs):
     blocked = {"inactive-or-rented", "invalid-rent", "unknown-rent-period", "not-a-rental-offer",
                "non-idr-price-needs-review", "possible-cross-source-duplicate", "possible-duplicate-photo",
                "usage-or-period-needs-review", "property-kind-needs-review"}
+    blocked.update({"payment-options-needs-review", "resident-policy-needs-review", "source-availability-needs-review"})
     area_leads = [r for r in result["results"] if not r.get("location") and r.get("amount") and r.get("period")
                   and not r["stale"] and not r["alreadyCatalogued"] and r.get("locality")
                   and not blocked.intersection(r["issues"]) and not r.get("error")]

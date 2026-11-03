@@ -55,6 +55,23 @@ def prime_page(amount=7_000_000, currency="IDR", duration="P1M", name="Disewakan
            '<dl><div><dd>Studio</dd><dt>Kamar tidur</dt></div></dl><p>± Rp 84 jt per tahun</p>'
 
 
+def mami_unit():
+    return {"slug": "kost-bekasi-kost-campur-murah-uji", "status": 0, "available_room": 2, "gender": 0,
+            "area_city": "Kota Bekasi", "area_subdistrict": "Bekasi Selatan", "latitude": -6.29, "longitude": 106.79,
+            "price_monthly": 1_000_000, "price_yearly": 10_000_000, "price_title": 100_000,
+            "price_title_formats": {"price_monthly": {"currency_symbol": "Rp", "price": "1.000.000", "rent_type_unit": "bulan"},
+                                    "price_yearly": {"currency_symbol": "Rp", "price": "10.000.000", "rent_type_unit": "tahun"}},
+            "booking_rules": {"is_married": True, "is_bring_child": True}, "min_month": "Min. 3 Bln", "size": "3x4",
+            "updated_at": "2026-11-01 08:24:58", "not_updated": False, "is_inactive_owner": False,
+            "photo_url": {"large": ["https://images.example.invalid/room.jpg"]},
+            "owner_name": "PRIVATE", "phone": "081234567891", "address": "PRIVATE HOUSE NUMBER",
+            "description": "PRIVATE full description", "map_guide": "PRIVATE"}
+
+
+def mami_page(data):
+    return '<script>var detail = ' + json.dumps(data) + '; window.otherCode = "PRIVATE";</script>'
+
+
 class ProviderTest(unittest.TestCase):
     def adapter(self, name):
         return m.adapters.Adapter(name, c)
@@ -122,7 +139,7 @@ class ProviderTest(unittest.TestCase):
         self.assertNotIn("PRIVATE", json.dumps(row))
 
     def test_all_adapter_allowlists_reject_accounts_other_sites_and_sale_routes(self):
-        for name in ["realoka", "brighton", "jendela360", "jakartaprime"]:
+        for name in ["realoka", "brighton", "jendela360", "jakartaprime", "mamikos"]:
             a = self.adapter(name)
             for suffix in ["/api/items", "/login", "/account", "/disewa/rumah/test?token=secret"]:
                 with self.assertRaises(ValueError):
@@ -193,6 +210,88 @@ class ProviderTest(unittest.TestCase):
         self.assertEqual(a.sources(["jawa-barat/bekasi/pondokgede"], config), [])
         self.assertEqual(a.sources(["dki-jakarta/jakarta-selatan/cilandak"], config),
                          [a.origin+"/sewa-apartemen/jakarta-selatan", a.origin+"/sewa-rumah"])
+
+    def test_mamikos_sitemap_reads_only_room_locations_and_never_image_locations(self):
+        a = self.adapter("mamikos")
+        room = a.origin + "/room/" + mami_unit()["slug"]
+        xml = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'
+        xml += f'<url><loc>{room}</loc><image:image><image:loc>https://images.example.invalid/private.jpg</image:loc></image:image></url>'
+        xml += f'<url><loc>{a.origin}/api/rooms</loc></url><url><loc>https://evil.example.invalid/room/kost-uji</loc></url></urlset>'
+        parsed = a.parse_search(xml, a.origin + "/sitemaps/sitemap/sitemap-room-kost-bekasi-1.xml")
+        self.assertEqual(parsed["cards"], [{"url": room}])
+        self.assertEqual((parsed["total"], parsed["pages"]), (1, 1))
+        for invalid in ["<html>Changed</html>", "<urlset", '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"/>']:
+            with self.assertRaises(ValueError):
+                a.parse_search(invalid, a.origin + "/robots.txt")
+
+    def test_mamikos_uses_agreeing_payment_fields_and_keeps_source_date_minimum_and_privacy(self):
+        a = self.adapter("mamikos")
+        row = a.parse_detail(mami_page(mami_unit()), a.origin + "/room/" + mami_unit()["slug"])
+        self.assertEqual((row["amount"], row["period"], row["minimumRentMonths"]), (1_000_000, "monthly", 3))
+        self.assertEqual((row["buildingAreaM2"], row["bedrooms"], row["kind"]), (12, 1, "Kos"))
+        self.assertEqual(row["sourceUpdatedAt"], "2026-11-01 08:24:58")
+        self.assertEqual(row["location"], {"lat": -6.29, "lng": 106.79, "precision": "approximate"})
+        self.assertEqual(row["issues"], [])
+        for private in ["PRIVATE", "081234567891", "owner_name", "address", "description", "map_guide"]:
+            self.assertNotIn(private, json.dumps(row))
+
+    def test_mamikos_yearly_only_is_not_monthly_and_missing_date_minimum_remain_unknown(self):
+        a = self.adapter("mamikos")
+        data = mami_unit()
+        data.update(price_monthly=0, min_month=None, updated_at=None)
+        row = a.parse_detail(mami_page(data), a.origin + "/room/" + data["slug"])
+        self.assertEqual((row["amount"], row["period"]), (10_000_000, "yearly"))
+        self.assertNotIn("minimumRentMonths", row)
+        self.assertIsNone(row["sourceUpdatedAt"])
+        self.assertEqual(row["sourceDateKind"], "not-published")
+
+    def test_mamikos_holds_conflicting_prices_currency_and_unexplained_long_term_rates(self):
+        a = self.adapter("mamikos")
+        for change, issue in [({"price": "1.100.000"}, "payment-options-needs-review"),
+                              ({"currency_symbol": "$"}, "non-idr-price-needs-review"),
+                              ({"long_term_rate": "12 months"}, "payment-options-needs-review")]:
+            data = mami_unit()
+            data["price_title_formats"]["price_monthly"].update(change)
+            row = a.parse_detail(mami_page(data), a.origin + "/room/" + data["slug"])
+            self.assertIn(issue, row["issues"])
+            self.assertEqual(c.assess(row, [{"id": "m", "name": "M", "lat": -6.29, "lng": 106.79}])["reviewStatus"], "held")
+
+    def test_mamikos_room_capacity_and_family_rules_are_independent_of_campur(self):
+        a = self.adapter("mamikos")
+        for change, issue in [({"available_room": 0}, "inactive-or-rented"), ({"status": 2}, "inactive-or-rented"),
+                              ({"not_updated": True}, "source-availability-needs-review"),
+                              ({"is_inactive_owner": True}, "source-availability-needs-review"),
+                              ({"booking_rules": {"is_married": True, "is_bring_child": False}}, "resident-policy-needs-review"),
+                              ({"booking_rules": {}}, "resident-policy-needs-review"),
+                              ({"gender": 1}, "resident-policy-needs-review")]:
+            data = mami_unit()
+            data.update(change)
+            row = a.parse_detail(mami_page(data), a.origin + "/room/" + data["slug"])
+            self.assertIn(issue, row["issues"])
+
+    def test_mamikos_requires_room_identity_and_never_guesses_missing_coordinates(self):
+        a = self.adapter("mamikos")
+        data = mami_unit()
+        url = a.origin + "/room/" + data["slug"]
+        with self.assertRaises(ValueError):
+            a.parse_detail(mami_page({**data, "slug": "kost-other"}), url)
+        data.update(latitude=None, longitude=None)
+        row = a.parse_detail(mami_page(data), url)
+        self.assertIsNone(row["location"])
+        self.assertIn("no-proven-location", row["issues"])
+        for route in ["/kost/kost-bekasi-murah", "/api/rooms", "/room/apartemen-uji", "/room/kost-uji?token=x",
+                      "/sitemaps/sitemap/sitemap-room-kost-bandung-1.xml"]:
+            with self.assertRaises(ValueError):
+                a.canonical(a.origin + route)
+
+    def test_mamikos_sitemap_plan_covers_five_cities_without_claiming_district_search(self):
+        a = self.adapter("mamikos")
+        settings = json.loads((c.ROOT / "research/rental-crawl-providers.json").read_text())["providers"]["mamikos"]
+        self.assertEqual(len(a.sources(["dki-jakarta/jakarta-selatan/cilandak"], settings)), 9)
+        self.assertEqual(len(a.sources(["jawa-barat/kab-bekasi/cibitung"], settings)), 9)
+        self.assertEqual(a.sources(["jawa-barat/bandung/batununggal"], settings), [])
+        paths = [p for group in json.loads((c.ROOT / "research/rental-crawl-sources.json").read_text())["targets"].values() for p in group]
+        self.assertEqual(len(a.sources(paths, settings)), 39)
 
     def test_same_building_with_different_units_is_not_a_duplicate_coordinate(self):
         rows = [{"url": f"https://example.invalid/{n}", "issues": [], "reviewStatus": "candidate", "imageHashes": [str(n)],
@@ -285,9 +384,15 @@ class ProviderTest(unittest.TestCase):
             c.save(directory/"state.json", {"details": {row["url"]: row}, "pages": {}})
             other = {**row, "url": "https://example.invalid/b", "provider": "realoka", "issues": ["no-proven-location"]}
             c.save(directory/"providers/realoka/state.json", {"details": {other["url"]: other}, "pages": {}})
+            held = {}
+            for index, issue in enumerate(["resident-policy-needs-review", "payment-options-needs-review", "source-availability-needs-review"]):
+                unit = {**other, "url": "https://mamikos.com/room/kost-uji-" + str(index), "provider": "mamikos",
+                        "issues": ["no-proven-location", issue]}
+                held[unit["url"]] = unit
+            c.save(directory/"providers/mamikos/state.json", {"details": held, "pages": {}})
             original = (directory/"state.json").read_bytes()
             with patch.object(c, "ROOT", root):
-                result = m.merge(directory, {"pinhome": (None, [mosque]), "realoka": (None, [mosque])},
+                result = m.merge(directory, {"pinhome": (None, [mosque]), "realoka": (None, [mosque]), "mamikos": (None, [mosque])},
                                  {"detailCacheHours": 72, "searchCacheHours": 24, "radiusKm": 1.5}, [])
             self.assertEqual(result["summary"]["areaLeads"], 1)
             self.assertEqual(result["areaLeads"][0]["provider"], "realoka")

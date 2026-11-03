@@ -6,6 +6,7 @@ import json
 import math
 import re
 import urllib.parse
+import xml.etree.ElementTree as ET
 
 
 def plain(value):
@@ -35,7 +36,8 @@ class Adapter:
     def __init__(self, name, core, cancel=None):
         self.name, self.core, self.cancel = name, core, cancel
         self.origin = {"jendela360": "https://jendela360.com", "realoka": "https://www.realoka.com",
-                       "brighton": "https://www.brighton.co.id", "jakartaprime": "https://jakartaprime.com"}[name]
+                       "brighton": "https://www.brighton.co.id", "jakartaprime": "https://jakartaprime.com",
+                       "mamikos": "https://mamikos.com"}[name]
 
     def canonical(self, value):
         u = urllib.parse.urlsplit(urllib.parse.urljoin(self.origin + "/", value))
@@ -48,6 +50,7 @@ class Adapter:
             "brighton": r"/(?:robots\.txt|disewa/(?:rumah|apartment)/[a-z0-9-]+|cari-properti/view/[a-z0-9-]+)",
             "jendela360": r"/(?:robots\.txt|apartemen/[a-z0-9-]+|apartemen-[a-z0-9-]+|sewa-apartemen-[a-z0-9-]+(?:/[A-Z][A-Z0-9]{3,11})?)",
             "jakartaprime": r"/(?:robots\.txt|sewa-rumah|sewa-apartemen/(?:jakarta-selatan|jakarta-pusat)|listing/disewakan-[a-z0-9-]+)",
+            "mamikos": r"/(?:robots\.txt|room/kost-[a-z0-9-]+|sitemaps/sitemap/sitemap-room-kost-(?:jakarta|bekasi|bogor|depok|tangerang)-[1-9][0-9]?\.xml)",
         }
         if not re.fullmatch(patterns[self.name], p):
             raise ValueError("URL outside public rental routes")
@@ -65,6 +68,8 @@ class Adapter:
             return path.startswith("/cari-properti/view/")
         if self.name == "jakartaprime":
             return path.startswith("/listing/disewakan-")
+        if self.name == "mamikos":
+            return path.startswith("/room/kost-")
         return bool(re.fullmatch(r"/sewa-apartemen-[a-z0-9-]+/[A-Z][A-Z0-9]{3,11}", path))
 
     def sources(self, paths, config):
@@ -80,6 +85,9 @@ class Adapter:
                 urls += [self.origin + "/disewa/" + kind + "/" + city for kind in ("rumah", "apartment")]
             elif self.name == "jakartaprime":
                 urls += [self.origin + "/sewa-apartemen/" + city, self.origin + "/sewa-rumah"]
+            elif self.name == "mamikos":
+                urls += [self.origin + f"/sitemaps/sitemap/sitemap-room-kost-{city}-{page}.xml"
+                         for page in range(1, config["sitemapPages"][city] + 1)]
             else:
                 district = parts[2] if len(parts) > 2 else ""
                 if district in config.get("districts", []):
@@ -88,6 +96,30 @@ class Adapter:
         return list(dict.fromkeys(self.canonical(url) for url in urls))
 
     def parse_search(self, text, url):
+        if self.name == "mamikos":
+            try:
+                root = ET.fromstring(text)
+            except ET.ParseError as exc:
+                raise ValueError("Source structure changed Mamikos sitemap") from exc
+            ns = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+            if root.tag != ns + "urlset":
+                raise ValueError("Source structure changed Mamikos sitemap")
+            cards = {}
+            # Only top-level property locations. Image locations are not listings.
+            for node in root.findall(ns + "url"):
+                loc = node.find(ns + "loc")
+                if loc is None or not loc.text:
+                    continue
+                try:
+                    link = self.canonical(loc.text.strip())
+                    if self.is_detail(link):
+                        cards[link] = {"url": link}
+                except ValueError:
+                    continue
+            if not cards:
+                raise ValueError("Source structure changed Mamikos room links")
+            return {"cards": list(cards.values()), "total": len(cards), "page": 1, "pages": 1,
+                    "locationLabel": urllib.parse.urlsplit(url).path.rsplit("/", 1)[-1]}
         parser = Links()
         parser.feed(text)
         cards = {}
@@ -153,6 +185,79 @@ class Adapter:
         row["imageHashes"] = sorted(set(row["imageHashes"]))
         return row
 
+    def parse_mamikos(self, text, url):
+        match = re.search(r"\bvar\s+detail\s*=\s*(?=\{)", text)
+        if not match:
+            raise ValueError("Source structure changed Mamikos detail")
+        # Decode one JSON value. Never evaluate the surrounding JavaScript.
+        data, _ = json.JSONDecoder().raw_decode(text[match.end():])
+        if not isinstance(data, dict) or data.get("slug") != urllib.parse.urlsplit(url).path.rsplit("/", 1)[-1]:
+            raise ValueError("Mamikos room identity mismatch")
+        row = self.base(url, "Kos")
+        formats = data.get("price_title_formats") or {}
+        options = []
+        for months, key, label in [(1, "price_monthly", "bulan"), (3, "price_quarterly", "3 bulan"),
+                                   (6, "price_semiannualy", "6 bulan"), (12, "price_yearly", "tahun")]:
+            value = number(data.get(key))
+            if not value:
+                continue
+            display = formats.get("price_semiannually" if months == 6 else key) or {}
+            if display.get("currency_symbol") != "Rp":
+                row["issues"].append("non-idr-price-needs-review")
+                continue
+            shown = str(display.get("price") or "")
+            shown_amount = int(shown.replace(".", "")) if re.fullmatch(r"[0-9]+(?:\.[0-9]{3})*", shown) else None
+            if shown_amount != value or display.get("rent_type_unit") != label:
+                row["issues"].append("payment-options-needs-review")
+                continue
+            if display.get("long_term_rate") is not None:
+                row["issues"].append("payment-options-needs-review")
+                continue
+            options.append({"months": months, "amount": value})
+        row["priceOptions"] = options
+        chosen = next((p for months in (1, 12) for p in options if p["months"] == months), None)
+        if chosen:
+            row.update(amount=chosen["amount"], period="monthly" if chosen["months"] == 1 else "yearly")
+        minimum = data.get("min_month")
+        if type(minimum) is int and 1 <= minimum <= 120:
+            row["minimumRentMonths"] = minimum
+        elif isinstance(minimum, str) and (term := re.fullmatch(r"Min\.\s*([1-9][0-9]{0,2})\s*Bln", minimum, re.I)) and int(term[1]) <= 120:
+            row["minimumRentMonths"] = int(term[1])
+        rooms = number(data.get("available_room"))
+        if type(data.get("status")) is not int or data["status"] != 0 or rooms is None or rooms <= 0:
+            row["issues"].append("inactive-or-rented")
+        else:
+            row["sourceStatus"] = "unit_type_status.active"
+        if data.get("not_updated") is True or data.get("is_inactive_owner") is True:
+            row["issues"].append("source-availability-needs-review")
+        rules = data.get("booking_rules") or {}
+        row["residentPolicy"] = {"marriedCouplesAllowed": rules.get("is_married") if type(rules.get("is_married")) is bool else None,
+                                 "childrenAllowed": rules.get("is_bring_child") if type(rules.get("is_bring_child")) is bool else None}
+        # Campur alone does not establish permission for couples or children.
+        if type(data.get("gender")) is not int or data["gender"] != 0 or any(v is not True for v in row["residentPolicy"].values()):
+            row["issues"].append("resident-policy-needs-review")
+        point = self.core.point(str(data.get("latitude")) + "," + str(data.get("longitude")))
+        if point:
+            row["location"] = {"lat": round(point[0], 6), "lng": round(point[1], 6), "precision": "approximate"}
+        row["locality"] = ", ".join(self.core.public_text(data.get(k), 90) for k in ("area_subdistrict", "area_city") if data.get(k))
+        size = re.fullmatch(r"\s*([0-9]+(?:[.,][0-9]+)?)\s*[xX×]\s*([0-9]+(?:[.,][0-9]+)?)\s*", str(data.get("size") or ""))
+        if size:
+            area = float(size[1].replace(",", ".")) * float(size[2].replace(",", "."))
+            if 2 <= area <= 200:
+                row["buildingAreaM2"] = round(area, 2)
+        row["bedrooms"] = 1
+        stamp = data.get("updated_at")
+        row["sourceUpdatedAt"] = stamp if isinstance(stamp, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}(?: \d{2}:\d{2}:\d{2})?", stamp) else None
+        row["sourceDateKind"] = "modified" if row["sourceUpdatedAt"] else "not-published"
+        photos = data.get("photo_url") or {}
+        photos = photos.get("large", []) if isinstance(photos, dict) else []
+        if isinstance(photos, str):
+            photos = [photos]
+        if isinstance(photos, list):
+            row["imageHashes"] = [self.photo_hash(p) for p in photos[:5] if isinstance(p, str)]
+        row["issues"] = list(dict.fromkeys(row["issues"]))
+        return self.finish(row)
+
     def photo_hash(self, url):
         # Normalize common image proxy wrappers before comparing source paths.
         path = urllib.parse.urlsplit(url).path
@@ -160,6 +265,8 @@ class Adapter:
         return self.core.digest(path)
 
     def parse_detail(self, text, url):
+        if self.name == "mamikos":
+            return self.parse_mamikos(text, url)
         if self.name == "jakartaprime":
             return self.parse_prime(text, url)
         if self.name == "jendela360":

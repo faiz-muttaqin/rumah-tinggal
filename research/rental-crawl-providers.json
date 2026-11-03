@@ -99,6 +99,29 @@
       "maxSearchRequests": 6,
       "maxDetailRequests": 40,
       "cities": ["jakarta-selatan", "jakarta-pusat"]
+    },
+    "mamikos": {
+      "enabled": true,
+      "maxSearchRequests": 40,
+      "maxDetailRequests": 60,
+      "cities": ["jakarta", "bekasi", "bogor", "depok", "tangerang"],
+      "sitemapPages": {
+        "jakarta": 9,
+        "bekasi": 9,
+        "bogor": 6,
+        "depok": 5,
+        "tangerang": 10
+      },
+      "cityAliases": {
+        "jakarta-selatan": "jakarta",
+        "jakarta-pusat": "jakarta",
+        "jakarta-barat": "jakarta",
+        "jakarta-timur": "jakarta",
+        "kab-bekasi": "bekasi",
+        "kab-bogor": "bogor",
+        "kab-tangerang": "tangerang",
+        "tangerang-selatan": "tangerang"
+      }
     }
   },
   "manualSources": [
