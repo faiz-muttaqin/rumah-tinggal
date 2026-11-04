@@ -4741,6 +4741,567 @@
         "sha256": "7278bd0b59b2abf452b0651011abba87d72e88269d6950056d8859f0351365cb",
         "selector": "__UNIT_DETAIL__.location.coordinate; paket tahunan dari deskripsi unit yang sama, bukan ekuivalen bulanan; minimum12bulan untuk paket yang dicatat"
       }
+    },
+    {
+      "rentalId": "sewa-jendela360-ncwa018",
+      "location": {
+        "lat": -6.2208,
+        "lng": 106.8189,
+        "precision": "building",
+        "label": "The Newton 2 Ciputra Apartment",
+        "url": "https://jendela360.com/sewa-apartemen-the-newton-2-ciputra-apartment/NCWA018",
+        "method": "Titik gedung pada rincian unit Jendela360",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Titik gedung, bukan posisi unit atau pintu masuk; lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "ae5cfdeae11409651589cfbd3ced9746826557682aeb49c6c3d32534e2eb4d96",
+        "selector": "__NEXT_DATA__.props.pageProps.unitDetailProps.data.latitude/longitude; harga 12 bulan dicocokkan pada tampilan halaman"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-rempoa-e1c7d69a",
+      "location": {
+        "lat": -6.284392,
+        "lng": 106.759344,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-raya",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "b5d29ff140fc4c0d44938b2b3e287a5d00361a28d3f29e8af1ba0e828d4d2185",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-pejaten-timur-ee56d083",
+      "location": {
+        "lat": -6.295402,
+        "lng": 106.846146,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-swadaya-1-gg-gardu",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "d1bc0efd64e0e3a35714b9906aa82e796b0d1a728194cabf06fe639bb5cbb329",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-cipinang-cempedak-2ad026d3",
+      "location": {
+        "lat": -6.229103,
+        "lng": 106.873909,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlpanti-asuhan-raya",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "6d58d8893fcb73e7491485f85377a51f7da4ae852dd6e20ca3e4d826a28c6a72",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-utan-kayu-utara-f072fcc7",
+      "location": {
+        "lat": -6.196758,
+        "lng": 106.866515,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-wahab-ii-utan-kayu-utara-matraman",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "d926681c4933fec94b8378364b86c7f589673b7386fb73ca01f7faf68bce4876",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari deskripsi eksplisit, lebih panjang dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-cipinang-cempedak-5e8b6c3b",
+      "location": {
+        "lat": -6.24025,
+        "lng": 106.874078,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-tanah-manisan-cipinang-jakarta-timur",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "789ad2faecb3d90ffc17ecb57c63fbb8ff7e5447b6acbf500ed39ec3b9471e1a",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-glodok-b6b7ba13",
+      "location": {
+        "lat": -6.147156,
+        "lng": 106.815657,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-green-central-city-2",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "ec24a5b058a8882bbe40b8df9f4aaa0ef6efc3fa5fac50f2c13b0d1346e370ab",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-kayu-putih-51d12cf1",
+      "location": {
+        "lat": -6.183538,
+        "lng": 106.880071,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kayu-putih-4",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "37c1ef7628af131398ccada2a41e48e0c71e7d85b01f1fea16b6e769d506540d",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-jatinegara-kaum-e92becfd",
+      "location": {
+        "lat": -6.209919,
+        "lng": 106.898227,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tb-badarudin-i-no-61-jatinegarakaum",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "a6396a247f5776b2859a4b757e7e98f1b206eb3ee9b47dc4eb2a6dca1784224f",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-sarua-serua-c63b26cd",
+      "location": {
+        "lat": -6.3114,
+        "lng": 106.713186,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kembang-sepatu",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "8aeca21bfc57e29a0bd72f1d0a5dacddb44ac3922e63b0cbe850e036f3b67816",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari deskripsi eksplisit, lebih panjang dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-jakasetia-jaka-setia-841211a8",
+      "location": {
+        "lat": -6.257007,
+        "lng": 106.966588,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-galaxy",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "e2ca8efa407f3b403b87e6d81cbe541c117e985c081e38c766b1b0ed273a17ac",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-cilebut-barat-dc3bf6d5",
+      "location": {
+        "lat": -6.516741,
+        "lng": 106.794294,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-taman-griya-asri-c17-no-12",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "31a02046f83f75a88345bf8df74de451aead6806f42e8f69b0e18e0493131c21",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-pangkalan-jati-baru-966d1c22",
+      "location": {
+        "lat": -6.322846,
+        "lng": 106.799403,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-adih",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "036e6e9308d80fd63c021e913d12366cb7fd0ed768fe741058cafb5e7529f161",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-pangkalan-jati-4a951a96",
+      "location": {
+        "lat": -6.322974,
+        "lng": 106.791936,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-madrasah-1",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "5b0d9a519b88a678f236a5f5dd8b12c45d84e20fff56d54b59df273240f2fe56",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-sukabumi-utara-ilir-ab73e31a",
+      "location": {
+        "lat": -6.211442,
+        "lng": 106.778527,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "12be1dd51c114e923d8af2e38c72b7b79525a3ea17ccc0a9f12e457dd91f6577",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-meruya-selatan-udik-bc61b2ed",
+      "location": {
+        "lat": -6.213334,
+        "lng": 106.735924,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-komplek-dpr-ii-kembangan-jakarta-barat",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "11d8859f10110495cb70b7525ba0c484628ee694240295f55e6242f01fa7481a",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-paninggilan-utara-910ca4d7",
+      "location": {
+        "lat": -6.239944,
+        "lng": 106.706409,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-taman-mutiara-paninggilan-ciledug",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "1c3eb5dca7235625ba8d62790530917967056b327eef6a093edce44676590958",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-parigi-perigi-lama-50dbbe5c",
+      "location": {
+        "lat": -6.270836,
+        "lng": 106.705597,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartement-emerald-bintaro",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "ad8529193143a6c38a892f42c38238f0f1e66db84cc5780bca28577dd70cf1a3",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-pondok-kacang-timur-e7568d46",
+      "location": {
+        "lat": -6.244214,
+        "lng": 106.691872,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-maharta-1-c",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "9d8dcd7c41182f1fdb7c8177300a4a4e158334becfa0f456d49cefc44f3a4254",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-sudimara-selatan-772577e2",
+      "location": {
+        "lat": -6.239732,
+        "lng": 106.699973,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-radenan-fatah-gg-masjdi-2",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "a8ef8ea7a8361d6ea2a0b3c58cdfb204ad6f09b3a4dc1a3be66072a6acd19fbb",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-pondok-kacang-barat-9399c049",
+      "location": {
+        "lat": -6.251247,
+        "lng": 106.683662,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-graha-bintaro-2",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "858d22b16be35d89ea3ed714ce630b627700cd4ec142654b6eaa152758420d24",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-malaka-sari-d0d7f216",
+      "location": {
+        "lat": -6.230612,
+        "lng": 106.930411,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2kt-100m-di-jl-taman-malaka-utara-blok-c11-no-1a",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "b7c360654b555e9258e2369e2ea7a5283a83a3ab1d96a50b8cae9f46a6103138",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-krukut-6cd7f3aa",
+      "location": {
+        "lat": -6.365778,
+        "lng": 106.787854,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-dulgani-rt-03-01-limo-depok",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "acf1906eda68cb846239207a1fc3fefd17870f03a5d2940e8aa297ddba682075",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-grogol-0508f94d",
+      "location": {
+        "lat": -6.377061,
+        "lng": 106.788342,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-hari-aman-grogol-depok",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "61e2972dbe944f14cec2229bd1602202ca4f4c15ff8ddafffa42a1965168e2c5",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-cilangkap-2ab52147",
+      "location": {
+        "lat": -6.337665,
+        "lng": 106.898969,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-assyafiiyah",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "ffb4248df9691c3fe5d6d7d4e14ef9f62030cf3f25d4a1d4dbf36ba435b18ac0",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-abadi-jaya-abadijaya-b98897e2",
+      "location": {
+        "lat": -6.390893,
+        "lng": 106.851942,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-tirta-kencana-1-rt-1-rw-3-tirta-jaya",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "7a8fbf7f08cc98f19c770c56d05fdf94036c86a4cae339a5805ef53738753cd8",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-abadi-jaya-abadijaya-068389d6",
+      "location": {
+        "lat": -6.387674,
+        "lng": 106.849216,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pasar-musi-banyuasin-raya",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "ef94b03095f70baa2f91329f871fefb7f2780ef9b2c8467a0d58678d51b78eff",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-baktijaya-48b1a274",
+      "location": {
+        "lat": -6.380484,
+        "lng": 106.843977,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-marrakesh-suites",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "6b6ecd0778bf7b9bcc94a1c8f2dd58a3d7427419d2c514269ec46dc23d3e0e34",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-harapanbaru-harapan-baru-fbfe3ef5",
+      "location": {
+        "lat": -6.209776,
+        "lng": 107.024371,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-furnished-lengkap-aksen-pink-di-metropolitan-park-apartment",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "7938da4bc0fe375ef674282724e8e2ce34172aadcb7b1c425ed562677138b68a",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-karadenan-aefa0a5a",
+      "location": {
+        "lat": -6.505521,
+        "lng": 106.817019,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pejeleran-ciluar-kartika-land",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "b523f375887f1a83eacce3727426cddc9333711fc648b2d03b287ba0f1907d37",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-cibadak-bd01ec9b",
+      "location": {
+        "lat": -6.540806,
+        "lng": 106.779828,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bukit-cimanggu-city-raya",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "cdb118a2e14203f1dd70e3f7fa3cd818bf000e83d319d47d53950cea8386ff66",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-cibadak-bd38d185",
+      "location": {
+        "lat": -6.556441,
+        "lng": 106.782532,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-bogor-icon-di-bogor-icon-1",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "8c61520ec5feae2562eacb2e3aeceb4d61344492396f22da6cd47ca8aee6e1c8",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-kertamukti-kerta-mukti-bba0cc32",
+      "location": {
+        "lat": -6.228858,
+        "lng": 107.114073,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-arjuna-f3-no9",
+        "method": "Pin publik pada halaman iklan Pinhome",
+        "checkedAt": "2026-11-04"
+      },
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "f878d7b6f5fa44d86af67976ea4d1b281f766d7a1f6310c10306d6c9428ccfd6",
+        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
+      }
     }
   ]
 }

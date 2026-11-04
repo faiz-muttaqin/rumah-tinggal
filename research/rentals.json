@@ -11309,6 +11309,1326 @@
       "verdict": "partial",
       "lastChecked": "2026-11-04",
       "note": "Paket yang dicatat 1 tahun Rp 20 juta. Sumber juga menyebut 3 bulan Rp 7 juta atau 6 bulan Rp 11 juta; angka Rp 2,33 juta/bulan di portal merupakan ekuivalen paket 3 bulan. Deposit Rp 1 juta dan iuran di luar sewa. Pembaruan sumber 2025-11-21. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-jendela360-ncwa018",
+      "title": "Studio The Newton 2 Ciputra Apartment — paket 12 bulan",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Jakarta",
+      "locationText": "Kuningan, Jakarta Selatan",
+      "buildingOrCluster": "The Newton 2 Ciputra Apartment",
+      "rent": {
+        "amount": 90900000,
+        "period": "yearly",
+        "quote": "Rp. 90,900,000",
+        "url": "https://jendela360.com/sewa-apartemen-the-newton-2-ciputra-apartment/NCWA018",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 23.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "The Newton 2 Ciputra Apartment",
+          "url": "https://jendela360.com/sewa-apartemen-the-newton-2-ciputra-apartment/NCWA018"
+        },
+        {
+          "quote": "12 Bulan",
+          "url": "https://jendela360.com/sewa-apartemen-the-newton-2-ciputra-apartment/NCWA018"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-the-newton-2-ciputra-apartment/NCWA018",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Paket ini untuk 12 bulan. Pilihan lain: 3 bulan Rp 27.350.000, 6 bulan Rp 49.580.000 (total kontrak). Deposit dan biaya layanan mengikuti sumber. Tanggal pembaruan iklan tidak ditampilkan. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-rempoa-e1c7d69a",
+      "title": "Rumah sewa 1 kamar di Rempoa",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Rempoa, Ciputat Timur, Kota Tangerang Selatan",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1400000,
+        "period": "monthly",
+        "quote": "Rp 1,4 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-raya",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 1
+      },
+      "bedrooms": 1,
+      "sizeM2": 16.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rempoa",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-raya"
+        },
+        {
+          "quote": "Minimum sewa 1 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-raya"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-raya",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-pejaten-timur-ee56d083",
+      "title": "Rumah sewa 3 kamar di Pejaten Timur",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Pejaten Timur, Pasar Minggu, Kota Jakarta Selatan",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 3600000,
+        "period": "monthly",
+        "quote": "Rp 3,6 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-swadaya-1-gg-gardu",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 1
+      },
+      "bedrooms": 3,
+      "sizeM2": 100.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Pejaten Timur",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-swadaya-1-gg-gardu"
+        },
+        {
+          "quote": "Minimum sewa 1 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-swadaya-1-gg-gardu"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-swadaya-1-gg-gardu",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-cipinang-cempedak-2ad026d3",
+      "title": "Rumah sewa 2 kamar di Cipinang Cempedak",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Cipinang Cempedak, Jatinegara, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 27000000,
+        "period": "yearly",
+        "quote": "Rp 27 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlpanti-asuhan-raya",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 45.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Cipinang Cempedak",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlpanti-asuhan-raya"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlpanti-asuhan-raya"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlpanti-asuhan-raya",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-utan-kayu-utara-f072fcc7",
+      "title": "Rumah sewa di Utan Kayu Utara",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Utan Kayu Utara, Matraman, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 3300000,
+        "period": "monthly",
+        "quote": "Rp 3,3 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-wahab-ii-utan-kayu-utara-matraman",
+        "pageDate": "2026-07-09",
+        "minimumMonths": 6
+      },
+      "bedrooms": null,
+      "sizeM2": 32.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Utan Kayu Utara",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-wahab-ii-utan-kayu-utara-matraman"
+        },
+        {
+          "quote": "minimal sewa 6 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-wahab-ii-utan-kayu-utara-matraman"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-wahab-ii-utan-kayu-utara-matraman",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-07-09",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Minimum 6 bulan mengikuti deskripsi, meski label portal menyebut 1 bulan. Jumlah kamar portal 2 berbeda dari deskripsi 3 sehingga tidak dicantumkan. Pembayaran bulanan disebut tersedia; deposit/opsi diskon perlu konfirmasi. Pembaruan sumber 2026-07-09. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-cipinang-cempedak-5e8b6c3b",
+      "title": "Rumah sewa 1 kamar di Cipinang Cempedak",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Cipinang Cempedak, Jatinegara, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 25000000,
+        "period": "yearly",
+        "quote": "Rp 25 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-tanah-manisan-cipinang-jakarta-timur",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 12
+      },
+      "bedrooms": 1,
+      "sizeM2": 50.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Cipinang Cempedak",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-tanah-manisan-cipinang-jakarta-timur"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-tanah-manisan-cipinang-jakarta-timur"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-tanah-manisan-cipinang-jakarta-timur",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-glodok-b6b7ba13",
+      "title": "Apartemen 2 kamar di Green Central City",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Jakarta",
+      "locationText": "Glodok, Taman Sari, Kota Jakarta Barat",
+      "buildingOrCluster": "Green Central City",
+      "rent": {
+        "amount": 60000000,
+        "period": "yearly",
+        "quote": "Rp 60 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-green-central-city-2",
+        "pageDate": "2025-11-07",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 60.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Glodok",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-green-central-city-2"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-green-central-city-2"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-green-central-city-2",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-11-07",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-11-07. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-kayu-putih-51d12cf1",
+      "title": "Rumah sewa 4 kamar di Kayu Putih",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Kayu Putih, Pulogadung (Pulo Gadung), Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 42000000,
+        "period": "yearly",
+        "quote": "Rp 42 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kayu-putih-4",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 12
+      },
+      "bedrooms": 4,
+      "sizeM2": 76.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kayu Putih",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kayu-putih-4"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kayu-putih-4"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kayu-putih-4",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-jatinegara-kaum-e92becfd",
+      "title": "Rumah sewa 1 kamar di Jatinegara Kaum",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Jatinegara Kaum, Pulogadung (Pulo Gadung), Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1500000,
+        "period": "monthly",
+        "quote": "Rp 1,5 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tb-badarudin-i-no-61-jatinegarakaum",
+        "pageDate": "2025-11-17",
+        "minimumMonths": 1
+      },
+      "bedrooms": 1,
+      "sizeM2": 27.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Jatinegara Kaum",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tb-badarudin-i-no-61-jatinegarakaum"
+        },
+        {
+          "quote": "Minimum sewa 1 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tb-badarudin-i-no-61-jatinegarakaum"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tb-badarudin-i-no-61-jatinegarakaum",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-11-17",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-11-17. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-sarua-serua-c63b26cd",
+      "title": "Rumah sewa 1 kamar di Sarua (Serua)",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Sarua (Serua), Ciputat, Kota Tangerang Selatan",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1300000,
+        "period": "monthly",
+        "quote": "Rp 1,3 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kembang-sepatu",
+        "pageDate": "2026-02-19",
+        "minimumMonths": 3
+      },
+      "bedrooms": 1,
+      "sizeM2": 30.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Sarua (Serua)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kembang-sepatu"
+        },
+        {
+          "quote": "minimal komitmen 3bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kembang-sepatu"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kembang-sepatu",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-02-19",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Minimum komitmen 3 bulan mengikuti deskripsi, meski label portal menyebut 1 bulan. Opsi total 3 bulan Rp 3,7 juta dan 6 bulan Rp 7 juta; tarif 1 bulan Rp 1,3 juta. Akses parkir hanya motor menurut sumber. Pembaruan sumber 2026-02-19. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-jakasetia-jaka-setia-841211a8",
+      "title": "Rumah sewa 3 kamar di Jakasetia (Jaka Setia)",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Jakasetia (Jaka Setia), Bekasi Selatan, Kota Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 40000000,
+        "period": "yearly",
+        "quote": "Rp 40 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-galaxy",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 12
+      },
+      "bedrooms": 3,
+      "sizeM2": 76.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Jakasetia (Jaka Setia)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-galaxy"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-galaxy"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-galaxy",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-cilebut-barat-dc3bf6d5",
+      "title": "Rumah sewa 4 kamar di Taman Griya Asri",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bogor",
+      "locationText": "Cilebut Barat, Sukaraja, Kab. Bogor",
+      "buildingOrCluster": "Taman Griya Asri",
+      "rent": {
+        "amount": 1700000,
+        "period": "monthly",
+        "quote": "Rp 1,7 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-taman-griya-asri-c17-no-12",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 3
+      },
+      "bedrooms": 4,
+      "sizeM2": 90.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Cilebut Barat",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-taman-griya-asri-c17-no-12"
+        },
+        {
+          "quote": "Minimum sewa 3 bulan (Rp 5,1 Juta)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-taman-griya-asri-c17-no-12"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-taman-griya-asri-c17-no-12",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-pangkalan-jati-baru-966d1c22",
+      "title": "Rumah sewa 2 kamar di Pangkalan Jati Baru",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Depok",
+      "locationText": "Pangkalan Jati Baru, Cinere, Kota Depok",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1600000,
+        "period": "monthly",
+        "quote": "Rp 1,6 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-adih",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 1
+      },
+      "bedrooms": 2,
+      "sizeM2": 27.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Pangkalan Jati Baru",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-adih"
+        },
+        {
+          "quote": "Minimum sewa 1 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-adih"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-adih",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-pangkalan-jati-4a951a96",
+      "title": "Rumah sewa 2 kamar di Pangkalan Jati",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Depok",
+      "locationText": "Pangkalan Jati, Cinere, Kota Depok",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1600000,
+        "period": "monthly",
+        "quote": "Rp 1,6 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-madrasah-1",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 1
+      },
+      "bedrooms": 2,
+      "sizeM2": 27.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Pangkalan Jati",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-madrasah-1"
+        },
+        {
+          "quote": "Minimum sewa 1 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-madrasah-1"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-madrasah-1",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-sukabumi-utara-ilir-ab73e31a",
+      "title": "Rumah sewa 1 kamar di Sukabumi Utara (Ilir)",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Sukabumi Utara (Ilir), Kebon Jeruk, Kota Jakarta Barat",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 2500000,
+        "period": "monthly",
+        "quote": "Rp 2,5 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat",
+        "pageDate": "2026-10-20",
+        "minimumMonths": 1
+      },
+      "bedrooms": 1,
+      "sizeM2": 25.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Sukabumi Utara (Ilir)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat"
+        },
+        {
+          "quote": "Minimum sewa 1 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-10-20",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2026-10-20. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-meruya-selatan-udik-bc61b2ed",
+      "title": "Rumah sewa 2 kamar di Meruya Selatan (Udik)",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Meruya Selatan (Udik), Kembangan, Kota Jakarta Barat",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 50000000,
+        "period": "yearly",
+        "quote": "Rp 50 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-komplek-dpr-ii-kembangan-jakarta-barat",
+        "pageDate": "2026-09-14",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 90.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Meruya Selatan (Udik)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-komplek-dpr-ii-kembangan-jakarta-barat"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-komplek-dpr-ii-kembangan-jakarta-barat"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-komplek-dpr-ii-kembangan-jakarta-barat",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-09-14",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2026-09-14. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-paninggilan-utara-910ca4d7",
+      "title": "Rumah sewa 2 kamar di Taman Mutiara Paninggilan",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Paninggilan Utara, Ciledug, Kota Tangerang",
+      "buildingOrCluster": "Taman Mutiara Paninggilan",
+      "rent": {
+        "amount": 35000000,
+        "period": "yearly",
+        "quote": "Rp 35 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-taman-mutiara-paninggilan-ciledug",
+        "pageDate": "2026-11-03",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 65.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Paninggilan Utara",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-taman-mutiara-paninggilan-ciledug"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-taman-mutiara-paninggilan-ciledug"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-taman-mutiara-paninggilan-ciledug",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-11-03",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2026-11-03. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-parigi-perigi-lama-50dbbe5c",
+      "title": "Apartemen 2 kamar di Emerald Bintaro",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Tangerang",
+      "locationText": "Parigi (Perigi Lama), Pondok Aren, Kota Tangerang Selatan",
+      "buildingOrCluster": "Emerald Bintaro",
+      "rent": {
+        "amount": 3450000,
+        "period": "monthly",
+        "quote": "Rp 3,45 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartement-emerald-bintaro",
+        "pageDate": "2026-10-27",
+        "minimumMonths": 2
+      },
+      "bedrooms": 2,
+      "sizeM2": 36.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Parigi (Perigi Lama)",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartement-emerald-bintaro"
+        },
+        {
+          "quote": "Minimum sewa 2 bulan (Rp 6,9 Juta)",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartement-emerald-bintaro"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartement-emerald-bintaro",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-10-27",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Tarif Rp 3,45 juta/bulan dengan minimum 2 bulan (Rp 6,9 juta), bukan janji sewa satu bulan. Biaya di luar sewa perlu konfirmasi. Pembaruan sumber 2026-10-27. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-pondok-kacang-timur-e7568d46",
+      "title": "Rumah sewa di Pondok Kacang Timur — paket 12 bulan",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Pondok Kacang Timur, Pondok Aren, Kota Tangerang Selatan",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 24000000,
+        "period": "yearly",
+        "quote": "Rp 24 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-maharta-1-c",
+        "pageDate": "2026-08-23",
+        "minimumMonths": 12
+      },
+      "bedrooms": null,
+      "sizeM2": 110.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Pondok Kacang Timur",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-maharta-1-c"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-maharta-1-c"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-maharta-1-c",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-08-23",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Paket yang dicatat Rp 24 juta/tahun. Opsi bulanan Rp 2,1 juta memiliki pembayaran awal 6 bulan dan deposit Rp 4 juta; syarat berikutnya mengikuti sumber. Jumlah 3 kamar pada portal mencakup 1 ruang serbaguna menurut deskripsi sehingga tidak dicantumkan. Pembaruan sumber 2026-08-23. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-sudimara-selatan-772577e2",
+      "title": "Rumah sewa 3 kamar di Sudimara Selatan",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Sudimara Selatan, Ciledug, Kota Tangerang",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 30000000,
+        "period": "yearly",
+        "quote": "Rp 30 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-radenan-fatah-gg-masjdi-2",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 12
+      },
+      "bedrooms": 3,
+      "sizeM2": 90.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Sudimara Selatan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-radenan-fatah-gg-masjdi-2"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-radenan-fatah-gg-masjdi-2"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-radenan-fatah-gg-masjdi-2",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-pondok-kacang-barat-9399c049",
+      "title": "Rumah sewa 3 kamar di Graha Bintaro",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Pondok Kacang Barat, Pondok Aren, Kota Tangerang Selatan",
+      "buildingOrCluster": "Graha Bintaro",
+      "rent": {
+        "amount": 35000000,
+        "period": "yearly",
+        "quote": "Rp 35 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-graha-bintaro-2",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 12
+      },
+      "bedrooms": 3,
+      "sizeM2": 41.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Pondok Kacang Barat",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-graha-bintaro-2"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-graha-bintaro-2"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-graha-bintaro-2",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Sumber menyebut Graha Bintaro. Nominal tahunan sesuai label portal; harga dapat dinegosiasikan. Klaim bebas banjir belum diverifikasi mandiri. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-malaka-sari-d0d7f216",
+      "title": "Rumah sewa 2 kamar di Malaka Sari",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Malaka Sari, Duren Sawit, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 40000000,
+        "period": "yearly",
+        "quote": "Rp 40 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2kt-100m-di-jl-taman-malaka-utara-blok-c11-no-1a",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 90.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Malaka Sari",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2kt-100m-di-jl-taman-malaka-utara-blok-c11-no-1a"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2kt-100m-di-jl-taman-malaka-utara-blok-c11-no-1a"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2kt-100m-di-jl-taman-malaka-utara-blok-c11-no-1a",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-krukut-6cd7f3aa",
+      "title": "Rumah sewa 1 kamar di Krukut",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Depok",
+      "locationText": "Krukut, Limo, Kota Depok",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1200000,
+        "period": "monthly",
+        "quote": "Rp 1,2 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-dulgani-rt-03-01-limo-depok",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 5
+      },
+      "bedrooms": 1,
+      "sizeM2": 30.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Krukut",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-dulgani-rt-03-01-limo-depok"
+        },
+        {
+          "quote": "Minimum sewa 5 bulan (Rp 6 Juta)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-dulgani-rt-03-01-limo-depok"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-dulgani-rt-03-01-limo-depok",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-grogol-0508f94d",
+      "title": "Rumah sewa 1 kamar di Grogol",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Depok",
+      "locationText": "Grogol, Limo, Kota Depok",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1500000,
+        "period": "monthly",
+        "quote": "Rp 1,5 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-hari-aman-grogol-depok",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 3
+      },
+      "bedrooms": 1,
+      "sizeM2": 70.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Grogol",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-hari-aman-grogol-depok"
+        },
+        {
+          "quote": "Minimum sewa 3 bulan (Rp 4,5 Juta)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-hari-aman-grogol-depok"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-hari-aman-grogol-depok",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-cilangkap-2ab52147",
+      "title": "Rumah sewa 1 kamar di Cilangkap",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Cilangkap, Cipayung, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1000000,
+        "period": "monthly",
+        "quote": "Rp 1 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-assyafiiyah",
+        "pageDate": "2025-07-06",
+        "minimumMonths": 1
+      },
+      "bedrooms": 1,
+      "sizeM2": 30.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Cilangkap",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-assyafiiyah"
+        },
+        {
+          "quote": "Minimum sewa 1 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-assyafiiyah"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-assyafiiyah",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-07-06",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-07-06. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-abadi-jaya-abadijaya-b98897e2",
+      "title": "Rumah sewa 2 kamar di Abadi Jaya (Abadijaya)",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Depok",
+      "locationText": "Abadi Jaya (Abadijaya), Sukmajaya, Kota Depok",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 18000000,
+        "period": "yearly",
+        "quote": "Rp 18 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-tirta-kencana-1-rt-1-rw-3-tirta-jaya",
+        "pageDate": "2026-07-29",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 60.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Abadi Jaya (Abadijaya)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-tirta-kencana-1-rt-1-rw-3-tirta-jaya"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-tirta-kencana-1-rt-1-rw-3-tirta-jaya"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-tirta-kencana-1-rt-1-rw-3-tirta-jaya",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-07-29",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2026-07-29. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-abadi-jaya-abadijaya-068389d6",
+      "title": "Rumah sewa 2 kamar di Abadi Jaya (Abadijaya)",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Depok",
+      "locationText": "Abadi Jaya (Abadijaya), Sukmajaya, Kota Depok",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1700000,
+        "period": "monthly",
+        "quote": "Rp 1,7 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pasar-musi-banyuasin-raya",
+        "pageDate": "2026-05-22",
+        "minimumMonths": 1
+      },
+      "bedrooms": 2,
+      "sizeM2": 45.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Abadi Jaya (Abadijaya)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pasar-musi-banyuasin-raya"
+        },
+        {
+          "quote": "Minimum sewa 1 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pasar-musi-banyuasin-raya"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pasar-musi-banyuasin-raya",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-05-22",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2026-05-22. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-baktijaya-48b1a274",
+      "title": "Apartemen di Marrakesh Suites",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Depok",
+      "locationText": "Baktijaya, Sukmajaya, Kota Depok",
+      "buildingOrCluster": "Marrakesh Suites",
+      "rent": {
+        "amount": 4000000,
+        "period": "monthly",
+        "quote": "Rp 4 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-marrakesh-suites",
+        "pageDate": "2025-08-29",
+        "minimumMonths": 3
+      },
+      "bedrooms": null,
+      "sizeM2": 24.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Baktijaya",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-marrakesh-suites"
+        },
+        {
+          "quote": "Minimum sewa 3 bulan (Rp 12 Juta)",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-marrakesh-suites"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-marrakesh-suites",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-08-29",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-08-29. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-harapanbaru-harapan-baru-fbfe3ef5",
+      "title": "Apartemen di Metropolitan Park",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Bekasi",
+      "locationText": "Harapanbaru (Harapan Baru), Bekasi Utara, Kota Bekasi",
+      "buildingOrCluster": "Metropolitan Park",
+      "rent": {
+        "amount": 2000000,
+        "period": "monthly",
+        "quote": "Rp 2 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-furnished-lengkap-aksen-pink-di-metropolitan-park-apartment",
+        "pageDate": "2026-07-25",
+        "minimumMonths": 1
+      },
+      "bedrooms": null,
+      "sizeM2": 20.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Harapanbaru (Harapan Baru)",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-furnished-lengkap-aksen-pink-di-metropolitan-park-apartment"
+        },
+        {
+          "quote": "Minimum sewa 1 bulan",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-furnished-lengkap-aksen-pink-di-metropolitan-park-apartment"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-furnished-lengkap-aksen-pink-di-metropolitan-park-apartment",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-07-25",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2026-07-25. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-karadenan-aefa0a5a",
+      "title": "Rumah sewa 2 kamar di Kartika Land",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bogor",
+      "locationText": "Karadenan, Cibinong, Kab. Bogor",
+      "buildingOrCluster": "Kartika Land",
+      "rent": {
+        "amount": 15000000,
+        "period": "yearly",
+        "quote": "Rp 15 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pejeleran-ciluar-kartika-land",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 40.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Karadenan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pejeleran-ciluar-kartika-land"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pejeleran-ciluar-kartika-land"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pejeleran-ciluar-kartika-land",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-cibadak-bd01ec9b",
+      "title": "Rumah sewa 2 kamar di Bukit Cimanggu City",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bogor",
+      "locationText": "Cibadak, Tanah Sareal (Tanah Sereal), Kota Bogor",
+      "buildingOrCluster": "Bukit Cimanggu City",
+      "rent": {
+        "amount": 25000000,
+        "period": "yearly",
+        "quote": "Rp 25 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bukit-cimanggu-city-raya",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 65.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Cibadak",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bukit-cimanggu-city-raya"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bukit-cimanggu-city-raya"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bukit-cimanggu-city-raya",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Sumber menyebut Bukit Cimanggu City, Cluster Savana Boteo, dengan paket Rp 25 juta/tahun. Pin tetap perkiraan portal. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-cibadak-bd38d185",
+      "title": "Apartemen di Bogor Icon",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Bogor",
+      "locationText": "Cibadak, Tanah Sareal (Tanah Sereal), Kota Bogor",
+      "buildingOrCluster": "Bogor Icon",
+      "rent": {
+        "amount": 3500000,
+        "period": "monthly",
+        "quote": "Rp 3,5 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-bogor-icon-di-bogor-icon-1",
+        "pageDate": "2026-04-10",
+        "minimumMonths": 6
+      },
+      "bedrooms": null,
+      "sizeM2": null,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Cibadak",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-bogor-icon-di-bogor-icon-1"
+        },
+        {
+          "quote": "Minimum sewa 6 bulan (Rp 21 Juta)",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-bogor-icon-di-bogor-icon-1"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-bogor-icon-di-bogor-icon-1",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-04-10",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Luas portal 26 m² berbeda dari deskripsi 62 m² sehingga tidak dicantumkan. Jenis kamar belum dipastikan. Minimum 6 bulan mengikuti label sumber. Pembaruan sumber 2026-04-10. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-pinhome-kertamukti-kerta-mukti-bba0cc32",
+      "title": "Rumah sewa 2 kamar di Kertamukti (Kerta Mukti)",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Kertamukti (Kerta Mukti), Cibitung, Kab. Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 13000000,
+        "period": "yearly",
+        "quote": "Rp 13 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-arjuna-f3-no9",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 30.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kertamukti (Kerta Mukti)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-arjuna-f3-no9"
+        },
+        {
+          "quote": "Minimum sewa 12 bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-arjuna-f3-no9"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-arjuna-f3-no9",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-04",
+      "note": "Paket sewa Rp 13 juta/tahun dipisahkan dari opsi take over beserta barang yang memiliki nominal berbeda; rincian barang dan biaya akhir perlu dikonfirmasi. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     }
   ]
 }
