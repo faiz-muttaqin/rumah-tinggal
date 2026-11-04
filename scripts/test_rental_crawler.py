@@ -60,6 +60,58 @@ class CrawlerTest(unittest.TestCase):
         self.assertNotIn("CONTACT", json.dumps(parsed))
         self.assertEqual(c.astro_value([0]), None)
 
+    def test_village_search_rejects_recommendations_and_unlocated_fallback_links(self):
+        text = search_page().replace('"slug": "cilandak"', '"slug": "cilandak", "id": 123, "level": 4')
+        # Astro attributes are HTML escaped; only the selected card's village id is read.
+        text = text.replace('&quot;buildingType&quot;', '&quot;subDistrictID&quot;: [0, 123], &quot;buildingType&quot;')
+        text += '<a href="'+UNIT+'-recommendation">Other area</a>'
+        result = c.parse_search(text, SOURCE)
+        self.assertEqual([r['url'] for r in result['cards']], [UNIT])
+        self.assertEqual(result['cards'][0]['focusArea'], {'id': 123, 'slug': 'cilandak'})
+        with self.assertRaises(ValueError):
+            c.parse_search(text.replace('[0, 123]', '[0, 456]'), SOURCE)
+
+    def test_focus_screens_before_detail_and_known_distant_point_wins_over_matching_words(self):
+        cards = [{'url': UNIT+'-kranji'}, {'url': UNIT+'-other'}, {'url': UNIT+'-kranji-far'},
+                 {'url': UNIT+'-village', 'focusArea': {'slug': 'cilandak', 'id': 123}}]
+        state = {'pages': {SOURCE: {'retrievedAtUTC': c.now(), 'cards': cards}},
+                 'details': {UNIT+'-kranji-far': {'location': {'lat': -6.8, 'lng': 106.8}}}}
+        mosque = {**MOSQUES[0], 'focusTerms': ['Kranji']}
+        queues, stats = c.focused_queues(state, [mosque], {'radiusKm': 1.5, 'searchCacheHours': 4, 'detailCacheHours': 72})
+        self.assertEqual(set(queues[0]), {UNIT+'-kranji', UNIT+'-village'})
+        self.assertEqual(stats[0]['eligible'], 2)
+
+    def test_focus_budget_rotates_mosques_across_runs_and_never_changes_catalogue(self):
+        urls = [UNIT+'-'+str(i) for i in range(8)]
+        cards = [{'url': u, 'focusArea': {'slug': 'cilandak', 'id': 123}} for u in urls]
+        class FakeClient(c.Client):
+            def __init__(self, *args, **kwargs):super().__init__(0)
+            def start(self):return {'checkedAt': c.now()}
+            def get(self, url):
+                self.requests += 1
+                return script('__UNIT_DETAIL__', unit_data())
+        mosques = [{**MOSQUES[0], 'id': 'm'+str(i)} for i in range(3)]
+        config = {'focusEnabled': True, 'maxDetailsPerMosque': 2, 'radiusKm': 1.5, 'delaySeconds': 2,
+                  'searchCacheHours': 4, 'detailCacheHours': 72, 'maxSearchRequests': 1,
+                  'maxDetailRequests': 1, 'maxPagesPerArea': 1}
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp);c.save(root/'research/rentals.json', {'rentals': []})
+            directory=root/'output';c.save(directory/'state.json', {'schemaVersion': 1, 'pages': {SOURCE: {'retrievedAtUTC': c.now(), 'cards': cards, 'focusedSearch': True}}, 'details': {}, 'cursors': {}})
+            with patch.object(c, 'ROOT', root), patch.object(c, 'Client', FakeClient):
+                fetched=[]
+                for _ in range(3):
+                    self.assertEqual(c.run(config, mosques, directory), 0)
+                    result=json.loads((directory/'latest.json').read_text())
+                    fetched.append(next(m['id'] for m in result['run']['focus']['mosques'] if m['fetched']))
+                self.assertEqual(fetched, ['m0', 'm1', 'm2'])
+                config['maxDetailRequests']=8
+                self.assertEqual(c.run(config, mosques, directory), 0)
+                result=json.loads((directory/'latest.json').read_text())
+                counts=[m['fetched'] for m in result['run']['focus']['mosques']]
+                self.assertTrue(all(n<=2 for n in counts))
+                self.assertTrue(all(n>0 for n in counts))
+                self.assertEqual(json.loads((root/'research/rentals.json').read_text()), {'rentals': []})
+
     def test_structure_loss_is_error_not_zero_results(self):
         for page in ("<html>No data</html>", search_page().replace("__SEARCH_RESULT_PAGINATION__", "changed")):
             with self.assertRaises(ValueError):

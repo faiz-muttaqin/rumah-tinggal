@@ -126,7 +126,7 @@ class SearchParser(HTMLParser):
         if "propertyData" not in props:
             return
         raw = props["propertyData"][1]
-        data = {k: astro_value(raw[k]) for k in ("href", "buildingType", "priceText", "lastModifiedAt", "isRented", "listingType") if k in raw}
+        data = {k: astro_value(raw[k]) for k in ("href", "buildingType", "priceText", "lastModifiedAt", "isRented", "listingType", "subDistrictID") if k in raw}
         if data.get("listingType") != "property_listing_type.rent":
             return
         try:
@@ -141,6 +141,7 @@ class SearchParser(HTMLParser):
             "priceLabel": public_text(data.get("priceText"), 100),
             "sourceUpdatedAt": data.get("lastModifiedAt"),
             "rented": data.get("isRented") is True,
+            "subDistrictID": data.get("subDistrictID"),
         })
 
 
@@ -152,9 +153,13 @@ def parse_search(text, url):
     parser = SearchParser()
     parser.feed(text)
     cards = {r["url"]: r for r in parser.cards}
+    area = filters.get("locationWithParents") or {}
+    if area.get("level") == 4 and type(area.get("id")) is int:
+        cards = {u: {**r, "focusArea": {"id": area["id"], "slug": area["slug"]}}
+                 for u, r in cards.items() if r.get("subDistrictID") == area["id"]}
     # Plain links are a discovery fallback, never evidence of price or location.
     for link in sorted(parser.links):
-        if "/unit/" in link:
+        if "/unit/" in link and area.get("level") != 4:
             cards.setdefault(link, {"url": link})
     current = int(pagination["currentPage"])
     total, size = int(pagination["total"]), int(pagination["pageSize"])
@@ -169,7 +174,8 @@ def parse_search(text, url):
     if location.get("slug") and location["slug"] != path_slugs[-1]:
         raise ValueError("Search geography changed")
     return {"cards": list(cards.values()), "total": total, "page": current,
-            "pages": math.ceil(total / size), "locationLabel": public_text(location.get("title"))}
+            "pages": math.ceil(total / size), "locationLabel": public_text(location.get("title")),
+            "focusedSearch": area.get("level") == 4 and type(area.get("id")) is int}
 
 
 def monthly_hint(card):
@@ -414,12 +420,16 @@ def plan(config):
         raise ValueError("Config must cover every Ihrish mosque exactly")
     rows = []
     for m in mosques:
-        paths = targets[m["id"]]
+        focus = config.get("focusAreas", {}).get(m["id"], {}) if config.get("focusEnabled") else {}
+        if config.get("focusEnabled") and not focus.get("paths"):
+            raise ValueError("Missing focused search area")
+        paths = focus["paths"] if config.get("focusEnabled") else targets[m["id"]]
         if not paths:
             raise ValueError("Missing search area")
         sources = [canonical(ORIGIN + "/sewa/" + kind + "/" + path)
                    for path in paths for kind in ("rumah", "apartemen")]
         rows.append({"id": m["id"], "name": m["name"], "lat": m["lat"], "lng": m["lng"],
+                     "focusTerms": focus.get("localities", []),
                      "sources": sources, "priority": priority(m, stops, paths)})
     return sorted(rows, key=lambda r: (r["priority"]["tier"], r["priority"]["fromBlokMKm"], r["id"]))
 
@@ -444,6 +454,45 @@ def detail_queue(cards, details, hours):
     # cannot monopolize every daily run. Expired records stay explicitly stale.
     ordered = sorted(cards, key=lambda card: (card["url"] in details, monthly_hint(card), card["url"]))
     return list(dict.fromkeys(card["url"] for card in ordered if not detail_fresh(details.get(card["url"]), hours)))
+
+
+def focus_slug(value):
+    return re.sub(r"[^a-z0-9]+", "-", urllib.parse.unquote(value).lower()).strip("-")
+
+
+def focused_queues(state, mosques, config):
+    """Screen before HTTP detail requests; locality hints are not radius evidence."""
+    pages = {}
+    for url, record in state["pages"].items():
+        if fresh(record, config["searchCacheHours"]):
+            pages.setdefault(url.split("?")[0], []).extend(c for c in record.get("cards", []) if not c.get("rented"))
+    queues, stats = [], []
+    for m in mosques:
+        cards = {c["url"]: c for s in m["sources"] for c in pages.get(s, [])}
+        terms = [focus_slug(t) for t in m.get("focusTerms", []) if len(focus_slug(t)) >= 4]
+        allowed, bases = [], set()
+        for url, row in state["details"].items():
+            point = row.get("location")
+            if point and row.get("provider") == "jendela360" and km((m["lat"], m["lng"]), (point["lat"], point["lng"])) <= config["radiusKm"]:
+                bases.add(url.rsplit("/", 1)[0])
+        for url, card in cards.items():
+            point = state["details"].get(url, {}).get("location")
+            if point:
+                # Known distant coordinates cannot be overridden by matching words.
+                match = km((m["lat"], m["lng"]), (point["lat"], point["lng"])) <= config["radiusKm"]
+            elif card.get("focusArea"):
+                match = any(urllib.parse.urlsplit(s).path.rsplit("/", 1)[-1] == card["focusArea"]["slug"] for s in m["sources"])
+            else:
+                haystack = "-" + focus_slug(urllib.parse.urlsplit(url).path) + "-"
+                match = any("-" + t + "-" in haystack for t in terms) or any(url.startswith(b + "/") for b in bases)
+            if match:
+                allowed.append(card)
+        queue = detail_queue(allowed, state["details"], config["detailCacheHours"])
+        queues.append(queue)
+        stats.append({"id": m["id"], "name": m.get("name", m["id"]), "discovered": len(cards),
+                      "eligible": len(allowed), "pending": len(queue), "fetched": 0,
+                      "unmapped": not bool(m["sources"]), "localities": m.get("focusTerms", [])})
+    return queues, stats
 
 
 def assess(detail, mosques, radius=1.5):
@@ -547,6 +596,9 @@ def run_coverage(state, mosques, config, search_limit, detail_limit):
              if page.split("?")[0] in sources and fresh(record, config["searchCacheHours"])
              for card in record.get("cards", []) if not card.get("rented")]
     pending = detail_queue(cards, state["details"], config["detailCacheHours"])
+    if config.get("focusEnabled"):
+        queues, _ = focused_queues(state, mosques, config)
+        pending = set(u for q in queues for u in q)
     return {"searchLimit": search_limit, "detailLimit": detail_limit,
             "plannedSources": len(sources), "freshSources": len(fresh_sources),
             "sourcesWithErrors": sum(bool(state["pages"].get(s, {}).get("error")) for s in sources),
@@ -567,10 +619,16 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None, adapte
         client.cancel = cancel
     search_parser = adapter.parse_search if adapter else parse_search
     detail_parser = adapter.parse_detail if adapter else parse_detail
+    def read_search(text, url):
+        result = search_parser(text, url)
+        if config.get("focusEnabled") and adapter is None and not result.get("focusedSearch"):
+            raise ValueError("Focused search requires village evidence")
+        return result
     state["lastRun"] = {"startedAtUTC": now(), "status": "running"}
     save(path, state)
     sources = list(dict.fromkeys(s for m in mosques for s in m["sources"]))
     count, detail_count = 0, 0
+    focus_stats = []
     try:
         state["robots"] = client.start()
         # Unvisited/stale areas first; priority order is preserved within each group.
@@ -579,12 +637,14 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None, adapte
             if count >= (source_limit or config["maxSearchRequests"]):
                 break
             pages = [source]
-            if not refresh_search and fresh(state["pages"].get(source), config["searchCacheHours"]):
+            record = state["pages"].get(source, {})
+            needs_focus = config.get("focusEnabled") and adapter is None and not record.get("focusedSearch")
+            if not refresh_search and not needs_focus and fresh(record, config["searchCacheHours"]):
                 pages = []
             for url in pages:
                 try:
                     text = client.get(url)
-                    parsed = search_parser(text, url)
+                    parsed = read_search(text, url)
                     state["pages"][url] = {**parsed, "retrievedAtUTC": now(), "sha256": digest(text)}
                 except (ValueError, KeyError, TypeError, OSError, TimeoutError) as exc:
                     state["pages"][url] = {"retrievedAtUTC": now(), "error": safe_error(exc), "cards": []}
@@ -608,7 +668,7 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None, adapte
             if not fresh(state["pages"].get(url), config["searchCacheHours"]):
                 try:
                     text = client.get(url)
-                    state["pages"][url] = {**search_parser(text, url), "retrievedAtUTC": now(), "sha256": digest(text)}
+                    state["pages"][url] = {**read_search(text, url), "retrievedAtUTC": now(), "sha256": digest(text)}
                 except (ValueError, KeyError, TypeError, OSError, TimeoutError) as exc:
                     state["pages"][url] = {"retrievedAtUTC": now(), "error": safe_error(exc), "cards": []}
                 count += 1
@@ -621,10 +681,23 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None, adapte
                      if page.split("?")[0] == source and fresh(record, config["searchCacheHours"])
                      for c in record.get("cards", []) if not c.get("rented")]
             queues.append(detail_queue(cards, state["details"], config["detailCacheHours"]))
+        if config.get("focusEnabled"):
+            queues, focus_stats = focused_queues(state, mosques, config)
+            cursor = state.get("focusCursor", 0) % len(queues)
+            order = list(range(cursor, len(queues))) + list(range(cursor))
+            queues = [(i, queues[i]) for i in order]
+        else:
+            queues = list(enumerate(queues))
         seen = set()
-        while any(queues) and detail_count < (detail_limit or config["maxDetailRequests"]):
-            for queue in queues:
+        while any(q for _, q in queues) and detail_count < (detail_limit or config["maxDetailRequests"]):
+            for index, queue in queues:
+                if focus_stats and focus_stats[index]["fetched"] >= config["maxDetailsPerMosque"]:
+                    queue.clear()
                 if not queue or detail_count >= (detail_limit or config["maxDetailRequests"]):
+                    continue
+                while queue and queue[0] in seen:
+                    queue.pop(0)
+                if not queue:
                     continue
                 url = queue.pop(0)
                 if url in seen:
@@ -636,6 +709,9 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None, adapte
                 except (ValueError, KeyError, TypeError, OSError, TimeoutError) as exc:
                     state["details"][url] = {"url": url, "retrievedAtUTC": now(), "error": safe_error(exc), "issues": ["detail-unavailable"]}
                 detail_count += 1
+                if focus_stats:
+                    focus_stats[index]["fetched"] += 1
+                    state["focusCursor"] = (index + 1) % len(mosques)
                 save(path, state)
         state["lastRun"]["status"] = "complete-with-limits"
     except StopSource as exc:
@@ -652,6 +728,13 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None, adapte
                         detailLimitReached=detail_count >= coverage["detailLimit"] > 0)
         state["lastRun"].update(durationSeconds=round(time.monotonic() - started, 3),
                                 refreshSearch=refresh_search, coverage=coverage, pacing=client.pacing())
+        if config.get("focusEnabled"):
+            initial = {m["id"]: m for m in focus_stats}
+            _, current = focused_queues(state, mosques, config)
+            for m in current:
+                m["fetched"] = initial.get(m["id"], {}).get("fetched", 0)
+                m["pendingAtStart"] = initial.get(m["id"], {}).get("pending", 0)
+            state["lastRun"]["focus"] = {"enabled": True, "perMosqueLimit": config["maxDetailsPerMosque"], "mosques": current}
         save(path, state)
         result = report(state, mosques, config)
         save(directory / "latest.json", result)
@@ -680,6 +763,14 @@ def validate_config(config):
             raise ValueError("Invalid config limit: " + key)
     if type(config.get("radiusKm")) not in (int, float) or not 0 < config["radiusKm"] <= 3:
         raise ValueError("Invalid radius")
+    if config.get("focusEnabled"):
+        if type(config.get("maxDetailsPerMosque")) is not int or not 1 <= config["maxDetailsPerMosque"] <= 20:
+            raise ValueError("Invalid per mosque detail limit")
+        if set(config.get("focusAreas", {})) != set(config["targets"]):
+            raise ValueError("Focus must cover every mosque")
+        for area in config["focusAreas"].values():
+            if not area.get("paths") or not area.get("localities") or any(len(p.split("/")) != 4 for p in area["paths"]):
+                raise ValueError("Focus requires a subdistrict and locality hints")
 
 
 def main():

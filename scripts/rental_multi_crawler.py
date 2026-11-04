@@ -106,6 +106,8 @@ def merge(directory, plans, config, runs):
                   and not blocked.intersection(r["issues"]) and not r.get("error")]
     area_leads.sort(key=lambda r: ("jakarta selatan" not in r["locality"].lower(), r.get("monthlyEquivalent") or float("inf"), r["url"]))
     result.update(providers=runs, crossSourceMatches=pairs, areaLeads=area_leads)
+    for mosque in result["coverage"]:
+        mosque["focusByProvider"] = {r["name"]: next((m for m in r.get("run", {}).get("focus", {}).get("mosques", []) if m["id"] == mosque["id"]), None) for r in runs}
     result["summary"].update(providers=len(plans), areaLeads=len(area_leads), crossSourceMatches=len(pairs))
     result["summary"]["byProvider"] = {name: {
         "details": sum(bool(r.get("sha256")) for r in result["results"] if r["provider"] == name),

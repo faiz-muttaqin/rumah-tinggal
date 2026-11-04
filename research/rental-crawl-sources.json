@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "note": "Area pencarian awal, bukan bukti alamat unit. Rumah dan apartemen dicari terpisah; kedekatan hanya dari koordinat iklan. Urutan dihitung dari transportasi dalam dataset dan kedekatan ke Blok M.",
+  "note": "Pencarian kelurahan/kawasan tiap masjid; kartu di luar kelurahan ditolak sebelum detail. Antrean bergiliran per masjid dan radius 1,5 km diverifikasi dari detail; petunjuk kawasan bukan bukti jarak.",
   "radiusKm": 1.5,
   "delaySeconds": 2,
   "delayJitterSeconds": 3,
   "searchCacheHours": 4,
   "detailCacheHours": 72,
-  "maxSearchRequests": 150,
+  "maxSearchRequests": 162,
   "maxDetailRequests": 240,
   "maxPagesPerArea": 20,
   "targets": {
@@ -104,5 +104,544 @@
     ],
     "masjid-umar-bin-khattab": ["jawa-barat/kab-bandung-barat/batujajar"],
     "rumah-al-qur-an-rsb": ["jawa-barat/bekasi/pondokgede"]
+  },
+  "focusEnabled": true,
+  "maxDetailsPerMosque": 2,
+  "focusAreas": {
+    "masjid-nurul-iman-blok-m": {
+      "paths": ["dki-jakarta/jakarta-selatan/kebayoran-baru/melawai"],
+      "localities": ["Melawai", "Pulo", "Kramat Pela", "Gunung"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-nur-salma": {
+      "paths": ["dki-jakarta/jakarta-selatan/setiabudi/karet-semanggi"],
+      "localities": ["Karet Semanggi", "Karet Kuningan", "Petogogan"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-baitussalam-cilandak": {
+      "paths": ["dki-jakarta/jakarta-selatan/cilandak/cilandak-barat"],
+      "localities": ["Cilandak Barat", "Gandaria Selatan", "Cipete Selatan"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-baiturrahman": {
+      "paths": ["dki-jakarta/jakarta-selatan/kebayoran-lama/pondok-pinang"],
+      "localities": ["Pondok Pinang", "Cilandak Barat", "Rempoa"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-nurul-amal": {
+      "paths": ["dki-jakarta/jakarta-selatan/pasar-minggu/pasar-minggu"],
+      "localities": ["Pasar Minggu", "Pejaten Timur"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-kautsar-matraman": {
+      "paths": ["dki-jakarta/jakarta-timur/matraman/kebon-manggis"],
+      "localities": [
+        "Kebon Manggis",
+        "Kayu Manis",
+        "Pisangan Baru",
+        "Palmeriam",
+        "Pal Meriam"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-hidayah-tomang": {
+      "paths": ["dki-jakarta/jakarta-barat/palmerah/jatipulo"],
+      "localities": ["Jatipulo", "Kota Bambu Utara"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-fattah": {
+      "paths": ["dki-jakarta/jakarta-timur/jatinegara/bali-mester"],
+      "localities": [
+        "Bali Mester",
+        "Rawa Bunga",
+        "Pisangan Baru",
+        "Cipinang Besar Utara",
+        "Cipinang Besar Selatan",
+        "Bidara Cina",
+        "Bidaracina",
+        "Cipinang Cempedak",
+        "Kayu Manis",
+        "Utan Kayu Selatan"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-raya-al-fatah": {
+      "paths": ["dki-jakarta/jakarta-timur/matraman/kayu-manis"],
+      "localities": [
+        "Kayu Manis",
+        "Utan Kayu Selatan",
+        "Pisangan Baru",
+        "Palmeriam",
+        "Pal Meriam",
+        "Utan Kayu Utara"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-imam-nawawi": {
+      "paths": ["dki-jakarta/jakarta-timur/jatinegara/cipinang-cempedak"],
+      "localities": [
+        "Cipinang Cempedak",
+        "Cipinang Besar Utara",
+        "Cipinang Besar Selatan",
+        "Bidara Cina",
+        "Bidaracina",
+        "Rawa Bunga",
+        "Cipinang Muara"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-mubarak": {
+      "paths": ["dki-jakarta/jakarta-barat/taman-sari/krukut"],
+      "localities": [
+        "Krukut",
+        "Maphar",
+        "Keagungan",
+        "Mangga Besar",
+        "Taman Sari",
+        "Glodok"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-azhar-cpb": {
+      "paths": ["dki-jakarta/jakarta-pusat/cempaka-putih/cempaka-putih-barat"],
+      "localities": ["Cempaka Putih Barat", "Cempaka Putih Timur"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-salman-al-farisi": {
+      "paths": ["dki-jakarta/jakarta-timur/pulogadung/kayu-putih"],
+      "localities": [
+        "Kayu Putih",
+        "Rawasari",
+        "Cempaka Putih Timur",
+        "Rawamangun",
+        "Utan Kayu Utara",
+        "Cempaka Putih Barat"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-ihsan": {
+      "paths": ["dki-jakarta/jakarta-timur/jatinegara/cipinang-muara"],
+      "localities": [
+        "Cipinang Muara",
+        "Klender",
+        "Pondok Bambu",
+        "Jatinegara Kaum",
+        "Cipinang Besar Utara",
+        "Cipinang"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-barkah-ciputat": {
+      "paths": ["banten/tangerang-selatan/ciputat/sawah-baru"],
+      "localities": [
+        "Sawah Baru",
+        "Jombang",
+        "Serua Indah",
+        "Sarua Indah",
+        "Sarua",
+        "Serua"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-at-taufiq": {
+      "paths": ["dki-jakarta/jakarta-pusat/cempaka-putih/cempaka-putih-timur"],
+      "localities": ["Cempaka Putih Timur", "Kayu Putih"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-mizan": {
+      "paths": ["dki-jakarta/jakarta-timur/pulogadung/jati"],
+      "localities": ["Jati", "Cipinang", "Jatinegara Kaum", "Rawamangun"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-amanah": {
+      "paths": ["banten/tangerang-selatan/ciputat/sarua"],
+      "localities": ["Sarua", "Jombang", "Serua"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-muhajirin-villa-gunung-lestari": {
+      "paths": ["banten/tangerang-selatan/ciputat/jombang"],
+      "localities": ["Jombang", "Sarua", "Serua"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-istiqomah-kavling-pengadilan": {
+      "paths": ["dki-jakarta/jakarta-timur/duren-sawit/klender"],
+      "localities": ["Klender", "Duren Sawit", "Pondok Bambu"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-aqsho": {
+      "paths": ["jawa-barat/bekasi/pondokgede/bintarajaya"],
+      "localities": [
+        "Bintarajaya",
+        "Jatibening",
+        "Jakamulya",
+        "Jaka Mulya",
+        "Jakasetia",
+        "Jaka Setia"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-ukhuwah": {
+      "paths": ["banten/kab-tangerang/pagedangan/pagedangan"],
+      "localities": ["Pagedangan"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-raya-rahmatan-lil-alamin": {
+      "paths": ["banten/tangerang/tangerang/buaran-indah"],
+      "localities": ["Buaran Indah"],
+      "basis": "Locality of an existing portal point within 1.5 km; not an administrative claim about the mosque"
+    },
+    "masjid-al-furqan-grand-galaxy-city": {
+      "paths": ["jawa-barat/bekasi/bekasi-selatan/jakasetia"],
+      "localities": [
+        "Jakasetia",
+        "Jaka Setia",
+        "Pekayonjaya",
+        "Pekayon Jaya",
+        "Jakamulya",
+        "Jaka Mulya"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-hakim": {
+      "paths": ["banten/tangerang/tangerang/tanah-tinggi"],
+      "localities": ["Tanah Tinggi", "Buaran Indah"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-ikhlas-nirwana-2": {
+      "paths": ["jawa-barat/kab-bogor/cibinong/harapanjaya"],
+      "localities": [
+        "Harapanjaya",
+        "Pabuaran",
+        "Harapan Jaya",
+        "Pabuaran Mekar"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-jannah-gcc": {
+      "paths": ["jawa-barat/kab-bogor/sukaraja/cilebut-timur"],
+      "localities": ["Cilebut Timur", "Cilebut Barat", "Kencana"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-hikmah-ddn-2": {
+      "paths": ["dki-jakarta/jakarta-selatan/cilandak/pondok-labu"],
+      "localities": ["Pondok Labu", "Pangkalan Jati", "Pangkalan Jati Baru"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-an-nur-casagoya": {
+      "paths": ["dki-jakarta/jakarta-barat/kebon-jeruk/kebon-jeruk"],
+      "localities": [
+        "Kebon Jeruk",
+        "Palmerah",
+        "Sukabumi Utara",
+        "Ilir",
+        "Grogol Utara",
+        "Duri Kepa"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-adhim": {
+      "paths": ["jawa-barat/depok/cinere/pangkalan-jati-baru"],
+      "localities": ["Pangkalan Jati Baru", "Pangkalan Jati", "Pondok Labu"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-jami-utsman-bin-affan": {
+      "paths": ["banten/tangerang-selatan/pondok-aren/jurangmangu-barat"],
+      "localities": ["Jurangmangu Barat", "Jurang Mangu Barat", "Paninggilan"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-as-sunnah-vcm": {
+      "paths": ["banten/tangerang-selatan/ciputat-timur/pisangan"],
+      "localities": ["Pisangan", "Cireundeu", "Pangkalan Jati", "Cinere"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-at-tabayyun": {
+      "paths": ["dki-jakarta/jakarta-barat/kembangan/meruya-selatan"],
+      "localities": ["Meruya Selatan", "Udik", "Joglo", "Meruya Utara", "Ilir"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-hasanah-bintaro": {
+      "paths": ["banten/tangerang-selatan/pondok-aren/jurangmangu-barat"],
+      "localities": [
+        "Jurangmangu Barat",
+        "Jurang Mangu Barat",
+        "Pondok Jaya",
+        "Pondok Ranji"
+      ],
+      "basis": "Locality of an existing portal point within 1.5 km; not an administrative claim about the mosque"
+    },
+    "masjid-jami-al-jihad": {
+      "paths": ["banten/tangerang/ciledug/paninggilan-utara"],
+      "localities": ["Paninggilan Utara", "Paninggilan"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-raya-cipinang-muara": {
+      "paths": ["dki-jakarta/jakarta-timur/jatinegara/cipinang-muara"],
+      "localities": [
+        "Cipinang Muara",
+        "Cipinang Besar Selatan",
+        "Pondok Bambu",
+        "Cipinang Besar Utara",
+        "Cipinang Cempedak"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-ar-rahman-discovery-lumina": {
+      "paths": ["banten/tangerang-selatan/pondok-aren/parigi"],
+      "localities": ["Parigi", "Perigi Lama", "Parigi Baru", "Perigi Baru"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-ash-shaff": {
+      "paths": ["banten/tangerang-selatan/pondok-aren/parigi"],
+      "localities": ["Parigi", "Pondok Pucung", "Perigi Lama"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-abu-bakar-ash-shiddiq-tangerang": {
+      "paths": ["banten/tangerang/ciledug/tajur"],
+      "localities": [
+        "Tajur",
+        "Pondok Kacang Timur",
+        "Sudimara Selatan",
+        "Parung Serab",
+        "Paninggilan Utara",
+        "Pondok Kacang Barat"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-hijrah-discovery-flamine": {
+      "paths": ["banten/tangerang-selatan/pondok-aren/parigi"],
+      "localities": [
+        "Parigi",
+        "Perigi Lama",
+        "Parigi Baru",
+        "Perigi Baru",
+        "Pondok Kacang Timur",
+        "Pondok Kacang Barat"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "rumah-al-qur-an-rsb": {
+      "paths": ["jawa-barat/bekasi/pondokgede/jatimakmur"],
+      "localities": ["Jatimakmur", "Jatiwaringin", "Jaticempaka"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-aminussalam": {
+      "paths": ["jawa-barat/bekasi/pondokgede/jatimakmur"],
+      "localities": ["Jatimakmur", "Jatiwaringin", "Jaticempaka"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-an-naba": {
+      "paths": ["banten/tangerang/pinang/sudimara-pinang"],
+      "localities": ["Sudimara Pinang", "Kunciran Indah", "Pinang", "Kunciran"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-nurul-iman-valencia": {
+      "paths": ["banten/tangerang/pinang/kunciran-indah"],
+      "localities": ["Kunciran Indah", "Kunciran"],
+      "basis": "Locality of an existing portal point within 1.5 km; not an administrative claim about the mosque"
+    },
+    "masjid-baiturrahim-kavling-marinir": {
+      "paths": ["dki-jakarta/jakarta-timur/duren-sawit/pondok-kelapa"],
+      "localities": ["Pondok Kelapa", "Malaka Sari"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-muhajirin-wal-anshar": {
+      "paths": ["jawa-barat/depok/limo/grogol"],
+      "localities": ["Grogol", "Krukut", "Limo"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-asy-syakirin-depok": {
+      "paths": ["jawa-barat/depok/cimanggis/mekarsari"],
+      "localities": ["Mekarsari", "Tugu"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-hakim-pamulang": {
+      "paths": ["banten/tangerang-selatan/pamulang/pondok-benda"],
+      "localities": [
+        "Pondok Benda",
+        "Pamulang Barat",
+        "Pamulang Timur",
+        "Benda Baru"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-as-sunnah-meruyung": {
+      "paths": ["jawa-barat/depok/limo/meruyung"],
+      "localities": ["Meruyung", "Maruyung", "Limo"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-hijau-nurul-iman": {
+      "paths": ["dki-jakarta/jakarta-timur/cipayung/cilangkap"],
+      "localities": ["Cilangkap", "Munjul", "Pondok Ranggon", "Pondok Rangon"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-lathiif": {
+      "paths": ["jawa-barat/depok/sukmajaya/mekar-jaya"],
+      "localities": [
+        "Mekar Jaya",
+        "Baktijaya",
+        "Mekarjaya",
+        "Abadi Jaya",
+        "Abadijaya"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-ahdhar": {
+      "paths": ["jawa-barat/bekasi/pondokmelati/jatimekar"],
+      "localities": ["Jatimekar", "Jatimelati", "Jatimurni"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-ar-riyadh": {
+      "paths": ["jawa-barat/depok/sukmajaya/mekar-jaya"],
+      "localities": [
+        "Mekar Jaya",
+        "Mekarjaya",
+        "Abadi Jaya",
+        "Abadijaya",
+        "Baktijaya"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-hidayah": {
+      "paths": ["dki-jakarta/jakarta-timur/cakung/cakung-timur"],
+      "localities": [
+        "Cakung Timur",
+        "Cakung Barat",
+        "Pulo Gebang",
+        "Ujung Menteng",
+        "Penggilingan"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-nurul-i-tishom": {
+      "paths": ["jawa-barat/bekasi/bekasi-barat/kranji"],
+      "localities": ["Kranji"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-imam-asy-syafi-i": {
+      "paths": ["jawa-barat/depok/sukmajaya/sukmajaya"],
+      "localities": ["Sukmajaya"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-muadz-bin-jabal": {
+      "paths": ["jawa-barat/kab-bogor/gunung-putri/bojong-kulur"],
+      "localities": ["Bojong Kulur"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-raya-at-taqwa-rawalumbu": {
+      "paths": ["jawa-barat/bekasi/rawalumbu/mustikasari"],
+      "localities": ["Mustikasari", "Pengasinan", "Bojong Rawalumbu"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-bunga-bangsa": {
+      "paths": ["jawa-barat/bekasi/bekasi-timur/bekasijaya"],
+      "localities": ["Bekasijaya", "Bekasi Jaya", "Durenjaya", "Duren Jaya"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-nurul-jannah-pup": {
+      "paths": ["jawa-barat/bekasi/bekasi-utara/kaliabang-tengah"],
+      "localities": ["Kaliabang Tengah", "Kali Abang Tengah"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-miftahu-khairil-ummah": {
+      "paths": ["jawa-barat/bekasi/bekasi-utara/harapanbaru"],
+      "localities": ["Harapanbaru", "Harapan Baru"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-ikhlas-dukuh-bima": {
+      "paths": ["jawa-barat/kab-bekasi/tambun-selatan/lambangsari"],
+      "localities": ["Lambangsari", "Jatimulya"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-rihlatul-jannah": {
+      "paths": ["jawa-barat/kab-bogor/tajurhalang/tajurhalang"],
+      "localities": ["Tajurhalang", "Tajur Halang"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-at-tauhid": {
+      "paths": ["jawa-barat/kab-bogor/cibinong/sukahati"],
+      "localities": ["Sukahati", "Karadenan"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-nuur-alaa-nuur-masnan": {
+      "paths": ["jawa-barat/kab-bekasi/tambun-selatan/sumberjaya"],
+      "localities": ["Sumberjaya", "Wanasari", "Sumber Jaya"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-ikhlas-tamansari-persada": {
+      "paths": ["jawa-barat/bogor/tanah-sareal/cibadak"],
+      "localities": ["Cibadak", "Curug", "Kayu Manis", "Kayumanis"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-istiqomah-taman-yasmin": {
+      "paths": ["jawa-barat/bogor/bogor-barat/curug-mekar"],
+      "localities": [
+        "Curug Mekar",
+        "Kedung Waringin",
+        "Cilendek Timur",
+        "Cibadak"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-abu-bakr-ash-shiddiq-cibitung": {
+      "paths": ["jawa-barat/kab-bekasi/cibitung/kertamukti"],
+      "localities": ["Kertamukti", "Sukajaya", "Kerta Mukti", "Wanajaya"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-istiqomah-ikea-sentul-city": {
+      "paths": ["jawa-barat/kab-bogor/babakan-madang/citaringgul"],
+      "localities": ["Citaringgul", "Babakan Madang"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-nurut-tauhid": {
+      "paths": ["jawa-barat/bogor/bogor-utara/cimahpar"],
+      "localities": ["Cimahpar", "Sukaraja", "Tanah Baru"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-jihad-cikarang-baru": {
+      "paths": ["jawa-barat/kab-bekasi/cikarang-selatan/pasirsari"],
+      "localities": ["Pasirsari"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-nur-ilahi": {
+      "paths": ["jawa-barat/kab-bogor/ciawi/pandan-sari"],
+      "localities": [
+        "Pandan Sari",
+        "Bendungan",
+        "Cibedug",
+        "Ciawi",
+        "Banjar Waru"
+      ],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-barkah-batujajar": {
+      "paths": ["jawa-barat/kab-bandung-barat/batujajar/selacau"],
+      "localities": ["Selacau", "Batujajar Timur", "Galanggang"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-umar-bin-khattab": {
+      "paths": ["jawa-barat/kab-bandung-barat/batujajar/selacau"],
+      "localities": ["Selacau"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-at-tauhid-lembang": {
+      "paths": ["jawa-barat/kab-bandung-barat/lembang/pagerwangi"],
+      "localities": ["Pagerwangi"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-al-hafidz-cigadung": {
+      "paths": ["jawa-barat/bandung/cibeunying-kaler/cigadung"],
+      "localities": ["Cigadung", "Sukaluyu"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-ash-shiddiq-bandung": {
+      "paths": ["jawa-barat/bandung/batununggal/maleer"],
+      "localities": ["Maleer", "Kebongedang", "Kebon Gedang", "Cibangkong"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    },
+    "masjid-umar-bin-khattab-griya-cempaka-arum": {
+      "paths": ["jawa-barat/bandung/gedebage/rancanumpang"],
+      "localities": ["Rancanumpang", "Rancabolang", "Rancabalong"],
+      "basis": "Cached reverse lookup of mosque reference; search area only"
+    }
   }
 }
