@@ -112,6 +112,30 @@ class CrawlerTest(unittest.TestCase):
                 self.assertTrue(all(n>0 for n in counts))
                 self.assertEqual(json.loads((root/'research/rentals.json').read_text()), {'rentals': []})
 
+    def test_ambiguous_public_route_uses_verified_village_id_before_requesting_details(self):
+        source = SOURCE + '/cilandak'
+        text = search_page().replace('"slug": "cilandak"', '"slug": "cilandak", "level": 3, "id": 999')
+        text = text.replace('&quot;buildingType&quot;', '&quot;subDistrictID&quot;: [0, 123], &quot;buildingType&quot;')
+        text += '<a href="'+UNIT+'-unrelated">Unrelated</a>'
+        calls=[]
+        class FakeClient(c.Client):
+            def __init__(self, *args, **kwargs):super().__init__(0)
+            def start(self):return {'checkedAt': c.now()}
+            def get(self, url):
+                calls.append(url);self.requests+=1
+                return text if url==source else script('__UNIT_DETAIL__', unit_data())
+        config={'focusEnabled':True,'focusAreas':{'m':{'areaIds':{'dki-jakarta/jakarta-selatan/cilandak/cilandak':123}}},
+                'maxDetailsPerMosque':2,'radiusKm':1.5,'delaySeconds':2,'searchCacheHours':4,
+                'detailCacheHours':72,'maxSearchRequests':10,'maxDetailRequests':10,'maxPagesPerArea':20}
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);c.save(root/'research/rentals.json',{'rentals':[]})
+            with patch.object(c,'ROOT',root),patch.object(c,'Client',FakeClient):
+                self.assertEqual(c.run(config,[{**MOSQUES[0],'sources':[source]}],root/'output'),0)
+            self.assertEqual(calls,[source,UNIT])
+            state=json.loads((root/'output/state.json').read_text())
+            self.assertEqual(state['pages'][source]['pages'],1)
+            self.assertEqual(state['pages'][source]['cards'][0]['focusArea']['id'],123)
+
     def test_structure_loss_is_error_not_zero_results(self):
         for page in ("<html>No data</html>", search_page().replace("__SEARCH_RESULT_PAGINATION__", "changed")):
             with self.assertRaises(ValueError):

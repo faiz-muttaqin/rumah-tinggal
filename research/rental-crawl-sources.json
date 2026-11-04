@@ -131,7 +131,10 @@
     "masjid-nurul-amal": {
       "paths": ["dki-jakarta/jakarta-selatan/pasar-minggu/pasar-minggu"],
       "localities": ["Pasar Minggu", "Pejaten Timur"],
-      "basis": "Cached reverse lookup of mosque reference; search area only"
+      "basis": "Portal locality hierarchy/ID verified on a public listing; search area only, radius checked separately",
+      "areaIds": {
+        "dki-jakarta/jakarta-selatan/pasar-minggu/pasar-minggu": 18606
+      }
     },
     "masjid-al-kautsar-matraman": {
       "paths": ["dki-jakarta/jakarta-timur/matraman/kebon-manggis"],
@@ -145,9 +148,12 @@
       "basis": "Cached reverse lookup of mosque reference; search area only"
     },
     "masjid-al-hidayah-tomang": {
-      "paths": ["dki-jakarta/jakarta-barat/palmerah/jatipulo"],
+      "paths": ["dki-jakarta/jakarta-barat/pal-merah/jatipulo"],
       "localities": ["Jatipulo", "Kota Bambu Utara"],
-      "basis": "Cached reverse lookup of mosque reference; search area only"
+      "basis": "Portal locality hierarchy/ID verified on a public listing; search area only, radius checked separately",
+      "areaIds": {
+        "dki-jakarta/jakarta-barat/pal-merah/jatipulo": 18496
+      }
     },
     "masjid-al-fattah": {
       "paths": ["dki-jakarta/jakarta-timur/jatinegara/bali-mester"],
@@ -269,7 +275,7 @@
       "basis": "Cached reverse lookup of mosque reference; search area only"
     },
     "masjid-al-aqsho": {
-      "paths": ["jawa-barat/bekasi/pondokgede/bintarajaya"],
+      "paths": ["jawa-barat/bekasi/pondokgede/jatibening"],
       "localities": [
         "Bintarajaya",
         "Jatibening",
@@ -278,12 +284,18 @@
         "Jakasetia",
         "Jaka Setia"
       ],
-      "basis": "Cached reverse lookup of mosque reference; search area only"
+      "basis": "Portal locality hierarchy/ID verified on a public listing; search area only, radius checked separately",
+      "areaIds": {
+        "jawa-barat/bekasi/pondokgede/jatibening": 21687
+      }
     },
     "masjid-al-ukhuwah": {
       "paths": ["banten/kab-tangerang/pagedangan/pagedangan"],
       "localities": ["Pagedangan"],
-      "basis": "Cached reverse lookup of mosque reference; search area only"
+      "basis": "Portal locality hierarchy/ID verified on a public listing; search area only, radius checked separately",
+      "areaIds": {
+        "banten/kab-tangerang/pagedangan/pagedangan": 16341
+      }
     },
     "masjid-raya-rahmatan-lil-alamin": {
       "paths": ["banten/tangerang/tangerang/buaran-indah"],
@@ -337,7 +349,10 @@
         "Grogol Utara",
         "Duri Kepa"
       ],
-      "basis": "Cached reverse lookup of mosque reference; search area only"
+      "basis": "Portal locality hierarchy/ID verified on a public listing; search area only, radius checked separately",
+      "areaIds": {
+        "dki-jakarta/jakarta-barat/kebon-jeruk/kebon-jeruk": 18484
+      }
     },
     "masjid-al-adhim": {
       "paths": ["jawa-barat/depok/cinere/pangkalan-jati-baru"],
@@ -465,9 +480,12 @@
       "basis": "Cached reverse lookup of mosque reference; search area only"
     },
     "masjid-as-sunnah-meruyung": {
-      "paths": ["jawa-barat/depok/limo/meruyung"],
+      "paths": ["jawa-barat/depok/limo/maruyung"],
       "localities": ["Meruyung", "Maruyung", "Limo"],
-      "basis": "Cached reverse lookup of mosque reference; search area only"
+      "basis": "Portal locality hierarchy/ID verified on a public listing; search area only, radius checked separately",
+      "areaIds": {
+        "jawa-barat/depok/limo/maruyung": 23512
+      }
     },
     "masjid-hijau-nurul-iman": {
       "paths": ["dki-jakarta/jakarta-timur/cipayung/cilangkap"],
@@ -486,9 +504,12 @@
       "basis": "Cached reverse lookup of mosque reference; search area only"
     },
     "masjid-al-ahdhar": {
-      "paths": ["jawa-barat/bekasi/pondokmelati/jatimekar"],
+      "paths": ["jawa-barat/bekasi/pondokmelati/jatimelati"],
       "localities": ["Jatimekar", "Jatimelati", "Jatimurni"],
-      "basis": "Cached reverse lookup of mosque reference; search area only"
+      "basis": "Portal locality hierarchy/ID verified on a public listing; search area only, radius checked separately",
+      "areaIds": {
+        "jawa-barat/bekasi/pondokmelati/jatimelati": 21692
+      }
     },
     "masjid-ar-riyadh": {
       "paths": ["jawa-barat/depok/sukmajaya/mekar-jaya"],
@@ -520,7 +541,10 @@
     "masjid-imam-asy-syafi-i": {
       "paths": ["jawa-barat/depok/sukmajaya/sukmajaya"],
       "localities": ["Sukmajaya"],
-      "basis": "Cached reverse lookup of mosque reference; search area only"
+      "basis": "Portal locality hierarchy/ID verified on a public listing; search area only, radius checked separately",
+      "areaIds": {
+        "jawa-barat/depok/sukmajaya/sukmajaya": 23530
+      }
     },
     "masjid-muadz-bin-jabal": {
       "paths": ["jawa-barat/kab-bogor/gunung-putri/bojong-kulur"],
@@ -528,9 +552,12 @@
       "basis": "Cached reverse lookup of mosque reference; search area only"
     },
     "masjid-raya-at-taqwa-rawalumbu": {
-      "paths": ["jawa-barat/bekasi/rawalumbu/mustikasari"],
+      "paths": ["jawa-barat/bekasi/rawalumbu/pengasinan"],
       "localities": ["Mustikasari", "Pengasinan", "Bojong Rawalumbu"],
-      "basis": "Cached reverse lookup of mosque reference; search area only"
+      "basis": "Portal locality hierarchy/ID verified on a public listing; search area only, radius checked separately",
+      "areaIds": {
+        "jawa-barat/bekasi/rawalumbu/pengasinan": 21698
+      }
     },
     "masjid-bunga-bangsa": {
       "paths": ["jawa-barat/bekasi/bekasi-timur/bekasijaya"],
@@ -555,7 +582,10 @@
     "masjid-rihlatul-jannah": {
       "paths": ["jawa-barat/kab-bogor/tajurhalang/tajurhalang"],
       "localities": ["Tajurhalang", "Tajur Halang"],
-      "basis": "Cached reverse lookup of mosque reference; search area only"
+      "basis": "Portal locality hierarchy/ID verified on a public listing; search area only, radius checked separately",
+      "areaIds": {
+        "jawa-barat/kab-bogor/tajurhalang/tajurhalang": 22286
+      }
     },
     "masjid-at-tauhid": {
       "paths": ["jawa-barat/kab-bogor/cibinong/sukahati"],

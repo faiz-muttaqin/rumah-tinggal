@@ -621,8 +621,19 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None, adapte
     detail_parser = adapter.parse_detail if adapter else parse_detail
     def read_search(text, url):
         result = search_parser(text, url)
-        if config.get("focusEnabled") and adapter is None and not result.get("focusedSearch"):
-            raise ValueError("Focused search requires village evidence")
+        if config.get("focusEnabled") and adapter is None:
+            path = "/".join(urllib.parse.urlsplit(url).path.split("/")[3:])
+            ids = {area["areaIds"][path] for area in config.get("focusAreas", {}).values() if path in area.get("areaIds", {})}
+            if ids:
+                # Some public village URLs resolve to a district page. The known
+                # portal village ID still rejects every unrelated card locally.
+                result["cards"] = [{**card, "focusArea": {"id": card["subDistrictID"], "slug": path.rsplit("/", 1)[-1]}}
+                                   for card in result["cards"] if card.get("subDistrictID") in ids]
+                if not result.get("focusedSearch"):
+                    result["pages"] = 1
+                result["focusedSearch"] = True
+            if not result.get("focusedSearch"):
+                raise ValueError("Focused search requires village evidence")
         return result
     state["lastRun"] = {"startedAtUTC": now(), "status": "running"}
     save(path, state)
@@ -658,6 +669,8 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None, adapte
             source = sources[index]
             state["paginationCursor"] = (index + 1) % len(sources)
             first = state["pages"].get(source, {})
+            if config.get("focusEnabled") and adapter is not None:
+                continue  # No city-wide pagination to hunt for locality words.
             total = min(first.get("pages", 0), config["maxPagesPerArea"])
             if total < 2:
                 continue
