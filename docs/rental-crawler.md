@@ -19,6 +19,8 @@ Prioritas mengikuti permintaan pengguna: masjid dekat transportasi umum, mulai J
 
 ## Fokus per masjid
 
+Cakupan hanya **78 masjid pada daftar Ihrish yang sedang digunakan**. ID target dan fokus wajib sama persis dengan inventori tersebut; masjid/sarana lain di peta tidak menjadi target. [Pemeriksaan OLX dan Facebook Marketplace](../research/masjid/sumber-lokal-olx-facebook-2026-11-04.md) tetap terpisah sebagai sumber manual sampai akses dan ketepatan filter lokasinya dibuktikan.
+
 Pencarian Pinhome memakai **kelurahan sekitar masing-masing dari 78 masjid**, bukan lagi kategori seluruh kecamatan. Konfigurasi `focusAreas` mencatat jalur pencarian, nama kawasan dan dasar pemilihannya. Area berasal dari cache lookup titik masjid dan lokasi penawaran bertitik dalam radius 1,5 km; area pencarian tidak dianggap alamat administratif atau lokasi pintu masjid yang pasti. Ada **142 URL awal Pinhome**, atau **247 URL awal** lintas enam sumber.
 
 Sebelum membaca detail, worker menolak kartu Pinhome yang ID kelurahannya berbeda dari filter halaman, termasuk rekomendasi dari area lain dan tautan tanpa penanda kelurahan. Sumber lain harus memiliki petunjuk nama kelurahan pada URL, titik yang sudah terbukti berada dalam radius, atau referensi gedung Jendela360 yang sudah mempunyai titik dalam radius. Nama kota saja tidak cukup. Jika URL kelurahan kembali ke halaman kecamatan, ID kelurahan dari rincian portal yang telah diperiksa dipakai untuk menyaring kartu secara lokal; halaman lebih luas tersebut tidak dipaginasi. Pagination tingkat kota sumber lain juga dilewati dalam mode fokus. Titik yang sudah diketahui di luar radius tetap ditolak meskipun nama pada URL cocok.
