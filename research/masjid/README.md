@@ -1,5 +1,7 @@
 # Hunian dari titik awal masjid
 
+[Publikasi 4 November 2026 pagi](publikasi-sewa-ihrish-2026-11-04-pagi.md) menambah **39 penawaran terkurasi** (31 rumah/kontrakan dan 8 apartemen) menjadi **283 sewa**. Scraping enam sumber selesai otomatis; 54 kandidat baru diperiksa,15 ditahan. 244 penawaran terdahulu tetap sama.
+
 [Publikasi 3 November 2026](publikasi-sewa-ihrish-2026-11-03.md) menambah **61 penawaran terkurasi** dari hasil worker menjadi **109 sewa**. Harga, periode, minimum sewa, dan acuan lokasi diperiksa; stok dan akses unit tetap perlu konfirmasi. Sebanyak 32 kandidat otomatis ditahan dengan alasan per sumber.
 
 [Worker pantauan sewa](../../docs/rental-crawler.md) menelusuri rumah dan apartemen dari kawasan seluruh 78 masjid Ihrish, dengan prioritas transportasi umum dan Jakarta Selatan. Hasilnya kandidat privat dengan bukti harga, tanggal, dan jarak perkiraan; penerbitan katalog tetap melalui kurasi.
