@@ -1,5 +1,7 @@
 # Hunian dari titik awal masjid
 
+[Publikasi 4 November 2026 sore](publikasi-sewa-ihrish-2026-11-04-sore.md) menambah **28 penawaran terkurasi** (25 rumah/kontrakan dan 3 apartemen) menjadi **344 sewa**. Sebanyak 41 kandidat diperiksa ulang, 13 ditahan; 316 penawaran lama tetap sama.
+
 [Publikasi 4 November 2026 siang](publikasi-sewa-ihrish-2026-11-04-siang.md) menambah **33 penawaran terkurasi** (27 rumah/kontrakan dan 6 apartemen) menjadi **316 sewa**. Scraping enam sumber selesai otomatis; 43 kandidat baru diperiksa, 10 ditahan. Seluruh 283 penawaran terdahulu tetap sama.
 
 [Publikasi 4 November 2026 pagi](publikasi-sewa-ihrish-2026-11-04-pagi.md) menambah **39 penawaran terkurasi** (31 rumah/kontrakan dan 8 apartemen) menjadi **283 sewa**. Scraping enam sumber selesai otomatis; 54 kandidat baru diperiksa,15 ditahan. 244 penawaran terdahulu tetap sama.
