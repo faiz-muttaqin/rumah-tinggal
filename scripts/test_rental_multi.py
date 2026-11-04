@@ -356,6 +356,18 @@ class ProviderTest(unittest.TestCase):
                 release.set()
                 self.assertEqual(first.result()["exitCode"], 0)
 
+    def test_full_search_flag_keeps_provider_budget_and_cancellation(self):
+        cancel = threading.Event()
+        adapter = self.adapter("realoka")
+        settings = {"delaySeconds": 2, "delayJitterSeconds": 3}
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)
+            c.save(path / "latest.json", {"run": {"status": "complete-with-limits", "refreshSearch": True}, "summary": {}})
+            with patch.object(c, "run", return_value=0) as run:
+                result = m.run_one("realoka", adapter, [], settings, path, 30, 80, cancel, True)
+                run.assert_called_once_with(settings, [], path, 30, 80, adapter, cancel, True)
+            self.assertTrue(result["run"]["refreshSearch"])
+
     def test_cancelled_pinhome_client_does_not_make_another_request(self):
         client = c.Client()
         client.cancel = threading.Event()

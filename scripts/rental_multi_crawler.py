@@ -42,14 +42,14 @@ def provider_plan(base, config, cancel=None):
     return plans
 
 
-def run_one(name, adapter, mosques, config, directory, search_limit=None, detail_limit=None, cancel=None):
+def run_one(name, adapter, mosques, config, directory, search_limit=None, detail_limit=None, cancel=None, refresh_search=False):
     directory.mkdir(parents=True, exist_ok=True, mode=0o700)
     with (directory / "crawl.lock").open("w") as lock:
         try:
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError:
             return {"name": name, "status": "already-running"}
-        code = core.run(config, mosques, directory, search_limit, detail_limit, adapter, cancel)
+        code = core.run(config, mosques, directory, search_limit, detail_limit, adapter, cancel, refresh_search)
         result = json.loads((directory / "latest.json").read_text())
         return {"name": name, "status": result["run"]["status"], "exitCode": code,
                 "run": result["run"], "summary": result["summary"]}
@@ -134,6 +134,15 @@ def markdown(result):
     for name, counts in s["byProvider"].items():
         run = next((r for r in result["providers"] if r["name"] == name), {})
         lines.append(f"| {name} | {run.get('status', 'cache sebelumnya')} | {counts['details']} | {counts['candidates']} | {counts['areaLeads']} |")
+    lines += ["", "## Batas putaran dan cakupan", "",
+              "Detail kumulatif di atas berbeda dari permintaan pada putaran ini. Antrean hanya berasal dari halaman pencarian yang masih segar; bukan seluruh inventaris portal.", "",
+              "| Sumber | Pencarian / batas | Detail / batas | Antrean detail | Kawasan segar | Titik tercakup / dipetakan | Menit |",
+              "| --- | ---: | ---: | ---: | ---: | ---: | ---: |"]
+    for provider in result["providers"]:
+        run = provider.get("run", {})
+        coverage = run.get("coverage")
+        if coverage:
+            lines.append(f"| {provider['name']} | {run['searchRequests']}/{coverage['searchLimit']} | {run['detailRequests']}/{coverage['detailLimit']} | {coverage['pendingDetailUrls']} | {coverage['freshSources']}/{coverage['plannedSources']} | {coverage['coveredMosques']}/{coverage['configuredMosques']} | {run['durationSeconds']/60:.1f} |")
     lines += ["", "## Kandidat sekitar masjid", ""]
     for r in result["results"]:
         if r["reviewStatus"] != "candidate" or r["alreadyCatalogued"]:
@@ -164,6 +173,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run", action="store_true")
     parser.add_argument("--report-only", action="store_true")
+    parser.add_argument("--refresh-search", action="store_true", help="Refresh all configured first pages within the existing budgets")
     parser.add_argument("--providers", default=",".join(PROVIDERS))
     parser.add_argument("--output-dir", type=Path, default=ROOT / ".runtime/research/rental-crawl")
     parser.add_argument("--max-search", type=int)
@@ -182,6 +192,7 @@ def main():
         parser.error("Output must be a private research directory")
     directory.mkdir(parents=True, exist_ok=True, mode=0o700)
     config = json.loads((ROOT / "research/rental-crawl-sources.json").read_text())
+    core.validate_config(config)
     multi = json.loads((ROOT / "research/rental-crawl-providers.json").read_text())
     if multi.get("schemaVersion") != 1 or type(multi.get("parallelProviders")) is not int or not 1 <= multi["parallelProviders"] <= 3:
         parser.error("Invalid parallel provider config")
@@ -215,7 +226,7 @@ def main():
                     adapter, mosques = plans[name]
                     cfg = {**config, **{k: v for k, v in multi["providers"][name].items() if k in config}}
                     path = directory if name == "pinhome" else directory / "providers" / name
-                    future = pool.submit(run_one, name, adapter, mosques, cfg, path, args.max_search, args.max_detail, cancel)
+                    future = pool.submit(run_one, name, adapter, mosques, cfg, path, args.max_search, args.max_detail, cancel, args.refresh_search)
                     futures[future] = name
                 for future in as_completed(futures):
                     name = futures[future]

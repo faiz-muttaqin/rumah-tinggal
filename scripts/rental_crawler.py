@@ -10,6 +10,7 @@ import json
 import math
 import os
 from pathlib import Path
+import random
 import re
 import signal
 import time
@@ -315,10 +316,13 @@ class RedirectGuard(urllib.request.HTTPRedirectHandler):
 
 
 class Client:
-    def __init__(self, delay_seconds=1.5, adapter=None):
+    def __init__(self, delay_seconds=1.5, adapter=None, jitter_seconds=0):
         self.robots = None
         self.delay = delay_seconds
-        self.last_request = 0
+        self.jitter = jitter_seconds
+        self.last_request = None
+        self.intervals = []
+        self.target_delays = []
         self.requests = 0
         self.stopped = None
         self.normalize = adapter.canonical if adapter else canonical
@@ -333,8 +337,19 @@ class Client:
         url = self.normalize(url)
         if self.robots and not self.robots.allowed(url):
             raise ValueError("robots-disallowed")
-        time.sleep(max(0, self.last_request + self.delay - time.monotonic()))
-        self.last_request = time.monotonic()
+        target = max(self.delay, getattr(self.robots, "delay", 0)) + random.uniform(0, self.jitter)
+        if self.last_request is not None:
+            wait = max(0, self.last_request + target - time.monotonic())
+            if self.cancel:
+                if self.cancel.wait(wait):
+                    raise StopSource("operator-or-time-limit")
+            else:
+                time.sleep(wait)
+        started = time.monotonic()
+        if self.last_request is not None:
+            self.intervals.append(started - self.last_request)
+            self.target_delays.append(target)
+        self.last_request = started
         self.requests += 1
         opener = urllib.request.build_opener(RedirectGuard(lambda target: not self.robots or self.robots.allowed(target), self.normalize))
         try:
@@ -360,6 +375,14 @@ class Client:
         self.robots = Robots(text)
         self.delay = max(self.delay, self.robots.delay)
         return {"checkedAt": now(), "sha256": digest(text), "url": self.origin + "/robots.txt"}
+
+    def pacing(self):
+        def stats(values):
+            return {"count": len(values), "min": round(min(values), 3),
+                    "max": round(max(values), 3), "mean": round(sum(values) / len(values), 3)} if values else {"count": 0}
+        return {"minimumSeconds": self.delay, "jitterSeconds": self.jitter,
+                "robotsDelaySeconds": getattr(self.robots, "delay", 0),
+                "targetSeconds": stats(self.target_delays), "observedIntervalSeconds": stats(self.intervals)}
 
 
 def priority(mosque, stops, paths):
@@ -517,12 +540,29 @@ def markdown(result):
     return "\n".join(lines) + "\n"
 
 
-def run(config, mosques, directory, source_limit=None, detail_limit=None, adapter=None, cancel=None):
+def run_coverage(state, mosques, config, search_limit, detail_limit):
+    sources = list(dict.fromkeys(s for m in mosques for s in m["sources"]))
+    fresh_sources = {s for s in sources if fresh(state["pages"].get(s), config["searchCacheHours"])}
+    cards = [card for page, record in state["pages"].items()
+             if page.split("?")[0] in sources and fresh(record, config["searchCacheHours"])
+             for card in record.get("cards", []) if not card.get("rented")]
+    pending = detail_queue(cards, state["details"], config["detailCacheHours"])
+    return {"searchLimit": search_limit, "detailLimit": detail_limit,
+            "plannedSources": len(sources), "freshSources": len(fresh_sources),
+            "sourcesWithErrors": sum(bool(state["pages"].get(s, {}).get("error")) for s in sources),
+            "configuredMosques": sum(bool(m["sources"]) for m in mosques),
+            "coveredMosques": sum(bool(m["sources"]) and all(s in fresh_sources for s in m["sources"]) for m in mosques),
+            "discoveredUrls": len({c["url"] for c in cards}), "pendingDetailUrls": len(pending),
+            "unseenPendingUrls": sum(u not in state["details"] for u in pending)}
+
+
+def run(config, mosques, directory, source_limit=None, detail_limit=None, adapter=None, cancel=None, refresh_search=False):
+    started = time.monotonic()
     path = directory / "state.json"
     state = json.loads(path.read_text()) if path.exists() else {"schemaVersion": 1, "pages": {}, "details": {}, "cursors": {}}
     if state.get("schemaVersion") != 1:
         raise ValueError("Unknown state version")
-    client = Client(config["delaySeconds"], adapter) if adapter else Client(config["delaySeconds"])
+    client = Client(config["delaySeconds"], adapter, jitter_seconds=config.get("delayJitterSeconds", 0))
     if cancel is not None:
         client.cancel = cancel
     search_parser = adapter.parse_search if adapter else parse_search
@@ -539,7 +579,7 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None, adapte
             if count >= (source_limit or config["maxSearchRequests"]):
                 break
             pages = [source]
-            if fresh(state["pages"].get(source), config["searchCacheHours"]):
+            if not refresh_search and fresh(state["pages"].get(source), config["searchCacheHours"]):
                 pages = []
             for url in pages:
                 try:
@@ -606,6 +646,12 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None, adapte
         state["lastRun"].update(status="failed", reason=safe_error(exc))
     finally:
         state["lastRun"].update(finishedAtUTC=now(), requests=client.requests, searchRequests=count, detailRequests=detail_count)
+        coverage = run_coverage(state, mosques, config, source_limit or config.get("maxSearchRequests", 0),
+                                detail_limit or config.get("maxDetailRequests", 0))
+        coverage.update(searchLimitReached=count >= coverage["searchLimit"] > 0,
+                        detailLimitReached=detail_count >= coverage["detailLimit"] > 0)
+        state["lastRun"].update(durationSeconds=round(time.monotonic() - started, 3),
+                                refreshSearch=refresh_search, coverage=coverage, pacing=client.pacing())
         save(path, state)
         result = report(state, mosques, config)
         save(directory / "latest.json", result)
@@ -622,25 +668,34 @@ def safe_error(exc):
     return type(exc).__name__
 
 
+def validate_config(config):
+    for key, minimum in [("delaySeconds", 1), ("delayJitterSeconds", 0)]:
+        value = config.get(key, 0)
+        if type(value) not in (int, float) or not math.isfinite(value) or not minimum <= value <= 30:
+            raise ValueError("Invalid crawl delay: " + key)
+    if config.get("schemaVersion") != 1:
+        raise ValueError("Invalid crawl config")
+    for key in ("maxSearchRequests", "maxDetailRequests", "maxPagesPerArea", "searchCacheHours", "detailCacheHours"):
+        if type(config.get(key)) is not int or not 1 <= config[key] <= 1000:
+            raise ValueError("Invalid config limit: " + key)
+    if type(config.get("radiusKm")) not in (int, float) or not 0 < config["radiusKm"] <= 3:
+        raise ValueError("Invalid radius")
+
+
 def main():
     os.umask(0o077)
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path, default=ROOT / "research/rental-crawl-sources.json")
     parser.add_argument("--output-dir", type=Path, default=ROOT / ".runtime/research/rental-crawl")
     parser.add_argument("--run", action="store_true", help="Explicitly enable network acquisition")
+    parser.add_argument("--refresh-search", action="store_true", help="Refresh every configured first page; keep detail cache and request limits")
     parser.add_argument("--max-search", type=int)
     parser.add_argument("--max-detail", type=int)
     args = parser.parse_args()
     if any(n is not None and not 1 <= n <= 1000 for n in (args.max_search, args.max_detail)):
         parser.error("Request limits must be 1..1000")
     config = json.loads(args.config.read_text())
-    if config.get("schemaVersion") != 1 or not 1 <= config["delaySeconds"] <= 30:
-        raise ValueError("Invalid crawl config")
-    for key in ("maxSearchRequests", "maxDetailRequests", "maxPagesPerArea", "searchCacheHours", "detailCacheHours"):
-        if type(config.get(key)) is not int or not 1 <= config[key] <= 1000:
-            raise ValueError("Invalid config limit: " + key)
-    if not 0 < config.get("radiusKm", 0) <= 3:
-        raise ValueError("Invalid radius")
+    validate_config(config)
     mosques = plan(config)
     directory = args.output_dir.resolve()
     private_local = directory.is_relative_to(ROOT / ".runtime/research") and directory != ROOT / ".runtime/research"
@@ -660,7 +715,7 @@ def main():
         except BlockingIOError:
             print("A crawl is already running")
             return 0
-        return run(config, mosques, directory, args.max_search, args.max_detail)
+        return run(config, mosques, directory, args.max_search, args.max_detail, refresh_search=args.refresh_search)
 
 
 if __name__ == "__main__":

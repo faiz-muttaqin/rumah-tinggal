@@ -6,6 +6,7 @@ import importlib.util
 import json
 from pathlib import Path
 import tempfile
+import threading
 import unittest
 from unittest.mock import patch
 
@@ -149,6 +150,51 @@ class CrawlerTest(unittest.TestCase):
                     client.get(UNIT)
                 self.assertEqual(opener.return_value.open.call_count, 1)
 
+    def test_random_intervals_respect_robots_and_record_actual_pacing(self):
+        clock = [100.0]
+        waits = []
+        def sleep(seconds):
+            waits.append(seconds)
+            clock[0] += seconds
+        client = c.Client(2, jitter_seconds=3)
+        client.robots = c.Robots("User-agent: *\nAllow: /\nCrawl-delay: 7\n")
+        with patch.object(c.time, "monotonic", side_effect=lambda: clock[0]), \
+                patch.object(c.time, "sleep", side_effect=sleep), \
+                patch.object(c.random, "uniform", side_effect=[0, 2, 0.5]), \
+                patch.object(c.urllib.request, "build_opener") as opener:
+            response = opener.return_value.open.return_value.__enter__.return_value
+            response.geturl.return_value = UNIT
+            response.read.return_value = b"<html>Public page</html>"
+            for _ in range(3):
+                client.get(UNIT)
+            self.assertEqual(waits, [9, 7.5])
+            self.assertEqual(client.requests, 3)
+            self.assertEqual(client.pacing()["observedIntervalSeconds"], {"count": 2, "min": 7.5, "max": 9, "mean": 8.25})
+            self.assertEqual(client.pacing()["targetSeconds"]["min"], 7.5)
+
+    def test_cancellation_during_pacing_never_makes_another_request(self):
+        client = c.Client(2, jitter_seconds=3)
+        client.last_request = c.time.monotonic()
+        client.cancel = threading.Event()
+        def cancelled_wait(_):
+            client.cancel.set()
+            return True
+        with patch.object(client.cancel, "wait", side_effect=cancelled_wait), \
+                patch.object(c.urllib.request, "build_opener") as opener:
+            with self.assertRaisesRegex(c.StopSource, "operator-or-time-limit"):
+                client.get(UNIT)
+            opener.assert_not_called()
+            self.assertEqual(client.requests, 0)
+
+    def test_delay_config_rejects_nonfinite_and_out_of_range_jitter(self):
+        config = json.loads((c.ROOT / "research/rental-crawl-sources.json").read_text())
+        c.validate_config(config)
+        legacy = {k: v for k, v in config.items() if k != "delayJitterSeconds"}
+        c.validate_config(legacy)
+        for value in [-1, 31, True, "3", float("nan"), float("inf")]:
+            with self.assertRaises(ValueError):
+                c.validate_config({**config, "delayJitterSeconds": value})
+
     def test_transit_then_south_jakarta_then_outward(self):
         m = MOSQUES[0]
         stops = [{"mode": "MRT", "name": "Test", "lat": m["lat"], "lng": m["lng"]}]
@@ -167,10 +213,9 @@ class CrawlerTest(unittest.TestCase):
 
     def test_resume_cache_pagination_budget_and_no_catalog_mutation(self):
         calls = []
-        class FakeClient:
-            requests = 0
-            def __init__(self, _):
-                pass
+        class FakeClient(c.Client):
+            def __init__(self, _, adapter=None, jitter_seconds=0):
+                super().__init__(0)
             def start(self):
                 return {"checkedAt": c.now(), "sha256": "test"}
             def get(self, url):
@@ -192,6 +237,13 @@ class CrawlerTest(unittest.TestCase):
                 self.assertEqual(calls, [SOURCE, UNIT, SOURCE + "?page=2"])
                 result = json.loads((root / "output/latest.json").read_text())
                 self.assertEqual(result["summary"]["newCandidates"], 1)
+                self.assertEqual(result["run"]["coverage"]["pendingDetailUrls"], 0)
+                self.assertEqual(result["run"]["coverage"]["coveredMosques"], 1)
+                self.assertEqual(c.run(config, MOSQUES, root / "output", refresh_search=True), 0)
+                self.assertEqual(calls, [SOURCE, UNIT, SOURCE + "?page=2", SOURCE])
+                result = json.loads((root / "output/latest.json").read_text())
+                self.assertTrue(result["run"]["refreshSearch"])
+                self.assertEqual(result["run"]["detailRequests"], 0)
                 self.assertEqual(catalog.read_bytes(), before)
                 self.assertEqual((root / "output/state.json").stat().st_mode & 0o777, 0o600)
 
@@ -210,10 +262,10 @@ class CrawlerTest(unittest.TestCase):
         self.assertEqual(c.detail_queue(cards, details, 72), [UNIT + "-new", UNIT])
 
     def test_robots_failure_saves_failed_status_and_never_fetches_ads(self):
-        class FailedClient:
-            requests = 1
-            def __init__(self, _):
-                pass
+        class FailedClient(c.Client):
+            def __init__(self, _, adapter=None, jitter_seconds=0):
+                super().__init__(0)
+                self.requests = 1
             def start(self):
                 raise ValueError("http-500")
         with tempfile.TemporaryDirectory() as tmp:
@@ -225,6 +277,17 @@ class CrawlerTest(unittest.TestCase):
                 result = json.loads((root / "output/latest.json").read_text())
                 self.assertEqual(result["run"]["status"], "failed")
                 self.assertEqual(result["summary"]["details"], 0)
+
+    def test_pending_counts_deduplicate_urls_exclude_stale_pages_and_show_uncovered_points(self):
+        current = {"retrievedAtUTC": c.now(), "cards": [{"url": UNIT}, {"url": UNIT + "-new"}, {"url": UNIT + "-rented", "rented": True}]}
+        state = {"pages": {SOURCE: current, SOURCE + "?page=2": current,
+                            SOURCE + "?page=3": {"retrievedAtUTC": "2020-01-01T00:00:00Z", "cards": [{"url": UNIT + "-stale"}]}},
+                 "details": {UNIT: {"retrievedAtUTC": c.now(), "adapterVersion": c.ADAPTER_VERSION}}}
+        mosques = MOSQUES + [{"id": "unmapped", "sources": []}, {"id": "missing", "sources": [SOURCE + "-missing"]}]
+        coverage = c.run_coverage(state, mosques, {"searchCacheHours": 4, "detailCacheHours": 72}, 150, 240)
+        self.assertEqual((coverage["plannedSources"], coverage["freshSources"]), (2, 1))
+        self.assertEqual((coverage["configuredMosques"], coverage["coveredMosques"]), (2, 1))
+        self.assertEqual((coverage["discoveredUrls"], coverage["pendingDetailUrls"], coverage["unseenPendingUrls"]), (2, 1, 1))
 
 
 if __name__ == "__main__":
