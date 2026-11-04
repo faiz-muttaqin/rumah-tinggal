@@ -1,5 +1,7 @@
 # Hunian dari titik awal masjid
 
+[Pencarian terfokus 4 November 2026](pencarian-terfokus-sewa-2026-11-04.md) menargetkan kawasan **tiap 78 masjid**, menyaring sebelum detail dan membagi giliran maksimal **2 detail per masjid per sumber**. Hasil tetap memerlukan radius 1,5 km dan kurasi; katalog yang telah dirilis tetap **344 penawaran**.
+
 [Publikasi 4 November 2026 sore](publikasi-sewa-ihrish-2026-11-04-sore.md) menambah **28 penawaran terkurasi** (25 rumah/kontrakan dan 3 apartemen) menjadi **344 sewa**. Sebanyak 41 kandidat diperiksa ulang, 13 ditahan; 316 penawaran lama tetap sama.
 
 [Publikasi 4 November 2026 siang](publikasi-sewa-ihrish-2026-11-04-siang.md) menambah **33 penawaran terkurasi** (27 rumah/kontrakan dan 6 apartemen) menjadi **316 sewa**. Scraping enam sumber selesai otomatis; 43 kandidat baru diperiksa, 10 ditahan. Seluruh 283 penawaran terdahulu tetap sama.
