@@ -312,6 +312,10 @@ class Adapter:
             if listing is None:
                 raise ValueError("Source structure changed Brighton listing")
             offers, entity = listing.get("offers") or {}, listing.get("mainEntity") or {}
+            if isinstance(offers, list) and len(offers) == 1:
+                offers = offers[0]
+            if not isinstance(offers, dict) or not isinstance(entity, dict):
+                raise ValueError("Source structure changed Brighton offer or residence")
             kind = "Apartemen" if "Apartment" in str(entity.get("@type")) else "Rumah"
             row = self.base(url, kind)
             if entity.get("@type") not in ("Apartment", "ApartmentComplex", "SingleFamilyResidence", "House"):

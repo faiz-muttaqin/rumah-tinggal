@@ -112,6 +112,8 @@ systemctl list-timers 'rumah-tinggal-rental-crawl*.timer'
 
 Periksa `latest.json` dan `lastRun.status` untuk membedakan run selesai dengan batas, berhenti karena sumber, dan terinterupsi. Status selesai tidak berarti seluruh detail atau halaman semua kawasan telah habis ditelusuri. Salinan worker perlu disinkronkan ulang setelah script, konfigurasi, inventori masjid, katalog, atau dataset transit berubah; jangan menyinkronkan direktori proyek secara keseluruhan.
 
+[Kurasi 5 November 2026](../research/masjid/publikasi-sewa-ihrish-2026-11-05.md) memeriksa ulang 86 halaman dan menambahkan 76 penawaran menjadi 486. Parser Brighton menerima satu objek penawaran atau daftar berisi satu objek; daftar ambigu ditahan sebagai kegagalan detail yang dapat dilanjutkan. Katalog publik tetap Jabodetabek, sedangkan sasaran pencarian tetap 78 masjid Ihrish.
+
 Worker menghasilkan **kandidat privat untuk kurasi**, bukan penerbitan otomatis. Setelah peninjauan, perubahan katalog tetap melalui `research/rentals.json`, sidecar `research/rental-locations.json`, builder, validasi, dan proses rilis biasa. Hasil pencarian yang hilang tidak menghapus listing kurasi secara otomatis.
 
 Rujukan sumber: [robots Pinhome](https://www.pinhome.id/robots.txt), [kategori rumah Kranji](https://www.pinhome.id/sewa/rumah/jawa-barat/bekasi/bekasi-barat/kranji), dan [kategori apartemen Cempaka Putih](https://www.pinhome.id/sewa/apartemen/dki-jakarta/jakarta-pusat/cempaka-putih). Pemetaan awal kawasan juga dibantu pemeriksaan satu kali titik masjid pada OpenStreetMap/Nominatim dengan cache dan satu thread, mengikuti [kebijakan Nominatim](https://operations.osmfoundation.org/policies/nominatim/). Worker harian tidak melakukan geocoding ulang.

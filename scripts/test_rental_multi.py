@@ -123,6 +123,61 @@ class ProviderTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             a.canonical(a.origin+"/disewa/rumah/jakarta-selatan?page=2")
 
+    def test_brighton_accepts_single_offer_lists_and_holds_ambiguous_offers(self):
+        a = self.adapter("brighton")
+        url = a.origin + "/cari-properti/view/rumah-uji"
+        text = brighton_page()
+        start, end = text.index(">") + 1, text.index("</script>")
+        nodes = json.loads(text[start:end])
+        listing = nodes[1]
+        original = listing["offers"]
+        listing["offers"] = [original]
+        page = '<script type="application/ld+json">' + json.dumps(nodes) + '</script>'
+        self.assertEqual(a.parse_detail(page, url), a.parse_detail(text, url))
+        for offers in [[original, {**original, "price": 40_000_000}], [None], "unknown"]:
+            with self.subTest(offers=offers):
+                listing["offers"] = offers
+                page = '<script type="application/ld+json">' + json.dumps(nodes) + '</script>'
+                with self.assertRaisesRegex(ValueError, "Brighton offer or residence"):
+                    a.parse_detail(page, url)
+
+    def test_brighton_ambiguous_offer_does_not_stop_other_details(self):
+        a = self.adapter("brighton")
+        source = a.origin + "/disewa/rumah/jakarta-selatan"
+        urls = [a.origin + "/cari-properti/view/rumah-" + suffix for suffix in ["a", "b"]]
+        text = brighton_page()
+        start, end = text.index(">") + 1, text.index("</script>")
+        nodes = json.loads(text[start:end])
+        nodes[1]["offers"] = [nodes[1]["offers"], {"price": 40_000_000}]
+        invalid = '<script type="application/ld+json">' + json.dumps(nodes) + '</script>'
+        class FakeClient(c.Client):
+            def __init__(self, _, adapter=None, jitter_seconds=0):
+                super().__init__(0, adapter)
+            def start(self):
+                return {"checkedAt": c.now(), "sha256": "test"}
+            def get(self, url):
+                self.requests += 1
+                return invalid if url == urls[0] else text
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            c.save(root / "research/rentals.json", {"rentals": []})
+            output = root / "output"
+            c.save(output / "state.json", {"schemaVersion": 1, "pages": {
+                source: {"retrievedAtUTC": c.now(), "cards": [{"url": url} for url in urls]}
+            }, "details": {}, "cursors": {}})
+            config = {"radiusKm": 1.5, "delaySeconds": 2, "searchCacheHours": 4,
+                      "detailCacheHours": 72, "maxSearchRequests": 1, "maxDetailRequests": 2, "maxPagesPerArea": 1}
+            mosques = [{"id": "m", "name": "Mosque", "lat": -6.29, "lng": 106.79,
+                        "sources": [source], "priority": {"transit": []}}]
+            with patch.object(c, "ROOT", root), patch.object(c, "Client", FakeClient):
+                self.assertEqual(c.run(config, mosques, output, adapter=a), 0)
+            result = json.loads((output / "latest.json").read_text())
+            self.assertEqual(result["run"]["detailRequests"], 2)
+            rows = {r["url"]: r for r in result["results"]}
+            failed, successful = rows[urls[0]], rows[urls[1]]
+            self.assertIn("detail-unavailable", failed["issues"])
+            self.assertEqual(successful["amount"], 30_000_000)
+
     def test_realoka_keeps_monthly_yearly_and_daily_separate_and_date_relative(self):
         a = self.adapter("realoka")
         page = '<h1>Disewakan Apartemen Uji</h1>'

@@ -1,10 +1,12 @@
 # Hunian dari titik awal masjid
 
+[Publikasi hasil scraping 5 November](publikasi-sewa-ihrish-2026-11-05.md) menambah **76 penawaran** (68 rumah/kontrakan, 6 apartemen dan 2 kos keluarga) menjadi **486 penawaran**. Sebanyak 86 halaman diperiksa ulang, 10 ditahan; 410 penawaran sebelumnya dipertahankan.
+
 [Publikasi hasil uji 4 November malam](publikasi-sewa-ihrish-2026-11-04-malam.md) menambah **66 penawaran** (56 rumah/kontrakan, 6 apartemen, 4 kos) menjadi **410 penawaran**. Duplikat antariklan diterima sesuai arahan pengguna; harga, periode dan lokasi tetap diperiksa.
 
 **Batas pencarian saat ini hanya 78 masjid dari daftar Ihrish yang sudah digunakan.** [Pemeriksaan OLX dan Facebook Marketplace](sumber-lokal-olx-facebook-2026-11-04.md) belum membuktikan filter kelurahan pada kedua sumber; keduanya tetap sumber manual.
 
-[Pencarian terfokus 4 November 2026](pencarian-terfokus-sewa-2026-11-04.md) menargetkan kawasan **tiap 78 masjid**, menyaring sebelum detail dan membagi giliran maksimal **2 detail per masjid per sumber**. Hasil tetap memerlukan radius 1,5 km dan kurasi; katalog yang telah dirilis tetap **344 penawaran**.
+[Pencarian terfokus 4 November 2026](pencarian-terfokus-sewa-2026-11-04.md) menargetkan kawasan **tiap 78 masjid**, menyaring sebelum detail dan membagi giliran maksimal **2 detail per masjid per sumber**. Hasil tetap memerlukan radius 1,5 km dan kurasi; katalog pada saat putaran tersebut memuat **344 penawaran**.
 
 [Publikasi 4 November 2026 sore](publikasi-sewa-ihrish-2026-11-04-sore.md) menambah **28 penawaran terkurasi** (25 rumah/kontrakan dan 3 apartemen) menjadi **344 sewa**. Sebanyak 41 kandidat diperiksa ulang, 13 ditahan; 316 penawaran lama tetap sama.
 
