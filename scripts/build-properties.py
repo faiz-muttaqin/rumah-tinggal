@@ -590,7 +590,7 @@ def load_leads(path=ROOT / "research/leads.json"):
     }
 
 
-RENTAL_TYPES = {"kontrakan", "rumah-sewa", "apartemen-sewa", "kos-keluarga", "lainnya"}
+RENTAL_TYPES = {"kontrakan", "rumah-sewa", "apartemen-sewa", "kos", "kos-keluarga", "lainnya"}
 
 
 def load_rentals(path=ROOT / "research/rentals.json"):

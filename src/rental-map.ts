@@ -40,6 +40,7 @@ export function rentalMapKind(rental: ResearchRental): RentalMapKind {
       return "kontrakan";
     case "apartemen-sewa":
       return "apartemen";
+    case "kos":
     case "kos-keluarga":
       return "kos";
     default:

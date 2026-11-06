@@ -759,6 +759,7 @@ function filteredRentals(research: ResearchData): ResearchRental[] {
             r.buildingOrCluster ?? "",
             ...r.evidence.map((e) => e.quote),
             ...r.nearStationsClaim.map((c) => `${c.station} ${c.quote}`),
+            ...(r.nearbyMosques ?? []).map((mosque) => mosque.name),
             ...(r.areaHighlights ?? []).map(
               (h) => `${h.name} ${h.description} ${h.relation}`,
             ),

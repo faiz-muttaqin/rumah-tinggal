@@ -9042,6 +9042,125 @@
         "sha256": "8ff743ca41623fdeb59545f0f6ee17cecf0662d1bdbf954c2b7efad83a1bf0f5",
         "selector": "__UNIT_DETAIL__.location.coordinate, bukan centroid administratif; harga/periode/status dan minimum dari unit yang sama"
       }
+    },
+    {
+      "rentalId": "sewa-kos-leila-2-b-cinere-mas",
+      "location": {
+        "lat": -6.318387,
+        "lng": 106.773186,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://mamikos.com/room/kost-tangerang-selatan-kost-putri-eksklusif-kost-ibu-leila-tipe-b-cinere-mas-ciputat-timur-tangerang-selatan",
+        "method": "Latitude/longitude publik pada detail Mamikos",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "dc8900c07cd123bfc4237d4b7dbdce2ecb9e15cfa097adb1ee9dfe0bd72cf147",
+        "selector": "var detail.latitude/longitude; price_monthly cocok price_title_formats.price_monthly; status/available_room dan booking_rules dari kamar yang sama"
+      }
+    },
+    {
+      "rentalId": "sewa-kos-paninggilan-standar-ciledug",
+      "location": {
+        "lat": -6.240978,
+        "lng": 106.713037,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-paninggilan-tipe-standar-ciledug-tangerang",
+        "method": "Latitude/longitude publik pada detail Mamikos",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "d616ddf7e7c49d70008b85edbe1b3cbe9aad0800ba1856a2b39130f5fc3c0325",
+        "selector": "var detail.latitude/longitude; price_monthly cocok price_title_formats.price_monthly; status/available_room dan booking_rules dari kamar yang sama"
+      }
+    },
+    {
+      "rentalId": "sewa-kos-asakusa-room-2-cisauk",
+      "location": {
+        "lat": -6.311575,
+        "lng": 106.648605,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-asakusa-room-2-exclusive-1-cisauk-tangerang",
+        "method": "Latitude/longitude publik pada detail Mamikos",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "21cebe95268838c733d94ad95c71769121c19a03fba84ec2867fdf35a594a2c4",
+        "selector": "var detail.latitude/longitude; price_monthly cocok price_title_formats.price_monthly; status/available_room dan booking_rules dari kamar yang sama"
+      }
+    },
+    {
+      "rentalId": "sewa-kos-icon-cosmo-bsd-putra",
+      "location": {
+        "lat": -6.311731,
+        "lng": 106.649057,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-putra-eksklusif-kost-the-icon-cosmo-bsd-cisauk-tangerang",
+        "method": "Latitude/longitude publik pada detail Mamikos",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "593bf3591ff0f8442324fad037d1070611ffac3675aa9c714f5935ce6efe3785",
+        "selector": "var detail.latitude/longitude; price_monthly cocok price_title_formats.price_monthly; status/available_room dan booking_rules dari kamar yang sama"
+      }
+    },
+    {
+      "rentalId": "sewa-kos-bintaro-sektor-pondok-aren",
+      "location": {
+        "lat": -6.282651,
+        "lng": 106.71145,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://mamikos.com/room/kost-tangerang-selatan-kost-campur-eksklusif-kost-bintaro-sektor-pondok-aren-tangerang-selatan-2",
+        "method": "Latitude/longitude publik pada detail Mamikos",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "583dbc77379f996939e6574480cffce20d6b2ee4b94ecf24f1d216741bf0233f",
+        "selector": "var detail.latitude/longitude; price_monthly cocok price_title_formats.price_monthly; status/available_room dan booking_rules dari kamar yang sama"
+      }
+    },
+    {
+      "rentalId": "sewa-kos-hanif-pisangan-pocket-a-putra",
+      "location": {
+        "lat": -6.312754,
+        "lng": 106.763279,
+        "precision": "building",
+        "label": "Hanif Kost Pisangan Ciputat",
+        "url": "https://www.rukita.co/place/hanif-kost-pisangan-ciputat",
+        "method": "Titik tujuan/gedung dari tautan Google Maps di halaman resmi Rukita",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Titik gedung dari tautan lokasi resmi; bukan posisi kamar atau pintu masuk. Rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "cfc5ab8bbf762981405edd5073c13dcc6b25b488f4a2489e1721a8a22996bd37",
+        "selector": "Tipe Pocket Single A: Tersedia, harga dasar dan promo dipisah; koordinat tujuan /maps/dir// pada tautan lokasi resmi"
+      }
+    },
+    {
+      "rentalId": "sewa-kos-urban-intermoda-2-regular-queen-b",
+      "location": {
+        "lat": -6.319018,
+        "lng": 106.643489,
+        "precision": "building",
+        "label": "Rukita Urban Intermoda 2 BSD",
+        "url": "https://www.rukita.co/place/rukita-urban-intermoda-2-bsd",
+        "method": "Titik tujuan/gedung dari tautan Google Maps di halaman resmi Rukita",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Titik gedung dari tautan lokasi resmi; bukan posisi kamar atau pintu masuk. Rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "45b83feb3dd7985fca2140fe9f0bf4cd603af606efe2e1eafeaa7e8d7e966ffd",
+        "selector": "Tipe Regular Queen B Tersedia, harga untuk 1 orang, maks2; pin tempat !3d/!4d pada redirect Maps resmi, bukan pusat viewport"
+      }
     }
   ]
 }

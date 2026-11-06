@@ -328,6 +328,7 @@ export interface ResearchRental {
     | "kontrakan"
     | "rumah-sewa"
     | "apartemen-sewa"
+    | "kos"
     | "kos-keluarga"
     | "lainnya";
   kind: "Rumah" | "Apartemen";
@@ -379,6 +380,7 @@ export const RENTAL_LABELS: Record<ResearchRental["rentalType"], string> = {
   kontrakan: "Kontrakan",
   "rumah-sewa": "Rumah sewa",
   "apartemen-sewa": "Apartemen sewa",
+  kos: "Kos",
   "kos-keluarga": "Kos keluarga",
   lainnya: "Sewa lainnya",
 };

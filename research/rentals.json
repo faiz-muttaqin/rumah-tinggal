@@ -21412,6 +21412,267 @@
       "verdict": "partial",
       "lastChecked": "2026-11-07",
       "note": "Tarif Rp 85 juta/tahun mensyaratkan minimum 24 bulan (Rp 170 juta). Pembaruan sumber 2026-08-28. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
+    },
+    {
+      "id": "sewa-kos-leila-2-b-cinere-mas",
+      "title": "Kos Ibu Leila 2 Tipe B Cinere Mas (putri)",
+      "rentalType": "kos",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Ciputat Timur, Kota Tangerang Selatan",
+      "buildingOrCluster": "Ibu Leila 2 Cinere Mas",
+      "rent": {
+        "amount": 1700000,
+        "period": "monthly",
+        "quote": "Rp1.700.000/bulan",
+        "url": "https://mamikos.com/room/kost-tangerang-selatan-kost-putri-eksklusif-kost-ibu-leila-tipe-b-cinere-mas-ciputat-timur-tangerang-selatan",
+        "pageDate": "2026-11-06"
+      },
+      "bedrooms": 1,
+      "sizeM2": 25.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost Ibu Leila 2 Tipe B Cinere Mas Ciputat Timur Tangerang Selatan",
+          "url": "https://mamikos.com/room/kost-tangerang-selatan-kost-putri-eksklusif-kost-ibu-leila-tipe-b-cinere-mas-ciputat-timur-tangerang-selatan"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-tangerang-selatan-kost-putri-eksklusif-kost-ibu-leila-tipe-b-cinere-mas-ciputat-timur-tangerang-selatan",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-11-06",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Putri; pasutri dan anak tidak diizinkan menurut portal. Indikator 2 kamar pada saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-11-06. Deposit, listrik, biaya akhir dan stok perlu konfirmasi."
+    },
+    {
+      "id": "sewa-kos-paninggilan-standar-ciledug",
+      "title": "Kos Paninggilan Standar Ciledug (pasutri dan anak)",
+      "rentalType": "kos-keluarga",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Ciledug, Tangerang",
+      "buildingOrCluster": "Paninggilan",
+      "rent": {
+        "amount": 1100000,
+        "period": "monthly",
+        "quote": "Rp1.100.000/bulan",
+        "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-paninggilan-tipe-standar-ciledug-tangerang",
+        "pageDate": "2026-07-11"
+      },
+      "bedrooms": 1,
+      "sizeM2": 45.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost Paninggilan Tipe Standar Ciledug Tangerang",
+          "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-paninggilan-tipe-standar-ciledug-tangerang"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-paninggilan-tipe-standar-ciledug-tangerang",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-07-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Portal mengizinkan pasutri dan anak; kapasitas total serta biaya penghuni tambahan belum diketahui. Indikator 4 kamar pada saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-07-11. Deposit, listrik, biaya akhir dan stok perlu konfirmasi."
+    },
+    {
+      "id": "sewa-kos-asakusa-room-2-cisauk",
+      "title": "Kos Asakusa Room 2 Exclusive 1 Cisauk (perorangan)",
+      "rentalType": "kos",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Kecamatan Cisauk, Kabupaten Tangerang",
+      "buildingOrCluster": "Asakusa Room 2 Exclusive 1",
+      "rent": {
+        "amount": 2600000,
+        "period": "monthly",
+        "quote": "Rp2.600.000/bulan",
+        "url": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-asakusa-room-2-exclusive-1-cisauk-tangerang",
+        "pageDate": "2026-05-27"
+      },
+      "bedrooms": 1,
+      "sizeM2": 21.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost Asakusa Room 2 Exclusive 1 Cisauk Tangerang",
+          "url": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-asakusa-room-2-exclusive-1-cisauk-tangerang"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-asakusa-room-2-exclusive-1-cisauk-tangerang",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-05-27",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Campur; pasutri dan anak tidak diizinkan menurut portal. Indikator 1 kamar pada saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-05-27. Deposit, listrik, biaya akhir dan stok perlu konfirmasi."
+    },
+    {
+      "id": "sewa-kos-icon-cosmo-bsd-putra",
+      "title": "Kos The Icon Cosmo BSD Cisauk (putra)",
+      "rentalType": "kos",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Kecamatan Cisauk, Kabupaten Tangerang",
+      "buildingOrCluster": "The Icon Cosmo BSD",
+      "rent": {
+        "amount": 1500000,
+        "period": "monthly",
+        "quote": "Rp1.500.000/bulan",
+        "url": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-putra-eksklusif-kost-the-icon-cosmo-bsd-cisauk-tangerang",
+        "pageDate": "2026-04-12"
+      },
+      "bedrooms": 1,
+      "sizeM2": 9.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost The Icon Cosmo Bsd Cisauk Tangerang",
+          "url": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-putra-eksklusif-kost-the-icon-cosmo-bsd-cisauk-tangerang"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-putra-eksklusif-kost-the-icon-cosmo-bsd-cisauk-tangerang",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-04-12",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Putra; pasutri dan anak tidak diizinkan menurut portal. Indikator 2 kamar pada saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-04-12. Deposit, listrik, biaya akhir dan stok perlu konfirmasi."
+    },
+    {
+      "id": "sewa-kos-bintaro-sektor-pondok-aren",
+      "title": "Kos Bintaro Sektor Pondok Aren (perorangan)",
+      "rentalType": "kos",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Pondok Aren, Tangerang Selatan",
+      "buildingOrCluster": "Bintaro Sektor",
+      "rent": {
+        "amount": 1000000,
+        "period": "monthly",
+        "quote": "Rp1.000.000/bulan",
+        "url": "https://mamikos.com/room/kost-tangerang-selatan-kost-campur-eksklusif-kost-bintaro-sektor-pondok-aren-tangerang-selatan-2",
+        "pageDate": "2026-11-03"
+      },
+      "bedrooms": 1,
+      "sizeM2": 9.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost Bintaro Sektor Pondok Aren Tangerang Selatan",
+          "url": "https://mamikos.com/room/kost-tangerang-selatan-kost-campur-eksklusif-kost-bintaro-sektor-pondok-aren-tangerang-selatan-2"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-tangerang-selatan-kost-campur-eksklusif-kost-bintaro-sektor-pondok-aren-tangerang-selatan-2",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-11-03",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Campur; pasutri dan anak tidak diizinkan menurut portal. Indikator 1 kamar pada saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-11-03. Deposit, listrik, biaya akhir dan stok perlu konfirmasi."
+    },
+    {
+      "id": "sewa-kos-hanif-pisangan-pocket-a-putra",
+      "title": "Hanif Kost Pisangan Ciputat — Pocket Single A (putra)",
+      "rentalType": "kos",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Cireundeu, Ciputat Timur, Kota Tangerang Selatan",
+      "buildingOrCluster": "Hanif Kost Pisangan Ciputat",
+      "rent": {
+        "amount": 1350000,
+        "period": "monthly",
+        "quote": "Rp1.350.000",
+        "url": "https://www.rukita.co/place/hanif-kost-pisangan-ciputat",
+        "pageDate": null
+      },
+      "bedrooms": 1,
+      "sizeM2": 6,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Pocket Single A",
+          "url": "https://www.rukita.co/place/hanif-kost-pisangan-ciputat"
+        },
+        {
+          "quote": "Harga untuk 1 orang",
+          "url": "https://www.rukita.co/place/hanif-kost-pisangan-ciputat"
+        },
+        {
+          "quote": "Tambahan penghuni tidak diperbolehkan",
+          "url": "https://www.rukita.co/place/hanif-kost-pisangan-ciputat"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.rukita.co/place/hanif-kost-pisangan-ciputat",
+      "sourcePortal": "rukita",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Putra, 1 orang; pasutri, anak dan penghuni tambahan tidak diperbolehkan. Tipe A ditandai tersedia. Tarif dasar Rp1.350.000/bulan; tampilan promo Rp1.200.000 bergantung syarat tanggal/periode. Wi-Fi termasuk, listrik terpisah, deposit Rp200.000. Ukuran 6 m² belum termasuk kamar mandi. Tanggal pembaruan tidak ditampilkan; stok, promo dan total biaya perlu konfirmasi."
+    },
+    {
+      "id": "sewa-kos-urban-intermoda-2-regular-queen-b",
+      "title": "Rukita Urban Intermoda 2 BSD — Regular Queen B (maks. 2 orang)",
+      "rentalType": "kos",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Sampora, Cisauk, Kabupaten Tangerang",
+      "buildingOrCluster": "Rukita Urban Intermoda 2 BSD",
+      "rent": {
+        "amount": 2368000,
+        "period": "monthly",
+        "quote": "Rp2.368.000 /bulan",
+        "url": "https://www.rukita.co/place/rukita-urban-intermoda-2-bsd",
+        "pageDate": null
+      },
+      "bedrooms": 1,
+      "sizeM2": 12.71,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Regular Queen B",
+          "url": "https://www.rukita.co/place/rukita-urban-intermoda-2-bsd"
+        },
+        {
+          "quote": "Bisa dihuni maks. 2 orang dgn tambahan biaya",
+          "url": "https://www.rukita.co/place/rukita-urban-intermoda-2-bsd"
+        },
+        {
+          "quote": "Pasutri Diperbolehkan",
+          "url": "https://www.rukita.co/place/rukita-urban-intermoda-2-bsd"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.rukita.co/place/rukita-urban-intermoda-2-bsd",
+      "sourcePortal": "rukita",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Regular Queen B ditandai tersedia; Rp2.368.000/bulan untuk 1 orang, maks. 2 dengan biaya tambahan. Pasutri boleh; anak minimal 4 tahun dan berbayar. Bukan bukti izin 2 dewasa + 1 anak. Wi-Fi, air, laundry dan cleaning termasuk; listrik terpisah. Deposit Rp500.000. Tanggal pembaruan tidak ditampilkan; stok dan total biaya perlu konfirmasi."
     }
   ]
 }

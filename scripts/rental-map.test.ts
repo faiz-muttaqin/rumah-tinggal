@@ -9,6 +9,22 @@ import {
 import type { ResearchMosque, ResearchRental } from "../src/research-data.ts";
 import { researchFixture } from "../tests/research-fixture.ts";
 
+test("the Kos filter includes individual offers alongside family offers", () => {
+  const base = researchFixture.metadata.rentals.rentals[0] as ResearchRental;
+  const individual = { ...base, id: "individual", rentalType: "kos" as const };
+  const family = { ...base, id: "family", rentalType: "kos-keluarga" as const };
+  assert.deepEqual(
+    filterMapRentals([base, individual, family], {
+      kinds: new Set(["kos"]),
+      area: "Semua",
+      query: "",
+      maxMonthlyRent: 0,
+      sort: "recommended",
+    }),
+    [individual, family],
+  );
+});
+
 test("rental pins group shared coordinates and filters preserve unlocated rentals", () => {
   const base = researchFixture.metadata.rentals.rentals[0] as ResearchRental;
   const location = {

@@ -28,6 +28,8 @@ Dataset yang dipakai aplikasi dibangun ke [properties.geojson](../public/data/pr
 
 [Riset dari lokasi masjid](masjid/README.md) mencatat empat titik awal Bekasi/Depok, lima proyek Bekasi tambahan, serta kandidat dengan pin portal yang ditolak. Nama masjid/sekolah pada bukti kartu dapat dicari di `/riset`.
 
+[Kos sekitar empat masjid pilihan](masjid/kos-empat-masjid-2026-11-07.md) memuat tujuh tambahan di sekitar VCM, Al Jihad Ciledug, Ash Shaff Bintaro dan Al Ukhuwah Cisauk, dengan harga, jarak garis lurus dan aturan penghuni yang dibedakan.
+
 [Ekstrak peta Ihrish](masjid/ihrish.md) menyimpan 78 masjid dan pin dalam JSON, GeoJSON, dan CSV. Adanya kajian cukup untuk pencantuman, tidak harus rutin. Direktori `/riset#masjid` menghubungkan masjid dengan 15 proyek dalam 1,5 km garis lurus, lima iklan baru, serta petunjuk yang masih perlu diperiksa.
 
 [Pengumpulan data dan akses agen AI](../docs/property-agent-access.md) menjelaskan pilihan Scraper API/HTTP/browser, akses JSON publik yang sudah tersedia, serta rancangan MCP opsional.
