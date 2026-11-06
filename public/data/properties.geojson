@@ -1933,7 +1933,7 @@
    ]
   },
   "rentals": {
-   "checkedAt": "2026-11-05",
+   "checkedAt": "2026-11-07",
    "note": "Iklan sewa publik diperiksa pada tanggal di masing-masing kartu. Keterangan fasilitas dan transit dapat berasal dari iklan atau sumber kawasan, bukan survei; cek hubungan lokasinya. Nama dan kontak pemilik tidak disimpan. Harga dan ketersediaan cepat berubah.",
    "rentals": [
     {
@@ -30787,9 +30787,2999 @@
        "km": 1.359
       }
      ]
+    },
+    {
+     "id": "sewa-pinhome-karet-semanggi-e7440a22",
+     "title": "Apartemen di Tamansari Semanggi",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Karet Semanggi, Setiabudi (Setia Budi), Kota Jakarta Selatan",
+     "buildingOrCluster": "Tamansari Semanggi",
+     "rent": {
+      "amount": 5500000,
+      "period": "monthly",
+      "minimumMonths": 3,
+      "quote": "Rp 5,5 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-tamansari-semanggi-15",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": null,
+     "sizeM2": 36.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Karet Semanggi",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-tamansari-semanggi-15"
+      },
+      {
+       "quote": "Minimum sewa 3 bulan (Rp 16,5 Juta)",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-tamansari-semanggi-15"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif Rp 5,5 juta/bulan dengan minimum 3 bulan (Rp 16,5 juta); bukan kontrak satu bulan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-tamansari-semanggi-15",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.226664,
+      "lng": 106.819329,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-tamansari-semanggi-15",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-nur-salma",
+       "name": "Masjid Nur Salma",
+       "km": 0.402
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-cilandak-barat-85b9865f",
+     "title": "Apartemen di Antasari Place",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Cilandak Barat, Cilandak, Kota Jakarta Selatan",
+     "buildingOrCluster": "Antasari Place",
+     "rent": {
+      "amount": 6000000,
+      "period": "monthly",
+      "minimumMonths": 3,
+      "quote": "Rp 6 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-antasari-place-1",
+      "pageDate": "2025-12-11"
+     },
+     "bedrooms": null,
+     "sizeM2": null,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Cilandak Barat",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-antasari-place-1"
+      },
+      {
+       "quote": "Minimum sewa 3 bulan (Rp 18 Juta)",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-antasari-place-1"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Deskripsi menyebut studio; jumlah kamar tidur terpisah tidak dicantumkan. Luas portal 29 m² berbeda dari deskripsi 30 m² sehingga luas tidak dicantumkan. Pembaruan sumber 2025-12-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-antasari-place-1",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-12-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.289582,
+      "lng": 106.806659,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-antasari-place-1",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-baitussalam-cilandak",
+       "name": "Masjid Baitussalam Cilandak",
+       "km": 1.472
+      }
+     ]
+    },
+    {
+     "id": "sewa-jendela360-bscd116",
+     "title": "Apartemen 3 kamar Bassura City Apartment — paket 12 bulan",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Cipinang, Jakarta Timur",
+     "buildingOrCluster": "Bassura City Apartment",
+     "rent": {
+      "amount": 53030000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp. 53,030,000",
+      "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCD116",
+      "pageDate": null
+     },
+     "bedrooms": 3,
+     "sizeM2": 48.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Bassura City Apartment",
+       "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCD116"
+      },
+      {
+       "quote": "12 Bulan",
+       "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCD116"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Paket ini untuk 12 bulan. Opsi lain: 3 bulan Rp 19.190.000, 6 bulan Rp 31.730.000 (total kontrak). Deposit dan biaya layanan mengikuti sumber. Tanggal pembaruan tidak ditampilkan. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCD116",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Titik gedung, bukan posisi unit atau pintu masuk; lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.225031,
+      "lng": 106.879075,
+      "precision": "building",
+      "label": "Bassura City Apartment",
+      "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCD116",
+      "method": "Titik gedung pada rincian unit Jendela360",
+      "note": "Titik gedung, bukan posisi unit atau pintu masuk; lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-imam-nawawi",
+       "name": "Masjid Imam Nawawi",
+       "km": 0.761
+      },
+      {
+       "id": "masjid-raya-cipinang-muara",
+       "name": "Masjid Raya Cipinang Muara",
+       "km": 0.887
+      },
+      {
+       "id": "masjid-al-fattah",
+       "name": "Masjid Al Fattah",
+       "km": 1.433
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-cipinang-cempedak-8176776f",
+     "title": "Rumah sewa 4 kamar di Cipinang Cempedak",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Cipinang Cempedak, Jatinegara, Kota Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 85000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 85 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-4kt-135m-di-swadaya-3-no15-cawang-kavlingjaktim",
+      "pageDate": "2026-01-04"
+     },
+     "bedrooms": 4,
+     "sizeM2": 120.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Cipinang Cempedak",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-4kt-135m-di-swadaya-3-no15-cawang-kavlingjaktim"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-4kt-135m-di-swadaya-3-no15-cawang-kavlingjaktim"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2026-01-04. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-4kt-135m-di-swadaya-3-no15-cawang-kavlingjaktim",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-01-04",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.240727,
+      "lng": 106.872561,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-4kt-135m-di-swadaya-3-no15-cawang-kavlingjaktim",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-imam-nawawi",
+       "name": "Masjid Imam Nawawi",
+       "km": 1.253
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-cempaka-putih-barat-038f6b96",
+     "title": "Rumah sewa 9 kamar di Cempaka Putih Barat",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Cempaka Putih Barat, Cempaka Putih, Kota Jakarta Pusat",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 100000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 100 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-mardani-raya-gg-x",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 9,
+     "sizeM2": 144.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Cempaka Putih Barat",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-mardani-raya-gg-x"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-mardani-raya-gg-x"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-mardani-raya-gg-x",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.180844,
+      "lng": 106.861788,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-mardani-raya-gg-x",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-azhar-cpb",
+       "name": "Masjid Al Azhar CPB",
+       "km": 0.707
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-cipinang-muara-6ea53229",
+     "title": "Rumah sewa 2 kamar di Cipinang Muara",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Cipinang Muara, Jatinegara, Kota Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 50000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 50 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-minimalis-di-cipinang-besar-selatan",
+      "pageDate": "2026-02-18"
+     },
+     "bedrooms": 2,
+     "sizeM2": 60.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Cipinang Muara",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-minimalis-di-cipinang-besar-selatan"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-minimalis-di-cipinang-besar-selatan"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2026-02-18. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-minimalis-di-cipinang-besar-selatan",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-02-18",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.22146,
+      "lng": 106.891967,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-minimalis-di-cipinang-besar-selatan",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-ihsan",
+       "name": "Masjid Al-Ihsan Cipinang",
+       "km": 0.465
+      },
+      {
+       "id": "masjid-raya-cipinang-muara",
+       "name": "Masjid Raya Cipinang Muara",
+       "km": 1.339
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-sawah-baru-25de795d",
+     "title": "Rumah sewa 2 kamar di Sawah Baru",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Sawah Baru, Ciputat, Kota Tangerang Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 39000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 39 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cendrawasih-sawah-baru-ciputat",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 2,
+     "sizeM2": 45.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Sawah Baru",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cendrawasih-sawah-baru-ciputat"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cendrawasih-sawah-baru-ciputat"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cendrawasih-sawah-baru-ciputat",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.293335,
+      "lng": 106.724013,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cendrawasih-sawah-baru-ciputat",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-barkah-ciputat",
+       "name": "Masjid Al Barkah Sawah Baru",
+       "km": 1.176
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-jombang-48c4c810",
+     "title": "Rumah sewa di Jombang",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Jombang, Ciputat, Kota Tangerang Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 47000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 47 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-sudimara-tangerang-selatan-di-jl-stasiun-sudimara-jombang-tangsel",
+      "pageDate": "2026-09-15"
+     },
+     "bedrooms": null,
+     "sizeM2": 80.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Jombang",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-sudimara-tangerang-selatan-di-jl-stasiun-sudimara-jombang-tangsel"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-sudimara-tangerang-selatan-di-jl-stasiun-sudimara-jombang-tangsel"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Jumlah kamar tidak dicantumkan: portal menyebut 3, sedangkan deskripsi menyebut KT 2. Harga mengikuti label Rp 47 juta/tahun; deposit pada deskripsi Rp 3,5 juta. Pembaruan sumber 2026-09-15. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-sudimara-tangerang-selatan-di-jl-stasiun-sudimara-jombang-tangsel",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-09-15",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.299415,
+      "lng": 106.710704,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-sudimara-tangerang-selatan-di-jl-stasiun-sudimara-jombang-tangsel",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-muhajirin-villa-gunung-lestari",
+       "name": "Masjid Al-Muhajirin Villa Gunung Lestari",
+       "km": 0.476
+      },
+      {
+       "id": "masjid-al-amanah",
+       "name": "Masjid Al Amanah",
+       "km": 0.97
+      },
+      {
+       "id": "masjid-al-barkah-ciputat",
+       "name": "Masjid Al Barkah Sawah Baru",
+       "km": 1.419
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-cempaka-putih-barat-8379e5e6",
+     "title": "Rumah sewa di Cempaka Putih Barat",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Cempaka Putih Barat, Cempaka Putih, Kota Jakarta Pusat",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 95000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 95 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dibawah-100-juta-dekat-dengan-rs-pertamina-omni-di-cempaka-putih-jakarta-pusat",
+      "pageDate": "2025-04-08"
+     },
+     "bedrooms": null,
+     "sizeM2": 300.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Cempaka Putih Barat",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dibawah-100-juta-dekat-dengan-rs-pertamina-omni-di-cempaka-putih-jakarta-pusat"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dibawah-100-juta-dekat-dengan-rs-pertamina-omni-di-cempaka-putih-jakarta-pusat"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Jumlah kamar tidak dicantumkan: portal 7, deskripsi 7+1 tanpa pemisahan kamar utama dan tambahan yang jelas. Luas portal 300 m², deskripsi menyebut sekitar 300-an m². Pembaruan sumber 2025-04-08. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dibawah-100-juta-dekat-dengan-rs-pertamina-omni-di-cempaka-putih-jakarta-pusat",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-04-08",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.173281,
+      "lng": 106.876294,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dibawah-100-juta-dekat-dengan-rs-pertamina-omni-di-cempaka-putih-jakarta-pusat",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-at-taufiq",
+       "name": "Masjid At Taufiq",
+       "km": 0.166
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-jati-30abe435",
+     "title": "Rumah sewa 4 kamar di Jati",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Jati, Pulogadung (Pulo Gadung), Kota Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 135000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 135 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-4-kamar-parkir-3-mobil-dekat-busway-dan-velodrome-di-taman-berdikari-sentosa-rawamangun-jakarta-timur",
+      "pageDate": "2026-02-09"
+     },
+     "bedrooms": 4,
+     "sizeM2": 200.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Jati",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-4-kamar-parkir-3-mobil-dekat-busway-dan-velodrome-di-taman-berdikari-sentosa-rawamangun-jakarta-timur"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-4-kamar-parkir-3-mobil-dekat-busway-dan-velodrome-di-taman-berdikari-sentosa-rawamangun-jakarta-timur"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga sewa Rp 135 juta/tahun cocok dengan deskripsi. Judul menyebut parkir 3 mobil, deskripsi carport 2; kapasitas parkir perlu diperjelas. Pembaruan sumber 2026-02-09. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-4-kamar-parkir-3-mobil-dekat-busway-dan-velodrome-di-taman-berdikari-sentosa-rawamangun-jakarta-timur",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-02-09",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.196034,
+      "lng": 106.900463,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-4-kamar-parkir-3-mobil-dekat-busway-dan-velodrome-di-taman-berdikari-sentosa-rawamangun-jakarta-timur",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-mizan",
+       "name": "Masjid Al Mizan",
+       "km": 0.584
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-sarua-serua-073ca3e2",
+     "title": "Apartemen di Loftvilles City",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Tangerang",
+     "locationText": "Sarua (Serua), Ciputat, Kota Tangerang Selatan",
+     "buildingOrCluster": "Loftvilles City",
+     "rent": {
+      "amount": 2850000,
+      "period": "monthly",
+      "minimumMonths": 3,
+      "quote": "Rp 2,85 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-loftvilles-city-apartment",
+      "pageDate": "2026-09-09"
+     },
+     "bedrooms": null,
+     "sizeM2": 22.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Sarua (Serua)",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-loftvilles-city-apartment"
+      },
+      {
+       "quote": "Minimum sewa 3 bulan (Rp 8,55 Juta)",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-loftvilles-city-apartment"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif Rp 2,85 juta/bulan mensyaratkan minimum 3 bulan (Rp 8,55 juta). Pembaruan sumber 2026-09-09. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-loftvilles-city-apartment",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-09-09",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.317367,
+      "lng": 106.713801,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-loftvilles-city-apartment",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-amanah",
+       "name": "Masjid Al Amanah",
+       "km": 1.131
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-jakasetia-jaka-setia-dcc3a545",
+     "title": "Apartemen di Grand Icon Caman",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Bekasi",
+     "locationText": "Jakasetia (Jaka Setia), Bekasi Selatan, Kota Bekasi",
+     "buildingOrCluster": "Grand Icon Caman",
+     "rent": {
+      "amount": 3500000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp 3,5 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-studio-dekat-lrt-di-grand-icon-caman",
+      "pageDate": "2025-05-11"
+     },
+     "bedrooms": null,
+     "sizeM2": 21.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Jakasetia (Jaka Setia)",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-studio-dekat-lrt-di-grand-icon-caman"
+      },
+      {
+       "quote": "Minimum sewa 1 bulan",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-studio-dekat-lrt-di-grand-icon-caman"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Deskripsi menyebut studio, sehingga satu kamar tidur terpisah tidak diasumsikan. Harga disebut termasuk IPL. Portal menulis Jakasetia; pin publik menjadi acuan perkiraan Grand Icon Caman. Pembaruan sumber 2025-05-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-studio-dekat-lrt-di-grand-icon-caman",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-05-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.252389,
+      "lng": 106.952624,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-studio-dekat-lrt-di-grand-icon-caman",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-aqsho",
+       "name": "Masjid Al-Aqsho",
+       "km": 0.415
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-jatibening-eeb6443a",
+     "title": "Rumah sewa 3 kamar di Jatibening",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Jatibening, Pondokgede (Pondok Gede), Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 55000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 55 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-3kt-162m-di-jatibening",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 3,
+     "sizeM2": 140.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Jatibening",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-3kt-162m-di-jatibening"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-3kt-162m-di-jatibening"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-3kt-162m-di-jatibening",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.261677,
+      "lng": 106.950618,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-3kt-162m-di-jatibening",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-aqsho",
+       "name": "Masjid Al-Aqsho",
+       "km": 1.25
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-jakasetia-jaka-setia-338c30cc",
+     "title": "Rumah sewa 2 kamar di Jakasetia (Jaka Setia)",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Jakasetia (Jaka Setia), Bekasi Selatan, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 43000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 43 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-lotus-tengah",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 2,
+     "sizeM2": 54.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Jakasetia (Jaka Setia)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-lotus-tengah"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-lotus-tengah"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-lotus-tengah",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.273099,
+      "lng": 106.970508,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-lotus-tengah",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-furqan-grand-galaxy-city",
+       "name": "Masjid Al Furqan Grand Galaxy City",
+       "km": 1.367
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-pondok-labu-de882491",
+     "title": "Apartemen di Aspen Residence",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Pondok Labu, Cilandak, Kota Jakarta Selatan",
+     "buildingOrCluster": "Aspen Residence",
+     "rent": {
+      "amount": 6500000,
+      "period": "monthly",
+      "minimumMonths": 6,
+      "quote": "Rp 6,5 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-41m-di-aspen-residence",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": null,
+     "sizeM2": 41.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Pondok Labu",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-41m-di-aspen-residence"
+      },
+      {
+       "quote": "Minimum sewa 6 bulan (Rp 39 Juta)",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-41m-di-aspen-residence"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif Rp 6,5 juta/bulan mensyaratkan minimum 6 bulan (Rp 39 juta). Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-41m-di-aspen-residence",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.303756,
+      "lng": 106.796222,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-41m-di-aspen-residence",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hikmah-ddn-2",
+       "name": "Masjid Al Hikmah DDN 2",
+       "km": 1.073
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-pondok-labu-fdb03275",
+     "title": "Rumah sewa di Pondok Labu",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Pondok Labu, Cilandak, Kota Jakarta Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 80000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 80 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dalam-perumahan-di-andara-dekat-tol-jakarta-selatan-2",
+      "pageDate": "2025-01-06"
+     },
+     "bedrooms": null,
+     "sizeM2": 72.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Pondok Labu",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dalam-perumahan-di-andara-dekat-tol-jakarta-selatan-2"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dalam-perumahan-di-andara-dekat-tol-jakarta-selatan-2"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Jumlah kamar tidak dicantumkan: portal 3, deskripsi 3+1 tanpa membedakan kamar utama dan tambahan. Pembaruan sumber 2025-01-06. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dalam-perumahan-di-andara-dekat-tol-jakarta-selatan-2",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-01-06",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.315226,
+      "lng": 106.804101,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dalam-perumahan-di-andara-dekat-tol-jakarta-selatan-2",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-adhim",
+       "name": "Masjid Al Adhim",
+       "km": 0.568
+      },
+      {
+       "id": "masjid-al-hikmah-ddn-2",
+       "name": "Masjid Al Hikmah DDN 2",
+       "km": 0.895
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-jurangmangu-barat-jurang-mangu-barat-e5d8d229",
+     "title": "Rumah sewa 3 kamar di Grand Valley",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Jurangmangu Barat (Jurang Mangu Barat), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": "Grand Valley",
+     "rent": {
+      "amount": 65500000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 65,5 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-grand-valley-di-jurangmangu-barat-jurang-mangu-barat",
+      "pageDate": "2026-11-04"
+     },
+     "bedrooms": 3,
+     "sizeM2": 124.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Jurangmangu Barat (Jurang Mangu Barat)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-grand-valley-di-jurangmangu-barat-jurang-mangu-barat"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-grand-valley-di-jurangmangu-barat-jurang-mangu-barat"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2026-11-04. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-grand-valley-di-jurangmangu-barat-jurang-mangu-barat",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-11-04",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.264674,
+      "lng": 106.722125,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-grand-valley-di-jurangmangu-barat-jurang-mangu-barat",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hasanah-bintaro",
+       "name": "Masjid Al Hasanah Bintaro",
+       "km": 0.437
+      },
+      {
+       "id": "masjid-jami-utsman-bin-affan",
+       "name": "Masjid Jami' Utsman bin Affan",
+       "km": 1.279
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-pisangan-940e4498",
+     "title": "Rumah sewa 2 kamar di Bali View",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Pisangan, Ciputat Timur, Kota Tangerang Selatan",
+     "buildingOrCluster": "Bali View",
+     "rent": {
+      "amount": 55000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 55 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-denpasar-bali-view",
+      "pageDate": "2026-07-20"
+     },
+     "bedrooms": 2,
+     "sizeM2": 160.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Pisangan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-denpasar-bali-view"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-denpasar-bali-view"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2026-07-20. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-denpasar-bali-view",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-07-20",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.317345,
+      "lng": 106.764448,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-denpasar-bali-view",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-as-sunnah-vcm",
+       "name": "Masjid As Sunnah VCM",
+       "km": 0.941
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-jurangmangu-barat-jurang-mangu-barat-15d3489b",
+     "title": "Rumah sewa 4 kamar di Jurangmangu Barat (Jurang Mangu Barat)",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Jurangmangu Barat (Jurang Mangu Barat), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 70000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 70 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilosari-bintaro",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 4,
+     "sizeM2": 150.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Jurangmangu Barat (Jurang Mangu Barat)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilosari-bintaro"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilosari-bintaro"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilosari-bintaro",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.270252,
+      "lng": 106.72287,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilosari-bintaro",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hasanah-bintaro",
+       "name": "Masjid Al Hasanah Bintaro",
+       "km": 0.266
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-jurangmangu-barat-jurang-mangu-barat-61c78c4e",
+     "title": "Rumah sewa 3 kamar di Jurangmangu Barat (Jurang Mangu Barat)",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Jurangmangu Barat (Jurang Mangu Barat), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 8500000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp 8,5 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jurang-mangu-barat-no-35",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 3,
+     "sizeM2": 110.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Jurangmangu Barat (Jurang Mangu Barat)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jurang-mangu-barat-no-35"
+      },
+      {
+       "quote": "Minimum sewa 1 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jurang-mangu-barat-no-35"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jurang-mangu-barat-no-35",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.269705,
+      "lng": 106.725144,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jurang-mangu-barat-no-35",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hasanah-bintaro",
+       "name": "Masjid Al Hasanah Bintaro",
+       "km": 0.453
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-jurangmangu-barat-jurang-mangu-barat-ac80f4fa",
+     "title": "Rumah sewa 4 kamar di Jurangmangu Barat (Jurang Mangu Barat)",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Jurangmangu Barat (Jurang Mangu Barat), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 13000000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp 13 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcikini-1-bintaro",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 4,
+     "sizeM2": 300.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Jurangmangu Barat (Jurang Mangu Barat)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcikini-1-bintaro"
+      },
+      {
+       "quote": "Minimum sewa 1 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcikini-1-bintaro"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcikini-1-bintaro",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.270036,
+      "lng": 106.726004,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcikini-1-bintaro",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hasanah-bintaro",
+       "name": "Masjid Al Hasanah Bintaro",
+       "km": 0.555
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-jurangmangu-barat-jurang-mangu-barat-706f018f",
+     "title": "Rumah sewa di Jurangmangu Barat (Jurang Mangu Barat)",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Jurangmangu Barat (Jurang Mangu Barat), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 200000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 200 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cikini-1bintaro-sektor-7-di-bintaro-jaya-cluster-cikini-1",
+      "pageDate": "2026-05-03"
+     },
+     "bedrooms": null,
+     "sizeM2": 300.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Jurangmangu Barat (Jurang Mangu Barat)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cikini-1bintaro-sektor-7-di-bintaro-jaya-cluster-cikini-1"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cikini-1bintaro-sektor-7-di-bintaro-jaya-cluster-cikini-1"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Jumlah kamar tidak dicantumkan: portal 5, sedangkan rincian jumlah pada tiap lantai belum lengkap. Deskripsi memisahkan kamar ART. Dicatat sebagai satu penawaran rumah. Pembaruan sumber 2026-05-03. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cikini-1bintaro-sektor-7-di-bintaro-jaya-cluster-cikini-1",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-05-03",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.27108,
+      "lng": 106.726495,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cikini-1bintaro-sektor-7-di-bintaro-jaya-cluster-cikini-1",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hasanah-bintaro",
+       "name": "Masjid Al Hasanah Bintaro",
+       "km": 0.649
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-parigi-perigi-lama-9aa85efa",
+     "title": "Rumah sewa 4 kamar di Emerald Bintaro",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Parigi (Perigi Lama), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": "Emerald Bintaro",
+     "rent": {
+      "amount": 79000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 79 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-emerald-bintaro",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 4,
+     "sizeM2": 112.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Parigi (Perigi Lama)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-emerald-bintaro"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-emerald-bintaro"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-emerald-bintaro",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.278558,
+      "lng": 106.700941,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-emerald-bintaro",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-ash-shaff",
+       "name": "Masjid Ash Shaff",
+       "km": 0.089
+      },
+      {
+       "id": "masjid-ar-rahman-discovery-lumina",
+       "name": "Masjid Ar Rahman Discovery Lumina",
+       "km": 1.408
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-parigi-perigi-lama-cfd65c0a",
+     "title": "Rumah sewa 5 kamar di Discovery Aluvia",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Parigi (Perigi Lama), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": "Discovery Aluvia",
+     "rent": {
+      "amount": 85000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 85 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-discoveri-aluvia",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 5,
+     "sizeM2": 117.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Parigi (Perigi Lama)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-discoveri-aluvia"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-discoveri-aluvia"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-discoveri-aluvia",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.270056,
+      "lng": 106.700807,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-discoveri-aluvia",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-ar-rahman-discovery-lumina",
+       "name": "Masjid Ar Rahman Discovery Lumina",
+       "km": 0.548
+      },
+      {
+       "id": "masjid-ash-shaff",
+       "name": "Masjid Ash Shaff",
+       "km": 0.864
+      },
+      {
+       "id": "masjid-al-hijrah-discovery-flamine",
+       "name": "Masjid Al Hijrah Discovery Flamine",
+       "km": 0.967
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-parigi-perigi-lama-576b35e4",
+     "title": "Rumah sewa di Parigi (Perigi Lama)",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Parigi (Perigi Lama), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 85000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 85 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-parigi-perigi-lama-3",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": null,
+     "sizeM2": 120.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Parigi (Perigi Lama)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-parigi-perigi-lama-3"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-parigi-perigi-lama-3"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Jumlah kamar tidak dicantumkan: portal 4, deskripsi 3+1 tanpa membedakan kamar utama dan tambahan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-parigi-perigi-lama-3",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.276744,
+      "lng": 106.703275,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-parigi-perigi-lama-3",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-ash-shaff",
+       "name": "Masjid Ash Shaff",
+       "km": 0.318
+      },
+      {
+       "id": "masjid-ar-rahman-discovery-lumina",
+       "name": "Masjid Ar Rahman Discovery Lumina",
+       "km": 1.318
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-parigi-perigi-lama-11bf3ef4",
+     "title": "Rumah sewa 4 kamar di Emerald Bintaro",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Parigi (Perigi Lama), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": "Emerald Bintaro",
+     "rent": {
+      "amount": 90000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 90 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-emerald-bintaro-1",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 4,
+     "sizeM2": 95.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Parigi (Perigi Lama)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-emerald-bintaro-1"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-emerald-bintaro-1"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-emerald-bintaro-1",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.274878,
+      "lng": 106.699561,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-emerald-bintaro-1",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-ash-shaff",
+       "name": "Masjid Ash Shaff",
+       "km": 0.348
+      },
+      {
+       "id": "masjid-ar-rahman-discovery-lumina",
+       "name": "Masjid Ar Rahman Discovery Lumina",
+       "km": 0.974
+      },
+      {
+       "id": "masjid-al-hijrah-discovery-flamine",
+       "name": "Masjid Al Hijrah Discovery Flamine",
+       "km": 1.369
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-parigi-perigi-lama-4a659f50",
+     "title": "Rumah sewa 2 kamar di Permata Bintaro",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Parigi (Perigi Lama), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": "Permata Bintaro",
+     "rent": {
+      "amount": 48000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 48 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-permata-bintaro-sektor-9af",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 2,
+     "sizeM2": 60.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Parigi (Perigi Lama)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-permata-bintaro-sektor-9af"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-permata-bintaro-sektor-9af"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-permata-bintaro-sektor-9af",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.285946,
+      "lng": 106.69849,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-permata-bintaro-sektor-9af",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-ash-shaff",
+       "name": "Masjid Ash Shaff",
+       "km": 0.933
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-parigi-perigi-lama-5fa00d30",
+     "title": "Rumah sewa 4 kamar di Neo Permata Bintaro",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Parigi (Perigi Lama), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": "Neo Permata Bintaro",
+     "rent": {
+      "amount": 70000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 70 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bintaro-sektor-9-cluster-neo-permata-di-jlpermata-bintaro-sektor-9",
+      "pageDate": "2025-10-01"
+     },
+     "bedrooms": 4,
+     "sizeM2": 160.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Parigi (Perigi Lama)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bintaro-sektor-9-cluster-neo-permata-di-jlpermata-bintaro-sektor-9"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bintaro-sektor-9-cluster-neo-permata-di-jlpermata-bintaro-sektor-9"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-10-01. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bintaro-sektor-9-cluster-neo-permata-di-jlpermata-bintaro-sektor-9",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-10-01",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.287051,
+      "lng": 106.698197,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bintaro-sektor-9-cluster-neo-permata-di-jlpermata-bintaro-sektor-9",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-ash-shaff",
+       "name": "Masjid Ash Shaff",
+       "km": 1.06
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-parigi-perigi-lama-7629f43e",
+     "title": "Rumah sewa 4 kamar di Emerald Bintaro",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Parigi (Perigi Lama), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": "Emerald Bintaro",
+     "rent": {
+      "amount": 70000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 70 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-emerald-bintaro-sektor-9-tangerang-selatan-di-emerald-bintaro-1",
+      "pageDate": "2025-09-08"
+     },
+     "bedrooms": 4,
+     "sizeM2": 88.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Parigi (Perigi Lama)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-emerald-bintaro-sektor-9-tangerang-selatan-di-emerald-bintaro-1"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-emerald-bintaro-sektor-9-tangerang-selatan-di-emerald-bintaro-1"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-09-08. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-emerald-bintaro-sektor-9-tangerang-selatan-di-emerald-bintaro-1",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-09-08",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.280574,
+      "lng": 106.700827,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-emerald-bintaro-sektor-9-tangerang-selatan-di-emerald-bintaro-1",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-ash-shaff",
+       "name": "Masjid Ash Shaff",
+       "km": 0.307
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-tajur-d07269f2",
+     "title": "Rumah sewa 4 kamar di Fortune Terrace",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Tajur, Ciledug, Kota Tangerang",
+     "buildingOrCluster": "Fortune Terrace",
+     "rent": {
+      "amount": 60000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 60 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rapih-dan-semi-furnished-di-graha-raya-di-fortune-terrace-graha-raya",
+      "pageDate": "2026-01-29"
+     },
+     "bedrooms": 4,
+     "sizeM2": 84.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Tajur",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rapih-dan-semi-furnished-di-graha-raya-di-fortune-terrace-graha-raya"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rapih-dan-semi-furnished-di-graha-raya-di-fortune-terrace-graha-raya"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2026-01-29. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rapih-dan-semi-furnished-di-graha-raya-di-fortune-terrace-graha-raya",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-01-29",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.233547,
+      "lng": 106.693217,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rapih-dan-semi-furnished-di-graha-raya-di-fortune-terrace-graha-raya",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-abu-bakar-ash-shiddiq-tangerang",
+       "name": "Masjid Abu Bakar Ash Shiddiq Tangerang",
+       "km": 1.149
+      },
+      {
+       "id": "masjid-an-naba",
+       "name": "Masjid An Naba'",
+       "km": 1.202
+      },
+      {
+       "id": "masjid-nurul-iman-valencia",
+       "name": "Masjid Nurul Iman Valencia",
+       "km": 1.392
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-tajur-a46581ef",
+     "title": "Rumah sewa 3 kamar di Fortune Spring",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Tajur, Ciledug, Kota Tangerang",
+     "buildingOrCluster": "Fortune Spring",
+     "rent": {
+      "amount": 95000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 95 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-dan-hook-2-lamtai-dan-ada-ac-disetiap-lantai-di-fortune-spring-71151",
+      "pageDate": "2025-05-23"
+     },
+     "bedrooms": 3,
+     "sizeM2": 61.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Tajur",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-dan-hook-2-lamtai-dan-ada-ac-disetiap-lantai-di-fortune-spring-71151"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-dan-hook-2-lamtai-dan-ada-ac-disetiap-lantai-di-fortune-spring-71151"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-05-23. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-dan-hook-2-lamtai-dan-ada-ac-disetiap-lantai-di-fortune-spring-71151",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-05-23",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.232161,
+      "lng": 106.692726,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-dan-hook-2-lamtai-dan-ada-ac-disetiap-lantai-di-fortune-spring-71151",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-an-naba",
+       "name": "Masjid An Naba'",
+       "km": 1.095
+      },
+      {
+       "id": "masjid-abu-bakar-ash-shiddiq-tangerang",
+       "name": "Masjid Abu Bakar Ash Shiddiq Tangerang",
+       "km": 1.308
+      },
+      {
+       "id": "masjid-nurul-iman-valencia",
+       "name": "Masjid Nurul Iman Valencia",
+       "km": 1.354
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-pondok-kelapa-5fd4a11c",
+     "title": "Rumah sewa 2 kamar di Pondok Kelapa",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Pondok Kelapa, Duren Sawit, Kota Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 38000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 38 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumkar-pemda",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 2,
+     "sizeM2": 93.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Pondok Kelapa",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumkar-pemda"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumkar-pemda"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumkar-pemda",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.241066,
+      "lng": 106.938777,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumkar-pemda",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-baiturrahim-kavling-marinir",
+       "name": "Masjid Baiturrahim Kavling Marinir",
+       "km": 1.407
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-pondok-kelapa-9949c2b4",
+     "title": "Rumah sewa 3 kamar di Pondok Kelapa",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Pondok Kelapa, Duren Sawit, Kota Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 39000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 39 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-komp-dki-blok-02-no18-pdk-kelapa-jak-tim",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 3,
+     "sizeM2": 170.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Pondok Kelapa",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-komp-dki-blok-02-no18-pdk-kelapa-jak-tim"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-komp-dki-blok-02-no18-pdk-kelapa-jak-tim"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-komp-dki-blok-02-no18-pdk-kelapa-jak-tim",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.237572,
+      "lng": 106.938861,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-komp-dki-blok-02-no18-pdk-kelapa-jak-tim",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-baiturrahim-kavling-marinir",
+       "name": "Masjid Baiturrahim Kavling Marinir",
+       "km": 1.358
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-grogol-11dea734",
+     "title": "Rumah sewa 3 kamar di Grogol",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Grogol, Limo, Kota Depok",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 65000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 65 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-pendowo-grogol-kecamatan-limo-depok",
+      "pageDate": "2025-09-13"
+     },
+     "bedrooms": 3,
+     "sizeM2": 108.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Grogol",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-pendowo-grogol-kecamatan-limo-depok"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-pendowo-grogol-kecamatan-limo-depok"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Deskripsi membedakan 3 kamar tidur utama dari 1 kamar ART. Fasilitas yang disebut meliputi kitchen set dan AC; rinciannya perlu konfirmasi. Pembaruan sumber 2025-09-13. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-pendowo-grogol-kecamatan-limo-depok",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-09-13",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.373222,
+      "lng": 106.784254,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-pendowo-grogol-kecamatan-limo-depok",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-muhajirin-wal-anshar",
+       "name": "Masjid Al Muhajirin Wal Anshar",
+       "km": 0.676
+      },
+      {
+       "id": "masjid-as-sunnah-meruyung",
+       "name": "Masjid As Sunnah Meruyung",
+       "km": 1.348
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-grogol-6adb70fe",
+     "title": "Rumah sewa 3 kamar di YVE Habitat Limo",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Grogol, Limo, Kota Depok",
+     "buildingOrCluster": "YVE Habitat Limo",
+     "rent": {
+      "amount": 85000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 85 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-hook-di-yve-habitat-limo-di-yve-habitat-limo-blok-g1",
+      "pageDate": "2025-06-19"
+     },
+     "bedrooms": 3,
+     "sizeM2": 115.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Grogol",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-hook-di-yve-habitat-limo-di-yve-habitat-limo-blok-g1"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-hook-di-yve-habitat-limo-di-yve-habitat-limo-blok-g1"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-19. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-hook-di-yve-habitat-limo-di-yve-habitat-limo-blok-g1",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-19",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.372559,
+      "lng": 106.785588,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-hook-di-yve-habitat-limo-di-yve-habitat-limo-blok-g1",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-muhajirin-wal-anshar",
+       "name": "Masjid Al Muhajirin Wal Anshar",
+       "km": 0.53
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-pondok-benda-cea344e9",
+     "title": "Rumah sewa 3 kamar di Pondok Benda",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Pondok Benda, Pamulang, Kota Tangerang Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 40000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 40 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-raya-pandawa-5-pondok-benda-tangsel",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 3,
+     "sizeM2": 100.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Pondok Benda",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-raya-pandawa-5-pondok-benda-tangsel"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-raya-pandawa-5-pondok-benda-tangsel"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-raya-pandawa-5-pondok-benda-tangsel",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.358245,
+      "lng": 106.718811,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-raya-pandawa-5-pondok-benda-tangsel",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hakim-pamulang",
+       "name": "Masjid Al-Hakim Pamulang",
+       "km": 0.881
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-maruyung-meruyung-92b5126a",
+     "title": "Rumah sewa 4 kamar di Maruyung (Meruyung)",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Maruyung (Meruyung), Limo, Kota Depok",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 55000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 55 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-muhasan-limo-meruyung-depok",
+      "pageDate": "2025-11-06"
+     },
+     "bedrooms": 4,
+     "sizeM2": 150.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Maruyung (Meruyung)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-muhasan-limo-meruyung-depok"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-muhasan-limo-meruyung-depok"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-11-06. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-muhasan-limo-meruyung-depok",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-11-06",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.382227,
+      "lng": 106.768689,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-muhasan-limo-meruyung-depok",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-as-sunnah-meruyung",
+       "name": "Masjid As Sunnah Meruyung",
+       "km": 0.642
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-cilangkap-43a03d1d",
+     "title": "Rumah sewa 3 kamar di Cilangkap",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Cilangkap, Cipayung, Kota Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 4300000,
+      "period": "monthly",
+      "minimumMonths": 3,
+      "quote": "Rp 4,3 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur",
+      "pageDate": "2026-11-01"
+     },
+     "bedrooms": 3,
+     "sizeM2": 90.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Cilangkap",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur"
+      },
+      {
+       "quote": "Minimum sewa 3 bulan (Rp 12,9 Juta)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif Rp 4,3 juta/bulan mensyaratkan minimum 3 bulan (Rp 12,9 juta). Deskripsi menyebut semi furnished; inventaris akhir perlu konfirmasi. Pembaruan sumber 2026-11-01. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-11-01",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.343535,
+      "lng": 106.902177,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-hijau-nurul-iman",
+       "name": "Masjid Hijau Nurul Iman",
+       "km": 0.359
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-harapanbaru-harapan-baru-d728c1df",
+     "title": "Rumah sewa 2 kamar di Prima Harapan Regency",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Harapanbaru (Harapan Baru), Bekasi Utara, Kota Bekasi",
+     "buildingOrCluster": "Prima Harapan Regency",
+     "rent": {
+      "amount": 25000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 25 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-harapanbaru-harapan-baru-3",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 2,
+     "sizeM2": 80.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Harapanbaru (Harapan Baru)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-harapanbaru-harapan-baru-3"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-harapanbaru-harapan-baru-3"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-harapanbaru-harapan-baru-3",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.214651,
+      "lng": 107.011409,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-harapanbaru-harapan-baru-3",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-bunga-bangsa",
+       "name": "Masjid Bunga Bangsa",
+       "km": 1.325
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-harapanbaru-harapan-baru-51c0f228",
+     "title": "Apartemen 1 kamar di Harapanbaru (Harapan Baru)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Bekasi",
+     "locationText": "Harapanbaru (Harapan Baru), Bekasi Utara, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 2500000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp 2,5 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-harapanbaru-harapan-baru",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 1,
+     "sizeM2": 22.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Harapanbaru (Harapan Baru)",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-harapanbaru-harapan-baru"
+      },
+      {
+       "quote": "Minimum sewa 1 bulan",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-harapanbaru-harapan-baru"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-harapanbaru-harapan-baru",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.220763,
+      "lng": 107.015065,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-harapanbaru-harapan-baru",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-bunga-bangsa",
+       "name": "Masjid Bunga Bangsa",
+       "km": 0.581
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-bekasijaya-bekasi-jaya-bc5cf9c7",
+     "title": "Rumah sewa 4 kamar di Bekasijaya (Bekasi Jaya)",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Bekasijaya (Bekasi Jaya), Bekasi Timur, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 60000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 60 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-agus-salim",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 4,
+     "sizeM2": 120.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Bekasijaya (Bekasi Jaya)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-agus-salim"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-agus-salim"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-agus-salim",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.226963,
+      "lng": 107.01136,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-agus-salim",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-bunga-bangsa",
+       "name": "Masjid Bunga Bangsa",
+       "km": 0.427
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-kaliabang-tengah-kali-abang-tengah-7c143168",
+     "title": "Rumah sewa 2 kamar di Kaliabang Tengah (Kali Abang Tengah)",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Kaliabang Tengah (Kali Abang Tengah), Bekasi Utara, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 20000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 20 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dan-rapi-di-kaliabang-tengah-kali-abang-tengah",
+      "pageDate": "2026-07-10"
+     },
+     "bedrooms": 2,
+     "sizeM2": 50.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kaliabang Tengah (Kali Abang Tengah)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dan-rapi-di-kaliabang-tengah-kali-abang-tengah"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dan-rapi-di-kaliabang-tengah-kali-abang-tengah"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2026-07-10. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dan-rapi-di-kaliabang-tengah-kali-abang-tengah",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-07-10",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.176348,
+      "lng": 107.00313,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dan-rapi-di-kaliabang-tengah-kali-abang-tengah",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-nurul-jannah-pup",
+       "name": "Masjid Nurul Jannah PUP",
+       "km": 0.522
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-harapanbaru-harapan-baru-0115991f",
+     "title": "Rumah sewa 2 kamar di Telaga Mas",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Harapanbaru (Harapan Baru), Bekasi Utara, Kota Bekasi",
+     "buildingOrCluster": "Telaga Mas",
+     "rent": {
+      "amount": 25000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 25 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bebas-banjir-di-telaga-mas-bekasi-utara-di-telaga-mas",
+      "pageDate": "2026-02-26"
+     },
+     "bedrooms": 2,
+     "sizeM2": 50.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Harapanbaru (Harapan Baru)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bebas-banjir-di-telaga-mas-bekasi-utara-di-telaga-mas"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bebas-banjir-di-telaga-mas-bekasi-utara-di-telaga-mas"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2026-02-26. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bebas-banjir-di-telaga-mas-bekasi-utara-di-telaga-mas",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-02-26",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.211026,
+      "lng": 107.022102,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bebas-banjir-di-telaga-mas-bekasi-utara-di-telaga-mas",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-miftahu-khairil-ummah",
+       "name": "Masjid Miftahu Khairil Ummah",
+       "km": 0.754
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-lambangsari-e7ac63dc",
+     "title": "Rumah sewa 4 kamar di Melati Residen",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Lambangsari, Tambun Selatan, Kab. Bekasi",
+     "buildingOrCluster": "Melati Residen",
+     "rent": {
+      "amount": 40000000,
+      "period": "yearly",
+      "minimumMonths": 24,
+      "quote": "Rp 40 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-melati-residen",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 4,
+     "sizeM2": 160.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Lambangsari",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-melati-residen"
+      },
+      {
+       "quote": "Minimum sewa 24 bulan (Rp 80 Juta)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-melati-residen"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif Rp 40 juta/tahun dengan minimum 24 bulan berarti total minimum Rp 80 juta, bukan kontrak satu tahun. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-melati-residen",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.274623,
+      "lng": 107.045858,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-melati-residen",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-ikhlas-dukuh-bima",
+       "name": "Masjid Al Ikhlas Dukuh Bima",
+       "km": 1.267
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-sumberjaya-sumber-jaya-46887328",
+     "title": "Rumah sewa 4 kamar di Sumberjaya (Sumber Jaya)",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Sumberjaya (Sumber Jaya), Tambun Selatan, Kab. Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 25000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 25 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-anggrek-ix-blok-b6-6-1",
+      "pageDate": "2026-01-14"
+     },
+     "bedrooms": 4,
+     "sizeM2": 120.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Sumberjaya (Sumber Jaya)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-anggrek-ix-blok-b6-6-1"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-anggrek-ix-blok-b6-6-1"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2026-01-14. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-anggrek-ix-blok-b6-6-1",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-01-14",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.232481,
+      "lng": 107.084408,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-anggrek-ix-blok-b6-6-1",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-nuur-alaa-nuur-masnan",
+       "name": "Masjid Nuur 'Alaa Nuur (MASNAN)",
+       "km": 1.358
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-sumberjaya-sumber-jaya-e3296657",
+     "title": "Rumah sewa 4 kamar di Sumberjaya (Sumber Jaya)",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Sumberjaya (Sumber Jaya), Tambun Selatan, Kab. Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 25000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 25 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-anggrek-ix-blok-b6-6-7-sumber-jaya",
+      "pageDate": "2026-02-28"
+     },
+     "bedrooms": 4,
+     "sizeM2": 100.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Sumberjaya (Sumber Jaya)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-anggrek-ix-blok-b6-6-7-sumber-jaya"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-anggrek-ix-blok-b6-6-7-sumber-jaya"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Portal dan deskripsi menyebut empat kamar serta bangunan 100 m². Penawaran berdekatan dengan URL lain tetap dicatat sebagai penawaran sumber, bukan bukti unit unik. Pembaruan sumber 2026-02-28. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-anggrek-ix-blok-b6-6-7-sumber-jaya",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-02-28",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.23214,
+      "lng": 107.084532,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-anggrek-ix-blok-b6-6-7-sumber-jaya",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-nuur-alaa-nuur-masnan",
+       "name": "Masjid Nuur 'Alaa Nuur (MASNAN)",
+       "km": 1.398
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-cibadak-a3a94753",
+     "title": "Apartemen di Bogor Icon",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Bogor",
+     "locationText": "Cibadak, Tanah Sareal (Tanah Sereal), Kota Bogor",
+     "buildingOrCluster": "Bogor Icon",
+     "rent": {
+      "amount": 4000000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp 4 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-bogor-icon-apartment-syariah",
+      "pageDate": "2026-09-22"
+     },
+     "bedrooms": null,
+     "sizeM2": 27.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Cibadak",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-bogor-icon-apartment-syariah"
+      },
+      {
+       "quote": "Minimum sewa 1 bulan",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-bogor-icon-apartment-syariah"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Studio; harga Rp 4 juta/bulan belum termasuk IPL, listrik dan air menurut deskripsi. Deposit Rp 1,5 juta disebut dapat dikembalikan dengan syarat kondisi inventaris. Pembaruan sumber 2026-09-22. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-bogor-icon-apartment-syariah",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-09-22",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.556136,
+      "lng": 106.782597,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-bogor-icon-apartment-syariah",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-istiqomah-taman-yasmin",
+       "name": "Masjid Al-Istiqomah Taman Yasmin",
+       "km": 1.087
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-citaringgul-0d5c60c1",
+     "title": "Rumah sewa 2 kamar di Citaringgul",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Citaringgul, Babakan Madang, Kab. Bogor",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 65000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 65 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-furnished-di-cluster-terdepan-sentul-city-di-citaringgul",
+      "pageDate": "2026-09-28"
+     },
+     "bedrooms": 2,
+     "sizeM2": 45.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Citaringgul",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-furnished-di-cluster-terdepan-sentul-city-di-citaringgul"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-furnished-di-cluster-terdepan-sentul-city-di-citaringgul"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Deskripsi menyebut furnished dan harga sudah termasuk IPL. Inventaris, fasilitas dan biaya tambahan perlu konfirmasi. Pembaruan sumber 2026-09-28. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-furnished-di-cluster-terdepan-sentul-city-di-citaringgul",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-09-28",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.572399,
+      "lng": 106.861313,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-furnished-di-cluster-terdepan-sentul-city-di-citaringgul",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-istiqomah-ikea-sentul-city",
+       "name": "Masjid Istiqomah IKEA Sentul City",
+       "km": 0.912
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-citaringgul-ac6a2dd2",
+     "title": "Rumah sewa di Citaringgul",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Citaringgul, Babakan Madang, Kab. Bogor",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 75000000,
+      "period": "yearly",
+      "minimumMonths": 24,
+      "quote": "Rp 75 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcasablanca-ix-no-27",
+      "pageDate": "2026-09-01"
+     },
+     "bedrooms": null,
+     "sizeM2": 180.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Citaringgul",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcasablanca-ix-no-27"
+      },
+      {
+       "quote": "Minimum sewa 24 bulan (Rp 150 Juta)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcasablanca-ix-no-27"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Jumlah kamar tidak dicantumkan: portal 4 mencakup kamar ART menurut rincian deskripsi. Tarif Rp 75 juta/tahun mensyaratkan minimum 24 bulan (Rp 150 juta). Pembaruan sumber 2026-09-01. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcasablanca-ix-no-27",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-09-01",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.577194,
+      "lng": 106.851315,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcasablanca-ix-no-27",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-istiqomah-ikea-sentul-city",
+       "name": "Masjid Istiqomah IKEA Sentul City",
+       "km": 1.238
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-citaringgul-4023e3f1",
+     "title": "Rumah sewa 4 kamar di Citaringgul",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Citaringgul, Babakan Madang, Kab. Bogor",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 85000000,
+      "period": "yearly",
+      "minimumMonths": 24,
+      "quote": "Rp 85 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-casablanca",
+      "pageDate": "2026-08-28"
+     },
+     "bedrooms": 4,
+     "sizeM2": 250.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Citaringgul",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-casablanca"
+      },
+      {
+       "quote": "Minimum sewa 24 bulan (Rp 170 Juta)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-casablanca"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif Rp 85 juta/tahun mensyaratkan minimum 24 bulan (Rp 170 juta). Pembaruan sumber 2026-08-28. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-casablanca",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-08-28",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.570609,
+      "lng": 106.84985,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-casablanca",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-istiqomah-ikea-sentul-city",
+       "name": "Masjid Istiqomah IKEA Sentul City",
+       "km": 0.736
+      }
+     ]
     }
    ],
-   "locationsCheckedAt": "2026-11-05"
+   "locationsCheckedAt": "2026-11-07"
   },
   "saleAds": {
    "checkedAt": "2026-10-31",
