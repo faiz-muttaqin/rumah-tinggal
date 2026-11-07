@@ -72,6 +72,24 @@ def mami_page(data):
     return '<script>var detail = ' + json.dumps(data) + '; window.otherCode = "PRIVATE";</script>'
 
 
+def rukita_page(cards=None, **changes):
+    business = {"@type": "LodgingBusiness", "name": "Kos Uji Ciputat",
+                "url": "https://www.rukita.co/place/kos-uji-ciputat",
+                "geo": {"latitude": -6.29, "longitude": 106.79},
+                "address": {"addressLocality": "Ciputat", "addressRegion": "Tangerang Selatan", "streetAddress": "PRIVATE"},
+                "priceRange": "Harga mulai Rp 100.000 per bulan", "contactPoint": "PRIVATE"}
+    business.update(changes)
+    faq = {"@type": "FAQPage", "mainEntity": [{"name": "Apakah diperbolehkan membawa anak?",
+            "acceptedAnswer": {"text": "Tidak, anak-anak tidak diperbolehkan tinggal di Kos Uji Ciputat."}}]}
+    cards = cards if cards is not None else (
+        '<article><p>Sedang penuh</p><h3>Small</h3><p>Harga untuk 1 orang</p><p>Rp800.000 /bulan</p></article>'
+        '<article><p>Tersedia</p><h3>Queen</h3><p>Harga untuk 1 orang</p><p>12 m²</p>'
+        '<p>Bisa dihuni maks. 2 orang dgn tambahan biaya</p><s>Rp1.500.000 /bulan</s><p>Rp1.200.000 /bulan</p></article>')
+    return ('<script type="application/ld+json">' + json.dumps(business) + '</script>'
+            '<script type="application/ld+json">' + json.dumps(faq) + '</script>'
+            '<p>Pasutri Diperbolehkan</p><p>PRIVATE advertiser 081234567891</p>' + cards)
+
+
 class ProviderTest(unittest.TestCase):
     def adapter(self, name):
         return m.adapters.Adapter(name, c)
@@ -194,7 +212,7 @@ class ProviderTest(unittest.TestCase):
         self.assertNotIn("PRIVATE", json.dumps(row))
 
     def test_all_adapter_allowlists_reject_accounts_other_sites_and_sale_routes(self):
-        for name in ["realoka", "brighton", "jendela360", "jakartaprime", "mamikos"]:
+        for name in ["realoka", "brighton", "jendela360", "jakartaprime", "mamikos", "rukita"]:
             a = self.adapter(name)
             for suffix in ["/api/items", "/login", "/account", "/disewa/rumah/test?token=secret"]:
                 with self.assertRaises(ValueError):
@@ -203,6 +221,80 @@ class ProviderTest(unittest.TestCase):
                 a.canonical("https://evil.example.invalid/robots.txt")
             with self.assertRaises(ValueError):
                 a.parse_search("<html><h1>Changed layout</h1></html>", a.origin+"/robots.txt")
+
+    def test_rukita_uses_available_room_not_cheaper_full_room_or_marketing_price(self):
+        a = self.adapter("rukita")
+        row = a.parse_detail(rukita_page(), a.origin + "/place/kos-uji-ciputat")
+        self.assertEqual((row["amount"], row["period"], row["selectedRoomType"]), (1_200_000, "monthly", "Queen"))
+        self.assertEqual(row["buildingAreaM2"], 12)
+        self.assertEqual(row["priceForResidents"], 1)
+        self.assertEqual(row["maxResidents"], 2)
+        self.assertEqual(row["residentPolicy"], {"marriedCouplesAllowed": True, "childrenAllowed": False})
+        self.assertEqual(row["location"], {"lat": -6.29, "lng": 106.79, "precision": "building"})
+        self.assertIsNone(row["sourceUpdatedAt"])
+        self.assertNotIn("minimumRentMonths", row)
+        for private in ["PRIVATE", "081234567891", "streetAddress", "contactPoint", "100000", "800000"]:
+            self.assertNotIn(private, json.dumps(row))
+
+    def test_rukita_full_ambiguous_or_long_term_rooms_cannot_become_candidates(self):
+        a = self.adapter("rukita")
+        for status, prices, terms, issue in [
+                ("Sedang penuh", "Rp800.000 /bulan", "", "inactive-or-rented"),
+                ("Tersedia", "Rp1.200.000 /bulan Rp1.300.000 /bulan", "", "payment-options-needs-review"),
+                ("Tersedia", "Rp1.200.000 /bulan", "Minimum sewa 3 bulan", "payment-options-needs-review")]:
+            cards = f'<article><p>{status}</p><h3>Queen</h3><p>Harga untuk 1 orang</p><p>{prices}</p><p>{terms}</p></article>'
+            row = a.parse_detail(rukita_page(cards), a.origin + "/place/kos-uji-ciputat")
+            self.assertIsNone(row["amount"])
+            self.assertIn(issue, row["issues"])
+
+    def test_rukita_geo_must_belong_to_the_same_property_and_be_finite(self):
+        a = self.adapter("rukita")
+        url = a.origin + "/place/kos-uji-ciputat"
+        with self.assertRaises(ValueError):
+            a.parse_detail(rukita_page(url=a.origin + "/place/other"), url)
+        for geo in [{}, {"latitude": "nan", "longitude": 106.79}, {"latitude": -6.29, "longitude": 0}]:
+            row = a.parse_detail(rukita_page(geo=geo), url)
+            self.assertIsNone(row["location"])
+            self.assertIn("no-proven-location", row["issues"])
+        with self.assertRaises(ValueError):
+            a.parse_detail(rukita_page(), a.origin + "/place/apartemen-uji")
+        for changes in [{"geo": [1]}, {"address": [1]}, {"address": {"addressLocality": {"contact": "PRIVATE"}}}, {"name": None}]:
+            with self.assertRaises(ValueError):
+                a.parse_detail(rukita_page(**changes), url)
+
+    def test_rukita_sitemap_excludes_english_apartment_image_foreign_and_account_urls(self):
+        a = self.adapter("rukita")
+        urls = [a.origin + p for p in ["/place/kos-uji-ciputat", "/en/place/kos-uji-ciputat", "/place/apartemen-uji", "/login", "/place/sitemap.xml"]]
+        urls.append("https://foreign.example.invalid/place/kos-uji-ciputat")
+        xml = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'
+        xml += ''.join(f'<url><loc>{u}</loc></url>' for u in urls)
+        xml += '<url><loc>https://foreign.example.invalid/photo</loc><image:image><image:loc>' + a.origin + '/place/fake-ciputat</image:loc></image:image></url></urlset>'
+        result = a.parse_search(xml, a.origin + "/place/sitemap.xml")
+        self.assertEqual(result["cards"], [{"url": a.origin + "/place/kos-uji-ciputat"}])
+        self.assertEqual(a.sources(["/jakarta-selatan/cilandak"], {}), [a.origin + "/place/sitemap.xml"])
+
+    def test_rukita_detail_queue_is_filtered_by_mosque_before_http(self):
+        a = self.adapter("rukita")
+        source = a.origin + "/place/sitemap.xml"
+        near, distant = a.origin + "/place/kos-ciputat", a.origin + "/place/kos-semarang"
+        state = {"details": {}, "pages": {source: {"retrievedAtUTC": c.now(), "cards": [{"url": near}, {"url": distant}]}}}
+        mosque = {"id": "m", "name": "M", "lat": -6.29, "lng": 106.79, "sources": [source], "focusTerms": ["ciputat"]}
+        queues, _ = c.focused_queues(state, [mosque], {"searchCacheHours": 4, "detailCacheHours": 72, "radiusKm": 1.5})
+        self.assertEqual(queues, [[near]])
+
+    def test_rukita_gender_is_property_header_only_and_unknown_is_not_family_permission(self):
+        a = self.adapter("rukita")
+        page = rukita_page().replace('<p>Pasutri Diperbolehkan</p>', '<div><h1>Kos Uji Ciputat</h1><p>Coliving • Putri</p></div>')
+        page += '<aside>Coliving • Putra Recommended elsewhere</aside>'
+        row = a.parse_detail(page, a.origin + "/place/kos-uji-ciputat")
+        self.assertEqual(row["residentGender"], "putri")
+        self.assertIsNone(row["residentPolicy"]["marriedCouplesAllowed"])
+
+    def test_rukita_missing_room_price_never_falls_back_to_visible_page_marketing_price(self):
+        a = self.adapter("rukita")
+        cards = '<h1>Kos Uji Ciputat</h1><p>Rp100.000 /bulan</p><article><p>Tersedia</p><h3>Queen</h3><p>Harga untuk 1 orang</p></article>'
+        with self.assertRaises(ValueError):
+            a.parse_detail(rukita_page(cards), a.origin + "/place/kos-uji-ciputat")
 
     def test_prime_keeps_real_monthly_price_and_never_uses_office_geo_or_private_fields(self):
         a = self.adapter("jakartaprime")

@@ -32,12 +32,55 @@ class Links(HTMLParser):
             self.links.append(attrs["href"])
 
 
+class RoomNode:
+    """Transient visible DOM; no page text or advertiser details are persisted."""
+    def __init__(self, tag="", attrs=(), parent=None):
+        self.tag, self.attrs, self.parent = tag, dict(attrs), parent
+        self.children = []
+
+    def text(self):
+        if self.tag in ("script", "style", "del", "s", "strike") or "line-through" in self.attrs.get("class", "").split():
+            return ""
+        return " ".join(child.text() if isinstance(child, RoomNode) else child for child in self.children)
+
+    def headings(self):
+        return int(self.tag == "h3") + sum(child.headings() for child in self.children if isinstance(child, RoomNode))
+
+    def section_heading(self):
+        return self.tag in ("h1", "h2") or any(child.section_heading() for child in self.children if isinstance(child, RoomNode))
+
+
+class RoomTree(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.root = self.current = RoomNode()
+        self.nodes = []
+
+    def handle_starttag(self, tag, attrs):
+        node = RoomNode(tag, attrs, self.current)
+        self.current.children.append(node)
+        self.nodes.append(node)
+        if tag not in ("img", "br", "hr", "input", "meta", "link", "source", "wbr", "area", "base", "embed", "param", "track"):
+            self.current = node
+
+    def handle_endtag(self, tag):
+        node = self.current
+        while node.parent and node.tag != tag:
+            node = node.parent
+        if node.parent:
+            self.current = node.parent
+
+    def handle_data(self, data):
+        if self.current.tag not in ("script", "style"):
+            self.current.children.append(data)
+
+
 class Adapter:
     def __init__(self, name, core, cancel=None):
         self.name, self.core, self.cancel = name, core, cancel
         self.origin = {"jendela360": "https://jendela360.com", "realoka": "https://www.realoka.com",
                        "brighton": "https://www.brighton.co.id", "jakartaprime": "https://jakartaprime.com",
-                       "mamikos": "https://mamikos.com"}[name]
+                       "mamikos": "https://mamikos.com", "rukita": "https://www.rukita.co"}[name]
 
     def canonical(self, value):
         u = urllib.parse.urlsplit(urllib.parse.urljoin(self.origin + "/", value))
@@ -51,6 +94,7 @@ class Adapter:
             "jendela360": r"/(?:robots\.txt|apartemen/[a-z0-9-]+|apartemen-[a-z0-9-]+|sewa-apartemen-[a-z0-9-]+(?:/[A-Z][A-Z0-9]{3,11})?)",
             "jakartaprime": r"/(?:robots\.txt|sewa-rumah|sewa-apartemen/(?:jakarta-selatan|jakarta-pusat)|listing/disewakan-[a-z0-9-]+)",
             "mamikos": r"/(?:robots\.txt|room/kost-[a-z0-9-]+|sitemaps/sitemap/sitemap-room-kost-(?:jakarta|bekasi|bogor|depok|tangerang)-[1-9][0-9]?\.xml)",
+            "rukita": r"/(?:robots\.txt|place/sitemap\.xml|place/[a-z0-9]+(?:-[a-z0-9]+)*)",
         }
         if not re.fullmatch(patterns[self.name], p):
             raise ValueError("URL outside public rental routes")
@@ -70,9 +114,15 @@ class Adapter:
             return path.startswith("/listing/disewakan-")
         if self.name == "mamikos":
             return path.startswith("/room/kost-")
+        if self.name == "rukita":
+            return bool(re.fullmatch(r"/place/[a-z0-9]+(?:-[a-z0-9]+)*", path))
         return bool(re.fullmatch(r"/sewa-apartemen-[a-z0-9-]+/[A-Z][A-Z0-9]{3,11}", path))
 
     def sources(self, paths, config):
+        if self.name == "rukita":
+            # This index discovers URLs only. The core's per-mosque locality
+            # filter runs before any property fetch; no city-wide detail crawl.
+            return [self.origin + "/place/sitemap.xml"] if paths else []
         urls = []
         for path in paths:
             parts = path.split("/")
@@ -96,14 +146,14 @@ class Adapter:
         return list(dict.fromkeys(self.canonical(url) for url in urls))
 
     def parse_search(self, text, url):
-        if self.name == "mamikos":
+        if self.name in ("mamikos", "rukita"):
             try:
                 root = ET.fromstring(text)
             except ET.ParseError as exc:
-                raise ValueError("Source structure changed Mamikos sitemap") from exc
+                raise ValueError("Source structure changed provider sitemap") from exc
             ns = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
             if root.tag != ns + "urlset":
-                raise ValueError("Source structure changed Mamikos sitemap")
+                raise ValueError("Source structure changed provider sitemap")
             cards = {}
             # Only top-level property locations. Image locations are not listings.
             for node in root.findall(ns + "url"):
@@ -112,12 +162,12 @@ class Adapter:
                     continue
                 try:
                     link = self.canonical(loc.text.strip())
-                    if self.is_detail(link):
+                    if self.is_detail(link) and not (self.name == "rukita" and "/place/apartemen-" in link):
                         cards[link] = {"url": link}
                 except ValueError:
                     continue
             if not cards:
-                raise ValueError("Source structure changed Mamikos room links")
+                raise ValueError("Source structure changed provider room links")
             return {"cards": list(cards.values()), "total": len(cards), "page": 1, "pages": 1,
                     "locationLabel": urllib.parse.urlsplit(url).path.rsplit("/", 1)[-1]}
         parser = Links()
@@ -184,6 +234,110 @@ class Adapter:
             row["issues"].append("no-proven-location")
         row["imageHashes"] = sorted(set(row["imageHashes"]))
         return row
+
+    def parse_rukita(self, text, url):
+        if "/place/apartemen-" in url:
+            raise ValueError("Rukita apartment page is outside the boarding-room adapter")
+        blocks = []
+        for raw in re.findall(r'<script\b[^>]*type=[\'"]application/ld\+json[\'"][^>]*>(.*?)</script>', text, re.S | re.I):
+            value = json.loads(raw)
+            blocks.extend(value if isinstance(value, list) else [value])
+        matches = [d for d in blocks if isinstance(d, dict) and d.get("@type") == "LodgingBusiness" and d.get("url") == url]
+        if len(matches) != 1:
+            raise ValueError("Rukita property identity or schema changed")
+        business = matches[0]
+        if not isinstance(business.get("name"), str) or not business["name"].strip():
+            raise ValueError("Rukita property name changed")
+        tree = RoomTree()
+        tree.feed(text)
+        rooms = []
+        for heading in (n for n in tree.nodes if n.tag == "h3"):
+            parent = heading.parent
+            for _ in range(10):
+                if parent is None or parent.tag in ("", "html", "body", "main") or parent.headings() != 1 or parent.section_heading():
+                    break
+                visible = re.sub(r"\s+", " ", parent.text()).strip()
+                if len(visible) > 2500:
+                    break
+                prices = re.findall(r"Rp\s*([0-9]+(?:\.[0-9]{3})+)\s*/\s*bulan\b", visible, re.I)
+                full = "Sedang penuh" in visible
+                available = bool(re.search(r"\bTersedia\b", visible)) and not full
+                if "Harga untuk 1 orang" in visible and (available or full) and prices:
+                    amounts = set(int(p.replace(".", "")) for p in prices)
+                    size = re.search(r"([0-9]+(?:[.,][0-9]+)?)\s*m²", visible)
+                    capacity = re.search(r"maks\.\s*([1-9])\s*orang", visible)
+                    rooms.append({"name": self.core.public_text(heading.text(), 80), "available": available,
+                                  "amount": next(iter(amounts)) if len(amounts) == 1 else None,
+                                  "sizeM2": float(size[1].replace(",", ".")) if size else None,
+                                  "maxResidents": int(capacity[1]) if capacity else 1 if "Tambahan penghuni tidak diperbolehkan" in visible else None,
+                                  "ambiguousTerms": bool(re.search(r"(?:minimum|minimal|min\.)\s*(?:sewa\s*)?[2-9]\s*bulan", visible, re.I))})
+                    break
+                parent = parent.parent
+        if not rooms:
+            raise ValueError("Source structure changed Rukita room cards")
+        row = self.base(url, "Kos")
+        geo, address = business.get("geo") or {}, business.get("address") or {}
+        if not isinstance(geo, dict) or not isinstance(address, dict):
+            raise ValueError("Rukita property location schema changed")
+        if any(address.get(k) is not None and not isinstance(address[k], str) for k in ("addressLocality", "addressRegion")):
+            raise ValueError("Rukita property locality changed")
+        try:
+            lat, lng = float(geo["latitude"]), float(geo["longitude"])
+        except (KeyError, TypeError, ValueError):
+            lat, lng = math.nan, math.nan
+        if math.isfinite(lat) and math.isfinite(lng) and -11.5 <= lat <= 6.5 and 95 <= lng <= 141:
+            row["location"] = {"lat": round(lat, 6), "lng": round(lng, 6), "precision": "building"}
+        row["locality"] = self.core.public_text(", ".join(str(address[k]) for k in ("addressLocality", "addressRegion") if address.get(k)), 150)
+        row["propertyName"] = self.core.public_text(business.get("name"), 110)
+        row["sourceDateKind"] = "not-published"
+        genders = set()
+        for heading in (n for n in tree.nodes if n.tag == "h1" and plain(n.text()) == plain(business.get("name"))):
+            parent = heading.parent
+            for _ in range(5):
+                if parent is None:
+                    break
+                header = re.sub(r"\s+", " ", parent.text()).strip()
+                if len(header) > 700 or parent.headings():
+                    break
+                found = re.findall(r"Coliving\s*[•·]?\s*(Campur|Putra|Putri)\b", header, re.I)
+                if found:
+                    genders.update(found)
+                    break
+                parent = parent.parent
+        row["residentGender"] = next(iter(genders)).lower() if len(genders) == 1 else None
+        row["residentPolicy"] = {"marriedCouplesAllowed": None, "childrenAllowed": None}
+        for node in tree.nodes:
+            if node.tag in ("span", "p", "li", "div"):
+                value = re.sub(r"\s+", " ", node.text()).strip()
+                if re.fullmatch(r"Pasutri (?:Tidak )?Diperbolehkan", value, re.I):
+                    row["residentPolicy"]["marriedCouplesAllowed"] = "tidak" not in value.lower()
+                found = re.fullmatch(r"(?:Gedung )?Pasutri Diperbolehkan\s*:\s*(Ya|Tidak)", value, re.I)
+                if found:
+                    row["residentPolicy"]["marriedCouplesAllowed"] = found[1].lower() == "ya"
+        for block in blocks:
+            if not isinstance(block, dict) or block.get("@type") != "FAQPage":
+                continue
+            for question in block.get("mainEntity", []):
+                if not isinstance(question, dict) or not isinstance(question.get("acceptedAnswer", {}), dict):
+                    continue
+                if plain(question.get("name", "")).lower() == "apakah diperbolehkan membawa anak?":
+                    answer = plain((question.get("acceptedAnswer") or {}).get("text", ""))
+                    if business.get("name") and business["name"].casefold() in answer.casefold():
+                        if re.match(r"^Ya\b", answer, re.I):
+                            row["residentPolicy"]["childrenAllowed"] = True
+                        elif re.match(r"^Tidak\b", answer, re.I):
+                            row["residentPolicy"]["childrenAllowed"] = False
+        choices = [r for r in rooms if r["available"] and r["amount"] and not r["ambiguousTerms"]]
+        row["availableRoomTypes"] = sum(r["available"] for r in rooms)
+        if choices:
+            chosen = min(choices, key=lambda r: (r["amount"], r["name"]))
+            row.update(amount=chosen["amount"], period="monthly", bedrooms=1, buildingAreaM2=chosen["sizeM2"],
+                       selectedRoomType=chosen["name"], priceForResidents=1, maxResidents=chosen["maxResidents"])
+        else:
+            row["issues"].append("payment-options-needs-review" if row["availableRoomTypes"] else "inactive-or-rented")
+        if not row["locality"]:
+            row["issues"].append("locality-needs-review")
+        return self.finish(row)
 
     def parse_mamikos(self, text, url):
         match = re.search(r"\bvar\s+detail\s*=\s*(?=\{)", text)
@@ -265,6 +419,8 @@ class Adapter:
         return self.core.digest(path)
 
     def parse_detail(self, text, url):
+        if self.name == "rukita":
+            return self.parse_rukita(text, url)
         if self.name == "mamikos":
             return self.parse_mamikos(text, url)
         if self.name == "jakartaprime":

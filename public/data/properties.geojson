@@ -36288,6 +36288,898 @@
        "km": 0.912
       }
      ]
+    },
+    {
+     "id": "sewa-kos-0de74d3a83ce",
+     "title": "Kost Adelia Grogol Petamburan (pasutri dan anak)",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Grogol petamburan, Jakarta Barat",
+     "buildingOrCluster": "Kost Adelia",
+     "rent": {
+      "amount": 2500000,
+      "period": "monthly",
+      "quote": "Rp2.500.000/bulan",
+      "url": "https://mamikos.com/room/kost-jakarta-barat-kost-campur-eksklusif-kost-adelia-grogol-petamburan-jakarta-barat",
+      "pageDate": "2026-11-04"
+     },
+     "bedrooms": 1,
+     "sizeM2": 16.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kost Adelia Grogol Petamburan",
+       "url": "https://mamikos.com/room/kost-jakarta-barat-kost-campur-eksklusif-kost-adelia-grogol-petamburan-jakarta-barat"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Campur; portal mengizinkan pasutri dan anak. Kapasitas 2 dewasa + 1 anak serta biaya penghuni tambahan perlu konfirmasi. Indikator 2 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-11-04. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-jakarta-barat-kost-campur-eksklusif-kost-adelia-grogol-petamburan-jakarta-barat",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-11-04",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.17645,
+      "lng": 106.796525,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://mamikos.com/room/kost-jakarta-barat-kost-campur-eksklusif-kost-adelia-grogol-petamburan-jakarta-barat",
+      "method": "Latitude/longitude publik pada detail Mamikos",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hidayah-tomang",
+       "name": "Masjid Al Hidayah Tomang",
+       "km": 0.889
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-sawah-baru-e07291b0",
+     "title": "Rumah sewa 3 kamar di Sawah Baru",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Sawah Baru, Ciputat, Kota Tangerang Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 55000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 55 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-sukabakti-merpati",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 3,
+     "sizeM2": 125.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Sawah Baru",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-sukabakti-merpati"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-sukabakti-merpati"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-sukabakti-merpati",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.304334,
+      "lng": 106.722779,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-sukabakti-merpati",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-barkah-ciputat",
+       "name": "Masjid Al Barkah Sawah Baru",
+       "km": 0.055
+      },
+      {
+       "id": "masjid-al-amanah",
+       "name": "Masjid Al Amanah",
+       "km": 0.959
+      },
+      {
+       "id": "masjid-al-muhajirin-villa-gunung-lestari",
+       "name": "Masjid Al-Muhajirin Villa Gunung Lestari",
+       "km": 1.281
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-jombang-95690311",
+     "title": "Rumah sewa 2 kamar di Jombang",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Jombang, Ciputat, Kota Tangerang Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 55000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 55 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-minimalis-5-menit-ke-stasiun-sudimara-di-sudimara-jombang",
+      "pageDate": "2026-09-05"
+     },
+     "bedrooms": 2,
+     "sizeM2": 58.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Jombang",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-minimalis-5-menit-ke-stasiun-sudimara-di-sudimara-jombang"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-minimalis-5-menit-ke-stasiun-sudimara-di-sudimara-jombang"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Deskripsi menyebut IPL sekitar Rp 300 ribuan/bulan. Klaim bebas banjir dan waktu ke stasiun pada iklan belum diverifikasi. Pembaruan sumber 2026-09-05. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-minimalis-5-menit-ke-stasiun-sudimara-di-sudimara-jombang",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-09-05",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.296977,
+      "lng": 106.71277,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-minimalis-5-menit-ke-stasiun-sudimara-di-sudimara-jombang",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-muhajirin-villa-gunung-lestari",
+       "name": "Masjid Al-Muhajirin Villa Gunung Lestari",
+       "km": 0.764
+      },
+      {
+       "id": "masjid-al-amanah",
+       "name": "Masjid Al Amanah",
+       "km": 1.158
+      },
+      {
+       "id": "masjid-al-barkah-ciputat",
+       "name": "Masjid Al Barkah Sawah Baru",
+       "km": 1.341
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-pondok-labu-5cb712ea",
+     "title": "Apartemen di Aspen Residence",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Pondok Labu, Cilandak, Kota Jakarta Selatan",
+     "buildingOrCluster": "Aspen Residence",
+     "rent": {
+      "amount": 96000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 96 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-aspen-residence-jakarta-selatan",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": null,
+     "sizeM2": 43.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Pondok Labu",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-aspen-residence-jakarta-selatan"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-aspen-residence-jakarta-selatan"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Jumlah kamar tidak dicantumkan: portal 2, deskripsi 3 KT ditambah kamar pembantu. Harga mengikuti label Rp 96 juta/tahun; inventaris furnished perlu konfirmasi. Pembaruan sumber 2025-06-11. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-aspen-residence-jakarta-selatan",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.303393,
+      "lng": 106.79602,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-aspen-residence-jakarta-selatan",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hikmah-ddn-2",
+       "name": "Masjid Al Hikmah DDN 2",
+       "km": 1.113
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-pisangan-ebde2d0c",
+     "title": "Rumah sewa 3 kamar di Pisangan",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Pisangan, Ciputat Timur, Kota Tangerang Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 66000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 66 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-blok-k-12",
+      "pageDate": "2026-03-24"
+     },
+     "bedrooms": 3,
+     "sizeM2": 73.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Pisangan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-blok-k-12"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-blok-k-12"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Deskripsi menyebut tiga kamar tidur, bangunan 73 m² dan hanya sewa tahunan. Inventaris semi furnished perlu konfirmasi. Pembaruan sumber 2026-03-24. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-blok-k-12",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-03-24",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.320273,
+      "lng": 106.763894,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-blok-k-12",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-as-sunnah-vcm",
+       "name": "Masjid As Sunnah VCM",
+       "km": 1.039
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-parigi-perigi-lama-a09fe631",
+     "title": "Apartemen 2 kamar di Emerald Bintaro",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Tangerang",
+     "locationText": "Parigi (Perigi Lama), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": "Emerald Bintaro",
+     "rent": {
+      "amount": 4000000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp 4 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-bintaro-4",
+      "pageDate": "2026-11-07"
+     },
+     "bedrooms": 2,
+     "sizeM2": 29.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Parigi (Perigi Lama)",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-bintaro-4"
+      },
+      {
+       "quote": "Minimum sewa 1 bulan",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-bintaro-4"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif Rp 4 juta/bulan. Paket 6 bulan Rp 23 juta dan 12 bulan Rp 44 juta terpisah; IPL, air dan listrik ditanggung penyewa menurut deskripsi. Pembaruan sumber 2026-11-07. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-bintaro-4",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-11-07",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.269856,
+      "lng": 106.706431,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-bintaro-4",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-ar-rahman-discovery-lumina",
+       "name": "Masjid Ar Rahman Discovery Lumina",
+       "km": 1.058
+      },
+      {
+       "id": "masjid-ash-shaff",
+       "name": "Masjid Ash Shaff",
+       "km": 1.095
+      },
+      {
+       "id": "masjid-al-hijrah-discovery-flamine",
+       "name": "Masjid Al Hijrah Discovery Flamine",
+       "km": 1.431
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-harapanbaru-harapan-baru-cbada9d2",
+     "title": "Rumah sewa 2 kamar di Prima Harapan Regency",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Harapanbaru (Harapan Baru), Bekasi Utara, Kota Bekasi",
+     "buildingOrCluster": "Prima Harapan Regency",
+     "rent": {
+      "amount": 23000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 23 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-renovasi-di-prima-harapan-regensi-di-harapan-baru",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 2,
+     "sizeM2": 72.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Harapanbaru (Harapan Baru)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-renovasi-di-prima-harapan-regensi-di-harapan-baru"
+      },
+      {
+       "quote": "Minimum sewa 12 bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-renovasi-di-prima-harapan-regensi-di-harapan-baru"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pembaruan sumber 2025-06-11. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-renovasi-di-prima-harapan-regensi-di-harapan-baru",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.216483,
+      "lng": 107.012037,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-renovasi-di-prima-harapan-regensi-di-harapan-baru",
+      "method": "Pin publik pada halaman iklan Pinhome",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-bunga-bangsa",
+       "name": "Masjid Bunga Bangsa",
+       "km": 1.11
+      }
+     ]
+    },
+    {
+     "id": "sewa-rukita-a8854b6ad95a",
+     "title": "Kos Cat Lovers Home Pulo Blok M — Superior Single A",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Jakarta Selatan, Jakarta",
+     "buildingOrCluster": "Cat Lovers Home Pulo Blok M",
+     "rent": {
+      "amount": 2400000,
+      "period": "monthly",
+      "quote": "Rp2.400.000/bulan",
+      "url": "https://www.rukita.co/place/cat-lovers-home-pulo-blok-m",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 13.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Cat Lovers Home Pulo Blok M",
+       "url": "https://www.rukita.co/place/cat-lovers-home-pulo-blok-m"
+      },
+      {
+       "quote": "Superior Single A",
+       "url": "https://www.rukita.co/place/cat-lovers-home-pulo-blok-m"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Superior Single A; tarif untuk 1 orang, maks. 1 orang pada tipe ini. Jenis penghuni perlu konfirmasi. Aturan properti: pasutri boleh. Aturan properti: anak tidak boleh. Aturan properti tidak mengubah kapasitas tipe. Bukan bukti izin 2 dewasa + 1 anak; biaya penghuni tambahan dan minimum kontrak perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.rukita.co/place/cat-lovers-home-pulo-blok-m",
+     "sourcePortal": "rukita",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.246196,
+      "lng": 106.809304,
+      "precision": "building",
+      "label": "Titik gedung Rukita",
+      "url": "https://www.rukita.co/place/cat-lovers-home-pulo-blok-m",
+      "method": "GeoCoordinates pada LodgingBusiness halaman properti Rukita yang sama",
+      "note": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-nurul-iman-blok-m",
+       "name": "Masjid Nurul Iman Blok M",
+       "km": 0.977
+      }
+     ]
+    },
+    {
+     "id": "sewa-rukita-57c76e0ee594",
+     "title": "Kos Rukita KLS Pasar Minggu — Superior Queen A",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Jakarta Selatan, Jakarta",
+     "buildingOrCluster": "Rukita KLS Pasar Minggu",
+     "rent": {
+      "amount": 3468000,
+      "period": "monthly",
+      "quote": "Rp3.468.000/bulan",
+      "url": "https://www.rukita.co/place/kls-pasar-minggu",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 15.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rukita KLS Pasar Minggu",
+       "url": "https://www.rukita.co/place/kls-pasar-minggu"
+      },
+      {
+       "quote": "Superior Queen A",
+       "url": "https://www.rukita.co/place/kls-pasar-minggu"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Superior Queen A; tarif untuk 1 orang, maks. 2 orang pada tipe ini. Jenis penghuni perlu konfirmasi. Aturan properti: pasutri boleh. Aturan properti: anak boleh. Aturan properti tidak mengubah kapasitas tipe. Bukan bukti izin 2 dewasa + 1 anak; biaya penghuni tambahan dan minimum kontrak perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.rukita.co/place/kls-pasar-minggu",
+     "sourcePortal": "rukita",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.300132,
+      "lng": 106.839806,
+      "precision": "building",
+      "label": "Titik gedung Rukita",
+      "url": "https://www.rukita.co/place/kls-pasar-minggu",
+      "method": "GeoCoordinates pada LodgingBusiness halaman properti Rukita yang sama",
+      "note": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-nurul-amal",
+       "name": "Masjid Nurul Amal",
+       "km": 0.99
+      }
+     ]
+    },
+    {
+     "id": "sewa-rukita-4fcee97e42a5",
+     "title": "Kos Rukita Arroza Mangga Besar — Compact Full A",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Jakarta Pusat, Jakarta",
+     "buildingOrCluster": "Rukita Arroza Mangga Besar",
+     "rent": {
+      "amount": 2518000,
+      "period": "monthly",
+      "quote": "Rp2.518.000/bulan",
+      "url": "https://www.rukita.co/place/arroza-mangga-besar",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 9.82,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rukita Arroza Mangga Besar",
+       "url": "https://www.rukita.co/place/arroza-mangga-besar"
+      },
+      {
+       "quote": "Compact Full A",
+       "url": "https://www.rukita.co/place/arroza-mangga-besar"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Compact Full A; tarif untuk 1 orang, maks. 1 orang pada tipe ini. Jenis penghuni perlu konfirmasi. Aturan properti: pasutri tidak boleh. Aturan properti: anak tidak boleh. Aturan properti tidak mengubah kapasitas tipe. Bukan bukti izin 2 dewasa + 1 anak; biaya penghuni tambahan dan minimum kontrak perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.rukita.co/place/arroza-mangga-besar",
+     "sourcePortal": "rukita",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.149945,
+      "lng": 106.829703,
+      "precision": "building",
+      "label": "Titik gedung Rukita",
+      "url": "https://www.rukita.co/place/arroza-mangga-besar",
+      "method": "GeoCoordinates pada LodgingBusiness halaman properti Rukita yang sama",
+      "note": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-mubarak",
+       "name": "Masjid Al Mubarak",
+       "km": 1.459
+      }
+     ]
+    },
+    {
+     "id": "sewa-rukita-51869f50e40a",
+     "title": "Kos A House for Living Pemuda Velodrome Rawamangun — Regular Single A (putri)",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Jakarta Timur, Jakarta",
+     "buildingOrCluster": "A House for Living Pemuda Velodrome Rawamangun",
+     "rent": {
+      "amount": 2200000,
+      "period": "monthly",
+      "quote": "Rp2.200.000/bulan",
+      "url": "https://www.rukita.co/place/a-house-for-living-pemuda-velodrome-rawamangun",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 10.34,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "A House for Living Pemuda Velodrome Rawamangun",
+       "url": "https://www.rukita.co/place/a-house-for-living-pemuda-velodrome-rawamangun"
+      },
+      {
+       "quote": "Regular Single A",
+       "url": "https://www.rukita.co/place/a-house-for-living-pemuda-velodrome-rawamangun"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Regular Single A; tarif untuk 1 orang, maks. 1 orang pada tipe ini. Putri. Aturan properti: pasutri tidak boleh. Aturan properti: anak tidak boleh. Aturan properti tidak mengubah kapasitas tipe. Bukan bukti izin 2 dewasa + 1 anak; biaya penghuni tambahan dan minimum kontrak perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.rukita.co/place/a-house-for-living-pemuda-velodrome-rawamangun",
+     "sourcePortal": "rukita",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.192919,
+      "lng": 106.892719,
+      "precision": "building",
+      "label": "Titik gedung Rukita",
+      "url": "https://www.rukita.co/place/a-house-for-living-pemuda-velodrome-rawamangun",
+      "method": "GeoCoordinates pada LodgingBusiness halaman properti Rukita yang sama",
+      "note": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-mizan",
+       "name": "Masjid Al Mizan",
+       "km": 0.877
+      }
+     ]
+    },
+    {
+     "id": "sewa-rukita-f6bd9e6c5556",
+     "title": "Kos Rukita Avaya Kebon Jeruk — Pocket Single C",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Jakarta Barat, Jakarta",
+     "buildingOrCluster": "Rukita Avaya Kebon Jeruk",
+     "rent": {
+      "amount": 2318000,
+      "period": "monthly",
+      "quote": "Rp2.318.000/bulan",
+      "url": "https://www.rukita.co/place/avaya-kebon-jeruk",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 6.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rukita Avaya Kebon Jeruk",
+       "url": "https://www.rukita.co/place/avaya-kebon-jeruk"
+      },
+      {
+       "quote": "Pocket Single C",
+       "url": "https://www.rukita.co/place/avaya-kebon-jeruk"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pocket Single C; tarif untuk 1 orang, maks. 1 orang pada tipe ini. Jenis penghuni perlu konfirmasi. Aturan properti: pasutri boleh. Aturan properti: anak boleh. Aturan properti tidak mengubah kapasitas tipe. Bukan bukti izin 2 dewasa + 1 anak; biaya penghuni tambahan dan minimum kontrak perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.rukita.co/place/avaya-kebon-jeruk",
+     "sourcePortal": "rukita",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.198595,
+      "lng": 106.777997,
+      "precision": "building",
+      "label": "Titik gedung Rukita",
+      "url": "https://www.rukita.co/place/avaya-kebon-jeruk",
+      "method": "GeoCoordinates pada LodgingBusiness halaman properti Rukita yang sama",
+      "note": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-an-nur-casagoya",
+       "name": "Masjid An Nur Casagoya",
+       "km": 0.366
+      }
+     ]
+    },
+    {
+     "id": "sewa-rukita-994e297ecc98",
+     "title": "Kos Bougenville Kost Jatiwaringin Bekasi — Compact Single A",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Bekasi, Jawa Barat",
+     "buildingOrCluster": "Bougenville Kost Jatiwaringin Bekasi",
+     "rent": {
+      "amount": 1450000,
+      "period": "monthly",
+      "quote": "Rp1.450.000/bulan",
+      "url": "https://www.rukita.co/place/bougenville-kost-jatiwaringin-bekasi",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 9.42,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Bougenville Kost Jatiwaringin Bekasi",
+       "url": "https://www.rukita.co/place/bougenville-kost-jatiwaringin-bekasi"
+      },
+      {
+       "quote": "Compact Single A",
+       "url": "https://www.rukita.co/place/bougenville-kost-jatiwaringin-bekasi"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Compact Single A; tarif untuk 1 orang, maks. 2 orang pada tipe ini. Jenis penghuni perlu konfirmasi. Aturan properti: pasutri boleh. Aturan properti: anak boleh. Aturan properti tidak mengubah kapasitas tipe. Bukan bukti izin 2 dewasa + 1 anak; biaya penghuni tambahan dan minimum kontrak perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.rukita.co/place/bougenville-kost-jatiwaringin-bekasi",
+     "sourcePortal": "rukita",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.282412,
+      "lng": 106.915822,
+      "precision": "building",
+      "label": "Titik gedung Rukita",
+      "url": "https://www.rukita.co/place/bougenville-kost-jatiwaringin-bekasi",
+      "method": "GeoCoordinates pada LodgingBusiness halaman properti Rukita yang sama",
+      "note": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-aminussalam",
+       "name": "Masjid Aminussalam",
+       "km": 1.352
+      }
+     ]
+    },
+    {
+     "id": "sewa-rukita-11db1058a435",
+     "title": "Kos Hasaqina Duren Sawit — Compact Single A - Non AC",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Jakarta Timur, Jakarta",
+     "buildingOrCluster": "Hasaqina Duren Sawit",
+     "rent": {
+      "amount": 1000000,
+      "period": "monthly",
+      "quote": "Rp1.000.000/bulan",
+      "url": "https://www.rukita.co/place/hasaqina-duren-sawit",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 8.6,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Hasaqina Duren Sawit",
+       "url": "https://www.rukita.co/place/hasaqina-duren-sawit"
+      },
+      {
+       "quote": "Compact Single A - Non AC",
+       "url": "https://www.rukita.co/place/hasaqina-duren-sawit"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Compact Single A - Non AC; tarif untuk 1 orang, maks. 1 orang pada tipe ini. Jenis penghuni perlu konfirmasi. Aturan properti: pasutri belum diketahui izinnya. Aturan properti: anak tidak boleh. Aturan properti tidak mengubah kapasitas tipe. Bukan bukti izin 2 dewasa + 1 anak; biaya penghuni tambahan dan minimum kontrak perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.rukita.co/place/hasaqina-duren-sawit",
+     "sourcePortal": "rukita",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.229899,
+      "lng": 106.92841,
+      "precision": "building",
+      "label": "Titik gedung Rukita",
+      "url": "https://www.rukita.co/place/hasaqina-duren-sawit",
+      "method": "GeoCoordinates pada LodgingBusiness halaman properti Rukita yang sama",
+      "note": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-baiturrahim-kavling-marinir",
+       "name": "Masjid Baiturrahim Kavling Marinir",
+       "km": 0.865
+      }
+     ]
+    },
+    {
+     "id": "sewa-rukita-d30313212000",
+     "title": "Kos 113 Coliving Coffee Limo Depok — Compact Single A (putra)",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Depok, Jawa Barat",
+     "buildingOrCluster": "113 Coliving Coffee Limo Depok",
+     "rent": {
+      "amount": 950000,
+      "period": "monthly",
+      "quote": "Rp950.000/bulan",
+      "url": "https://www.rukita.co/place/113-coliving-coffee-limo-depok",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 7.6,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "113 Coliving Coffee Limo Depok",
+       "url": "https://www.rukita.co/place/113-coliving-coffee-limo-depok"
+      },
+      {
+       "quote": "Compact Single A",
+       "url": "https://www.rukita.co/place/113-coliving-coffee-limo-depok"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Compact Single A; tarif untuk 1 orang, maks. 2 orang pada tipe ini. Putra. Aturan properti: pasutri boleh. Aturan properti: anak tidak boleh. Aturan properti tidak mengubah kapasitas tipe. Bukan bukti izin 2 dewasa + 1 anak; biaya penghuni tambahan dan minimum kontrak perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.rukita.co/place/113-coliving-coffee-limo-depok",
+     "sourcePortal": "rukita",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.380941,
+      "lng": 106.779492,
+      "precision": "building",
+      "label": "Titik gedung Rukita",
+      "url": "https://www.rukita.co/place/113-coliving-coffee-limo-depok",
+      "method": "GeoCoordinates pada LodgingBusiness halaman properti Rukita yang sama",
+      "note": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-as-sunnah-meruyung",
+       "name": "Masjid As Sunnah Meruyung",
+       "km": 0.676
+      },
+      {
+       "id": "masjid-al-muhajirin-wal-anshar",
+       "name": "Masjid Al Muhajirin Wal Anshar",
+       "km": 1.497
+      }
+     ]
     }
    ],
    "locationsCheckedAt": "2026-11-07"

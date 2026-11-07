@@ -122,6 +122,12 @@
         "kab-tangerang": "tangerang",
         "tangerang-selatan": "tangerang"
       }
+    },
+    "rukita": {
+      "enabled": true,
+      "maxSearchRequests": 1,
+      "maxDetailRequests": 20,
+      "note": "Sitemap publik hanya untuk penemuan URL. Filter lokalitas per 78 masjid berjalan sebelum detail; koordinat dari LodgingBusiness unit yang sama. Kamar penuh tidak menjadi dasar harga. Tetap kurasi manual sebelum publikasi."
     }
   },
   "manualSources": [
@@ -138,7 +144,8 @@
     {
       "name": "OLX",
       "status": "timeout",
-      "note": "Kategori tidak selesai dibaca; belum dijadwalkan otomatis."
+      "note": "Robots HTTP200 mengizinkan kategori yang diuji; kategori server kembali timeout 20 detik. Belum diaktifkan otomatis.",
+      "checkedAt": "2026-11-07"
     },
     {
       "name": "99.co",
@@ -163,6 +170,12 @@
       "status": "http-403",
       "checkedAt": "2026-11-03",
       "note": "Robots dari server ditolak; belum menjadi sumber otomatis."
+    },
+    {
+      "name": "Facebook Marketplace",
+      "checkedAt": "2026-11-07",
+      "status": "robots-disallowed",
+      "note": "Robots menolak jalur Marketplace untuk user-agent penelitian; tidak mengambil listing atau login."
     }
   ]
 }

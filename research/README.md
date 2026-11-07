@@ -38,6 +38,8 @@ Dataset yang dipakai aplikasi dibangun ke [properties.geojson](../public/data/pr
 
 [Hasil scraping siang 7 November](masjid/hasil-scraping-siang-2026-11-07.md) memuat 11 tambahan rumah dan apartemen, ketentuan minimum sewa serta dua kandidat yang masih ditahan karena kebaruan sumber.
 
+[Hasil sore dan sumber baru](masjid/hasil-scraping-sore-2026-11-07.md) mencatat 15 tambahan, termasuk delapan kos Rukita. [Metode Rukita, OLX dan Facebook](masjid/sumber-rukita-olx-facebook-2026-11-07.md) menjelaskan sumber ketujuh dan batas akses layanan lain.
+
 [Ekstrak peta Ihrish](masjid/ihrish.md) menyimpan 78 masjid dan pin dalam JSON, GeoJSON, dan CSV. Adanya kajian cukup untuk pencantuman, tidak harus rutin. Direktori `/riset#masjid` menghubungkan masjid dengan 15 proyek dalam 1,5 km garis lurus, lima iklan baru, serta petunjuk yang masih perlu diperiksa.
 
 [Pengumpulan data dan akses agen AI](../docs/property-agent-access.md) menjelaskan pilihan Scraper API/HTTP/browser, akses JSON publik yang sudah tersedia, serta rancangan MCP opsional.
