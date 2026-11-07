@@ -34164,6 +34164,284 @@
        "km": 1.262
       }
      ]
+    },
+    {
+     "id": "sewa-kos-d969e39d400e",
+     "title": "Kost Ibu Sri Salon Ciledug Tangerang (campur)",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Ciledug, Kota Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 800000,
+      "period": "monthly",
+      "quote": "Rp800.000/bulan",
+      "url": "https://mamikos.com/room/kost-tangerang-kost-campur-murah-kost-ibu-sri-salon-ciledug-tangerang--1",
+      "pageDate": "2026-05-05"
+     },
+     "bedrooms": 1,
+     "sizeM2": 9.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kost Ibu Sri Salon Ciledug Tangerang",
+       "url": "https://mamikos.com/room/kost-tangerang-kost-campur-murah-kost-ibu-sri-salon-ciledug-tangerang--1"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Campur. Pasutri tidak diizinkan; Anak tidak diizinkan menurut portal. Kapasitas total serta biaya penghuni tambahan perlu konfirmasi. Indikator 3 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-05-05; deposit, listrik, biaya akhir dan stok perlu diperiksa.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-tangerang-kost-campur-murah-kost-ibu-sri-salon-ciledug-tangerang--1",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-05-05",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.237393,
+      "lng": 106.714367,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://mamikos.com/room/kost-tangerang-kost-campur-murah-kost-ibu-sri-salon-ciledug-tangerang--1",
+      "method": "Latitude/longitude publik pada detail Mamikos",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-jami-al-jihad",
+       "name": "Masjid Jami Al Jihad",
+       "km": 0.321
+      }
+     ]
+    },
+    {
+     "id": "sewa-kos-583813f8e2c5",
+     "title": "Kost Cidika Tipe Standar Ciledug Tangerang (putri)",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Ciledug, Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1300000,
+      "period": "monthly",
+      "quote": "Rp1.300.000/bulan",
+      "url": "https://mamikos.com/room/kost-tangerang-kost-putri-eksklusif-kost-cidika-tipe-standar-ciledug-tangerang",
+      "pageDate": "2026-09-18"
+     },
+     "bedrooms": 1,
+     "sizeM2": 9.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kost Cidika Tipe Standar Ciledug Tangerang",
+       "url": "https://mamikos.com/room/kost-tangerang-kost-putri-eksklusif-kost-cidika-tipe-standar-ciledug-tangerang"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Putri. Pasutri tidak diizinkan; Anak tidak diizinkan menurut portal. Kapasitas total serta biaya penghuni tambahan perlu konfirmasi. Indikator 4 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-09-18; deposit, listrik, biaya akhir dan stok perlu diperiksa.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-tangerang-kost-putri-eksklusif-kost-cidika-tipe-standar-ciledug-tangerang",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-09-18",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.233298,
+      "lng": 106.71898,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://mamikos.com/room/kost-tangerang-kost-putri-eksklusif-kost-cidika-tipe-standar-ciledug-tangerang",
+      "method": "Latitude/longitude publik pada detail Mamikos",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-jami-al-jihad",
+       "name": "Masjid Jami Al Jihad",
+       "km": 0.666
+      }
+     ]
+    },
+    {
+     "id": "sewa-kos-9c5451cd1f83",
+     "title": "Kost Twentytwo Dormitory Bsd Tipe A Cisauk Tangerang (campur)",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Cisauk, Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 2492000,
+      "period": "monthly",
+      "quote": "Rp2.492.000/bulan",
+      "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-twentytwo-dormitory-bsd-tipe-a-cisauk-tangerang",
+      "pageDate": "2026-09-30"
+     },
+     "bedrooms": 1,
+     "sizeM2": 12.48,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kost Twentytwo Dormitory Bsd Tipe A Cisauk Tangerang",
+       "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-twentytwo-dormitory-bsd-tipe-a-cisauk-tangerang"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Campur; pasutri boleh, anak tidak. Bisa berdua dengan tambahan Rp300.000 menurut deskripsi; penyewa membawa kasur tambahan. Parkir motor gratis, mobil Rp300.000; listrik token. Indikator 24 kamar, bukan konfirmasi pemilik. Pembaruan sumber 2026-09-30; kapasitas, deposit, biaya akhir dan stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-twentytwo-dormitory-bsd-tipe-a-cisauk-tangerang",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-09-30",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.321739,
+      "lng": 106.648075,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-twentytwo-dormitory-bsd-tipe-a-cisauk-tangerang",
+      "method": "Latitude/longitude publik pada detail Mamikos",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-ukhuwah",
+       "name": "Masjid Al Ukhuwah",
+       "km": 0.991
+      }
+     ]
+    },
+    {
+     "id": "sewa-kos-375f9d9cde23",
+     "title": "Kost Rmb Tipe Standar Pondok Aren Tangerang Selatan (campur)",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Pondok Aren, Tangerang Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1300000,
+      "period": "monthly",
+      "quote": "Rp1.300.000/bulan",
+      "url": "https://mamikos.com/room/kost-tangerang-selatan-kost-campur-eksklusif-kost-rmb-tipe-standar-pondok-aren-tangerang-selatan-2",
+      "pageDate": "2026-10-30"
+     },
+     "bedrooms": 1,
+     "sizeM2": 27.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kost Rmb Tipe Standar Pondok Aren Tangerang Selatan",
+       "url": "https://mamikos.com/room/kost-tangerang-selatan-kost-campur-eksklusif-kost-rmb-tipe-standar-pondok-aren-tangerang-selatan-2"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Campur. Pasutri tidak diizinkan; Anak tidak diizinkan menurut portal. Kapasitas total serta biaya penghuni tambahan perlu konfirmasi. Indikator 2 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-10-30; deposit, listrik, biaya akhir dan stok perlu diperiksa.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-tangerang-selatan-kost-campur-eksklusif-kost-rmb-tipe-standar-pondok-aren-tangerang-selatan-2",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-10-30",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+     "location": {
+      "lat": -6.276703,
+      "lng": 106.689982,
+      "precision": "approximate",
+      "label": "Pin perkiraan portal",
+      "url": "https://mamikos.com/room/kost-tangerang-selatan-kost-campur-eksklusif-kost-rmb-tipe-standar-pondok-aren-tangerang-selatan-2",
+      "method": "Latitude/longitude publik pada detail Mamikos",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-ash-shaff",
+       "name": "Masjid Ash Shaff",
+       "km": 1.181
+      },
+      {
+       "id": "masjid-ar-rahman-discovery-lumina",
+       "name": "Masjid Ar Rahman Discovery Lumina",
+       "km": 1.422
+      }
+     ]
+    },
+    {
+     "id": "sewa-kos-urban-intermoda-bsd-regular-queen-a",
+     "title": "Rukita Urban Intermoda BSD — Regular Queen A (maks. 2 orang)",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Sampora, Cisauk, Kabupaten Tangerang",
+     "buildingOrCluster": "Rukita Urban Intermoda BSD",
+     "rent": {
+      "amount": 2268000,
+      "period": "monthly",
+      "quote": "Rp2.268.000 /bulan",
+      "url": "https://www.rukita.co/place/rukita-urban-intermoda-bsd",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 10.68,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Regular Queen A",
+       "url": "https://www.rukita.co/place/rukita-urban-intermoda-bsd"
+      },
+      {
+       "quote": "Harga untuk 1 orang",
+       "url": "https://www.rukita.co/place/rukita-urban-intermoda-bsd"
+      },
+      {
+       "quote": "Bisa dihuni maks. 2 orang dgn tambahan biaya",
+       "url": "https://www.rukita.co/place/rukita-urban-intermoda-bsd"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Regular Queen A ditandai tersedia; Rp2.268.000/bulan untuk 1 orang, maks. 2 dengan biaya tambahan. Pasutri boleh; anak minimal 4 tahun dan berbayar. Bukan bukti izin 2 dewasa + 1 anak. Wi-Fi, air, laundry dan cleaning termasuk; listrik terpisah. Deposit Rp500.000. Promo pelunasan awal tidak dijadikan harga bulanan. Tanggal pembaruan tidak ditampilkan; stok dan total biaya perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.rukita.co/place/rukita-urban-intermoda-bsd",
+     "sourcePortal": "rukita",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Titik gedung dari tautan resmi, bukan posisi kamar atau pintu masuk; berbeda dari Urban Intermoda 2 BSD.",
+     "location": {
+      "lat": -6.319242,
+      "lng": 106.643286,
+      "precision": "building",
+      "label": "Rukita Urban Intermoda BSD",
+      "url": "https://www.rukita.co/place/rukita-urban-intermoda-bsd",
+      "method": "Pin tempat pada redirect Google Maps dari tautan lokasi resmi Rukita, bukan pusat viewport",
+      "note": "Titik gedung dari tautan resmi, bukan posisi kamar atau pintu masuk; berbeda dari Urban Intermoda 2 BSD.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-ukhuwah",
+       "name": "Masjid Al Ukhuwah",
+       "km": 1.292
+      }
+     ]
     }
    ],
    "locationsCheckedAt": "2026-11-07"

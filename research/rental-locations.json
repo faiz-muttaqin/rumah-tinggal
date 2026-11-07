@@ -9161,6 +9161,91 @@
         "sha256": "45b83feb3dd7985fca2140fe9f0bf4cd603af606efe2e1eafeaa7e8d7e966ffd",
         "selector": "Tipe Regular Queen B Tersedia, harga untuk 1 orang, maks2; pin tempat !3d/!4d pada redirect Maps resmi, bukan pusat viewport"
       }
+    },
+    {
+      "rentalId": "sewa-kos-d969e39d400e",
+      "location": {
+        "lat": -6.237393,
+        "lng": 106.714367,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://mamikos.com/room/kost-tangerang-kost-campur-murah-kost-ibu-sri-salon-ciledug-tangerang--1",
+        "method": "Latitude/longitude publik pada detail Mamikos",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "7b36cc934beccd943dc5154bd1e6890316d91dcfd3d8731d29c7df092e7455a2",
+        "selector": "var detail.latitude/longitude; harga mentah cocok price_title_formats pada periode yang sama; status, available_room dan booking_rules kamar yang sama"
+      }
+    },
+    {
+      "rentalId": "sewa-kos-583813f8e2c5",
+      "location": {
+        "lat": -6.233298,
+        "lng": 106.71898,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://mamikos.com/room/kost-tangerang-kost-putri-eksklusif-kost-cidika-tipe-standar-ciledug-tangerang",
+        "method": "Latitude/longitude publik pada detail Mamikos",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "5b8551c18448289f792477bed41248c2d2f357f038745bc52309885cb0c3cf34",
+        "selector": "var detail.latitude/longitude; harga mentah cocok price_title_formats pada periode yang sama; status, available_room dan booking_rules kamar yang sama"
+      }
+    },
+    {
+      "rentalId": "sewa-kos-9c5451cd1f83",
+      "location": {
+        "lat": -6.321739,
+        "lng": 106.648075,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-twentytwo-dormitory-bsd-tipe-a-cisauk-tangerang",
+        "method": "Latitude/longitude publik pada detail Mamikos",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "3691f0700a83a3720870bf2006f5d59a39b0e50f802ec4f2593d047457db035b",
+        "selector": "var detail.latitude/longitude; harga mentah cocok price_title_formats pada periode yang sama; status, available_room dan booking_rules kamar yang sama"
+      }
+    },
+    {
+      "rentalId": "sewa-kos-375f9d9cde23",
+      "location": {
+        "lat": -6.276703,
+        "lng": 106.689982,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://mamikos.com/room/kost-tangerang-selatan-kost-campur-eksklusif-kost-rmb-tipe-standar-pondok-aren-tangerang-selatan-2",
+        "method": "Latitude/longitude publik pada detail Mamikos",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "74fb72e315340daa9366a92ccb4b3f3cbf5383f66f137969b02d4bfc86e0377f",
+        "selector": "var detail.latitude/longitude; harga mentah cocok price_title_formats pada periode yang sama; status, available_room dan booking_rules kamar yang sama"
+      }
+    },
+    {
+      "rentalId": "sewa-kos-urban-intermoda-bsd-regular-queen-a",
+      "location": {
+        "lat": -6.319242,
+        "lng": 106.643286,
+        "precision": "building",
+        "label": "Rukita Urban Intermoda BSD",
+        "url": "https://www.rukita.co/place/rukita-urban-intermoda-bsd",
+        "method": "Pin tempat pada redirect Google Maps dari tautan lokasi resmi Rukita, bukan pusat viewport",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Titik gedung dari tautan resmi, bukan posisi kamar atau pintu masuk; berbeda dari Urban Intermoda 2 BSD.",
+      "evidence": {
+        "sha256": "9a42d8286a2229d851424030a543f862c1dca6045180089ebbfa45d88791332a",
+        "selector": "Regular Queen A Tersedia dan harga bulanan dari tipe yang sama; redirect maps.app.goo.gl/7zX2fwAHRunrUWCZ9 !3d-6.3192424!4d106.6432856"
+      }
     }
   ]
 }
