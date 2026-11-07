@@ -36,6 +36,8 @@ Dataset yang dipakai aplikasi dibangun ke [properties.geojson](../public/data/pr
 
 [Hasil scraping pagi 7 November](masjid/hasil-scraping-pagi-2026-11-07.md) menambahkan 15 penawaran yang diperiksa ulang, dengan harga, minimum kontrak, aturan kos keluarga dan alasan empat kandidat belum diterbitkan.
 
+[Hasil scraping siang 7 November](masjid/hasil-scraping-siang-2026-11-07.md) memuat 11 tambahan rumah dan apartemen, ketentuan minimum sewa serta dua kandidat yang masih ditahan karena kebaruan sumber.
+
 [Ekstrak peta Ihrish](masjid/ihrish.md) menyimpan 78 masjid dan pin dalam JSON, GeoJSON, dan CSV. Adanya kajian cukup untuk pencantuman, tidak harus rutin. Direktori `/riset#masjid` menghubungkan masjid dengan 15 proyek dalam 1,5 km garis lurus, lima iklan baru, serta petunjuk yang masih perlu diperiksa.
 
 [Pengumpulan data dan akses agen AI](../docs/property-agent-access.md) menjelaskan pilihan Scraper API/HTTP/browser, akses JSON publik yang sudah tersedia, serta rancangan MCP opsional.
