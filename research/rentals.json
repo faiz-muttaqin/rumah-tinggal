@@ -21856,6 +21856,163 @@
       "verdict": "partial",
       "lastChecked": "2026-11-07",
       "note": "Regular Queen A ditandai tersedia; Rp2.268.000/bulan untuk 1 orang, maks. 2 dengan biaya tambahan. Pasutri boleh; anak minimal 4 tahun dan berbayar. Bukan bukti izin 2 dewasa + 1 anak. Wi-Fi, air, laundry dan cleaning termasuk; listrik terpisah. Deposit Rp500.000. Promo pelunasan awal tidak dijadikan harga bulanan. Tanggal pembaruan tidak ditampilkan; stok dan total biaya perlu konfirmasi."
+    },
+    {
+      "id": "sewa-kos-2c0453c5ecd9",
+      "title": "Kost Kampung Melayu Vetra Jatinegara Jakarta Timur (campur)",
+      "rentalType": "kos",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Jatinegara, Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1400000,
+        "period": "monthly",
+        "quote": "Rp1.400.000/bulan",
+        "url": "https://mamikos.com/room/kost-jakarta-timur-kost-campur-eksklusif-kost-kampung-melayu-vetra-jatinegara-jakarta-timur",
+        "pageDate": "2026-11-06"
+      },
+      "bedrooms": 1,
+      "sizeM2": 9.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost Kampung Melayu Vetra Jatinegara Jakarta Timur",
+          "url": "https://mamikos.com/room/kost-jakarta-timur-kost-campur-eksklusif-kost-kampung-melayu-vetra-jatinegara-jakarta-timur"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-jakarta-timur-kost-campur-eksklusif-kost-kampung-melayu-vetra-jatinegara-jakarta-timur",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-11-06",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Campur; pasutri dan anak tidak diizinkan. Bangunan berisi 2 kamar tidur dengan kamar mandi dan dapur bersama; Wi-Fi dan CCTV disebut sumber. Indikator 1 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-11-06; kapasitas, deposit, listrik dan biaya akhir perlu konfirmasi."
+    },
+    {
+      "id": "sewa-kos-d8e6d208fea4",
+      "title": "Kost Kmc Tipe C Jatinegara Jakarta Timur (campur)",
+      "rentalType": "kos",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Jatinegara, Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1600000,
+        "period": "monthly",
+        "quote": "Rp1.600.000/bulan",
+        "url": "https://mamikos.com/room/kost-jakarta-timur-kost-campur-eksklusif-kost-kmc-tipe-c-jatinegara-jakarta-timur",
+        "pageDate": "2026-11-06",
+        "minimumMonths": 1
+      },
+      "bedrooms": 1,
+      "sizeM2": 16.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost Kmc Tipe C Jatinegara Jakarta Timur",
+          "url": "https://mamikos.com/room/kost-jakarta-timur-kost-campur-eksklusif-kost-kmc-tipe-c-jatinegara-jakarta-timur"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-jakarta-timur-kost-campur-eksklusif-kost-kmc-tipe-c-jatinegara-jakarta-timur",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-11-06",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Campur. Pasutri tidak diizinkan; Anak tidak diizinkan menurut portal. Kapasitas total serta biaya penghuni tambahan perlu konfirmasi. Indikator 1 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-11-06; deposit, listrik, biaya akhir dan stok perlu diperiksa."
+    },
+    {
+      "id": "sewa-kos-isk-house-jatinegara-compact-queen",
+      "title": "ISK House Jatinegara — Compact Queen (maks. 2 orang)",
+      "rentalType": "kos",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Bidara Cina, Jatinegara, Jakarta Timur",
+      "buildingOrCluster": "ISK House Jatinegara",
+      "rent": {
+        "amount": 2300000,
+        "period": "monthly",
+        "quote": "Rp2.300.000 /bulan",
+        "url": "https://www.rukita.co/place/isk-house-jatinegara",
+        "pageDate": null
+      },
+      "bedrooms": 1,
+      "sizeM2": 9.5,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Compact Queen",
+          "url": "https://www.rukita.co/place/isk-house-jatinegara"
+        },
+        {
+          "quote": "Harga untuk 1 orang",
+          "url": "https://www.rukita.co/place/isk-house-jatinegara"
+        },
+        {
+          "quote": "Bisa dihuni maks. 2 orang dgn tambahan biaya",
+          "url": "https://www.rukita.co/place/isk-house-jatinegara"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.rukita.co/place/isk-house-jatinegara",
+      "sourcePortal": "rukita",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Compact Queen ditandai tersedia; tarif untuk 1 orang, maks. 2 dengan biaya tambahan. Pasutri boleh, anak tidak. Wi-Fi dan laundry termasuk, listrik terpisah; deposit Rp1.000.000. Luas 9,5 m² belum termasuk kamar mandi. Tanggal pembaruan penawaran tidak ditampilkan; stok, biaya penghuni tambahan dan total akhir perlu konfirmasi."
+    },
+    {
+      "id": "sewa-kos-uma-orient-jatinegara-regular-queen-a",
+      "title": "Uma Kost Orient Stasiun Jatinegara — Regular Queen A (maks. 2 orang)",
+      "rentalType": "kos",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Rawa Bunga, Jatinegara, Jakarta Timur",
+      "buildingOrCluster": "Uma Kost Orient Stasiun Jatinegara",
+      "rent": {
+        "amount": 2218000,
+        "period": "monthly",
+        "quote": "Rp2.218.000 /bulan",
+        "url": "https://www.rukita.co/place/uma-kost-orient-stasiun-jatinegara",
+        "pageDate": null
+      },
+      "bedrooms": 1,
+      "sizeM2": 10,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Regular Queen A",
+          "url": "https://www.rukita.co/place/uma-kost-orient-stasiun-jatinegara"
+        },
+        {
+          "quote": "Harga untuk 1 orang",
+          "url": "https://www.rukita.co/place/uma-kost-orient-stasiun-jatinegara"
+        },
+        {
+          "quote": "Bisa dihuni maks. 2 orang dgn tambahan biaya",
+          "url": "https://www.rukita.co/place/uma-kost-orient-stasiun-jatinegara"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.rukita.co/place/uma-kost-orient-stasiun-jatinegara",
+      "sourcePortal": "rukita",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Regular Queen A ditandai tersedia; tarif untuk 1 orang, maks. 2 dengan biaya tambahan. Pasutri boleh; anak minimal 4 tahun dan berbayar. Bukan bukti izin 2 dewasa + 1 anak. Wi-Fi, air, laundry dan cleaning termasuk; listrik terpisah. Deposit 50% sewa bulanan. Tanggal pembaruan penawaran tidak ditampilkan; stok dan biaya akhir perlu konfirmasi."
     }
   ]
 }

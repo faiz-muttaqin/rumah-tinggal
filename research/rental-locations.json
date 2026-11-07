@@ -9246,6 +9246,74 @@
         "sha256": "9a42d8286a2229d851424030a543f862c1dca6045180089ebbfa45d88791332a",
         "selector": "Regular Queen A Tersedia dan harga bulanan dari tipe yang sama; redirect maps.app.goo.gl/7zX2fwAHRunrUWCZ9 !3d-6.3192424!4d106.6432856"
       }
+    },
+    {
+      "rentalId": "sewa-kos-2c0453c5ecd9",
+      "location": {
+        "lat": -6.22603,
+        "lng": 106.865537,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://mamikos.com/room/kost-jakarta-timur-kost-campur-eksklusif-kost-kampung-melayu-vetra-jatinegara-jakarta-timur",
+        "method": "Latitude/longitude publik pada detail Mamikos",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "4453de88664ebe6721edb259f845e9a1ed7204c598af928a29436c91f1bd46ff",
+        "selector": "var detail.latitude/longitude; harga mentah cocok price_title_formats pada periode yang sama; status, available_room dan booking_rules kamar yang sama"
+      }
+    },
+    {
+      "rentalId": "sewa-kos-d8e6d208fea4",
+      "location": {
+        "lat": -6.225611,
+        "lng": 106.876929,
+        "precision": "approximate",
+        "label": "Pin perkiraan portal",
+        "url": "https://mamikos.com/room/kost-jakarta-timur-kost-campur-eksklusif-kost-kmc-tipe-c-jatinegara-jakarta-timur",
+        "method": "Latitude/longitude publik pada detail Mamikos",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus dan rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "fca7c1713ef1fae461cf938d5f7720f94d489398be01fd43ed45800d9c181da4",
+        "selector": "var detail.latitude/longitude; harga mentah cocok price_title_formats pada periode yang sama; status, available_room dan booking_rules kamar yang sama"
+      }
+    },
+    {
+      "rentalId": "sewa-kos-isk-house-jatinegara-compact-queen",
+      "location": {
+        "lat": -6.227583,
+        "lng": 106.865721,
+        "precision": "building",
+        "label": "ISK House Jatinegara",
+        "url": "https://www.rukita.co/place/isk-house-jatinegara",
+        "method": "Koordinat tujuan pada tautan Google Maps resmi ISK House di halaman Rukita",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Titik gedung dari tautan lokasi resmi, bukan posisi kamar atau pintu masuk. Rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "e4f4552d5bf56ee615dd546ebcf88824b1f19ce003a0ed86a9e82070d5d79c72",
+        "selector": "Compact Queen: Tersedia, harga untuk1orang; koordinat tujuan /maps/dir//-6.227582806280357,106.86572135711482 dari tautan lokasi resmi"
+      }
+    },
+    {
+      "rentalId": "sewa-kos-uma-orient-jatinegara-regular-queen-a",
+      "location": {
+        "lat": -6.216189,
+        "lng": 106.870411,
+        "precision": "building",
+        "label": "Uma Kost Orient Stasiun Jatinegara",
+        "url": "https://www.rukita.co/place/uma-kost-orient-stasiun-jatinegara",
+        "method": "Pin tempat pada redirect tautan Google Maps resmi Rukita; bukan pusat viewport",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Titik gedung dari tautan lokasi resmi, bukan posisi kamar atau pintu masuk. Rute berjalan perlu dikonfirmasi.",
+      "evidence": {
+        "sha256": "fe01db945d2f47966806b52c32f477017d644f4ab6738eb98f55a3c6339af6dc",
+        "selector": "Regular Queen A Tersedia, harga untuk1orang; maps.app.goo.gl/8eT7TezBXCHkZEBP9 redirect !3d-6.216189!4d106.8704114, bukan koordinat @viewport"
+      }
     }
   ]
 }

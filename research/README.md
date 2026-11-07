@@ -32,6 +32,8 @@ Dataset yang dipakai aplikasi dibangun ke [properties.geojson](../public/data/pr
 
 [Tambahan kos pilihan](masjid/kos-tambahan-2026-11-07.md) mencatat lima kos berikutnya di Ciledug, Bintaro dan Cisauk, beserta calon dengan harga atau jenis hunian yang belum sesuai.
 
+[Kos dekat Al Fattah Jatinegara](masjid/kos-al-fattah-jatinegara-2026-11-07.md) memuat empat tambahan kos dalam radius 1,5 km dari masjid di Bali Mester, dengan harga tipe tersedia, aturan penghuni dan batas jarak.
+
 [Ekstrak peta Ihrish](masjid/ihrish.md) menyimpan 78 masjid dan pin dalam JSON, GeoJSON, dan CSV. Adanya kajian cukup untuk pencantuman, tidak harus rutin. Direktori `/riset#masjid` menghubungkan masjid dengan 15 proyek dalam 1,5 km garis lurus, lima iklan baru, serta petunjuk yang masih perlu diperiksa.
 
 [Pengumpulan data dan akses agen AI](../docs/property-agent-access.md) menjelaskan pilihan Scraper API/HTTP/browser, akses JSON publik yang sudah tersedia, serta rancangan MCP opsional.
