@@ -10011,6 +10011,91 @@
         "sha256": "a03af0c6485798e1f39c38d00d967ac6e83aa7ccf088d277a2c4190a0496c3d6",
         "selector": "LodgingBusiness.url dan geo milik properti sama; harga bulanan kartu Tersedia/Harga untuk 1 orang, bukan harga global atau kartu penuh"
       }
+    },
+    {
+      "rentalId": "sewa-pinhome-f2eb3cf4feda",
+      "location": {
+        "lat": -6.320314,
+        "lng": 106.761973,
+        "precision": "approximate",
+        "label": "Pin perkiraan Pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pisangan-2",
+        "method": "Pin publik detail unit Pinhome, bukan pusat administratif",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "evidence": {
+        "sha256": "a9d82cdb31c1c110684e47c1b7bd472d98edebdc4b7311755159e655700ad2fd",
+        "selector": "__UNIT_DETAIL__: location.mapLocation, rentPriceLabel, rentMinimumTermMonth"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-70339ca4dfbb",
+      "location": {
+        "lat": -6.316568,
+        "lng": 106.767922,
+        "precision": "approximate",
+        "label": "Pin perkiraan Pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-asri-tenang-furnished-komplek-bali-view-cirendeu-di-pisangan",
+        "method": "Pin publik detail unit Pinhome, bukan pusat administratif",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "evidence": {
+        "sha256": "306a30f4025515969ac117a78ee89c8ca00bbb1c338b43b843372b7e6a4c4cc5",
+        "selector": "__UNIT_DETAIL__: location.mapLocation, rentPriceLabel, rentMinimumTermMonth"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-fdb23170b697",
+      "location": {
+        "lat": -6.324591,
+        "lng": 106.767252,
+        "precision": "approximate",
+        "label": "Pin perkiraan Pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-pesona-azalea",
+        "method": "Pin publik detail unit Pinhome, bukan pusat administratif",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "evidence": {
+        "sha256": "ce02d9fab1b0c01480aed5f0e490b37bb9a2d87f1311f262629e2084a8f2201b",
+        "selector": "__UNIT_DETAIL__: location.mapLocation, rentPriceLabel, rentMinimumTermMonth"
+      }
+    },
+    {
+      "rentalId": "sewa-jendela360-bc59dfd4e909",
+      "location": {
+        "lat": -6.317404,
+        "lng": 106.78239,
+        "precision": "building",
+        "label": "Titik gedung Jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA012",
+        "method": "Koordinat gedung dari data detail unit berkode sama",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+      "evidence": {
+        "sha256": "238ffcb21938f28efbf1bb9228ee6959f27febdf1894302e2c6a821cc3dcc467",
+        "selector": "unitDetailProps.data: code, latitude, longitude, price_per_*"
+      }
+    },
+    {
+      "rentalId": "sewa-jendela360-21179e49e6ed",
+      "location": {
+        "lat": -6.317404,
+        "lng": 106.78239,
+        "precision": "building",
+        "label": "Titik gedung Jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA009",
+        "method": "Koordinat gedung dari data detail unit berkode sama",
+        "checkedAt": "2026-11-07"
+      },
+      "note": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+      "evidence": {
+        "sha256": "a97ca95ca3206285b0e2f5b30403f08e4b07764526c94eea3290167d0a8be675",
+        "selector": "unitDetailProps.data: code, latitude, longitude, price_per_*"
+      }
     }
   ]
 }

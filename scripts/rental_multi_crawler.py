@@ -8,6 +8,7 @@ import importlib.util
 import json
 import os
 from pathlib import Path
+import re
 import signal
 import threading
 
@@ -26,6 +27,37 @@ adapters = load_module("rental_adapters")
 PROVIDERS = ("pinhome", "jendela360", "realoka", "brighton", "jakartaprime", "mamikos", "rukita")
 
 
+def active_mosques(base, settings):
+    """Select an explicit phase without deleting the full reference inventory."""
+    extras = settings.get("additionalMosqueAreas", {})
+    if (not isinstance(extras, dict) or not set(extras).issubset({m["id"] for m in base})
+            or any(not isinstance(paths, list) or not paths or any(not isinstance(path, str)
+                    or len(path.split("/")) not in (3, 4)
+                    or any(not re.fullmatch(r"[a-z0-9-]+", part) for part in path.split("/")) for path in paths)
+                   for paths in extras.values())):
+        raise ValueError("Invalid adjacent discovery areas")
+    for provider in settings.get("providers", {}).values():
+        sources = provider.get("mosqueSources", {})
+        if (not isinstance(sources, dict) or not set(sources).issubset({m["id"] for m in base})
+                or any(not isinstance(urls, list) or not urls or any(not isinstance(url, str) for url in urls)
+                       for urls in sources.values())):
+            raise ValueError("Invalid mosque-specific discovery sources")
+    if "activeMosqueIds" not in settings:
+        return base
+    ids = settings["activeMosqueIds"]
+    if (not isinstance(ids, list) or not ids or any(not isinstance(i, str) for i in ids)
+            or len(ids) != len(set(ids)) or not set(ids).issubset({m["id"] for m in base})):
+        raise ValueError("Active mosque scope must be a nonempty unique subset of the reference inventory")
+    return [m for m in base if m["id"] in ids]
+
+
+def active_detail_limit(config, settings):
+    limit = settings.get("activeDetailsPerMosque", config["maxDetailsPerMosque"]) if "activeMosqueIds" in settings else config["maxDetailsPerMosque"]
+    if type(limit) is not int or not 1 <= limit <= 20:
+        raise ValueError("Invalid active per mosque detail limit")
+    return limit
+
+
 def provider_plan(base, config, cancel=None):
     plans = {}
     for name in PROVIDERS:
@@ -36,13 +68,24 @@ def provider_plan(base, config, cancel=None):
         mosques = copy.deepcopy(base)
         if adapter:
             for m in mosques:
-                paths = settings["mosqueAreas"][m["id"]]
+                paths = list(settings["mosqueAreas"][m["id"]]) + config.get("additionalMosqueAreas", {}).get(m["id"], [])
                 m["sources"] = adapter.sources(paths, settings)
+                for url in settings.get("mosqueSources", {}).get(m["id"], []):
+                    canonical = adapter.canonical(url)
+                    if adapter.is_detail(canonical) or canonical.endswith("/robots.txt"):
+                        raise ValueError("Expected a public discovery source")
+                    if canonical not in m["sources"]:
+                        m["sources"].append(canonical)
         plans[name] = (adapter, mosques)
     return plans
 
 
 def run_one(name, adapter, mosques, config, directory, search_limit=None, detail_limit=None, cancel=None, refresh_search=False):
+    if not any(m.get("sources") for m in mosques):
+        return {"name": name, "status": "not-applicable", "exitCode": 0,
+                "run": {"status": "not-applicable", "reason": "no-source-for-active-mosques",
+                        "requests": 0, "searchRequests": 0, "detailRequests": 0},
+                "summary": {"mosques": len(mosques), "details": 0, "candidates": 0}}
     directory.mkdir(parents=True, exist_ok=True, mode=0o700)
     with (directory / "crawl.lock").open("w") as lock:
         try:
@@ -78,8 +121,10 @@ def cross_source_matches(details):
     return pairs
 
 
-def merge(directory, plans, config, runs):
+def merge(directory, plans, config, runs, scope=None):
     state = {"details": {}, "pages": {}, "lastRun": {"status": "multi-provider-report", "providers": runs}}
+    if scope is not None:
+        state["lastRun"]["scope"] = scope
     base = copy.deepcopy(next(iter(plans.values()))[1])
     for m in base:
         m["sources"] = []
@@ -128,9 +173,14 @@ def period_badges(row):
 
 def markdown(result):
     s = result["summary"]
+    scope = (result.get("run") or {}).get("scope")
+    priority = "Prioritas: masjid dekat transportasi umum, Jakarta Selatan lalu melebar."
+    if scope and len(scope["activeMosqueIds"]) < scope["referenceMosques"]:
+        names = ", ".join(row["name"] for row in result["coverage"])
+        priority = f"Fokus aktif: {names}; inventori acuan {scope['referenceMosques']} masjid tetap dipertahankan."
     lines = ["# Pantauan sewa dari beberapa situs", "", result["note"], "",
              f"Diperiksa {result['generatedAtUTC']}. {s['providers']} sumber, {s['details']} detail, {s['newCandidates']} kandidat baru sekitar {s['mosquesWithCandidates']}/{s['mosques']} masjid; {s['areaLeads']} penawaran kawasan belum memiliki titik yang terbukti.", "",
-             "Prioritas: masjid dekat transportasi umum, Jakarta Selatan lalu melebar. Semua jarak garis lurus dari acuan. Kandidat belum otomatis masuk peta publik.", "",
+             priority + " Semua jarak garis lurus dari acuan. Kandidat belum otomatis masuk peta publik.", "",
              "| Sumber | Status terakhir | Detail dibaca | Kandidat sekitar masjid | Penawaran kawasan |",
              "| --- | --- | ---: | ---: | ---: |"]
     for name, counts in s["byProvider"].items():
@@ -201,13 +251,18 @@ def main():
     for settings in multi["providers"].values():
         settings["mosqueAreas"] = config["targets"]
     cancel = threading.Event()
-    plans = provider_plan(core.plan(config), multi, cancel)
+    reference = core.plan(config)
+    selected = active_mosques(reference, multi)
+    per_mosque = active_detail_limit(config, multi)
+    scope = {"referenceMosques": len(reference), "activeMosqueIds": [m["id"] for m in selected],
+             "radiusKm": config["radiusKm"], "detailsPerMosquePerProvider": per_mosque}
+    plans = provider_plan(selected, multi, cancel)
     chosen = [name for name in chosen if name in plans]
     if not chosen:
         parser.error("No selected provider is enabled")
     if not args.run and not args.report_only:
         summary = {name: {"mosques": len(rows), "sources": len({s for m in rows for s in m["sources"]})} for name, (_, rows) in plans.items()}
-        core.save(directory / "multi-plan.json", {"generatedAtUTC": core.now(), "providers": summary, "parallelProviders": multi["parallelProviders"]})
+        core.save(directory / "multi-plan.json", {"generatedAtUTC": core.now(), "providers": summary, "parallelProviders": multi["parallelProviders"], "scope": scope})
         print(json.dumps(summary))
         return 0
     with (directory / "multi.lock").open("w") as lock:
@@ -227,6 +282,7 @@ def main():
                 for name in chosen:
                     adapter, mosques = plans[name]
                     cfg = {**config, **{k: v for k, v in multi["providers"][name].items() if k in config}}
+                    cfg["maxDetailsPerMosque"] = per_mosque
                     path = directory if name == "pinhome" else directory / "providers" / name
                     future = pool.submit(run_one, name, adapter, mosques, cfg, path, args.max_search, args.max_detail, cancel, args.refresh_search)
                     futures[future] = name
@@ -236,7 +292,7 @@ def main():
                         runs.append(future.result())
                     except Exception as exc:
                         runs.append({"name": name, "status": "failed", "reason": type(exc).__name__})
-        result = merge(directory, plans, config, runs)
+        result = merge(directory, plans, config, runs, scope)
         print(json.dumps(result["summary"]))
         return 2 if any(r.get("exitCode") or r["status"] in ("failed", "already-running") for r in runs) else 0
 

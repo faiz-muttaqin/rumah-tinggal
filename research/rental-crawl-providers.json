@@ -35,8 +35,14 @@
         "kebayoran-lama",
         "setiabudi",
         "cilandak",
-        "pasar-minggu"
-      ]
+        "pasar-minggu",
+        "cinere"
+      ],
+      "mosqueSources": {
+        "masjid-as-sunnah-vcm": [
+          "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment"
+        ]
+      }
     },
     "realoka": {
       "enabled": true,
@@ -177,5 +183,10 @@
       "status": "robots-disallowed",
       "note": "Robots menolak jalur Marketplace untuk user-agent penelitian; tidak mengambil listing atau login."
     }
-  ]
+  ],
+  "activeMosqueIds": ["masjid-as-sunnah-vcm"],
+  "activeDetailsPerMosque": 12,
+  "additionalMosqueAreas": {
+    "masjid-as-sunnah-vcm": ["jawa-barat/depok/cinere/pangkalan-jati"]
+  }
 }

@@ -94,6 +94,80 @@ class ProviderTest(unittest.TestCase):
     def adapter(self, name):
         return m.adapters.Adapter(name, c)
 
+    def test_active_phase_selects_only_requested_mosque_and_preserves_reference(self):
+        base = [{"id":"a"}, {"id":"masjid-as-sunnah-vcm"}, {"id":"b"}]
+        selected = m.active_mosques(base, {"activeMosqueIds":["masjid-as-sunnah-vcm"]})
+        self.assertEqual(selected, [base[1]])
+        self.assertEqual(len(base), 3)
+        self.assertEqual(m.active_mosques(base, {}), base)
+
+    def test_active_scope_rejects_unknown_empty_duplicate_and_invalid_ids(self):
+        base = [{"id":"a"}]
+        for ids in [[], ["missing"], ["a","a"], "a", [None], [{}]]:
+            with self.assertRaises(ValueError):
+                m.active_mosques(base, {"activeMosqueIds":ids})
+
+    def test_active_budget_does_not_widen_unselected_legacy_runs(self):
+        config = {"maxDetailsPerMosque":2}
+        self.assertEqual(m.active_detail_limit(config, {"activeDetailsPerMosque":12}), 2)
+        self.assertEqual(m.active_detail_limit(config, {"activeMosqueIds":["a"],"activeDetailsPerMosque":12}), 12)
+        for invalid in [0, 21, True, "12"]:
+            with self.assertRaises(ValueError):
+                m.active_detail_limit(config, {"activeMosqueIds":["a"],"activeDetailsPerMosque":invalid})
+
+    def test_active_config_retains_all_78_reference_mosques_for_future_phases(self):
+        config = json.loads((c.ROOT / "research/rental-crawl-sources.json").read_text())
+        base = c.plan(config)
+        settings = json.loads((c.ROOT / "research/rental-crawl-providers.json").read_text())
+        selected = m.active_mosques(base, settings)
+        self.assertEqual(len(base), 78)
+        self.assertEqual([r["id"] for r in selected], ["masjid-as-sunnah-vcm"])
+        for value in settings["providers"].values():
+            value["mosqueAreas"] = config["targets"]
+        plans = m.provider_plan(selected, settings)
+        self.assertEqual(set(plans), set(m.PROVIDERS))
+        self.assertTrue(all([r["id"] for r in rows] == ["masjid-as-sunnah-vcm"] for _, rows in plans.values()))
+        self.assertEqual(len(plans["mamikos"][1][0]["sources"]), 15)
+        self.assertIn("https://jendela360.com/apartemen-cinere", plans["jendela360"][1][0]["sources"])
+        self.assertIn("https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment", plans["jendela360"][1][0]["sources"])
+        self.assertFalse(plans["jakartaprime"][1][0]["sources"])
+
+    def test_adjacent_discovery_areas_reject_unknown_mosques_and_non_area_paths(self):
+        for extras in [{"unknown":["jawa-barat/depok/cinere"]}, {"a":[]}, {"a":"depok"}, {"a":["https://other.example.invalid/account"]}, {"a":[None]}]:
+            with self.assertRaises(ValueError):
+                m.active_mosques([{"id":"a"}], {"additionalMosqueAreas":extras})
+
+    def test_unmapped_provider_is_skipped_without_http_or_rewriting_its_cache(self):
+        with tempfile.TemporaryDirectory() as temp, patch.object(c, "run", side_effect=AssertionError("must not fetch")):
+            directory = Path(temp) / "unmapped"
+            result = m.run_one("jakartaprime", None, [{"id":"masjid-as-sunnah-vcm","sources":[]}], {}, directory)
+            self.assertEqual(result["status"], "not-applicable")
+            self.assertEqual(result["run"]["requests"], 0)
+            self.assertEqual(result["exitCode"], 0)
+            self.assertFalse(directory.exists())
+
+    def test_mosque_specific_discovery_rejects_unknown_ids_and_non_search_urls(self):
+        for sources in [{"unknown":["https://jendela360.com/apartemen-cinere"]}, {"a":[]}, {"a":[None]}]:
+            with self.assertRaises(ValueError):
+                m.active_mosques([{"id":"a"}], {"providers":{"jendela360":{"mosqueSources":sources}}})
+        base = [{"id":"a"}]
+        for url in ["https://other.example.invalid/apartemen-cinere", "https://jendela360.com/robots.txt",
+                    "https://jendela360.com/sewa-apartemen-uji/ABCA001", "https://jendela360.com/apartemen-cinere?login=1"]:
+            providers = {name:{"enabled":False} for name in m.PROVIDERS}
+            providers["jendela360"] = {"enabled":True,"mosqueAreas":{"a":[]},"mosqueSources":{"a":[url]}}
+            with self.assertRaises(ValueError):
+                m.provider_plan(base, {"providers":providers})
+
+    def test_jendela_building_page_uses_explicit_rental_cards_and_rejects_missing_inventory(self):
+        a = self.adapter("jendela360")
+        data = {"server_side_initial_units":[{"apartment_slug":"gedung-uji","code":"ABCA001","is_available":1},
+                 {"apartment_slug":"gedung-uji","code":"ABCA002","is_sell":1,"is_available":1}], "server_side_total_units":2}
+        url = a.origin + "/sewa-apartemen-gedung-uji"
+        result = a.parse_search(script("__NEXT_DATA__", {"props":{"pageProps":data}}), url)
+        self.assertEqual([r["url"] for r in result["cards"]], [url+"/ABCA001"])
+        with self.assertRaises(ValueError):
+            a.parse_search(script("__NEXT_DATA__", {"props":{"pageProps":{"slug":"gedung-uji"}}}), url)
+
     def test_jendela_uses_rendered_rentals_instead_of_initial_sale_inventory(self):
         a = self.adapter("jendela360")
         data = {"initial_units": [{"code": "SALE001", "is_sell": 1, "selling_price": 1_000_000_000}],
@@ -489,6 +563,7 @@ class ProviderTest(unittest.TestCase):
 
     def test_provider_lock_prevents_duplicate_jobs_in_the_same_state(self):
         entered, release = threading.Event(), threading.Event()
+        mosques = [{"id":"m", "sources":[c.ORIGIN + "/sewa/rumah/banten/tangerang-selatan/ciputat-timur/pisangan"]}]
         def fake_run(config, mosques, path, *args):
             entered.set()
             release.wait(timeout=3)
@@ -496,9 +571,9 @@ class ProviderTest(unittest.TestCase):
             return 0
         with tempfile.TemporaryDirectory() as tmp, patch.object(c, "run", fake_run):
             with ThreadPoolExecutor(max_workers=2) as pool:
-                first = pool.submit(m.run_one, "pinhome", None, [], {}, Path(tmp))
+                first = pool.submit(m.run_one, "pinhome", None, mosques, {}, Path(tmp))
                 self.assertTrue(entered.wait(timeout=3))
-                second = pool.submit(m.run_one, "pinhome", None, [], {}, Path(tmp))
+                second = pool.submit(m.run_one, "pinhome", None, mosques, {}, Path(tmp))
                 self.assertEqual(second.result()["status"], "already-running")
                 release.set()
                 self.assertEqual(first.result()["exitCode"], 0)
@@ -507,12 +582,13 @@ class ProviderTest(unittest.TestCase):
         cancel = threading.Event()
         adapter = self.adapter("realoka")
         settings = {"delaySeconds": 2, "delayJitterSeconds": 3}
+        mosques = [{"id":"m", "sources":[adapter.origin + "/rumah-disewakan/tangerang-selatan-kota"]}]
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp)
             c.save(path / "latest.json", {"run": {"status": "complete-with-limits", "refreshSearch": True}, "summary": {}})
             with patch.object(c, "run", return_value=0) as run:
-                result = m.run_one("realoka", adapter, [], settings, path, 30, 80, cancel, True)
-                run.assert_called_once_with(settings, [], path, 30, 80, adapter, cancel, True)
+                result = m.run_one("realoka", adapter, mosques, settings, path, 30, 80, cancel, True)
+                run.assert_called_once_with(settings, mosques, path, 30, 80, adapter, cancel, True)
             self.assertTrue(result["run"]["refreshSearch"])
 
     def test_cancelled_pinhome_client_does_not_make_another_request(self):

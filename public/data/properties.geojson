@@ -37180,6 +37180,288 @@
        "km": 1.497
       }
      ]
+    },
+    {
+     "id": "sewa-pinhome-f2eb3cf4feda",
+     "title": "Rumah 3 kamar Pisangan — 100 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Pisangan, Ciputat Timur, Kota Tangerang Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 78000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 78 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pisangan-2",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": null,
+     "sizeM2": 100.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp 78 Juta/Tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pisangan-2"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tiga kamar menurut spesifikasi portal; deskripsi tidak tersedia. Pembaruan sumber 2025-06-11. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pisangan-2",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.320314,
+      "lng": 106.761973,
+      "precision": "approximate",
+      "label": "Pin perkiraan Pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pisangan-2",
+      "method": "Pin publik detail unit Pinhome, bukan pusat administratif",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-as-sunnah-vcm",
+       "name": "Masjid As Sunnah VCM",
+       "km": 1.246
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-70339ca4dfbb",
+     "title": "Rumah furnished Bali View — 250 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Pisangan, Ciputat Timur, Kota Tangerang Selatan",
+     "buildingOrCluster": "Bali View",
+     "rent": {
+      "amount": 125000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 125 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-asri-tenang-furnished-komplek-bali-view-cirendeu-di-pisangan",
+      "pageDate": "2025-08-31"
+     },
+     "bedrooms": null,
+     "sizeM2": 250.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp 125 Juta/Tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-asri-tenang-furnished-komplek-bali-view-cirendeu-di-pisangan"
+      },
+      {
+       "quote": "Rumah 2 Lantai, asri, nyaman dan tenang, furnished di Komplek Bali View Cirendeu",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-asri-tenang-furnished-komplek-bali-view-cirendeu-di-pisangan"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Furnished menurut deskripsi; inventaris dan pembagian kamar perlu konfirmasi. Pembaruan sumber 2025-08-31. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-asri-tenang-furnished-komplek-bali-view-cirendeu-di-pisangan",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-08-31",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.316568,
+      "lng": 106.767922,
+      "precision": "approximate",
+      "label": "Pin perkiraan Pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-asri-tenang-furnished-komplek-bali-view-cirendeu-di-pisangan",
+      "method": "Pin publik detail unit Pinhome, bukan pusat administratif",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-as-sunnah-vcm",
+       "name": "Masjid As Sunnah VCM",
+       "km": 0.572
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-fdb23170b697",
+     "title": "Rumah Cluster Pesona Azalea — 210 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Pisangan, Ciputat Timur, Kota Tangerang Selatan",
+     "buildingOrCluster": "Pesona Azalea",
+     "rent": {
+      "amount": 135000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 135 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-pesona-azalea",
+      "pageDate": "2025-09-20"
+     },
+     "bedrooms": null,
+     "sizeM2": 210.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp 135 Juta/Tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-pesona-azalea"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Jumlah kamar tidak dicantumkan karena spesifikasi portal dan uraian inventaris tidak cukup jelas untuk membedakan kamar tidur. Pembaruan sumber 2025-09-20. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-pesona-azalea",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-09-20",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.324591,
+      "lng": 106.767252,
+      "precision": "approximate",
+      "label": "Pin perkiraan Pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-pesona-azalea",
+      "method": "Pin publik detail unit Pinhome, bukan pusat administratif",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-as-sunnah-vcm",
+       "name": "Masjid As Sunnah VCM",
+       "km": 0.985
+      }
+     ]
+    },
+    {
+     "id": "sewa-jendela360-bc59dfd4e909",
+     "title": "Studio Cinere Bellevue — CBSA012",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Depok",
+     "locationText": "Cinere, Depok",
+     "buildingOrCluster": "Cinere Bellevue Suites Apartment",
+     "rent": {
+      "amount": 4300000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp 4.300.000/bulan",
+      "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA012",
+      "pageDate": null
+     },
+     "bedrooms": null,
+     "sizeM2": 22.0,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Cinere Bellevue Suites Apartment",
+       "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA012"
+      },
+      {
+       "quote": "CBSA012",
+       "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA012"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Opsi 1 bulan Rp 4,3 juta; paket 3 bulan Rp 14,84 juta, 6 bulan Rp 24,89 juta, 12 bulan Rp 42,83 juta. Angka tahunan/12 bukan tarif kontrak satu bulan. Furnished menurut sumber; IPL, air, listrik dan biaya layanan perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA012",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.317404,
+      "lng": 106.78239,
+      "precision": "building",
+      "label": "Titik gedung Jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA012",
+      "method": "Koordinat gedung dari data detail unit berkode sama",
+      "note": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-as-sunnah-vcm",
+       "name": "Masjid As Sunnah VCM",
+       "km": 1.044
+      }
+     ]
+    },
+    {
+     "id": "sewa-jendela360-21179e49e6ed",
+     "title": "Studio Cinere Bellevue — CBSA009",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Depok",
+     "locationText": "Cinere, Depok",
+     "buildingOrCluster": "Cinere Bellevue Suites Apartment",
+     "rent": {
+      "amount": 30300000,
+      "period": "yearly",
+      "minimumMonths": 6,
+      "quote": "Rp 30.300.000/tahun",
+      "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA009",
+      "pageDate": null
+     },
+     "bedrooms": null,
+     "sizeM2": 22.0,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Cinere Bellevue Suites Apartment",
+       "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA009"
+      },
+      {
+       "quote": "CBSA009",
+       "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA009"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga Rp 30,3 juta untuk 12 bulan; tersedia opsi 6 bulan Rp 15,3 juta. Tidak ada opsi sewa 1 bulan pada sumber. Ekuivalen tahunan/12 bukan tarif bulanan. Furnished menurut sumber; IPL, air, listrik dan biaya layanan perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA009",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-07",
+     "locationNote": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.317404,
+      "lng": 106.78239,
+      "precision": "building",
+      "label": "Titik gedung Jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA009",
+      "method": "Koordinat gedung dari data detail unit berkode sama",
+      "note": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-07"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-as-sunnah-vcm",
+       "name": "Masjid As Sunnah VCM",
+       "km": 1.044
+      }
+     ]
     }
    ],
    "locationsCheckedAt": "2026-11-07"

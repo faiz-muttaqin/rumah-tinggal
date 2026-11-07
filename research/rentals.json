@@ -23639,6 +23639,198 @@
       "verdict": "partial",
       "lastChecked": "2026-11-07",
       "note": "Compact Single A; tarif untuk 1 orang, maks. 2 orang pada tipe ini. Putra. Aturan properti: pasutri boleh. Aturan properti: anak tidak boleh. Aturan properti tidak mengubah kapasitas tipe. Bukan bukti izin 2 dewasa + 1 anak; biaya penghuni tambahan dan minimum kontrak perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
+    },
+    {
+      "id": "sewa-pinhome-f2eb3cf4feda",
+      "title": "Rumah 3 kamar Pisangan — 100 m²",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Tangerang",
+      "locationText": "Pisangan, Ciputat Timur, Kota Tangerang Selatan",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 78000000,
+        "period": "yearly",
+        "minimumMonths": 12,
+        "quote": "Rp 78 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pisangan-2",
+        "pageDate": "2025-06-11"
+      },
+      "bedrooms": 3.0,
+      "sizeM2": 100.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 78 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pisangan-2"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pisangan-2",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Tiga kamar menurut spesifikasi portal; deskripsi tidak tersedia. Pembaruan sumber 2025-06-11. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
+    },
+    {
+      "id": "sewa-pinhome-70339ca4dfbb",
+      "title": "Rumah furnished Bali View — 250 m²",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Tangerang",
+      "locationText": "Pisangan, Ciputat Timur, Kota Tangerang Selatan",
+      "buildingOrCluster": "Bali View",
+      "rent": {
+        "amount": 125000000,
+        "period": "yearly",
+        "minimumMonths": 12,
+        "quote": "Rp 125 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-asri-tenang-furnished-komplek-bali-view-cirendeu-di-pisangan",
+        "pageDate": "2025-08-31"
+      },
+      "bedrooms": 5.0,
+      "sizeM2": 250.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 125 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-asri-tenang-furnished-komplek-bali-view-cirendeu-di-pisangan"
+        },
+        {
+          "quote": "Rumah 2 Lantai, asri, nyaman dan tenang, furnished di Komplek Bali View Cirendeu",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-asri-tenang-furnished-komplek-bali-view-cirendeu-di-pisangan"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-asri-tenang-furnished-komplek-bali-view-cirendeu-di-pisangan",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-08-31",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Furnished menurut deskripsi; inventaris dan pembagian kamar perlu konfirmasi. Pembaruan sumber 2025-08-31. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
+    },
+    {
+      "id": "sewa-pinhome-fdb23170b697",
+      "title": "Rumah Cluster Pesona Azalea — 210 m²",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Tangerang",
+      "locationText": "Pisangan, Ciputat Timur, Kota Tangerang Selatan",
+      "buildingOrCluster": "Pesona Azalea",
+      "rent": {
+        "amount": 135000000,
+        "period": "yearly",
+        "minimumMonths": 12,
+        "quote": "Rp 135 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-pesona-azalea",
+        "pageDate": "2025-09-20"
+      },
+      "bedrooms": null,
+      "sizeM2": 210.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 135 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-pesona-azalea"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-pesona-azalea",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-09-20",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Jumlah kamar tidak dicantumkan karena spesifikasi portal dan uraian inventaris tidak cukup jelas untuk membedakan kamar tidur. Pembaruan sumber 2025-09-20. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
+    },
+    {
+      "id": "sewa-jendela360-bc59dfd4e909",
+      "title": "Studio Cinere Bellevue — CBSA012",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Depok",
+      "locationText": "Cinere, Depok",
+      "buildingOrCluster": "Cinere Bellevue Suites Apartment",
+      "rent": {
+        "amount": 4300000,
+        "period": "monthly",
+        "minimumMonths": 1,
+        "quote": "Rp 4.300.000/bulan",
+        "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA012",
+        "pageDate": null
+      },
+      "bedrooms": 0.0,
+      "sizeM2": 22.0,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Cinere Bellevue Suites Apartment",
+          "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA012"
+        },
+        {
+          "quote": "CBSA012",
+          "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA012"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA012",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Opsi 1 bulan Rp 4,3 juta; paket 3 bulan Rp 14,84 juta, 6 bulan Rp 24,89 juta, 12 bulan Rp 42,83 juta. Angka tahunan/12 bukan tarif kontrak satu bulan. Furnished menurut sumber; IPL, air, listrik dan biaya layanan perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
+    },
+    {
+      "id": "sewa-jendela360-21179e49e6ed",
+      "title": "Studio Cinere Bellevue — CBSA009",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Depok",
+      "locationText": "Cinere, Depok",
+      "buildingOrCluster": "Cinere Bellevue Suites Apartment",
+      "rent": {
+        "amount": 30300000,
+        "period": "yearly",
+        "minimumMonths": 6,
+        "quote": "Rp 30.300.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA009",
+        "pageDate": null
+      },
+      "bedrooms": 0.0,
+      "sizeM2": 22.0,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Cinere Bellevue Suites Apartment",
+          "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA009"
+        },
+        {
+          "quote": "CBSA009",
+          "url": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA009"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment/CBSA009",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-07",
+      "note": "Harga Rp 30,3 juta untuk 12 bulan; tersedia opsi 6 bulan Rp 15,3 juta. Tidak ada opsi sewa 1 bulan pada sumber. Ekuivalen tahunan/12 bukan tarif bulanan. Furnished menurut sumber; IPL, air, listrik dan biaya layanan perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
     }
   ]
 }

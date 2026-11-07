@@ -182,7 +182,9 @@ class Adapter:
                 pass
         page = int(dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(url).query)).get("page", "1"))
         if self.name == "jendela360":
-            data = self.core.script_json(text, "__NEXT_DATA__")["props"]["pageProps"]["data"]
+            props = self.core.script_json(text, "__NEXT_DATA__")["props"]["pageProps"]
+            # City/district pages nest data; building rental pages expose it directly.
+            data = props.get("data", props)
             units = data.get("server_side_initial_units", data.get("initial_units"))
             if not isinstance(units, list):
                 raise ValueError("Source structure changed Jendela360 units")
