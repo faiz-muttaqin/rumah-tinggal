@@ -24182,6 +24182,45 @@
       "verdict": "partial",
       "lastChecked": "2026-11-09",
       "note": "Kategori Keluarga/Pasutri pada portal. Tiga petak: ruang tamu, 1 kamar tidur, serta dapur/KM/ruang cuci. Air tanah gratis; listrik terpisah. Parkir berbayar. Opsi cadangan sekitar 2,227 km garis lurus dari VCM, di luar radius pencarian 1,5 km. Minimum kontrak, dokumen pasutri dan aturan lengkap perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Ketersediaan, deposit dan biaya akhir belum dikonfirmasi."
+    },
+    {
+      "id": "sewa-mamikos-5fb6073b86dd",
+      "title": "Kos Assalam Suite — pasutri, Cinere",
+      "kind": "Rumah",
+      "rentalType": "kos-keluarga",
+      "area": "Depok",
+      "locationText": "Cinere, Depok",
+      "buildingOrCluster": "Assalam Suite",
+      "rent": {
+        "amount": 850000,
+        "period": "monthly",
+        "quote": "Rp850.000/bulan",
+        "url": "https://mamikos.com/room/kost-depok-kost-campur-murah-kost-assalam-suite-cinere-depok-2",
+        "pageDate": "2026-09-08"
+      },
+      "bedrooms": 1,
+      "sizeM2": 12,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost Assalam Suite Cinere Depok",
+          "url": "https://mamikos.com/room/kost-depok-kost-campur-murah-kost-assalam-suite-cinere-depok-2"
+        },
+        {
+          "quote": "Calon penyewa pasutri wajib sertakan buku nikah.",
+          "url": "https://mamikos.com/room/kost-depok-kost-campur-murah-kost-assalam-suite-cinere-depok-2"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-depok-kost-campur-murah-kost-assalam-suite-cinere-depok-2",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-09-08",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-09",
+      "note": "Aturan portal mengizinkan pasutri dan anak; pasutri wajib menyertakan buku nikah. Harga kamar Rp850.000/bulan; biaya untuk dua orang dan kapasitas perlu konfirmasi. Minimum kontrak belum dicantumkan. Pin perkiraan sekitar 132 m dari Masjid Al Adhim dan 1,09 km dari Masjid Al Hikmah DDN 2, garis lurus, bukan rute jalan. Pembaruan sumber 2026-09-08. Stok, deposit, listrik/air dan biaya akhir perlu konfirmasi."
     }
   ]
 }

@@ -10241,6 +10241,23 @@
         "sha256": "c55d9999574d4e35fbf295c07b4bf2aa06b172f7f5b306eb14cebb29fc927a08",
         "selector": "Accommodation name and canonical URL identity; Offer IDR monthly; visible category Keluarga/Pasutri"
       }
+    },
+    {
+      "rentalId": "sewa-mamikos-5fb6073b86dd",
+      "location": {
+        "lat": -6.321107,
+        "lng": 106.802315,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-depok-kost-campur-murah-kost-assalam-suite-cinere-depok-2",
+        "method": "Koordinat publik halaman tipe kamar Mamikos",
+        "checkedAt": "2026-11-09"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus ke masjid, bukan rute berjalan.",
+      "evidence": {
+        "sha256": "03729dca8411de8e008099cc6e5e9396aac80281a71a8a1650b8ad1870282cec",
+        "selector": "var detail: latitude/longitude, raw and formatted monthly price, active room status, booking_rules.is_married; visible book-of-marriage rule"
+      }
     }
   ]
 }
