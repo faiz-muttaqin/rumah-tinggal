@@ -37751,6 +37751,203 @@
        "km": 0.299
       }
      ]
+    },
+    {
+     "id": "sewa-mamikos-18c3f02b1467",
+     "title": "Kos Singgahsini Cireundeu 9 Tipe A — pasutri, tarif dasar",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Ciputat Timur, Tangerang Selatan",
+     "buildingOrCluster": "Singgahsini Cireundeu 9",
+     "rent": {
+      "amount": 2025000,
+      "period": "monthly",
+      "quote": "Rp2.025.000 (harga normal sebelum promo bulan pertama)",
+      "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-singgahsini-cireundeu-9-tipe-a-ciputat-timur-tangerang-selatan-2",
+      "pageDate": "2026-11-09"
+     },
+     "bedrooms": 1,
+     "sizeM2": 9.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Singgahsini Cireundeu 9",
+       "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-singgahsini-cireundeu-9-tipe-a-ciputat-timur-tangerang-selatan-2"
+      },
+      {
+       "quote": "Bisa BERDUA +200 Ribu (tenant membawa kasur tambahan sendiri)",
+       "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-singgahsini-cireundeu-9-tipe-a-ciputat-timur-tangerang-selatan-2"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga normal yang ditampilkan Rp2.025.000/bulan; promo Rp1.865.000 hanya bulan pertama. Berdua tambah Rp200.000 dan membawa kasur tambahan sendiri; periode tambahan dan total untuk pasutri perlu konfirmasi. Pasutri diizinkan, anak tidak. Minimum kontrak belum dicantumkan. Pembaruan sumber 2026-11-09. Stok, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-singgahsini-cireundeu-9-tipe-a-ciputat-timur-tangerang-selatan-2",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-11-09",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-09",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.312748,
+      "lng": 106.769886,
+      "precision": "approximate",
+      "label": "Pin perkiraan Mamikos",
+      "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-singgahsini-cireundeu-9-tipe-a-ciputat-timur-tangerang-selatan-2",
+      "method": "Koordinat publik halaman tipe kamar Mamikos",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-09"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-as-sunnah-vcm",
+       "name": "Masjid As Sunnah VCM",
+       "km": 0.654
+      }
+     ]
+    },
+    {
+     "id": "sewa-mamikos-5b882ee16dd7",
+     "title": "Kos Cherokee Dwisekti Wicaksono Tipe A — pasutri, Cinere",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Kecamatan Cinere, Kota Depok",
+     "buildingOrCluster": "Cherokee Dwisekti Wicaksono",
+     "rent": {
+      "amount": 1350000,
+      "period": "monthly",
+      "quote": "Rp1.350.000/bulan",
+      "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-cherokee-dwisekti-wicaksono-tipe-a-cinere-depok-2",
+      "pageDate": "2026-07-07"
+     },
+     "bedrooms": 1,
+     "sizeM2": 12.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kost Cherokee Dwisekti Wicaksono Tipe A Cinere Depok",
+       "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-cherokee-dwisekti-wicaksono-tipe-a-cinere-depok-2"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pasutri diizinkan menurut aturan portal; anak tidak. Tarif pada listing Rp1.350.000/bulan, biaya untuk dua penghuni dan kapasitas kamar perlu konfirmasi. Opsi cadangan: pin sekitar 1,778 km garis lurus dari VCM, di luar radius pencarian 1,5 km. Minimum kontrak belum dicantumkan. Pembaruan sumber 2026-07-07. Stok, deposit dan biaya akhir perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-cherokee-dwisekti-wicaksono-tipe-a-cinere-depok-2",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-07-07",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-09",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.327255,
+      "lng": 106.785909,
+      "precision": "approximate",
+      "label": "Pin perkiraan Mamikos",
+      "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-cherokee-dwisekti-wicaksono-tipe-a-cinere-depok-2",
+      "method": "Koordinat publik halaman tipe kamar Mamikos",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-09"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-hikost-f0db31f9b424",
+     "title": "Kontrakan PIM 2 — kategori pasutri",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Pangkalan Jati, Cinere, Depok",
+     "buildingOrCluster": "Kontrakan PIM 2",
+     "rent": {
+      "amount": 1600000,
+      "period": "monthly",
+      "quote": "Rp 1.600.000 Per bulan",
+      "url": "https://hikost.com/kost/depok/kontrakan-pim-2-021969f7851d",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": null,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kontrakan PIM 2",
+       "url": "https://hikost.com/kost/depok/kontrakan-pim-2-021969f7851d"
+      },
+      {
+       "quote": "Keluarga / Pasutri",
+       "url": "https://hikost.com/kost/depok/kontrakan-pim-2-021969f7851d"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Kategori Keluarga/Pasutri pada portal. Tiga petak: ruang tamu, 1 kamar tidur, serta dapur/KM/ruang cuci. Air tanah gratis; listrik terpisah. Titik belum tersedia; jarak ke VCM belum dapat dibuktikan. Minimum kontrak, dokumen pasutri dan aturan lengkap perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Ketersediaan, deposit dan biaya akhir belum dikonfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://hikost.com/kost/depok/kontrakan-pim-2-021969f7851d",
+     "sourcePortal": "hikost",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-09",
+     "locationNote": "Titik dan jarak ke VCM belum terbukti; hanya petunjuk kawasan, bukan hasil dalam radius masjid.",
+     "location": null,
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-hikost-a6220914dbc5",
+     "title": "Kontrakan PIM 3 — kategori pasutri",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Cinere, Depok",
+     "buildingOrCluster": "Kontrakan PIM 3",
+     "rent": {
+      "amount": 1600000,
+      "period": "monthly",
+      "quote": "Rp 1.600.000 Per bulan",
+      "url": "https://hikost.com/kost/depok/kontrakan-pim-3-b6ff33421840",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": null,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kontrakan PIM 3",
+       "url": "https://hikost.com/kost/depok/kontrakan-pim-3-b6ff33421840"
+      },
+      {
+       "quote": "Keluarga / Pasutri",
+       "url": "https://hikost.com/kost/depok/kontrakan-pim-3-b6ff33421840"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Kategori Keluarga/Pasutri pada portal. Tiga petak: ruang tamu, 1 kamar tidur, serta dapur/KM/ruang cuci. Air tanah gratis; listrik terpisah. Parkir berbayar. Opsi cadangan sekitar 2,227 km garis lurus dari VCM, di luar radius pencarian 1,5 km. Minimum kontrak, dokumen pasutri dan aturan lengkap perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Ketersediaan, deposit dan biaya akhir belum dikonfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://hikost.com/kost/depok/kontrakan-pim-3-b6ff33421840",
+     "sourcePortal": "hikost",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-09",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+     "location": {
+      "lat": -6.334744,
+      "lng": 106.783657,
+      "precision": "approximate",
+      "label": "Pin perkiraan HIKOST",
+      "url": "https://hikost.com/kost/depok/kontrakan-pim-3-b6ff33421840",
+      "method": "GeoCoordinates pada Accommodation milik listing yang sama, sesuai tautan peta",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "checkedAt": "2026-11-09"
+     },
+     "nearbyMosques": []
     }
    ],
    "locationsCheckedAt": "2026-11-09"

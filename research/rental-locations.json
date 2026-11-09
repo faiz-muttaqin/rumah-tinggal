@@ -10181,6 +10181,66 @@
         "sha256": "c0bf0a680406cc71fc14ee17ec9d18dfb49e8164ae71d2026502370ccc813432",
         "selector": "__UNIT_DETAIL__: location.coordinate, rentPriceLabel, minimumRentTermMonth"
       }
+    },
+    {
+      "rentalId": "sewa-mamikos-18c3f02b1467",
+      "location": {
+        "lat": -6.312748,
+        "lng": 106.769886,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-singgahsini-cireundeu-9-tipe-a-ciputat-timur-tangerang-selatan-2",
+        "method": "Koordinat publik halaman tipe kamar Mamikos",
+        "checkedAt": "2026-11-09"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "evidence": {
+        "sha256": "a852e1f6e8285e9b3bb535cc3017dccd591f58399d2a80711e1c58b158ba9c74",
+        "selector": "var detail: room identity, geo, booking_rules.is_married; visible normal monthly price"
+      }
+    },
+    {
+      "rentalId": "sewa-mamikos-5b882ee16dd7",
+      "location": {
+        "lat": -6.327255,
+        "lng": 106.785909,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-cherokee-dwisekti-wicaksono-tipe-a-cinere-depok-2",
+        "method": "Koordinat publik halaman tipe kamar Mamikos",
+        "checkedAt": "2026-11-09"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "evidence": {
+        "sha256": "55d82e956a01cb033a5a3680a5e9ac31027ef4232f3ef1d4341df826c28be3aa",
+        "selector": "var detail: latitude/longitude, monthly price matches display, booking_rules.is_married"
+      }
+    },
+    {
+      "rentalId": "sewa-hikost-f0db31f9b424",
+      "location": null,
+      "note": "Titik dan jarak ke VCM belum terbukti; hanya petunjuk kawasan, bukan hasil dalam radius masjid.",
+      "evidence": {
+        "sha256": "447d999e639f86432a254a639d80fb52070f3bbb3f066489f5261bda72afb7db",
+        "selector": "Accommodation name and canonical URL identity; Offer IDR monthly; visible category Keluarga/Pasutri"
+      }
+    },
+    {
+      "rentalId": "sewa-hikost-a6220914dbc5",
+      "location": {
+        "lat": -6.334744,
+        "lng": 106.783657,
+        "precision": "approximate",
+        "label": "Pin perkiraan HIKOST",
+        "url": "https://hikost.com/kost/depok/kontrakan-pim-3-b6ff33421840",
+        "method": "GeoCoordinates pada Accommodation milik listing yang sama, sesuai tautan peta",
+        "checkedAt": "2026-11-09"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "evidence": {
+        "sha256": "c55d9999574d4e35fbf295c07b4bf2aa06b172f7f5b306eb14cebb29fc927a08",
+        "selector": "Accommodation name and canonical URL identity; Offer IDR monthly; visible category Keluarga/Pasutri"
+      }
     }
   ]
 }

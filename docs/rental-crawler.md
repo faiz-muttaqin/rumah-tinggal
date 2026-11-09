@@ -134,3 +134,10 @@ Sumber ketujuh membaca sitemap publik `/place/sitemap.xml`, menyaring slug lokal
 Fase ini mempertahankan radius mentah **1,5 km**, tujuh sumber terkonfigurasi, paralel dua provider, dan tiga jadwal harian. Enam sumber terpetakan mempunyai jatah hingga 12 detail masing-masing, sehingga batas efektif detail adalah 72 per putaran, bukan batas gabungan mode penuh 560. Filter lokalitas dan titik tetap berlaku; jumlah nyata dapat lebih kecil. Tidak ada perubahan master 78 masjid atau penghapusan listing lama.
 
 Pengguna memilih fokus VCM terlebih dahulu dan menunda browser bersama. Xvfb/noVNC, port baru, nginx, dan login OLX/Facebook tidak disiapkan pada tahap ini. [Hasil kurasi VCM](../research/masjid/fokus-vcm-2026-11-07.md) memisahkan harga bulanan, paket tahunan, tanggal sumber, dan titik yang masih perlu diperiksa.
+
+
+## Kurasi pasutri dan situs alternatif — 9 November 2026
+
+[Hasil pencarian pasutri](../research/masjid/pasutri-vcm-2026-11-09.md) memakai kebutuhan dua dewasa tanpa anak, pembayaran bulanan atau tahunan, dengan anggaran belum ditentukan. Izin pasutri diperiksa terpisah dari izin anak; label campur tidak cukup. Singgahsini Cireundeu 9 ditinjau manual memakai harga normal pada DOM dan promo yang eksplisit hanya bulan pertama, dengan biaya berdua tetap diungkapkan. Guard harga otomatis tidak diubah.
+
+HIKOST dan JKTLiving mengizinkan halaman publik yang diuji melalui robots. Dua kontrakan HIKOST ditambahkan lewat kurasi manual; metadata situs lain yang bertentangan dengan deskripsi ditahan. HIKOST belum masuk tujuh provider terjadwal. PIM 2 belum memiliki titik dan PIM 3/Cherokee berada di luar radius VCM; keduanya tidak dianggap hasil dalam radius hanya karena kawasan Cinere. Tidak ada perubahan cron, radius, inventori78, akun, port atau browser bersama.
