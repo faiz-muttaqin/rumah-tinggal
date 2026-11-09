@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-07",
+  "checkedAt": "2026-11-09",
   "note": "Iklan sewa publik diperiksa pada tanggal di masing-masing kartu. Keterangan fasilitas dan transit dapat berasal dari iklan atau sumber kawasan, bukan survei; cek hubungan lokasinya. Nama dan kontak pemilik tidak disimpan. Harga dan ketersediaan cepat berubah.",
   "rentals": [
     {
@@ -23831,6 +23831,205 @@
       "verdict": "partial",
       "lastChecked": "2026-11-07",
       "note": "Harga Rp 30,3 juta untuk 12 bulan; tersedia opsi 6 bulan Rp 15,3 juta. Tidak ada opsi sewa 1 bulan pada sumber. Ekuivalen tahunan/12 bukan tarif bulanan. Furnished menurut sumber; IPL, air, listrik dan biaya layanan perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
+    },
+    {
+      "id": "sewa-jendela360-3130f15cccae",
+      "title": "Studio Cinere Terrace Suites — CINA003",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Depok",
+      "locationText": "Cinere, Depok",
+      "buildingOrCluster": "Cinere Terrace Suites Apartment",
+      "rent": {
+        "amount": 35350000,
+        "period": "yearly",
+        "quote": "Rp 35.350.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-cinere-terrace-suites-apartment/CINA003",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 24.0,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Cinere Terrace Suites Apartment",
+          "url": "https://jendela360.com/sewa-apartemen-cinere-terrace-suites-apartment/CINA003"
+        },
+        {
+          "quote": "CINA003",
+          "url": "https://jendela360.com/sewa-apartemen-cinere-terrace-suites-apartment/CINA003"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-cinere-terrace-suites-apartment/CINA003",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-09",
+      "note": "Paket 12 bulan; tidak ada opsi sewa 1 bulan pada sumber. Ekuivalen tahunan/12 bukan tarif kontrak bulanan. Unfurnished menurut sumber; IPL, air, listrik dan biaya layanan perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
+    },
+    {
+      "id": "sewa-jendela360-4db9cd05c5dc",
+      "title": "Studio Cinere Terrace Suites — CINA001",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Depok",
+      "locationText": "Cinere, Depok",
+      "buildingOrCluster": "Cinere Terrace Suites Apartment",
+      "rent": {
+        "amount": 42930000,
+        "period": "yearly",
+        "quote": "Rp 42.930.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-cinere-terrace-suites-apartment/CINA001",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 24.0,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Cinere Terrace Suites Apartment",
+          "url": "https://jendela360.com/sewa-apartemen-cinere-terrace-suites-apartment/CINA001"
+        },
+        {
+          "quote": "CINA001",
+          "url": "https://jendela360.com/sewa-apartemen-cinere-terrace-suites-apartment/CINA001"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-cinere-terrace-suites-apartment/CINA001",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-09",
+      "note": "Paket 12 bulan; tidak ada opsi sewa 1 bulan pada sumber. Ekuivalen tahunan/12 bukan tarif kontrak bulanan. Unfurnished menurut sumber; IPL, air, listrik dan biaya layanan perlu konfirmasi. Tanggal pembaruan tidak ditampilkan. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
+    },
+    {
+      "id": "sewa-mamikos-278e59608ce3",
+      "title": "Kos Nini Ku — Tipe Standar (putra)",
+      "kind": "Rumah",
+      "rentalType": "kos",
+      "area": "Depok",
+      "locationText": "Cinere, Depok",
+      "buildingOrCluster": "Kost Nini Ku",
+      "rent": {
+        "amount": 2200000,
+        "period": "monthly",
+        "quote": "Rp 2.200.000/bulan",
+        "url": "https://mamikos.com/room/kost-depok-kost-putra-eksklusif-kost-nini-ku-tipe-standar-cinere-depok",
+        "pageDate": "2026-10-27"
+      },
+      "bedrooms": 1,
+      "sizeM2": 24.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost Nini Ku Tipe Standar Cinere Depok",
+          "url": "https://mamikos.com/room/kost-depok-kost-putra-eksklusif-kost-nini-ku-tipe-standar-cinere-depok"
+        },
+        {
+          "quote": "Fasilitas kamar sudah dilengkapi AC, jendela, dan ventilasi untuk kenyamanan maksimal",
+          "url": "https://mamikos.com/room/kost-depok-kost-putra-eksklusif-kost-nini-ku-tipe-standar-cinere-depok"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-depok-kost-putra-eksklusif-kost-nini-ku-tipe-standar-cinere-depok",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-10-27",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-09",
+      "note": "Kos putra; pasutri dan anak tidak diperbolehkan. AC menurut deskripsi; dapur dan balkon bersama. Minimum kontrak dan kapasitas kamar perlu konfirmasi. Indikator portal menunjukkan kamar tersedia saat diperiksa, bukan konfirmasi pemilik. Pembaruan sumber 2026-10-27. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
+    },
+    {
+      "id": "sewa-pinhome-fb7b346c98b2",
+      "title": "Rumah 2 kamar Pisangan — 60 m² (pin 400 m ke VCM)",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Tangerang",
+      "locationText": "Pisangan, Ciputat Timur, Kota Tangerang Selatan",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 2600000,
+        "period": "monthly",
+        "quote": "Rp 2,6 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-baru-renovasi-akses-2-mobil-di-jl-gelagah-nodalam-no27-pisangan",
+        "pageDate": "2025-09-03",
+        "minimumMonths": 1
+      },
+      "bedrooms": 2,
+      "sizeM2": 60.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Disewakan Rumah 2 Lantai",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-baru-renovasi-akses-2-mobil-di-jl-gelagah-nodalam-no27-pisangan"
+        },
+        {
+          "quote": "Harga 2,6 jt/bulan (sudah termasuk biaya IPL)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-baru-renovasi-akses-2-mobil-di-jl-gelagah-nodalam-no27-pisangan"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-baru-renovasi-akses-2-mobil-di-jl-gelagah-nodalam-no27-pisangan",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-09-03",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-09",
+      "note": "Dua lantai, 2 kamar tidur dan 2 kamar mandi menurut deskripsi. Penggunaan sebagai rumah tinggal diperbolehkan. Harga termasuk IPL; air dan listrik perlu konfirmasi. Pin dan foto dua iklan serupa berbeda; pastikan unit saat survei. Pembaruan sumber 2025-09-03. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
+    },
+    {
+      "id": "sewa-pinhome-f23fbcd9c9b2",
+      "title": "Rumah 2 kamar Pisangan — 60 m² (pin 299 m ke VCM)",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Tangerang",
+      "locationText": "Pisangan, Ciputat Timur, Kota Tangerang Selatan",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 2600000,
+        "period": "monthly",
+        "quote": "Rp 2,6 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-baru-renovasi-hanya-5-menit-ke-cinere-di-jl-bidan-gelagah-dalam-no-25-cirendeu",
+        "pageDate": "2025-09-12",
+        "minimumMonths": 1
+      },
+      "bedrooms": 2,
+      "sizeM2": 60.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Disewakan Rumah 2 Lantai",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-baru-renovasi-hanya-5-menit-ke-cinere-di-jl-bidan-gelagah-dalam-no-25-cirendeu"
+        },
+        {
+          "quote": "Harga 2,6 jt/bulan (sudah termasuk biaya IPL)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-baru-renovasi-hanya-5-menit-ke-cinere-di-jl-bidan-gelagah-dalam-no-25-cirendeu"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-baru-renovasi-hanya-5-menit-ke-cinere-di-jl-bidan-gelagah-dalam-no-25-cirendeu",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-09-12",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-09",
+      "note": "Dua lantai, 2 kamar tidur dan 2 kamar mandi menurut deskripsi. Penggunaan sebagai rumah tinggal diperbolehkan. Harga termasuk IPL; air dan listrik perlu konfirmasi. Pin dan foto dua iklan serupa berbeda; pastikan unit saat survei. Pembaruan sumber 2025-09-12. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
     }
   ]
 }

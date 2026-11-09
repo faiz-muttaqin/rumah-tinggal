@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-07",
+  "checkedAt": "2026-11-09",
   "note": "Kurasi titik publik seluruh sewa. Pin perkiraan portal dibedakan dari titik gedung/kompleks; posisi unit tidak dijamin. Centroid administratif ditolak. Lokasi belum terbukti tetap di daftar tanpa pin. Harga dan stok tetap memakai tanggal cek iklan masing-masing.",
   "items": [
     {
@@ -10095,6 +10095,91 @@
       "evidence": {
         "sha256": "a97ca95ca3206285b0e2f5b30403f08e4b07764526c94eea3290167d0a8be675",
         "selector": "unitDetailProps.data: code, latitude, longitude, price_per_*"
+      }
+    },
+    {
+      "rentalId": "sewa-jendela360-3130f15cccae",
+      "location": {
+        "lat": -6.3189,
+        "lng": 106.7817,
+        "precision": "building",
+        "label": "Titik gedung Jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-cinere-terrace-suites-apartment/CINA003",
+        "method": "Koordinat gedung dari detail unit berkode sama",
+        "checkedAt": "2026-11-09"
+      },
+      "note": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+      "evidence": {
+        "sha256": "af0bda923792d1e5188c32288d9f6a8791351bcd04df8fc58d030557df226623",
+        "selector": "unitDetailProps.data: code, latitude, longitude, price_per_12_months"
+      }
+    },
+    {
+      "rentalId": "sewa-jendela360-4db9cd05c5dc",
+      "location": {
+        "lat": -6.3189,
+        "lng": 106.7817,
+        "precision": "building",
+        "label": "Titik gedung Jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-cinere-terrace-suites-apartment/CINA001",
+        "method": "Koordinat gedung dari detail unit berkode sama",
+        "checkedAt": "2026-11-09"
+      },
+      "note": "Titik gedung, bukan pintu kamar; rute berjalan perlu diperiksa.",
+      "evidence": {
+        "sha256": "03382a80cab3768898d45ec2701fce07c0320e06dee4767f7e2f4bf0eb92ba01",
+        "selector": "unitDetailProps.data: code, latitude, longitude, price_per_12_months"
+      }
+    },
+    {
+      "rentalId": "sewa-mamikos-278e59608ce3",
+      "location": {
+        "lat": -6.322655,
+        "lng": 106.780115,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-depok-kost-putra-eksklusif-kost-nini-ku-tipe-standar-cinere-depok",
+        "method": "Koordinat publik halaman kos Mamikos, bukan alamat administratif",
+        "checkedAt": "2026-11-09"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "evidence": {
+        "sha256": "6df3274a8820d64e921fcad8bef7aea643e24c4da2ccdff3f71f7dd2685389ff",
+        "selector": "var detail: latitude, longitude, price_monthly, price_title_formats, gender, booking_rules"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-fb7b346c98b2",
+      "location": {
+        "lat": -6.319717,
+        "lng": 106.769902,
+        "precision": "approximate",
+        "label": "Pin perkiraan Pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-baru-renovasi-akses-2-mobil-di-jl-gelagah-nodalam-no27-pisangan",
+        "method": "Pin publik detail unit Pinhome, bukan pusat administratif",
+        "checkedAt": "2026-11-09"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "evidence": {
+        "sha256": "7e4943f72d7f9fa464080e67136968e9e2d9cb09eb7c880fd2e1641120c4ace1",
+        "selector": "__UNIT_DETAIL__: location.coordinate, rentPriceLabel, minimumRentTermMonth"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-f23fbcd9c9b2",
+      "location": {
+        "lat": -6.318974,
+        "lng": 106.770533,
+        "precision": "approximate",
+        "label": "Pin perkiraan Pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-baru-renovasi-hanya-5-menit-ke-cinere-di-jl-bidan-gelagah-dalam-no-25-cirendeu",
+        "method": "Pin publik detail unit Pinhome, bukan pusat administratif",
+        "checkedAt": "2026-11-09"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
+      "evidence": {
+        "sha256": "c0bf0a680406cc71fc14ee17ec9d18dfb49e8164ae71d2026502370ccc813432",
+        "selector": "__UNIT_DETAIL__: location.coordinate, rentPriceLabel, minimumRentTermMonth"
       }
     }
   ]
