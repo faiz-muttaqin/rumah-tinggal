@@ -208,6 +208,120 @@ for (const [device, viewport] of [
   ["desktop", { width: 1440, height: 1000 }],
   ["mobile", { width: 390, height: 844 }],
 ] as const) {
+  test(`region lock prevents accidental zoom out and keeps navigation usable on ${device}`, async ({
+    page,
+  }, testInfo) => {
+    await page.setViewportSize(viewport);
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    const base = researchFixture.metadata.rentals.rentals[0];
+    const mosque = researchFixture.metadata.mosques.items[0];
+    await page.route("**/data/properties.geojson", (route) =>
+      route.fulfill({
+        json: {
+          ...researchFixture,
+          metadata: {
+            ...researchFixture.metadata,
+            rentals: {
+              ...researchFixture.metadata.rentals,
+              rentals: ["kontrakan", "kos", "apartemen"].map((kind, i) => ({
+                ...base,
+                id: `lock-${kind}`,
+                rentalType:
+                  kind === "kos"
+                    ? "kos-keluarga"
+                    : kind === "apartemen"
+                      ? "apartemen-sewa"
+                      : kind,
+                location: {
+                  lat: mosque.lat + i * 0.002,
+                  lng: mosque.lng + i * 0.002,
+                  precision: "complex",
+                  label: "Titik sewa uji",
+                  url: "https://portal.example.invalid/pin",
+                  method: "Peta uji",
+                  note: "Lokasi fiktif untuk pengujian",
+                  checkedAt: "2026-11-09",
+                },
+              })),
+            },
+          },
+        },
+      }),
+    );
+    await page.goto("/?koleksi=sewa");
+    await page.locator('[data-view-rental="lock-kontrakan"]').click();
+    await page.locator(".maplibregl-popup-close-button").click();
+    await expectRenderedAttribute(page, "data-region-features", true);
+    const pins = page.locator("#map .rental-pin");
+    const positions = () =>
+      pins.evaluateAll((nodes) =>
+        nodes.map((node) => {
+          const { x, y } = node.getBoundingClientRect();
+          return [Math.round(x), Math.round(y)];
+        }),
+      );
+    const separation = async () => {
+      const [a, b] = await positions();
+      return Math.hypot(a[0] - b[0], a[1] - b[1]);
+    };
+    const canvas = page.locator("#map canvas");
+    const bounds = await canvas.boundingBox();
+    if (!bounds) throw new Error("Map canvas missing");
+    const emptyArea = { x: bounds.width * 0.4, y: bounds.height * 0.62 };
+    const before = await positions();
+    await canvas.click({ position: emptyArea });
+    await expect(page.locator('[data-area="Semua"]')).toHaveAttribute(
+      "aria-pressed",
+      "true",
+    );
+    // Region navigation animates for 500 ms; catch a delayed camera reset too.
+    await page.waitForTimeout(700);
+    expect(await positions()).toEqual(before);
+    const lock = page.getByRole("button", {
+      name: "Kunci wilayah",
+      exact: true,
+    });
+    await expect(lock).toHaveAttribute("aria-pressed", "true");
+
+    await pins.first().click();
+    await expect(page.getByTestId("rental-popup")).toBeVisible();
+    await page.locator(".maplibregl-popup-close-button").click();
+    await openMapLayers(page);
+    const beforeLayer = await positions();
+    await page.locator("#rail-toggle").uncheck();
+    expect(await positions()).toEqual(beforeLayer);
+    await page.locator("#map-layer-panel > summary").click();
+
+    const beforePan = await positions();
+    await canvas.focus();
+    await page.keyboard.press("ArrowRight");
+    await expect.poll(positions).not.toEqual(beforePan);
+    const beforeZoom = await separation();
+    await page.locator(".maplibregl-ctrl-zoom-in").click();
+    await expect.poll(separation).toBeGreaterThan(beforeZoom * 1.5);
+    await expectNoHorizontalOverflow(page);
+    await page.screenshot({
+      path: testInfo.outputPath(`region-lock-${device}.png`),
+    });
+
+    await lock.focus();
+    await page.keyboard.press("Enter");
+    await expect(lock).toHaveAttribute("aria-pressed", "false");
+    await canvas.click({ position: emptyArea });
+    await expect(page.locator('[data-area="Bekasi"]')).toHaveAttribute(
+      "aria-pressed",
+      "true",
+    );
+    await expect.poll(separation).toBeLessThan(beforeZoom);
+    await page.reload();
+    if (device === "mobile") await page.locator("#mobile-map").click();
+    await expect(lock).toHaveAttribute("aria-pressed", "false");
+    await lock.click();
+    await page.reload();
+    if (device === "mobile") await page.locator("#mobile-map").click();
+    await expect(lock).toHaveAttribute("aria-pressed", "true");
+  });
+
   test(`independent rental toggles, area, monthly budget and export work on ${device}`, async ({
     page,
   }, testInfo) => {

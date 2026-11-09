@@ -99,6 +99,7 @@ export class HousingMap {
   private pinPopup?: Popup;
   private mosquePopup?: Popup;
   private rentalPopup?: Popup;
+  private areaLocked = true;
   onPinPlace?: (place: Place) => void;
   onMosqueSelect?: (id: string) => void;
   constructor(
@@ -539,6 +540,7 @@ export class HousingMap {
           });
         }
         this.map.on("click", "region-fill", (event) => {
+          if (this.areaLocked) return;
           if (
             this.map.queryRenderedFeatures(event.point, {
               layers: [
@@ -724,6 +726,10 @@ export class HousingMap {
     };
     if (area === "Semua") this.reset();
     else this.map.flyTo({ center: centers[area], zoom: 10.5, duration: 500 });
+  }
+
+  setAreaLocked(locked: boolean): void {
+    this.areaLocked = locked;
   }
 
   async showRail(visible: boolean): Promise<void> {

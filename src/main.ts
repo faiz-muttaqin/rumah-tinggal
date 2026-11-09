@@ -106,7 +106,7 @@ $("app").innerHTML = `
     </aside>
     <section class="map-panel" aria-label="Peta hunian Jabodetabek">
       <div id="map" class="map" aria-label="Peta interaktif, gunakan tombol panah untuk menggeser"></div>
-      <div class="map-heading"><span class="map-heading-icon">${icon("pin")}</span><div><strong>Jabodetabek</strong><span id="map-subtitle">KRL · MRT · LRT · TransJakarta</span></div><button id="map-reset" class="icon-button" aria-label="Tampilkan seluruh Jabodetabek">${icon("target")}</button></div>
+      <div class="map-heading"><button id="map-lock" class="map-heading-icon map-lock" type="button" aria-label="Kunci wilayah" aria-pressed="true">${icon("lock")}</button><div><strong>Jabodetabek</strong><span id="map-subtitle">KRL · MRT · LRT · TransJakarta</span></div><button id="map-reset" class="icon-button" aria-label="Tampilkan seluruh Jabodetabek">${icon("target")}</button></div>
       <div id="map-status" class="map-status" role="status">Peta dasar belum termuat. Wilayah dan KRL tetap bisa dijelajahi.</div>
       <div class="map-tools" role="group" aria-label="Lapisan peta">
         <details class="map-layer-panel" id="map-layer-panel" name="map-layers" open><summary>${icon("pin")} Lapisan peta</summary><div class="map-layer-options">
@@ -157,6 +157,13 @@ let selectedRentalIds: string[] = [];
 let rentalFitPending = false;
 let pins: Pin[] = [];
 let selectedArea = "Semua";
+const AREA_LOCK_KEY = "rumah-tinggal:area-locked";
+let areaLocked = true;
+try {
+  areaLocked = localStorage.getItem(AREA_LOCK_KEY) !== "false";
+} catch {
+  // Tetap terkunci bila penyimpanan browser tidak tersedia.
+}
 let selectedListing: Listing | undefined;
 let listingsVisible = true;
 let pickingPoint: "listing" | "pin" | undefined;
@@ -1078,6 +1085,25 @@ $("listings-toggle").onchange = () => {
   render();
 };
 $("map-reset").onclick = resetFilters;
+function updateAreaLock(): void {
+  map?.setAreaLocked(areaLocked);
+  const button = $("map-lock");
+  button.setAttribute("aria-pressed", String(areaLocked));
+  button.innerHTML = icon(areaLocked ? "lock" : "unlock");
+  button.title = areaLocked
+    ? "Wilayah terkunci: klik area kosong tidak mengubah wilayah atau zoom. Klik untuk membuka."
+    : "Wilayah terbuka: klik peta untuk memilih wilayah. Klik untuk mengunci.";
+}
+$("map-lock").onclick = () => {
+  areaLocked = !areaLocked;
+  updateAreaLock();
+  try {
+    localStorage.setItem(AREA_LOCK_KEY, String(areaLocked));
+  } catch {
+    // Tombol tetap berfungsi tanpa menyimpan preferensi.
+  }
+};
+updateAreaLock();
 $("sources-button").onclick = () =>
   $<HTMLDialogElement>("sources-dialog").showModal();
 for (const button of document.querySelectorAll<HTMLButtonElement>(
@@ -1397,6 +1423,7 @@ async function start(): Promise<void> {
         lng: place.lng,
         category: guessCategory(place.name, place.kind),
       });
+    map.setAreaLocked(areaLocked);
     map.onMosqueSelect = (id) => {
       if (!pickingPoint) selectMosque(id);
     };

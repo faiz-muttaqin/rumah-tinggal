@@ -822,6 +822,10 @@ select {
   padding: 13px 13px 13px 16px;
   box-shadow: 0 4px 20px #304a3810;
   z-index: 2;
+  max-width: calc(100% - 280px);
+}
+.map-heading > div {
+  min-width: 0;
 }
 .map-heading-icon {
   width: 34px;
@@ -831,6 +835,17 @@ select {
   display: grid;
   place-items: center;
   border-radius: 9px;
+  flex-shrink: 0;
+}
+.map-lock {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #b9d0b6;
+}
+.map-lock[aria-pressed="false"] {
+  background: #fffef9;
+  color: #73806a;
+  border-color: var(--line);
 }
 .map-heading strong {
   display: block;
@@ -842,12 +857,16 @@ select {
   font-size: 11px;
   color: #73806a;
   margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .map-heading .icon-button {
   margin-left: 17px;
   border-left: 1px solid var(--line);
   border-radius: 0;
   padding-left: 15px;
+  flex-shrink: 0;
 }
 .icon-button {
   display: inline-flex;
@@ -1841,6 +1860,7 @@ dialog h3 {
     top: 16px;
     padding: 10px;
     gap: 7px;
+    max-width: calc(100% - 32px);
   }
   .map-heading .icon-button {
     margin-left: 5px;
