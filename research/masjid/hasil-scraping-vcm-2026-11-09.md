@@ -1,6 +1,6 @@
 # Hasil scraping gabungan dekat VCM — 9 November 2026
 
-Laporan terbaru selesai **9 November 2026 pukul 06.31 WIB**, dari putaran terjadwal yang dimulai sekitar 06.29 WIB. Enam sumber terpetakan selesai tanpa error sumber. Jakarta Prime tetap terkonfigurasi tetapi dilewati tanpa request karena tidak melayani VCM. Fokus tetap satu Masjid As Sunnah VCM, radius 1,5 km garis lurus, dengan inventori acuan 78 masjid yang dipertahankan.
+Laporan terbaru selesai **9 November 2026 pukul 06.31 WIB**, dari putaran terjadwal yang dimulai sekitar 06.29 WIB. Enam sumber terpetakan menyelesaikan putaran dan seluruh halaman pencarian tidak mencatat error. Satu detail Brighton tidak lolos parser penawaran/residensi, sehingga tetap ditahan dan tidak diterbitkan. Jakarta Prime tetap terkonfigurasi tetapi dilewati tanpa request karena tidak melayani VCM. Fokus tetap satu Masjid As Sunnah VCM, radius 1,5 km garis lurus, dengan inventori acuan 78 masjid yang dipertahankan.
 
 ## Hasil gabungan lintas sumber
 
