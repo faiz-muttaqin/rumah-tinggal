@@ -1,0 +1,38 @@
+[Unit]
+Description=Temporary shared browser for manual housing-site login
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=notify
+NotifyAccess=all
+User=rumah-browser
+Group=rumah-browser
+WorkingDirectory=/var/lib/rumah-shared-browser
+ExecStart=/usr/bin/dbus-run-session -- /usr/bin/python3 /opt/rumah-shared-browser/session.py
+RuntimeDirectory=rumah-shared-browser
+RuntimeDirectoryMode=0700
+StateDirectory=rumah-shared-browser
+StateDirectoryMode=0700
+UMask=0077
+Restart=no
+RuntimeMaxSec=12h
+TimeoutStartSec=75
+TimeoutStopSec=30
+KillMode=control-group
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+ReadWritePaths=/var/lib/rumah-shared-browser /run/rumah-shared-browser
+MemoryMax=2G
+CPUQuota=200%
+TasksMax=512
+StandardOutput=journal
+StandardError=null
+SyslogIdentifier=rumah-shared-browser

@@ -24261,6 +24261,45 @@
       "verdict": "partial",
       "lastChecked": "2026-11-10",
       "note": "Pasutri diizinkan, anak tidak menurut aturan portal. Deskripsi: 1 rumah/1 kamar dengan AC dan kamar mandi; dapat dikontrakkan. Tarif Rp2 juta/bulan; opsi 6 bulan Rp10,8 juta atau 12 bulan Rp20 juta. Minimum 1 bulan. Biaya untuk dua orang, kapasitas, stok, deposit dan tagihan perlu konfirmasi. Pin perkiraan sekitar 1,417 km dari Masjid Al Adhim, garis lurus, bukan rute jalan. Pembaruan sumber 2025-07-21; harga portal diperiksa 2026-11-10."
+    },
+    {
+      "id": "sewa-mamikos-0fc0dc37743c",
+      "title": "Kontrakan Yapi — pasutri, Cinere",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Depok",
+      "locationText": "Kecamatan Cinere, Kota Depok",
+      "buildingOrCluster": "Yapi",
+      "rent": {
+        "amount": 1500000,
+        "period": "monthly",
+        "quote": "Rp1.500.000/bulan",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-yapi-cinere-depok",
+        "pageDate": "2025-10-23"
+      },
+      "bedrooms": null,
+      "sizeM2": null,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost Yapi Cinere Depok",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-yapi-cinere-depok"
+        },
+        {
+          "quote": "Disewakan kontrakan terdiri dari: 4 sekat / 4 ruangan",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-yapi-cinere-depok"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-yapi-cinere-depok",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2025-10-23",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-10",
+      "note": "Deskripsi menawarkan kontrakan 4 sekat/ruangan dan menyebut cocok untuk pasutri. Aturan portal mengizinkan pasutri dan anak. Harga Rp1,5 juta/bulan; biaya untuk dua orang, minimum kontrak dan stok perlu konfirmasi. Portal mencantumkan 3×3 m untuk tipe kamar; luas total dan jumlah kamar tidur belum pasti. Pin perkiraan 755 m dari Al Hikmah DDN 2 dan 1,017 km dari Al Adhim, garis lurus. Pembaruan sumber 2025-10-23. Deposit dan tagihan perlu konfirmasi."
     }
   ]
 }

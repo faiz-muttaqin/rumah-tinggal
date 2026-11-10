@@ -38068,6 +38068,68 @@
        "km": 1.417
       }
      ]
+    },
+    {
+     "id": "sewa-mamikos-0fc0dc37743c",
+     "title": "Kontrakan Yapi — pasutri, Cinere",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Kecamatan Cinere, Kota Depok",
+     "buildingOrCluster": "Yapi",
+     "rent": {
+      "amount": 1500000,
+      "period": "monthly",
+      "quote": "Rp1.500.000/bulan",
+      "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-yapi-cinere-depok",
+      "pageDate": "2025-10-23"
+     },
+     "bedrooms": null,
+     "sizeM2": null,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kost Yapi Cinere Depok",
+       "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-yapi-cinere-depok"
+      },
+      {
+       "quote": "Disewakan kontrakan terdiri dari: 4 sekat / 4 ruangan",
+       "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-yapi-cinere-depok"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Deskripsi menawarkan kontrakan 4 sekat/ruangan dan menyebut cocok untuk pasutri. Aturan portal mengizinkan pasutri dan anak. Harga Rp1,5 juta/bulan; biaya untuk dua orang, minimum kontrak dan stok perlu konfirmasi. Portal mencantumkan 3×3 m untuk tipe kamar; luas total dan jumlah kamar tidur belum pasti. Pin perkiraan 755 m dari Al Hikmah DDN 2 dan 1,017 km dari Al Adhim, garis lurus. Pembaruan sumber 2025-10-23. Deposit dan tagihan perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-yapi-cinere-depok",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2025-10-23",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-10",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus ke masjid, bukan rute berjalan.",
+     "location": {
+      "lat": -6.319804,
+      "lng": 106.793933,
+      "precision": "approximate",
+      "label": "Pin perkiraan Mamikos",
+      "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-yapi-cinere-depok",
+      "method": "Koordinat publik halaman tipe kamar Mamikos",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus ke masjid, bukan rute berjalan.",
+      "checkedAt": "2026-11-10"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hikmah-ddn-2",
+       "name": "Masjid Al Hikmah DDN 2",
+       "km": 0.755
+      },
+      {
+       "id": "masjid-al-adhim",
+       "name": "Masjid Al Adhim",
+       "km": 1.017
+      }
+     ]
     }
    ],
    "locationsCheckedAt": "2026-11-10"

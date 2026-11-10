@@ -10275,6 +10275,23 @@
         "sha256": "df0e3ec3c34a2058f6b7c6ea826a133cb8d6406df5aefd992d0fb7f75984e142",
         "selector": "var detail: latitude/longitude, monthly and term price formats, minimum min_month, active status, booking_rules.is_married true/is_bring_child false; rendered monthly price and enabled rental request"
       }
+    },
+    {
+      "rentalId": "sewa-mamikos-0fc0dc37743c",
+      "location": {
+        "lat": -6.319804,
+        "lng": 106.793933,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-yapi-cinere-depok",
+        "method": "Koordinat publik halaman tipe kamar Mamikos",
+        "checkedAt": "2026-11-10"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus ke masjid, bukan rute berjalan.",
+      "evidence": {
+        "sha256": "f126bf8bbbad24295cb87a5c5b083c69c726414fa5c238f38097d5ddcd256ad2",
+        "selector": "var detail: matching monthly raw/formatted price, active status, married policy and listing geo; visible price and four-section rental description"
+      }
     }
   ]
 }

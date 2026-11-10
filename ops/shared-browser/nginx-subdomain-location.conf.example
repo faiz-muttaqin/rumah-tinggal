@@ -1,0 +1,20 @@
+# Include inside the HTTPS server for browser.faizmuttaqin.com.
+# Nginx and the browser backend are on the same host in this example.
+location = / {
+    return 302 /vnc.html?autoconnect=1&resize=scale&shared=1&path=websockify;
+}
+location / {
+    auth_basic "Shared browser";
+    auth_basic_user_file /etc/rumah-shared-browser/htpasswd;
+    proxy_pass http://127.0.0.1:6080;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+    proxy_set_header Host $host;
+    proxy_read_timeout 3600s;
+    proxy_send_timeout 3600s;
+    proxy_buffering off;
+    add_header Cache-Control "no-store" always;
+    add_header X-Robots-Tag "noindex, nofollow, noarchive" always;
+    access_log off;
+}
