@@ -38256,6 +38256,105 @@
      "locationNote": "Alamat kawasan dari iklan Marketplace; titik unit dan jarak ke masjid belum terverifikasi. Ditampilkan sebagai informasi kawasan tanpa pin. Tidak memakai titik pusat kota atau lokasi penjual.",
      "location": null,
      "nearbyMosques": []
+    },
+    {
+     "id": "sewa-facebook-6290d277d6de",
+     "title": "Kos Gandul–Cinere — tarif pasutri",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Jalan tembus Gandul–Cinere, Depok",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1000000,
+      "period": "monthly",
+      "quote": "Harga 900, pasutri 1 jt",
+      "url": "https://www.facebook.com/marketplace/item/1716711232733929/",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": null,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Ready kost kost an daerah Gandul Cinere,",
+       "url": "https://www.facebook.com/marketplace/item/1716711232733929/"
+      },
+      {
+       "quote": "Kasur uk single",
+       "url": "https://www.facebook.com/marketplace/item/1716711232733929/"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif dasar untuk satu orang Rp900 ribu/bulan; pasutri Rp1 juta/bulan menurut deskripsi. Kasur single, lemari, kipas, kamar mandi dalam dan Wi-Fi; air, keamanan dan kebersihan tercantum termasuk. Kapasitas kasur untuk berdua, listrik, minimum, deposit dan stok perlu konfirmasi. Titik unit dan jarak masjid belum terverifikasi. Tanggal iklan tidak tersedia; diperiksa 10 November 2026.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.facebook.com/marketplace/item/1716711232733929/",
+     "sourcePortal": "facebook",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-10",
+     "locationNote": "Alamat kawasan dari Marketplace; belum ada titik publik unit yang memadai. Tidak membuat pin atau jarak masjid dari pusat kawasan.",
+     "location": null,
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-facebook-1e7919405067",
+     "title": "Rumah khusus pasutri di Pinang Kalijati, Pondok Labu",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Jalan Pinang Kalijati, Pondok Labu, Cilandak, Jakarta Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 2500000,
+      "period": "monthly",
+      "quote": "Bulanan 2.5jt /bulan",
+      "url": "https://www.facebook.com/marketplace/item/907612185524596/",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 30,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Disewakan Rumah khusus pasutri",
+       "url": "https://www.facebook.com/marketplace/item/907612185524596/"
+      },
+      {
+       "quote": "Dengan luas bangunan 30m²",
+       "url": "https://www.facebook.com/marketplace/item/907612185524596/"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Khusus pasutri, 1 kamar tidur ber-AC, bangunan 30 m². Rp2,5 juta/bulan atau Rp30 juta/tahun. Air, parkir, sampah dan perawatan AC tercantum gratis; listrik token sendiri. Pin acuan jalan/RT-RW dari peta pengiklan, bukan pintu unit; sekitar 1,224 km garis lurus dari acuan ke Al Hikmah DDN 2. Minimum, deposit dan stok perlu konfirmasi. Tanggal iklan belum diketahui; diperiksa 10 November 2026.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.facebook.com/marketplace/item/907612185524596/",
+     "sourcePortal": "facebook",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-10",
+     "locationNote": "Titik acuan Jalan Pinang Kalijati, RT/RW yang sama dengan iklan; bukan titik pintu unit. Sekitar 1,224 km garis lurus dari acuan ke Al Hikmah DDN 2, bukan jarak berjalan. Survei lokasi unit tetap diperlukan.",
+     "location": {
+      "lat": -6.304105,
+      "lng": 106.802144,
+      "precision": "approximate",
+      "label": "Acuan jalan pada peta pengiklan",
+      "url": "https://maps.app.goo.gl/83vdCYiddVu3YTN2A",
+      "method": "Titik jalan/RT-RW pada Google Maps publik yang ditautkan iklan; alamat cocok, posisi unit belum terbukti",
+      "note": "Titik acuan Jalan Pinang Kalijati, RT/RW yang sama dengan iklan; bukan titik pintu unit. Sekitar 1,224 km garis lurus dari acuan ke Al Hikmah DDN 2, bukan jarak berjalan. Survei lokasi unit tetap diperlukan.",
+      "checkedAt": "2026-11-10"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hikmah-ddn-2",
+       "name": "Masjid Al Hikmah DDN 2",
+       "km": 1.224
+      }
+     ]
     }
    ],
    "locationsCheckedAt": "2026-11-10"

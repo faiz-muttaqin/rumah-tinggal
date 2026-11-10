@@ -10307,6 +10307,28 @@
       "rentalId": "sewa-facebook-7d7b80fde32a",
       "location": null,
       "note": "Alamat kawasan dari iklan Marketplace; titik unit dan jarak ke masjid belum terverifikasi. Ditampilkan sebagai informasi kawasan tanpa pin. Tidak memakai titik pusat kota atau lokasi penjual."
+    },
+    {
+      "rentalId": "sewa-facebook-6290d277d6de",
+      "location": null,
+      "note": "Alamat kawasan dari Marketplace; belum ada titik publik unit yang memadai. Tidak membuat pin atau jarak masjid dari pusat kawasan."
+    },
+    {
+      "rentalId": "sewa-facebook-1e7919405067",
+      "location": {
+        "lat": -6.304105,
+        "lng": 106.802144,
+        "precision": "approximate",
+        "label": "Acuan jalan pada peta pengiklan",
+        "url": "https://maps.app.goo.gl/83vdCYiddVu3YTN2A",
+        "method": "Titik jalan/RT-RW pada Google Maps publik yang ditautkan iklan; alamat cocok, posisi unit belum terbukti",
+        "checkedAt": "2026-11-10"
+      },
+      "note": "Titik acuan Jalan Pinang Kalijati, RT/RW yang sama dengan iklan; bukan titik pintu unit. Sekitar 1,224 km garis lurus dari acuan ke Al Hikmah DDN 2, bukan jarak berjalan. Survei lokasi unit tetap diperlukan.",
+      "evidence": {
+        "sha256": "646a3b3bfb70376c5b4af2a2b72566558f612c7393dbdfd1d7f00cb422091593",
+        "selector": "Google Maps !3d/!4d place point, not @viewport center; matching street and RT/RW in public listing"
+      }
     }
   ]
 }
