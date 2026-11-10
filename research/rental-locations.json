@@ -10292,6 +10292,21 @@
         "sha256": "f126bf8bbbad24295cb87a5c5b083c69c726414fa5c238f38097d5ddcd256ad2",
         "selector": "var detail: matching monthly raw/formatted price, active status, married policy and listing geo; visible price and four-section rental description"
       }
+    },
+    {
+      "rentalId": "sewa-facebook-bf01213e2d97",
+      "location": null,
+      "note": "Alamat kawasan dari iklan Marketplace; titik unit dan jarak ke masjid belum terverifikasi. Ditampilkan sebagai informasi kawasan tanpa pin. Tidak memakai titik pusat kota atau lokasi penjual."
+    },
+    {
+      "rentalId": "sewa-facebook-b36544cecd6a",
+      "location": null,
+      "note": "Alamat kawasan dari iklan Marketplace; titik unit dan jarak ke masjid belum terverifikasi. Ditampilkan sebagai informasi kawasan tanpa pin. Tidak memakai titik pusat kota atau lokasi penjual."
+    },
+    {
+      "rentalId": "sewa-facebook-7d7b80fde32a",
+      "location": null,
+      "note": "Alamat kawasan dari iklan Marketplace; titik unit dan jarak ke masjid belum terverifikasi. Ditampilkan sebagai informasi kawasan tanpa pin. Tidak memakai titik pusat kota atau lokasi penjual."
     }
   ]
 }

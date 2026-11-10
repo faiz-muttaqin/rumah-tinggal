@@ -11,6 +11,46 @@ const python =
     : "python3 tidak tersedia";
 const CONTACT = /(?:\+?62|\b0)8\d{2}[\s.-]?\d{3,4}[\s.-]?\d{3,5}|wa\.me\//;
 
+function contactScanText(data: unknown): string {
+  return JSON.stringify(data, (key, value: unknown) => {
+    // Marketplace source IDs can contain phone-like digit sequences. Exempt
+    // only canonical item URLs in source fields; scan all other text as before.
+    if (
+      (key === "url" || key === "listingUrl") &&
+      typeof value === "string" &&
+      /^https:\/\/www\.facebook\.com\/marketplace\/item\/\d{14,20}\/$/.test(
+        value,
+      )
+    ) {
+      return "https://www.facebook.com/marketplace/item/[listing-id]/";
+    }
+    return value;
+  });
+}
+
+test("privacy scan distinguishes Marketplace source IDs from personal contacts", () => {
+  const listingUrl =
+    "https://www.facebook.com/marketplace/item/2172262813419046/";
+  assert.match(listingUrl, CONTACT);
+  assert.doesNotMatch(
+    contactScanText({ listingUrl, rent: { url: listingUrl } }),
+    CONTACT,
+  );
+  for (const contact of [
+    "081234567890",
+    "+6281234567890",
+    "wa.me/6281234567890",
+  ]) {
+    for (const field of ["note", "quote", "contactUrl"]) {
+      assert.match(contactScanText({ listingUrl, [field]: contact }), CONTACT);
+    }
+    assert.match(
+      contactScanText({ url: `${listingUrl}?contact=${contact}` }),
+      CONTACT,
+    );
+  }
+});
+
 function build(args: string[]) {
   // Synthetic catalogues supply their own relationships; do not bind them to
   // the curated real-world rentals/leads when one of those inputs is replaced.
@@ -220,7 +260,7 @@ test("published research keeps sourced prices, evidence and computed distances",
   assert.match(metadata.checkedAt, /^\d{4}-\d{2}-\d{2}$/);
   assert.equal(metadata.currency, "IDR");
   assert.ok(features.length > 0);
-  assert.doesNotMatch(JSON.stringify(data), CONTACT);
+  assert.doesNotMatch(contactScanText(data), CONTACT);
   const ids = new Set();
   for (const feature of features) {
     const property = feature.properties;
