@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-09",
+  "checkedAt": "2026-11-10",
   "note": "Iklan sewa publik diperiksa pada tanggal di masing-masing kartu. Keterangan fasilitas dan transit dapat berasal dari iklan atau sumber kawasan, bukan survei; cek hubungan lokasinya. Nama dan kontak pemilik tidak disimpan. Harga dan ketersediaan cepat berubah.",
   "rentals": [
     {
@@ -24221,6 +24221,46 @@
       "verdict": "partial",
       "lastChecked": "2026-11-09",
       "note": "Aturan portal mengizinkan pasutri dan anak; pasutri wajib menyertakan buku nikah. Harga kamar Rp850.000/bulan; biaya untuk dua orang dan kapasitas perlu konfirmasi. Minimum kontrak belum dicantumkan. Pin perkiraan sekitar 132 m dari Masjid Al Adhim dan 1,09 km dari Masjid Al Hikmah DDN 2, garis lurus, bukan rute jalan. Pembaruan sumber 2026-09-08. Stok, deposit, listrik/air dan biaya akhir perlu konfirmasi."
+    },
+    {
+      "id": "sewa-mamikos-d28b58be319b",
+      "title": "Kos Ket — pasutri, opsi kontrakan, Cinere",
+      "kind": "Rumah",
+      "rentalType": "kos",
+      "area": "Depok",
+      "locationText": "Kecamatan Cinere, Kota Depok",
+      "buildingOrCluster": "Kost Ket",
+      "rent": {
+        "amount": 2000000,
+        "period": "monthly",
+        "minimumMonths": 1,
+        "quote": "Rp2.000.000/bulan",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-ket-cinere-depok",
+        "pageDate": "2025-07-21"
+      },
+      "bedrooms": 1,
+      "sizeM2": 32,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Kost Ket Cinere Depok",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-ket-cinere-depok"
+        },
+        {
+          "quote": "1 rumah 1 kamar lengkap dgn AC dan kamar mandi",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-ket-cinere-depok"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-ket-cinere-depok",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2025-07-21",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-10",
+      "note": "Pasutri diizinkan, anak tidak menurut aturan portal. Deskripsi: 1 rumah/1 kamar dengan AC dan kamar mandi; dapat dikontrakkan. Tarif Rp2 juta/bulan; opsi 6 bulan Rp10,8 juta atau 12 bulan Rp20 juta. Minimum 1 bulan. Biaya untuk dua orang, kapasitas, stok, deposit dan tagihan perlu konfirmasi. Pin perkiraan sekitar 1,417 km dari Masjid Al Adhim, garis lurus, bukan rute jalan. Pembaruan sumber 2025-07-21; harga portal diperiksa 2026-11-10."
     }
   ]
 }

@@ -1933,7 +1933,7 @@
    ]
   },
   "rentals": {
-   "checkedAt": "2026-11-09",
+   "checkedAt": "2026-11-10",
    "note": "Iklan sewa publik diperiksa pada tanggal di masing-masing kartu. Keterangan fasilitas dan transit dapat berasal dari iklan atau sumber kawasan, bukan survei; cek hubungan lokasinya. Nama dan kontak pemilik tidak disimpan. Harga dan ketersediaan cepat berubah.",
    "rentals": [
     {
@@ -38010,9 +38010,67 @@
        "km": 1.09
       }
      ]
+    },
+    {
+     "id": "sewa-mamikos-d28b58be319b",
+     "title": "Kos Ket — pasutri, opsi kontrakan, Cinere",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Kecamatan Cinere, Kota Depok",
+     "buildingOrCluster": "Kost Ket",
+     "rent": {
+      "amount": 2000000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp2.000.000/bulan",
+      "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-ket-cinere-depok",
+      "pageDate": "2025-07-21"
+     },
+     "bedrooms": 1,
+     "sizeM2": 32,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Kost Ket Cinere Depok",
+       "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-ket-cinere-depok"
+      },
+      {
+       "quote": "1 rumah 1 kamar lengkap dgn AC dan kamar mandi",
+       "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-ket-cinere-depok"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pasutri diizinkan, anak tidak menurut aturan portal. Deskripsi: 1 rumah/1 kamar dengan AC dan kamar mandi; dapat dikontrakkan. Tarif Rp2 juta/bulan; opsi 6 bulan Rp10,8 juta atau 12 bulan Rp20 juta. Minimum 1 bulan. Biaya untuk dua orang, kapasitas, stok, deposit dan tagihan perlu konfirmasi. Pin perkiraan sekitar 1,417 km dari Masjid Al Adhim, garis lurus, bukan rute jalan. Pembaruan sumber 2025-07-21; harga portal diperiksa 2026-11-10.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-ket-cinere-depok",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2025-07-21",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-10",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus ke masjid, bukan rute berjalan.",
+     "location": {
+      "lat": -6.327322,
+      "lng": 106.792463,
+      "precision": "approximate",
+      "label": "Pin perkiraan Mamikos",
+      "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-ket-cinere-depok",
+      "method": "Koordinat publik halaman tipe kamar Mamikos",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus ke masjid, bukan rute berjalan.",
+      "checkedAt": "2026-11-10"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-adhim",
+       "name": "Masjid Al Adhim",
+       "km": 1.417
+      }
+     ]
     }
    ],
-   "locationsCheckedAt": "2026-11-09"
+   "locationsCheckedAt": "2026-11-10"
   },
   "saleAds": {
    "checkedAt": "2026-10-31",

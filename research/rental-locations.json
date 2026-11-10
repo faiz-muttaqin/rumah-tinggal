@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-09",
+  "checkedAt": "2026-11-10",
   "note": "Kurasi titik publik seluruh sewa. Pin perkiraan portal dibedakan dari titik gedung/kompleks; posisi unit tidak dijamin. Centroid administratif ditolak. Lokasi belum terbukti tetap di daftar tanpa pin. Harga dan stok tetap memakai tanggal cek iklan masing-masing.",
   "items": [
     {
@@ -10257,6 +10257,23 @@
       "evidence": {
         "sha256": "03729dca8411de8e008099cc6e5e9396aac80281a71a8a1650b8ad1870282cec",
         "selector": "var detail: latitude/longitude, raw and formatted monthly price, active room status, booking_rules.is_married; visible book-of-marriage rule"
+      }
+    },
+    {
+      "rentalId": "sewa-mamikos-d28b58be319b",
+      "location": {
+        "lat": -6.327322,
+        "lng": 106.792463,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-ket-cinere-depok",
+        "method": "Koordinat publik halaman tipe kamar Mamikos",
+        "checkedAt": "2026-11-10"
+      },
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus ke masjid, bukan rute berjalan.",
+      "evidence": {
+        "sha256": "df0e3ec3c34a2058f6b7c6ea826a133cb8d6406df5aefd992d0fb7f75984e142",
+        "selector": "var detail: latitude/longitude, monthly and term price formats, minimum min_month, active status, booking_rules.is_married true/is_bring_child false; rendered monthly price and enabled rental request"
       }
     }
   ]
