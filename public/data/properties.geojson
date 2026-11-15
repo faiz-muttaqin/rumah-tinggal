@@ -1933,7 +1933,7 @@
    ]
   },
   "rentals": {
-   "checkedAt": "2026-11-10",
+   "checkedAt": "2026-11-15",
    "note": "Iklan sewa publik diperiksa pada tanggal di masing-masing kartu. Keterangan fasilitas dan transit dapat berasal dari iklan atau sumber kawasan, bukan survei; cek hubungan lokasinya. Nama dan kontak pemilik tidak disimpan. Harga dan ketersediaan cepat berubah.",
    "rentals": [
     {
@@ -38355,9 +38355,116 @@
        "km": 1.224
       }
      ]
+    },
+    {
+     "id": "sewa-mamikos-84579aba7508",
+     "title": "Kos Harianto Tipe A — pasutri, Cinere",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Kecamatan Cinere, Kota Depok",
+     "buildingOrCluster": "Kost Harianto Tipe A",
+     "rent": {
+      "amount": 800000,
+      "period": "monthly",
+      "quote": "Rp800.000",
+      "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-bapak-harianto-tipe-a-cinere-depok",
+      "pageDate": "2025-12-05"
+     },
+     "bedrooms": 1,
+     "sizeM2": 12.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp800.000",
+       "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-bapak-harianto-tipe-a-cinere-depok"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pasutri diizinkan, anak tidak menurut aturan portal. Tarif dasar Rp800 ribu/bulan; biaya berdua, kapasitas, deposit, listrik/air dan stok perlu konfirmasi. Minimum sewa tidak ditampilkan. Kamar 3×4 m menurut portal. Pin perkiraan 1,455 km dari Al Hikmah DDN 2, garis lurus, bukan rute berjalan. Pembaruan sumber 2025-12-05; harga portal dicek 2026-11-15.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-bapak-harianto-tipe-a-cinere-depok",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2025-12-05",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-15",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+     "location": {
+      "lat": -6.322986,
+      "lng": 106.787255,
+      "precision": "approximate",
+      "label": "Pin perkiraan Mamikos",
+      "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-bapak-harianto-tipe-a-cinere-depok",
+      "method": "Koordinat publik halaman detail portal; bukan titik administratif",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "checkedAt": "2026-11-15"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hikmah-ddn-2",
+       "name": "Masjid Al Hikmah DDN 2",
+       "km": 1.455
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-fb1cb3f820c5",
+     "title": "Rumah sewa 4 kamar di Bali View",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Pisangan, Ciputat Timur, Kota Tangerang Selatan",
+     "buildingOrCluster": "Bali View",
+     "rent": {
+      "amount": 130000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 130 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-bali-view-blok-b7-no9",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 4,
+     "sizeM2": 500.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp 130 Juta/Tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-bali-view-blok-b7-no9"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Rp130 juta/tahun, minimum 12 bulan; bukan tawaran bayar bulanan. Deskripsi 4 KT/4 KM, tanah 307 m² dan bangunan 500 m². Pin portal sama dengan penawaran lain yang spesifikasinya berbeda; bukan bukti pintu unit atau stok unik. Acuan sekitar 0,941 km dari VCM, garis lurus. Pembaruan sumber 2025-06-11; harga dicek 2026-11-15. Stok, alamat unit, biaya akhir dan furnishing perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-bali-view-blok-b7-no9",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-15",
+     "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan. Acuan yang sama dipakai penawaran lain; unit dan stok unik belum dikonfirmasi.",
+     "location": {
+      "lat": -6.317345,
+      "lng": 106.764448,
+      "precision": "approximate",
+      "label": "Pin perkiraan Pinhome; acuan bersama",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-bali-view-blok-b7-no9",
+      "method": "Koordinat publik halaman detail portal; bukan titik administratif",
+      "note": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan. Acuan yang sama dipakai penawaran lain; unit dan stok unik belum dikonfirmasi.",
+      "checkedAt": "2026-11-15"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-as-sunnah-vcm",
+       "name": "Masjid As Sunnah VCM",
+       "km": 0.941
+      }
+     ]
     }
    ],
-   "locationsCheckedAt": "2026-11-10"
+   "locationsCheckedAt": "2026-11-15"
   },
   "saleAds": {
    "checkedAt": "2026-10-31",

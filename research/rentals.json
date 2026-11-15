@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-10",
+  "checkedAt": "2026-11-15",
   "note": "Iklan sewa publik diperiksa pada tanggal di masing-masing kartu. Keterangan fasilitas dan transit dapat berasal dari iklan atau sumber kawasan, bukan survei; cek hubungan lokasinya. Nama dan kontak pemilik tidak disimpan. Harga dan ketersediaan cepat berubah.",
   "rentals": [
     {
@@ -24495,6 +24495,77 @@
       "verdict": "partial",
       "lastChecked": "2026-11-10",
       "note": "Khusus pasutri, 1 kamar tidur ber-AC, bangunan 30 m². Rp2,5 juta/bulan atau Rp30 juta/tahun. Air, parkir, sampah dan perawatan AC tercantum gratis; listrik token sendiri. Pin acuan jalan/RT-RW dari peta pengiklan, bukan pintu unit; sekitar 1,224 km garis lurus dari acuan ke Al Hikmah DDN 2. Minimum, deposit dan stok perlu konfirmasi. Tanggal iklan belum diketahui; diperiksa 10 November 2026."
+    },
+    {
+      "id": "sewa-mamikos-84579aba7508",
+      "title": "Kos Harianto Tipe A — pasutri, Cinere",
+      "kind": "Rumah",
+      "rentalType": "kos",
+      "area": "Depok",
+      "locationText": "Kecamatan Cinere, Kota Depok",
+      "buildingOrCluster": "Kost Harianto Tipe A",
+      "rent": {
+        "amount": 800000,
+        "period": "monthly",
+        "quote": "Rp800.000",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-bapak-harianto-tipe-a-cinere-depok",
+        "pageDate": "2025-12-05"
+      },
+      "bedrooms": 1,
+      "sizeM2": 12.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp800.000",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-bapak-harianto-tipe-a-cinere-depok"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-bapak-harianto-tipe-a-cinere-depok",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2025-12-05",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-15",
+      "note": "Pasutri diizinkan, anak tidak menurut aturan portal. Tarif dasar Rp800 ribu/bulan; biaya berdua, kapasitas, deposit, listrik/air dan stok perlu konfirmasi. Minimum sewa tidak ditampilkan. Kamar 3×4 m menurut portal. Pin perkiraan 1,455 km dari Al Hikmah DDN 2, garis lurus, bukan rute berjalan. Pembaruan sumber 2025-12-05; harga portal dicek 2026-11-15."
+    },
+    {
+      "id": "sewa-pinhome-fb1cb3f820c5",
+      "title": "Rumah sewa 4 kamar di Bali View",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Tangerang",
+      "locationText": "Pisangan, Ciputat Timur, Kota Tangerang Selatan",
+      "buildingOrCluster": "Bali View",
+      "rent": {
+        "amount": 130000000,
+        "period": "yearly",
+        "quote": "Rp 130 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-bali-view-blok-b7-no9",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 12
+      },
+      "bedrooms": 4,
+      "sizeM2": 500.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 130 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-bali-view-blok-b7-no9"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-bali-view-blok-b7-no9",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-15",
+      "note": "Rp130 juta/tahun, minimum 12 bulan; bukan tawaran bayar bulanan. Deskripsi 4 KT/4 KM, tanah 307 m² dan bangunan 500 m². Pin portal sama dengan penawaran lain yang spesifikasinya berbeda; bukan bukti pintu unit atau stok unik. Acuan sekitar 0,941 km dari VCM, garis lurus. Pembaruan sumber 2025-06-11; harga dicek 2026-11-15. Stok, alamat unit, biaya akhir dan furnishing perlu konfirmasi."
     }
   ]
 }
