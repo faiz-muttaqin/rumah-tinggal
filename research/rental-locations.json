@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-15",
+  "checkedAt": "2026-11-17",
   "note": "Kurasi titik publik seluruh sewa. Pin perkiraan portal dibedakan dari titik gedung/kompleks; posisi unit tidak dijamin. Centroid administratif ditolak. Lokasi belum terbukti tetap di daftar tanpa pin. Harga dan stok tetap memakai tanggal cek iklan masing-masing.",
   "items": [
     {
@@ -10362,6 +10362,193 @@
       "evidence": {
         "sha256": "e9323cc0c4bce3c62bf1d3b2c689141f179df0b924a97fb95cddc536e1e9ce2c",
         "selector": "Public detail location, price/period, source update date, specifications; rendered price checked separately"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-b25dad734c9e",
+      "location": {
+        "lat": -6.269962,
+        "lng": 106.706465,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-tower-b-bintaro-jaya",
+        "method": "Koordinat publik detail portal, bukan titik administratif",
+        "checkedAt": "2026-11-17"
+      },
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan. Acuan dapat dipakai beberapa penawaran; stok unit unik belum dikonfirmasi.",
+      "evidence": {
+        "sha256": "c2350324e42a1703018b732ba497364a2c5cc0c1ab33bc8c12e07da36637c043",
+        "selector": "Public property detail price/term/location; price checked in rendered page; source dates retained"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-9138b6d7240d",
+      "location": {
+        "lat": -6.269962,
+        "lng": 106.706465,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-bintaro-tower-b-lt-17",
+        "method": "Koordinat publik detail portal, bukan titik administratif",
+        "checkedAt": "2026-11-17"
+      },
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan. Acuan dapat dipakai beberapa penawaran; stok unit unik belum dikonfirmasi.",
+      "evidence": {
+        "sha256": "3418b822384471f70e7bdd0583971888495d3435240113f30a246d97b85fd04f",
+        "selector": "Public property detail price/term/location; price checked in rendered page; source dates retained"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-19b7d9c019e6",
+      "location": {
+        "lat": -6.182591,
+        "lng": 106.656718,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-di-perumahan-aleyra-residence-ar-7-no-5-buaran-indah-poris-tangerang",
+        "method": "Koordinat publik detail portal, bukan titik administratif",
+        "checkedAt": "2026-11-17"
+      },
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "evidence": {
+        "sha256": "c9312b62513925c5f27d2afcb6aa385e97665bfce27dc39c4a29bf2dba66eb98",
+        "selector": "Public property detail price/term/location; price checked in rendered page; source dates retained"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-14326fb9df3f",
+      "location": {
+        "lat": -6.5342,
+        "lng": 106.802342,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-starland-99-jalan-sumatera",
+        "method": "Koordinat publik detail portal, bukan titik administratif",
+        "checkedAt": "2026-11-17"
+      },
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "evidence": {
+        "sha256": "e0ab8e8d6fa48c1e264a3f62127a188555964ef9a46c2c150ba582bd79ee8d63",
+        "selector": "Public property detail price/term/location; price checked in rendered page; source dates retained"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-e87362a1696f",
+      "location": {
+        "lat": -6.542604,
+        "lng": 106.780351,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-luas-di-bogor-country-kota-bogor",
+        "method": "Koordinat publik detail portal, bukan titik administratif",
+        "checkedAt": "2026-11-17"
+      },
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "evidence": {
+        "sha256": "a2917e0b542dae90ba27dcaf241d3eb4b45c7c4ed186b7b32b72763dfd79e00b",
+        "selector": "Public property detail price/term/location; price checked in rendered page; source dates retained"
+      }
+    },
+    {
+      "rentalId": "sewa-pinhome-05467c33bc0a",
+      "location": {
+        "lat": -6.257184,
+        "lng": 106.728422,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dipondok-aren-dekat-hatmonyswalayan-kampus-stan-di-pondok-aren",
+        "method": "Koordinat publik detail portal, bukan titik administratif",
+        "checkedAt": "2026-11-17"
+      },
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "evidence": {
+        "sha256": "b83fdfaae5052d55035c22b84af21f7e10ebb2d8dc784d1cb8a9a35bcaa0fea9",
+        "selector": "Public property detail price/term/location; price checked in rendered page; source dates retained"
+      }
+    },
+    {
+      "rentalId": "sewa-jendela360-b1141800cdec",
+      "location": {
+        "lat": -6.225031,
+        "lng": 106.879075,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCA165",
+        "method": "Koordinat publik detail portal, bukan titik administratif",
+        "checkedAt": "2026-11-17"
+      },
+      "note": "Acuan gedung, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "evidence": {
+        "sha256": "568f9622c3cab0d51b0f5db8a6343f6b7e014ed5e20be59f3c0b8feb0da21b2f",
+        "selector": "Public property detail price/term/location; price checked in rendered page; source dates retained"
+      }
+    },
+    {
+      "rentalId": "sewa-rukita-0080364b71be",
+      "location": {
+        "lat": -6.238535,
+        "lng": 106.808802,
+        "precision": "building",
+        "label": "Acuan gedung rukita",
+        "url": "https://www.rukita.co/place/ciawi-one-gunawarman-blok-m",
+        "method": "Koordinat publik detail portal, bukan titik administratif",
+        "checkedAt": "2026-11-17"
+      },
+      "note": "Acuan gedung, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "evidence": {
+        "sha256": "29e9519b5743c40067d2386b544f4d5c190dbe0f5eda8c396a3c8d1a2c3b50c7",
+        "selector": "Public property detail price/term/location; price checked in rendered page; source dates retained"
+      }
+    },
+    {
+      "rentalId": "sewa-mamikos-6e826f1c6a79",
+      "location": {
+        "lat": -6.228293,
+        "lng": 107.010467,
+        "precision": "approximate",
+        "label": "Pin perkiraan mamikos",
+        "url": "https://mamikos.com/room/kost-bekasi-kost-campur-eksklusif-kost-be-n-vio-tipe-kamar-kipas-bekasi-timur-bekasi",
+        "method": "Koordinat publik detail portal, bukan titik administratif",
+        "checkedAt": "2026-11-17"
+      },
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "evidence": {
+        "sha256": "52614ee79872907af5ccbad89a94383bf3a0496d5f762e51860c7670dad187e6",
+        "selector": "Public property detail price/term/location; price checked in rendered page; source dates retained"
+      }
+    },
+    {
+      "rentalId": "sewa-mamikos-a58f3356e455",
+      "location": {
+        "lat": -6.273883,
+        "lng": 107.029232,
+        "precision": "approximate",
+        "label": "Pin perkiraan mamikos",
+        "url": "https://mamikos.com/room/kost-kabupaten-bekasi-kost-campur-murah-kost-jatimulya-1-tambun-selatan-bekasi",
+        "method": "Koordinat publik detail portal, bukan titik administratif",
+        "checkedAt": "2026-11-17"
+      },
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "evidence": {
+        "sha256": "95cd151f501f146f8f13172328d5ef0075e321e908e22ed1dc5b9a91bad7379d",
+        "selector": "Public property detail price/term/location; price checked in rendered page; source dates retained"
+      }
+    },
+    {
+      "rentalId": "sewa-mamikos-5f058a4be89a",
+      "location": {
+        "lat": -6.529274,
+        "lng": 106.795942,
+        "precision": "approximate",
+        "label": "Pin perkiraan mamikos",
+        "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-cilebut-damai-tipe-a-sukaraja-bogor",
+        "method": "Koordinat publik detail portal, bukan titik administratif",
+        "checkedAt": "2026-11-17"
+      },
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "evidence": {
+        "sha256": "f3594ffcfa03ee9757ac94f8f6bd78cc4c148f8d8382ad96fed30e88aa33bcce",
+        "selector": "Public property detail price/term/location; price checked in rendered page; source dates retained"
       }
     }
   ]

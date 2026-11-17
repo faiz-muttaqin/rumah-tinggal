@@ -1933,7 +1933,7 @@
    ]
   },
   "rentals": {
-   "checkedAt": "2026-11-15",
+   "checkedAt": "2026-11-17",
    "note": "Iklan sewa publik diperiksa pada tanggal di masing-masing kartu. Keterangan fasilitas dan transit dapat berasal dari iklan atau sumber kawasan, bukan survei; cek hubungan lokasinya. Nama dan kontak pemilik tidak disimpan. Harga dan ketersediaan cepat berubah.",
    "rentals": [
     {
@@ -38462,9 +38462,634 @@
        "km": 0.941
       }
      ]
+    },
+    {
+     "id": "sewa-pinhome-b25dad734c9e",
+     "title": "Apartemen Emerald Bintaro 25 m²",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Tangerang",
+     "locationText": "Parigi (Perigi Lama), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": "Emerald Bintaro",
+     "rent": {
+      "amount": 2750000,
+      "period": "monthly",
+      "minimumMonths": 6,
+      "quote": "Rp 2,75 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-tower-b-bintaro-jaya",
+      "pageDate": "2026-11-09"
+     },
+     "bedrooms": null,
+     "sizeM2": 25,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Rp 2,75 Juta/Bulan",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-tower-b-bintaro-jaya"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Sewa seluruh unit Rp2,75 juta/bulan, minimum 6 bulan. Deskripsi menyebut full furnished. Jumlah kamar tidak dicantumkan karena tipe studio/ruang terpisah belum jelas. Untuk pasutri, konfirmasi persetujuan pengelola, kapasitas dua orang, deposit dan tagihan. Acuan KRL Sudimara 3,066 km garis lurus; cadangan, bukan rute berjalan.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-tower-b-bintaro-jaya",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-11-09",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-17",
+     "locationNote": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan. Acuan dapat dipakai beberapa penawaran; stok unit unik belum dikonfirmasi.",
+     "location": {
+      "lat": -6.269962,
+      "lng": 106.706465,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-tower-b-bintaro-jaya",
+      "method": "Koordinat publik detail portal, bukan titik administratif",
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan. Acuan dapat dipakai beberapa penawaran; stok unit unik belum dikonfirmasi.",
+      "checkedAt": "2026-11-17"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-ar-rahman-discovery-lumina",
+       "name": "Masjid Ar Rahman Discovery Lumina",
+       "km": 1.066
+      },
+      {
+       "id": "masjid-ash-shaff",
+       "name": "Masjid Ash Shaff",
+       "km": 1.088
+      },
+      {
+       "id": "masjid-al-hijrah-discovery-flamine",
+       "name": "Masjid Al Hijrah Discovery Flamine",
+       "km": 1.44
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-9138b6d7240d",
+     "title": "Apartemen Emerald Bintaro 21 m²",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Tangerang",
+     "locationText": "Parigi (Perigi Lama), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": "Emerald Bintaro",
+     "rent": {
+      "amount": 3500000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp 3,5 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-bintaro-tower-b-lt-17",
+      "pageDate": "2025-06-21"
+     },
+     "bedrooms": null,
+     "sizeM2": 21,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Rp 3,5 Juta/Bulan",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-bintaro-tower-b-lt-17"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Sewa seluruh unit Rp3,5 juta/bulan, minimum 1 bulan menurut label portal. Deposit 1 bulan sewa; IPL, Wi-Fi, air, listrik dan parkir terpisah. Jumlah kamar terpisah belum jelas. Untuk pasutri, konfirmasi aturan pengelola dan kapasitas dua orang. Acuan KRL Sudimara 3,066 km garis lurus; cadangan, bukan rute berjalan.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-bintaro-tower-b-lt-17",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-21",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-17",
+     "locationNote": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan. Acuan dapat dipakai beberapa penawaran; stok unit unik belum dikonfirmasi.",
+     "location": {
+      "lat": -6.269962,
+      "lng": 106.706465,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-emerald-bintaro-tower-b-lt-17",
+      "method": "Koordinat publik detail portal, bukan titik administratif",
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan. Acuan dapat dipakai beberapa penawaran; stok unit unik belum dikonfirmasi.",
+      "checkedAt": "2026-11-17"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-ar-rahman-discovery-lumina",
+       "name": "Masjid Ar Rahman Discovery Lumina",
+       "km": 1.066
+      },
+      {
+       "id": "masjid-ash-shaff",
+       "name": "Masjid Ash Shaff",
+       "km": 1.088
+      },
+      {
+       "id": "masjid-al-hijrah-discovery-flamine",
+       "name": "Masjid Al Hijrah Discovery Flamine",
+       "km": 1.44
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-19b7d9c019e6",
+     "title": "Rumah sewa 2 kamar di Buaran Indah",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Buaran Indah, Tangerang, Kota Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 29000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 29 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-di-perumahan-aleyra-residence-ar-7-no-5-buaran-indah-poris-tangerang",
+      "pageDate": "2026-11-16"
+     },
+     "bedrooms": 2,
+     "sizeM2": null,
+     "furnished": "unfurnished",
+     "evidence": [
+      {
+       "quote": "Rp 29 Juta/Tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-di-perumahan-aleyra-residence-ar-7-no-5-buaran-indah-poris-tangerang"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Rp29 juta/tahun, minimum 12 bulan. Deskripsi menyebut sesuai keluarga kecil/pasangan dan kondisi kosong. Luas bangunan tidak dicantumkan karena field 45 m² berbeda dari deskripsi 60 m². IPL, utilitas, deposit, cara bayar dan stok perlu konfirmasi. Acuan KRL Tanah Tinggi 1,380 km garis lurus, bukan rute berjalan.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-di-perumahan-aleyra-residence-ar-7-no-5-buaran-indah-poris-tangerang",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-11-16",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-17",
+     "locationNote": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+     "location": {
+      "lat": -6.182591,
+      "lng": 106.656718,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-di-perumahan-aleyra-residence-ar-7-no-5-buaran-indah-poris-tangerang",
+      "method": "Koordinat publik detail portal, bukan titik administratif",
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "checkedAt": "2026-11-17"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-raya-rahmatan-lil-alamin",
+       "name": "Masjid Raya Rahmatan Lil'alamin",
+       "km": 0.96
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-14326fb9df3f",
+     "title": "Rumah sewa 2 kamar Starland 99 Cilebut",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Cilebut Timur, Sukaraja, Kab. Bogor",
+     "buildingOrCluster": "Starland 99 Cilebut",
+     "rent": {
+      "amount": 2700000,
+      "period": "monthly",
+      "minimumMonths": 3,
+      "quote": "Rp 2,7 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-starland-99-jalan-sumatera",
+      "pageDate": "2026-11-14"
+     },
+     "bedrooms": 2,
+     "sizeM2": 108,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp 2,7 Juta/Bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-starland-99-jalan-sumatera"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Rp2,7 juta/bulan, minimum 3 bulan; komitmen tarif dasar minimal Rp8,1 juta, bukan kepastian bayar sekaligus. Sumber mencantumkan perabot seperti sofa, meja makan, kasur dan lemari. Deposit, utilitas, cara bayar dan stok perlu konfirmasi. Acuan KRL Cilebut 428 m garis lurus, bukan rute berjalan.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-starland-99-jalan-sumatera",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-11-14",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-17",
+     "locationNote": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+     "location": {
+      "lat": -6.5342,
+      "lng": 106.802342,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-starland-99-jalan-sumatera",
+      "method": "Koordinat publik detail portal, bukan titik administratif",
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "checkedAt": "2026-11-17"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-jannah-gcc",
+       "name": "Masjid Al Jannah GCC",
+       "km": 1.115
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-e87362a1696f",
+     "title": "Rumah sewa 2 kamar di Bogor Country",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Cibadak, Tanah Sareal (Tanah Sereal), Kota Bogor",
+     "buildingOrCluster": "Bogor Country",
+     "rent": {
+      "amount": 30000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 30 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-luas-di-bogor-country-kota-bogor",
+      "pageDate": "2026-11-17"
+     },
+     "bedrooms": 2,
+     "sizeM2": 65,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp 30 Juta/Tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-luas-di-bogor-country-kota-bogor"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Rp30 juta/tahun, minimum 12 bulan; deposit Rp2 juta disebut terpisah. Deskripsi: rumah satu lantai, 2 kamar tidur/1 kamar mandi, bangunan 65 m² dan tanah 90 m². Stok, biaya akhir dan ketentuan penghuni perlu konfirmasi. Acuan KRL Cilebut 2,606 km garis lurus, bukan rute berjalan.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-luas-di-bogor-country-kota-bogor",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-11-17",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-17",
+     "locationNote": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+     "location": {
+      "lat": -6.542604,
+      "lng": 106.780351,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-luas-di-bogor-country-kota-bogor",
+      "method": "Koordinat publik detail portal, bukan titik administratif",
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "checkedAt": "2026-11-17"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-ikhlas-tamansari-persada",
+       "name": "Masjid Al-Ikhlas Tamansari Persada",
+       "km": 0.37
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-05467c33bc0a",
+     "title": "Rumah sewa 2 kamar di Green Bintaro Indah",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Jurangmangu Barat (Jurang Mangu Barat), Pondok Aren, Kota Tangerang Selatan",
+     "buildingOrCluster": "Green Bintaro Indah",
+     "rent": {
+      "amount": 1800000,
+      "period": "monthly",
+      "minimumMonths": 12,
+      "quote": "Rp 1,8 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dipondok-aren-dekat-hatmonyswalayan-kampus-stan-di-pondok-aren",
+      "pageDate": "2026-11-16"
+     },
+     "bedrooms": 2,
+     "sizeM2": 75,
+     "furnished": "unfurnished",
+     "evidence": [
+      {
+       "quote": "Rp 1,8 Juta/Bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dipondok-aren-dekat-hatmonyswalayan-kampus-stan-di-pondok-aren"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Rp1,8 juta/bulan, minimum 12 bulan; komitmen tarif dasar minimal Rp21,6 juta, bukan kepastian bayar bulanan atau sekaligus. Deskripsi menyebut rumah keluarga dua lantai dalam kondisi kosong. Cara bayar, deposit, utilitas dan stok perlu konfirmasi. Acuan KRL Pondok Ranji 2,817 km garis lurus, bukan rute berjalan.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dipondok-aren-dekat-hatmonyswalayan-kampus-stan-di-pondok-aren",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-11-16",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-17",
+     "locationNote": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+     "location": {
+      "lat": -6.257184,
+      "lng": 106.728422,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dipondok-aren-dekat-hatmonyswalayan-kampus-stan-di-pondok-aren",
+      "method": "Koordinat publik detail portal, bukan titik administratif",
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "checkedAt": "2026-11-17"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-jami-utsman-bin-affan",
+       "name": "Masjid Jami' Utsman bin Affan",
+       "km": 0.588
+      },
+      {
+       "id": "masjid-al-hasanah-bintaro",
+       "name": "Masjid Al Hasanah Bintaro",
+       "km": 1.489
+      }
+     ]
+    },
+    {
+     "id": "sewa-jendela360-b1141800cdec",
+     "title": "Studio Bassura City 21 m² — paket 12 bulan",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Cipinang, Jakarta Timur",
+     "buildingOrCluster": "Bassura City Apartment",
+     "rent": {
+      "amount": 34340000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 34,340,000",
+      "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCA165",
+      "pageDate": null
+     },
+     "bedrooms": 0,
+     "sizeM2": 21,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Rp 34,340,000",
+       "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCA165"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Paket 12 bulan Rp34.340.000 dibayar langsung; bukan tarif bayar bulanan. Opsi 3 bulan Rp9.540.000/6 bulan Rp18.360.000 terpisah. Pembayaran bulanan mempunyai skema/minimum 6 bulan; nominal akhirnya perlu konfirmasi. Studio full furnished, sewa seluruh unit. Untuk pasutri, konfirmasi pengelola/kapasitas berdua, IPL, deposit dan utilitas. Acuan KRL Jatinegara 1,482 km garis lurus.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCA165",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-17",
+     "locationNote": "Acuan gedung, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+     "location": {
+      "lat": -6.225031,
+      "lng": 106.879075,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCA165",
+      "method": "Koordinat publik detail portal, bukan titik administratif",
+      "note": "Acuan gedung, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "checkedAt": "2026-11-17"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-imam-nawawi",
+       "name": "Masjid Imam Nawawi",
+       "km": 0.761
+      },
+      {
+       "id": "masjid-raya-cipinang-muara",
+       "name": "Masjid Raya Cipinang Muara",
+       "km": 0.887
+      },
+      {
+       "id": "masjid-al-fattah",
+       "name": "Masjid Al Fattah",
+       "km": 1.433
+      }
+     ]
+    },
+    {
+     "id": "sewa-rukita-0080364b71be",
+     "title": "Kos Ciawi One Gunawarman — Executive King, pasutri",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Jakarta Selatan, Jakarta",
+     "buildingOrCluster": "Ciawi One Gunawarman Blok M",
+     "rent": {
+      "amount": 4100000,
+      "period": "monthly",
+      "quote": "Rp4.100.000",
+      "url": "https://www.rukita.co/place/ciawi-one-gunawarman-blok-m",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 22.4,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Rp4.100.000",
+       "url": "https://www.rukita.co/place/ciawi-one-gunawarman-blok-m"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tipe Executive King Rp4,1 juta/bulan untuk 1 orang; maks. 2 penghuni menurut kartu kamar. Portal mengizinkan pasutri, anak tidak. Biaya tambahan untuk berdua, deposit, minimum sewa dan stok perlu konfirmasi. Kamar King Bed 180×200; internet/Wi-Fi, listrik dan cleaning tercantum termasuk. Acuan KRL Kebayoran 2,907 km garis lurus, bukan rute berjalan.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.rukita.co/place/ciawi-one-gunawarman-blok-m",
+     "sourcePortal": "rukita",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-17",
+     "locationNote": "Acuan gedung, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+     "location": {
+      "lat": -6.238535,
+      "lng": 106.808802,
+      "precision": "building",
+      "label": "Acuan gedung rukita",
+      "url": "https://www.rukita.co/place/ciawi-one-gunawarman-blok-m",
+      "method": "Koordinat publik detail portal, bukan titik administratif",
+      "note": "Acuan gedung, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "checkedAt": "2026-11-17"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-nurul-iman-blok-m",
+       "name": "Masjid Nurul Iman Blok M",
+       "km": 1.127
+      }
+     ]
+    },
+    {
+     "id": "sewa-mamikos-6e826f1c6a79",
+     "title": "Kos Be N Vio tipe kipas — pasutri, Bekasi",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Bekasi Timur, Bekasi",
+     "buildingOrCluster": "Kost Be N Vio Tipe Kamar Kipas",
+     "rent": {
+      "amount": 1050000,
+      "period": "monthly",
+      "quote": "Rp1.050.000",
+      "url": "https://mamikos.com/room/kost-bekasi-kost-campur-eksklusif-kost-be-n-vio-tipe-kamar-kipas-bekasi-timur-bekasi",
+      "pageDate": "2026-10-02"
+     },
+     "bedrooms": 1,
+     "sizeM2": 20.25,
+     "furnished": "full",
+     "evidence": [
+      {
+       "quote": "Rp1.050.000",
+       "url": "https://mamikos.com/room/kost-bekasi-kost-campur-eksklusif-kost-be-n-vio-tipe-kamar-kipas-bekasi-timur-bekasi"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Pasutri diizinkan, anak tidak menurut aturan portal. Tarif dasar Rp1,05 juta/bulan; lebih dari 1 orang dikenai tambahan dengan nominal belum disebut. Harga untuk berdua, kapasitas, deposit dan utilitas perlu konfirmasi. Kamar 4,5×4,5 m; perabot disebut akan diisi sebelum ditempati. Minimum sewa tidak ditampilkan. Acuan KRL Bekasi 1,567 km garis lurus, bukan rute berjalan.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-bekasi-kost-campur-eksklusif-kost-be-n-vio-tipe-kamar-kipas-bekasi-timur-bekasi",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-10-02",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-17",
+     "locationNote": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+     "location": {
+      "lat": -6.228293,
+      "lng": 107.010467,
+      "precision": "approximate",
+      "label": "Pin perkiraan mamikos",
+      "url": "https://mamikos.com/room/kost-bekasi-kost-campur-eksklusif-kost-be-n-vio-tipe-kamar-kipas-bekasi-timur-bekasi",
+      "method": "Koordinat publik detail portal, bukan titik administratif",
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "checkedAt": "2026-11-17"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-bunga-bangsa",
+       "name": "Masjid Bunga Bangsa",
+       "km": 0.573
+      }
+     ]
+    },
+    {
+     "id": "sewa-mamikos-a58f3356e455",
+     "title": "Kos Jatimulya 1 — pasutri, Tambun Selatan",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Kecamatan Tambun Selatan, Kabupaten Bekasi",
+     "buildingOrCluster": "Kost Jatimulya 1",
+     "rent": {
+      "amount": 700000,
+      "period": "monthly",
+      "quote": "Rp700.000",
+      "url": "https://mamikos.com/room/kost-kabupaten-bekasi-kost-campur-murah-kost-jatimulya-1-tambun-selatan-bekasi",
+      "pageDate": "2025-06-30"
+     },
+     "bedrooms": 1,
+     "sizeM2": 20,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp700.000",
+       "url": "https://mamikos.com/room/kost-kabupaten-bekasi-kost-campur-murah-kost-jatimulya-1-tambun-selatan-bekasi"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Portal mengizinkan pasutri. Tarif dasar Rp700 ribu/bulan; harga untuk berdua, kapasitas, deposit, tagihan dan stok perlu konfirmasi. Minimum sewa tidak ditampilkan. Sumber berlabel kos tetapi deskripsi menyebut kontrakan; bagian hunian yang disewa perlu dipastikan. Kamar 4×5 m menurut portal. Acuan KRL Bekasi Timur 3,253 km garis lurus; cadangan, bukan rute berjalan.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kabupaten-bekasi-kost-campur-murah-kost-jatimulya-1-tambun-selatan-bekasi",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2025-06-30",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-17",
+     "locationNote": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+     "location": {
+      "lat": -6.273883,
+      "lng": 107.029232,
+      "precision": "approximate",
+      "label": "Pin perkiraan mamikos",
+      "url": "https://mamikos.com/room/kost-kabupaten-bekasi-kost-campur-murah-kost-jatimulya-1-tambun-selatan-bekasi",
+      "method": "Koordinat publik detail portal, bukan titik administratif",
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "checkedAt": "2026-11-17"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-ikhlas-dukuh-bima",
+       "name": "Masjid Al Ikhlas Dukuh Bima",
+       "km": 0.691
+      }
+     ]
+    },
+    {
+     "id": "sewa-mamikos-5f058a4be89a",
+     "title": "Kos Cilebut Damai Tipe A — pasutri, Bogor",
+     "rentalType": "kos",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Kecamatan Sukaraja, Kabupaten Bogor",
+     "buildingOrCluster": "Kost Cilebut Damai Tipe A",
+     "rent": {
+      "amount": 1000000,
+      "period": "monthly",
+      "quote": "Rp1.000.000",
+      "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-cilebut-damai-tipe-a-sukaraja-bogor",
+      "pageDate": "2025-12-15"
+     },
+     "bedrooms": 1,
+     "sizeM2": 6.25,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp1.000.000",
+       "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-cilebut-damai-tipe-a-sukaraja-bogor"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Portal mengizinkan pasutri. Tarif dasar Rp1 juta/bulan; kapasitas dua orang, biaya berdua, deposit, tagihan dan stok perlu konfirmasi. Kamar 2,5×2,5 m menurut portal. Minimum sewa tidak ditampilkan; jumlah kamar tersedia bukan kapasitas penghuni. Acuan KRL Cilebut 549 m garis lurus, bukan rute berjalan.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-cilebut-damai-tipe-a-sukaraja-bogor",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2025-12-15",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-17",
+     "locationNote": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+     "location": {
+      "lat": -6.529274,
+      "lng": 106.795942,
+      "precision": "approximate",
+      "label": "Pin perkiraan mamikos",
+      "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-cilebut-damai-tipe-a-sukaraja-bogor",
+      "method": "Koordinat publik detail portal, bukan titik administratif",
+      "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
+      "checkedAt": "2026-11-17"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-jannah-gcc",
+       "name": "Masjid Al Jannah GCC",
+       "km": 0.739
+      }
+     ]
     }
    ],
-   "locationsCheckedAt": "2026-11-15"
+   "locationsCheckedAt": "2026-11-17"
   },
   "saleAds": {
    "checkedAt": "2026-10-31",
