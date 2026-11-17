@@ -673,5 +673,10 @@
       "localities": ["Rancanumpang", "Rancabolang", "Rancabalong"],
       "basis": "Cached reverse lookup of mosque reference; search area only"
     }
+  },
+  "priorityMode": "ihrish-krl",
+  "budgetPriority": {
+    "preferredMonthly": 4000000,
+    "maxMonthly": 6000000
   }
 }

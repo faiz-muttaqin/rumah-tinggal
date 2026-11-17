@@ -157,6 +157,38 @@ class CrawlerTest(unittest.TestCase):
         self.assertEqual(c.monthly_hint({"priceLabel": "Rp 1,5 Juta/Bulan"}), 1_500_000)
         self.assertEqual(c.monthly_hint({"priceLabel": "Rp 24 Juta/Tahun"}), 2_000_000)
 
+    def test_krl_activity_priority_removes_south_jakarta_advantage(self):
+        stops=[{"mode":"KRL","name":"Stasiun Uji","lat":-6.2,"lng":106.8}]
+        busy={"lat":-6.2,"lng":106.8,"eventCount":8}
+        quiet={**busy,"eventCount":1}
+        first=c.priority(busy,stops,["banten/tangerang/pinang"],"ihrish-krl")
+        other=c.priority(quiet,stops,["dki-jakarta/jakarta-selatan/tebet"],"ihrish-krl")
+        self.assertEqual(first["tier"],other["tier"])
+        self.assertGreater(first["ihrishEventCount"],other["ihrishEventCount"])
+        far=c.priority({**busy,"lat":-6.25},stops,[],"ihrish-krl")
+        self.assertGreater(far["tier"],first["tier"])
+        self.assertEqual(c.priority(busy,[],[],"ihrish-krl")["krlKm"],None)
+
+    def test_budget_order_prefers_affordable_refresh_over_expensive_new_url_without_dropping_unknowns(self):
+        budget={"preferredMonthly":4_000_000,"maxMonthly":6_000_000}
+        cards=[{"url":UNIT+"-expensive","priceLabel":"Rp 84 Juta/Tahun"},
+               {"url":UNIT+"-unknown"}, {"url":UNIT+"-stretch","priceLabel":"Rp 60 Juta/Tahun"},
+               {"url":UNIT+"-affordable","priceLabel":"Rp 48 Juta/Tahun"}]
+        details={UNIT+"-affordable":{"retrievedAtUTC":"2020-01-01T00:00:00+00:00"}}
+        self.assertEqual(c.detail_queue(cards,details,72,budget),[UNIT+"-affordable",UNIT+"-stretch",UNIT+"-unknown",UNIT+"-expensive"])
+        self.assertEqual(c.budget_band(4_000_000,budget),"preferred")
+        self.assertEqual(c.budget_band(6_000_000,budget),"stretch")
+        self.assertEqual(c.budget_band(6_000_001,budget),"over-budget")
+        self.assertEqual(c.budget_band(None,budget),"unknown")
+        self.assertEqual(cards[0]["priceLabel"],"Rp 84 Juta/Tahun")
+
+    def test_search_budget_validation_rejects_inverted_empty_and_non_numeric_values(self):
+        config=json.loads((c.ROOT/"research/rental-crawl-sources.json").read_text())
+        c.validate_config(config)
+        for budget in [{},None,{"preferredMonthly":6_000_000,"maxMonthly":4_000_000},
+                       {"preferredMonthly":True,"maxMonthly":6_000_000}]:
+            with self.assertRaises(ValueError):c.validate_config({**config,"budgetPriority":budget})
+
     def test_centroid_inactive_unknown_period_are_held(self):
         data = unit_data()
         data["location"]["district"]["coordinate"] = data["location"]["coordinate"]
@@ -283,9 +315,10 @@ class CrawlerTest(unittest.TestCase):
         config = json.loads((c.ROOT / "research/rental-crawl-sources.json").read_text())
         rows = c.plan(config)
         self.assertEqual(len(rows), 78)
-        self.assertEqual(rows[0]["id"], "masjid-nurul-iman-blok-m")
+        self.assertEqual(rows[0]["id"], "masjid-raya-rahmatan-lil-alamin")
         self.assertTrue(all(any("/rumah/" in s for s in r["sources"]) and any("/apartemen/" in s for s in r["sources"]) for r in rows))
-        self.assertTrue(rows[0]["priority"]["southJakarta"])
+        self.assertLessEqual(rows[0]["priority"]["krlKm"],1.5)
+        self.assertEqual(rows[0]["priority"]["ihrishEventCount"],31)
 
     def test_resume_cache_pagination_budget_and_no_catalog_mutation(self):
         calls = []

@@ -149,11 +149,15 @@ def merge(directory, plans, config, runs, scope=None):
     area_leads = [r for r in result["results"] if not r.get("location") and r.get("amount") and r.get("period")
                   and not r["stale"] and not r["alreadyCatalogued"] and r.get("locality")
                   and not blocked.intersection(r["issues"]) and not r.get("error")]
-    area_leads.sort(key=lambda r: ("jakarta selatan" not in r["locality"].lower(), r.get("monthlyEquivalent") or float("inf"), r["url"]))
+    area_leads.sort(key=lambda r: ({"preferred": 0, "stretch": 1, "unknown": 2, "over-budget": 3}.get(r.get("budgetPriority"), 0),
+                                  r.get("monthlyEquivalent") or float("inf"), r["url"]))
     result.update(providers=runs, crossSourceMatches=pairs, areaLeads=area_leads)
     for mosque in result["coverage"]:
         mosque["focusByProvider"] = {r["name"]: next((m for m in r.get("run", {}).get("focus", {}).get("mosques", []) if m["id"] == mosque["id"]), None) for r in runs}
     result["summary"].update(providers=len(plans), areaLeads=len(area_leads), crossSourceMatches=len(pairs))
+    if config.get("budgetPriority"):
+        result["summary"]["newCandidatesByBudget"] = {band: sum(r["reviewStatus"] == "candidate" and not r["alreadyCatalogued"] and r.get("budgetPriority") == band for r in result["results"])
+                                                        for band in ["preferred", "stretch", "unknown", "over-budget"]}
     result["summary"]["byProvider"] = {name: {
         "details": sum(bool(r.get("sha256")) for r in result["results"] if r["provider"] == name),
         "candidates": sum(r["reviewStatus"] == "candidate" for r in result["results"] if r["provider"] == name),
@@ -174,8 +178,10 @@ def period_badges(row):
 def markdown(result):
     s = result["summary"]
     scope = (result.get("run") or {}).get("scope")
-    priority = "Prioritas: masjid dekat transportasi umum, Jakarta Selatan lalu melebar."
-    if scope and len(scope["activeMosqueIds"]) < scope["referenceMosques"]:
+    priority = "Prioritas masjid mengikuti konfigurasi sumber."
+    if scope and scope.get("priorityMode") == "ihrish-krl":
+        priority = f"Fokus {len(scope['activeMosqueIds'])} masjid Ihrish di Jabodetabek; KRL hingga 1,5 km didahulukan, hingga 3 km alternatif, lalu jumlah kegiatan pada snapshot sumber. Tarif hingga Rp4 juta/bulan didahulukan, hingga Rp6 juta alternatif; di atasnya di luar prioritas. Ekuivalen tahunan/12 bukan janji bayar bulanan."
+    elif scope and len(scope["activeMosqueIds"]) < scope["referenceMosques"]:
         names = ", ".join(row["name"] for row in result["coverage"])
         priority = f"Fokus aktif: {names}; inventori acuan {scope['referenceMosques']} masjid tetap dipertahankan."
     lines = ["# Pantauan sewa dari beberapa situs", "", result["note"], "",
@@ -207,6 +213,8 @@ def markdown(result):
         options = "; ".join(f"{p['months']} bulan Rp {p['amount']:,.0f}".replace(",", ".") for p in r.get("priceOptions", []) if p.get("months"))
         terms = f" Opsi kontrak: {options}." if options else ""
         lines.append(f"- {period_badges(r)} · [{r['provider']} · {r['kind']} {r.get('bedrooms') or '?'} kamar, {r['locality']}]({r['url']}) — Rp {amount}/{period}; {near['name']} ≈{near['km']} km. {stamp}.{terms}")
+        if "budgetPriority" in r:
+            lines.append("  Prioritas anggaran: " + r["budgetPriority"] + ".")
     lines += ["", "## Penawaran kawasan — jarak ke masjid belum terbukti", "",
               "Lokasi tertulis berikut adalah petunjuk pencarian. Tanpa titik, iklan tidak dihitung sebagai sewa dalam radius masjid. Tanggal relatif dan ketersediaan perlu dikonfirmasi.", ""]
     for r in result["areaLeads"][:100]:
@@ -255,7 +263,8 @@ def main():
     selected = active_mosques(reference, multi)
     per_mosque = active_detail_limit(config, multi)
     scope = {"referenceMosques": len(reference), "activeMosqueIds": [m["id"] for m in selected],
-             "radiusKm": config["radiusKm"], "detailsPerMosquePerProvider": per_mosque}
+             "radiusKm": config["radiusKm"], "detailsPerMosquePerProvider": per_mosque,
+             "priorityMode": config.get("priorityMode", "legacy"), "budgetPriority": config.get("budgetPriority")}
     plans = provider_plan(selected, multi, cancel)
     chosen = [name for name in chosen if name in plans]
     if not chosen:

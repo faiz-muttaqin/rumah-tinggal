@@ -391,24 +391,34 @@ class Client:
                 "targetSeconds": stats(self.target_delays), "observedIntervalSeconds": stats(self.intervals)}
 
 
-def priority(mosque, stops, paths):
+def priority(mosque, stops, paths, policy="legacy"):
     nearest = []
+    krl_distance = math.inf
     for mode in ("KRL", "MRT", "LRT", "TransJakarta"):
         found = [(km((mosque["lat"], mosque["lng"]), (s["lat"], s["lng"])), s) for s in stops if s["mode"] == mode]
         if found:
             distance, s = min(found, key=lambda pair: pair[0])
+            if mode == "KRL":
+                krl_distance = distance
             nearest.append({"mode": mode, "name": s["name"], "km": round(distance, 3),
                             "near": distance <= (0.7 if mode == "TransJakarta" else 1.5)})
     near = any(s["near"] for s in nearest)
     south = any("/jakarta-selatan/" in "/" + p + "/" for p in paths)
     # Blok M is an ordering reference, not the user's home or a route origin.
     outward = km((mosque["lat"], mosque["lng"]), (-6.244574, 106.800616))
-    return {"tier": 0 if near and south else 1 if near else 2 if south else 3,
-            "southJakarta": south, "fromBlokMKm": round(outward, 3), "transit": nearest}
+    result = {"tier": 0 if near and south else 1 if near else 2 if south else 3,
+              "southJakarta": south, "fromBlokMKm": round(outward, 3), "transit": nearest}
+    if policy == "ihrish-krl":
+        count = mosque.get("eventCount")
+        result.update(tier=0 if krl_distance <= 1.5 else 1 if krl_distance <= 3 else 2,
+                      ihrishEventCount=count if type(count) is int and count >= 0 else 0,
+                      krlKm=round(krl_distance, 3) if math.isfinite(krl_distance) else None)
+    return result
 
 
 def plan(config):
-    mosques = json.loads((ROOT / "research/masjid/ihrish-mosques.json").read_text())["mosques"]
+    inventory = json.loads((ROOT / "research/masjid/ihrish-mosques.json").read_text())
+    mosques = inventory["mosques"]
     stops = []
     for file in ("transit.geojson", "mobility.geojson"):
         for f in json.loads((ROOT / "public/data" / file).read_text())["features"]:
@@ -428,9 +438,15 @@ def plan(config):
             raise ValueError("Missing search area")
         sources = [canonical(ORIGIN + "/sewa/" + kind + "/" + path)
                    for path in paths for kind in ("rumah", "apartemen")]
+        ranked = priority(m, stops, paths, config.get("priorityMode", "legacy"))
+        if config.get("priorityMode") == "ihrish-krl":
+            ranked["activitySnapshotDate"] = inventory.get("checkedAt")
         rows.append({"id": m["id"], "name": m["name"], "lat": m["lat"], "lng": m["lng"],
                      "focusTerms": focus.get("localities", []),
-                     "sources": sources, "priority": priority(m, stops, paths)})
+                     "sources": sources, "priority": ranked})
+    if config.get("priorityMode") == "ihrish-krl":
+        return sorted(rows, key=lambda r: (r["priority"]["tier"], -r["priority"]["ihrishEventCount"],
+                                          r["priority"]["krlKm"] if r["priority"]["krlKm"] is not None else math.inf, r["id"]))
     return sorted(rows, key=lambda r: (r["priority"]["tier"], r["priority"]["fromBlokMKm"], r["id"]))
 
 
@@ -449,10 +465,23 @@ def detail_fresh(record, hours):
     return fresh(record, hours) and record.get("adapterVersion") == ADAPTER_VERSION
 
 
-def detail_queue(cards, details, hours):
+def budget_band(amount, budget):
+    if type(amount) not in (int, float) or not math.isfinite(amount) or amount <= 0:
+        return "unknown"
+    return "preferred" if amount <= budget["preferredMonthly"] else "stretch" if amount <= budget["maxMonthly"] else "over-budget"
+
+
+def detail_queue(cards, details, hours, budget=None):
     # Explore new URLs before refreshing old ones, so the cheapest first page
     # cannot monopolize every daily run. Expired records stay explicitly stale.
-    ordered = sorted(cards, key=lambda card: (card["url"] in details, monthly_hint(card), card["url"]))
+    def key(card):
+        hint = monthly_hint(card)
+        if not math.isfinite(hint):
+            value = details.get(card["url"], {}).get("monthlyEquivalent")
+            hint = value if type(value) in (int, float) and math.isfinite(value) and value > 0 else math.inf
+        rank = {"preferred": 0, "stretch": 1, "unknown": 2, "over-budget": 3}[budget_band(hint, budget)] if budget else 0
+        return rank, card["url"] in details, hint, card["url"]
+    ordered = sorted(cards, key=key)
     return list(dict.fromkeys(card["url"] for card in ordered if not detail_fresh(details.get(card["url"]), hours)))
 
 
@@ -487,7 +516,7 @@ def focused_queues(state, mosques, config):
                 match = any("-" + t + "-" in haystack for t in terms) or any(url.startswith(b + "/") for b in bases)
             if match:
                 allowed.append(card)
-        queue = detail_queue(allowed, state["details"], config["detailCacheHours"])
+        queue = detail_queue(allowed, state["details"], config["detailCacheHours"], config.get("budgetPriority"))
         queues.append(queue)
         stats.append({"id": m["id"], "name": m.get("name", m["id"]), "discovered": len(cards),
                       "eligible": len(allowed), "pending": len(queue), "fetched": 0,
@@ -537,13 +566,18 @@ def report(state, mosques, config):
     catalog = json.loads((ROOT / "research/rentals.json").read_text())["rentals"]
     known = {catalog_url(r["listingUrl"]) for r in catalog}
     rows = [assess(detail, mosques, config.get("radiusKm", 1.5)) for detail in state["details"].values()]
+    budget = config.get("budgetPriority")
+    if budget:
+        for row in rows:
+            row["budgetPriority"] = budget_band(row.get("monthlyEquivalent"), budget)
     mark_duplicates(rows)
     for row in rows:
         row["alreadyCatalogued"] = row["url"] in known
         row["stale"] = not detail_fresh(row, config["detailCacheHours"])
         if row["stale"]:
             row["reviewStatus"] = "held"
-    rows.sort(key=lambda r: (min((m["rank"] for m in r["nearbyMosques"]), default=999), r.get("monthlyEquivalent") or math.inf, r["url"]))
+    rows.sort(key=lambda r: ({"preferred": 0, "stretch": 1, "unknown": 2, "over-budget": 3}.get(r.get("budgetPriority"), 0),
+                             min((m["rank"] for m in r["nearbyMosques"]), default=999), r.get("monthlyEquivalent") or math.inf, r["url"]))
     coverage = []
     for m in mosques:
         discovered = {card["url"] for page, record in state["pages"].items()
@@ -560,6 +594,7 @@ def report(state, mosques, config):
                          "candidates": len(valid), "newCandidates": sum(not r["alreadyCatalogued"] for r in valid),
                          "heldNearby": len(nearby) - len(valid)})
     return {"schemaVersion": 1, "generatedAtUTC": now(), "robots": state.get("robots"),
+            **({"budgetPriority": budget} if budget else {}),
             "run": state.get("lastRun"), "note": "Kandidat untuk kurasi. Titik perkiraan portal dan jarak garis lurus; stok belum dikonfirmasi. Nol hasil bukan bukti tidak ada sewa.",
             "summary": {"mosques": len(mosques), "mosquesWithCandidates": sum(c["candidates"] > 0 for c in coverage),
                         "detailAttempts": len(rows), "details": sum(bool(r.get("sha256")) for r in rows),
@@ -572,7 +607,7 @@ def markdown(result):
     s = result["summary"]
     lines = ["# Pantauan sewa sekitar masjid Ihrish", "", result["note"], "",
              f"Dibuat {result['generatedAtUTC']}. {s['details']} detail dibaca; {s['newCandidates']} kandidat baru untuk diperiksa; {s['mosquesWithCandidates']}/{s['mosques']} masjid punya kandidat.", "",
-             "Prioritas: dekat transportasi (rel ≤1,5 km / halte TJ ≤0,7 km), Jakarta Selatan lalu menjauh dari Blok M. Semua jarak garis lurus.", "",
+             "Prioritas masjid mengikuti konfigurasi; kedekatan KRL dan jumlah kegiatan snapshot Ihrish tidak menjamin rute berjalan atau jadwal terkini. Semua jarak garis lurus.", "",
              "| Masjid | Transit terdekat | Kandidat baru | Detail dibaca |", "| --- | --- | ---: | ---: |"]
     for c in result["coverage"]:
         near = sorted(c["priority"]["transit"], key=lambda t: (not t["near"], t["km"]))
@@ -586,6 +621,8 @@ def markdown(result):
         date = r.get("sourceUpdatedAt")
         date = date[:10] if date else "tidak ditampilkan"
         lines.append(f"- [{r['kind']} {r.get('bedrooms') or '?'} kamar, {r['locality']}]({r['url']}) — Rp{r['amount']:,.0f}/{r['period']}; {near['name']} ≈{near['km']} km. Pembaruan sumber {date}.")
+        if "budgetPriority" in r:
+            lines.append("  Prioritas anggaran: " + r["budgetPriority"] + "; ekuivalen tahunan/12 bukan janji bayar bulanan.")
     return "\n".join(lines) + "\n"
 
 
@@ -693,7 +730,7 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None, adapte
             cards = [c for page, record in state["pages"].items()
                      if page.split("?")[0] == source and fresh(record, config["searchCacheHours"])
                      for c in record.get("cards", []) if not c.get("rented")]
-            queues.append(detail_queue(cards, state["details"], config["detailCacheHours"]))
+            queues.append(detail_queue(cards, state["details"], config["detailCacheHours"], config.get("budgetPriority")))
         if config.get("focusEnabled"):
             queues, focus_stats = focused_queues(state, mosques, config)
             cursor = state.get("focusCursor", 0) % len(queues)
@@ -765,6 +802,14 @@ def safe_error(exc):
 
 
 def validate_config(config):
+    if config.get("priorityMode", "legacy") not in ("legacy", "ihrish-krl"):
+        raise ValueError("Invalid mosque priority mode")
+    if "budgetPriority" in config:
+        budget = config["budgetPriority"]
+        if (not isinstance(budget, dict) or set(budget) != {"preferredMonthly", "maxMonthly"}
+                or any(type(v) is not int or not 100_000 <= v <= 200_000_000 for v in budget.values())
+                or budget["preferredMonthly"] > budget["maxMonthly"]):
+            raise ValueError("Invalid monthly search budget")
     for key, minimum in [("delaySeconds", 1), ("delayJitterSeconds", 0)]:
         value = config.get(key, 0)
         if type(value) not in (int, float) or not math.isfinite(value) or not minimum <= value <= 30:

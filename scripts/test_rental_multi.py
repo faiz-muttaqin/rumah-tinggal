@@ -115,22 +115,30 @@ class ProviderTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 m.active_detail_limit(config, {"activeMosqueIds":["a"],"activeDetailsPerMosque":invalid})
 
-    def test_active_config_retains_all_78_reference_mosques_for_future_phases(self):
+    def test_active_config_covers_jabodetabek_and_preserves_all_78_reference_mosques(self):
         config = json.loads((c.ROOT / "research/rental-crawl-sources.json").read_text())
         base = c.plan(config)
         settings = json.loads((c.ROOT / "research/rental-crawl-providers.json").read_text())
         selected = m.active_mosques(base, settings)
         self.assertEqual(len(base), 78)
-        self.assertEqual([r["id"] for r in selected], ["masjid-as-sunnah-vcm"])
+        self.assertEqual(len(selected),72)
+        active={r["id"] for r in selected}
+        self.assertIn("masjid-as-sunnah-vcm",active)
+        self.assertTrue(any("bekasi" in path for r in selected for path in config['targets'][r['id']]))
+        self.assertTrue(any("tangerang" in path for r in selected for path in config['targets'][r['id']]))
+        self.assertFalse(any("bandung" in path or "cimahi" in path for r in selected for path in config['targets'][r['id']]))
+        self.assertEqual(m.active_detail_limit(config,settings),2)
+        self.assertEqual(selected[0]['id'],'masjid-raya-rahmatan-lil-alamin')
         for value in settings["providers"].values():
             value["mosqueAreas"] = config["targets"]
         plans = m.provider_plan(selected, settings)
         self.assertEqual(set(plans), set(m.PROVIDERS))
-        self.assertTrue(all([r["id"] for r in rows] == ["masjid-as-sunnah-vcm"] for _, rows in plans.values()))
-        self.assertEqual(len(plans["mamikos"][1][0]["sources"]), 15)
-        self.assertIn("https://jendela360.com/apartemen-cinere", plans["jendela360"][1][0]["sources"])
-        self.assertIn("https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment", plans["jendela360"][1][0]["sources"])
-        self.assertFalse(plans["jakartaprime"][1][0]["sources"])
+        self.assertTrue(all({r['id'] for r in rows}==active for _,rows in plans.values()))
+        vcm=next(r for r in plans['mamikos'][1] if r['id']=='masjid-as-sunnah-vcm')
+        self.assertEqual(len(vcm['sources']),15)
+        vcm_j=next(r for r in plans['jendela360'][1] if r['id']=='masjid-as-sunnah-vcm')
+        self.assertIn("https://jendela360.com/apartemen-cinere", vcm_j["sources"])
+        self.assertIn("https://jendela360.com/sewa-apartemen-cinere-bellevue-suites-apartment", vcm_j["sources"])
 
     def test_adjacent_discovery_areas_reject_unknown_mosques_and_non_area_paths(self):
         for extras in [{"unknown":["jawa-barat/depok/cinere"]}, {"a":[]}, {"a":"depok"}, {"a":["https://other.example.invalid/account"]}, {"a":[None]}]:
