@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17",
+  "checkedAt": "2026-11-23",
   "note": "Iklan sewa publik diperiksa pada tanggal di masing-masing kartu. Keterangan fasilitas dan transit dapat berasal dari iklan atau sumber kawasan, bukan survei; cek hubungan lokasinya. Nama dan kontak pemilik tidak disimpan. Harga dan ketersediaan cepat berubah.",
   "rentals": [
     {
@@ -24958,6 +24958,1328 @@
       "verdict": "partial",
       "lastChecked": "2026-11-17",
       "note": "Portal mengizinkan pasutri. Tarif dasar Rp1 juta/bulan; kapasitas dua orang, biaya berdua, deposit, tagihan dan stok perlu konfirmasi. Kamar 2,5×2,5 m menurut portal. Minimum sewa tidak ditampilkan; jumlah kamar tersedia bukan kapasitas penghuni. Acuan KRL Cilebut 549 m garis lurus, bukan rute berjalan."
+    },
+    {
+      "id": "sewa-mamikos-d0030f53de05",
+      "title": "Kos Zahwa Buaran Indah Tipe Minimalis — pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos",
+      "area": "Tangerang",
+      "locationText": "Tangerang, Kota Tangerang",
+      "buildingOrCluster": "Zahwa Buaran Indah",
+      "rent": {
+        "amount": 1300000,
+        "period": "monthly",
+        "quote": "Rp1.300.000",
+        "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-zahwa-buaran-indah-tipe-minimalis-tangerang",
+        "pageDate": "2026-09-19"
+      },
+      "bedrooms": 1,
+      "sizeM2": 9.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp1.300.000",
+          "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-zahwa-buaran-indah-tipe-minimalis-tangerang"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-zahwa-buaran-indah-tipe-minimalis-tangerang",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-09-19",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Kamar 3 × 3 m dengan AC dan kamar mandi dalam menurut iklan. Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Tarif dasar, minimum sewa, kapasitas dan biaya untuk dua orang perlu dikonfirmasi. Acuan ke KRL Tanah Tinggi 426 m garis lurus."
+    },
+    {
+      "id": "sewa-rukita-575a5f711465",
+      "title": "Kos Rukita Belhome Mangga Besar — Regular Full A, pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos",
+      "area": "Jakarta",
+      "locationText": "Jakarta Barat, Jakarta",
+      "buildingOrCluster": "Rukita Belhome Mangga Besar",
+      "rent": {
+        "amount": 2668000,
+        "period": "monthly",
+        "quote": "Rp2.668.000",
+        "url": "https://www.rukita.co/place/rukita-belhome-residence-mangga-besar",
+        "pageDate": null
+      },
+      "bedrooms": 1,
+      "sizeM2": 10.16,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp2.668.000",
+          "url": "https://www.rukita.co/place/rukita-belhome-residence-mangga-besar"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.rukita.co/place/rukita-belhome-residence-mangga-besar",
+      "sourcePortal": "rukita",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Tipe Regular Full A mengizinkan maksimal dua penghuni dan aturan properti mengizinkan pasutri. Tarif dasar untuk satu orang. Kartu kamar menyebut biaya tambahan untuk penghuni kedua. Konfirmasi harga akhir berdua, minimum sewa dan syarat diskon. Acuan ke KRL Jayakarta 534 m garis lurus."
+    },
+    {
+      "id": "sewa-rukita-1af1ae59a8e0",
+      "title": "Kos Rukita Pumpkin Mangga Besar — Studio Queen D, pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos",
+      "area": "Jakarta",
+      "locationText": "Jakarta Barat, Jakarta",
+      "buildingOrCluster": "Rukita Pumpkin Coliving Mangga Besar",
+      "rent": {
+        "amount": 2618000,
+        "period": "monthly",
+        "quote": "Rp2.618.000",
+        "url": "https://www.rukita.co/place/rukita-pumpkin-residence-mangga-besar",
+        "pageDate": null
+      },
+      "bedrooms": 1,
+      "sizeM2": 19,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp2.618.000",
+          "url": "https://www.rukita.co/place/rukita-pumpkin-residence-mangga-besar"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.rukita.co/place/rukita-pumpkin-residence-mangga-besar",
+      "sourcePortal": "rukita",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Tipe Studio Queen D mengizinkan maksimal dua penghuni dan aturan properti mengizinkan pasutri. Tarif dasar untuk satu orang. Kartu kamar menyebut biaya tambahan untuk penghuni kedua. Konfirmasi harga akhir berdua, minimum sewa dan syarat diskon. Acuan ke KRL Jayakarta 628 m garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-1d608a9be83f",
+      "title": "Apartemen Sudimara Forestwalk 2 kamar, 33 m²",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Sawah Baru, Ciputat, Kota Tangerang Selatan",
+      "buildingOrCluster": "Sudimara Forestwalk",
+      "rent": {
+        "amount": 4000000,
+        "period": "monthly",
+        "quote": "Rp 4 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-sudimara-forestwalk-6",
+        "pageDate": "2026-09-03",
+        "minimumMonths": 3
+      },
+      "bedrooms": 2,
+      "sizeM2": 33.0,
+      "furnished": "semi",
+      "evidence": [
+        {
+          "quote": "Rp 4 Juta/Bulan",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-sudimara-forestwalk-6"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-sudimara-forestwalk-6",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-09-03",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Unit dua kamar dengan perabot sebagian. Minimum tiga bulan dengan tarif dasar Rp12 juta untuk masa itu. Konfirmasi cara bayar dan biaya lain serta izin pengelola dan kapasitas untuk pasutri. Acuan ke KRL Sudimara 695 m garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-5fc487c4c34d",
+      "title": "Apartemen Sudimara Forestwalk 24 m²",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Sawah Baru, Ciputat, Kota Tangerang Selatan",
+      "buildingOrCluster": "Sudimara Forestwalk",
+      "rent": {
+        "amount": 3200000,
+        "period": "monthly",
+        "quote": "Rp 3,2 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sudimara-forest-walk-di-apartemen-sudimara-forestwalk",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 3
+      },
+      "bedrooms": null,
+      "sizeM2": 24.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 3,2 Juta/Bulan",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sudimara-forest-walk-di-apartemen-sudimara-forestwalk"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sudimara-forest-walk-di-apartemen-sudimara-forestwalk",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Harga bulanan dengan minimum tiga bulan. Label sumber mencantumkan Rp9,6 juta untuk masa itu. Konfirmasi cara bayar, jumlah kamar terpisah, izin pengelola, kapasitas dan biaya untuk pasutri. Acuan ke KRL Sudimara 695 m garis lurus."
+    },
+    {
+      "id": "sewa-rukita-51e09f8fd77e",
+      "title": "Kos Rukita Clover Mangga Besar — Regular Queen A, pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos",
+      "area": "Jakarta",
+      "locationText": "Jakarta Barat, Jakarta",
+      "buildingOrCluster": "Rukita Clover Mangga Besar",
+      "rent": {
+        "amount": 2568000,
+        "period": "monthly",
+        "quote": "Rp2.568.000",
+        "url": "https://www.rukita.co/place/rukita-clover-mangga-besar-jakarta-pusat",
+        "pageDate": null
+      },
+      "bedrooms": 1,
+      "sizeM2": 13.03,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp2.568.000",
+          "url": "https://www.rukita.co/place/rukita-clover-mangga-besar-jakarta-pusat"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.rukita.co/place/rukita-clover-mangga-besar-jakarta-pusat",
+      "sourcePortal": "rukita",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Tipe Regular Queen A mengizinkan maksimal dua penghuni dan aturan properti mengizinkan pasutri. Tarif dasar untuk satu orang. Kartu kamar menyebut biaya tambahan untuk penghuni kedua. Konfirmasi harga akhir berdua, minimum sewa dan syarat diskon. Acuan ke KRL Mangga Besar 709 m garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-263ab339e1af",
+      "title": "Rumah sewa di Taman Royal, Tanah Tinggi",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Tangerang",
+      "locationText": "Tanah Tinggi, Tangerang, Kota Tangerang",
+      "buildingOrCluster": "Taman Royal",
+      "rent": {
+        "amount": 45000000,
+        "period": "yearly",
+        "quote": "Rp 45 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bebas-banjir-di-taman-royal-tangerang-di-taman-royal",
+        "pageDate": "2025-10-04",
+        "minimumMonths": 12
+      },
+      "bedrooms": 3,
+      "sizeM2": 128.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 45 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bebas-banjir-di-taman-royal-tangerang-di-taman-royal"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bebas-banjir-di-taman-royal-tangerang-di-taman-royal",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-10-04",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp45 juta per tahun dengan minimum 12 bulan. Iklan menyebut air PDAM dan listrik 2.200 W. Konfirmasi ketentuan penghuni, deposit, tagihan dan ketersediaan. Acuan ke KRL Tanah Tinggi 737 m garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-e960db823b91",
+      "title": "Rumah sewa 2 kamar di Harapan Jaya, Cibinong",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Bogor",
+      "locationText": "Harapanjaya (Harapan Jaya), Cibinong, Kab. Bogor",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 42000000,
+        "period": "yearly",
+        "quote": "Rp 42 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-keramat-raya-cikaret",
+        "pageDate": "2026-02-05",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 84.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 42 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-keramat-raya-cikaret"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-keramat-raya-cikaret",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-02-05",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp42 juta per tahun dengan minimum 12 bulan. Deskripsi rumah tinggal mencantumkan dua AC dan carport. Konfirmasi perabot yang disertakan, deposit, tagihan dan stok. Acuan ke KRL Pondok Rajeg 761 m garis lurus."
+    },
+    {
+      "id": "sewa-mamikos-7a7521fcc663",
+      "title": "Kos Le Paris Tipe A, Tanah Tinggi — pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos",
+      "area": "Tangerang",
+      "locationText": "Kecamatan Tangerang, Kota Tangerang",
+      "buildingOrCluster": "Le Paris Daan Mogot",
+      "rent": {
+        "amount": 1980000,
+        "period": "monthly",
+        "quote": "Rp1.980.000",
+        "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-le-paris-daan-mogot-poris-kali-deres-tipe-a-tanah-tinggi-tangerang",
+        "pageDate": "2026-11-23"
+      },
+      "bedrooms": 1,
+      "sizeM2": 9.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp1.980.000",
+          "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-le-paris-daan-mogot-poris-kali-deres-tipe-a-tanah-tinggi-tangerang"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-le-paris-daan-mogot-poris-kali-deres-tipe-a-tanah-tinggi-tangerang",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-11-23",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Kamar 3 × 3 m menurut portal. Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Konfirmasi kapasitas berdua, tarif tambahan, deposit, utilitas dan minimum sewa. Acuan ke KRL Tanah Tinggi 1,242 km garis lurus."
+    },
+    {
+      "id": "sewa-mamikos-c5d73d5f8357",
+      "title": "Kos Burgundy 2 Tipe VIP, Palmerah — pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos",
+      "area": "Jakarta",
+      "locationText": "Palmerah, Jakarta Barat",
+      "buildingOrCluster": "Burgundy 2",
+      "rent": {
+        "amount": 2599999,
+        "period": "monthly",
+        "quote": "Rp2.599.999",
+        "url": "https://mamikos.com/room/kost-jakarta-barat-kost-campur-eksklusif-kost-burgundy-2-tipe-vip-palmerah-jakarta-barat",
+        "pageDate": "2026-08-18"
+      },
+      "bedrooms": 1,
+      "sizeM2": 10.5,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp2.599.999",
+          "url": "https://mamikos.com/room/kost-jakarta-barat-kost-campur-eksklusif-kost-burgundy-2-tipe-vip-palmerah-jakarta-barat"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-jakarta-barat-kost-campur-eksklusif-kost-burgundy-2-tipe-vip-palmerah-jakarta-barat",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-08-18",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Kamar 3 × 3,5 m menurut portal. Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Konfirmasi kapasitas berdua, harga akhir, syarat biaya tambahan dan minimum sewa. Acuan ke KRL Tanah Abang 1,359 km garis lurus."
+    },
+    {
+      "id": "sewa-mamikos-6fea575e1ed0",
+      "title": "Kos 63 Ketapang VIP, Taman Sari — pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos",
+      "area": "Jakarta",
+      "locationText": "Taman Sari, Jakarta Barat",
+      "buildingOrCluster": "Kos 63 Ketapang VIP",
+      "rent": {
+        "amount": 1100000,
+        "period": "monthly",
+        "quote": "Rp1.100.000",
+        "url": "https://mamikos.com/room/kost-jakarta-barat-kost-campur-eksklusif-kost-63-ketapang-vip-taman-sari-jakarta-barat",
+        "pageDate": "2026-08-26"
+      },
+      "bedrooms": 1,
+      "sizeM2": 9.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp1.100.000",
+          "url": "https://mamikos.com/room/kost-jakarta-barat-kost-campur-eksklusif-kost-63-ketapang-vip-taman-sari-jakarta-barat"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-jakarta-barat-kost-campur-eksklusif-kost-63-ketapang-vip-taman-sari-jakarta-barat",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-08-26",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Kamar 3 × 3 m menurut portal. Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Konfirmasi kapasitas dua orang, tarif akhir berdua, tagihan dan minimum sewa. Acuan ke KRL Sawah Besar 1,402 km garis lurus."
+    },
+    {
+      "id": "sewa-mamikos-faca7ab5214b",
+      "title": "Kos Kencana, Sukmajaya — pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos",
+      "area": "Depok",
+      "locationText": "Kecamatan Sukmajaya, Kota Depok",
+      "buildingOrCluster": "Kos Kencana",
+      "rent": {
+        "amount": 800000,
+        "period": "monthly",
+        "quote": "Rp800.000",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-kencana-pak-mulyamto-2-sukmajaya-depok-1",
+        "pageDate": "2025-03-29"
+      },
+      "bedrooms": 1,
+      "sizeM2": 18.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp800.000",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-kencana-pak-mulyamto-2-sukmajaya-depok-1"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-kencana-pak-mulyamto-2-sukmajaya-depok-1",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2025-03-29",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Kamar 3 × 6 m menurut portal. Pasutri diizinkan dan anak tidak. Deskripsi menyebut parkir mobil tidak tersedia. Konfirmasi kapasitas, biaya untuk berdua, deposit dan minimum sewa. Acuan ke KRL Depok Baru 1,478 km garis lurus."
+    },
+    {
+      "id": "sewa-jendela360-519105f904e5",
+      "title": "Apartemen Bassura City 2 kamar, 34 m² — paket 12 bulan",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Jakarta",
+      "locationText": "Cipinang, Jakarta Timur",
+      "buildingOrCluster": "Bassura City Apartment",
+      "rent": {
+        "amount": 45450000,
+        "period": "yearly",
+        "quote": "Rp 45,450,000",
+        "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCC744",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 34.0,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Rp 45,450,000",
+          "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCC744"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCC744",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Paket Rp45.450.000 untuk 12 bulan dibayar langsung. Opsi periode lain mempunyai harga tersendiri. Konfirmasi izin pengelola, kapasitas berdua, IPL, deposit dan tagihan. Acuan ke KRL Jatinegara 1,482 km garis lurus."
+    },
+    {
+      "id": "sewa-jendela360-dc3ffd4c89ab",
+      "title": "Apartemen Bassura City 2 kamar, 35 m² — paket 12 bulan",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Jakarta",
+      "locationText": "Cipinang, Jakarta Timur",
+      "buildingOrCluster": "Bassura City Apartment",
+      "rent": {
+        "amount": 38690000,
+        "period": "yearly",
+        "quote": "Rp 38,690,000",
+        "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCC757",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 35.0,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Rp 38,690,000",
+          "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCC757"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCC757",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Paket Rp38.690.000 untuk 12 bulan dibayar langsung. Opsi 3 bulan Rp11.880.000 dan 6 bulan Rp21.320.000 tercantum sebagai paket terpisah. Konfirmasi izin pengelola, kapasitas berdua, IPL, deposit dan tagihan. Acuan ke KRL Jatinegara 1,482 km garis lurus."
+    },
+    {
+      "id": "sewa-jendela360-575891288b6d",
+      "title": "Apartemen Bassura City 2 kamar, 33 m² berperabot — paket 12 bulan",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Jakarta",
+      "locationText": "Cipinang, Jakarta Timur",
+      "buildingOrCluster": "Bassura City Apartment",
+      "rent": {
+        "amount": 43440000,
+        "period": "yearly",
+        "quote": "Rp 43,440,000",
+        "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCC818",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 33.0,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Rp 43,440,000",
+          "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCC818"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCC818",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Paket Rp43.440.000 untuk 12 bulan dibayar langsung. Portal punya skema pembayaran tersendiri untuk periode lain. Konfirmasi izin pengelola, kapasitas berdua, IPL, deposit dan tagihan. Acuan ke KRL Jatinegara 1,482 km garis lurus."
+    },
+    {
+      "id": "sewa-jendela360-e2097f6cafd0",
+      "title": "Apartemen Bassura City 2 kamar, 33 m² semi furnished — paket 12 bulan",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Jakarta",
+      "locationText": "Cipinang, Jakarta Timur",
+      "buildingOrCluster": "Bassura City Apartment",
+      "rent": {
+        "amount": 42830000,
+        "period": "yearly",
+        "quote": "Rp 42,830,000",
+        "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCC829",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 33.0,
+      "furnished": "semi",
+      "evidence": [
+        {
+          "quote": "Rp 42,830,000",
+          "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCC829"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCC829",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Paket Rp42.830.000 untuk 12 bulan dibayar langsung. Perabot sebagian menurut portal. Konfirmasi izin pengelola, kapasitas berdua, IPL, deposit dan tagihan. Acuan ke KRL Jatinegara 1,482 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-a2331f75ed58",
+      "title": "Rumah sewa 4 kamar di Klender",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Jakarta",
+      "locationText": "Klender, Duren Sawit, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 52000000,
+        "period": "yearly",
+        "quote": "Rp 52 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-area-bebas-banjir-di-klender",
+        "pageDate": "2026-05-03",
+        "minimumMonths": 12
+      },
+      "bedrooms": 4,
+      "sizeM2": 140.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 52 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-area-bebas-banjir-di-klender"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-area-bebas-banjir-di-klender",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-05-03",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp52 juta per tahun dengan minimum 12 bulan. Deposit Rp5 juta disebut terpisah. Empat kamar tidur, dua kamar mandi dan satu carport menurut iklan. Konfirmasi tagihan dan stok. Acuan ke KRL Klender 621 m garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-77b08ed668a1",
+      "title": "Rumah sewa 1 kamar di Bekasi Jaya",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Bekasi",
+      "locationText": "Bekasijaya (Bekasi Jaya), Bekasi Timur, Kota Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 5500000,
+        "period": "monthly",
+        "quote": "Rp 5,5 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-underpass-bekasi-timur",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 1
+      },
+      "bedrooms": 1,
+      "sizeM2": 60.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 5,5 Juta/Bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-underpass-bekasi-timur"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-underpass-bekasi-timur",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp5,5 juta per bulan dengan minimum satu bulan menurut portal. Luas bangunan 60 m². Konfirmasi ketentuan untuk pasangan, deposit, utilitas dan stok. Acuan ke KRL Bekasi Timur 1,112 km garis lurus."
+    },
+    {
+      "id": "sewa-jendela360-5740a95a029e",
+      "title": "Apartemen Bassura City 3 kamar, 48 m² — paket 12 bulan",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Jakarta",
+      "locationText": "Cipinang, Jakarta Timur",
+      "buildingOrCluster": "Bassura City Apartment",
+      "rent": {
+        "amount": 59390000,
+        "period": "yearly",
+        "quote": "Rp 59,390,000",
+        "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCD150",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 3,
+      "sizeM2": 48.0,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Rp 59,390,000",
+          "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCD150"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCD150",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Paket Rp59.390.000 untuk 12 bulan dibayar langsung. Perabot lengkap menurut portal. Konfirmasi izin pengelola, kapasitas berdua, IPL, deposit dan tagihan. Acuan ke KRL Jatinegara 1,482 km garis lurus."
+    },
+    {
+      "id": "sewa-mamikos-90626a254726",
+      "title": "Hunian Pangrango, Cibinong — pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos",
+      "area": "Bogor",
+      "locationText": "Kecamatan Cibinong, Kabupaten Bogor",
+      "buildingOrCluster": "Cluster Pangrango",
+      "rent": {
+        "amount": 2000000,
+        "period": "monthly",
+        "quote": "Rp2.000.000",
+        "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-rumah-kontrakan-d-cluster-pangrango-sukahati-cibinong-bogor",
+        "pageDate": "2025-11-25",
+        "minimumMonths": 12
+      },
+      "bedrooms": 1,
+      "sizeM2": 16.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp2.000.000",
+          "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-rumah-kontrakan-d-cluster-pangrango-sukahati-cibinong-bogor"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-rumah-kontrakan-d-cluster-pangrango-sukahati-cibinong-bogor",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2025-11-25",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Aturan portal mengizinkan pasutri. Tarif tampil Rp2 juta per bulan dengan minimum sewa satu tahun menurut deskripsi. Portal juga mencantumkan tarif paket tahunan Rp25 juta. Iklan di kanal kos menyebut kontrakan. Konfirmasi bagian yang disewa, cara bayar dan biaya berdua. Acuan ke KRL Bojonggede 1,870 km garis lurus."
+    },
+    {
+      "id": "sewa-mamikos-0d17f1b6e58e",
+      "title": "Kos Rumah Hijau, Sukmajaya — pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos",
+      "area": "Depok",
+      "locationText": "Kecamatan Sukmajaya, Kota Depok",
+      "buildingOrCluster": "Kos Rumah Hijau",
+      "rent": {
+        "amount": 900000,
+        "period": "monthly",
+        "quote": "Rp900.000",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-rumah-hijau-sukmajaya-depok-1",
+        "pageDate": "2026-10-31"
+      },
+      "bedrooms": 1,
+      "sizeM2": null,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp900.000",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-rumah-hijau-sukmajaya-depok-1"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-murah-kost-rumah-hijau-sukmajaya-depok-1",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-10-31",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Ukuran pada deskripsi dan spesifikasi berbeda. Konfirmasi ukuran kamar, kapasitas berdua, biaya, dan minimum sewa. Acuan ke KRL Pondok Cina 2,016 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-d57920c7e12a",
+      "title": "Rumah sewa 3 kamar di Pondok Kelapa",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Jakarta",
+      "locationText": "Pondok Kelapa, Duren Sawit, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 45000000,
+        "period": "yearly",
+        "quote": "Rp 45 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-tingkat-kavdki-tamanmalakautara-blokc8no2-di-kav-dki-taman-malaka-utara-blok-c8-no2",
+        "pageDate": "2026-01-27",
+        "minimumMonths": 12
+      },
+      "bedrooms": 3,
+      "sizeM2": 150.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 45 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-tingkat-kavdki-tamanmalakautara-blokc8no2-di-kav-dki-taman-malaka-utara-blok-c8-no2"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-tingkat-kavdki-tamanmalakautara-blokc8no2-di-kav-dki-taman-malaka-utara-blok-c8-no2",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-01-27",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp45 juta per tahun dengan minimum 12 bulan. Iklan menyebut satu kamar di lantai bawah, dua di lantai atas, dan carport. Konfirmasi deposit, perabot, utilitas dan stok. Acuan ke KRL Klender Baru 2,045 km garis lurus."
+    },
+    {
+      "id": "sewa-mamikos-25d6357d9c74",
+      "title": "Kos Semar Raya, Sukmajaya — pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos",
+      "area": "Depok",
+      "locationText": "Kecamatan Sukmajaya, Kota Depok",
+      "buildingOrCluster": "Kos Semar Raya",
+      "rent": {
+        "amount": 1200000,
+        "period": "monthly",
+        "quote": "Rp1.200.000",
+        "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-semar-raya-sukmajaya-depok",
+        "pageDate": "2024-04-30"
+      },
+      "bedrooms": 1,
+      "sizeM2": 12.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp1.200.000",
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-semar-raya-sukmajaya-depok"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-semar-raya-sukmajaya-depok",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2024-04-30",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Kamar 3 × 4 m menurut portal. Pasutri diizinkan dan tombol pengajuan tersedia saat dicek. Pembaruan iklan tercatat April 2024. Konfirmasi stok, minimum sewa, kapasitas dan biaya untuk dua orang. Acuan ke KRL Depok Baru 2,194 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-691477c6908d",
+      "title": "Rumah sewa 4 kamar di Tridaya Nuansa Indah, Tambun",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Bekasi",
+      "locationText": "Sumberjaya (Sumber Jaya), Tambun Selatan, Kab. Bekasi",
+      "buildingOrCluster": "Tridaya Nuansa Indah",
+      "rent": {
+        "amount": 27000000,
+        "period": "yearly",
+        "quote": "Rp 27 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-tridaya-nuansa-indah-ba4-08-tambun-bekasi",
+        "pageDate": "2026-07-05",
+        "minimumMonths": 12
+      },
+      "bedrooms": 4,
+      "sizeM2": 114.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 27 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-tridaya-nuansa-indah-ba4-08-tambun-bekasi"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-tridaya-nuansa-indah-ba4-08-tambun-bekasi",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-07-05",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp27 juta per tahun dengan minimum 12 bulan. Deskripsi menawarkan rumah untuk tinggal, dengan penggunaan usaha sebagai opsi. Empat kamar dan dua kamar mandi. Konfirmasi deposit, tagihan dan stok. Acuan ke KRL Tambun 2,296 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-9785d4533241",
+      "title": "Apartemen Loftvilles City 22 m², Ciputat",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Sarua (Serua), Ciputat, Kota Tangerang Selatan",
+      "buildingOrCluster": "Loftvilles City",
+      "rent": {
+        "amount": 2000000,
+        "period": "monthly",
+        "quote": "Rp 2 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-loftvilles-city-ciputat",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 1
+      },
+      "bedrooms": null,
+      "sizeM2": 22.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 2 Juta/Bulan",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-loftvilles-city-ciputat"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-loftvilles-city-ciputat",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp2 juta per bulan dengan minimum satu bulan. Iklan menyebut AC, TV, meja, kasur, lemari, serta IPL dan air termasuk. Konfirmasi ketentuan biaya, izin pengelola, kapasitas berdua dan jumlah kamar terpisah. Acuan ke KRL Sudimara 2,324 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-219e50c1eba8",
+      "title": "Apartemen Urbantown Serpong 2 kamar, 38 m²",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Sarua (Serua), Ciputat, Kota Tangerang Selatan",
+      "buildingOrCluster": "Urbantown Serpong",
+      "rent": {
+        "amount": 4000000,
+        "period": "monthly",
+        "quote": "Rp 4 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-urbantown-serpong-1",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 1
+      },
+      "bedrooms": 2,
+      "sizeM2": 38.0,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Rp 4 Juta/Bulan",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-urbantown-serpong-1"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-urbantown-serpong-1",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp4 juta per bulan dengan minimum satu bulan. Deskripsi menyebut dua kamar dan perabot lengkap. Konfirmasi persetujuan pengelola untuk pasutri, kapasitas dua orang, IPL, deposit dan utilitas. Acuan ke KRL Sudimara 2,486 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-101d809dc30f",
+      "title": "Rumah sewa pasutri di Razbi Prima Mansion, Tambun Selatan",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Bekasi",
+      "locationText": "Lambangsari, Tambun Selatan, Kab. Bekasi",
+      "buildingOrCluster": "Razbi Prima Mansion",
+      "rent": {
+        "amount": 16000000,
+        "period": "yearly",
+        "quote": "Rp 16 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kluster-muslim-dkt-lrt-tol-grand-wisata-di-cluster-razbi-prima-mansion-bekasi-timur",
+        "pageDate": "2025-07-09",
+        "minimumMonths": 12
+      },
+      "bedrooms": 1,
+      "sizeM2": 25.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 16 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kluster-muslim-dkt-lrt-tol-grand-wisata-di-cluster-razbi-prima-mansion-bekasi-timur"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kluster-muslim-dkt-lrt-tol-grand-wisata-di-cluster-razbi-prima-mansion-bekasi-timur",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-07-09",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Deskripsi menawarkan rumah satu lantai berperabot untuk suami istri, dua orang. Rp16 juta per tahun dengan minimum 12 bulan. Satu kamar tidur, bangunan 25 m² dan tanah 35 m². Konfirmasi deposit, utilitas, pelunasan dan stok. Acuan ke KRL Tambun 2,487 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-64d800d8216e",
+      "title": "Rumah 2 kamar di Bukit Cimanggu City — minimum 2 tahun",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Bogor",
+      "locationText": "Cibadak, Tanah Sareal (Tanah Sereal), Kota Bogor",
+      "buildingOrCluster": "Bukit Cimanggu City",
+      "rent": {
+        "amount": 26000000,
+        "period": "yearly",
+        "quote": "Rp 26 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-ocbd-bogor-4",
+        "pageDate": "2026-07-09",
+        "minimumMonths": 24
+      },
+      "bedrooms": 2,
+      "sizeM2": 45.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 26 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-ocbd-bogor-4"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-ocbd-bogor-4",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-07-09",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp26 juta per tahun dengan minimum 24 bulan. Portal mencantumkan Rp52 juta untuk dua tahun dan deskripsi meminta sewa dua tahun di awal. Deposit Rp2 juta terpisah. Konfirmasi jadwal bayar, biaya dan stok. Acuan ke KRL Cilebut 2,562 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-13b52a447b07",
+      "title": "Rumah sewa 2 kamar di Bukit Cimanggu City, 80 m²",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Bogor",
+      "locationText": "Cibadak, Tanah Sareal (Tanah Sereal), Kota Bogor",
+      "buildingOrCluster": "Bukit Cimanggu City",
+      "rent": {
+        "amount": 28000000,
+        "period": "yearly",
+        "quote": "Rp 28 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-bukit-cimanggu-city-bogor-23",
+        "pageDate": "2026-03-07",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 80.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 28 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-bukit-cimanggu-city-bogor-23"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-bukit-cimanggu-city-bogor-23",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-03-07",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp28 juta per tahun dengan minimum 12 bulan. Portal mencantumkan dua kamar dan bangunan 80 m². Konfirmasi perabot, deposit, utilitas dan stok. Acuan ke KRL Cilebut 2,683 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-4629d469b227",
+      "title": "Rumah sewa 2 lantai di Taman Harapan Baru, 120 m²",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Bekasi",
+      "locationText": "Harapanbaru (Harapan Baru), Bekasi Utara, Kota Bekasi",
+      "buildingOrCluster": "Taman Harapan Baru",
+      "rent": {
+        "amount": 30000000,
+        "period": "yearly",
+        "quote": "Rp 30 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cantik-asri-di-taman-harapan-baru-bekasi-utara",
+        "pageDate": "2026-03-10",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 120.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 30 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cantik-asri-di-taman-harapan-baru-bekasi-utara"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cantik-asri-di-taman-harapan-baru-bekasi-utara",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-03-10",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp30 juta per tahun dengan minimum 12 bulan. Iklan menyebut dua kamar tidur, dua kamar mandi, air jet pump, listrik token dan carport. Konfirmasi tagihan, deposit dan stok. Acuan ke KRL Bekasi 2,694 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-76d27a0902a2",
+      "title": "Rumah sewa 2 kamar di Taman Harapan Baru, 60 m²",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Bekasi",
+      "locationText": "Harapanbaru (Harapan Baru), Bekasi Utara, Kota Bekasi",
+      "buildingOrCluster": "Taman Harapan Baru",
+      "rent": {
+        "amount": 25000000,
+        "period": "yearly",
+        "quote": "Rp 25 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-harapan-baru-bekasi-utara-dkat-sumarecon-di-harapan-baru-bekasi-utara-dekat-sumarecon-bekasi",
+        "pageDate": "2026-09-18",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 60.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 25 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-harapan-baru-bekasi-utara-dkat-sumarecon-di-harapan-baru-bekasi-utara-dekat-sumarecon-bekasi"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-harapan-baru-bekasi-utara-dkat-sumarecon-di-harapan-baru-bekasi-utara-dekat-sumarecon-bekasi",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-09-18",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp25 juta per tahun dengan minimum 12 bulan. Deskripsi mencantumkan dua kamar, satu kamar mandi dan bangunan 60 m². Konfirmasi biaya dan ketersediaan. Acuan ke KRL Bekasi 2,694 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-49359592ab1d",
+      "title": "Rumah sewa 2 kamar di Duta Harapan, 67 m²",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Bekasi",
+      "locationText": "Harapanbaru (Harapan Baru), Bekasi Utara, Kota Bekasi",
+      "buildingOrCluster": "Duta Harapan",
+      "rent": {
+        "amount": 25000000,
+        "period": "yearly",
+        "quote": "Rp 25 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-sangat-strategis-harga-terbaik-di-duta-harapan",
+        "pageDate": "2026-10-20",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 67.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 25 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-sangat-strategis-harga-terbaik-di-duta-harapan"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-sangat-strategis-harga-terbaik-di-duta-harapan",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-10-20",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp25 juta per tahun dengan minimum 12 bulan. Deskripsi mencantumkan dua kamar dan satu kamar mandi, sesuai untuk keluarga kecil. Konfirmasi biaya, ketentuan penghuni dan stok. Acuan ke KRL Bekasi 2,813 km garis lurus."
+    },
+    {
+      "id": "sewa-jendela360-3df8aec2b63c",
+      "title": "Studio Grand Kamala Lagoon 29 m² — paket 12 bulan",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Bekasi",
+      "locationText": "Pekayon, Bekasi",
+      "buildingOrCluster": "Grand Kamala Lagoon Apartment",
+      "rent": {
+        "amount": 25000000,
+        "period": "yearly",
+        "quote": "Rp 25,000,000",
+        "url": "https://jendela360.com/sewa-apartemen-grand-kamala-lagoon-apartment/GKLA096",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 29.0,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Rp 25,000,000",
+          "url": "https://jendela360.com/sewa-apartemen-grand-kamala-lagoon-apartment/GKLA096"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-grand-kamala-lagoon-apartment/GKLA096",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Paket Rp25 juta untuk 12 bulan dibayar langsung. Studio dengan perabot lengkap. Konfirmasi izin pengelola, kapasitas berdua, IPL, deposit, tagihan dan ketersediaan. Acuan ke KRL Bekasi 2,816 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-cdb62fd89c3e",
+      "title": "Rumah sewa di Cluster Bima Duta, Tambun Selatan",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Bekasi",
+      "locationText": "Lambangsari, Tambun Selatan, Kab. Bekasi",
+      "buildingOrCluster": "Bima Duta",
+      "rent": {
+        "amount": 48000000,
+        "period": "yearly",
+        "quote": "Rp 48 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-bima-duta-jalan-16-18",
+        "pageDate": "2026-08-30",
+        "minimumMonths": 12
+      },
+      "bedrooms": null,
+      "sizeM2": 150.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 48 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-bima-duta-jalan-16-18"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-bima-duta-jalan-16-18",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-08-30",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp48 juta per tahun dengan minimum 12 bulan. Deskripsi menyebut kamar tidur 3+1, kamar mandi 2+1 dan carport dua mobil. Konfirmasi fungsi ruang tambahan, biaya dan stok. Acuan ke KRL Tambun 2,868 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-db1766520aa9",
+      "title": "Rumah sewa 3 kamar di Sukmajaya, 120 m²",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Depok",
+      "locationText": "Sukmajaya, Sukmajaya, Kota Depok",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 35000000,
+        "period": "yearly",
+        "quote": "Rp 35 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-kemang-1-sukmajaya-depok-2",
+        "pageDate": "2026-06-29",
+        "minimumMonths": 12
+      },
+      "bedrooms": 3,
+      "sizeM2": 120.0,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Rp 35 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-kemang-1-sukmajaya-depok-2"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-kemang-1-sukmajaya-depok-2",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-06-29",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp35 juta per tahun dengan minimum 12 bulan. Deskripsi menyebut kondisi kosong dan opsi bayar per enam bulan. Iklan mencatat sewa sebelumnya hingga September 2026. Konfirmasi ketersediaan sekarang, jadwal bayar dan biaya. Acuan ke KRL Depok 2,976 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-869c61f4efcd",
+      "title": "Apartemen Emerald Bintaro Tower A 22 m²",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Parigi (Perigi Lama), Pondok Aren, Kota Tangerang Selatan",
+      "buildingOrCluster": "Emerald Bintaro Tower A",
+      "rent": {
+        "amount": 3500000,
+        "period": "monthly",
+        "quote": "Rp 3,5 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartmen-emerald-bintaro-tower-a",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 3
+      },
+      "bedrooms": null,
+      "sizeM2": 22.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 3,5 Juta/Bulan",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartmen-emerald-bintaro-tower-a"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartmen-emerald-bintaro-tower-a",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp3,5 juta per bulan dengan minimum tiga bulan. Iklan menyebut deposit Rp1,5 juta, air dan listrik terpisah. Konfirmasi izin pengelola, kapasitas berdua, biaya lain dan jumlah kamar terpisah. Acuan ke KRL Sudimara 2,995 km garis lurus."
+    },
+    {
+      "id": "sewa-pinhome-eaa5331824ba",
+      "title": "Rumah sewa 2 lantai di Bintaro Sektor 9, 100 m²",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Tangerang",
+      "locationText": "Parigi (Perigi Lama), Pondok Aren, Kota Tangerang Selatan",
+      "buildingOrCluster": "Bintaro Sektor 9",
+      "rent": {
+        "amount": 55000000,
+        "period": "yearly",
+        "quote": "Rp 55 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-minimalis-2-lantai-dalam-cluster-bintaro-jaya-di-permata-bintaro",
+        "pageDate": "2026-01-17",
+        "minimumMonths": 12
+      },
+      "bedrooms": null,
+      "sizeM2": 100.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 55 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-minimalis-2-lantai-dalam-cluster-bintaro-jaya-di-permata-bintaro"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-minimalis-2-lantai-dalam-cluster-bintaro-jaya-di-permata-bintaro",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-01-17",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-23",
+      "note": "Rp55 juta per tahun dengan minimum 12 bulan. Deskripsi mencantumkan kamar tidur 3+1, dua kamar mandi, air PAM dan carport. Konfirmasi fungsi ruang tambahan, deposit, biaya dan stok. Acuan ke KRL Sudimara 1,833 km garis lurus."
     }
   ]
 }
