@@ -775,6 +775,7 @@ test("keeps price pins absolutely positioned in their geographic order", async (
   page,
 }) => {
   await expectRenderedVectors(page);
+  await page.locator("#listings-toggle").check();
   const pins = page.locator("#map .price-pin");
   await expect(pins).toHaveCount(8);
   for (const pin of await pins.all()) {
@@ -877,6 +878,7 @@ test("toggles actual rendered KRL station features while keeping regions visible
 test("toggles MRT, LRT, and TransJakarta independently without hiding KRL, streets, or hunian", async ({
   page,
 }) => {
+  await page.locator("#listings-toggle").check();
   const checkbox = (mode: MobilityLayer) =>
     page.getByRole("checkbox", {
       name: mobilityCheckboxNames[mode],
@@ -973,15 +975,20 @@ test("local regions and KRL remain usable when the external basemap is unavailab
   await expectRenderedVectors(page);
 });
 
-test("hides hunian markers and details while preserving streets, KRL, and list filters", async ({
+test("starts with hunian off and keeps the layer usable with streets, KRL, and list filters", async ({
   page,
 }) => {
-  await cards(page).first().click();
-  await expect(page.locator("#detail-card")).toBeVisible();
   const toggle = page.getByRole("checkbox", {
     name: "Marker dan detail hunian",
     exact: true,
   });
+  await expectRenderedVectors(page);
+  await expect(toggle).not.toBeChecked();
+  await expect(page.locator(".price-pin")).toHaveCount(0);
+  await expect(cards(page)).toHaveCount(8);
+  await cards(page).first().click();
+  await expect(toggle).toBeChecked();
+  await expect(page.locator("#detail-card")).toBeVisible();
   await toggle.setChecked(false);
   await expect(page.locator(".price-pin")).toHaveCount(0);
   await expect(page.locator("#detail-card")).toBeHidden();
@@ -1005,6 +1012,10 @@ test("hides hunian markers and details while preserving streets, KRL, and list f
   await toggle.setChecked(true);
   await expect(page.locator(".price-pin")).toHaveCount(1);
   await expect(page.locator("#detail-card")).toBeHidden();
+  await page.reload();
+  await expectRenderedVectors(page);
+  await expect(toggle).not.toBeChecked();
+  await expect(page.locator(".price-pin")).toHaveCount(0);
 });
 
 test("toggles actually rendered buildings independently from roads and hunian", async ({
@@ -1121,10 +1132,11 @@ test("research tab maps sourced projects and links back to the evidence", async 
     "true",
   );
   await expect(cards(page)).toHaveCount(3);
-  await expect(page.locator("#map .price-pin")).toHaveCount(3);
+  await expect(page.locator("#map .price-pin")).toHaveCount(0);
   await expect(page.locator("#research-note")).toBeVisible();
   await expect(page.locator("#example-note")).toBeHidden();
   await cards(page).filter({ hasText: "Hunian Uji Cisauk" }).click();
+  await expect(page.locator("#map .price-pin")).toHaveCount(3);
   const detail = page.locator("#detail-card");
   await expect(detail).toContainText("RISET PROPERTI");
   await expect(detail).toContainText("Rp 450 jt – Rp 620 jt");

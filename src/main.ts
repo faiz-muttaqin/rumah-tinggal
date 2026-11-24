@@ -117,7 +117,7 @@ $("app").innerHTML = `
         <label class="layer-control" title="Masjid dengan kajian dari Ihrish · klik titik untuk jadwal dan akses transportasi">${pinIcon("masjid")} <span class="community-label">Kajian Ihrish</span><input id="kajian-toggle" aria-label="Masjid dengan kajian Ihrish" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control" title="Masjid, sekolah, dan TK dari OpenStreetMap · tampil saat peta diperbesar">${icon("pin")} <span class="community-label">Masjid & sekolah</span><input id="community-toggle" aria-label="Masjid dan sekolah sekitar" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control">${icon("home")} Bangunan <input id="buildings-toggle" aria-label="Bangunan pada peta" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
-        <label class="layer-control">${icon("pin")} Hunian <input id="listings-toggle" aria-label="Marker dan detail hunian" type="checkbox" checked/><span class="switch" aria-hidden="true"></span></label>
+        <label class="layer-control">${icon("pin")} Hunian <input id="listings-toggle" aria-label="Marker dan detail hunian" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
         <span class="map-road-note">Jalan selalu tampil · bangunan, masjid & sekolah saat diperbesar</span>
         </div></details>
         <details class="map-layer-panel rental-layers" id="rental-layers" name="map-layers"><summary>${icon("home")} Sewa <span id="rental-layer-count">…</span></summary><div class="rental-layer-options">${RENTAL_MAP_GROUPS.map((group) => `<label class="layer-control" style="--rental-color:${group.color}" ${group.id === "lainnya" ? "hidden" : ""}><i class="rental-kind-dot"></i>${group.label} <small id="rental-count-${group.id}">…</small><input id="rental-toggle-${group.id}" data-rental-toggle="${group.id}" aria-label="Sewa ${group.label.toLocaleLowerCase("id-ID")}" type="checkbox" disabled/><span class="switch" aria-hidden="true"></span></label>`).join("")}<label class="rental-map-focus">Fokus masjid Ihrish<select id="rental-mosque-map" aria-label="Fokus masjid Ihrish di peta"></select></label><p class="map-road-note">Kontrakan termasuk rumah sewa. Pin putus-putus: perkiraan portal; pin penuh: gedung/kompleks. Yang belum bertitik tetap ada di daftar.</p></div></details>
@@ -165,7 +165,7 @@ try {
   // Tetap terkunci bila penyimpanan browser tidak tersedia.
 }
 let selectedListing: Listing | undefined;
-let listingsVisible = true;
+const listingsToggle = $<HTMLInputElement>("listings-toggle");
 let pickingPoint: "listing" | "pin" | undefined;
 let toastTimer: ReturnType<typeof setTimeout>;
 let exporting = false;
@@ -405,7 +405,7 @@ function render(): void {
     clearSelection();
   }
   void map?.update(
-    listingsVisible ? listings : [],
+    listingsToggle.checked ? listings : [],
     selectedListing?.id,
     selectListing,
   );
@@ -740,8 +740,7 @@ function selectArea(area: string): void {
 }
 
 function selectListing(listing: Listing): void {
-  listingsVisible = true;
-  $<HTMLInputElement>("listings-toggle").checked = true;
+  listingsToggle.checked = true;
   selectedListing = listing;
   const research = researchFor(listing);
   const rail =
@@ -1079,9 +1078,8 @@ $("kajian-toggle").onchange = () => {
 $("buildings-toggle").onchange = () => {
   void map?.showBuildings($<HTMLInputElement>("buildings-toggle").checked);
 };
-$("listings-toggle").onchange = () => {
-  listingsVisible = $<HTMLInputElement>("listings-toggle").checked;
-  if (!listingsVisible) clearSelection();
+listingsToggle.onchange = () => {
+  if (!listingsToggle.checked) clearSelection();
   render();
 };
 $("map-reset").onclick = resetFilters;
