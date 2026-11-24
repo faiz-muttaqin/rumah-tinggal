@@ -1,5 +1,7 @@
 # Hunian dari titik awal masjid
 
+[Penelusuran VCM dan Modernland, 24 November](pencarian-vcm-modernland-2026-11-24.md) mencatat lima temuan baru dari Marketplace, tarif dan aturan penghuni yang disebut iklan, serta pilihan bertitik dari katalog.
+
 [Penelusuran Facebook Marketplace, 24 November](pencarian-facebook-2026-11-24.md) mencatat 10 iklan yang diperiksa langsung dan satu tambahan katalog di Cipinang Muara.
 
 [Audit masjid aktif dan sewa Rp2 juta, 24 November](audit-sewa-masjid-aktif-2026-11-24.md) membandingkan 665 penawaran dari snapshot katalog 23 November dengan 11 masjid yang memiliki pin, mencatat satu target belum masuk inventori, shortlist dengan jarak rel, dan prioritas kurasi manual Facebook. Tidak ada scraping Facebook baru atau perubahan crawler pada audit ini.
