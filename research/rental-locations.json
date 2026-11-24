@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-23",
+  "checkedAt": "2026-11-24",
   "note": "Kurasi titik publik seluruh sewa. Pin perkiraan portal dibedakan dari titik gedung/kompleks; posisi unit tidak dijamin. Centroid administratif ditolak. Lokasi belum terbukti tetap di daftar tanpa pin. Harga dan stok tetap memakai tanggal cek iklan masing-masing.",
   "items": [
     {
@@ -11179,6 +11179,11 @@
         "sha256": "9d1af36e5d67e12ecaea5e1108a9aac6b012d86b126ffe9a1a0cc3bf3463719e",
         "selector": "Primary rental detail price, terms and public map reference"
       }
+    },
+    {
+      "rentalId": "sewa-facebook-1401313c9c3e",
+      "location": null,
+      "note": "Iklan menyebut Jalan Kesadaran IV dan Masjid Fadlurrohman. Marketplace menampilkan perkiraan pada tingkat kota. Titik unit dan jarak ke masjid atau rel belum diketahui."
     }
   ]
 }

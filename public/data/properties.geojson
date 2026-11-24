@@ -1933,7 +1933,7 @@
    ]
   },
   "rentals": {
-   "checkedAt": "2026-11-23",
+   "checkedAt": "2026-11-24",
    "note": "Iklan sewa publik diperiksa pada tanggal di masing-masing kartu. Keterangan fasilitas dan transit dapat berasal dari iklan atau sumber kawasan, bukan survei; cek hubungan lokasinya. Nama dan kontak pemilik tidak disimpan. Harga dan ketersediaan cepat berubah.",
    "rentals": [
     {
@@ -41170,9 +41170,51 @@
        "km": 0.931
       }
      ]
+    },
+    {
+     "id": "sewa-facebook-1401313c9c3e",
+     "title": "Kontrakan Jalan Kesadaran IV, Cipinang Muara",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Jalan Kesadaran IV, Cipinang Muara, Jatinegara, Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1850000,
+      "period": "monthly",
+      "quote": "Rp1.850.000",
+      "url": "https://www.facebook.com/marketplace/item/1147607081335232/",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": null,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "dekat Masjid Fadlurrohman",
+       "url": "https://www.facebook.com/marketplace/item/1147607081335232/"
+      },
+      {
+       "quote": "cocok untuk keluarga kecil maupun pasangan",
+       "url": "https://www.facebook.com/marketplace/item/1147607081335232/"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Deskripsi menyebut Rp1.850.000 per bulan atau Rp20.500.000 per tahun. Harga bulanan di label Marketplace dibulatkan menjadi Rp1,9 juta. Satu kamar tidur, listrik 1.300 W dan air PAM. Deposit, minimum, biaya untuk pasangan dan stok perlu dikonfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.facebook.com/marketplace/item/1147607081335232/",
+     "sourcePortal": "facebook",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-24",
+     "locationNote": "Iklan menyebut Jalan Kesadaran IV dan Masjid Fadlurrohman. Marketplace menampilkan perkiraan pada tingkat kota. Titik unit dan jarak ke masjid atau rel belum diketahui.",
+     "location": null,
+     "nearbyMosques": []
     }
    ],
-   "locationsCheckedAt": "2026-11-23"
+   "locationsCheckedAt": "2026-11-24"
   },
   "saleAds": {
    "checkedAt": "2026-10-31",
