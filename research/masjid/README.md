@@ -1,5 +1,7 @@
 # Hunian dari titik awal masjid
 
+[Penelusuran Facebook Marketplace, 24 November](pencarian-facebook-2026-11-24.md) mencatat 10 iklan yang diperiksa langsung dan satu tambahan katalog di Cipinang Muara.
+
 [Audit masjid aktif dan sewa Rp2 juta, 24 November](audit-sewa-masjid-aktif-2026-11-24.md) membandingkan 665 penawaran dari snapshot katalog 23 November dengan 11 masjid yang memiliki pin, mencatat satu target belum masuk inventori, shortlist dengan jarak rel, dan prioritas kurasi manual Facebook. Tidak ada scraping Facebook baru atau perubahan crawler pada audit ini.
 
 [Publikasi hasil scraping 7 November](publikasi-sewa-ihrish-2026-11-07.md) menambah **50 penawaran** (42 rumah/kontrakan dan 8 apartemen) menjadi **536 penawaran**. Hasil run sore 6 November diperiksa ulang: 61 halaman dan 23 rincian terarah; 11 kandidat ditahan. Seluruh 486 penawaran lama dipertahankan.

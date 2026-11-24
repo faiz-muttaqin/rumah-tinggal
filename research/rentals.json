@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-23",
+  "checkedAt": "2026-11-24",
   "note": "Iklan sewa publik diperiksa pada tanggal di masing-masing kartu. Keterangan fasilitas dan transit dapat berasal dari iklan atau sumber kawasan, bukan survei; cek hubungan lokasinya. Nama dan kontak pemilik tidak disimpan. Harga dan ketersediaan cepat berubah.",
   "rentals": [
     {
@@ -26280,6 +26280,45 @@
       "verdict": "partial",
       "lastChecked": "2026-11-23",
       "note": "Rp55 juta per tahun dengan minimum 12 bulan. Deskripsi mencantumkan kamar tidur 3+1, dua kamar mandi, air PAM dan carport. Konfirmasi fungsi ruang tambahan, deposit, biaya dan stok. Acuan ke KRL Sudimara 1,833 km garis lurus."
+    },
+    {
+      "id": "sewa-facebook-1401313c9c3e",
+      "title": "Kontrakan Jalan Kesadaran IV, Cipinang Muara",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Jakarta",
+      "locationText": "Jalan Kesadaran IV, Cipinang Muara, Jatinegara, Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1850000,
+        "period": "monthly",
+        "quote": "Rp1.850.000",
+        "url": "https://www.facebook.com/marketplace/item/1147607081335232/",
+        "pageDate": null
+      },
+      "bedrooms": 1,
+      "sizeM2": null,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "dekat Masjid Fadlurrohman",
+          "url": "https://www.facebook.com/marketplace/item/1147607081335232/"
+        },
+        {
+          "quote": "cocok untuk keluarga kecil maupun pasangan",
+          "url": "https://www.facebook.com/marketplace/item/1147607081335232/"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.facebook.com/marketplace/item/1147607081335232/",
+      "sourcePortal": "facebook",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-24",
+      "note": "Deskripsi menyebut Rp1.850.000 per bulan atau Rp20.500.000 per tahun. Harga bulanan di label Marketplace dibulatkan menjadi Rp1,9 juta. Satu kamar tidur, listrik 1.300 W dan air PAM. Deposit, minimum, biaya untuk pasangan dan stok perlu dikonfirmasi."
     }
   ]
 }
