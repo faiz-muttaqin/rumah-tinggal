@@ -321,6 +321,20 @@ export interface RentalLocation {
   checkedAt: string;
 }
 
+export interface RentalReview {
+  floors?: number;
+  mosqueCoverage?: "within-radius" | "outside-radius" | "no-pin";
+  commuteMinutes?: number;
+  commuteBasis?: string;
+  couples?: boolean;
+  children?: boolean;
+  careerArea?: string;
+  flood?: { label: string; url: string };
+  security?: { label: string; url: string };
+  environment?: { label: string; url: string };
+  career?: { label: string; url: string };
+}
+
 export interface ResearchRental {
   id: string;
   title: string;
@@ -347,6 +361,7 @@ export interface ResearchRental {
   sizeM2: number | null;
   furnished: "unfurnished" | "semi" | "full" | null;
   kitchen?: "private" | "shared";
+  review?: RentalReview;
   evidence: { quote: string; url: string }[];
   areaHighlights?: {
     kind: string;
@@ -405,6 +420,15 @@ export function monthlyRent(rental: ResearchRental): number {
   return rental.rent.period === "monthly"
     ? rental.rent.amount
     : Math.round(rental.rent.amount / 12);
+}
+
+export const MAX_RENT_PER_MONTH = 5_000_000;
+
+export function isAffordableRental(rental: ResearchRental): boolean {
+  return (
+    rental.rent.amount <=
+    MAX_RENT_PER_MONTH * (rental.rent.period === "yearly" ? 12 : 1)
+  );
 }
 
 export function rentText(rental: ResearchRental): string {
@@ -658,7 +682,12 @@ export async function loadResearch(): Promise<ResearchData> {
     planned: metadata.planned ?? null,
     islamic: metadata.islamic ?? null,
     leads: metadata.leads ?? null,
-    rentals: metadata.rentals ?? null,
+    rentals: metadata.rentals
+      ? {
+          ...metadata.rentals,
+          rentals: metadata.rentals.rentals.filter(isAffordableRental),
+        }
+      : null,
     saleAds: metadata.saleAds ?? null,
     mosques: metadata.mosques ?? null,
     properties,

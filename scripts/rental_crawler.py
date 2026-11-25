@@ -416,15 +416,43 @@ def priority(mosque, stops, paths, policy="legacy"):
     return result
 
 
-def plan(config):
-    inventory = json.loads((ROOT / "research/masjid/ihrish-mosques.json").read_text())
-    mosques = inventory["mosques"]
+def load_transit_stops():
     stops = []
     for file in ("transit.geojson", "mobility.geojson"):
         for f in json.loads((ROOT / "public/data" / file).read_text())["features"]:
             if f["geometry"]["type"] == "Point":
                 lng, lat = f["geometry"]["coordinates"]
                 stops.append({**f["properties"], "lat": lat, "lng": lng})
+    return stops
+
+
+def rental_sources(paths):
+    return [canonical(ORIGIN + "/sewa/" + kind + "/" + path)
+            for path in paths for kind in ("rumah", "apartemen")]
+
+
+def transit_plan(config):
+    if not config.get("transitTargets"):
+        return []
+    stops = {s["id"]: s for s in load_transit_stops()}
+    rows = []
+    for target in config["transitTargets"]:
+        if target["stopId"] not in stops:
+            raise ValueError("Transit target is missing from the public transport snapshot")
+        stop = stops[target["stopId"]]
+        mode = stop["mode"]
+        rows.append({"id": "transit-" + stop["id"], "name": stop["name"],
+                     "lat": stop["lat"], "lng": stop["lng"], "type": "transit",
+                     "mode": mode, "paths": target["paths"], "radiusKm": 0.7 if mode == "TransJakarta" else 1.2,
+                     "focusTerms": [path.rsplit("/", 1)[-1] for path in target["paths"]],
+                     "sources": rental_sources(target["paths"])})
+    return rows
+
+
+def plan(config):
+    inventory = json.loads((ROOT / "research/masjid/ihrish-mosques.json").read_text())
+    mosques = inventory["mosques"]
+    stops = load_transit_stops()
     targets = config["targets"]
     if set(targets) != {m["id"] for m in mosques}:
         raise ValueError("Config must cover every Ihrish mosque exactly")
@@ -436,8 +464,7 @@ def plan(config):
         paths = focus["paths"] if config.get("focusEnabled") else targets[m["id"]]
         if not paths:
             raise ValueError("Missing search area")
-        sources = [canonical(ORIGIN + "/sewa/" + kind + "/" + path)
-                   for path in paths for kind in ("rumah", "apartemen")]
+        sources = rental_sources(paths)
         ranked = priority(m, stops, paths, config.get("priorityMode", "legacy"))
         if config.get("priorityMode") == "ihrish-krl":
             ranked["activitySnapshotDate"] = inventory.get("checkedAt")
@@ -497,18 +524,19 @@ def focused_queues(state, mosques, config):
             pages.setdefault(url.split("?")[0], []).extend(c for c in record.get("cards", []) if not c.get("rented"))
     queues, stats = [], []
     for m in mosques:
+        radius = m.get("radiusKm", config["radiusKm"])
         cards = {c["url"]: c for s in m["sources"] for c in pages.get(s, [])}
         terms = [focus_slug(t) for t in m.get("focusTerms", []) if len(focus_slug(t)) >= 4]
         allowed, bases = [], set()
         for url, row in state["details"].items():
             point = row.get("location")
-            if point and row.get("provider") == "jendela360" and km((m["lat"], m["lng"]), (point["lat"], point["lng"])) <= config["radiusKm"]:
+            if point and row.get("provider") == "jendela360" and km((m["lat"], m["lng"]), (point["lat"], point["lng"])) <= radius:
                 bases.add(url.rsplit("/", 1)[0])
         for url, card in cards.items():
             point = state["details"].get(url, {}).get("location")
             if point:
                 # Known distant coordinates cannot be overridden by matching words.
-                match = km((m["lat"], m["lng"]), (point["lat"], point["lng"])) <= config["radiusKm"]
+                match = km((m["lat"], m["lng"]), (point["lat"], point["lng"])) <= radius
             elif card.get("focusArea"):
                 match = any(urllib.parse.urlsplit(s).path.rsplit("/", 1)[-1] == card["focusArea"]["slug"] for s in m["sources"])
             else:
@@ -528,13 +556,19 @@ def assess(detail, mosques, radius=1.5):
     row = {**detail, "issues": list(detail.get("issues", []))}
     coords = row.get("location")
     nearby = []
+    transit = []
     if coords:
         for rank, m in enumerate(mosques):
             distance = km((coords["lat"], coords["lng"]), (m["lat"], m["lng"]))
-            if distance <= radius:  # Filter before rounding, as the public builder does.
-                nearby.append({"id": m["id"], "name": m["name"], "km": round(distance, 3), "rank": rank})
+            if distance <= m.get("radiusKm", radius):  # Filter before rounding.
+                match = {"id": m["id"], "name": m["name"], "km": round(distance, 3), "rank": rank}
+                if m.get("type") == "transit":
+                    transit.append({**match, "mode": m["mode"]})
+                else:
+                    nearby.append(match)
     row["nearbyMosques"] = sorted(nearby, key=lambda m: (m["rank"], m["km"]))
-    row["reviewStatus"] = "candidate" if nearby and not row["issues"] and not row.get("error") else "held"
+    row["nearbyTransit"] = sorted(transit, key=lambda s: (s["km"], s["rank"]))
+    row["reviewStatus"] = "candidate" if (nearby or transit) and not row["issues"] and not row.get("error") else "held"
     return row
 
 
@@ -570,6 +604,8 @@ def report(state, mosques, config):
     if budget:
         for row in rows:
             row["budgetPriority"] = budget_band(row.get("monthlyEquivalent"), budget)
+            if row["budgetPriority"] in ("unknown", "over-budget"):
+                row["reviewStatus"] = "held"
     mark_duplicates(rows)
     for row in rows:
         row["alreadyCatalogued"] = row["url"] in known
@@ -577,12 +613,13 @@ def report(state, mosques, config):
         if row["stale"]:
             row["reviewStatus"] = "held"
     rows.sort(key=lambda r: ({"preferred": 0, "stretch": 1, "unknown": 2, "over-budget": 3}.get(r.get("budgetPriority"), 0),
-                             min((m["rank"] for m in r["nearbyMosques"]), default=999), r.get("monthlyEquivalent") or math.inf, r["url"]))
+                             min((m["rank"] for m in r["nearbyMosques"] + r["nearbyTransit"]), default=999), r.get("monthlyEquivalent") or math.inf, r["url"]))
     coverage = []
     for m in mosques:
         discovered = {card["url"] for page, record in state["pages"].items()
                       if page.split("?")[0] in m["sources"] for card in record.get("cards", [])}
-        nearby = [r for r in rows if any(n["id"] == m["id"] for n in r["nearbyMosques"])]
+        field = "nearbyTransit" if m.get("type") == "transit" else "nearbyMosques"
+        nearby = [r for r in rows if any(n["id"] == m["id"] for n in r[field])]
         valid = [r for r in nearby if r["reviewStatus"] == "candidate"]
         statuses = [{"url": s, "retrievedAtUTC": state["pages"].get(s, {}).get("retrievedAtUTC"),
                      "error": state["pages"].get(s, {}).get("error"),
@@ -596,7 +633,10 @@ def report(state, mosques, config):
     return {"schemaVersion": 1, "generatedAtUTC": now(), "robots": state.get("robots"),
             **({"budgetPriority": budget} if budget else {}),
             "run": state.get("lastRun"), "note": "Kandidat untuk kurasi. Titik perkiraan portal dan jarak garis lurus; stok belum dikonfirmasi. Nol hasil bukan bukti tidak ada sewa.",
-            "summary": {"mosques": len(mosques), "mosquesWithCandidates": sum(c["candidates"] > 0 for c in coverage),
+            "summary": {"mosques": sum(c.get("type") != "transit" for c in coverage),
+                        "mosquesWithCandidates": sum(c.get("type") != "transit" and c["candidates"] > 0 for c in coverage),
+                        "transitStops": sum(c.get("type") == "transit" for c in coverage),
+                        "transitWithCandidates": sum(c.get("type") == "transit" and c["candidates"] > 0 for c in coverage),
                         "detailAttempts": len(rows), "details": sum(bool(r.get("sha256")) for r in rows),
                         "candidates": sum(r["reviewStatus"] == "candidate" for r in rows),
                         "newCandidates": sum(r["reviewStatus"] == "candidate" and not r["alreadyCatalogued"] for r in rows)},
@@ -605,19 +645,20 @@ def report(state, mosques, config):
 
 def markdown(result):
     s = result["summary"]
-    lines = ["# Pantauan sewa sekitar masjid Ihrish", "", result["note"], "",
+    lines = ["# Pantauan sewa sekitar masjid dan transportasi", "", result["note"], "",
              f"Dibuat {result['generatedAtUTC']}. {s['details']} detail dibaca; {s['newCandidates']} kandidat baru untuk diperiksa; {s['mosquesWithCandidates']}/{s['mosques']} masjid punya kandidat.", "",
              "Prioritas masjid mengikuti konfigurasi; kedekatan KRL dan jumlah kegiatan snapshot Ihrish tidak menjamin rute berjalan atau jadwal terkini. Semua jarak garis lurus.", "",
-             "| Masjid | Transit terdekat | Kandidat baru | Detail dibaca |", "| --- | --- | ---: | ---: |"]
+             "| Acuan | Transit terdekat | Kandidat baru | Detail dibaca |", "| --- | --- | ---: | ---: |"]
     for c in result["coverage"]:
-        near = sorted(c["priority"]["transit"], key=lambda t: (not t["near"], t["km"]))
-        transit = f"{near[0]['mode']} {near[0]['name']} ≈{near[0]['km']} km" if near else "Belum ada dalam dataset"
+        near = sorted(c.get("priority", {}).get("transit", []), key=lambda t: (not t["near"], t["km"]))
+        transit = c["mode"] if c.get("type") == "transit" else (
+            f"{near[0]['mode']} {near[0]['name']} ≈{near[0]['km']} km" if near else "Belum ada dalam dataset")
         lines.append(f"| {c['name']} | {transit} | {c['newCandidates']} | {c['detailsRead']}/{c['discovered']} |")
     lines += ["", "## Kandidat baru untuk kurasi", ""]
     for r in result["results"]:
         if r["reviewStatus"] != "candidate" or r["alreadyCatalogued"]:
             continue
-        near = r["nearbyMosques"][0]
+        near = (r.get("nearbyTransit") or r["nearbyMosques"])[0]
         date = r.get("sourceUpdatedAt")
         date = date[:10] if date else "tidak ditampilkan"
         lines.append(f"- [{r['kind']} {r.get('bedrooms') or '?'} kamar, {r['locality']}]({r['url']}) — Rp{r['amount']:,.0f}/{r['period']}; {near['name']} ≈{near['km']} km. Pembaruan sumber {date}.")
@@ -636,11 +677,15 @@ def run_coverage(state, mosques, config, search_limit, detail_limit):
     if config.get("focusEnabled"):
         queues, _ = focused_queues(state, mosques, config)
         pending = set(u for q in queues for u in q)
+    mosque_areas = [m for m in mosques if m["sources"] and m.get("type") != "transit"]
+    transit_areas = [m for m in mosques if m["sources"] and m.get("type") == "transit"]
     return {"searchLimit": search_limit, "detailLimit": detail_limit,
             "plannedSources": len(sources), "freshSources": len(fresh_sources),
             "sourcesWithErrors": sum(bool(state["pages"].get(s, {}).get("error")) for s in sources),
-            "configuredMosques": sum(bool(m["sources"]) for m in mosques),
-            "coveredMosques": sum(bool(m["sources"]) and all(s in fresh_sources for s in m["sources"]) for m in mosques),
+            "configuredMosques": len(mosque_areas),
+            "coveredMosques": sum(all(s in fresh_sources for s in m["sources"]) for m in mosque_areas),
+            "configuredTransitStops": len(transit_areas),
+            "coveredTransitStops": sum(all(s in fresh_sources for s in m["sources"]) for m in transit_areas),
             "discoveredUrls": len({c["url"] for c in cards}), "pendingDetailUrls": len(pending),
             "unseenPendingUrls": sum(u not in state["details"] for u in pending)}
 
@@ -680,7 +725,8 @@ def run(config, mosques, directory, source_limit=None, detail_limit=None, adapte
     try:
         state["robots"] = client.start()
         # Unvisited/stale areas first; priority order is preserved within each group.
-        sources.sort(key=lambda s: fresh(state["pages"].get(s), config["searchCacheHours"]))
+        sources.sort(key=lambda s: (fresh(state["pages"].get(s), config["searchCacheHours"]),
+                                    state["pages"].get(s, {}).get("retrievedAtUTC", "")))
         for source in sources:
             if count >= (source_limit or config["maxSearchRequests"]):
                 break
@@ -810,6 +856,14 @@ def validate_config(config):
                 or any(type(v) is not int or not 100_000 <= v <= 200_000_000 for v in budget.values())
                 or budget["preferredMonthly"] > budget["maxMonthly"]):
             raise ValueError("Invalid monthly search budget")
+    transit = config.get("transitTargets", [])
+    if (not isinstance(transit, list) or any(not isinstance(item, dict) or
+            not isinstance(item.get("stopId"), str) or not item["stopId"] or
+            not isinstance(item.get("paths"), list) or not item["paths"] or
+            any(not isinstance(path, str) or not re.fullmatch(r"[a-z0-9-]+(?:/[a-z0-9-]+){3}", path)
+                for path in item["paths"]) for item in transit) or
+            len(transit) != len({item["stopId"] for item in transit})):
+        raise ValueError("Invalid transit search targets")
     for key, minimum in [("delaySeconds", 1), ("delayJitterSeconds", 0)]:
         value = config.get(key, 0)
         if type(value) not in (int, float) or not math.isfinite(value) or not minimum <= value <= 30:
@@ -845,7 +899,7 @@ def main():
         parser.error("Request limits must be 1..1000")
     config = json.loads(args.config.read_text())
     validate_config(config)
-    mosques = plan(config)
+    mosques = transit_plan(config) + plan(config)
     directory = args.output_dir.resolve()
     private_local = directory.is_relative_to(ROOT / ".runtime/research") and directory != ROOT / ".runtime/research"
     if not private_local and directory != Path("/var/lib/rumah-tinggal-rental-crawl").resolve():

@@ -1,4 +1,4 @@
-# Pantauan sewa sekitar masjid Ihrish
+# Pantauan sewa sekitar masjid Ihrish dan koridor SCBD
 
 Worker [rental_multi_crawler.py](../scripts/rental_multi_crawler.py) menjalankan pencarian pada **Pinhome, Jendela360, Realoka, Brighton, Jakarta Prime, Mamikos, dan Rukita**, maksimal dua situs bersamaan. Jakarta Prime merupakan sumber broker tambahan, bukan portal agregator nasional. Setiap situs mempunyai adapter, state, robots, dan pembatasan request sendiri; kegagalan satu situs tidak menghentikan sumber lain. [Konfigurasi masjid](../research/rental-crawl-sources.json) mencakup semua 78 lokasi dalam snapshot Ihrish 31 Oktober 2026, sedangkan [konfigurasi sumber](../research/rental-crawl-providers.json) mengatur kawasan dan jatah tiap situs. Beberapa masjid berbagi kawasan sehingga halaman cukup diambil sekali.
 
@@ -16,11 +16,13 @@ Rumah123 dan Properti1 mengembalikan HTTP403 pada pemeriksaan server, sedangkan 
 
 Pemeriksaan tambahan 3 November 2026: kategori 99.co ditolak HTTP403; robots Dot Property, Lamudi, dan Sewa-Apartemen.net juga ditolak HTTP403. Situs tersebut tetap sumber manual. Hasil pencarian web yang dapat dibaca tidak membuktikan server worker dapat mengambil halaman secara terjadwal.
 
-Fokus aktif sejak **16 November 2026** mencakup **72 masjid Ihrish di Jabodetabek**, termasuk Bekasi, Tangerang/Tangerang Selatan, Jakarta, Bogor dan Depok. Fase VCM saja sudah berakhir. Enam referensi di luar wilayah katalog tetap ada dalam inventori 78, tetapi tidak memakai jatah pencarian aktif. Tidak ada prioritas khusus Jakarta Selatan atau acuan pengurutan Blok M pada mode ini.
+Fokus masjid mencakup **72 masjid Ihrish di Jabodetabek**, termasuk Bekasi, Tangerang/Tangerang Selatan, Jakarta, Bogor dan Depok. Enam referensi di luar wilayah katalog tetap ada dalam inventori 78.
+
+Fokus angkutan menambahkan **23 stasiun dan halte** pada koridor menuju SCBD. Kelurahan pencarian mencakup, antara lain, Blok M dan Lebak Bulus pada MRT, Palmerah dan Sudimara pada KRL arah Tangerang Selatan, Duri dan Batu Ceper arah Tangerang, Kranji arah Bekasi, Harjamukti pada LRT arah Depok, serta CSW dan Ciledug pada TransJakarta Koridor 13. Acuan unit memakai radius garis lurus **1,2 km dari stasiun** atau **700 m dari halte**. Tabel sewa memberi tautan rute angkutan umum ke SCBD dan rute jalan kaki dari pin hunian ke stasiun atau halte. Acuan koridor berasal dari [MRT Jakarta](https://www.jakartamrt.co.id/sites/default/files/2025-07/MRT%20Jakarta%20-%20SR%202024%20-%20250602.pdf), [KAI Commuter](https://commuterline.id/files/download/documents/Pedoman-Naik-KRL-KAI-Commuter_compressed.pdf), [LRT Jabodebek](https://lrtjabodebek.kai.id/informasi-peta-rute), dan [TransJakarta](https://www.transjakarta.co.id/rute).
 
 Prioritas masjid memakai jarak ke **KRL**: hingga 1,5 km didahulukan, hingga 3 km menjadi alternatif, lalu kawasan yang lebih jauh. Dalam tiap kelompok, jumlah kegiatan yang tercatat pada snapshot Ihrish didahulukan, kemudian jarak stasiun. Angka kegiatan berasal dari snapshot **31 Oktober 2026**, mencakup entri batal dan tidak membuktikan frekuensi rutin atau jadwal saat ini. Nilai nol/tidak tersedia bukan bukti masjid sepi. Jumlah ini merupakan petunjuk pemeringkatan, bukan klaim kegiatan terkini. Lihat [direktori Ihrish](https://ihrish.app/masjid/) untuk pemeriksaan berikutnya. Stasiun rencana tidak dipakai. Semua jarak garis lurus; posisi pintu masuk, rute berjalan, waktu tempuh, dan jadwal layanan belum dibuktikan. Jarak masjid–KRL juga tidak menggantikan pemeriksaan jarak hunian–KRL.
 
-`budgetPriority` mendahulukan **hingga Rp4 juta/bulan**, kemudian **hingga Rp6 juta/bulan**. Harga belum diketahui tetap boleh diperiksa; penawaran di atas Rp6 juta ditempatkan setelahnya, bukan dianggap harga sumber salah. Urutan ini berlaku sebelum prioritas URL baru, sehingga iklan baru yang mahal tidak mendahului pembaruan pilihan terjangkau. Harga kartu/cache hanya petunjuk antrean; harga detail tetap harus diperiksa. Laporan memberi label `preferred`, `stretch`, `unknown`, atau `over-budget`, serta hitungan kandidat baru per kelompok. Harga tahunan dibagi 12 hanya untuk perbandingan; periode dan minimum kontrak tetap dipertahankan. Pilihan filter Rp4 juta dan Rp6 juta juga tersedia di peta dan halaman riset; katalog lama tidak dihapus.
+Crawler mendahulukan harga hingga **Rp4 juta/bulan** dan memakai plafon **Rp5 juta/bulan** untuk kandidat. Penawaran di atas plafon dan dengan harga tak diketahui masuk laporan pemeriksaan. Label anggaran adalah `preferred`, `stretch`, `unknown`, dan `over-budget`. Pembanding sewa tahunan adalah harga dibagi 12. Tabel, peta sewa, dan katalog riset menerapkan plafon yang sama serta menampilkan periode dan minimum pembayaran asli.
 
 ## Fokus per masjid
 
@@ -30,7 +32,7 @@ Pencarian Pinhome memakai **kelurahan sekitar masing-masing dari 78 masjid**, bu
 
 Sebelum membaca detail, worker menolak kartu Pinhome yang ID kelurahannya berbeda dari filter halaman, termasuk rekomendasi dari area lain dan tautan tanpa penanda kelurahan. Sumber lain harus memiliki petunjuk nama kelurahan pada URL, titik yang sudah terbukti berada dalam radius, atau referensi gedung Jendela360 yang sudah mempunyai titik dalam radius. Nama kota saja tidak cukup. Jika URL kelurahan kembali ke halaman kecamatan, ID kelurahan dari rincian portal yang telah diperiksa dipakai untuk menyaring kartu secara lokal; halaman lebih luas tersebut tidak dipaginasi. Pagination tingkat kota sumber lain juga dilewati dalam mode fokus. Titik yang sudah diketahui di luar radius tetap ditolak meskipun nama pada URL cocok.
 
-Antrean dibentuk **per masjid**, dibaca bergiliran, maksimal **dua detail per masjid/provider per putaran**, sambil mempertahankan batas total tiap sumber. Cursor masjid berlanjut pada run berikutnya agar titik yang sama tidak selalu mendapat jatah awal. Satu URL yang relevan ke beberapa masjid cukup diambil sekali. Hasil detail tetap harus memenuhi radius mentah 1,5 km; petunjuk kawasan sebelum pengambilan bukan bukti jarak.
+Antrean dibentuk **per masjid atau titik angkutan**, dibaca bergiliran, maksimal **dua detail per acuan/provider per putaran**, sambil mempertahankan batas total tiap sumber. Cursor berlanjut pada run berikutnya agar titik yang sama tidak selalu mendapat jatah awal. Satu URL yang relevan ke beberapa acuan cukup diambil sekali. Hasil detail harus masuk radius salah satu acuan berdasarkan koordinat dari sumber. Radius masjid tetap 1,5 km.
 
 Sitemap Mamikos dan indeks kota situs lain hanya dipakai untuk menemukan tautan. Tautan tanpa petunjuk kawasan yang cocok ditahan **sebelum** request detail, sehingga worker tidak lagi mencoba menghabiskan seluruh daftar kota. Ini mempersempit penemuan: unit tanpa petunjuk lokasi yang cukup dapat terlewat, dan nol hasil tidak berarti tidak ada sewa. JSON mencatat eligible, pending, fetched, kawasan dan status pemetaan untuk tiap masjid di `run.focus.mosques` serta `coverage.focusByProvider`.
 
@@ -56,6 +58,14 @@ Contoh di atas menjalankan Pinhome saja. Untuk membatasi pilot lintas situs:
 python3 -I scripts/rental_multi_crawler.py --run \
   --providers jendela360,realoka,brighton --max-search 24 --max-detail 12
 ./dev rentals:report
+```
+
+Pilot koridor SCBD dapat dijalankan sendiri dengan direktori hasil terpisah.
+
+```sh
+python3 -I scripts/rental_multi_crawler.py --run --transit-only \
+  --providers pinhome,mamikos,jendela360 --max-search 12 --max-detail 8 \
+  --output-dir .runtime/research/transit-pilot
 ```
 
 Untuk menguji seluruh kawasan tanpa menunggu cache pencarian habis:

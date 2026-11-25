@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-25",
+  "checkedAt": "2026-11-26",
   "note": "Iklan sewa publik diperiksa pada tanggal di masing-masing kartu. Keterangan fasilitas dan transit dapat berasal dari iklan atau sumber kawasan, bukan survei; cek hubungan lokasinya. Nama dan kontak pemilik tidak disimpan. Harga dan ketersediaan cepat berubah.",
   "rentals": [
     {
@@ -26704,6 +26704,122 @@
       "verdict": "partial",
       "lastChecked": "2026-11-25",
       "note": "Iklan menyebut rumah dua lantai dengan dapur dalam unit. Rp29,5 juta per tahun, minimum 12 bulan. Pin unit belum diketahui. Cek posisi rumah, izin kompor dan akses KRL.",
+      "kitchen": "private"
+    },
+    {
+      "id": "sewa-pinhome-9444ec1a131b",
+      "title": "Rumah sewa 1 kamar di Kramat Pela",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Jakarta",
+      "locationText": "Kramat Pela, Kebayoran Baru, Kota Jakarta Selatan",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 2000000,
+        "period": "monthly",
+        "quote": "Rp 2 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-kiyai-maja-no-37-jakarta-selatan",
+        "pageDate": "2025-07-18",
+        "minimumMonths": 1
+      },
+      "bedrooms": 1,
+      "sizeM2": 80.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 2 Juta/Bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-kiyai-maja-no-37-jakarta-selatan"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-kiyai-maja-no-37-jakarta-selatan",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-07-18",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif bulanan dengan minimum satu bulan menurut Pinhome. Dapur dan izin kompor belum dijelaskan. Titik perkiraan portal berjarak sekitar 765 m garis lurus dari MRT Blok M."
+    },
+    {
+      "id": "sewa-mamikos-eb10b9e34d31",
+      "title": "Kos Cipulir 45 Tipe C — pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos-keluarga",
+      "area": "Jakarta",
+      "locationText": "Kebayoran Lama, Jakarta Selatan",
+      "buildingOrCluster": "Kos Cipulir 45",
+      "rent": {
+        "amount": 2200000,
+        "period": "monthly",
+        "quote": "Rp2.200.000",
+        "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-cipulir-45-tipe-c-kebayoran-lama-jakarta-selatan-2",
+        "pageDate": "2026-10-17"
+      },
+      "bedrooms": 1,
+      "sizeM2": 9.0,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Rp2.200.000",
+          "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-cipulir-45-tipe-c-kebayoran-lama-jakarta-selatan-2"
+        },
+        {
+          "quote": "Harus ada surat Nikah / Kartu Keluarga",
+          "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-cipulir-45-tipe-c-kebayoran-lama-jakarta-selatan-2"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-cipulir-45-tipe-c-kebayoran-lama-jakarta-selatan-2",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-10-17",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tipe C memakai AC dan kamar mandi dalam. Penyewa berdua perlu surat nikah atau Kartu Keluarga sesuai iklan. Listrik token dan parkir mobil terpisah. Minimum sewa dan dapur belum ditentukan."
+    },
+    {
+      "id": "sewa-pinhome-206d89c776ca",
+      "title": "Kontrakan 1 kamar di Harjamukti — dapur dalam unit",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Depok",
+      "locationText": "Harjamukti, Cimanggis, Kota Depok",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1400000,
+        "period": "monthly",
+        "quote": "Rp 1,4 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-i-no-2-g-rt-009-rw-003-harjamukti",
+        "pageDate": "2025-07-04",
+        "minimumMonths": 1
+      },
+      "bedrooms": 1,
+      "sizeM2": 15.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 1,4 Juta/Bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-i-no-2-g-rt-009-rw-003-harjamukti"
+        },
+        {
+          "quote": "Ruang Keempat Kamar Mandi dan Dapur Bersih",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-i-no-2-g-rt-009-rw-003-harjamukti"
+        }
+      ],
+      "areaHighlights": [],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-i-no-2-g-rt-009-rw-003-harjamukti",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-07-04",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Iklan mencantumkan dapur di dalam unit. Minimum satu bulan dan listrik token terpisah. Titik perkiraan portal berjarak sekitar 1,05 km garis lurus dari LRT Harjamukti.",
       "kitchen": "private"
     }
   ]

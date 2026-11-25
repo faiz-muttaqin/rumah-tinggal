@@ -3,6 +3,7 @@ import { googleMapsLocation, googleMapsRoute } from "./maps-links.ts";
 import {
   checkedDate,
   distanceText,
+  isAffordableRental,
   monthlyRent,
   RENTAL_LABELS,
   type ResearchMosque,
@@ -180,6 +181,7 @@ export function filterMapRentals(
       .join(" ")
       .toLocaleLowerCase("id-ID");
     return (
+      isAffordableRental(rental) &&
       filters.kinds.has(rentalMapKind(rental)) &&
       (filters.area === "Semua" || rental.area === filters.area) &&
       (!query || text.includes(query)) &&

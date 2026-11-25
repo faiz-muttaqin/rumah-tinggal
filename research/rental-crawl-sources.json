@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "note": "Pencarian kelurahan/kawasan tiap masjid; kartu di luar kelurahan ditolak sebelum detail. Antrean bergiliran per masjid dan radius 1,5 km diverifikasi dari detail; petunjuk kawasan bukan bukti jarak.",
+  "note": "Pencarian kelurahan sekitar masjid Ihrish dan titik angkutan umum untuk akses SCBD. Detail diperiksa terhadap radius acuan dan plafon Rp5 juta per bulan ekuivalen.",
   "radiusKm": 1.5,
   "delaySeconds": 2,
   "delayJitterSeconds": 3,
@@ -677,6 +677,161 @@
   "priorityMode": "ihrish-krl",
   "budgetPriority": {
     "preferredMonthly": 4000000,
-    "maxMonthly": 6000000
-  }
+    "maxMonthly": 5000000
+  },
+  "transitTargets": [
+    {
+      "stopId": "mrt-node-6124539585",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/senayan",
+        "dki-jakarta/jakarta-pusat/tanah-abang/gelora",
+        "dki-jakarta/jakarta-selatan/setiabudi/karet-semanggi"
+      ]
+    },
+    {
+      "stopId": "osm-node-4925555833",
+      "paths": [
+        "dki-jakarta/jakarta-pusat/tanah-abang/kebon-melati",
+        "dki-jakarta/jakarta-pusat/menteng/menteng"
+      ]
+    },
+    {
+      "stopId": "lrt-node-11040189503",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/mampang-prapatan/kuningan-barat",
+        "dki-jakarta/jakarta-selatan/tebet/menteng-dalam"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413213",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/selong",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/kramat-pela"
+      ]
+    },
+    {
+      "stopId": "osm-node-318720710",
+      "paths": [
+        "banten/tangerang-selatan/pondok-aren/jurangmangu-barat",
+        "banten/tangerang-selatan/pondok-aren/jurangmangu-timur"
+      ]
+    },
+    {
+      "stopId": "osm-node-316743611",
+      "paths": [
+        "jawa-barat/bekasi/bekasi-barat/kranji",
+        "jawa-barat/bekasi/bekasi-barat/bintara"
+      ]
+    },
+    {
+      "stopId": "mrt-node-6195584522",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/cilandak/lebak-bulus",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/pondok-pinang"
+      ]
+    },
+    {
+      "stopId": "osm-node-204537445",
+      "paths": ["jawa-barat/depok/pancoran-mas/depok"]
+    },
+    {
+      "stopId": "lrt-node-11040189467",
+      "paths": ["jawa-barat/depok/cimanggis/harjamukti"]
+    },
+    {
+      "stopId": "transjakarta-node-11625832223",
+      "paths": [
+        "banten/tangerang/larangan/larangan-utara",
+        "banten/tangerang/larangan/kreo"
+      ]
+    },
+    {
+      "stopId": "osm-node-4963295116",
+      "paths": [
+        "dki-jakarta/jakarta-barat/tambora/duri-utara",
+        "dki-jakarta/jakarta-barat/tambora/duri-selatan"
+      ]
+    },
+    {
+      "stopId": "osm-node-3865048155",
+      "paths": [
+        "dki-jakarta/jakarta-timur/duren-sawit/klender",
+        "dki-jakarta/jakarta-timur/duren-sawit/malaka-jaya"
+      ]
+    },
+    {
+      "stopId": "lrt-node-11040189497",
+      "paths": [
+        "dki-jakarta/jakarta-timur/makasar/halim-perdanakusuma",
+        "dki-jakarta/jakarta-timur/makasar/cipinang-melayu"
+      ]
+    },
+    {
+      "stopId": "mrt-node-6195584512",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/cilandak/cilandak-barat",
+        "dki-jakarta/jakarta-selatan/cilandak/pondok-labu"
+      ]
+    },
+    {
+      "stopId": "osm-node-316848964",
+      "paths": ["banten/tangerang-selatan/ciputat/jombang"]
+    },
+    {
+      "stopId": "osm-node-9201422096",
+      "paths": [
+        "banten/tangerang/batuceper/poris-gaga",
+        "banten/tangerang/batuceper/batujaya"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413218",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/cipulir",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/ulujami"
+      ]
+    },
+    {
+      "stopId": "mrt-node-3859689032",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/setiabudi/karet",
+        "dki-jakarta/jakarta-selatan/setiabudi/setiabudi"
+      ]
+    },
+    {
+      "stopId": "osm-node-4877432803",
+      "paths": [
+        "dki-jakarta/jakarta-pusat/tanah-abang/gelora",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/grogol-utara"
+      ]
+    },
+    {
+      "stopId": "osm-node-5070781613",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/kebayoran-lama-utara",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/cipulir"
+      ]
+    },
+    {
+      "stopId": "osm-node-3056674105",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/tebet/tebet-timur",
+        "dki-jakarta/jakarta-selatan/tebet/kebon-baru"
+      ]
+    },
+    {
+      "stopId": "lrt-node-11040204407",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/pancoran/cikoko",
+        "dki-jakarta/jakarta-selatan/pancoran/pengadegan"
+      ]
+    },
+    {
+      "stopId": "mrt-node-6195584488",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/melawai",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/kramat-pela"
+      ]
+    }
+  ]
 }

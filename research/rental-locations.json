@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-25",
+  "checkedAt": "2026-11-26",
   "note": "Kurasi titik publik seluruh sewa. Pin perkiraan portal dibedakan dari titik gedung/kompleks; posisi unit tidak dijamin. Centroid administratif ditolak. Lokasi belum terbukti tetap di daftar tanpa pin. Harga dan stok tetap memakai tanggal cek iklan masing-masing.",
   "items": [
     {
@@ -11306,6 +11306,45 @@
       "rentalId": "sewa-pinhome-3c38b9b157d7",
       "location": null,
       "note": "Iklan berada di Malaka Sari. Koordinat bawaan wilayah ditolak. Konfirmasi posisi rumah dan rute langsung."
+    },
+    {
+      "rentalId": "sewa-pinhome-9444ec1a131b",
+      "location": {
+        "lat": -6.242178,
+        "lng": 106.791464,
+        "precision": "approximate",
+        "label": "Perkiraan portal pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-kiyai-maja-no-37-jakarta-selatan",
+        "method": "Koordinat publik di detail iklan",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-mamikos-eb10b9e34d31",
+      "location": {
+        "lat": -6.238336,
+        "lng": 106.774881,
+        "precision": "approximate",
+        "label": "Perkiraan portal mamikos",
+        "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-cipulir-45-tipe-c-kebayoran-lama-jakarta-selatan-2",
+        "method": "Koordinat publik di detail iklan",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-206d89c776ca",
+      "location": {
+        "lat": -6.375863,
+        "lng": 106.886442,
+        "precision": "approximate",
+        "label": "Perkiraan portal pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-i-no-2-g-rt-009-rw-003-harjamukti",
+        "method": "Koordinat publik di detail iklan",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
     }
   ]
 }

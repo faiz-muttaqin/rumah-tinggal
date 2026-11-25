@@ -189,6 +189,29 @@ class CrawlerTest(unittest.TestCase):
                        {"preferredMonthly":True,"maxMonthly":6_000_000}]:
             with self.assertRaises(ValueError):c.validate_config({**config,"budgetPriority":budget})
 
+    def test_transit_only_candidates_obey_radius_and_budget(self):
+        stop = {**MOSQUES[0], "id": "halte-uji", "type": "transit", "mode": "TransJakarta", "radiusKm": 0.7}
+        config = {"detailCacheHours": 72, "searchCacheHours": 4, "budgetPriority": {"preferredMonthly": 4_000_000, "maxMonthly": 5_000_000}}
+        locations = [{"lat": -6.281, "lng": 106.79, "precision": "approximate"},
+                     {"lat": -6.2809, "lng": 106.79, "precision": "approximate"},
+                     {"lat": -6.288, "lng": 106.79, "precision": "approximate"}]
+        details = {}
+        for index, (amount, location) in enumerate(zip((5_000_000, 5_000_001, 3_000_000), locations)):
+            link = f"{UNIT}-{index}"
+            details[link] = {"url": link, "kind": "Rumah", "amount": amount, "period": "monthly",
+                             "monthlyEquivalent": amount, "location": location, "locality": "Uji", "issues": [],
+                             "retrievedAtUTC": c.now(), "adapterVersion": c.ADAPTER_VERSION}
+        data = c.report({"details": details, "pages": {}}, [stop], config)
+        rows = {r["url"]: r for r in data["results"]}
+        self.assertEqual(rows[UNIT+"-0"]["reviewStatus"], "candidate")
+        self.assertEqual(rows[UNIT+"-0"]["nearbyMosques"], [])
+        self.assertEqual(rows[UNIT+"-0"]["nearbyTransit"][0]["id"], stop["id"])
+        self.assertEqual(rows[UNIT+"-1"]["reviewStatus"], "held")
+        self.assertEqual(rows[UNIT+"-2"]["nearbyTransit"], [])
+        self.assertEqual(data["summary"]["mosques"], 0)
+        self.assertEqual(data["summary"]["transitWithCandidates"], 1)
+        self.assertIn(stop["name"], c.markdown(data))
+
     def test_centroid_inactive_unknown_period_are_held(self):
         data = unit_data()
         data["location"]["district"]["coordinate"] = data["location"]["coordinate"]

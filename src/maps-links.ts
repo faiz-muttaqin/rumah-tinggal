@@ -44,3 +44,11 @@ export function googleMapsRoute(
     destination: coordinates(destination),
   });
 }
+
+export function googleMapsToScbd(origin: MapCoordinates): string {
+  return mapsUrl("dir/", {
+    origin: coordinates(origin),
+    destination: "Sudirman Central Business District, Jakarta",
+    travelmode: "transit",
+  });
+}

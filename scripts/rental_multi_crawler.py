@@ -68,7 +68,9 @@ def provider_plan(base, config, cancel=None):
         mosques = copy.deepcopy(base)
         if adapter:
             for m in mosques:
-                paths = list(settings["mosqueAreas"][m["id"]]) + config.get("additionalMosqueAreas", {}).get(m["id"], [])
+                paths = m.get("paths")
+                if paths is None:
+                    paths = list(settings["mosqueAreas"][m["id"]]) + config.get("additionalMosqueAreas", {}).get(m["id"], [])
                 m["sources"] = adapter.sources(paths, settings)
                 for url in settings.get("mosqueSources", {}).get(m["id"], []):
                     canonical = adapter.canonical(url)
@@ -148,6 +150,7 @@ def merge(directory, plans, config, runs, scope=None):
     blocked.update({"payment-options-needs-review", "resident-policy-needs-review", "source-availability-needs-review"})
     area_leads = [r for r in result["results"] if not r.get("location") and r.get("amount") and r.get("period")
                   and not r["stale"] and not r["alreadyCatalogued"] and r.get("locality")
+                  and r.get("budgetPriority") not in ("over-budget", "unknown")
                   and not blocked.intersection(r["issues"]) and not r.get("error")]
     area_leads.sort(key=lambda r: ({"preferred": 0, "stretch": 1, "unknown": 2, "over-budget": 3}.get(r.get("budgetPriority"), 0),
                                   r.get("monthlyEquivalent") or float("inf"), r["url"]))
@@ -179,15 +182,20 @@ def markdown(result):
     s = result["summary"]
     scope = (result.get("run") or {}).get("scope")
     priority = "Prioritas masjid mengikuti konfigurasi sumber."
-    if scope and scope.get("priorityMode") == "ihrish-krl":
-        priority = f"Fokus {len(scope['activeMosqueIds'])} masjid Ihrish di Jabodetabek; KRL hingga 1,5 km didahulukan, hingga 3 km alternatif, lalu jumlah kegiatan pada snapshot sumber. Tarif hingga Rp4 juta/bulan didahulukan, hingga Rp6 juta alternatif; di atasnya di luar prioritas. Ekuivalen tahunan/12 bukan janji bayar bulanan."
+    if scope and scope.get("activeTransitIds"):
+        priority = f"Fokus {len(scope['activeMosqueIds'])} masjid dan {len(scope['activeTransitIds'])} titik angkutan. Radius 1,2 km dari stasiun dan 0,7 km dari halte."
+        if budget := scope.get("budgetPriority"):
+            max_monthly = f"{budget['maxMonthly']:,}".replace(",", ".")
+            priority += f" Plafon Rp{max_monthly} per bulan ekuivalen."
+    elif scope and scope.get("priorityMode") == "ihrish-krl":
+        priority = f"Fokus {len(scope['activeMosqueIds'])} masjid Ihrish di Jabodetabek. Prioritas jarak KRL dan aktivitas mengikuti konfigurasi."
     elif scope and len(scope["activeMosqueIds"]) < scope["referenceMosques"]:
         names = ", ".join(row["name"] for row in result["coverage"])
         priority = f"Fokus aktif: {names}; inventori acuan {scope['referenceMosques']} masjid tetap dipertahankan."
     lines = ["# Pantauan sewa dari beberapa situs", "", result["note"], "",
-             f"Diperiksa {result['generatedAtUTC']}. {s['providers']} sumber, {s['details']} detail, {s['newCandidates']} kandidat baru sekitar {s['mosquesWithCandidates']}/{s['mosques']} masjid; {s['areaLeads']} penawaran kawasan belum memiliki titik yang terbukti.", "",
+             f"Diperiksa {result['generatedAtUTC']}. {s['providers']} sumber, {s['details']} detail, {s['newCandidates']} kandidat baru. Cakupan kandidat: {s['mosquesWithCandidates']}/{s['mosques']} masjid dan {s.get('transitWithCandidates', 0)}/{s.get('transitStops', 0)} titik angkutan. {s['areaLeads']} penawaran kawasan belum bertitik.", "",
              priority + " Semua jarak garis lurus dari acuan. Kandidat belum otomatis masuk peta publik.", "",
-             "| Sumber | Status terakhir | Detail dibaca | Kandidat sekitar masjid | Penawaran kawasan |",
+             "| Sumber | Status terakhir | Detail dibaca | Kandidat bertitik | Penawaran kawasan |",
              "| --- | --- | ---: | ---: | ---: |"]
     for name, counts in s["byProvider"].items():
         run = next((r for r in result["providers"] if r["name"] == name), {})
@@ -200,12 +208,14 @@ def markdown(result):
         run = provider.get("run", {})
         coverage = run.get("coverage")
         if coverage:
-            lines.append(f"| {provider['name']} | {run['searchRequests']}/{coverage['searchLimit']} | {run['detailRequests']}/{coverage['detailLimit']} | {coverage['pendingDetailUrls']} | {coverage['freshSources']}/{coverage['plannedSources']} | {coverage['coveredMosques']}/{coverage['configuredMosques']} | {run['durationSeconds']/60:.1f} |")
-    lines += ["", "## Kandidat sekitar masjid", ""]
+            covered = coverage["coveredMosques"] + coverage.get("coveredTransitStops", 0)
+            configured = coverage["configuredMosques"] + coverage.get("configuredTransitStops", 0)
+            lines.append(f"| {provider['name']} | {run['searchRequests']}/{coverage['searchLimit']} | {run['detailRequests']}/{coverage['detailLimit']} | {coverage['pendingDetailUrls']} | {coverage['freshSources']}/{coverage['plannedSources']} | {covered}/{configured} | {run['durationSeconds']/60:.1f} |")
+    lines += ["", "## Kandidat sekitar masjid atau angkutan umum", ""]
     for r in result["results"]:
         if r["reviewStatus"] != "candidate" or r["alreadyCatalogued"]:
             continue
-        near = r["nearbyMosques"][0]
+        near = (r.get("nearbyTransit") or r["nearbyMosques"])[0]
         amount = f"{r['amount']:,.0f}".replace(",", ".")
         period = "bulan" if r["period"] == "monthly" else "tahun"
         stamp = r.get("sourceUpdatedAt")
@@ -215,8 +225,8 @@ def markdown(result):
         lines.append(f"- {period_badges(r)} · [{r['provider']} · {r['kind']} {r.get('bedrooms') or '?'} kamar, {r['locality']}]({r['url']}) — Rp {amount}/{period}; {near['name']} ≈{near['km']} km. {stamp}.{terms}")
         if "budgetPriority" in r:
             lines.append("  Prioritas anggaran: " + r["budgetPriority"] + ".")
-    lines += ["", "## Penawaran kawasan — jarak ke masjid belum terbukti", "",
-              "Lokasi tertulis berikut adalah petunjuk pencarian. Tanpa titik, iklan tidak dihitung sebagai sewa dalam radius masjid. Tanggal relatif dan ketersediaan perlu dikonfirmasi.", ""]
+    lines += ["", "## Penawaran kawasan dengan jarak belum terverifikasi", "",
+              "Lokasi tertulis berikut adalah petunjuk pencarian. Koordinat penawaran, jarak ke acuan, dan ketersediaan perlu dikonfirmasi.", ""]
     for r in result["areaLeads"][:100]:
         amount = f"{r['amount']:,.0f}".replace(",", ".")
         lines.append(f"- {period_badges(r)} · [{r['provider']} · {r['kind']}, {r['locality']}]({r['url']}) — Rp {amount}/{'bulan' if r['period'] == 'monthly' else 'tahun'}.")
@@ -234,6 +244,7 @@ def main():
     parser.add_argument("--run", action="store_true")
     parser.add_argument("--report-only", action="store_true")
     parser.add_argument("--refresh-search", action="store_true", help="Refresh all configured first pages within the existing budgets")
+    parser.add_argument("--transit-only", action="store_true", help="Use only the transit catchments for this run")
     parser.add_argument("--providers", default=",".join(PROVIDERS))
     parser.add_argument("--output-dir", type=Path, default=ROOT / ".runtime/research/rental-crawl")
     parser.add_argument("--max-search", type=int)
@@ -261,16 +272,23 @@ def main():
     cancel = threading.Event()
     reference = core.plan(config)
     selected = active_mosques(reference, multi)
+    transit = core.transit_plan(config)
+    if args.transit_only and not transit:
+        parser.error("No transit targets configured")
+    if args.transit_only:
+        selected = []
     per_mosque = active_detail_limit(config, multi)
     scope = {"referenceMosques": len(reference), "activeMosqueIds": [m["id"] for m in selected],
+             "activeTransitIds": [s["id"] for s in transit],
              "radiusKm": config["radiusKm"], "detailsPerMosquePerProvider": per_mosque,
              "priorityMode": config.get("priorityMode", "legacy"), "budgetPriority": config.get("budgetPriority")}
-    plans = provider_plan(selected, multi, cancel)
+    plans = provider_plan(transit + selected, multi, cancel)
     chosen = [name for name in chosen if name in plans]
     if not chosen:
         parser.error("No selected provider is enabled")
     if not args.run and not args.report_only:
-        summary = {name: {"mosques": len(rows), "sources": len({s for m in rows for s in m["sources"]})} for name, (_, rows) in plans.items()}
+        summary = {name: {"mosques": sum(m.get("type") != "transit" for m in rows), "transitStops": len(transit),
+                          "sources": len({s for m in rows for s in m["sources"]})} for name, (_, rows) in plans.items()}
         core.save(directory / "multi-plan.json", {"generatedAtUTC": core.now(), "providers": summary, "parallelProviders": multi["parallelProviders"], "scope": scope})
         print(json.dumps(summary))
         return 0

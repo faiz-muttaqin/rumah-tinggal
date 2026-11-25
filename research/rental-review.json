@@ -1,0 +1,2690 @@
+{
+  "sewa-apartemen-sentra-timur-residence-2-kt-pulo-gebang": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Cakung (1,61 km ke stasiun). Akses feeder diasumsikan 19 mnt.",
+    "commuteMinutes": 65,
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-grand-center-point-bekasi-apartment-2br": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "commuteBasis": "KRL Bekasi (1,04 km ke stasiun). Akses jalan kaki diasumsikan 21 mnt.",
+    "commuteMinutes": 75,
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-griya-anindya-jatibening": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "flood": {
+      "label": "Konteks · Jatibening • banjir di Perumahan Jatibening Permai, 8 Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "security": {
+      "label": "Konteks keamanan · Jatibening • termasuk rute patroli Polsek Pondok Gede, Nov 2025",
+      "url": "https://mediahub.polri.go.id/in/polda/metro-jaya/image/detail/299100-polsek-pondok-gede-gencarkan-patroli-mobile-antisipasi-gangguan-kamtibmas"
+    },
+    "mosqueCoverage": "no-pin"
+  },
+  "sewa-ihrish-alia-45": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "flood": {
+      "label": "Konteks · Pondok Melati • Chandra Baru, Jatirahayu tergenang, 8 Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "security": {
+      "label": "Konteks keamanan · Jatimelati • patroli pencegahan curanmor dan tawuran, Agu 2025",
+      "url": "https://gantaritv.com/bhabinkamtibmas-pondok-gede-patroli-malam-imbau-warga-waspadai-curanmor-dan-tawuran/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-ihrish-dutakranji-28": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "commuteBasis": "KRL Kranji (1,11 km ke stasiun). Akses jalan kaki diasumsikan 23 mnt.",
+    "commuteMinutes": 75,
+    "flood": {
+      "label": "Konteks · Bekasi Barat • Jl. Raya Bintara terdampak banjir, Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "floors": 1,
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-ihrish-galaxy-sirih-timur-35": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-ihrish-greenpark43": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "flood": {
+      "label": "Konteks · Pondok Melati • Chandra Baru, Jatirahayu tergenang, 8 Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "security": {
+      "label": "Konteks keamanan · Jatimelati • patroli pencegahan curanmor dan tawuran, Agu 2025",
+      "url": "https://gantaritv.com/bhabinkamtibmas-pondok-gede-patroli-malam-imbau-warga-waspadai-curanmor-dan-tawuran/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-ihrish-greenpark60": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "flood": {
+      "label": "Konteks · Pondok Melati • Chandra Baru, Jatirahayu tergenang, 8 Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "floors": 2,
+    "security": {
+      "label": "Konteks keamanan · Jatimelati • patroli pencegahan curanmor dan tawuran, Agu 2025",
+      "url": "https://gantaritv.com/bhabinkamtibmas-pondok-gede-patroli-malam-imbau-warga-waspadai-curanmor-dan-tawuran/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-ihrish-kranji-28-bulanan": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "commuteBasis": "KRL Kranji (1,48 km ke stasiun). Akses jalan kaki diasumsikan 29 mnt.",
+    "commuteMinutes": 80,
+    "flood": {
+      "label": "Konteks · Bekasi Barat • Jl. Raya Bintara terdampak banjir, Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-jakasampurna-keluarga-kranji": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "commuteBasis": "KRL Kranji (1,75 km ke stasiun). Akses feeder diasumsikan 20 mnt. Cek kemungkinan unit sama dengan ID awal-11.",
+    "commuteMinutes": 70,
+    "flood": {
+      "label": "Konteks · Bekasi Barat • Jl. Raya Bintara terdampak banjir, Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-jendela360-02dfda7eac72": {
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-21179e49e6ed": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pisangan • DLH melaporkan pembangunan taman di VCM, Nov 2025",
+      "url": "https://www.tangselpos.id/detail/41494/pemkot-pastikan-dua-taman-skala-besar-di-ciputat-timur-rampung-di-desember"
+    },
+    "flood": {
+      "label": "Konteks · Kec. Cinere • banjir di Pangkalan Jati Baru RW 01, Jan 2026",
+      "url": "https://www.siarandepok.com/baca/20260114/langkah-cepat-tangani-banjir-lurah-pangkalan-jati-baru-aktifkan-drainase-dan-pompa-air.html"
+    },
+    "security": {
+      "label": "Konteks · Polsek Ciputat Timur • ungkap tiga laporan curanmor, Jul 2026",
+      "url": "https://restangsel.id/hari-ketiga-operasi-berantas-jaya-2026-polres-tangsel-ungkap-12-kasus-curanmor-15-tersangka-diamankan/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-3130f15cccae": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pisangan • DLH melaporkan pembangunan taman di VCM, Nov 2025",
+      "url": "https://www.tangselpos.id/detail/41494/pemkot-pastikan-dua-taman-skala-besar-di-ciputat-timur-rampung-di-desember"
+    },
+    "flood": {
+      "label": "Konteks · Kec. Cinere • banjir di Pangkalan Jati Baru RW 01, Jan 2026",
+      "url": "https://www.siarandepok.com/baca/20260114/langkah-cepat-tangani-banjir-lurah-pangkalan-jati-baru-aktifkan-drainase-dan-pompa-air.html"
+    },
+    "security": {
+      "label": "Konteks · Polsek Ciputat Timur • ungkap tiga laporan curanmor, Jul 2026",
+      "url": "https://restangsel.id/hari-ketiga-operasi-berantas-jaya-2026-polres-tangsel-ungkap-12-kasus-curanmor-15-tersangka-diamankan/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-3df8aec2b63c": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "commuteBasis": "KRL Bekasi (2,82 km ke stasiun). Akses feeder diasumsikan 27 mnt.",
+    "commuteMinutes": 80,
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-jendela360-4db9cd05c5dc": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pisangan • DLH melaporkan pembangunan taman di VCM, Nov 2025",
+      "url": "https://www.tangselpos.id/detail/41494/pemkot-pastikan-dua-taman-skala-besar-di-ciputat-timur-rampung-di-desember"
+    },
+    "flood": {
+      "label": "Konteks · Kec. Cinere • banjir di Pangkalan Jati Baru RW 01, Jan 2026",
+      "url": "https://www.siarandepok.com/baca/20260114/langkah-cepat-tangani-banjir-lurah-pangkalan-jati-baru-aktifkan-drainase-dan-pompa-air.html"
+    },
+    "security": {
+      "label": "Konteks · Polsek Ciputat Timur • ungkap tiga laporan curanmor, Jul 2026",
+      "url": "https://restangsel.id/hari-ketiga-operasi-berantas-jaya-2026-polres-tangsel-ungkap-12-kasus-curanmor-15-tersangka-diamankan/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-519105f904e5": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-5740a95a029e": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-575891288b6d": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-b1141800cdec": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara (1,48 km ke stasiun). Akses jalan kaki diasumsikan 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-bc59dfd4e909": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pisangan • DLH melaporkan pembangunan taman di VCM, Nov 2025",
+      "url": "https://www.tangselpos.id/detail/41494/pemkot-pastikan-dua-taman-skala-besar-di-ciputat-timur-rampung-di-desember"
+    },
+    "flood": {
+      "label": "Konteks · Kec. Cinere • banjir di Pangkalan Jati Baru RW 01, Jan 2026",
+      "url": "https://www.siarandepok.com/baca/20260114/langkah-cepat-tangani-banjir-lurah-pangkalan-jati-baru-aktifkan-drainase-dan-pompa-air.html"
+    },
+    "security": {
+      "label": "Konteks · Polsek Ciputat Timur • ungkap tiga laporan curanmor, Jul 2026",
+      "url": "https://restangsel.id/hari-ketiga-operasi-berantas-jaya-2026-polres-tangsel-ungkap-12-kasus-curanmor-15-tersangka-diamankan/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-bemc074": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-bsca038": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-bscc251": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-bscc519": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-bscc525": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-bscc810": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-bscd103": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-bscd116": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-dc3ffd4c89ab": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara (1,48 km ke stasiun). Akses jalan kaki diasumsikan 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-jendela360-e2097f6cafd0": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kontrakan-2-kt-dekat-masjid-al-baidho-lubang-buaya": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-kontrakan-mini-jatimulya": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "environment": {
+      "label": "Jatimulya • penataan jalan dan drainase, Jun 2025",
+      "url": "https://bekasikab.go.id/kelurahan-jatimulya-tertibkan-puluhan-bangli-dan-percepat-perbaikan-drainase"
+    },
+    "flood": {
+      "label": "Konteks · Jatimulya, Tambun Selatan • banjir, 18 Jan 2026",
+      "url": "https://www.antaranews.com/berita/5358574/diguyur-hujan-sehari-bekasi-dikepung-banjir"
+    },
+    "security": {
+      "label": "Konteks · Tambun Selatan • laporan percobaan curanmor di Jatimulya, Nov 2026",
+      "url": "https://www.koresponden.id/2026/11/polsek-tambun-selatan-amankan-terduga.html"
+    },
+    "mosqueCoverage": "no-pin"
+  },
+  "sewa-kos-2c0453c5ecd9": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Tebet via Manggarai. Akses jalan kaki sekitar 17 mnt.",
+    "commuteMinutes": 65,
+    "couples": false,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-375f9d9cde23": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "couples": false,
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-583813f8e2c5": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "couples": false,
+    "environment": {
+      "label": "Ciledug • normalisasi Kali Wetan di Puri Kartika dimulai, Agu 2025",
+      "url": "https://tangerangkota.go.id/berita/detail/53881/pemkot-tangerang-responsif-tangani-banjir-normalisasi-kali-irigasi-puri-kartika-dimulai"
+    },
+    "flood": {
+      "label": "Konteks · Ciledug • tercakup laporan banjir Pemkot Tangerang, 8 Mar 2026",
+      "url": "https://tangerangkota.go.id/berita/detail/62697/hujan-deras-sejak-malam-petugas-gabungan-bergerak-cepat-tangani-banjir-di-sejumlah-wilayah-kota-tangerang"
+    },
+    "security": {
+      "label": "Konteks · Ciledug • Polsek mengungkap kasus pencurian motor, Agu 2026",
+      "url": "https://news.detik.com/berita/d-8635437/incar-motor-jemaah-salat-subuh-komplotan-curanmor-di-tangerang-dibekuk"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-9c5451cd1f83": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "commuteBasis": "KRL Cisauk via Tanah Abang. Akses jalan kaki sekitar 17 mnt.",
+    "commuteMinutes": 95,
+    "couples": true,
+    "environment": {
+      "label": "Cisauk • skywalk stasiun ke Intermoda dibuka 2019",
+      "url": "https://www.bsdcity.com/id/news-events/gedung-baru-stasiun-cisauk-bagian-dari-fasilitas-bsd-city-resmi-beroperasi/"
+    },
+    "flood": {
+      "label": "Konteks · Kec. Cisauk • banjir di Desa Cibogo dipantau, 4 Mar 2025",
+      "url": "https://pkm-cisauk.tangerangkab.go.id/detail-berita/pemantauan-wilayah-banjir-di-desa-cibogo-kecamatan-cisauk"
+    },
+    "security": {
+      "label": "Konteks · Cisauk • kasus curanmor di parkir kos, Jun 2026",
+      "url": "https://portalkota.id/2026/07/15/kasus-curanmor-di-cisauk-terungkap/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-asakusa-room-2-cisauk": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "commuteBasis": "KRL Cisauk via Tanah Abang. Akses feeder sekitar 19 mnt.",
+    "commuteMinutes": 100,
+    "couples": false,
+    "environment": {
+      "label": "Cisauk • skywalk stasiun ke Intermoda dibuka 2019",
+      "url": "https://www.bsdcity.com/id/news-events/gedung-baru-stasiun-cisauk-bagian-dari-fasilitas-bsd-city-resmi-beroperasi/"
+    },
+    "flood": {
+      "label": "Konteks · Kec. Cisauk • banjir di Desa Cibogo dipantau, 4 Mar 2025",
+      "url": "https://pkm-cisauk.tangerangkab.go.id/detail-berita/pemantauan-wilayah-banjir-di-desa-cibogo-kecamatan-cisauk"
+    },
+    "security": {
+      "label": "Konteks · Cisauk • kasus curanmor di parkir kos, Jun 2026",
+      "url": "https://portalkota.id/2026/07/15/kasus-curanmor-di-cisauk-terungkap/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-bintaro-sektor-pondok-aren": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "commuteBasis": "KRL Sudimara via Tanah Abang. Akses feeder sekitar 19 mnt.",
+    "commuteMinutes": 85,
+    "couples": false,
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-d8e6d208fea4": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 28 mnt.",
+    "commuteMinutes": 55,
+    "couples": false,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-d969e39d400e": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "couples": false,
+    "environment": {
+      "label": "Ciledug • normalisasi Kali Wetan di Puri Kartika dimulai, Agu 2025",
+      "url": "https://tangerangkota.go.id/berita/detail/53881/pemkot-tangerang-responsif-tangani-banjir-normalisasi-kali-irigasi-puri-kartika-dimulai"
+    },
+    "flood": {
+      "label": "Konteks · Ciledug • tercakup laporan banjir Pemkot Tangerang, 8 Mar 2026",
+      "url": "https://tangerangkota.go.id/berita/detail/62697/hujan-deras-sejak-malam-petugas-gabungan-bergerak-cepat-tangani-banjir-di-sejumlah-wilayah-kota-tangerang"
+    },
+    "security": {
+      "label": "Konteks · Ciledug • Polsek mengungkap kasus pencurian motor, Agu 2026",
+      "url": "https://news.detik.com/berita/d-8635437/incar-motor-jemaah-salat-subuh-komplotan-curanmor-di-tangerang-dibekuk"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-hanif-pisangan-pocket-a-putra": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "couples": false,
+    "environment": {
+      "label": "Cireundeu • pengelolaan sampah dibahas di Musrenbang, Jan 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/hadiri-musrenbang-cireundeu-ciptim-pilar-tekankan-kolaborasi-pengelolaan-sampah-di-tangsel"
+    },
+    "flood": {
+      "label": "Konteks · Ciputat Timur • banjir di Villa Cinere Mas, Mar 2025",
+      "url": "https://tribratanews.polri.go.id/article/polisi-bagikan-sembako-hingga-cairan-disinfektan-ke-warga-terdampak-banjir-di-ciputat"
+    },
+    "security": {
+      "label": "Konteks keamanan · Cireundeu • lokasi penemuan motor curian, Jul 2026",
+      "url": "https://tangselpos.id/detail/51289/polsek-ciputat-timur-kembalikan-motor-hasil-curian-ke-pemilik"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-icon-cosmo-bsd-putra": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "commuteBasis": "KRL Cisauk via Tanah Abang. Akses feeder sekitar 19 mnt.",
+    "commuteMinutes": 100,
+    "couples": false,
+    "environment": {
+      "label": "Cisauk • skywalk stasiun ke Intermoda dibuka 2019",
+      "url": "https://www.bsdcity.com/id/news-events/gedung-baru-stasiun-cisauk-bagian-dari-fasilitas-bsd-city-resmi-beroperasi/"
+    },
+    "flood": {
+      "label": "Konteks · Kec. Cisauk • banjir di Desa Cibogo dipantau, 4 Mar 2025",
+      "url": "https://pkm-cisauk.tangerangkab.go.id/detail-berita/pemantauan-wilayah-banjir-di-desa-cibogo-kecamatan-cisauk"
+    },
+    "security": {
+      "label": "Konteks · Cisauk • kasus curanmor di parkir kos, Jun 2026",
+      "url": "https://portalkota.id/2026/07/15/kasus-curanmor-di-cisauk-terungkap/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-isk-house-jatinegara-compact-queen": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Tebet via Manggarai. Akses jalan kaki sekitar 18 mnt.",
+    "commuteMinutes": 65,
+    "couples": true,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-leila-2-b-cinere-mas": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "couples": false,
+    "environment": {
+      "label": "Pisangan • DLH melaporkan pembangunan taman di VCM, Nov 2025",
+      "url": "https://www.tangselpos.id/detail/41494/pemkot-pastikan-dua-taman-skala-besar-di-ciputat-timur-rampung-di-desember"
+    },
+    "flood": {
+      "label": "Konteks · Ciputat Timur • banjir di Villa Cinere Mas, Mar 2025",
+      "url": "https://tribratanews.polri.go.id/article/polisi-bagikan-sembako-hingga-cairan-disinfektan-ke-warga-terdampak-banjir-di-ciputat"
+    },
+    "security": {
+      "label": "Konteks · Polsek Ciputat Timur • ungkap tiga laporan curanmor, Jul 2026",
+      "url": "https://restangsel.id/hari-ketiga-operasi-berantas-jaya-2026-polres-tangsel-ungkap-12-kasus-curanmor-15-tersangka-diamankan/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-paninggilan-standar-ciledug": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "couples": true,
+    "environment": {
+      "label": "Ciledug • normalisasi Kali Wetan di Puri Kartika dimulai, Agu 2025",
+      "url": "https://tangerangkota.go.id/berita/detail/53881/pemkot-tangerang-responsif-tangani-banjir-normalisasi-kali-irigasi-puri-kartika-dimulai"
+    },
+    "flood": {
+      "label": "Konteks · Ciledug • tercakup laporan banjir Pemkot Tangerang, 8 Mar 2026",
+      "url": "https://tangerangkota.go.id/berita/detail/62697/hujan-deras-sejak-malam-petugas-gabungan-bergerak-cepat-tangani-banjir-di-sejumlah-wilayah-kota-tangerang"
+    },
+    "security": {
+      "label": "Konteks · Ciledug • Polsek mengungkap kasus pencurian motor, Agu 2026",
+      "url": "https://news.detik.com/berita/d-8635437/incar-motor-jemaah-salat-subuh-komplotan-curanmor-di-tangerang-dibekuk"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-uma-orient-jatinegara-regular-queen-a": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 6 mnt.",
+    "commuteMinutes": 35,
+    "couples": true,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-urban-intermoda-2-regular-queen-b": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "commuteBasis": "KRL Cisauk via Tanah Abang. Akses jalan kaki sekitar 15 mnt.",
+    "commuteMinutes": 95,
+    "couples": true,
+    "environment": {
+      "label": "Cisauk • skywalk stasiun ke Intermoda dibuka 2019",
+      "url": "https://www.bsdcity.com/id/news-events/gedung-baru-stasiun-cisauk-bagian-dari-fasilitas-bsd-city-resmi-beroperasi/"
+    },
+    "flood": {
+      "label": "Konteks · Kec. Cisauk • banjir di Desa Cibogo dipantau, 4 Mar 2025",
+      "url": "https://pkm-cisauk.tangerangkab.go.id/detail-berita/pemantauan-wilayah-banjir-di-desa-cibogo-kecamatan-cisauk"
+    },
+    "security": {
+      "label": "Konteks · Cisauk • kasus curanmor di parkir kos, Jun 2026",
+      "url": "https://portalkota.id/2026/07/15/kasus-curanmor-di-cisauk-terungkap/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kos-urban-intermoda-bsd-regular-queen-a": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "commuteBasis": "KRL Cisauk via Tanah Abang. Akses jalan kaki sekitar 14 mnt.",
+    "commuteMinutes": 95,
+    "couples": true,
+    "environment": {
+      "label": "Cisauk • skywalk stasiun ke Intermoda dibuka 2019",
+      "url": "https://www.bsdcity.com/id/news-events/gedung-baru-stasiun-cisauk-bagian-dari-fasilitas-bsd-city-resmi-beroperasi/"
+    },
+    "flood": {
+      "label": "Konteks · Kec. Cisauk • banjir di Desa Cibogo dipantau, 4 Mar 2025",
+      "url": "https://pkm-cisauk.tangerangkab.go.id/detail-berita/pemantauan-wilayah-banjir-di-desa-cibogo-kecamatan-cisauk"
+    },
+    "security": {
+      "label": "Konteks · Cisauk • kasus curanmor di parkir kos, Jun 2026",
+      "url": "https://portalkota.id/2026/07/15/kasus-curanmor-di-cisauk-terungkap/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kost-berkah-family-sukmajaya-khusus-keluarga-muslim": {
+    "careerArea": "Depok–Bogor • QA/QC dan food safety",
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-kost-cozzy-syariah-tipe-a": {
+    "careerArea": "Depok–Bogor • QA/QC dan food safety",
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-kost-exclusive-syariah-cimanggu-permai-tipe-a": {
+    "careerArea": "Depok–Bogor • QA/QC dan food safety",
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-kost-k-key-deluxe-syariah-ciledug-tangerang": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "environment": {
+      "label": "Ciledug • normalisasi Kali Wetan di Puri Kartika dimulai, Agu 2025",
+      "url": "https://tangerangkota.go.id/berita/detail/53881/pemkot-tangerang-responsif-tangani-banjir-normalisasi-kali-irigasi-puri-kartika-dimulai"
+    },
+    "flood": {
+      "label": "Konteks · Ciledug • tercakup laporan banjir Pemkot Tangerang, 8 Mar 2026",
+      "url": "https://tangerangkota.go.id/berita/detail/62697/hujan-deras-sejak-malam-petugas-gabungan-bergerak-cepat-tangani-banjir-di-sejumlah-wilayah-kota-tangerang"
+    },
+    "security": {
+      "label": "Konteks · Ciledug • Polsek mengungkap kasus pencurian motor, Agu 2026",
+      "url": "https://news.detik.com/berita/d-8635437/incar-motor-jemaah-salat-subuh-komplotan-curanmor-di-tangerang-dibekuk"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-kost-mahasin-2-cileungsi": {
+    "careerArea": "Cileungsi–Cibubur • QA/QC pangan",
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-kost-rumah-mawaddah-kelapa-dua": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-kost-syariah-beji-rumah-kontrakan-keluarga-1-kamar": {
+    "careerArea": "Depok–Bogor • QA/QC dan food safety",
+    "commuteBasis": "KRL Depok Baru via Manggarai (1,6 km ke stasiun). Akses feeder diasumsikan 19 mnt.",
+    "commuteMinutes": 90,
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-kost-syariah-matoa-golf-tipe-a-jagakarsa-pasutri-tanpa-anak": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-mamikos-16778c4de615": {
+    "children": false,
+    "couples": true,
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-mamikos-18c3f02b1467": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "couples": true,
+    "environment": {
+      "label": "Pisangan • DLH melaporkan pembangunan taman di VCM, Nov 2025",
+      "url": "https://www.tangselpos.id/detail/41494/pemkot-pastikan-dua-taman-skala-besar-di-ciputat-timur-rampung-di-desember"
+    },
+    "flood": {
+      "label": "Konteks · Ciputat Timur • banjir di Villa Cinere Mas, Mar 2025",
+      "url": "https://tribratanews.polri.go.id/article/polisi-bagikan-sembako-hingga-cairan-disinfektan-ke-warga-terdampak-banjir-di-ciputat"
+    },
+    "security": {
+      "label": "Konteks · Polsek Ciputat Timur • ungkap tiga laporan curanmor, Jul 2026",
+      "url": "https://restangsel.id/hari-ketiga-operasi-berantas-jaya-2026-polres-tangsel-ungkap-12-kasus-curanmor-15-tersangka-diamankan/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-mamikos-278e59608ce3": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "couples": false,
+    "environment": {
+      "label": "Pisangan • DLH melaporkan pembangunan taman di VCM, Nov 2025",
+      "url": "https://www.tangselpos.id/detail/41494/pemkot-pastikan-dua-taman-skala-besar-di-ciputat-timur-rampung-di-desember"
+    },
+    "flood": {
+      "label": "Konteks · Kec. Cinere • banjir di Pangkalan Jati Baru RW 01, Jan 2026",
+      "url": "https://www.siarandepok.com/baca/20260114/langkah-cepat-tangani-banjir-lurah-pangkalan-jati-baru-aktifkan-drainase-dan-pompa-air.html"
+    },
+    "security": {
+      "label": "Konteks · Polsek Ciputat Timur • ungkap tiga laporan curanmor, Jul 2026",
+      "url": "https://restangsel.id/hari-ketiga-operasi-berantas-jaya-2026-polres-tangsel-ungkap-12-kasus-curanmor-15-tersangka-diamankan/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-mamikos-5f058a4be89a": {
+    "careerArea": "Depok–Bogor • QA/QC dan food safety",
+    "commuteBasis": "KRL Cilebut via Manggarai (0,55 km ke stasiun). Akses jalan kaki diasumsikan 13 mnt.",
+    "commuteMinutes": 105,
+    "environment": {
+      "label": "Bojonggede–Cilebut • rencana normalisasi saluran, Apr 2026",
+      "url": "https://bakesbangpol.bogorkab.go.id/berita/Seputar-OPD/pemkab-bogor-tangani-banjir-di-bojonggede-fokus-normalisasi-irigasi"
+    },
+    "flood": {
+      "label": "Konteks · Bojonggede–Cilebut • genangan di Kedung Waringin, Apr 2026",
+      "url": "https://bakesbangpol.bogorkab.go.id/berita/Seputar-OPD/pemkab-bogor-tangani-banjir-di-bojonggede-fokus-normalisasi-irigasi"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-mamikos-5fb6073b86dd": {
+    "careerArea": "Depok–Bogor • QA/QC dan food safety",
+    "flood": {
+      "label": "Konteks · Kec. Cinere • banjir di Pangkalan Jati Baru RW 01, Jan 2026",
+      "url": "https://www.siarandepok.com/baca/20260114/langkah-cepat-tangani-banjir-lurah-pangkalan-jati-baru-aktifkan-drainase-dan-pompa-air.html"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-mamikos-6e826f1c6a79": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "commuteBasis": "KRL Bekasi (1,57 km ke stasiun). Akses feeder diasumsikan 19 mnt.",
+    "commuteMinutes": 70,
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-mamikos-84579aba7508": {
+    "careerArea": "Depok–Bogor • QA/QC dan food safety",
+    "flood": {
+      "label": "Konteks · Kec. Cinere • banjir di Pangkalan Jati Baru RW 01, Jan 2026",
+      "url": "https://www.siarandepok.com/baca/20260114/langkah-cepat-tangani-banjir-lurah-pangkalan-jati-baru-aktifkan-drainase-dan-pompa-air.html"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-mamikos-a58f3356e455": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "environment": {
+      "label": "Jatimulya • penataan jalan dan drainase, Jun 2025",
+      "url": "https://bekasikab.go.id/kelurahan-jatimulya-tertibkan-puluhan-bangli-dan-percepat-perbaikan-drainase"
+    },
+    "flood": {
+      "label": "Konteks · Jatimulya, Tambun Selatan • banjir, 18 Jan 2026",
+      "url": "https://www.antaranews.com/berita/5358574/diguyur-hujan-sehari-bekasi-dikepung-banjir"
+    },
+    "security": {
+      "label": "Konteks · Tambun Selatan • laporan percobaan curanmor di Jatimulya, Nov 2026",
+      "url": "https://www.koresponden.id/2026/11/polsek-tambun-selatan-amankan-terduga.html"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-mamikos-d0030f53de05": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "children": false,
+    "commuteBasis": "KRL Tanah Tinggi via Duri (0,43 km ke stasiun). Akses jalan kaki diasumsikan 11 mnt.",
+    "commuteMinutes": 80,
+    "couples": true,
+    "flood": {
+      "label": "Konteks · Buaran Indah • DPUPR mencatat genangan di sejumlah RW pada 2023",
+      "url": "https://dpupr.tangerangkota.go.id/assets/uploads/informationpublic_20240425_1714030120.pdf"
+    },
+    "security": {
+      "label": "Konteks · Kec. Tangerang • percobaan curanmor di Buaran Indah, 4 Jan 2026",
+      "url": "https://www.cnnindonesia.com/nasional/20260105160309-12-1313745/gagal-gasak-motor-pencuri-lepas-tembakan-di-buaran-indah-tangerang"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-mamikos-d28b58be319b": {
+    "careerArea": "Depok–Bogor • QA/QC dan food safety",
+    "flood": {
+      "label": "Konteks · Kec. Cinere • banjir di Pangkalan Jati Baru RW 01, Jan 2026",
+      "url": "https://www.siarandepok.com/baca/20260114/langkah-cepat-tangani-banjir-lurah-pangkalan-jati-baru-aktifkan-drainase-dan-pompa-air.html"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-mamikos-eb10b9e34d31": {
+    "couples": true,
+    "children": true
+  },
+  "sewa-margonda-residence-1br-low-floor-mushola-di-kawasan": {
+    "careerArea": "Depok–Bogor • QA/QC dan food safety",
+    "commuteBasis": "KRL Universitas Indonesia via Manggarai (0,46 km ke stasiun). Akses jalan kaki diasumsikan 11 mnt.",
+    "commuteMinutes": 75,
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-menara-cawang-2-kamar": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Duren Kalibata via Manggarai (1,36 km ke stasiun). Akses jalan kaki diasumsikan 27 mnt.",
+    "commuteMinutes": 75,
+    "environment": {
+      "label": "Simpang Cawang • penataan trotoar Jl. DI Panjaitan, Jul 2026",
+      "url": "https://www.beritajakarta.id/potret-jakarta/album/19789/potret-jakarta"
+    },
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-05467c33bc0a": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "commuteBasis": "KRL Pondok Ranji via Tanah Abang (2,82 km ke stasiun). Akses feeder diasumsikan 27 mnt.",
+    "commuteMinutes": 85,
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "floors": 2,
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-0a2020205bec": {
+    "flood": {
+      "label": "Konteks · genangan Jl. Dermaga Baru, Kel. Klender",
+      "url": "https://news.detik.com/foto-news/d-8496718/kali-meluap-usai-hujan-deras-klender-kembali-tergenang"
+    },
+    "floors": 2,
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-101d809dc30f": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "commuteBasis": "KRL Tambun (2,49 km ke stasiun). Akses feeder diasumsikan 25 mnt.",
+    "commuteMinutes": 90,
+    "couples": true,
+    "environment": {
+      "label": "Tambun Selatan • usulan peningkatan jalan lingkungan",
+      "url": "https://csr.bekasikab.go.id/csr/proyek/P20261013203946642"
+    },
+    "flood": {
+      "label": "Konteks · Jatimulya, Tambun Selatan • banjir, 18 Jan 2026",
+      "url": "https://www.antaranews.com/berita/5358574/diguyur-hujan-sehari-bekasi-dikepung-banjir"
+    },
+    "floors": 1,
+    "security": {
+      "label": "Konteks · Tambun Selatan • laporan percobaan curanmor di Jatimulya, Nov 2026",
+      "url": "https://www.koresponden.id/2026/11/polsek-tambun-selatan-amankan-terduga.html"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-1051d7a05d9f": {
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-14326fb9df3f": {
+    "careerArea": "Depok–Bogor • QA/QC dan food safety",
+    "commuteBasis": "KRL Cilebut via Manggarai (0,43 km ke stasiun). Akses jalan kaki diasumsikan 11 mnt.",
+    "commuteMinutes": 105,
+    "environment": {
+      "label": "Bojonggede–Cilebut • rencana normalisasi saluran, Apr 2026",
+      "url": "https://bakesbangpol.bogorkab.go.id/berita/Seputar-OPD/pemkab-bogor-tangani-banjir-di-bojonggede-fokus-normalisasi-irigasi"
+    },
+    "flood": {
+      "label": "Konteks · Bojonggede–Cilebut • genangan di Kedung Waringin, Apr 2026",
+      "url": "https://bakesbangpol.bogorkab.go.id/berita/Seputar-OPD/pemkab-bogor-tangani-banjir-di-bojonggede-fokus-normalisasi-irigasi"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-19b7d9c019e6": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "commuteBasis": "KRL Tanah Tinggi via Duri (1,38 km ke stasiun). Akses jalan kaki diasumsikan 27 mnt.",
+    "commuteMinutes": 95,
+    "flood": {
+      "label": "Konteks · Buaran Indah • DPUPR mencatat genangan di sejumlah RW pada 2023",
+      "url": "https://dpupr.tangerangkota.go.id/assets/uploads/informationpublic_20240425_1714030120.pdf"
+    },
+    "security": {
+      "label": "Konteks · Kec. Tangerang • percobaan curanmor di Buaran Indah, 4 Jan 2026",
+      "url": "https://www.cnnindonesia.com/nasional/20260105160309-12-1313745/gagal-gasak-motor-pencuri-lepas-tembakan-di-buaran-indah-tangerang"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-1d608a9be83f": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "commuteBasis": "KRL Sudimara via Tanah Abang (0,7 km ke stasiun). Akses jalan kaki diasumsikan 16 mnt.",
+    "commuteMinutes": 80,
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-263ab339e1af": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "commuteBasis": "KRL Tanah Tinggi via Duri (0,74 km ke stasiun). Akses jalan kaki diasumsikan 16 mnt.",
+    "commuteMinutes": 85,
+    "environment": {
+      "label": "Tanah Tinggi • normalisasi Bendung Tanah Tinggi 3, Mar 2025",
+      "url": "https://www.tangerangkota.go.id/berita/detail/50551/tingkatkan-mitigasi-banjir-pemkot-tangerang-normalisasi-saluran-bendung-tanah-tinggi-3"
+    },
+    "flood": {
+      "label": "Konteks · Tanah Tinggi • genangan Jl. Muhajirin Raya RW 10, 2023",
+      "url": "https://dpupr.tangerangkota.go.id/assets/uploads/informationpublic_20240425_1714030120.pdf"
+    },
+    "security": {
+      "label": "Konteks · Kec. Tangerang • percobaan curanmor di Buaran Indah, 4 Jan 2026",
+      "url": "https://www.cnnindonesia.com/nasional/20260105160309-12-1313745/gagal-gasak-motor-pencuri-lepas-tembakan-di-buaran-indah-tangerang"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-311417e05b6d": {
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-37a868207b22": {
+    "environment": {
+      "label": "Perawatan saluran · Jl. Perumnas Raya RT 05–09/RW 02",
+      "url": "https://dsda.jakarta.go.id/agenda-kegiatan-detail/220"
+    },
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "floors": 1,
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-3c38b9b157d7": {
+    "environment": {
+      "label": "Perawatan saluran · Jl. Perumnas Raya RT 05–09/RW 02",
+      "url": "https://dsda.jakarta.go.id/agenda-kegiatan-detail/220"
+    },
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "floors": 2,
+    "mosqueCoverage": "no-pin"
+  },
+  "sewa-pinhome-417aea29c8f2": {
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-5fc487c4c34d": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "commuteBasis": "KRL Sudimara via Tanah Abang (0,7 km ke stasiun). Akses jalan kaki diasumsikan 16 mnt.",
+    "commuteMinutes": 80,
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-869c61f4efcd": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "commuteBasis": "KRL Sudimara via Tanah Abang. Akses feeder sekitar 28 mnt.",
+    "commuteMinutes": 90,
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-8e0c61140df5": {
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "floors": 1,
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-9138b6d7240d": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-a2331f75ed58": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Klender (0,62 km ke stasiun). Akses jalan kaki diasumsikan 14 mnt.",
+    "commuteMinutes": 55,
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-b25dad734c9e": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-bali-mester-e27ac8ed": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 15 mnt.",
+    "commuteMinutes": 45,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-bidara-cina-bidaracina-1c77ab9c": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Tebet via Manggarai. Akses jalan kaki sekitar 22 mnt.",
+    "commuteMinutes": 70,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-buaran-indah-2c1b66e7": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "commuteBasis": "KRL Tanah Tinggi via Duri. Akses jalan kaki sekitar 9 mnt.",
+    "commuteMinutes": 75,
+    "flood": {
+      "label": "Konteks · Buaran Indah • DPUPR mencatat genangan di sejumlah RW pada 2023",
+      "url": "https://dpupr.tangerangkota.go.id/assets/uploads/informationpublic_20240425_1714030120.pdf"
+    },
+    "security": {
+      "label": "Konteks · Kec. Tangerang • percobaan curanmor di Buaran Indah, 4 Jan 2026",
+      "url": "https://www.cnnindonesia.com/nasional/20260105160309-12-1313745/gagal-gasak-motor-pencuri-lepas-tembakan-di-buaran-indah-tangerang"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-buaran-indah-34fd3d6f": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "commuteBasis": "KRL Tanah Tinggi via Duri. Akses jalan kaki sekitar 23 mnt.",
+    "commuteMinutes": 90,
+    "flood": {
+      "label": "Konteks · Buaran Indah • DPUPR mencatat genangan di sejumlah RW pada 2023",
+      "url": "https://dpupr.tangerangkota.go.id/assets/uploads/informationpublic_20240425_1714030120.pdf"
+    },
+    "security": {
+      "label": "Konteks · Kec. Tangerang • percobaan curanmor di Buaran Indah, 4 Jan 2026",
+      "url": "https://www.cnnindonesia.com/nasional/20260105160309-12-1313745/gagal-gasak-motor-pencuri-lepas-tembakan-di-buaran-indah-tangerang"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-buaran-indah-a88998b7": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "commuteBasis": "KRL Tanah Tinggi via Duri. Akses jalan kaki sekitar 13 mnt.",
+    "commuteMinutes": 80,
+    "flood": {
+      "label": "Konteks · Buaran Indah • DPUPR mencatat genangan di sejumlah RW pada 2023",
+      "url": "https://dpupr.tangerangkota.go.id/assets/uploads/informationpublic_20240425_1714030120.pdf"
+    },
+    "security": {
+      "label": "Konteks · Kec. Tangerang • percobaan curanmor di Buaran Indah, 4 Jan 2026",
+      "url": "https://www.cnnindonesia.com/nasional/20260105160309-12-1313745/gagal-gasak-motor-pencuri-lepas-tembakan-di-buaran-indah-tangerang"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-cdb62fd89c3e": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "commuteBasis": "KRL Tambun (2,87 km ke stasiun). Akses feeder diasumsikan 27 mnt.",
+    "commuteMinutes": 90,
+    "environment": {
+      "label": "Tambun Selatan • usulan peningkatan jalan lingkungan",
+      "url": "https://csr.bekasikab.go.id/csr/proyek/P20261013203946642"
+    },
+    "flood": {
+      "label": "Konteks · Jatimulya, Tambun Selatan • banjir, 18 Jan 2026",
+      "url": "https://www.antaranews.com/berita/5358574/diguyur-hujan-sehari-bekasi-dikepung-banjir"
+    },
+    "security": {
+      "label": "Konteks · Tambun Selatan • laporan percobaan curanmor di Jatimulya, Nov 2026",
+      "url": "https://www.koresponden.id/2026/11/polsek-tambun-selatan-amankan-terduga.html"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-cipinang-besar-selatan-314b6da1": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-cipinang-besar-selatan-7e4cecba": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-cipinang-besar-selatan-b9f3e14c": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-cipinang-besar-selatan-bd2a795c": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 29 mnt.",
+    "commuteMinutes": 60,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-cipinang-besar-utara-cdc59ebe": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 26 mnt.",
+    "commuteMinutes": 55,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-cipinang-cempedak-2ad026d3": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses feeder sekitar 19 mnt.",
+    "commuteMinutes": 50,
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-cireundeu-78c540c4": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Cireundeu • pengelolaan sampah dibahas di Musrenbang, Jan 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/hadiri-musrenbang-cireundeu-ciptim-pilar-tekankan-kolaborasi-pengelolaan-sampah-di-tangsel"
+    },
+    "flood": {
+      "label": "Konteks · Ciputat Timur • banjir di Villa Cinere Mas, Mar 2025",
+      "url": "https://tribratanews.polri.go.id/article/polisi-bagikan-sembako-hingga-cairan-disinfektan-ke-warga-terdampak-banjir-di-ciputat"
+    },
+    "security": {
+      "label": "Konteks keamanan · Cireundeu • lokasi penemuan motor curian, Jul 2026",
+      "url": "https://tangselpos.id/detail/51289/polsek-ciputat-timur-kembalikan-motor-hasil-curian-ke-pemilik"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-dba881bc3208": {
+    "flood": {
+      "label": "Konteks · genangan Jl. Dermaga Baru, Kel. Klender",
+      "url": "https://news.detik.com/foto-news/d-8496718/kali-meluap-usai-hujan-deras-klender-kembali-tergenang"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-e87362a1696f": {
+    "careerArea": "Depok–Bogor • QA/QC dan food safety",
+    "commuteBasis": "KRL Cilebut via Manggarai (2,61 km ke stasiun). Akses feeder diasumsikan 25 mnt.",
+    "commuteMinutes": 120,
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-pinhome-eaa5331824ba": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "commuteBasis": "KRL Sudimara via Tanah Abang (1,83 km ke stasiun). Akses feeder diasumsikan 20 mnt.",
+    "commuteMinutes": 85,
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "floors": 2,
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-f23fbcd9c9b2": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pisangan • DLH melaporkan pembangunan taman di VCM, Nov 2025",
+      "url": "https://www.tangselpos.id/detail/41494/pemkot-pastikan-dua-taman-skala-besar-di-ciputat-timur-rampung-di-desember"
+    },
+    "flood": {
+      "label": "Konteks · Kompleks VCM • laporan banjir, 6 Mar 2025",
+      "url": "https://tribratanews.polri.go.id/article/polisi-bagikan-sembako-hingga-cairan-disinfektan-ke-warga-terdampak-banjir-di-ciputat"
+    },
+    "floors": 2,
+    "security": {
+      "label": "Konteks · Pisangan • lurah menanggapi laporan curanmor 2025, Jan 2026",
+      "url": "https://publicindonesia.com/kasus-curanmor-tertinggi-di-ciputat-timur-lurah-pisangan-perkuat-sinergi-tekan-angka-kejahatan/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-fb7b346c98b2": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pisangan • DLH melaporkan pembangunan taman di VCM, Nov 2025",
+      "url": "https://www.tangselpos.id/detail/41494/pemkot-pastikan-dua-taman-skala-besar-di-ciputat-timur-rampung-di-desember"
+    },
+    "flood": {
+      "label": "Konteks · Kompleks VCM • laporan banjir, 6 Mar 2025",
+      "url": "https://tribratanews.polri.go.id/article/polisi-bagikan-sembako-hingga-cairan-disinfektan-ke-warga-terdampak-banjir-di-ciputat"
+    },
+    "floors": 2,
+    "security": {
+      "label": "Konteks · Pisangan • lurah menanggapi laporan curanmor 2025, Jan 2026",
+      "url": "https://publicindonesia.com/kasus-curanmor-tertinggi-di-ciputat-timur-lurah-pisangan-perkuat-sinergi-tekan-angka-kejahatan/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-jatimelati-197c5cca": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "flood": {
+      "label": "Konteks · Pondok Melati • Chandra Baru, Jatirahayu tergenang, 8 Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "security": {
+      "label": "Konteks keamanan · Jatimelati • patroli pencegahan curanmor dan tawuran, Agu 2025",
+      "url": "https://gantaritv.com/bhabinkamtibmas-pondok-gede-patroli-malam-imbau-warga-waspadai-curanmor-dan-tawuran/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-jatimelati-804877c9": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "flood": {
+      "label": "Konteks · Pondok Melati • Chandra Baru, Jatirahayu tergenang, 8 Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "security": {
+      "label": "Konteks keamanan · Jatimelati • patroli pencegahan curanmor dan tawuran, Agu 2025",
+      "url": "https://gantaritv.com/bhabinkamtibmas-pondok-gede-patroli-malam-imbau-warga-waspadai-curanmor-dan-tawuran/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-jatimelati-8687f3cd": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "flood": {
+      "label": "Konteks · Pondok Melati • Chandra Baru, Jatirahayu tergenang, 8 Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "security": {
+      "label": "Konteks keamanan · Jatimelati • patroli pencegahan curanmor dan tawuran, Agu 2025",
+      "url": "https://gantaritv.com/bhabinkamtibmas-pondok-gede-patroli-malam-imbau-warga-waspadai-curanmor-dan-tawuran/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-jatimelati-d892ff73": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "flood": {
+      "label": "Konteks · Pondok Melati • Chandra Baru, Jatirahayu tergenang, 8 Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "security": {
+      "label": "Konteks keamanan · Jatimelati • patroli pencegahan curanmor dan tawuran, Agu 2025",
+      "url": "https://gantaritv.com/bhabinkamtibmas-pondok-gede-patroli-malam-imbau-warga-waspadai-curanmor-dan-tawuran/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-jatimelati-e43371b4": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "flood": {
+      "label": "Konteks · Pondok Melati • Chandra Baru, Jatirahayu tergenang, 8 Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "security": {
+      "label": "Konteks keamanan · Jatimelati • patroli pencegahan curanmor dan tawuran, Agu 2025",
+      "url": "https://gantaritv.com/bhabinkamtibmas-pondok-gede-patroli-malam-imbau-warga-waspadai-curanmor-dan-tawuran/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-jatimulya-e1e1d739": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "commuteBasis": "KRL Tambun. Akses feeder sekitar 27 mnt.",
+    "commuteMinutes": 90,
+    "environment": {
+      "label": "Jatimulya • penataan jalan dan drainase, Jun 2025",
+      "url": "https://bekasikab.go.id/kelurahan-jatimulya-tertibkan-puluhan-bangli-dan-percepat-perbaikan-drainase"
+    },
+    "flood": {
+      "label": "Konteks · Jatimulya, Tambun Selatan • banjir, 18 Jan 2026",
+      "url": "https://www.antaranews.com/berita/5358574/diguyur-hujan-sehari-bekasi-dikepung-banjir"
+    },
+    "security": {
+      "label": "Konteks · Tambun Selatan • laporan percobaan curanmor di Jatimulya, Nov 2026",
+      "url": "https://www.koresponden.id/2026/11/polsek-tambun-selatan-amankan-terduga.html"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-jatimurni-676a2181": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "flood": {
+      "label": "Konteks · Pondok Melati • Chandra Baru, Jatirahayu tergenang, 8 Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "security": {
+      "label": "Konteks keamanan · Jatimelati • patroli pencegahan curanmor dan tawuran, Agu 2025",
+      "url": "https://gantaritv.com/bhabinkamtibmas-pondok-gede-patroli-malam-imbau-warga-waspadai-curanmor-dan-tawuran/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-jatimurni-886ba49f": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "flood": {
+      "label": "Konteks · Pondok Melati • Chandra Baru, Jatirahayu tergenang, 8 Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "security": {
+      "label": "Konteks keamanan · Jatimelati • patroli pencegahan curanmor dan tawuran, Agu 2025",
+      "url": "https://gantaritv.com/bhabinkamtibmas-pondok-gede-patroli-malam-imbau-warga-waspadai-curanmor-dan-tawuran/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-kayu-manis-692b09ce": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-kayu-manis-996847f0": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "environment": {
+      "label": "Cipinang Besar Selatan • perbaikan turap Kali Cipinang, Feb 2026",
+      "url": "https://m.beritajakarta.id/read/150690/pasukan-biru-perbaiki-turap-longsor-di-cipinang-besar-selatan"
+    },
+    "flood": {
+      "label": "Konteks · Bidara Cina • evakuasi banjir di empat RW, 4 Mar 2025",
+      "url": "https://www.beritajakarta.id/siaran-pers/wilayah/jakarta-timur/read/2805-SP-JAKTIM-03-2025"
+    },
+    "security": {
+      "label": "Konteks · Cipinang Besar Utara • kasus curanmor di kos, Mei 2026",
+      "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-lambangsari-e7ac63dc": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "commuteBasis": "KRL Tambun. Akses feeder sekitar 22 mnt.",
+    "commuteMinutes": 85,
+    "environment": {
+      "label": "Tambun Selatan • usulan peningkatan jalan lingkungan",
+      "url": "https://csr.bekasikab.go.id/csr/proyek/P20261013203946642"
+    },
+    "flood": {
+      "label": "Konteks · Jatimulya, Tambun Selatan • banjir, 18 Jan 2026",
+      "url": "https://www.antaranews.com/berita/5358574/diguyur-hujan-sehari-bekasi-dikepung-banjir"
+    },
+    "security": {
+      "label": "Konteks · Tambun Selatan • laporan percobaan curanmor di Jatimulya, Nov 2026",
+      "url": "https://www.koresponden.id/2026/11/polsek-tambun-selatan-amankan-terduga.html"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-paninggilan-d5497e68": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "environment": {
+      "label": "Ciledug • normalisasi Kali Wetan di Puri Kartika dimulai, Agu 2025",
+      "url": "https://tangerangkota.go.id/berita/detail/53881/pemkot-tangerang-responsif-tangani-banjir-normalisasi-kali-irigasi-puri-kartika-dimulai"
+    },
+    "flood": {
+      "label": "Konteks · Ciledug • tercakup laporan banjir Pemkot Tangerang, 8 Mar 2026",
+      "url": "https://tangerangkota.go.id/berita/detail/62697/hujan-deras-sejak-malam-petugas-gabungan-bergerak-cepat-tangani-banjir-di-sejumlah-wilayah-kota-tangerang"
+    },
+    "security": {
+      "label": "Konteks · Ciledug • Polsek mengungkap kasus pencurian motor, Agu 2026",
+      "url": "https://news.detik.com/berita/d-8635437/incar-motor-jemaah-salat-subuh-komplotan-curanmor-di-tangerang-dibekuk"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-paninggilan-fd1c1e60": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "environment": {
+      "label": "Ciledug • normalisasi Kali Wetan di Puri Kartika dimulai, Agu 2025",
+      "url": "https://tangerangkota.go.id/berita/detail/53881/pemkot-tangerang-responsif-tangani-banjir-normalisasi-kali-irigasi-puri-kartika-dimulai"
+    },
+    "flood": {
+      "label": "Konteks · Ciledug • tercakup laporan banjir Pemkot Tangerang, 8 Mar 2026",
+      "url": "https://tangerangkota.go.id/berita/detail/62697/hujan-deras-sejak-malam-petugas-gabungan-bergerak-cepat-tangani-banjir-di-sejumlah-wilayah-kota-tangerang"
+    },
+    "security": {
+      "label": "Konteks · Ciledug • Polsek mengungkap kasus pencurian motor, Agu 2026",
+      "url": "https://news.detik.com/berita/d-8635437/incar-motor-jemaah-salat-subuh-komplotan-curanmor-di-tangerang-dibekuk"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-paninggilan-utara-8813c86b": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "environment": {
+      "label": "Ciledug • normalisasi Kali Wetan di Puri Kartika dimulai, Agu 2025",
+      "url": "https://tangerangkota.go.id/berita/detail/53881/pemkot-tangerang-responsif-tangani-banjir-normalisasi-kali-irigasi-puri-kartika-dimulai"
+    },
+    "flood": {
+      "label": "Konteks · Ciledug • tercakup laporan banjir Pemkot Tangerang, 8 Mar 2026",
+      "url": "https://tangerangkota.go.id/berita/detail/62697/hujan-deras-sejak-malam-petugas-gabungan-bergerak-cepat-tangani-banjir-di-sejumlah-wilayah-kota-tangerang"
+    },
+    "security": {
+      "label": "Konteks · Ciledug • Polsek mengungkap kasus pencurian motor, Agu 2026",
+      "url": "https://news.detik.com/berita/d-8635437/incar-motor-jemaah-salat-subuh-komplotan-curanmor-di-tangerang-dibekuk"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-paninggilan-utara-910ca4d7": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "environment": {
+      "label": "Ciledug • normalisasi Kali Wetan di Puri Kartika dimulai, Agu 2025",
+      "url": "https://tangerangkota.go.id/berita/detail/53881/pemkot-tangerang-responsif-tangani-banjir-normalisasi-kali-irigasi-puri-kartika-dimulai"
+    },
+    "flood": {
+      "label": "Konteks · Ciledug • tercakup laporan banjir Pemkot Tangerang, 8 Mar 2026",
+      "url": "https://tangerangkota.go.id/berita/detail/62697/hujan-deras-sejak-malam-petugas-gabungan-bergerak-cepat-tangani-banjir-di-sejumlah-wilayah-kota-tangerang"
+    },
+    "security": {
+      "label": "Konteks · Ciledug • Polsek mengungkap kasus pencurian motor, Agu 2026",
+      "url": "https://news.detik.com/berita/d-8635437/incar-motor-jemaah-salat-subuh-komplotan-curanmor-di-tangerang-dibekuk"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-parigi-perigi-lama-362c04e7": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-parigi-perigi-lama-4a659f50": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "commuteBasis": "KRL Sudimara via Tanah Abang. Akses feeder sekitar 21 mnt.",
+    "commuteMinutes": 85,
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-parigi-perigi-lama-50a93122": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "commuteBasis": "KRL Sudimara via Tanah Abang. Akses feeder sekitar 22 mnt.",
+    "commuteMinutes": 85,
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-parigi-perigi-lama-50dbbe5c": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "commuteBasis": "KRL Sudimara via Tanah Abang. Akses feeder sekitar 28 mnt.",
+    "commuteMinutes": 90,
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-parigi-perigi-lama-63ac9abd": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "commuteBasis": "KRL Sudimara via Tanah Abang. Akses feeder sekitar 21 mnt.",
+    "commuteMinutes": 85,
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-parigi-perigi-lama-a09fe631": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-parigi-perigi-lama-a46fa50f": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-parigi-perigi-lama-ceb0c0d5": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "commuteBasis": "KRL Sudimara via Tanah Abang. Akses feeder sekitar 20 mnt.",
+    "commuteMinutes": 85,
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-parigi-perigi-lama-d631ef5a": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "commuteBasis": "KRL Sudimara via Tanah Abang. Akses feeder sekitar 21 mnt.",
+    "commuteMinutes": 85,
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-parigi-perigi-lama-f25c447a": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-parigi-perigi-lama-f2f8d5c8": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-parigi-perigi-lama-f6c34f11": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "commuteBasis": "KRL Sudimara via Tanah Abang. Akses feeder sekitar 20 mnt.",
+    "commuteMinutes": 85,
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-pisangan-6fb517f5": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pisangan • DLH melaporkan pembangunan taman di VCM, Nov 2025",
+      "url": "https://www.tangselpos.id/detail/41494/pemkot-pastikan-dua-taman-skala-besar-di-ciputat-timur-rampung-di-desember"
+    },
+    "flood": {
+      "label": "Konteks · Pisangan • banjir di Pondok Hijau RW 09, 4 Apr 2026",
+      "url": "https://koma.id/banjir-setinggi-1-meter-rendam-pondok-hijau-ciputat-warga-minta-perahu-karet/"
+    },
+    "security": {
+      "label": "Konteks · Pisangan • lurah menanggapi laporan curanmor 2025, Jan 2026",
+      "url": "https://publicindonesia.com/kasus-curanmor-tertinggi-di-ciputat-timur-lurah-pisangan-perkuat-sinergi-tekan-angka-kejahatan/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-pisangan-7866c3e1": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pisangan • DLH melaporkan pembangunan taman di VCM, Nov 2025",
+      "url": "https://www.tangselpos.id/detail/41494/pemkot-pastikan-dua-taman-skala-besar-di-ciputat-timur-rampung-di-desember"
+    },
+    "flood": {
+      "label": "Konteks · Pisangan • banjir di Pondok Hijau RW 09, 4 Apr 2026",
+      "url": "https://koma.id/banjir-setinggi-1-meter-rendam-pondok-hijau-ciputat-warga-minta-perahu-karet/"
+    },
+    "security": {
+      "label": "Konteks · Pisangan • lurah menanggapi laporan curanmor 2025, Jan 2026",
+      "url": "https://publicindonesia.com/kasus-curanmor-tertinggi-di-ciputat-timur-lurah-pisangan-perkuat-sinergi-tekan-angka-kejahatan/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-pisangan-940e4498": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "environment": {
+      "label": "Pisangan • DLH melaporkan pembangunan taman di VCM, Nov 2025",
+      "url": "https://www.tangselpos.id/detail/41494/pemkot-pastikan-dua-taman-skala-besar-di-ciputat-timur-rampung-di-desember"
+    },
+    "flood": {
+      "label": "Konteks · Pisangan • banjir di Pondok Hijau RW 09, 4 Apr 2026",
+      "url": "https://koma.id/banjir-setinggi-1-meter-rendam-pondok-hijau-ciputat-warga-minta-perahu-karet/"
+    },
+    "security": {
+      "label": "Konteks · Pisangan • lurah menanggapi laporan curanmor 2025, Jan 2026",
+      "url": "https://publicindonesia.com/kasus-curanmor-tertinggi-di-ciputat-timur-lurah-pisangan-perkuat-sinergi-tekan-angka-kejahatan/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-pisangan-baru-3fd83b9d": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 9 mnt.",
+    "commuteMinutes": 40,
+    "environment": {
+      "label": "Pisangan • DLH melaporkan pembangunan taman di VCM, Nov 2025",
+      "url": "https://www.tangselpos.id/detail/41494/pemkot-pastikan-dua-taman-skala-besar-di-ciputat-timur-rampung-di-desember"
+    },
+    "flood": {
+      "label": "Konteks · Ciputat Timur • banjir di Villa Cinere Mas, Mar 2025",
+      "url": "https://tribratanews.polri.go.id/article/polisi-bagikan-sembako-hingga-cairan-disinfektan-ke-warga-terdampak-banjir-di-ciputat"
+    },
+    "security": {
+      "label": "Konteks · Pisangan • lurah menanggapi laporan curanmor 2025, Jan 2026",
+      "url": "https://publicindonesia.com/kasus-curanmor-tertinggi-di-ciputat-timur-lurah-pisangan-perkuat-sinergi-tekan-angka-kejahatan/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-pisangan-baru-51cc269d": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Jatinegara. Akses jalan kaki sekitar 13 mnt.",
+    "commuteMinutes": 40,
+    "environment": {
+      "label": "Pisangan • DLH melaporkan pembangunan taman di VCM, Nov 2025",
+      "url": "https://www.tangselpos.id/detail/41494/pemkot-pastikan-dua-taman-skala-besar-di-ciputat-timur-rampung-di-desember"
+    },
+    "flood": {
+      "label": "Konteks · Ciputat Timur • banjir di Villa Cinere Mas, Mar 2025",
+      "url": "https://tribratanews.polri.go.id/article/polisi-bagikan-sembako-hingga-cairan-disinfektan-ke-warga-terdampak-banjir-di-ciputat"
+    },
+    "security": {
+      "label": "Konteks · Pisangan • lurah menanggapi laporan curanmor 2025, Jan 2026",
+      "url": "https://publicindonesia.com/kasus-curanmor-tertinggi-di-ciputat-timur-lurah-pisangan-perkuat-sinergi-tekan-angka-kejahatan/"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-pondok-pucung-6f2a126d": {
+    "career": {
+      "label": "Xumei • 2–3 tahun, sert. halal ↗",
+      "url": "https://ada4career.com/v/0766d327-20bc-41ca-bfd7-6db6c5a19f88"
+    },
+    "careerArea": "Tangsel–Jakarta Barat • regulatory dan halal",
+    "commuteBasis": "KRL Sudimara via Tanah Abang. Akses feeder sekitar 21 mnt.",
+    "commuteMinutes": 85,
+    "environment": {
+      "label": "Pondok Aren • akses Ceger Raya–Taman Mangu tergenang, Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "flood": {
+      "label": "Konteks · Pondok Aren • banjir di Jurangmangu Barat, 8 Mar 2026",
+      "url": "https://berita.tangerangselatankota.go.id/berita/bpbd-tangsel-catat-8-wilayah-tergenang-tersisa-dua-titik-hingga-siang-ini"
+    },
+    "security": {
+      "label": "Konteks · Pondok Pucung • keluhan warga soal curanmor, Agu 2025",
+      "url": "https://www.tangselpos.id/detail/38492/%40tangselpos"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-tanah-tinggi-20fe491f": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "commuteBasis": "KRL Tanah Tinggi via Duri. Akses jalan kaki sekitar 5 mnt.",
+    "commuteMinutes": 70,
+    "environment": {
+      "label": "Tanah Tinggi • normalisasi Bendung Tanah Tinggi 3, Mar 2025",
+      "url": "https://www.tangerangkota.go.id/berita/detail/50551/tingkatkan-mitigasi-banjir-pemkot-tangerang-normalisasi-saluran-bendung-tanah-tinggi-3"
+    },
+    "flood": {
+      "label": "Konteks · Tanah Tinggi • genangan Jl. Muhajirin Raya RW 10, 2023",
+      "url": "https://dpupr.tangerangkota.go.id/assets/uploads/informationpublic_20240425_1714030120.pdf"
+    },
+    "security": {
+      "label": "Konteks · Kec. Tangerang • percobaan curanmor di Buaran Indah, 4 Jan 2026",
+      "url": "https://www.cnnindonesia.com/nasional/20260105160309-12-1313745/gagal-gasak-motor-pencuri-lepas-tembakan-di-buaran-indah-tangerang"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-tanah-tinggi-6eb8c9d8": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "commuteBasis": "KRL Batu Ceper via Duri. Akses jalan kaki sekitar 21 mnt.",
+    "commuteMinutes": 85,
+    "environment": {
+      "label": "Tanah Tinggi • normalisasi Bendung Tanah Tinggi 3, Mar 2025",
+      "url": "https://www.tangerangkota.go.id/berita/detail/50551/tingkatkan-mitigasi-banjir-pemkot-tangerang-normalisasi-saluran-bendung-tanah-tinggi-3"
+    },
+    "flood": {
+      "label": "Konteks · Tanah Tinggi • genangan Jl. Muhajirin Raya RW 10, 2023",
+      "url": "https://dpupr.tangerangkota.go.id/assets/uploads/informationpublic_20240425_1714030120.pdf"
+    },
+    "security": {
+      "label": "Konteks · Kec. Tangerang • percobaan curanmor di Buaran Indah, 4 Jan 2026",
+      "url": "https://www.cnnindonesia.com/nasional/20260105160309-12-1313745/gagal-gasak-motor-pencuri-lepas-tembakan-di-buaran-indah-tangerang"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-tanah-tinggi-b9c50913": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "commuteBasis": "KRL Batu Ceper via Duri. Akses jalan kaki sekitar 22 mnt.",
+    "commuteMinutes": 85,
+    "environment": {
+      "label": "Tanah Tinggi • normalisasi Bendung Tanah Tinggi 3, Mar 2025",
+      "url": "https://www.tangerangkota.go.id/berita/detail/50551/tingkatkan-mitigasi-banjir-pemkot-tangerang-normalisasi-saluran-bendung-tanah-tinggi-3"
+    },
+    "flood": {
+      "label": "Konteks · Tanah Tinggi • genangan Jl. Muhajirin Raya RW 10, 2023",
+      "url": "https://dpupr.tangerangkota.go.id/assets/uploads/informationpublic_20240425_1714030120.pdf"
+    },
+    "security": {
+      "label": "Konteks · Kec. Tangerang • percobaan curanmor di Buaran Indah, 4 Jan 2026",
+      "url": "https://www.cnnindonesia.com/nasional/20260105160309-12-1313745/gagal-gasak-motor-pencuri-lepas-tembakan-di-buaran-indah-tangerang"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-pinhome-tanah-tinggi-e3043987": {
+    "career": {
+      "label": "Yoke • kontrak 5 bulan ↗",
+      "url": "https://id.jobstreet.com/id/job/96059947?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Tangerang • BPOM dan halal",
+    "commuteBasis": "KRL Tanah Tinggi via Duri. Akses jalan kaki sekitar 6 mnt.",
+    "commuteMinutes": 75,
+    "environment": {
+      "label": "Tanah Tinggi • normalisasi Bendung Tanah Tinggi 3, Mar 2025",
+      "url": "https://www.tangerangkota.go.id/berita/detail/50551/tingkatkan-mitigasi-banjir-pemkot-tangerang-normalisasi-saluran-bendung-tanah-tinggi-3"
+    },
+    "flood": {
+      "label": "Konteks · Tanah Tinggi • genangan Jl. Muhajirin Raya RW 10, 2023",
+      "url": "https://dpupr.tangerangkota.go.id/assets/uploads/informationpublic_20240425_1714030120.pdf"
+    },
+    "security": {
+      "label": "Konteks · Kec. Tangerang • percobaan curanmor di Buaran Indah, 4 Jan 2026",
+      "url": "https://www.cnnindonesia.com/nasional/20260105160309-12-1313745/gagal-gasak-motor-pencuri-lepas-tembakan-di-buaran-indah-tangerang"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-rukita-0080364b71be": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "commuteBasis": "KRL Kebayoran via Tanah Abang (2,91 km ke stasiun). Akses feeder diasumsikan 27 mnt.",
+    "commuteMinutes": 75,
+    "couples": true,
+    "environment": {
+      "label": "Blok M • MRT Jakarta mengumumkan lelang studi terminal, Mar 2026",
+      "url": "https://landingpage-dev.jakartamrt.co.id/sites/default/files/2026-03/Announcement%20Lelang%20Pengadaan%20FS%20Terminal%20Blok%20M_0.pdf"
+    },
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "security": {
+      "label": "Konteks · Blok M • respons polisi atas info pencopetan, Feb 2026",
+      "url": "https://www.poskota.co.id/2026/02/12/marak-copet-di-kawasan-blok-m-polisi-tingkatkan-patroli"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-rukita-a8854b6ad95a": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "couples": true,
+    "environment": {
+      "label": "Blok M • MRT Jakarta mengumumkan lelang studi terminal, Mar 2026",
+      "url": "https://landingpage-dev.jakartamrt.co.id/sites/default/files/2026-03/Announcement%20Lelang%20Pengadaan%20FS%20Terminal%20Blok%20M_0.pdf"
+    },
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "security": {
+      "label": "Konteks · Blok M • respons polisi atas info pencopetan, Feb 2026",
+      "url": "https://www.poskota.co.id/2026/02/12/marak-copet-di-kawasan-blok-m-polisi-tingkatkan-patroli"
+    },
+    "mosqueCoverage": "within-radius"
+  },
+  "sewa-rumah-2-kt-dekat-masjid-dan-sekolah-islam-ciracas": {
+    "career": {
+      "label": "Shunda • 3–5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/95846849?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Jakarta Pusat–Timur • QA dan regulatory",
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-rumah-griya-kenari-mas-cileungsi-kidul": {
+    "careerArea": "Cileungsi–Cibubur • QA/QC pangan",
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-rumah-kluster-keluarga-muslim-furnish-dkt-tol-grand-wisata-bekasi": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "no-pin"
+  },
+  "sewa-rumah-kontrakan-d-thani-house-jatiasih-bekasi": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "flood": {
+      "label": "Konteks · Jatiasih • banjir tercatat di Jatikramat dan Jatimekar, 8 Mar 2026",
+      "url": "https://radarbekasi.id/2026/03/09/bpbd-catat-10-titik-banjir-di-kota-bekasi/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-rumah-kontrakan-dekat-musholah-sukmajaya-depok": {
+    "careerArea": "Depok–Bogor • QA/QC dan food safety",
+    "commuteBasis": "KRL Depok via Manggarai (0,5 km ke stasiun). Akses jalan kaki diasumsikan 12 mnt.",
+    "commuteMinutes": 85,
+    "flood": {
+      "label": "Peta bahaya BNPB · rujukan wilayah",
+      "url": "https://inarisk.bnpb.go.id/"
+    },
+    "mosqueCoverage": "outside-radius"
+  },
+  "sewa-sewa-rumah-razbi-prima-mansion-dekat-grand-wisata-bekasi-timur-2-lanta": {
+    "career": {
+      "label": "Huabao • 5 tahun ↗",
+      "url": "https://id.jobstreet.com/id/job/96014611?origin=cardTitle&ref=search-standalone&type=standard"
+    },
+    "careerArea": "Bekasi–Cikarang • QA, regulatory dan R&D pangan",
+    "commuteBasis": "KRL Tambun (2,49 km ke stasiun). Akses feeder diasumsikan 25 mnt.",
+    "commuteMinutes": 90,
+    "environment": {
+      "label": "Tambun Selatan • usulan peningkatan jalan lingkungan",
+      "url": "https://csr.bekasikab.go.id/csr/proyek/P20261013203946642"
+    },
+    "flood": {
+      "label": "Konteks · Jatimulya, Tambun Selatan • banjir, 18 Jan 2026",
+      "url": "https://www.antaranews.com/berita/5358574/diguyur-hujan-sehari-bekasi-dikepung-banjir"
+    },
+    "security": {
+      "label": "Konteks · Tambun Selatan • laporan percobaan curanmor di Jatimulya, Nov 2026",
+      "url": "https://www.koresponden.id/2026/11/polsek-tambun-selatan-amankan-terduga.html"
+    },
+    "mosqueCoverage": "within-radius"
+  }
+}

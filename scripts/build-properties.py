@@ -591,6 +591,54 @@ def load_leads(path=ROOT / "research/leads.json"):
 
 
 RENTAL_TYPES = {"kontrakan", "rumah-sewa", "apartemen-sewa", "kos", "kos-keluarga", "lainnya"}
+RENTAL_BUDGET = 5_000_000
+
+
+def add_rental_review(rentals, path):
+    if not rentals or not path.exists():
+        return
+    by_id = {row["id"]: row for row in rentals["rentals"]}
+    for rid, details in json.loads(path.read_text()).items():
+        if rid not in by_id:
+            raise Invalid(f"rental-review: ID {rid} tidak ditemukan")
+        review = {}
+        for key, limit in (("floors", 100), ("commuteMinutes", 600)):
+            if key in details:
+                value = details[key]
+                if type(value) is not int or not 1 <= value <= limit:
+                    raise Invalid(f"rental-review: {key} di luar rentang")
+                review[key] = value
+        for key in ("couples", "children"):
+            if key in details:
+                value = details[key]
+                if type(value) is not bool:
+                    raise Invalid(f"rental-review: {key} harus boolean")
+                review[key] = value
+        for key in ("careerArea", "commuteBasis"):
+            if key in details:
+                review[key] = text(details[key], f"rental-review.{key}", 230)
+        if "mosqueCoverage" in details:
+            coverage = details["mosqueCoverage"]
+            if coverage not in ("within-radius", "outside-radius", "no-pin"):
+                raise Invalid("rental-review: mosqueCoverage tidak dikenal")
+            review["mosqueCoverage"] = coverage
+        for key in ("flood", "security", "environment", "career"):
+            if key in details:
+                item = details[key]
+                review[key] = {"label": text(item["label"], f"rental-review.{key}", 230),
+                               "url": url(item["url"], f"rental-review.{key}")}
+        by_id[rid]["review"] = review
+
+
+def apply_rental_budget(rentals, mosques):
+    if rentals is None:
+        return
+    active = [r for r in rentals["rentals"]
+              if r["rent"]["amount"] <= RENTAL_BUDGET * (12 if r["rent"]["period"] == "yearly" else 1)]
+    ids = {r["id"] for r in active}
+    rentals["rentals"] = active
+    for mosque in (mosques or {}).get("items", []):
+        mosque["relatedListings"] = [r for r in mosque["relatedListings"] if r["kind"] != "rental" or r["id"] in ids]
 
 
 def load_rentals(path=ROOT / "research/rentals.json"):
@@ -1064,6 +1112,8 @@ def build(
     if rental_locations_path is None and rentals_path.resolve() == (ROOT / "research/rentals.json").resolve():
         rental_locations_path = ROOT / "research/rental-locations.json"
     rentals = add_rental_locations(load_rentals(rentals_path), rental_locations_path, mosques)
+    if rentals_path.resolve() == (ROOT / "research/rentals.json").resolve():
+        add_rental_review(rentals, ROOT / "research/rental-review.json")
     sale_ads = load_sale_ads(sale_ads_path)
     max_km = source.get("maxDistanceKm", 3)
     features, dropped, seen = [], [], set()
@@ -1078,6 +1128,7 @@ def build(
             dropped.append(excluded_summary(entry, reason, islamic))
     features.sort(key=lambda f: f["id"])
     mosques = mosque_property_links(mosques, features, leads, rentals, sale_ads, mosque_links_path)
+    apply_rental_budget(rentals, mosques)
     included = {}
     for feature in features:
         corridor = feature["properties"]["corridor"]

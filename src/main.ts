@@ -43,6 +43,7 @@ import {
   rentalPopupHTML,
   rentalTermBadges,
 } from "./rental-map.ts";
+import { RentalTable } from "./rental-table.ts";
 import {
   checkedDate,
   distanceText,
@@ -82,10 +83,10 @@ const $ = <T extends HTMLElement = HTMLElement>(id: string): T =>
 const incidentKinds = Object.keys(INCIDENT_LAYERS) as IncidentKind[];
 
 $("app").innerHTML = `
-  <a class="skip-link" href="#results">Langsung ke daftar hunian</a>
+  <a class="skip-link" id="explorer-skip" href="#results">Langsung ke daftar hunian</a>
   <header class="masthead">
     <a class="brand" href="/" aria-label="Rumah Tinggal, beranda"><span class="brand-mark">${icon("home")}</span><span>rumah<span class="brand-light">tinggal</span><span class="brand-dot">.</span></span></a>
-    <nav class="main-nav" aria-label="Navigasi utama"><a class="active" href="#explorer">Jelajahi peta</a><a href="/riset">${icon("research")} Riset properti</a><button id="nav-saved">${icon("bookmark")} Listingku</button></nav>
+    <nav class="main-nav" aria-label="Navigasi utama"><a class="active" href="#explorer">Jelajahi peta</a><a href="/?koleksi=sewa&tampilan=tabel" id="nav-rental-table">Tabel sewa</a><a href="/riset">${icon("research")} Riset properti</a><button id="nav-saved">${icon("bookmark")} Listingku</button></nav>
     <div class="header-right"><span class="coverage">Jabodetabek <span class="live-dot"></span></span><button class="button login-button" id="account-button"><span class="google-g" aria-hidden="true">G</span><span id="account-label">Masuk dengan Google</span></button></div>
   </header>
   <main id="explorer" class="explorer">
@@ -100,7 +101,8 @@ $("app").innerHTML = `
         <div class="filter-grid" id="purchase-filters"><label>Anggaran beli<select id="budget" aria-label="Anggaran maksimum"><option value="0">Semua anggaran</option><option value="500000000">Hingga Rp 500 juta</option><option value="750000000">Hingga Rp 750 juta</option><option value="1000000000">Hingga Rp 1 miliar</option></select></label><label>Jenis hunian<select id="housing-type" aria-label="Jenis hunian"><option value="Semua">Semua jenis</option><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label></div>
         <div class="commute-filter" id="commute-filter">${icon("train")}<label for="station-distance">Jarak ke stasiun KRL</label><select id="station-distance" aria-label="Jarak maksimum ke stasiun KRL"><option value="0">Bebas</option><option value="1">≤ 1 km</option><option value="3">≤ 3 km</option><option value="5">≤ 5 km</option></select></div>
         <div class="data-tabs" aria-label="Koleksi hunian"><button id="demo-tab" class="active" aria-pressed="true">Contoh hunian <span>8</span></button><button id="private-tab" aria-pressed="false">${icon("bookmark")} Listingku</button><button id="pins-tab" aria-pressed="false">${icon("pin")} Pin tempat</button><button id="research-tab" aria-pressed="false">${icon("research")} Riset <span id="research-count">…</span></button><button id="rentals-tab" aria-pressed="false" disabled>${icon("home")} Sewa · kos, kontrakan & apartemen <span id="rentals-count">…</span></button></div>
-        <div id="rental-filters" class="rental-filters" hidden><div class="rental-type-filters" role="group" aria-label="Jenis sewa">${RENTAL_MAP_GROUPS.map((group) => `<button type="button" class="chip" data-rental-filter="${group.id}" aria-pressed="true" style="--rental-color:${group.color}" ${group.id === "lainnya" ? "hidden" : ""}><i class="rental-kind-dot"></i>${group.label}</button>`).join("")}</div><label>Sewa per bulan<select id="rental-budget" aria-label="Sewa maksimum per bulan"><option value="0">Semua anggaran sewa</option><option value="1000000">Hingga Rp 1 juta</option><option value="2000000">Hingga Rp 2 juta</option><option value="3500000">Hingga Rp 3,5 juta</option><option value="4000000">Hingga Rp 4 juta</option><option value="5000000">Hingga Rp 5 juta</option><option value="6000000">Hingga Rp 6 juta</option><option value="10000000">Hingga Rp 10 juta</option></select></label><label>Fokus masjid Ihrish<select id="rental-mosque" aria-label="Fokus masjid Ihrish"></select></label><label>Dapur<select id="rental-kitchen" aria-label="Fasilitas dapur"><option value="all">Semua, termasuk yang belum diketahui</option><option value="private">Dalam unit menurut iklan</option></select></label></div>
+        <button id="open-rental-table" class="button rent-table-entry" type="button">Buka tabel sewa</button>
+        <div id="rental-filters" class="rental-filters" hidden><div class="rental-type-filters" role="group" aria-label="Jenis sewa">${RENTAL_MAP_GROUPS.map((group) => `<button type="button" class="chip" data-rental-filter="${group.id}" aria-pressed="true" style="--rental-color:${group.color}" ${group.id === "lainnya" ? "hidden" : ""}><i class="rental-kind-dot"></i>${group.label}</button>`).join("")}</div><label>Sewa per bulan<select id="rental-budget" aria-label="Sewa maksimum per bulan"><option value="0">Hingga Rp 5 juta</option><option value="1000000">Hingga Rp 1 juta</option><option value="2000000">Hingga Rp 2 juta</option><option value="3500000">Hingga Rp 3,5 juta</option><option value="4000000">Hingga Rp 4 juta</option></select></label><label>Fokus masjid Ihrish<select id="rental-mosque" aria-label="Fokus masjid Ihrish"></select></label><label>Dapur<select id="rental-kitchen" aria-label="Fasilitas dapur"><option value="all">Semua, termasuk yang belum diketahui</option><option value="private">Dalam unit menurut iklan</option></select></label></div>
       </div>
       <section id="results" class="results" tabindex="-1" aria-label="Hasil pencarian">
         <div class="results-toolbar"><div><strong id="result-count">8 hunian</strong><span id="result-scope"> di Jabodetabek</span></div><select id="sort" aria-label="Urutkan hunian"><option value="recommended">Rekomendasi</option><option value="price">Harga terendah</option><option value="station">Terdekat KRL</option></select></div>
@@ -142,8 +144,9 @@ $("app").innerHTML = `
       <div class="map-bottom-note">${icon("info")} Jarak stasiun dihitung garis lurus, bukan rute berjalan kaki.</div>
       <div id="detail-card" class="detail-card" hidden></div>
     </section>
+    <section class="rent-table-panel" id="rental-table" aria-labelledby="rent-table-title" hidden></section>
   </main>
-  <div class="mobile-view"><button id="mobile-map">${icon("pin")} Peta</button><button id="mobile-list" class="active">${icon("home")} Daftar</button></div>
+  <div class="mobile-view"><button id="mobile-map">${icon("pin")} Peta</button><button id="mobile-list" class="active">${icon("home")} Daftar</button><button id="mobile-rental-table" type="button">Tabel sewa</button></div>
   <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><span class="eyebrow">TRANSPARANSI DATA</span><button class="icon-button" data-close="sources-dialog" aria-label="Tutup sumber data">${icon("close")}</button></div><h2 id="sources-title">Sumber & catatan data</h2><div class="source-block"><h3>Wilayah Jabodetabek</h3><p>14 batas kabupaten/kota dari geometri Nafkah / HDX COD-AB, disederhanakan untuk gambaran wilayah. Batas ini tidak cukup rinci untuk memastikan alamat atau batas bidang tanah. Kepulauan Seribu sangat disederhanakan pada sumber.</p><a href="https://gitlab.com/adenaufal/nafkah" target="_blank" rel="noopener noreferrer">Nafkah · Ade Naufal · CC BY 4.0 ↗</a></div><div class="source-block"><h3>KRL, MRT, LRT & TransJakarta</h3><p>Snapshot geografis OpenStreetMap, 29 Oktober 2026: 80 titik KRL, 13 MRT, 29 LRT, serta 251 titik halte pada 14 koridor utama BRT TransJakarta. LRT mencakup LRT Jakarta dan LRT Jabodebek. TransJakarta belum mencakup pengumpan/Mikrotrans dan awalnya disembunyikan.</p><p>Geometri mengikuti rel/jalan yang dipetakan; titik stasiun/halte bukan pintu masuk terverifikasi. Data ini bukan jadwal, tarif, status operasi, atau waktu tempuh aktual. Periksa perjalanan ke operator.</p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL ↗</a></div><div class="source-block"><h3>Listing & jarak</h3><p>Semua hunian pada tab Contoh hunian adalah data ilustratif, bukan iklan atau penawaran properti. Listingku berisi data pribadi yang kamu masukkan sendiri. Jarak ke KRL adalah garis lurus ke titik stasiun terdekat, bukan akses pintu masuk atau rute berjalan.</p></div><div class="source-block"><h3>Peta jalan & bangunan</h3><p>Peta vektor OpenFreeMap, skema © OpenMapTiles, data © OpenStreetMap contributors. Bangunan dapat disembunyikan terpisah; jalan tetap tampil. Ikon masjid & sekolah sekitar berasal dari titik POI tile yang sama (zoom 14 ke atas). Cakupan bangunan, masjid, dan sekolah mengikuti data OSM dan tidak membuktikan status operasi.</p><a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">OpenFreeMap · OpenMapTiles · OpenStreetMap ↗</a></div><div class="source-block"><h3>Masjid dengan kajian · Ihrish</h3><p>Toggle Kajian Ihrish menampilkan pin masjid dari snapshot 31 Oktober 2026, terpisah dari masjid & sekolah OpenStreetMap. Keduanya awalnya disembunyikan. Jadwal waktu, kategori, dan pembatalan tersedia dari tujuh profil yang telah diperiksa; masjid lain menautkan jadwal sumber. Snapshot bukan konfirmasi kegiatan saat ini. Jarak transportasi dan hunian adalah garis lurus, sedangkan iklan tanpa titik hanya dihubungkan sampai kawasan.</p><a href="https://ihrish.app/peta/?kapan=semua" target="_blank" rel="noopener noreferrer">Sumber peta & jadwal Ihrish ↗</a></div><div class="source-block"><h3>Riset properti</h3><p>Kandidat proyek nyata di sekitar KRL, MRT, dan LRT. Harga dan status mengikuti sumber bertanggal; bukti yang belum lengkap diberi label sebagian terverifikasi. Nama developer dari sumber publik belum membuktikan kepemilikan unit. Jarak dihitung aplikasi secara garis lurus ke titik stasiun OSM. Bukan iklan atau penawaran; konfirmasi ke developer.</p><a href="/riset#metode">Metode dan bukti lengkap ↗</a></div><div class="source-block"><h3>Pencarian tempat</h3><p>Hasil pencarian tempat berasal dari Photon (komoot) berbasis OpenStreetMap, dibatasi wilayah Jabodetabek. Pin tempat yang kamu simpan hanya dapat dilihat akunmu.</p><a href="https://photon.komoot.io/" target="_blank" rel="noopener noreferrer">Photon · © OpenStreetMap contributors ↗</a></div><p class="fine-print">Peta dasar OpenFreeMap · © OpenMapTiles · © OpenStreetMap contributors. Tampilan terinspirasi pola peta Nafkah; implementasi aplikasi dibuat untuk Rumah Tinggal.</p></dialog>
   <dialog id="listing-dialog" aria-labelledby="listing-title"><div class="dialog-header"><span class="eyebrow">KOLEKSI PRIBADIMU</span><button class="icon-button" data-close="listing-dialog" aria-label="Tutup tambah listing">${icon("close")}</button></div><h2 id="listing-title">Tambahkan calon rumah</h2><p class="dialog-intro">Simpan lokasi, harga beli, dan catatan survei. Hanya akunmu yang dapat melihatnya.</p><form id="listing-form"><label>Nama hunian<input name="title" required maxlength="160" placeholder="Contoh: Rumah dekat Stasiun Pondok Ranji"/></label><div class="form-grid"><label>Wilayah<select name="area">${AREAS.map((area) => `<option>${area}</option>`).join("")}</select></label><label>Kecamatan / lingkungan<input name="district" required maxlength="100"/></label><label>Harga beli (Rp)<input name="price" type="number" min="1" max="1000000000000" required/></label><label>Jenis<select name="type"><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label><label>Kamar tidur<input name="bedrooms" type="number" min="0" max="30" value="2" required/></label><label>Luas tanah / unit (m²)<input name="landArea" type="number" min="1" max="100000" required/></label><label>Latitude<input id="form-lat" name="lat" type="number" step="any" min="-6.85" max="-5.75" required value="-6.3"/></label><label>Longitude<input id="form-lng" name="lng" type="number" step="any" min="106.3" max="107.31" required value="106.8"/></label></div><button type="button" id="pick-map" class="text-button">${icon("pin")} Pilih koordinat di peta</button><label>Tautan sumber (opsional)<input name="sourceUrl" type="url" maxlength="2000" placeholder="https://…"/></label><label>Catatan survei (opsional)<textarea name="notes" maxlength="3000" rows="3" placeholder="Akses jalan, kondisi lingkungan, hal yang perlu dicek…"></textarea></label><p id="form-error" class="form-error" role="alert"></p><button class="button primary wide" type="submit">Simpan ke Listingku ${icon("arrow")}</button></form></dialog>
   <dialog id="pin-dialog" aria-labelledby="pin-title"><div class="dialog-header"><span class="eyebrow">TEMPAT PENTING</span><button class="icon-button" data-close="pin-dialog" aria-label="Tutup tambah pin">${icon("close")}</button></div><h2 id="pin-title">Tandai tempat penting</h2><p class="dialog-intro">Masjid, sekolah, tempat kerja, atau tempat lain yang sering kamu datangi. Hanya akunmu yang dapat melihatnya.</p><form id="pin-form"><label>Nama tempat<input name="name" required maxlength="160" placeholder="Contoh: Masjid Al-Ikhlas"/></label><fieldset class="pin-categories"><legend>Ikon / kategori</legend>${PIN_CATEGORIES.map((category, index) => `<label class="pin-category" style="--pin:${PIN_STYLES[category].color}"><input type="radio" name="category" value="${category}" ${index === 0 ? "checked" : ""}/><span>${pinIcon(category, 18)}</span>${PIN_STYLES[category].label}</label>`).join("")}</fieldset><div class="form-grid"><label>Latitude<input id="pin-lat" name="lat" type="number" step="any" min="-6.85" max="-5.75" required value="-6.3"/></label><label>Longitude<input id="pin-lng" name="lng" type="number" step="any" min="106.3" max="107.31" required value="106.8"/></label></div><button type="button" id="pin-pick-map" class="text-button">${icon("pin")} Pilih titik di peta</button><label>Catatan (opsional)<textarea name="notes" maxlength="2000" rows="2" placeholder="Jam buka, akses jalan, alasan penting…"></textarea></label><p id="pin-error" class="form-error" role="alert"></p><button class="button primary wide" type="submit">Simpan pin ${icon("arrow")}</button></form></dialog>
@@ -166,6 +169,7 @@ let researchPopulation: PopulationContext | null = null;
 let researchPlanned: PlannedContext | null = null;
 let researchListings: Listing[] = [];
 let rentalKinds = new Set<RentalMapKind>();
+const tableMapKinds = new Set<RentalMapKind>();
 let rentalMosqueFilter = "all";
 let selectedRentalIds: string[] = [];
 let rentalFitPending = false;
@@ -183,6 +187,28 @@ const listingsToggle = $<HTMLInputElement>("listings-toggle");
 let pickingPoint: "listing" | "pin" | undefined;
 let toastTimer: ReturnType<typeof setTimeout>;
 let exporting = false;
+const rentalTable = new RentalTable($("rental-table"), $("explorer"), {
+  change: render,
+  select: (rental) => {
+    if (!rental.location || !map) {
+      toast(
+        rental.location
+          ? "Peta interaktif belum tersedia."
+          : "Pin hunian belum diketahui. Buka sumber iklan untuk mengecek lokasinya.",
+      );
+      return;
+    }
+    selectRentals([rental]);
+  },
+  close: () => {
+    rentalTable.open = false;
+    setMobileView("list");
+    render();
+    $("open-rental-table").focus({ preventScroll: true });
+  },
+  reset: resetFilters,
+  resize: () => map?.resize(),
+});
 
 function toast(message: string): void {
   $("toast").textContent = message;
@@ -233,6 +259,7 @@ function filteredListings(): Listing[] {
 }
 
 function filteredRentals(): ResearchRental[] {
+  if (rentalTable.open) return rentalTable.filtered(rentalMosqueFilter);
   return filterMapRentals(researchData?.rentals?.rentals ?? [], {
     kinds: rentalKinds,
     area: selectedArea,
@@ -244,8 +271,9 @@ function filteredRentals(): ResearchRental[] {
   });
 }
 
-function renderRentalControls(): void {
+function renderRentalControls(activeCount = filteredRentals().length): void {
   const rentals = researchData?.rentals?.rentals ?? [];
+  const visibleKinds = rentalTable.open ? tableMapKinds : rentalKinds;
   const mosqueOptions = `<option value="all">Semua lokasi sewa</option><option value="near">Sekitar masjid Ihrish · ≤ 1,5 km</option>${kajianMosques.map((mosque) => `<option value="${esc(mosque.id)}">${esc(mosque.name)} (${rentals.filter((rental) => rental.nearbyMosques?.some((item) => item.id === mosque.id)).length} sewa)</option>`).join("")}`;
   for (const id of ["rental-mosque", "rental-mosque-map"]) {
     const select = $<HTMLSelectElement>(id);
@@ -258,16 +286,14 @@ function renderRentalControls(): void {
     ? "Daftar dan peta sewa dengan sumber serta ketelitian lokasi"
     : "Data sewa belum tersedia. Coba muat ulang halaman.";
   $("rental-layer-count").textContent =
-    collection === "rentals"
-      ? `${filteredRentals().length} aktif`
-      : String(rentals.length);
+    collection === "rentals" ? `${activeCount} aktif` : String(rentals.length);
   for (const group of RENTAL_MAP_GROUPS) {
     const count = rentals.filter(
       (rental) => rentalMapKind(rental) === group.id,
     ).length;
     const input = $<HTMLInputElement>(`rental-toggle-${group.id}`);
     input.disabled = !count;
-    input.checked = collection === "rentals" && rentalKinds.has(group.id);
+    input.checked = collection === "rentals" && visibleKinds.has(group.id);
     $(`rental-count-${group.id}`).textContent = String(count);
     if (input.parentElement)
       input.parentElement.hidden = group.id === "lainnya" && !count;
@@ -314,6 +340,15 @@ function renderRentalCards(rentals: ResearchRental[]): void {
 
 function render(): void {
   const isRental = collection === "rentals";
+  const tableVisible = isRental && rentalTable.open;
+  rentalTable.show(tableVisible);
+  $("nav-rental-table").classList.toggle("active", tableVisible);
+  document
+    .querySelector(".main-nav a[href='#explorer']")
+    ?.classList.toggle("active", !tableVisible);
+  $<HTMLAnchorElement>("explorer-skip").href = tableVisible
+    ? "#rent-table-scroll"
+    : "#results";
   document.querySelector(".sidebar")?.classList.toggle("is-rentals", isRental);
   document
     .querySelector(".map-panel")
@@ -334,8 +369,11 @@ function render(): void {
     $<HTMLSelectElement>("sort").value = "recommended";
   const listings = filteredListings();
   const rentals = isRental ? filteredRentals() : [];
+  const mappedRentals = tableVisible
+    ? rentals.filter((rental) => tableMapKinds.has(rentalMapKind(rental)))
+    : rentals;
   const count = isRental ? rentals.length : listings.length;
-  renderRentalControls();
+  renderRentalControls(mappedRentals.length);
   const canExportPrivate = collection === "private" && Boolean(getUser());
   $("listing-export-tools").hidden =
     !canExportPrivate && collection !== "research" && !isRental;
@@ -374,7 +412,10 @@ function render(): void {
   $("pins-tab").setAttribute("aria-pressed", String(collection === "pins"));
   $("sort").hidden = collection === "pins";
   if (isRental) {
-    renderRentalCards(rentals);
+    if (tableVisible) {
+      $("listing-list").replaceChildren();
+      rentalTable.update(rentals, selectedRentalIds);
+    } else renderRentalCards(rentals);
   } else if (collection === "pins") {
     $("result-count").textContent = `${pins.length} pin`;
     $("result-scope").textContent = " tempat penting";
@@ -429,10 +470,11 @@ function render(): void {
   ) {
     selectedRentalIds = [];
     map?.closeRental();
+    rentalTable.highlight([]);
   }
-  void map?.updateRentals(rentals, selectRentals);
+  void map?.updateRentals(mappedRentals, selectRentals);
   void map?.showRentalConnections(
-    rentals,
+    mappedRentals,
     kajianMosques,
     isRental
       ? kajianMosques.find((mosque) => mosque.id === rentalMosqueFilter)
@@ -644,6 +686,7 @@ function showPinForm(
 function clearSelection(): void {
   selectedListing = undefined;
   selectedRentalIds = [];
+  rentalTable.highlight([]);
   $("detail-card").hidden = true;
   void map?.clearFocus();
   map?.closeMosque();
@@ -678,6 +721,7 @@ function selectRentals(rentals: ResearchRental[]): void {
   clearSelection();
   rentalFitPending = false;
   selectedRentalIds = rentals.map((rental) => rental.id);
+  rentalTable.highlight(selectedRentalIds);
   const content = document.createElement("div");
   content.innerHTML = rentalPopupHTML(rentals, kajianMosques);
   for (const button of content.querySelectorAll<HTMLButtonElement>(
@@ -687,7 +731,7 @@ function selectRentals(rentals: ResearchRental[]): void {
   if (matchMedia("(max-width: 760px)").matches) {
     $<HTMLDetailsElement>("map-layer-panel").open = false;
     $<HTMLDetailsElement>("rental-layers").open = false;
-    setMobileView("map");
+    if (!rentalTable.open) setMobileView("map");
     map.resize();
   }
   void map.openRental(point, content);
@@ -695,6 +739,7 @@ function selectRentals(rentals: ResearchRental[]): void {
 
 function fitRentalResults(): void {
   rentalFitPending =
+    !rentalTable.open &&
     matchMedia("(max-width: 760px)").matches &&
     !document.body.classList.contains("show-map");
   if (!rentalFitPending)
@@ -709,9 +754,9 @@ function selectMosque(id: string): void {
   const context = researchData?.mosques;
   if (!mosque || !context || !map) return;
   rentalMosqueFilter = mosque.id;
+  selectedRentalIds = [];
   if (collection === "rentals") render();
   else renderRentalControls();
-  selectedRentalIds = [];
   map.closeRental();
   $<HTMLInputElement>("kajian-toggle").checked = true;
   void map.showKajian(true);
@@ -1172,6 +1217,12 @@ $("research-tab").onclick = () => {
   render();
 };
 function setRentalKind(kind: RentalMapKind, visible: boolean): void {
+  if (collection === "rentals" && rentalTable.open) {
+    if (visible) tableMapKinds.add(kind);
+    else tableMapKinds.delete(kind);
+    render();
+    return;
+  }
   if (collection !== "rentals") {
     rentalKinds = new Set();
     showRentalMosques();
@@ -1209,6 +1260,20 @@ function openRentals(): void {
   fitRentalResults();
 }
 $("rentals-tab").onclick = openRentals;
+function openRentalTable(): void {
+  rentalTable.open = true;
+  $<HTMLDetailsElement>("map-layer-panel").open = false;
+  $<HTMLDetailsElement>("rental-layers").open = false;
+  openRentals();
+  map?.resize();
+}
+$("open-rental-table").onclick = openRentalTable;
+$("mobile-rental-table").onclick = openRentalTable;
+$("nav-rental-table").onclick = (event) => {
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  openRentalTable();
+};
 function showRentalMosques(): void {
   if (!kajianMosques.length) return;
   $<HTMLInputElement>("kajian-toggle").checked = true;
@@ -1331,8 +1396,14 @@ document.addEventListener("keydown", (event) => {
     !document.querySelector("dialog[open]")
   ) {
     event.preventDefault();
-    setMobileView("list");
-    $("search").focus();
+    if (collection === "rentals" && rentalTable.open)
+      $("rental-table")
+        .querySelector<HTMLInputElement>('input[name="query"]')
+        ?.focus();
+    else {
+      setMobileView("list");
+      $("search").focus();
+    }
   }
   if (event.key === "Escape" && selectedListing) {
     clearSelection();
@@ -1432,6 +1503,11 @@ async function start(): Promise<void> {
       ];
     }),
   ];
+  rentalTable.setData(
+    researchData?.rentals?.rentals ?? [],
+    transportStops,
+    kajianMosques,
+  );
   if (
     regionsResult.status === "rejected" ||
     transitResult.status === "rejected" ||
@@ -1490,7 +1566,10 @@ async function start(): Promise<void> {
     if (listing) selectListing(listing);
     else render();
   } else if (params.get("koleksi") === "listingku") openPrivate();
-  else if (params.get("koleksi") === "sewa") openRentals();
+  else if (params.get("koleksi") === "sewa") {
+    if (params.get("tampilan") === "tabel") openRentalTable();
+    else openRentals();
+  }
   const rentalId = params.get("sewa");
   if (rentalId) {
     openRentals();

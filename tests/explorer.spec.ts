@@ -1020,6 +1020,107 @@ test("starts with hunian off and keeps the layer usable with streets, KRL, and l
   await expect(page.locator(".price-pin")).toHaveCount(0);
 });
 
+test("uses the bottom rental table for searching, sorting, freezing and opening map pins", async ({
+  page,
+}) => {
+  const fixture = structuredClone(researchFixture);
+  const base = fixture.metadata.rentals.rentals[0];
+  const added = [
+    ...Array.from({ length: 43 }, (_, i) => ({
+      ...base,
+      id: `tabel-uji-${i}`,
+      title: `Hunian Tabel ${i}`,
+      rent: { ...base.rent, amount: 1_000_000 + i * 37_000, period: "monthly" },
+    })),
+    {
+      ...base,
+      id: "tabel-batas",
+      title: "Rumah harga batas",
+      rent: { ...base.rent, period: "yearly", amount: 60_000_000 },
+      location: {
+        lat: -6.197,
+        lng: 106.843,
+        precision: "approximate",
+        label: "Titik sewa uji",
+        url: "https://portal.example.invalid/pin",
+        method: "Peta uji",
+        note: "Lokasi fiktif untuk pengujian",
+        checkedAt: "2026-11-26",
+      },
+    },
+    {
+      ...base,
+      id: "tabel-mahal",
+      title: "Rumah melebihi batas",
+      rent: { ...base.rent, period: "yearly", amount: 60_000_001 },
+    },
+  ];
+  const rentals = fixture.metadata.rentals;
+  await page.route("**/data/properties.geojson", (route) =>
+    route.fulfill({
+      json: {
+        ...fixture,
+        metadata: {
+          ...fixture.metadata,
+          rentals: { ...rentals, rentals: [...rentals.rentals, ...added] },
+        },
+      },
+    }),
+  );
+  await page.goto("/?koleksi=sewa&tampilan=tabel");
+  const panel = page.locator("#rental-table");
+  const grid = panel.getByRole("table");
+  const scroll = panel.locator(".rent-table-scroll");
+  const rows = grid.locator("tbody tr[data-rental]");
+  await expect(panel).toBeVisible();
+  await expect(page.locator(".sidebar")).toBeHidden();
+  await expect(rows).toHaveCount(40);
+  const map = page.locator("#map");
+  await expect(map).toHaveAttribute("data-rental-features", "0");
+  const mapLayers = page.locator("#rental-layers");
+  await mapLayers.locator("summary").click();
+  const mapHouses = mapLayers.getByLabel("Sewa kontrakan");
+  await mapHouses.check();
+  await expect(map).toHaveAttribute("data-rental-features", "1");
+  await expect(rows).toHaveCount(40);
+  await mapHouses.uncheck();
+  await mapLayers.locator("summary").click();
+  await panel.getByRole("button", { name: "Halaman berikutnya" }).click();
+  await expect(panel.locator("[data-table-count]")).toContainText("41–");
+  await grid.getByRole("button", { name: "Setara / bulan" }).click();
+  await expect(rows.first()).toContainText("Rumah harga batas");
+  await panel.getByLabel("Bekukan kolom kiri").selectOption("2");
+  const frozen = rows.first().locator('td[data-col="1"]');
+  const firstX = (await frozen.boundingBox())?.x;
+  await scroll.evaluate((element) => {
+    element.scrollLeft = 450;
+    element.scrollTop = 110;
+  });
+  await expect(grid.locator("th").first()).toHaveCSS("position", "sticky");
+  await expect(frozen).toHaveCSS("position", "sticky");
+  expect((await frozen.boundingBox())?.x).toBeCloseTo(firstX ?? 0, 0);
+
+  const handle = panel.getByRole("separator");
+  const height = Number(await handle.getAttribute("aria-valuenow"));
+  await handle.press("ArrowUp");
+  await expect(handle).toHaveAttribute("aria-valuenow", String(height + 24));
+  const search = panel.getByRole("searchbox");
+  await search.fill("melebihi batas");
+  await expect(panel.locator("[data-table-count]")).toHaveText("0 penawaran");
+  await search.fill("rumah harga batas");
+  await expect(rows).toHaveCount(1);
+  await rows.first().getByRole("button", { name: "Rumah harga batas" }).click();
+  await expect(page.getByTestId("rental-popup")).toContainText(
+    "Rumah harga batas",
+  );
+  await expect(rows.first()).toHaveClass("is-selected");
+  await panel.getByRole("button", { name: "Reset filter" }).click();
+  await expect(rows).toHaveCount(40);
+  await panel.getByRole("button", { name: "Ke kartu" }).click();
+  await expect(panel).toBeHidden();
+  await expect(page.locator(".sidebar")).toBeVisible();
+});
+
 test("shows historical flood and crime reports in independent opt-in map layers", async ({
   page,
 }) => {

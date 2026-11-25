@@ -65,7 +65,6 @@ const SALE_STEPS = [
 ];
 const RENT_STEPS = [
   500_000, 1_000_000, 1_500_000, 2_000_000, 3_000_000, 4_000_000, 5_000_000,
-  6_000_000,
 ];
 const $ = <T extends HTMLElement = HTMLElement>(id: string): T =>
   document.getElementById(id) as T;
@@ -138,7 +137,7 @@ $("app").innerHTML = `
         <label>Cari sewa<input id="rental-search" type="search" placeholder="Lokasi, stasiun, masjid, sekolah…"/></label>
         <label id="rental-type-control">Jenis sewa<select id="rental-type"><option value="">Semua jenis</option><option value="house">Kontrakan / rumah sewa</option><option value="apartment">Apartemen</option></select></label>
         <label>Sewa per bulan dari<select id="rental-budget-min">${budgetOptions(RENT_STEPS, "Rp 0", rentMoney)}</select></label>
-        <label>sampai<select id="rental-budget-max">${budgetOptions(RENT_STEPS, "Tanpa batas", rentMoney)}</select></label>
+        <label>sampai<select id="rental-budget-max">${budgetOptions(RENT_STEPS, "Maksimal Rp 5 juta", rentMoney)}</select></label>
       </div>
       <div class="results-toolbar"><strong id="rental-count" aria-live="polite"></strong></div>
       <div id="rental-list" class="research-list" aria-live="polite"></div>

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "parallelProviders": 2,
-  "note": "Pencarian lintas 72 masjid Ihrish Jabodetabek; prioritas kedekatan KRL dan jumlah kegiatan pada snapshot sumber. Maksimal dua situs bersamaan, dua detail per masjid/provider. Tarif hingga Rp4 juta/bulan didahulukan, hingga Rp6 juta alternatif; harga tahunan tetap kontrak tahunan.",
+  "note": "Penemuan dekat 72 masjid Ihrish dan angkutan MRT, KRL, LRT serta TransJakarta menuju SCBD. Plafon Rp5 juta per bulan ekuivalen dan dua detail per target/provider.",
   "providers": {
     "pinhome": {
       "enabled": true,
