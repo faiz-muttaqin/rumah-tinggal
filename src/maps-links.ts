@@ -16,8 +16,10 @@ function mapsUrl(
   return url.toString();
 }
 
-export function googleMapsLocation(location: MapCoordinates): string {
-  return mapsUrl("search/", { query: coordinates(location) });
+export function googleMapsLocation(location: MapCoordinates | string): string {
+  return mapsUrl("search/", {
+    query: typeof location === "string" ? location : coordinates(location),
+  });
 }
 
 export function googleMapsDirections(destination: MapCoordinates): string {

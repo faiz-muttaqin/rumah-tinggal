@@ -1183,6 +1183,56 @@ test("shows historical flood and crime reports in independent opt-in map layers"
   await expect(page.locator("#listings-toggle")).not.toBeChecked();
 });
 
+test("searches dated location reports and opens only mapped public references", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/?berita=banjir&lokasi=Suwardi&cakupan=ruas");
+  const dialog = page.getByRole("dialog", { name: "Berita lokasi" });
+  const reports = dialog.getByRole("article");
+  await expect(dialog).toBeVisible();
+  await expect(reports).toHaveCount(2);
+  await expect(reports.first()).toContainText("20 Feb 2026");
+  await expect(reports.last()).toContainText("29 Jan 2026");
+  await expect(reports.first()).toContainText("RT 08/RW 10");
+  await expect(reports.first()).toContainText("Bagian jalan");
+  const mapUrl = await reports
+    .first()
+    .getByRole("link", { name: "Cari lokasi di Google Maps" })
+    .getAttribute("href");
+  expect(new URL(mapUrl ?? "").searchParams.get("query")).toContain(
+    "Jalan Suwardi RT 08/RW 10",
+  );
+  await expect(
+    dialog.getByRole("button", { name: "Lihat pin di peta" }),
+  ).toHaveCount(0);
+  await expect(page.locator(".incident-marker")).toHaveCount(0);
+
+  await dialog.getByLabel("Cakupan laporan").selectOption("");
+  await dialog.getByRole("searchbox").fill("Pondok Gede Permai");
+  await expect(reports).toHaveCount(2);
+  await expect(reports.first()).toContainText("Perumahan Pondok Gede Permai");
+
+  await dialog.getByLabel("Jenis berita").selectOption("kriminalitas");
+  await dialog.getByLabel("Wilayah berita").selectOption("Kota Depok");
+  await dialog.getByLabel("Tahun laporan").selectOption("2026");
+  await dialog.getByLabel("Cakupan laporan").selectOption("titik");
+  await dialog.getByRole("searchbox").fill("Pondok Cina");
+  await expect(reports).toHaveCount(1);
+  await expect(reports.first()).toContainText("Rilis · 19 Mei 2026");
+  await expect(
+    reports.first().getByRole("link", { name: /Keterangan Polres/ }),
+  ).toHaveAttribute("href", /news\.detik\.com/);
+  await dialog.getByRole("button", { name: "Lihat pin di peta" }).click();
+  await expect(dialog).toBeHidden();
+  await expect(page.locator(".incident-detail")).toContainText(
+    "Stasiun Pondok Cina",
+  );
+  await expect(page.locator("#incident-kriminalitas")).toBeChecked();
+  await expect(page.locator("#incident-banjir")).not.toBeChecked();
+  await expectNoHorizontalOverflow(page);
+});
+
 test("toggles actually rendered buildings independently from roads and hunian", async ({
   page,
 }) => {

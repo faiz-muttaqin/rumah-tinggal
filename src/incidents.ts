@@ -14,6 +14,8 @@ export interface Incident {
   kind: IncidentKind;
   title: string;
   date: string;
+  basis?: "Rilis";
+  region: string;
   place: string;
   lat: number;
   lng: number;
@@ -24,14 +26,14 @@ export interface Incident {
   followUp?: { label: string; url: string };
 }
 
-// Pin menggunakan acuan publik yang disebut sumber. Laporan setingkat RW atau
-// kompleks tanpa acuan yang lebih spesifik dicatat di spreadsheet saja.
+// Pin menggunakan acuan publik yang disebut sumber.
 export const incidents: Incident[] = [
   {
     id: "banjir-sdn-pangkalanjati-2026-01",
     kind: "banjir",
     title: "Genangan di lingkungan SDN Pangkalanjati 2",
     date: "2026-01-11",
+    region: "Kota Depok",
     place: "Jl. Al Barkah, Pangkalan Jati Baru, Cinere, Depok",
     lat: -6.323137,
     lng: 106.805232,
@@ -53,11 +55,12 @@ export const incidents: Incident[] = [
     kind: "banjir",
     title: "Akses Jembatan Kemang Pratama rusak saat banjir",
     date: "2025-03-04",
+    region: "Kota Bekasi",
     place: "Jembatan di Jl. Kemang Pratama Raya, Kota Bekasi",
     lat: -6.266395,
     lng: 106.985378,
     summary:
-      "Akses dekat jembatan ditutup setelah bagian jalan ambles saat banjir. Balai Jalan melaporkan jembatan dibangun ulang dan dibuka untuk lalu lintas pada 19 Agustus 2026.",
+      "Akses dekat jembatan ditutup setelah bagian jalan ambles saat banjir. Liputan 19 Agustus 2026 mencatat jembatan yang dibangun ulang sudah dilintasi kendaraan.",
     precision:
       "Pin memakai acuan jembatan. Posisi lubang dan muka air di sekitar jembatan tidak dirinci.",
     source: {
@@ -69,8 +72,8 @@ export const incidents: Incident[] = [
       url: "https://www.openstreetmap.org/way/320758162",
     },
     followUp: {
-      label: "Pembukaan kembali · Kementerian PU",
-      url: "https://binamarga.pu.go.id/balai-dki-jabar/berita/jembatan-kemang-pratama-kembali-dibuka-pulihkan-akses-warga-bekasi",
+      label: "Pembukaan kembali · Radar Bekasi",
+      url: "https://radarbekasi.id/2026/08/19/jembatan-kemang-pratama-kota-bekasi-sudah-dilintasi-kendaraan-traffic-light-belum-berfungsi/",
     },
   },
   {
@@ -78,6 +81,7 @@ export const incidents: Incident[] = [
     kind: "kriminalitas",
     title: "Laporan curanmor di parkir Circle K Veteran",
     date: "2026-06-05",
+    region: "Kota Bekasi",
     place: "Circle K, Jl. Veteran, Margajaya, Bekasi Selatan",
     lat: -6.237856,
     lng: 106.999876,
@@ -99,6 +103,7 @@ export const incidents: Incident[] = [
     kind: "kriminalitas",
     title: "Laporan curanmor di depan Tangcity Mall",
     date: "2026-03-03",
+    region: "Kota Tangerang",
     place: "Tangcity Mall, Jl. Jenderal Sudirman, Kota Tangerang",
     lat: -6.193937,
     lng: 106.634084,
@@ -107,12 +112,35 @@ export const incidents: Incident[] = [
     precision:
       "Pin memakai acuan mal. Sumber menempatkan kejadian di parkir luar depan mal tanpa koordinat petaknya.",
     source: {
-      label: "Laporan Polda Metro Jaya",
-      url: "https://tribratanews.metro.polri.go.id/motor-raib-di-parkiran-tangcity-polisi-lacak-lewat-gps-dan-tangkap-pelaku-di-bogor/",
+      label: "Radar Banten · Liputan kejadian",
+      url: "https://www.radarbanten.co.id/2026/03/04/berbekal-gps-polisi-kejar-pencuri-motor-dari-tangerang-ke-bogor/",
     },
     locationSource: {
       label: "Letak mal · OpenStreetMap",
       url: "https://www.openstreetmap.org/way/230188982",
+    },
+  },
+  {
+    id: "curanmor-stasiun-pondok-cina-2026-05",
+    kind: "kriminalitas",
+    title: "Laporan curanmor di parkiran Stasiun Pondok Cina",
+    date: "2026-05-19",
+    basis: "Rilis",
+    region: "Kota Depok",
+    place: "Stasiun Pondok Cina, Beji, Kota Depok",
+    lat: -6.369059,
+    lng: 106.832084,
+    summary:
+      "Keterangan Polres Metro Depok dalam liputan menempatkan pencurian motor di parkiran stasiun.",
+    precision:
+      "Pin mengikuti acuan stasiun OpenStreetMap. Laporan menyebut area parkir tanpa merinci petaknya.",
+    source: {
+      label: "detikNews · Keterangan Polres",
+      url: "https://news.detik.com/berita/d-8494703/motor-di-stasiun-pocin-raib-gegara-kunci-nyantel-pelaku-dibekuk-di-sppg",
+    },
+    locationSource: {
+      label: "Letak stasiun · OpenStreetMap",
+      url: "https://www.openstreetmap.org/node/4149398980",
     },
   },
 ];
@@ -130,6 +158,8 @@ export function incidentPopup(incident: Incident): HTMLElement {
     incident.kind === "banjir"
       ? "Cek riwayat air di unit, elevasi lantai terhadap jalan, dan jalur keluar."
       : "Cek pengamanan parkir, penerangan dan akses unit.";
-  content.innerHTML = `<span class="mosque-kicker">${INCIDENT_LAYERS[incident.kind].label} · ${esc(checkedDate(incident.date))}</span><h2>${esc(incident.title)}</h2><p><strong>${esc(incident.place)}</strong></p><p>${esc(incident.summary)}</p><p class="mosque-note">${esc(incident.precision)} Riwayat satu kejadian. ${surveyNote}</p><div class="mosque-actions">${links.map(({ label, url }) => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`).join("")}<a href="/?kejadian=${encodeURIComponent(incident.id)}">Tautan kejadian</a></div>`;
+  const date = checkedDate(incident.date);
+  const dateLabel = incident.basis ? `${incident.basis} · ${date}` : date;
+  content.innerHTML = `<span class="mosque-kicker">${INCIDENT_LAYERS[incident.kind].label} · ${esc(dateLabel)}</span><h2>${esc(incident.title)}</h2><p><strong>${esc(incident.place)}</strong></p><p>${esc(incident.summary)}</p><p class="mosque-note">${esc(incident.precision)} Riwayat satu kejadian. ${surveyNote}</p><div class="mosque-actions">${links.map(({ label, url }) => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`).join("")}<a href="/?kejadian=${encodeURIComponent(incident.id)}">Tautan kejadian</a></div>`;
   return content;
 }
