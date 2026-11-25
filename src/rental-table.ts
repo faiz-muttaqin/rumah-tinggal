@@ -355,7 +355,9 @@ const columns: Column[] = [
   { id: "id", label: "ID", width: 220, value: ({ rental }) => rental.id },
 ];
 
-const pageSize = 40;
+const defaultPageSize = 40;
+const pageSizes = [defaultPageSize, 100, 250, 500, 750, 1000, 2000];
+const pageSizeKey = "rumah-tinggal:baris-tabel-sewa";
 const heightKey = "rumah-tinggal:tinggi-tabel-sewa";
 const stickyKey = "rumah-tinggal:kolom-beku-sewa";
 function preference(key: string, fallback: number): number {
@@ -420,6 +422,7 @@ export class RentalTable {
   );
   private drag?: { y: number; height: number };
   private page = 0;
+  private pageSize = defaultPageSize;
   private sort = { id: "rent", ascending: true };
   private onChange: () => void;
   private onSelect: (rental: ResearchRental) => void;
@@ -455,7 +458,7 @@ export class RentalTable {
       <div class="rent-table-scroll" id="rent-table-scroll" role="region" aria-label="Data sewa, gulir mendatar untuk melihat semua kolom" tabindex="0">
         <table class="rent-table-grid" aria-label="Cari hunian sewa"><colgroup>${columns.map((c) => `<col data-column="${c.id}"/>`).join("")}</colgroup><thead></thead><tbody></tbody></table>
       </div>
-      <div class="rent-table-foot"><span data-table-count role="status"></span><div class="rent-table-pages"><button class="rent-table-action" type="button" data-page="-1" aria-label="Halaman sebelumnya">‹</button><button class="rent-table-action" type="button" data-page="1" aria-label="Halaman berikutnya">›</button></div></div>`;
+      <div class="rent-table-foot"><span data-table-count role="status"></span><div class="rent-table-pages"><select class="rent-table-action" aria-label="Baris per halaman" data-page-size>${pageSizes.map((size) => `<option value="${size}">${decimal(size)} baris</option>`).join("")}</select><button class="rent-table-action" type="button" data-page="-1" aria-label="Halaman sebelumnya">‹</button><button class="rent-table-action" type="button" data-page="1" aria-label="Halaman berikutnya">›</button></div></div>`;
     this.grab = element<HTMLElement>(panel, ".rent-table-grab");
     this.scroller = element<HTMLElement>(panel, ".rent-table-scroll");
     this.controls = element<HTMLFormElement>(panel, "form");
@@ -508,6 +511,17 @@ export class RentalTable {
       const row = target.closest<HTMLTableRowElement>("tr[data-rental]");
       const rental = this.rows.get(row?.dataset.rental ?? "")?.rental;
       if (rental) this.onSelect(rental);
+    };
+    const pageSize = element<HTMLSelectElement>(panel, "[data-page-size]");
+    const savedPageSize = preference(pageSizeKey, defaultPageSize);
+    if (pageSizes.includes(savedPageSize)) this.pageSize = savedPageSize;
+    pageSize.value = String(this.pageSize);
+    pageSize.onchange = () => {
+      this.pageSize = Number(pageSize.value);
+      savePreference(pageSizeKey, this.pageSize);
+      this.page = 0;
+      this.paint();
+      this.scroller.scrollTop = 0;
     };
     for (const button of panel.querySelectorAll<HTMLButtonElement>(
       "[data-page]",
@@ -743,10 +757,10 @@ export class RentalTable {
       });
     this.page = Math.max(
       0,
-      Math.min(this.page, Math.ceil(sorted.length / pageSize) - 1),
+      Math.min(this.page, Math.ceil(sorted.length / this.pageSize) - 1),
     );
-    const start = this.page * pageSize;
-    const slice = sorted.slice(start, start + pageSize);
+    const start = this.page * this.pageSize;
+    const slice = sorted.slice(start, start + this.pageSize);
     this.head.innerHTML = `<tr>${columns
       .map((c, i) => {
         const active = c.id === this.sort.id;
@@ -765,11 +779,11 @@ export class RentalTable {
       : `<tr><td class="rent-table-empty" colspan="${columns.length}">Belum ada hunian yang cocok. Ubah pencarian atau reset filter.</td></tr>`;
     element<HTMLElement>(this.panel, "[data-table-count]").textContent =
       slice.length
-        ? `${start + 1}–${start + slice.length} dari ${sorted.length} penawaran`
+        ? `${decimal(start + 1)}–${decimal(start + slice.length)} dari ${decimal(sorted.length)} penawaran`
         : "0 penawaran";
     element<HTMLButtonElement>(this.panel, '[data-page="-1"]').disabled =
       !this.page;
     element<HTMLButtonElement>(this.panel, '[data-page="1"]').disabled =
-      start + pageSize >= sorted.length;
+      start + this.pageSize >= sorted.length;
   }
 }

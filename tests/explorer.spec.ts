@@ -1072,8 +1072,22 @@ test("uses the bottom rental table for searching, sorting, freezing and opening 
   const grid = panel.getByRole("table");
   const scroll = panel.locator(".rent-table-scroll");
   const rows = grid.locator("tbody tr[data-rental]");
+  const pageSize = panel.getByRole("combobox", { name: "Baris per halaman" });
+  const nextPage = panel.getByRole("button", { name: "Halaman berikutnya" });
+  const count = panel.locator("[data-table-count]");
+  const total = rentals.rentals.length + added.length - 1;
   await expect(panel).toBeVisible();
   await expect(page.locator(".sidebar")).toBeHidden();
+  await expect(pageSize).toHaveValue("40");
+  await expect(pageSize.locator("option")).toHaveText([
+    "40 baris",
+    "100 baris",
+    "250 baris",
+    "500 baris",
+    "750 baris",
+    "1.000 baris",
+    "2.000 baris",
+  ]);
   await expect(rows).toHaveCount(40);
   const map = page.locator("#map");
   await expect(map).toHaveAttribute("data-rental-features", "0");
@@ -1085,8 +1099,15 @@ test("uses the bottom rental table for searching, sorting, freezing and opening 
   await expect(rows).toHaveCount(40);
   await mapHouses.uncheck();
   await mapLayers.locator("summary").click();
-  await panel.getByRole("button", { name: "Halaman berikutnya" }).click();
-  await expect(panel.locator("[data-table-count]")).toContainText("41–");
+  await nextPage.click();
+  await expect(count).toContainText("41–");
+  await pageSize.selectOption("100");
+  await expect(rows).toHaveCount(total);
+  await expect(count).toHaveText(`1–${total} dari ${total} penawaran`);
+  await expect(nextPage).toBeDisabled();
+  await expect(
+    panel.getByRole("button", { name: "Halaman sebelumnya" }),
+  ).toBeDisabled();
   await grid.getByRole("button", { name: "Setara / bulan" }).click();
   await expect(rows.first()).toContainText("Rumah harga batas");
   await panel.getByLabel("Bekukan kolom kiri").selectOption("2");
@@ -1106,7 +1127,7 @@ test("uses the bottom rental table for searching, sorting, freezing and opening 
   await expect(handle).toHaveAttribute("aria-valuenow", String(height + 24));
   const search = panel.getByRole("searchbox");
   await search.fill("melebihi batas");
-  await expect(panel.locator("[data-table-count]")).toHaveText("0 penawaran");
+  await expect(count).toHaveText("0 penawaran");
   await search.fill("rumah harga batas");
   await expect(rows).toHaveCount(1);
   await rows.first().getByRole("button", { name: "Rumah harga batas" }).click();
@@ -1115,6 +1136,9 @@ test("uses the bottom rental table for searching, sorting, freezing and opening 
   );
   await expect(rows.first()).toHaveClass("is-selected");
   await panel.getByRole("button", { name: "Reset filter" }).click();
+  await expect(pageSize).toHaveValue("100");
+  await expect(rows).toHaveCount(total);
+  await pageSize.selectOption("40");
   await expect(rows).toHaveCount(40);
   await panel.getByRole("button", { name: "Ke kartu" }).click();
   await expect(panel).toBeHidden();

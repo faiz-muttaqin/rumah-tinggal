@@ -359,7 +359,14 @@
 
 .rent-table-pages {
   display: flex;
+  flex-shrink: 0;
   gap: 5px;
+}
+
+.rent-table-pages select {
+  width: auto;
+  height: 30px;
+  min-height: 30px;
 }
 
 .rent-table-pages button {
