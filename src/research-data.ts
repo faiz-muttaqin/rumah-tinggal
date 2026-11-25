@@ -346,6 +346,7 @@ export interface ResearchRental {
   bedrooms: number | null;
   sizeM2: number | null;
   furnished: "unfurnished" | "semi" | "full" | null;
+  kitchen?: "private" | "shared";
   evidence: { quote: string; url: string }[];
   areaHighlights?: {
     kind: string;

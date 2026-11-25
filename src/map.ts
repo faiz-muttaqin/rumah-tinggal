@@ -9,6 +9,14 @@ import * as maplibregl from "maplibre-gl";
 import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
 import { BASEMAP_GLYPHS, BASEMAP_LAYERS, BASEMAP_SOURCE } from "./basemap.ts";
 import { escapeHTML, money } from "./geo.ts";
+import { icon } from "./icons.ts";
+import {
+  INCIDENT_LAYERS,
+  type Incident,
+  type IncidentKind,
+  incidentPopup,
+  incidents,
+} from "./incidents.ts";
 import { googleMapsLocation } from "./maps-links.ts";
 import { PIN_STYLES, pinIcon } from "./pins.ts";
 import {
@@ -99,6 +107,8 @@ export class HousingMap {
   private pinPopup?: Popup;
   private mosquePopup?: Popup;
   private rentalPopup?: Popup;
+  private incidentMarkers = new Map<IncidentKind, Marker[]>();
+  private openIncidentPopup?: { kind: IncidentKind; popup: Popup };
   private areaLocked = true;
   onPinPlace?: (place: Place) => void;
   onMosqueSelect?: (id: string) => void;
@@ -866,6 +876,7 @@ export class HousingMap {
         : 650,
     });
     this.mosquePopup?.remove();
+    this.closeIncident();
     this.placePopup?.remove();
     this.mobilityPopup?.remove();
     this.mosquePopup = new maplibregl.Popup({
@@ -882,6 +893,76 @@ export class HousingMap {
 
   closeMosque(): void {
     this.mosquePopup?.remove();
+  }
+
+  async showIncidents(
+    kind: IncidentKind,
+    visible: boolean,
+    onSelect: (incident: Incident) => void,
+  ): Promise<void> {
+    await this.ready;
+    for (const marker of this.incidentMarkers.get(kind) ?? []) marker.remove();
+    this.incidentMarkers.delete(kind);
+    if (!visible) {
+      if (this.openIncidentPopup?.kind === kind) this.closeIncident();
+      return;
+    }
+    const layer = INCIDENT_LAYERS[kind];
+    const markers = incidents
+      .filter((incident) => incident.kind === kind)
+      .map((incident) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "incident-marker";
+        button.dataset.incidentId = incident.id;
+        button.dataset.incidentKind = kind;
+        button.style.setProperty("--incident-color", layer.color);
+        button.title = `${layer.label} · ${incident.place}`;
+        button.setAttribute("aria-label", button.title);
+        button.innerHTML = icon(layer.icon);
+        button.onclick = (event) => {
+          event.stopPropagation();
+          onSelect(incident);
+        };
+        return new maplibregl.Marker({ element: button })
+          .setLngLat([incident.lng, incident.lat])
+          .addTo(this.map);
+      });
+    this.incidentMarkers.set(kind, markers);
+  }
+
+  async openIncident(incident: Incident): Promise<void> {
+    await this.ready;
+    this.closeIncident();
+    this.closeMosque();
+    this.closeRental();
+    this.placePopup?.remove();
+    this.mobilityPopup?.remove();
+    this.pinPopup?.remove();
+    const point: [number, number] = [incident.lng, incident.lat];
+    this.map.flyTo({
+      center: point,
+      zoom: Math.max(14, this.map.getZoom()),
+      duration: matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? 0
+        : 650,
+    });
+    const popup = new maplibregl.Popup({
+      closeButton: true,
+      maxWidth: "320px",
+      anchor: "top",
+      className: "kajian-popup incident-popup",
+      offset: 17,
+    })
+      .setLngLat(point)
+      .setDOMContent(incidentPopup(incident))
+      .addTo(this.map);
+    this.openIncidentPopup = { kind: incident.kind, popup };
+  }
+
+  closeIncident(): void {
+    this.openIncidentPopup?.popup.remove();
+    this.openIncidentPopup = undefined;
   }
 
   async updateRentals(

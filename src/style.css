@@ -948,6 +948,31 @@ select {
   min-width: 0;
   box-shadow: none;
 }
+.layer-control:has(.incident-label) > svg {
+  color: var(--incident-color);
+}
+.incident-label {
+  color: var(--incident-color);
+}
+.incident-marker {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: var(--incident-color);
+  color: white;
+  box-shadow: 0 2px 5px #17262655;
+  cursor: pointer;
+}
+.incident-marker:hover,
+.incident-marker:focus-visible {
+  outline: 2px solid var(--incident-color);
+  outline-offset: 1px;
+  z-index: 4;
+}
 .rental-layer-options small {
   font-size: 10px;
   font-weight: 500;

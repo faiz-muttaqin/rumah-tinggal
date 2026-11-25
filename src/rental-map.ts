@@ -30,7 +30,10 @@ export function rentalTermBadges(rental: ResearchRental): string {
     minimum <= 120
       ? `<span class="rent-term-badge rent-term-minimum" data-testid="rental-minimum-badge">Minimal ${minimum} bulan</span>`
       : "";
-  return `<div class="rent-term-badges"><span class="rent-term-badge rent-term-${yearly ? "yearly" : "monthly"}" data-testid="rental-period-badge" title="${yearly ? "Harga per tahun; ekuivalen bulanan hanya untuk perbandingan." : "Harga per bulan; periksa minimum masa sewa di sumber."}">${yearly ? "Tahunan" : "Bulanan"}</span>${minimumBadge}</div>`;
+  const kitchenBadge = rental.kitchen
+    ? `<span class="rent-term-badge" title="Menurut iklan. Cek izin memakai kompor dan perlengkapannya.">Dapur ${rental.kitchen === "private" ? "dalam unit" : "bersama"}</span>`
+    : "";
+  return `<div class="rent-term-badges"><span class="rent-term-badge rent-term-${yearly ? "yearly" : "monthly"}" data-testid="rental-period-badge" title="${yearly ? "Harga per tahun; ekuivalen bulanan hanya untuk perbandingan." : "Harga per bulan; periksa minimum masa sewa di sumber."}">${yearly ? "Tahunan" : "Bulanan"}</span>${minimumBadge}${kitchenBadge}</div>`;
 }
 
 export function rentalMapKind(rental: ResearchRental): RentalMapKind {
@@ -153,6 +156,7 @@ export function filterMapRentals(
     area: string;
     query: string;
     maxMonthlyRent: number;
+    privateKitchen?: boolean;
     sort: string;
     mosque?: string;
   },
@@ -186,7 +190,9 @@ export function filterMapRentals(
           : rental.nearbyMosques?.some(
               (item) => item.id === filters.mosque,
             ))) &&
-      (!filters.maxMonthlyRent || monthlyRent(rental) <= filters.maxMonthlyRent)
+      (!filters.maxMonthlyRent ||
+        monthlyRent(rental) <= filters.maxMonthlyRent) &&
+      (!filters.privateKitchen || rental.kitchen === "private")
     );
   });
   if (filters.sort === "price")

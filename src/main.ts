@@ -18,6 +18,12 @@ import {
 } from "./excel-export.ts";
 import { distanceKm, escapeHTML as esc, money, nearestStation } from "./geo.ts";
 import { icon } from "./icons.ts";
+import {
+  INCIDENT_LAYERS,
+  type Incident,
+  type IncidentKind,
+  incidents,
+} from "./incidents.ts";
 import { HousingMap, type TransitMode } from "./map.ts";
 import {
   googleMapsDirections,
@@ -73,6 +79,7 @@ import {
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string): T =>
   document.getElementById(id) as T;
+const incidentKinds = Object.keys(INCIDENT_LAYERS) as IncidentKind[];
 
 $("app").innerHTML = `
   <a class="skip-link" href="#results">Langsung ke daftar hunian</a>
@@ -93,7 +100,7 @@ $("app").innerHTML = `
         <div class="filter-grid" id="purchase-filters"><label>Anggaran beli<select id="budget" aria-label="Anggaran maksimum"><option value="0">Semua anggaran</option><option value="500000000">Hingga Rp 500 juta</option><option value="750000000">Hingga Rp 750 juta</option><option value="1000000000">Hingga Rp 1 miliar</option></select></label><label>Jenis hunian<select id="housing-type" aria-label="Jenis hunian"><option value="Semua">Semua jenis</option><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label></div>
         <div class="commute-filter" id="commute-filter">${icon("train")}<label for="station-distance">Jarak ke stasiun KRL</label><select id="station-distance" aria-label="Jarak maksimum ke stasiun KRL"><option value="0">Bebas</option><option value="1">≤ 1 km</option><option value="3">≤ 3 km</option><option value="5">≤ 5 km</option></select></div>
         <div class="data-tabs" aria-label="Koleksi hunian"><button id="demo-tab" class="active" aria-pressed="true">Contoh hunian <span>8</span></button><button id="private-tab" aria-pressed="false">${icon("bookmark")} Listingku</button><button id="pins-tab" aria-pressed="false">${icon("pin")} Pin tempat</button><button id="research-tab" aria-pressed="false">${icon("research")} Riset <span id="research-count">…</span></button><button id="rentals-tab" aria-pressed="false" disabled>${icon("home")} Sewa · kos, kontrakan & apartemen <span id="rentals-count">…</span></button></div>
-        <div id="rental-filters" class="rental-filters" hidden><div class="rental-type-filters" role="group" aria-label="Jenis sewa">${RENTAL_MAP_GROUPS.map((group) => `<button type="button" class="chip" data-rental-filter="${group.id}" aria-pressed="true" style="--rental-color:${group.color}" ${group.id === "lainnya" ? "hidden" : ""}><i class="rental-kind-dot"></i>${group.label}</button>`).join("")}</div><label>Sewa per bulan<select id="rental-budget" aria-label="Sewa maksimum per bulan"><option value="0">Semua anggaran sewa</option><option value="1000000">Hingga Rp 1 juta</option><option value="2000000">Hingga Rp 2 juta</option><option value="3500000">Hingga Rp 3,5 juta</option><option value="4000000">Hingga Rp 4 juta</option><option value="5000000">Hingga Rp 5 juta</option><option value="6000000">Hingga Rp 6 juta</option><option value="10000000">Hingga Rp 10 juta</option></select></label><label>Fokus masjid Ihrish<select id="rental-mosque" aria-label="Fokus masjid Ihrish"></select></label></div>
+        <div id="rental-filters" class="rental-filters" hidden><div class="rental-type-filters" role="group" aria-label="Jenis sewa">${RENTAL_MAP_GROUPS.map((group) => `<button type="button" class="chip" data-rental-filter="${group.id}" aria-pressed="true" style="--rental-color:${group.color}" ${group.id === "lainnya" ? "hidden" : ""}><i class="rental-kind-dot"></i>${group.label}</button>`).join("")}</div><label>Sewa per bulan<select id="rental-budget" aria-label="Sewa maksimum per bulan"><option value="0">Semua anggaran sewa</option><option value="1000000">Hingga Rp 1 juta</option><option value="2000000">Hingga Rp 2 juta</option><option value="3500000">Hingga Rp 3,5 juta</option><option value="4000000">Hingga Rp 4 juta</option><option value="5000000">Hingga Rp 5 juta</option><option value="6000000">Hingga Rp 6 juta</option><option value="10000000">Hingga Rp 10 juta</option></select></label><label>Fokus masjid Ihrish<select id="rental-mosque" aria-label="Fokus masjid Ihrish"></select></label><label>Dapur<select id="rental-kitchen" aria-label="Fasilitas dapur"><option value="all">Semua, termasuk yang belum diketahui</option><option value="private">Dalam unit menurut iklan</option></select></label></div>
       </div>
       <section id="results" class="results" tabindex="-1" aria-label="Hasil pencarian">
         <div class="results-toolbar"><div><strong id="result-count">8 hunian</strong><span id="result-scope"> di Jabodetabek</span></div><select id="sort" aria-label="Urutkan hunian"><option value="recommended">Rekomendasi</option><option value="price">Harga terendah</option><option value="station">Terdekat KRL</option></select></div>
@@ -118,7 +125,14 @@ $("app").innerHTML = `
         <label class="layer-control" title="Masjid, sekolah, dan TK dari OpenStreetMap · tampil saat peta diperbesar">${icon("pin")} <span class="community-label">Masjid & sekolah</span><input id="community-toggle" aria-label="Masjid dan sekolah sekitar" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control">${icon("home")} Bangunan <input id="buildings-toggle" aria-label="Bangunan pada peta" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control">${icon("pin")} Hunian <input id="listings-toggle" aria-label="Marker dan detail hunian" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
+        ${incidentKinds
+          .map((kind) => {
+            const { label, icon: layerIcon, color } = INCIDENT_LAYERS[kind];
+            return `<label class="layer-control" style="--incident-color:${color}">${icon(layerIcon)} <span class="incident-label">${label}</span><input id="incident-${kind}" aria-label="Berita ${label.toLocaleLowerCase("id-ID")}" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>`;
+          })
+          .join("")}
         <span class="map-road-note">Jalan selalu tampil · bangunan, masjid & sekolah saat diperbesar</span>
+        <span class="map-road-note" id="incident-legend" hidden>Pin berita menunjukkan lokasi kejadian pada tanggal laporan. Klik pin untuk sumber dan cakupannya.</span>
         </div></details>
         <details class="map-layer-panel rental-layers" id="rental-layers" name="map-layers"><summary>${icon("home")} Sewa <span id="rental-layer-count">…</span></summary><div class="rental-layer-options">${RENTAL_MAP_GROUPS.map((group) => `<label class="layer-control" style="--rental-color:${group.color}" ${group.id === "lainnya" ? "hidden" : ""}><i class="rental-kind-dot"></i>${group.label} <small id="rental-count-${group.id}">…</small><input id="rental-toggle-${group.id}" data-rental-toggle="${group.id}" aria-label="Sewa ${group.label.toLocaleLowerCase("id-ID")}" type="checkbox" disabled/><span class="switch" aria-hidden="true"></span></label>`).join("")}<label class="rental-map-focus">Fokus masjid Ihrish<select id="rental-mosque-map" aria-label="Fokus masjid Ihrish di peta"></select></label><p class="map-road-note">Kontrakan termasuk rumah sewa. Pin putus-putus: perkiraan portal; pin penuh: gedung/kompleks. Yang belum bertitik tetap ada di daftar.</p></div></details>
         <div class="rental-map-summary" id="rental-map-summary" hidden><span id="rental-map-status" role="status"></span><div class="rental-map-actions"><button class="button" id="view-rentals">Lihat daftar sewa ${icon("arrow")}</button><button class="icon-button" id="fit-rentals" aria-label="Tampilkan titik sewa pada peta" title="Sesuaikan peta ke titik sewa">${icon("target")}</button></div></div>
@@ -224,6 +238,7 @@ function filteredRentals(): ResearchRental[] {
     area: selectedArea,
     query: $<HTMLInputElement>("search").value,
     maxMonthlyRent: Number($<HTMLSelectElement>("rental-budget").value),
+    privateKitchen: $<HTMLSelectElement>("rental-kitchen").value === "private",
     sort: $<HTMLSelectElement>("sort").value,
     mosque: rentalMosqueFilter,
   });
@@ -633,6 +648,28 @@ function clearSelection(): void {
   void map?.clearFocus();
   map?.closeMosque();
   map?.closeRental();
+  map?.closeIncident();
+}
+
+function showIncidentLayer(kind: IncidentKind, visible: boolean): void {
+  $<HTMLInputElement>(`incident-${kind}`).checked = visible;
+  $("incident-legend").hidden = !incidentKinds.some(
+    (item) => $<HTMLInputElement>(`incident-${item}`).checked,
+  );
+  void map?.showIncidents(kind, visible, selectIncident);
+}
+
+function selectIncident(incident: Incident): void {
+  if (!map || pickingPoint) return;
+  clearSelection();
+  if (!$<HTMLInputElement>(`incident-${incident.kind}`).checked)
+    showIncidentLayer(incident.kind, true);
+  if (matchMedia("(max-width: 760px)").matches) {
+    $<HTMLDetailsElement>("map-layer-panel").open = false;
+    setMobileView("map");
+    map.resize();
+  }
+  void map.openIncident(incident);
 }
 
 function selectRentals(rentals: ResearchRental[]): void {
@@ -900,6 +937,7 @@ function resetFilters(): void {
   $<HTMLSelectElement>("station-distance").value = "0";
   if (collection === "rentals") {
     $<HTMLSelectElement>("rental-budget").value = "0";
+    $<HTMLSelectElement>("rental-kitchen").value = "all";
     rentalMosqueFilter = "all";
     rentalKinds = new Set(
       (researchData?.rentals?.rentals ?? []).map(rentalMapKind),
@@ -932,6 +970,7 @@ for (const id of [
   "station-distance",
   "sort",
   "rental-budget",
+  "rental-kitchen",
 ])
   $(id).onchange = render;
 let placeTimer: ReturnType<typeof setTimeout>;
@@ -1064,6 +1103,9 @@ for (const [id, mode] of transitToggles)
     void map?.showTransit(mode, $<HTMLInputElement>(id).checked);
     updateTransitLegend();
   };
+for (const kind of incidentKinds)
+  $<HTMLInputElement>(`incident-${kind}`).onchange = (event) =>
+    showIncidentLayer(kind, (event.currentTarget as HTMLInputElement).checked);
 $("community-toggle").onchange = () => {
   void map?.showCommunity($<HTMLInputElement>("community-toggle").checked);
 };
@@ -1459,6 +1501,14 @@ async function start(): Promise<void> {
   }
   const mosqueId = params.get("masjid");
   if (mosqueId) selectMosque(mosqueId);
+  const incidentId = params.get("kejadian");
+  const incident = incidents.find((item) => item.id === incidentId);
+  const incidentKind = incidentKinds.find((kind) => kind === incidentId);
+  if (incident) selectIncident(incident);
+  else if (incidentKind) {
+    showIncidentLayer(incidentKind, true);
+    if (matchMedia("(max-width: 760px)").matches) setMobileView("map");
+  }
   if (configResult.status === "fulfilled") {
     try {
       await initializeAuth(configResult.value, (user) => {

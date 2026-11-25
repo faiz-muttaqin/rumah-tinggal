@@ -12,6 +12,9 @@ export const icons = {
   unlock:
     '<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 7.5-2M12 14v3"/>',
   pin: '<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>',
+  drop: '<path d="M12 3c3 4 7 8 7 12a7 7 0 0 1-14 0c0-4 4-8 7-12Z"/><path d="M8 15a4 4 0 0 0 4 4"/>',
+  shield:
+    '<path d="M12 22s8-4 8-11V6l-8-4-8 4v5c0 7 8 11 8 11Z"/><path d="M12 8v4m0 4h.01"/>',
   plus: '<path d="M12 5v14M5 12h14"/>',
   download: '<path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/>',
   info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/>',

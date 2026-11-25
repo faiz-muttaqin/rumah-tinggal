@@ -1,5 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { expect, type Page, test } from "@playwright/test";
+import { incidents } from "../src/incidents.ts";
+import { googleMapsLocation } from "../src/maps-links.ts";
 import type { Listing } from "../src/types.ts";
 import { readExcel } from "./excel-workbook.ts";
 import { mockListingAccount } from "./listing-account.ts";
@@ -1018,6 +1020,44 @@ test("starts with hunian off and keeps the layer usable with streets, KRL, and l
   await expect(page.locator(".price-pin")).toHaveCount(0);
 });
 
+test("shows historical flood and crime reports in independent opt-in map layers", async ({
+  page,
+}) => {
+  const flood = page.getByRole("checkbox", { name: "Berita banjir" });
+  const crime = page.getByRole("checkbox", { name: "Berita kriminalitas" });
+  const markers = page.locator(".incident-marker");
+  const floods = incidents.filter((item) => item.kind === "banjir");
+  const crimes = incidents.filter((item) => item.kind === "kriminalitas");
+  await expect(flood).not.toBeChecked();
+  await expect(crime).not.toBeChecked();
+  await expect(markers).toHaveCount(0);
+
+  await flood.check();
+  await expect(markers).toHaveCount(floods.length);
+  await crime.check();
+  await expect(markers).toHaveCount(incidents.length);
+  const report = floods[0];
+  await page.locator(`[data-incident-id="${report.id}"]`).click();
+  const popup = page.locator(".incident-detail");
+  await expect(popup.getByRole("heading")).toHaveText(report.title);
+  await expect(popup).toContainText(report.precision);
+  await expect(
+    popup.getByRole("link", { name: /Google Maps/ }),
+  ).toHaveAttribute("href", googleMapsLocation(report));
+  await expect(
+    popup.getByRole("link", { name: report.source.label }),
+  ).toHaveAttribute("href", report.source.url);
+  await flood.uncheck();
+  await expect(popup).toHaveCount(0);
+  await expect(markers).toHaveCount(crimes.length);
+  await expect(crime).toBeChecked();
+  await page.goto(`/?kejadian=${crimes[0].id}`);
+  await expect(popup.getByRole("heading")).toHaveText(crimes[0].title);
+  await expect(flood).not.toBeChecked();
+  await expect(crime).toBeChecked();
+  await expect(page.locator("#listings-toggle")).not.toBeChecked();
+});
+
 test("toggles actually rendered buildings independently from roads and hunian", async ({
   page,
 }) => {
@@ -1342,7 +1382,7 @@ test.describe("mobile explorer", () => {
     hasTouch: true,
   });
 
-  test("keeps eight layer switches usable with hunian detail open on a phone", async ({
+  test("keeps layer switches usable with hunian detail open on a phone", async ({
     page,
   }) => {
     await cards(page).first().click();
@@ -1358,7 +1398,7 @@ test.describe("mobile explorer", () => {
     await expect(detail).toBeVisible();
     await openMapLayers(page);
     const switches = page.getByRole("checkbox");
-    await expect(switches).toHaveCount(8);
+    await expect(switches).toHaveCount(10);
     for (const control of await switches.all())
       await expect(control).toBeVisible();
     const bounds = await Promise.all(
@@ -1377,7 +1417,7 @@ test.describe("mobile explorer", () => {
       if (row) row.count++;
       else rows.push({ top: bound.y, count: 1 });
     }
-    expect(rows.map((row) => row.count)).toEqual([3, 3, 2]);
+    expect(rows.map((row) => row.count)).toEqual([3, 3, 3, 1]);
     await expectNoHorizontalOverflow(page);
 
     const expected: Record<MobilityLayer, boolean> = {

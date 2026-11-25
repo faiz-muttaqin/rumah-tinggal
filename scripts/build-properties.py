@@ -620,6 +620,9 @@ def load_rentals(path=ROOT / "research/rentals.json"):
         ]
         if not evidence:
             raise Invalid(f"{field}.evidence wajib diisi")
+        kitchen = item.get("kitchen")
+        if kitchen is not None and kitchen not in ("private", "shared"):
+            raise Invalid(f"{field}.kitchen tidak dikenal")
         rentals.append({
             "id": text(item.get("id"), f"{field}.id", 90),
             "title": text(item.get("title"), f"{field}.title", 160),
@@ -639,6 +642,7 @@ def load_rentals(path=ROOT / "research/rentals.json"):
             "bedrooms": item.get("bedrooms") if isinstance(item.get("bedrooms"), int) else None,
             "sizeM2": number(item.get("sizeM2"), f"{field}.sizeM2", optional=True),
             "furnished": item.get("furnished") if item.get("furnished") in ("unfurnished", "semi", "full") else None,
+            **({"kitchen": kitchen} if kitchen is not None else {}),
             "evidence": evidence[:3],
             "areaHighlights": [
                 {

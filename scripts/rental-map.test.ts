@@ -5,6 +5,7 @@ import {
   rentalConnections,
   rentalPinGroups,
   rentalPopupHTML,
+  rentalTermBadges,
 } from "../src/rental-map.ts";
 import type { ResearchMosque, ResearchRental } from "../src/research-data.ts";
 import { researchFixture } from "../tests/research-fixture.ts";
@@ -60,6 +61,17 @@ test("rental pins group shared coordinates and filters preserve unlocated rental
     filterMapRentals([unlocated, located, kos], { ...filters, mosque: "near" }),
     [located, kos],
   );
+  const privateKitchen = { ...located, kitchen: "private" as const };
+  const sharedKitchen = { ...kos, kitchen: "shared" as const };
+  assert.deepEqual(
+    filterMapRentals([unlocated, privateKitchen, sharedKitchen], {
+      ...filters,
+      privateKitchen: true,
+    }),
+    [privateKitchen],
+  );
+  assert.match(rentalTermBadges(privateKitchen), /Dapur dalam unit/);
+  assert.match(rentalTermBadges(sharedKitchen), /Dapur bersama/);
   assert.deepEqual(
     filterMapRentals([unlocated, located, kos], {
       ...filters,

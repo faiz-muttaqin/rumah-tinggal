@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-24",
+  "checkedAt": "2026-11-25",
   "note": "Kurasi titik publik seluruh sewa. Pin perkiraan portal dibedakan dari titik gedung/kompleks; posisi unit tidak dijamin. Centroid administratif ditolak. Lokasi belum terbukti tetap di daftar tanpa pin. Harga dan stok tetap memakai tanggal cek iklan masing-masing.",
   "items": [
     {
@@ -586,7 +586,7 @@
         "label": "Pin perkiraan portal",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perum-duta-kranji-jl-merak-543-kranji-bekasi",
         "method": "Pin publik location.coordinate pada halaman iklan aktif; bukan centroid administratif",
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-25"
       },
       "note": "Pin perkiraan pengiklan/portal, belum disurvei. Jarak ke masjid dihitung dari titik acuan, bukan pintu unit.",
       "evidence": {
@@ -603,7 +603,7 @@
         "label": "Pin perkiraan portal",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlcendrawaksih-8-kranji-bekasi-barat",
         "method": "Pin publik location.coordinate pada halaman iklan aktif; bukan centroid administratif",
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-25"
       },
       "note": "Pin perkiraan pengiklan/portal, belum disurvei. Jarak ke masjid dihitung dari titik acuan, bukan pintu unit.",
       "evidence": {
@@ -7250,7 +7250,7 @@
         "label": "Pin perkiraan portal",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kirai-1-no52-pisangan",
         "method": "Pin publik pada halaman Pinhome",
-        "checkedAt": "2026-11-05"
+        "checkedAt": "2026-11-25"
       },
       "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
       "evidence": {
@@ -10157,7 +10157,7 @@
         "label": "Pin perkiraan Pinhome",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-baru-renovasi-akses-2-mobil-di-jl-gelagah-nodalam-no27-pisangan",
         "method": "Pin publik detail unit Pinhome, bukan pusat administratif",
-        "checkedAt": "2026-11-09"
+        "checkedAt": "2026-11-25"
       },
       "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
       "evidence": {
@@ -10174,7 +10174,7 @@
         "label": "Pin perkiraan Pinhome",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-baru-renovasi-hanya-5-menit-ke-cinere-di-jl-bidan-gelagah-dalam-no-25-cirendeu",
         "method": "Pin publik detail unit Pinhome, bukan pusat administratif",
-        "checkedAt": "2026-11-09"
+        "checkedAt": "2026-11-25"
       },
       "note": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
       "evidence": {
@@ -10458,7 +10458,7 @@
         "label": "Pin perkiraan pinhome",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dipondok-aren-dekat-hatmonyswalayan-kampus-stan-di-pondok-aren",
         "method": "Koordinat publik detail portal, bukan titik administratif",
-        "checkedAt": "2026-11-17"
+        "checkedAt": "2026-11-25"
       },
       "note": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
       "evidence": {
@@ -11184,6 +11184,128 @@
       "rentalId": "sewa-facebook-1401313c9c3e",
       "location": null,
       "note": "Iklan menyebut Jalan Kesadaran IV dan Masjid Fadlurrohman. Marketplace menampilkan perkiraan pada tingkat kota. Titik unit dan jarak ke masjid atau rel belum diketahui."
+    },
+    {
+      "rentalId": "sewa-pinhome-1051d7a05d9f",
+      "location": {
+        "lat": -6.219848,
+        "lng": 107.020159,
+        "precision": "approximate",
+        "label": "Perkiraan portal pinhome",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-metropolitan-park-di-metropolitan-park-duta-harapan",
+        "method": "Pencocokan titik publik dari detail penawaran",
+        "checkedAt": "2026-11-25"
+      },
+      "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-02dfda7eac72",
+      "location": {
+        "lat": -6.225031,
+        "lng": 106.879075,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-bassura-city-apartment/BSCC608",
+        "method": "Pencocokan titik publik dari detail penawaran",
+        "checkedAt": "2026-11-25"
+      },
+      "note": "Acuan gedung. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-mamikos-16778c4de615",
+      "location": {
+        "lat": -6.156233,
+        "lng": 106.822825,
+        "precision": "approximate",
+        "label": "Perkiraan portal mamikos",
+        "url": "https://mamikos.com/room/kost-jakarta-barat-kost-campur-eksklusif-kost-9-tipe-a-taman-sari-jakarta-barat",
+        "method": "Pencocokan titik publik dari detail penawaran",
+        "checkedAt": "2026-11-25"
+      },
+      "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-311417e05b6d",
+      "location": {
+        "lat": -6.228442,
+        "lng": 106.88515,
+        "precision": "approximate",
+        "label": "Perkiraan portal pinhome",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-murah-2-kamar-semi-furnished-di-bassura-city-di-bassura-city",
+        "method": "Pencocokan titik publik dari detail penawaran",
+        "checkedAt": "2026-11-25"
+      },
+      "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-417aea29c8f2",
+      "location": {
+        "lat": -6.239277,
+        "lng": 106.93436,
+        "precision": "approximate",
+        "label": "Perkiraan portal pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dalam-cluster-2-5-lantai-di-di-pondok-kelapa",
+        "method": "Pencocokan titik publik dari detail penawaran",
+        "checkedAt": "2026-11-25"
+      },
+      "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-8e0c61140df5",
+      "location": {
+        "lat": -6.302743,
+        "lng": 106.715701,
+        "precision": "approximate",
+        "label": "Perkiraan portal pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jombang-raya-1",
+        "method": "Pencocokan titik publik dari detail penawaran",
+        "checkedAt": "2026-11-25"
+      },
+      "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-dba881bc3208",
+      "location": {
+        "lat": -6.219033,
+        "lng": 106.937906,
+        "precision": "approximate",
+        "label": "Perkiraan portal pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlnusa-indah-vii-jakarta-timur",
+        "method": "Pencocokan titik publik dari detail penawaran",
+        "checkedAt": "2026-11-25"
+      },
+      "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-0a2020205bec",
+      "location": {
+        "lat": -6.229106,
+        "lng": 106.93419,
+        "precision": "approximate",
+        "label": "Perkiraan portal pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pondokkelapa-kavdkitamanmalakautara-blk-c8-2",
+        "method": "Pencocokan titik publik dari detail penawaran",
+        "checkedAt": "2026-11-25"
+      },
+      "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-37a868207b22",
+      "location": {
+        "lat": -6.223311,
+        "lng": 106.931368,
+        "precision": "approximate",
+        "label": "Perkiraan portal pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumnas-klender-dekat-pasar-di-jl-wijaya-kusuma-2-gang-5-no-112",
+        "method": "Pencocokan titik publik dari detail penawaran",
+        "checkedAt": "2026-11-25"
+      },
+      "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-3c38b9b157d7",
+      "location": null,
+      "note": "Iklan berada di Malaka Sari. Koordinat bawaan wilayah ditolak. Konfirmasi posisi rumah dan rute langsung."
     }
   ]
 }
