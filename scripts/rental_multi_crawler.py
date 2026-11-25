@@ -245,6 +245,7 @@ def main():
     parser.add_argument("--report-only", action="store_true")
     parser.add_argument("--refresh-search", action="store_true", help="Refresh all configured first pages within the existing budgets")
     parser.add_argument("--transit-only", action="store_true", help="Use only the transit catchments for this run")
+    parser.add_argument("--corridor-only", action="store_true", help="Use 28 KRL/MRT corridor seed targets with a separate crawl state")
     parser.add_argument("--providers", default=",".join(PROVIDERS))
     parser.add_argument("--output-dir", type=Path, default=ROOT / ".runtime/research/rental-crawl")
     parser.add_argument("--max-search", type=int)
@@ -257,12 +258,21 @@ def main():
     chosen = args.providers.split(",")
     if not chosen or len(set(chosen)) != len(chosen) or any(p not in PROVIDERS for p in chosen):
         parser.error("Unknown or duplicate provider")
+    if args.corridor_only:
+        args.transit_only = True
+        if args.output_dir == ROOT / ".runtime/research/rental-crawl":
+            args.output_dir = ROOT / ".runtime/research/corridor-crawl"
+        elif args.output_dir.resolve() in {(ROOT / ".runtime/research/rental-crawl").resolve(), Path("/var/lib/rumah-tinggal-rental-crawl").resolve()}:
+            parser.error("Corridor crawl requires a separate private output directory")
     directory = args.output_dir.resolve()
     local = directory.is_relative_to(ROOT / ".runtime/research") and directory != ROOT / ".runtime/research"
     if not local and directory != Path("/var/lib/rumah-tinggal-rental-crawl").resolve():
         parser.error("Output must be a private research directory")
     directory.mkdir(parents=True, exist_ok=True, mode=0o700)
     config = json.loads((ROOT / "research/rental-crawl-sources.json").read_text())
+    if args.corridor_only:
+        corridor = json.loads((ROOT / "research/koridor-station-targets.json").read_text())
+        config["transitTargets"] = corridor["transitTargets"]
     core.validate_config(config)
     multi = json.loads((ROOT / "research/rental-crawl-providers.json").read_text())
     if multi.get("schemaVersion") != 1 or type(multi.get("parallelProviders")) is not int or not 1 <= multi["parallelProviders"] <= 3:
@@ -273,6 +283,9 @@ def main():
     reference = core.plan(config)
     selected = active_mosques(reference, multi)
     transit = core.transit_plan(config)
+    if args.corridor_only:
+        for stop in transit:
+            stop["radiusKm"] = 1.5
     if args.transit_only and not transit:
         parser.error("No transit targets configured")
     if args.transit_only:
