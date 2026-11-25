@@ -11375,6 +11375,96 @@
       "rentalId": "sewa-koridor-20261126-fatmawati-60",
       "location": null,
       "note": "Koordinat publik unit belum diperoleh. Stasiun hanya klaim sumber; jarak garis lurus, rute, dan stok perlu konfirmasi. Tidak membuat pin centroid."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-karangsih-wifi",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-metland-luas",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-metland-15",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-wanasari-trias",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-wanasari-regensi",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-mekarsari-scorpio",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-setiadarma-petak",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-bekasijaya-wisma",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-durenjaya-kusuma",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-malakajaya-52",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-malakajaya-perumnas",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-pisangan-38",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-manggarai-14",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-manggarai-utara",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-kebonmelati-30",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-kebonkacang-rusun",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-pondoklabu-ipin",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-cipete-utara-40",
+      "location": null,
+      "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
     }
   ]
 }
