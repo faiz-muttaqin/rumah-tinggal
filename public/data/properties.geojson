@@ -38512,6 +38512,272 @@
       "checkedAt": "2026-11-26"
      },
      "nearbyMosques": []
+    },
+    {
+     "id": "sewa-koridor-20261126-kranji-30",
+     "title": "Rumah cluster 2 KT, Kranji",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Kranji, Bekasi Barat, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 30000000,
+      "period": "yearly",
+      "quote": "Rp 30 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cluster-strategis-jl-lebar-stasiun-kranji-tol-lrt-di-igusti-ngurah-rai",
+      "pageDate": null,
+      "minimumMonths": 12
+     },
+     "bedrooms": 2,
+     "sizeM2": 52,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp 30 Juta/Tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cluster-strategis-jl-lebar-stasiun-kranji-tol-lrt-di-igusti-ngurah-rai"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Sewa tahunan saja; carport dan AC. Snapshot detail hari ini tidak menampilkan label Tersewa. Konfirmasi stok dan jarak.",
+     "nearStationsClaim": [
+      {
+       "station": "Kranji",
+       "quote": "Dekat stasiun kereta Kranji",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cluster-strategis-jl-lebar-stasiun-kranji-tol-lrt-di-igusti-ngurah-rai"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cluster-strategis-jl-lebar-stasiun-kranji-tol-lrt-di-igusti-ngurah-rai",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Koordinat publik unit belum diperoleh. Stasiun hanya klaim sumber; jarak garis lurus, rute, dan stok perlu konfirmasi. Tidak membuat pin centroid.",
+     "location": null,
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-koridor-20261126-kranji-32",
+     "title": "Rumah cluster 2 KT, Kranji (60 m²)",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Kranji, Bekasi Barat, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 32000000,
+      "period": "yearly",
+      "quote": "Rp 32 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-disewakan-cluster-strategis-stasiun-kranji-bekasi-di-igusti-ngurah-rai",
+      "pageDate": null
+     },
+     "bedrooms": 2,
+     "sizeM2": 60,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp 32 Juta/Tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-disewakan-cluster-strategis-stasiun-kranji-bekasi-di-igusti-ngurah-rai"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Carport dan keamanan cluster menurut iklan. Snapshot detail hari ini tidak menampilkan label Tersewa. Konfirmasi bukan duplikasi unit Rp30 juta (spesifikasi berbeda).",
+     "nearStationsClaim": [
+      {
+       "station": "Kranji",
+       "quote": "Dekat stasiun kereta Kranji",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-disewakan-cluster-strategis-stasiun-kranji-bekasi-di-igusti-ngurah-rai"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-disewakan-cluster-strategis-stasiun-kranji-bekasi-di-igusti-ngurah-rai",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Koordinat publik unit belum diperoleh. Stasiun hanya klaim sumber; jarak garis lurus, rute, dan stok perlu konfirmasi. Tidak membuat pin centroid.",
+     "location": null,
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-koridor-20261126-duren-jaya-22",
+     "title": "Rumah 2 KT, Duren Jaya",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Duren Jaya, Bekasi Timur, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 22000000,
+      "period": "yearly",
+      "quote": "Rp 22 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya",
+      "pageDate": null
+     },
+     "bedrooms": 2,
+     "sizeM2": 100,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp 22 Juta/Tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Sumber mencantumkan opsi enam bulan Rp12 juta. Klaim jarak belum diukur. Snapshot detail sekitar dua minggu; cek stok dan kondisi.",
+     "nearStationsClaim": [
+      {
+       "station": "Bekasi Timur",
+       "quote": "stasiun Bekasi Timur (<1km)",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Koordinat publik unit belum diperoleh. Stasiun hanya klaim sumber; jarak garis lurus, rute, dan stok perlu konfirmasi. Tidak membuat pin centroid.",
+     "location": null,
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-koridor-20261126-duren-jaya-1913",
+     "title": "Rumah 3 KT, Duren Jaya",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Duren Jaya, Bekasi Timur, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 19130000,
+      "period": "yearly",
+      "quote": "Rp 19,13 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya",
+      "pageDate": null
+     },
+     "bedrooms": 3,
+     "sizeM2": 60,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp 19,13 Juta/Tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Header portal Rp19,13 juta, deskripsi Rp19 juta; gunakan harga header. Moda stasiun ambigu, perlu pastikan KRL Bekasi Timur. Snapshot sekitar satu bulan.",
+     "nearStationsClaim": [
+      {
+       "station": "Bekasi Timur",
+       "quote": "10 menit Stasiun Bekasi Barat & Timur",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Koordinat publik unit belum diperoleh. Stasiun hanya klaim sumber; jarak garis lurus, rute, dan stok perlu konfirmasi. Tidak membuat pin centroid.",
+     "location": null,
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-koridor-20261126-klender-40",
+     "title": "Rumah dua lantai 3 KT, Klender",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Klender, Duren Sawit, Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 40000000,
+      "period": "yearly",
+      "quote": "Rp 40 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pertanian-selatan-kel-klender",
+      "pageDate": null
+     },
+     "bedrooms": 3,
+     "sizeM2": null,
+     "furnished": null,
+     "kitchen": "private",
+     "evidence": [
+      {
+       "quote": "Rp 40 Juta/Tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pertanian-selatan-kel-klender"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Iklan menyebut dua lantai, garasi dan kompor. Snapshot sekitar satu bulan; stok, luas dan akses aktual perlu konfirmasi.",
+     "nearStationsClaim": [
+      {
+       "station": "Klender",
+       "quote": "Dekat dengan stasiun kereta Klender",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pertanian-selatan-kel-klender"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pertanian-selatan-kel-klender",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Koordinat publik unit belum diperoleh. Stasiun hanya klaim sumber; jarak garis lurus, rute, dan stok perlu konfirmasi. Tidak membuat pin centroid.",
+     "location": null,
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-koridor-20261126-fatmawati-60",
+     "title": "Rumah 2 KT dekat MRT Fatmawati",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Lebak Bulus, Cilandak, Jakarta Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 60000000,
+      "period": "yearly",
+      "quote": "Rp 60 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-pertahun-di-dekat-mrt-fatmawati",
+      "pageDate": null
+     },
+     "bedrooms": 2,
+     "sizeM2": 60,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp 60 Juta/Tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-pertahun-di-dekat-mrt-fatmawati"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Snapshot detail sekitar dua bulan; stok belum dipastikan. Harga tepat plafon sebelum biaya tambahan. Jarak jalan kaki belum terbukti.",
+     "nearStationsClaim": [
+      {
+       "station": "Fatmawati",
+       "quote": "Akses ke MRT Fatmawati bisa jalan kaki",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-pertahun-di-dekat-mrt-fatmawati"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-pertahun-di-dekat-mrt-fatmawati",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Koordinat publik unit belum diperoleh. Stasiun hanya klaim sumber; jarak garis lurus, rute, dan stok perlu konfirmasi. Tidak membuat pin centroid.",
+     "location": null,
+     "nearbyMosques": []
     }
    ],
    "locationsCheckedAt": "2026-11-26"

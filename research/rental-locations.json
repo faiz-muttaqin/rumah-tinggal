@@ -11345,6 +11345,36 @@
         "checkedAt": "2026-11-26"
       },
       "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-koridor-20261126-kranji-30",
+      "location": null,
+      "note": "Koordinat publik unit belum diperoleh. Stasiun hanya klaim sumber; jarak garis lurus, rute, dan stok perlu konfirmasi. Tidak membuat pin centroid."
+    },
+    {
+      "rentalId": "sewa-koridor-20261126-kranji-32",
+      "location": null,
+      "note": "Koordinat publik unit belum diperoleh. Stasiun hanya klaim sumber; jarak garis lurus, rute, dan stok perlu konfirmasi. Tidak membuat pin centroid."
+    },
+    {
+      "rentalId": "sewa-koridor-20261126-duren-jaya-22",
+      "location": null,
+      "note": "Koordinat publik unit belum diperoleh. Stasiun hanya klaim sumber; jarak garis lurus, rute, dan stok perlu konfirmasi. Tidak membuat pin centroid."
+    },
+    {
+      "rentalId": "sewa-koridor-20261126-duren-jaya-1913",
+      "location": null,
+      "note": "Koordinat publik unit belum diperoleh. Stasiun hanya klaim sumber; jarak garis lurus, rute, dan stok perlu konfirmasi. Tidak membuat pin centroid."
+    },
+    {
+      "rentalId": "sewa-koridor-20261126-klender-40",
+      "location": null,
+      "note": "Koordinat publik unit belum diperoleh. Stasiun hanya klaim sumber; jarak garis lurus, rute, dan stok perlu konfirmasi. Tidak membuat pin centroid."
+    },
+    {
+      "rentalId": "sewa-koridor-20261126-fatmawati-60",
+      "location": null,
+      "note": "Koordinat publik unit belum diperoleh. Stasiun hanya klaim sumber; jarak garis lurus, rute, dan stok perlu konfirmasi. Tidak membuat pin centroid."
     }
   ]
 }
