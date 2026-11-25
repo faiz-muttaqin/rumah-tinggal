@@ -163,6 +163,24 @@
   flex: 0 0 auto;
 }
 
+.rent-table-corridor {
+  margin: 0 0 7px;
+  flex-shrink: 0;
+  color: #426351;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.rent-table-corridor summary {
+  width: max-content;
+  cursor: pointer;
+  font-weight: 680;
+}
+
+.rent-table-corridor p {
+  margin: 4px 0 0;
+}
+
 .rent-table-action:hover:not(:disabled) {
   background: #edf1e7;
 }
@@ -438,6 +456,15 @@
 
   .rent-table-filters > * {
     flex-shrink: 0;
+  }
+
+  .rent-table-filters:has([name="station"]:not([hidden])) [name="mode"] {
+    order: -2;
+  }
+
+  .rent-table-filters [name="station"] {
+    order: -1;
+    max-width: 44vw;
   }
 
   .rent-table-search {

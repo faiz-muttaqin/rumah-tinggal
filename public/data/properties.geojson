@@ -20947,7 +20947,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-26",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.255924,
@@ -20957,7 +20957,7 @@
       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-yang-siap-di-huni-di-perumahan-gramapuri-taman-sari",
       "method": "Pin publik pada halaman iklan Pinhome",
       "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-04"
+      "checkedAt": "2026-11-26"
      },
      "nearbyMosques": [
       {
@@ -38509,6 +38509,479 @@
       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-i-no-2-g-rt-009-rw-003-harjamukti",
       "method": "Koordinat publik di detail iklan",
       "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-mamikos-6bace8e05e81",
+     "title": "Kos Adam Tipe A — pasutri",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Bekasi Timur, Kota Bekasi",
+     "buildingOrCluster": "Kos Adam",
+     "rent": {
+      "amount": 1300000,
+      "period": "monthly",
+      "quote": "Rp1.300.000",
+      "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-kost-adam-tipe-a-bekasi-timur-bekasi",
+      "pageDate": "2026-11-07"
+     },
+     "bedrooms": 1,
+     "sizeM2": 12.0,
+     "furnished": null,
+     "kitchen": "shared",
+     "evidence": [
+      {
+       "quote": "Rp1.300.000",
+       "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-kost-adam-tipe-a-bekasi-timur-bekasi"
+      },
+      {
+       "quote": "Dapur umum",
+       "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-kost-adam-tipe-a-bekasi-timur-bekasi"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif iklan Rp1,3 juta per bulan. Ketentuan memperbolehkan pasutri tanpa anak dan menyebut dapur bersama. Tambahan untuk penghuni kedua dan minimum sewa belum dirinci di portal.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-kost-adam-tipe-a-bekasi-timur-bekasi",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-11-07",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+     "location": {
+      "lat": -6.239983,
+      "lng": 107.003664,
+      "precision": "approximate",
+      "label": "Pin perkiraan Mamikos",
+      "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-kost-adam-tipe-a-bekasi-timur-bekasi",
+      "method": "Titik acuan publik yang dinyatakan pada sumber",
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "couples": true,
+      "children": false
+     }
+    },
+    {
+     "id": "sewa-mamikos-ab69495d15b9",
+     "title": "Kos Dua Tujuh Tipe Fan — pasutri",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Kecamatan Kebayoran Baru, Kota Jakarta Selatan",
+     "buildingOrCluster": "Kos Dua Tujuh",
+     "rent": {
+      "amount": 1500000,
+      "period": "monthly",
+      "quote": "Rp1.500.000",
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-dua-tujuh-tipe-fan-kebayoran-baru-jakarta-selatan-2",
+      "pageDate": "2026-11-15"
+     },
+     "bedrooms": 1,
+     "sizeM2": 9.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp1.500.000",
+       "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-dua-tujuh-tipe-fan-kebayoran-baru-jakarta-selatan-2"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif iklan Rp1,5 juta per bulan. Pasutri perlu menunjukkan buku nikah. Tarif untuk penghuni kedua, ruang memasak, dan minimum sewa belum dirinci di portal.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-dua-tujuh-tipe-fan-kebayoran-baru-jakarta-selatan-2",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-11-15",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+     "location": {
+      "lat": -6.260111,
+      "lng": 106.794197,
+      "precision": "approximate",
+      "label": "Pin perkiraan Mamikos",
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-dua-tujuh-tipe-fan-kebayoran-baru-jakarta-selatan-2",
+      "method": "Titik acuan publik yang dinyatakan pada sumber",
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "couples": true,
+      "children": false
+     }
+    },
+    {
+     "id": "sewa-mamikos-be2d10594833",
+     "title": "Kos Damai Arte Cipete Utara Tipe A — pasutri",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Kebayoran Baru, Jakarta Selatan",
+     "buildingOrCluster": "Damai Arte Cipete Utara",
+     "rent": {
+      "amount": 3950000,
+      "period": "monthly",
+      "quote": "Rp3.950.000",
+      "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-damai-arte-cipete-utara-tipe-a-kebayoran-baru-jakarta-selatan",
+      "pageDate": "2026-11-18"
+     },
+     "bedrooms": 1,
+     "sizeM2": 18.24,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp3.950.000",
+       "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-damai-arte-cipete-utara-tipe-a-kebayoran-baru-jakarta-selatan"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif iklan Rp3,95 juta per bulan. Ketentuan memperbolehkan pasutri tanpa anak. Cek tarif untuk penghuni kedua, ruang memasak, dan minimum sewa.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-damai-arte-cipete-utara-tipe-a-kebayoran-baru-jakarta-selatan",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-11-18",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+     "location": {
+      "lat": -6.259626,
+      "lng": 106.802245,
+      "precision": "approximate",
+      "label": "Pin perkiraan Mamikos",
+      "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-damai-arte-cipete-utara-tipe-a-kebayoran-baru-jakarta-selatan",
+      "method": "Titik acuan publik yang dinyatakan pada sumber",
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "couples": true,
+      "children": false
+     }
+    },
+    {
+     "id": "sewa-mamikos-764405915756",
+     "title": "Kos The Syariah Residence Fatmawati Tipe A — pasutri",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Cilandak, Kota Jakarta Selatan",
+     "buildingOrCluster": "The Syariah Residence",
+     "rent": {
+      "amount": 2995000,
+      "period": "monthly",
+      "quote": "Rp2.995.000",
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-singgahsini-b211-the-syariah-residence-mrtfatmawati-tipe-a-cilandak-jakarta-selatan",
+      "pageDate": "2026-11-24"
+     },
+     "bedrooms": 1,
+     "sizeM2": 15.75,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp2.995.000",
+       "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-singgahsini-b211-the-syariah-residence-mrtfatmawati-tipe-a-cilandak-jakarta-selatan"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif bulanan Rp2,995 juta yang terlihat di halaman. Portal menawarkan promosi dengan syarat tersendiri. Pasutri diminta menunjukkan buku nikah dan KK. Tarif untuk penghuni kedua, ruang memasak, dan minimum sewa belum dirinci.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-singgahsini-b211-the-syariah-residence-mrtfatmawati-tipe-a-cilandak-jakarta-selatan",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-11-24",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+     "location": {
+      "lat": -6.291273,
+      "lng": 106.794013,
+      "precision": "approximate",
+      "label": "Pin perkiraan Mamikos",
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-singgahsini-b211-the-syariah-residence-mrtfatmawati-tipe-a-cilandak-jakarta-selatan",
+      "method": "Titik acuan publik yang dinyatakan pada sumber",
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-baitussalam-cilandak",
+       "name": "Masjid Baitussalam Cilandak",
+       "km": 0.471
+      }
+     ],
+     "review": {
+      "couples": true,
+      "children": false
+     }
+    },
+    {
+     "id": "sewa-pinhome-ab923f7a8b9b",
+     "title": "Rumah 3 kamar di Taman Kota Bekasi Timur",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Durenjaya (Duren Jaya), Bekasi Timur, Kota Bekasi",
+     "buildingOrCluster": "Kompleks Taman Kota Bekasi Timur",
+     "rent": {
+      "amount": 45000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 45 Juta/Tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-durenjaya-duren-jaya-7",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 3,
+     "sizeM2": 90.0,
+     "furnished": null,
+     "kitchen": "private",
+     "evidence": [
+      {
+       "quote": "Rp 45 Juta/Tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-durenjaya-duren-jaya-7"
+      },
+      {
+       "quote": "Dapur dalam unit menurut iklan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-durenjaya-duren-jaya-7"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Rp45 juta per tahun, minimum 12 bulan. Rumah satu lantai dengan dapur dalam unit tercantum di iklan.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-durenjaya-duren-jaya-7",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+     "location": {
+      "lat": -6.249116,
+      "lng": 107.013564,
+      "precision": "approximate",
+      "label": "Pin perkiraan Pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-durenjaya-duren-jaya-7",
+      "method": "Titik acuan publik yang dinyatakan pada sumber",
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "floors": 1
+     }
+    },
+    {
+     "id": "sewa-pinhome-e8fd0d293a5f",
+     "title": "Apartemen Tamansari Sudirman 32 m²",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Karet Kuningan, Setiabudi (Setia Budi), Kota Jakarta Selatan",
+     "buildingOrCluster": "Tamansari Sudirman",
+     "rent": {
+      "amount": 5000000,
+      "period": "monthly",
+      "minimumMonths": 3,
+      "quote": "Rp 5 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-dekat-mrt-di-taman-sari-sudirman",
+      "pageDate": "2025-10-27"
+     },
+     "bedrooms": null,
+     "sizeM2": 32.0,
+     "furnished": null,
+     "kitchen": "private",
+     "evidence": [
+      {
+       "quote": "Rp 5 Juta/Bulan",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-dekat-mrt-di-taman-sari-sudirman"
+      },
+      {
+       "quote": "Dapur dalam unit menurut iklan",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-dekat-mrt-di-taman-sari-sudirman"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Satu unit apartemen Rp5 juta per bulan, minimum 3 bulan. Iklan mencantumkan kitchen set dan kompor. Konfirmasi izin tinggal berdua dan apakah IPL dikenakan di luar tarif sewa.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-dekat-mrt-di-taman-sari-sudirman",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-10-27",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+     "location": {
+      "lat": -6.216433,
+      "lng": 106.821331,
+      "precision": "approximate",
+      "label": "Pin perkiraan Pinhome",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-dekat-mrt-di-taman-sari-sudirman",
+      "method": "Titik acuan publik yang dinyatakan pada sumber",
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-0ed0874d4f2e",
+     "title": "Rumah 3 kamar di Mekarsari, Tambun Selatan",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Mekarsari, Tambun Selatan, Kab. Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 2000000,
+      "period": "monthly",
+      "minimumMonths": 3,
+      "quote": "Rp 2 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-mekarsari-18",
+      "pageDate": "2026-04-22"
+     },
+     "bedrooms": 3,
+     "sizeM2": 65.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp 2 Juta/Bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-mekarsari-18"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Rp2 juta per bulan dengan minimum 3 bulan, total sewa minimum Rp6 juta. Fasilitas dapur belum dirinci.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-mekarsari-18",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-04-22",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+     "location": {
+      "lat": -6.252797,
+      "lng": 107.053256,
+      "precision": "approximate",
+      "label": "Pin perkiraan Pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-mekarsari-18",
+      "method": "Titik acuan publik yang dinyatakan pada sumber",
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-2191212ada72",
+     "title": "Apartemen Transpark Juanda 25 m²",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Bekasi",
+     "locationText": "Margahayu, Bekasi Timur, Kota Bekasi",
+     "buildingOrCluster": "Transpark Juanda",
+     "rent": {
+      "amount": 3500000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp 3,5 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-transpark-juanda-bekasi-1",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 1,
+     "sizeM2": 25.0,
+     "furnished": "full",
+     "kitchen": "private",
+     "evidence": [
+      {
+       "quote": "Rp 3,5 Juta/Bulan",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-transpark-juanda-bekasi-1"
+      },
+      {
+       "quote": "Dapur dalam unit menurut iklan",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-transpark-juanda-bekasi-1"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Satu unit apartemen Rp3,5 juta per bulan, minimum 1 bulan. Iklan mencantumkan kompor dan kitchen set, serta IPL dan sinking fund termasuk. Konfirmasi aturan untuk tinggal berdua, deposit, dan tarif akhir.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-transpark-juanda-bekasi-1",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+     "location": {
+      "lat": -6.249608,
+      "lng": 107.01671,
+      "precision": "approximate",
+      "label": "Pin perkiraan Pinhome",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-transpark-juanda-bekasi-1",
+      "method": "Titik acuan publik yang dinyatakan pada sumber",
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-8d6bd0b16562",
+     "title": "Rumah 2 kamar di Karangasih, Cikarang Utara",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Karangasih, Cikarang Utara, Kab. Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1000000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp 1 Juta/Bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-khfudholi",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 2,
+     "sizeM2": 60.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp 1 Juta/Bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-khfudholi"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Rp1 juta per bulan, minimum 1 bulan. Pin portal berada sekitar 900 m garis lurus dari Stasiun Cikarang. Cek ketersediaan, rute jalan kaki dan fasilitas memasak.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-khfudholi",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
+     "location": {
+      "lat": -6.248465,
+      "lng": 107.149496,
+      "precision": "approximate",
+      "label": "Pin perkiraan Pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-khfudholi",
+      "method": "Titik acuan publik yang dinyatakan pada sumber",
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
       "checkedAt": "2026-11-26"
      },
      "nearbyMosques": []

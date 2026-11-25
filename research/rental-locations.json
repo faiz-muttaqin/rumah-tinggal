@@ -5737,7 +5737,7 @@
         "label": "Pin perkiraan portal",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-yang-siap-di-huni-di-perumahan-gramapuri-taman-sari",
         "method": "Pin publik pada halaman iklan Pinhome",
-        "checkedAt": "2026-11-04"
+        "checkedAt": "2026-11-26"
       },
       "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
       "evidence": {
@@ -11345,6 +11345,123 @@
         "checkedAt": "2026-11-26"
       },
       "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-mamikos-6bace8e05e81",
+      "location": {
+        "lat": -6.239983,
+        "lng": 107.003664,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-kost-adam-tipe-a-bekasi-timur-bekasi",
+        "method": "Titik acuan publik yang dinyatakan pada sumber",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian."
+    },
+    {
+      "rentalId": "sewa-mamikos-ab69495d15b9",
+      "location": {
+        "lat": -6.260111,
+        "lng": 106.794197,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-dua-tujuh-tipe-fan-kebayoran-baru-jakarta-selatan-2",
+        "method": "Titik acuan publik yang dinyatakan pada sumber",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian."
+    },
+    {
+      "rentalId": "sewa-mamikos-be2d10594833",
+      "location": {
+        "lat": -6.259626,
+        "lng": 106.802245,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-damai-arte-cipete-utara-tipe-a-kebayoran-baru-jakarta-selatan",
+        "method": "Titik acuan publik yang dinyatakan pada sumber",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian."
+    },
+    {
+      "rentalId": "sewa-mamikos-764405915756",
+      "location": {
+        "lat": -6.291273,
+        "lng": 106.794013,
+        "precision": "approximate",
+        "label": "Pin perkiraan Mamikos",
+        "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-singgahsini-b211-the-syariah-residence-mrtfatmawati-tipe-a-cilandak-jakarta-selatan",
+        "method": "Titik acuan publik yang dinyatakan pada sumber",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian."
+    },
+    {
+      "rentalId": "sewa-pinhome-ab923f7a8b9b",
+      "location": {
+        "lat": -6.249116,
+        "lng": 107.013564,
+        "precision": "approximate",
+        "label": "Pin perkiraan Pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-durenjaya-duren-jaya-7",
+        "method": "Titik acuan publik yang dinyatakan pada sumber",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian."
+    },
+    {
+      "rentalId": "sewa-pinhome-e8fd0d293a5f",
+      "location": {
+        "lat": -6.216433,
+        "lng": 106.821331,
+        "precision": "approximate",
+        "label": "Pin perkiraan Pinhome",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-dekat-mrt-di-taman-sari-sudirman",
+        "method": "Titik acuan publik yang dinyatakan pada sumber",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian."
+    },
+    {
+      "rentalId": "sewa-pinhome-0ed0874d4f2e",
+      "location": {
+        "lat": -6.252797,
+        "lng": 107.053256,
+        "precision": "approximate",
+        "label": "Pin perkiraan Pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-mekarsari-18",
+        "method": "Titik acuan publik yang dinyatakan pada sumber",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian."
+    },
+    {
+      "rentalId": "sewa-pinhome-2191212ada72",
+      "location": {
+        "lat": -6.249608,
+        "lng": 107.01671,
+        "precision": "approximate",
+        "label": "Pin perkiraan Pinhome",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-transpark-juanda-bekasi-1",
+        "method": "Titik acuan publik yang dinyatakan pada sumber",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian."
+    },
+    {
+      "rentalId": "sewa-pinhome-8d6bd0b16562",
+      "location": {
+        "lat": -6.248465,
+        "lng": 107.149496,
+        "precision": "approximate",
+        "label": "Pin perkiraan Pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-khfudholi",
+        "method": "Titik acuan publik yang dinyatakan pada sumber",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian."
     }
   ]
 }

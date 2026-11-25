@@ -1,4 +1,4 @@
-import { escapeHTML as esc, nearestStation } from "./geo.ts";
+import { distanceKm, escapeHTML as esc, nearestStation } from "./geo.ts";
 import { icon } from "./icons.ts";
 import {
   googleMapsLocation,
@@ -23,6 +23,25 @@ import { AREAS, type Station } from "./types.ts";
 import "./rental-table.css";
 
 const modes = ["KRL", "MRT", "LRT", "TransJakarta"] as const;
+export const RENTAL_RAIL_CORRIDOR = "cikarang-mrt";
+const railRadiusKm = 1.2;
+const cikarangStops = [
+  "Cikarang",
+  "Metland Telagamurni",
+  "Cibitung",
+  "Tambun",
+  "Bekasi Timur",
+  "Bekasi",
+  "Kranji",
+  "Cakung",
+  "Klender Baru",
+  "Buaran",
+  "Klender",
+  "Jatinegara",
+  "Matraman",
+  "Manggarai",
+  "Sudirman",
+];
 const allKinds = new Set(RENTAL_MAP_GROUPS.map((group) => group.id));
 type Mode = (typeof modes)[number];
 type Stop = NonNullable<ReturnType<typeof nearestStation>>;
@@ -34,6 +53,7 @@ type Row = {
   mosque?: ResearchMosque;
   mosqueKm?: number;
   stops: Partial<Record<Mode, Stop>>;
+  corridorStop?: Stop;
 };
 type Column = {
   id: string;
@@ -412,6 +432,7 @@ export class RentalTable {
   private head: HTMLTableSectionElement;
   private body: HTMLTableSectionElement;
   private grid: HTMLTableElement;
+  private corridorStations = new Map<string, Station>();
   private rows = new Map<string, Row>();
   private matches: ResearchRental[] = [];
   private selected: string[] = [];
@@ -449,12 +470,14 @@ export class RentalTable {
           <label class="rent-table-search">${icon("search")}<input type="search" name="query" aria-label="Cari di tabel sewa" placeholder="Cari hunian, kawasan, masjid…" autocomplete="off"/></label>
           <select name="kind" aria-label="Jenis hunian di tabel"><option value="">Semua jenis</option>${RENTAL_MAP_GROUPS.map((g) => `<option value="${g.id}">${g.label}</option>`).join("")}</select>
           <select name="area" aria-label="Wilayah di tabel"><option value="">Semua wilayah</option>${AREAS.map((a) => `<option>${a}</option>`).join("")}</select>
-          <select name="mode" aria-label="Angkutan dekat hunian"><option value="">Semua angkutan</option>${modes.map((m) => `<option>${m}</option>`).join("")}</select>
+          <select name="mode" aria-label="Angkutan dekat hunian"><option value="">Semua angkutan</option><option value="${RENTAL_RAIL_CORRIDOR}">Cikarang–Sudirman + MRT</option>${modes.map((m) => `<option>${m}</option>`).join("")}</select>
+          <select name="station" aria-label="Stasiun di koridor" hidden><option value="">Semua stasiun koridor</option></select>
           <label class="rent-table-kitchen"><input type="checkbox" name="kitchen"/> Dapur dalam unit</label>
           <select name="freeze" aria-label="Bekukan kolom kiri">${Array.from({ length: 5 }, (_, i) => `<option value="${i}">${i ? `Bekukan ${i} kolom` : "Tanpa kolom beku"}</option>`).join("")}</select>
           <button class="rent-table-action" data-reset type="button">Reset filter</button>
         </div>
       </form>
+      <details class="rent-table-corridor" hidden><summary>Panduan rute · radius 1,2 km</summary><p>Jarak dihitung garis lurus. Kos menampilkan iklan yang mengizinkan pasutri. Ke SCBD, turun di MRT Istora atau Senayan. Dari KRL, pilih kereta via Manggarai yang berhenti di Sudirman, lalu pindah ke MRT Dukuh Atas.</p></details>
       <div class="rent-table-scroll" id="rent-table-scroll" role="region" aria-label="Data sewa, gulir mendatar untuk melihat semua kolom" tabindex="0">
         <table class="rent-table-grid" aria-label="Cari hunian sewa"><colgroup>${columns.map((c) => `<col data-column="${c.id}"/>`).join("")}</colgroup><thead></thead><tbody></tbody></table>
       </div>
@@ -467,7 +490,9 @@ export class RentalTable {
     this.grid = element<HTMLTableElement>(panel, "table");
     this.controls.onsubmit = (event) => event.preventDefault();
     this.controls.oninput = (event) => {
-      if ((event.target as HTMLElement).getAttribute("name") === "freeze") {
+      const name = (event.target as HTMLElement).getAttribute("name");
+      if (name === "mode") this.syncCorridor();
+      if (name === "freeze") {
         this.frozen = Number(this.select("freeze").value);
         savePreference(stickyKey, this.frozen);
         this.layoutColumns();
@@ -479,6 +504,7 @@ export class RentalTable {
     };
     element<HTMLButtonElement>(panel, "[data-reset]").onclick = () => {
       this.controls.reset();
+      this.syncCorridor();
       this.select("freeze").value = String(
         Math.min(this.frozen, this.freezeLimit()),
       );
@@ -574,6 +600,23 @@ export class RentalTable {
     return this.controls.elements.namedItem(name) as HTMLSelectElement;
   }
 
+  private syncCorridor(): void {
+    const active = this.select("mode").value === RENTAL_RAIL_CORRIDOR;
+    this.select("station").hidden = !active;
+    if (!active) this.select("station").value = "";
+    const guide = element<HTMLDetailsElement>(
+      this.panel,
+      ".rent-table-corridor",
+    );
+    guide.hidden = !active;
+    if (!active) guide.open = false;
+  }
+
+  showRailCorridor(): void {
+    this.select("mode").value = RENTAL_RAIL_CORRIDOR;
+    this.syncCorridor();
+  }
+
   private freezeLimit(): number {
     const width = this.workspace.clientWidth;
     return width <= 760 ? 2 : width < 900 ? 3 : 4;
@@ -637,6 +680,32 @@ export class RentalTable {
     const byMode = modes.map(
       (mode) => [mode, stations.filter((s) => s.mode === mode)] as const,
     );
+    const krl = stations
+      .filter(
+        (s) =>
+          s.mode === "KRL" &&
+          s.lines.includes("cikarang") &&
+          cikarangStops.includes(s.name),
+      )
+      .sort(
+        (a, b) => cikarangStops.indexOf(a.name) - cikarangStops.indexOf(b.name),
+      );
+    const mrt = stations
+      .filter((s) => s.mode === "MRT" && s.lines.includes("mrt-north-south"))
+      .sort((a, b) => a.lat - b.lat);
+    const corridor = [...krl, ...mrt];
+    this.corridorStations = new Map(corridor.map((s) => [s.id, s]));
+    const groups = [
+      ["KRL Cikarang–Sudirman", krl],
+      ["MRT Lebak Bulus–Bundaran HI", mrt],
+    ] as const;
+    this.select("station").innerHTML =
+      `<option value="">Semua stasiun koridor</option>${groups
+        .map(
+          ([label, stops]) =>
+            `<optgroup label="${label}">${stops.map((s) => `<option value="${esc(s.id)}">${esc(s.name)}</option>`).join("")}</optgroup>`,
+        )
+        .join("")}`;
     this.rows.clear();
     for (const rental of rentals) {
       const near = rental.nearbyMosques?.[0];
@@ -649,16 +718,24 @@ export class RentalTable {
           RENTAL_MAP_GROUPS.find((g) => g.id === rentalMapKind(rental)) ??
           RENTAL_MAP_GROUPS[3],
       };
-      if (rental.location)
+      if (rental.location) {
         for (const [mode, items] of byMode)
           row.stops[mode] = nearestStation(rental.location, items);
+        row.corridorStop = nearestStation(rental.location, corridor);
+      }
       this.rows.set(rental.id, row);
     }
   }
 
   private stop(row: Row): Stop | undefined {
-    const mode = this.select("mode").value as Mode | "";
-    if (mode) return row.stops[mode];
+    const mode = this.select("mode").value;
+    if (mode === RENTAL_RAIL_CORRIDOR) {
+      const station = this.corridorStations.get(this.select("station").value);
+      return station && row.rental.location
+        ? { station, distance: distanceKm(row.rental.location, station) }
+        : row.corridorStop;
+    }
+    if (mode) return row.stops[mode as Mode];
     return Object.values(row.stops).reduce<Stop | undefined>(
       (closest, stop) =>
         !closest || (stop && stop.distance < closest.distance) ? stop : closest,
@@ -693,10 +770,17 @@ export class RentalTable {
     ).filter((rental) => {
       const row = this.rows.get(rental.id);
       if (!row) return false;
+      if (
+        mode === RENTAL_RAIL_CORRIDOR &&
+        row.group.id === "kos" &&
+        !rental.review?.couples
+      )
+        return false;
       const stop = this.stop(row);
       if (
         mode &&
-        (!stop || stop.distance > (mode === "TransJakarta" ? 0.7 : 1.2))
+        (!stop ||
+          stop.distance > (mode === "TransJakarta" ? 0.7 : railRadiusKm))
       )
         return false;
       if (!tokens.length) return true;

@@ -1183,6 +1183,82 @@ test("shows historical flood and crime reports in independent opt-in map layers"
   await expect(page.locator("#listings-toggle")).not.toBeChecked();
 });
 
+test("filters the Cikarang–MRT rental corridor and allows choosing a station", async ({
+  page,
+}) => {
+  const fixture = structuredClone(researchFixture);
+  const base = fixture.metadata.rentals.rentals[0];
+  const rental = (id: string, title: string, lat: number, lng: number) => ({
+    ...base,
+    id,
+    title,
+    rentalType: "kontrakan",
+    location: {
+      lat,
+      lng,
+      precision: "approximate",
+      label: "Titik uji",
+      method: "Lokasi fiktif",
+      url: "https://portal.example.invalid/pin",
+      checkedAt: "2026-11-26",
+    },
+  });
+  const kos = rental("kos-uji", "Kos uji Blok A", -6.2559, 106.799);
+  await page.route("**/data/properties.geojson", (route) =>
+    route.fulfill({
+      json: {
+        ...fixture,
+        metadata: {
+          ...fixture.metadata,
+          rentals: {
+            ...fixture.metadata.rentals,
+            rentals: [
+              rental("timur-uji", "Rumah uji Cikarang", -6.2553, 107.145),
+              rental("tengah-uji", "Rumah uji Dukuh Atas", -6.2008, 106.8227),
+              rental("lewat-uji", "Rumah uji jauh", -6.2425, 107.145),
+              rental("cabang-uji", "Rumah uji Kemayoran", -6.1617, 106.8414),
+              { ...kos, rentalType: "kos-keluarga", review: { couples: true } },
+              { ...kos, id: "kos-tanpa-izin", rentalType: "kos", review: {} },
+            ],
+          },
+        },
+      },
+    }),
+  );
+  await page.goto("/?koleksi=sewa&tampilan=tabel&koridor=cikarang-mrt");
+  const panel = page.locator("#rental-table");
+  const mode = panel.getByLabel("Angkutan dekat hunian");
+  const station = panel.getByLabel("Stasiun di koridor");
+  const rows = panel.locator("tr[data-rental]");
+  await expect(mode).toHaveValue("cikarang-mrt");
+  await expect(station.locator("optgroup[label^='KRL'] option")).toHaveCount(
+    15,
+  );
+  await expect(station.locator("optgroup[label^='MRT'] option")).toHaveCount(
+    13,
+  );
+  await expect(rows).toHaveCount(3);
+  await expect(panel.locator("[data-rental='timur-uji']")).toContainText(
+    "KRL · Cikarang",
+  );
+  await expect(panel.locator("[data-rental='tengah-uji']")).toContainText(
+    "MRT · Dukuh Atas",
+  );
+  await station.selectOption({ label: "Sudirman" });
+  await expect(rows).toHaveCount(1);
+  await expect(
+    rows.first().getByRole("link", { name: /KRL · Sudirman/ }),
+  ).toHaveAttribute("href", /travelmode=walking/);
+  await station.selectOption({ label: "Cikarang" });
+  await expect(rows.first()).toContainText("Rumah uji Cikarang");
+  await mode.selectOption("KRL");
+  await expect(station).toBeHidden();
+  await expect(panel.locator("[data-rental='cabang-uji']")).toBeVisible();
+  await mode.selectOption("cikarang-mrt");
+  await expect(station).toHaveValue("");
+  await expect(rows).toHaveCount(3);
+});
+
 test("searches dated location reports and opens only mapped public references", async ({
   page,
 }) => {
