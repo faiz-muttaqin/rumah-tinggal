@@ -27728,6 +27728,278 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-koridor-multi-kranji-kanopi",
+      "title": "Kontrakan 2 KT Kranji, kanopi",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Kranji, Bekasi Barat, Kota Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1500000,
+        "period": "monthly",
+        "quote": "Rp 1,5 Juta /bulan",
+        "url": "https://www.rumah123.com/properti/bekasi-kranji/sewa-strategis-jl-lebar-kanopi-kranji-bekasi-dkt-stasiun-tol-lrt-hor42707004/",
+        "pageDate": "2026-10-27"
+      },
+      "bedrooms": 2,
+      "sizeM2": 30,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 1,5 Juta /bulan",
+          "url": "https://www.rumah123.com/properti/bekasi-kranji/sewa-strategis-jl-lebar-kanopi-kranji-bekasi-dkt-stasiun-tol-lrt-hor42707004/"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "LT 44 m², satu lantai. Iklan menerima keluarga muda dengan satu anak; Rp17 juta/tahun alternatif. Jarak berjalan belum diukur.",
+      "nearStationsClaim": [
+        {
+          "station": "Kranji",
+          "quote": "Dkt Stasiun Kranji (jln kaki)",
+          "url": "https://www.rumah123.com/properti/bekasi-kranji/sewa-strategis-jl-lebar-kanopi-kranji-bekasi-dkt-stasiun-tol-lrt-hor42707004/"
+        }
+      ],
+      "listingUrl": "https://www.rumah123.com/properti/bekasi-kranji/sewa-strategis-jl-lebar-kanopi-kranji-bekasi-dkt-stasiun-tol-lrt-hor42707004/",
+      "sourcePortal": "rumah123",
+      "postedOrUpdated": "2026-10-27",
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-koridor-multi-kranji-modern",
+      "title": "Rumah cluster 3+1 KT Kranji",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Kranji, Bekasi Barat, Kota Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 36000000,
+        "period": "yearly",
+        "minimumMonths": 12,
+        "quote": "Rp 36 Juta /tahun",
+        "url": "https://www.rumah123.com/properti/bekasi-kranji/sewa-cluster-strategis-modern-jl-lbr-dkt-stasiun-kranji-tol-lrt-hor42740263/",
+        "pageDate": "2026-11-02"
+      },
+      "bedrooms": 3,
+      "sizeM2": 140,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 36 Juta /tahun",
+          "url": "https://www.rumah123.com/properti/bekasi-kranji/sewa-cluster-strategis-modern-jl-lbr-dkt-stasiun-kranji-tol-lrt-hor42740263/"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "LT 72 m², dua lantai, tambahan kamar ART. Hanya tahunan. One gate menurut iklan.",
+      "nearStationsClaim": [
+        {
+          "station": "Kranji",
+          "quote": "Dekat stasiun kereta Kranji",
+          "url": "https://www.rumah123.com/properti/bekasi-kranji/sewa-cluster-strategis-modern-jl-lbr-dkt-stasiun-kranji-tol-lrt-hor42740263/"
+        }
+      ],
+      "listingUrl": "https://www.rumah123.com/properti/bekasi-kranji/sewa-cluster-strategis-modern-jl-lbr-dkt-stasiun-kranji-tol-lrt-hor42740263/",
+      "sourcePortal": "rumah123",
+      "postedOrUpdated": "2026-11-02",
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-koridor-multi-telagamurni-r123",
+      "title": "Rumah 2 KT Perumahan Telaga Murni",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Perumahan Telaga Murni, Kab. Bekasi",
+      "buildingOrCluster": "Perumahan Telaga Murni",
+      "rent": {
+        "amount": 16000000,
+        "period": "yearly",
+        "quote": "Rp 16 Juta /tahun",
+        "url": "https://www.rumah123.com/properti/bekasi-cibitung/disewakan-rumah-kontrakan-di-perumahan-telaga-murni-cibitung-026-hor41001920/",
+        "pageDate": "2026-09-13"
+      },
+      "bedrooms": 2,
+      "sizeM2": 60,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 16 Juta /tahun",
+          "url": "https://www.rumah123.com/properti/bekasi-cibitung/disewakan-rumah-kontrakan-di-perumahan-telaga-murni-cibitung-026-hor41001920/"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "LT 60 m², satu lantai, carport. Iklan cocok keluarga kecil/pasangan. Target Metland Telagamurni; jarak tidak diketahui.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.rumah123.com/properti/bekasi-cibitung/disewakan-rumah-kontrakan-di-perumahan-telaga-murni-cibitung-026-hor41001920/",
+      "sourcePortal": "rumah123",
+      "postedOrUpdated": "2026-09-13",
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-koridor-multi-pulo-gebang-taman",
+      "title": "Rumah 2+1 KT Taman Pulo Gebang",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Taman Pulo Gebang, Cakung, Jakarta Timur",
+      "buildingOrCluster": "Taman Pulo Gebang",
+      "rent": {
+        "amount": 45000000,
+        "period": "yearly",
+        "quote": "Rp 45 Juta /tahun",
+        "url": "https://www.rumah123.com/properti/jakarta-timur-cakung/disewakan-rumah-daerah-taman-pulo-gebang-cakung-siap-huni-strategis-004-hor42400169/",
+        "pageDate": "2026-09-14"
+      },
+      "bedrooms": 2,
+      "sizeM2": 100,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp 45 Juta /tahun",
+          "url": "https://www.rumah123.com/properti/jakarta-timur-cakung/disewakan-rumah-daerah-taman-pulo-gebang-cakung-siap-huni-strategis-004-hor42400169/"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "LT 120 m², satu lantai, tambahan kamar ART. Beberapa iklan mirip ditahan. Klaim masjid kompleks dan bebas banjir belum diverifikasi.",
+      "nearStationsClaim": [
+        {
+          "station": "Cakung",
+          "quote": "Stasiun KRL Cakung",
+          "url": "https://www.rumah123.com/properti/jakarta-timur-cakung/disewakan-rumah-daerah-taman-pulo-gebang-cakung-siap-huni-strategis-004-hor42400169/"
+        }
+      ],
+      "listingUrl": "https://www.rumah123.com/properti/jakarta-timur-cakung/disewakan-rumah-daerah-taman-pulo-gebang-cakung-siap-huni-strategis-004-hor42400169/",
+      "sourcePortal": "rumah123",
+      "postedOrUpdated": "2026-09-14",
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-koridor-multi-karet-rusun",
+      "title": "Rusun Karet Tengsin II studio",
+      "rentalType": "apartemen",
+      "kind": "Apartemen",
+      "area": "Jakarta",
+      "locationText": "Karet Tengsin / Bendungan Hilir, Tanah Abang, Jakarta Pusat",
+      "buildingOrCluster": "Rusun Karet Tengsin 2",
+      "rent": {
+        "amount": 38000000,
+        "period": "yearly",
+        "quote": "Rp 38 Juta /tahun",
+        "url": "https://www.rumah123.com/properti/jakarta-pusat-bendungan-hilir/disewakan-rusun-karet-tengsin-bendungan-hilir-studio-size-35sqm-apr7603015/",
+        "pageDate": "2026-08-15"
+      },
+      "bedrooms": null,
+      "sizeM2": 35,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Rp 38 Juta /tahun",
+          "url": "https://www.rumah123.com/properti/jakarta-pusat-bendungan-hilir/disewakan-rusun-karet-tengsin-bendungan-hilir-studio-size-35sqm-apr7603015/"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Studio lantai 9, full furnished. Konfirmasi kelayakan penyewa, IPL, biaya tambahan dan akses ke MRT Bendungan Hilir/Setiabudi.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.rumah123.com/properti/jakarta-pusat-bendungan-hilir/disewakan-rusun-karet-tengsin-bendungan-hilir-studio-size-35sqm-apr7603015/",
+      "sourcePortal": "rumah123",
+      "postedOrUpdated": "2026-08-15",
+      "ownerType": "agent",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-koridor-multi-sentra-timur-1br",
+      "title": "Sentra Timur Residence 1 KT 36 m²",
+      "rentalType": "apartemen",
+      "kind": "Apartemen",
+      "area": "Jakarta",
+      "locationText": "Pulo Gebang, Cakung, Jakarta Timur",
+      "buildingOrCluster": "Sentra Timur Residence",
+      "rent": {
+        "amount": 2600000,
+        "period": "monthly",
+        "minimumMonths": 1,
+        "quote": "Rp 2.600.000 / bulan",
+        "url": "https://www.sewa-apartemen.net/256486/apartemen-sentra-timur-residence-pulo-gebang-jakarta-timur-disewakan-1-br-36-m2-fully-furnished1/",
+        "pageDate": "2026-04-02"
+      },
+      "bedrooms": 1,
+      "sizeM2": 36,
+      "furnished": "full",
+      "kitchen": "private",
+      "evidence": [
+        {
+          "quote": "Rp 2.600.000 / bulan",
+          "url": "https://www.sewa-apartemen.net/256486/apartemen-sentra-timur-residence-pulo-gebang-jakarta-timur-disewakan-1-br-36-m2-fully-furnished1/"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Full furnish, ruang kerja dan dapur. Minimum 1 bulan; deposit Rp1 juta, IPL/listrik/air di luar harga. Iklan lama, stok perlu recheck.",
+      "nearStationsClaim": [
+        {
+          "station": "Cakung",
+          "quote": "Dekat Terminal Terpadu Pulo Gebang dan Stasiun KRL Cakung",
+          "url": "https://www.sewa-apartemen.net/256486/apartemen-sentra-timur-residence-pulo-gebang-jakarta-timur-disewakan-1-br-36-m2-fully-furnished1/"
+        }
+      ],
+      "listingUrl": "https://www.sewa-apartemen.net/256486/apartemen-sentra-timur-residence-pulo-gebang-jakarta-timur-disewakan-1-br-36-m2-fully-furnished1/",
+      "sourcePortal": "sewa-apartemen.net",
+      "postedOrUpdated": "2026-04-02",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-koridor-multi-sentra-timur-stra003",
+      "title": "Sentra Timur Residence studio STRA003",
+      "rentalType": "apartemen",
+      "kind": "Apartemen",
+      "area": "Jakarta",
+      "locationText": "Cakung, Jakarta Timur",
+      "buildingOrCluster": "Sentra Timur Residence",
+      "rent": {
+        "amount": 25000000,
+        "period": "yearly",
+        "quote": "Rp 25,000,000",
+        "url": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003",
+        "pageDate": null
+      },
+      "bedrooms": null,
+      "sizeM2": 21,
+      "furnished": "full",
+      "evidence": [
+        {
+          "quote": "Rp 25,000,000",
+          "url": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Full furnished, tower Ruby. Rp25 juta untuk bayar langsung 12 bulan; masa 3/6 bulan juga ditawarkan, harga belum dicek. Stok dan IPL belum dipastikan.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
     }
   ]
 }

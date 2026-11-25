@@ -11465,6 +11465,41 @@
       "rentalId": "sewa-kelurahan-20261126-cipete-utara-40",
       "location": null,
       "note": "Lokasi kelurahan dari portal. Koordinat unit belum terbukti; target stasiun hanya untuk pencarian dan tidak menetapkan radius."
+    },
+    {
+      "rentalId": "sewa-koridor-multi-kranji-kanopi",
+      "location": null,
+      "note": "Belum ada koordinat publik unit yang diperiksa; tidak memakai centroid. Klaim akses dan ketersediaan belum terkonfirmasi."
+    },
+    {
+      "rentalId": "sewa-koridor-multi-kranji-modern",
+      "location": null,
+      "note": "Belum ada koordinat publik unit yang diperiksa; tidak memakai centroid. Klaim akses dan ketersediaan belum terkonfirmasi."
+    },
+    {
+      "rentalId": "sewa-koridor-multi-telagamurni-r123",
+      "location": null,
+      "note": "Belum ada koordinat publik unit yang diperiksa; tidak memakai centroid. Klaim akses dan ketersediaan belum terkonfirmasi."
+    },
+    {
+      "rentalId": "sewa-koridor-multi-pulo-gebang-taman",
+      "location": null,
+      "note": "Belum ada koordinat publik unit yang diperiksa; tidak memakai centroid. Klaim akses dan ketersediaan belum terkonfirmasi."
+    },
+    {
+      "rentalId": "sewa-koridor-multi-karet-rusun",
+      "location": null,
+      "note": "Belum ada koordinat publik unit yang diperiksa; tidak memakai centroid. Klaim akses dan ketersediaan belum terkonfirmasi."
+    },
+    {
+      "rentalId": "sewa-koridor-multi-sentra-timur-1br",
+      "location": null,
+      "note": "Belum ada koordinat publik unit yang diperiksa; tidak memakai centroid. Klaim akses dan ketersediaan belum terkonfirmasi."
+    },
+    {
+      "rentalId": "sewa-koridor-multi-sentra-timur-stra003",
+      "location": null,
+      "note": "Belum ada koordinat publik unit yang diperiksa; tidak memakai centroid. Klaim akses dan ketersediaan belum terkonfirmasi."
     }
   ]
 }
