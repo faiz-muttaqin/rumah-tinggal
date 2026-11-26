@@ -266,6 +266,69 @@
         "label": "Bangunan RSUD · OpenStreetMap",
         "url": "https://www.openstreetmap.org/way/782896904"
       }
+    },
+    {
+      "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+      "kind": "banjir",
+      "title": "Banjir di Kampung Leuweng Gede, Tenjo",
+      "date": "2026-04-29",
+      "basis": "Rilis",
+      "region": "Kabupaten Bogor",
+      "place": "Kampung Leuweng Gede, Desa Tenjo, Kecamatan Tenjo",
+      "lat": -6.334451454332572,
+      "lng": 106.44304106359495,
+      "summary": "TRC BPBD mencatat 4 rumah/KK terdampak; luapan Kali Cinyompok mencapai sekitar 1 m pada lokasi kejadian.",
+      "precision": "Marker lokasi kejadian pada peta laporan Siaga112 Pemkab Bogor; cocok dengan desa dan kecamatan pada batas BIG. Bukan batas genangan, titik ukur kedalaman, atau bukti seluruh bangunan terendam.",
+      "source": {
+        "label": "Siaga112 Pemkab Bogor · TRC BPBD",
+        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1102"
+      },
+      "locationSource": {
+        "label": "Marker peta resmi Siaga112 Pemkab Bogor",
+        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1102"
+      }
+    },
+    {
+      "id": "banjir-ciomas-tenjo-2026-04-18",
+      "kind": "banjir",
+      "title": "Banjir di Kampung Banar, Ciomas, Tenjo",
+      "date": "2026-04-18",
+      "basis": "Rilis",
+      "region": "Kabupaten Bogor",
+      "place": "Kampung Banar, Desa Ciomas, Kecamatan Tenjo",
+      "lat": -6.413881130026385,
+      "lng": 106.51409996647065,
+      "summary": "TRC BPBD melaporkan luapan Sungai Cicareuehun; 32 KK terdampak dan genangan sekitar 30–90 cm.",
+      "precision": "Marker lokasi kejadian pada peta laporan Siaga112 Pemkab Bogor; cocok dengan desa dan kecamatan pada batas BIG. Bukan batas genangan, titik ukur kedalaman, atau bukti seluruh bangunan terendam.",
+      "source": {
+        "label": "Siaga112 Pemkab Bogor · TRC BPBD",
+        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/971"
+      },
+      "locationSource": {
+        "label": "Marker peta resmi Siaga112 Pemkab Bogor",
+        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/971"
+      }
+    },
+    {
+      "id": "banjir-cibunar-parungpanjang-2025-11-30",
+      "kind": "banjir",
+      "title": "Banjir di Perumnas 1 Parung Panjang",
+      "date": "2025-11-30",
+      "basis": "Rilis",
+      "region": "Kabupaten Bogor",
+      "place": "Perumnas 1, Desa Cibunar, Kecamatan Parungpanjang",
+      "lat": -6.34527358369842,
+      "lng": 106.5565838229558,
+      "summary": "TRC BPBD mencatat luapan Kali Cibunar yang berdampak pada 2 RT dengan genangan sekitar 50 cm.",
+      "precision": "Marker lokasi kejadian pada peta laporan Siaga112 Pemkab Bogor; cocok dengan desa dan kecamatan pada batas BIG. Bukan batas genangan, titik ukur kedalaman, atau bukti seluruh bangunan terendam.",
+      "source": {
+        "label": "Siaga112 Pemkab Bogor · TRC BPBD",
+        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/2089"
+      },
+      "locationSource": {
+        "label": "Marker peta resmi Siaga112 Pemkab Bogor",
+        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/2089"
+      }
     }
   ],
   "reports": [
@@ -829,6 +892,91 @@
           "url": "https://bakesbangpol.bogorkab.go.id/berita/Seputar-OPD/pemkab-bogor-tangani-banjir-di-bojonggede-fokus-normalisasi-irigasi"
         }
       ]
+    },
+    {
+      "id": "banjir-tanjung-priok-bpbd-2026-01-18",
+      "kind": "banjir",
+      "title": "Catatan genangan Tanjung Priok, 2026-01-18",
+      "date": "2026-01-18",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "scope": "kelurahan",
+      "place": "Tanjung Priok",
+      "summary": "Satu RT masih tergenang sekitar 25 cm dalam laporan pukul 21.00 WIB. Tidak menunjukkan semua bangunan di wilayah tersebut terdampak.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 18 Januari 21.00",
+          "url": "https://bpbd.jakarta.go.id/berita/WEJPRVhPdnhaVjBaRHpyTWJZczdrUT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-21-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-sunter-agung-jalan-agung-raya-2026-01-18",
+      "kind": "banjir",
+      "title": "Catatan genangan Sunter Agung, 2026-01-18",
+      "date": "2026-01-18",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "scope": "jalan",
+      "place": "Jl. Agung Raya, Sunter Agung",
+      "summary": "Ruas jalan termasuk lokasi yang sudah surut pada pembaruan 21.00 WIB; kedalaman tidak disebut. Tidak menunjukkan semua bangunan di wilayah tersebut terdampak.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 18 Januari 21.00",
+          "url": "https://bpbd.jakarta.go.id/berita/WEJPRVhPdnhaVjBaRHpyTWJZczdrUT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-21-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-sungai-bambu-gaya-motor-2026-01-18",
+      "kind": "banjir",
+      "title": "Catatan genangan Sungai Bambu, 2026-01-18",
+      "date": "2026-01-18",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "scope": "jalan",
+      "place": "Jl. Gaya Motor Raya, depan Kodim 0502, Sungai Bambu",
+      "summary": "Genangan di bagian jalan dekat Kodim dilaporkan sudah surut pada pembaruan 21.00 WIB. Tidak menunjukkan semua bangunan di wilayah tersebut terdampak.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 18 Januari 21.00",
+          "url": "https://bpbd.jakarta.go.id/berita/WEJPRVhPdnhaVjBaRHpyTWJZczdrUT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-21-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-lenteng-agung-bpbd-2025-03-04",
+      "kind": "banjir",
+      "title": "Catatan genangan Lenteng Agung, 2025-03-04",
+      "date": "2025-03-04",
+      "basis": "Rilis",
+      "region": "Jakarta Selatan",
+      "scope": "kelurahan",
+      "place": "Lenteng Agung, Jagakarsa",
+      "summary": "Laporan pukul 15.00 WIB mencatat 2 RT terdampak luapan Ciliwung dengan ketinggian sekitar 100 cm. Tidak menunjukkan semua bangunan di wilayah tersebut terdampak.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 4 Maret 15.00",
+          "url": "https://bpbd.jakarta.go.id/berita/b0x2U0ZNYTBzTXZHMmRLWWp3UzVRdz09/update-info-terkini-genangan-04-maret-2025-s-d-pukul-15-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-pademangan-barat-bpbd-2026-01-18",
+      "kind": "banjir",
+      "title": "Catatan genangan Pademangan Barat, 2026-01-18",
+      "date": "2026-01-18",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "scope": "kelurahan",
+      "place": "Pademangan Barat",
+      "summary": "Satu RT tercatat masih tergenang sekitar 30 cm pada pembaruan 21.00 WIB. Tidak menunjukkan semua bangunan di wilayah tersebut terdampak.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 18 Januari 21.00",
+          "url": "https://bpbd.jakarta.go.id/berita/WEJPRVhPdnhaVjBaRHpyTWJZczdrUT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-21-00-wib"
+        }
+      ]
     }
   ],
   "reportLocalities": {
@@ -976,6 +1124,31 @@
       "city": "Kabupaten Bogor",
       "locality": "Kedung Waringin",
       "bigCode": "32.01.13.2005"
+    },
+    "banjir-tanjung-priok-bpbd-2026-01-18": {
+      "city": "Jakarta Utara",
+      "locality": "Tanjung Priok",
+      "bigCode": "31.72.02.1001"
+    },
+    "banjir-sunter-agung-jalan-agung-raya-2026-01-18": {
+      "city": "Jakarta Utara",
+      "locality": "Sunter Agung",
+      "bigCode": "31.72.02.1006"
+    },
+    "banjir-sungai-bambu-gaya-motor-2026-01-18": {
+      "city": "Jakarta Utara",
+      "locality": "Sungai Bambu",
+      "bigCode": "31.72.02.1004"
+    },
+    "banjir-lenteng-agung-bpbd-2025-03-04": {
+      "city": "Jakarta Selatan",
+      "locality": "Lenteng Agung",
+      "bigCode": "31.74.09.1004"
+    },
+    "banjir-pademangan-barat-bpbd-2026-01-18": {
+      "city": "Jakarta Utara",
+      "locality": "Pademangan Barat",
+      "bigCode": "31.72.05.1002"
     }
   },
   "sourceRegistry": [
@@ -1033,6 +1206,42 @@
       "purpose": "Rilis KAI Commuter terkait akses Stasiun Bekasi",
       "url": "https://www.kci.id/id/informasi-publik/berita/banjir-sekitar-stasiun-bekasi-operasional-perjalanan-commuter-line-bekasi-masih-normal",
       "status": "Official release indexed; direct open returned 403; corroborated by RRI and other coverage"
+    },
+    {
+      "purpose": "Peta dan laporan kejadian resmi Kampung Leuweng Gede, Desa Tenjo, Kecamatan Tenjo",
+      "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1102",
+      "status": "official detail and embedded map marker read; location matched BIG 32.01.23.2005",
+      "checkedAt": "2026-11-26",
+      "sha256": "0e8dc5beb39693db76974fe4812b309e7e1e8312f74311af70dc266c15e597cc"
+    },
+    {
+      "purpose": "Peta dan laporan kejadian resmi Kampung Banar, Desa Ciomas, Kecamatan Tenjo",
+      "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/971",
+      "status": "official detail and embedded map marker read; location matched BIG 32.01.23.2002",
+      "checkedAt": "2026-11-26",
+      "sha256": "48d8c943dd84d288b3ae974b99d62107687699d6b38976c304d510849247095b"
+    },
+    {
+      "purpose": "Peta dan laporan kejadian resmi Perumnas 1, Desa Cibunar, Kecamatan Parungpanjang",
+      "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/2089",
+      "status": "official detail and embedded map marker read; location matched BIG 32.01.20.2008",
+      "checkedAt": "2026-11-26",
+      "sha256": "acda1f5babe845dbb932f428c5e456207542ee789f5930dae306f2836e4da441"
+    },
+    {
+      "purpose": "Genangan pada Tanjung Priok, Sunter Agung, Sungai Bambu dan Pademangan Barat",
+      "url": "https://bpbd.jakarta.go.id/berita/WEJPRVhPdnhaVjBaRHpyTWJZczdrUT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-21-00-wib",
+      "status": "official release read; locality/road evidence without proven coordinate"
+    },
+    {
+      "purpose": "Genangan Lenteng Agung",
+      "url": "https://bpbd.jakarta.go.id/berita/b0x2U0ZNYTBzTXZHMmRLWWp3UzVRdz09/update-info-terkini-genangan-04-maret-2025-s-d-pukul-15-00-wib",
+      "status": "official release read; RT-level report only"
+    },
+    {
+      "purpose": "Pemkab Tangerang: kesiapsiagaan musim hujan akhir 2026, termasuk Jambe dan Solear",
+      "url": "https://tangerangkab.go.id/index.php/detail-berita/hadapi-puncak-musim-hujan-bupati-maesyal-minta-seluruh-pihak-perkuat-mitigasi-dan-kesiapsiagaan-bencana",
+      "status": "official forecast/preparedness context; not event or parcel-level flood hazard; no map pin"
     }
   ]
 }
