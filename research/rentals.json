@@ -32540,6 +32540,40 @@
       "ownerType": "unknown",
       "verdict": "partial",
       "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-pinhome-56deac345215",
+      "title": "Kontrakan 2 kamar di Telagamurni (Telaga Murni), 60 m²",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Telagamurni (Telaga Murni), Cikarang Barat, Kab. Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 12500000,
+        "period": "yearly",
+        "quote": "IDR 12.500.000 per tahun, minimum 12 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-blok-i-7-no-1",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 60.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "IDR 12.500.000 per tahun, minimum 12 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-blok-i-7-no-1"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Acuan pin sekitar 1,47 km garis lurus dari KRL Metland Telagamurni. Tanggal iklan 11 Juni 2025 tampak sebagai pembaruan massal portal; kesegaran harga perlu dikonfirmasi. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-blok-i-7-no-1",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
     }
   ]
 }

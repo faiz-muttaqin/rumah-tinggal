@@ -13482,6 +13482,19 @@
         "checkedAt": "2026-11-26"
       },
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-56deac345215",
+      "location": {
+        "lat": -6.262222,
+        "lng": 107.123608,
+        "precision": "approximate",
+        "label": "Telagamurni (Telaga Murni), Cikarang Barat, Kab. Bekasi",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-blok-i-7-no-1",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
     }
   ]
 }
