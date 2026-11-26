@@ -26904,9 +26904,9 @@
       "locationText": "Kebayoran Baru, Jakarta Selatan",
       "buildingOrCluster": "Damai Arte Cipete Utara",
       "rent": {
-        "amount": 3950000,
+        "amount": 4450000,
         "period": "monthly",
-        "quote": "Rp3.950.000",
+        "quote": "Perkiraan Rp4.450.000 per bulan untuk dua penghuni, dari tarif Rp3.950.000 dan tambahan Rp500.000.",
         "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-damai-arte-cipete-utara-tipe-a-kebayoran-baru-jakarta-selatan",
         "pageDate": "2026-11-18"
       },
@@ -26915,7 +26915,11 @@
       "furnished": null,
       "evidence": [
         {
-          "quote": "Rp3.950.000",
+          "quote": "Tarif satu penghuni Rp3.950.000 per bulan.",
+          "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-damai-arte-cipete-utara-tipe-a-kebayoran-baru-jakarta-selatan"
+        },
+        {
+          "quote": "Tambahan Rp500.000 untuk berdua, dengan kasur tambahan dari penyewa.",
           "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-damai-arte-cipete-utara-tipe-a-kebayoran-baru-jakarta-selatan"
         }
       ],
@@ -26927,7 +26931,7 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-26",
-      "note": "Tarif iklan Rp3,95 juta per bulan. Ketentuan memperbolehkan pasutri tanpa anak. Cek tarif untuk penghuni kedua, ruang memasak, dan minimum sewa."
+      "note": "Pasutri tanpa anak diizinkan menurut portal. Perkiraan harga untuk dua penghuni menjumlahkan tarif bulanan dan tambahan yang dicantumkan. Konfirmasi periode biaya tambahan, minimum sewa, dapur, dan stok ke pengiklan."
     },
     {
       "id": "sewa-mamikos-764405915756",
@@ -27966,6 +27970,194 @@
       "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-cosmo-mansion-2",
       "sourcePortal": "Pinhome",
       "postedOrUpdated": "2026-05-16",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-pinhome-3fba7d39f51c",
+      "title": "Kontrakan 1 kamar di Manggarai Selatan",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Manggarai Selatan, Tebet, Kota Jakarta Selatan",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1600000,
+        "period": "monthly",
+        "minimumMonths": 1,
+        "quote": "Rp1.600.000 per bulan, minimum 1 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-dr-saharjo-gg-sawo-4-rt-11-rw-7-no-6",
+        "pageDate": "2025-12-30"
+      },
+      "bedrooms": 1,
+      "sizeM2": 21.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp1.600.000 per bulan, minimum 1 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-dr-saharjo-gg-sawo-4-rt-11-rw-7-no-6"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Acuan pin sekitar 0,98 km garis lurus dari KRL Manggarai. Unit 21 m² menurut luas bangunan pada iklan, dengan minimum satu bulan. Stok perlu konfirmasi.",
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-dr-saharjo-gg-sawo-4-rt-11-rw-7-no-6",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2025-12-30",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-pinhome-4d272e7d6092",
+      "title": "Rumah 2 kamar di Wisma Jaya, Bekasi Timur",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Bekasijaya (Bekasi Jaya), Bekasi Timur, Kota Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 2750000,
+        "period": "monthly",
+        "minimumMonths": 1,
+        "quote": "Rp2.750.000 per bulan, minimum 1 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-pakai-dekat-terminal-di-wisma-jaya-bekasi",
+        "pageDate": "2024-03-15"
+      },
+      "bedrooms": 2,
+      "sizeM2": 85.0,
+      "furnished": null,
+      "kitchen": "private",
+      "evidence": [
+        {
+          "quote": "Rp2.750.000 per bulan, minimum 1 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-pakai-dekat-terminal-di-wisma-jaya-bekasi"
+        },
+        {
+          "quote": "Iklan menyebut dapur di dalam rumah, dengan luas bangunan 85 m².",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-pakai-dekat-terminal-di-wisma-jaya-bekasi"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Acuan pin sekitar 0,86 km garis lurus dari KRL Bekasi Timur. Portal masih menampilkan penawaran saat diperiksa. Tanggal pembaruan yang dicantumkan portal adalah Maret 2024. Stok perlu konfirmasi.",
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-pakai-dekat-terminal-di-wisma-jaya-bekasi",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2024-03-15",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-pinhome-642d8a0fa267",
+      "title": "Rumah 2 kamar di Gramapuri Persada",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Sukajaya, Cibitung, Kab. Bekasi",
+      "buildingOrCluster": "Gramapuri Persada",
+      "rent": {
+        "amount": 12000000,
+        "period": "yearly",
+        "minimumMonths": 12,
+        "quote": "Rp12.000.000 per tahun, minimum 12 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlflamboyan-cluster-b",
+        "pageDate": "2025-06-11"
+      },
+      "bedrooms": 2,
+      "sizeM2": 56.0,
+      "furnished": null,
+      "kitchen": "private",
+      "evidence": [
+        {
+          "quote": "Rp12.000.000 per tahun, minimum 12 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlflamboyan-cluster-b"
+        },
+        {
+          "quote": "Iklan menyebut 2 kamar tidur, ruang tamu, dan dapur.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlflamboyan-cluster-b"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Acuan pin sekitar 1,22 km garis lurus dari KRL Cikarang. Sewa Rp12 juta per tahun dengan minimum 12 bulan. Perkiraan jarak sedikit di luar filter koridor 1,2 km. Stok perlu konfirmasi.",
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlflamboyan-cluster-b",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-pinhome-2a19a25df7fe",
+      "title": "Studio Montblanc BTC City",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Bekasi",
+      "locationText": "Margahayu, Bekasi Timur, Kota Bekasi",
+      "buildingOrCluster": "Montblanc BTC City",
+      "rent": {
+        "amount": 15000000,
+        "period": "yearly",
+        "minimumMonths": 12,
+        "quote": "Rp15.000.000 per tahun, minimum 12 bulan.",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-montblanc-btc-city-bekasi-timur",
+        "pageDate": "2025-06-11"
+      },
+      "bedrooms": null,
+      "sizeM2": 26.0,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Rp15.000.000 per tahun, minimum 12 bulan.",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-montblanc-btc-city-bekasi-timur"
+        },
+        {
+          "quote": "Sewa unit studio penuh untuk perorangan atau keluarga muda menurut deskripsi. Bagian harga mencantumkan Rp15 juta per tahun.",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-montblanc-btc-city-bekasi-timur"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Acuan pin sekitar 0,53 km garis lurus dari LRT Jatimulya. Studio 26 m² tanpa furnitur dengan AC menurut iklan. Konfirmasi IPL, aturan penghuni, dan periode sewa karena judul halaman mencantumkan periode berbeda. Stok perlu konfirmasi.",
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-montblanc-btc-city-bekasi-timur",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-mamikos-734eb42f9e1b",
+      "title": "Kos Kirana 2 Tipe A — pasutri",
+      "rentalType": "kos-keluarga",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Kecamatan Kelapa Gading, Kota Jakarta Utara",
+      "buildingOrCluster": "Kirana 2",
+      "rent": {
+        "amount": 1200000,
+        "period": "monthly",
+        "minimumMonths": null,
+        "quote": "Perkiraan Rp1.200.000 per bulan untuk dua penghuni, dari tarif Rp900.000 dan tambahan Rp300.000.",
+        "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-eksklusif-kost-kirana-2-kelapa-gading-jakarta-utara",
+        "pageDate": "2026-10-30"
+      },
+      "bedrooms": 1,
+      "sizeM2": 4.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Perkiraan Rp1.200.000 per bulan untuk dua penghuni, dari tarif Rp900.000 dan tambahan Rp300.000.",
+          "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-eksklusif-kost-kirana-2-kelapa-gading-jakarta-utara"
+        },
+        {
+          "quote": "Tarif Rp900.000 per bulan dengan tambahan Rp300.000 untuk dua penghuni. Pasutri diizinkan menurut portal.",
+          "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-eksklusif-kost-kirana-2-kelapa-gading-jakarta-utara"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Acuan pin sekitar 0,44 km garis lurus dari LRT Boulevard Selatan. Tipe kamar yang dicantumkan berukuran 4 m². Cek ukuran, fasilitas memasak, dan periode biaya tambahan. Ketentuan portal menyebut anak tidak diizinkan. Stok perlu konfirmasi.",
+      "listingUrl": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-eksklusif-kost-kirana-2-kelapa-gading-jakarta-utara",
+      "sourcePortal": "Mamikos",
+      "postedOrUpdated": "2026-10-30",
       "ownerType": "unknown",
       "verdict": "partial",
       "lastChecked": "2026-11-26"

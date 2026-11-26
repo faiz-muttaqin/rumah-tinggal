@@ -11753,6 +11753,71 @@
         "checkedAt": "2026-11-26"
       },
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-3fba7d39f51c",
+      "location": {
+        "lat": -6.21886,
+        "lng": 106.84821,
+        "precision": "approximate",
+        "label": "Manggarai Selatan, Tebet, Kota Jakarta Selatan",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-dr-saharjo-gg-sawo-4-rt-11-rw-7-no-6",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-4d272e7d6092",
+      "location": {
+        "lat": -6.24506,
+        "lng": 107.025696,
+        "precision": "approximate",
+        "label": "Bekasijaya (Bekasi Jaya), Bekasi Timur, Kota Bekasi",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-pakai-dekat-terminal-di-wisma-jaya-bekasi",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-642d8a0fa267",
+      "location": {
+        "lat": -6.24436,
+        "lng": 107.145913,
+        "precision": "approximate",
+        "label": "Gramapuri Persada",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlflamboyan-cluster-b",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-2a19a25df7fe",
+      "location": {
+        "lat": -6.25937,
+        "lng": 107.021643,
+        "precision": "approximate",
+        "label": "Montblanc BTC City",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-montblanc-btc-city-bekasi-timur",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-mamikos-734eb42f9e1b",
+      "location": {
+        "lat": -6.166412,
+        "lng": 106.902288,
+        "precision": "approximate",
+        "label": "Kirana 2",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-eksklusif-kost-kirana-2-kelapa-gading-jakarta-utara",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
     }
   ]
 }

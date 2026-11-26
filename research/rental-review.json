@@ -2714,5 +2714,12 @@
   },
   "sewa-pinhome-7c483ed73393": {
     "floors": 1
+  },
+  "sewa-pinhome-3fba7d39f51c": {
+    "floors": 2
+  },
+  "sewa-mamikos-734eb42f9e1b": {
+    "couples": true,
+    "children": false
   }
 }
