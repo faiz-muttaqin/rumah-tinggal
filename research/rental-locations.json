@@ -11584,6 +11584,175 @@
         "checkedAt": "2026-11-26"
       },
       "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-87acc21df80b",
+      "location": {
+        "lat": -6.21783,
+        "lng": 106.960452,
+        "precision": "approximate",
+        "label": "Kotabaru (Kota Baru), Bekasi Barat, Kota Bekasi",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kp-rawa-bebek-rt-3-rw-12-blok-a",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-3a43b6cee76a",
+      "location": {
+        "lat": -6.176408,
+        "lng": 106.658312,
+        "precision": "approximate",
+        "label": "Poris Plawad, Cipondoh, Kota Tangerang",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-blok-malang-rt-02-02-no-184",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-0aba380e0bdb",
+      "location": {
+        "lat": -6.1559,
+        "lng": 106.754206,
+        "precision": "approximate",
+        "label": "Kedaung Kali Angke, Cengkareng, Kota Jakarta Barat",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-daanmogot-km-11",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-792c29d41acc",
+      "location": {
+        "lat": -6.164893,
+        "lng": 106.756757,
+        "precision": "approximate",
+        "label": "Kedoya Utara, Kebon Jeruk, Kota Jakarta Barat",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-green-garden-kedoya-utara",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-e42d8b87eb50",
+      "location": {
+        "lat": -6.252846,
+        "lng": 106.963499,
+        "precision": "approximate",
+        "label": "Jakasampurna (Jaka Sampurna), Bekasi Barat, Kota Bekasi",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-merahdelima-ujung-nomor-47",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-22a89c52118f",
+      "location": {
+        "lat": -6.242697,
+        "lng": 106.890654,
+        "precision": "approximate",
+        "label": "Lumintu Village",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-nyaman-seperti-villa-di-jl-sumatra-cipinang-melayu-jaktim",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-cd1227103e47",
+      "location": {
+        "lat": -6.230888,
+        "lng": 106.85938,
+        "precision": "approximate",
+        "label": "Kebon Baru, Tebet, Kota Jakarta Selatan",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlasem-baris-ggviii-no39-kbn-baru-tebet",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-0aecb6d4e188",
+      "location": {
+        "lat": -6.234113,
+        "lng": 106.754377,
+        "precision": "approximate",
+        "label": "Petukangan Utara, Pesanggrahan, Kota Jakarta Selatan",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-radin",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-e748c260d691",
+      "location": {
+        "lat": -6.302813,
+        "lng": 106.715634,
+        "precision": "approximate",
+        "label": "Bintaro Asri Residence",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jombang-raya",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-a5d080d9e497",
+      "location": {
+        "lat": -6.255992,
+        "lng": 106.867483,
+        "precision": "approximate",
+        "label": "Menara Cawang",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-menara-cawang-5",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-7c483ed73393",
+      "location": {
+        "lat": -6.196492,
+        "lng": 106.812897,
+        "precision": "approximate",
+        "label": "Kebon Melati, Tanah Abang, Kota Jakarta Pusat",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlmess-kebun-melati-tanah-abang",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-2ffebe9baf39",
+      "location": {
+        "lat": -6.234496,
+        "lng": 106.778631,
+        "precision": "approximate",
+        "label": "Cipulir, Kebayoran Lama, Kota Jakarta Selatan",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kebon-mangga-2-rt001-kebayoran-lama",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-30baca358ee9",
+      "location": {
+        "lat": -6.195519,
+        "lng": 106.817443,
+        "precision": "approximate",
+        "label": "Cosmo Mansion",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-cosmo-mansion-2",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
     }
   ]
 }
