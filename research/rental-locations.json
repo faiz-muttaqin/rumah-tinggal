@@ -14132,6 +14132,292 @@
         "checkedAt": "2026-11-26"
       },
       "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-9135e263d969",
+      "location": {
+        "lat": -6.228285,
+        "lng": 106.767971,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-grogol-selatan",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-d9c28bf1fa24",
+      "location": {
+        "lat": -6.261796,
+        "lng": 106.746499,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pondok-betung-1",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-39a84434a6b3",
+      "location": {
+        "lat": -6.340859,
+        "lng": 106.636918,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-serpong-garden-2-boulevard-di-suradita",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-0e974e76da18",
+      "location": {
+        "lat": -6.340262,
+        "lng": 106.62989,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dengan-lingkungan-cluster-di-cisauk-suradita",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-593f01b0c4ed",
+      "location": {
+        "lat": -6.355923,
+        "lng": 106.570973,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-forest-hill-parung-panjang-di-kabasiran",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-c167bf2a155e",
+      "location": {
+        "lat": -6.341554,
+        "lng": 106.490259,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-metropolis",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-e0846cb9402c",
+      "location": {
+        "lat": -6.341466,
+        "lng": 106.490713,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-3-kamar-murah-dekat-stasiun-di-daru-metropolis",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-06209527ce0f",
+      "location": {
+        "lat": -6.314318,
+        "lng": 106.464091,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rp-1-juta-perbulan-daeran-tenjo-di-perumahan-tenjo-city-blok-l3-no-20",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-43a384a50776",
+      "location": {
+        "lat": -6.329726,
+        "lng": 106.637237,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-serpong-garden-1-di-serpong-garden",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-c2943ab51d10",
+      "location": {
+        "lat": -6.329752,
+        "lng": 106.491727,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-1",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-4451964e7d45",
+      "location": {
+        "lat": -6.335755,
+        "lng": 106.469369,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2kt-137m-di-cilaku",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-45757b970739",
+      "location": {
+        "lat": -6.336546,
+        "lng": 106.415321,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-batara-parkview-cluster-amarylis",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-60aa22d01969",
+      "location": {
+        "lat": -6.3018,
+        "lng": 106.71756,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-sudimara-forest-walk-apartment/SFWA002",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-53933a12b9e5",
+      "location": {
+        "lat": -6.3018,
+        "lng": 106.71756,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-sudimara-forest-walk-apartment/SFWA004",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-64f75e81b643",
+      "location": {
+        "lat": -6.32541,
+        "lng": 106.6834,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-the-ayoma-apartment/AYMA005",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-0ec6a8498cd8",
+      "location": {
+        "lat": -6.325477,
+        "lng": 106.640146,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA010",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-72cb38fd9ad3",
+      "location": {
+        "lat": -6.307,
+        "lng": 106.6522,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-saveria-apartment/SVRC011",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-0daccd8d6431",
+      "location": {
+        "lat": -6.237472,
+        "lng": 106.769194,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-pakubuwono-terrace/PKTA080",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-9d8a569045c6",
+      "location": {
+        "lat": -6.2737,
+        "lng": 106.7422,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-the-breeze-bintaro-apartment/TBBA042",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-6144bcbc483a",
+      "location": {
+        "lat": -6.294,
+        "lng": 106.6866,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-serpong-green-view-apartment/SGVA095",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-3e05422f535f",
+      "location": {
+        "lat": -6.3043,
+        "lng": 106.6381,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-b-residence-bsd/BRSA102",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-3312742e14d5",
+      "location": {
+        "lat": -6.325477,
+        "lng": 106.640146,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA003",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
     }
   ]
 }

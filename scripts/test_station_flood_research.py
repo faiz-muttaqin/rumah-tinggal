@@ -18,6 +18,7 @@ def module(name):
 geo = module("all_station_catchments")
 screen = module("flood_rental_screening")
 curate = module("corridor_priority_curate")
+green = module("green_line_rental_curate")
 
 
 def research(name):
@@ -76,6 +77,18 @@ class PriorityCurationTest(unittest.TestCase):
         raw = {"title": "Rumah sewa keluarga", "description": "Dapur, dekat jalan raya."}
         result = curate.priority.pinhome_usage('<script id="__UNIT_DETAIL__">' + json.dumps(raw) + '</script>', "https://www.pinhome.id/disewa/rumah-sekunder/unit/rumah-sewa")
         self.assertFalse(result["roomOrCommercialNeedsReview"])
+
+
+class GreenLineGeometryTest(unittest.TestCase):
+    def test_distance_and_production_scope(self):
+        stations = [
+            {"stopId": "inside", "station": "Existing", "mode": "KRL", "coordinate": [106.8, -6.2]},
+            {"stopId": "outside", "station": "Research-only", "mode": "KRL", "coordinate": [106.8, -6.23]},
+        ]
+        nearby = green.near([106.8, -6.2], stations)
+        self.assertEqual([s["stopId"] for s in nearby], ["inside"])
+        self.assertTrue(green.production_scope({"nearbyGreenLine": nearby}, {"inside"}))
+        self.assertFalse(green.production_scope({"nearbyGreenLine": nearby}, {"outside"}))
 
 
 class SnapshotTest(unittest.TestCase):
@@ -202,6 +215,68 @@ class SnapshotTest(unittest.TestCase):
         self.assertEqual(len(stations), sum(m["points"] for m in data["coverageByMode"].values()))
         self.assertEqual(data["gapCountAfter"], sum(m["withoutBudgetPinAfter"] for m in data["coverageByMode"].values()))
         self.assertEqual(data["taskCounts"]["completed"], 0)
+
+    def test_green_line_all_station_checks_and_exact_radius(self):
+        data = research("koridor-green-line-results-2026-11-26")
+        seeds = research("koridor-green-line-seeds-2026-11-26")
+        ext = research("koridor-green-line-extension-2026-11-26")
+        inv = research("koridor-all-3km-2026-11-26")
+        base = {r["stopId"]: r for r in inv["stations"] if r["mode"] == "KRL" and "rangkasbitung" in r["lines"]}
+        outside = {r["stopId"]: r for r in ext["stations"]}
+        self.assertEqual(len(base), 16)
+        self.assertEqual({r["station"] for r in outside.values()}, {"Cikoya", "Maja", "Citeras", "Rangkasbitung"})
+        self.assertFalse(set(base) & set(outside))
+        stations = {**base, **outside}
+        self.assertEqual({r["stopId"] for r in data["stationChecks"]}, set(stations))
+        self.assertEqual({r["station"] for r in seeds["stationQueries"]}, {r["station"] for r in stations.values()})
+        for r in outside.values():
+            self.assertTrue(any(a["containsStop"] for a in r["areas"]))
+            for a in r["areas"]:
+                self.assertIn(a["areaId"], ext["areas"])
+                self.assertLessEqual(a["distanceToBoundaryMeters"], 3000)
+        rows = [r for run in data["runs"] for r in run["results"]]
+        self.assertEqual(len(rows), len({r["url"] for r in rows}))
+        self.assertEqual(len(rows), sum(data["summary"].values()))
+        rentals = {r["id"]: r for r in research("rentals")["rentals"]}
+        locs = {r["rentalId"]: r["location"] for r in research("rental-locations")["items"]}
+        screening = {r["rentalId"]: r for r in research("flood-rental-screening-2026-11-26")["items"]}
+        imports = [r for r in rows if r["resolution"] == "imported-partial"]
+        self.assertEqual(len(imports), data["catalogAfter"] - data["catalogBefore"])
+        self.assertEqual(len(imports), sum(data["importedByCategory"].values()))
+        self.assertEqual(len(imports), len({r["rentalId"] for r in imports}))
+        for r in rows:
+            if r["resolution"] not in ("imported-partial", "research-only-outside-production"):
+                continue
+            point = [r["location"]["lng"], r["location"]["lat"]]
+            self.assertTrue(r["nearbyGreenLine"])
+            self.assertEqual(r["sourceStatus"], "unit_type_status.active")
+            self.assertEqual(r["issues"], [])
+            self.assertLessEqual(r["monthlyEquivalent"], 5_000_000)
+            for n in r["nearbyGreenLine"]:
+                self.assertLessEqual(geo.haversine(point, stations[n["stopId"]]["coordinate"]), 3000)
+            if r["resolution"] == "imported-partial":
+                rid = r["rentalId"]
+                self.assertTrue(green.production_scope(r, set(base)))
+                self.assertEqual(rentals[rid]["listingUrl"], r["url"])
+                self.assertEqual(rentals[rid]["verdict"], "partial")
+                self.assertEqual(screening[rid]["hazardStatus"], "unknown")
+                self.assertEqual(screening[rid]["locality"]["code"], r["bigLocality"]["code"])
+                self.assertEqual(point, [locs[rid]["lng"], locs[rid]["lat"]])
+            else:
+                self.assertNotIn("rentalId", r)
+                if r["productionScopeReason"] == "outside-production-radius":
+                    self.assertFalse(green.production_scope(r, set(base)))
+                else:
+                    self.assertEqual(r["productionScopeReason"], "unsupported-region")
+            if r["provider"] == "mamikos":
+                self.assertTrue(r["residentPolicy"]["marriedCouplesAllowed"])
+                self.assertTrue(r["residentPolicy"]["childrenAllowed"])
+        for r in data["stationChecks"]:
+            self.assertTrue(r["queries"])
+            self.assertEqual(r["scope"], "production" if r["stopId"] in base else "research-only")
+            self.assertTrue(all(c["resolution"] in ("imported-partial", "research-only-outside-production") for c in r["newCandidates"]))
+        for r in seeds["manualLeads"]:
+            self.assertTrue(r["resolution"].startswith("hold-"))
 
     def test_evidence_screening_and_import(self):
         evidence = research("flood-official-evidence-2026-11-26")

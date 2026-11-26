@@ -34603,6 +34603,796 @@
       "verdict": "partial",
       "lastChecked": "2026-11-26",
       "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 2.83 km ke KRL Nambo."
+    },
+    {
+      "id": "sewa-pinhome-9135e263d969",
+      "title": "Rumah sewa Grogol Selatan — 2 kamar, 80 m²",
+      "kind": "Rumah",
+      "rentalType": "rumah-sewa",
+      "area": "Jakarta",
+      "locationText": "Grogol Selatan, Kebayoran Lama, Kota Administrasi Jakarta Selatan",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 40000000,
+        "period": "yearly",
+        "quote": "Rp40.000.000/tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-grogol-selatan",
+        "pageDate": "2026-10-06",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 80.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp40.000.000/tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-grogol-selatan"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-grogol-selatan",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-10-06",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.89 km ke KRL Kebayoran."
+    },
+    {
+      "id": "sewa-pinhome-d9c28bf1fa24",
+      "title": "Kontrakan Pondok Betung — 1 kamar, 50 m²",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Tangerang",
+      "locationText": "Pondok Betung, Pondok Aren, Kota Tangerang Selatan",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 900000,
+        "period": "monthly",
+        "quote": "Rp900.000/bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pondok-betung-1",
+        "pageDate": "2026-09-19",
+        "minimumMonths": 1
+      },
+      "bedrooms": 1,
+      "sizeM2": 50.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp900.000/bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pondok-betung-1"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pondok-betung-1",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-09-19",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.67 km ke KRL Pondok Ranji."
+    },
+    {
+      "id": "sewa-pinhome-39a84434a6b3",
+      "title": "Rumah sewa Suradita — 3 kamar, 70 m²",
+      "kind": "Rumah",
+      "rentalType": "rumah-sewa",
+      "area": "Tangerang",
+      "locationText": "Suradita, Cisauk, Kabupaten Tangerang",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 40000000,
+        "period": "yearly",
+        "quote": "Rp40.000.000/tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-serpong-garden-2-boulevard-di-suradita",
+        "pageDate": "2026-05-18",
+        "minimumMonths": 12
+      },
+      "bedrooms": 3,
+      "sizeM2": 70.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp40.000.000/tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-serpong-garden-2-boulevard-di-suradita"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-serpong-garden-2-boulevard-di-suradita",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-05-18",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.90 km ke KRL Cisauk. Deskripsi portal menyebut deposit; konfirmasi biaya dan pembayaran."
+    },
+    {
+      "id": "sewa-pinhome-0e974e76da18",
+      "title": "Rumah sewa Suradita — 2 kamar, 40 m²",
+      "kind": "Rumah",
+      "rentalType": "rumah-sewa",
+      "area": "Tangerang",
+      "locationText": "Suradita, Cisauk, Kabupaten Tangerang",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 25000000,
+        "period": "yearly",
+        "quote": "Rp25.000.000/tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dengan-lingkungan-cluster-di-cisauk-suradita",
+        "pageDate": "2026-11-21",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 40.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp25.000.000/tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dengan-lingkungan-cluster-di-cisauk-suradita"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dengan-lingkungan-cluster-di-cisauk-suradita",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-11-21",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.69 km ke KRL Cicayur."
+    },
+    {
+      "id": "sewa-pinhome-593f01b0c4ed",
+      "title": "Rumah sewa Kabasiran — 2 kamar, 36 m²",
+      "kind": "Rumah",
+      "rentalType": "rumah-sewa",
+      "area": "Bogor",
+      "locationText": "Kabasiran, Parungpanjang, Kabupaten Bogor",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 20000000,
+        "period": "yearly",
+        "quote": "Rp20.000.000/tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-forest-hill-parung-panjang-di-kabasiran",
+        "pageDate": "2026-05-16",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 36.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp20.000.000/tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-forest-hill-parung-panjang-di-kabasiran"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-forest-hill-parung-panjang-di-kabasiran",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-05-16",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.29 km ke KRL Parungpanjang. Deskripsi portal menyebut ipl; konfirmasi biaya dan pembayaran."
+    },
+    {
+      "id": "sewa-pinhome-c167bf2a155e",
+      "title": "Rumah sewa Mekarsari — 2 kamar, 27 m²",
+      "kind": "Rumah",
+      "rentalType": "rumah-sewa",
+      "area": "Tangerang",
+      "locationText": "Mekarsari, Jambe, Kabupaten Tangerang",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 21000000,
+        "period": "yearly",
+        "quote": "Rp21.000.000/tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-metropolis",
+        "pageDate": "2026-03-07",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 27.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp21.000.000/tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-metropolis"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-metropolis",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-03-07",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.47 km ke KRL Daru. Deskripsi portal menyebut ipl; konfirmasi biaya dan pembayaran."
+    },
+    {
+      "id": "sewa-pinhome-e0846cb9402c",
+      "title": "Rumah sewa Mekarsari — 3 kamar, 52 m²",
+      "kind": "Rumah",
+      "rentalType": "rumah-sewa",
+      "area": "Tangerang",
+      "locationText": "Mekarsari, Jambe, Kabupaten Tangerang",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 22000000,
+        "period": "yearly",
+        "quote": "Rp22.000.000/tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-3-kamar-murah-dekat-stasiun-di-daru-metropolis",
+        "pageDate": "2026-04-01",
+        "minimumMonths": 12
+      },
+      "bedrooms": 3,
+      "sizeM2": 52.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp22.000.000/tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-3-kamar-murah-dekat-stasiun-di-daru-metropolis"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-3-kamar-murah-dekat-stasiun-di-daru-metropolis",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-04-01",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.44 km ke KRL Daru. Deskripsi portal menyebut deposit; konfirmasi biaya dan pembayaran."
+    },
+    {
+      "id": "sewa-pinhome-06209527ce0f",
+      "title": "Kontrakan Singabangsa — 2 kamar, 27 m²",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Bogor",
+      "locationText": "Singabangsa, Tenjo, Kabupaten Bogor",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1000000,
+        "period": "monthly",
+        "quote": "Rp1.000.000/bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rp-1-juta-perbulan-daeran-tenjo-di-perumahan-tenjo-city-blok-l3-no-20",
+        "pageDate": "2025-12-18",
+        "minimumMonths": 3
+      },
+      "bedrooms": 2,
+      "sizeM2": 27.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp1.000.000/bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rp-1-juta-perbulan-daeran-tenjo-di-perumahan-tenjo-city-blok-l3-no-20"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rp-1-juta-perbulan-daeran-tenjo-di-perumahan-tenjo-city-blok-l3-no-20",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2025-12-18",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.47 km ke KRL Tenjo. Portal mencantumkan minimum 3 bulan; konfirmasi pembayaran di muka."
+    },
+    {
+      "id": "sewa-pinhome-43a384a50776",
+      "title": "Rumah sewa Cisauk — 2 kamar, 36 m²",
+      "kind": "Rumah",
+      "rentalType": "rumah-sewa",
+      "area": "Tangerang",
+      "locationText": "Cisauk, Cisauk, Kabupaten Tangerang",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 28000000,
+        "period": "yearly",
+        "quote": "Rp28.000.000/tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-serpong-garden-1-di-serpong-garden",
+        "pageDate": "2026-07-11",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 36.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp28.000.000/tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-serpong-garden-1-di-serpong-garden"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-serpong-garden-1-di-serpong-garden",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-07-11",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.76 km ke KRL Cisauk. Deskripsi portal menyebut deposit, ipl; konfirmasi biaya dan pembayaran."
+    },
+    {
+      "id": "sewa-pinhome-c2943ab51d10",
+      "title": "Rumah sewa Daru — 2 kamar, 30 m²",
+      "kind": "Rumah",
+      "rentalType": "rumah-sewa",
+      "area": "Tangerang",
+      "locationText": "Daru, Jambe, Kabupaten Tangerang",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 10000000,
+        "period": "yearly",
+        "quote": "Rp10.000.000/tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-1",
+        "pageDate": "2026-09-22",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 30.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp10.000.000/tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-1"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-1",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-09-22",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.92 km ke KRL Daru."
+    },
+    {
+      "id": "sewa-pinhome-4451964e7d45",
+      "title": "Kontrakan Cilaku — 2 kamar, 36 m²",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Bogor",
+      "locationText": "Cilaku, Tenjo, Kabupaten Bogor",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1200000,
+        "period": "monthly",
+        "quote": "Rp1.200.000/bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2kt-137m-di-cilaku",
+        "pageDate": "2026-01-16",
+        "minimumMonths": 6
+      },
+      "bedrooms": 2,
+      "sizeM2": 36.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp1.200.000/bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2kt-137m-di-cilaku"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2kt-137m-di-cilaku",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-01-16",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.27 km ke KRL Tenjo. Portal mencantumkan minimum 6 bulan; konfirmasi pembayaran di muka."
+    },
+    {
+      "id": "sewa-pinhome-45757b970739",
+      "title": "Rumah sewa Cikasungka — 2 kamar, 30 m²",
+      "kind": "Rumah",
+      "rentalType": "rumah-sewa",
+      "area": "Tangerang",
+      "locationText": "Cikasungka, Solear, Kabupaten Tangerang",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 10500000,
+        "period": "yearly",
+        "quote": "Rp10.500.000/tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-batara-parkview-cluster-amarylis",
+        "pageDate": "2026-01-24",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 30.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp10.500.000/tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-batara-parkview-cluster-amarylis"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-batara-parkview-cluster-amarylis",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-01-24",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 2.24 km ke KRL Tigaraksa."
+    },
+    {
+      "id": "sewa-jendela360-60aa22d01969",
+      "title": "Sudimara Forest Walk Apartment — Studio, 24 m² (SFWA002)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Sawah Baru, Ciputat, Kota Tangerang Selatan",
+      "buildingOrCluster": "Sudimara Forest Walk Apartment",
+      "rent": {
+        "amount": 22300000,
+        "period": "yearly",
+        "quote": "Rp22.300.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-sudimara-forest-walk-apartment/SFWA002",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 24.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp22.300.000/tahun",
+          "url": "https://jendela360.com/sewa-apartemen-sudimara-forest-walk-apartment/SFWA002"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-sudimara-forest-walk-apartment/SFWA002",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 0.77 km ke KRL Sudimara. Ada opsi paket lebih pendek pada detail; harga dapat berbeda dari ekuivalen tahunan."
+    },
+    {
+      "id": "sewa-jendela360-53933a12b9e5",
+      "title": "Sudimara Forest Walk Apartment — Studio, 24 m² (SFWA004)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Sawah Baru, Ciputat, Kota Tangerang Selatan",
+      "buildingOrCluster": "Sudimara Forest Walk Apartment",
+      "rent": {
+        "amount": 36360000,
+        "period": "yearly",
+        "quote": "Rp36.360.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-sudimara-forest-walk-apartment/SFWA004",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 24.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp36.360.000/tahun",
+          "url": "https://jendela360.com/sewa-apartemen-sudimara-forest-walk-apartment/SFWA004"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-sudimara-forest-walk-apartment/SFWA004",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 0.77 km ke KRL Sudimara. Ada opsi paket lebih pendek pada detail; harga dapat berbeda dari ekuivalen tahunan."
+    },
+    {
+      "id": "sewa-jendela360-64f75e81b643",
+      "title": "The Ayoma Apartment — Studio, 30 m² (AYMA005)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Ciater, Serpong, Kota Tangerang Selatan",
+      "buildingOrCluster": "The Ayoma Apartment",
+      "rent": {
+        "amount": 59490000,
+        "period": "yearly",
+        "quote": "Rp59.490.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-the-ayoma-apartment/AYMA005",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 30.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp59.490.000/tahun",
+          "url": "https://jendela360.com/sewa-apartemen-the-ayoma-apartment/AYMA005"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-the-ayoma-apartment/AYMA005",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 1.42 km ke KRL Rawa Buntu."
+    },
+    {
+      "id": "sewa-jendela360-0ec6a8498cd8",
+      "title": "Cisauk Point Apartment — Studio, 24.4 m² (CSPA010)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Cibogo, Cisauk, Kabupaten Tangerang",
+      "buildingOrCluster": "Cisauk Point Apartment",
+      "rent": {
+        "amount": 2600000,
+        "period": "monthly",
+        "quote": "Rp2.600.000/bulan",
+        "url": "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA010",
+        "pageDate": null,
+        "minimumMonths": 1
+      },
+      "bedrooms": 0,
+      "sizeM2": 24.4,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp2.600.000/bulan",
+          "url": "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA010"
+        },
+        {
+          "quote": "BTN Properti mencantumkan Cibogo, Cisauk, Kabupaten Tangerang, bukan Kota Tangerang Selatan.",
+          "url": "https://www.btnproperti.co.id/property/tipe/detail/TPR2022112511025816"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA010",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 0.20 km ke KRL Cisauk. Alamat gedung dicocokkan dengan sumber alamat dan batas BIG."
+    },
+    {
+      "id": "sewa-jendela360-72cb38fd9ad3",
+      "title": "Saveria Apartment — 2 kamar, 65 m² (SVRC011)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Sampora, Cisauk, Kabupaten Tangerang",
+      "buildingOrCluster": "Saveria Apartment",
+      "rent": {
+        "amount": 59590000,
+        "period": "yearly",
+        "quote": "Rp59.590.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-saveria-apartment/SVRC011",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 65.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp59.590.000/tahun",
+          "url": "https://jendela360.com/sewa-apartemen-saveria-apartment/SVRC011"
+        },
+        {
+          "quote": "Alamat pengembang: Grand Boulevard BSD City, Sampora, Cisauk, Tangerang.",
+          "url": "https://www.bsdcity.com/id/development/residential/saveria/"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-saveria-apartment/SVRC011",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 2.08 km ke KRL Serpong. Alamat gedung dicocokkan dengan sumber alamat dan batas BIG."
+    },
+    {
+      "id": "sewa-jendela360-0daccd8d6431",
+      "title": "Pakubuwono Terrace — Studio, 24 m² (PKTA080)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Jakarta",
+      "locationText": "Cipulir, Kebayoran Lama, Kota Administrasi Jakarta Selatan",
+      "buildingOrCluster": "Pakubuwono Terrace",
+      "rent": {
+        "amount": 4200000,
+        "period": "monthly",
+        "quote": "Rp4.200.000/bulan",
+        "url": "https://jendela360.com/sewa-apartemen-pakubuwono-terrace/PKTA080",
+        "pageDate": null,
+        "minimumMonths": 1
+      },
+      "bedrooms": 0,
+      "sizeM2": 24.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp4.200.000/bulan",
+          "url": "https://jendela360.com/sewa-apartemen-pakubuwono-terrace/PKTA080"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-pakubuwono-terrace/PKTA080",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 1.48 km ke KRL Kebayoran."
+    },
+    {
+      "id": "sewa-jendela360-9d8a569045c6",
+      "title": "The Breeze Bintaro Apartment — Studio, 28 m² (TBBA042)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Pondok Karya, Pondok Aren, Kota Tangerang Selatan",
+      "buildingOrCluster": "The Breeze Bintaro Apartment",
+      "rent": {
+        "amount": 48480000,
+        "period": "yearly",
+        "quote": "Rp48.480.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-the-breeze-bintaro-apartment/TBBA042",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 28.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp48.480.000/tahun",
+          "url": "https://jendela360.com/sewa-apartemen-the-breeze-bintaro-apartment/TBBA042"
+        },
+        {
+          "quote": "Alamat halaman gedung: Pondok Karya, Pondok Aren, Tangerang Selatan.",
+          "url": "https://jendela.com/sewa-apartemen/tangerang-selatan/bintaro-tangerang/the-breeze-bintaro-apartment"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-the-breeze-bintaro-apartment/TBBA042",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 0.43 km ke KRL Pondok Ranji. Alamat gedung dicocokkan dengan sumber alamat dan batas BIG. Ada opsi paket lebih pendek pada detail; harga dapat berbeda dari ekuivalen tahunan."
+    },
+    {
+      "id": "sewa-jendela360-6144bcbc483a",
+      "title": "Serpong Green View Apartment — Studio, 21.5 m² (SGVA095)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Lengkong Gudang Timur, Serpong, Kota Tangerang Selatan",
+      "buildingOrCluster": "Serpong Green View Apartment",
+      "rent": {
+        "amount": 2500000,
+        "period": "monthly",
+        "quote": "Rp2.500.000/bulan",
+        "url": "https://jendela360.com/sewa-apartemen-serpong-green-view-apartment/SGVA095",
+        "pageDate": null,
+        "minimumMonths": 1
+      },
+      "bedrooms": 0,
+      "sizeM2": 21.5,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp2.500.000/bulan",
+          "url": "https://jendela360.com/sewa-apartemen-serpong-green-view-apartment/SGVA095"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-serpong-green-view-apartment/SGVA095",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 2.59 km ke KRL Rawa Buntu."
+    },
+    {
+      "id": "sewa-jendela360-3e05422f535f",
+      "title": "B Residence BSD — Studio, 23 m² (BRSA102)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Pagedangan, Pagedangan, Kabupaten Tangerang",
+      "buildingOrCluster": "B Residence BSD",
+      "rent": {
+        "amount": 28300000,
+        "period": "yearly",
+        "quote": "Rp28.300.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-b-residence-bsd/BRSA102",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 23.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp28.300.000/tahun",
+          "url": "https://jendela360.com/sewa-apartemen-b-residence-bsd/BRSA102"
+        },
+        {
+          "quote": "Halaman gedung menyebut Pagedangan, Tangerang, Banten; pin bangunan cocok poligon BIG Pagedangan.",
+          "url": "https://jendela.com/sewa-apartemen/tangerang-selatan/bsd-city/b-residence-bsd/bulanan"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-b-residence-bsd/BRSA102",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 2.27 km ke KRL Cisauk. Alamat gedung dicocokkan dengan sumber alamat dan batas BIG. Ada opsi paket lebih pendek pada detail; harga dapat berbeda dari ekuivalen tahunan."
+    },
+    {
+      "id": "sewa-jendela360-3312742e14d5",
+      "title": "Cisauk Point Apartment — Studio, 24 m² (CSPA003)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Cibogo, Cisauk, Kabupaten Tangerang",
+      "buildingOrCluster": "Cisauk Point Apartment",
+      "rent": {
+        "amount": 41620000,
+        "period": "yearly",
+        "quote": "Rp41.620.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA003",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 24.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp41.620.000/tahun",
+          "url": "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA003"
+        },
+        {
+          "quote": "BTN Properti mencantumkan Cibogo, Cisauk, Kabupaten Tangerang, bukan Kota Tangerang Selatan.",
+          "url": "https://www.btnproperti.co.id/property/tipe/detail/TPR2022112511025816"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA003",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 0.20 km ke KRL Cisauk. Alamat gedung dicocokkan dengan sumber alamat dan batas BIG. Ada opsi paket lebih pendek pada detail; harga dapat berbeda dari ekuivalen tahunan."
     }
   ]
 }

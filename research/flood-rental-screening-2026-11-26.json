@@ -6,13 +6,13 @@
   "localityMode": "BIG-polygons",
   "note": "Historical records, not risk classes. Distance to a public landmark is straight-line, not extent of flood or access route. Same-locality means a part of the area was reported. Unknown/no match never means safe.",
   "summary": {
-    "rentals": 894,
-    "pinned": 881,
-    "mappedLocality": 878,
-    "within1kmOfOfficialEvent": 15,
-    "within3kmOfOfficialEvent": 107,
-    "sameLocalityReport": 81,
-    "hazardUnknown": 894
+    "rentals": 916,
+    "pinned": 903,
+    "mappedLocality": 900,
+    "within1kmOfOfficialEvent": 16,
+    "within3kmOfOfficialEvent": 111,
+    "sameLocalityReport": 86,
+    "hazardUnknown": 916
   },
   "items": [
     {
@@ -1844,7 +1844,7 @@
         "city": "Kota Tangerang Selatan",
         "boundaryStatus": "Hasil Kesepakatan"
       },
-      "sameLocalityReportIds": []
+      "sameLocalityReportIds": ["banjir-pondok-kacang-timur-bantuan-2026-01-23"]
     },
     {
       "rentalId": "sewa-pinhome-kunciran-indah-2dca52d0",
@@ -5532,7 +5532,7 @@
         "city": "Kota Tangerang Selatan",
         "boundaryStatus": "Hasil Kesepakatan"
       },
-      "sameLocalityReportIds": []
+      "sameLocalityReportIds": ["banjir-pondok-kacang-timur-bantuan-2026-01-23"]
     },
     {
       "rentalId": "sewa-pinhome-jatiwaringin-709d2f26",
@@ -6267,7 +6267,7 @@
         "city": "Kota Tangerang Selatan",
         "boundaryStatus": "Hasil Kesepakatan"
       },
-      "sameLocalityReportIds": []
+      "sameLocalityReportIds": ["banjir-pondok-kacang-timur-bantuan-2026-01-23"]
     },
     {
       "rentalId": "sewa-pinhome-sudimara-selatan-772577e2",
@@ -9052,7 +9052,7 @@
         "city": "Kota Tangerang Selatan",
         "boundaryStatus": "Hasil Kesepakatan"
       },
-      "sameLocalityReportIds": []
+      "sameLocalityReportIds": ["banjir-pondok-kacang-timur-bantuan-2026-01-23"]
     },
     {
       "rentalId": "sewa-pinhome-parigi-perigi-lama-f2f8d5c8",
@@ -18210,7 +18210,7 @@
         "city": "Kota Tangerang Selatan",
         "boundaryStatus": "Hasil Kesepakatan"
       },
-      "sameLocalityReportIds": []
+      "sameLocalityReportIds": ["banjir-rawabuntu-puskesmas-2025-06-02"]
     },
     {
       "rentalId": "sewa-pinhome-de0413e33377",
@@ -18700,6 +18700,473 @@
         "name": "Tlajung Udik",
         "district": "Gunungputri",
         "city": "Bogor",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-9135e263d969",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-itc-cipulir-2026-03-08",
+        "distanceMeters": 1042.5
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.74.05.1005",
+        "name": "Grogol Selatan",
+        "district": "Kebayoran Lama",
+        "city": "Kota Administrasi Jakarta Selatan",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-d9c28bf1fa24",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-itc-cipulir-2026-03-08",
+        "distanceMeters": 3434.5
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.74.03.1001",
+        "name": "Pondok Betung",
+        "district": "Pondok Aren",
+        "city": "Kota Tangerang Selatan",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-39a84434a6b3",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 8891.6
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.23.2005",
+        "name": "Suradita",
+        "district": "Cisauk",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-0e974e76da18",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 8120.5
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.23.2005",
+        "name": "Suradita",
+        "district": "Cisauk",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-593f01b0c4ed",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 1982.7
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "32.01.20.2011",
+        "name": "Kabasiran",
+        "district": "Parungpanjang",
+        "city": "Bogor",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-c167bf2a155e",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+        "distanceMeters": 5277.7
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.04.2008",
+        "name": "Mekarsari",
+        "district": "Jambe",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-e0846cb9402c",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+        "distanceMeters": 5325.9
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.04.2008",
+        "name": "Mekarsari",
+        "district": "Jambe",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-06209527ce0f",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+        "distanceMeters": 3228.6
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "32.01.23.2008",
+        "name": "Singabangsa",
+        "district": "Tenjo",
+        "city": "Bogor",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-43a384a50776",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 9079.5
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.23.1001",
+        "name": "Cisauk",
+        "district": "Cisauk",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-c2943ab51d10",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+        "distanceMeters": 5405.9
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.04.2005",
+        "name": "Daru",
+        "district": "Jambe",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-4451964e7d45",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+        "distanceMeters": 2913.3
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "32.01.23.2006",
+        "name": "Cilaku",
+        "district": "Tenjo",
+        "city": "Bogor",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-45757b970739",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+        "distanceMeters": 3072.4
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.31.2003",
+        "name": "Cikasungka",
+        "district": "Solear",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-60aa22d01969",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-itc-cipulir-2026-03-08",
+        "distanceMeters": 8912.2
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.74.04.1001",
+        "name": "Sawah Baru",
+        "district": "Ciputat",
+        "city": "Kota Tangerang Selatan",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-53933a12b9e5",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-itc-cipulir-2026-03-08",
+        "distanceMeters": 8912.2
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.74.04.1001",
+        "name": "Sawah Baru",
+        "district": "Ciputat",
+        "city": "Kota Tangerang Selatan",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-64f75e81b643",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-sdn-pinang-5-8-2026-02-05",
+        "distanceMeters": 13085.1
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.74.01.1001",
+        "name": "Ciater",
+        "district": "Serpong",
+        "city": "Kota Tangerang Selatan",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-0ec6a8498cd8",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 9493.7
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.23.2011",
+        "name": "Cibogo",
+        "district": "Cisauk",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-72cb38fd9ad3",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 11392.1
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.23.2006",
+        "name": "Sampora",
+        "district": "Cisauk",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-0daccd8d6431",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-itc-cipulir-2026-03-08",
+        "distanceMeters": 414.1
+      },
+      "eventsWithin1km": [
+        {
+          "id": "banjir-itc-cipulir-2026-03-08",
+          "distanceMeters": 414.1
+        }
+      ],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.74.05.1003",
+        "name": "Cipulir",
+        "district": "Kebayoran Lama",
+        "city": "Kota Administrasi Jakarta Selatan",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-9d8a569045c6",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-itc-cipulir-2026-03-08",
+        "distanceMeters": 4792.7
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.74.03.1003",
+        "name": "Pondok Karya",
+        "district": "Pondok Aren",
+        "city": "Kota Tangerang Selatan",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-6144bcbc483a",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-sdn-pinang-5-8-2026-02-05",
+        "distanceMeters": 9585.4
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.74.01.1007",
+        "name": "Lengkong Gudang Timur",
+        "district": "Serpong",
+        "city": "Kota Tangerang Selatan",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-3e05422f535f",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 10095.6
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.22.2003",
+        "name": "Pagedangan",
+        "district": "Pagedangan",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-3312742e14d5",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 9493.7
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.23.2011",
+        "name": "Cibogo",
+        "district": "Cisauk",
+        "city": "Tangerang",
         "boundaryStatus": "Hasil Kesepakatan"
       },
       "sameLocalityReportIds": []
