@@ -329,6 +329,90 @@
         "label": "Marker peta resmi Siaga112 Pemkab Bogor",
         "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/2089"
       }
+    },
+    {
+      "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+      "kind": "banjir",
+      "title": "Banjir permukiman dan kontrakan Lanbau",
+      "date": "2024-05-24",
+      "basis": "Rilis",
+      "region": "Kabupaten Bogor",
+      "place": "Kampung Lanbau, Karang Asem Barat, Citeureup",
+      "lat": -6.491078239171931,
+      "lng": 106.86150651488124,
+      "summary": "TRC BPBD mencatat luapan Kali Cikeas dengan genangan sekitar 50 cm di lokasi terdampak.",
+      "precision": "Marker kejadian dari Siaga112 Pemkab Bogor, sesuai desa/kelurahan dan kecamatan pada batas BIG. Bukan batas genangan atau titik ukur kedalaman.",
+      "source": {
+        "label": "Siaga112 Pemkab Bogor · TRC BPBD",
+        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2024/855"
+      },
+      "locationSource": {
+        "label": "Peta resmi Siaga112 Pemkab Bogor",
+        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2024/855"
+      }
+    },
+    {
+      "id": "banjir-puspasari-citeureup-2025-07-04",
+      "kind": "banjir",
+      "title": "Banjir di Puspasari, Citeureup",
+      "date": "2025-07-04",
+      "basis": "Rilis",
+      "region": "Kabupaten Bogor",
+      "place": "Desa Puspasari, Citeureup",
+      "lat": -6.473045439940647,
+      "lng": 106.87765425511896,
+      "summary": "TRC BPBD mencatat luapan anak kali menuju Setu Gunung Putri, ketinggian sekitar 30 cm pada lokasi terdampak dan 45 KK terdampak.",
+      "precision": "Marker kejadian dari Siaga112 Pemkab Bogor, sesuai desa/kelurahan dan kecamatan pada batas BIG. Bukan batas genangan atau titik ukur kedalaman.",
+      "source": {
+        "label": "Siaga112 Pemkab Bogor · TRC BPBD",
+        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/1081"
+      },
+      "locationSource": {
+        "label": "Peta resmi Siaga112 Pemkab Bogor",
+        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/1081"
+      }
+    },
+    {
+      "id": "banjir-puri-harmoni-9-cikahuripan-2025-07-07",
+      "kind": "banjir",
+      "title": "Banjir Puri Harmoni 9",
+      "date": "2025-07-07",
+      "basis": "Rilis",
+      "region": "Kabupaten Bogor",
+      "place": "Perum Puri Harmoni 9, Cikahuripan, Klapanunggal",
+      "lat": -6.451201727710895,
+      "lng": 106.97863714422022,
+      "summary": "TRC BPBD melaporkan luapan Kali Cibarengkok; muka air sekitar 50–100 cm pada lokasi terdampak.",
+      "precision": "Marker kejadian dari Siaga112 Pemkab Bogor, sesuai desa/kelurahan dan kecamatan pada batas BIG. Bukan batas genangan atau titik ukur kedalaman.",
+      "source": {
+        "label": "Siaga112 Pemkab Bogor · TRC BPBD",
+        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/1165"
+      },
+      "locationSource": {
+        "label": "Peta resmi Siaga112 Pemkab Bogor",
+        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/1165"
+      }
+    },
+    {
+      "id": "banjir-villa-asri-cileungsi-2-2025-07-07",
+      "kind": "banjir",
+      "title": "Banjir Villa Asri Cileungsi 2",
+      "date": "2025-07-07",
+      "basis": "Rilis",
+      "region": "Kabupaten Bogor",
+      "place": "Perum Villa Asri Cileungsi 2, Cikahuripan, Klapanunggal",
+      "lat": -6.4512508017057515,
+      "lng": 106.97593891154962,
+      "summary": "TRC BPBD melaporkan luapan Kali Cibarengkok dengan genangan sekitar 60–120 cm di permukiman terdampak.",
+      "precision": "Marker kejadian dari Siaga112 Pemkab Bogor, sesuai desa/kelurahan dan kecamatan pada batas BIG. Bukan batas genangan atau titik ukur kedalaman.",
+      "source": {
+        "label": "Siaga112 Pemkab Bogor · TRC BPBD",
+        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/1166"
+      },
+      "locationSource": {
+        "label": "Peta resmi Siaga112 Pemkab Bogor",
+        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/1166"
+      }
     }
   ],
   "reports": [
@@ -977,6 +1061,115 @@
           "url": "https://bpbd.jakarta.go.id/berita/WEJPRVhPdnhaVjBaRHpyTWJZczdrUT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-21-00-wib"
         }
       ]
+    },
+    {
+      "id": "banjir-penjaringan-muara-baru-pluit-sea-view-2026-01-18",
+      "kind": "banjir",
+      "title": "Genangan Jl. Muara Baru depan Apartemen Pluit Sea View",
+      "date": "2026-01-18",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "scope": "jalan",
+      "place": "Jl. Muara Baru depan Apartemen Pluit Sea View",
+      "summary": "Pada 18 Januari, BPBD melaporkan 50 cm pukul 10.00 dan 30 cm pukul 18.00 di bagian jalan. Laporan 19 Januari pukul 06.00 menyatakan ruas tersebut sudah surut. Bukan bukti genangan di unit apartemen.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 18 Januari 10.00",
+          "url": "https://bpbd.jakarta.go.id/index.php/berita/R2pqeGRUSkc3eFkrVjdPbjRyeUp6QT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-10-00-wib"
+        },
+        {
+          "label": "BPBD DKI · 18 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/ppid/berita/2372/update-info-terkini-genangan-18-januari-2026-s-d-pukul-18-00-wib"
+        },
+        {
+          "label": "BPBD DKI · 19 Januari 06.00",
+          "url": "https://bpbd.jakarta.go.id/berita/S2VxKzl2QXJ5N29VUE9ud296eTJUQT09/update-info-terkini-genangan-19-januari-2026-s-d-pukul-06-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-penjaringan-jembatan-tiga-2026-01-18",
+      "kind": "banjir",
+      "title": "Genangan Jl. Jembatan Tiga Raya, Penjaringan",
+      "date": "2026-01-18",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "scope": "jalan",
+      "place": "Jl. Jembatan Tiga Raya, Penjaringan",
+      "summary": "BPBD mencatat 60 cm pukul 10.00; ruas masuk daftar sudah surut pada 18.00.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 18 Januari 10.00",
+          "url": "https://bpbd.jakarta.go.id/index.php/berita/R2pqeGRUSkc3eFkrVjdPbjRyeUp6QT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-10-00-wib"
+        },
+        {
+          "label": "BPBD DKI · 18 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/ppid/berita/2372/update-info-terkini-genangan-18-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-penjaringan-pluit-selatan-raya-2026-01-18",
+      "kind": "banjir",
+      "title": "Genangan Jl. Pluit Selatan Raya depan Kantor Kecamatan Penjaringan",
+      "date": "2026-01-18",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "scope": "jalan",
+      "place": "Jl. Pluit Selatan Raya depan Kantor Kecamatan Penjaringan",
+      "summary": "BPBD mencatat 25 cm pukul 10.00; bagian jalan masuk daftar sudah surut pukul 18.00.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 18 Januari 10.00",
+          "url": "https://bpbd.jakarta.go.id/index.php/berita/R2pqeGRUSkc3eFkrVjdPbjRyeUp6QT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-10-00-wib"
+        },
+        {
+          "label": "BPBD DKI · 18 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/ppid/berita/2372/update-info-terkini-genangan-18-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-penjaringan-pluit-raya-2026-01-18",
+      "kind": "banjir",
+      "title": "Genangan Jl. Pluit Raya depan Hotel JP",
+      "date": "2026-01-18",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "scope": "jalan",
+      "place": "Jl. Pluit Raya depan Hotel JP",
+      "summary": "BPBD mencatat 45 cm pukul 10.00; ruas masuk daftar sudah surut pukul 18.00.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 18 Januari 10.00",
+          "url": "https://bpbd.jakarta.go.id/index.php/berita/R2pqeGRUSkc3eFkrVjdPbjRyeUp6QT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-10-00-wib"
+        },
+        {
+          "label": "BPBD DKI · 18 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/ppid/berita/2372/update-info-terkini-genangan-18-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-penjaringan-nizam-zachman-2026-01-18",
+      "kind": "banjir",
+      "title": "Genangan Depan pintu masuk Pelabuhan Nizam Zachman",
+      "date": "2026-01-18",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "scope": "jalan",
+      "place": "Depan pintu masuk Pelabuhan Nizam Zachman",
+      "summary": "BPBD mencatat genangan 50 cm pukul 10.00 dan 40 cm pukul 18.00 pada titik yang dilaporkan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 18 Januari 10.00",
+          "url": "https://bpbd.jakarta.go.id/index.php/berita/R2pqeGRUSkc3eFkrVjdPbjRyeUp6QT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-10-00-wib"
+        },
+        {
+          "label": "BPBD DKI · 18 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/ppid/berita/2372/update-info-terkini-genangan-18-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
     }
   ],
   "reportLocalities": {
@@ -1149,6 +1342,31 @@
       "city": "Jakarta Utara",
       "locality": "Pademangan Barat",
       "bigCode": "31.72.05.1002"
+    },
+    "banjir-penjaringan-muara-baru-pluit-sea-view-2026-01-18": {
+      "city": "Jakarta Utara",
+      "locality": "Penjaringan",
+      "bigCode": "31.72.01.1001"
+    },
+    "banjir-penjaringan-jembatan-tiga-2026-01-18": {
+      "city": "Jakarta Utara",
+      "locality": "Penjaringan",
+      "bigCode": "31.72.01.1001"
+    },
+    "banjir-penjaringan-pluit-selatan-raya-2026-01-18": {
+      "city": "Jakarta Utara",
+      "locality": "Penjaringan",
+      "bigCode": "31.72.01.1001"
+    },
+    "banjir-penjaringan-pluit-raya-2026-01-18": {
+      "city": "Jakarta Utara",
+      "locality": "Penjaringan",
+      "bigCode": "31.72.01.1001"
+    },
+    "banjir-penjaringan-nizam-zachman-2026-01-18": {
+      "city": "Jakarta Utara",
+      "locality": "Penjaringan",
+      "bigCode": "31.72.01.1001"
     }
   },
   "sourceRegistry": [
@@ -1242,6 +1460,49 @@
       "purpose": "Pemkab Tangerang: kesiapsiagaan musim hujan akhir 2026, termasuk Jambe dan Solear",
       "url": "https://tangerangkab.go.id/index.php/detail-berita/hadapi-puncak-musim-hujan-bupati-maesyal-minta-seluruh-pihak-perkuat-mitigasi-dan-kesiapsiagaan-bencana",
       "status": "official forecast/preparedness context; not event or parcel-level flood hazard; no map pin"
+    },
+    {
+      "purpose": "Laporan dan marker resmi Kampung Lanbau, Karang Asem Barat, Citeureup",
+      "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2024/855",
+      "status": "official detail and embedded marker read; matched BIG 32.01.03.1007",
+      "checkedAt": "2026-11-26",
+      "sha256": "e428fccf9fc3a2fbc646eeab25f19a8df5e28de1ea4f40329943830ea99c3789"
+    },
+    {
+      "purpose": "Laporan dan marker resmi Desa Puspasari, Citeureup",
+      "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/1081",
+      "status": "official detail and embedded marker read; matched BIG 32.01.03.2001",
+      "checkedAt": "2026-11-26",
+      "sha256": "048bbb110675b89c3ff2c64ae2d592cb7f2e41f862439a3fc0166c02b0af89eb"
+    },
+    {
+      "purpose": "Laporan dan marker resmi Perum Puri Harmoni 9, Cikahuripan, Klapanunggal",
+      "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/1165",
+      "status": "official detail and embedded marker read; matched BIG 32.01.32.2005",
+      "checkedAt": "2026-11-26",
+      "sha256": "1d0c114e0c6e61e6761129be9ec52b7eb34dd905886b371ae436bd47c4a8be92"
+    },
+    {
+      "purpose": "Laporan dan marker resmi Perum Villa Asri Cileungsi 2, Cikahuripan, Klapanunggal",
+      "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/1166",
+      "status": "official detail and embedded marker read; matched BIG 32.01.32.2005",
+      "checkedAt": "2026-11-26",
+      "sha256": "d28fd1213783a8f228cb2998965653c72f5b156e974d443bd78188e128a44f93"
+    },
+    {
+      "purpose": "Pembaruan genangan dan surut jalan Penjaringan 18 Januari pukul 10.00",
+      "url": "https://bpbd.jakarta.go.id/index.php/berita/R2pqeGRUSkc3eFkrVjdPbjRyeUp6QT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-10-00-wib",
+      "status": "official BPBD release read; roads only; no fabricated point"
+    },
+    {
+      "purpose": "Pembaruan genangan dan surut jalan Penjaringan 18 Januari pukul 18.00",
+      "url": "https://bpbd.jakarta.go.id/ppid/berita/2372/update-info-terkini-genangan-18-januari-2026-s-d-pukul-18-00-wib",
+      "status": "official BPBD release read; roads only; no fabricated point"
+    },
+    {
+      "purpose": "Pembaruan genangan dan surut jalan Penjaringan 19 Januari pukul 06.00",
+      "url": "https://bpbd.jakarta.go.id/berita/S2VxKzl2QXJ5N29VUE9ud296eTJUQT09/update-info-terkini-genangan-19-januari-2026-s-d-pukul-06-00-wib",
+      "status": "official BPBD release read; roads only; no fabricated point"
     }
   ]
 }
