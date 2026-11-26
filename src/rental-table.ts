@@ -35,13 +35,33 @@ import {
 import "./rental-table.css";
 
 const modes = ["KRL", "MRT", "LRT", "TransJakarta"] as const;
-export const RENTAL_RAIL_CORRIDOR = "cikarang-mrt";
-export const RENTAL_KRL_CORRIDOR = "cikarang-sudirman";
+type Mode = (typeof modes)[number];
 export const RENTAL_SCBD_RADIUS = "8km";
-type CorridorMode = typeof RENTAL_RAIL_CORRIDOR | typeof RENTAL_KRL_CORRIDOR;
+const combinedCorridor = "gabungan";
+// Satu koridor terdiri dari satu atau beberapa set stasiun. "Tangerang" adalah
+// lintas KRL Tangerang–Duri, dipisah dari lintas Cikarang–Sudirman ("KRL").
+type CorridorSet = Mode | "Tangerang";
+const corridors = {
+  [combinedCorridor]: {
+    label: "KRL + TransJakarta 13 + LRT Bekasi",
+    sets: ["KRL", "Tangerang", "TransJakarta", "LRT"],
+  },
+  "cikarang-sudirman": { label: "KRL Cikarang–Sudirman", sets: ["KRL"] },
+  "tangerang-duri": { label: "KRL Tangerang–Duri", sets: ["Tangerang"] },
+  "transjakarta-13": {
+    label: "TransJakarta Koridor 13",
+    sets: ["TransJakarta"],
+  },
+  "lrt-bekasi": { label: "LRT Jabodebek Lin Bekasi", sets: ["LRT"] },
+  "cikarang-mrt": { label: "Cikarang–Sudirman + MRT", sets: ["KRL", "MRT"] },
+} as const satisfies Record<
+  string,
+  { label: string; sets: readonly CorridorSet[] }
+>;
+type CorridorMode = keyof typeof corridors;
 
 export function isRentalCorridor(mode: string | null): mode is CorridorMode {
-  return mode === RENTAL_RAIL_CORRIDOR || mode === RENTAL_KRL_CORRIDOR;
+  return mode !== null && Object.hasOwn(corridors, mode);
 }
 
 const railRadiusKm = 1.2;
@@ -64,8 +84,14 @@ const cikarangStops = [
   "Sudirman",
 ];
 const allKinds = new Set(RENTAL_MAP_GROUPS.map((group) => group.id));
-type Mode = (typeof modes)[number];
 type Stop = NonNullable<ReturnType<typeof nearestStation>>;
+
+function withinTransitRadius(stop: Stop): boolean {
+  return (
+    stop.distance <= (stop.station.mode === "TransJakarta" ? 0.7 : railRadiusKm)
+  );
+}
+
 type Source = { label: string; url: string };
 type Value = number | string | Source | undefined | null;
 type Row = {
@@ -76,8 +102,7 @@ type Row = {
   mosqueKm?: number;
   scbdKm?: number;
   stops: Partial<Record<Mode, Stop>>;
-  corridorStop?: Stop;
-  krlCorridorStop?: Stop;
+  corridorStops: Partial<Record<CorridorSet, Stop>>;
 };
 type Column = {
   id: string;
@@ -484,6 +509,7 @@ export class RentalTable {
   private body: HTMLTableSectionElement;
   private grid: HTMLTableElement;
   private corridorStations = new Map<string, Station>();
+  private corridorStationSets = new Map<string, CorridorSet>();
   private rows = new Map<string, Row>();
   private bookmarkGroups = new Map<string, Set<string>>();
   private allBookmarked = new Set<string>();
@@ -540,14 +566,23 @@ export class RentalTable {
           <select name="scbd" aria-label="Radius Artha Graha SCBD" title="Jarak garis lurus dari pin hunian ke Gedung Artha Graha"><option value="">Semua jarak SCBD</option><option value="${RENTAL_SCBD_RADIUS}">≤ 8 km Artha Graha</option></select>
           <select name="kind" aria-label="Jenis hunian di tabel"><option value="">Semua jenis</option>${RENTAL_MAP_GROUPS.map((g) => `<option value="${g.id}">${g.label}</option>`).join("")}</select>
           <select name="area" aria-label="Wilayah di tabel"><option value="">Semua wilayah</option>${AREAS.map((a) => `<option>${a}</option>`).join("")}</select>
-          <select name="mode" aria-label="Angkutan dekat hunian"><option value="">Semua angkutan</option><option value="${RENTAL_KRL_CORRIDOR}">KRL Cikarang–Sudirman</option><option value="${RENTAL_RAIL_CORRIDOR}">Cikarang–Sudirman + MRT</option>${modes.map((m) => `<option>${m}</option>`).join("")}</select>
+          <select name="mode" aria-label="Angkutan dekat hunian"><option value="">Semua angkutan</option>${Object.entries(
+            corridors,
+          )
+            .map(
+              ([value, { label }]) =>
+                `<option value="${value}">${label}</option>`,
+            )
+            .join(
+              "",
+            )}${modes.map((m) => `<option>${m}</option>`).join("")}</select>
           <select name="station" aria-label="Stasiun di koridor" hidden><option value="">Semua stasiun koridor</option></select>
           <label class="rent-table-kitchen"><input type="checkbox" name="kitchen"/> Dapur dalam unit</label>
           <select name="freeze" aria-label="Bekukan kolom kiri">${Array.from({ length: 5 }, (_, i) => `<option value="${i}">${i ? `Bekukan ${i} kolom` : "Tanpa kolom beku"}</option>`).join("")}</select>
           <button class="rent-table-action" data-reset type="button">Reset filter</button>
         </div>
       </form>
-      <details class="rent-table-corridor" hidden><summary>Panduan rute · radius 1,2 km</summary><p>Jarak dihitung garis lurus. Kos menampilkan iklan yang mengizinkan pasutri. Ke SCBD, turun di MRT Istora atau Senayan. Dari KRL, pilih kereta via Manggarai yang berhenti di Sudirman, lalu pindah ke MRT Dukuh Atas.</p></details>
+      <details class="rent-table-corridor" hidden><summary>Panduan koridor</summary><p>Jarak garis lurus hingga 1,2 km dari stasiun kereta atau 700 m dari halte TransJakarta. Saat radius Artha Graha juga aktif, tabel memuat gabungan penawaran dari seluruh cakupan yang dipilih. Kos menampilkan iklan yang mengizinkan pasutri. Untuk ke SCBD, dari KRL Sudirman bisa lanjut MRT dari Dukuh Atas lalu turun di Istora atau Senayan.</p></details>
       <div class="rent-table-scroll" id="rent-table-scroll" role="region" aria-label="Data sewa, gulir mendatar untuk melihat semua kolom" tabindex="0">
         <table class="rent-table-grid" aria-label="Cari hunian sewa"><colgroup>${columns.map((c) => `<col data-column="${c.id}"/>`).join("")}</colgroup><thead></thead><tbody></tbody></table>
       </div>
@@ -753,21 +788,20 @@ export class RentalTable {
     const mode = this.select("mode").value;
     const active = isRentalCorridor(mode);
     const stations = this.select("station");
-    const krlOnly = mode === RENTAL_KRL_CORRIDOR;
-    const mrt = stations.querySelector<HTMLOptGroupElement>(
-      'optgroup[data-mode="MRT"]',
-    );
-    if (mrt) {
-      mrt.disabled = krlOnly;
-      mrt.hidden = krlOnly;
+    const selectableSets: readonly CorridorSet[] =
+      active && mode !== combinedCorridor ? corridors[mode].sets : [];
+    for (const group of stations.querySelectorAll<HTMLOptGroupElement>(
+      "optgroup[data-mode]",
+    )) {
+      const included = selectableSets.some((set) => set === group.dataset.mode);
+      group.disabled = !included;
+      group.hidden = !included;
     }
-    if (
-      !active ||
-      (krlOnly && this.corridorStations.get(stations.value)?.mode === "MRT")
-    ) {
+    const selected = this.corridorStationSets.get(stations.value);
+    if (!selectableSets.some((set) => set === selected)) {
       stations.value = "";
     }
-    stations.hidden = !active;
+    stations.hidden = !selectableSets.length;
     const guide = element<HTMLDetailsElement>(
       this.panel,
       ".rent-table-corridor",
@@ -776,7 +810,7 @@ export class RentalTable {
     if (!active) guide.open = false;
   }
 
-  showRailCorridor(mode: CorridorMode): void {
+  showCorridor(mode: CorridorMode): void {
     this.select("mode").value = mode;
     this.syncCorridor();
   }
@@ -906,17 +940,43 @@ export class RentalTable {
     const mrt = stations
       .filter((s) => s.mode === "MRT" && s.lines.includes("mrt-north-south"))
       .sort((a, b) => a.lat - b.lat);
-    const corridor = [...krl, ...mrt];
-    this.corridorStations = new Map(corridor.map((s) => [s.id, s]));
+    const corridorStations: Record<CorridorSet, Station[]> = {
+      KRL: krl,
+      Tangerang: stations
+        .filter((s) => s.mode === "KRL" && s.lines.includes("tangerang"))
+        .sort((a, b) => a.lng - b.lng),
+      MRT: mrt,
+      LRT: stations.filter(
+        (s) => s.mode === "LRT" && s.lines.includes("lrt-bekasi"),
+      ),
+      TransJakarta: stations.filter(
+        (s) => s.mode === "TransJakarta" && s.lines.includes("tj-13"),
+      ),
+    };
+    const stationEntries = Object.entries(corridorStations) as [
+      CorridorSet,
+      Station[],
+    ][];
+    this.corridorStations = new Map(
+      stationEntries.flatMap(([, items]) => items.map((s) => [s.id, s])),
+    );
+    this.corridorStationSets = new Map(
+      stationEntries.flatMap(([set, items]) =>
+        items.map((s): [string, CorridorSet] => [s.id, set]),
+      ),
+    );
     const groups = [
-      ["KRL", "KRL Cikarang–Sudirman", krl],
-      ["MRT", "MRT Lebak Bulus–Bundaran HI", mrt],
+      ["KRL", "KRL Cikarang–Sudirman"],
+      ["Tangerang", "KRL Tangerang–Duri"],
+      ["MRT", "MRT Lebak Bulus–Bundaran HI"],
+      ["LRT", "LRT Jabodebek Lin Bekasi"],
+      ["TransJakarta", "TransJakarta Koridor 13"],
     ] as const;
     this.select("station").innerHTML =
       `<option value="">Semua stasiun koridor</option>${groups
         .map(
-          ([mode, label, stops]) =>
-            `<optgroup data-mode="${mode}" label="${label}">${stops.map((s) => `<option value="${esc(s.id)}">${esc(s.name)}</option>`).join("")}</optgroup>`,
+          ([mode, label]) =>
+            `<optgroup data-mode="${mode}" label="${label}">${corridorStations[mode].map((s) => `<option value="${esc(s.id)}">${esc(s.name)}</option>`).join("")}</optgroup>`,
         )
         .join("")}`;
     this.syncCorridor();
@@ -927,6 +987,7 @@ export class RentalTable {
         rental,
         bookmarked: false,
         stops: {},
+        corridorStops: {},
         mosque: near && idToMosque.get(near.id),
         mosqueKm: near?.km,
         group:
@@ -935,10 +996,12 @@ export class RentalTable {
       };
       if (rental.location) {
         row.scbdKm = distanceKm(rental.location, ARTHA_GRAHA_SCBD);
-        for (const [mode, items] of byMode)
+        for (const [mode, items] of byMode) {
           row.stops[mode] = nearestStation(rental.location, items);
-        row.corridorStop = nearestStation(rental.location, corridor);
-        row.krlCorridorStop = nearestStation(rental.location, krl);
+        }
+        for (const [set, items] of stationEntries) {
+          row.corridorStops[set] = nearestStation(rental.location, items);
+        }
       }
       this.rows.set(rental.id, row);
     }
@@ -948,11 +1011,14 @@ export class RentalTable {
     const mode = this.select("mode").value;
     if (isRentalCorridor(mode)) {
       const station = this.corridorStations.get(this.select("station").value);
-      return station && row.rental.location
-        ? { station, distance: distanceKm(row.rental.location, station) }
-        : mode === RENTAL_KRL_CORRIDOR
-          ? row.krlCorridorStop
-          : row.corridorStop;
+      if (station && row.rental.location) {
+        return { station, distance: distanceKm(row.rental.location, station) };
+      }
+      const stops = corridors[mode].sets
+        .map((set) => row.corridorStops[set])
+        .filter((stop) => stop !== undefined)
+        .sort((a, b) => a.distance - b.distance);
+      return stops.find(withinTransitRadius) ?? stops[0];
     }
     if (mode) return row.stops[mode as Mode];
     return Object.values(row.stops).reduce<Stop | undefined>(
@@ -999,10 +1065,7 @@ export class RentalTable {
         return false;
       const stop = this.stop(row);
       const nearScbd = row.scbdKm !== undefined && row.scbdKm <= scbdRadiusKm;
-      const nearTransit =
-        !mode ||
-        (stop &&
-          stop.distance <= (mode === "TransJakarta" ? 0.7 : railRadiusKm));
+      const nearTransit = !mode || (stop && withinTransitRadius(stop));
       const matchesLocation =
         scbd && corridor
           ? nearScbd || nearTransit

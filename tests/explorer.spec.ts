@@ -1765,9 +1765,9 @@ test("includes the Artha Graha radius and Cikarang corridors together", async ({
   const station = panel.getByLabel("Stasiun di koridor");
   const rows = panel.locator("tr[data-rental]");
   await expect(mode).toHaveValue("cikarang-mrt");
-  await expect(station.locator("optgroup[label^='KRL'] option")).toHaveCount(
-    15,
-  );
+  await expect(
+    station.locator("optgroup[label='KRL Cikarang–Sudirman'] option"),
+  ).toHaveCount(15);
   await expect(station.locator("optgroup[label^='MRT'] option")).toHaveCount(
     13,
   );
@@ -1828,6 +1828,100 @@ test("includes the Artha Graha radius and Cikarang corridors together", async ({
   await panel.getByRole("button", { name: "Reset filter" }).click();
   await expect(scbdRadius).toHaveValue("");
   await expect(rows).toHaveCount(11);
+});
+
+test("includes all three transit corridors with each mode's own radius", async ({
+  page,
+}) => {
+  const fixture = structuredClone(researchFixture);
+  const base = fixture.metadata.rentals.rentals[0];
+  fixture.metadata.rentals.rentals = [
+    ["koridor-krl", -6.2553, 107.145],
+    ["koridor-tj", -6.2236395, 106.7090532],
+    ["koridor-lrt", -6.2641263, 107.0216652],
+    ["koridor-tng", -6.1665, 106.704],
+    ["dua-koridor", -6.2008, 106.8227],
+    ["lrt-dengan-halte-lebih-dekat", -6.2348, 106.8248],
+    ["radius-saja", -6.29646, 106.8109],
+    ["cibubur-saja", -6.3738897, 106.8956864],
+    ["lewat-radius-halte", -6.2236395, 106.7013],
+  ].map(([id, lat, lng]) => ({
+    ...base,
+    id: String(id),
+    title: String(id),
+    rentalType: "kontrakan",
+    review: {},
+    location: {
+      lat: Number(lat),
+      lng: Number(lng),
+      precision: "approximate",
+      label: "Titik uji",
+      method: "Lokasi fiktif",
+      url: "https://portal.example.invalid/pin",
+      checkedAt: "2026-11-26",
+    },
+  }));
+  await page.route("**/data/properties.geojson", (route) =>
+    route.fulfill({ json: fixture }),
+  );
+
+  await page.goto("/?koleksi=sewa&koridor=transjakarta-13");
+  const panel = page.locator("#rental-table");
+  const mode = panel.getByLabel("Angkutan dekat hunian");
+  const station = panel.getByLabel("Stasiun di koridor");
+  const scbd = panel.getByLabel("Radius Artha Graha SCBD");
+  const rows = panel.locator("tr[data-rental]");
+  const row = (id: string) => panel.locator(`tr[data-rental="${id}"]`);
+  await expect(
+    station.locator("optgroup[data-mode='TransJakarta'] option"),
+  ).toHaveCount(15);
+  await expect(row("koridor-tj")).toBeVisible();
+  await expect(row("lewat-radius-halte")).toHaveCount(0);
+
+  await mode.selectOption("lrt-bekasi");
+  await expect(station.locator("optgroup[data-mode='LRT'] option")).toHaveCount(
+    14,
+  );
+  await expect(
+    station.locator("optgroup[data-mode='TransJakarta']"),
+  ).toBeHidden();
+  await expect(row("koridor-lrt")).toBeVisible();
+  await expect(row("cibubur-saja")).toHaveCount(0);
+  await station.selectOption({ label: "Jatimulya" });
+  await expect(rows).toHaveCount(1);
+
+  await mode.selectOption("tangerang-duri");
+  await expect(
+    station.locator("optgroup[data-mode='Tangerang'] option"),
+  ).toHaveCount(11);
+  await expect(station.locator("optgroup[data-mode='LRT']")).toBeHidden();
+  await expect(station).toHaveValue("");
+  await expect(row("koridor-tng")).toBeVisible();
+  await expect(rows).toHaveCount(1);
+
+  await mode.selectOption("gabungan");
+  await expect(station).toBeHidden();
+  await expect(station).toHaveValue("");
+  await expect(rows).toHaveCount(6);
+  await expect(row("koridor-krl")).toBeVisible();
+  await expect(row("koridor-tj")).toBeVisible();
+  await expect(row("koridor-lrt")).toBeVisible();
+  await expect(row("koridor-tng")).toBeVisible();
+  await expect(row("dua-koridor")).toHaveCount(1);
+  await expect(row("lrt-dengan-halte-lebih-dekat")).toContainText("LRT ·");
+  await expect(row("radius-saja")).toHaveCount(0);
+
+  await page.goto("/?koleksi=sewa&scbd=8km&koridor=gabungan");
+  await expect(scbd).toHaveValue("8km");
+  await expect(mode).toHaveValue("gabungan");
+  await expect(rows).toHaveCount(7);
+  await expect(row("radius-saja")).toBeVisible();
+  await expect(row("koridor-krl")).toBeVisible();
+  await expect(row("koridor-tj")).toBeVisible();
+  await expect(row("koridor-lrt")).toBeVisible();
+  await expect(row("koridor-tng")).toBeVisible();
+  await expect(row("cibubur-saja")).toHaveCount(0);
+  await expect(row("lewat-radius-halte")).toHaveCount(0);
 });
 
 test("searches dated location reports and opens only mapped public references", async ({

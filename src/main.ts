@@ -1615,7 +1615,7 @@ async function start(): Promise<void> {
     const corridor = params.get("koridor");
     const hasCorridor = isRentalCorridor(corridor);
     const scbd = params.get("scbd") === RENTAL_SCBD_RADIUS;
-    if (hasCorridor) rentalTable.showRailCorridor(corridor);
+    if (hasCorridor) rentalTable.showCorridor(corridor);
     if (scbd) rentalTable.showScbdRadius();
     if (hasCorridor || scbd || params.get("tampilan") === "tabel")
       openRentalTable();
