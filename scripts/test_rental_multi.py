@@ -660,5 +660,25 @@ class ProviderTest(unittest.TestCase):
             self.assertEqual(builder.load_rentals(path)["rentals"][0]["rent"]["minimumMonths"], 3)
 
 
+class CorridorInventoryTests(unittest.TestCase):
+    def test_real_inventory_and_pilot(self):
+        seed = json.loads((m.ROOT / "research/koridor-station-targets.json").read_text())
+        self.assertEqual(len(m.corridor_targets(seed)), 28)
+        chosen = m.corridor_targets(seed, ["Cikarang"])
+        self.assertEqual(len(chosen), 1)
+        self.assertEqual(chosen[0]["stopId"], seed["stations"][0]["stopId"])
+        with self.assertRaisesRegex(ValueError, "Unknown corridor station"):
+            m.corridor_targets(seed, ["unknown"])
+        with self.assertRaisesRegex(ValueError, "disagree"):
+            seed["transitTargets"][0]["paths"] = ["invalid"]
+            m.corridor_targets(seed)
+
+    def test_duplicate_inventory_fails(self):
+        seed = {"stations": [{"station": "X", "stopId": "x", "paths": ["a"]}],
+                "transitTargets": [{"stopId": "x", "paths": ["a"]}] * 2}
+        with self.assertRaisesRegex(ValueError, "Invalid corridor inventory"):
+            m.corridor_targets(seed)
+
+
 if __name__ == "__main__":
     unittest.main()
