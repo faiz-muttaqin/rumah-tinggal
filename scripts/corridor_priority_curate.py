@@ -48,6 +48,8 @@ def resolution(row, area, day):
         return "hold-availability"
     if row.get("issues"):
         return "hold-source-issues"
+    if row["provider"] == "pinhome" and (row.get("usageSignals") or {}).get("roomOrCommercialNeedsReview"):
+        return "hold-room-or-house-use"
     if row["provider"] == "pinhome" and re.search(r"(?:^|[-/])kos(?:t|an|kosan)?(?:-|/|$)", row["url"]):
         return "hold-room-or-house-use"
     amount, period = row.get("amount"), row.get("period")
@@ -58,7 +60,7 @@ def resolution(row, area, day):
         return "outside-budget"
     if row.get("monthlyEquivalent") != monthly:
         return "hold-price"
-    if not row.get("location") or row["location"].get("precision") not in ("building", "approximate") or not row.get("nearbyGapTransit"):
+    if not row.get("location") or row["location"].get("precision") not in ("building", "approximate") or not (row.get("nearbyGapTransit") or row.get("eligibleTaskTransit")):
         return "outside-gap-or-no-pin"
     if not area:
         return "hold-unresolved-big-locality"
@@ -144,7 +146,7 @@ def proposal(row, area):
         title = f'{"Kontrakan" if period == "monthly" else "Rumah sewa"} {area["name"]} — {bedrooms} kamar, {size:g} m²'
         note = "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. "
         rt = "kontrakan" if period == "monthly" else "rumah-sewa"
-    near = row["nearbyGapTransit"][0]
+    near = (row.get("nearbyGapTransit") or row["eligibleTaskTransit"])[0]
     note += f'Jarak garis lurus sekitar {near["km"]:.2f} km ke {near["mode"]} {near["station"]}.'
     rid = "sewa-" + provider + "-" + hashlib.sha256(url.lower().encode()).hexdigest()[:12]
     quote = f'Rp{amount:,}'.replace(",", ".") + ("/tahun" if period == "yearly" else "/bulan")
@@ -180,6 +182,7 @@ def main():
     parser.add_argument("live", type=Path)
     parser.add_argument("seeds", type=Path)
     parser.add_argument("--inventory", type=Path, default=ROOT / "research/koridor-all-3km-2026-11-26.json")
+    parser.add_argument("--include-task-matches", action="store_true", help="Also propose in an explicit queried locality/category within 3 km of any inventory stop")
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     data = json.loads(args.live.read_text())
@@ -214,6 +217,10 @@ def main():
                 row["matchedTaskId"] = task_id
                 if task_id in tasks:
                     tasks[task_id]["detailMatches"] += 1
+                if args.include_task_matches and (task_id in tasks or row.get("documentedLead")):
+                    near_all = sorted((geo.haversine([loc["lng"], loc["lat"]], st["coordinate"]), st["stopId"], st["station"], st["mode"]) for st in inventory["stations"])
+                    row["eligibleTaskTransit"] = [{"stopId": sid, "station": station, "mode": mode, "km": round(distance / 1000, 3)}
+                                                      for distance, sid, station, mode in near_all[:4] if distance <= 3000]
             row["resolution"] = resolution(row, area, day)
             if row["resolution"] != "candidate":
                 continue

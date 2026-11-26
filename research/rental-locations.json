@@ -13937,6 +13937,201 @@
         "checkedAt": "2026-11-26"
       },
       "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-cd7a98469aad",
+      "location": {
+        "lat": -6.121077,
+        "lng": 106.807122,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-pluit-sea-view/PSVA008",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-ce7bf0bc929d",
+      "location": {
+        "lat": -6.121077,
+        "lng": 106.807122,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-pluit-sea-view/PSVC038",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-e75d61163545",
+      "location": {
+        "lat": -6.121077,
+        "lng": 106.807122,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-pluit-sea-view/PSVC047",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-19e5e050d81d",
+      "location": {
+        "lat": -6.123141,
+        "lng": 106.798598,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-laguna-pluit-apartment/LGNC009",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-4a7cead4ce2c",
+      "location": {
+        "lat": -6.123141,
+        "lng": 106.798598,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-laguna-pluit-apartment/LGNC010",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-ac8d00a4c782",
+      "location": {
+        "lat": -6.123141,
+        "lng": 106.798598,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-laguna-pluit-apartment/LGNC011",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-8eae3ab2481e",
+      "location": {
+        "lat": -6.130994,
+        "lng": 106.778995,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-teluk-intan-apartment/ATIC021",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-ac12d570e2aa",
+      "location": {
+        "lat": -6.130994,
+        "lng": 106.778995,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-teluk-intan-apartment/ATIB001",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-ea28ce900f07",
+      "location": {
+        "lat": -6.121077,
+        "lng": 106.807122,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-pluit-sea-view/PSVC072",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-a43cf8793f5a",
+      "location": {
+        "lat": -6.121077,
+        "lng": 106.807122,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-pluit-sea-view/PSVC060",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-b8844f82cdff",
+      "location": {
+        "lat": -6.121077,
+        "lng": 106.807122,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-pluit-sea-view/PSVC009",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-mamikos-1087aab2c70f",
+      "location": {
+        "lat": -6.144508,
+        "lng": 106.776014,
+        "precision": "approximate",
+        "label": "Pin perkiraan mamikos",
+        "url": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-murah-kost-rumah-serca-penjaringan-jakarta-utara-1",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-mamikos-2c352fbf7bf9",
+      "location": {
+        "lat": -6.126535,
+        "lng": 106.801338,
+        "precision": "approximate",
+        "label": "Pin perkiraan mamikos",
+        "url": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-eksklusif-kost-dako-fitri-tipe-a-penjaringan-jakarta-utara",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-db7bd09f3b6f",
+      "location": {
+        "lat": -6.325433,
+        "lng": 106.59262,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-raya-cisauk-legok",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-38e146d2c68e",
+      "location": {
+        "lat": -6.44086,
+        "lng": 106.907937,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perum-bukit-griya",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
     }
   ]
 }

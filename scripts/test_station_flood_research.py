@@ -55,12 +55,27 @@ class PriorityCurationTest(unittest.TestCase):
         self.assertEqual(curate.resolution(row, area, day), "candidate")
         self.assertEqual(curate.resolution({**row, "amount": 60_000_001}, area, day), "outside-budget")
         self.assertEqual(curate.resolution({**row, "nearbyGapTransit": []}, area, day), "outside-gap-or-no-pin")
+        self.assertEqual(curate.resolution({**row, "nearbyGapTransit": [], "eligibleTaskTransit": [{"km": 2.9}]}, area, day), "candidate")
+        self.assertEqual(curate.resolution({**row, "usageSignals": {"roomOrCommercialNeedsReview": True}}, area, day), "hold-room-or-house-use")
         self.assertEqual(curate.resolution({**row, "locality": "Daru, Jambe, Tangerang"}, area, day), "hold-locality-mismatch")
         self.assertEqual(curate.resolution({**row, "sourceUpdatedAt": "2024-01-01"}, area, day), "hold-source-date")
         kos = {**row, "provider": "mamikos", "residentGender": "campur",
                "residentPolicy": {"marriedCouplesAllowed": True, "childrenAllowed": None}}
         self.assertEqual(curate.resolution(kos, area, day), "hold-resident-policy")
         self.assertEqual(curate.resolution({**kos, "residentPolicy": {"marriedCouplesAllowed": True, "childrenAllowed": True}}, area, day), "candidate")
+
+
+    def test_pinhome_usage_flags_without_retaining_description(self):
+        raw = {"title": "Kos putri", "description": "Sewa per kamar, deposit dan IPL. Nomor contoh."}
+        body = '<script id="__UNIT_DETAIL__">' + json.dumps(raw) + '</script>'
+        result = curate.priority.pinhome_usage(body, "https://www.pinhome.id/disewa/rumah-sekunder/unit/kost-putri")
+        self.assertTrue(result["roomOrCommercialNeedsReview"])
+        self.assertIn("per kamar", result["terms"])
+        self.assertEqual(result["feeTerms"], ["deposit", "ipl"])
+        self.assertNotIn("Nomor contoh", json.dumps(result))
+        raw = {"title": "Rumah sewa keluarga", "description": "Dapur, dekat jalan raya."}
+        result = curate.priority.pinhome_usage('<script id="__UNIT_DETAIL__">' + json.dumps(raw) + '</script>', "https://www.pinhome.id/disewa/rumah-sekunder/unit/rumah-sewa")
+        self.assertFalse(result["roomOrCommercialNeedsReview"])
 
 
 class SnapshotTest(unittest.TestCase):
@@ -129,6 +144,64 @@ class SnapshotTest(unittest.TestCase):
                 self.assertEqual(g["after"][radius], {k: n + added[radius][k] for k, n in counts.items()})
         self.assertEqual(data["gapCountAfter"], sum(not sum(g["after"]["3000"].values()) for g in data["gapCoverage"]))
         self.assertLess(data["gapCountAfter"], data["gapCountBefore"])
+
+    def test_p0_batch_02_carryover_documents_and_coverage(self):
+        data = research("koridor-p0-batch-02-results-2026-11-26")
+        prior = research("koridor-p0-batch-01-results-2026-11-26")
+        source = research("koridor-p0-batch-02-seeds-2026-11-26")
+        inventory = research("koridor-all-3km-2026-11-26")
+        stations = {s["stopId"]: s for s in inventory["stations"]}
+        rentals = {r["id"]: r for r in research("rentals")["rentals"]}
+        locations = {r["rentalId"]: r["location"] for r in research("rental-locations")["items"]}
+        screening = {r["rentalId"]: r for r in research("flood-rental-screening-2026-11-26")["items"]}
+        tasks = {r["taskId"]: r for r in data["tasks"]}
+        rows = [r for run in data["runs"] for r in run["results"]]
+        by_url = {r["url"]: r for r in rows}
+        self.assertEqual(len(rows), len(by_url))
+        self.assertEqual(len(rows), sum(data["summary"].values()))
+        self.assertEqual(len(tasks), 30)
+        self.assertEqual(set(tasks), {q["taskId"] for b in source["batches"] for q in b["queries"]})
+        self.assertEqual(data["catalogBefore"], prior["catalogAfter"])
+        self.assertEqual({r["url"] for r in data["carryover"]},
+                         {r["url"] for g in prior["runs"] for r in g["results"] if r["status"] == "pending"})
+        self.assertEqual({r["url"] for r in data["documentLeadOutcomes"]}, {r["url"] for r in source["documentLeads"]})
+        for r in data["carryover"] + data["documentLeadOutcomes"]:
+            self.assertEqual(r["status"], by_url[r["url"]]["status"])
+            self.assertEqual(r["resolution"], by_url[r["url"]]["resolution"])
+        imported = [r for r in rows if r["resolution"] == "imported-partial"]
+        self.assertEqual(len(imported), data["catalogAfter"] - data["catalogBefore"])
+        self.assertEqual(len(imported), len({r["rentalId"] for r in imported}))
+        self.assertEqual(len(imported), sum(data["importedByCategory"].values()))
+        self.assertEqual(sum(t["imported"] for t in tasks.values()), sum(r["matchedTaskId"] in tasks for r in imported))
+        for r in imported:
+            rid = r["rentalId"]
+            self.assertEqual(rentals[rid]["listingUrl"], r["url"])
+            self.assertEqual(rentals[rid]["verdict"], "partial")
+            self.assertEqual(r["sourceStatus"], "unit_type_status.active")
+            self.assertEqual(r["issues"], [])
+            self.assertLessEqual(r["monthlyEquivalent"], 5_000_000)
+            self.assertEqual(screening[rid]["hazardStatus"], "unknown")
+            self.assertEqual(screening[rid]["locality"]["code"], r["bigLocality"]["code"])
+            if r["provider"] == "pinhome":
+                self.assertFalse(r["usageSignals"]["roomOrCommercialNeedsReview"])
+            if r["provider"] == "mamikos":
+                self.assertEqual(r["residentGender"], "campur")
+                self.assertTrue(r["residentPolicy"]["marriedCouplesAllowed"])
+                self.assertTrue(r["residentPolicy"]["childrenAllowed"])
+            if not r.get("nearbyGapTransit"):
+                self.assertTrue(r["matchedTaskId"] in tasks or r.get("documentedLead"))
+            nearest = r.get("nearbyGapTransit") or r.get("eligibleTaskTransit")
+            self.assertTrue(nearest)
+            loc = locations[rid]
+            for near in nearest:
+                self.assertLessEqual(geo.haversine([loc["lng"], loc["lat"]], stations[near["stopId"]]["coordinate"]), 3000)
+        self.assertEqual(data["gapCountBefore"], prior["gapCountAfter"])
+        for gap in data["gapCoverage"]:
+            self.assertEqual(gap["before"], next(g["after"] for g in prior["gapCoverage"] if g["stopId"] == gap["stopId"]))
+        self.assertEqual(data["gapCountAfter"], sum(not sum(g["after"]["3000"].values()) for g in data["gapCoverage"]))
+        self.assertEqual(len(stations), sum(m["points"] for m in data["coverageByMode"].values()))
+        self.assertEqual(data["gapCountAfter"], sum(m["withoutBudgetPinAfter"] for m in data["coverageByMode"].values()))
+        self.assertEqual(data["taskCounts"]["completed"], 0)
 
     def test_evidence_screening_and_import(self):
         evidence = research("flood-official-evidence-2026-11-26")

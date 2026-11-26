@@ -6,13 +6,13 @@
   "localityMode": "BIG-polygons",
   "note": "Historical records, not risk classes. Distance to a public landmark is straight-line, not extent of flood or access route. Same-locality means a part of the area was reported. Unknown/no match never means safe.",
   "summary": {
-    "rentals": 879,
-    "pinned": 866,
-    "mappedLocality": 863,
-    "within1kmOfOfficialEvent": 9,
-    "within3kmOfOfficialEvent": 96,
-    "sameLocalityReport": 74,
-    "hazardUnknown": 879
+    "rentals": 894,
+    "pinned": 881,
+    "mappedLocality": 878,
+    "within1kmOfOfficialEvent": 15,
+    "within3kmOfOfficialEvent": 107,
+    "sameLocalityReport": 81,
+    "hazardUnknown": 894
   },
   "items": [
     {
@@ -225,8 +225,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 16267.3
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 15022.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -246,8 +246,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 20534.1
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 8694.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -267,8 +267,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 16663.6
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 12608.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -309,8 +309,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 19898.0
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 9619.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -351,8 +351,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15971.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 13081.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -372,8 +372,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15557.5
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 13488.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -414,8 +414,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 34543.0
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11355.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -435,8 +435,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 39370.4
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 17982.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -519,8 +519,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 18124.2
+        "id": "banjir-villa-asri-cileungsi-2-2025-07-07",
+        "distanceMeters": 6528.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -540,8 +540,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 19848.5
+        "id": "banjir-villa-asri-cileungsi-2-2025-07-07",
+        "distanceMeters": 5027.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -1642,8 +1642,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 33042.3
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8300.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -1873,8 +1873,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 16160.2
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 14149.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -1915,8 +1915,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 17657.7
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 12065.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -1936,8 +1936,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 15514.6
+        "id": "banjir-villa-asri-cileungsi-2-2025-07-07",
+        "distanceMeters": 13360.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -1957,8 +1957,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 17682.3
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 11487.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -1978,8 +1978,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18267.3
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10807.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -2104,8 +2104,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 21907.3
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 7392.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -2171,8 +2171,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 33621.3
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11309.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -2192,8 +2192,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 37883.7
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8181.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -2213,8 +2213,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 40189.4
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11518.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -3221,8 +3221,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 25440.8
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 4150.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -3242,8 +3242,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 32029.5
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 9048.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -3263,8 +3263,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 32651.3
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8426.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -3683,8 +3683,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 17482.4
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 12274.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -3725,8 +3725,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 15965.0
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 15118.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -3746,8 +3746,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 15581.9
+        "id": "banjir-villa-asri-cileungsi-2-2025-07-07",
+        "distanceMeters": 14720.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -3767,8 +3767,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 15307.7
+        "id": "banjir-villa-asri-cileungsi-2-2025-07-07",
+        "distanceMeters": 14757.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -3788,8 +3788,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18645.3
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10369.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -3809,8 +3809,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18349.6
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10720.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -3830,8 +3830,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18737.3
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10290.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -3851,8 +3851,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 17898.8
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 11441.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -3872,8 +3872,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18622.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10628.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4124,8 +4124,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 33290.2
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 12913.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4145,8 +4145,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 32391.1
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 13009.2
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4166,8 +4166,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 33621.3
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11309.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4229,8 +4229,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 37915.0
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8353.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4250,8 +4250,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 37915.0
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8353.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4271,8 +4271,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 40233.8
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11508.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4292,8 +4292,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 38991.5
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11432.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4313,8 +4313,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 46860.1
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 19129.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4578,8 +4578,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 32118.8
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8866.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4599,8 +4599,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 32238.6
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8127.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4725,8 +4725,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 15556.0
+        "id": "banjir-villa-asri-cileungsi-2-2025-07-07",
+        "distanceMeters": 13201.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4788,8 +4788,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 21656.7
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 7581.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4897,8 +4897,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 27715.8
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 9797.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4960,8 +4960,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 37886.6
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8175.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4981,8 +4981,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 37886.6
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8175.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -5002,8 +5002,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 37886.6
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8175.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -5023,8 +5023,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 40120.5
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11380.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -5044,8 +5044,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 46510.7
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 18953.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -5435,8 +5435,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 32102.1
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8366.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -5561,8 +5561,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18305.4
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 12383.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -5603,8 +5603,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 15451.4
+        "id": "banjir-villa-asri-cileungsi-2-2025-07-07",
+        "distanceMeters": 15257.2
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -5624,8 +5624,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 15197.5
+        "id": "banjir-villa-asri-cileungsi-2-2025-07-07",
+        "distanceMeters": 15076.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -5645,8 +5645,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18888.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10108.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -5708,8 +5708,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 21663.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 7575.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -5792,8 +5792,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 26946.2
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 10195.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -5813,8 +5813,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 32406.1
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 10689.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -5855,8 +5855,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 37150.5
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 7377.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6107,8 +6107,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 31233.4
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 7955.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6359,8 +6359,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15743.2
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 14536.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6380,8 +6380,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 15775.5
+        "id": "banjir-villa-asri-cileungsi-2-2025-07-07",
+        "distanceMeters": 15227.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6401,8 +6401,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 19570.1
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 9566.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6422,8 +6422,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 19110.8
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 9999.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6443,8 +6443,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18131.3
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10944.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6485,8 +6485,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 30362.3
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 5170.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6506,8 +6506,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 32575.2
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 10583.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6527,8 +6527,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 33628.0
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11355.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6758,8 +6758,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 25261.9
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 5301.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6779,8 +6779,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 32354.2
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 7826.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6968,8 +6968,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18544.1
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 11312.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6989,8 +6989,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 15723.3
+        "id": "banjir-villa-asri-cileungsi-2-2025-07-07",
+        "distanceMeters": 14099.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -7010,8 +7010,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18283.0
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10778.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -7031,8 +7031,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 20331.3
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 8736.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -7052,8 +7052,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 28052.3
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 9815.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -7115,8 +7115,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 33562.8
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 12126.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -7136,8 +7136,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 47564.1
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 20040.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -7758,8 +7758,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 25168.0
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 4922.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -7779,8 +7779,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 25929.2
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 4615.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -7800,8 +7800,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 25806.7
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 4784.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8136,8 +8136,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 16307.3
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 14856.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8178,8 +8178,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15833.7
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 15438.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8199,8 +8199,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18859.0
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10137.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8220,8 +8220,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18676.4
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10320.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8241,8 +8241,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18799.0
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10197.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8262,8 +8262,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18260.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10812.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8325,8 +8325,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-cibunar-parungpanjang-2025-11-30",
-        "distanceMeters": 26887.3
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11816.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8346,8 +8346,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 29710.0
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 6148.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8367,8 +8367,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 31235.6
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 10789.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8388,8 +8388,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 32187.6
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 12397.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8409,8 +8409,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 32396.4
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 13043.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8430,8 +8430,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 32402.7
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 13046.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8472,8 +8472,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 38749.5
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 9073.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8493,8 +8493,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 39846.8
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11503.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8514,8 +8514,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 39488.5
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 10954.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9354,8 +9354,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15806.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 15069.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9375,8 +9375,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15900.7
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 14147.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9396,8 +9396,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 16068.1
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 14193.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9417,8 +9417,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 16170.2
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 13846.2
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9438,8 +9438,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15495.1
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 15114.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9459,8 +9459,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18420.7
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 11745.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9543,8 +9543,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 16064.0
+        "id": "banjir-villa-asri-cileungsi-2-2025-07-07",
+        "distanceMeters": 14528.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9564,8 +9564,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18865.6
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10132.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9606,8 +9606,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 19708.2
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 9319.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9690,8 +9690,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 21610.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 7450.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9711,8 +9711,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 20958.0
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 8125.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9795,8 +9795,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 26185.2
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 10784.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9816,8 +9816,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 28131.0
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 10456.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9837,8 +9837,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-cibunar-parungpanjang-2025-11-30",
-        "distanceMeters": 26647.9
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11744.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9858,8 +9858,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 30217.8
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 6047.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9879,8 +9879,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 28820.1
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 4638.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9900,8 +9900,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 29591.2
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 5906.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9921,8 +9921,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 29882.9
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 5602.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9963,8 +9963,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 32405.2
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 10723.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9984,8 +9984,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 33609.0
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11340.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -10005,8 +10005,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 32887.0
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 12385.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -10026,8 +10026,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 38303.3
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8646.2
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -10047,8 +10047,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 38811.3
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 9178.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -10068,8 +10068,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 37906.3
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8205.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -10089,8 +10089,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 39550.7
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11373.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -10110,8 +10110,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 40371.6
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 13055.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -10824,8 +10824,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15253.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 15156.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -10845,8 +10845,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15201.8
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 15110.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -10887,8 +10887,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 16117.0
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 15714.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -10908,8 +10908,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 16010.1
+        "id": "banjir-villa-asri-cileungsi-2-2025-07-07",
+        "distanceMeters": 14487.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11097,8 +11097,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 33618.4
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11328.2
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11118,8 +11118,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 38735.8
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 9042.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11139,8 +11139,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 38965.2
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 9641.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11160,8 +11160,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 38215.6
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8936.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11727,8 +11727,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18292.2
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 11642.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11769,8 +11769,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 33621.3
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11309.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11790,8 +11790,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 37193.1
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 7680.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11811,8 +11811,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 37886.6
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8175.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -12000,8 +12000,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18630.2
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 11659.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -12357,8 +12357,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 16045.3
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 14917.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -12865,8 +12865,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 33262.4
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8106.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -12886,8 +12886,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 32714.2
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 10640.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -13012,8 +13012,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 32638.3
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8396.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -13180,8 +13180,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 26315.1
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 4554.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -13264,8 +13264,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 19268.0
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 9772.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -13432,8 +13432,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 28645.1
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 5495.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -13453,8 +13453,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18206.4
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10927.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -13495,8 +13495,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18756.7
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10252.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -13600,8 +13600,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 32575.4
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 10582.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -13621,8 +13621,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 32406.1
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 10689.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -13747,8 +13747,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 21803.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 7320.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -14051,8 +14051,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 19879.1
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10849.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -14866,8 +14866,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18474.3
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10697.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -14887,8 +14887,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18474.3
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10697.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -14950,8 +14950,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18620.0
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 12064.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -14992,8 +14992,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 40227.9
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 11480.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -15328,8 +15328,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 37915.8
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8203.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -15454,8 +15454,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18602.8
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 11687.2
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -15648,8 +15648,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15741.8
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 15514.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -15921,8 +15921,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 37878.3
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8172.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -16299,8 +16299,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-akses-stasiun-bekasi-2025-03-04",
-        "distanceMeters": 15469.8
+        "id": "banjir-villa-asri-cileungsi-2-2025-07-07",
+        "distanceMeters": 14585.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -16388,8 +16388,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18953.4
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 10071.2
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -16430,8 +16430,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 26616.9
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 3718.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -16493,8 +16493,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 37848.9
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8147.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -16661,8 +16661,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 18739.5
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 11313.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -16787,8 +16787,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 29536.4
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 6691.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -17018,8 +17018,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 19765.2
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 9293.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -17631,8 +17631,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15971.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 13081.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -17673,8 +17673,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15971.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 13081.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -17694,8 +17694,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15971.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 13081.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -17715,8 +17715,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15971.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 13081.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -17736,8 +17736,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15971.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 13081.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -17757,8 +17757,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 15971.9
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 13081.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -17887,8 +17887,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 23608.3
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 8970.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -18218,8 +18218,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-ciomas-tenjo-2026-04-18",
-        "distanceMeters": 37257.1
+        "id": "banjir-karang-asem-barat-citeureup-2024-05-24",
+        "distanceMeters": 13144.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -18313,6 +18313,393 @@
         "name": "Cikasungka",
         "district": "Solear",
         "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-cd7a98469aad",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-pluit-seaview-2026-01-13",
+        "distanceMeters": 172.8
+      },
+      "eventsWithin1km": [
+        {
+          "id": "banjir-pluit-seaview-2026-01-13",
+          "distanceMeters": 172.8
+        }
+      ],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.01.1001",
+        "name": "Penjaringan",
+        "district": "Penjaringan",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": [
+        "banjir-penjaringan-muara-baru-pluit-sea-view-2026-01-18",
+        "banjir-penjaringan-jembatan-tiga-2026-01-18",
+        "banjir-penjaringan-pluit-selatan-raya-2026-01-18",
+        "banjir-penjaringan-pluit-raya-2026-01-18",
+        "banjir-penjaringan-nizam-zachman-2026-01-18"
+      ]
+    },
+    {
+      "rentalId": "sewa-jendela360-ce7bf0bc929d",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-pluit-seaview-2026-01-13",
+        "distanceMeters": 172.8
+      },
+      "eventsWithin1km": [
+        {
+          "id": "banjir-pluit-seaview-2026-01-13",
+          "distanceMeters": 172.8
+        }
+      ],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.01.1001",
+        "name": "Penjaringan",
+        "district": "Penjaringan",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": [
+        "banjir-penjaringan-muara-baru-pluit-sea-view-2026-01-18",
+        "banjir-penjaringan-jembatan-tiga-2026-01-18",
+        "banjir-penjaringan-pluit-selatan-raya-2026-01-18",
+        "banjir-penjaringan-pluit-raya-2026-01-18",
+        "banjir-penjaringan-nizam-zachman-2026-01-18"
+      ]
+    },
+    {
+      "rentalId": "sewa-jendela360-e75d61163545",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-pluit-seaview-2026-01-13",
+        "distanceMeters": 172.8
+      },
+      "eventsWithin1km": [
+        {
+          "id": "banjir-pluit-seaview-2026-01-13",
+          "distanceMeters": 172.8
+        }
+      ],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.01.1001",
+        "name": "Penjaringan",
+        "district": "Penjaringan",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": [
+        "banjir-penjaringan-muara-baru-pluit-sea-view-2026-01-18",
+        "banjir-penjaringan-jembatan-tiga-2026-01-18",
+        "banjir-penjaringan-pluit-selatan-raya-2026-01-18",
+        "banjir-penjaringan-pluit-raya-2026-01-18",
+        "banjir-penjaringan-nizam-zachman-2026-01-18"
+      ]
+    },
+    {
+      "rentalId": "sewa-jendela360-19e5e050d81d",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-pluit-seaview-2026-01-13",
+        "distanceMeters": 1070.4
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.01.1005",
+        "name": "Pluit",
+        "district": "Penjaringan",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-4a7cead4ce2c",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-pluit-seaview-2026-01-13",
+        "distanceMeters": 1070.4
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.01.1005",
+        "name": "Pluit",
+        "district": "Penjaringan",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-ac8d00a4c782",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-pluit-seaview-2026-01-13",
+        "distanceMeters": 1070.4
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.01.1005",
+        "name": "Pluit",
+        "district": "Penjaringan",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-8eae3ab2481e",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-pluit-seaview-2026-01-13",
+        "distanceMeters": 3407.0
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.01.1004",
+        "name": "Pejagalan",
+        "district": "Penjaringan",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-ac12d570e2aa",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-pluit-seaview-2026-01-13",
+        "distanceMeters": 3407.0
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.01.1004",
+        "name": "Pejagalan",
+        "district": "Penjaringan",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-jendela360-ea28ce900f07",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-pluit-seaview-2026-01-13",
+        "distanceMeters": 172.8
+      },
+      "eventsWithin1km": [
+        {
+          "id": "banjir-pluit-seaview-2026-01-13",
+          "distanceMeters": 172.8
+        }
+      ],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.01.1001",
+        "name": "Penjaringan",
+        "district": "Penjaringan",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": [
+        "banjir-penjaringan-muara-baru-pluit-sea-view-2026-01-18",
+        "banjir-penjaringan-jembatan-tiga-2026-01-18",
+        "banjir-penjaringan-pluit-selatan-raya-2026-01-18",
+        "banjir-penjaringan-pluit-raya-2026-01-18",
+        "banjir-penjaringan-nizam-zachman-2026-01-18"
+      ]
+    },
+    {
+      "rentalId": "sewa-jendela360-a43cf8793f5a",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-pluit-seaview-2026-01-13",
+        "distanceMeters": 172.8
+      },
+      "eventsWithin1km": [
+        {
+          "id": "banjir-pluit-seaview-2026-01-13",
+          "distanceMeters": 172.8
+        }
+      ],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.01.1001",
+        "name": "Penjaringan",
+        "district": "Penjaringan",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": [
+        "banjir-penjaringan-muara-baru-pluit-sea-view-2026-01-18",
+        "banjir-penjaringan-jembatan-tiga-2026-01-18",
+        "banjir-penjaringan-pluit-selatan-raya-2026-01-18",
+        "banjir-penjaringan-pluit-raya-2026-01-18",
+        "banjir-penjaringan-nizam-zachman-2026-01-18"
+      ]
+    },
+    {
+      "rentalId": "sewa-jendela360-b8844f82cdff",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-pluit-seaview-2026-01-13",
+        "distanceMeters": 172.8
+      },
+      "eventsWithin1km": [
+        {
+          "id": "banjir-pluit-seaview-2026-01-13",
+          "distanceMeters": 172.8
+        }
+      ],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.01.1001",
+        "name": "Penjaringan",
+        "district": "Penjaringan",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": [
+        "banjir-penjaringan-muara-baru-pluit-sea-view-2026-01-18",
+        "banjir-penjaringan-jembatan-tiga-2026-01-18",
+        "banjir-penjaringan-pluit-selatan-raya-2026-01-18",
+        "banjir-penjaringan-pluit-raya-2026-01-18",
+        "banjir-penjaringan-nizam-zachman-2026-01-18"
+      ]
+    },
+    {
+      "rentalId": "sewa-mamikos-1087aab2c70f",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-halte-taman-kota-2026-03-08",
+        "distanceMeters": 2449.2
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.01.1004",
+        "name": "Pejagalan",
+        "district": "Penjaringan",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-mamikos-2c352fbf7bf9",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-pluit-seaview-2026-01-13",
+        "distanceMeters": 1036.5
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.01.1001",
+        "name": "Penjaringan",
+        "district": "Penjaringan",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": [
+        "banjir-penjaringan-muara-baru-pluit-sea-view-2026-01-18",
+        "banjir-penjaringan-jembatan-tiga-2026-01-18",
+        "banjir-penjaringan-pluit-selatan-raya-2026-01-18",
+        "banjir-penjaringan-pluit-raya-2026-01-18",
+        "banjir-penjaringan-nizam-zachman-2026-01-18"
+      ]
+    },
+    {
+      "rentalId": "sewa-pinhome-db7bd09f3b6f",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 4552.8
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.22.2008",
+        "name": "Jatake",
+        "district": "Pagedangan",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-38e146d2c68e",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-puspasari-citeureup-2025-07-04",
+        "distanceMeters": 4899.3
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "32.01.02.2006",
+        "name": "Tlajung Udik",
+        "district": "Gunungputri",
+        "city": "Bogor",
         "boundaryStatus": "Hasil Kesepakatan"
       },
       "sameLocalityReportIds": []
