@@ -46749,6 +46749,198 @@
       "couples": true,
       "children": true
      }
+    },
+    {
+     "id": "sewa-pinhome-5b24335c80a0",
+     "title": "Kontrakan 2 kamar di Cipondoh Makmur, 70 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Cipondoh Makmur, Cipondoh, Kota Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 28000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 28.000.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cipondoh-makmur-di-cipondoh-makmur",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 2,
+     "sizeM2": 70.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 28.000.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cipondoh-makmur-di-cipondoh-makmur"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 1,45 km garis lurus dari KRL Poris. Tanggal iklan 11 Juni 2025 tampak sebagai pembaruan massal portal; kesegaran harga perlu dikonfirmasi. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cipondoh-makmur-di-cipondoh-makmur",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.182426,
+      "lng": 106.677766,
+      "precision": "approximate",
+      "label": "Cipondoh Makmur, Cipondoh, Kota Tangerang",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cipondoh-makmur-di-cipondoh-makmur",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-aee49929f8a4",
+     "title": "Kontrakan 3 kamar di Poris Gaga Baru, 120 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Poris Gaga Baru, Batuceper, Kota Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 30000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 30.000.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-maulana-hasanudin-1",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 3,
+     "sizeM2": 120.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 30.000.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-maulana-hasanudin-1"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 1,23 km garis lurus dari KRL Batu Ceper. Tanggal iklan 11 Juni 2025 tampak sebagai pembaruan massal portal; kesegaran harga perlu dikonfirmasi. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-maulana-hasanudin-1",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.180653,
+      "lng": 106.672176,
+      "precision": "approximate",
+      "label": "Poris Gaga Baru, Batuceper, Kota Tangerang",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-maulana-hasanudin-1",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-05ebafa9020f",
+     "title": "Apartemen Poris 88 By Linkara studio",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Tangerang",
+     "locationText": "Poris Gaga Baru, Batuceper, Kota Tangerang",
+     "buildingOrCluster": "Poris 88 By Linkara",
+     "rent": {
+      "amount": 2500000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "IDR 2.500.000 per bulan, minimum 1 bulan.",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-poris-88-by-linkara",
+      "pageDate": "2026-01-08"
+     },
+     "bedrooms": null,
+     "sizeM2": 21.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 2.500.000 per bulan, minimum 1 bulan.",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-poris-88-by-linkara"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 0,62 km garis lurus dari KRL Batu Ceper. Ketentuan pasutri dan biaya tambahan apartemen belum terbukti; konfirmasi ke pengelola. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-poris-88-by-linkara",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2026-01-08",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.172209,
+      "lng": 106.670893,
+      "precision": "approximate",
+      "label": "Poris 88 By Linkara",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-poris-88-by-linkara",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-28e8224cf373",
+     "title": "Kontrakan 2 kamar di Durenjaya (Duren Jaya), 90 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Durenjaya (Duren Jaya), Bekasi Timur, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 17000000,
+      "period": "yearly",
+      "minimumMonths": 24,
+      "quote": "IDR 17.000.000 per tahun, minimum 24 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-idola-kp-rawasapi",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 2,
+     "sizeM2": 90.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 17.000.000 per tahun, minimum 24 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-idola-kp-rawasapi"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 0,56 km garis lurus dari KRL Bekasi Timur. Tanggal iklan 11 Juni 2025 tampak sebagai pembaruan massal portal; kesegaran harga perlu dikonfirmasi. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-idola-kp-rawasapi",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.249116,
+      "lng": 107.013564,
+      "precision": "approximate",
+      "label": "Durenjaya (Duren Jaya), Bekasi Timur, Kota Bekasi",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-idola-kp-rawasapi",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
     }
    ],
    "locationsCheckedAt": "2026-11-26"

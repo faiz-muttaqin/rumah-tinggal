@@ -101,6 +101,14 @@ export function setupLocationReports(
       </label>
     </form>
     <p class="location-reports-count" role="status"></p>
+    <p class="location-reports-years" aria-live="polite" hidden></p>
+    <details class="location-reports-sources">
+      <summary>Sumber riwayat dan pemantauan banjir</summary>
+      <p>Periksa cakupan lokasi dan tanggal pada setiap sumber.</p>
+      <p><a href="https://www.jakarta.go.id/page/kanal-informasi-siaga-banjir-jakarta" target="_blank" rel="noopener noreferrer">Pemprov Jakarta · kanal dan peta riwayat banjir ↗</a></p>
+      <p><a href="https://gis-bpbd.jakarta.go.id/open-data-bpbd/" target="_blank" rel="noopener noreferrer">BPBD Jakarta · data kebencanaan ↗</a></p>
+      <p><a href="https://dibi.bnpb.go.id/superset/dashboard/tentang-dibi/" target="_blank" rel="noopener noreferrer">BNPB · Data Informasi Bencana Indonesia ↗</a></p>
+    </details>
   </header>
   <div class="location-reports-results" role="region" aria-label="Daftar laporan lokasi" tabindex="0"></div>`;
   const form = dialog.querySelector("form") as HTMLFormElement;
@@ -110,6 +118,9 @@ export function setupLocationReports(
   const year = form.elements.namedItem("tahun") as HTMLSelectElement;
   const scope = form.elements.namedItem("cakupan") as HTMLSelectElement;
   const count = dialog.querySelector(".location-reports-count") as HTMLElement;
+  const reportYears = dialog.querySelector(
+    ".location-reports-years",
+  ) as HTMLElement;
   const results = dialog.querySelector(
     ".location-reports-results",
   ) as HTMLElement;
@@ -136,6 +147,14 @@ export function setupLocationReports(
       return fields.includes(query);
     });
     count.textContent = `${matches.length} dari ${reports.length} laporan`;
+    const floodYears = unique(
+      matches
+        .filter((report) => report.kind === "banjir")
+        .map((report) => report.date.slice(0, 4)),
+    ).sort();
+    reportYears.hidden =
+      !query || kind.value !== "banjir" || !floodYears.length;
+    reportYears.textContent = `Tahun laporan banjir yang cocok: ${floodYears.join(", ")}. Periksa cakupan tiap laporan.`;
     results.innerHTML = matches.length
       ? matches.map(reportCard).join("")
       : '<p class="location-reports-empty">Belum ada laporan yang cocok dengan pencarian.</p>';

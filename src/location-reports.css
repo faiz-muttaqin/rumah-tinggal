@@ -141,6 +141,25 @@
   white-space: nowrap;
 }
 
+.location-reports-years,
+.location-reports-sources {
+  margin: 6px 0;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.location-reports-sources summary {
+  cursor: pointer;
+}
+
+.location-reports-sources p {
+  margin: 5px 0;
+}
+
+.location-reports-sources a {
+  color: var(--green);
+}
+
 @media (max-width: 560px) {
   .location-report-filters {
     grid-template-columns: repeat(2, minmax(0, 1fr));

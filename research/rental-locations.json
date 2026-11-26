@@ -13378,6 +13378,58 @@
         "checkedAt": "2026-11-26"
       },
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-5b24335c80a0",
+      "location": {
+        "lat": -6.182426,
+        "lng": 106.677766,
+        "precision": "approximate",
+        "label": "Cipondoh Makmur, Cipondoh, Kota Tangerang",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cipondoh-makmur-di-cipondoh-makmur",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-aee49929f8a4",
+      "location": {
+        "lat": -6.180653,
+        "lng": 106.672176,
+        "precision": "approximate",
+        "label": "Poris Gaga Baru, Batuceper, Kota Tangerang",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-maulana-hasanudin-1",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-05ebafa9020f",
+      "location": {
+        "lat": -6.172209,
+        "lng": 106.670893,
+        "precision": "approximate",
+        "label": "Poris 88 By Linkara",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-poris-88-by-linkara",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-28e8224cf373",
+      "location": {
+        "lat": -6.249116,
+        "lng": 107.013564,
+        "precision": "approximate",
+        "label": "Durenjaya (Duren Jaya), Bekasi Timur, Kota Bekasi",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-idola-kp-rawasapi",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
     }
   ]
 }

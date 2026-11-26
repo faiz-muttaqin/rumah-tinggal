@@ -152,6 +152,23 @@ export const areaReports: LocationReport[] = [
     ],
   },
   {
+    id: "banjir-jatibening-permai-2020-01",
+    kind: "banjir",
+    title: "Banjir di Perumahan Jatibening Permai",
+    date: "2020-01-01",
+    region: "Kota Bekasi",
+    scope: "lingkungan",
+    place: "Perumahan Jatibening Permai, Pondok Gede, Kota Bekasi",
+    summary:
+      "ANTARA mendokumentasikan evakuasi warga di perumahan pada 1 Januari 2020.",
+    sources: [
+      {
+        label: "ANTARA · Dokumentasi evakuasi",
+        url: "https://sumbar.antaranews.com/berita/316500/di-bekasi-ketinggian-air-banjir-mencapai-dua-meter",
+      },
+    ],
+  },
+  {
     id: "banjir-jatibening-permai-2024",
     kind: "banjir",
     title: "Genangan di Jatibening Permai dalam catatan BPBD",
@@ -270,6 +287,23 @@ export const areaReports: LocationReport[] = [
       {
         label: "BNPB · Laporan tim lapangan",
         url: "https://www.bnpb.go.id/berita/bnpb-bentuk-pos-lapangan-di-pos-pengungsian-gudang-logistik-bnpb-kota-bekasi",
+      },
+    ],
+  },
+  {
+    id: "banjir-pondok-gede-permai-2021-02",
+    kind: "banjir",
+    title: "Banjir di Pondok Gede Permai pada 2021",
+    date: "2021-02-19",
+    region: "Kota Bekasi",
+    scope: "lingkungan",
+    place: "Perumahan Pondok Gede Permai, Jatiasih, Kota Bekasi",
+    summary:
+      "Dokumentasi ANTARA mengutip BPBD Kota Bekasi tentang banjir di perumahan pada 19 Februari 2021.",
+    sources: [
+      {
+        label: "ANTARA · BPBD Kota Bekasi",
+        url: "https://www.antaranews.com/foto/2009473/foto-udara-banjir-di-perumahan-pondok-gede-permai",
       },
     ],
   },

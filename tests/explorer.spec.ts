@@ -1952,8 +1952,20 @@ test("searches dated location reports and opens only mapped public references", 
 
   await dialog.getByLabel("Cakupan laporan").selectOption("");
   await dialog.getByRole("searchbox").fill("Pondok Gede Permai");
-  await expect(reports).toHaveCount(2);
+  await expect(reports).toHaveCount(3);
   await expect(reports.first()).toContainText("Perumahan Pondok Gede Permai");
+  await expect(dialog.locator(".location-reports-years")).toContainText(
+    "2020, 2021, 2025",
+  );
+  await expect(reports.nth(1)).toContainText("19 Feb 2021");
+  await dialog.getByText("Sumber riwayat dan pemantauan banjir").click();
+  await expect(
+    dialog.getByRole("link", { name: /BNPB · Data Informasi/ }),
+  ).toHaveAttribute(
+    "href",
+    "https://dibi.bnpb.go.id/superset/dashboard/tentang-dibi/",
+  );
+  await dialog.getByText("Sumber riwayat dan pemantauan banjir").click();
 
   await dialog.getByLabel("Jenis berita").selectOption("kriminalitas");
   await dialog.getByLabel("Wilayah berita").selectOption("Kota Depok");
