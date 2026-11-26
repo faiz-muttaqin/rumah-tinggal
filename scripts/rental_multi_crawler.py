@@ -313,6 +313,9 @@ def main():
             config["transitTargets"] = corridor_targets(corridor, args.station)
         except ValueError as exc:
             parser.error(str(exc))
+        corridor_radius = corridor.get("transitRadiusKm", 1.5)
+        if type(corridor_radius) not in (int, float) or not 0.3 <= corridor_radius <= 3:
+            parser.error("Corridor transitRadiusKm must be a number from 0.3 to 3")
         config["budgetPriority"] = {"preferredMonthly": 4_000_000, "maxMonthly": 5_000_000}
     core.validate_config(config)
     multi = json.loads((ROOT / "research/rental-crawl-providers.json").read_text())
@@ -326,7 +329,7 @@ def main():
     transit = core.transit_plan(config)
     if args.corridor_only:
         for stop in transit:
-            stop["radiusKm"] = 1.5
+            stop["radiusKm"] = corridor_radius
     if args.transit_only and not transit:
         parser.error("No transit targets configured")
     if args.transit_only:
@@ -337,7 +340,7 @@ def main():
              "radiusKm": config["radiusKm"], "detailsPerMosquePerProvider": per_mosque,
              "priorityMode": config.get("priorityMode", "legacy"), "budgetPriority": config.get("budgetPriority")}
     if args.corridor_only:
-        scope.update(corridorOnly=True, transitRadiusKm=1.5, boundaryStatus=corridor["boundaryStatus"],
+        scope.update(corridorOnly=True, transitRadiusKm=corridor_radius, boundaryStatus=corridor["boundaryStatus"],
                      requestedStations=sorted(set(args.station)))
     plans = provider_plan(transit + selected, multi, cancel)
     chosen = [name for name in chosen if name in plans]

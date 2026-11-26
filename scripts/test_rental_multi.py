@@ -699,6 +699,20 @@ class CorridorInventoryTests(unittest.TestCase):
         other = json.loads((m.ROOT / "research/koridor-tangerang-duri.json").read_text())
         self.assertFalse({s["stopId"] for s in seed["stations"]} & {s["stopId"] for s in other["stations"]})
 
+    def test_transjakarta_13_inventory(self):
+        seed = json.loads((m.ROOT / "research/koridor-transjakarta-13-ciledug-tegal-mampang.json").read_text())
+        self.assertEqual(len(m.corridor_targets(seed)), 15)
+        self.assertEqual(seed["transitRadiusKm"], 0.7)
+        names = [s["station"] for s in seed["stations"]]
+        self.assertEqual((names[0], names[-2]), ("Ciledug", "Tegal Mampang"))
+        self.assertEqual({s["mode"] for s in seed["stations"]}, {"TransJakarta"})
+        for station in seed["stations"]:
+            self.assertTrue(1 <= len(station["paths"]) <= 6, station["station"])
+            self.assertTrue(all(p.startswith(("dki-jakarta/", "banten/tangerang/")) for p in station["paths"]))
+        mobility = json.loads((m.ROOT / "public/data/mobility.geojson").read_text())
+        line = next(f for f in mobility["features"] if f["properties"].get("id") == "tj-13" and f["geometry"]["type"] == "MultiLineString")
+        self.assertEqual({s["stopId"] for s in seed["stations"]}, set(line["properties"]["stationIds"]))
+
     def test_duplicate_inventory_fails(self):
         seed = {"stations": [{"station": "X", "stopId": "x", "paths": ["a"]}],
                 "transitTargets": [{"stopId": "x", "paths": ["a"]}] * 2}

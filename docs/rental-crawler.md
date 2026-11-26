@@ -156,11 +156,12 @@ Pengguna memilih fokus VCM terlebih dahulu dan menunda browser bersama. Xvfb/noV
 
 HIKOST dan JKTLiving mengizinkan halaman publik yang diuji melalui robots. Dua kontrakan HIKOST ditambahkan lewat kurasi manual; metadata situs lain yang bertentangan dengan deskripsi ditahan. HIKOST belum masuk tujuh provider terjadwal. PIM 2 belum memiliki titik dan PIM 3/Cherokee berada di luar radius VCM; keduanya tidak dianggap hasil dalam radius hanya karena kawasan Cinere. Tidak ada perubahan cron, radius, inventori78, akun, port atau browser bersama.
 
-## Koridor tambahan: Tangerang–Duri dan LRT Jatimulya–Pancoran
+## Koridor tambahan: Tangerang–Duri, LRT Jatimulya–Pancoran dan TransJakarta Koridor 13
 
 Mode `--corridor-only` memakai inventori 28 stasiun KRL/MRT secara bawaan. Opsi `--corridor-file` memilih inventori lain di folder `research/` dengan skema yang sama. File selain bawaan memakai folder state sendiri `.runtime/research/corridor-crawl-<nama-file>`, sehingga state 28 stasiun tidak tertimpa. Opsi ini hanya berlaku bersama `--corridor-only`.
 
 - [Tangerang–Duri](../research/koridor-tangerang-duri.json): 11 stasiun KRL lintas Tangerang, dari Duri sampai Tangerang.
+- [TransJakarta Koridor 13 Ciledug–Tegal Mampang](../research/koridor-transjakarta-13-ciledug-tegal-mampang.json): 15 halte dari rute `tj-13` di `public/data/mobility.geojson`, hanya poligon BIG dalam 500 m. File ini memakai `transitRadiusKm` 0,7, konvensi halte; tanpa kunci itu koridor memakai 1,5 km.
 - [LRT Jatimulya–Pancoran](../research/koridor-lrt-jatimulya-pancoran.json): 10 stasiun LRT Jabodebek lintas Bekasi, yaitu Jatimulya, Bekasi Barat, Cikunir 2, Cikunir 1, Jatibening Baru, Halim, Cawang, Ciliwung, Cikoko, dan Pancoran.
 
 Titik stasiun berasal dari node OpenStreetMap yang sudah ada di `public/data/transit.geojson` dan `public/data/mobility.geojson`. Kelurahan pencarian adalah poligon BIG yang beririsan dengan radius 500 m dari titik stasiun, dilengkapi dari hasil 1 km hingga minimal tiga kelurahan. Slug Pinhome diturunkan dari nama BIG dan tetap hipotesis sampai halaman portal terbuka. Halaman yang tidak membuktikan filter kelurahan ditolak oleh crawler, misalnya kelurahan Kalideres, dan tidak diakali.

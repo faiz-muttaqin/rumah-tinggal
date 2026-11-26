@@ -1,0 +1,480 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-26",
+  "boundaryStatus": "big-intersections-500m-pending-portal-slug-check",
+  "transitRadiusKm": 0.7,
+  "note": "TransJakarta Koridor 13 Ciledug to Tegal Mampang, 15 stops as listed in public/data/mobility.geojson (tj-13). Stop points from OpenStreetMap nodes. Search areas are BIG village polygons intersecting 500 m of the stop point. Crawl radius 0.7 km, the project convention for stops. Portal slugs are derived from BIG names and are hypotheses until a portal page loads. Counts use existing rental points, not polygons.",
+  "radiiMeters": [500, 1000, 1500, 2000],
+  "stations": [
+    {
+      "mode": "TransJakarta",
+      "station": "Ciledug",
+      "stopId": "transjakarta-node-11625832223",
+      "coordinate": [106.7090532, -6.2236395],
+      "coordinateSource": "https://www.openstreetmap.org/node/11625832223",
+      "manualSearchAreas": [
+        "Sudimara Barat",
+        "Sudimara Jaya",
+        "Karang Tengah",
+        "Karang Timur"
+      ],
+      "paths": [
+        "banten/tangerang/ciledug/sudimara-barat",
+        "banten/tangerang/ciledug/sudimara-jaya",
+        "banten/tangerang/karang-tengah/karang-tengah",
+        "banten/tangerang/karang-tengah/karang-timur"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 1,
+        "2000": 7
+      }
+    },
+    {
+      "mode": "TransJakarta",
+      "station": "Puri Beta 1",
+      "stopId": "transjakarta-node-11778605108",
+      "coordinate": [106.7260168, -6.2305403],
+      "coordinateSource": "https://www.openstreetmap.org/node/11778605108",
+      "manualSearchAreas": [
+        "Sudimara Timur",
+        "Karang Timur",
+        "Larangan Utara",
+        "Larangan Indah"
+      ],
+      "paths": [
+        "banten/tangerang/ciledug/sudimara-timur",
+        "banten/tangerang/karang-tengah/karang-timur",
+        "banten/tangerang/larangan/larangan-utara",
+        "banten/tangerang/larangan/larangan-indah"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 1,
+        "1500": 3,
+        "2000": 5
+      }
+    },
+    {
+      "mode": "TransJakarta",
+      "station": "Petukangan D'MASIV",
+      "stopId": "transjakarta-node-11618413222",
+      "coordinate": [106.7477717, -6.2364543],
+      "coordinateSource": "https://www.openstreetmap.org/node/11618413222",
+      "manualSearchAreas": [
+        "Kreo",
+        "Kreo Selatan",
+        "Petukangan Selatan",
+        "Petukangan Utara"
+      ],
+      "paths": [
+        "banten/tangerang/larangan/kreo",
+        "banten/tangerang/larangan/kreo-selatan",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/petukangan-selatan",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/petukangan-utara"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 0
+      }
+    },
+    {
+      "mode": "TransJakarta",
+      "station": "JORR",
+      "stopId": "transjakarta-node-11618413220",
+      "coordinate": [106.7548063, -6.2362044],
+      "coordinateSource": "https://www.openstreetmap.org/node/11618413220",
+      "manualSearchAreas": ["Petukangan Selatan", "Petukangan Utara"],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/pesanggrahan/petukangan-selatan",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/petukangan-utara"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 2
+      }
+    },
+    {
+      "mode": "TransJakarta",
+      "station": "Swadarma ParagonCorp",
+      "stopId": "transjakarta-node-11618413219",
+      "coordinate": [106.7606037, -6.2375271],
+      "coordinateSource": "https://www.openstreetmap.org/node/11618413219",
+      "manualSearchAreas": [
+        "Cipulir",
+        "Petukangan Selatan",
+        "Petukangan Utara",
+        "Ulujami"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/cipulir",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/petukangan-selatan",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/petukangan-utara",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/ulujami"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 2,
+        "1500": 2,
+        "2000": 4
+      }
+    },
+    {
+      "mode": "TransJakarta",
+      "station": "Cipulir",
+      "stopId": "transjakarta-node-11618413218",
+      "coordinate": [106.7653358, -6.2378077],
+      "coordinateSource": "https://www.openstreetmap.org/node/11618413218",
+      "manualSearchAreas": ["Cipulir", "Grogol Selatan", "Ulujami"],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/cipulir",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/grogol-selatan",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/ulujami"
+      ],
+      "existingPinnedCounts": {
+        "500": 2,
+        "1000": 2,
+        "1500": 3,
+        "2000": 4
+      }
+    },
+    {
+      "mode": "TransJakarta",
+      "station": "Seskoal",
+      "stopId": "transjakarta-node-11618413217",
+      "coordinate": [106.7711779, -6.2380282],
+      "coordinateSource": "https://www.openstreetmap.org/node/11618413217",
+      "manualSearchAreas": ["Cipulir", "Ulujami"],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/cipulir",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/ulujami"
+      ],
+      "existingPinnedCounts": {
+        "500": 3,
+        "1000": 3,
+        "1500": 3,
+        "2000": 4
+      }
+    },
+    {
+      "mode": "TransJakarta",
+      "station": "Kebayoran Lama",
+      "stopId": "transjakarta-node-11618413216",
+      "coordinate": [106.7775859, -6.2383318],
+      "coordinateSource": "https://www.openstreetmap.org/node/11618413216",
+      "manualSearchAreas": [
+        "Cipulir",
+        "Grogol Selatan",
+        "Kebayoran Lama Utara"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/cipulir",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/grogol-selatan",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/kebayoran-lama-utara"
+      ],
+      "existingPinnedCounts": {
+        "500": 1,
+        "1000": 3,
+        "1500": 3,
+        "2000": 5
+      }
+    },
+    {
+      "mode": "TransJakarta",
+      "station": "Velbak",
+      "stopId": "transjakarta-node-11618413215",
+      "coordinate": [106.7854966, -6.2394127],
+      "coordinateSource": "https://www.openstreetmap.org/node/11618413215",
+      "manualSearchAreas": [
+        "Grogol Selatan",
+        "Gunung",
+        "Kebayoran Lama Utara",
+        "Kramat Pela"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/grogol-selatan",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/gunung",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/kebayoran-lama-utara",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/kramat-pela"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 1,
+        "1500": 2,
+        "2000": 4
+      }
+    },
+    {
+      "mode": "TransJakarta",
+      "station": "Mayestik",
+      "stopId": "transjakarta-node-11618413214",
+      "coordinate": [106.7907262, -6.241891],
+      "coordinateSource": "https://www.openstreetmap.org/node/11618413214",
+      "manualSearchAreas": ["Gunung", "Kebayoran Lama Utara", "Kramat Pela"],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/gunung",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/kebayoran-lama-utara",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/kramat-pela"
+      ],
+      "existingPinnedCounts": {
+        "500": 1,
+        "1000": 1,
+        "1500": 1,
+        "2000": 2
+      }
+    },
+    {
+      "mode": "TransJakarta",
+      "station": "CSW 1",
+      "stopId": "transjakarta-node-11618413213",
+      "coordinate": [106.7984421, -6.2398847],
+      "coordinateSource": "https://www.openstreetmap.org/node/11618413213",
+      "manualSearchAreas": ["Gunung", "Kramat Pela", "Melawai", "Selong"],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/gunung",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/kramat-pela",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/melawai",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/selong"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 1,
+        "1500": 3,
+        "2000": 4
+      }
+    },
+    {
+      "mode": "TransJakarta",
+      "station": "Pasar Santa",
+      "stopId": "transjakarta-node-11618413212",
+      "coordinate": [106.8077643, -6.2391928],
+      "coordinateSource": "https://www.openstreetmap.org/node/11618413212",
+      "manualSearchAreas": ["Melawai", "Petogogan", "Rawa Barat", "Selong"],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/melawai",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/petogogan",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/rawa-barat",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/selong"
+      ],
+      "existingPinnedCounts": {
+        "500": 1,
+        "1000": 3,
+        "1500": 3,
+        "2000": 6
+      }
+    },
+    {
+      "mode": "TransJakarta",
+      "station": "Rawa Barat",
+      "stopId": "transjakarta-node-11618413211",
+      "coordinate": [106.8162003, -6.2388979],
+      "coordinateSource": "https://www.openstreetmap.org/node/11618413211",
+      "manualSearchAreas": [
+        "Kuningan Barat",
+        "Pela Mampang",
+        "Petogogan",
+        "Rawa Barat"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/mampang-prapatan/kuningan-barat",
+        "dki-jakarta/jakarta-selatan/mampang-prapatan/pela-mampang",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/petogogan",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/rawa-barat"
+      ],
+      "existingPinnedCounts": {
+        "500": 1,
+        "1000": 2,
+        "1500": 4,
+        "2000": 5
+      }
+    },
+    {
+      "mode": "TransJakarta",
+      "station": "Tegal Mampang",
+      "stopId": "transjakarta-node-11618413210",
+      "coordinate": [106.8309123, -6.2401791],
+      "coordinateSource": "https://www.openstreetmap.org/node/11618413210",
+      "manualSearchAreas": [
+        "Kuningan Barat",
+        "Kuningan Timur",
+        "Mampang Prapatan",
+        "Menteng Dalam",
+        "Pancoran"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/mampang-prapatan/kuningan-barat",
+        "dki-jakarta/jakarta-selatan/setiabudi/kuningan-timur",
+        "dki-jakarta/jakarta-selatan/mampang-prapatan/mampang-prapatan",
+        "dki-jakarta/jakarta-selatan/tebet/menteng-dalam",
+        "dki-jakarta/jakarta-selatan/pancoran/pancoran"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 3
+      }
+    },
+    {
+      "mode": "TransJakarta",
+      "station": "Puri Beta 2",
+      "stopId": "transjakarta-node-11618413221",
+      "coordinate": [106.723737, -6.2304776],
+      "coordinateSource": "https://www.openstreetmap.org/node/11618413221",
+      "manualSearchAreas": [
+        "Sudimara Timur",
+        "Karang Timur",
+        "Larangan Utara",
+        "Larangan Indah"
+      ],
+      "paths": [
+        "banten/tangerang/ciledug/sudimara-timur",
+        "banten/tangerang/karang-tengah/karang-timur",
+        "banten/tangerang/larangan/larangan-utara",
+        "banten/tangerang/larangan/larangan-indah"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 1,
+        "1500": 3,
+        "2000": 5
+      }
+    }
+  ],
+  "transitTargets": [
+    {
+      "stopId": "transjakarta-node-11625832223",
+      "paths": [
+        "banten/tangerang/ciledug/sudimara-barat",
+        "banten/tangerang/ciledug/sudimara-jaya",
+        "banten/tangerang/karang-tengah/karang-tengah",
+        "banten/tangerang/karang-tengah/karang-timur"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11778605108",
+      "paths": [
+        "banten/tangerang/ciledug/sudimara-timur",
+        "banten/tangerang/karang-tengah/karang-timur",
+        "banten/tangerang/larangan/larangan-utara",
+        "banten/tangerang/larangan/larangan-indah"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413222",
+      "paths": [
+        "banten/tangerang/larangan/kreo",
+        "banten/tangerang/larangan/kreo-selatan",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/petukangan-selatan",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/petukangan-utara"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413220",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/pesanggrahan/petukangan-selatan",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/petukangan-utara"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413219",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/cipulir",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/petukangan-selatan",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/petukangan-utara",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/ulujami"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413218",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/cipulir",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/grogol-selatan",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/ulujami"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413217",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/cipulir",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/ulujami"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413216",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/cipulir",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/grogol-selatan",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/kebayoran-lama-utara"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413215",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/grogol-selatan",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/gunung",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/kebayoran-lama-utara",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/kramat-pela"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413214",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/gunung",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/kebayoran-lama-utara",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/kramat-pela"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413213",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/gunung",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/kramat-pela",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/melawai",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/selong"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413212",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/melawai",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/petogogan",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/rawa-barat",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/selong"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413211",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/mampang-prapatan/kuningan-barat",
+        "dki-jakarta/jakarta-selatan/mampang-prapatan/pela-mampang",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/petogogan",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/rawa-barat"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413210",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/mampang-prapatan/kuningan-barat",
+        "dki-jakarta/jakarta-selatan/setiabudi/kuningan-timur",
+        "dki-jakarta/jakarta-selatan/mampang-prapatan/mampang-prapatan",
+        "dki-jakarta/jakarta-selatan/tebet/menteng-dalam",
+        "dki-jakarta/jakarta-selatan/pancoran/pancoran"
+      ]
+    },
+    {
+      "stopId": "transjakarta-node-11618413221",
+      "paths": [
+        "banten/tangerang/ciledug/sudimara-timur",
+        "banten/tangerang/karang-tengah/karang-timur",
+        "banten/tangerang/larangan/larangan-utara",
+        "banten/tangerang/larangan/larangan-indah"
+      ]
+    }
+  ]
+}
