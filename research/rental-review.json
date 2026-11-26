@@ -3543,5 +3543,17 @@
       "label": "Peta bahaya BNPB · rujukan wilayah; risiko unit belum diketahui",
       "url": "https://inarisk.bnpb.go.id/"
     }
+  },
+  "sewa-jendela360-164f3d694dab": {
+    "flood": {
+      "label": "Genangan jalan sekitar Pluit Sea View · 18 Jan 2026; bukan bukti unit terendam",
+      "url": "https://bpbd.jakarta.go.id/index.php/berita/R2pqeGRUSkc3eFkrVjdPbjRyeUp6QT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-10-00-wib"
+    }
+  },
+  "sewa-pinhome-9df450a452e7": {
+    "flood": {
+      "label": "Genangan jalan sekitar Pluit Sea View · 18 Jan 2026; bukan bukti unit terendam",
+      "url": "https://bpbd.jakarta.go.id/index.php/berita/R2pqeGRUSkc3eFkrVjdPbjRyeUp6QT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-10-00-wib"
+    }
   }
 }

@@ -51617,6 +51617,270 @@
        "url": "https://inarisk.bnpb.go.id/"
       }
      }
+    },
+    {
+     "id": "sewa-jendela360-164f3d694dab",
+     "title": "Pluit Sea View — 2 kamar, 42 m² (PSVC049)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Penjaringan, Penjaringan, Kota Administrasi Jakarta Utara",
+     "buildingOrCluster": "Pluit Sea View",
+     "rent": {
+      "amount": 23800000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp23.800.000/tahun",
+      "url": "https://jendela360.com/sewa-apartemen-pluit-sea-view/PSVC049",
+      "pageDate": null
+     },
+     "bedrooms": 2,
+     "sizeM2": 42.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp23.800.000/tahun",
+       "url": "https://jendela360.com/sewa-apartemen-pluit-sea-view/PSVC049"
+      },
+      {
+       "quote": "Alamat gedung di Jalan Muara Baru Raya, Penjaringan; BPBD DKI menyebut kelurahan Penjaringan dalam laporan genangan 18 Januari 2026.",
+       "url": "https://jendela360.com/sewa-apartemen-pluit-sea-view/PSVC009"
+      },
+      {
+       "quote": "BPBD: genangan jalan depan Pluit Sea View 50 cm (10.00), 30 cm (18.00), 18 Jan 2026; bukan bukti unit.",
+       "url": "https://bpbd.jakarta.go.id/index.php/berita/R2pqeGRUSkc3eFkrVjdPbjRyeUp6QT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-10-00-wib"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga paket Rp23.800.000/tahun, minimum 12 bulan; cek biaya IPL, deposit dan utilitas. Lokasi gedung, bukan unit. BPBD melaporkan genangan di jalan depan/sekitar Pluit Sea View 18 Januari 2026, lalu ruas dinyatakan surut 19 Januari. Bukan bukti air masuk unit; cek akses dan elevasi saat survei.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-pluit-sea-view/PSVC049",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.121077,
+      "lng": 106.807122,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-pluit-sea-view/PSVC049",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Genangan jalan sekitar Pluit Sea View · 18 Jan 2026; bukan bukti unit terendam",
+       "url": "https://bpbd.jakarta.go.id/index.php/berita/R2pqeGRUSkc3eFkrVjdPbjRyeUp6QT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-10-00-wib"
+      }
+     }
+    },
+    {
+     "id": "sewa-jendela360-b05088234aa1",
+     "title": "Laguna Pluit Apartment — 2 kamar, 36 m² (LGNC013)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Pluit, Penjaringan, Kota Administrasi Jakarta Utara",
+     "buildingOrCluster": "Laguna Pluit Apartment",
+     "rent": {
+      "amount": 20300000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp20.300.000/tahun",
+      "url": "https://jendela360.com/sewa-apartemen-laguna-pluit-apartment/LGNC013",
+      "pageDate": null
+     },
+     "bedrooms": 2,
+     "sizeM2": 36.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp20.300.000/tahun",
+       "url": "https://jendela360.com/sewa-apartemen-laguna-pluit-apartment/LGNC013"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 1.19 km ke TransJakarta Pluit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-laguna-pluit-apartment/LGNC013",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.123141,
+      "lng": 106.798598,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-laguna-pluit-apartment/LGNC013",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-031b60365e2a",
+     "title": "Kontrakan Suradita — 1 kamar, 32 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Suradita, Cisauk, Kabupaten Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1750000,
+      "period": "monthly",
+      "minimumMonths": 6,
+      "quote": "Rp1.750.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-griya-suradita-indah-d8-2",
+      "pageDate": "2026-11-12"
+     },
+     "bedrooms": 1,
+     "sizeM2": 32.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp1.750.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-griya-suradita-indah-d8-2"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 2.80 km ke KRL Jatake.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-griya-suradita-indah-d8-2",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-11-12",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.345998,
+      "lng": 106.629423,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-griya-suradita-indah-d8-2",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-90cbf472979e",
+     "title": "Kontrakan Tlajung Udik — 2 kamar, 112 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Tlajung Udik, Gunungputri, Kabupaten Bogor",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 2400000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp2.400.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakkan-kusuma-bangunan-baru-di-kedep-gunung-putri-kab-bogor",
+      "pageDate": "2026-08-28"
+     },
+     "bedrooms": 2,
+     "sizeM2": 112.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp2.400.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakkan-kusuma-bangunan-baru-di-kedep-gunung-putri-kab-bogor"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.98 km ke KRL Nambo.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakkan-kusuma-bangunan-baru-di-kedep-gunung-putri-kab-bogor",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-08-28",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.453108,
+      "lng": 106.918287,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakkan-kusuma-bangunan-baru-di-kedep-gunung-putri-kab-bogor",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-9df450a452e7",
+     "title": "Apartemen Penjaringan — 2 kamar, 35 m²",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Penjaringan, Penjaringan, Kota Administrasi Jakarta Utara",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 2500000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp2.500.000/bulan",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-pluit-sea-view-4",
+      "pageDate": "2026-06-28"
+     },
+     "bedrooms": 2,
+     "sizeM2": 35.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp2.500.000/bulan",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-pluit-sea-view-4"
+      },
+      {
+       "quote": "BPBD: genangan jalan depan Pluit Sea View 50 cm (10.00), 30 cm (18.00), 18 Jan 2026; bukan bukti unit.",
+       "url": "https://bpbd.jakarta.go.id/index.php/berita/R2pqeGRUSkc3eFkrVjdPbjRyeUp6QT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-10-00-wib"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga portal Rp2.500.000/bulan. Titik perkiraan portal, bukan lokasi unit. BPBD melaporkan genangan di jalan depan/sekitar Pluit Sea View 18 Januari 2026, lalu ruas dinyatakan surut 19 Januari. Bukan bukti air masuk unit; cek akses dan elevasi saat survei.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-pluit-sea-view-4",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-06-28",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.121549,
+      "lng": 106.807019,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-pluit-sea-view-4",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Genangan jalan sekitar Pluit Sea View · 18 Jan 2026; bukan bukti unit terendam",
+       "url": "https://bpbd.jakarta.go.id/index.php/berita/R2pqeGRUSkc3eFkrVjdPbjRyeUp6QT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-10-00-wib"
+      }
+     }
     }
    ],
    "locationsCheckedAt": "2026-11-26"

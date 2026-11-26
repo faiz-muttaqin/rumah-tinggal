@@ -14418,6 +14418,71 @@
         "checkedAt": "2026-11-26"
       },
       "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-164f3d694dab",
+      "location": {
+        "lat": -6.121077,
+        "lng": 106.807122,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-pluit-sea-view/PSVC049",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-b05088234aa1",
+      "location": {
+        "lat": -6.123141,
+        "lng": 106.798598,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-laguna-pluit-apartment/LGNC013",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-031b60365e2a",
+      "location": {
+        "lat": -6.345998,
+        "lng": 106.629423,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-griya-suradita-indah-d8-2",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-90cbf472979e",
+      "location": {
+        "lat": -6.453108,
+        "lng": 106.918287,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakkan-kusuma-bangunan-baru-di-kedep-gunung-putri-kab-bogor",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-9df450a452e7",
+      "location": {
+        "lat": -6.121549,
+        "lng": 106.807019,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-pluit-sea-view-4",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
     }
   ]
 }
