@@ -232,6 +232,7 @@ const savedRentals = new BookmarkCollections(
   () => researchData?.rentals?.rentals ?? [],
   () => legacyRentals.openList(),
   (library) => rentalTable.setBookmarkCollections(library),
+  toast,
 );
 
 function toast(message: string): void {

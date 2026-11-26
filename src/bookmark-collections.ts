@@ -1,4 +1,10 @@
-import { getUser, login, loginErrorMessage, privateAPI } from "./auth.ts";
+import {
+  AccountRequestError,
+  getUser,
+  login,
+  loginErrorMessage,
+  privateAPI,
+} from "./auth.ts";
 import { escapeHTML as esc } from "./geo.ts";
 import { icon } from "./icons.ts";
 import type { ResearchRental } from "./research-data.ts";
@@ -55,6 +61,7 @@ const historyDate = new Intl.DateTimeFormat("id-ID", {
 
 type Ref = { id: string } | { token: string };
 type Collection = OwnedBookmark | SharedBookmark;
+type Target = { ref: Ref; entry: BookmarkSummary; editable: boolean };
 type History = { changes: BookmarkChange[]; next: number | null };
 type LibraryView = { kind: "library"; rentalId?: string; busy?: boolean };
 type DetailView = {
@@ -106,18 +113,22 @@ export class BookmarkCollections {
   private library?: BookmarkLibrary;
   private account = 0;
   private listRequest = 0;
+  private saveQueue = Promise.resolve();
   private rentals: () => readonly ResearchRental[];
   private openLegacy: () => void;
   private libraryChanged: (library?: BookmarkLibrary) => void;
+  private notify: (message: string) => void;
 
   constructor(
     rentals: () => readonly ResearchRental[],
     openLegacy: () => void,
     libraryChanged: (library?: BookmarkLibrary) => void,
+    notify: (message: string) => void,
   ) {
     this.rentals = rentals;
     this.openLegacy = openLegacy;
     this.libraryChanged = libraryChanged;
+    this.notify = notify;
     this.dialog = document.createElement("dialog");
     this.dialog.className = "saved-rental-dialog bookmark-dialog";
     this.dialog.setAttribute("aria-labelledby", "bookmark-dialog-title");
@@ -166,7 +177,7 @@ export class BookmarkCollections {
       const button = (event.target as Element).closest<HTMLButtonElement>(
         "[data-save-rental], [data-open-saved-rentals]",
       );
-      if (button) this.openLibrary(button.dataset.saveRental);
+      if (button) this.bookmarkClick(button);
     });
     window.addEventListener("hashchange", () => this.checkHash());
     this.checkHash();
@@ -180,6 +191,7 @@ export class BookmarkCollections {
 
   authChanged(): void {
     this.account++;
+    this.saveQueue = Promise.resolve();
     this.library = undefined;
     this.syncButtons();
     const view = this.view;
@@ -554,27 +566,112 @@ export class BookmarkCollections {
     );
   }
 
-  private async select(view: LibraryView, id: string): Promise<void> {
+  private target(id: string): Target | undefined {
     const pin = this.library?.pinned?.find((entry) => entry.id === id);
     const entry =
       this.library?.collections.find((collection) => collection.id === id) ??
       pin;
-    if (!entry) return;
+    if (entry)
+      return {
+        entry,
+        ref: pin ? { token: pin.token } : { id },
+        editable: !pin || pin.permission === "edit",
+      };
+  }
+
+  private bookmarkClick(button: HTMLButtonElement): void {
+    const { saveRental: rentalId, bookmarkCollection: id } = button.dataset;
+    const target = id && getUser() ? this.target(id) : undefined;
+    if (!rentalId || !id || !target) {
+      this.openLibrary(rentalId);
+      return;
+    }
+    if (target.entry.rentalIds.includes(rentalId)) {
+      void this.openDetail(target.ref, undefined, rentalId);
+      return;
+    }
+    if (!target.editable) {
+      this.openLibrary(rentalId);
+      this.message(
+        "Pilih koleksi yang bisa diedit untuk menyimpan hunian ini.",
+      );
+      return;
+    }
+    const account = this.account;
+    button.disabled = true;
+    this.saveQueue = this.saveQueue
+      .then(() => this.saveDirectly(id, rentalId, account))
+      .finally(() => {
+        button.disabled = false;
+      });
+  }
+
+  private async addRental({ ref, entry }: Target, rentalId: string) {
+    const { collection } = await privateAPI<{ collection: Collection }>(
+      `${pathFor(ref)}/items/${encodeURIComponent(rentalId)}`,
+      this.options(ref, "PUT", { revision: entry.revision }),
+    );
+    return collection;
+  }
+
+  private async saveDirectly(
+    id: string,
+    rentalId: string,
+    account: number,
+  ): Promise<void> {
+    try {
+      for (
+        let attempt = 0;
+        attempt < 2 && account === this.account;
+        attempt++
+      ) {
+        const target = this.target(id);
+        if (!target?.editable)
+          throw new Error(
+            "Pilih koleksi yang bisa diedit untuk menyimpan hunian ini.",
+          );
+        if (target.entry.rentalIds.includes(rentalId)) return;
+        try {
+          const collection = await this.addRental(target, rentalId);
+          if (account === this.account) {
+            this.record(target.ref, collection);
+            this.notify(`Hunian tersimpan di ${collection.name}.`);
+          }
+          return;
+        } catch (error) {
+          if (
+            attempt ||
+            !(error instanceof AccountRequestError && error.status === 409)
+          )
+            throw error;
+          if (account === this.account) await this.loadLibrary();
+        }
+      }
+    } catch (error) {
+      if (account !== this.account) return;
+      this.notify(
+        error instanceof Error
+          ? error.message
+          : "Penyimpanan belum berhasil. Coba lagi.",
+      );
+      void this.loadLibrary();
+    }
+  }
+
+  private async select(view: LibraryView, id: string): Promise<void> {
+    const target = this.target(id);
+    if (!target) return;
+    const { ref, entry } = target;
     const rentalId = view.rentalId;
-    const ref: Ref = pin ? { token: pin.token } : { id };
     if (!rentalId || entry.rentalIds.includes(rentalId)) {
       await this.openDetail(ref, undefined, rentalId);
       return;
     }
-    if (pin && pin.permission !== "edit") return;
+    if (!target.editable) return;
     await this.task(
       view,
-      () =>
-        privateAPI<{ collection: Collection }>(
-          `${pathFor(ref)}/items/${encodeURIComponent(rentalId)}`,
-          this.options(ref, "PUT", { revision: entry.revision }),
-        ),
-      ({ collection }) => {
+      () => this.addRental(target, rentalId),
+      (collection) => {
         this.record(ref, collection);
         void this.openDetail(ref, collection, rentalId);
         this.message("Hunian tersimpan di koleksi.");

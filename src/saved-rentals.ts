@@ -37,9 +37,13 @@ export function rentalSaveButton(
   id: string,
   saved: boolean,
   compact = false,
+  collectionId?: string,
 ): string {
   const label = saveLabel(saved);
-  return `<button type="button" class="rental-save-button${compact ? " is-compact" : " button"}" data-save-rental="${esc(id)}" data-saved="${saved}" aria-label="${label}" title="${label}">${icon("bookmark")}${compact ? "" : `<span>${label}</span>`}</button>`;
+  const target = collectionId
+    ? ` data-bookmark-collection="${esc(collectionId)}"`
+    : "";
+  return `<button type="button" class="rental-save-button${compact ? " is-compact" : " button"}" data-save-rental="${esc(id)}"${target} data-saved="${saved}" aria-label="${label}" title="${label}">${icon("bookmark")}${compact ? "" : `<span>${label}</span>`}</button>`;
 }
 
 export function rentalPrice(rental: SavedRentalEntry): string {

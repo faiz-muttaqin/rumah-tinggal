@@ -1070,6 +1070,7 @@ export class RentalTable {
 
   private paint(): void {
     const sorted = this.sortedRows();
+    const bookmarkCollection = this.select("bookmark").value;
     this.page = Math.max(
       0,
       Math.min(this.page, Math.ceil(sorted.length / this.pageSize) - 1),
@@ -1088,7 +1089,7 @@ export class RentalTable {
             const stop = this.stop(row);
             const { rental, group } = row;
             const selected = this.selected.includes(rental.id);
-            return `<tr data-rental="${esc(rental.id)}" data-kind="${group.id}" class="${selected ? "is-selected" : ""}" style="--rent-type:${group.color}">${columns.map((c, i) => `<td data-col="${i}">${c.id === "bookmark" ? rentalSaveButton(rental.id, row.bookmarked, true) : c.id === "title" ? `<button class="rent-table-name" type="button" aria-pressed="${selected}" title="${esc(rental.title)}">${esc(rental.title)}</button>` : c.id === "type" ? `<span class="rent-table-type">${group.label}</span>` : cellHTML(c.value(row, stop), c)}</td>`).join("")}</tr>`;
+            return `<tr data-rental="${esc(rental.id)}" data-kind="${group.id}" class="${selected ? "is-selected" : ""}" style="--rent-type:${group.color}">${columns.map((c, i) => `<td data-col="${i}">${c.id === "bookmark" ? rentalSaveButton(rental.id, row.bookmarked, true, bookmarkCollection) : c.id === "title" ? `<button class="rent-table-name" type="button" aria-pressed="${selected}" title="${esc(rental.title)}">${esc(rental.title)}</button>` : c.id === "type" ? `<span class="rent-table-type">${group.label}</span>` : cellHTML(c.value(row, stop), c)}</td>`).join("")}</tr>`;
           })
           .join("")
       : `<tr><td class="rent-table-empty" colspan="${columns.length}">Belum ada hunian yang cocok. Ubah pencarian atau reset filter.</td></tr>`;

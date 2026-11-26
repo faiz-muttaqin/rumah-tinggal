@@ -1386,7 +1386,7 @@ test("saves rentals from the table and cards into a named collection with share 
   ).toBeVisible();
 });
 
-test("prioritizes personal and pinned shared bookmarks in the rental table", async ({
+test("saves directly to a selected personal or editable pinned bookmark", async ({
   page,
 }) => {
   await mockListingAccount(page, []);
@@ -1429,13 +1429,64 @@ test("prioritizes personal and pinned shared bookmarks in the rental table", asy
       },
     ],
   };
+  const firstItem = {
+    rental: {
+      ...collection.items[0].rental,
+      rentalId: first.id,
+      title: first.title,
+      amount: first.rent.amount,
+      note: "",
+    },
+    comments: [],
+  };
+  const personal = library.collections[0];
+  const personalRevisions: number[] = [];
+  let sharedSaves = 0;
   await page.route("**/api/bookmark-collections", (route) =>
     route.fulfill({ json: library }),
+  );
+  await page.route(
+    `**/api/bookmark-collections/${personal.id}/items/${second.id}`,
+    (route) => {
+      const { revision } = route.request().postDataJSON();
+      personalRevisions.push(revision);
+      if (revision === 2) {
+        personal.revision = 3;
+        return route.fulfill({
+          status: 409,
+          json: { error: "Koleksi sudah berubah." },
+        });
+      }
+      expect(revision).toBe(3);
+      personal.revision++;
+      personal.rentalIds.push(second.id);
+      const updated: OwnedBookmark = {
+        id: personal.id,
+        name: personal.name,
+        revision: personal.revision,
+        items: [firstItem, collection.items[0]],
+        share: null,
+      };
+      return route.fulfill({ json: { collection: updated } });
+    },
   );
   await page.route("**/api/shared-bookmark-collection**", (route) => {
     expect(route.request().headers()["x-rental-share"]).toBe(token);
     if (route.request().method() === "GET")
       return route.fulfill({ json: { collection } });
+    if (
+      new URL(route.request().url()).pathname.endsWith(`/items/${first.id}`)
+    ) {
+      expect(collection.permission).toBe("edit");
+      expect(route.request().method()).toBe("PUT");
+      expect(route.request().postDataJSON().revision).toBe(collection.revision);
+      sharedSaves++;
+      collection.items.push(firstItem);
+      collection.revision++;
+      library.pinned[0].rentalIds.push(first.id);
+      library.pinned[0].revision = collection.revision;
+      return route.fulfill({ json: { collection } });
+    }
     library.pinned =
       route.request().method() === "PUT"
         ? [
@@ -1462,6 +1513,8 @@ test("prioritizes personal and pinned shared bookmarks in the rental table", asy
   const table = page.getByRole("region", { name: "Tabel sewa", exact: true });
   const choice = table.getByLabel("Prioritaskan koleksi bookmark");
   const rows = table.locator("tr[data-rental]");
+  const row = (id: string) => table.locator(`[data-rental="${id}"]`);
+  const saved = page.getByRole("dialog", { name: "Hunian tersimpan" });
   await expect(
     choice.locator("option", { hasText: collection.name }),
   ).toHaveAttribute("value", pinId);
@@ -1469,6 +1522,15 @@ test("prioritizes personal and pinned shared bookmarks in the rental table", asy
   await expect(rows.first()).toHaveAttribute("data-rental", first.id);
   const currentCount = await rows.count();
   expect(currentCount).toBeGreaterThan(1);
+  await row(second.id).getByRole("button", { name: "Simpan hunian" }).click();
+  await expect(
+    row(second.id).getByRole("button", { name: "Buka bookmark" }),
+  ).toBeVisible();
+  await expect(saved).toBeHidden();
+  await expect(page.locator("#toast")).toHaveText(
+    "Hunian tersimpan di Pilihan sendiri.",
+  );
+  expect(personalRevisions).toEqual([2, 3]);
   await choice.selectOption({ label: collection.name });
   await expect(rows.first()).toHaveAttribute("data-rental", second.id);
   await expect(
@@ -1478,21 +1540,40 @@ test("prioritizes personal and pinned shared bookmarks in the rental table", asy
       .first()
       .getByRole("button", { name: "Buka bookmark" }),
   ).toBeVisible();
+  await row(first.id).getByRole("button", { name: "Simpan hunian" }).click();
+  await expect(saved.getByRole("status")).toHaveText(
+    "Pilih koleksi yang bisa diedit untuk menyimpan hunian ini.",
+  );
+  expect(sharedSaves).toBe(0);
+  await saved.getByRole("button", { name: "Tutup hunian tersimpan" }).click();
+  await row(second.id).getByRole("button", { name: "Buka bookmark" }).click();
+  await expect(
+    share.getByRole("heading", { name: second.title }),
+  ).toBeVisible();
+  await share.getByRole("button", { name: "Tutup hunian tersimpan" }).click();
   await expect(rows).toHaveCount(currentCount);
   const sort = table.getByRole("button", { name: "Urutkan bookmark" });
   await sort.click();
   await expect(rows.first()).toHaveAttribute("data-rental", second.id);
   await sort.click();
   await expect(rows.last()).toHaveAttribute("data-rental", second.id);
+
+  collection.permission = "edit";
+  library.pinned[0].permission = "edit";
   await page.reload();
   await expect(
     choice.locator("option", { hasText: collection.name }),
   ).toHaveCount(1);
   await choice.selectOption({ label: collection.name });
+  await row(first.id).getByRole("button", { name: "Simpan hunian" }).click();
+  await expect(
+    row(first.id).getByRole("button", { name: "Buka bookmark" }),
+  ).toBeVisible();
+  await expect(page.getByRole("dialog")).toHaveCount(0);
+  expect(sharedSaves).toBe(1);
   await table.getByRole("button", { name: "Bookmark", exact: true }).click();
-  const saved = page.getByRole("dialog", { name: "Hunian tersimpan" });
   await saved.getByRole("button", { name: /Pilihan dari tautan/ }).click();
-  await expect(share.getByText("Lihat saja", { exact: true })).toBeVisible();
+  await expect(share.getByText("Boleh edit", { exact: true })).toBeVisible();
   await share.getByRole("button", { name: "Lepas sematan" }).click();
   await expect(
     share.getByRole("button", { name: "Sematkan koleksi" }),
