@@ -1,0 +1,4911 @@
+{
+  "schemaVersion": 1,
+  "mode": "live",
+  "note": "Public detail evidence only. No availability guarantee; 3 km to OSM stop, not a route. Review payment, policies and potential duplicates before import.",
+  "runs": [
+    {
+      "provider": "jendela360",
+      "robots": {
+        "checkedAt": "2026-11-26T12:43:59+00:00",
+        "sha256": "cbcebfa047a8144b0134484164fd822a9d0c411d5e2c41c5580e9798125ecbf6",
+        "url": "https://jendela360.com/robots.txt"
+      },
+      "stopped": null,
+      "requests": 15,
+      "results": [
+        {
+          "url": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003",
+          "discovery": "research/koridor-multi-portal-2026-11-26.md",
+          "provider": "jendela360",
+          "status": "detail-read",
+          "kind": "Apartemen",
+          "amount": 3500000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 3500000.0,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 1,
+          "locality": "Cakung, Jakarta Timur",
+          "location": {
+            "lat": -6.203631,
+            "lng": 106.948933,
+            "precision": "building"
+          },
+          "bedrooms": 0.0,
+          "buildingAreaM2": 21.0,
+          "landAreaM2": null,
+          "issues": [],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 3500000.0
+            },
+            {
+              "months": 3,
+              "amount": 9540000.0
+            },
+            {
+              "months": 6,
+              "amount": 15300000.0
+            },
+            {
+              "months": 12,
+              "amount": 25000000.0
+            }
+          ],
+          "buildingName": "Sentra Timur Residence",
+          "sourceDateKind": "not-published",
+          "sha256": "496fa720caef5c6819b6f5eb40df114cc3f50c7ac5986ceba88d095ba1b2660a",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11773739148",
+              "station": "Walikota Jakarta Timur",
+              "mode": "TransJakarta",
+              "km": 1.062
+            },
+            {
+              "stopId": "transjakarta-node-11955309179",
+              "station": "Terminal Pulogebang",
+              "mode": "TransJakarta",
+              "km": 1.181
+            },
+            {
+              "stopId": "transjakarta-node-11773739147",
+              "station": "Penggilingan",
+              "mode": "TransJakarta",
+              "km": 1.536
+            },
+            {
+              "stopId": "osm-node-3865048788",
+              "station": "Cakung",
+              "mode": "KRL",
+              "km": 1.762
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-jendela360-0b9f1622f0d9"
+        },
+        {
+          "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGB074",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "jendela360",
+          "status": "error",
+          "reason": "ValueError",
+          "resolution": "error"
+        },
+        {
+          "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA074",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "jendela360",
+          "status": "detail-read",
+          "kind": "Apartemen",
+          "amount": 3200000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 3200000.0,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 1,
+          "locality": "Cisauk, Tangerang",
+          "location": {
+            "lat": -6.325092,
+            "lng": 106.64218,
+            "precision": "building"
+          },
+          "bedrooms": 0.0,
+          "buildingAreaM2": 20.0,
+          "landAreaM2": null,
+          "issues": [],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 3200000.0
+            },
+            {
+              "months": 6,
+              "amount": 16020000.0
+            },
+            {
+              "months": 12,
+              "amount": 30510000.0
+            }
+          ],
+          "buildingName": "Serpong Garden Apartment",
+          "sourceDateKind": "not-published",
+          "sha256": "8554e5efc548cf76e928fd9f7cb6b9ce06aca507fd1bc7ec7fe4530c8edbce6a",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-7249140957",
+              "station": "Cisauk",
+              "mode": "KRL",
+              "km": 0.095
+            },
+            {
+              "stopId": "osm-node-1191930747",
+              "station": "Cicayur",
+              "mode": "KRL",
+              "km": 2.615
+            },
+            {
+              "stopId": "osm-node-4152468605",
+              "station": "Serpong",
+              "mode": "KRL",
+              "km": 2.644
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-jendela360-fc81c516f073"
+        },
+        {
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA001",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "jendela360",
+          "status": "detail-read",
+          "kind": "Apartemen",
+          "amount": 35860000.0,
+          "period": "yearly",
+          "monthlyEquivalent": 2988333.3333333335,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 3,
+          "locality": "Margonda, Depok",
+          "location": {
+            "lat": -6.3635,
+            "lng": 106.8345,
+            "precision": "building"
+          },
+          "bedrooms": 0.0,
+          "buildingAreaM2": 24.0,
+          "landAreaM2": null,
+          "issues": [],
+          "priceOptions": [
+            {
+              "months": 3,
+              "amount": 11130000.0
+            },
+            {
+              "months": 6,
+              "amount": 19380000.0
+            },
+            {
+              "months": 12,
+              "amount": 35860000.0
+            }
+          ],
+          "buildingName": "Margonda Residence",
+          "sourceDateKind": "not-published",
+          "sha256": "49dc3e5201b757d9ba228027abd3e98367aafee8b7ce3bca3840a660ca3a273e",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-2372928209",
+              "station": "Universitas Indonesia",
+              "mode": "KRL",
+              "km": 0.455
+            },
+            {
+              "stopId": "osm-node-4149398980",
+              "station": "Pondok Cina",
+              "mode": "KRL",
+              "km": 0.673
+            },
+            {
+              "stopId": "osm-node-4910182667",
+              "station": "Universitas Pancasila",
+              "mode": "KRL",
+              "km": 2.686
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-jendela360-8e96ed7d0a30"
+        },
+        {
+          "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA201",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "jendela360",
+          "status": "detail-read",
+          "kind": "Apartemen",
+          "amount": 1400000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 1400000.0,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 1,
+          "locality": "Cisauk, Tangerang",
+          "location": {
+            "lat": -6.325092,
+            "lng": 106.64218,
+            "precision": "building"
+          },
+          "bedrooms": 0.0,
+          "buildingAreaM2": 20.0,
+          "landAreaM2": null,
+          "issues": [],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 1400000.0
+            },
+            {
+              "months": 3,
+              "amount": 4600000.0
+            },
+            {
+              "months": 6,
+              "amount": 8000000.0
+            },
+            {
+              "months": 12,
+              "amount": 14700000.0
+            }
+          ],
+          "buildingName": "Serpong Garden Apartment",
+          "sourceDateKind": "not-published",
+          "sha256": "c6f1d5cf0f51c30686026bd7cbb50eebf22abfa881dba8d99ab169180994f31f",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-7249140957",
+              "station": "Cisauk",
+              "mode": "KRL",
+              "km": 0.095
+            },
+            {
+              "stopId": "osm-node-1191930747",
+              "station": "Cicayur",
+              "mode": "KRL",
+              "km": 2.615
+            },
+            {
+              "stopId": "osm-node-4152468605",
+              "station": "Serpong",
+              "mode": "KRL",
+              "km": 2.644
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-jendela360-c3d81a7f2d4e"
+        },
+        {
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA005",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "jendela360",
+          "status": "detail-read",
+          "kind": "Apartemen",
+          "amount": 12300000.0,
+          "period": "yearly",
+          "monthlyEquivalent": 1025000.0,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 3,
+          "locality": "Margonda, Depok",
+          "location": {
+            "lat": -6.3635,
+            "lng": 106.8345,
+            "precision": "building"
+          },
+          "bedrooms": 0.0,
+          "buildingAreaM2": 21.0,
+          "landAreaM2": null,
+          "issues": [],
+          "priceOptions": [
+            {
+              "months": 3,
+              "amount": 3500000.0
+            },
+            {
+              "months": 6,
+              "amount": 6300000.0
+            },
+            {
+              "months": 12,
+              "amount": 12300000.0
+            }
+          ],
+          "buildingName": "Margonda Residence",
+          "sourceDateKind": "not-published",
+          "sha256": "571db7658f8a743c63823b248fb0804e0308239b779a0f44a8eea8ed711115f2",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-2372928209",
+              "station": "Universitas Indonesia",
+              "mode": "KRL",
+              "km": 0.455
+            },
+            {
+              "stopId": "osm-node-4149398980",
+              "station": "Pondok Cina",
+              "mode": "KRL",
+              "km": 0.673
+            },
+            {
+              "stopId": "osm-node-4910182667",
+              "station": "Universitas Pancasila",
+              "mode": "KRL",
+              "km": 2.686
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-jendela360-a9f6e462db6f"
+        },
+        {
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA040",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "jendela360",
+          "status": "detail-read",
+          "kind": "Apartemen",
+          "amount": 44440000.0,
+          "period": "yearly",
+          "monthlyEquivalent": 3703333.3333333335,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 6,
+          "locality": "Margonda, Depok",
+          "location": {
+            "lat": -6.3635,
+            "lng": 106.8345,
+            "precision": "building"
+          },
+          "bedrooms": 0.0,
+          "buildingAreaM2": 21.0,
+          "landAreaM2": null,
+          "issues": [],
+          "priceOptions": [
+            {
+              "months": 6,
+              "amount": 22440000.0
+            },
+            {
+              "months": 12,
+              "amount": 44440000.0
+            }
+          ],
+          "buildingName": "Margonda Residence",
+          "sourceDateKind": "not-published",
+          "sha256": "c4748da53dea4a485d3116a7e122ec95e352fd3ea7a49112827306955749c15a",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-2372928209",
+              "station": "Universitas Indonesia",
+              "mode": "KRL",
+              "km": 0.455
+            },
+            {
+              "stopId": "osm-node-4149398980",
+              "station": "Pondok Cina",
+              "mode": "KRL",
+              "km": 0.673
+            },
+            {
+              "stopId": "osm-node-4910182667",
+              "station": "Universitas Pancasila",
+              "mode": "KRL",
+              "km": 2.686
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-jendela360-95956890c40e"
+        },
+        {
+          "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA132",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "jendela360",
+          "status": "error",
+          "reason": "ValueError",
+          "resolution": "error"
+        },
+        {
+          "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA170",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "jendela360",
+          "status": "detail-read",
+          "kind": "Apartemen",
+          "amount": 24400000.0,
+          "period": "yearly",
+          "monthlyEquivalent": 2033333.3333333333,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "public-offer",
+          "minimumRentMonths": 3,
+          "locality": "Cisauk, Tangerang",
+          "location": {
+            "lat": -6.325092,
+            "lng": 106.64218,
+            "precision": "building"
+          },
+          "bedrooms": 0.0,
+          "buildingAreaM2": 20.0,
+          "landAreaM2": null,
+          "issues": ["inactive-or-rented"],
+          "priceOptions": [
+            {
+              "months": 3,
+              "amount": 8200000.0
+            },
+            {
+              "months": 6,
+              "amount": 13900000.0
+            },
+            {
+              "months": 12,
+              "amount": 24400000.0
+            }
+          ],
+          "buildingName": "Serpong Garden Apartment",
+          "sourceDateKind": "not-published",
+          "sha256": "d0f8435c400630c068fc00f1ec85258f698de5563e189a042d7170591c7e7a89",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-7249140957",
+              "station": "Cisauk",
+              "mode": "KRL",
+              "km": 0.095
+            },
+            {
+              "stopId": "osm-node-1191930747",
+              "station": "Cicayur",
+              "mode": "KRL",
+              "km": 2.615
+            },
+            {
+              "stopId": "osm-node-4152468605",
+              "station": "Serpong",
+              "mode": "KRL",
+              "km": 2.644
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA023",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "jendela360",
+          "status": "detail-read",
+          "kind": "Apartemen",
+          "amount": 21500000.0,
+          "period": "yearly",
+          "monthlyEquivalent": 1791666.6666666667,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Margonda, Depok",
+          "location": {
+            "lat": -6.3635,
+            "lng": 106.8345,
+            "precision": "building"
+          },
+          "bedrooms": 0.0,
+          "buildingAreaM2": 24.0,
+          "landAreaM2": null,
+          "issues": [],
+          "priceOptions": [
+            {
+              "months": 12,
+              "amount": 21500000.0
+            }
+          ],
+          "buildingName": "Margonda Residence",
+          "sourceDateKind": "not-published",
+          "sha256": "31cbd4534a9340e655c52a449dbf63b9b1f5212e2f48c260c6631bdd8246a996",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-2372928209",
+              "station": "Universitas Indonesia",
+              "mode": "KRL",
+              "km": 0.455
+            },
+            {
+              "stopId": "osm-node-4149398980",
+              "station": "Pondok Cina",
+              "mode": "KRL",
+              "km": 0.673
+            },
+            {
+              "stopId": "osm-node-4910182667",
+              "station": "Universitas Pancasila",
+              "mode": "KRL",
+              "km": 2.686
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-jendela360-dd57ab0ac8d0"
+        },
+        {
+          "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA161",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "jendela360",
+          "status": "detail-read",
+          "kind": "Apartemen",
+          "amount": 15600000.0,
+          "period": "yearly",
+          "monthlyEquivalent": 1300000.0,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "public-offer",
+          "minimumRentMonths": 6,
+          "locality": "Cisauk, Tangerang",
+          "location": {
+            "lat": -6.325092,
+            "lng": 106.64218,
+            "precision": "building"
+          },
+          "bedrooms": 0.0,
+          "buildingAreaM2": 19.0,
+          "landAreaM2": null,
+          "issues": ["inactive-or-rented"],
+          "priceOptions": [
+            {
+              "months": 6,
+              "amount": 8500000.0
+            },
+            {
+              "months": 12,
+              "amount": 15600000.0
+            }
+          ],
+          "buildingName": "Serpong Garden Apartment",
+          "sourceDateKind": "not-published",
+          "sha256": "b94b7e7696e3aef0471e5a72ff53413dd3338b405c21e06c1a3e50eb39d35e01",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-7249140957",
+              "station": "Cisauk",
+              "mode": "KRL",
+              "km": 0.095
+            },
+            {
+              "stopId": "osm-node-1191930747",
+              "station": "Cicayur",
+              "mode": "KRL",
+              "km": 2.615
+            },
+            {
+              "stopId": "osm-node-4152468605",
+              "station": "Serpong",
+              "mode": "KRL",
+              "km": 2.644
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA090",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "jendela360",
+          "status": "detail-read",
+          "kind": "Apartemen",
+          "amount": 18700000.0,
+          "period": "yearly",
+          "monthlyEquivalent": 1558333.3333333333,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "public-offer",
+          "minimumRentMonths": 3,
+          "locality": "Cisauk, Tangerang",
+          "location": {
+            "lat": -6.325092,
+            "lng": 106.64218,
+            "precision": "building"
+          },
+          "bedrooms": 0.0,
+          "buildingAreaM2": 20.0,
+          "landAreaM2": null,
+          "issues": ["inactive-or-rented"],
+          "priceOptions": [
+            {
+              "months": 3,
+              "amount": 6500000.0
+            },
+            {
+              "months": 6,
+              "amount": 11600000.0
+            },
+            {
+              "months": 12,
+              "amount": 18700000.0
+            }
+          ],
+          "buildingName": "Serpong Garden Apartment",
+          "sourceDateKind": "not-published",
+          "sha256": "99a60fa9d1052e065e21df502e08d9d9563a267795c12cfd08fb631f7e02dc18",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-7249140957",
+              "station": "Cisauk",
+              "mode": "KRL",
+              "km": 0.095
+            },
+            {
+              "stopId": "osm-node-1191930747",
+              "station": "Cicayur",
+              "mode": "KRL",
+              "km": 2.615
+            },
+            {
+              "stopId": "osm-node-4152468605",
+              "station": "Serpong",
+              "mode": "KRL",
+              "km": 2.644
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA003",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "jendela360",
+          "status": "detail-read",
+          "kind": "Apartemen",
+          "amount": 33840000.0,
+          "period": "yearly",
+          "monthlyEquivalent": 2820000.0,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 6,
+          "locality": "Margonda, Depok",
+          "location": {
+            "lat": -6.3635,
+            "lng": 106.8345,
+            "precision": "building"
+          },
+          "bedrooms": 0.0,
+          "buildingAreaM2": 22.0,
+          "landAreaM2": null,
+          "issues": [],
+          "priceOptions": [
+            {
+              "months": 6,
+              "amount": 18360000.0
+            },
+            {
+              "months": 12,
+              "amount": 33840000.0
+            }
+          ],
+          "buildingName": "Margonda Residence",
+          "sourceDateKind": "not-published",
+          "sha256": "9c2379296ba3e9d64d093dcc545b56c9525203e6bd95c0c30943a7245d50152d",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-2372928209",
+              "station": "Universitas Indonesia",
+              "mode": "KRL",
+              "km": 0.455
+            },
+            {
+              "stopId": "osm-node-4149398980",
+              "station": "Pondok Cina",
+              "mode": "KRL",
+              "km": 0.673
+            },
+            {
+              "stopId": "osm-node-4910182667",
+              "station": "Universitas Pancasila",
+              "mode": "KRL",
+              "km": 2.686
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-jendela360-8347d1b461bd"
+        },
+        {
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB008",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "jendela360",
+          "status": "detail-read",
+          "kind": "Apartemen",
+          "amount": 22900000.0,
+          "period": "yearly",
+          "monthlyEquivalent": 1908333.3333333333,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Margonda, Depok",
+          "location": {
+            "lat": -6.3635,
+            "lng": 106.8345,
+            "precision": "building"
+          },
+          "bedrooms": 1.0,
+          "buildingAreaM2": 24.0,
+          "landAreaM2": null,
+          "issues": [],
+          "priceOptions": [
+            {
+              "months": 12,
+              "amount": 22900000.0
+            }
+          ],
+          "buildingName": "Margonda Residence",
+          "sourceDateKind": "not-published",
+          "sha256": "2b6649dea0127fa257d2a562aaad5f96e1733a9ab0a5df80e47376093ca4349c",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-2372928209",
+              "station": "Universitas Indonesia",
+              "mode": "KRL",
+              "km": 0.455
+            },
+            {
+              "stopId": "osm-node-4149398980",
+              "station": "Pondok Cina",
+              "mode": "KRL",
+              "km": 0.673
+            },
+            {
+              "stopId": "osm-node-4910182667",
+              "station": "Universitas Pancasila",
+              "mode": "KRL",
+              "km": 2.686
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-jendela360-958a3c221bd0"
+        }
+      ]
+    },
+    {
+      "provider": "mamikos",
+      "robots": {
+        "checkedAt": "2026-11-26T12:43:58+00:00",
+        "sha256": "3e71ba5740924fb8bfe65c34b89988fa71d44c5b896ce4aff1c97059064ccaa6",
+        "url": "https://mamikos.com/robots.txt"
+      },
+      "stopped": null,
+      "requests": 23,
+      "results": [
+        {
+          "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-mpr-1-cilandak-jakarta-selatan-2",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 2300000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 2300000.0,
+          "sourceUpdatedAt": "2026-07-30 10:00:07",
+          "sourceStatus": "public-offer",
+          "locality": "Cilandak, Kota Jakarta Selatan",
+          "location": {
+            "lat": -6.281275,
+            "lng": 106.803441,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 20.0,
+          "landAreaM2": null,
+          "issues": [
+            "inactive-or-rented",
+            "source-availability-needs-review",
+            "resident-policy-needs-review"
+          ],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 2300000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": false,
+            "childrenAllowed": false
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "25fb719bda086354186464cf196f8f2f4096ac57bdd048f2946d18c1214482fc",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "mrt-node-3859688994",
+              "station": "Cipete Raya TUKU",
+              "mode": "MRT",
+              "km": 0.752
+            },
+            {
+              "stopId": "mrt-node-6195584512",
+              "station": "Fatmawati Indomaret",
+              "mode": "MRT",
+              "km": 1.735
+            },
+            {
+              "stopId": "mrt-node-6195584506",
+              "station": "Haji Nawi",
+              "mode": "MRT",
+              "km": 1.758
+            },
+            {
+              "stopId": "transjakarta-node-11618256321",
+              "station": "Jati Barat",
+              "mode": "TransJakarta",
+              "km": 2.481
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-rumah-nata-kebayoran-baru-jakarta-selatan",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": null,
+          "period": null,
+          "monthlyEquivalent": null,
+          "sourceUpdatedAt": "2025-02-01 21:45:05",
+          "sourceStatus": "public-offer",
+          "locality": "Kecamatan Kebayoran Baru, Kota Jakarta Selatan",
+          "location": {
+            "lat": -6.263355,
+            "lng": 106.794403,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 12.0,
+          "landAreaM2": null,
+          "issues": [
+            "payment-options-needs-review",
+            "inactive-or-rented",
+            "source-availability-needs-review",
+            "resident-policy-needs-review",
+            "invalid-rent",
+            "unknown-rent-period"
+          ],
+          "priceOptions": [],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": false
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "2915d906e053cbfeda743dcc6508e056740db98fde58fb7a61bc7b3826e4647e",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "mrt-node-6195584506",
+              "station": "Haji Nawi",
+              "mode": "MRT",
+              "km": 0.491
+            },
+            {
+              "stopId": "mrt-node-6195584500",
+              "station": "Blok A VISA",
+              "mode": "MRT",
+              "km": 0.894
+            },
+            {
+              "stopId": "transjakarta-node-11957654252",
+              "station": "Pondok Indah",
+              "mode": "TransJakarta",
+              "km": 1.263
+            },
+            {
+              "stopId": "transjakarta-node-11957654250",
+              "station": "Tanah Kusir",
+              "mode": "TransJakarta",
+              "km": 1.574
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-karet-sawah-i-tipe-a-setiabudi-jakarta-selatan",
+          "discovery": "research/koridor-multi-portal-2026-11-26.md",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 2700000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 2700000.0,
+          "sourceUpdatedAt": "2026-08-10 17:38:46",
+          "sourceStatus": "unit_type_status.active",
+          "locality": "Setia Budi, Kota Jakarta Selatan",
+          "location": {
+            "lat": -6.223149,
+            "lng": 106.818156,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 22.75,
+          "landAreaM2": null,
+          "issues": [],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 2700000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": true
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "468f8ba256be07c8d1ebf33b11a6ab934a514e73d1d4f42e70195f193d2125b4",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11618522865",
+              "station": "Widya Chandra Telkomsel Arah Timur",
+              "mode": "TransJakarta",
+              "km": 0.398
+            },
+            {
+              "stopId": "transjakarta-node-11618522864",
+              "station": "Widya Chandra Telkomsel Arah Barat",
+              "mode": "TransJakarta",
+              "km": 0.459
+            },
+            {
+              "stopId": "transjakarta-node-4235200076",
+              "station": "Semanggi",
+              "mode": "TransJakarta",
+              "km": 0.623
+            },
+            {
+              "stopId": "transjakarta-node-11564482128",
+              "station": "Bendungan Hilir",
+              "mode": "TransJakarta",
+              "km": 0.742
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-mamikos-d00e8ef7c1dd"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-apik-margonda-5-tipe-a-beji-depok-2",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 17280000.0,
+          "period": "yearly",
+          "monthlyEquivalent": 1440000.0,
+          "sourceUpdatedAt": "2026-11-23 12:14:43",
+          "sourceStatus": "unit_type_status.active",
+          "locality": "Beji, Kota Depok",
+          "location": {
+            "lat": -6.388371,
+            "lng": 106.825567,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 12.25,
+          "landAreaM2": null,
+          "issues": [
+            "payment-options-needs-review",
+            "resident-policy-needs-review"
+          ],
+          "priceOptions": [
+            {
+              "months": 3,
+              "amount": 4320000.0
+            },
+            {
+              "months": 6,
+              "amount": 8640000.0
+            },
+            {
+              "months": 12,
+              "amount": 17280000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": false
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "e86a2215c0dc9d9ef7322ffb599e8e58cb7c5788c81ffa0513a4ebcc8c3922f3",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-204537445",
+              "station": "Depok Baru",
+              "mode": "KRL",
+              "km": 0.531
+            },
+            {
+              "stopId": "osm-node-1642327224",
+              "station": "Depok",
+              "mode": "KRL",
+              "km": 2.056
+            },
+            {
+              "stopId": "osm-node-4149398980",
+              "station": "Pondok Cina",
+              "mode": "KRL",
+              "km": 2.265
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-h-salim-i-no-16-gandaria-utara-kebayoran-baru-jakarta-selatan-1",
+          "discovery": "research/koridor-multi-portal-2026-11-26.md",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 3250000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 3250000.0,
+          "sourceUpdatedAt": "2025-11-01 16:30:49",
+          "sourceStatus": "public-offer",
+          "locality": "Kebayoran Baru, Kota Jakarta Selatan",
+          "location": {
+            "lat": -6.260985,
+            "lng": 106.790329,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 12.0,
+          "landAreaM2": null,
+          "issues": [
+            "inactive-or-rented",
+            "source-availability-needs-review",
+            "resident-policy-needs-review"
+          ],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 3250000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": false
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "1b824c9e847a8bffc3a96982ebd8672160f59df8a43462f5d6ce8b49df5c1e65",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "mrt-node-6195584500",
+              "station": "Blok A VISA",
+              "mode": "MRT",
+              "km": 0.948
+            },
+            {
+              "stopId": "mrt-node-6195584506",
+              "station": "Haji Nawi",
+              "mode": "MRT",
+              "km": 0.999
+            },
+            {
+              "stopId": "transjakarta-node-11957654252",
+              "station": "Pondok Indah",
+              "mode": "TransJakarta",
+              "km": 1.012
+            },
+            {
+              "stopId": "transjakarta-node-11957654250",
+              "station": "Tanah Kusir",
+              "mode": "TransJakarta",
+              "km": 1.054
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-beringin-tipe-ac-beji-depok",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 1000000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 1000000.0,
+          "sourceUpdatedAt": "2025-08-01 23:18:05",
+          "sourceStatus": "unit_type_status.active",
+          "locality": "Kecamatan Beji, Kota Depok",
+          "location": {
+            "lat": -6.384752,
+            "lng": 106.831472,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 12.0,
+          "landAreaM2": null,
+          "issues": ["resident-policy-needs-review"],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 1000000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": false,
+            "childrenAllowed": false
+          },
+          "residentGender": null,
+          "sourceDateKind": "modified",
+          "sha256": "3691c89884f8b4d0a53e9db5e4c9190e9b1f976676a874ffa56ba75b25976152",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-204537445",
+              "station": "Depok Baru",
+              "mode": "KRL",
+              "km": 1.297
+            },
+            {
+              "stopId": "osm-node-4149398980",
+              "station": "Pondok Cina",
+              "mode": "KRL",
+              "km": 1.746
+            },
+            {
+              "stopId": "osm-node-2372928209",
+              "station": "Universitas Indonesia",
+              "mode": "KRL",
+              "km": 2.705
+            },
+            {
+              "stopId": "osm-node-1642327224",
+              "station": "Depok",
+              "mode": "KRL",
+              "km": 2.74
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-karet-kuningan-tipe-a-setiabudi-jakarta-selatan",
+          "discovery": "research/koridor-multi-portal-2026-11-26.md",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 1700000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 1700000.0,
+          "sourceUpdatedAt": "2024-12-11 19:10:03",
+          "sourceStatus": "public-offer",
+          "locality": "Setiabudi, Jakarta Selatan",
+          "location": {
+            "lat": -6.218843,
+            "lng": 106.822349,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 9.0,
+          "landAreaM2": null,
+          "issues": [
+            "inactive-or-rented",
+            "source-availability-needs-review",
+            "resident-policy-needs-review"
+          ],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 1700000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": false
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "991eda6ebba84fc6782d873950e2fbac2a8bc9673829845bf0e0a80c423e1155",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "mrt-node-3859689022",
+              "station": "Bendungan Hilir",
+              "mode": "MRT",
+              "km": 0.652
+            },
+            {
+              "stopId": "transjakarta-node-11564482127",
+              "station": "Karet",
+              "mode": "TransJakarta",
+              "km": 0.758
+            },
+            {
+              "stopId": "transjakarta-node-11564482128",
+              "station": "Bendungan Hilir",
+              "mode": "TransJakarta",
+              "km": 0.796
+            },
+            {
+              "stopId": "transjakarta-node-11613170645",
+              "station": "Karet Kuningan",
+              "mode": "TransJakarta",
+              "km": 0.959
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-risya-cimanggis-depok",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 1200000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 1200000.0,
+          "sourceUpdatedAt": "2026-11-23 22:47:02",
+          "sourceStatus": "public-offer",
+          "minimumRentMonths": 1,
+          "locality": "Kecamatan Cimanggis, Kota Depok",
+          "location": {
+            "lat": -6.360202,
+            "lng": 106.84503,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 12.0,
+          "landAreaM2": null,
+          "issues": ["inactive-or-rented"],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 1200000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": true
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "1ae78b4ad571acc2dedf3f486abbf652e11b38348d906733a00bf61c88b2a098",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-2372928209",
+              "station": "Universitas Indonesia",
+              "mode": "KRL",
+              "km": 1.464
+            },
+            {
+              "stopId": "osm-node-4149398980",
+              "station": "Pondok Cina",
+              "mode": "KRL",
+              "km": 1.737
+            },
+            {
+              "stopId": "osm-node-4910182667",
+              "station": "Universitas Pancasila",
+              "mode": "KRL",
+              "km": 2.607
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-putri-eksklusif-kost-madina-tipe-ac-sawangan-depok",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 800000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 800000.0,
+          "sourceUpdatedAt": "2026-11-05 21:09:33",
+          "sourceStatus": "unit_type_status.active",
+          "locality": "Kecamatan Sawangan, Kota Depok",
+          "location": {
+            "lat": -6.420243,
+            "lng": 106.779364,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 9.0,
+          "landAreaM2": null,
+          "issues": ["resident-policy-needs-review"],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 800000.0
+            },
+            {
+              "months": 3,
+              "amount": 2400000.0
+            },
+            {
+              "months": 6,
+              "amount": 4800000.0
+            },
+            {
+              "months": 12,
+              "amount": 9500000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": false,
+            "childrenAllowed": false
+          },
+          "residentGender": null,
+          "sourceDateKind": "modified",
+          "sha256": "0b578216340488ad13465cbcce5e2d8b6580f08f97adf1cd2633a038ea827026",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-putra-eksklusif-kost-apik-pondok-rida-tipe-a-beji-depok-2",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": null,
+          "period": null,
+          "monthlyEquivalent": null,
+          "sourceUpdatedAt": "2026-11-23 12:14:44",
+          "sourceStatus": "unit_type_status.active",
+          "locality": "Beji, Kota Depok",
+          "location": {
+            "lat": -6.363656,
+            "lng": 106.832586,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 12.0,
+          "landAreaM2": null,
+          "issues": [
+            "payment-options-needs-review",
+            "resident-policy-needs-review",
+            "invalid-rent",
+            "unknown-rent-period"
+          ],
+          "priceOptions": [],
+          "residentPolicy": {
+            "marriedCouplesAllowed": false,
+            "childrenAllowed": false
+          },
+          "residentGender": null,
+          "sourceDateKind": "modified",
+          "sha256": "8f5f9ef4c541ef8063403796752ee9fab83ff66b2a3a5f5351c29d226faf834b",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-2372928209",
+              "station": "Universitas Indonesia",
+              "mode": "KRL",
+              "km": 0.369
+            },
+            {
+              "stopId": "osm-node-4149398980",
+              "station": "Pondok Cina",
+              "mode": "KRL",
+              "km": 0.603
+            },
+            {
+              "stopId": "osm-node-4910182667",
+              "station": "Universitas Pancasila",
+              "mode": "KRL",
+              "km": 2.71
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-kost-singgahsini-pringgondani-tipe-a-cimanggis-depok-2",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": null,
+          "period": null,
+          "monthlyEquivalent": null,
+          "sourceUpdatedAt": "2026-11-23 12:14:43",
+          "sourceStatus": "unit_type_status.active",
+          "locality": "Cimanggis, Depok",
+          "location": {
+            "lat": -6.382206,
+            "lng": 106.899937,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 15.0,
+          "landAreaM2": null,
+          "issues": [
+            "payment-options-needs-review",
+            "resident-policy-needs-review",
+            "invalid-rent",
+            "unknown-rent-period"
+          ],
+          "priceOptions": [],
+          "residentPolicy": {
+            "marriedCouplesAllowed": false,
+            "childrenAllowed": false
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "daae406566e87a283f4cbbba17b0e662db0863d770df96691a708f97c02b6249",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "lrt-node-11040189467",
+              "station": "Harjamukti",
+              "mode": "LRT",
+              "km": 1.037
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-putra-murah-kost-rumah-halwa-tipe-a-beji-depok",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 850000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 850000.0,
+          "sourceUpdatedAt": "2026-04-01 14:56:24",
+          "sourceStatus": "unit_type_status.active",
+          "locality": "Beji, Kota Depok",
+          "location": {
+            "lat": -6.386715,
+            "lng": 106.829152,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 6.0,
+          "landAreaM2": null,
+          "issues": ["resident-policy-needs-review"],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 850000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": false,
+            "childrenAllowed": false
+          },
+          "residentGender": null,
+          "sourceDateKind": "modified",
+          "sha256": "a16493d3fc43ba832c71f86bdec25f2c7e04ca315897cb17e2f0aa7b42bc8f41",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-204537445",
+              "station": "Depok Baru",
+              "mode": "KRL",
+              "km": 0.964
+            },
+            {
+              "stopId": "osm-node-4149398980",
+              "station": "Pondok Cina",
+              "mode": "KRL",
+              "km": 1.99
+            },
+            {
+              "stopId": "osm-node-1642327224",
+              "station": "Depok",
+              "mode": "KRL",
+              "km": 2.415
+            },
+            {
+              "stopId": "osm-node-2372928209",
+              "station": "Universitas Indonesia",
+              "mode": "KRL",
+              "km": 2.937
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-depok-kost-putra-murah-kost-93-tipe-non-ac-cipayung-depok",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 800000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 800000.0,
+          "sourceUpdatedAt": "2025-01-03 14:52:16",
+          "sourceStatus": "public-offer",
+          "locality": "Cipayung, Kota Depok",
+          "location": {
+            "lat": -6.413389,
+            "lng": 106.814688,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 9.0,
+          "landAreaM2": null,
+          "issues": [
+            "inactive-or-rented",
+            "source-availability-needs-review",
+            "resident-policy-needs-review"
+          ],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 800000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": false,
+            "childrenAllowed": false
+          },
+          "residentGender": null,
+          "sourceDateKind": "modified",
+          "sha256": "9160f59efd24f2d04481199b00722ede80f2ace44f2d7dd430f913a23a484b3d",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-1642327224",
+              "station": "Depok",
+              "mode": "KRL",
+              "km": 0.988
+            },
+            {
+              "stopId": "osm-node-204537445",
+              "station": "Depok Baru",
+              "mode": "KRL",
+              "km": 2.592
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-renz-home-poris-88-batuceper-tangerang",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 2500000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 2500000.0,
+          "sourceUpdatedAt": "2026-10-14 08:41:29",
+          "sourceStatus": "unit_type_status.active",
+          "locality": "Batuceper, Kota Tangerang",
+          "location": {
+            "lat": -6.171781,
+            "lng": 106.670904,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 21.0,
+          "landAreaM2": null,
+          "issues": [],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 2500000.0
+            },
+            {
+              "months": 3,
+              "amount": 7350000.0
+            },
+            {
+              "months": 6,
+              "amount": 14650000.0
+            },
+            {
+              "months": 12,
+              "amount": 29000000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": true
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "76aa4e714cad4e9380d13cd88dd941fea93d808c8c1bd88a86f7c58a1c761848",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-9201422096",
+              "station": "Batu Ceper",
+              "mode": "KRL",
+              "km": 0.622
+            },
+            {
+              "stopId": "osm-node-4149415299",
+              "station": "Poris",
+              "mode": "KRL",
+              "km": 1.112
+            },
+            {
+              "stopId": "osm-node-316739060",
+              "station": "Tanah Tinggi",
+              "mode": "KRL",
+              "km": 2.701
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-mamikos-d06a4e80f031"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-tangerang-kost-putri-eksklusif-kost-rafasya-barokah-tipe-executive-cipondoh-tangerang",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 1550000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 1550000.0,
+          "sourceUpdatedAt": "2026-11-21 07:14:41",
+          "sourceStatus": "unit_type_status.active",
+          "locality": "Kecamatan Cipondoh, Kota Tangerang",
+          "location": {
+            "lat": -6.175886,
+            "lng": 106.666332,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 9.0,
+          "landAreaM2": null,
+          "issues": ["resident-policy-needs-review"],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 1550000.0
+            },
+            {
+              "months": 3,
+              "amount": 4300000.0
+            },
+            {
+              "months": 6,
+              "amount": 8000000.0
+            },
+            {
+              "months": 12,
+              "amount": 15500000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": false
+          },
+          "residentGender": null,
+          "sourceDateKind": "modified",
+          "sha256": "969406a9ad8e7ccd69eb73249b6e5f63a68ba92b0e1cfe607283f4e6d7d5b6fd",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-9201422096",
+              "station": "Batu Ceper",
+              "mode": "KRL",
+              "km": 0.444
+            },
+            {
+              "stopId": "osm-node-4149415299",
+              "station": "Poris",
+              "mode": "KRL",
+              "km": 1.735
+            },
+            {
+              "stopId": "osm-node-316739060",
+              "station": "Tanah Tinggi",
+              "mode": "KRL",
+              "km": 2.171
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-bening-executive-cipondoh-tangerang-2",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 1750000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 1750000.0,
+          "sourceUpdatedAt": "2026-10-23 08:24:29",
+          "sourceStatus": "unit_type_status.active",
+          "locality": "Kecamatan Cipondoh, Kota Tangerang",
+          "location": {
+            "lat": -6.176215,
+            "lng": 106.662041,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 12.0,
+          "landAreaM2": null,
+          "issues": ["resident-policy-needs-review"],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 1750000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": false
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "4fc534c777477d2a0cd9f02af8a483d02f7f11ce5e5f0f5d2d4b439604fd20e8",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-9201422096",
+              "station": "Batu Ceper",
+              "mode": "KRL",
+              "km": 0.588
+            },
+            {
+              "stopId": "osm-node-316739060",
+              "station": "Tanah Tinggi",
+              "mode": "KRL",
+              "km": 1.699
+            },
+            {
+              "stopId": "osm-node-4149415299",
+              "station": "Poris",
+              "mode": "KRL",
+              "km": 2.19
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-melati-tujuh-residence-tipe-a-tangerang",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 1500000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 1500000.0,
+          "sourceUpdatedAt": "2026-07-13 01:08:00",
+          "sourceStatus": "public-offer",
+          "locality": "Tangerang, Kota Tangerang",
+          "location": {
+            "lat": -6.169181,
+            "lng": 106.654457,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 18.0,
+          "landAreaM2": null,
+          "issues": [
+            "inactive-or-rented",
+            "source-availability-needs-review",
+            "resident-policy-needs-review"
+          ],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 1500000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": false
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "6ba32941427260851969539a073c9d689baa8bc60b4f4f9952233810f2577be3",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-316739060",
+              "station": "Tanah Tinggi",
+              "mode": "KRL",
+              "km": 1.085
+            },
+            {
+              "stopId": "osm-node-9201422096",
+              "station": "Batu Ceper",
+              "mode": "KRL",
+              "km": 1.238
+            },
+            {
+              "stopId": "osm-node-316739175",
+              "station": "Tangerang",
+              "mode": "KRL",
+              "km": 2.628
+            },
+            {
+              "stopId": "osm-node-4149415299",
+              "station": "Poris",
+              "mode": "KRL",
+              "km": 2.908
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-murah-kost-aamirah-tipe-a-cipondoh-tangerang",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 850000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 850000.0,
+          "sourceUpdatedAt": "2026-10-29 16:45:41",
+          "sourceStatus": "public-offer",
+          "locality": "Cipondoh, Kota Tangerang",
+          "location": {
+            "lat": -6.180921,
+            "lng": 106.69122,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 9.0,
+          "landAreaM2": null,
+          "issues": ["inactive-or-rented"],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 850000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": true
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "e6dbc19cb3d54e088f8c0f66089f5103509272a0dcc7c3cc8130e1002424a161",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-4149415299",
+              "station": "Poris",
+              "mode": "KRL",
+              "km": 1.699
+            },
+            {
+              "stopId": "osm-node-4905517383",
+              "station": "Kalideres",
+              "mode": "KRL",
+              "km": 2.163
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-duta-garden-14-standart-benda-tangerang",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 2200000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 2200000.0,
+          "sourceUpdatedAt": "2026-11-03 16:38:29",
+          "sourceStatus": "unit_type_status.active",
+          "locality": "Benda, Tangerang",
+          "location": {
+            "lat": -6.145658,
+            "lng": 106.67711,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 15.0,
+          "landAreaM2": null,
+          "issues": [],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 2200000.0
+            },
+            {
+              "months": 3,
+              "amount": 6300000.0
+            },
+            {
+              "months": 6,
+              "amount": 12000000.0
+            },
+            {
+              "months": 12,
+              "amount": 23000000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": true
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "071b3f625db041c5c318582726cf84476f9f316993f1364da310da944fb925b4",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-4149415299",
+              "station": "Poris",
+              "mode": "KRL",
+              "km": 2.707
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-mamikos-d6c25c306891"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-m20-tipe-a-tangerang-2",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 1550000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 1550000.0,
+          "sourceUpdatedAt": "2025-11-17 09:21:33",
+          "sourceStatus": "unit_type_status.active",
+          "locality": "Tangerang, Kota Tangerang",
+          "location": {
+            "lat": -6.180109,
+            "lng": 106.658147,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 9.0,
+          "landAreaM2": null,
+          "issues": ["resident-policy-needs-review"],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 1550000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": false
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "3567dc3c30a6be0f229a36cd9466a4cb7a031dc15ecd4e1af0921881fd300ca4",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-9201422096",
+              "station": "Batu Ceper",
+              "mode": "KRL",
+              "km": 1.196
+            },
+            {
+              "stopId": "osm-node-316739060",
+              "station": "Tanah Tinggi",
+              "mode": "KRL",
+              "km": 1.379
+            },
+            {
+              "stopId": "osm-node-4149415299",
+              "station": "Poris",
+              "mode": "KRL",
+              "km": 2.752
+            },
+            {
+              "stopId": "osm-node-316739175",
+              "station": "Tangerang",
+              "mode": "KRL",
+              "km": 2.91
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-ciputat-bintaro-exchanged-ciputat-tangerang-selatan",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 1500000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 1500000.0,
+          "sourceUpdatedAt": "2026-09-12 21:25:06",
+          "sourceStatus": "public-offer",
+          "locality": "Ciputat, Kota Tangerang Selatan",
+          "location": {
+            "lat": -6.293749,
+            "lng": 106.727505,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 9.0,
+          "landAreaM2": null,
+          "issues": [
+            "inactive-or-rented",
+            "source-availability-needs-review",
+            "resident-policy-needs-review"
+          ],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 1500000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": false
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "c03a8be15666a493f58e91e35f164ea3bb91652492961378a0ea92ab3df755ad",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-318720710",
+              "station": "Jurangmangu",
+              "mode": "KRL",
+              "km": 0.603
+            },
+            {
+              "stopId": "osm-node-316848964",
+              "station": "Sudimara",
+              "mode": "KRL",
+              "km": 1.678
+            },
+            {
+              "stopId": "osm-node-318718577",
+              "station": "Pondok Ranji",
+              "mode": "KRL",
+              "km": 2.685
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-rumah-kontrakan-nadia-cisauk-tangerang",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 1500000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 1500000.0,
+          "sourceUpdatedAt": "2025-12-22 15:19:49",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 3,
+          "locality": "Cisauk, Kabupaten Tangerang",
+          "location": {
+            "lat": -6.361475,
+            "lng": 106.633398,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 12.0,
+          "landAreaM2": null,
+          "issues": [],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 1500000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": true
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "fa95e16e8e0930b6086b65c55bf1baea375b92fca63ea9cb9e92aa8148ef5385",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-no-location-or-outside-3km"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kota-tangerang-kost-putra-murah-kost-uni-batuceper-tangerang-2",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": null,
+          "period": null,
+          "monthlyEquivalent": null,
+          "sourceUpdatedAt": "2024-07-29 15:30:35",
+          "sourceStatus": "public-offer",
+          "minimumRentMonths": 3,
+          "locality": "Batuceper, Kota Tangerang",
+          "location": {
+            "lat": -6.165204,
+            "lng": 106.681087,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 12.0,
+          "landAreaM2": null,
+          "issues": [
+            "payment-options-needs-review",
+            "inactive-or-rented",
+            "source-availability-needs-review",
+            "resident-policy-needs-review",
+            "invalid-rent",
+            "unknown-rent-period"
+          ],
+          "priceOptions": [],
+          "residentPolicy": {
+            "marriedCouplesAllowed": false,
+            "childrenAllowed": false
+          },
+          "residentGender": null,
+          "sourceDateKind": "modified",
+          "sha256": "203983db76b76dbfc88dc0b1c62adb391384189da476018327a423e593ce6bea",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-4149415299",
+              "station": "Poris",
+              "mode": "KRL",
+              "km": 0.505
+            },
+            {
+              "stopId": "osm-node-9201422096",
+              "station": "Batu Ceper",
+              "mode": "KRL",
+              "km": 1.904
+            },
+            {
+              "stopId": "osm-node-4905517383",
+              "station": "Kalideres",
+              "mode": "KRL",
+              "km": 2.504
+            },
+            {
+              "stopId": "transjakarta-node-11568418505",
+              "station": "Kalideres",
+              "mode": "TransJakarta",
+              "km": 2.984
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-tangerang-kost-putra-eksklusif-kost-syariah-celapan-tangerang",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 2000000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 2000000.0,
+          "sourceUpdatedAt": "2026-11-13 18:00:11",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 1,
+          "locality": "Tangerang, Tangerang",
+          "location": {
+            "lat": -6.17394,
+            "lng": 106.647095,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 20.0,
+          "landAreaM2": null,
+          "issues": ["resident-policy-needs-review"],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 2000000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": true
+          },
+          "residentGender": null,
+          "sourceDateKind": "modified",
+          "sha256": "27a3aa16cc50c95c11bc3806af8c31a1f20b527dfc395c5bb76e427d48bb53ab",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-316739060",
+              "station": "Tanah Tinggi",
+              "mode": "KRL",
+              "km": 0.143
+            },
+            {
+              "stopId": "osm-node-316739175",
+              "station": "Tangerang",
+              "mode": "KRL",
+              "km": 1.701
+            },
+            {
+              "stopId": "osm-node-9201422096",
+              "station": "Batu Ceper",
+              "mode": "KRL",
+              "km": 2.022
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-tangerang-kost-putri-eksklusif-kost-suhandoyo-tipe-a-tangerang",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 1300000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 1300000.0,
+          "sourceUpdatedAt": "2026-11-08 11:49:11",
+          "sourceStatus": "unit_type_status.active",
+          "locality": "Tangerang, Tangerang",
+          "location": {
+            "lat": -6.179909,
+            "lng": 106.644463,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 12.0,
+          "landAreaM2": null,
+          "issues": ["resident-policy-needs-review"],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 1300000.0
+            },
+            {
+              "months": 3,
+              "amount": 3500000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": false,
+            "childrenAllowed": false
+          },
+          "residentGender": null,
+          "sourceDateKind": "modified",
+          "sha256": "6e3da9dc441d6298d3bc750e0b469e755667ae851b8fda2606fcf51731589968",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-316739060",
+              "station": "Tanah Tinggi",
+              "mode": "KRL",
+              "km": 0.583
+            },
+            {
+              "stopId": "osm-node-316739175",
+              "station": "Tangerang",
+              "mode": "KRL",
+              "km": 1.415
+            },
+            {
+              "stopId": "osm-node-9201422096",
+              "station": "Batu Ceper",
+              "mode": "KRL",
+              "km": 2.463
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-tangerang-kost-putri-eksklusif-kost-allegra-cisauk-bsd-cisauk-tangerang",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 1300000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 1300000.0,
+          "sourceUpdatedAt": "2021-12-15 00:33:58",
+          "sourceStatus": "public-offer",
+          "minimumRentMonths": 2,
+          "locality": "Cisauk, Kabupaten Tangerang",
+          "location": {
+            "lat": -6.335016,
+            "lng": 106.64892,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 12.0,
+          "landAreaM2": null,
+          "issues": [
+            "inactive-or-rented",
+            "source-availability-needs-review",
+            "resident-policy-needs-review"
+          ],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 1300000.0
+            },
+            {
+              "months": 3,
+              "amount": 3000000.0
+            },
+            {
+              "months": 6,
+              "amount": 9000000.0
+            },
+            {
+              "months": 12,
+              "amount": 12000000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": true
+          },
+          "residentGender": null,
+          "sourceDateKind": "modified",
+          "sha256": "85aacba69aed9df8de95d054e9716651f22f2472e10ce35ae80cd378099f5652",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-7249140957",
+              "station": "Cisauk",
+              "mode": "KRL",
+              "km": 1.425
+            },
+            {
+              "stopId": "osm-node-4152468605",
+              "station": "Serpong",
+              "mode": "KRL",
+              "km": 2.474
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-ernala-indekost-cisauk-tangerang",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 1400000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 1400000.0,
+          "sourceUpdatedAt": "2026-10-07 10:09:05",
+          "sourceStatus": "public-offer",
+          "minimumRentMonths": 3,
+          "locality": "Kecamatan Cisauk, Kabupaten Tangerang",
+          "location": {
+            "lat": -6.326337,
+            "lng": 106.649472,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 16.5,
+          "landAreaM2": null,
+          "issues": [
+            "inactive-or-rented",
+            "source-availability-needs-review",
+            "resident-policy-needs-review"
+          ],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 1400000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": false
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "e5477361e3162d1f24680417bf63e473331a211b0c333a7658c5dc32aa7d0b08",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-7249140957",
+              "station": "Cisauk",
+              "mode": "KRL",
+              "km": 0.892
+            },
+            {
+              "stopId": "osm-node-4152468605",
+              "station": "Serpong",
+              "mode": "KRL",
+              "km": 1.909
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-murah--295",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 800000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 800000.0,
+          "sourceUpdatedAt": "2026-11-03 15:33:18",
+          "sourceStatus": "public-offer",
+          "minimumRentMonths": 3,
+          "locality": "Cisauk, Kabupaten Tangerang",
+          "location": {
+            "lat": -6.324528,
+            "lng": 106.647012,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 12.0,
+          "landAreaM2": null,
+          "issues": ["inactive-or-rented", "resident-policy-needs-review"],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 800000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": false
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "d6b69fbb7ae25eb3e4c35c11aa7e3614b52889d24a87c4eb4e082325d8d57f4a",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-7249140957",
+              "station": "Cisauk",
+              "mode": "KRL",
+              "km": 0.595
+            },
+            {
+              "stopId": "osm-node-4152468605",
+              "station": "Serpong",
+              "mode": "KRL",
+              "km": 2.109
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-stariez-karawaci-deluxe-kelapa-dua-tangerang-2",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 2700000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 2700000.0,
+          "sourceUpdatedAt": "2025-07-25 16:55:58",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 1,
+          "locality": "Kecamatan Kelapa Dua, Kabupaten Tangerang",
+          "location": {
+            "lat": -6.234152,
+            "lng": 106.607994,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 12.0,
+          "landAreaM2": null,
+          "issues": ["resident-policy-needs-review"],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 2700000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": false
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "af1e493e52fd50b701905381d33ce61132cb23588da345de5770147ca43351ec",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://mamikos.com/room/kost-tangerang-kost-campur-murah-kost-bamboo-cisauk-tangerang-1",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "mamikos",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 500000.0,
+          "period": "monthly",
+          "monthlyEquivalent": 500000.0,
+          "sourceUpdatedAt": "2025-08-26 16:30:06",
+          "sourceStatus": "public-offer",
+          "minimumRentMonths": 3,
+          "locality": "Kecamatan Cisauk, Tangerang",
+          "location": {
+            "lat": -6.326416,
+            "lng": 106.63517,
+            "precision": "approximate"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 9.0,
+          "landAreaM2": null,
+          "issues": [
+            "inactive-or-rented",
+            "source-availability-needs-review",
+            "resident-policy-needs-review"
+          ],
+          "priceOptions": [
+            {
+              "months": 1,
+              "amount": 500000.0
+            }
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": false,
+            "childrenAllowed": false
+          },
+          "residentGender": "campur",
+          "sourceDateKind": "modified",
+          "sha256": "df04172dc1c0c32f5c889196496d13108aa9b9c2f3df4c38c48588906d693a05",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-7249140957",
+              "station": "Cisauk",
+              "mode": "KRL",
+              "km": 0.746
+            },
+            {
+              "stopId": "osm-node-1191930747",
+              "station": "Cicayur",
+              "mode": "KRL",
+              "km": 1.827
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        }
+      ]
+    },
+    {
+      "provider": "pinhome",
+      "robots": {
+        "checkedAt": "2026-11-26T12:43:59+00:00",
+        "sha256": "bd80918d676016550c280c37209645de71ec3d1eb9fb65d2e2cf0924a291285a",
+        "url": "https://www.pinhome.id/robots.txt"
+      },
+      "stopped": null,
+      "requests": 23,
+      "results": [
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-citayam",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 20000000,
+          "period": "yearly",
+          "monthlyEquivalent": 1666666.6666666667,
+          "sourceUpdatedAt": "2026-03-08T14:11:03Z",
+          "sourceStatus": "unit_type_status.rented",
+          "minimumRentMonths": 12,
+          "locality": "Ragajaya, Bojong Gede (Bojonggede), Kab. Bogor",
+          "location": {
+            "lat": -6.451279,
+            "lng": 106.782077,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 40.0,
+          "landAreaM2": 78.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "f4114f0eefa707999a1d077c8767bad9f900be494727e44e1d2d7c1b6c663a53",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-318841469",
+              "station": "Citayam",
+              "mode": "KRL",
+              "km": 2.258
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cluster-strategis-jl-lebar-stasiun-kranji-tol-lrt-di-igusti-ngurah-rai",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 30000000,
+          "period": "yearly",
+          "monthlyEquivalent": 2500000.0,
+          "sourceUpdatedAt": "2025-02-24T01:30:59Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Kranji, Bekasi Barat, Kota Bekasi",
+          "location": null,
+          "bedrooms": 2.0,
+          "buildingAreaM2": 52.0,
+          "landAreaM2": 72.0,
+          "issues": ["no-proven-location"],
+          "sha256": "0b22a17d1879dc108f76e937a105f78e3a17a9586fec31f058f08265fe28afc7",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-krl-dan-terminal-poris-cipondoh-di-jl-maulana-hasanudin-gg-swadaya",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 2000000,
+          "period": "monthly",
+          "monthlyEquivalent": 2000000.0,
+          "sourceUpdatedAt": "2026-06-22T23:07:49Z",
+          "sourceStatus": "unit_type_status.cancelled",
+          "minimumRentMonths": 6,
+          "locality": "Poris Gaga, Batuceper, Kota Tangerang",
+          "location": null,
+          "bedrooms": 2.0,
+          "buildingAreaM2": 45.0,
+          "landAreaM2": 55.0,
+          "issues": [
+            "inactive-or-rented",
+            "administrative-default-rejected",
+            "no-proven-location"
+          ],
+          "sha256": "4cefdea57581c4aaad832de655de4c4fcf3c43daf2ef4a48f32625aab633a60d",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-disewakan-cluster-strategis-stasiun-kranji-bekasi-di-igusti-ngurah-rai",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 32000000,
+          "period": "yearly",
+          "monthlyEquivalent": 2666666.6666666665,
+          "sourceUpdatedAt": "2026-06-10T13:41:39Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Kranji, Bekasi Barat, Kota Bekasi",
+          "location": null,
+          "bedrooms": 2.0,
+          "buildingAreaM2": 45.0,
+          "landAreaM2": 78.0,
+          "issues": ["administrative-default-rejected", "no-proven-location"],
+          "sha256": "fdc6f46167d0a27efe718d74e141ba4220c4e3240cfd53a6c742fc7810cf484d",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-komp-atsiri-permai-jl-kenanga-v-no-10",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 23000000,
+          "period": "yearly",
+          "monthlyEquivalent": 1916666.6666666667,
+          "sourceUpdatedAt": "2026-09-14T08:49:20Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Ragajaya, Bojong Gede (Bojonggede), Kab. Bogor",
+          "location": {
+            "lat": -6.443878,
+            "lng": 106.790462,
+            "precision": "approximate"
+          },
+          "bedrooms": 3.0,
+          "buildingAreaM2": 90.0,
+          "landAreaM2": 150.0,
+          "issues": ["usage-or-period-needs-review"],
+          "sha256": "9108d7d1a3139e89c05eac940fc5aaee0773cf50ca59a2540cb0038db94a0658",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-318841469",
+              "station": "Citayam",
+              "mode": "KRL",
+              "km": 1.425
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-di-serpong-garden-3-cisauk-di-cibogo",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 53000000,
+          "period": "yearly",
+          "monthlyEquivalent": 4416666.666666667,
+          "sourceUpdatedAt": "2026-08-25T13:35:21Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Cibogo, Cisauk, Kab. Tangerang",
+          "location": {
+            "lat": -6.336406,
+            "lng": 106.645947,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 42.0,
+          "landAreaM2": 50.0,
+          "issues": [],
+          "sha256": "335307757d25868ad10af7f9c8623484bee357ccd5bbab2856ef140b6f2f2f53",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-7249140957",
+              "station": "Cisauk",
+              "mode": "KRL",
+              "km": 1.413
+            },
+            {
+              "stopId": "osm-node-4152468605",
+              "station": "Serpong",
+              "mode": "KRL",
+              "km": 2.824
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-pinhome-5b2be14a7f85"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 19133333,
+          "period": "yearly",
+          "monthlyEquivalent": 1594444.4166666667,
+          "sourceUpdatedAt": "2026-09-16T00:49:17Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Durenjaya (Duren Jaya), Bekasi Timur, Kota Bekasi",
+          "location": {
+            "lat": -6.237042,
+            "lng": 107.02872,
+            "precision": "approximate"
+          },
+          "bedrooms": 3.0,
+          "buildingAreaM2": 60.0,
+          "landAreaM2": 60.0,
+          "issues": [],
+          "sha256": "0555ceb84646a1cc5f7cbe5d20e444f9ac7d4a34189e04a0f1a9cc398eb72dde",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-5155429394",
+              "station": "Bekasi Timur",
+              "mode": "KRL",
+              "km": 1.598
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-pinhome-ba1566f2ffe1"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-susukan",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 19000000,
+          "period": "yearly",
+          "monthlyEquivalent": 1583333.3333333333,
+          "sourceUpdatedAt": "2025-06-11T10:53:01Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Susukan, Bojong Gede (Bojonggede), Kab. Bogor",
+          "location": {
+            "lat": -6.458258,
+            "lng": 106.784902,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 100.0,
+          "landAreaM2": 60.0,
+          "issues": [],
+          "sha256": "5a51f939648d31e031cf4462f66c3c779d58434228d2267c9f3f2f3c34f5e899",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-318841469",
+              "station": "Citayam",
+              "mode": "KRL",
+              "km": 2.196
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-manual-review"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pertanian-selatan-kel-klender",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 40000000,
+          "period": "yearly",
+          "monthlyEquivalent": 3333333.3333333335,
+          "sourceUpdatedAt": "2025-09-20T20:33:31Z",
+          "sourceStatus": "unit_type_status.inactive",
+          "minimumRentMonths": 12,
+          "locality": "Klender, Duren Sawit, Kota Jakarta Timur",
+          "location": {
+            "lat": -6.217381,
+            "lng": 106.898708,
+            "precision": "approximate"
+          },
+          "bedrooms": 3.0,
+          "buildingAreaM2": 100.0,
+          "landAreaM2": 98.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "74651bee2b9b2935d4d3cfa9ac6dbd9f0472db4246836fbe657da90303ef273d",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11744682970",
+              "station": "Stasiun Klender",
+              "mode": "TransJakarta",
+              "km": 0.427
+            },
+            {
+              "stopId": "osm-node-4900932061",
+              "station": "Klender",
+              "mode": "KRL",
+              "km": 0.458
+            },
+            {
+              "stopId": "transjakarta-node-11744682969",
+              "station": "Klender",
+              "mode": "TransJakarta",
+              "km": 0.636
+            },
+            {
+              "stopId": "transjakarta-node-11744682971",
+              "station": "Cipinang",
+              "mode": "TransJakarta",
+              "km": 1.096
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-3kt-2km-dekat-sta-citayam-di-firdaus-alam-residences",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 15000000,
+          "period": "yearly",
+          "monthlyEquivalent": 1250000.0,
+          "sourceUpdatedAt": "2024-03-15T07:07:18Z",
+          "sourceStatus": "unit_type_status.rented",
+          "minimumRentMonths": 12,
+          "locality": "Ragajaya, Bojong Gede (Bojonggede), Kab. Bogor",
+          "location": {
+            "lat": -6.44761,
+            "lng": 106.769914,
+            "precision": "approximate"
+          },
+          "bedrooms": 3.0,
+          "buildingAreaM2": 60.0,
+          "landAreaM2": 88.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "d94f31544893b711c34ab5d2b9d1dfad6d3a6c1668c95a179a8b425b0c42ce35",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-pertahun-di-dekat-mrt-fatmawati",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 60000000,
+          "period": "yearly",
+          "monthlyEquivalent": 5000000.0,
+          "sourceUpdatedAt": "2026-10-09T05:58:57Z",
+          "sourceStatus": "unit_type_status.rented",
+          "minimumRentMonths": 12,
+          "locality": "Lebak Bulus, Cilandak, Kota Jakarta Selatan",
+          "location": {
+            "lat": -6.303741,
+            "lng": 106.781537,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 60.0,
+          "landAreaM2": 100.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "db3411c46ca2b3765da31e728571794b030abfbbc69264a7116993a5f5ae69ab",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "mrt-node-6195584512",
+              "station": "Fatmawati Indomaret",
+              "mode": "MRT",
+              "km": 1.744
+            },
+            {
+              "stopId": "mrt-node-6195584522",
+              "station": "Lebak Bulus Bank Syariah Indonesia",
+              "mode": "MRT",
+              "km": 1.768
+            },
+            {
+              "stopId": "transjakarta-node-11662288192",
+              "station": "Lebak Bulus",
+              "mode": "TransJakarta",
+              "km": 1.797
+            },
+            {
+              "stopId": "transjakarta-node-11957730026",
+              "station": "Underpass Lebak Bulus",
+              "mode": "TransJakarta",
+              "km": 1.898
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-pdam",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 1500000,
+          "period": "monthly",
+          "monthlyEquivalent": 1500000.0,
+          "sourceUpdatedAt": "2026-10-06T01:31:54Z",
+          "sourceStatus": "unit_type_status.inactive",
+          "minimumRentMonths": 1,
+          "locality": "Rawabuntu (Rawa Buntu), Serpong, Kota Tangerang Selatan",
+          "location": {
+            "lat": -6.317957,
+            "lng": 106.67738,
+            "precision": "approximate"
+          },
+          "bedrooms": 1.0,
+          "buildingAreaM2": 35.0,
+          "landAreaM2": 38.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "2a279cc30cfa6f13e16122ac650747b82da8e5ae8d6eea7767ec3333efe5b135",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-5459945761",
+              "station": "Rawa Buntu",
+              "mode": "KRL",
+              "km": 0.368
+            },
+            {
+              "stopId": "osm-node-4152468605",
+              "station": "Serpong",
+              "mode": "KRL",
+              "km": 1.326
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-asri-idaman-di-jln-raya-rawa-buntu-gg-haji-lati",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 30000000,
+          "period": "yearly",
+          "monthlyEquivalent": 2500000.0,
+          "sourceUpdatedAt": "2025-06-24T03:42:11Z",
+          "sourceStatus": "unit_type_status.inactive",
+          "minimumRentMonths": 12,
+          "locality": "Rawabuntu (Rawa Buntu), Serpong, Kota Tangerang Selatan",
+          "location": {
+            "lat": -6.317423,
+            "lng": 106.679892,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 85.0,
+          "landAreaM2": 100.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "e56acd6e3a8dfb73f295857427d6c896db7026c44c542a422fe233278a7803db",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-5459945761",
+              "station": "Rawa Buntu",
+              "mode": "KRL",
+              "km": 0.501
+            },
+            {
+              "stopId": "osm-node-4152468605",
+              "station": "Serpong",
+              "mode": "KRL",
+              "km": 1.61
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-ellada-di-metland-cibitung",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 13000000,
+          "period": "yearly",
+          "monthlyEquivalent": 1083333.3333333333,
+          "sourceUpdatedAt": "2025-06-11T10:53:01Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Telagamurni (Telaga Murni), Cikarang Barat, Kab. Bekasi",
+          "location": null,
+          "bedrooms": 1.0,
+          "buildingAreaM2": 22.0,
+          "landAreaM2": 72.0,
+          "issues": ["administrative-default-rejected", "no-proven-location"],
+          "sha256": "11cc641a2ed49073ee06231e910bf84ffd6dac854061757c56f9ff6ed064a2b6",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bebas-banjir-di-cluster-lisse-metland-cibitung",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 23000000,
+          "period": "yearly",
+          "monthlyEquivalent": 1916666.6666666667,
+          "sourceUpdatedAt": "2026-08-27T14:35:16Z",
+          "sourceStatus": "unit_type_status.rented",
+          "minimumRentMonths": 12,
+          "locality": "Telagamurni (Telaga Murni), Cikarang Barat, Kab. Bekasi",
+          "location": {
+            "lat": -6.252794,
+            "lng": 107.127118,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 38.0,
+          "landAreaM2": 72.0,
+          "issues": ["inactive-or-rented", "usage-or-period-needs-review"],
+          "sha256": "2155b9b7fa2f14bb27b5f45378eeb98a0765dd4be45cfb7428f6a54090c675c3",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-5312478122",
+              "station": "Metland Telagamurni",
+              "mode": "KRL",
+              "km": 1.832
+            },
+            {
+              "stopId": "osm-node-11185037567",
+              "station": "Cikarang",
+              "mode": "KRL",
+              "km": 2.004
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-dekat-stasiun-rawa-buntu-serpong",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 35000000,
+          "period": "yearly",
+          "monthlyEquivalent": 2916666.6666666665,
+          "sourceUpdatedAt": "2026-01-04T07:46:10Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Buaran, Serpong, Kota Tangerang Selatan",
+          "location": {
+            "lat": -6.336805,
+            "lng": 106.689028,
+            "precision": "approximate"
+          },
+          "bedrooms": 3.0,
+          "buildingAreaM2": 70.0,
+          "landAreaM2": 80.0,
+          "issues": [],
+          "sha256": "f1446b18c2194f27ad3f41be8b0d73f1d8ccf0653369244139bb355b0f131d0f",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-5459945761",
+              "station": "Rawa Buntu",
+              "mode": "KRL",
+              "km": 2.822
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-manual-review"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-hook-murah-di-permata-regensi-cibitung-di-permata-regensi",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 8500000,
+          "period": "yearly",
+          "monthlyEquivalent": 708333.3333333334,
+          "sourceUpdatedAt": "2025-09-02T13:56:14Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Wanasari, Cibitung, Kab. Bekasi",
+          "location": {
+            "lat": -6.236536,
+            "lng": 107.083252,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 90.0,
+          "landAreaM2": 114.0,
+          "issues": ["usage-or-period-needs-review"],
+          "sha256": "8ea1eff7aae4f13098c8a6a72d01886440a0d128571c24da15828cae2440a515",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-316744738",
+              "station": "Cibitung",
+              "mode": "KRL",
+              "km": 2.813
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-siap-huni-dekat-stasiun-rawabuntu-di-kencana-loka-bsd",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 45000000,
+          "period": "monthly",
+          "monthlyEquivalent": 45000000.0,
+          "sourceUpdatedAt": "2026-06-30T05:00:14Z",
+          "sourceStatus": "unit_type_status.cancelled",
+          "minimumRentMonths": 12,
+          "locality": "Rawabuntu (Rawa Buntu), Serpong, Kota Tangerang Selatan",
+          "location": {
+            "lat": -6.317031,
+            "lng": 106.685189,
+            "precision": "approximate"
+          },
+          "bedrooms": 3.0,
+          "buildingAreaM2": 100.0,
+          "landAreaM2": 160.0,
+          "issues": ["inactive-or-rented", "usage-or-period-needs-review"],
+          "sha256": "9888d7bbc78e7b7eaca3f63e6721b5b41414941364651f0c7af1a939cd23bb7c",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-5459945761",
+              "station": "Rawa Buntu",
+              "mode": "KRL",
+              "km": 1.027
+            },
+            {
+              "stopId": "osm-node-4152468605",
+              "station": "Serpong",
+              "mode": "KRL",
+              "km": 2.194
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-bumi-sani-permai-blok-k4-no10",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 15500000,
+          "period": "yearly",
+          "monthlyEquivalent": 1291666.6666666667,
+          "sourceUpdatedAt": "2025-08-13T00:41:38Z",
+          "sourceStatus": "unit_type_status.cancelled",
+          "minimumRentMonths": 12,
+          "locality": "Setiamekar, Tambun Selatan, Kab. Bekasi",
+          "location": {
+            "lat": -6.244556,
+            "lng": 107.051471,
+            "precision": "approximate"
+          },
+          "bedrooms": 3.0,
+          "buildingAreaM2": 80.0,
+          "landAreaM2": 60.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "0d447ccd6dfdcea0b3258caca0d7e77b5336743bc84f325395212420d83a488c",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-9201422030",
+              "station": "Tambun",
+              "mode": "KRL",
+              "km": 1.628
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-green-land-serpong-garden-2-cisauk",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 28000000,
+          "period": "yearly",
+          "monthlyEquivalent": 2333333.3333333335,
+          "sourceUpdatedAt": "2025-07-30T22:03:39Z",
+          "sourceStatus": "unit_type_status.rented",
+          "minimumRentMonths": 12,
+          "locality": "Suradita, Cisauk, Kab. Tangerang",
+          "location": {
+            "lat": -6.341641,
+            "lng": 106.640195,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 60.0,
+          "landAreaM2": 84.0,
+          "issues": ["inactive-or-rented", "usage-or-period-needs-review"],
+          "sha256": "eb5fa12982e0f5c79710b67fd53629299bbdeedbb73c99dc6b0d82d581f53cef",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-7249140957",
+              "station": "Cisauk",
+              "mode": "KRL",
+              "km": 1.919
+            },
+            {
+              "stopId": "osm-node-1191930747",
+              "station": "Cicayur",
+              "mode": "KRL",
+              "km": 2.696
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-graha-taman-kebayoran-di-tambun-selatan",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 18000000,
+          "period": "yearly",
+          "monthlyEquivalent": 1500000.0,
+          "sourceUpdatedAt": "2025-06-11T10:53:01Z",
+          "sourceStatus": "unit_type_status.rented",
+          "minimumRentMonths": 12,
+          "locality": "Tambun Selatan, Kab. Bekasi",
+          "location": null,
+          "bedrooms": 2.0,
+          "buildingAreaM2": 80.0,
+          "landAreaM2": 90.0,
+          "issues": [
+            "inactive-or-rented",
+            "administrative-default-rejected",
+            "no-proven-location"
+          ],
+          "sha256": "1221be9b47562624e8575b5a6cfa8585f69310741dc5187667d19c84e8e90288",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-super-strategis-delatinos-bsd-serpong-tangsel-di-rawabuntu-rawa-buntu",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 75000000,
+          "period": "yearly",
+          "monthlyEquivalent": 6250000.0,
+          "sourceUpdatedAt": "2026-09-13T12:48:50Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Rawabuntu (Rawa Buntu), Serpong, Kota Tangerang Selatan",
+          "location": {
+            "lat": -6.320069,
+            "lng": 106.67696,
+            "precision": "approximate"
+          },
+          "bedrooms": 3.0,
+          "buildingAreaM2": 80.0,
+          "landAreaM2": 112.0,
+          "issues": [],
+          "sha256": "d0f91d35f966825f4a9e88be1235336805f3f977e44f2d9db6bc56458d8273eb",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-5459945761",
+              "station": "Rawa Buntu",
+              "mode": "KRL",
+              "km": 0.583
+            },
+            {
+              "stopId": "osm-node-4152468605",
+              "station": "Serpong",
+              "mode": "KRL",
+              "km": 1.257
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "outside-budget"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-dekat-tol-stasiun-ka-cakung-di-bintara-bekasi",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 45000000,
+          "period": "yearly",
+          "monthlyEquivalent": 3750000.0,
+          "sourceUpdatedAt": "2026-07-21T12:06:33Z",
+          "sourceStatus": "unit_type_status.rented",
+          "minimumRentMonths": 12,
+          "locality": "Bintara, Bekasi Barat, Kota Bekasi",
+          "location": null,
+          "bedrooms": 3.0,
+          "buildingAreaM2": 120.0,
+          "landAreaM2": 150.0,
+          "issues": [
+            "inactive-or-rented",
+            "administrative-default-rejected",
+            "no-proven-location"
+          ],
+          "sha256": "15868cab4ed30a43ecd11624f02958e1b3ded77e31f0a278c4f973a1278b83c5",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-aman-di-rawabuntu-rawa-buntu",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 49500000,
+          "period": "yearly",
+          "monthlyEquivalent": 4125000.0,
+          "sourceUpdatedAt": "2026-11-03T16:43:22Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Rawabuntu (Rawa Buntu), Serpong, Kota Tangerang Selatan",
+          "location": null,
+          "bedrooms": 2.0,
+          "buildingAreaM2": 50.0,
+          "landAreaM2": 75.0,
+          "issues": ["administrative-default-rejected", "no-proven-location"],
+          "sha256": "bae05de0d3edcf9b69790dc455a3919791776b764ee3e509b61e43384e952edb",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pertanian-selatan",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 28000000,
+          "period": "yearly",
+          "monthlyEquivalent": 2333333.3333333335,
+          "sourceUpdatedAt": "2025-06-11T10:53:01Z",
+          "sourceStatus": "unit_type_status.cancelled",
+          "minimumRentMonths": 12,
+          "locality": "Klender, Duren Sawit, Kota Jakarta Timur",
+          "location": {
+            "lat": -6.215521,
+            "lng": 106.898618,
+            "precision": "approximate"
+          },
+          "bedrooms": 3.0,
+          "buildingAreaM2": 100.0,
+          "landAreaM2": 95.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "15e319856307906cd5f1609bb520aaf44318331b9caa8fb8477b841f9873108f",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11744682970",
+              "station": "Stasiun Klender",
+              "mode": "TransJakarta",
+              "km": 0.221
+            },
+            {
+              "stopId": "osm-node-4900932061",
+              "station": "Klender",
+              "mode": "KRL",
+              "km": 0.26
+            },
+            {
+              "stopId": "transjakarta-node-11744682969",
+              "station": "Klender",
+              "mode": "TransJakarta",
+              "km": 0.532
+            },
+            {
+              "stopId": "transjakarta-node-11744682971",
+              "station": "Cipinang",
+              "mode": "TransJakarta",
+              "km": 1.029
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-siap-huni-dekat-stasiun-rawa-buntu-di-serpong-hill-residence",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 40000000,
+          "period": "yearly",
+          "monthlyEquivalent": 3333333.3333333335,
+          "sourceUpdatedAt": "2024-07-30T15:05:49Z",
+          "sourceStatus": "unit_type_status.inactive",
+          "minimumRentMonths": 12,
+          "locality": "Ciater, Serpong, Kota Tangerang Selatan",
+          "location": null,
+          "bedrooms": 2.0,
+          "buildingAreaM2": 57.0,
+          "landAreaM2": 78.0,
+          "issues": ["inactive-or-rented", "no-proven-location"],
+          "sha256": "4215bc1712ac3b8ef0aa23fa517aedee0f483c90f6dd4c302e4ebd1c580e8c05",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-matraman-dalam-dekat-stasiun-manggarai-di-jl-matraman-dalam-i",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 35000000,
+          "period": "yearly",
+          "monthlyEquivalent": 2916666.6666666665,
+          "sourceUpdatedAt": "2025-12-11T10:53:06Z",
+          "sourceStatus": "unit_type_status.rented",
+          "minimumRentMonths": 12,
+          "locality": "Pegangsaan, Menteng, Kota Jakarta Pusat",
+          "location": null,
+          "bedrooms": 3.0,
+          "buildingAreaM2": 100.0,
+          "landAreaM2": 100.0,
+          "issues": [
+            "inactive-or-rented",
+            "administrative-default-rejected",
+            "no-proven-location"
+          ],
+          "sha256": "bcd4f670ec9370708f7f3ba7f0484f56370c5e897cefd7b71d375cc8475e93cc",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-3kt-153m-di-komp-atsiri-permai",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 12000000,
+          "period": "yearly",
+          "monthlyEquivalent": 1000000.0,
+          "sourceUpdatedAt": "2026-09-11T10:30:41Z",
+          "sourceStatus": "unit_type_status.inactive",
+          "minimumRentMonths": 12,
+          "locality": "Ragajaya, Bojong Gede (Bojonggede), Kab. Bogor",
+          "location": null,
+          "bedrooms": 3.0,
+          "buildingAreaM2": 100.0,
+          "landAreaM2": 153.0,
+          "issues": [
+            "inactive-or-rented",
+            "no-proven-location",
+            "usage-or-period-needs-review"
+          ],
+          "sha256": "d99fdfab2ddba97ecbdf480aff3a0ca21ce2ea04c4e2e88205db26cd05a0f01f",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-taman-buaran-indah-1",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 65000000,
+          "period": "yearly",
+          "monthlyEquivalent": 5416666.666666667,
+          "sourceUpdatedAt": "2025-06-11T10:53:01Z",
+          "sourceStatus": "unit_type_status.inactive",
+          "minimumRentMonths": 12,
+          "locality": "Klender, Duren Sawit, Kota Jakarta Timur",
+          "location": {
+            "lat": -6.216399,
+            "lng": 106.922889,
+            "precision": "approximate"
+          },
+          "bedrooms": 6.0,
+          "buildingAreaM2": 200.0,
+          "landAreaM2": 250.0,
+          "issues": ["inactive-or-rented", "usage-or-period-needs-review"],
+          "sha256": "2e9f950c003a26ad715a2a9fc57e13ede01ea53572020df2e1565ef242abcae7",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-3865048155",
+              "station": "Buaran",
+              "mode": "KRL",
+              "km": 0.093
+            },
+            {
+              "stopId": "transjakarta-node-11744647766",
+              "station": "Simpang Buaran",
+              "mode": "TransJakarta",
+              "km": 0.168
+            },
+            {
+              "stopId": "transjakarta-node-11744647767",
+              "station": "Buaran",
+              "mode": "TransJakarta",
+              "km": 0.588
+            },
+            {
+              "stopId": "transjakarta-node-11744647765",
+              "station": "Flyover Pondok Kopi",
+              "mode": "TransJakarta",
+              "km": 0.844
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kayu-manis-raya-no-11-permatsiri-permai",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 1800000,
+          "period": "monthly",
+          "monthlyEquivalent": 1800000.0,
+          "sourceUpdatedAt": "2026-02-12T21:45:21Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 3,
+          "locality": "Ragajaya, Bojong Gede (Bojonggede), Kab. Bogor",
+          "location": {
+            "lat": -6.447868,
+            "lng": 106.79294,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 60.0,
+          "landAreaM2": 60.0,
+          "issues": [],
+          "sha256": "a0b3899197e3310c70ac362a9fe9491c15ec99ae174142a7a5fdbeafbaa42ba6",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-318841469",
+              "station": "Citayam",
+              "mode": "KRL",
+              "km": 1.046
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "imported-partial",
+          "rentalId": "sewa-pinhome-558b13aa6527"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kost-dekat-mrt-lebak-bulus-poins-mall-di-lebak-bulus",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 3500000,
+          "period": "monthly",
+          "monthlyEquivalent": 3500000.0,
+          "sourceUpdatedAt": "2025-01-10T01:26:22Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 1,
+          "locality": "Lebak Bulus, Cilandak, Kota Jakarta Selatan",
+          "location": null,
+          "bedrooms": 1.0,
+          "buildingAreaM2": 350.0,
+          "landAreaM2": 500.0,
+          "issues": ["no-proven-location"],
+          "sha256": "819694806ecfa678b2c22d0af98bbae45c9cb7b3be698f8944ce21f5b40c9d07",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-ragajaya",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 1500000,
+          "period": "monthly",
+          "monthlyEquivalent": 1500000.0,
+          "sourceUpdatedAt": "2025-07-22T15:07:25Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 1,
+          "locality": "Ragajaya, Bojong Gede (Bojonggede), Kab. Bogor",
+          "location": {
+            "lat": -6.441234,
+            "lng": 106.785827,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 45.0,
+          "landAreaM2": 1200.0,
+          "issues": [],
+          "sha256": "c23da5730ff175f3d94b631974882f916ba8f2fbeffba95166798ced373c4c71",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-318841469",
+              "station": "Citayam",
+              "mode": "KRL",
+              "km": 2.012
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-manual-review"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kost-eksklusif-yasa-residence-dekat-mrt-fatmawati-di-cilandak-barat",
+          "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 4500000,
+          "period": "monthly",
+          "monthlyEquivalent": 4500000.0,
+          "sourceUpdatedAt": "2025-10-13T09:18:16Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 1,
+          "locality": "Cilandak Barat, Cilandak, Kota Jakarta Selatan",
+          "location": null,
+          "bedrooms": 1.0,
+          "buildingAreaM2": 20.0,
+          "landAreaM2": 20.0,
+          "issues": ["administrative-default-rejected", "no-proven-location"],
+          "sha256": "57b4b127a09b3b4e886344f5df7cd3ad5507302dbf4c417686e75edc92f1b9f0",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-alam-pondok-rajeg-blok-b-no-14",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 18000000,
+          "period": "yearly",
+          "monthlyEquivalent": 1500000.0,
+          "sourceUpdatedAt": "2025-06-11T10:53:01Z",
+          "sourceStatus": "unit_type_status.inactive",
+          "minimumRentMonths": 12,
+          "locality": "Pondok Rajeg, Cibinong, Kab. Bogor",
+          "location": {
+            "lat": -6.46016,
+            "lng": 106.820794,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 40.0,
+          "landAreaM2": 55.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "8e080116f35012520d2157db792144cab55803f2dcc0e1a53b9d341539751cf0",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-1228345121",
+              "station": "Pondok Rajeg",
+              "mode": "KRL",
+              "km": 0.393
+            },
+            {
+              "stopId": "osm-node-318841469",
+              "station": "Citayam",
+              "mode": "KRL",
+              "km": 2.395
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-dekat-stasiun-di-green-residence-pasir-putih-citayam-depok",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 17000000,
+          "period": "yearly",
+          "monthlyEquivalent": 1416666.6666666667,
+          "sourceUpdatedAt": "2025-06-11T10:53:01Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Pasir Putih, Sawangan, Kota Depok",
+          "location": {
+            "lat": -6.433115,
+            "lng": 106.788763,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 36.0,
+          "landAreaM2": 90.0,
+          "issues": [],
+          "sha256": "c8994379cd607f24de46af9ab8a0e93d05da3c8b3aaea02624c6df41f39a34bc",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-318841469",
+              "station": "Citayam",
+              "mode": "KRL",
+              "km": 2.304
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-manual-review"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-maulana-hasanudin",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 40000000,
+          "period": "yearly",
+          "monthlyEquivalent": 3333333.3333333335,
+          "sourceUpdatedAt": "2025-06-11T10:53:01Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 12,
+          "locality": "Poris Gaga, Batuceper, Kota Tangerang",
+          "location": {
+            "lat": -6.164351,
+            "lng": 106.680913,
+            "precision": "approximate"
+          },
+          "bedrooms": 3.0,
+          "buildingAreaM2": 70.0,
+          "landAreaM2": 99.0,
+          "issues": [],
+          "sha256": "bade5bf5d930cc2641741134749038485a7c93a7918a9968bf9cbd1f8f9ddabb",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-4149415299",
+              "station": "Poris",
+              "mode": "KRL",
+              "km": 0.599
+            },
+            {
+              "stopId": "osm-node-9201422096",
+              "station": "Batu Ceper",
+              "mode": "KRL",
+              "km": 1.927
+            },
+            {
+              "stopId": "osm-node-4905517383",
+              "station": "Kalideres",
+              "mode": "KRL",
+              "km": 2.529
+            },
+            {
+              "stopId": "transjakarta-node-11568418505",
+              "station": "Kalideres",
+              "mode": "TransJakarta",
+              "km": 2.966
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-manual-review"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cluster-mutiara-kencana-1",
+          "discovery": "web-index corridor search 2026-11-26",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 23000000,
+          "period": "yearly",
+          "monthlyEquivalent": 1916666.6666666667,
+          "sourceUpdatedAt": "2026-03-24T02:16:34Z",
+          "sourceStatus": "unit_type_status.rented",
+          "minimumRentMonths": 12,
+          "locality": "Poris Gaga Baru, Batuceper, Kota Tangerang",
+          "location": {
+            "lat": -6.176892,
+            "lng": 106.670219,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 70.0,
+          "landAreaM2": 70.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "899b0b4d6cc8d3f9b71c607ae1ecc401544a3c5c68e3f25c624d92835c444102",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "osm-node-9201422096",
+              "station": "Batu Ceper",
+              "mode": "KRL",
+              "km": 0.768
+            },
+            {
+              "stopId": "osm-node-4149415299",
+              "station": "Poris",
+              "mode": "KRL",
+              "km": 1.41
+            },
+            {
+              "stopId": "osm-node-316739060",
+              "station": "Tanah Tinggi",
+              "mode": "KRL",
+              "km": 2.606
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-tipe-studio-di-buncit-raya-jakarta-selatan-di-buncit-raya-kalibata-pulo",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 2000000,
+          "period": "monthly",
+          "monthlyEquivalent": 2000000.0,
+          "sourceUpdatedAt": "2025-07-27T11:55:24Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 1,
+          "locality": "Kalibata, Pancoran, Kota Jakarta Selatan",
+          "location": {
+            "lat": -6.269384,
+            "lng": 106.829958,
+            "precision": "approximate"
+          },
+          "bedrooms": 1.0,
+          "buildingAreaM2": 25.0,
+          "landAreaM2": 25.0,
+          "issues": [],
+          "sha256": "89d1baea34fb05e1b6557ab6da9af4e2b930d116286ad5a164a10c63de68b74a",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11618256318",
+              "station": "Buncit Indah",
+              "mode": "TransJakarta",
+              "km": 0.551
+            },
+            {
+              "stopId": "transjakarta-node-11618256317",
+              "station": "Warung Jati",
+              "mode": "TransJakarta",
+              "km": 0.784
+            },
+            {
+              "stopId": "transjakarta-node-11618256319",
+              "station": "Pejaten",
+              "mode": "TransJakarta",
+              "km": 1.004
+            },
+            {
+              "stopId": "transjakarta-node-11618256316",
+              "station": "Warung Buncit",
+              "mode": "TransJakarta",
+              "km": 1.394
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-manual-review"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-swadharma-raya-rt-04-rw-01-no-56-ulujami",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 3500000,
+          "period": "monthly",
+          "monthlyEquivalent": 3500000.0,
+          "sourceUpdatedAt": "2025-07-10T10:33:43Z",
+          "sourceStatus": "unit_type_status.inactive",
+          "minimumRentMonths": 1,
+          "locality": "Ulujami, Pesanggrahan, Kota Jakarta Selatan",
+          "location": {
+            "lat": -6.229053,
+            "lng": 106.759969,
+            "precision": "approximate"
+          },
+          "bedrooms": 3.0,
+          "buildingAreaM2": 200.0,
+          "landAreaM2": 100.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "bbe3ea6d39ff258988412a91febdd944ed95970e17ff61c7aaad24e1f6c546f4",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11618413219",
+              "station": "Swadarma ParagonCorp",
+              "mode": "TransJakarta",
+              "km": 0.945
+            },
+            {
+              "stopId": "transjakarta-node-11618413220",
+              "station": "JORR",
+              "mode": "TransJakarta",
+              "km": 0.979
+            },
+            {
+              "stopId": "transjakarta-node-11618413218",
+              "station": "Cipulir",
+              "mode": "TransJakarta",
+              "km": 1.14
+            },
+            {
+              "stopId": "transjakarta-node-11618413222",
+              "station": "Petukangan D'MASIV",
+              "mode": "TransJakarta",
+              "km": 1.58
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-ulujami",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 22000000,
+          "period": "yearly",
+          "monthlyEquivalent": 1833333.3333333333,
+          "sourceUpdatedAt": "2026-03-07T14:44:34Z",
+          "sourceStatus": "unit_type_status.inactive",
+          "minimumRentMonths": 12,
+          "locality": "Ulujami, Pesanggrahan, Kota Jakarta Selatan",
+          "location": {
+            "lat": -6.233407,
+            "lng": 106.759852,
+            "precision": "approximate"
+          },
+          "bedrooms": 1.0,
+          "buildingAreaM2": 40.0,
+          "landAreaM2": 50.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "767b8de8ec1bad0793fde6fad0ed93fd8a8267766e896e434d029286f2fe8591",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11618413219",
+              "station": "Swadarma ParagonCorp",
+              "mode": "TransJakarta",
+              "km": 0.466
+            },
+            {
+              "stopId": "transjakarta-node-11618413220",
+              "station": "JORR",
+              "mode": "TransJakarta",
+              "km": 0.639
+            },
+            {
+              "stopId": "transjakarta-node-11618413218",
+              "station": "Cipulir",
+              "mode": "TransJakarta",
+              "km": 0.779
+            },
+            {
+              "stopId": "transjakarta-node-11618413217",
+              "station": "Seskoal",
+              "mode": "TransJakarta",
+              "km": 1.353
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-cipulir-1",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 1000000,
+          "period": "monthly",
+          "monthlyEquivalent": 1000000.0,
+          "sourceUpdatedAt": "2025-10-14T13:44:42Z",
+          "sourceStatus": "unit_type_status.rented",
+          "minimumRentMonths": 1,
+          "locality": "Cipulir, Kebayoran Lama, Kota Jakarta Selatan",
+          "location": {
+            "lat": -6.236512,
+            "lng": 106.775586,
+            "precision": "approximate"
+          },
+          "bedrooms": 1.0,
+          "buildingAreaM2": 30.0,
+          "landAreaM2": 15.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "fd655a651e02f5bff1181c0356dbf0492564899f95464169779ec63d7d951ec6",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11618413216",
+              "station": "Kebayoran Lama",
+              "mode": "TransJakarta",
+              "km": 0.3
+            },
+            {
+              "stopId": "transjakarta-node-11618413217",
+              "station": "Seskoal",
+              "mode": "TransJakarta",
+              "km": 0.516
+            },
+            {
+              "stopId": "osm-node-5070781613",
+              "station": "Kebayoran",
+              "mode": "KRL",
+              "km": 0.772
+            },
+            {
+              "stopId": "transjakarta-node-11756936777",
+              "station": "Kebayoran",
+              "mode": "TransJakarta",
+              "km": 0.871
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontraka-kosan-anti-banjir-dimampang-jaksel-di-mampang-prapatan-xii-no7",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 2000000,
+          "period": "monthly",
+          "monthlyEquivalent": 2000000.0,
+          "sourceUpdatedAt": "2025-06-27T07:57:00Z",
+          "sourceStatus": "unit_type_status.cancelled",
+          "minimumRentMonths": 3,
+          "locality": "Tegal Parang, Mampang Prapatan, Kota Jakarta Selatan",
+          "location": {
+            "lat": -6.251294,
+            "lng": 106.828536,
+            "precision": "approximate"
+          },
+          "bedrooms": 1.0,
+          "buildingAreaM2": 35.0,
+          "landAreaM2": 35.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "81d86f229b5430615a88e97ae3021bfec0aba40dfbe22aa651d5cfb2d1588ce9",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11618256315",
+              "station": "Duren Tiga",
+              "mode": "TransJakarta",
+              "km": 0.208
+            },
+            {
+              "stopId": "transjakarta-node-11618256316",
+              "station": "Warung Buncit",
+              "mode": "TransJakarta",
+              "km": 0.634
+            },
+            {
+              "stopId": "transjakarta-node-11618256314",
+              "station": "Mampang Prapatan",
+              "mode": "TransJakarta",
+              "km": 1.012
+            },
+            {
+              "stopId": "transjakarta-node-11618256317",
+              "station": "Warung Jati",
+              "mode": "TransJakarta",
+              "km": 1.236
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-peeng-no-43a-kebon-jeruk",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 47000000,
+          "period": "yearly",
+          "monthlyEquivalent": 3916666.6666666665,
+          "sourceUpdatedAt": "2025-11-30T12:14:03Z",
+          "sourceStatus": "unit_type_status.cancelled",
+          "minimumRentMonths": 12,
+          "locality": "Kebon Jeruk, Kebon Jeruk, Kota Jakarta Barat",
+          "location": {
+            "lat": -6.197232,
+            "lng": 106.77728,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 48.0,
+          "landAreaM2": 70.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "4bfe9f839d1a4685969490e7097838fee427d5372aa2e5a79003ec7bb4f0d3a6",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11955033537",
+              "station": "Kebon Jeruk",
+              "mode": "TransJakarta",
+              "km": 0.984
+            },
+            {
+              "stopId": "transjakarta-node-11955033538",
+              "station": "Kelapa Dua Sasak",
+              "mode": "TransJakarta",
+              "km": 1.261
+            },
+            {
+              "stopId": "transjakarta-node-11955033536",
+              "station": "Duri Kepa",
+              "mode": "TransJakarta",
+              "km": 1.651
+            },
+            {
+              "stopId": "transjakarta-node-11955033539",
+              "station": "Pos Pengumben",
+              "mode": "TransJakarta",
+              "km": 1.832
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kontrakan-bulanan",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 3500000,
+          "period": "monthly",
+          "monthlyEquivalent": 3500000.0,
+          "sourceUpdatedAt": "2025-10-18T09:53:13Z",
+          "sourceStatus": "unit_type_status.cancelled",
+          "minimumRentMonths": 1,
+          "locality": "Sukabumi Selatan (Udik), Kebon Jeruk, Kota Jakarta Barat",
+          "location": null,
+          "bedrooms": 2.0,
+          "buildingAreaM2": 66.0,
+          "landAreaM2": 33.0,
+          "issues": [
+            "inactive-or-rented",
+            "administrative-default-rejected",
+            "no-proven-location"
+          ],
+          "sha256": "e3ea5e84a707d2e026f99d1f259abb4c0c4e98d87820a7dc62a52f9d0bc54a28",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-karet-pasar-baru-barat-iv-no-13",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 35000000,
+          "period": "yearly",
+          "monthlyEquivalent": 2916666.6666666665,
+          "sourceUpdatedAt": "2026-05-23T21:35:35Z",
+          "sourceStatus": "unit_type_status.inactive",
+          "minimumRentMonths": 12,
+          "locality": "Karet Tengsin, Tanah Abang, Kota Jakarta Pusat",
+          "location": {
+            "lat": -6.21032,
+            "lng": 106.812931,
+            "precision": "approximate"
+          },
+          "bedrooms": 2.0,
+          "buildingAreaM2": 45.0,
+          "landAreaM2": 40.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "a117c7f34c734424310f8a9d6e08703f60ce72d328ab760460b18b468b57c859",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11619467634",
+              "station": "Gerbang Pemuda Arah Timur",
+              "mode": "TransJakarta",
+              "km": 0.61
+            },
+            {
+              "stopId": "transjakarta-node-11619467635",
+              "station": "Gerbang Pemuda Arah Barat",
+              "mode": "TransJakarta",
+              "km": 0.638
+            },
+            {
+              "stopId": "mrt-node-3859689022",
+              "station": "Bendungan Hilir",
+              "mode": "MRT",
+              "km": 0.756
+            },
+            {
+              "stopId": "transjakarta-node-11564482128",
+              "station": "Bendungan Hilir",
+              "mode": "TransJakarta",
+              "km": 0.798
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-lokasi-strategis-di-cipinang-cempedak-4",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Apartemen",
+          "amount": 3500000,
+          "period": "monthly",
+          "monthlyEquivalent": 3500000.0,
+          "sourceUpdatedAt": "2024-03-15T07:07:18Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 1,
+          "locality": "Cipinang Cempedak, Jatinegara, Kota Jakarta Timur",
+          "location": null,
+          "bedrooms": 3.0,
+          "buildingAreaM2": 48.0,
+          "landAreaM2": null,
+          "issues": ["no-proven-location"],
+          "sha256": "2bbc267e82b592bbb2466940b72f2337a99bb15c5cc80147e4ad5812841c35ac",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kayu-manis-timur-utan-kayu-utara",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 1600000,
+          "period": "monthly",
+          "monthlyEquivalent": 1600000.0,
+          "sourceUpdatedAt": "2026-05-15T07:57:47Z",
+          "sourceStatus": "unit_type_status.rented",
+          "minimumRentMonths": 3,
+          "locality": "Utan Kayu Utara, Matraman, Kota Jakarta Timur",
+          "location": {
+            "lat": -6.198205,
+            "lng": 106.862735,
+            "precision": "approximate"
+          },
+          "bedrooms": 1.0,
+          "buildingAreaM2": 30.0,
+          "landAreaM2": 30.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "4d696094259185b8b1f84bf221746bd0498d7a5006704d4802621d97c08f3f67",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-4275299265",
+              "station": "Pasar Genjing",
+              "mode": "TransJakarta",
+              "km": 0.463
+            },
+            {
+              "stopId": "lrt-node-14074121194",
+              "station": "Matraman",
+              "mode": "LRT",
+              "km": 0.467
+            },
+            {
+              "stopId": "transjakarta-node-4275299272",
+              "station": "Utan Kayu",
+              "mode": "TransJakarta",
+              "km": 0.641
+            },
+            {
+              "stopId": "transjakarta-node-11576378125",
+              "station": "Tegalan",
+              "mode": "TransJakarta",
+              "km": 0.822
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gg-h-musonif-jln-cidodol-raya-no-4b-rt-07-6",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 2500000,
+          "period": "monthly",
+          "monthlyEquivalent": 2500000.0,
+          "sourceUpdatedAt": "2026-11-24T02:41:28Z",
+          "sourceStatus": "unit_type_status.cancelled",
+          "minimumRentMonths": 12,
+          "locality": "Grogol Selatan, Kebayoran Lama, Kota Jakarta Selatan",
+          "location": {
+            "lat": -6.229666,
+            "lng": 106.773256,
+            "precision": "approximate"
+          },
+          "bedrooms": 1.0,
+          "buildingAreaM2": 30.0,
+          "landAreaM2": 35.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "0aca99c801499818bbe260257ff692c163b9b66104f7c87b2339a6048116a5d6",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11618413217",
+              "station": "Seskoal",
+              "mode": "TransJakarta",
+              "km": 0.958
+            },
+            {
+              "stopId": "transjakarta-node-11618413216",
+              "station": "Kebayoran Lama",
+              "mode": "TransJakarta",
+              "km": 1.076
+            },
+            {
+              "stopId": "transjakarta-node-11618413218",
+              "station": "Cipulir",
+              "mode": "TransJakarta",
+              "km": 1.259
+            },
+            {
+              "stopId": "osm-node-5070781613",
+              "station": "Kebayoran",
+              "mode": "KRL",
+              "km": 1.326
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-3-petak-per-bulan-dengan-lokasi-strategis-di-jl-kebon-kelapa-bawah-rt-13-rw-11-nomor-8d-cidodol-grogol-selatan-kebayoran-lama-jakarta-selatan-12220",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 1400000,
+          "period": "monthly",
+          "monthlyEquivalent": 1400000.0,
+          "sourceUpdatedAt": "2025-09-24T14:56:25Z",
+          "sourceStatus": "unit_type_status.active",
+          "minimumRentMonths": 1,
+          "locality": "Grogol Selatan, Kebayoran Lama, Kota Jakarta Selatan",
+          "location": null,
+          "bedrooms": 1.0,
+          "buildingAreaM2": 25.0,
+          "landAreaM2": 29.0,
+          "issues": ["administrative-default-rejected", "no-proven-location"],
+          "sha256": "d49c1ba6b17301041a5b2658c83863ce0370705f72bb2a6448a3e72e09daee32",
+          "checkedAt": "2026-11-26",
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-source-issues"
+        },
+        {
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tanjung-lengkong-43-rt-011-rw-007",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "pinhome",
+          "status": "detail-read",
+          "kind": "Rumah",
+          "amount": 1650000,
+          "period": "monthly",
+          "monthlyEquivalent": 1650000.0,
+          "sourceUpdatedAt": "2025-08-17T17:23:26Z",
+          "sourceStatus": "unit_type_status.cancelled",
+          "minimumRentMonths": 1,
+          "locality": "Bidara Cina (Bidaracina), Jatinegara, Kota Jakarta Timur",
+          "location": {
+            "lat": -6.240062,
+            "lng": 106.865847,
+            "precision": "approximate"
+          },
+          "bedrooms": 1.0,
+          "buildingAreaM2": 16.0,
+          "landAreaM2": 19.0,
+          "issues": ["inactive-or-rented"],
+          "sha256": "3b90e377b208d677653cb19ba276a2634e413776bc8edb31e8daf73fbb5da598",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11622265894",
+              "station": "Ciliwung Arah Timur",
+              "mode": "TransJakarta",
+              "km": 0.414
+            },
+            {
+              "stopId": "lrt-node-9124369223",
+              "station": "Ciliwung",
+              "mode": "LRT",
+              "km": 0.428
+            },
+            {
+              "stopId": "transjakarta-node-11622265893",
+              "station": "Ciliwung Arah Barat",
+              "mode": "TransJakarta",
+              "km": 0.437
+            },
+            {
+              "stopId": "transjakarta-node-11576512488",
+              "station": "Cawang Baru",
+              "mode": "TransJakarta",
+              "km": 0.513
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        }
+      ]
+    },
+    {
+      "provider": "rukita",
+      "robots": {
+        "checkedAt": "2026-11-26T12:45:17+00:00",
+        "sha256": "a7c5bf495af1b4dbaa02cfc756753e3067a339e109d600a95efcda61b57928fa",
+        "url": "https://www.rukita.co/robots.txt"
+      },
+      "stopped": null,
+      "requests": 5,
+      "results": [
+        {
+          "url": "https://www.rukita.co/place/rukita-denali-kemanggisan-slipi",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "rukita",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 1718000,
+          "period": "monthly",
+          "monthlyEquivalent": 1718000.0,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "public-offer",
+          "locality": "Jakarta Barat, Jakarta",
+          "location": {
+            "lat": -6.19597,
+            "lng": 106.787758,
+            "precision": "building"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 6.24,
+          "landAreaM2": null,
+          "issues": [],
+          "residentPolicy": {
+            "marriedCouplesAllowed": false,
+            "childrenAllowed": true
+          },
+          "residentGender": null,
+          "sourceDateKind": "not-published",
+          "sha256": "bbda90a831c03b886bfc143c1bf9a5573a42773e313814999946ca165a1c2111",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11619467630",
+              "station": "Kemanggisan Arah Utara",
+              "mode": "TransJakarta",
+              "km": 1.226
+            },
+            {
+              "stopId": "transjakarta-node-11619467629",
+              "station": "Kemanggisan Arah Selatan",
+              "mode": "TransJakarta",
+              "km": 1.253
+            },
+            {
+              "stopId": "transjakarta-node-11619467644",
+              "station": "Petamburan",
+              "mode": "TransJakarta",
+              "km": 1.498
+            },
+            {
+              "stopId": "transjakarta-node-11619467627",
+              "station": "Kota Bambu Arah Selatan",
+              "mode": "TransJakarta",
+              "km": 1.574
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.rukita.co/place/the-palmera-kemanggisan",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "rukita",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": null,
+          "period": null,
+          "monthlyEquivalent": null,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "public-offer",
+          "locality": "Jakarta Barat, Jakarta",
+          "location": {
+            "lat": -6.195008,
+            "lng": 106.784622,
+            "precision": "building"
+          },
+          "bedrooms": null,
+          "buildingAreaM2": null,
+          "landAreaM2": null,
+          "issues": [
+            "inactive-or-rented",
+            "invalid-rent",
+            "unknown-rent-period"
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": false,
+            "childrenAllowed": true
+          },
+          "residentGender": null,
+          "sourceDateKind": "not-published",
+          "sha256": "ce37245042e10baa28c442567a96f3b87f8afc8c0ea831126dabf748a3b3ad7d",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11619467630",
+              "station": "Kemanggisan Arah Utara",
+              "mode": "TransJakarta",
+              "km": 1.482
+            },
+            {
+              "stopId": "transjakarta-node-11619467629",
+              "station": "Kemanggisan Arah Selatan",
+              "mode": "TransJakarta",
+              "km": 1.511
+            },
+            {
+              "stopId": "transjakarta-node-11955033537",
+              "station": "Kebon Jeruk",
+              "mode": "TransJakarta",
+              "km": 1.742
+            },
+            {
+              "stopId": "transjakarta-node-11619467627",
+              "station": "Kota Bambu Arah Selatan",
+              "mode": "TransJakarta",
+              "km": 1.752
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.rukita.co/place/executive-house-tulodong-scbd",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "rukita",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": null,
+          "period": null,
+          "monthlyEquivalent": null,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "public-offer",
+          "locality": "Jakarta Selatan, Jakarta",
+          "location": {
+            "lat": -6.230973,
+            "lng": 106.810824,
+            "precision": "building"
+          },
+          "bedrooms": null,
+          "buildingAreaM2": null,
+          "landAreaM2": null,
+          "issues": [
+            "inactive-or-rented",
+            "invalid-rent",
+            "unknown-rent-period"
+          ],
+          "residentPolicy": {
+            "marriedCouplesAllowed": null,
+            "childrenAllowed": false
+          },
+          "residentGender": null,
+          "sourceDateKind": "not-published",
+          "sha256": "ba2807f6dae7df56c5933a2ed971c0285a23f84580b6b53418243426e23f2902",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11618522864",
+              "station": "Widya Chandra Telkomsel Arah Barat",
+              "mode": "TransJakarta",
+              "km": 0.852
+            },
+            {
+              "stopId": "transjakarta-node-11618522865",
+              "station": "Widya Chandra Telkomsel Arah Timur",
+              "mode": "TransJakarta",
+              "km": 0.881
+            },
+            {
+              "stopId": "transjakarta-node-11564482130",
+              "station": "Senayan Bank Jakarta",
+              "mode": "TransJakarta",
+              "km": 0.934
+            },
+            {
+              "stopId": "transjakarta-node-11618413212",
+              "station": "Pasar Santa",
+              "mode": "TransJakarta",
+              "km": 0.975
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        },
+        {
+          "url": "https://www.rukita.co/place/pasadena-karbela-setiabudi",
+          "discovery": "research/scbd-rental-leads-2026-11-26.json",
+          "provider": "rukita",
+          "status": "detail-read",
+          "kind": "Kos",
+          "amount": 2718000,
+          "period": "monthly",
+          "monthlyEquivalent": 2718000.0,
+          "sourceUpdatedAt": null,
+          "sourceStatus": "public-offer",
+          "locality": "Jakarta Selatan, Jakarta",
+          "location": {
+            "lat": -6.215599,
+            "lng": 106.826387,
+            "precision": "building"
+          },
+          "bedrooms": 1,
+          "buildingAreaM2": 7.05,
+          "landAreaM2": null,
+          "issues": [],
+          "residentPolicy": {
+            "marriedCouplesAllowed": true,
+            "childrenAllowed": true
+          },
+          "residentGender": null,
+          "sourceDateKind": "not-published",
+          "sha256": "481a8fa3100571f1131b36276f917663c4a826e676fe13870f94a0e64120c8f1",
+          "checkedAt": "2026-11-26",
+          "nearbyTransit": [
+            {
+              "stopId": "transjakarta-node-11613170645",
+              "station": "Karet Kuningan",
+              "mode": "TransJakarta",
+              "km": 0.504
+            },
+            {
+              "stopId": "transjakarta-node-11613170644",
+              "station": "Kuningan Madya",
+              "mode": "TransJakarta",
+              "km": 0.525
+            },
+            {
+              "stopId": "transjakarta-node-11564482127",
+              "station": "Karet",
+              "mode": "TransJakarta",
+              "km": 0.784
+            },
+            {
+              "stopId": "lrt-node-9124364689",
+              "station": "Setiabudi",
+              "mode": "LRT",
+              "km": 0.818
+            }
+          ],
+          "availability": "not-confirmed-with-advertiser",
+          "resolution": "hold-availability"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya",
+      "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+      "reason": "already-catalogued-or-duplicate-url"
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlflamboyan-cluster-b",
+      "discovery": "research/koridor-krl-mrt-2026-11-26.md",
+      "reason": "already-catalogued-or-duplicate-url"
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-pembangunan-2-rt-002-rw-10-kel-poris",
+      "discovery": "web-index corridor search 2026-11-26",
+      "reason": "already-catalogued-or-duplicate-url"
+    },
+    {
+      "url": "https://jualsewaproperti.com/property/rumah-disewakan-di-cikoko-pancoran-jakarta-selatan-dekat-stasiun-cawang-tebet-eco-park-rs-tebet-rsud-budhi-asih-kampus-uki-2/",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "unsupported-detail-url"
+    },
+    {
+      "url": "https://www.rumah123.com/properti/jakarta-selatan-kalibata/kalibata-city-2-bed-rooms-semi-furnished-strategis-apr7753835/",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "unsupported-detail-url"
+    },
+    {
+      "url": "https://www.rumah123.com/properti/jakarta-selatan-kalibata/disewakan-apartemen-kalibata-tower-nusa-2-kamar-full-furnished-lt-16-apr7832507/",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "unsupported-detail-url"
+    },
+    {
+      "url": "https://www.rumah123.com/properti/jakarta-selatan-kalibata/tower-flamboyan-2-br-rapi-diatas-mall-kalibata-city-square-apr3405342/",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "unsupported-detail-url"
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-panjang-gg-h-daud-kebon-jeruk",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "already-catalogued-or-duplicate-url"
+    },
+    {
+      "url": "https://www.rumah123.com/properti/jakarta-selatan-cipulir/apartement-strategis-cipulir-seskoal-apr2287032/",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "unsupported-detail-url"
+    },
+    {
+      "url": "https://www.rumah123.com/properti/jakarta-selatan-cipulir/sewa-2br-apartemen-pakubuwono-terrace-cipulir-apr7827487/",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "unsupported-detail-url"
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARA014",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "already-catalogued-or-duplicate-url"
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARC190",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "already-catalogued-or-duplicate-url"
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARB079",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "already-catalogued-or-duplicate-url"
+    },
+    {
+      "url": "https://www.sewa-apartemen.net/181502/jual-sewa-apartemen-pancoran-riverside-2-br-42-m2-full-furnished-lantai-3/",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "unsupported-detail-url"
+    },
+    {
+      "url": "https://www.sewa-apartemen.net/139719/disewakan-apartemen-pancoran-riverside-jakarta-selatan-1-bedroom-33-m2-full-furnished/",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "unsupported-detail-url"
+    },
+    {
+      "url": "https://www.sewa-apartemen.net/176401/sewa-apartment-pancoran-riverside-1-bedroom-30-m2-full-furnished-di-jakarta-selatan-langsung-pemilik/",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "unsupported-detail-url"
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-otista-82-rt-6-6-no-18-bidara-cina",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "already-catalogued-or-duplicate-url"
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-galur-sari-iii",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "already-catalogued-or-duplicate-url"
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlotista-82-jakarta",
+      "discovery": "research/scbd-rental-leads-2026-11-26.json",
+      "reason": "already-catalogued-or-duplicate-url"
+    }
+  ],
+  "additionalRuns": [
+    {
+      "provider": "mamikos",
+      "robots": {
+        "checkedAt": "2026-11-26T12:49:04+00:00",
+        "sha256": "3e71ba5740924fb8bfe65c34b89988fa71d44c5b896ce4aff1c97059064ccaa6",
+        "url": "https://mamikos.com/robots.txt"
+      },
+      "stopped": null,
+      "requests": 9
+    },
+    {
+      "provider": "pinhome",
+      "robots": {
+        "checkedAt": "2026-11-26T12:49:04+00:00",
+        "sha256": "bd80918d676016550c280c37209645de71ec3d1eb9fb65d2e2cf0924a291285a",
+        "url": "https://www.pinhome.id/robots.txt"
+      },
+      "stopped": null,
+      "requests": 29
+    }
+  ]
+}

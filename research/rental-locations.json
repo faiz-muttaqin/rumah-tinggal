@@ -13495,6 +13495,201 @@
         "checkedAt": "2026-11-26"
       },
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-jendela360-0b9f1622f0d9",
+      "location": {
+        "lat": -6.203631,
+        "lng": 106.948933,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-fc81c516f073",
+      "location": {
+        "lat": -6.325092,
+        "lng": 106.64218,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA074",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-8e96ed7d0a30",
+      "location": {
+        "lat": -6.3635,
+        "lng": 106.8345,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA001",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-c3d81a7f2d4e",
+      "location": {
+        "lat": -6.325092,
+        "lng": 106.64218,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA201",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-a9f6e462db6f",
+      "location": {
+        "lat": -6.3635,
+        "lng": 106.8345,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA005",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-95956890c40e",
+      "location": {
+        "lat": -6.3635,
+        "lng": 106.8345,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA040",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-dd57ab0ac8d0",
+      "location": {
+        "lat": -6.3635,
+        "lng": 106.8345,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA023",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-8347d1b461bd",
+      "location": {
+        "lat": -6.3635,
+        "lng": 106.8345,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA003",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-958a3c221bd0",
+      "location": {
+        "lat": -6.3635,
+        "lng": 106.8345,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB008",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-mamikos-d00e8ef7c1dd",
+      "location": {
+        "lat": -6.223149,
+        "lng": 106.818156,
+        "precision": "approximate",
+        "label": "Pin perkiraan mamikos",
+        "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-karet-sawah-i-tipe-a-setiabudi-jakarta-selatan",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-mamikos-d06a4e80f031",
+      "location": {
+        "lat": -6.171781,
+        "lng": 106.670904,
+        "precision": "approximate",
+        "label": "Pin perkiraan mamikos",
+        "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-renz-home-poris-88-batuceper-tangerang",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-mamikos-d6c25c306891",
+      "location": {
+        "lat": -6.145658,
+        "lng": 106.67711,
+        "precision": "approximate",
+        "label": "Pin perkiraan mamikos",
+        "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-duta-garden-14-standart-benda-tangerang",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-5b2be14a7f85",
+      "location": {
+        "lat": -6.336406,
+        "lng": 106.645947,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-di-serpong-garden-3-cisauk-di-cibogo",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-ba1566f2ffe1",
+      "location": {
+        "lat": -6.237042,
+        "lng": 107.02872,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-558b13aa6527",
+      "location": {
+        "lat": -6.447868,
+        "lng": 106.79294,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kayu-manis-raya-no-11-permatsiri-permai",
+        "method": "Titik publik pada data detail penawaran",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
     }
   ]
 }

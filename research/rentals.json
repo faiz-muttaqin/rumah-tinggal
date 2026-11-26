@@ -32794,6 +32794,552 @@
       "ownerType": "unknown",
       "verdict": "partial",
       "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-jendela360-0b9f1622f0d9",
+      "title": "Sentra Timur Residence — Studio, 21 m² (STRA003)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Jakarta",
+      "locationText": "Cakung, Jakarta Timur",
+      "buildingOrCluster": "Sentra Timur Residence",
+      "rent": {
+        "amount": 3500000,
+        "period": "monthly",
+        "quote": "Rp3.500.000/bulan",
+        "url": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003",
+        "pageDate": null,
+        "minimumMonths": 1
+      },
+      "bedrooms": 0,
+      "sizeM2": 21.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp3.500.000/bulan",
+          "url": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 1.06 km ke TransJakarta Walikota Jakarta Timur."
+    },
+    {
+      "id": "sewa-jendela360-fc81c516f073",
+      "title": "Serpong Garden Apartment — Studio, 20 m² (SPGA074)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Cisauk, Tangerang",
+      "buildingOrCluster": "Serpong Garden Apartment",
+      "rent": {
+        "amount": 3200000,
+        "period": "monthly",
+        "quote": "Rp3.200.000/bulan",
+        "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA074",
+        "pageDate": null,
+        "minimumMonths": 1
+      },
+      "bedrooms": 0,
+      "sizeM2": 20.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp3.200.000/bulan",
+          "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA074"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA074",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.10 km ke KRL Cisauk."
+    },
+    {
+      "id": "sewa-jendela360-8e96ed7d0a30",
+      "title": "Margonda Residence — Studio, 24 m² (MGDA001)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Depok",
+      "locationText": "Margonda, Depok",
+      "buildingOrCluster": "Margonda Residence",
+      "rent": {
+        "amount": 35860000,
+        "period": "yearly",
+        "quote": "Rp35.860.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA001",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 24.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp35.860.000/tahun",
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA001"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA001",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.46 km ke KRL Universitas Indonesia."
+    },
+    {
+      "id": "sewa-jendela360-c3d81a7f2d4e",
+      "title": "Serpong Garden Apartment — Studio, 20 m² (SPGA201)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Tangerang",
+      "locationText": "Cisauk, Tangerang",
+      "buildingOrCluster": "Serpong Garden Apartment",
+      "rent": {
+        "amount": 1400000,
+        "period": "monthly",
+        "quote": "Rp1.400.000/bulan",
+        "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA201",
+        "pageDate": null,
+        "minimumMonths": 1
+      },
+      "bedrooms": 0,
+      "sizeM2": 20.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp1.400.000/bulan",
+          "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA201"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA201",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.10 km ke KRL Cisauk."
+    },
+    {
+      "id": "sewa-jendela360-a9f6e462db6f",
+      "title": "Margonda Residence — Studio, 21 m² (MGDA005)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Depok",
+      "locationText": "Margonda, Depok",
+      "buildingOrCluster": "Margonda Residence",
+      "rent": {
+        "amount": 12300000,
+        "period": "yearly",
+        "quote": "Rp12.300.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA005",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 21.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp12.300.000/tahun",
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA005"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA005",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.46 km ke KRL Universitas Indonesia."
+    },
+    {
+      "id": "sewa-jendela360-95956890c40e",
+      "title": "Margonda Residence — Studio, 21 m² (MGDA040)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Depok",
+      "locationText": "Margonda, Depok",
+      "buildingOrCluster": "Margonda Residence",
+      "rent": {
+        "amount": 44440000,
+        "period": "yearly",
+        "quote": "Rp44.440.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA040",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 21.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp44.440.000/tahun",
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA040"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA040",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.46 km ke KRL Universitas Indonesia."
+    },
+    {
+      "id": "sewa-jendela360-dd57ab0ac8d0",
+      "title": "Margonda Residence — Studio, 24 m² (MGDA023)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Depok",
+      "locationText": "Margonda, Depok",
+      "buildingOrCluster": "Margonda Residence",
+      "rent": {
+        "amount": 21500000,
+        "period": "yearly",
+        "quote": "Rp21.500.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA023",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 24.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp21.500.000/tahun",
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA023"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA023",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.46 km ke KRL Universitas Indonesia."
+    },
+    {
+      "id": "sewa-jendela360-8347d1b461bd",
+      "title": "Margonda Residence — Studio, 22 m² (MGDA003)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Depok",
+      "locationText": "Margonda, Depok",
+      "buildingOrCluster": "Margonda Residence",
+      "rent": {
+        "amount": 33840000,
+        "period": "yearly",
+        "quote": "Rp33.840.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA003",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 0,
+      "sizeM2": 22.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp33.840.000/tahun",
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA003"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA003",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.46 km ke KRL Universitas Indonesia."
+    },
+    {
+      "id": "sewa-jendela360-958a3c221bd0",
+      "title": "Margonda Residence — 1 kamar, 24 m² (MGDB008)",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Depok",
+      "locationText": "Margonda, Depok",
+      "buildingOrCluster": "Margonda Residence",
+      "rent": {
+        "amount": 22900000,
+        "period": "yearly",
+        "quote": "Rp22.900.000/tahun",
+        "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB008",
+        "pageDate": null,
+        "minimumMonths": 12
+      },
+      "bedrooms": 1,
+      "sizeM2": 24.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp22.900.000/tahun",
+          "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB008"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB008",
+      "sourcePortal": "jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.46 km ke KRL Universitas Indonesia."
+    },
+    {
+      "id": "sewa-mamikos-d00e8ef7c1dd",
+      "title": "Kos Karet Sawah I Tipe A",
+      "kind": "Rumah",
+      "rentalType": "kos-keluarga",
+      "area": "Jakarta",
+      "locationText": "Setia Budi, Kota Jakarta Selatan",
+      "buildingOrCluster": "Karet Sawah I",
+      "rent": {
+        "amount": 2700000,
+        "period": "monthly",
+        "quote": "Rp2.700.000/bulan",
+        "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-karet-sawah-i-tipe-a-setiabudi-jakarta-selatan",
+        "pageDate": "2026-08-10"
+      },
+      "bedrooms": 1,
+      "sizeM2": 22.75,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp2.700.000/bulan",
+          "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-karet-sawah-i-tipe-a-setiabudi-jakarta-selatan"
+        },
+        {
+          "quote": "Detail portal: kategori campur; pasutri dan anak diizinkan.",
+          "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-karet-sawah-i-tipe-a-setiabudi-jakarta-selatan"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-karet-sawah-i-tipe-a-setiabudi-jakarta-selatan",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-08-10",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dasar bulanan pada detail portal. Portal menandai pasutri dan anak diizinkan; biaya penghuni kedua/anak, deposit, syarat dan stok perlu konfirmasi. Jarak garis lurus sekitar 0.40 km ke TransJakarta Widya Chandra Telkomsel Arah Timur.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
+    },
+    {
+      "id": "sewa-mamikos-d06a4e80f031",
+      "title": "Kos Renz Home Poris 88",
+      "kind": "Rumah",
+      "rentalType": "kos-keluarga",
+      "area": "Tangerang",
+      "locationText": "Batuceper, Kota Tangerang",
+      "buildingOrCluster": "Renz Home Poris 88",
+      "rent": {
+        "amount": 2500000,
+        "period": "monthly",
+        "quote": "Rp2.500.000/bulan",
+        "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-renz-home-poris-88-batuceper-tangerang",
+        "pageDate": "2026-10-14"
+      },
+      "bedrooms": 1,
+      "sizeM2": 21.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp2.500.000/bulan",
+          "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-renz-home-poris-88-batuceper-tangerang"
+        },
+        {
+          "quote": "Detail portal: kategori campur; pasutri dan anak diizinkan.",
+          "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-renz-home-poris-88-batuceper-tangerang"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-renz-home-poris-88-batuceper-tangerang",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-10-14",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dasar bulanan pada detail portal. Portal menandai pasutri dan anak diizinkan; biaya penghuni kedua/anak, deposit, syarat dan stok perlu konfirmasi. Jarak garis lurus sekitar 0.62 km ke KRL Batu Ceper.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
+    },
+    {
+      "id": "sewa-mamikos-d6c25c306891",
+      "title": "Kos Duta Garden 14 Standart",
+      "kind": "Rumah",
+      "rentalType": "kos-keluarga",
+      "area": "Tangerang",
+      "locationText": "Benda, Tangerang",
+      "buildingOrCluster": "Duta Garden 14",
+      "rent": {
+        "amount": 2200000,
+        "period": "monthly",
+        "quote": "Rp2.200.000/bulan",
+        "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-duta-garden-14-standart-benda-tangerang",
+        "pageDate": "2026-11-03"
+      },
+      "bedrooms": 1,
+      "sizeM2": 15.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp2.200.000/bulan",
+          "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-duta-garden-14-standart-benda-tangerang"
+        },
+        {
+          "quote": "Detail portal: kategori campur; pasutri dan anak diizinkan.",
+          "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-duta-garden-14-standart-benda-tangerang"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-duta-garden-14-standart-benda-tangerang",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-11-03",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga dasar bulanan pada detail portal. Portal menandai pasutri dan anak diizinkan; biaya penghuni kedua/anak, deposit, syarat dan stok perlu konfirmasi. Jarak garis lurus sekitar 2.71 km ke KRL Poris.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
+    },
+    {
+      "id": "sewa-pinhome-5b2be14a7f85",
+      "title": "Rumah Serpong Garden 3, Cibogo — 2 kamar",
+      "kind": "Rumah",
+      "rentalType": "rumah-sewa",
+      "area": "Tangerang",
+      "locationText": "Cibogo, Cisauk, Kab. Tangerang",
+      "buildingOrCluster": "Serpong Garden 3",
+      "rent": {
+        "amount": 53000000,
+        "period": "yearly",
+        "quote": "Rp53.000.000/tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-di-serpong-garden-3-cisauk-di-cibogo",
+        "pageDate": "2026-08-25",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 42.0,
+      "furnished": "semi",
+      "evidence": [
+        {
+          "quote": "Rp53.000.000/tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-di-serpong-garden-3-cisauk-di-cibogo"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-di-serpong-garden-3-cisauk-di-cibogo",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-08-25",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Harga sewa Rp53 juta/tahun; halaman juga mencantumkan IPL Rp350 ribu/bulan dan deposit Rp3 juta. Periksa biaya lain, ketersediaan dan rute aktual.Jarak garis lurus sekitar 1.41 km ke KRL Cisauk."
+    },
+    {
+      "id": "sewa-pinhome-ba1566f2ffe1",
+      "title": "Rumah Duren Jaya, Bekasi Timur — 3 kamar",
+      "kind": "Rumah",
+      "rentalType": "rumah-sewa",
+      "area": "Bekasi",
+      "locationText": "Durenjaya (Duren Jaya), Bekasi Timur, Kota Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 19133333,
+        "period": "yearly",
+        "quote": "Rp19.133.333/tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya",
+        "pageDate": "2026-09-16",
+        "minimumMonths": 12
+      },
+      "bedrooms": 3,
+      "sizeM2": 60.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp19.133.333/tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-09-16",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Angka terstruktur Rp19.133.333/tahun; judul penawaran menyatakan Rp19 juta nego. Konfirmasi harga akhir, deposit, ketersediaan dan akses. Jarak garis lurus sekitar 1.60 km ke KRL Bekasi Timur."
+    },
+    {
+      "id": "sewa-pinhome-558b13aa6527",
+      "title": "Kontrakan Ragajaya, Bojonggede — Atsiri Permai",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Bogor",
+      "locationText": "Ragajaya, Bojong Gede (Bojonggede), Kab. Bogor",
+      "buildingOrCluster": "Atsiri Permai",
+      "rent": {
+        "amount": 1800000,
+        "period": "monthly",
+        "quote": "Rp1.800.000/bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kayu-manis-raya-no-11-permatsiri-permai",
+        "pageDate": "2026-02-12",
+        "minimumMonths": 3
+      },
+      "bedrooms": 2,
+      "sizeM2": 60.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp1.800.000/bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kayu-manis-raya-no-11-permatsiri-permai"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kayu-manis-raya-no-11-permatsiri-permai",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-02-12",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif bulanan pada detail berstatus aktif; pembaruan terakhir Februari 2026. Perlu konfirmasi stok, harga akhir dan lokasi sebelum survei. Jarak garis lurus sekitar 1.05 km ke KRL Citayam."
     }
   ]
 }

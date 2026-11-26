@@ -1,0 +1,1038 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-26",
+  "note": "Historical event evidence, not a flood hazard or safety classification. Official event source is separate from public landmark coordinates.",
+  "points": [
+    {
+      "id": "banjir-ancol-stasiun-2026-01-13",
+      "kind": "banjir",
+      "title": "Genangan di depan Stasiun Ancol",
+      "date": "2026-01-13",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "place": "Jl. RE Martadinata, depan Stasiun Ancol",
+      "lat": -6.128115,
+      "lng": 106.8451374,
+      "summary": "BPBD mencatat genangan 15 cm pada ruas jalan depan stasiun, pembaruan pukul 08.00 WIB.",
+      "precision": "Titik acuan tempat publik yang disebut rilis; bukan batas genangan, koordinat titik pengukuran, atau bukti seluruh bangunan terendam.",
+      "source": {
+        "label": "BPBD DKI · 13 Januari 08.00",
+        "url": "https://bpbd.jakarta.go.id/ppid/berita/2355/update-info-terkini-genangan-13-januari-2026-s-d-pukul-08-00-wib"
+      },
+      "locationSource": {
+        "label": "Acuan publik · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/node/5124126895"
+      }
+    },
+    {
+      "id": "banjir-akses-stasiun-bekasi-2025-03-04",
+      "kind": "banjir",
+      "title": "Banjir akses selatan Stasiun Bekasi",
+      "date": "2025-03-04",
+      "basis": "Rilis",
+      "region": "Kota Bekasi",
+      "place": "Sisi selatan Stasiun Bekasi menuju Jl. Ir. H. Juanda",
+      "lat": -6.2362143,
+      "lng": 106.9987436,
+      "summary": "Keterangan KAI Commuter menempatkan genangan di akses selatan stasiun. Perjalanan masih berjalan dalam pembaruan siang, tetapi dilakukan rekayasa pola operasi akibat gangguan akses.",
+      "precision": "Titik acuan tempat publik yang disebut rilis; bukan batas genangan, koordinat titik pengukuran, atau bukti seluruh bangunan terendam.",
+      "source": {
+        "label": "KAI Commuter · rilis 4 Maret",
+        "url": "https://www.kci.id/id/informasi-publik/berita/banjir-sekitar-stasiun-bekasi-operasional-perjalanan-commuter-line-bekasi-masih-normal"
+      },
+      "locationSource": {
+        "label": "Acuan publik · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/node/3469731328"
+      },
+      "followUp": {
+        "label": "RRI · keterangan KAI Commuter",
+        "url": "https://rri.co.id/regional/1367288/contact.html"
+      }
+    },
+    {
+      "id": "banjir-halte-taman-kota-2026-03-08",
+      "kind": "banjir",
+      "title": "Genangan di Daan Mogot sekitar Halte Taman Kota",
+      "date": "2026-03-08",
+      "basis": "Rilis",
+      "region": "Jakarta Barat",
+      "place": "Jl. Daan Mogot, Halte Taman Kota",
+      "lat": -6.1571533,
+      "lng": 106.7578744,
+      "summary": "Rekap BNPB 8 Maret menyebut bagian jalan di sekitar halte tergenang. Tanggal mengikuti isi dan tanggal publikasi, bukan slug tautan yang menyebut Februari.",
+      "precision": "Titik acuan tempat publik yang disebut rilis; bukan batas genangan, koordinat titik pengukuran, atau bukti seluruh bangunan terendam.",
+      "source": {
+        "label": "BNPB · rekap 8 Maret",
+        "url": "https://www.bnpb.go.id/berita/perkembangan-situasi-dan-penanganan-bencana-di-tanah-air-tanggal-8-februari-2026"
+      },
+      "locationSource": {
+        "label": "Acuan publik · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/node/11567672601"
+      }
+    },
+    {
+      "id": "banjir-itc-cipulir-2026-03-08",
+      "kind": "banjir",
+      "title": "Genangan di kolong ITC Cipulir",
+      "date": "2026-03-08",
+      "basis": "Rilis",
+      "region": "Jakarta Selatan",
+      "place": "Jl. Ciledug Raya, kolong ITC Cipulir",
+      "lat": -6.2373193,
+      "lng": 106.7654505,
+      "summary": "BNPB menyebut genangan di ruas Ciledug Raya (kolong ITC). Bukan bukti bahwa seluruh ITC atau hunian sekitarnya banjir.",
+      "precision": "Titik acuan tempat publik yang disebut rilis; bukan batas genangan, koordinat titik pengukuran, atau bukti seluruh bangunan terendam.",
+      "source": {
+        "label": "BNPB · rekap 8 Maret",
+        "url": "https://www.bnpb.go.id/berita/perkembangan-situasi-dan-penanganan-bencana-di-tanah-air-tanggal-8-februari-2026"
+      },
+      "locationSource": {
+        "label": "Acuan publik · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/524555664"
+      }
+    },
+    {
+      "id": "banjir-greenhill-2026-01-12",
+      "kind": "banjir",
+      "title": "Genangan jalan depan Apartemen Greenhill",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "place": "Jl. Pegangsaan Dua, depan Greenhill",
+      "lat": -6.1476318,
+      "lng": 106.9165607,
+      "summary": "Rilis BPBD pukul 18.00 WIB mencantumkan jalan di depan apartemen; status genangan unit apartemen tidak diketahui.",
+      "precision": "Titik acuan tempat publik yang disebut rilis; bukan batas genangan, koordinat titik pengukuran, atau bukti seluruh bangunan terendam.",
+      "source": {
+        "label": "BPBD DKI · 12 Januari 18.00",
+        "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      },
+      "locationSource": {
+        "label": "Acuan publik · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/525756692"
+      }
+    },
+    {
+      "id": "banjir-pluit-seaview-2026-01-13",
+      "kind": "banjir",
+      "title": "Genangan jalan dekat Pluit Sea View",
+      "date": "2026-01-13",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "place": "Jl. Muara Baru, sekitar Pluit Sea View",
+      "lat": -6.1195975,
+      "lng": 106.8075994,
+      "summary": "BPBD mencatat genangan 10 cm pada bagian jalan sekitar Pluit Sea View pukul 08.00 WIB. Tidak membuktikan unit hunian terendam.",
+      "precision": "Titik acuan tempat publik yang disebut rilis; bukan batas genangan, koordinat titik pengukuran, atau bukti seluruh bangunan terendam.",
+      "source": {
+        "label": "BPBD DKI · 13 Januari 08.00",
+        "url": "https://bpbd.jakarta.go.id/ppid/berita/2355/update-info-terkini-genangan-13-januari-2026-s-d-pukul-08-00-wib"
+      },
+      "locationSource": {
+        "label": "Acuan publik · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/1444315263"
+      }
+    },
+    {
+      "id": "banjir-yakobus-2026-01-12",
+      "kind": "banjir",
+      "title": "Genangan jalan depan sekolah Santo Yakobus",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "place": "Jl. Pegangsaan Dua, depan sekolah Yakobus",
+      "lat": -6.153292,
+      "lng": 106.915426,
+      "summary": "BPBD melaporkan genangan pada bagian jalan di depan Yakobus.",
+      "precision": "Titik acuan tempat publik yang disebut rilis; bukan batas genangan, koordinat titik pengukuran, atau bukti seluruh bangunan terendam.",
+      "source": {
+        "label": "BPBD DKI · 12 Januari 18.00",
+        "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      },
+      "locationSource": {
+        "label": "Acuan publik · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/526042792"
+      }
+    },
+    {
+      "id": "banjir-makam-mbah-priok-2026-01-12",
+      "kind": "banjir",
+      "title": "Genangan di jalan depan Makam Mbah Priok",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "place": "Jl. Jampea RW 007, depan makam",
+      "lat": -6.103098,
+      "lng": 106.8987854,
+      "summary": "BPBD mencantumkan genangan pada ruas jalan depan makam.",
+      "precision": "Titik acuan tempat publik yang disebut rilis; bukan batas genangan, koordinat titik pengukuran, atau bukti seluruh bangunan terendam.",
+      "source": {
+        "label": "BPBD DKI · 12 Januari 18.00",
+        "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      },
+      "locationSource": {
+        "label": "Acuan publik · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/node/5113072184"
+      }
+    },
+    {
+      "id": "banjir-mall-kelapa-gading-2026-01-12",
+      "kind": "banjir",
+      "title": "Genangan di jalan depan Mall Kelapa Gading",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "place": "Jalan depan Mall Kelapa Gading",
+      "lat": -6.1587563,
+      "lng": 106.9082426,
+      "summary": "BPBD mencatat genangan dalam pembaruan pukul 15.00 WIB, kemudian ruas depan mal tercatat surut pada pembaruan pukul 18.00.",
+      "precision": "Titik acuan tempat publik yang disebut rilis; bukan batas genangan, koordinat titik pengukuran, atau bukti seluruh bangunan terendam.",
+      "source": {
+        "label": "BPBD DKI · 12 Januari 15.00",
+        "url": "https://bpbd.jakarta.go.id/index.php/ppid/berita/2350/update-info-terkini-genangan-12-januari-2026-s-d-pukul-15-00-wib"
+      },
+      "locationSource": {
+        "label": "Acuan publik · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/41113187"
+      },
+      "followUp": {
+        "label": "BPBD DKI · 18.00",
+        "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+    },
+    {
+      "id": "banjir-sdn-srengseng-05-2026-01-22",
+      "kind": "banjir",
+      "title": "Genangan lingkungan SDN Srengseng 05",
+      "date": "2026-01-22",
+      "basis": "Rilis",
+      "region": "Jakarta Barat",
+      "place": "SDN Srengseng 05, Kembangan",
+      "lat": -6.2027,
+      "lng": 106.7563,
+      "summary": "Pemkot Jakarta Barat melaporkan evakuasi siswa karena lingkungan sekolah tergenang.",
+      "precision": "Koordinat sekolah resmi; batas dan kedalaman genangan tidak diketahui.",
+      "source": {
+        "label": "Pemkot Jakarta Barat · 22 Januari",
+        "url": "https://barat.jakarta.go.id/index.php/berita/lingkungan-sekolah-tergenang-ratusan-siswa-sdn-05-srengseng-dievakuasi"
+      },
+      "locationSource": {
+        "label": "Koordinat sekolah · Kemendikdasmen",
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20105510"
+      }
+    },
+    {
+      "id": "banjir-sdn-pinang-5-8-2026-02-05",
+      "kind": "banjir",
+      "title": "Genangan kompleks SDN Pinang 5 dan 8",
+      "date": "2026-02-05",
+      "basis": "Rilis",
+      "region": "Kota Tangerang",
+      "place": "Kompleks SDN Pinang 5 dan 8, Pinang",
+      "lat": -6.2078,
+      "lng": 106.6874,
+      "summary": "Pemkot Tangerang melaporkan genangan di kompleks sekolah dan penanganan agar siswa aman.",
+      "precision": "Satu titik acuan sekolah, bukan dua kejadian terpisah atau luas genangan.",
+      "source": {
+        "label": "Pemkot Tangerang · 5 Februari",
+        "url": "https://www.tangerangkota.go.id/berita/detail/61499/respons-cepat-laporan-sekolah-tergenang-wakil-wali-kota-turun-langsung-pastikan-anak-anak-tetap-aman-belajar"
+      },
+      "locationSource": {
+        "label": "Koordinat sekolah · Kemendikdasmen",
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20606624"
+      },
+      "followUp": {
+        "label": "Koordinat SDN Pinang lainnya · Kemendikdasmen",
+        "url": "https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/20606621"
+      }
+    },
+    {
+      "id": "banjir-rsud-kab-bekasi-2026-01-18",
+      "kind": "banjir",
+      "title": "Banjir akses depan RSUD Kabupaten Bekasi",
+      "date": "2026-01-18",
+      "basis": "Rilis",
+      "region": "Kabupaten Bekasi",
+      "place": "Jalan depan RSUD Kabupaten Bekasi, Wanasari, Cibitung",
+      "lat": -6.26667,
+      "lng": 107.08306,
+      "summary": "Pemkab meninjau bagian jalan depan RSUD yang terdampak banjir. Ketinggian spesifik di titik ini tidak dirinci.",
+      "precision": "Pin mengikuti bangunan RSUD pada OpenStreetMap, bukan titik ukur di jalan atau bukti gedung terendam. Peta sektoral pemerintah memberi titik acuan lain; lokasi pengukuran belum diketahui.",
+      "source": {
+        "label": "Pemkab Bekasi · peninjauan 18 Januari",
+        "url": "https://prokopim.bekasikab.go.id/konten.php?baca=judul-berita&judul=curah-hujan-tinggi-picu-banjir-plt-bupati-bekasi-tinjau-wilayah-terdampak"
+      },
+      "locationSource": {
+        "label": "Bangunan RSUD · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/782896904"
+      }
+    }
+  ],
+  "reports": [
+    {
+      "id": "banjir-kedaung-kali-angke-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Kedaung Kali Angke",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Barat",
+      "scope": "kelurahan",
+      "place": "Kedaung Kali Angke, Jakarta Barat",
+      "summary": "BPBD mencatat 3 RT terdampak; ketinggian tercatat 70 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-rawa-buaya-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Rawa Buaya",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Barat",
+      "scope": "kelurahan",
+      "place": "Rawa Buaya, Jakarta Barat",
+      "summary": "BPBD mencatat 3 RT terdampak; ketinggian tercatat 50 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-kamal-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Kamal",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Barat",
+      "scope": "kelurahan",
+      "place": "Kamal, Jakarta Barat",
+      "summary": "BPBD mencatat 4 RT terdampak; ketinggian tercatat 40 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-tegal-alur-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Tegal Alur",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Barat",
+      "scope": "kelurahan",
+      "place": "Tegal Alur, Jakarta Barat",
+      "summary": "BPBD mencatat 2 RT terdampak; ketinggian tercatat 75 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-cilandak-barat-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Cilandak Barat",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Selatan",
+      "scope": "kelurahan",
+      "place": "Cilandak Barat, Jakarta Selatan",
+      "summary": "BPBD mencatat 1 RT terdampak; ketinggian tercatat 40 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-pondok-labu-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Pondok Labu",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Selatan",
+      "scope": "kelurahan",
+      "place": "Pondok Labu, Jakarta Selatan",
+      "summary": "BPBD mencatat 2 RT terdampak; ketinggian tercatat 80 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-cipete-utara-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Cipete Utara",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Selatan",
+      "scope": "kelurahan",
+      "place": "Cipete Utara, Jakarta Selatan",
+      "summary": "BPBD mencatat 3 RT terdampak; ketinggian tercatat 30 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-pela-mampang-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Pela Mampang",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Selatan",
+      "scope": "kelurahan",
+      "place": "Pela Mampang, Jakarta Selatan",
+      "summary": "BPBD mencatat 9 RT terdampak; ketinggian tercatat 50 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-duren-tiga-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Duren Tiga",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Selatan",
+      "scope": "kelurahan",
+      "place": "Duren Tiga, Jakarta Selatan",
+      "summary": "BPBD mencatat 1 RT terdampak; ketinggian tercatat 40 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-cilandak-timur-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Cilandak Timur",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Selatan",
+      "scope": "kelurahan",
+      "place": "Cilandak Timur, Jakarta Selatan",
+      "summary": "BPBD mencatat 3 RT terdampak; ketinggian tercatat 95 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-pejaten-timur-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Pejaten Timur",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Selatan",
+      "scope": "kelurahan",
+      "place": "Pejaten Timur, Jakarta Selatan",
+      "summary": "BPBD mencatat 1 RT terdampak; ketinggian tercatat 100 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-rawa-terate-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Rawa Terate",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Timur",
+      "scope": "kelurahan",
+      "place": "Rawa Terate, Jakarta Timur",
+      "summary": "BPBD mencatat 1 RT terdampak; ketinggian tercatat 35 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-bidara-cina-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Bidara Cina",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Timur",
+      "scope": "kelurahan",
+      "place": "Bidara Cina, Jakarta Timur",
+      "summary": "BPBD mencatat 5 RT terdampak; ketinggian tercatat 80–85 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-kampung-melayu-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Kampung Melayu",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Timur",
+      "scope": "kelurahan",
+      "place": "Kampung Melayu, Jakarta Timur",
+      "summary": "BPBD mencatat 4 RT terdampak; ketinggian tercatat 100 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-cawang-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Cawang",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Timur",
+      "scope": "kelurahan",
+      "place": "Cawang, Jakarta Timur",
+      "summary": "BPBD mencatat 5 RT terdampak; ketinggian tercatat 80 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-cililitan-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Cililitan",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Timur",
+      "scope": "kelurahan",
+      "place": "Cililitan, Jakarta Timur",
+      "summary": "BPBD mencatat 3 RT terdampak; ketinggian tercatat 70 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-tanjung-priok-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Tanjung Priok",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "scope": "kelurahan",
+      "place": "Tanjung Priok, Jakarta Utara",
+      "summary": "BPBD mencatat 2 RT terdampak; ketinggian tercatat 20 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-lagoa-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Lagoa",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "scope": "kelurahan",
+      "place": "Lagoa, Jakarta Utara",
+      "summary": "BPBD mencatat 2 RT terdampak; ketinggian tercatat 10–15 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-kebon-bawang-bpbd-2026-01-12",
+      "kind": "banjir",
+      "title": "RT terdampak genangan di Kebon Bawang",
+      "date": "2026-01-12",
+      "basis": "Rilis",
+      "region": "Jakarta Utara",
+      "scope": "kelurahan",
+      "place": "Kebon Bawang, Jakarta Utara",
+      "summary": "BPBD mencatat 5 RT terdampak; ketinggian tercatat 50–60 cm pada pembaruan 18.00 WIB. Tidak berlaku seluruh kelurahan.",
+      "sources": [
+        {
+          "label": "BPBD DKI · 12 Januari 18.00",
+          "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+        }
+      ]
+    },
+    {
+      "id": "banjir-delima-raya-2025-05-13",
+      "kind": "banjir",
+      "title": "Genangan di Jl. Delima Raya, Duren Jaya",
+      "date": "2025-05-13",
+      "basis": "Rilis",
+      "region": "Kota Bekasi",
+      "scope": "ruas",
+      "place": "Jl. Delima Raya, Duren Jaya",
+      "summary": "BPBD mencatat genangan 5–15 cm di bagian lokasi yang dilaporkan; titik ukur tidak dirinci.",
+      "sources": [
+        {
+          "label": "BPBD Kota Bekasi · 13 Mei",
+          "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+        }
+      ]
+    },
+    {
+      "id": "banjir-margahayu-jaya-2025-05-13",
+      "kind": "banjir",
+      "title": "Genangan di Perum Margahayu Jaya, Jl. Beringin",
+      "date": "2025-05-13",
+      "basis": "Rilis",
+      "region": "Kota Bekasi",
+      "scope": "lingkungan",
+      "place": "Perum Margahayu Jaya, Jl. Beringin",
+      "summary": "BPBD mencatat genangan 40 cm di bagian lokasi yang dilaporkan; titik ukur tidak dirinci.",
+      "sources": [
+        {
+          "label": "BPBD Kota Bekasi · 13 Mei",
+          "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+        }
+      ]
+    },
+    {
+      "id": "banjir-pulau-jawa-2025-05-13",
+      "kind": "banjir",
+      "title": "Genangan di Jl. Pulau Jawa Raya, Perumnas 3, Aren Jaya",
+      "date": "2025-05-13",
+      "basis": "Rilis",
+      "region": "Kota Bekasi",
+      "scope": "ruas",
+      "place": "Jl. Pulau Jawa Raya, Perumnas 3, Aren Jaya",
+      "summary": "BPBD mencatat genangan 30 cm di bagian lokasi yang dilaporkan; titik ukur tidak dirinci.",
+      "sources": [
+        {
+          "label": "BPBD Kota Bekasi · 13 Mei",
+          "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+        }
+      ]
+    },
+    {
+      "id": "banjir-irigasi-danita-2025-05-13",
+      "kind": "banjir",
+      "title": "Genangan di RW 14 Perum Irigasi Danita, Bekasi Jaya",
+      "date": "2025-05-13",
+      "basis": "Rilis",
+      "region": "Kota Bekasi",
+      "scope": "lingkungan",
+      "place": "RW 14 Perum Irigasi Danita, Bekasi Jaya",
+      "summary": "BPBD mencatat genangan 5–20 cm di bagian lokasi yang dilaporkan; titik ukur tidak dirinci.",
+      "sources": [
+        {
+          "label": "BPBD Kota Bekasi · 13 Mei",
+          "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+        }
+      ]
+    },
+    {
+      "id": "banjir-jalan-cirebon-2025-05-13",
+      "kind": "banjir",
+      "title": "Genangan di Jl. Cirebon, Duren Jaya",
+      "date": "2025-05-13",
+      "basis": "Rilis",
+      "region": "Kota Bekasi",
+      "scope": "ruas",
+      "place": "Jl. Cirebon, Duren Jaya",
+      "summary": "BPBD mencatat genangan 5–10 cm di bagian lokasi yang dilaporkan; titik ukur tidak dirinci.",
+      "sources": [
+        {
+          "label": "BPBD Kota Bekasi · 13 Mei",
+          "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+        }
+      ]
+    },
+    {
+      "id": "banjir-wisma-jaya-2025-05-13",
+      "kind": "banjir",
+      "title": "Genangan di Perum Wisma Jaya RW 17, Duren Jaya",
+      "date": "2025-05-13",
+      "basis": "Rilis",
+      "region": "Kota Bekasi",
+      "scope": "lingkungan",
+      "place": "Perum Wisma Jaya RW 17, Duren Jaya",
+      "summary": "BPBD mencatat genangan 5–25 cm di bagian lokasi yang dilaporkan; titik ukur tidak dirinci.",
+      "sources": [
+        {
+          "label": "BPBD Kota Bekasi · 13 Mei",
+          "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+        }
+      ]
+    },
+    {
+      "id": "banjir-magnolia-2025-08-12",
+      "kind": "banjir",
+      "title": "Catatan genangan Perum Magnolia, Jatiuwung",
+      "date": "2025-08-12",
+      "basis": "Rilis",
+      "region": "Kota Tangerang",
+      "scope": "lingkungan",
+      "place": "Perum Magnolia, Jatiuwung",
+      "summary": "BPBD mencatat genangan 80 cm pada bagian lokasi yang dilaporkan; titik ukur tidak dirinci.",
+      "sources": [
+        {
+          "label": "BPBD Kota Tangerang · 12 Agustus",
+          "url": "https://bpbd.tangerangkota.go.id/berita/sigap-hadapi-cuaca-ekstrem-petugas-gabungan-kota-tangerang-tanggulangi-pohon-tumbang-hingga-banjir"
+        }
+      ]
+    },
+    {
+      "id": "banjir-caplang-baru-2025-08-12",
+      "kind": "banjir",
+      "title": "Catatan genangan Jalan Caplang Baru, Keroncong",
+      "date": "2025-08-12",
+      "basis": "Rilis",
+      "region": "Kota Tangerang",
+      "scope": "ruas",
+      "place": "Jalan Caplang Baru, Keroncong",
+      "summary": "BPBD mencatat genangan 30 cm pada bagian lokasi yang dilaporkan; titik ukur tidak dirinci.",
+      "sources": [
+        {
+          "label": "BPBD Kota Tangerang · 12 Agustus",
+          "url": "https://bpbd.tangerangkota.go.id/berita/sigap-hadapi-cuaca-ekstrem-petugas-gabungan-kota-tangerang-tanggulangi-pohon-tumbang-hingga-banjir"
+        }
+      ]
+    },
+    {
+      "id": "banjir-underpass-cibodas-2025-08-12",
+      "kind": "banjir",
+      "title": "Catatan genangan Underpass Taman Cibodas",
+      "date": "2025-08-12",
+      "basis": "Rilis",
+      "region": "Kota Tangerang",
+      "scope": "ruas",
+      "place": "Underpass Taman Cibodas",
+      "summary": "BPBD mencatat genangan 60 cm pada bagian lokasi yang dilaporkan; titik ukur tidak dirinci.",
+      "sources": [
+        {
+          "label": "BPBD Kota Tangerang · 12 Agustus",
+          "url": "https://bpbd.tangerangkota.go.id/berita/sigap-hadapi-cuaca-ekstrem-petugas-gabungan-kota-tangerang-tanggulangi-pohon-tumbang-hingga-banjir"
+        }
+      ]
+    },
+    {
+      "id": "banjir-kali-ulu-2026-01-18",
+      "kind": "banjir",
+      "title": "Catatan genangan Kali Ulu, Cikarang Utara",
+      "date": "2026-01-18",
+      "basis": "Rilis",
+      "region": "Kabupaten Bekasi",
+      "scope": "lingkungan",
+      "place": "Kali Ulu, Cikarang Utara",
+      "summary": "Lokasi ditinjau Pemkab dalam penanganan banjir; tinggi air lokasi ini tidak dirinci.",
+      "sources": [
+        {
+          "label": "Pemkab Bekasi · 18 Januari",
+          "url": "https://prokopim.bekasikab.go.id/konten.php?baca=judul-berita&judul=curah-hujan-tinggi-picu-banjir-plt-bupati-bekasi-tinjau-wilayah-terdampak"
+        }
+      ]
+    },
+    {
+      "id": "banjir-vila-mutiara-cibitung-2026-01-18",
+      "kind": "banjir",
+      "title": "Catatan genangan Vila Mutiara Cibitung",
+      "date": "2026-01-18",
+      "basis": "Rilis",
+      "region": "Kabupaten Bekasi",
+      "scope": "lingkungan",
+      "place": "Vila Mutiara Cibitung",
+      "summary": "Lokasi ditinjau Pemkab dalam penanganan banjir; tinggi air lokasi ini tidak dirinci.",
+      "sources": [
+        {
+          "label": "Pemkab Bekasi · 18 Januari",
+          "url": "https://prokopim.bekasikab.go.id/konten.php?baca=judul-berita&judul=curah-hujan-tinggi-picu-banjir-plt-bupati-bekasi-tinjau-wilayah-terdampak"
+        }
+      ]
+    },
+    {
+      "id": "banjir-ragajaya-citayam-park-2025-08-09",
+      "kind": "banjir",
+      "title": "Catatan genangan Cluster Citayam Park, RT 02/RW 04, Ragajaya, Bojonggede",
+      "date": "2025-08-09",
+      "basis": "Rilis",
+      "region": "Kabupaten Bogor",
+      "scope": "lingkungan",
+      "place": "Cluster Citayam Park, RT 02/RW 04, Ragajaya, Bojonggede",
+      "summary": "TRC BPBD mencatat luapan sungai sekitar 1 m dan tanggul pembatas jebol. Hanya lokasi laporan, bukan seluruh desa.",
+      "sources": [
+        {
+          "label": "Siaga112 Kab. Bogor · TRC BPBD",
+          "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/1494"
+        }
+      ]
+    },
+    {
+      "id": "banjir-cilebut-barat-curug-2026-04-30",
+      "kind": "banjir",
+      "title": "Catatan genangan Kampung Curug RT 01/04, Cilebut Barat, Sukaraja",
+      "date": "2026-04-30",
+      "basis": "Rilis",
+      "region": "Kabupaten Bogor",
+      "scope": "lingkungan",
+      "place": "Kampung Curug RT 01/04, Cilebut Barat, Sukaraja",
+      "summary": "TRC BPBD mencatat luapan kali akibat sumbatan jembatan, sekitar 60 cm di permukiman. Tidak berlaku seluruh desa.",
+      "sources": [
+        {
+          "label": "Siaga112 Kab. Bogor · TRC BPBD",
+          "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1118"
+        }
+      ]
+    },
+    {
+      "id": "banjir-kedung-waringin-2026-04-20",
+      "kind": "banjir",
+      "title": "Catatan genangan Jalan Raya Bojonggede–Cilebut, Kedung Waringin",
+      "date": "2026-04-20",
+      "basis": "Rilis",
+      "region": "Kabupaten Bogor",
+      "scope": "jalan",
+      "place": "Jalan Raya Bojonggede–Cilebut, Kedung Waringin",
+      "summary": "Pemkab melaporkan penanganan genangan berulang di bagian jalan dan rencana perbaikan irigasi.",
+      "sources": [
+        {
+          "label": "Pemkab Bogor · 20 April",
+          "url": "https://bakesbangpol.bogorkab.go.id/berita/Seputar-OPD/pemkab-bogor-tangani-banjir-di-bojonggede-fokus-normalisasi-irigasi"
+        }
+      ]
+    }
+  ],
+  "reportLocalities": {
+    "banjir-kedaung-kali-angke-bpbd-2026-01-12": {
+      "city": "Jakarta Barat",
+      "locality": "Kedaung Kali Angke",
+      "bigCode": "31.73.01.1004"
+    },
+    "banjir-rawa-buaya-bpbd-2026-01-12": {
+      "city": "Jakarta Barat",
+      "locality": "Rawa Buaya",
+      "bigCode": "31.73.01.1003"
+    },
+    "banjir-kamal-bpbd-2026-01-12": {
+      "city": "Jakarta Barat",
+      "locality": "Kamal",
+      "bigCode": "31.73.06.1004"
+    },
+    "banjir-tegal-alur-bpbd-2026-01-12": {
+      "city": "Jakarta Barat",
+      "locality": "Tegal Alur",
+      "bigCode": "31.73.06.1003"
+    },
+    "banjir-cilandak-barat-bpbd-2026-01-12": {
+      "city": "Jakarta Selatan",
+      "locality": "Cilandak Barat",
+      "bigCode": "31.74.06.1001"
+    },
+    "banjir-pondok-labu-bpbd-2026-01-12": {
+      "city": "Jakarta Selatan",
+      "locality": "Pondok Labu",
+      "bigCode": "31.74.06.1003"
+    },
+    "banjir-cipete-utara-bpbd-2026-01-12": {
+      "city": "Jakarta Selatan",
+      "locality": "Cipete Utara",
+      "bigCode": "31.74.07.1010"
+    },
+    "banjir-pela-mampang-bpbd-2026-01-12": {
+      "city": "Jakarta Selatan",
+      "locality": "Pela Mampang",
+      "bigCode": "31.74.03.1003"
+    },
+    "banjir-duren-tiga-bpbd-2026-01-12": {
+      "city": "Jakarta Selatan",
+      "locality": "Duren Tiga",
+      "bigCode": "31.74.08.1004"
+    },
+    "banjir-cilandak-timur-bpbd-2026-01-12": {
+      "city": "Jakarta Selatan",
+      "locality": "Cilandak Timur",
+      "bigCode": "31.74.04.1003"
+    },
+    "banjir-pejaten-timur-bpbd-2026-01-12": {
+      "city": "Jakarta Selatan",
+      "locality": "Pejaten Timur",
+      "bigCode": "31.74.04.1005"
+    },
+    "banjir-rawa-terate-bpbd-2026-01-12": {
+      "city": "Jakarta Timur",
+      "locality": "Rawa Terate",
+      "bigCode": "31.75.06.1002"
+    },
+    "banjir-bidara-cina-bpbd-2026-01-12": {
+      "city": "Jakarta Timur",
+      "locality": "Bidara Cina",
+      "bigCode": "31.75.03.1002"
+    },
+    "banjir-kampung-melayu-bpbd-2026-01-12": {
+      "city": "Jakarta Timur",
+      "locality": "Kampung Melayu",
+      "bigCode": "31.75.03.1001"
+    },
+    "banjir-cawang-bpbd-2026-01-12": {
+      "city": "Jakarta Timur",
+      "locality": "Cawang",
+      "bigCode": "31.75.04.1007"
+    },
+    "banjir-cililitan-bpbd-2026-01-12": {
+      "city": "Jakarta Timur",
+      "locality": "Cililitan",
+      "bigCode": "31.75.04.1006"
+    },
+    "banjir-tanjung-priok-bpbd-2026-01-12": {
+      "city": "Jakarta Utara",
+      "locality": "Tanjung Priok",
+      "bigCode": "31.72.02.1001"
+    },
+    "banjir-lagoa-bpbd-2026-01-12": {
+      "city": "Jakarta Utara",
+      "locality": "Lagoa",
+      "bigCode": "31.72.03.1003"
+    },
+    "banjir-kebon-bawang-bpbd-2026-01-12": {
+      "city": "Jakarta Utara",
+      "locality": "Kebon Bawang",
+      "bigCode": "31.72.02.1005"
+    },
+    "banjir-delima-raya-2025-05-13": {
+      "city": "Kota Bekasi",
+      "locality": "Duren Jaya",
+      "bigCode": "32.75.01.1003"
+    },
+    "banjir-margahayu-jaya-2025-05-13": {
+      "city": "Kota Bekasi",
+      "locality": "Margahayu",
+      "bigCode": "32.75.01.1002"
+    },
+    "banjir-pulau-jawa-2025-05-13": {
+      "city": "Kota Bekasi",
+      "locality": "Aren Jaya",
+      "bigCode": "32.75.01.1004"
+    },
+    "banjir-irigasi-danita-2025-05-13": {
+      "city": "Kota Bekasi",
+      "locality": "Bekasi Jaya",
+      "bigCode": "32.75.01.1001"
+    },
+    "banjir-jalan-cirebon-2025-05-13": {
+      "city": "Kota Bekasi",
+      "locality": "Duren Jaya",
+      "bigCode": "32.75.01.1003"
+    },
+    "banjir-wisma-jaya-2025-05-13": {
+      "city": "Kota Bekasi",
+      "locality": "Duren Jaya",
+      "bigCode": "32.75.01.1003"
+    },
+    "banjir-caplang-baru-2025-08-12": {
+      "city": "Kota Tangerang",
+      "locality": "Keroncong",
+      "bigCode": "36.71.02.1001"
+    },
+    "banjir-ragajaya-citayam-park-2025-08-09": {
+      "city": "Kabupaten Bogor",
+      "locality": "Ragajaya",
+      "bigCode": "32.01.13.2004"
+    },
+    "banjir-cilebut-barat-curug-2026-04-30": {
+      "city": "Kabupaten Bogor",
+      "locality": "Cilebut Barat",
+      "bigCode": "32.01.04.2003"
+    },
+    "banjir-kedung-waringin-2026-04-20": {
+      "city": "Kabupaten Bogor",
+      "locality": "Kedung Waringin",
+      "bigCode": "32.01.13.2005"
+    }
+  },
+  "sourceRegistry": [
+    {
+      "purpose": "Indeks bahaya banjir Jabodetabekpunjur, BNPB",
+      "url": "https://gis.bnpb.go.id/server/rest/services/inarisk/INDEKS_BAHAYA_BANJIR_JBTBPJ/MapServer",
+      "status": "metadata-found; site-specific classification not retrieved"
+    },
+    {
+      "purpose": "Indeks risiko banjir Jabodetabekpunjur, BNPB",
+      "url": "https://gis.bnpb.go.id/server/rest/services/inarisk/INDEKS_RISIKO_BANJIR_JBTBPJ/MapServer",
+      "status": "metadata-found; request returned HTTP 521"
+    },
+    {
+      "purpose": "Peta InaRISK",
+      "url": "https://inarisk.bnpb.go.id/",
+      "status": "official-reference; parcel classification not established"
+    },
+    {
+      "purpose": "Data titik rawan banjir DKI",
+      "url": "https://data.go.id/dataset/dataset/data-titik-rawan-bencana-banjir",
+      "status": "metadata-found; resource HTTP 503"
+    },
+    {
+      "purpose": "Buka data BPBD DKI",
+      "url": "https://gis-bpbd.jakarta.go.id/open-data-bpbd/",
+      "status": "official-reference; follow-up"
+    },
+    {
+      "purpose": "Pantau banjir DKI",
+      "url": "https://pantaubanjir.jakarta.go.id/",
+      "status": "official-reference; follow-up"
+    },
+    {
+      "purpose": "Peta bencana BPBD DKI",
+      "url": "https://bpbd.jakarta.go.id/index.php/kategori-infografis/dklnamZKVGk1dlZrY3RUdVZLODFTZz09/peta-bencana",
+      "status": "official-reference; follow-up historical maps"
+    },
+    {
+      "purpose": "Peta sebaran titik lokasi banjir Kota Tangerang",
+      "url": "https://fe-staging.data.go.id/dataset/dataset/peta-sebaran-titik-lokasi-banjir-di-kota-tangerang",
+      "status": "metadata-found; resource HTTP 403; follow-up"
+    },
+    {
+      "purpose": "Tinjauan lokasi terdampak Kab. Bekasi",
+      "url": "https://prokopim.bekasikab.go.id/konten.php?baca=judul-berita&judul=curah-hujan-tinggi-picu-banjir-plt-bupati-bekasi-tinjau-wilayah-terdampak",
+      "status": "official-release; used for two area reports and one landmark"
+    },
+    {
+      "purpose": "Peta sektoral kesehatan Kabupaten Bekasi",
+      "url": "https://satupeta.bekasikab.go.id/assets/ebook/ebook_20240316150305_6._Data_Spasial_Sektoral_Kesehatan.pdf",
+      "status": "RSUD coordinate differs from mapped building; landmark pin uses OSM, flood measurement unspecified"
+    },
+    {
+      "purpose": "Rilis KAI Commuter terkait akses Stasiun Bekasi",
+      "url": "https://www.kci.id/id/informasi-publik/berita/banjir-sekitar-stasiun-bekasi-operasional-perjalanan-commuter-line-bekasi-masih-normal",
+      "status": "Official release indexed; direct open returned 403; corroborated by RRI and other coverage"
+    }
+  ]
+}

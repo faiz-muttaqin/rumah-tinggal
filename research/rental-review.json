@@ -2689,7 +2689,11 @@
   },
   "sewa-mamikos-6bace8e05e81": {
     "couples": true,
-    "children": false
+    "children": false,
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di RW 14 Perum Irigasi Danita, Bekasi Jaya (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
   },
   "sewa-mamikos-ab69495d15b9": {
     "couples": true,
@@ -2697,17 +2701,33 @@
   },
   "sewa-mamikos-be2d10594833": {
     "couples": true,
-    "children": false
+    "children": false,
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cipete Utara (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
   },
   "sewa-mamikos-764405915756": {
     "couples": true,
-    "children": false
+    "children": false,
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
   },
   "sewa-pinhome-ab923f7a8b9b": {
-    "floors": 1
+    "floors": 1,
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di Jl. Delima Raya, Duren Jaya (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
   },
   "sewa-pinhome-bidara-cina-bidaracina-6edd7a1a": {
-    "couples": false
+    "couples": false,
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Bidara Cina (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
   },
   "sewa-pinhome-e748c260d691": {
     "floors": 2
@@ -2802,6 +2822,384 @@
     "flood": {
       "label": "Akses Puri Beta tergenang · 25 Feb 2020",
       "url": "https://m.antaranews.com/amp/berita/1317606/hujan-lebat-sebabkan-banjir-di-13-titik-di-kota-tangerang"
+    }
+  },
+  "sewa-mamikos-d00e8ef7c1dd": {
+    "couples": true,
+    "children": true
+  },
+  "sewa-mamikos-d06a4e80f031": {
+    "couples": true,
+    "children": true
+  },
+  "sewa-mamikos-d6c25c306891": {
+    "couples": true,
+    "children": true
+  },
+  "sewa-pinhome-cilandak-barat-0ea2e126": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-jendela360-fccb003": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-jendela360-fcca051": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-jendela360-anta035": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-jendela360-anta036": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-jendela360-anta040": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-jendela360-fccc010": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-pejaten-timur-fe898475": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Pejaten Timur (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-bidara-cina-bidaracina-3ab8a688": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Bidara Cina (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-cilebut-barat-693cf138": {
+    "flood": {
+      "label": "Konteks kelurahan · Catatan genangan Kampung Curug RT 01/04, Cilebut Barat, Sukaraja (2026-04-30); bukan bukti unit banjir",
+      "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1118"
+    }
+  },
+  "sewa-pinhome-pondok-labu-a20145eb": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Pondok Labu (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-bekasijaya-bekasi-jaya-51ff52a2": {
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di RW 14 Perum Irigasi Danita, Bekasi Jaya (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
+  },
+  "sewa-pinhome-durenjaya-duren-jaya-a5222673": {
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di Jl. Delima Raya, Duren Jaya (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
+  },
+  "sewa-jendela360-antb028": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-jendela360-fccc067": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-jendela360-antc010": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-jendela360-htpd008": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-jendela360-antc008": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-cilebut-barat-f5604415": {
+    "flood": {
+      "label": "Konteks kelurahan · Catatan genangan Kampung Curug RT 01/04, Cilebut Barat, Sukaraja (2026-04-30); bukan bukti unit banjir",
+      "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1118"
+    }
+  },
+  "sewa-jendela360-admd003": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Pondok Labu (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-bekasijaya-bekasi-jaya-02cfede2": {
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di RW 14 Perum Irigasi Danita, Bekasi Jaya (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
+  },
+  "sewa-pinhome-bekasijaya-bekasi-jaya-4ef75065": {
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di RW 14 Perum Irigasi Danita, Bekasi Jaya (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
+  },
+  "sewa-pinhome-cilebut-barat-e42602bd": {
+    "flood": {
+      "label": "Konteks kelurahan · Catatan genangan Kampung Curug RT 01/04, Cilebut Barat, Sukaraja (2026-04-30); bukan bukti unit banjir",
+      "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1118"
+    }
+  },
+  "sewa-pinhome-durenjaya-duren-jaya-32d5519a": {
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di Jl. Delima Raya, Duren Jaya (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
+  },
+  "sewa-pinhome-bidara-cina-bidaracina-b1307ec7": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Bidara Cina (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-cilebut-barat-35a738e5": {
+    "flood": {
+      "label": "Konteks kelurahan · Catatan genangan Kampung Curug RT 01/04, Cilebut Barat, Sukaraja (2026-04-30); bukan bukti unit banjir",
+      "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1118"
+    }
+  },
+  "sewa-pinhome-pejaten-timur-ee56d083": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Pejaten Timur (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-cilebut-barat-dc3bf6d5": {
+    "flood": {
+      "label": "Konteks kelurahan · Catatan genangan Kampung Curug RT 01/04, Cilebut Barat, Sukaraja (2026-04-30); bukan bukti unit banjir",
+      "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1118"
+    }
+  },
+  "sewa-pinhome-pejaten-timur-fc0d3c14": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Pejaten Timur (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-cilandak-barat-f5272420": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-pondok-labu-2ecfccc1": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Pondok Labu (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-bekasijaya-bekasi-jaya-70338fd8": {
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di RW 14 Perum Irigasi Danita, Bekasi Jaya (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
+  },
+  "sewa-pinhome-cilandak-barat-85b9865f": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-pondok-labu-de882491": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Pondok Labu (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-bekasijaya-bekasi-jaya-bc5cf9c7": {
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di RW 14 Perum Irigasi Danita, Bekasi Jaya (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
+  },
+  "sewa-pinhome-pondok-labu-e6df584f": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Pondok Labu (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-cilandak-barat-fe533e51": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-pondok-labu-5cb712ea": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Pondok Labu (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-facebook-1e7919405067": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Pondok Labu (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-77b08ed668a1": {
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di RW 14 Perum Irigasi Danita, Bekasi Jaya (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
+  },
+  "sewa-pinhome-2191212ada72": {
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di Perum Margahayu Jaya, Jl. Beringin (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
+  },
+  "sewa-jendela360-a5beb0bbcabb": {
+    "flood": {
+      "label": "Acuan kejadian ±414 m · Genangan di kolong ITC Cipulir (2026-03-08); bukan luas genangan",
+      "url": "https://www.bnpb.go.id/berita/perkembangan-situasi-dan-penanganan-bencana-di-tanah-air-tanggal-8-februari-2026"
+    }
+  },
+  "sewa-pinhome-b402cd5c6ee4": {
+    "flood": {
+      "label": "Acuan kejadian ±402 m · Genangan di kolong ITC Cipulir (2026-03-08); bukan luas genangan",
+      "url": "https://www.bnpb.go.id/berita/perkembangan-situasi-dan-penanganan-bencana-di-tanah-air-tanggal-8-februari-2026"
+    }
+  },
+  "sewa-pinhome-0aba380e0bdb": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Kedaung Kali Angke (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-792c29d41acc": {
+    "flood": {
+      "label": "Acuan kejadian ±869 m · Genangan di Daan Mogot sekitar Halte Taman Kota (2026-03-08); bukan luas genangan",
+      "url": "https://www.bnpb.go.id/berita/perkembangan-situasi-dan-penanganan-bencana-di-tanah-air-tanggal-8-februari-2026"
+    }
+  },
+  "sewa-pinhome-a5d080d9e497": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cawang (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-4d272e7d6092": {
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di Jl. Delima Raya, Duren Jaya (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
+  },
+  "sewa-pinhome-2a19a25df7fe": {
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di Perum Margahayu Jaya, Jl. Beringin (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
+  },
+  "sewa-pinhome-62fbaec5ffe4": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Bidara Cina (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-2327a5d544fb": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Rawa Buaya (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-7bca3a22ebe4": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cawang (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-5a265838c566": {
+    "flood": {
+      "label": "Acuan kejadian ±922 m · Genangan di kolong ITC Cipulir (2026-03-08); bukan luas genangan",
+      "url": "https://www.bnpb.go.id/berita/perkembangan-situasi-dan-penanganan-bencana-di-tanah-air-tanggal-8-februari-2026"
+    }
+  },
+  "sewa-pinhome-0947c29fc3ae": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cawang (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-7c0321279417": {
+    "flood": {
+      "label": "Acuan kejadian ±474 m · Genangan di kolong ITC Cipulir (2026-03-08); bukan luas genangan",
+      "url": "https://www.bnpb.go.id/berita/perkembangan-situasi-dan-penanganan-bencana-di-tanah-air-tanggal-8-februari-2026"
+    }
+  },
+  "sewa-pinhome-f917318b97be": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Pondok Labu (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-b37a0bc01e1f": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Pela Mampang (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-d4f5c84e05a3": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Pela Mampang (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-28e8224cf373": {
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di Jl. Delima Raya, Duren Jaya (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
+  },
+  "sewa-pinhome-ff56811633dc": {
+    "flood": {
+      "label": "Konteks kelurahan · RT terdampak genangan di Cawang (2026-01-12); bukan bukti unit banjir",
+      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+    }
+  },
+  "sewa-pinhome-ba1566f2ffe1": {
+    "flood": {
+      "label": "Konteks kelurahan · Genangan di Jl. Delima Raya, Duren Jaya (2025-05-13); bukan bukti unit banjir",
+      "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+    }
+  },
+  "sewa-pinhome-558b13aa6527": {
+    "flood": {
+      "label": "Konteks kelurahan · Catatan genangan Cluster Citayam Park, RT 02/RW 04, Ragajaya, Bojonggede (2025-08-09); bukan bukti unit banjir",
+      "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/1494"
     }
   }
 }

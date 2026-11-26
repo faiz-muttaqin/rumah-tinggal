@@ -1,3 +1,6 @@
+import officialFloodEvidence from "../research/flood-official-evidence-2026-11-26.json" with {
+  type: "json",
+};
 import type { IncidentKind } from "./incidents.ts";
 
 export const reportScopes = {
@@ -981,4 +984,5 @@ export const areaReports: LocationReport[] = [
       },
     ],
   },
+  ...(officialFloodEvidence.reports as LocationReport[]),
 ];
