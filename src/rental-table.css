@@ -92,33 +92,24 @@
   letter-spacing: -0.025em;
 }
 
-.rent-table-saved {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.rent-table-saved svg {
-  width: 14px;
-  height: 14px;
-}
-
-.rent-table-export {
-  width: 77px;
+.rent-bookmark-choice {
+  width: 146px;
   height: 36px;
+  min-width: 0;
+  text-overflow: ellipsis;
 }
 
-.rent-table-cap {
-  font-size: 11px;
-  color: #426351;
-  background: #eaf0e7;
-  padding: 5px 7px;
-  border-radius: 6px;
-  font-weight: 720;
+.rent-table-icon {
+  display: grid;
+  width: 36px;
+  flex: 0 0 36px;
+  place-items: center;
 }
 
-.rent-cap-compact {
-  display: none;
+.rent-table-icon svg,
+.rent-table-grid [data-sort="bookmark"] svg {
+  width: 16px;
+  height: 16px;
 }
 
 .rent-table-filters {
@@ -325,34 +316,21 @@
   text-overflow: ellipsis;
 }
 
-.rent-table-name {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  min-width: 0;
-}
-
-.rent-table-name > button:first-child {
-  flex: 1;
-  min-width: 0;
-  width: auto;
-}
-
-.rent-table-name .rental-save-button {
+.rent-table-grid td .rental-save-button {
   display: grid;
   place-items: center;
-  flex: 0 0 27px;
-  width: 27px;
-  min-height: 27px;
+  width: 32px;
+  min-height: 30px;
+  margin-inline: auto;
   border-radius: 5px;
   color: #315e47;
 }
 
-.rent-table-name .rental-save-button:hover {
+.rent-table-grid td .rental-save-button:hover {
   background: #d5e5d5;
 }
 
-.rent-table-name .rental-save-button svg {
+.rent-table-grid td .rental-save-button svg {
   width: 15px;
   height: 15px;
 }
@@ -521,12 +499,9 @@
     font-size: 16px;
   }
 
-  .rent-table-cap > span:first-child {
-    display: none;
-  }
-
-  .rent-cap-compact {
-    display: inline;
+  .rent-bookmark-choice {
+    flex: 1 1 146px;
+    min-width: 0;
   }
 
   .rent-table-title [data-close-table] {
@@ -535,21 +510,6 @@
 
   .rent-table-title .rent-table-action {
     min-height: 32px;
-  }
-
-  .rent-table-saved {
-    padding-inline: 7px;
-  }
-
-  .rent-table-saved span {
-    display: none;
-  }
-
-  .rent-table-export {
-    flex: 0 0 62px;
-    width: 62px;
-    height: 32px;
-    padding-inline: 5px;
   }
 
   .rent-table-filters {

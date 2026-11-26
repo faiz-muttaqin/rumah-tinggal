@@ -1,6 +1,5 @@
 import {
   createExcelBlob,
-  downloadCsv,
   downloadExcel,
   type ExportSheet,
 } from "./excel-export.ts";
@@ -27,7 +26,12 @@ import {
   safeUrl,
 } from "./research-data.ts";
 import { rentalSaveButton } from "./saved-rentals.ts";
-import { AREAS, type Station } from "./types.ts";
+import {
+  AREAS,
+  type BookmarkLibrary,
+  type BookmarkSummary,
+  type Station,
+} from "./types.ts";
 import "./rental-table.css";
 
 const modes = ["KRL", "MRT", "LRT", "TransJakarta"] as const;
@@ -59,6 +63,7 @@ type Source = { label: string; url: string };
 type Value = number | string | Source | undefined | null;
 type Row = {
   rental: ResearchRental;
+  bookmarked: boolean;
   group: (typeof RENTAL_MAP_GROUPS)[number];
   mosque?: ResearchMosque;
   mosqueKm?: number;
@@ -111,6 +116,12 @@ const mosqueCoverageLabels = {
   "no-pin": "Pin belum ada saat riset",
 };
 const columns: Column[] = [
+  {
+    id: "bookmark",
+    label: "Bookmark",
+    width: 64,
+    value: ({ bookmarked }) => Number(bookmarked),
+  },
   {
     id: "title",
     label: "Hunian",
@@ -466,12 +477,14 @@ export class RentalTable {
   private grid: HTMLTableElement;
   private corridorStations = new Map<string, Station>();
   private rows = new Map<string, Row>();
+  private bookmarkGroups = new Map<string, Set<string>>();
+  private allBookmarked = new Set<string>();
   private matches: ResearchRental[] = [];
   private selected: string[] = [];
   private ratio = preference(heightKey, 0.43);
   private frozen = Math.min(
     4,
-    Math.max(0, Math.floor(preference(stickyKey, 1))),
+    Math.max(0, Math.floor(preference(stickyKey, 2))),
   );
   private drag?: { y: number; height: number };
   private columnDrag?: {
@@ -488,7 +501,6 @@ export class RentalTable {
   private sort = { id: "rent", ascending: true };
   private onChange: () => void;
   private onSelect: (rental: ResearchRental) => void;
-  private isSaved: (id: string) => boolean;
 
   constructor(
     panel: HTMLElement,
@@ -499,7 +511,6 @@ export class RentalTable {
       close: () => void;
       reset: () => void;
       resize: () => void;
-      isSaved: (id: string) => boolean;
       message: (message: string) => void;
     },
   ) {
@@ -507,10 +518,15 @@ export class RentalTable {
     this.workspace = workspace;
     this.onChange = callbacks.change;
     this.onSelect = callbacks.select;
-    this.isSaved = callbacks.isSaved;
     panel.innerHTML = `<div class="rent-table-grab" tabindex="0" role="separator" aria-orientation="horizontal" aria-controls="rent-table-scroll" aria-label="Tinggi tabel sewa"><span></span></div>
       <form class="rent-table-controls">
-        <div class="rent-table-title"><h2 id="rent-table-title">Tabel sewa</h2><span class="rent-table-cap" title="Tarif tahunan dibagi 12 untuk pembanding. Periode pembayaran asli tercantum di tabel."><span>Maks. Rp5 juta/bln</span><span class="rent-cap-compact">≤ Rp5 jt/bln</span></span><button type="button" data-open-saved-rentals class="rent-table-action rent-table-saved" aria-haspopup="dialog" aria-label="Simpanan hunian" title="Simpanan hunian">${icon("bookmark")}<span>Simpanan</span></button><select class="rent-table-action rent-table-export" name="export" aria-label="Ekspor tabel sewa" title="Unduh semua hasil sesuai filter dan urutan tabel"><option value="">Ekspor</option><option value="csv">CSV</option><option value="xlsx">Excel (.xlsx)</option></select><button type="button" data-close-table class="rent-table-action">Ke kartu</button></div>
+        <div class="rent-table-title">
+          <h2 id="rent-table-title" title="Plafon Rp5 juta per bulan ekuivalen. Periode bayar asli ada di tabel.">Tabel sewa</h2>
+          <select name="bookmark" class="rent-table-action rent-bookmark-choice" aria-label="Prioritaskan koleksi bookmark" title="Pilih koleksi agar hunian tersimpan muncul di atas"><option value="">Semua koleksi</option></select>
+          <button type="button" data-open-saved-rentals class="rent-table-action rent-table-icon" aria-haspopup="dialog" aria-label="Bookmark" title="Bookmark">${icon("bookmark")}</button>
+          <button type="button" data-download-excel class="rent-table-action rent-table-icon" aria-label="Unduh Excel tabel sewa" title="Unduh hasil tabel sebagai Excel">${icon("download")}</button>
+          <button type="button" data-close-table class="rent-table-action">Ke kartu</button>
+        </div>
         <div class="rent-table-filters">
           <label class="rent-table-search">${icon("search")}<input type="search" name="query" aria-label="Cari di tabel sewa" placeholder="Cari hunian, kawasan, masjid…" autocomplete="off"/></label>
           <select name="scbd" aria-label="Radius Artha Graha SCBD" title="Jarak garis lurus dari pin hunian ke Gedung Artha Graha"><option value="">Semua jarak SCBD</option><option value="${RENTAL_SCBD_RADIUS}">≤ 8 km Artha Graha</option></select>
@@ -537,7 +553,13 @@ export class RentalTable {
     this.controls.onsubmit = (event) => event.preventDefault();
     this.controls.oninput = (event) => {
       const name = (event.target as HTMLElement).getAttribute("name");
-      if (name === "export") return;
+      if (name === "bookmark") {
+        if (this.sort.id === "bookmark") this.sort.ascending = false;
+        this.page = 0;
+        this.scroller.scrollTop = 0;
+        this.paint();
+        return;
+      }
       if (name === "mode") this.syncCorridor();
       if (name === "freeze") {
         this.frozen = Number(this.select("freeze").value);
@@ -562,32 +584,30 @@ export class RentalTable {
     };
     element<HTMLButtonElement>(panel, "[data-close-table]").onclick =
       callbacks.close;
-    const exportMenu = this.select("export");
-    exportMenu.onchange = async () => {
-      const format = exportMenu.value;
-      if (!format) return;
-      exportMenu.value = "";
-      exportMenu.disabled = true;
+    const download = element<HTMLButtonElement>(panel, "[data-download-excel]");
+    download.onclick = async () => {
+      download.disabled = true;
       try {
         const sheet = this.exportSheet();
         if (!sheet.rows.length)
           callbacks.message("Belum ada hunian untuk diekspor.");
-        else if (format === "csv") downloadCsv(sheet, "tabel-sewa");
         else downloadExcel(await createExcelBlob([sheet]), "tabel-sewa");
       } catch {
         callbacks.message("Ekspor tabel sewa belum berhasil. Coba lagi.");
       } finally {
-        exportMenu.disabled = false;
+        download.disabled = false;
       }
     };
     this.head.onclick = (event) => {
       const button = (event.target as HTMLElement).closest<HTMLButtonElement>(
         "[data-sort]",
       );
-      if (!button?.dataset.sort) return;
+      const id = button?.dataset.sort;
+      if (!id) return;
       this.sort = {
-        id: button.dataset.sort,
-        ascending: this.sort.id !== button.dataset.sort || !this.sort.ascending,
+        id,
+        ascending:
+          this.sort.id === id ? !this.sort.ascending : id !== "bookmark",
       };
       this.page = 0;
       this.scroller.scrollTop = 0;
@@ -742,6 +762,29 @@ export class RentalTable {
     this.select("scbd").value = RENTAL_SCBD_RADIUS;
   }
 
+  setBookmarkCollections(library?: BookmarkLibrary): void {
+    const personal = library?.collections ?? [];
+    const pinned = library?.pinned ?? [];
+    const choices = this.select("bookmark");
+    const previous = choices.value;
+    this.allBookmarked.clear();
+    this.bookmarkGroups.clear();
+    for (const { id, rentalIds } of [...personal, ...pinned]) {
+      this.bookmarkGroups.set(id, new Set(rentalIds));
+      for (const rentalId of rentalIds) this.allBookmarked.add(rentalId);
+    }
+    const group = (label: string, entries: BookmarkSummary[]) =>
+      entries.length
+        ? `<optgroup label="${label}">${entries.map(({ id, name }) => `<option value="${esc(id)}">${esc(name)}</option>`).join("")}</optgroup>`
+        : "";
+    choices.innerHTML =
+      '<option value="">Semua koleksi</option>' +
+      group("Koleksi saya", personal) +
+      group("Disematkan dari tautan", pinned);
+    choices.value = this.bookmarkGroups.has(previous) ? previous : "";
+    this.paint();
+  }
+
   private freezeLimit(): number {
     const width = this.workspace.clientWidth;
     return width <= 760 ? 2 : width < 900 ? 3 : 4;
@@ -858,6 +901,7 @@ export class RentalTable {
       const near = rental.nearbyMosques?.[0];
       const row: Row = {
         rental,
+        bookmarked: false,
         stops: {},
         mosque: near && idToMosque.get(near.id),
         mosqueKm: near?.km,
@@ -936,6 +980,7 @@ export class RentalTable {
         return false;
       if (!tokens.length) return true;
       const text = columns
+        .filter((c) => c.id !== "bookmark")
         .map((c) => sortValue(c.value(row, stop)))
         .join(" ")
         .toLocaleLowerCase("id-ID");
@@ -960,7 +1005,7 @@ export class RentalTable {
       const selected = this.selected.includes(element.dataset.rental ?? "");
       element.classList.toggle("is-selected", selected);
       element
-        .querySelector("button")
+        .querySelector(".rent-table-name")
         ?.setAttribute("aria-pressed", String(selected));
     }
   }
@@ -973,23 +1018,32 @@ export class RentalTable {
 
   private sortedRows(): Row[] {
     const column = columns.find((c) => c.id === this.sort.id) ?? columns[0];
-    return this.matches
+    const collection = this.bookmarkGroups.get(this.select("bookmark").value);
+    const saved = collection ?? this.allBookmarked;
+    const rows = this.matches
       .map((rental) => this.rows.get(rental.id))
-      .filter((row): row is Row => Boolean(row))
-      .sort((a, b) => {
-        const x = sortValue(column.value(a, this.stop(a)));
-        const y = sortValue(column.value(b, this.stop(b)));
-        if (x == null || y == null)
-          return (x == null ? 1 : 0) - (y == null ? 1 : 0);
-        const order =
-          typeof x === "number" && typeof y === "number"
-            ? x - y
-            : collator.compare(String(x), String(y));
-        return (
-          (this.sort.ascending ? order : -order) ||
-          collator.compare(a.rental.title, b.rental.title)
-        );
-      });
+      .filter((row): row is Row => Boolean(row));
+    for (const row of rows) row.bookmarked = saved.has(row.rental.id);
+    return rows.sort((a, b) => {
+      if (
+        collection &&
+        column.id !== "bookmark" &&
+        a.bookmarked !== b.bookmarked
+      )
+        return Number(b.bookmarked) - Number(a.bookmarked);
+      const x = sortValue(column.value(a, this.stop(a)));
+      const y = sortValue(column.value(b, this.stop(b)));
+      if (x == null || y == null)
+        return (x == null ? 1 : 0) - (y == null ? 1 : 0);
+      const order =
+        typeof x === "number" && typeof y === "number"
+          ? x - y
+          : collator.compare(String(x), String(y));
+      return (
+        (this.sort.ascending ? order : -order) ||
+        collator.compare(a.rental.title, b.rental.title)
+      );
+    });
   }
 
   private exportSheet(): ExportSheet {
@@ -1001,6 +1055,8 @@ export class RentalTable {
       rows: this.sortedRows().map((row) => {
         const stop = this.stop(row);
         return columns.flatMap((column) => {
+          if (column.id === "bookmark")
+            return [row.bookmarked ? "Tersimpan" : "Belum tersimpan"];
           const value = column.value(row, stop);
           const label = sortValue(value);
           if (!column.link) return [label];
@@ -1023,7 +1079,7 @@ export class RentalTable {
     this.head.innerHTML = `<tr>${columns
       .map((c, i) => {
         const active = c.id === this.sort.id;
-        return `<th scope="col" data-col="${i}"${active ? ` aria-sort="${this.sort.ascending ? "ascending" : "descending"}"` : ""}><button type="button" data-sort="${c.id}">${esc(c.label)}<span aria-hidden="true">${active ? (this.sort.ascending ? "↑" : "↓") : "↕"}</span></button><span class="rent-column-resize" data-resize-column="${c.id}" role="separator" aria-orientation="vertical" aria-label="Ubah lebar kolom ${esc(c.label)}" aria-valuemin="${minColumnWidth}" aria-valuemax="${maxColumnWidth}" aria-valuenow="${this.width(c)}" tabindex="0" title="Geser batas kolom atau gunakan tombol panah"></span></th>`;
+        return `<th scope="col" data-col="${i}"${active ? ` aria-sort="${this.sort.ascending ? "ascending" : "descending"}"` : ""}><button type="button" data-sort="${c.id}"${c.id === "bookmark" ? ' aria-label="Urutkan bookmark" title="Urutkan bookmark"' : ""}>${c.id === "bookmark" ? icon("bookmark") : esc(c.label)}<span aria-hidden="true">${active ? (this.sort.ascending ? "↑" : "↓") : "↕"}</span></button><span class="rent-column-resize" data-resize-column="${c.id}" role="separator" aria-orientation="vertical" aria-label="Ubah lebar kolom ${esc(c.label)}" aria-valuemin="${minColumnWidth}" aria-valuemax="${maxColumnWidth}" aria-valuenow="${this.width(c)}" tabindex="0" title="Geser batas kolom atau gunakan tombol panah"></span></th>`;
       })
       .join("")}</tr>`;
     this.body.innerHTML = slice.length
@@ -1032,7 +1088,7 @@ export class RentalTable {
             const stop = this.stop(row);
             const { rental, group } = row;
             const selected = this.selected.includes(rental.id);
-            return `<tr data-rental="${esc(rental.id)}" data-kind="${group.id}" class="${selected ? "is-selected" : ""}" style="--rent-type:${group.color}">${columns.map((c, i) => `<td data-col="${i}">${i === 0 ? `<div class="rent-table-name"><button type="button" aria-pressed="${selected}" title="${esc(rental.title)}">${esc(rental.title)}</button>${rentalSaveButton(rental.id, this.isSaved(rental.id), true)}</div>` : i === 1 ? `<span class="rent-table-type">${group.label}</span>` : cellHTML(c.value(row, stop), c)}</td>`).join("")}</tr>`;
+            return `<tr data-rental="${esc(rental.id)}" data-kind="${group.id}" class="${selected ? "is-selected" : ""}" style="--rent-type:${group.color}">${columns.map((c, i) => `<td data-col="${i}">${c.id === "bookmark" ? rentalSaveButton(rental.id, row.bookmarked, true) : c.id === "title" ? `<button class="rent-table-name" type="button" aria-pressed="${selected}" title="${esc(rental.title)}">${esc(rental.title)}</button>` : c.id === "type" ? `<span class="rent-table-type">${group.label}</span>` : cellHTML(c.value(row, stop), c)}</td>`).join("")}</tr>`;
           })
           .join("")
       : `<tr><td class="rent-table-empty" colspan="${columns.length}">Belum ada hunian yang cocok. Ubah pencarian atau reset filter.</td></tr>`;

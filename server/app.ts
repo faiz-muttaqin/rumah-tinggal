@@ -627,6 +627,12 @@ export function createApp(options: AppOptions = {}) {
     }
     if (!identity) throw new AuthError();
     checkWriteOrigin(request, config);
+    if ("token" in access && section === "/pin") {
+      if (method !== "PUT" && method !== "DELETE")
+        throw new HttpError(405, "Metode tidak diizinkan.");
+      bookmarks.pin(access.token, identity, method === "PUT");
+      return json(response, 200, bookmarks.list(identity));
+    }
     const item = section.match(
       /^\/items\/([A-Za-z0-9_-]{1,160})(\/comments)?$/,
     );

@@ -30,7 +30,7 @@ function shareUrl(token: string): string {
 }
 
 export function saveLabel(saved: boolean): string {
-  return saved ? "Buka simpanan" : "Simpan hunian";
+  return saved ? "Buka bookmark" : "Simpan hunian";
 }
 
 export function rentalSaveButton(
@@ -129,7 +129,7 @@ export class SavedRentals {
 
   openList(): void {
     const view = { kind: "list" } as const;
-    this.show(view, "Simpanan hunian lama");
+    this.show(view, "Hunian tersimpan lama");
     if (!getUser()) {
       this.body.innerHTML = `<p>Masuk untuk menyimpan hunian dan membuka catatanmu.</p><button type="button" class="button primary" data-saved-action="login">Masuk dengan Google</button>`;
       return;
@@ -172,7 +172,7 @@ export class SavedRentals {
       return;
     }
     const view = { kind: "edit", id } as const;
-    this.show(view, "Simpanan hunian lama");
+    this.show(view, "Hunian tersimpan lama");
     const existing = this.entries.get(id);
     if (existing) {
       this.renderEditor(existing);

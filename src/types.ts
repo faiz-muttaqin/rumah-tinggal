@@ -69,6 +69,11 @@ export interface BookmarkSummary {
   rentalIds: string[];
 }
 
+export interface PinnedBookmark extends BookmarkSummary {
+  token: string;
+  permission: BookmarkPermission;
+}
+
 export interface BookmarkItem {
   rental: SavedRentalEntry;
   comments: RentalComment[];
@@ -91,6 +96,7 @@ export interface SharedBookmark extends BookmarkContents {
 
 export interface BookmarkLibrary {
   collections: BookmarkSummary[];
+  pinned: PinnedBookmark[];
   hasLegacyRentals: boolean;
 }
 

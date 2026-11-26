@@ -4,9 +4,11 @@ import { incidents } from "../src/incidents.ts";
 import { googleMapsLocation } from "../src/maps-links.ts";
 import type {
   BookmarkChange,
+  BookmarkLibrary,
   Listing,
   OwnedBookmark,
   SavedRentalEntry,
+  SharedBookmark,
 } from "../src/types.ts";
 import { readExcel } from "./excel-workbook.ts";
 import { mockListingAccount } from "./listing-account.ts";
@@ -1150,7 +1152,7 @@ test("uses the bottom rental table for searching, sorting, freezing and opening 
   await expect(page.locator(".sidebar")).toBeVisible();
 });
 
-test("resizes a frozen column and exports every filtered row in CSV and Excel order", async ({
+test("resizes a frozen column and downloads all filtered rows in Excel order", async ({
   page,
 }) => {
   const fixture = structuredClone(researchFixture);
@@ -1192,7 +1194,7 @@ test("resizes a frozen column and exports every filtered row in CSV and Excel or
   const before = Number(await titleResize.getAttribute("aria-valuenow"));
   const box = await titleResize.boundingBox();
   if (!box) throw new Error("Handle kolom tidak ditemukan");
-  await panel.getByLabel("Bekukan kolom kiri").selectOption("2");
+  await panel.getByLabel("Bekukan kolom kiri").selectOption("3");
   await page.mouse.move(box.x + 4, box.y + 17);
   await page.mouse.down();
   await page.mouse.move(box.x + 88, box.y + 17, { steps: 5 });
@@ -1201,8 +1203,16 @@ test("resizes a frozen column and exports every filtered row in CSV and Excel or
     "aria-valuenow",
     String(before + 84),
   );
-  const secondHeader = panel.locator('th[data-col="1"]');
-  await expect(secondHeader).toHaveCSS("left", `${before + 84}px`);
+  const bookmarkWidth = Number(
+    await panel
+      .getByRole("separator", { name: "Ubah lebar kolom Bookmark" })
+      .getAttribute("aria-valuenow"),
+  );
+  const thirdHeader = panel.locator('th[data-col="2"]');
+  await expect(thirdHeader).toHaveCSS(
+    "left",
+    `${bookmarkWidth + before + 84}px`,
+  );
   await titleResize.press("ArrowRight");
   await expect(titleResize).toHaveAttribute(
     "aria-valuenow",
@@ -1220,20 +1230,8 @@ test("resizes a frozen column and exports every filtered row in CSV and Excel or
   await expect(panel.locator("tr[data-rental]").first()).toContainText(
     lastTitle,
   );
-  const exportMenu = panel.getByLabel("Ekspor tabel sewa");
-  const csvEvent = page.waitForEvent("download");
-  await exportMenu.selectOption("csv");
-  const csv = await csvEvent;
-  expect(csv.suggestedFilename()).toMatch(/^tabel-sewa-.*\.csv$/);
-  const csvPath = await csv.path();
-  if (!csvPath) throw new Error("CSV belum diunduh");
-  const content = await readFile(csvPath, "utf8");
-  expect(content).toContain('"Tautan Iklan"');
-  expect(content.split("\r\n")[1]).toContain(`"'=Ekspor Uji ""kutip"""`);
-  expect(content).toContain('"Ekspor Uji 0"');
-
   const excelEvent = page.waitForEvent("download");
-  await exportMenu.selectOption("xlsx");
+  await panel.getByRole("button", { name: "Unduh Excel tabel sewa" }).click();
   const excel = await excelEvent;
   expect(excel.suggestedFilename()).toMatch(/^tabel-sewa-.*\.xlsx$/);
   const excelPath = await excel.path();
@@ -1243,6 +1241,7 @@ test("resizes a frozen column and exports every filtered row in CSV and Excel or
   expect(sheet.formulaCount).toBe(0);
   expect(sheet.rows).toHaveLength(45);
   expect(sheet.rows[0].Hunian).toBe(lastTitle);
+  expect(sheet.rows[0].Bookmark).toBe("Belum tersimpan");
   expect(sheet.rows[0]["Setara / bulan"]).toBe(1_440_000);
   expect(sheet.rows[0]["Tautan Iklan"]).toBe(base.listingUrl);
   expect(sheet.rows.at(-1)?.Hunian).toBe("Ekspor Uji 0");
@@ -1344,7 +1343,7 @@ test("saves rentals from the table and cards into a named collection with share 
     .locator(`[data-rental="${first.id}"]`)
     .getByRole("button", { name: "Simpan hunian" })
     .click();
-  const picker = page.getByRole("dialog", { name: "Simpanan hunian" });
+  const picker = page.getByRole("dialog", { name: "Hunian tersimpan" });
   await picker.getByLabel("Nama koleksi baru").fill("Pilihan survei");
   await picker.getByRole("button", { name: "Buat koleksi dan simpan" }).click();
   const detail = page.getByRole("dialog", { name: "Pilihan survei" });
@@ -1366,7 +1365,7 @@ test("saves rentals from the table and cards into a named collection with share 
   await expect(detail).toContainText("Sebelum");
   await expect(detail).toContainText("Sesudah");
   await expect(detail).toContainText("Cek ventilasi dapur.");
-  await detail.getByRole("button", { name: "Tutup koleksi simpanan" }).click();
+  await detail.getByRole("button", { name: "Tutup hunian tersimpan" }).click();
 
   await table.getByRole("button", { name: "Ke kartu" }).click();
   await page
@@ -1385,6 +1384,127 @@ test("saves rentals from the table and cards into a named collection with share 
   await expect(
     detail.getByRole("button", { name: new RegExp(second.title) }),
   ).toBeVisible();
+});
+
+test("prioritizes personal and pinned shared bookmarks in the rental table", async ({
+  page,
+}) => {
+  await mockListingAccount(page, []);
+  const [first, second] = researchFixture.metadata.rentals.rentals;
+  const token = "p".repeat(32);
+  const pinId = "00000000-0000-4000-8000-000000000003";
+  const library: BookmarkLibrary = {
+    collections: [
+      {
+        id: "00000000-0000-4000-8000-000000000002",
+        name: "Pilihan sendiri",
+        revision: 2,
+        rentalIds: [first.id],
+      },
+    ],
+    pinned: [],
+    hasLegacyRentals: false,
+  };
+  const collection: SharedBookmark = {
+    name: "Pilihan dari tautan",
+    permission: "view",
+    revision: 2,
+    items: [
+      {
+        rental: {
+          rentalId: second.id,
+          title: second.title,
+          locationText: second.locationText,
+          kind: "Rumah",
+          sourceUrl: second.listingUrl,
+          location: null,
+          amount: second.rent.amount,
+          period: "yearly",
+          minimumMonths: 12,
+          note: "Catatan bersama",
+          savedAt: "2026-11-26T00:00:00Z",
+          updatedAt: "2026-11-26T00:00:00Z",
+        },
+        comments: [],
+      },
+    ],
+  };
+  await page.route("**/api/bookmark-collections", (route) =>
+    route.fulfill({ json: library }),
+  );
+  await page.route("**/api/shared-bookmark-collection**", (route) => {
+    expect(route.request().headers()["x-rental-share"]).toBe(token);
+    if (route.request().method() === "GET")
+      return route.fulfill({ json: { collection } });
+    library.pinned =
+      route.request().method() === "PUT"
+        ? [
+            {
+              id: pinId,
+              name: collection.name,
+              token,
+              permission: "view",
+              revision: 2,
+              rentalIds: [second.id],
+            },
+          ]
+        : [];
+    return route.fulfill({ json: library });
+  });
+
+  await page.goto(`/?koleksi=sewa&tampilan=tabel#bagikan-koleksi=${token}`);
+  const share = page.getByRole("dialog", { name: collection.name });
+  await share.getByRole("button", { name: "Sematkan koleksi" }).click();
+  await expect(
+    share.getByRole("button", { name: "Lepas sematan" }),
+  ).toBeVisible();
+  await share.getByRole("button", { name: "Tutup hunian tersimpan" }).click();
+  const table = page.getByRole("region", { name: "Tabel sewa", exact: true });
+  const choice = table.getByLabel("Prioritaskan koleksi bookmark");
+  const rows = table.locator("tr[data-rental]");
+  await expect(
+    choice.locator("option", { hasText: collection.name }),
+  ).toHaveAttribute("value", pinId);
+  await choice.selectOption({ label: "Pilihan sendiri" });
+  await expect(rows.first()).toHaveAttribute("data-rental", first.id);
+  const currentCount = await rows.count();
+  expect(currentCount).toBeGreaterThan(1);
+  await choice.selectOption({ label: collection.name });
+  await expect(rows.first()).toHaveAttribute("data-rental", second.id);
+  await expect(
+    rows
+      .first()
+      .locator("td")
+      .first()
+      .getByRole("button", { name: "Buka bookmark" }),
+  ).toBeVisible();
+  await expect(rows).toHaveCount(currentCount);
+  const sort = table.getByRole("button", { name: "Urutkan bookmark" });
+  await sort.click();
+  await expect(rows.first()).toHaveAttribute("data-rental", second.id);
+  await sort.click();
+  await expect(rows.last()).toHaveAttribute("data-rental", second.id);
+  await page.reload();
+  await expect(
+    choice.locator("option", { hasText: collection.name }),
+  ).toHaveCount(1);
+  await choice.selectOption({ label: collection.name });
+  await table.getByRole("button", { name: "Bookmark", exact: true }).click();
+  const saved = page.getByRole("dialog", { name: "Hunian tersimpan" });
+  await saved.getByRole("button", { name: /Pilihan dari tautan/ }).click();
+  await expect(share.getByText("Lihat saja", { exact: true })).toBeVisible();
+  await share.getByRole("button", { name: "Lepas sematan" }).click();
+  await expect(
+    share.getByRole("button", { name: "Sematkan koleksi" }),
+  ).toBeVisible();
+  await share.getByRole("button", { name: "Tutup hunian tersimpan" }).click();
+  await expect(choice).toHaveValue("");
+  await expect(
+    choice.locator("option", { hasText: collection.name }),
+  ).toHaveCount(0);
+  await expect(
+    choice.locator("option", { hasText: "Pilihan sendiri" }),
+  ).toHaveCount(1);
 });
 
 test("opens a legacy single-rental link with its note and guest access", async ({

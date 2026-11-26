@@ -4,6 +4,7 @@ import type {
   BookmarkChange,
   BookmarkLibrary,
   BookmarkPermission,
+  BookmarkSummary,
   OwnedBookmark,
   RentalComment,
   SavedRentalEntry,
@@ -27,6 +28,18 @@ type CollectionRow = {
 
 type Changes = BookmarkChange["fields"];
 const permissionRank = { view: 0, comment: 1, edit: 2 };
+const summaryFields = `c.name, c.revision, (
+  SELECT json_group_array(i.rental_id) FROM bookmark_items i WHERE i.collection_id = c.id
+) AS rental_ids`;
+
+function summary(row: Record<string, unknown>): BookmarkSummary {
+  return {
+    id: row.id as string,
+    name: row.name as string,
+    revision: row.revision as number,
+    rentalIds: JSON.parse(row.rental_ids as string) as string[],
+  };
+}
 
 export class BookmarkError extends Error {
   status: number;
@@ -78,6 +91,19 @@ export class BookmarkStore {
         PRIMARY KEY (collection_id, revision)
       );
       CREATE TABLE IF NOT EXISTS bookmark_imports (owner_uid TEXT PRIMARY KEY);
+      CREATE TABLE IF NOT EXISTS bookmark_pins (
+        id TEXT PRIMARY KEY,
+        pinner_uid TEXT NOT NULL,
+        share_token TEXT NOT NULL REFERENCES bookmark_collections(share_token) ON DELETE CASCADE,
+        UNIQUE (pinner_uid, share_token)
+      );
+      CREATE INDEX IF NOT EXISTS bookmarks_pinned_token ON bookmark_pins(share_token);
+      CREATE TRIGGER IF NOT EXISTS bookmark_unpin_revoked
+        BEFORE UPDATE OF share_token ON bookmark_collections
+        WHEN OLD.share_token IS NOT NULL AND OLD.share_token IS NOT NEW.share_token
+      BEGIN
+        DELETE FROM bookmark_pins WHERE share_token = OLD.share_token;
+      END;
     `);
   }
 
@@ -218,20 +244,46 @@ export class BookmarkStore {
         for (const item of legacy)
           this.insertItem(row, JSON.parse(item.content_json as string), actor);
       });
-    const rows = this.db
-      .prepare(`SELECT c.id, c.name, c.revision, (
-      SELECT json_group_array(i.rental_id) FROM bookmark_items i WHERE i.collection_id = c.id
-    ) AS rental_ids FROM bookmark_collections c WHERE c.owner_uid = ? ORDER BY c.updated_at DESC, c.id`)
+    const collections = this.db
+      .prepare(`SELECT c.id, ${summaryFields}
+      FROM bookmark_collections c WHERE c.owner_uid = ? ORDER BY c.updated_at DESC, c.id`)
+      .all(actor.uid);
+    const pinned = this.db
+      .prepare(`SELECT p.id, c.share_token, c.permission, ${summaryFields}
+      FROM bookmark_pins p JOIN bookmark_collections c ON c.share_token = p.share_token
+      WHERE p.pinner_uid = ? ORDER BY p.rowid DESC`)
       .all(actor.uid);
     return {
-      collections: rows.map((row) => ({
-        id: row.id as string,
-        name: row.name as string,
-        revision: row.revision as number,
-        rentalIds: JSON.parse(row.rental_ids as string) as string[],
+      collections: collections.map(summary),
+      pinned: pinned.map((row) => ({
+        ...summary(row),
+        token: row.share_token as string,
+        permission: row.permission as BookmarkPermission,
       })),
       hasLegacyRentals: legacy.length > 0,
     };
+  }
+
+  pin(token: string, actor: Identity, enabled: boolean): void {
+    if (!enabled) {
+      this.db
+        .prepare(
+          "DELETE FROM bookmark_pins WHERE pinner_uid = ? AND share_token = ?",
+        )
+        .run(actor.uid, token);
+      return;
+    }
+    this.transaction(() => {
+      const row = this.require({ token });
+      if (row.owner_uid === actor.uid)
+        throw new BookmarkError(
+          409,
+          "Koleksi ini sudah ada di bookmark milikmu.",
+        );
+      this.db
+        .prepare("INSERT OR IGNORE INTO bookmark_pins VALUES (?, ?, ?)")
+        .run(randomUUID(), actor.uid, token);
+    });
   }
 
   create(

@@ -445,6 +445,41 @@ test("named collections scope collaboration and record atomic edits", async (t) 
     "revision",
   ]);
   assert.equal(visible.items[0].rental.note, "Catatan sebelum");
+  assert.equal((await guest("/pin", "PUT")).status, 401);
+  assert.equal((await guest("/pin", "PUT", undefined, "alice")).status, 409);
+  const pinResponse = await guest("/pin", "PUT", undefined, "bob");
+  assert.equal(pinResponse.status, 200);
+  const { pinned } = (await pinResponse.json()) as BookmarkLibrary;
+  assert.deepEqual(
+    pinned.map(({ name, permission, rentalIds }) => ({
+      name,
+      permission,
+      rentalIds,
+    })),
+    [{ name: "Pilihan survei", permission: "view", rentalIds: [first.id] }],
+  );
+  assert.deepEqual(
+    (
+      (await (
+        await guest("/pin", "PUT", undefined, "bob")
+      ).json()) as BookmarkLibrary
+    ).pinned,
+    pinned,
+  );
+  assert.deepEqual(
+    ((await (await api(library)).json()) as BookmarkLibrary).pinned,
+    [],
+  );
+  const reopenedPin = new SavedRentalStore(dataDir);
+  try {
+    assert.deepEqual(
+      reopenedPin.bookmarks.list({ uid: "bob", email: "bob@example.invalid" })
+        .pinned,
+      pinned,
+    );
+  } finally {
+    reopenedPin.close();
+  }
   assert.equal(
     (await guest(`${item}/comments`, "POST", { text: "Tamu" })).status,
     401,
@@ -596,12 +631,40 @@ test("named collections scope collaboration and record atomic edits", async (t) 
     changes.map((change) => change.revision),
     Array.from({ length: current.revision }, (_, i) => current.revision - i),
   );
+  const livePin = (
+    (await (
+      await api(library, "GET", undefined, "bob")
+    ).json()) as BookmarkLibrary
+  ).pinned[0];
+  assert.equal(livePin.id, pinned[0].id);
+  assert.equal(livePin.permission, "edit");
+  assert.equal(livePin.name, "Siap survei");
+  assert.deepEqual(livePin.rentalIds, [second.id]);
+  assert.equal((await guest("/pin", "DELETE", undefined, "bob")).status, 200);
+  assert.deepEqual(
+    (
+      (await (
+        await api(library, "GET", undefined, "bob")
+      ).json()) as BookmarkLibrary
+    ).pinned,
+    [],
+  );
+  assert.equal((await guest("/pin", "PUT", undefined, "bob")).status, 200);
 
   const revoked = await collectionFrom(
     await api(`${path}/share`, "DELETE", { revision: current.revision }),
   );
   assert.equal(revoked.share, null);
   assert.equal((await guest()).status, 404);
+  assert.equal((await guest("/pin", "PUT", undefined, "bob")).status, 404);
+  assert.deepEqual(
+    (
+      (await (
+        await api(library, "GET", undefined, "bob")
+      ).json()) as BookmarkLibrary
+    ).pinned,
+    [],
+  );
   assert.equal(
     (
       await guest(

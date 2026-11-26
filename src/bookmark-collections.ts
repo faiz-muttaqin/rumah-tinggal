@@ -14,6 +14,7 @@ import type {
   BookmarkItem,
   BookmarkLibrary,
   BookmarkPermission,
+  BookmarkSummary,
   OwnedBookmark,
   RentalComment,
   SharedBookmark,
@@ -22,6 +23,7 @@ import type {
 const libraryPath = "/api/bookmark-collections";
 const sharedPath = "/api/shared-bookmark-collection";
 const hashKey = "bagikan-koleksi";
+const libraryTitle = "Hunian tersimpan";
 const permissions: Record<BookmarkPermission, string> = {
   view: "Lihat saja",
   comment: "Boleh komentar",
@@ -106,17 +108,20 @@ export class BookmarkCollections {
   private listRequest = 0;
   private rentals: () => readonly ResearchRental[];
   private openLegacy: () => void;
+  private libraryChanged: (library?: BookmarkLibrary) => void;
 
   constructor(
     rentals: () => readonly ResearchRental[],
     openLegacy: () => void,
+    libraryChanged: (library?: BookmarkLibrary) => void,
   ) {
     this.rentals = rentals;
     this.openLegacy = openLegacy;
+    this.libraryChanged = libraryChanged;
     this.dialog = document.createElement("dialog");
     this.dialog.className = "saved-rental-dialog bookmark-dialog";
     this.dialog.setAttribute("aria-labelledby", "bookmark-dialog-title");
-    this.dialog.innerHTML = `<div class="saved-rental-heading"><h2 id="bookmark-dialog-title"></h2><button type="button" class="icon-button" data-bookmark-action="close" aria-label="Tutup koleksi simpanan">${icon("close")}</button></div><p class="saved-rental-feedback" role="status"></p><div data-saved-body></div>`;
+    this.dialog.innerHTML = `<div class="saved-rental-heading"><h2 id="bookmark-dialog-title"></h2><button type="button" class="icon-button" data-bookmark-action="close" aria-label="Tutup hunian tersimpan">${icon("close")}</button></div><p class="saved-rental-feedback" role="status"></p><div data-saved-body></div>`;
     document.body.append(this.dialog);
     this.heading = this.dialog.querySelector("h2") as HTMLElement;
     this.body = this.dialog.querySelector("[data-saved-body]") as HTMLElement;
@@ -168,10 +173,8 @@ export class BookmarkCollections {
   }
 
   has(rentalId: string): boolean {
-    return (
-      this.library?.collections.some((collection) =>
-        collection.rentalIds.includes(rentalId),
-      ) ?? false
+    return [this.library?.collections, this.library?.pinned].some((group) =>
+      group?.some(({ rentalIds }) => rentalIds.includes(rentalId)),
     );
   }
 
@@ -233,7 +236,7 @@ export class BookmarkCollections {
 
   private openLibrary(rentalId?: string): void {
     const view: LibraryView = { kind: "library", rentalId };
-    this.show(view, "Simpanan hunian");
+    this.show(view, libraryTitle);
     if (!getUser()) {
       this.body.innerHTML = `<p>Masuk untuk menyimpan hunian ke koleksi.</p><button type="button" class="button primary" data-bookmark-action="login">Masuk dengan Google</button>`;
       return;
@@ -262,40 +265,62 @@ export class BookmarkCollections {
       ? this.rentals().find((item) => item.id === view.rentalId)
       : undefined;
     const collections = this.library?.collections ?? [];
+    const pinned = (this.library?.pinned ?? []).filter(
+      (entry) =>
+        !view.rentalId ||
+        entry.permission === "edit" ||
+        entry.rentalIds.includes(view.rentalId),
+    );
+    const list = (entries: BookmarkSummary[]) =>
+      `<ul class="saved-rental-list">${entries.map((collection) => `<li><button type="button" data-bookmark-action="open" data-id="${esc(collection.id)}"><strong>${esc(collection.name)}</strong><span>${collection.rentalIds.length} hunian${view.rentalId && collection.rentalIds.includes(view.rentalId) ? " · Sudah tersimpan" : ""}</span></button></li>`).join("")}</ul>`;
     const draft =
       this.body.querySelector<HTMLInputElement>(
         '[data-bookmark-form="create"] input',
       )?.value ?? "";
     this.body.innerHTML = `${view.rentalId ? `<p>Pilih koleksi untuk menyimpan <strong>${esc(rental?.title ?? "hunian ini")}</strong>.</p>` : ""}
-      ${collections.length ? `<ul class="saved-rental-list">${collections.map((collection) => `<li><button type="button" data-bookmark-action="open" data-id="${esc(collection.id)}"><strong>${esc(collection.name)}</strong><span>${collection.rentalIds.length} hunian${view.rentalId && collection.rentalIds.includes(view.rentalId) ? " · Sudah tersimpan" : ""}</span></button></li>`).join("")}</ul>` : ""}
+      ${collections.length ? list(collections) : ""}
+      ${pinned.length ? `<section class="bookmark-section"><h3>Disematkan dari tautan</h3>${list(pinned)}</section>` : ""}
       <form data-bookmark-form="create"><label>Nama koleksi baru<input name="name" maxlength="120" required value="${esc(draft)}" placeholder="Misalnya Pilihan survei"/></label><button class="button primary" type="submit">${view.rentalId ? "Buat koleksi dan simpan" : "Buat koleksi"}</button></form>
       ${this.library?.hasLegacyRentals ? '<button class="saved-remove text-button" type="button" data-bookmark-action="legacy">Kelola simpanan lama</button>' : ""}`;
   }
 
-  private record(collection: OwnedBookmark): void {
-    this.listRequest++;
+  private record(ref: Ref, collection: Collection): void {
     const library = this.library ?? {
       collections: [],
+      pinned: [],
       hasLegacyRentals: false,
     };
-    this.library = {
-      ...library,
-      collections: [
-        {
-          id: collection.id,
-          name: collection.name,
-          revision: collection.revision,
-          rentalIds: collection.items.map(({ rental }) => rental.rentalId),
-        },
-        ...library.collections.filter(({ id }) => id !== collection.id),
-      ],
+    const summary = {
+      name: collection.name,
+      revision: collection.revision,
+      rentalIds: collection.items.map(({ rental }) => rental.rentalId),
     };
+    if ("id" in collection)
+      this.library = {
+        ...library,
+        collections: [
+          { id: collection.id, ...summary },
+          ...library.collections.filter(({ id }) => id !== collection.id),
+        ],
+      };
+    else if ("token" in ref && this.isPinned(ref.token))
+      this.library = {
+        ...library,
+        pinned: library.pinned.map((entry) =>
+          entry.token === ref.token
+            ? { ...entry, ...summary, permission: collection.permission }
+            : entry,
+        ),
+      };
+    else return;
+    this.listRequest++;
     this.syncButtons();
   }
 
   private syncButtons(): void {
+    this.libraryChanged(this.library);
     for (const button of document.querySelectorAll<HTMLButtonElement>(
-      "[data-save-rental]",
+      "[data-save-rental]:not(.is-compact)",
     )) {
       const saved = this.has(button.dataset.saveRental ?? "");
       const label = saveLabel(saved);
@@ -305,6 +330,43 @@ export class BookmarkCollections {
       const span = button.querySelector("span");
       if (span) span.textContent = label;
     }
+    const view = this.view;
+    const pin = this.body.querySelector("[data-bookmark-action=pin]");
+    if (pin && view?.kind === "detail" && "token" in view.ref)
+      pin.textContent = this.pinLabel(view.ref.token);
+  }
+
+  private isPinned(token: string): boolean {
+    return (
+      this.library?.pinned?.some((entry) => entry.token === token) ?? false
+    );
+  }
+
+  private pinLabel(token: string): string {
+    return this.isPinned(token) ? "Lepas sematan" : "Sematkan koleksi";
+  }
+
+  private async togglePin(view: DetailView, token: string): Promise<void> {
+    const enabled = !this.isPinned(token);
+    const account = this.account;
+    await this.task(
+      view,
+      async () => {
+        const library = await privateAPI<BookmarkLibrary>(`${sharedPath}/pin`, {
+          method: enabled ? "PUT" : "DELETE",
+          headers: { "X-Rental-Share": token },
+        });
+        if (account === this.account) {
+          this.listRequest++;
+          this.library = library;
+          this.syncButtons();
+        }
+      },
+      () =>
+        this.message(
+          enabled ? "Koleksi disematkan ke bookmark." : "Sematan dilepas.",
+        ),
+    );
   }
 
   private checkHash(): void {
@@ -323,7 +385,7 @@ export class BookmarkCollections {
     this.show(
       view,
       collection?.name ??
-        ("token" in ref ? "Koleksi yang dibagikan" : "Simpanan hunian"),
+        ("token" in ref ? "Koleksi yang dibagikan" : libraryTitle),
     );
     if (collection) this.renderDetail(view);
     else {
@@ -342,7 +404,10 @@ export class BookmarkCollections {
           headers: { "X-Rental-Share": view.ref.token },
         });
         if (!response.ok) {
-          if (response.status === 404) view.collection = undefined;
+          if (response.status === 404) {
+            view.collection = undefined;
+            if (getUser()) void this.loadLibrary();
+          }
           throw new Error("Tautan koleksi tidak tersedia.");
         }
         return (await response.json()) as { collection: Collection };
@@ -350,7 +415,7 @@ export class BookmarkCollections {
       ({ collection }) => {
         this.message("");
         view.collection = collection;
-        if ("id" in collection) this.record(collection);
+        this.record(view.ref, collection);
         this.renderDetail(view);
       },
       !("token" in view.ref),
@@ -382,8 +447,9 @@ export class BookmarkCollections {
     }
     const shared = "permission" in collection;
     const edit = this.canEdit(collection);
+    const token = "token" in view.ref ? view.ref.token : undefined;
     this.body.innerHTML = `<div class="bookmark-actions">${shared ? `<span>${permissions[collection.permission]}</span>` : '<button type="button" class="text-button" data-bookmark-action="library">← Semua koleksi</button>'}<button type="button" class="text-button" data-bookmark-action="reload">Muat ulang</button></div>
-      ${shared && collection.permission !== "view" && !getUser() ? `<button class="button" type="button" data-bookmark-action="login">Masuk dengan Google untuk ${collection.permission === "edit" ? "mengedit" : "berkomentar"}</button>` : ""}
+      ${token && shared ? (getUser() ? `<button class="button" type="button" data-bookmark-action="pin">${this.pinLabel(token)}</button>` : `<button class="button" type="button" data-bookmark-action="login">Masuk dengan Google untuk ${collection.permission === "edit" ? "mengedit" : collection.permission === "comment" ? "berkomentar" : "menyematkan koleksi"}</button>`) : ""}
       ${collection.items.length ? `<ul class="saved-rental-list">${collection.items.map(({ rental, comments }) => `<li><button data-bookmark-action="item" data-id="${esc(rental.rentalId)}" type="button"><strong>${esc(rental.title)}</strong><span>${esc(rentalPrice(rental))}</span><span>${esc(rental.locationText)}${comments.length ? ` · ${comments.length} komentar` : ""}</span></button></li>`).join("")}</ul>` : "<p>Belum ada hunian di koleksi ini.</p>"}
       ${
         edit
@@ -489,25 +555,28 @@ export class BookmarkCollections {
   }
 
   private async select(view: LibraryView, id: string): Promise<void> {
-    const entry = this.library?.collections.find(
-      (collection) => collection.id === id,
-    );
+    const pin = this.library?.pinned?.find((entry) => entry.id === id);
+    const entry =
+      this.library?.collections.find((collection) => collection.id === id) ??
+      pin;
     if (!entry) return;
     const rentalId = view.rentalId;
+    const ref: Ref = pin ? { token: pin.token } : { id };
     if (!rentalId || entry.rentalIds.includes(rentalId)) {
-      await this.openDetail({ id }, undefined, rentalId);
+      await this.openDetail(ref, undefined, rentalId);
       return;
     }
+    if (pin && pin.permission !== "edit") return;
     await this.task(
       view,
       () =>
-        privateAPI<{ collection: OwnedBookmark }>(
-          `${libraryPath}/${id}/items/${encodeURIComponent(rentalId)}`,
-          write("PUT", { revision: entry.revision }),
+        privateAPI<{ collection: Collection }>(
+          `${pathFor(ref)}/items/${encodeURIComponent(rentalId)}`,
+          this.options(ref, "PUT", { revision: entry.revision }),
         ),
       ({ collection }) => {
-        this.record(collection);
-        void this.openDetail({ id }, collection, rentalId);
+        this.record(ref, collection);
+        void this.openDetail(ref, collection, rentalId);
         this.message("Hunian tersimpan di koleksi.");
       },
     );
@@ -542,6 +611,8 @@ export class BookmarkCollections {
         this.message("");
         this.renderDetail(view);
       } else if (action === "reload") await this.reload(view);
+      else if (action === "pin" && "token" in view.ref && getUser())
+        await this.togglePin(view, view.ref.token);
       else if (action === "history" || action === "history-more")
         await this.history(view, action === "history-more");
       else if (action === "copy") {
@@ -587,14 +658,9 @@ export class BookmarkCollections {
     }
   }
 
-  private options(
-    view: DetailView,
-    method: string,
-    fields: object,
-  ): RequestInit {
+  private options(ref: Ref, method: string, fields: object): RequestInit {
     const options = write(method, fields);
-    if ("token" in view.ref)
-      options.headers = { "X-Rental-Share": view.ref.token };
+    if ("token" in ref) options.headers = { "X-Rental-Share": ref.token };
     return options;
   }
 
@@ -610,7 +676,7 @@ export class BookmarkCollections {
       () =>
         privateAPI<{ collection: Collection }>(
           pathFor(view.ref) + suffix,
-          this.options(view, method, {
+          this.options(view.ref, method, {
             ...fields,
             revision: view.collection?.revision,
           }),
@@ -619,7 +685,7 @@ export class BookmarkCollections {
         view.collection = collection;
         if (method === "DELETE" && suffix.startsWith("/items/"))
           view.itemId = undefined;
-        if ("id" in collection) this.record(collection);
+        this.record(view.ref, collection);
         this.renderDetail(view);
         this.message(message);
       },
@@ -642,12 +708,9 @@ export class BookmarkCollections {
             }),
           ),
         ({ collection }) => {
-          this.record(collection);
-          void this.openDetail(
-            { id: collection.id },
-            collection,
-            view.rentalId,
-          );
+          const ref = { id: collection.id };
+          this.record(ref, collection);
+          void this.openDetail(ref, collection, view.rentalId);
           this.message(
             view.rentalId
               ? "Koleksi dibuat dan hunian tersimpan."
@@ -697,7 +760,7 @@ export class BookmarkCollections {
           () =>
             privateAPI<{ comment: RentalComment }>(
               path,
-              this.options(view, "POST", { text: fields.get("text") }),
+              this.options(view.ref, "POST", { text: fields.get("text") }),
             ),
           ({ comment }) => {
             item.comments.push(comment);
