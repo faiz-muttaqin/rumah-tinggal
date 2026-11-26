@@ -2,10 +2,13 @@
   "schemaVersion": 1,
   "checkedAt": "2026-11-26",
   "anchor": {
-    "name": "SCBD (approximate district centre; replace with office entrance when known)",
-    "lat": -6.2262,
-    "lng": 106.8098,
-    "source": "https://en.wikipedia.org/wiki/Sudirman_Central_Business_District"
+    "name": "Gedung Artha Graha, SCBD Lot 25",
+    "address": "Jl. Jend. Sudirman Kav. 52–53, Senayan, Kebayoran Baru, Jakarta Selatan, Indonesia",
+    "lat": -6.2246,
+    "lng": 106.8109,
+    "source": "https://arthagraha.net/contact",
+    "coordinateSource": "https://id.near-place.com/building-artha-graha-kawasan-niaga-terpadu-sudirman-scbd-jl-jend-sudirman-kav-52-53-senayan-kebayoran-baru-rt5rw3-senayan",
+    "coordinateStatus": "approximate building reference only; entrance and routes deferred"
   },
   "limits": {
     "straightLineKm": 8,
@@ -20,7 +23,7 @@
     "https://gis-dpmptsp.jakarta.go.id/arcgis/rest/services/Hosted/Batas_Administrasi_Kelurahan_DKI_Jakarta/FeatureServer/85",
     "https://jdih.jakarta.go.id/tarikDataLokasi"
   ],
-  "note": "Manual intentionally overinclusive seed; not an exhaustive polygon result. Border areas may fall outside both limits; office point is not a polygon or unit pin. Road-only leads may lie beyond 8km up to 10km straight line. Include Greater Jakarta boundaries in future query.",
+  "note": "Manual intentionally overinclusive seed; not an exhaustive polygon result. Border areas may fall outside both limits; office point is not a polygon or unit pin. Road-only leads may lie beyond 8km up to 10km straight line. Include Greater Jakarta boundaries in future query. User scope update: collection only around Artha Graha approximately 8 km; retain earlier 10 km road criterion as optional later validation. All areas remain unverified seeds, not measured distances. No mosque/transit integration in this phase.",
   "areas": [
     {
       "city": "Jakarta Selatan",
