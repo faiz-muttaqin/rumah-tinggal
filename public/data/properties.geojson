@@ -45732,6 +45732,1023 @@
       "couples": true,
       "children": true
      }
+    },
+    {
+     "id": "sewa-mamikos-c8eaf58de2df",
+     "title": "Kos Pengasinan — pasutri",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Kecamatan Rawalumbu, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 750000,
+      "period": "monthly",
+      "quote": "IDR 750.000 per bulan.",
+      "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-murah-kost-pengasinan-rawalumbu-bekasi",
+      "pageDate": "2024-02-20"
+     },
+     "bedrooms": 1,
+     "sizeM2": 21.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 750.000 per bulan.",
+       "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-murah-kost-pengasinan-rawalumbu-bekasi"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 1,49 km garis lurus dari LRT Jatimulya. Tarif dasar satu kamar; biaya penghuni kedua tidak tercantum, konfirmasi ke pengiklan. Tanggal iklan di portal 2024-02-20. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-murah-kost-pengasinan-rawalumbu-bekasi",
+     "sourcePortal": "Mamikos",
+     "postedOrUpdated": "2024-02-20",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.264816,
+      "lng": 107.008186,
+      "precision": "approximate",
+      "label": "Kecamatan Rawalumbu, Kota Bekasi",
+      "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-murah-kost-pengasinan-rawalumbu-bekasi",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "couples": true,
+      "children": true
+     }
+    },
+    {
+     "id": "sewa-mamikos-ac0da18ba2c1",
+     "title": "Kos Rumah Kontrakan Kawi — pasutri",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Depok",
+     "locationText": "Kecamatan Sukmajaya, Kota Depok",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1500000,
+      "period": "monthly",
+      "minimumMonths": 6,
+      "quote": "IDR 1.500.000 per bulan, minimum 6 bulan.",
+      "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-rumah-kontrakan-kawi-sukmajaya-depok",
+      "pageDate": "2024-02-25"
+     },
+     "bedrooms": 1,
+     "sizeM2": 51.0,
+     "furnished": null,
+     "kitchen": "private",
+     "evidence": [
+      {
+       "quote": "IDR 1.500.000 per bulan, minimum 6 bulan.",
+       "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-rumah-kontrakan-kawi-sukmajaya-depok"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 0,92 km garis lurus dari Masjid Ar-Riyadh. Tarif dasar satu kamar; biaya penghuni kedua tidak tercantum, konfirmasi ke pengiklan. Tanggal iklan di portal 2024-02-25. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-rumah-kontrakan-kawi-sukmajaya-depok",
+     "sourcePortal": "Mamikos",
+     "postedOrUpdated": "2024-02-25",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.394429,
+      "lng": 106.849099,
+      "precision": "approximate",
+      "label": "Kecamatan Sukmajaya, Kota Depok",
+      "url": "https://mamikos.com/room/kost-kota-depok-kost-campur-eksklusif-rumah-kontrakan-kawi-sukmajaya-depok",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-ar-riyadh",
+       "name": "Masjid Ar-Riyadh",
+       "km": 0.92
+      }
+     ],
+     "review": {
+      "couples": true,
+      "children": true
+     }
+    },
+    {
+     "id": "sewa-mamikos-f7ced386efea",
+     "title": "Kos Zahwa Buaran Indah Tipe A — pasutri",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Kecamatan Tangerang, Kota Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1000000,
+      "period": "monthly",
+      "quote": "IDR 1.000.000 per bulan.",
+      "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-zahwa-buaran-indah-tipe-a-tangerang-tangerang-1",
+      "pageDate": "2023-12-15"
+     },
+     "bedrooms": 1,
+     "sizeM2": 9.0,
+     "furnished": null,
+     "kitchen": "private",
+     "evidence": [
+      {
+       "quote": "IDR 1.000.000 per bulan.",
+       "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-zahwa-buaran-indah-tipe-a-tangerang-tangerang-1"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 0,14 km garis lurus dari KRL Tanah Tinggi. Tarif dasar satu kamar; biaya penghuni kedua tidak tercantum, konfirmasi ke pengiklan. Tanggal iklan di portal 2023-12-15. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-zahwa-buaran-indah-tipe-a-tangerang-tangerang-1",
+     "sourcePortal": "Mamikos",
+     "postedOrUpdated": "2023-12-15",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.175453,
+      "lng": 106.645491,
+      "precision": "approximate",
+      "label": "Kecamatan Tangerang, Kota Tangerang",
+      "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-zahwa-buaran-indah-tipe-a-tangerang-tangerang-1",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hakim",
+       "name": "Masjid Al-Hakim",
+       "km": 0.719
+      },
+      {
+       "id": "masjid-raya-rahmatan-lil-alamin",
+       "name": "Masjid Raya Rahmatan Lil'alamin",
+       "km": 1.189
+      }
+     ],
+     "review": {
+      "couples": true,
+      "children": true
+     }
+    },
+    {
+     "id": "sewa-mamikos-1f84ec357c08",
+     "title": "Kos Syarifah Tipe A — pasutri",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Kecamatan Pinang, Kota Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1000000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "IDR 1.000.000 per bulan, minimum 1 bulan.",
+      "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-syarifah-tipe-a-pinang-tangerang-2",
+      "pageDate": "2025-09-23"
+     },
+     "bedrooms": 1,
+     "sizeM2": 30.0,
+     "furnished": null,
+     "kitchen": "private",
+     "evidence": [
+      {
+       "quote": "IDR 1.000.000 per bulan, minimum 1 bulan.",
+       "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-syarifah-tipe-a-pinang-tangerang-2"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 1,46 km garis lurus dari Masjid Nurul Iman Valencia. Tarif dasar satu kamar; biaya penghuni kedua tidak tercantum, konfirmasi ke pengiklan. Tanggal iklan di portal 2025-09-23. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-syarifah-tipe-a-pinang-tangerang-2",
+     "sourcePortal": "Mamikos",
+     "postedOrUpdated": "2025-09-23",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.222795,
+      "lng": 106.68729,
+      "precision": "approximate",
+      "label": "Kecamatan Pinang, Kota Tangerang",
+      "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-kost-syarifah-tipe-a-pinang-tangerang-2",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-an-naba",
+       "name": "Masjid An Naba'",
+       "km": 0.819
+      },
+      {
+       "id": "masjid-nurul-iman-valencia",
+       "name": "Masjid Nurul Iman Valencia",
+       "km": 1.458
+      }
+     ],
+     "review": {
+      "couples": true,
+      "children": true
+     }
+    },
+    {
+     "id": "sewa-pinhome-abb6fd554410",
+     "title": "Kontrakan 3 kamar di Larangan Utara, 109 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Larangan Utara, Larangan, Kota Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 55500000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 55.500.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-puri-beta-di-larangan-utara",
+      "pageDate": "2026-11-16"
+     },
+     "bedrooms": 3,
+     "sizeM2": 109.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 55.500.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-puri-beta-di-larangan-utara"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 0,39 km garis lurus dari halte TransJakarta Puri Beta 2. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-puri-beta-di-larangan-utara",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2026-11-16",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.233892,
+      "lng": 106.722963,
+      "precision": "approximate",
+      "label": "Larangan Utara, Larangan, Kota Tangerang",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-puri-beta-di-larangan-utara",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-jami-al-jihad",
+       "name": "Masjid Jami Al Jihad",
+       "km": 0.876
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-d5490c2ebb92",
+     "title": "Kontrakan 1 kamar di Jatimulya, 80 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Jatimulya, Tambun Selatan, Kab. Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 15000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 15.000.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-delima-ii-no-134",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 1,
+     "sizeM2": 80.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 15.000.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-delima-ii-no-134"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 0,52 km garis lurus dari LRT Jatimulya. Tanggal iklan 11 Juni 2025 tampak sebagai pembaruan massal portal; kesegaran harga perlu dikonfirmasi. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-delima-ii-no-134",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.267852,
+      "lng": 107.018832,
+      "precision": "approximate",
+      "label": "Jatimulya, Tambun Selatan, Kab. Bekasi",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-delima-ii-no-134",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-ab4f88236e72",
+     "title": "Kontrakan 2 kamar di Menteng Dalam, 90 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Menteng Dalam, Tebet, Kota Jakarta Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 50000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 50.000.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-merpati-menteng-dalam-jakarta-selatan",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 2,
+     "sizeM2": 90.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 50.000.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-merpati-menteng-dalam-jakarta-selatan"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 1,14 km garis lurus dari LRT Kuningan. Tanggal iklan 11 Juni 2025 tampak sebagai pembaruan massal portal; kesegaran harga perlu dikonfirmasi. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-merpati-menteng-dalam-jakarta-selatan",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.234958,
+      "lng": 106.841423,
+      "precision": "approximate",
+      "label": "Menteng Dalam, Tebet, Kota Jakarta Selatan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jln-merpati-menteng-dalam-jakarta-selatan",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-f2bd0195b3d0",
+     "title": "Apartemen Puri Park View 2 kamar",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Petukangan Selatan, Pesanggrahan, Kota Jakarta Selatan",
+     "buildingOrCluster": "Puri Park View",
+     "rent": {
+      "amount": 37000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 37.000.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-lokasi-bagus-di-puri-park-view",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 2,
+     "sizeM2": 35.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 37.000.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-lokasi-bagus-di-puri-park-view"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 0,27 km garis lurus dari halte TransJakarta JORR. Ketentuan pasutri dan biaya tambahan apartemen belum terbukti; konfirmasi ke pengelola. Tanggal iklan 11 Juni 2025 tampak sebagai pembaruan massal portal; kesegaran harga perlu dikonfirmasi. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-lokasi-bagus-di-puri-park-view",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.238581,
+      "lng": 106.755384,
+      "precision": "approximate",
+      "label": "Puri Park View",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-lokasi-bagus-di-puri-park-view",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-aa83a6a69eba",
+     "title": "Kontrakan 1 kamar di Jatibening Baru, 50 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Jatibening Baru, Pondokgede (Pondok Gede), Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 25000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 25.000.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-dekat-lrt-jatibening-baru-di-jatibening-baru",
+      "pageDate": "2025-12-15"
+     },
+     "bedrooms": 1,
+     "sizeM2": 50.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 25.000.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-dekat-lrt-jatibening-baru-di-jatibening-baru"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 1,00 km garis lurus dari LRT Jatibening Baru. Tanggal iklan di portal 2025-12-15. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-dekat-lrt-jatibening-baru-di-jatibening-baru",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2025-12-15",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.262201,
+      "lng": 106.93582,
+      "precision": "approximate",
+      "label": "Jatibening Baru, Pondokgede (Pondok Gede), Kota Bekasi",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-dekat-lrt-jatibening-baru-di-jatibening-baru",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-2031c9512243",
+     "title": "Kontrakan 2 kamar di Jakamulya (Jaka Mulya), 44 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Jakamulya (Jaka Mulya), Bekasi Selatan, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 27000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 27.000.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-murah-1-lantai-dalam-komplek-di-cikunir-di-jakamulya-jaka-mulya",
+      "pageDate": "2026-05-19"
+     },
+     "bedrooms": 2,
+     "sizeM2": 44.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 27.000.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-murah-1-lantai-dalam-komplek-di-cikunir-di-jakamulya-jaka-mulya"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 0,68 km garis lurus dari LRT Cikunir 2. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-murah-1-lantai-dalam-komplek-di-cikunir-di-jakamulya-jaka-mulya",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2026-05-19",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.259134,
+      "lng": 106.958969,
+      "precision": "approximate",
+      "label": "Jakamulya (Jaka Mulya), Bekasi Selatan, Kota Bekasi",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-murah-1-lantai-dalam-komplek-di-cikunir-di-jakamulya-jaka-mulya",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-aqsho",
+       "name": "Masjid Al-Aqsho",
+       "km": 0.845
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-c955a12b0d26",
+     "title": "Kontrakan 2 kamar di Jakamulya (Jaka Mulya), 52 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Jakamulya (Jaka Mulya), Bekasi Selatan, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 28000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 28.000.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-plus-water-heater-dan-canopy-di-cikunir-di-jakamulya-jaka-mulya",
+      "pageDate": "2026-09-19"
+     },
+     "bedrooms": 2,
+     "sizeM2": 52.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 28.000.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-plus-water-heater-dan-canopy-di-cikunir-di-jakamulya-jaka-mulya"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 0,78 km garis lurus dari LRT Cikunir 2. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-plus-water-heater-dan-canopy-di-cikunir-di-jakamulya-jaka-mulya",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2026-09-19",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.260948,
+      "lng": 106.96012,
+      "precision": "approximate",
+      "label": "Jakamulya (Jaka Mulya), Bekasi Selatan, Kota Bekasi",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-plus-water-heater-dan-canopy-di-cikunir-di-jakamulya-jaka-mulya",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-aqsho",
+       "name": "Masjid Al-Aqsho",
+       "km": 1.079
+      },
+      {
+       "id": "masjid-al-furqan-grand-galaxy-city",
+       "name": "Masjid Al Furqan Grand Galaxy City",
+       "km": 1.409
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-9d2b6f81615e",
+     "title": "Kontrakan 2 kamar di Pengadegan, 85 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Pengadegan, Pancoran, Kota Jakarta Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 32500000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 32.500.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pengadegan-timur-1",
+      "pageDate": "2026-11-19"
+     },
+     "bedrooms": 2,
+     "sizeM2": 85.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 32.500.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pengadegan-timur-1"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 0,61 km garis lurus dari LRT Cikoko. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pengadegan-timur-1",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2026-11-19",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.248772,
+      "lng": 106.858373,
+      "precision": "approximate",
+      "label": "Pengadegan, Pancoran, Kota Jakarta Selatan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pengadegan-timur-1",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-2ed83ff1f717",
+     "title": "Kontrakan 2 kamar di Kaliabang Tengah (Kali Abang Tengah), 60 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Kaliabang Tengah (Kali Abang Tengah), Bekasi Utara, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 25000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 25.000.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-taman-harapan-baru-di-kaliabang-tengah-kali-abang-tengah-1",
+      "pageDate": "2026-05-07"
+     },
+     "bedrooms": 2,
+     "sizeM2": 60.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 25.000.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-taman-harapan-baru-di-kaliabang-tengah-kali-abang-tengah-1"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 1,42 km garis lurus dari Masjid Nurul Jannah PUP. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-taman-harapan-baru-di-kaliabang-tengah-kali-abang-tengah-1",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2026-05-07",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.176445,
+      "lng": 106.99504,
+      "precision": "approximate",
+      "label": "Kaliabang Tengah (Kali Abang Tengah), Bekasi Utara, Kota Bekasi",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-taman-harapan-baru-di-kaliabang-tengah-kali-abang-tengah-1",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-nurul-jannah-pup",
+       "name": "Masjid Nurul Jannah PUP",
+       "km": 1.415
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-6df0eeb8cfbd",
+     "title": "Kontrakan 2 kamar di Kaliabang Tengah (Kali Abang Tengah), 60 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Kaliabang Tengah (Kali Abang Tengah), Bekasi Utara, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 25000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 25.000.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-luas-dipondok-ungu-di-kaliabang-tengah-kali-abang-tengah",
+      "pageDate": "2026-05-21"
+     },
+     "bedrooms": 2,
+     "sizeM2": 60.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 25.000.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-luas-dipondok-ungu-di-kaliabang-tengah-kali-abang-tengah"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 0,95 km garis lurus dari Masjid Nurul Jannah PUP. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-luas-dipondok-ungu-di-kaliabang-tengah-kali-abang-tengah",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2026-05-21",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.176341,
+      "lng": 106.999224,
+      "precision": "approximate",
+      "label": "Kaliabang Tengah (Kali Abang Tengah), Bekasi Utara, Kota Bekasi",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-luas-dipondok-ungu-di-kaliabang-tengah-kali-abang-tengah",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-nurul-jannah-pup",
+       "name": "Masjid Nurul Jannah PUP",
+       "km": 0.953
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-8cdc3fb6f80d",
+     "title": "Kontrakan 2 kamar di Bintara, 60 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Bintara, Bekasi Barat, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 30000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 30.000.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bintara-viii-rt002-rw006-bintara",
+      "pageDate": "2025-06-11"
+     },
+     "bedrooms": 2,
+     "sizeM2": 60.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 30.000.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bintara-viii-rt002-rw006-bintara"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 1,16 km garis lurus dari Masjid Nurul I'tishom. Tanggal iklan 11 Juni 2025 tampak sebagai pembaruan massal portal; kesegaran harga perlu dikonfirmasi. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bintara-viii-rt002-rw006-bintara",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2025-06-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.228559,
+      "lng": 106.956685,
+      "precision": "approximate",
+      "label": "Bintara, Bekasi Barat, Kota Bekasi",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bintara-viii-rt002-rw006-bintara",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-nurul-i-tishom",
+       "name": "Masjid Nurul I'tishom",
+       "km": 1.157
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-c2db6722bc74",
+     "title": "Kontrakan 3 kamar di Larangan Utara, 110 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Larangan Utara, Larangan, Kota Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 52500000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 52.500.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-puri-beta-2-di-larangan-utara",
+      "pageDate": "2026-11-24"
+     },
+     "bedrooms": 3,
+     "sizeM2": 110.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 52.500.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-puri-beta-2-di-larangan-utara"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 0,03 km garis lurus dari halte TransJakarta Puri Beta 1. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-puri-beta-2-di-larangan-utara",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2026-11-24",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.230588,
+      "lng": 106.726274,
+      "precision": "approximate",
+      "label": "Larangan Utara, Larangan, Kota Tangerang",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-puri-beta-2-di-larangan-utara",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-jami-al-jihad",
+       "name": "Masjid Jami Al Jihad",
+       "km": 1.393
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-a44bc8ec1e33",
+     "title": "Kontrakan 3 kamar di Petukangan Utara, 90 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Petukangan Utara, Pesanggrahan, Kota Jakarta Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 40000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 40.000.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-sulaiman-4",
+      "pageDate": "2025-06-19"
+     },
+     "bedrooms": 3,
+     "sizeM2": 90.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 40.000.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-sulaiman-4"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 0,29 km garis lurus dari halte TransJakarta Petukangan D'MASIV. Tanggal iklan di portal 2025-06-19. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-sulaiman-4",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2025-06-19",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.236339,
+      "lng": 106.745111,
+      "precision": "approximate",
+      "label": "Petukangan Utara, Pesanggrahan, Kota Jakarta Selatan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-h-sulaiman-4",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-90f8204ed6d9",
+     "title": "Kontrakan 2 kamar di Jatimulya, 55 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Jatimulya, Tambun Selatan, Kab. Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 15500000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "IDR 15.500.000 per tahun, minimum 12 bulan.",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-al-huda",
+      "pageDate": "2026-08-23"
+     },
+     "bedrooms": 2,
+     "sizeM2": 55.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 15.500.000 per tahun, minimum 12 bulan.",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-al-huda"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 1,44 km garis lurus dari LRT Jatimulya. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-al-huda",
+     "sourcePortal": "Pinhome",
+     "postedOrUpdated": "2026-08-23",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.276992,
+      "lng": 107.022819,
+      "precision": "approximate",
+      "label": "Jatimulya, Tambun Selatan, Kab. Bekasi",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-al-huda",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-ikhlas-dukuh-bima",
+       "name": "Masjid Al Ikhlas Dukuh Bima",
+       "km": 1.48
+      }
+     ]
+    },
+    {
+     "id": "sewa-rukita-c6d80bc9a5bc",
+     "title": "Rukita Grasta Senayan — Regular Full A",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Jakarta Selatan, Jakarta",
+     "buildingOrCluster": "Rukita Grasta Senayan",
+     "rent": {
+      "amount": 3668000,
+      "period": "monthly",
+      "quote": "IDR 3.668.000 per bulan.",
+      "url": "https://www.rukita.co/place/senayan",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 13.32,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "IDR 3.668.000 per bulan.",
+       "url": "https://www.rukita.co/place/senayan"
+      },
+      {
+       "quote": "Harga untuk 1 orang, maksimal 2 orang.",
+       "url": "https://www.rukita.co/place/senayan"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Acuan pin sekitar 1,02 km garis lurus dari KRL Palmerah. Harga untuk 1 penghuni; kamar menampung maksimal 2 orang. Tarif penghuni kedua belum diketahui, konfirmasi ke pengelola. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.rukita.co/place/senayan",
+     "sourcePortal": "Rukita",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+     "location": {
+      "lat": -6.216605,
+      "lng": 106.794279,
+      "precision": "approximate",
+      "label": "Rukita Grasta Senayan",
+      "url": "https://www.rukita.co/place/senayan",
+      "method": "Pin perkiraan dari iklan",
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "couples": true,
+      "children": true
+     }
     }
    ],
    "locationsCheckedAt": "2026-11-26"
