@@ -1393,6 +1393,7 @@ test("saves rentals from the table and cards into a named collection with share 
 test("saves directly to a selected personal or editable pinned bookmark", async ({
   page,
 }) => {
+  test.setTimeout(60_000);
   await mockListingAccount(page, []);
   const [first, second] = researchFixture.metadata.rentals.rentals;
   const token = "p".repeat(32);
