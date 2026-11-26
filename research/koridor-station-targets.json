@@ -1,0 +1,841 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-26",
+  "boundaryStatus": "pending-live-query",
+  "note": "Manual paths and portal slugs are hypotheses. Counts use existing rental points, not polygons. No proof of locality-radius overlap until BIG query succeeds.",
+  "radiiMeters": [500, 1000, 1500, 2000],
+  "stations": [
+    {
+      "mode": "KRL",
+      "station": "Cikarang",
+      "stopId": "osm-node-11185037567",
+      "coordinate": [107.1450733, -6.2553138],
+      "coordinateSource": "https://www.openstreetmap.org/node/11185037567",
+      "manualSearchAreas": ["Karangasih", "Karangbaru", "Cikarang Kota"],
+      "paths": [
+        "jawa-barat/kab-bekasi/cikarang-utara/karangasih",
+        "jawa-barat/kab-bekasi/cikarang-utara/karangbaru",
+        "jawa-barat/kab-bekasi/cikarang-utara/cikarang-kota"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 0
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Metland Telagamurni",
+      "stopId": "osm-node-5312478122",
+      "coordinate": [107.111227, -6.2574741],
+      "coordinateSource": "https://www.openstreetmap.org/node/5312478122",
+      "manualSearchAreas": ["Telagamurni", "Telaga Asih", "Telaga Harapan"],
+      "paths": [
+        "jawa-barat/kab-bekasi/cikarang-barat/telagamurni",
+        "jawa-barat/kab-bekasi/cikarang-barat/telaga-asih",
+        "jawa-barat/kab-bekasi/cikarang-barat/telaga-harapan"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 1,
+        "2000": 1
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Cibitung",
+      "stopId": "osm-node-316744738",
+      "coordinate": [107.0837982, -6.2618245],
+      "coordinateSource": "https://www.openstreetmap.org/node/316744738",
+      "manualSearchAreas": ["Wanasari", "Wanajaya"],
+      "paths": [
+        "jawa-barat/kab-bekasi/cibitung/wanasari",
+        "jawa-barat/kab-bekasi/cibitung/wanajaya"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 1,
+        "1500": 1,
+        "2000": 1
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Tambun",
+      "stopId": "osm-node-9201422030",
+      "coordinate": [107.0558044, -6.2585496],
+      "coordinateSource": "https://www.openstreetmap.org/node/9201422030",
+      "manualSearchAreas": ["Mekarsari", "Tambun", "Setiadarma", "Jatimulya"],
+      "paths": [
+        "jawa-barat/kab-bekasi/tambun-selatan/mekarsari",
+        "jawa-barat/kab-bekasi/tambun-selatan/tambun",
+        "jawa-barat/kab-bekasi/tambun-selatan/setiadarma",
+        "jawa-barat/kab-bekasi/tambun-selatan/jatimulya"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 0
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Bekasi Timur",
+      "stopId": "osm-node-5155429394",
+      "coordinate": [107.0181046, -6.2467953],
+      "coordinateSource": "https://www.openstreetmap.org/node/5155429394",
+      "manualSearchAreas": ["Durenjaya", "Bekasijaya", "Margahayu"],
+      "paths": [
+        "jawa-barat/bekasi/bekasi-timur/durenjaya",
+        "jawa-barat/bekasi/bekasi-timur/bekasijaya",
+        "jawa-barat/bekasi/bekasi-timur/margahayu"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 1,
+        "2000": 5
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Bekasi",
+      "stopId": "osm-node-3469731328",
+      "coordinate": [106.9987436, -6.2362143],
+      "coordinateSource": "https://www.openstreetmap.org/node/3469731328",
+      "manualSearchAreas": [
+        "Margamulya",
+        "Marga Jaya",
+        "Bekasijaya",
+        "Harapan Mulya"
+      ],
+      "paths": [
+        "jawa-barat/bekasi/bekasi-utara/margamulya",
+        "jawa-barat/bekasi/bekasi-selatan/marga-jaya",
+        "jawa-barat/bekasi/bekasi-timur/bekasijaya",
+        "jawa-barat/bekasi/medan-satria/harapan-mulya"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 3,
+        "2000": 7
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Kranji",
+      "stopId": "osm-node-316743611",
+      "coordinate": [106.9798267, -6.2245133],
+      "coordinateSource": "https://www.openstreetmap.org/node/316743611",
+      "manualSearchAreas": ["Kranji", "Bintara", "Jakasampurna"],
+      "paths": [
+        "jawa-barat/bekasi/bekasi-barat/kranji",
+        "jawa-barat/bekasi/bekasi-barat/bintara",
+        "jawa-barat/bekasi/bekasi-barat/jakasampurna"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 4,
+        "1500": 6,
+        "2000": 7
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Cakung",
+      "stopId": "osm-node-3865048788",
+      "coordinate": [106.9524791, -6.219081],
+      "coordinateSource": "https://www.openstreetmap.org/node/3865048788",
+      "manualSearchAreas": ["Pulo Gebang", "Bintara", "Pondok Kopi"],
+      "paths": [
+        "dki-jakarta/jakarta-timur/cakung/pulo-gebang",
+        "jawa-barat/bekasi/bekasi-barat/bintara",
+        "dki-jakarta/jakarta-timur/duren-sawit/pondok-kopi"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 3
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Klender Baru",
+      "stopId": "osm-node-4901690569",
+      "coordinate": [106.9401833, -6.2176591],
+      "coordinateSource": "https://www.openstreetmap.org/node/4901690569",
+      "manualSearchAreas": ["Malaka Jaya", "Pondok Kopi", "Pulo Gebang"],
+      "paths": [
+        "dki-jakarta/jakarta-timur/duren-sawit/malaka-jaya",
+        "dki-jakarta/jakarta-timur/duren-sawit/pondok-kopi",
+        "dki-jakarta/jakarta-timur/cakung/pulo-gebang"
+      ],
+      "existingPinnedCounts": {
+        "500": 1,
+        "1000": 1,
+        "1500": 3,
+        "2000": 8
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Buaran",
+      "stopId": "osm-node-3865048155",
+      "coordinate": [106.92316, -6.2156064],
+      "coordinateSource": "https://www.openstreetmap.org/node/3865048155",
+      "manualSearchAreas": [
+        "Malaka Jaya",
+        "Malaka Sari",
+        "Jatinegara (Cakung)"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-timur/duren-sawit/malaka-jaya",
+        "dki-jakarta/jakarta-timur/duren-sawit/malaka-sari",
+        "dki-jakarta/jakarta-timur/cakung/jatinegara"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 1,
+        "1500": 2,
+        "2000": 8
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Klender",
+      "stopId": "osm-node-4900932061",
+      "coordinate": [106.8994133, -6.2133188],
+      "coordinateSource": "https://www.openstreetmap.org/node/4900932061",
+      "manualSearchAreas": ["Klender", "Jatinegara (Cakung)", "Cipinang"],
+      "paths": [
+        "dki-jakarta/jakarta-timur/duren-sawit/klender",
+        "dki-jakarta/jakarta-timur/cakung/jatinegara",
+        "dki-jakarta/jakarta-timur/pulogadung/cipinang"
+      ],
+      "existingPinnedCounts": {
+        "500": 3,
+        "1000": 9,
+        "1500": 24,
+        "2000": 25
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Jatinegara",
+      "stopId": "osm-node-4797813240",
+      "coordinate": [106.8703394, -6.2149252],
+      "coordinateSource": "https://www.openstreetmap.org/node/4797813240",
+      "manualSearchAreas": [
+        "Rawa Bunga",
+        "Pisangan Baru",
+        "Cipinang Besar Utara",
+        "Bali Mester"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-timur/jatinegara/rawa-bunga",
+        "dki-jakarta/jakarta-timur/matraman/pisangan-baru",
+        "dki-jakarta/jakarta-timur/jatinegara/cipinang-besar-utara",
+        "dki-jakarta/jakarta-timur/jatinegara/bali-mester"
+      ],
+      "existingPinnedCounts": {
+        "500": 2,
+        "1000": 4,
+        "1500": 29,
+        "2000": 38
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Matraman",
+      "stopId": "osm-node-7764926504",
+      "coordinate": [106.8597528, -6.2125672],
+      "coordinateSource": "https://www.openstreetmap.org/node/7764926504",
+      "manualSearchAreas": [
+        "Pisangan Baru",
+        "Kebon Manggis",
+        "Palmeriam",
+        "Bali Mester"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-timur/matraman/pisangan-baru",
+        "dki-jakarta/jakarta-timur/matraman/kebon-manggis",
+        "dki-jakarta/jakarta-timur/matraman/palmeriam",
+        "dki-jakarta/jakarta-timur/jatinegara/bali-mester"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 5,
+        "1500": 9,
+        "2000": 13
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Manggarai",
+      "stopId": "osm-node-4815286700",
+      "coordinate": [106.849935, -6.2101704],
+      "coordinateSource": "https://www.openstreetmap.org/node/4815286700",
+      "manualSearchAreas": [
+        "Manggarai",
+        "Manggarai Selatan",
+        "Pasar Manggis",
+        "Bukit Duri"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/tebet/manggarai",
+        "dki-jakarta/jakarta-selatan/tebet/manggarai-selatan",
+        "dki-jakarta/jakarta-selatan/setiabudi/pasar-manggis",
+        "dki-jakarta/jakarta-selatan/tebet/bukit-duri"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 3,
+        "2000": 6
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Sudirman",
+      "stopId": "osm-node-4925555833",
+      "coordinate": [106.8234493, -6.2024081],
+      "coordinateSource": "https://www.openstreetmap.org/node/4925555833",
+      "manualSearchAreas": [
+        "Kebon Melati",
+        "Menteng",
+        "Karet Tengsin",
+        "Setiabudi"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-pusat/tanah-abang/kebon-melati",
+        "dki-jakarta/jakarta-pusat/menteng/menteng",
+        "dki-jakarta/jakarta-pusat/tanah-abang/karet-tengsin",
+        "dki-jakarta/jakarta-selatan/setiabudi/setiabudi"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 0
+      }
+    },
+    {
+      "mode": "MRT",
+      "station": "Lebak Bulus",
+      "stopId": "mrt-node-6195584522",
+      "coordinate": [106.7749374, -6.2892542],
+      "coordinateSource": "https://www.openstreetmap.org/node/6195584522",
+      "manualSearchAreas": [
+        "Lebak Bulus",
+        "Pondok Pinang",
+        "Cirendeu",
+        "Bintaro"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/cilandak/lebak-bulus",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/pondok-pinang",
+        "banten/tangerang-selatan/ciputat-timur/cirendeu",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/bintaro"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 1,
+        "1500": 1,
+        "2000": 2
+      }
+    },
+    {
+      "mode": "MRT",
+      "station": "Fatmawati",
+      "stopId": "mrt-node-6195584512",
+      "coordinate": [106.7924656, -6.2924285],
+      "coordinateSource": "https://www.openstreetmap.org/node/6195584512",
+      "manualSearchAreas": ["Cilandak Barat", "Pondok Labu", "Lebak Bulus"],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/cilandak/cilandak-barat",
+        "dki-jakarta/jakarta-selatan/cilandak/pondok-labu",
+        "dki-jakarta/jakarta-selatan/cilandak/lebak-bulus"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 2,
+        "2000": 4
+      }
+    },
+    {
+      "mode": "MRT",
+      "station": "Cipete Raya",
+      "stopId": "mrt-node-3859688994",
+      "coordinate": [106.7973012, -6.2783627],
+      "coordinateSource": "https://www.openstreetmap.org/node/3859688994",
+      "manualSearchAreas": [
+        "Cipete Selatan",
+        "Gandaria Selatan",
+        "Cilandak Barat"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/cilandak/cipete-selatan",
+        "dki-jakarta/jakarta-selatan/cilandak/gandaria-selatan",
+        "dki-jakarta/jakarta-selatan/cilandak/cilandak-barat"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 1,
+        "1500": 1,
+        "2000": 2
+      }
+    },
+    {
+      "mode": "MRT",
+      "station": "Haji Nawi",
+      "stopId": "mrt-node-6195584506",
+      "coordinate": [106.7973045, -6.2666928],
+      "coordinateSource": "https://www.openstreetmap.org/node/6195584506",
+      "manualSearchAreas": [
+        "Gandaria Selatan",
+        "Gandaria Utara",
+        "Cipete Utara"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/cilandak/gandaria-selatan",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/gandaria-utara",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/cipete-utara"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 0
+      }
+    },
+    {
+      "mode": "MRT",
+      "station": "Blok A",
+      "stopId": "mrt-node-6195584500",
+      "coordinate": [106.7971191, -6.2557819],
+      "coordinateSource": "https://www.openstreetmap.org/node/6195584500",
+      "manualSearchAreas": ["Gandaria Utara", "Cipete Utara", "Pulo"],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/gandaria-utara",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/cipete-utara",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/pulo"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 2
+      }
+    },
+    {
+      "mode": "MRT",
+      "station": "Blok M",
+      "stopId": "mrt-node-6195584488",
+      "coordinate": [106.7980099, -6.2444225],
+      "coordinateSource": "https://www.openstreetmap.org/node/6195584488",
+      "manualSearchAreas": ["Melawai", "Kramat Pela", "Pulo", "Petogogan"],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/melawai",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/kramat-pela",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/pulo",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/petogogan"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 1,
+        "1500": 3,
+        "2000": 3
+      }
+    },
+    {
+      "mode": "MRT",
+      "station": "ASEAN",
+      "stopId": "mrt-node-6195583574",
+      "coordinate": [106.7984239, -6.2387703],
+      "coordinateSource": "https://www.openstreetmap.org/node/6195583574",
+      "manualSearchAreas": ["Gunung", "Selong", "Kramat Pela"],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/gunung",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/selong",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/kramat-pela"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 1,
+        "1500": 3,
+        "2000": 4
+      }
+    },
+    {
+      "mode": "MRT",
+      "station": "Senayan",
+      "stopId": "mrt-node-6195583572",
+      "coordinate": [106.8024556, -6.2266833],
+      "coordinateSource": "https://www.openstreetmap.org/node/6195583572",
+      "manualSearchAreas": ["Selong", "Gunung", "Gelora"],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/selong",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/gunung",
+        "dki-jakarta/jakarta-pusat/tanah-abang/gelora"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 1,
+        "2000": 1
+      }
+    },
+    {
+      "mode": "MRT",
+      "station": "Istora",
+      "stopId": "mrt-node-6124539585",
+      "coordinate": [106.8085784, -6.2223339],
+      "coordinateSource": "https://www.openstreetmap.org/node/6124539585",
+      "manualSearchAreas": ["Gelora", "Senayan", "Karet Semanggi"],
+      "paths": [
+        "dki-jakarta/jakarta-pusat/tanah-abang/gelora",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/senayan",
+        "dki-jakarta/jakarta-selatan/setiabudi/karet-semanggi"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 1
+      }
+    },
+    {
+      "mode": "MRT",
+      "station": "Bendungan Hilir",
+      "stopId": "mrt-node-3859689022",
+      "coordinate": [106.8179059, -6.2149854],
+      "coordinateSource": "https://www.openstreetmap.org/node/3859689022",
+      "manualSearchAreas": [
+        "Bendungan Hilir",
+        "Karet Tengsin",
+        "Karet Semanggi"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-pusat/tanah-abang/bendungan-hilir",
+        "dki-jakarta/jakarta-pusat/tanah-abang/karet-tengsin",
+        "dki-jakarta/jakarta-selatan/setiabudi/karet-semanggi"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 0
+      }
+    },
+    {
+      "mode": "MRT",
+      "station": "Setiabudi",
+      "stopId": "mrt-node-3859689032",
+      "coordinate": [106.8216409, -6.2090486],
+      "coordinateSource": "https://www.openstreetmap.org/node/3859689032",
+      "manualSearchAreas": [
+        "Karet",
+        "Karet Tengsin",
+        "Setiabudi",
+        "Karet Kuningan"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/setiabudi/karet",
+        "dki-jakarta/jakarta-pusat/tanah-abang/karet-tengsin",
+        "dki-jakarta/jakarta-selatan/setiabudi/setiabudi",
+        "dki-jakarta/jakarta-selatan/setiabudi/karet-kuningan"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 0
+      }
+    },
+    {
+      "mode": "MRT",
+      "station": "Dukuh Atas",
+      "stopId": "mrt-node-3693188489",
+      "coordinate": [106.8227462, -6.2007864],
+      "coordinateSource": "https://www.openstreetmap.org/node/3693188489",
+      "manualSearchAreas": [
+        "Kebon Melati",
+        "Menteng",
+        "Setiabudi",
+        "Karet Tengsin"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-pusat/tanah-abang/kebon-melati",
+        "dki-jakarta/jakarta-pusat/menteng/menteng",
+        "dki-jakarta/jakarta-selatan/setiabudi/setiabudi",
+        "dki-jakarta/jakarta-pusat/tanah-abang/karet-tengsin"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 0
+      }
+    },
+    {
+      "mode": "MRT",
+      "station": "Bundaran HI",
+      "stopId": "mrt-node-6195583568",
+      "coordinate": [106.8229594, -6.1918519],
+      "coordinateSource": "https://www.openstreetmap.org/node/6195583568",
+      "manualSearchAreas": ["Kebon Kacang", "Kebon Melati", "Menteng"],
+      "paths": [
+        "dki-jakarta/jakarta-pusat/tanah-abang/kebon-kacang",
+        "dki-jakarta/jakarta-pusat/tanah-abang/kebon-melati",
+        "dki-jakarta/jakarta-pusat/menteng/menteng"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 1
+      }
+    }
+  ],
+  "transitTargets": [
+    {
+      "stopId": "osm-node-11185037567",
+      "paths": [
+        "jawa-barat/kab-bekasi/cikarang-utara/karangasih",
+        "jawa-barat/kab-bekasi/cikarang-utara/karangbaru",
+        "jawa-barat/kab-bekasi/cikarang-utara/cikarang-kota"
+      ]
+    },
+    {
+      "stopId": "osm-node-5312478122",
+      "paths": [
+        "jawa-barat/kab-bekasi/cikarang-barat/telagamurni",
+        "jawa-barat/kab-bekasi/cikarang-barat/telaga-asih",
+        "jawa-barat/kab-bekasi/cikarang-barat/telaga-harapan"
+      ]
+    },
+    {
+      "stopId": "osm-node-316744738",
+      "paths": [
+        "jawa-barat/kab-bekasi/cibitung/wanasari",
+        "jawa-barat/kab-bekasi/cibitung/wanajaya"
+      ]
+    },
+    {
+      "stopId": "osm-node-9201422030",
+      "paths": [
+        "jawa-barat/kab-bekasi/tambun-selatan/mekarsari",
+        "jawa-barat/kab-bekasi/tambun-selatan/tambun",
+        "jawa-barat/kab-bekasi/tambun-selatan/setiadarma",
+        "jawa-barat/kab-bekasi/tambun-selatan/jatimulya"
+      ]
+    },
+    {
+      "stopId": "osm-node-5155429394",
+      "paths": [
+        "jawa-barat/bekasi/bekasi-timur/durenjaya",
+        "jawa-barat/bekasi/bekasi-timur/bekasijaya",
+        "jawa-barat/bekasi/bekasi-timur/margahayu"
+      ]
+    },
+    {
+      "stopId": "osm-node-3469731328",
+      "paths": [
+        "jawa-barat/bekasi/bekasi-utara/margamulya",
+        "jawa-barat/bekasi/bekasi-selatan/marga-jaya",
+        "jawa-barat/bekasi/bekasi-timur/bekasijaya",
+        "jawa-barat/bekasi/medan-satria/harapan-mulya"
+      ]
+    },
+    {
+      "stopId": "osm-node-316743611",
+      "paths": [
+        "jawa-barat/bekasi/bekasi-barat/kranji",
+        "jawa-barat/bekasi/bekasi-barat/bintara",
+        "jawa-barat/bekasi/bekasi-barat/jakasampurna"
+      ]
+    },
+    {
+      "stopId": "osm-node-3865048788",
+      "paths": [
+        "dki-jakarta/jakarta-timur/cakung/pulo-gebang",
+        "jawa-barat/bekasi/bekasi-barat/bintara",
+        "dki-jakarta/jakarta-timur/duren-sawit/pondok-kopi"
+      ]
+    },
+    {
+      "stopId": "osm-node-4901690569",
+      "paths": [
+        "dki-jakarta/jakarta-timur/duren-sawit/malaka-jaya",
+        "dki-jakarta/jakarta-timur/duren-sawit/pondok-kopi",
+        "dki-jakarta/jakarta-timur/cakung/pulo-gebang"
+      ]
+    },
+    {
+      "stopId": "osm-node-3865048155",
+      "paths": [
+        "dki-jakarta/jakarta-timur/duren-sawit/malaka-jaya",
+        "dki-jakarta/jakarta-timur/duren-sawit/malaka-sari",
+        "dki-jakarta/jakarta-timur/cakung/jatinegara"
+      ]
+    },
+    {
+      "stopId": "osm-node-4900932061",
+      "paths": [
+        "dki-jakarta/jakarta-timur/duren-sawit/klender",
+        "dki-jakarta/jakarta-timur/cakung/jatinegara",
+        "dki-jakarta/jakarta-timur/pulogadung/cipinang"
+      ]
+    },
+    {
+      "stopId": "osm-node-4797813240",
+      "paths": [
+        "dki-jakarta/jakarta-timur/jatinegara/rawa-bunga",
+        "dki-jakarta/jakarta-timur/matraman/pisangan-baru",
+        "dki-jakarta/jakarta-timur/jatinegara/cipinang-besar-utara",
+        "dki-jakarta/jakarta-timur/jatinegara/bali-mester"
+      ]
+    },
+    {
+      "stopId": "osm-node-7764926504",
+      "paths": [
+        "dki-jakarta/jakarta-timur/matraman/pisangan-baru",
+        "dki-jakarta/jakarta-timur/matraman/kebon-manggis",
+        "dki-jakarta/jakarta-timur/matraman/palmeriam",
+        "dki-jakarta/jakarta-timur/jatinegara/bali-mester"
+      ]
+    },
+    {
+      "stopId": "osm-node-4815286700",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/tebet/manggarai",
+        "dki-jakarta/jakarta-selatan/tebet/manggarai-selatan",
+        "dki-jakarta/jakarta-selatan/setiabudi/pasar-manggis",
+        "dki-jakarta/jakarta-selatan/tebet/bukit-duri"
+      ]
+    },
+    {
+      "stopId": "osm-node-4925555833",
+      "paths": [
+        "dki-jakarta/jakarta-pusat/tanah-abang/kebon-melati",
+        "dki-jakarta/jakarta-pusat/menteng/menteng",
+        "dki-jakarta/jakarta-pusat/tanah-abang/karet-tengsin",
+        "dki-jakarta/jakarta-selatan/setiabudi/setiabudi"
+      ]
+    },
+    {
+      "stopId": "mrt-node-6195584522",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/cilandak/lebak-bulus",
+        "dki-jakarta/jakarta-selatan/kebayoran-lama/pondok-pinang",
+        "banten/tangerang-selatan/ciputat-timur/cirendeu",
+        "dki-jakarta/jakarta-selatan/pesanggrahan/bintaro"
+      ]
+    },
+    {
+      "stopId": "mrt-node-6195584512",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/cilandak/cilandak-barat",
+        "dki-jakarta/jakarta-selatan/cilandak/pondok-labu",
+        "dki-jakarta/jakarta-selatan/cilandak/lebak-bulus"
+      ]
+    },
+    {
+      "stopId": "mrt-node-3859688994",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/cilandak/cipete-selatan",
+        "dki-jakarta/jakarta-selatan/cilandak/gandaria-selatan",
+        "dki-jakarta/jakarta-selatan/cilandak/cilandak-barat"
+      ]
+    },
+    {
+      "stopId": "mrt-node-6195584506",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/cilandak/gandaria-selatan",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/gandaria-utara",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/cipete-utara"
+      ]
+    },
+    {
+      "stopId": "mrt-node-6195584500",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/gandaria-utara",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/cipete-utara",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/pulo"
+      ]
+    },
+    {
+      "stopId": "mrt-node-6195584488",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/melawai",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/kramat-pela",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/pulo",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/petogogan"
+      ]
+    },
+    {
+      "stopId": "mrt-node-6195583574",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/gunung",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/selong",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/kramat-pela"
+      ]
+    },
+    {
+      "stopId": "mrt-node-6195583572",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/selong",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/gunung",
+        "dki-jakarta/jakarta-pusat/tanah-abang/gelora"
+      ]
+    },
+    {
+      "stopId": "mrt-node-6124539585",
+      "paths": [
+        "dki-jakarta/jakarta-pusat/tanah-abang/gelora",
+        "dki-jakarta/jakarta-selatan/kebayoran-baru/senayan",
+        "dki-jakarta/jakarta-selatan/setiabudi/karet-semanggi"
+      ]
+    },
+    {
+      "stopId": "mrt-node-3859689022",
+      "paths": [
+        "dki-jakarta/jakarta-pusat/tanah-abang/bendungan-hilir",
+        "dki-jakarta/jakarta-pusat/tanah-abang/karet-tengsin",
+        "dki-jakarta/jakarta-selatan/setiabudi/karet-semanggi"
+      ]
+    },
+    {
+      "stopId": "mrt-node-3859689032",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/setiabudi/karet",
+        "dki-jakarta/jakarta-pusat/tanah-abang/karet-tengsin",
+        "dki-jakarta/jakarta-selatan/setiabudi/setiabudi",
+        "dki-jakarta/jakarta-selatan/setiabudi/karet-kuningan"
+      ]
+    },
+    {
+      "stopId": "mrt-node-3693188489",
+      "paths": [
+        "dki-jakarta/jakarta-pusat/tanah-abang/kebon-melati",
+        "dki-jakarta/jakarta-pusat/menteng/menteng",
+        "dki-jakarta/jakarta-selatan/setiabudi/setiabudi",
+        "dki-jakarta/jakarta-pusat/tanah-abang/karet-tengsin"
+      ]
+    },
+    {
+      "stopId": "mrt-node-6195583568",
+      "paths": [
+        "dki-jakarta/jakarta-pusat/tanah-abang/kebon-kacang",
+        "dki-jakarta/jakarta-pusat/tanah-abang/kebon-melati",
+        "dki-jakarta/jakarta-pusat/menteng/menteng"
+      ]
+    }
+  ]
+}

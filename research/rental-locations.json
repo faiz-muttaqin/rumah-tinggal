@@ -11462,6 +11462,50 @@
         "checkedAt": "2026-11-26"
       },
       "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian."
+    },
+    {
+      "rentalId": "sewa-koridor-20261126-duren-jaya-22",
+      "location": null,
+      "note": "Iklan menyebut akses KRL Bekasi Timur. Pin unit belum dapat diverifikasi."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-wanasari-trias",
+      "location": {
+        "lat": -6.251451,
+        "lng": 107.082222,
+        "precision": "approximate",
+        "label": "Wanasari, Cibitung, Kab. Bekasi",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-ceri-7-blok-c5-31",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-c4cba71cab62",
+      "location": {
+        "lat": -6.216114,
+        "lng": 106.90162,
+        "precision": "approximate",
+        "label": "Klender, Duren Sawit, Kota Jakarta Timur",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kapuk-2-klender-jakarta-timur-2",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-46dbdaf25fb1",
+      "location": {
+        "lat": -6.221474,
+        "lng": 106.891992,
+        "precision": "approximate",
+        "label": "Cipinang Muara, Jatinegara, Kota Jakarta Timur",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-1",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei."
     }
   ]
 }

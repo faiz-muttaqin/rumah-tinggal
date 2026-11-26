@@ -27152,6 +27152,152 @@
       "verdict": "partial",
       "lastChecked": "2026-11-26",
       "note": "Rp1 juta per bulan, minimum 1 bulan. Pin portal berada sekitar 900 m garis lurus dari Stasiun Cikarang. Cek ketersediaan, rute jalan kaki dan fasilitas memasak."
+    },
+    {
+      "id": "sewa-koridor-20261126-duren-jaya-22",
+      "title": "Rumah 2 kamar di Duren Jaya",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Durenjaya (Duren Jaya), Bekasi Timur, Kota Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 22000000,
+        "period": "yearly",
+        "minimumMonths": 12,
+        "quote": "Rp22.000.000 per tahun, minimum 12 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya",
+        "pageDate": "2026-10-26"
+      },
+      "bedrooms": 2,
+      "sizeM2": 100.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp22.000.000 per tahun, minimum 12 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Iklan menyebut Stasiun Bekasi Timur dalam 1 km. Portal belum memberi titik yang dapat dibedakan dari acuan administratif, sehingga jarak belum bisa dihitung. Stok perlu konfirmasi.",
+      "nearStationsClaim": [
+        {
+          "station": "Bekasi Timur",
+          "quote": "stasiun Bekasi Timur (<1km)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya"
+        }
+      ],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-10-26",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-kelurahan-20261126-wanasari-trias",
+      "title": "Rumah 2 kamar di Trias Cibitung",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Wanasari, Cibitung, Kab. Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 11000000,
+        "period": "yearly",
+        "minimumMonths": 12,
+        "quote": "Rp11.000.000 per tahun, minimum 12 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-ceri-7-blok-c5-31",
+        "pageDate": "2026-09-27"
+      },
+      "bedrooms": 2,
+      "sizeM2": 50.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp11.000.000 per tahun, minimum 12 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-ceri-7-blok-c5-31"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Penawaran Rp11 juta per tahun dengan minimum 12 bulan. Sumber menyebut hunian keluarga. Pin perkiraan dari portal, stok perlu konfirmasi.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-ceri-7-blok-c5-31",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-09-27",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-pinhome-c4cba71cab62",
+      "title": "Rumah 1 kamar di Klender",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Klender, Duren Sawit, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1300000,
+        "period": "monthly",
+        "minimumMonths": 1,
+        "quote": "Rp1.300.000 per bulan, minimum 1 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kapuk-2-klender-jakarta-timur-2",
+        "pageDate": "2026-09-17"
+      },
+      "bedrooms": 1,
+      "sizeM2": 30.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp1.300.000 per bulan, minimum 1 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kapuk-2-klender-jakarta-timur-2"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Halaman menampilkan Rp1,3 juta per bulan dan minimum 1 bulan. Deskripsi juga menyebut Rp1,4 juta. Konfirmasi tarif akhir. Pin perkiraan dari portal.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kapuk-2-klender-jakarta-timur-2",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-09-17",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-pinhome-46dbdaf25fb1",
+      "title": "Kontrakan 1 kamar di Cipinang Muara",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Cipinang Muara, Jatinegara, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 850000,
+        "period": "monthly",
+        "minimumMonths": 1,
+        "quote": "Rp850.000 per bulan, minimum 1 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-1",
+        "pageDate": "2026-11-19"
+      },
+      "bedrooms": 1,
+      "sizeM2": 18.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp850.000 per bulan, minimum 1 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-1"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Penawaran Rp850 ribu per bulan, minimum 1 bulan. Acuan pin sekitar 1,22 km garis lurus dari KRL Klender. Stok dan kondisi perlu konfirmasi.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-1",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-11-19",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
     }
   ]
 }
