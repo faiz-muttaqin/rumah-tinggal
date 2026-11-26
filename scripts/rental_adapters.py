@@ -389,6 +389,7 @@ class Adapter:
         rules = data.get("booking_rules") or {}
         row["residentPolicy"] = {"marriedCouplesAllowed": rules.get("is_married") if type(rules.get("is_married")) is bool else None,
                                  "childrenAllowed": rules.get("is_bring_child") if type(rules.get("is_bring_child")) is bool else None}
+        row["residentGender"] = "campur" if type(data.get("gender")) is int and data["gender"] == 0 else None
         # Campur alone does not establish permission for couples or children.
         if type(data.get("gender")) is not int or data["gender"] != 0 or any(v is not True for v in row["residentPolicy"].values()):
             row["issues"].append("resident-policy-needs-review")

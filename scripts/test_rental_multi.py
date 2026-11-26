@@ -487,6 +487,13 @@ class ProviderTest(unittest.TestCase):
 
     def test_mamikos_room_capacity_and_family_rules_are_independent_of_campur(self):
         a = self.adapter("mamikos")
+        mixed = mami_unit()
+        mixed["booking_rules"] = {"is_married": False, "is_bring_child": False}
+        parsed = a.parse_detail(mami_page(mixed), a.origin + "/room/" + mixed["slug"])
+        self.assertEqual(parsed["residentGender"], "campur")
+        self.assertFalse(parsed["residentPolicy"]["marriedCouplesAllowed"])
+        unknown = {**mixed, "gender": None}
+        self.assertIsNone(a.parse_detail(mami_page(unknown), a.origin + "/room/" + unknown["slug"])["residentGender"])
         for change, issue in [({"available_room": 0}, "inactive-or-rented"), ({"status": 2}, "inactive-or-rented"),
                               ({"not_updated": True}, "source-availability-needs-review"),
                               ({"is_inactive_owner": True}, "source-availability-needs-review"),

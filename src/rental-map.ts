@@ -34,7 +34,13 @@ export function rentalTermBadges(rental: ResearchRental): string {
   const kitchenBadge = rental.kitchen
     ? `<span class="rent-term-badge" title="Menurut iklan. Cek izin memakai kompor dan perlengkapannya.">Dapur ${rental.kitchen === "private" ? "dalam unit" : "bersama"}</span>`
     : "";
-  return `<div class="rent-term-badges"><span class="rent-term-badge rent-term-${yearly ? "yearly" : "monthly"}" data-testid="rental-period-badge" title="${yearly ? "Harga per tahun; ekuivalen bulanan hanya untuk perbandingan." : "Harga per bulan; periksa minimum masa sewa di sumber."}">${yearly ? "Tahunan" : "Bulanan"}</span>${minimumBadge}${kitchenBadge}</div>`;
+  const residentBadge =
+    rental.rentalType === "kos" || rental.rentalType === "kos-keluarga"
+      ? rental.residentGender?.value === "mixed"
+        ? `<span class="rent-term-badge" title="Kategori penghuni campur menurut sumber, dicek ${esc(checkedDate(rental.residentGender.checkedAt))}. Izin pasutri dan fasilitas bersama perlu dilihat terpisah.">Kos campur</span>`
+        : `<span class="rent-term-badge" title="Kategori penghuni belum dicatat; periksa sumber.">Penghuni belum dicatat</span>`
+      : "";
+  return `<div class="rent-term-badges"><span class="rent-term-badge rent-term-${yearly ? "yearly" : "monthly"}" data-testid="rental-period-badge" title="${yearly ? "Harga per tahun; ekuivalen bulanan hanya untuk perbandingan." : "Harga per bulan; periksa minimum masa sewa di sumber."}">${yearly ? "Tahunan" : "Bulanan"}</span>${minimumBadge}${kitchenBadge}${residentBadge}</div>`;
 }
 
 export function rentalMapKind(rental: ResearchRental): RentalMapKind {

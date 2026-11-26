@@ -1156,6 +1156,66 @@ test("uses the bottom rental table for searching, sorting, freezing and opening 
   await expect(page.locator(".sidebar")).toBeVisible();
 });
 
+test("marks mixed boarding houses separately from couple permission", async ({
+  page,
+}) => {
+  const fixture = structuredClone(researchFixture);
+  const base = fixture.metadata.rentals.rentals[0];
+  const location = {
+    lat: -6.197,
+    lng: 106.843,
+    precision: "approximate",
+    label: "Titik uji",
+    url: "https://portal.example.invalid/pin",
+    method: "Peta uji",
+    checkedAt: "2026-11-26",
+  };
+  const mixed = {
+    ...base,
+    id: "kos-campur-uji",
+    title: "Kos kategori uji",
+    rentalType: "kos",
+    rent: { ...base.rent, amount: 1_000_000, period: "monthly" },
+    location,
+    residentGender: { value: "mixed", checkedAt: "2026-11-26" },
+    review: { couples: false },
+  };
+  const unknown = {
+    ...mixed,
+    id: "kos-status-uji",
+    title: "Kos status uji",
+    residentGender: undefined,
+    review: { couples: true },
+  };
+  await page.route("**/data/properties.geojson", (route) =>
+    route.fulfill({
+      json: {
+        ...fixture,
+        metadata: {
+          ...fixture.metadata,
+          rentals: { ...fixture.metadata.rentals, rentals: [mixed, unknown] },
+        },
+      },
+    }),
+  );
+  await page.goto("/?koleksi=sewa&tampilan=tabel");
+  const table = page.getByRole("region", { name: "Tabel sewa", exact: true });
+  await expect(
+    table.getByRole("button", { name: "Penghuni kos" }),
+  ).toBeVisible();
+  const mixedRow = table.locator('tr[data-rental="kos-campur-uji"]');
+  const unknownRow = table.locator('tr[data-rental="kos-status-uji"]');
+  await expect(mixedRow).toContainText("Campur, menurut sumber");
+  await expect(mixedRow).toContainText("Tidak, menurut sumber");
+  await expect(unknownRow).toContainText("Belum dicatat");
+  await expect(unknownRow).toContainText("Ya, menurut sumber");
+  await table.getByRole("searchbox").fill("campur");
+  await expect(mixedRow).toBeVisible();
+  await expect(unknownRow).toHaveCount(0);
+  await mixedRow.getByRole("button", { name: mixed.title }).click();
+  await expect(page.getByTestId("rental-popup")).toContainText("Kos campur");
+});
+
 test("resizes a frozen column and downloads all filtered rows in Excel order", async ({
   page,
 }) => {

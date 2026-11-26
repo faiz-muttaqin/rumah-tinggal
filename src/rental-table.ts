@@ -247,6 +247,17 @@ const columns: Column[] = [
           : undefined,
   },
   {
+    id: "residentGender",
+    label: "Penghuni kos",
+    width: 180,
+    value: ({ rental, group }) =>
+      group.id !== "kos"
+        ? undefined
+        : rental.residentGender?.value === "mixed"
+          ? "Campur, menurut sumber"
+          : "Belum dicatat",
+  },
+  {
     id: "couples",
     label: "Pasutri",
     width: 153,

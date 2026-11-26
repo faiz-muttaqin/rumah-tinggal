@@ -542,7 +542,11 @@
       "ownerType": "individual",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-10-30"
+      "lastChecked": "2026-10-30",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-kost-syariah-beji-rumah-kontrakan-keluarga-1-kamar",
@@ -624,7 +628,11 @@
       "ownerType": "individual",
       "social": [],
       "verdict": "confirmed",
-      "lastChecked": "2026-10-30"
+      "lastChecked": "2026-10-30",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-rumah-kontrakan-dekat-musholah-sukmajaya-depok",
@@ -882,7 +890,11 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-10-30"
+      "lastChecked": "2026-10-30",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-kost-cozzy-syariah-tipe-a",
@@ -919,7 +931,11 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "confirmed",
-      "lastChecked": "2026-10-30"
+      "lastChecked": "2026-10-30",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-rumah-kontrakan-dean-residence-tipe-rumah-2-5-lantai",
@@ -1030,7 +1046,11 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-10-30"
+      "lastChecked": "2026-10-30",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-kost-mahasin-2-cileungsi",
@@ -1063,7 +1083,11 @@
       "ownerType": "individual",
       "social": [],
       "verdict": "confirmed",
-      "lastChecked": "2026-10-30"
+      "lastChecked": "2026-10-30",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-rumah-griya-kenari-mas-cileungsi-kidul",
@@ -14225,7 +14249,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-04",
-      "note": "Portal menandai pasutri dan anak diizinkan; konfirmasi kebijakan serta biaya penghuni tambahan. Pembaruan sumber 2025-05-26. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
+      "note": "Portal menandai pasutri dan anak diizinkan; konfirmasi kebijakan serta biaya penghuni tambahan. Pembaruan sumber 2025-05-26. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-rawasari-0c20f794",
@@ -15500,7 +15528,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-04",
-      "note": "Dapur bersama; sebagian kamar memakai kamar mandi bersama menurut deskripsi. Portal menandai pasutri dan anak diizinkan. Tarif kamar dan biaya penghuni tambahan perlu konfirmasi. Pembaruan sumber 2026-10-30. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
+      "note": "Dapur bersama; sebagian kamar memakai kamar mandi bersama menurut deskripsi. Portal menandai pasutri dan anak diizinkan. Tarif kamar dan biaya penghuni tambahan perlu konfirmasi. Pembaruan sumber 2026-10-30. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-pondok-benda-edc041f9",
@@ -16019,7 +16051,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-04",
-      "note": "Deskripsi menyebut izin pasangan suami istri dan membawa anak. Opsi Rp 15 juta/tahun, Rp 4,2 juta/3 bulan dan Rp 8 juta/6 bulan adalah total paket berbeda; minimum kontrak tidak ditampilkan. Pembaruan sumber 2026-08-25. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
+      "note": "Deskripsi menyebut izin pasangan suami istri dan membawa anak. Opsi Rp 15 juta/tahun, Rp 4,2 juta/3 bulan dan Rp 8 juta/6 bulan adalah total paket berbeda; minimum kontrak tidak ditampilkan. Pembaruan sumber 2026-08-25. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-sukahati-69afe0b8",
@@ -16134,7 +16170,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-04",
-      "note": "Portal menandai pasutri dan anak diizinkan; konfirmasi kebijakan serta biaya penghuni tambahan. Pembaruan sumber 2026-08-20. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
+      "note": "Portal menandai pasutri dan anak diizinkan; konfirmasi kebijakan serta biaya penghuni tambahan. Pembaruan sumber 2026-08-20. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-curug-mekar-9f7e5481",
@@ -16489,7 +16529,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-05",
-      "note": "Portal menandai pasutri dan anak diizinkan; konfirmasi kebijakan serta biaya penghuni tambahan. Pembaruan sumber 2025-05-26. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
+      "note": "Portal menandai pasutri dan anak diizinkan; konfirmasi kebijakan serta biaya penghuni tambahan. Pembaruan sumber 2025-05-26. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-jombang-904060c6",
@@ -18533,7 +18577,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-05",
-      "note": "Portal menandai izin pasutri dan anak; deskripsi menyebut rumah 3 petak dan kamar mandi dalam. Konfirmasi tata ruang, fasilitas pribadi/bersama dan biaya penghuni tambahan. Minimum 1 bulan sesuai field sumber. Pembaruan sumber 2026-10-31. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
+      "note": "Portal menandai izin pasutri dan anak; deskripsi menyebut rumah 3 petak dan kamar mandi dalam. Konfirmasi tata ruang, fasilitas pribadi/bersama dan biaya penghuni tambahan. Minimum 1 bulan sesuai field sumber. Pembaruan sumber 2026-10-31. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-kranji-70a33d64",
@@ -21483,7 +21531,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-07",
-      "note": "Portal mengizinkan pasutri dan anak; kapasitas total serta biaya penghuni tambahan belum diketahui. Indikator 4 kamar pada saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-07-11. Deposit, listrik, biaya akhir dan stok perlu konfirmasi."
+      "note": "Portal mengizinkan pasutri dan anak; kapasitas total serta biaya penghuni tambahan belum diketahui. Indikator 4 kamar pada saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-07-11. Deposit, listrik, biaya akhir dan stok perlu konfirmasi.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-kos-asakusa-room-2-cisauk",
@@ -21518,7 +21570,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-07",
-      "note": "Campur; pasutri dan anak tidak diizinkan menurut portal. Indikator 1 kamar pada saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-05-27. Deposit, listrik, biaya akhir dan stok perlu konfirmasi."
+      "note": "Campur; pasutri dan anak tidak diizinkan menurut portal. Indikator 1 kamar pada saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-05-27. Deposit, listrik, biaya akhir dan stok perlu konfirmasi.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-kos-icon-cosmo-bsd-putra",
@@ -21588,7 +21644,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-07",
-      "note": "Campur; pasutri dan anak tidak diizinkan menurut portal. Indikator 1 kamar pada saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-11-03. Deposit, listrik, biaya akhir dan stok perlu konfirmasi."
+      "note": "Campur; pasutri dan anak tidak diizinkan menurut portal. Indikator 1 kamar pada saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-11-03. Deposit, listrik, biaya akhir dan stok perlu konfirmasi.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-kos-hanif-pisangan-pocket-a-putra",
@@ -21709,7 +21769,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-07",
-      "note": "Campur. Pasutri tidak diizinkan; Anak tidak diizinkan menurut portal. Kapasitas total serta biaya penghuni tambahan perlu konfirmasi. Indikator 3 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-05-05; deposit, listrik, biaya akhir dan stok perlu diperiksa."
+      "note": "Campur. Pasutri tidak diizinkan; Anak tidak diizinkan menurut portal. Kapasitas total serta biaya penghuni tambahan perlu konfirmasi. Indikator 3 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-05-05; deposit, listrik, biaya akhir dan stok perlu diperiksa.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-kos-583813f8e2c5",
@@ -21779,7 +21843,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-07",
-      "note": "Campur; pasutri boleh, anak tidak. Bisa berdua dengan tambahan Rp300.000 menurut deskripsi; penyewa membawa kasur tambahan. Parkir motor gratis, mobil Rp300.000; listrik token. Indikator 24 kamar, bukan konfirmasi pemilik. Pembaruan sumber 2026-09-30; kapasitas, deposit, biaya akhir dan stok perlu konfirmasi."
+      "note": "Campur; pasutri boleh, anak tidak. Bisa berdua dengan tambahan Rp300.000 menurut deskripsi; penyewa membawa kasur tambahan. Parkir motor gratis, mobil Rp300.000; listrik token. Indikator 24 kamar, bukan konfirmasi pemilik. Pembaruan sumber 2026-09-30; kapasitas, deposit, biaya akhir dan stok perlu konfirmasi.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-kos-375f9d9cde23",
@@ -21814,7 +21882,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-07",
-      "note": "Campur. Pasutri tidak diizinkan; Anak tidak diizinkan menurut portal. Kapasitas total serta biaya penghuni tambahan perlu konfirmasi. Indikator 2 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-10-30; deposit, listrik, biaya akhir dan stok perlu diperiksa."
+      "note": "Campur. Pasutri tidak diizinkan; Anak tidak diizinkan menurut portal. Kapasitas total serta biaya penghuni tambahan perlu konfirmasi. Indikator 2 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-10-30; deposit, listrik, biaya akhir dan stok perlu diperiksa.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-kos-urban-intermoda-bsd-regular-queen-a",
@@ -21892,7 +21964,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-07",
-      "note": "Campur; pasutri dan anak tidak diizinkan. Bangunan berisi 2 kamar tidur dengan kamar mandi dan dapur bersama; Wi-Fi dan CCTV disebut sumber. Indikator 1 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-11-06; kapasitas, deposit, listrik dan biaya akhir perlu konfirmasi."
+      "note": "Campur; pasutri dan anak tidak diizinkan. Bangunan berisi 2 kamar tidur dengan kamar mandi dan dapur bersama; Wi-Fi dan CCTV disebut sumber. Indikator 1 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-11-06; kapasitas, deposit, listrik dan biaya akhir perlu konfirmasi.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-07"
+      }
     },
     {
       "id": "sewa-kos-d8e6d208fea4",
@@ -21928,7 +22004,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-07",
-      "note": "Campur. Pasutri tidak diizinkan; Anak tidak diizinkan menurut portal. Kapasitas total serta biaya penghuni tambahan perlu konfirmasi. Indikator 1 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-11-06; deposit, listrik, biaya akhir dan stok perlu diperiksa."
+      "note": "Campur. Pasutri tidak diizinkan; Anak tidak diizinkan menurut portal. Kapasitas total serta biaya penghuni tambahan perlu konfirmasi. Indikator 1 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-11-06; deposit, listrik, biaya akhir dan stok perlu diperiksa.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-kos-isk-house-jatinegara-compact-queen",
@@ -22573,7 +22653,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-07",
-      "note": "Campur; pasutri dan anak diizinkan menurut aturan portal. Kapasitas total, izin 2 dewasa + 1 anak, dan biaya penghuni tambahan perlu konfirmasi. Indikator 1 kamar saat dicek, bukan konfirmasi pemilik. Deposit, listrik dan fasilitas perlu diperiksa. Pembaruan sumber 2026-07-08. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
+      "note": "Campur; pasutri dan anak diizinkan menurut aturan portal. Kapasitas total, izin 2 dewasa + 1 anak, dan biaya penghuni tambahan perlu konfirmasi. Indikator 1 kamar saat dicek, bukan konfirmasi pemilik. Deposit, listrik dan fasilitas perlu diperiksa. Pembaruan sumber 2026-07-08. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-jendela360-stla012",
@@ -23088,7 +23172,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-07",
-      "note": "Campur; portal mengizinkan pasutri dan anak. Kapasitas 2 dewasa + 1 anak serta biaya penghuni tambahan perlu konfirmasi. Indikator 2 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-11-04. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
+      "note": "Campur; portal mengizinkan pasutri dan anak. Kapasitas 2 dewasa + 1 anak serta biaya penghuni tambahan perlu konfirmasi. Indikator 2 kamar saat dicek, bukan konfirmasi pemilik. Pembaruan sumber 2026-11-04. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-sawah-baru-e07291b0",
@@ -24080,7 +24168,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-09",
-      "note": "Harga normal yang ditampilkan Rp2.025.000/bulan; promo Rp1.865.000 hanya bulan pertama. Berdua tambah Rp200.000 dan membawa kasur tambahan sendiri; periode tambahan dan total untuk pasutri perlu konfirmasi. Pasutri diizinkan, anak tidak. Minimum kontrak belum dicantumkan. Pembaruan sumber 2026-11-09. Stok, deposit dan biaya akhir perlu konfirmasi."
+      "note": "Harga normal yang ditampilkan Rp2.025.000/bulan; promo Rp1.865.000 hanya bulan pertama. Berdua tambah Rp200.000 dan membawa kasur tambahan sendiri; periode tambahan dan total untuk pasutri perlu konfirmasi. Pasutri diizinkan, anak tidak. Minimum kontrak belum dicantumkan. Pembaruan sumber 2026-11-09. Stok, deposit dan biaya akhir perlu konfirmasi.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-5b882ee16dd7",
@@ -24115,7 +24207,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-09",
-      "note": "Pasutri diizinkan menurut aturan portal; anak tidak. Tarif pada listing Rp1.350.000/bulan, biaya untuk dua penghuni dan kapasitas kamar perlu konfirmasi. Opsi cadangan: pin sekitar 1,778 km garis lurus dari VCM, di luar radius pencarian 1,5 km. Minimum kontrak belum dicantumkan. Pembaruan sumber 2026-07-07. Stok, deposit dan biaya akhir perlu konfirmasi."
+      "note": "Pasutri diizinkan menurut aturan portal; anak tidak. Tarif pada listing Rp1.350.000/bulan, biaya untuk dua penghuni dan kapasitas kamar perlu konfirmasi. Opsi cadangan: pin sekitar 1,778 km garis lurus dari VCM, di luar radius pencarian 1,5 km. Minimum kontrak belum dicantumkan. Pembaruan sumber 2026-07-07. Stok, deposit dan biaya akhir perlu konfirmasi.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-hikost-f0db31f9b424",
@@ -24232,7 +24328,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-09",
-      "note": "Aturan portal mengizinkan pasutri dan anak; pasutri wajib menyertakan buku nikah. Harga kamar Rp850.000/bulan; biaya untuk dua orang dan kapasitas perlu konfirmasi. Minimum kontrak belum dicantumkan. Pin perkiraan sekitar 132 m dari Masjid Al Adhim dan 1,09 km dari Masjid Al Hikmah DDN 2, garis lurus, bukan rute jalan. Pembaruan sumber 2026-09-08. Stok, deposit, listrik/air dan biaya akhir perlu konfirmasi."
+      "note": "Aturan portal mengizinkan pasutri dan anak; pasutri wajib menyertakan buku nikah. Harga kamar Rp850.000/bulan; biaya untuk dua orang dan kapasitas perlu konfirmasi. Minimum kontrak belum dicantumkan. Pin perkiraan sekitar 132 m dari Masjid Al Adhim dan 1,09 km dari Masjid Al Hikmah DDN 2, garis lurus, bukan rute jalan. Pembaruan sumber 2026-09-08. Stok, deposit, listrik/air dan biaya akhir perlu konfirmasi.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-d28b58be319b",
@@ -24272,7 +24372,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-10",
-      "note": "Pasutri diizinkan, anak tidak menurut aturan portal. Deskripsi: 1 rumah/1 kamar dengan AC dan kamar mandi; dapat dikontrakkan. Tarif Rp2 juta/bulan; opsi 6 bulan Rp10,8 juta atau 12 bulan Rp20 juta. Minimum 1 bulan. Biaya untuk dua orang, kapasitas, stok, deposit dan tagihan perlu konfirmasi. Pin perkiraan sekitar 1,417 km dari Masjid Al Adhim, garis lurus, bukan rute jalan. Pembaruan sumber 2025-07-21; harga portal diperiksa 2026-11-10."
+      "note": "Pasutri diizinkan, anak tidak menurut aturan portal. Deskripsi: 1 rumah/1 kamar dengan AC dan kamar mandi; dapat dikontrakkan. Tarif Rp2 juta/bulan; opsi 6 bulan Rp10,8 juta atau 12 bulan Rp20 juta. Minimum 1 bulan. Biaya untuk dua orang, kapasitas, stok, deposit dan tagihan perlu konfirmasi. Pin perkiraan sekitar 1,417 km dari Masjid Al Adhim, garis lurus, bukan rute jalan. Pembaruan sumber 2025-07-21; harga portal diperiksa 2026-11-10.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-0fc0dc37743c",
@@ -24541,7 +24645,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-15",
-      "note": "Pasutri diizinkan, anak tidak menurut aturan portal. Tarif dasar Rp800 ribu/bulan; biaya berdua, kapasitas, deposit, listrik/air dan stok perlu konfirmasi. Minimum sewa tidak ditampilkan. Kamar 3×4 m menurut portal. Pin perkiraan 1,455 km dari Al Hikmah DDN 2, garis lurus, bukan rute berjalan. Pembaruan sumber 2025-12-05; harga portal dicek 2026-11-15."
+      "note": "Pasutri diizinkan, anak tidak menurut aturan portal. Tarif dasar Rp800 ribu/bulan; biaya berdua, kapasitas, deposit, listrik/air dan stok perlu konfirmasi. Minimum sewa tidak ditampilkan. Kamar 3×4 m menurut portal. Pin perkiraan 1,455 km dari Al Hikmah DDN 2, garis lurus, bukan rute berjalan. Pembaruan sumber 2025-12-05; harga portal dicek 2026-11-15.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-fb1cb3f820c5",
@@ -24899,7 +25007,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-17",
-      "note": "Pasutri diizinkan, anak tidak menurut aturan portal. Tarif dasar Rp1,05 juta/bulan; lebih dari 1 orang dikenai tambahan dengan nominal belum disebut. Harga untuk berdua, kapasitas, deposit dan utilitas perlu konfirmasi. Kamar 4,5×4,5 m; perabot disebut akan diisi sebelum ditempati. Minimum sewa tidak ditampilkan. Acuan KRL Bekasi 1,567 km garis lurus, bukan rute berjalan."
+      "note": "Pasutri diizinkan, anak tidak menurut aturan portal. Tarif dasar Rp1,05 juta/bulan; lebih dari 1 orang dikenai tambahan dengan nominal belum disebut. Harga untuk berdua, kapasitas, deposit dan utilitas perlu konfirmasi. Kamar 4,5×4,5 m; perabot disebut akan diisi sebelum ditempati. Minimum sewa tidak ditampilkan. Acuan KRL Bekasi 1,567 km garis lurus, bukan rute berjalan.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-a58f3356e455",
@@ -24934,7 +25046,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-17",
-      "note": "Portal mengizinkan pasutri. Tarif dasar Rp700 ribu/bulan; harga untuk berdua, kapasitas, deposit, tagihan dan stok perlu konfirmasi. Minimum sewa tidak ditampilkan. Sumber berlabel kos tetapi deskripsi menyebut kontrakan; bagian hunian yang disewa perlu dipastikan. Kamar 4×5 m menurut portal. Acuan KRL Bekasi Timur 3,253 km garis lurus; cadangan, bukan rute berjalan."
+      "note": "Portal mengizinkan pasutri. Tarif dasar Rp700 ribu/bulan; harga untuk berdua, kapasitas, deposit, tagihan dan stok perlu konfirmasi. Minimum sewa tidak ditampilkan. Sumber berlabel kos tetapi deskripsi menyebut kontrakan; bagian hunian yang disewa perlu dipastikan. Kamar 4×5 m menurut portal. Acuan KRL Bekasi Timur 3,253 km garis lurus; cadangan, bukan rute berjalan.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-5f058a4be89a",
@@ -24969,7 +25085,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-17",
-      "note": "Portal mengizinkan pasutri. Tarif dasar Rp1 juta/bulan; kapasitas dua orang, biaya berdua, deposit, tagihan dan stok perlu konfirmasi. Kamar 2,5×2,5 m menurut portal. Minimum sewa tidak ditampilkan; jumlah kamar tersedia bukan kapasitas penghuni. Acuan KRL Cilebut 549 m garis lurus, bukan rute berjalan."
+      "note": "Portal mengizinkan pasutri. Tarif dasar Rp1 juta/bulan; kapasitas dua orang, biaya berdua, deposit, tagihan dan stok perlu konfirmasi. Kamar 2,5×2,5 m menurut portal. Minimum sewa tidak ditampilkan; jumlah kamar tersedia bukan kapasitas penghuni. Acuan KRL Cilebut 549 m garis lurus, bukan rute berjalan.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-d0030f53de05",
@@ -25004,7 +25124,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-23",
-      "note": "Kamar 3 × 3 m dengan AC dan kamar mandi dalam menurut iklan. Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Tarif dasar, minimum sewa, kapasitas dan biaya untuk dua orang perlu dikonfirmasi. Acuan ke KRL Tanah Tinggi 426 m garis lurus."
+      "note": "Kamar 3 × 3 m dengan AC dan kamar mandi dalam menurut iklan. Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Tarif dasar, minimum sewa, kapasitas dan biaya untuk dua orang perlu dikonfirmasi. Acuan ke KRL Tanah Tinggi 426 m garis lurus.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-rukita-575a5f711465",
@@ -25288,7 +25412,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-23",
-      "note": "Kamar 3 × 3 m menurut portal. Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Konfirmasi kapasitas berdua, tarif tambahan, deposit, utilitas dan minimum sewa. Acuan ke KRL Tanah Tinggi 1,242 km garis lurus."
+      "note": "Kamar 3 × 3 m menurut portal. Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Konfirmasi kapasitas berdua, tarif tambahan, deposit, utilitas dan minimum sewa. Acuan ke KRL Tanah Tinggi 1,242 km garis lurus.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-c5d73d5f8357",
@@ -25323,7 +25451,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-23",
-      "note": "Kamar 3 × 3,5 m menurut portal. Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Konfirmasi kapasitas berdua, harga akhir, syarat biaya tambahan dan minimum sewa. Acuan ke KRL Tanah Abang 1,359 km garis lurus."
+      "note": "Kamar 3 × 3,5 m menurut portal. Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Konfirmasi kapasitas berdua, harga akhir, syarat biaya tambahan dan minimum sewa. Acuan ke KRL Tanah Abang 1,359 km garis lurus.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-6fea575e1ed0",
@@ -25358,7 +25490,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-23",
-      "note": "Kamar 3 × 3 m menurut portal. Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Konfirmasi kapasitas dua orang, tarif akhir berdua, tagihan dan minimum sewa. Acuan ke KRL Sawah Besar 1,402 km garis lurus."
+      "note": "Kamar 3 × 3 m menurut portal. Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Konfirmasi kapasitas dua orang, tarif akhir berdua, tagihan dan minimum sewa. Acuan ke KRL Sawah Besar 1,402 km garis lurus.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-faca7ab5214b",
@@ -25393,7 +25529,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-23",
-      "note": "Kamar 3 × 6 m menurut portal. Pasutri diizinkan dan anak tidak. Deskripsi menyebut parkir mobil tidak tersedia. Konfirmasi kapasitas, biaya untuk berdua, deposit dan minimum sewa. Acuan ke KRL Depok Baru 1,478 km garis lurus."
+      "note": "Kamar 3 × 6 m menurut portal. Pasutri diizinkan dan anak tidak. Deskripsi menyebut parkir mobil tidak tersedia. Konfirmasi kapasitas, biaya untuk berdua, deposit dan minimum sewa. Acuan ke KRL Depok Baru 1,478 km garis lurus.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-jendela360-519105f904e5",
@@ -25681,7 +25821,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-23",
-      "note": "Aturan portal mengizinkan pasutri. Tarif tampil Rp2 juta per bulan dengan minimum sewa satu tahun menurut deskripsi. Portal juga mencantumkan tarif paket tahunan Rp25 juta. Iklan di kanal kos menyebut kontrakan. Konfirmasi bagian yang disewa, cara bayar dan biaya berdua. Acuan ke KRL Bojonggede 1,870 km garis lurus."
+      "note": "Aturan portal mengizinkan pasutri. Tarif tampil Rp2 juta per bulan dengan minimum sewa satu tahun menurut deskripsi. Portal juga mencantumkan tarif paket tahunan Rp25 juta. Iklan di kanal kos menyebut kontrakan. Konfirmasi bagian yang disewa, cara bayar dan biaya berdua. Acuan ke KRL Bojonggede 1,870 km garis lurus.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-0d17f1b6e58e",
@@ -25716,7 +25860,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-23",
-      "note": "Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Ukuran pada deskripsi dan spesifikasi berbeda. Konfirmasi ukuran kamar, kapasitas berdua, biaya, dan minimum sewa. Acuan ke KRL Pondok Cina 2,016 km garis lurus."
+      "note": "Aturan portal mengizinkan pasutri dan tidak mengizinkan anak. Ukuran pada deskripsi dan spesifikasi berbeda. Konfirmasi ukuran kamar, kapasitas berdua, biaya, dan minimum sewa. Acuan ke KRL Pondok Cina 2,016 km garis lurus.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-d57920c7e12a",
@@ -25787,7 +25935,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-23",
-      "note": "Kamar 3 × 4 m menurut portal. Pasutri diizinkan dan tombol pengajuan tersedia saat dicek. Pembaruan iklan tercatat April 2024. Konfirmasi stok, minimum sewa, kapasitas dan biaya untuk dua orang. Acuan ke KRL Depok Baru 2,194 km garis lurus."
+      "note": "Kamar 3 × 4 m menurut portal. Pasutri diizinkan dan tombol pengajuan tersedia saat dicek. Pembaruan iklan tercatat April 2024. Konfirmasi stok, minimum sewa, kapasitas dan biaya untuk dua orang. Acuan ke KRL Depok Baru 2,194 km garis lurus.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-691477c6908d",
@@ -26437,7 +26589,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-25",
-      "note": "Portal mencantumkan izin pasutri tanpa anak dan tombol pengajuan aktif. Tanggal pembaruan iklan tercatat Januari 2021. Cek stok aktual, tarif berdua, minimum sewa, ruang memasak dan biaya lain."
+      "note": "Portal mencantumkan izin pasutri tanpa anak dan tombol pengajuan aktif. Tanggal pembaruan iklan tercatat Januari 2021. Cek stok aktual, tarif berdua, minimum sewa, ruang memasak dan biaya lain.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-311417e05b6d",
@@ -26779,7 +26935,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-26",
-      "note": "Tipe C memakai AC dan kamar mandi dalam. Penyewa berdua perlu surat nikah atau Kartu Keluarga sesuai iklan. Listrik token dan parkir mobil terpisah. Minimum sewa dan dapur belum ditentukan."
+      "note": "Tipe C memakai AC dan kamar mandi dalam. Penyewa berdua perlu surat nikah atau Kartu Keluarga sesuai iklan. Listrik token dan parkir mobil terpisah. Minimum sewa dan dapur belum ditentukan.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-206d89c776ca",
@@ -26859,7 +27019,11 @@
       "verdict": "partial",
       "lastChecked": "2026-11-26",
       "note": "Tarif iklan Rp1,3 juta per bulan. Ketentuan memperbolehkan pasutri tanpa anak dan menyebut dapur bersama. Tambahan untuk penghuni kedua dan minimum sewa belum dirinci di portal.",
-      "kitchen": "shared"
+      "kitchen": "shared",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-ab69495d15b9",
@@ -26893,7 +27057,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-26",
-      "note": "Tarif iklan Rp1,5 juta per bulan. Pasutri perlu menunjukkan buku nikah. Tarif untuk penghuni kedua, ruang memasak, dan minimum sewa belum dirinci di portal."
+      "note": "Tarif iklan Rp1,5 juta per bulan. Pasutri perlu menunjukkan buku nikah. Tarif untuk penghuni kedua, ruang memasak, dan minimum sewa belum dirinci di portal.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-be2d10594833",
@@ -26931,7 +27099,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-26",
-      "note": "Pasutri tanpa anak diizinkan menurut portal. Perkiraan harga untuk dua penghuni menjumlahkan tarif bulanan dan tambahan yang dicantumkan. Konfirmasi periode biaya tambahan, minimum sewa, dapur, dan stok ke pengiklan."
+      "note": "Pasutri tanpa anak diizinkan menurut portal. Perkiraan harga untuk dua penghuni menjumlahkan tarif bulanan dan tambahan yang dicantumkan. Konfirmasi periode biaya tambahan, minimum sewa, dapur, dan stok ke pengiklan.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-764405915756",
@@ -26965,7 +27137,11 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-26",
-      "note": "Tarif bulanan Rp2,995 juta yang terlihat di halaman. Portal menawarkan promosi dengan syarat tersendiri. Pasutri diminta menunjukkan buku nikah dan KK. Tarif untuk penghuni kedua, ruang memasak, dan minimum sewa belum dirinci."
+      "note": "Tarif bulanan Rp2,995 juta yang terlihat di halaman. Portal menawarkan promosi dengan syarat tersendiri. Pasutri diminta menunjukkan buku nikah dan KK. Tarif untuk penghuni kedua, ruang memasak, dan minimum sewa belum dirinci.",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-ab923f7a8b9b",
@@ -28160,7 +28336,11 @@
       "postedOrUpdated": "2026-10-30",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-jendela360-a5698b777775",
@@ -28263,7 +28443,11 @@
       "postedOrUpdated": "2026-11-19",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-d02b6cebf621",
@@ -28296,7 +28480,11 @@
       "postedOrUpdated": "2025-02-03",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-0cbd174305d2",
@@ -28329,7 +28517,11 @@
       "postedOrUpdated": "2026-04-23",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-46017458041b",
@@ -28364,7 +28556,11 @@
       "postedOrUpdated": "2025-07-18",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-5d2e573dd35a",
@@ -28398,7 +28594,11 @@
       "postedOrUpdated": "2025-12-24",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-c103f0dff15b",
@@ -28431,7 +28631,11 @@
       "postedOrUpdated": "2026-11-14",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-d927eaf18f12",
@@ -31650,7 +31854,11 @@
       "postedOrUpdated": "2024-02-20",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-ac0da18ba2c1",
@@ -31685,7 +31893,11 @@
       "postedOrUpdated": "2024-02-25",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-f7ced386efea",
@@ -31719,7 +31931,11 @@
       "postedOrUpdated": "2023-12-15",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-mamikos-1f84ec357c08",
@@ -31754,7 +31970,11 @@
       "postedOrUpdated": "2025-09-23",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "residentGender": {
+        "value": "mixed",
+        "checkedAt": "2026-11-26"
+      }
     },
     {
       "id": "sewa-pinhome-abb6fd554410",

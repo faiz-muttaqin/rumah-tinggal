@@ -2681,6 +2681,10 @@
      "bedrooms": null,
      "sizeM2": 24,
      "furnished": "unfurnished",
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "asri, nyaman dan khusus utk keluarga muslim",
@@ -2801,6 +2805,10 @@
      "bedrooms": null,
      "sizeM2": 21,
      "furnished": "semi",
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Syariah Matoa Golf Tipe A Jagakarsa Jakarta Selatan",
@@ -3179,6 +3187,10 @@
      "bedrooms": 1,
      "sizeM2": 21,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Exclusive Syariah Cimanggu Permai Tipe A",
@@ -3244,6 +3256,10 @@
      "bedrooms": null,
      "sizeM2": 12,
      "furnished": "full",
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Cozzy Syariah Tipe A Bogor Selatan Bogor",
@@ -3419,6 +3435,10 @@
      "bedrooms": null,
      "sizeM2": 12,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost K Key Deluxe Syariah Ciledug Tangerang",
@@ -3505,6 +3525,10 @@
      "bedrooms": 1,
      "sizeM2": null,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Campur Syariah, bangunan baru dan terletak di dekat Masjid Al-Barkah Cileungsi",
@@ -21621,6 +21645,10 @@
      "bedrooms": 1,
      "sizeM2": 12.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Taman Sari",
@@ -23638,6 +23666,10 @@
      "bedrooms": 1,
      "sizeM2": 12.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Limo",
@@ -24381,6 +24413,10 @@
      "bedrooms": 1,
      "sizeM2": 9.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Tajur Halang",
@@ -24554,6 +24590,10 @@
      "bedrooms": 1,
      "sizeM2": 27.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Bogor Barat",
@@ -24955,6 +24995,10 @@
      "bedrooms": 1,
      "sizeM2": 12.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Taman Sari",
@@ -27793,6 +27837,10 @@
      "bedrooms": 1,
      "sizeM2": 30.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Bekasi Barat",
@@ -30597,6 +30645,10 @@
      "bedrooms": 1,
      "sizeM2": 45.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Paninggilan Tipe Standar Ciledug Tangerang",
@@ -30671,6 +30723,10 @@
      "bedrooms": 1,
      "sizeM2": 21.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Asakusa Room 2 Exclusive 1 Cisauk Tangerang",
@@ -30823,6 +30879,10 @@
      "bedrooms": 1,
      "sizeM2": 9.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Bintaro Sektor Pondok Aren Tangerang Selatan",
@@ -31065,6 +31125,10 @@
      "bedrooms": 1,
      "sizeM2": 9.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Ibu Sri Salon Ciledug Tangerang",
@@ -31213,6 +31277,10 @@
      "bedrooms": 1,
      "sizeM2": 12.48,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Twentytwo Dormitory Bsd Tipe A Cisauk Tangerang",
@@ -31289,6 +31357,10 @@
      "bedrooms": 1,
      "sizeM2": 27.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Rmb Tipe Standar Pondok Aren Tangerang Selatan",
@@ -31452,6 +31524,10 @@
      "bedrooms": 1,
      "sizeM2": 9.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-07"
+     },
      "evidence": [
       {
        "quote": "Kost Kampung Melayu Vetra Jatinegara Jakarta Timur",
@@ -31534,6 +31610,10 @@
      "bedrooms": 1,
      "sizeM2": 16.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Kmc Tipe C Jatinegara Jakarta Timur",
@@ -32045,6 +32125,10 @@
      "bedrooms": 1,
      "sizeM2": 18.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Witrin Babakan Madang Bogor",
@@ -32461,6 +32545,10 @@
      "bedrooms": 1,
      "sizeM2": 16.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Adelia Grogol Petamburan",
@@ -33836,6 +33924,10 @@
      "bedrooms": 1,
      "sizeM2": 9.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Singgahsini Cireundeu 9",
@@ -33914,6 +34006,10 @@
      "bedrooms": 1,
      "sizeM2": 12.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Cherokee Dwisekti Wicaksono Tipe A Cinere Depok",
@@ -34054,6 +34150,10 @@
      "bedrooms": 1,
      "sizeM2": 12,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Assalam Suite Cinere Depok",
@@ -34125,6 +34225,10 @@
      "bedrooms": 1,
      "sizeM2": 32,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Kost Ket Cinere Depok",
@@ -34477,6 +34581,10 @@
      "bedrooms": 1,
      "sizeM2": 12.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp800.000",
@@ -35154,6 +35262,10 @@
      "bedrooms": 1,
      "sizeM2": 20.25,
      "furnished": "full",
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp1.050.000",
@@ -35221,6 +35333,10 @@
      "bedrooms": 1,
      "sizeM2": 20,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp700.000",
@@ -35294,6 +35410,10 @@
      "bedrooms": 1,
      "sizeM2": 6.25,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp1.000.000",
@@ -35361,6 +35481,10 @@
      "bedrooms": 1,
      "sizeM2": 9.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp1.300.000",
@@ -35884,6 +36008,10 @@
      "bedrooms": 1,
      "sizeM2": 9.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp1.980.000",
@@ -35937,6 +36065,10 @@
      "bedrooms": 1,
      "sizeM2": 10.5,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp2.599.999",
@@ -35990,6 +36122,10 @@
      "bedrooms": 1,
      "sizeM2": 9.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp1.100.000",
@@ -36043,6 +36179,10 @@
      "bedrooms": 1,
      "sizeM2": 18.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp800.000",
@@ -36600,6 +36740,10 @@
      "bedrooms": 1,
      "sizeM2": 16.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp2.000.000",
@@ -36653,6 +36797,10 @@
      "bedrooms": 1,
      "sizeM2": null,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp900.000",
@@ -36760,6 +36908,10 @@
      "bedrooms": 1,
      "sizeM2": 12.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp1.200.000",
@@ -37868,6 +38020,10 @@
      "bedrooms": 1,
      "sizeM2": 16.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp1.500.000",
@@ -38426,6 +38582,10 @@
      "bedrooms": 1,
      "sizeM2": 9.0,
      "furnished": "unfurnished",
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp2.200.000",
@@ -38535,6 +38695,10 @@
      "sizeM2": 12.0,
      "furnished": null,
      "kitchen": "shared",
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp1.300.000",
@@ -38590,6 +38754,10 @@
      "bedrooms": 1,
      "sizeM2": 9.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp1.500.000",
@@ -38641,6 +38809,10 @@
      "bedrooms": 1,
      "sizeM2": 18.24,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Tarif satu penghuni Rp3.950.000 per bulan.",
@@ -38696,6 +38868,10 @@
      "bedrooms": 1,
      "sizeM2": 15.75,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Rp2.995.000",
@@ -40419,6 +40595,10 @@
      "bedrooms": 1,
      "sizeM2": 4.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "Perkiraan Rp1.200.000 per bulan untuk dua penghuni, dari tarif Rp900.000 dan tambahan Rp300.000.",
@@ -40572,6 +40752,10 @@
      "sizeM2": 16.0,
      "furnished": null,
      "kitchen": "private",
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "IDR 1.250.000 per bulan, minimum 6 bulan.",
@@ -40629,6 +40813,10 @@
      "bedrooms": 1,
      "sizeM2": 12.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "IDR 2.000.000 per bulan.",
@@ -40686,6 +40874,10 @@
      "bedrooms": 1,
      "sizeM2": 12.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "IDR 3.500.000 per bulan.",
@@ -40745,6 +40937,10 @@
      "sizeM2": 12.0,
      "furnished": null,
      "kitchen": "private",
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "IDR 1.700.000 per bulan, minimum 3 bulan.",
@@ -40803,6 +40999,10 @@
      "sizeM2": 9.0,
      "furnished": null,
      "kitchen": "private",
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "IDR 2.200.000 per bulan.",
@@ -40860,6 +41060,10 @@
      "bedrooms": 1,
      "sizeM2": 12.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "IDR 800.000 per bulan.",
@@ -45751,6 +45955,10 @@
      "bedrooms": 1,
      "sizeM2": 21.0,
      "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "IDR 750.000 per bulan.",
@@ -45804,6 +46012,10 @@
      "sizeM2": 51.0,
      "furnished": null,
      "kitchen": "private",
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "IDR 1.500.000 per bulan, minimum 6 bulan.",
@@ -45862,6 +46074,10 @@
      "sizeM2": 9.0,
      "furnished": null,
      "kitchen": "private",
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "IDR 1.000.000 per bulan.",
@@ -45926,6 +46142,10 @@
      "sizeM2": 30.0,
      "furnished": null,
      "kitchen": "private",
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
      "evidence": [
       {
        "quote": "IDR 1.000.000 per bulan, minimum 1 bulan.",

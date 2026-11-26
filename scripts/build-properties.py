@@ -671,6 +671,14 @@ def load_rentals(path=ROOT / "research/rentals.json"):
         kitchen = item.get("kitchen")
         if kitchen is not None and kitchen not in ("private", "shared"):
             raise Invalid(f"{field}.kitchen tidak dikenal")
+        resident_gender = item.get("residentGender")
+        if resident_gender is not None:
+            if (item["rentalType"] not in ("kos", "kos-keluarga")
+                    or not isinstance(resident_gender, dict)
+                    or set(resident_gender) != {"value", "checkedAt"}
+                    or resident_gender.get("value") != "mixed"
+                    or not is_date(resident_gender.get("checkedAt"))):
+                raise Invalid(f"{field}.residentGender tidak valid")
         rentals.append({
             "id": text(item.get("id"), f"{field}.id", 90),
             "title": text(item.get("title"), f"{field}.title", 160),
@@ -691,6 +699,7 @@ def load_rentals(path=ROOT / "research/rentals.json"):
             "sizeM2": number(item.get("sizeM2"), f"{field}.sizeM2", optional=True),
             "furnished": item.get("furnished") if item.get("furnished") in ("unfurnished", "semi", "full") else None,
             **({"kitchen": kitchen} if kitchen is not None else {}),
+            **({"residentGender": resident_gender} if resident_gender is not None else {}),
             "evidence": evidence[:3],
             "areaHighlights": [
                 {

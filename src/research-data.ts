@@ -361,6 +361,7 @@ export interface ResearchRental {
   sizeM2: number | null;
   furnished: "unfurnished" | "semi" | "full" | null;
   kitchen?: "private" | "shared";
+  residentGender?: { value: "mixed"; checkedAt: string };
   review?: RentalReview;
   evidence: { quote: string; url: string }[];
   areaHighlights?: {
