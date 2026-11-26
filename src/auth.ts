@@ -65,22 +65,36 @@ export function getUser(): User | null {
   return currentUser;
 }
 
+export class AccountRequestError extends Error {
+  status: number;
+
+  constructor(status: number, message: string) {
+    super(message);
+    this.status = status;
+  }
+}
+
 export async function privateAPI<T>(
   path: string,
   options: RequestInit = {},
 ): Promise<T> {
-  if (!currentUser)
+  const user = currentUser;
+  if (!user)
     throw new Error("Masuk dengan Google untuk membuka listing pribadi.");
+  const token = await user.getIdToken();
+  if (currentUser !== user) throw new Error("Akun berubah. Coba lagi.");
+  const headers = new Headers(options.headers);
+  headers.set("Content-Type", "application/json");
+  headers.set("Authorization", `Bearer ${token}`);
   const response = await fetch(path, {
     ...options,
-    headers: {
-      "Content-Type": "application/json",
-      ...options.headers,
-      Authorization: `Bearer ${await currentUser.getIdToken()}`,
-    },
+    headers,
   });
   const result = await response.json();
   if (!response.ok)
-    throw new Error(result.error || "Permintaan belum berhasil. Coba kembali.");
+    throw new AccountRequestError(
+      response.status,
+      result.error || "Permintaan belum berhasil. Coba kembali.",
+    );
   return result as T;
 }

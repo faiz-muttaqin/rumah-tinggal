@@ -1,0 +1,232 @@
+.saved-rental-dialog {
+  max-width: 580px;
+  width: calc(100% - 32px);
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.saved-rental-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.saved-rental-heading h2 {
+  margin: 0;
+}
+
+.saved-rental-feedback {
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 650;
+  margin: 9px 0 0;
+}
+
+.saved-rental-feedback:empty {
+  margin: 0;
+}
+
+.saved-rental-dialog [data-saved-body] {
+  margin-top: 14px;
+}
+
+.saved-rental-dialog form,
+.saved-rental-dialog label {
+  display: grid;
+  gap: 8px;
+}
+
+.saved-rental-dialog form {
+  gap: 12px;
+  margin: 12px 0 0;
+}
+
+.saved-rental-dialog label {
+  min-width: 0;
+  font-size: 12px;
+  font-weight: 680;
+}
+
+.saved-rental-dialog :is(input, select, textarea) {
+  padding: 10px;
+  min-width: 0;
+  width: 100%;
+  border: 1px solid #cbd6c1;
+  border-radius: 8px;
+  color: var(--ink);
+  background: white;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 450;
+}
+
+.saved-rental-dialog textarea {
+  resize: vertical;
+}
+
+.saved-rental-dialog form > .button {
+  justify-self: start;
+}
+
+.saved-rental-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  margin-block: 8px;
+  color: var(--green);
+  font-size: 12px;
+}
+
+.saved-rental-links a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.saved-share-panel,
+.saved-comment-panel {
+  border-top: 1px solid var(--line);
+  margin-top: 16px;
+  padding-top: 14px;
+}
+
+.saved-share-panel p,
+.saved-rental-public p {
+  margin-block: 6px 10px;
+}
+
+.saved-note,
+.saved-comment-panel li p {
+  white-space: pre-wrap;
+}
+
+.saved-rental-public h3 {
+  font-size: 19px;
+}
+
+.saved-rental-public h4,
+.saved-comment-panel h4 {
+  margin: 14px 0 8px;
+}
+
+.saved-rental-list,
+.saved-comment-panel ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.saved-rental-list button,
+.saved-comment-panel li {
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 12px;
+  background: #fffefa;
+  text-align: left;
+}
+
+.saved-rental-list button {
+  width: 100%;
+  display: grid;
+  gap: 4px;
+}
+
+.saved-rental-list button:hover {
+  border-color: var(--green);
+}
+
+.saved-rental-list span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.saved-comment-panel ol {
+  margin-bottom: 12px;
+}
+
+.saved-comment-panel li p {
+  margin: 5px 0 0;
+}
+
+.saved-remove {
+  margin-top: 12px;
+}
+
+.rental-save-button[data-saved="true"] svg {
+  fill: #aed1ba;
+}
+
+.bookmark-dialog .bookmark-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.bookmark-dialog .saved-rental-list {
+  margin-block: 12px;
+}
+
+.bookmark-section {
+  margin-top: 14px;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+}
+
+.bookmark-section summary {
+  cursor: pointer;
+  font-weight: 680;
+}
+
+.bookmark-section > label,
+.bookmark-section > p {
+  margin-top: 10px;
+}
+
+.bookmark-history-title {
+  margin-top: 14px;
+}
+
+.bookmark-history {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.bookmark-history li {
+  border-top: 1px solid var(--line);
+  padding: 12px 0;
+}
+
+.bookmark-history dt {
+  font-weight: 680;
+  padding: 8px 0 4px;
+}
+
+.bookmark-history dd {
+  background: #eef1e8;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin: 0;
+}
+
+.bookmark-history dd span {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.bookmark-history p {
+  margin: 5px 0;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 760px) {
+  .saved-rental-dialog {
+    padding: 17px;
+  }
+}

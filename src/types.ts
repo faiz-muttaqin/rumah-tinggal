@@ -25,6 +25,88 @@ export interface Listing {
   createdAt: string;
 }
 
+export interface SavedRentalFields {
+  title: string;
+  locationText: string;
+  amount: number;
+  period: "monthly" | "yearly";
+  minimumMonths: number | null;
+  note: string;
+}
+
+export interface SavedRentalEntry extends SavedRentalFields {
+  rentalId: string;
+  kind: HousingType;
+  sourceUrl: string;
+  location: { lat: number; lng: number } | null;
+  savedAt: string;
+  updatedAt: string;
+}
+
+export interface SavedRental extends SavedRentalEntry {
+  shareToken: string | null;
+}
+
+export interface RentalComment {
+  id: string;
+  author: string;
+  text: string;
+  createdAt: string;
+}
+
+export interface SharedRental {
+  rental: SavedRentalEntry;
+  comments: RentalComment[];
+}
+
+export const BOOKMARK_PERMISSIONS = ["view", "comment", "edit"] as const;
+export type BookmarkPermission = (typeof BOOKMARK_PERMISSIONS)[number];
+
+export interface BookmarkSummary {
+  id: string;
+  name: string;
+  revision: number;
+  rentalIds: string[];
+}
+
+export interface BookmarkItem {
+  rental: SavedRentalEntry;
+  comments: RentalComment[];
+}
+
+export interface BookmarkContents {
+  name: string;
+  revision: number;
+  items: BookmarkItem[];
+}
+
+export interface OwnedBookmark extends BookmarkContents {
+  id: string;
+  share: { token: string; permission: BookmarkPermission } | null;
+}
+
+export interface SharedBookmark extends BookmarkContents {
+  permission: BookmarkPermission;
+}
+
+export interface BookmarkLibrary {
+  collections: BookmarkSummary[];
+  hasLegacyRentals: boolean;
+}
+
+export interface BookmarkChange {
+  revision: number;
+  action: "create" | "rename" | "add" | "edit" | "remove" | "share";
+  author: string;
+  createdAt: string;
+  item?: string;
+  fields: {
+    key: keyof SavedRentalFields | "name" | "permission";
+    before: string | number | null;
+    after: string | number | null;
+  }[];
+}
+
 export interface Station {
   id: string;
   name: string;

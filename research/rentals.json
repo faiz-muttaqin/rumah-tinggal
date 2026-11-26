@@ -13669,7 +13669,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-26",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -26823,258 +26823,306 @@
       "kitchen": "private"
     },
     {
-      "id": "sewa-koridor-20261126-kranji-30",
-      "title": "Rumah cluster 2 KT, Kranji",
-      "rentalType": "kontrakan",
+      "id": "sewa-mamikos-6bace8e05e81",
+      "title": "Kos Adam Tipe A — pasutri",
       "kind": "Rumah",
+      "rentalType": "kos-keluarga",
       "area": "Bekasi",
-      "locationText": "Kranji, Bekasi Barat, Kota Bekasi",
-      "buildingOrCluster": null,
+      "locationText": "Bekasi Timur, Kota Bekasi",
+      "buildingOrCluster": "Kos Adam",
       "rent": {
-        "amount": 30000000,
+        "amount": 1300000,
+        "period": "monthly",
+        "quote": "Rp1.300.000",
+        "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-kost-adam-tipe-a-bekasi-timur-bekasi",
+        "pageDate": "2026-11-07"
+      },
+      "bedrooms": 1,
+      "sizeM2": 12.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp1.300.000",
+          "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-kost-adam-tipe-a-bekasi-timur-bekasi"
+        },
+        {
+          "quote": "Dapur umum",
+          "url": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-kost-adam-tipe-a-bekasi-timur-bekasi"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-bekasi-kost-campur-eksklusif-kost-adam-tipe-a-bekasi-timur-bekasi",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-11-07",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif iklan Rp1,3 juta per bulan. Ketentuan memperbolehkan pasutri tanpa anak dan menyebut dapur bersama. Tambahan untuk penghuni kedua dan minimum sewa belum dirinci di portal.",
+      "kitchen": "shared"
+    },
+    {
+      "id": "sewa-mamikos-ab69495d15b9",
+      "title": "Kos Dua Tujuh Tipe Fan — pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos-keluarga",
+      "area": "Jakarta",
+      "locationText": "Kecamatan Kebayoran Baru, Kota Jakarta Selatan",
+      "buildingOrCluster": "Kos Dua Tujuh",
+      "rent": {
+        "amount": 1500000,
+        "period": "monthly",
+        "quote": "Rp1.500.000",
+        "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-dua-tujuh-tipe-fan-kebayoran-baru-jakarta-selatan-2",
+        "pageDate": "2026-11-15"
+      },
+      "bedrooms": 1,
+      "sizeM2": 9.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp1.500.000",
+          "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-dua-tujuh-tipe-fan-kebayoran-baru-jakarta-selatan-2"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-dua-tujuh-tipe-fan-kebayoran-baru-jakarta-selatan-2",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-11-15",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif iklan Rp1,5 juta per bulan. Pasutri perlu menunjukkan buku nikah. Tarif untuk penghuni kedua, ruang memasak, dan minimum sewa belum dirinci di portal."
+    },
+    {
+      "id": "sewa-mamikos-be2d10594833",
+      "title": "Kos Damai Arte Cipete Utara Tipe A — pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos-keluarga",
+      "area": "Jakarta",
+      "locationText": "Kebayoran Baru, Jakarta Selatan",
+      "buildingOrCluster": "Damai Arte Cipete Utara",
+      "rent": {
+        "amount": 3950000,
+        "period": "monthly",
+        "quote": "Rp3.950.000",
+        "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-damai-arte-cipete-utara-tipe-a-kebayoran-baru-jakarta-selatan",
+        "pageDate": "2026-11-18"
+      },
+      "bedrooms": 1,
+      "sizeM2": 18.24,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp3.950.000",
+          "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-damai-arte-cipete-utara-tipe-a-kebayoran-baru-jakarta-selatan"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-damai-arte-cipete-utara-tipe-a-kebayoran-baru-jakarta-selatan",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-11-18",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif iklan Rp3,95 juta per bulan. Ketentuan memperbolehkan pasutri tanpa anak. Cek tarif untuk penghuni kedua, ruang memasak, dan minimum sewa."
+    },
+    {
+      "id": "sewa-mamikos-764405915756",
+      "title": "Kos The Syariah Residence Fatmawati Tipe A — pasutri",
+      "kind": "Rumah",
+      "rentalType": "kos-keluarga",
+      "area": "Jakarta",
+      "locationText": "Cilandak, Kota Jakarta Selatan",
+      "buildingOrCluster": "The Syariah Residence",
+      "rent": {
+        "amount": 2995000,
+        "period": "monthly",
+        "quote": "Rp2.995.000",
+        "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-singgahsini-b211-the-syariah-residence-mrtfatmawati-tipe-a-cilandak-jakarta-selatan",
+        "pageDate": "2026-11-24"
+      },
+      "bedrooms": 1,
+      "sizeM2": 15.75,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp2.995.000",
+          "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-singgahsini-b211-the-syariah-residence-mrtfatmawati-tipe-a-cilandak-jakarta-selatan"
+        }
+      ],
+      "nearStationsClaim": [],
+      "listingUrl": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-singgahsini-b211-the-syariah-residence-mrtfatmawati-tipe-a-cilandak-jakarta-selatan",
+      "sourcePortal": "mamikos",
+      "postedOrUpdated": "2026-11-24",
+      "ownerType": "unknown",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-26",
+      "note": "Tarif bulanan Rp2,995 juta yang terlihat di halaman. Portal menawarkan promosi dengan syarat tersendiri. Pasutri diminta menunjukkan buku nikah dan KK. Tarif untuk penghuni kedua, ruang memasak, dan minimum sewa belum dirinci."
+    },
+    {
+      "id": "sewa-pinhome-ab923f7a8b9b",
+      "title": "Rumah 3 kamar di Taman Kota Bekasi Timur",
+      "kind": "Rumah",
+      "rentalType": "kontrakan",
+      "area": "Bekasi",
+      "locationText": "Durenjaya (Duren Jaya), Bekasi Timur, Kota Bekasi",
+      "buildingOrCluster": "Kompleks Taman Kota Bekasi Timur",
+      "rent": {
+        "amount": 45000000,
         "period": "yearly",
-        "quote": "Rp 30 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cluster-strategis-jl-lebar-stasiun-kranji-tol-lrt-di-igusti-ngurah-rai",
-        "pageDate": null,
+        "quote": "Rp 45 Juta/Tahun",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-durenjaya-duren-jaya-7",
+        "pageDate": "2025-06-11",
         "minimumMonths": 12
       },
-      "bedrooms": 2,
-      "sizeM2": 52,
+      "bedrooms": 3,
+      "sizeM2": 90.0,
       "furnished": null,
       "evidence": [
         {
-          "quote": "Rp 30 Juta/Tahun",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cluster-strategis-jl-lebar-stasiun-kranji-tol-lrt-di-igusti-ngurah-rai"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Sewa tahunan saja; carport dan AC. Snapshot detail hari ini tidak menampilkan label Tersewa. Konfirmasi stok dan jarak.",
-      "nearStationsClaim": [
+          "quote": "Rp 45 Juta/Tahun",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-durenjaya-duren-jaya-7"
+        },
         {
-          "station": "Kranji",
-          "quote": "Dekat stasiun kereta Kranji",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cluster-strategis-jl-lebar-stasiun-kranji-tol-lrt-di-igusti-ngurah-rai"
+          "quote": "Dapur dalam unit menurut iklan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-durenjaya-duren-jaya-7"
         }
       ],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cluster-strategis-jl-lebar-stasiun-kranji-tol-lrt-di-igusti-ngurah-rai",
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-durenjaya-duren-jaya-7",
       "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
+      "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "note": "Rp45 juta per tahun, minimum 12 bulan. Rumah satu lantai dengan dapur dalam unit tercantum di iklan.",
+      "kitchen": "private"
     },
     {
-      "id": "sewa-koridor-20261126-kranji-32",
-      "title": "Rumah cluster 2 KT, Kranji (60 m²)",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Bekasi",
-      "locationText": "Kranji, Bekasi Barat, Kota Bekasi",
-      "buildingOrCluster": null,
+      "id": "sewa-pinhome-e8fd0d293a5f",
+      "title": "Apartemen Tamansari Sudirman 32 m²",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Jakarta",
+      "locationText": "Karet Kuningan, Setiabudi (Setia Budi), Kota Jakarta Selatan",
+      "buildingOrCluster": "Tamansari Sudirman",
       "rent": {
-        "amount": 32000000,
-        "period": "yearly",
-        "quote": "Rp 32 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-disewakan-cluster-strategis-stasiun-kranji-bekasi-di-igusti-ngurah-rai",
-        "pageDate": null
+        "amount": 5000000,
+        "period": "monthly",
+        "quote": "Rp 5 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-dekat-mrt-di-taman-sari-sudirman",
+        "pageDate": "2025-10-27",
+        "minimumMonths": 3
       },
-      "bedrooms": 2,
-      "sizeM2": 60,
+      "bedrooms": null,
+      "sizeM2": 32.0,
       "furnished": null,
       "evidence": [
         {
-          "quote": "Rp 32 Juta/Tahun",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-disewakan-cluster-strategis-stasiun-kranji-bekasi-di-igusti-ngurah-rai"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Carport dan keamanan cluster menurut iklan. Snapshot detail hari ini tidak menampilkan label Tersewa. Konfirmasi bukan duplikasi unit Rp30 juta (spesifikasi berbeda).",
-      "nearStationsClaim": [
+          "quote": "Rp 5 Juta/Bulan",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-dekat-mrt-di-taman-sari-sudirman"
+        },
         {
-          "station": "Kranji",
-          "quote": "Dekat stasiun kereta Kranji",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-disewakan-cluster-strategis-stasiun-kranji-bekasi-di-igusti-ngurah-rai"
+          "quote": "Dapur dalam unit menurut iklan",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-dekat-mrt-di-taman-sari-sudirman"
         }
       ],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-disewakan-cluster-strategis-stasiun-kranji-bekasi-di-igusti-ngurah-rai",
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-dekat-mrt-di-taman-sari-sudirman",
       "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
+      "postedOrUpdated": "2025-10-27",
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "note": "Satu unit apartemen Rp5 juta per bulan, minimum 3 bulan. Iklan mencantumkan kitchen set dan kompor. Konfirmasi izin tinggal berdua dan apakah IPL dikenakan di luar tarif sewa.",
+      "kitchen": "private"
     },
     {
-      "id": "sewa-koridor-20261126-duren-jaya-22",
-      "title": "Rumah 2 KT, Duren Jaya",
-      "rentalType": "kontrakan",
+      "id": "sewa-pinhome-0ed0874d4f2e",
+      "title": "Rumah 3 kamar di Mekarsari, Tambun Selatan",
       "kind": "Rumah",
+      "rentalType": "kontrakan",
       "area": "Bekasi",
-      "locationText": "Duren Jaya, Bekasi Timur, Kota Bekasi",
+      "locationText": "Mekarsari, Tambun Selatan, Kab. Bekasi",
       "buildingOrCluster": null,
       "rent": {
-        "amount": 22000000,
-        "period": "yearly",
-        "quote": "Rp 22 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya",
-        "pageDate": null
-      },
-      "bedrooms": 2,
-      "sizeM2": 100,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 22 Juta/Tahun",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Sumber mencantumkan opsi enam bulan Rp12 juta. Klaim jarak belum diukur. Snapshot detail sekitar dua minggu; cek stok dan kondisi.",
-      "nearStationsClaim": [
-        {
-          "station": "Bekasi Timur",
-          "quote": "stasiun Bekasi Timur (<1km)",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya"
-        }
-      ],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-koridor-20261126-duren-jaya-1913",
-      "title": "Rumah 3 KT, Duren Jaya",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Bekasi",
-      "locationText": "Duren Jaya, Bekasi Timur, Kota Bekasi",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 19130000,
-        "period": "yearly",
-        "quote": "Rp 19,13 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya",
-        "pageDate": null
+        "amount": 2000000,
+        "period": "monthly",
+        "quote": "Rp 2 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-mekarsari-18",
+        "pageDate": "2026-04-22",
+        "minimumMonths": 3
       },
       "bedrooms": 3,
-      "sizeM2": 60,
+      "sizeM2": 65.0,
       "furnished": null,
       "evidence": [
         {
-          "quote": "Rp 19,13 Juta/Tahun",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya"
+          "quote": "Rp 2 Juta/Bulan",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-mekarsari-18"
         }
       ],
-      "areaHighlights": [],
-      "note": "Header portal Rp19,13 juta, deskripsi Rp19 juta; gunakan harga header. Moda stasiun ambigu, perlu pastikan KRL Bekasi Timur. Snapshot sekitar satu bulan.",
-      "nearStationsClaim": [
-        {
-          "station": "Bekasi Timur",
-          "quote": "10 menit Stasiun Bekasi Barat & Timur",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya"
-        }
-      ],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya",
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-mekarsari-18",
       "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
+      "postedOrUpdated": "2026-04-22",
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "note": "Rp2 juta per bulan dengan minimum 3 bulan, total sewa minimum Rp6 juta. Fasilitas dapur belum dirinci."
     },
     {
-      "id": "sewa-koridor-20261126-klender-40",
-      "title": "Rumah dua lantai 3 KT, Klender",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Klender, Duren Sawit, Jakarta Timur",
-      "buildingOrCluster": null,
+      "id": "sewa-pinhome-2191212ada72",
+      "title": "Apartemen Transpark Juanda 25 m²",
+      "kind": "Apartemen",
+      "rentalType": "apartemen-sewa",
+      "area": "Bekasi",
+      "locationText": "Margahayu, Bekasi Timur, Kota Bekasi",
+      "buildingOrCluster": "Transpark Juanda",
       "rent": {
-        "amount": 40000000,
-        "period": "yearly",
-        "quote": "Rp 40 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pertanian-selatan-kel-klender",
-        "pageDate": null
+        "amount": 3500000,
+        "period": "monthly",
+        "quote": "Rp 3,5 Juta/Bulan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-transpark-juanda-bekasi-1",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 1
       },
-      "bedrooms": 3,
-      "sizeM2": null,
-      "furnished": null,
-      "kitchen": "private",
+      "bedrooms": 1,
+      "sizeM2": 25.0,
+      "furnished": "full",
       "evidence": [
         {
-          "quote": "Rp 40 Juta/Tahun",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pertanian-selatan-kel-klender"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Iklan menyebut dua lantai, garasi dan kompor. Snapshot sekitar satu bulan; stok, luas dan akses aktual perlu konfirmasi.",
-      "nearStationsClaim": [
+          "quote": "Rp 3,5 Juta/Bulan",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-transpark-juanda-bekasi-1"
+        },
         {
-          "station": "Klender",
-          "quote": "Dekat dengan stasiun kereta Klender",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pertanian-selatan-kel-klender"
+          "quote": "Dapur dalam unit menurut iklan",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-transpark-juanda-bekasi-1"
         }
       ],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pertanian-selatan-kel-klender",
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-transpark-juanda-bekasi-1",
       "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
+      "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "note": "Satu unit apartemen Rp3,5 juta per bulan, minimum 1 bulan. Iklan mencantumkan kompor dan kitchen set, serta IPL dan sinking fund termasuk. Konfirmasi aturan untuk tinggal berdua, deposit, dan tarif akhir.",
+      "kitchen": "private"
     },
     {
-      "id": "sewa-koridor-20261126-fatmawati-60",
-      "title": "Rumah 2 KT dekat MRT Fatmawati",
-      "rentalType": "kontrakan",
+      "id": "sewa-pinhome-8d6bd0b16562",
+      "title": "Rumah 2 kamar di Karangasih, Cikarang Utara",
       "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Lebak Bulus, Cilandak, Jakarta Selatan",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 60000000,
-        "period": "yearly",
-        "quote": "Rp 60 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-pertahun-di-dekat-mrt-fatmawati",
-        "pageDate": null
-      },
-      "bedrooms": 2,
-      "sizeM2": 60,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 60 Juta/Tahun",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-pertahun-di-dekat-mrt-fatmawati"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Snapshot detail sekitar dua bulan; stok belum dipastikan. Harga tepat plafon sebelum biaya tambahan. Jarak jalan kaki belum terbukti.",
-      "nearStationsClaim": [
-        {
-          "station": "Fatmawati",
-          "quote": "Akses ke MRT Fatmawati bisa jalan kaki",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-pertahun-di-dekat-mrt-fatmawati"
-        }
-      ],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-pertahun-di-dekat-mrt-fatmawati",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-kelurahan-20261126-karangsih-wifi",
-      "title": "Rumah 2 KT Karangasih",
       "rentalType": "kontrakan",
-      "kind": "Rumah",
       "area": "Bekasi",
       "locationText": "Karangasih, Cikarang Utara, Kab. Bekasi",
       "buildingOrCluster": null,
@@ -27083,10 +27131,11 @@
         "period": "monthly",
         "quote": "Rp 1 Juta/Bulan",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-khfudholi",
-        "pageDate": null
+        "pageDate": "2025-06-11",
+        "minimumMonths": 1
       },
       "bedrooms": 2,
-      "sizeM2": 60,
+      "sizeM2": 60.0,
       "furnished": null,
       "evidence": [
         {
@@ -27094,910 +27143,159 @@
           "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-khfudholi"
         }
       ],
-      "areaHighlights": [],
-      "note": "Portal mencantumkan SMP IT dan MI Plus El-Hurriyah 0,2 km; belum diverifikasi. Target pencarian: Cikarang. Stok dan jarak aktual perlu konfirmasi.",
       "nearStationsClaim": [],
       "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-khfudholi",
       "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
+      "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-26",
+      "note": "Rp1 juta per bulan, minimum 1 bulan. Pin portal berada sekitar 900 m garis lurus dari Stasiun Cikarang. Cek ketersediaan, rute jalan kaki dan fasilitas memasak."
     },
     {
-      "id": "sewa-kelurahan-20261126-metland-luas",
-      "title": "Rumah 3 KT Metland Cibitung",
+      "id": "sewa-koridor-20261126-duren-jaya-22",
+      "title": "Rumah 2 kamar di Duren Jaya",
       "rentalType": "kontrakan",
       "kind": "Rumah",
       "area": "Bekasi",
-      "locationText": "Telagamurni, Cikarang Barat, Kab. Bekasi",
-      "buildingOrCluster": "Metland Cibitung",
+      "locationText": "Durenjaya (Duren Jaya), Bekasi Timur, Kota Bekasi",
+      "buildingOrCluster": null,
       "rent": {
-        "amount": 2000000,
-        "period": "monthly",
-        "minimumMonths": 1,
-        "quote": "Rp 2 Juta/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlmetland-cibitung",
-        "pageDate": null
-      },
-      "bedrooms": 3,
-      "sizeM2": 84,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 2 Juta/Bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlmetland-cibitung"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "LT 117 m²; portal mencantumkan SMP IT Daarul Fikri 1,08 km. Target pencarian: Metland Telagamurni. Stok dan jarak aktual perlu konfirmasi.",
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlmetland-cibitung",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-kelurahan-20261126-metland-15",
-      "title": "Rumah 2 KT Metland Cibitung",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Bekasi",
-      "locationText": "Telagamurni, Cikarang Barat, Kab. Bekasi",
-      "buildingOrCluster": "Metland Cibitung",
-      "rent": {
-        "amount": 15000000,
+        "amount": 22000000,
         "period": "yearly",
-        "quote": "Rp 15 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-metland-cibitung-4",
-        "pageDate": null
+        "minimumMonths": 12,
+        "quote": "Rp22.000.000 per tahun, minimum 12 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya",
+        "pageDate": "2026-10-26"
       },
       "bedrooms": 2,
-      "sizeM2": null,
+      "sizeM2": 100.0,
       "furnished": null,
       "evidence": [
         {
-          "quote": "Rp 15 Juta/Tahun",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-metland-cibitung-4"
+          "quote": "Rp22.000.000 per tahun, minimum 12 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya"
         }
       ],
       "areaHighlights": [],
-      "note": "Snapshot detail sekitar 2 bulan; LT/LB belum dipisahkan. Target pencarian: Metland Telagamurni. Stok dan jarak aktual perlu konfirmasi.",
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-metland-cibitung-4",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
+      "note": "Iklan menyebut Stasiun Bekasi Timur dalam 1 km. Portal belum memberi titik yang dapat dibedakan dari acuan administratif, sehingga jarak belum bisa dihitung. Stok perlu konfirmasi.",
+      "nearStationsClaim": [
+        {
+          "station": "Bekasi Timur",
+          "quote": "stasiun Bekasi Timur (<1km)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya"
+        }
+      ],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-10-26",
       "ownerType": "unknown",
-      "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-26"
     },
     {
       "id": "sewa-kelurahan-20261126-wanasari-trias",
-      "title": "Rumah 2 KT Trias Cibitung",
+      "title": "Rumah 2 kamar di Trias Cibitung",
       "rentalType": "kontrakan",
       "kind": "Rumah",
       "area": "Bekasi",
       "locationText": "Wanasari, Cibitung, Kab. Bekasi",
-      "buildingOrCluster": "Perumahan Trias Cibitung",
+      "buildingOrCluster": null,
       "rent": {
         "amount": 11000000,
         "period": "yearly",
         "minimumMonths": 12,
-        "quote": "Rp 11 Juta/Tahun",
+        "quote": "Rp11.000.000 per tahun, minimum 12 bulan.",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-ceri-7-blok-c5-31",
-        "pageDate": null
+        "pageDate": "2026-09-27"
       },
       "bedrooms": 2,
-      "sizeM2": 50,
+      "sizeM2": 50.0,
       "furnished": null,
       "evidence": [
         {
-          "quote": "Rp 11 Juta/Tahun",
+          "quote": "Rp11.000.000 per tahun, minimum 12 bulan.",
           "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-ceri-7-blok-c5-31"
         }
       ],
       "areaHighlights": [],
-      "note": "LT 60 m²; portal mencantumkan SMP IT Permata Hati 0,4 km. Target pencarian: Cibitung. Stok dan jarak aktual perlu konfirmasi.",
+      "note": "Penawaran Rp11 juta per tahun dengan minimum 12 bulan. Sumber menyebut hunian keluarga. Pin perkiraan dari portal, stok perlu konfirmasi.",
       "nearStationsClaim": [],
       "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-ceri-7-blok-c5-31",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-09-27",
       "ownerType": "unknown",
-      "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-26"
     },
     {
-      "id": "sewa-kelurahan-20261126-wanasari-regensi",
-      "title": "Rumah renovasi 2 KT Bekasi Regensi II",
+      "id": "sewa-pinhome-c4cba71cab62",
+      "title": "Rumah 1 kamar di Klender",
       "rentalType": "kontrakan",
       "kind": "Rumah",
-      "area": "Bekasi",
-      "locationText": "Wanasari, Cibitung, Kab. Bekasi",
-      "buildingOrCluster": "Bekasi Regensi II",
-      "rent": {
-        "amount": 900000,
-        "period": "monthly",
-        "minimumMonths": 3,
-        "quote": "Rp 900 Ribu/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-renovasi-per-3bulan-di-jl-delima-10-no52-rt013-018-perumahan-bekasi-regensi-ii",
-        "pageDate": null
-      },
-      "bedrooms": 2,
-      "sizeM2": 40,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 900 Ribu/Bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-renovasi-per-3bulan-di-jl-delima-10-no52-rt013-018-perumahan-bekasi-regensi-ii"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "LT 60 m². Snapshot sekitar 2 bulan; konfirmasi minimum dan stok. Target pencarian: Cibitung. Stok dan jarak aktual perlu konfirmasi.",
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-renovasi-per-3bulan-di-jl-delima-10-no52-rt013-018-perumahan-bekasi-regensi-ii",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-kelurahan-20261126-mekarsari-scorpio",
-      "title": "Rumah 2 KT Mekarsari",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Bekasi",
-      "locationText": "Mekarsari, Tambun Selatan, Kab. Bekasi",
+      "area": "Jakarta",
+      "locationText": "Klender, Duren Sawit, Kota Jakarta Timur",
       "buildingOrCluster": null,
       "rent": {
-        "amount": 25000000,
-        "period": "yearly",
-        "minimumMonths": 12,
-        "quote": "Rp 25 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-scorpio-a15-no-8",
-        "pageDate": null
-      },
-      "bedrooms": 2,
-      "sizeM2": 70,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 25 Juta/Tahun",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-scorpio-a15-no-8"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "LT 176 m²; 2 kamar mandi. Target pencarian: Tambun. Stok dan jarak aktual perlu konfirmasi.",
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-scorpio-a15-no-8",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-kelurahan-20261126-setiadarma-petak",
-      "title": "Kontrakan 3 petak Setiadarma",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Bekasi",
-      "locationText": "Setiadarma, Tambun Selatan, Kab. Bekasi",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 550000,
-        "period": "monthly",
-        "quote": "Rp 550 Ribu/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-setiadarma",
-        "pageDate": null
-      },
-      "bedrooms": null,
-      "sizeM2": 40,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 550 Ribu/Bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-setiadarma"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Tiga petak tidak berarti tiga kamar tidur. Cek tipe unit dan dapur. Target pencarian: Tambun. Stok dan jarak aktual perlu konfirmasi.",
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-setiadarma",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-kelurahan-20261126-bekasijaya-wisma",
-      "title": "Rumah 2 KT Wisma Jaya",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Bekasi",
-      "locationText": "Bekasijaya, Bekasi Timur, Kota Bekasi",
-      "buildingOrCluster": "Wisma Jaya",
-      "rent": {
-        "amount": 2750000,
+        "amount": 1300000,
         "period": "monthly",
         "minimumMonths": 1,
-        "quote": "Rp 2,75 Juta/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-pakai-dekat-terminal-di-wisma-jaya-bekasi",
-        "pageDate": null
-      },
-      "bedrooms": 2,
-      "sizeM2": 85,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 2,75 Juta/Bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-pakai-dekat-terminal-di-wisma-jaya-bekasi"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Detail Rp2,75 juta; judul indeks Rp2,8 juta. Konfirmasi periode pembayaran. LT 92 m². Target pencarian: Bekasi Timur. Stok dan jarak aktual perlu konfirmasi.",
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-pakai-dekat-terminal-di-wisma-jaya-bekasi",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-kelurahan-20261126-durenjaya-kusuma",
-      "title": "Rumah 1 lantai Duren Jaya",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Bekasi",
-      "locationText": "Durenjaya, Bekasi Timur, Kota Bekasi",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 18000000,
-        "period": "yearly",
-        "quote": "Rp 18 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkusuma-raya-f14-rt6-15-duren-jaya-bekasi",
-        "pageDate": null
-      },
-      "bedrooms": null,
-      "sizeM2": null,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 18 Juta/Tahun",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkusuma-raya-f14-rt6-15-duren-jaya-bekasi"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Snapshot detail sekitar 3 bulan; konfirmasi stok. Target pencarian: Bekasi Timur. Stok dan jarak aktual perlu konfirmasi.",
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkusuma-raya-f14-rt6-15-duren-jaya-bekasi",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-kelurahan-20261126-malakajaya-52",
-      "title": "Rumah Malaka Jaya",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Malaka Jaya, Duren Sawit, Jakarta Timur",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 52000000,
-        "period": "yearly",
-        "quote": "Rp 52 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-di-duren-sawit-di-malaka-jaya",
-        "pageDate": null
-      },
-      "bedrooms": null,
-      "sizeM2": null,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 52 Juta/Tahun",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-di-duren-sawit-di-malaka-jaya"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Deskripsi menyebut akses Stasiun Buaran. Snapshot sekitar 2 bulan. Target pencarian: Buaran. Stok dan jarak aktual perlu konfirmasi.",
-      "nearStationsClaim": [
-        {
-          "station": "Buaran",
-          "quote": "Kontrakan Dekat Stasiun Buaran",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-di-duren-sawit-di-malaka-jaya"
-        }
-      ],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-di-duren-sawit-di-malaka-jaya",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-kelurahan-20261126-malakajaya-perumnas",
-      "title": "Rumah 2 KT Perumnas Klender",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Malaka Jaya, Duren Sawit, Jakarta Timur",
-      "buildingOrCluster": "Perumnas Klender",
-      "rent": {
-        "amount": 2000000,
-        "period": "monthly",
-        "minimumMonths": 6,
-        "quote": "Rp 2 Juta/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumnas-klender-2",
-        "pageDate": null
-      },
-      "bedrooms": 2,
-      "sizeM2": 78,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 2 Juta/Bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumnas-klender-2"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "LT 80 m²; minimum 6 bulan Rp12 juta. Target pencarian: Klender Baru / Buaran. Stok dan jarak aktual perlu konfirmasi.",
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumnas-klender-2",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-kelurahan-20261126-pisangan-38",
-      "title": "Rumah dua lantai Pisangan Baru",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Pisangan Baru, Matraman, Jakarta Timur",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 3800000,
-        "period": "monthly",
-        "quote": "Rp 3,8 Juta/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pisangan-baru-rt-006-rw-012",
-        "pageDate": null
-      },
-      "bedrooms": null,
-      "sizeM2": null,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 3,8 Juta/Bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pisangan-baru-rt-006-rw-012"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Snapshot sekitar 3 bulan. Iklan lain sangat mirip Rp4 juta; perlu cek duplikasi lintas iklan. Target pencarian: Matraman / Jatinegara. Stok dan jarak aktual perlu konfirmasi.",
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pisangan-baru-rt-006-rw-012",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-kelurahan-20261126-manggarai-14",
-      "title": "Kontrakan 1 KT Manggarai",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Manggarai, Tebet, Jakarta Selatan",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 14000000,
-        "period": "yearly",
-        "minimumMonths": 12,
-        "quote": "Rp 14 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-strategis-di-manggarai-tebet-jakarta-selatan",
-        "pageDate": null
+        "quote": "Rp1.300.000 per bulan, minimum 1 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kapuk-2-klender-jakarta-timur-2",
+        "pageDate": "2026-09-17"
       },
       "bedrooms": 1,
-      "sizeM2": 20,
+      "sizeM2": 30.0,
       "furnished": null,
       "evidence": [
         {
-          "quote": "Rp 14 Juta/Tahun",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-strategis-di-manggarai-tebet-jakarta-selatan"
+          "quote": "Rp1.300.000 per bulan, minimum 1 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kapuk-2-klender-jakarta-timur-2"
         }
       ],
       "areaHighlights": [],
-      "note": "Rumah kecil 20 m². Target pencarian: Manggarai. Stok dan jarak aktual perlu konfirmasi.",
+      "note": "Halaman menampilkan Rp1,3 juta per bulan dan minimum 1 bulan. Deskripsi juga menyebut Rp1,4 juta. Konfirmasi tarif akhir. Pin perkiraan dari portal.",
       "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-strategis-di-manggarai-tebet-jakarta-selatan",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kapuk-2-klender-jakarta-timur-2",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-09-17",
       "ownerType": "unknown",
-      "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-26"
     },
     {
-      "id": "sewa-kelurahan-20261126-manggarai-utara",
-      "title": "Rumah 2 KT Manggarai Utara",
+      "id": "sewa-pinhome-46dbdaf25fb1",
+      "title": "Kontrakan 1 kamar di Cipinang Muara",
       "rentalType": "kontrakan",
       "kind": "Rumah",
       "area": "Jakarta",
-      "locationText": "Manggarai, Tebet, Jakarta Selatan",
+      "locationText": "Cipinang Muara, Jatinegara, Kota Jakarta Timur",
       "buildingOrCluster": null,
       "rent": {
-        "amount": 2500000,
+        "amount": 850000,
         "period": "monthly",
         "minimumMonths": 1,
-        "quote": "Rp 2,5 Juta/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-manggarai-utara-2-no-2",
-        "pageDate": null
-      },
-      "bedrooms": 2,
-      "sizeM2": 95,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 2,5 Juta/Bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-manggarai-utara-2-no-2"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "LT 100 m²; jarak hanya angka portal, bukan survei. Verifikasi harga karena sangat murah dibanding luas. Target pencarian: Manggarai. Stok dan jarak aktual perlu konfirmasi.",
-      "nearStationsClaim": [
-        {
-          "station": "Manggarai",
-          "quote": "Manggarai 0,12 KM",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-manggarai-utara-2-no-2"
-        }
-      ],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-manggarai-utara-2-no-2",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-kelurahan-20261126-kebonmelati-30",
-      "title": "Rumah dua lantai 1 KT Kebon Melati",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Kebon Melati, Tanah Abang, Jakarta Pusat",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 30000000,
-        "period": "yearly",
-        "minimumMonths": 12,
-        "quote": "Rp 30 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kebon-melati-tanah-abang-jakarta-pusat-1",
-        "pageDate": null
+        "quote": "Rp850.000 per bulan, minimum 1 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-1",
+        "pageDate": "2026-11-19"
       },
       "bedrooms": 1,
-      "sizeM2": 50,
+      "sizeM2": 18.0,
       "furnished": null,
       "evidence": [
         {
-          "quote": "Rp 30 Juta/Tahun",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kebon-melati-tanah-abang-jakarta-pusat-1"
+          "quote": "Rp850.000 per bulan, minimum 1 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-1"
         }
       ],
       "areaHighlights": [],
-      "note": "Ada iklan mirip di halaman kelurahan; hanya satu versi dimasukkan. Target pencarian: Sudirman / Dukuh Atas. Stok dan jarak aktual perlu konfirmasi.",
+      "note": "Penawaran Rp850 ribu per bulan, minimum 1 bulan. Acuan pin sekitar 1,22 km garis lurus dari KRL Klender. Stok dan kondisi perlu konfirmasi.",
       "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kebon-melati-tanah-abang-jakarta-pusat-1",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-1",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-11-19",
       "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-kelurahan-20261126-kebonkacang-rusun",
-      "title": "Studio Rusun Kebon Kacang XI",
-      "rentalType": "apartemen",
-      "kind": "Apartemen",
-      "area": "Jakarta",
-      "locationText": "Kebon Kacang, Tanah Abang, Jakarta Pusat",
-      "buildingOrCluster": "Rumah Susun Kebon Kacang XI",
-      "rent": {
-        "amount": 3000000,
-        "period": "monthly",
-        "minimumMonths": 1,
-        "quote": "Rp 3 Juta/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-pusat-kota-jakarta-di-rumah-susun-kebon-kacang-xi",
-        "pageDate": null
-      },
-      "bedrooms": null,
-      "sizeM2": 21,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 3 Juta/Bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-pusat-kota-jakarta-di-rumah-susun-kebon-kacang-xi"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Deskripsi menyebut studio; listrik token 2200 W, air PAM; konfirmasi biaya dan izin penghuni. Target pencarian: Bundaran HI. Stok dan jarak aktual perlu konfirmasi.",
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-pusat-kota-jakarta-di-rumah-susun-kebon-kacang-xi",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-kelurahan-20261126-pondoklabu-ipin",
-      "title": "Kontrakan 2 KT Pondok Labu",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Pondok Labu, Cilandak, Jakarta Selatan",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 3500000,
-        "period": "monthly",
-        "minimumMonths": 1,
-        "quote": "Rp 3,5 Juta/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakkan-di-jalan-haji-ipin-nomor-2-rt-011-rw-001",
-        "pageDate": null
-      },
-      "bedrooms": 2,
-      "sizeM2": 50,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 3,5 Juta/Bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakkan-di-jalan-haji-ipin-nomor-2-rt-011-rw-001"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Portal menyebut jarak Fatmawati 1,23 km; belum diukur mandiri. Target pencarian: Fatmawati. Stok dan jarak aktual perlu konfirmasi.",
-      "nearStationsClaim": [
-        {
-          "station": "Fatmawati",
-          "quote": "ST. Fatmawati 1,23 KM",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakkan-di-jalan-haji-ipin-nomor-2-rt-011-rw-001"
-        }
-      ],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakkan-di-jalan-haji-ipin-nomor-2-rt-011-rw-001",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-kelurahan-20261126-cipete-utara-40",
-      "title": "Rumah Cipete Utara",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Cipete Utara, Kebayoran Baru, Jakarta Selatan",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 40000000,
-        "period": "yearly",
-        "quote": "Rp 40 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-asri-strategis-di-cipete-17",
-        "pageDate": null
-      },
-      "bedrooms": null,
-      "sizeM2": null,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 40 Juta/Tahun",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-asri-strategis-di-cipete-17"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Snapshot detail sekitar 5 bulan; prioritas recheck stok. Target pencarian: Haji Nawi / Blok A. Stok dan jarak aktual perlu konfirmasi.",
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-asri-strategis-di-cipete-17",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-koridor-multi-kranji-kanopi",
-      "title": "Kontrakan 2 KT Kranji, kanopi",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Bekasi",
-      "locationText": "Kranji, Bekasi Barat, Kota Bekasi",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 1500000,
-        "period": "monthly",
-        "quote": "Rp 1,5 Juta /bulan",
-        "url": "https://www.rumah123.com/properti/bekasi-kranji/sewa-strategis-jl-lebar-kanopi-kranji-bekasi-dkt-stasiun-tol-lrt-hor42707004/",
-        "pageDate": "2026-10-27"
-      },
-      "bedrooms": 2,
-      "sizeM2": 30,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 1,5 Juta /bulan",
-          "url": "https://www.rumah123.com/properti/bekasi-kranji/sewa-strategis-jl-lebar-kanopi-kranji-bekasi-dkt-stasiun-tol-lrt-hor42707004/"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "LT 44 m², satu lantai. Iklan menerima keluarga muda dengan satu anak; Rp17 juta/tahun alternatif. Jarak berjalan belum diukur.",
-      "nearStationsClaim": [
-        {
-          "station": "Kranji",
-          "quote": "Dkt Stasiun Kranji (jln kaki)",
-          "url": "https://www.rumah123.com/properti/bekasi-kranji/sewa-strategis-jl-lebar-kanopi-kranji-bekasi-dkt-stasiun-tol-lrt-hor42707004/"
-        }
-      ],
-      "listingUrl": "https://www.rumah123.com/properti/bekasi-kranji/sewa-strategis-jl-lebar-kanopi-kranji-bekasi-dkt-stasiun-tol-lrt-hor42707004/",
-      "sourcePortal": "rumah123",
-      "postedOrUpdated": "2026-10-27",
-      "ownerType": "agent",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-koridor-multi-kranji-modern",
-      "title": "Rumah cluster 3+1 KT Kranji",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Bekasi",
-      "locationText": "Kranji, Bekasi Barat, Kota Bekasi",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 36000000,
-        "period": "yearly",
-        "minimumMonths": 12,
-        "quote": "Rp 36 Juta /tahun",
-        "url": "https://www.rumah123.com/properti/bekasi-kranji/sewa-cluster-strategis-modern-jl-lbr-dkt-stasiun-kranji-tol-lrt-hor42740263/",
-        "pageDate": "2026-11-02"
-      },
-      "bedrooms": 3,
-      "sizeM2": 140,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 36 Juta /tahun",
-          "url": "https://www.rumah123.com/properti/bekasi-kranji/sewa-cluster-strategis-modern-jl-lbr-dkt-stasiun-kranji-tol-lrt-hor42740263/"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "LT 72 m², dua lantai, tambahan kamar ART. Hanya tahunan. One gate menurut iklan.",
-      "nearStationsClaim": [
-        {
-          "station": "Kranji",
-          "quote": "Dekat stasiun kereta Kranji",
-          "url": "https://www.rumah123.com/properti/bekasi-kranji/sewa-cluster-strategis-modern-jl-lbr-dkt-stasiun-kranji-tol-lrt-hor42740263/"
-        }
-      ],
-      "listingUrl": "https://www.rumah123.com/properti/bekasi-kranji/sewa-cluster-strategis-modern-jl-lbr-dkt-stasiun-kranji-tol-lrt-hor42740263/",
-      "sourcePortal": "rumah123",
-      "postedOrUpdated": "2026-11-02",
-      "ownerType": "agent",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-koridor-multi-telagamurni-r123",
-      "title": "Rumah 2 KT Perumahan Telaga Murni",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Bekasi",
-      "locationText": "Perumahan Telaga Murni, Kab. Bekasi",
-      "buildingOrCluster": "Perumahan Telaga Murni",
-      "rent": {
-        "amount": 16000000,
-        "period": "yearly",
-        "quote": "Rp 16 Juta /tahun",
-        "url": "https://www.rumah123.com/properti/bekasi-cibitung/disewakan-rumah-kontrakan-di-perumahan-telaga-murni-cibitung-026-hor41001920/",
-        "pageDate": "2026-09-13"
-      },
-      "bedrooms": 2,
-      "sizeM2": 60,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 16 Juta /tahun",
-          "url": "https://www.rumah123.com/properti/bekasi-cibitung/disewakan-rumah-kontrakan-di-perumahan-telaga-murni-cibitung-026-hor41001920/"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "LT 60 m², satu lantai, carport. Iklan cocok keluarga kecil/pasangan. Target Metland Telagamurni; jarak tidak diketahui.",
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.rumah123.com/properti/bekasi-cibitung/disewakan-rumah-kontrakan-di-perumahan-telaga-murni-cibitung-026-hor41001920/",
-      "sourcePortal": "rumah123",
-      "postedOrUpdated": "2026-09-13",
-      "ownerType": "agent",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-koridor-multi-pulo-gebang-taman",
-      "title": "Rumah 2+1 KT Taman Pulo Gebang",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Taman Pulo Gebang, Cakung, Jakarta Timur",
-      "buildingOrCluster": "Taman Pulo Gebang",
-      "rent": {
-        "amount": 45000000,
-        "period": "yearly",
-        "quote": "Rp 45 Juta /tahun",
-        "url": "https://www.rumah123.com/properti/jakarta-timur-cakung/disewakan-rumah-daerah-taman-pulo-gebang-cakung-siap-huni-strategis-004-hor42400169/",
-        "pageDate": "2026-09-14"
-      },
-      "bedrooms": 2,
-      "sizeM2": 100,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 45 Juta /tahun",
-          "url": "https://www.rumah123.com/properti/jakarta-timur-cakung/disewakan-rumah-daerah-taman-pulo-gebang-cakung-siap-huni-strategis-004-hor42400169/"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "LT 120 m², satu lantai, tambahan kamar ART. Beberapa iklan mirip ditahan. Klaim masjid kompleks dan bebas banjir belum diverifikasi.",
-      "nearStationsClaim": [
-        {
-          "station": "Cakung",
-          "quote": "Stasiun KRL Cakung",
-          "url": "https://www.rumah123.com/properti/jakarta-timur-cakung/disewakan-rumah-daerah-taman-pulo-gebang-cakung-siap-huni-strategis-004-hor42400169/"
-        }
-      ],
-      "listingUrl": "https://www.rumah123.com/properti/jakarta-timur-cakung/disewakan-rumah-daerah-taman-pulo-gebang-cakung-siap-huni-strategis-004-hor42400169/",
-      "sourcePortal": "rumah123",
-      "postedOrUpdated": "2026-09-14",
-      "ownerType": "agent",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-koridor-multi-karet-rusun",
-      "title": "Rusun Karet Tengsin II studio",
-      "rentalType": "apartemen",
-      "kind": "Apartemen",
-      "area": "Jakarta",
-      "locationText": "Karet Tengsin / Bendungan Hilir, Tanah Abang, Jakarta Pusat",
-      "buildingOrCluster": "Rusun Karet Tengsin 2",
-      "rent": {
-        "amount": 38000000,
-        "period": "yearly",
-        "quote": "Rp 38 Juta /tahun",
-        "url": "https://www.rumah123.com/properti/jakarta-pusat-bendungan-hilir/disewakan-rusun-karet-tengsin-bendungan-hilir-studio-size-35sqm-apr7603015/",
-        "pageDate": "2026-08-15"
-      },
-      "bedrooms": null,
-      "sizeM2": 35,
-      "furnished": "full",
-      "evidence": [
-        {
-          "quote": "Rp 38 Juta /tahun",
-          "url": "https://www.rumah123.com/properti/jakarta-pusat-bendungan-hilir/disewakan-rusun-karet-tengsin-bendungan-hilir-studio-size-35sqm-apr7603015/"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Studio lantai 9, full furnished. Konfirmasi kelayakan penyewa, IPL, biaya tambahan dan akses ke MRT Bendungan Hilir/Setiabudi.",
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.rumah123.com/properti/jakarta-pusat-bendungan-hilir/disewakan-rusun-karet-tengsin-bendungan-hilir-studio-size-35sqm-apr7603015/",
-      "sourcePortal": "rumah123",
-      "postedOrUpdated": "2026-08-15",
-      "ownerType": "agent",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-koridor-multi-sentra-timur-1br",
-      "title": "Sentra Timur Residence 1 KT 36 m²",
-      "rentalType": "apartemen",
-      "kind": "Apartemen",
-      "area": "Jakarta",
-      "locationText": "Pulo Gebang, Cakung, Jakarta Timur",
-      "buildingOrCluster": "Sentra Timur Residence",
-      "rent": {
-        "amount": 2600000,
-        "period": "monthly",
-        "minimumMonths": 1,
-        "quote": "Rp 2.600.000 / bulan",
-        "url": "https://www.sewa-apartemen.net/256486/apartemen-sentra-timur-residence-pulo-gebang-jakarta-timur-disewakan-1-br-36-m2-fully-furnished1/",
-        "pageDate": "2026-04-02"
-      },
-      "bedrooms": 1,
-      "sizeM2": 36,
-      "furnished": "full",
-      "kitchen": "private",
-      "evidence": [
-        {
-          "quote": "Rp 2.600.000 / bulan",
-          "url": "https://www.sewa-apartemen.net/256486/apartemen-sentra-timur-residence-pulo-gebang-jakarta-timur-disewakan-1-br-36-m2-fully-furnished1/"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Full furnish, ruang kerja dan dapur. Minimum 1 bulan; deposit Rp1 juta, IPL/listrik/air di luar harga. Iklan lama, stok perlu recheck.",
-      "nearStationsClaim": [
-        {
-          "station": "Cakung",
-          "quote": "Dekat Terminal Terpadu Pulo Gebang dan Stasiun KRL Cakung",
-          "url": "https://www.sewa-apartemen.net/256486/apartemen-sentra-timur-residence-pulo-gebang-jakarta-timur-disewakan-1-br-36-m2-fully-furnished1/"
-        }
-      ],
-      "listingUrl": "https://www.sewa-apartemen.net/256486/apartemen-sentra-timur-residence-pulo-gebang-jakarta-timur-disewakan-1-br-36-m2-fully-furnished1/",
-      "sourcePortal": "sewa-apartemen.net",
-      "postedOrUpdated": "2026-04-02",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-26"
-    },
-    {
-      "id": "sewa-koridor-multi-sentra-timur-stra003",
-      "title": "Sentra Timur Residence studio STRA003",
-      "rentalType": "apartemen",
-      "kind": "Apartemen",
-      "area": "Jakarta",
-      "locationText": "Cakung, Jakarta Timur",
-      "buildingOrCluster": "Sentra Timur Residence",
-      "rent": {
-        "amount": 25000000,
-        "period": "yearly",
-        "quote": "Rp 25,000,000",
-        "url": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003",
-        "pageDate": null
-      },
-      "bedrooms": null,
-      "sizeM2": 21,
-      "furnished": "full",
-      "evidence": [
-        {
-          "quote": "Rp 25,000,000",
-          "url": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003"
-        }
-      ],
-      "areaHighlights": [],
-      "note": "Full furnished, tower Ruby. Rp25 juta untuk bayar langsung 12 bulan; masa 3/6 bulan juga ditawarkan, harga belum dicek. Stok dan IPL belum dipastikan.",
-      "nearStationsClaim": [],
-      "listingUrl": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003",
-      "sourcePortal": "jendela360",
-      "postedOrUpdated": null,
-      "ownerType": "unknown",
-      "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-26"
     }

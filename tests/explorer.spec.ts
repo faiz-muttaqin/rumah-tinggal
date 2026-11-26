@@ -2,7 +2,12 @@ import { readFile } from "node:fs/promises";
 import { expect, type Page, test } from "@playwright/test";
 import { incidents } from "../src/incidents.ts";
 import { googleMapsLocation } from "../src/maps-links.ts";
-import type { Listing } from "../src/types.ts";
+import type {
+  BookmarkChange,
+  Listing,
+  OwnedBookmark,
+  SavedRentalEntry,
+} from "../src/types.ts";
 import { readExcel } from "./excel-workbook.ts";
 import { mockListingAccount } from "./listing-account.ts";
 import { researchFixture } from "./research-fixture.ts";
@@ -1121,7 +1126,7 @@ test("uses the bottom rental table for searching, sorting, freezing and opening 
   await expect(frozen).toHaveCSS("position", "sticky");
   expect((await frozen.boundingBox())?.x).toBeCloseTo(firstX ?? 0, 0);
 
-  const handle = panel.getByRole("separator");
+  const handle = panel.getByRole("separator", { name: "Tinggi tabel sewa" });
   const height = Number(await handle.getAttribute("aria-valuenow"));
   await handle.press("ArrowUp");
   await expect(handle).toHaveAttribute("aria-valuenow", String(height + 24));
@@ -1143,6 +1148,275 @@ test("uses the bottom rental table for searching, sorting, freezing and opening 
   await panel.getByRole("button", { name: "Ke kartu" }).click();
   await expect(panel).toBeHidden();
   await expect(page.locator(".sidebar")).toBeVisible();
+});
+
+test("resizes a frozen column and exports every filtered row in CSV and Excel order", async ({
+  page,
+}) => {
+  const fixture = structuredClone(researchFixture);
+  const dataset = fixture.metadata.rentals;
+  const base = dataset.rentals[0];
+  const lastTitle = '=Ekspor Uji "kutip"';
+  await page.route("**/data/properties.geojson", (route) =>
+    route.fulfill({
+      json: {
+        ...fixture,
+        metadata: {
+          ...fixture.metadata,
+          rentals: {
+            ...dataset,
+            rentals: [
+              ...dataset.rentals,
+              ...Array.from({ length: 45 }, (_, i) => ({
+                ...base,
+                id: `ekspor-uji-${i}`,
+                title: i === 44 ? lastTitle : `Ekspor Uji ${i}`,
+                rent: {
+                  ...base.rent,
+                  period: "monthly",
+                  amount: 1_000_000 + i * 10_000,
+                },
+              })),
+            ],
+          },
+        },
+      },
+    }),
+  );
+  await page.goto("/?koleksi=sewa&tampilan=tabel");
+  const panel = page.locator("#rental-table");
+  const titleResize = panel.getByRole("separator", {
+    name: "Ubah lebar kolom Hunian",
+    exact: true,
+  });
+  const before = Number(await titleResize.getAttribute("aria-valuenow"));
+  const box = await titleResize.boundingBox();
+  if (!box) throw new Error("Handle kolom tidak ditemukan");
+  await panel.getByLabel("Bekukan kolom kiri").selectOption("2");
+  await page.mouse.move(box.x + 4, box.y + 17);
+  await page.mouse.down();
+  await page.mouse.move(box.x + 88, box.y + 17, { steps: 5 });
+  await page.mouse.up();
+  await expect(titleResize).toHaveAttribute(
+    "aria-valuenow",
+    String(before + 84),
+  );
+  const secondHeader = panel.locator('th[data-col="1"]');
+  await expect(secondHeader).toHaveCSS("left", `${before + 84}px`);
+  await titleResize.press("ArrowRight");
+  await expect(titleResize).toHaveAttribute(
+    "aria-valuenow",
+    String(before + 100),
+  );
+  await page.reload();
+  await expect(titleResize).toHaveAttribute(
+    "aria-valuenow",
+    String(before + 100),
+  );
+
+  await panel.getByRole("searchbox").fill("ekspor uji");
+  await expect(panel.locator("tr[data-rental]")).toHaveCount(40);
+  await panel.getByRole("button", { name: "Setara / bulan" }).click();
+  await expect(panel.locator("tr[data-rental]").first()).toContainText(
+    lastTitle,
+  );
+  const exportMenu = panel.getByLabel("Ekspor tabel sewa");
+  const csvEvent = page.waitForEvent("download");
+  await exportMenu.selectOption("csv");
+  const csv = await csvEvent;
+  expect(csv.suggestedFilename()).toMatch(/^tabel-sewa-.*\.csv$/);
+  const csvPath = await csv.path();
+  if (!csvPath) throw new Error("CSV belum diunduh");
+  const content = await readFile(csvPath, "utf8");
+  expect(content).toContain('"Tautan Iklan"');
+  expect(content.split("\r\n")[1]).toContain(`"'=Ekspor Uji ""kutip"""`);
+  expect(content).toContain('"Ekspor Uji 0"');
+
+  const excelEvent = page.waitForEvent("download");
+  await exportMenu.selectOption("xlsx");
+  const excel = await excelEvent;
+  expect(excel.suggestedFilename()).toMatch(/^tabel-sewa-.*\.xlsx$/);
+  const excelPath = await excel.path();
+  if (!excelPath) throw new Error("Excel belum diunduh");
+  const sheet = readExcel(await readFile(excelPath))["Tabel Sewa"];
+  expect(sheet.frozenRows).toBe(1);
+  expect(sheet.formulaCount).toBe(0);
+  expect(sheet.rows).toHaveLength(45);
+  expect(sheet.rows[0].Hunian).toBe(lastTitle);
+  expect(sheet.rows[0]["Setara / bulan"]).toBe(1_440_000);
+  expect(sheet.rows[0]["Tautan Iklan"]).toBe(base.listingUrl);
+  expect(sheet.rows.at(-1)?.Hunian).toBe("Ekspor Uji 0");
+});
+
+test("saves rentals from the table and cards into a named collection with share and history controls", async ({
+  page,
+}) => {
+  await mockListingAccount(page, []);
+  const [first, second] = researchFixture.metadata.rentals.rentals;
+  const id = "00000000-0000-4000-8000-000000000001";
+  const token = "a".repeat(32);
+  const now = "2026-11-26T00:00:00.000Z";
+  const rental = (base: typeof first | typeof second): SavedRentalEntry => ({
+    rentalId: base.id,
+    title: base.title,
+    locationText: base.locationText,
+    kind: "Rumah",
+    sourceUrl: base.listingUrl,
+    location: null,
+    amount: base.rent.amount,
+    period: base.rent.period as SavedRentalEntry["period"],
+    minimumMonths: null,
+    note: "",
+    savedAt: now,
+    updatedAt: now,
+  });
+  const collection: OwnedBookmark = {
+    id,
+    name: "",
+    items: [],
+    revision: 1,
+    share: null,
+  };
+  const changes: BookmarkChange[] = [];
+  await page.route("**/api/bookmark-collections**", (route) => {
+    const request = route.request();
+    const path = new URL(request.url()).pathname;
+    if (path === "/api/bookmark-collections" && request.method() === "GET") {
+      const { id, name, revision } = collection;
+      return route.fulfill({
+        json: {
+          collections: name
+            ? [
+                {
+                  id,
+                  name,
+                  revision,
+                  rentalIds: collection.items.map(
+                    ({ rental }) => rental.rentalId,
+                  ),
+                },
+              ]
+            : [],
+          hasLegacyRentals: false,
+        },
+      });
+    }
+    if (path.endsWith("/history"))
+      return route.fulfill({ json: { changes, next: null } });
+    if (request.method() === "POST") {
+      const { name, rentalId } = request.postDataJSON();
+      expect(rentalId).toBe(first.id);
+      collection.name = name;
+      collection.items = [{ rental: rental(first), comments: [] }];
+    } else if (path.endsWith("/share")) {
+      collection.share = {
+        token,
+        permission: request.postDataJSON().permission,
+      };
+    } else if (request.method() === "PATCH") {
+      const before = collection.items[0].rental.note;
+      Object.assign(collection.items[0].rental, request.postDataJSON());
+      changes.push({
+        revision: collection.revision + 1,
+        action: "edit",
+        item: first.title,
+        author: "Pemilik",
+        createdAt: now,
+        fields: [
+          {
+            key: "note",
+            before,
+            after: collection.items[0].rental.note,
+          },
+        ],
+      });
+    } else if (request.method() === "PUT") {
+      expect(path.endsWith(second.id)).toBe(true);
+      collection.items.push({ rental: rental(second), comments: [] });
+    }
+    if (request.method() !== "GET") collection.revision++;
+    return route.fulfill({ json: { collection } });
+  });
+  await page.goto("/?koleksi=sewa&tampilan=tabel");
+  await expect(page.locator("#account-label")).toContainText("Keluar");
+  const table = page.locator("#rental-table");
+  await table
+    .locator(`[data-rental="${first.id}"]`)
+    .getByRole("button", { name: "Simpan hunian" })
+    .click();
+  const picker = page.getByRole("dialog", { name: "Simpanan hunian" });
+  await picker.getByLabel("Nama koleksi baru").fill("Pilihan survei");
+  await picker.getByRole("button", { name: "Buat koleksi dan simpan" }).click();
+  const detail = page.getByRole("dialog", { name: "Pilihan survei" });
+  await detail.getByText("Edit hunian dan catatan", { exact: true }).click();
+  await detail
+    .getByRole("textbox", { name: "Catatan", exact: true })
+    .fill("Cek ventilasi dapur.");
+  await detail.getByRole("button", { name: "Simpan perubahan" }).click();
+  await expect(detail.getByRole("status")).toHaveText(
+    "Perubahan tersimpan di riwayat.",
+  );
+  await detail.getByRole("button", { name: "Isi koleksi" }).click();
+  await detail.getByLabel("Izin tautan").selectOption("edit");
+  await detail.getByRole("button", { name: "Aktifkan tautan" }).click();
+  const link = await detail.getByLabel("Tautan koleksi").inputValue();
+  expect(new URL(link).search).toBe("");
+  expect(new URL(link).hash).toBe(`#bagikan-koleksi=${token}`);
+  await detail.getByRole("button", { name: "Riwayat edit" }).click();
+  await expect(detail).toContainText("Sebelum");
+  await expect(detail).toContainText("Sesudah");
+  await expect(detail).toContainText("Cek ventilasi dapur.");
+  await detail.getByRole("button", { name: "Tutup koleksi simpanan" }).click();
+
+  await table.getByRole("button", { name: "Ke kartu" }).click();
+  await page
+    .getByTestId("map-rental-card")
+    .filter({ hasText: second.title })
+    .getByRole("button", { name: "Simpan hunian" })
+    .click();
+  await picker.getByRole("button", { name: /Pilihan survei/ }).click();
+  await expect(
+    detail.getByRole("heading", { name: second.title }),
+  ).toBeVisible();
+  await detail.getByRole("button", { name: "Isi koleksi" }).click();
+  await expect(
+    detail.getByRole("button", { name: new RegExp(first.title) }),
+  ).toBeVisible();
+  await expect(
+    detail.getByRole("button", { name: new RegExp(second.title) }),
+  ).toBeVisible();
+});
+
+test("opens a legacy single-rental link with its note and guest access", async ({
+  page,
+}) => {
+  await page.route("**/api/shared-rentals", (route) =>
+    route.fulfill({
+      json: {
+        rental: {
+          title: "Hunian lama uji",
+          kind: "Rumah",
+          locationText: "Bekasi",
+          amount: 1_000_000,
+          period: "monthly",
+          sourceUrl: "https://portal.example.invalid/old",
+          note: "Catatan dari tautan lama.",
+        },
+        comments: [],
+      },
+    }),
+  );
+  await page.goto(`/#bagikan=${"b".repeat(32)}`);
+  const shared = page.getByRole("dialog", { name: "Hunian yang dibagikan" });
+  await expect(shared).toContainText("Catatan dari tautan lama.");
+  await expect(
+    shared.getByRole("button", {
+      name: "Masuk dengan Google untuk berkomentar",
+    }),
+  ).toBeVisible();
+  await expect(
+    shared.getByRole("button", { name: "Simpan perubahan" }),
+  ).toHaveCount(0);
 });
 
 test("shows historical flood and crime reports in independent opt-in map layers", async ({
@@ -1181,6 +1455,82 @@ test("shows historical flood and crime reports in independent opt-in map layers"
   await expect(flood).not.toBeChecked();
   await expect(crime).toBeChecked();
   await expect(page.locator("#listings-toggle")).not.toBeChecked();
+});
+
+test("filters the Cikarang–MRT rental corridor and allows choosing a station", async ({
+  page,
+}) => {
+  const fixture = structuredClone(researchFixture);
+  const base = fixture.metadata.rentals.rentals[0];
+  const rental = (id: string, title: string, lat: number, lng: number) => ({
+    ...base,
+    id,
+    title,
+    rentalType: "kontrakan",
+    location: {
+      lat,
+      lng,
+      precision: "approximate",
+      label: "Titik uji",
+      method: "Lokasi fiktif",
+      url: "https://portal.example.invalid/pin",
+      checkedAt: "2026-11-26",
+    },
+  });
+  const kos = rental("kos-uji", "Kos uji Blok A", -6.2559, 106.799);
+  await page.route("**/data/properties.geojson", (route) =>
+    route.fulfill({
+      json: {
+        ...fixture,
+        metadata: {
+          ...fixture.metadata,
+          rentals: {
+            ...fixture.metadata.rentals,
+            rentals: [
+              rental("timur-uji", "Rumah uji Cikarang", -6.2553, 107.145),
+              rental("tengah-uji", "Rumah uji Dukuh Atas", -6.2008, 106.8227),
+              rental("lewat-uji", "Rumah uji jauh", -6.2425, 107.145),
+              rental("cabang-uji", "Rumah uji Kemayoran", -6.1617, 106.8414),
+              { ...kos, rentalType: "kos-keluarga", review: { couples: true } },
+              { ...kos, id: "kos-tanpa-izin", rentalType: "kos", review: {} },
+            ],
+          },
+        },
+      },
+    }),
+  );
+  await page.goto("/?koleksi=sewa&tampilan=tabel&koridor=cikarang-mrt");
+  const panel = page.locator("#rental-table");
+  const mode = panel.getByLabel("Angkutan dekat hunian");
+  const station = panel.getByLabel("Stasiun di koridor");
+  const rows = panel.locator("tr[data-rental]");
+  await expect(mode).toHaveValue("cikarang-mrt");
+  await expect(station.locator("optgroup[label^='KRL'] option")).toHaveCount(
+    15,
+  );
+  await expect(station.locator("optgroup[label^='MRT'] option")).toHaveCount(
+    13,
+  );
+  await expect(rows).toHaveCount(3);
+  await expect(panel.locator("[data-rental='timur-uji']")).toContainText(
+    "KRL · Cikarang",
+  );
+  await expect(panel.locator("[data-rental='tengah-uji']")).toContainText(
+    "MRT · Dukuh Atas",
+  );
+  await station.selectOption({ label: "Sudirman" });
+  await expect(rows).toHaveCount(1);
+  await expect(
+    rows.first().getByRole("link", { name: /KRL · Sudirman/ }),
+  ).toHaveAttribute("href", /travelmode=walking/);
+  await station.selectOption({ label: "Cikarang" });
+  await expect(rows.first()).toContainText("Rumah uji Cikarang");
+  await mode.selectOption("KRL");
+  await expect(station).toBeHidden();
+  await expect(panel.locator("[data-rental='cabang-uji']")).toBeVisible();
+  await mode.selectOption("cikarang-mrt");
+  await expect(station).toHaveValue("");
+  await expect(rows).toHaveCount(3);
 });
 
 test("searches dated location reports and opens only mapped public references", async ({

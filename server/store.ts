@@ -13,38 +13,47 @@ import type { Listing, Pin } from "../src/types.ts";
 export const MAX_LISTINGS_PER_OWNER = 500;
 export const MAX_PINS_PER_OWNER = 500;
 
+export function openDatabase(directory: string, name: string): Database {
+  const dataDir = resolve(directory);
+  mkdirSync(dataDir, { recursive: true, mode: 0o700 });
+  const directoryStat = lstatSync(dataDir);
+  if (!directoryStat.isDirectory() || directoryStat.isSymbolicLink()) {
+    throw new Error("Direktori data tidak valid.");
+  }
+  chmodSync(dataDir, 0o700);
+  const filename = join(dataDir, name);
+  try {
+    closeSync(
+      openSync(
+        filename,
+        constants.O_CREAT | constants.O_EXCL | constants.O_WRONLY,
+        0o600,
+      ),
+    );
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== "EEXIST") throw error;
+  }
+  const fileStat = lstatSync(filename);
+  if (!fileStat.isFile() || fileStat.isSymbolicLink()) {
+    throw new Error("File data tidak valid.");
+  }
+  chmodSync(filename, 0o600);
+  const database = new Database(filename);
+  try {
+    database.exec("PRAGMA busy_timeout = 5000; PRAGMA journal_mode = WAL;");
+  } catch (error) {
+    database.close();
+    throw error;
+  }
+  return database;
+}
+
 export class ListingStore {
   private database: Database;
 
   constructor(directory: string) {
-    const dataDir = resolve(directory);
-    mkdirSync(dataDir, { recursive: true, mode: 0o700 });
-    const directoryStat = lstatSync(dataDir);
-    if (!directoryStat.isDirectory() || directoryStat.isSymbolicLink()) {
-      throw new Error("Direktori data tidak valid.");
-    }
-    chmodSync(dataDir, 0o700);
-    const filename = join(dataDir, "rumah-tinggal.sqlite");
-    try {
-      closeSync(
-        openSync(
-          filename,
-          constants.O_CREAT | constants.O_EXCL | constants.O_WRONLY,
-          0o600,
-        ),
-      );
-    } catch (error) {
-      if ((error as NodeJS.ErrnoException).code !== "EEXIST") throw error;
-    }
-    const fileStat = lstatSync(filename);
-    if (!fileStat.isFile() || fileStat.isSymbolicLink()) {
-      throw new Error("File data tidak valid.");
-    }
-    chmodSync(filename, 0o600);
-    this.database = new Database(filename);
+    this.database = openDatabase(directory, "rumah-tinggal.sqlite");
     this.database.exec(`
-      PRAGMA journal_mode = WAL;
-      PRAGMA busy_timeout = 5000;
       CREATE TABLE IF NOT EXISTS listings (
         id TEXT PRIMARY KEY,
         owner_uid TEXT NOT NULL,

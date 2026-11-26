@@ -2,6 +2,7 @@ import "@fontsource-variable/plus-jakarta-sans";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./style.css";
 import {
+  AccountRequestError,
   getUser,
   initializeAuth,
   login,
@@ -9,6 +10,7 @@ import {
   logout,
   privateAPI,
 } from "./auth.ts";
+import { BookmarkCollections } from "./bookmark-collections.ts";
 import { demoListings } from "./demo.ts";
 import {
   createExcelBlob,
@@ -44,7 +46,7 @@ import {
   rentalPopupHTML,
   rentalTermBadges,
 } from "./rental-map.ts";
-import { RentalTable } from "./rental-table.ts";
+import { RENTAL_RAIL_CORRIDOR, RentalTable } from "./rental-table.ts";
 import {
   checkedDate,
   distanceText,
@@ -69,6 +71,7 @@ import {
   safeUrl,
   stationLabel,
 } from "./research-data.ts";
+import { rentalSaveButton, SavedRentals } from "./saved-rentals.ts";
 import {
   type AppConfig,
   AREAS,
@@ -102,7 +105,7 @@ $("app").innerHTML = `
         <div class="filter-grid" id="purchase-filters"><label>Anggaran beli<select id="budget" aria-label="Anggaran maksimum"><option value="0">Semua anggaran</option><option value="500000000">Hingga Rp 500 juta</option><option value="750000000">Hingga Rp 750 juta</option><option value="1000000000">Hingga Rp 1 miliar</option></select></label><label>Jenis hunian<select id="housing-type" aria-label="Jenis hunian"><option value="Semua">Semua jenis</option><option>Rumah</option><option>Apartemen</option><option>Kos</option></select></label></div>
         <div class="commute-filter" id="commute-filter">${icon("train")}<label for="station-distance">Jarak ke stasiun KRL</label><select id="station-distance" aria-label="Jarak maksimum ke stasiun KRL"><option value="0">Bebas</option><option value="1">≤ 1 km</option><option value="3">≤ 3 km</option><option value="5">≤ 5 km</option></select></div>
         <div class="data-tabs" aria-label="Koleksi hunian"><button id="demo-tab" class="active" aria-pressed="true">Contoh hunian <span>8</span></button><button id="private-tab" aria-pressed="false">${icon("bookmark")} Listingku</button><button id="pins-tab" aria-pressed="false">${icon("pin")} Pin tempat</button><button id="research-tab" aria-pressed="false">${icon("research")} Riset <span id="research-count">…</span></button><button id="rentals-tab" aria-pressed="false" disabled>${icon("home")} Sewa · kos, kontrakan & apartemen <span id="rentals-count">…</span></button></div>
-        <button id="open-rental-table" class="button rent-table-entry" type="button">Buka tabel sewa</button>
+        <button id="open-rental-table" class="button rent-table-entry" type="button">Buka tabel sewa</button><button class="button rent-table-entry" type="button" data-open-saved-rentals aria-haspopup="dialog">${icon("bookmark")} Simpanan hunian</button>
         <button id="sidebar-location-reports" class="button rent-table-entry location-reports-entry" type="button" aria-haspopup="dialog">${icon("research")} Berita lokasi</button>
         <div id="rental-filters" class="rental-filters" hidden><div class="rental-type-filters" role="group" aria-label="Jenis sewa">${RENTAL_MAP_GROUPS.map((group) => `<button type="button" class="chip" data-rental-filter="${group.id}" aria-pressed="true" style="--rental-color:${group.color}" ${group.id === "lainnya" ? "hidden" : ""}><i class="rental-kind-dot"></i>${group.label}</button>`).join("")}</div><label>Sewa per bulan<select id="rental-budget" aria-label="Sewa maksimum per bulan"><option value="0">Hingga Rp 5 juta</option><option value="1000000">Hingga Rp 1 juta</option><option value="2000000">Hingga Rp 2 juta</option><option value="3500000">Hingga Rp 3,5 juta</option><option value="4000000">Hingga Rp 4 juta</option></select></label><label>Fokus masjid Ihrish<select id="rental-mosque" aria-label="Fokus masjid Ihrish"></select></label><label>Dapur<select id="rental-kitchen" aria-label="Fasilitas dapur"><option value="all">Semua, termasuk yang belum diketahui</option><option value="private">Dalam unit menurut iklan</option></select></label></div>
       </div>
@@ -197,8 +200,15 @@ const listingsToggle = $<HTMLInputElement>("listings-toggle");
 let pickingPoint: "listing" | "pin" | undefined;
 let toastTimer: ReturnType<typeof setTimeout>;
 let exporting = false;
+const legacyRentals = new SavedRentals();
+const savedRentals = new BookmarkCollections(
+  () => researchData?.rentals?.rentals ?? [],
+  () => legacyRentals.openList(),
+);
 const rentalTable = new RentalTable($("rental-table"), $("explorer"), {
   change: render,
+  isSaved: (id) => savedRentals.has(id),
+  message: toast,
   select: (rental) => {
     if (!rental.location || !map) {
       toast(
@@ -331,7 +341,7 @@ function renderRentalCards(rentals: ResearchRental[]): void {
           const group = RENTAL_MAP_GROUPS.find(
             (item) => item.id === rentalMapKind(rental),
           );
-          return `<article class="listing-card map-rental-card" data-testid="map-rental-card" data-rental-id="${esc(rental.id)}" style="--rental-color:${group?.color}"><div class="card-top"><span class="card-area"><i class="area-dot area-${esc(rental.area.toLowerCase())}"></i>${esc(rental.area)}</span><span class="rental-tag">${esc(RENTAL_LABELS[rental.rentalType])}</span></div><h2 class="card-title">${esc(rental.title)}</h2>${rentalTermBadges(rental)}<p class="card-price">${esc(rentText(rental))}</p><p class="rental-card-location">${icon("pin")} ${esc(rental.locationText)}</p><div class="card-specs">${rental.bedrooms !== null ? `<span>${rental.bedrooms === 0 ? "Studio" : `${rental.bedrooms} kamar`}</span>` : ""}${rental.sizeM2 !== null ? `<span>${rental.sizeM2} m²</span>` : ""}<span>${rental.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span></div><p class="rental-card-checked">${esc(rental.sourcePortal)} · dicek ${esc(checkedDate(rental.lastChecked))}</p><p class="rental-card-location">${esc(rentalLocationLabel(rental))}</p>${rental.location ? `<p class="rental-card-checked">${esc(rentalMosqueSummary(rental))}</p>` : `<p class="rental-card-checked">${esc(rental.locationNote ?? "Titik lokasi belum ditemukan dalam sumber.")}</p>`}<div class="rental-card-actions">${rental.location ? `<button class="button" data-view-rental="${esc(rental.id)}">Lihat pin ${icon("pin")}</button>` : ""}<a class="button" href="/riset#${encodeURIComponent(rental.id)}">Bukti & rincian ${icon("arrow")}</a><a class="source-link" href="${esc(safeUrl(rental.listingUrl))}" target="_blank" rel="noopener noreferrer">Buka listing ↗</a></div></article>`;
+          return `<article class="listing-card map-rental-card" data-testid="map-rental-card" data-rental-id="${esc(rental.id)}" style="--rental-color:${group?.color}"><div class="card-top"><span class="card-area"><i class="area-dot area-${esc(rental.area.toLowerCase())}"></i>${esc(rental.area)}</span><span class="rental-tag">${esc(RENTAL_LABELS[rental.rentalType])}</span></div><h2 class="card-title">${esc(rental.title)}</h2>${rentalTermBadges(rental)}<p class="card-price">${esc(rentText(rental))}</p><p class="rental-card-location">${icon("pin")} ${esc(rental.locationText)}</p><div class="card-specs">${rental.bedrooms !== null ? `<span>${rental.bedrooms === 0 ? "Studio" : `${rental.bedrooms} kamar`}</span>` : ""}${rental.sizeM2 !== null ? `<span>${rental.sizeM2} m²</span>` : ""}<span>${rental.verdict === "confirmed" ? "Terverifikasi" : "Sebagian terverifikasi"}</span></div><p class="rental-card-checked">${esc(rental.sourcePortal)} · dicek ${esc(checkedDate(rental.lastChecked))}</p><p class="rental-card-location">${esc(rentalLocationLabel(rental))}</p>${rental.location ? `<p class="rental-card-checked">${esc(rentalMosqueSummary(rental))}</p>` : `<p class="rental-card-checked">${esc(rental.locationNote ?? "Titik lokasi belum ditemukan dalam sumber.")}</p>`}<div class="rental-card-actions">${rentalSaveButton(rental.id, savedRentals.has(rental.id))}${rental.location ? `<button class="button" data-view-rental="${esc(rental.id)}">Lihat pin ${icon("pin")}</button>` : ""}<a class="button" href="/riset#${encodeURIComponent(rental.id)}">Bukti & rincian ${icon("arrow")}</a><a class="source-link" href="${esc(safeUrl(rental.listingUrl))}" target="_blank" rel="noopener noreferrer">Buka listing ↗</a></div></article>`;
         })
         .join("")
     : `<div class="empty-state" data-testid="rental-empty"><span class="empty-icon">${icon("search")}</span><h2>${rentalKinds.size ? "Belum ada sewa yang cocok" : "Semua jenis sewa disembunyikan"}</h2><p>Aktifkan Kos, Kontrakan, atau Apartemen, lalu sesuaikan wilayah dan anggaran sewa.</p><button class="button" id="reset-rentals">Reset filter sewa</button></div>`;
@@ -645,7 +655,7 @@ function pinPopup(pin: Pin, close: () => void): HTMLElement {
   return element;
 }
 
-async function loadPins(): Promise<void> {
+async function loadPins(background = false): Promise<void> {
   const uid = getUser()?.uid;
   if (!uid) return;
   try {
@@ -655,7 +665,12 @@ async function loadPins(): Promise<void> {
   } catch (error) {
     if (getUser()?.uid !== uid) return;
     pins = [];
-    toast(error instanceof Error ? error.message : "Pin belum termuat.");
+    if (
+      !background ||
+      !(error instanceof AccountRequestError) ||
+      error.status !== 403
+    )
+      toast(error instanceof Error ? error.message : "Pin belum termuat.");
   }
   void map?.updatePins(pins, pinPopup);
   render();
@@ -733,7 +748,9 @@ function selectRentals(rentals: ResearchRental[]): void {
   selectedRentalIds = rentals.map((rental) => rental.id);
   rentalTable.highlight(selectedRentalIds);
   const content = document.createElement("div");
-  content.innerHTML = rentalPopupHTML(rentals, kajianMosques);
+  content.innerHTML = rentalPopupHTML(rentals, kajianMosques, (id) =>
+    rentalSaveButton(id, savedRentals.has(id)),
+  );
   for (const button of content.querySelectorAll<HTMLButtonElement>(
     "[data-rental-mosque]",
   ))
@@ -957,7 +974,7 @@ async function doLogin(): Promise<void> {
   }
 }
 
-async function loadPrivateListings(): Promise<void> {
+async function loadPrivateListings(background = false): Promise<void> {
   const uid = getUser()?.uid;
   if (!uid) return;
   try {
@@ -969,7 +986,12 @@ async function loadPrivateListings(): Promise<void> {
     if (getUser()?.uid !== uid) return;
     privateListings = [];
     privateOwnerUid = undefined;
-    toast(error instanceof Error ? error.message : "Koleksi belum termuat.");
+    if (
+      !background ||
+      !(error instanceof AccountRequestError) ||
+      error.status !== 403
+    )
+      toast(error instanceof Error ? error.message : "Koleksi belum termuat.");
   }
   render();
 }
@@ -1577,7 +1599,10 @@ async function start(): Promise<void> {
     else render();
   } else if (params.get("koleksi") === "listingku") openPrivate();
   else if (params.get("koleksi") === "sewa") {
-    if (params.get("tampilan") === "tabel") openRentalTable();
+    if (params.get("koridor") === RENTAL_RAIL_CORRIDOR) {
+      rentalTable.showRailCorridor();
+      openRentalTable();
+    } else if (params.get("tampilan") === "tabel") openRentalTable();
     else openRentals();
   }
   const rentalId = params.get("sewa");
@@ -1602,6 +1627,8 @@ async function start(): Promise<void> {
   if (configResult.status === "fulfilled") {
     try {
       await initializeAuth(configResult.value, (user) => {
+        legacyRentals.authChanged();
+        savedRentals.authChanged();
         privateListings = [];
         privateOwnerUid = undefined;
         pins = [];
@@ -1612,8 +1639,8 @@ async function start(): Promise<void> {
           ? `${user.displayName?.split(" ")[0] || "Akun"} · Keluar`
           : "Masuk dengan Google";
         if (user) {
-          void loadPrivateListings();
-          void loadPins();
+          void loadPrivateListings(collection !== "private");
+          void loadPins(collection !== "pins");
         }
       });
     } catch {

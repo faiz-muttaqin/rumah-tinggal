@@ -22,15 +22,14 @@ Public detail pages rechecked on 26 November; not added to master pending dedupl
 
 Discovery sources: [Duren Jaya](https://www.rumah123.com/sewa/bekasi/duren-jaya/rumah/), [Tambun station](https://www.rumah123.com/sewa/bekasi/poi/stasiun-tambun/rumah/), [Cikarang kontrakan](https://www.rumah123.com/sewa/cikarang/rumah/?quickLabel=Kontrakan). Area/POI pages are only discovery, never distance proof. Cipete listing hor42311798 exceeds budget (Rp130m/year), exclude.
 
-## Reproducible next runs
+## Pemeriksaan integrasi — 26 November 2026 WIB
 
-- [ ] Offline boundary plan: `python3 -I scripts/station_kelurahan.py --station Cikarang`
-- [ ] Explicit live BIG pilot: `python3 -I scripts/station_kelurahan.py --run --station Cikarang`; request via web reader on 26 November was inaccessible; do not mark polygons verified.
-- [ ] Offline crawler pilot: `python3 -I scripts/rental_multi_crawler.py --corridor-only --station Cikarang --providers pinhome`
-- [ ] Bounded live pilot: append `--run --max-search 3 --max-detail 5`; examine private report before repeating other stations/providers. Default pilot cache is isolated by the station set; custom directories should also be unique.
-- [ ] Run `python3 -I scripts/test_rental_multi.py` (includes corridor inventory cases) and `python3 -I scripts/test_rental_crawler.py`.
-- [ ] Expand acquisition across the eleven coverage gaps, using kelurahan names and alternate portal slugs; no extrapolation from area centroid to unit.
-- [ ] Verify source URL, rent period/minimum payment, family occupancy, coordinates and accuracy, potential cross-source duplication. Retain unpinned leads as partial.
-- [ ] Reconcile main/PR #3, run `python3 scripts/build-properties.py --check`, `./dev check`, `./dev test`, `./dev build`, `./dev test:e2e`. No merge or deploy until reviewed.
+- PR #4 digabung ke cabang PR #3. Konflik pada `research/rentals.json`, `research/rental-locations.json`, dan GeoJSON diselesaikan dari katalog main terbaru dan bukti iklan yang lolos. ID, URL dan data lokasi 688 entri main diperiksa; GeoJSON dibuat ulang oleh builder.
+- BIG merespons 13 stasiun yang dipilih dan 52 kueri bersarang pada 500 m, 1 km, 1,5 km, dan 2 km. Cikarang mencakup 4, 5, 7 dan 13 poligon pada masing-masing radius. Hasil ini membantu memilih kelurahan. Validasi slug portal dilakukan terpisah pada pilot, dan titik unit tetap memerlukan bukti iklan.
+- Rencana offline terdiri dari 28 stasiun, dengan 130 halaman Pinhome, 9 titik pencarian Jendela360 dan 28 Mamikos. Pilot satu stasiun Cikarang terisolasi, dengan tiga request pencarian dan dua request detail. Ada 4 detail dalam laporan, termasuk cache. Tiga petunjuk baru memakai tanggal sumber 2025, salah satunya hampir pada titik stasiun. Mereka ditahan untuk cek stok dan letak unit.
+- Pilot terpisah pada 10 stasiun dari backlog awal membaca 18 detail (8 Pinhome, 8 Jendela360, 2 Mamikos), dengan 6 kandidat awal. Harga, tanggal iklan, ketentuan pasutri, dan bukti lokasi diperiksa sebelum kurasi. Kos Bintara berlabel apartemen di URL, tetapi laman tidak membuktikan unit mandiri atau izin pasutri.
+- Empat iklan lolos kurasi. Rumah Trias Cibitung Rp11 juta/tahun minimum 12 bulan berjarak sekitar 1,17 km dari KRL Cibitung. Rumah Klender Rp1,3 juta/bulan berjarak sekitar 0,40 km; deskripsi menyebut Rp1,4 juta, sehingga angka akhir perlu konfirmasi. Kontrakan Cipinang Muara Rp850 ribu/bulan sekitar 1,22 km dari Klender, di luar filter tabel 1,2 km. Rumah Duren Jaya Rp22 juta/tahun tetap tanpa pin dan klaim akses Bekasi Timur dicantumkan sebagai klaim iklan.
+- Di antara 31 calon PR #3, satu URL sudah ada di katalog. Pinhome menandai Perumnas Klender dan rumah dekat Fatmawati nonaktif/tersewa. Pisangan Baru ditahan untuk dugaan iklan ganda karena titiknya sekitar 11 m dari entri main yang serupa. Unit Sentra Timur STRA003 dibaca aktif dengan paket Rp25 juta/tahun, tetapi sekitar 1,76 km dari Cakung. ASPEN ADMA003 dari cache tambahan gagal plafon saat kartu pembayaran penuh menunjukkan Rp66,66 juta/tahun. Dua kandidat Rumah123 dari PR #4 tetap petunjuk karena pembacaan ulang langsung belum berhasil dan titik atau potensi duplikat belum jelas.
+- Stasiun di wilayah pusat dan Cakung yang masih minim hasil bisa dicari kembali melalui sumber resmi dan seed terverifikasi. Stok aktual, rute pejalan kaki dan letak unit masih perlu dikonfirmasi. Tabel tetap memakai 1,2 km, sedangkan audit memakai 1,5 km dan menyimpan hasil pembanding hingga 2 km.
 
-Runtime tests and live acquisition were not executed in this connector session.
+Perintah pilot yang dapat diulang adalah `python3 -I scripts/station_kelurahan.py --run --station Cikarang` dan `python3 -I scripts/rental_multi_crawler.py --corridor-only --station Cikarang --providers pinhome --run --max-search 3 --max-detail 5`. Cache pilot terpisah dari pekerjaan terjadwal.
