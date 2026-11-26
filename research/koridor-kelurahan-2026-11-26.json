@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-26",
+  "radiusKm": 1.5,
+  "maxMonthlyRent": 5000000,
+  "note": "Seed pencarian manual, belum diverifikasi terhadap batas administratif/radius. Bukan jaminan kedekatan.",
+  "stations": [
+    {
+      "mode": "KRL",
+      "station": "Cikarang",
+      "searchAreas": [
+        "Karangasih",
+        "Karangbaru",
+        "Cikarang Kota"
+      ]
+    },
+    {
+      "mode": "KRL",
+      "station": "Metland Telagamurni",
+      "searchAreas": [
+        "Telagamurni",
+        "Telaga Asih",
+        "Telaga Harapan"
+      ]
+    },
+    {
+      "mode": "KRL",
+      "station": "Cibitung",
+      "searchAreas": [
+        "Wanasari",
+        "Wanajaya"
+      ]
+    },
+    {
+      "mode": "KRL",
+      "station": "Tambun",
+      "searchAreas": [
+        "Mekarsari",
+        "Tambun",
+        "Setiadarma",
+        "Jatimulya"
+      ]
+    },
+    {
+      "mode": "KRL",
+      "station": "Bekasi Timur",
+      "searchAreas": [
+        "Durenjaya",
+        "Bekasijaya",
+        "Margahayu"
+      ]
+    },
+    {
+      "mode": "KRL",
+      "station": "Bekasi",
+      "searchAreas": [
+        "Margamulya",
+        "Marga Jaya",
+        "Bekasijaya",
+        "Harapan Mulya"
+      ]
+    },
+    {
+      "mode": "KRL",
+      "station": "Kranji",
+      "searchAreas": [
+        "Kranji",
+        "Bintara",
+        "Jakasampurna"
+      ]
+    },
+    {
+      "mode": "KRL",
+      "station": "Cakung",
+      "searchAreas": [
+        "Pulo Gebang",
+        "Bintara",
+        "Pondok Kopi"
+      ]
+    },
+    {
+      "mode": "KRL",
+      "station": "Klender Baru",
+      "searchAreas": [
+        "Malaka Jaya",
+        "Pondok Kopi",
+        "Pulo Gebang"
+      ]
+    },
+    {
+      "mode": "KRL",
+      "station": "Buaran",
+      "searchAreas": [
+        "Malaka Jaya",
+        "Malaka Sari",
+        "Jatinegara (Cakung)"
+      ]
+    },
+    {
+      "mode": "KRL",
+      "station": "Klender",
+      "searchAreas": [
+        "Klender",
+        "Jatinegara (Cakung)",
+        "Cipinang"
+      ]
+    },
+    {
+      "mode": "KRL",
+      "station": "Jatinegara",
+      "searchAreas": [
+        "Rawa Bunga",
+        "Pisangan Baru",
+        "Cipinang Besar Utara",
+        "Bali Mester"
+      ]
+    },
+    {
+      "mode": "KRL",
+      "station": "Matraman",
+      "searchAreas": [
+        "Pisangan Baru",
+        "Kebon Manggis",
+        "Palmeriam",
+        "Bali Mester"
+      ]
+    },
+    {
+      "mode": "KRL",
+      "station": "Manggarai",
+      "searchAreas": [
+        "Manggarai",
+        "Manggarai Selatan",
+        "Pasar Manggis",
+        "Bukit Duri"
+      ]
+    },
+    {
+      "mode": "KRL",
+      "station": "Sudirman",
+      "searchAreas": [
+        "Kebon Melati",
+        "Menteng",
+        "Karet Tengsin",
+        "Setiabudi"
+      ]
+    },
+    {
+      "mode": "MRT",
+      "station": "Lebak Bulus",
+      "searchAreas": [
+        "Lebak Bulus",
+        "Pondok Pinang",
+        "Cirendeu",
+        "Bintaro"
+      ]
+    },
+    {
+      "mode": "MRT",
+      "station": "Fatmawati",
+      "searchAreas": [
+        "Cilandak Barat",
+        "Pondok Labu",
+        "Lebak Bulus"
+      ]
+    },
+    {
+      "mode": "MRT",
+      "station": "Cipete Raya",
+      "searchAreas": [
+        "Cipete Selatan",
+        "Gandaria Selatan",
+        "Cilandak Barat"
+      ]
+    },
+    {
+      "mode": "MRT",
+      "station": "Haji Nawi",
+      "searchAreas": [
+        "Gandaria Selatan",
+        "Gandaria Utara",
+        "Cipete Utara"
+      ]
+    },
+    {
+      "mode": "MRT",
+      "station": "Blok A",
+      "searchAreas": [
+        "Gandaria Utara",
+        "Cipete Utara",
+        "Pulo"
+      ]
+    },
+    {
+      "mode": "MRT",
+      "station": "Blok M",
+      "searchAreas": [
+        "Melawai",
+        "Kramat Pela",
+        "Pulo",
+        "Petogogan"
+      ]
+    },
+    {
+      "mode": "MRT",
+      "station": "ASEAN",
+      "searchAreas": [
+        "Gunung",
+        "Selong",
+        "Kramat Pela"
+      ]
+    },
+    {
+      "mode": "MRT",
+      "station": "Senayan",
+      "searchAreas": [
+        "Selong",
+        "Gunung",
+        "Gelora"
+      ]
+    },
+    {
+      "mode": "MRT",
+      "station": "Istora",
+      "searchAreas": [
+        "Gelora",
+        "Senayan",
+        "Karet Semanggi"
+      ]
+    },
+    {
+      "mode": "MRT",
+      "station": "Bendungan Hilir",
+      "searchAreas": [
+        "Bendungan Hilir",
+        "Karet Tengsin",
+        "Karet Semanggi"
+      ]
+    },
+    {
+      "mode": "MRT",
+      "station": "Setiabudi",
+      "searchAreas": [
+        "Karet",
+        "Karet Tengsin",
+        "Setiabudi",
+        "Karet Kuningan"
+      ]
+    },
+    {
+      "mode": "MRT",
+      "station": "Dukuh Atas",
+      "searchAreas": [
+        "Kebon Melati",
+        "Menteng",
+        "Setiabudi",
+        "Karet Tengsin"
+      ]
+    },
+    {
+      "mode": "MRT",
+      "station": "Bundaran HI",
+      "searchAreas": [
+        "Kebon Kacang",
+        "Kebon Melati",
+        "Menteng"
+      ]
+    }
+  ],
+  "auditedListings": [
+    {
+      "id": "karangsih-wifi",
+      "kel": "Karangasih",
+      "station": "Cikarang",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-khfudholi",
+      "amount": 1000000,
+      "period": "monthly",
+      "status": "new-partial"
+    },
+    {
+      "id": "metland-luas",
+      "kel": "Telagamurni",
+      "station": "Metland Telagamurni",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlmetland-cibitung",
+      "amount": 2000000,
+      "period": "monthly",
+      "status": "new-partial"
+    },
+    {
+      "id": "metland-15",
+      "kel": "Telagamurni",
+      "station": "Metland Telagamurni",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-metland-cibitung-4",
+      "amount": 15000000,
+      "period": "yearly",
+      "status": "new-partial"
+    },
+    {
+      "id": "wanasari-trias",
+      "kel": "Wanasari",
+      "station": "Cibitung",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-ceri-7-blok-c5-31",
+      "amount": 11000000,
+      "period": "yearly",
+      "status": "new-partial"
+    },
+    {
+      "id": "wanasari-regensi",
+      "kel": "Wanasari",
+      "station": "Cibitung",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-renovasi-per-3bulan-di-jl-delima-10-no52-rt013-018-perumahan-bekasi-regensi-ii",
+      "amount": 900000,
+      "period": "monthly",
+      "status": "new-partial"
+    },
+    {
+      "id": "mekarsari-scorpio",
+      "kel": "Mekarsari",
+      "station": "Tambun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-scorpio-a15-no-8",
+      "amount": 25000000,
+      "period": "yearly",
+      "status": "new-partial"
+    },
+    {
+      "id": "setiadarma-petak",
+      "kel": "Setiadarma",
+      "station": "Tambun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-setiadarma",
+      "amount": 550000,
+      "period": "monthly",
+      "status": "new-partial"
+    },
+    {
+      "id": "bekasijaya-wisma",
+      "kel": "Bekasijaya",
+      "station": "Bekasi Timur",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-pakai-dekat-terminal-di-wisma-jaya-bekasi",
+      "amount": 2750000,
+      "period": "monthly",
+      "status": "new-partial"
+    },
+    {
+      "id": "durenjaya-kusuma",
+      "kel": "Durenjaya",
+      "station": "Bekasi Timur",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlkusuma-raya-f14-rt6-15-duren-jaya-bekasi",
+      "amount": 18000000,
+      "period": "yearly",
+      "status": "new-partial"
+    },
+    {
+      "id": "malakajaya-52",
+      "kel": "Malaka Jaya",
+      "station": "Buaran",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-di-duren-sawit-di-malaka-jaya",
+      "amount": 52000000,
+      "period": "yearly",
+      "status": "new-partial"
+    },
+    {
+      "id": "malakajaya-perumnas",
+      "kel": "Malaka Jaya",
+      "station": "Klender Baru / Buaran",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumnas-klender-2",
+      "amount": 2000000,
+      "period": "monthly",
+      "status": "new-partial"
+    },
+    {
+      "id": "pisangan-38",
+      "kel": "Pisangan Baru",
+      "station": "Matraman / Jatinegara",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pisangan-baru-rt-006-rw-012",
+      "amount": 3800000,
+      "period": "monthly",
+      "status": "new-partial"
+    },
+    {
+      "id": "manggarai-14",
+      "kel": "Manggarai",
+      "station": "Manggarai",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-strategis-di-manggarai-tebet-jakarta-selatan",
+      "amount": 14000000,
+      "period": "yearly",
+      "status": "new-partial"
+    },
+    {
+      "id": "manggarai-utara",
+      "kel": "Manggarai",
+      "station": "Manggarai",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-manggarai-utara-2-no-2",
+      "amount": 2500000,
+      "period": "monthly",
+      "status": "new-partial"
+    },
+    {
+      "id": "kebonmelati-30",
+      "kel": "Kebon Melati",
+      "station": "Sudirman / Dukuh Atas",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kebon-melati-tanah-abang-jakarta-pusat-1",
+      "amount": 30000000,
+      "period": "yearly",
+      "status": "new-partial"
+    },
+    {
+      "id": "kebonkacang-rusun",
+      "kel": "Kebon Kacang",
+      "station": "Bundaran HI",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-pusat-kota-jakarta-di-rumah-susun-kebon-kacang-xi",
+      "amount": 3000000,
+      "period": "monthly",
+      "status": "new-partial"
+    },
+    {
+      "id": "pondoklabu-ipin",
+      "kel": "Pondok Labu",
+      "station": "Fatmawati",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakkan-di-jalan-haji-ipin-nomor-2-rt-011-rw-001",
+      "amount": 3500000,
+      "period": "monthly",
+      "status": "new-partial"
+    },
+    {
+      "id": "cipete-utara-40",
+      "kel": "Cipete Utara",
+      "station": "Haji Nawi / Blok A",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-asri-strategis-di-cipete-17",
+      "amount": 40000000,
+      "period": "yearly",
+      "status": "new-partial"
+    }
+  ],
+  "sourcePages": [
+    "https://www.pinhome.id/sewa/rumah/jawa-barat/kab-bekasi/cikarang-utara/karangasih",
+    "https://www.pinhome.id/sewa/rumah/jawa-barat/kab-bekasi/cikarang-barat/telagamurni",
+    "https://www.pinhome.id/sewa/rumah/jawa-barat/kab-bekasi/cibitung/wanasari",
+    "https://www.pinhome.id/sewa/rumah/jawa-barat/kab-bekasi/tambun-selatan/mekarsari",
+    "https://www.pinhome.id/sewa/rumah/jawa-barat/kab-bekasi/tambun-selatan/setiadarma",
+    "https://www.pinhome.id/sewa/rumah/jawa-barat/bekasi/bekasi-timur/durenjaya",
+    "https://www.pinhome.id/sewa/rumah/jawa-barat/bekasi/bekasi-timur/margahayu",
+    "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-selatan/tebet/manggarai",
+    "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-selatan/tebet/manggarai-selatan",
+    "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-pusat/tanah-abang/kebon-melati",
+    "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-pusat/tanah-abang/kebon-kacang",
+    "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-selatan/cilandak/gandaria-selatan",
+    "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-selatan/kebayoran-baru/cipete-utara",
+    "https://www.pinhome.id/sewa/dki-jakarta/jakarta-selatan/kebayoran-baru/gandaria-utara/bulanan/properti",
+    "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-selatan/kebayoran-baru/selong"
+  ]
+}

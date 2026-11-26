@@ -21,7 +21,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "1 month minimum",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "verification-pending"
     },
     {
       "id": "scbd-20261126-002",
@@ -41,7 +42,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "1 month minimum; structured LB 200, title 100; verify; similar alternate listing",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-inactive"
     },
     {
       "id": "scbd-20261126-003",
@@ -61,7 +63,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "12 month minimum",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-inactive"
     },
     {
       "id": "scbd-20261126-004",
@@ -81,7 +84,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "older cached detail; stock recheck",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "verification-pending"
     },
     {
       "id": "scbd-20261126-005",
@@ -101,7 +105,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "family accepted; old cached page; 1 month minimum",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-inactive"
     },
     {
       "id": "scbd-20261126-006",
@@ -121,7 +126,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "explicit rented status",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-rented"
     },
     {
       "id": "scbd-20261126-007",
@@ -141,7 +147,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "explicit rented status",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-rented"
     },
     {
       "id": "scbd-20261126-008",
@@ -161,7 +168,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "explicit rented status",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-rented"
     },
     {
       "id": "scbd-20261126-009",
@@ -181,7 +189,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "explicit rented status",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-rented"
     },
     {
       "id": "scbd-20261126-010",
@@ -201,7 +210,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "detail updated 24 Nov; search card had different price, detail preferred; verify final price",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "verification-pending"
     },
     {
       "id": "scbd-20261126-011",
@@ -221,7 +231,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "annual option Rp52m; verify IPL",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "verification-pending"
     },
     {
       "id": "scbd-20261126-012",
@@ -241,7 +252,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "description Rp4m vs header Rp4.3m; verify price and IPL",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "verification-pending"
     },
     {
       "id": "scbd-20261126-013",
@@ -261,7 +273,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "explicit rented; overlaps PR #3",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-rented"
     },
     {
       "id": "scbd-20261126-014",
@@ -281,7 +294,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "explicit couples accepted; base for one, second person surcharge unknown; electricity extra",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-waitlist"
     },
     {
       "id": "scbd-20261126-015",
@@ -301,7 +315,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "explicit couples accepted; base for one, second person surcharge unknown; electricity extra",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-waitlist"
     },
     {
       "id": "scbd-20261126-016",
@@ -321,7 +336,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "explicit couples accepted; price for two, twin beds; electricity extra",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-waitlist"
     },
     {
       "id": "scbd-20261126-017",
@@ -341,7 +357,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "couples policy needs room-level confirmation; gender-specific room labels; second person extra",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "verification-pending"
     },
     {
       "id": "scbd-20261126-018",
@@ -361,7 +378,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "couples policy needs room-level confirmation; gender-specific room labels; second person extra",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "verification-pending"
     },
     {
       "id": "scbd-20261126-019",
@@ -381,7 +399,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "two allowed with surcharge, marriage policy not confirmed; single rooms not eligible",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "url-already-in-catalogue"
     },
     {
       "id": "scbd-20261126-020",
@@ -401,7 +420,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "category price only; no confirmed two-person room; hold",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "verification-pending"
     },
     {
       "id": "scbd-20261126-021",
@@ -421,7 +441,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "additional occupant prohibited on indexed room; hold, not verified couple option",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "verification-pending"
     },
     {
       "id": "scbd-20261126-022",
@@ -441,7 +462,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "explicit rented status",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-rented"
     },
     {
       "id": "scbd-20261126-023",
@@ -461,7 +483,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "old cached detail; confirm entire unit and occupancy",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-inactive"
     },
     {
       "id": "scbd-20261126-024",
@@ -481,7 +504,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "minimum 12 months; older cached detail",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-inactive"
     },
     {
       "id": "scbd-20261126-025",
@@ -501,7 +525,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "verify exact unit",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-inactive"
     },
     {
       "id": "scbd-20261126-026",
@@ -515,13 +540,18 @@
       "bedrooms": null,
       "buildingAreaM2": null,
       "availability": "unknown",
-      "location": null,
-      "straightLineKm": null,
+      "location": {
+        "lat": -6.224458,
+        "lng": 106.7724,
+        "precision": "approximate"
+      },
+      "straightLineKm": 4.256,
       "roadKm": null,
-      "scopeStatus": "unverified",
-      "importStatus": "hold",
+      "scopeStatus": "within-8km-from-source-pin",
+      "importStatus": "published-partial",
       "note": "verify minimum term",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "catalogId": "sewa-scbd-20261126-026"
     },
     {
       "id": "scbd-20261126-027",
@@ -541,7 +571,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "verify current stock and IPL",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "verification-pending"
     },
     {
       "id": "scbd-20261126-028",
@@ -561,7 +592,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "minimum 3 months; at ceiling before fees",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "verification-pending"
     },
     {
       "id": "scbd-20261126-029",
@@ -581,7 +613,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Rp65m/2 years option. Ground floor rental only; upstairs male kos. Motor parking; cached detail.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-inactive"
     },
     {
       "id": "scbd-20261126-030",
@@ -595,13 +628,25 @@
       "bedrooms": 0,
       "buildingAreaM2": 25,
       "availability": "unknown",
-      "location": null,
-      "straightLineKm": null,
-      "roadKm": null,
-      "scopeStatus": "unverified",
-      "importStatus": "hold",
+      "location": {
+        "lat": -6.252397,
+        "lng": 106.861756,
+        "precision": "building"
+      },
+      "straightLineKm": 6.415,
+      "roadKm": 8.682,
+      "scopeStatus": "within-8km-from-source-pin",
+      "importStatus": "published-partial",
       "note": "Non-furnished; monthly payment starts Rp2.4m, annual paid upfront; detail overrides category.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "catalogId": "sewa-scbd-20261126-030",
+      "roadEvidence": {
+        "profile": "car",
+        "provider": "FOSSGIS OSRM / OpenStreetMap",
+        "scope": "building-to-building",
+        "checkedAt": "2026-11-26",
+        "source": "https://routing.openstreetmap.de/routed-car/route/v1/driving/106.861756,-6.252397;106.8109,-6.2246?overview=false&steps=false&alternatives=false&radiuses=75%3B75"
+      }
     },
     {
       "id": "scbd-20261126-031",
@@ -621,7 +666,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Non-furnished, detail RENTED despite category result; monthly payment starts Rp2.688m.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-rented"
     },
     {
       "id": "scbd-20261126-032",
@@ -641,7 +687,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Detail RENTED; monthly payment starts Rp2.938m.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-rented"
     },
     {
       "id": "scbd-20261126-033",
@@ -655,13 +702,25 @@
       "bedrooms": 2,
       "buildingAreaM2": 35,
       "availability": "unknown",
-      "location": null,
-      "straightLineKm": null,
-      "roadKm": null,
-      "scopeStatus": "unverified",
-      "importStatus": "hold",
+      "location": {
+        "lat": -6.252397,
+        "lng": 106.861756,
+        "precision": "building"
+      },
+      "straightLineKm": 6.415,
+      "roadKm": 8.682,
+      "scopeStatus": "within-8km-from-source-pin",
+      "importStatus": "published-partial",
       "note": "Monthly payment starts Rp3.447m; annual paid upfront; IPL unknown.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "catalogId": "sewa-scbd-20261126-033",
+      "roadEvidence": {
+        "profile": "car",
+        "provider": "FOSSGIS OSRM / OpenStreetMap",
+        "scope": "building-to-building",
+        "checkedAt": "2026-11-26",
+        "source": "https://routing.openstreetmap.de/routed-car/route/v1/driving/106.861756,-6.252397;106.8109,-6.2246?overview=false&steps=false&alternatives=false&radiuses=75%3B75"
+      }
     },
     {
       "id": "scbd-20261126-034",
@@ -675,13 +734,25 @@
       "bedrooms": 1,
       "buildingAreaM2": 43,
       "availability": "unknown",
-      "location": null,
-      "straightLineKm": null,
-      "roadKm": null,
-      "scopeStatus": "unverified",
-      "importStatus": "hold",
+      "location": {
+        "lat": -6.252397,
+        "lng": 106.861756,
+        "precision": "building"
+      },
+      "straightLineKm": 6.415,
+      "roadKm": 8.682,
+      "scopeStatus": "within-8km-from-source-pin",
+      "importStatus": "published-partial",
       "note": "Furnished; monthly payment starts Rp4.08m; annual upfront.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "catalogId": "sewa-scbd-20261126-034",
+      "roadEvidence": {
+        "profile": "car",
+        "provider": "FOSSGIS OSRM / OpenStreetMap",
+        "scope": "building-to-building",
+        "checkedAt": "2026-11-26",
+        "source": "https://routing.openstreetmap.de/routed-car/route/v1/driving/106.861756,-6.252397;106.8109,-6.2246?overview=false&steps=false&alternatives=false&radiuses=75%3B75"
+      }
     },
     {
       "id": "scbd-20261126-035",
@@ -701,7 +772,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Furnished; Rp12m/3mo, Rp22m/6mo; IPL included, utilities extra, deposit Rp2m.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "verification-pending"
     },
     {
       "id": "scbd-20261126-036",
@@ -721,7 +793,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Furnished; IPL included; min 3 months, deposit Rp2m.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "verification-pending"
     },
     {
       "id": "scbd-20261126-037",
@@ -741,7 +814,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Furnished; IPL included, utilities extra; min 3 months.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "verification-pending"
     },
     {
       "id": "scbd-20261126-038",
@@ -761,7 +835,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Rented image; 6 or 12 month rental.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-rented"
     },
     {
       "id": "scbd-20261126-039",
@@ -781,7 +856,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Minimum 1 month shown but annual financing text; confirm; exact locality and stock unclear.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "unproven-unit-pin"
     },
     {
       "id": "scbd-20261126-040",
@@ -801,7 +877,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Pasutri allowed, 1 person base before discount, extra occupant unknown; Queen bed; utilities extra.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-waitlist"
     },
     {
       "id": "scbd-20261126-041",
@@ -821,7 +898,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Pasutri allowed, 1 person base, extra occupant unknown, electricity included.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-waitlist"
     },
     {
       "id": "scbd-20261126-042",
@@ -841,7 +919,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Pasutri allowed, 1 person base, extra occupant unknown, electricity extra.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-waitlist"
     },
     {
       "id": "scbd-20261126-043",
@@ -861,7 +940,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Published price for two; twin beds, shared external bathroom, electricity extra; couple policy explicit.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-waitlist"
     },
     {
       "id": "scbd-20261126-044",
@@ -881,7 +961,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Published price for two; electricity Rp250k/150 kWh outside rent, Queen bed, explicit couple policy.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-waitlist"
     },
     {
       "id": "scbd-20261126-045",
@@ -901,7 +982,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "LT 86 m², LB 110 m² per structured specs; similar Otista listing below, possible duplicate/incorrect unit specs.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "url-already-in-catalogue"
     },
     {
       "id": "scbd-20261126-046",
@@ -921,7 +1003,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "3 months Rp4.8m, 6 months Rp9.5m; motor parking, jetpump; cached detail.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-inactive"
     },
     {
       "id": "scbd-20261126-047",
@@ -941,7 +1024,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "LT 35 m²; 1 floor; unfurnished; 1300W; listing includes map link to nearby landmark, not unit pin.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-inactive"
     },
     {
       "id": "scbd-20261126-048",
@@ -961,7 +1045,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "LT 29 m²; cached detail.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "unproven-unit-pin"
     },
     {
       "id": "scbd-20261126-049",
@@ -981,7 +1066,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Compact unit; cached detail; confirm family policy.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "url-already-in-catalogue"
     },
     {
       "id": "scbd-20261126-050",
@@ -1001,7 +1087,8 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "LT 19 m²; cached detail.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "source-inactive"
     },
     {
       "id": "scbd-20261126-051",
@@ -1021,7 +1108,9 @@
       "scopeStatus": "unverified",
       "importStatus": "hold",
       "note": "Employee-only per description; family policy unconfirmed. Possible duplicate of other Otista listing; different specs.",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-26",
+      "resolution": "restricted-to-employees"
     }
-  ]
+  ],
+  "validationCheckedAt": "2026-11-26"
 }

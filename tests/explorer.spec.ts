@@ -1457,7 +1457,7 @@ test("shows historical flood and crime reports in independent opt-in map layers"
   await expect(page.locator("#listings-toggle")).not.toBeChecked();
 });
 
-test("filters the Cikarang–MRT rental corridor and allows choosing a station", async ({
+test("filters the Cikarang–MRT corridor and the Artha Graha radius together", async ({
   page,
 }) => {
   const fixture = structuredClone(researchFixture);
@@ -1493,6 +1493,18 @@ test("filters the Cikarang–MRT rental corridor and allows choosing a station",
               rental("cabang-uji", "Rumah uji Kemayoran", -6.1617, 106.8414),
               { ...kos, rentalType: "kos-keluarga", review: { couples: true } },
               { ...kos, id: "kos-tanpa-izin", rentalType: "kos", review: {} },
+              rental("dalam-8km", "Rumah uji 7,99 km", -6.29646, 106.8109),
+              rental("luar-8km", "Rumah uji 8,01 km", -6.29664, 106.8109),
+              {
+                ...rental(
+                  "khusus-uji",
+                  "Rumah uji khusus karyawan",
+                  -6.225,
+                  106.811,
+                ),
+                review: { couples: false },
+              },
+              { ...base, id: "tanpa-pin-uji", location: null },
             ],
           },
         },
@@ -1531,6 +1543,26 @@ test("filters the Cikarang–MRT rental corridor and allows choosing a station",
   await mode.selectOption("cikarang-mrt");
   await expect(station).toHaveValue("");
   await expect(rows).toHaveCount(3);
+
+  await page.goto("/?koleksi=sewa&scbd=8km&koridor=cikarang-mrt");
+  const scbdRadius = panel.getByLabel("Radius Artha Graha SCBD");
+  await expect(scbdRadius).toHaveValue("8km");
+  await expect(rows).toHaveCount(2);
+  await expect(panel.locator("[data-rental='timur-uji']")).toHaveCount(0);
+  const route = panel
+    .locator("[data-rental='tengah-uji']")
+    .getByRole("link", { name: "Buka rute" });
+  const destination = new URL((await route.getAttribute("href")) ?? "");
+  expect(destination.searchParams.get("destination")).toContain("Artha Graha");
+  await mode.selectOption("");
+  await expect(panel.locator("[data-rental='dalam-8km']")).toHaveCount(1);
+  await expect(panel.locator("[data-rental='luar-8km']")).toHaveCount(0);
+  await expect(panel.locator("[data-rental='tanpa-pin-uji']")).toHaveCount(0);
+  await expect(panel.locator("[data-rental='kos-tanpa-izin']")).toHaveCount(0);
+  await expect(panel.locator("[data-rental='khusus-uji']")).toHaveCount(0);
+  await panel.getByRole("button", { name: "Reset filter" }).click();
+  await expect(scbdRadius).toHaveValue("");
+  await expect(rows).toHaveCount(10);
 });
 
 test("searches dated location reports and opens only mapped public references", async ({

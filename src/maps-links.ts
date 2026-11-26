@@ -3,6 +3,9 @@ export interface MapCoordinates {
   lng: number;
 }
 
+// Gedung Artha Graha, SCBD Lot 25. Building reference point, not an entrance.
+export const ARTHA_GRAHA_SCBD: MapCoordinates = { lat: -6.2246, lng: 106.8109 };
+
 function coordinates(point: MapCoordinates): string {
   return `${point.lat},${point.lng}`;
 }
@@ -50,7 +53,7 @@ export function googleMapsRoute(
 export function googleMapsToScbd(origin: MapCoordinates): string {
   return mapsUrl("dir/", {
     origin: coordinates(origin),
-    destination: "Sudirman Central Business District, Jakarta",
+    destination: "Gedung Artha Graha, SCBD Lot 25, Jakarta",
     travelmode: "transit",
   });
 }

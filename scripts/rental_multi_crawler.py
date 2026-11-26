@@ -4,6 +4,7 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import copy
 import fcntl
+import hashlib
 import importlib.util
 import json
 import os
@@ -182,7 +183,11 @@ def markdown(result):
     s = result["summary"]
     scope = (result.get("run") or {}).get("scope")
     priority = "Prioritas masjid mengikuti konfigurasi sumber."
-    if scope and scope.get("activeTransitIds"):
+    if scope and scope.get("corridorOnly"):
+        priority = (f"Fokus {len(scope['activeTransitIds'])} stasiun KRL/MRT, radius garis lurus "
+                    f"{scope['transitRadiusKm']:g} km; plafon Rp5.000.000 per bulan ekuivalen. "
+                    "Kelurahan dan slug pencarian merupakan seed, bukan irisan batas terverifikasi.")
+    elif scope and scope.get("activeTransitIds"):
         priority = f"Fokus {len(scope['activeMosqueIds'])} masjid dan {len(scope['activeTransitIds'])} titik angkutan. Radius 1,2 km dari stasiun dan 0,7 km dari halte."
         if budget := scope.get("budgetPriority"):
             max_monthly = f"{budget['maxMonthly']:,}".replace(",", ".")
@@ -238,6 +243,23 @@ def markdown(result):
     return "\n".join(lines)+"\n"
 
 
+def corridor_targets(corridor, names=()):
+    """Keep station names, IDs and discovery paths consistent; paths are not verified boundaries."""
+    stations = corridor["stations"]
+    targets = corridor["transitTargets"]
+    ids = [s["stopId"] for s in stations]
+    station_names = [s["station"] for s in stations]
+    if (not ids or len(ids) != len(set(ids)) or len(station_names) != len(set(station_names))
+            or len(targets) != len(ids) or {t["stopId"] for t in targets} != set(ids)):
+        raise ValueError("Invalid corridor inventory")
+    by_id = {s["stopId"]: s for s in stations}
+    if any(t["paths"] != by_id[t["stopId"]]["paths"] for t in targets):
+        raise ValueError("Corridor discovery paths disagree with station seeds")
+    if set(names) - set(station_names):
+        raise ValueError("Unknown corridor station")
+    return [t for t in targets if not names or by_id[t["stopId"]]["station"] in names]
+
+
 def main():
     os.umask(0o077)
     parser = argparse.ArgumentParser(description=__doc__)
@@ -245,6 +267,8 @@ def main():
     parser.add_argument("--report-only", action="store_true")
     parser.add_argument("--refresh-search", action="store_true", help="Refresh all configured first pages within the existing budgets")
     parser.add_argument("--transit-only", action="store_true", help="Use only the transit catchments for this run")
+    parser.add_argument("--corridor-only", action="store_true", help="Use 28 KRL/MRT corridor seed targets with a separate crawl state")
+    parser.add_argument("--station", action="append", default=[], help="Exact corridor station name; repeatable; isolated pilot state")
     parser.add_argument("--providers", default=",".join(PROVIDERS))
     parser.add_argument("--output-dir", type=Path, default=ROOT / ".runtime/research/rental-crawl")
     parser.add_argument("--max-search", type=int)
@@ -257,12 +281,31 @@ def main():
     chosen = args.providers.split(",")
     if not chosen or len(set(chosen)) != len(chosen) or any(p not in PROVIDERS for p in chosen):
         parser.error("Unknown or duplicate provider")
+    if args.station and not args.corridor_only:
+        parser.error("--station requires --corridor-only")
+    if args.corridor_only:
+        args.transit_only = True
+        if args.output_dir == ROOT / ".runtime/research/rental-crawl":
+            suffix = ""
+            if args.station:
+                digest = hashlib.sha256(json.dumps(sorted(set(args.station))).encode()).hexdigest()[:16]
+                suffix = "-pilot-" + digest
+            args.output_dir = ROOT / (".runtime/research/corridor-crawl" + suffix)
+        elif args.output_dir.resolve() in {(ROOT / ".runtime/research/rental-crawl").resolve(), Path("/var/lib/rumah-tinggal-rental-crawl").resolve()}:
+            parser.error("Corridor crawl requires a separate private output directory")
     directory = args.output_dir.resolve()
     local = directory.is_relative_to(ROOT / ".runtime/research") and directory != ROOT / ".runtime/research"
     if not local and directory != Path("/var/lib/rumah-tinggal-rental-crawl").resolve():
         parser.error("Output must be a private research directory")
     directory.mkdir(parents=True, exist_ok=True, mode=0o700)
     config = json.loads((ROOT / "research/rental-crawl-sources.json").read_text())
+    if args.corridor_only:
+        corridor = json.loads((ROOT / "research/koridor-station-targets.json").read_text())
+        try:
+            config["transitTargets"] = corridor_targets(corridor, args.station)
+        except ValueError as exc:
+            parser.error(str(exc))
+        config["budgetPriority"] = {"preferredMonthly": 4_000_000, "maxMonthly": 5_000_000}
     core.validate_config(config)
     multi = json.loads((ROOT / "research/rental-crawl-providers.json").read_text())
     if multi.get("schemaVersion") != 1 or type(multi.get("parallelProviders")) is not int or not 1 <= multi["parallelProviders"] <= 3:
@@ -273,6 +316,9 @@ def main():
     reference = core.plan(config)
     selected = active_mosques(reference, multi)
     transit = core.transit_plan(config)
+    if args.corridor_only:
+        for stop in transit:
+            stop["radiusKm"] = 1.5
     if args.transit_only and not transit:
         parser.error("No transit targets configured")
     if args.transit_only:
@@ -282,6 +328,9 @@ def main():
              "activeTransitIds": [s["id"] for s in transit],
              "radiusKm": config["radiusKm"], "detailsPerMosquePerProvider": per_mosque,
              "priorityMode": config.get("priorityMode", "legacy"), "budgetPriority": config.get("budgetPriority")}
+    if args.corridor_only:
+        scope.update(corridorOnly=True, transitRadiusKm=1.5, boundaryStatus=corridor["boundaryStatus"],
+                     requestedStations=sorted(set(args.station)))
     plans = provider_plan(transit + selected, multi, cancel)
     chosen = [name for name in chosen if name in plans]
     if not chosen:
@@ -289,6 +338,7 @@ def main():
     if not args.run and not args.report_only:
         summary = {name: {"mosques": sum(m.get("type") != "transit" for m in rows), "transitStops": len(transit),
                           "sources": len({s for m in rows for s in m["sources"]})} for name, (_, rows) in plans.items()}
+        summary = {name: counts for name, counts in summary.items() if name in chosen}
         core.save(directory / "multi-plan.json", {"generatedAtUTC": core.now(), "providers": summary, "parallelProviders": multi["parallelProviders"], "scope": scope})
         print(json.dumps(summary))
         return 0

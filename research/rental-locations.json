@@ -11462,6 +11462,128 @@
         "checkedAt": "2026-11-26"
       },
       "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian."
+    },
+    {
+      "rentalId": "sewa-koridor-20261126-duren-jaya-22",
+      "location": null,
+      "note": "Iklan menyebut akses KRL Bekasi Timur. Pin unit belum dapat diverifikasi."
+    },
+    {
+      "rentalId": "sewa-kelurahan-20261126-wanasari-trias",
+      "location": {
+        "lat": -6.251451,
+        "lng": 107.082222,
+        "precision": "approximate",
+        "label": "Wanasari, Cibitung, Kab. Bekasi",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-ceri-7-blok-c5-31",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-c4cba71cab62",
+      "location": {
+        "lat": -6.216114,
+        "lng": 106.90162,
+        "precision": "approximate",
+        "label": "Klender, Duren Sawit, Kota Jakarta Timur",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kapuk-2-klender-jakarta-timur-2",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-46dbdaf25fb1",
+      "location": {
+        "lat": -6.221474,
+        "lng": 106.891992,
+        "precision": "approximate",
+        "label": "Cipinang Muara, Jatinegara, Kota Jakarta Timur",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-1",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-scbd-20261126-026",
+      "location": {
+        "lat": -6.224458,
+        "lng": 106.7724,
+        "precision": "approximate",
+        "label": "Sukabumi Selatan (Udik), Kebon Jeruk, Kota Jakarta Barat",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-panjang-gg-h-daud-kebon-jeruk",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-scbd-20261126-030",
+      "location": {
+        "lat": -6.252397,
+        "lng": 106.861756,
+        "precision": "building",
+        "label": "Pancoran Riverside Apartment",
+        "method": "Acuan gedung dari iklan",
+        "url": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARA014",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-scbd-20261126-033",
+      "location": {
+        "lat": -6.252397,
+        "lng": 106.861756,
+        "precision": "building",
+        "label": "Pancoran Riverside Apartment",
+        "method": "Acuan gedung dari iklan",
+        "url": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARC190",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-scbd-20261126-034",
+      "location": {
+        "lat": -6.252397,
+        "lng": 106.861756,
+        "precision": "building",
+        "label": "Pancoran Riverside Apartment",
+        "method": "Acuan gedung dari iklan",
+        "url": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARB079",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-jendela360-a5beb0bbcabb",
+      "location": {
+        "lat": -6.237472,
+        "lng": 106.769194,
+        "precision": "building",
+        "label": "Pakubuwono Terrace",
+        "method": "Acuan gedung dari iklan",
+        "url": "https://jendela360.com/sewa-apartemen-pakubuwono-terrace/PKTA101",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-b402cd5c6ee4",
+      "location": {
+        "lat": -6.23752,
+        "lng": 106.769086,
+        "precision": "approximate",
+        "label": "Pakubuwono Terrace",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-studio-hook-unfurnish-free-ipl-sf-air-parkir-di-grand-pakubuwono-terrace-cipulir-jaksel",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei."
     }
   ]
 }

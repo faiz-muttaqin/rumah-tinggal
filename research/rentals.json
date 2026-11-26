@@ -10038,7 +10038,7 @@
       "social": [],
       "verdict": "partial",
       "lastChecked": "2026-11-04",
-      "note": "Kontrakan di lantai dua, kamar mandi sendiri; deskripsi menyebut cocok untuk pasutri/keluarga kecil. Luas portal 60 m² belum jelas sebagai luas unit sehingga belum dicantumkan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
+      "note": "Kontrakan di lantai dua, kamar mandi sendiri; deskripsi menyebut cocok untuk pasutri/keluarga kecil. Luas portal 60 m² belum jelas sebagai luas unit sehingga belum dicantumkan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung. Halaman Pinhome menyebut khusus karyawan saat diperiksa pada 26 November 2026."
     },
     {
       "id": "sewa-pinhome-glodok-576d5741",
@@ -27152,6 +27152,362 @@
       "verdict": "partial",
       "lastChecked": "2026-11-26",
       "note": "Rp1 juta per bulan, minimum 1 bulan. Pin portal berada sekitar 900 m garis lurus dari Stasiun Cikarang. Cek ketersediaan, rute jalan kaki dan fasilitas memasak."
+    },
+    {
+      "id": "sewa-koridor-20261126-duren-jaya-22",
+      "title": "Rumah 2 kamar di Duren Jaya",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Durenjaya (Duren Jaya), Bekasi Timur, Kota Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 22000000,
+        "period": "yearly",
+        "minimumMonths": 12,
+        "quote": "Rp22.000.000 per tahun, minimum 12 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya",
+        "pageDate": "2026-10-26"
+      },
+      "bedrooms": 2,
+      "sizeM2": 100.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp22.000.000 per tahun, minimum 12 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Iklan menyebut Stasiun Bekasi Timur dalam 1 km. Portal belum memberi titik yang dapat dibedakan dari acuan administratif, sehingga jarak belum bisa dihitung. Stok perlu konfirmasi.",
+      "nearStationsClaim": [
+        {
+          "station": "Bekasi Timur",
+          "quote": "stasiun Bekasi Timur (<1km)",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya"
+        }
+      ],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-akses-sangat-strategis-pusat-kota-di-durenjaya-duren-jaya",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-10-26",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-kelurahan-20261126-wanasari-trias",
+      "title": "Rumah 2 kamar di Trias Cibitung",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Wanasari, Cibitung, Kab. Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 11000000,
+        "period": "yearly",
+        "minimumMonths": 12,
+        "quote": "Rp11.000.000 per tahun, minimum 12 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-ceri-7-blok-c5-31",
+        "pageDate": "2026-09-27"
+      },
+      "bedrooms": 2,
+      "sizeM2": 50.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp11.000.000 per tahun, minimum 12 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-ceri-7-blok-c5-31"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Penawaran Rp11 juta per tahun dengan minimum 12 bulan. Sumber menyebut hunian keluarga. Pin perkiraan dari portal, stok perlu konfirmasi.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-ceri-7-blok-c5-31",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-09-27",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-pinhome-c4cba71cab62",
+      "title": "Rumah 1 kamar di Klender",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Klender, Duren Sawit, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 1300000,
+        "period": "monthly",
+        "minimumMonths": 1,
+        "quote": "Rp1.300.000 per bulan, minimum 1 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kapuk-2-klender-jakarta-timur-2",
+        "pageDate": "2026-09-17"
+      },
+      "bedrooms": 1,
+      "sizeM2": 30.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp1.300.000 per bulan, minimum 1 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kapuk-2-klender-jakarta-timur-2"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Halaman menampilkan Rp1,3 juta per bulan dan minimum 1 bulan. Deskripsi juga menyebut Rp1,4 juta. Konfirmasi tarif akhir. Pin perkiraan dari portal.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kapuk-2-klender-jakarta-timur-2",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-09-17",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-pinhome-46dbdaf25fb1",
+      "title": "Kontrakan 1 kamar di Cipinang Muara",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Cipinang Muara, Jatinegara, Kota Jakarta Timur",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 850000,
+        "period": "monthly",
+        "minimumMonths": 1,
+        "quote": "Rp850.000 per bulan, minimum 1 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-1",
+        "pageDate": "2026-11-19"
+      },
+      "bedrooms": 1,
+      "sizeM2": 18.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp850.000 per bulan, minimum 1 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-1"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Penawaran Rp850 ribu per bulan, minimum 1 bulan. Acuan pin sekitar 1,22 km garis lurus dari KRL Klender. Stok dan kondisi perlu konfirmasi.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-1",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-11-19",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-scbd-20261126-026",
+      "title": "Rumah 2 kamar di Sukabumi Selatan",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Jakarta",
+      "locationText": "Sukabumi Selatan (Udik), Kebon Jeruk, Kota Jakarta Barat",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 2600000,
+        "period": "monthly",
+        "minimumMonths": 1,
+        "quote": "Rp2.600.000 per bulan, minimum 1 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-panjang-gg-h-daud-kebon-jeruk",
+        "pageDate": "2026-03-01"
+      },
+      "bedrooms": 2,
+      "sizeM2": 60.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp2.600.000 per bulan, minimum 1 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-panjang-gg-h-daud-kebon-jeruk"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Iklan menampilkan Rp2,6 juta per bulan, minimum 1 bulan. Deskripsi juga menawarkan Rp28 juta per tahun. Pin perkiraan. Stok perlu konfirmasi.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-panjang-gg-h-daud-kebon-jeruk",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-03-01",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-scbd-20261126-030",
+      "title": "Pancoran Riverside Studio · PARA014",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Jakarta",
+      "locationText": "Pancoran, Jakarta Selatan",
+      "buildingOrCluster": "Pancoran Riverside Apartment",
+      "rent": {
+        "amount": 25300000,
+        "period": "yearly",
+        "minimumMonths": 12,
+        "quote": "Rp25.300.000 per tahun, minimum 12 bulan.",
+        "url": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARA014",
+        "pageDate": null
+      },
+      "bedrooms": 0,
+      "sizeM2": 25.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp25.300.000 per tahun, minimum 12 bulan.",
+          "url": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARA014"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Paket sewa dibayar langsung untuk 12 bulan. Cek IPL, ketersediaan dan ketentuan penghuni berdua sebelum survei.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARA014",
+      "sourcePortal": "Jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-scbd-20261126-033",
+      "title": "Pancoran Riverside 2 kamar · PARC190",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Jakarta",
+      "locationText": "Pancoran, Jakarta Selatan",
+      "buildingOrCluster": "Pancoran Riverside Apartment",
+      "rent": {
+        "amount": 36260000,
+        "period": "yearly",
+        "minimumMonths": 12,
+        "quote": "Rp36.260.000 per tahun, minimum 12 bulan.",
+        "url": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARC190",
+        "pageDate": null
+      },
+      "bedrooms": 2,
+      "sizeM2": 35.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp36.260.000 per tahun, minimum 12 bulan.",
+          "url": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARC190"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Paket sewa dibayar langsung untuk 12 bulan. Cek IPL, ketersediaan dan ketentuan penghuni berdua sebelum survei.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARC190",
+      "sourcePortal": "Jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-scbd-20261126-034",
+      "title": "Pancoran Riverside 1 kamar · PARB079",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Jakarta",
+      "locationText": "Pancoran, Jakarta Selatan",
+      "buildingOrCluster": "Pancoran Riverside Apartment",
+      "rent": {
+        "amount": 42930000,
+        "period": "yearly",
+        "minimumMonths": 12,
+        "quote": "Rp42.930.000 per tahun, minimum 12 bulan.",
+        "url": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARB079",
+        "pageDate": null
+      },
+      "bedrooms": 1,
+      "sizeM2": 43.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp42.930.000 per tahun, minimum 12 bulan.",
+          "url": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARB079"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Paket sewa dibayar langsung untuk 12 bulan. Cek IPL, ketersediaan dan ketentuan penghuni berdua sebelum survei.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-pancoran-riverside-apartment/PARB079",
+      "sourcePortal": "Jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-jendela360-a5beb0bbcabb",
+      "title": "Apartemen Pakubuwono Terrace · PKTA101",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Jakarta",
+      "locationText": "Kebayoran Lama, Jakarta Selatan",
+      "buildingOrCluster": "Pakubuwono Terrace",
+      "rent": {
+        "amount": 38280000,
+        "period": "yearly",
+        "minimumMonths": 12,
+        "quote": "Rp38.280.000 per tahun, minimum 12 bulan.",
+        "url": "https://jendela360.com/sewa-apartemen-pakubuwono-terrace/PKTA101",
+        "pageDate": null
+      },
+      "bedrooms": 0,
+      "sizeM2": 22.9,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp38.280.000 per tahun, minimum 12 bulan.",
+          "url": "https://jendela360.com/sewa-apartemen-pakubuwono-terrace/PKTA101"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Paket sewa dibayar langsung untuk 12 bulan. Cek IPL, ketersediaan dan ketentuan penghuni berdua sebelum survei.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://jendela360.com/sewa-apartemen-pakubuwono-terrace/PKTA101",
+      "sourcePortal": "Jendela360",
+      "postedOrUpdated": null,
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-pinhome-b402cd5c6ee4",
+      "title": "Apartemen Pakubuwono Terrace Studio",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Jakarta",
+      "locationText": "Cipulir, Kebayoran Lama, Kota Jakarta Selatan",
+      "buildingOrCluster": "Pakubuwono Terrace",
+      "rent": {
+        "amount": 2800000,
+        "period": "monthly",
+        "minimumMonths": 6,
+        "quote": "Rp2.800.000 per bulan, minimum 6 bulan.",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-studio-hook-unfurnish-free-ipl-sf-air-parkir-di-grand-pakubuwono-terrace-cipulir-jaksel",
+        "pageDate": "2026-10-18"
+      },
+      "bedrooms": null,
+      "sizeM2": 25.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "Rp2.800.000 per bulan, minimum 6 bulan.",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-studio-hook-unfurnish-free-ipl-sf-air-parkir-di-grand-pakubuwono-terrace-cipulir-jaksel"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Tarif Rp2,8 juta per bulan. Minimum 6 bulan senilai Rp16,8 juta sesuai halaman. Pin perkiraan portal. Cek stok, IPL dan ketentuan penghuni berdua.",
+      "nearStationsClaim": [],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-studio-hook-unfurnish-free-ipl-sf-air-parkir-di-grand-pakubuwono-terrace-cipulir-jaksel",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-10-18",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
     }
   ]
 }

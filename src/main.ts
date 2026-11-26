@@ -46,7 +46,11 @@ import {
   rentalPopupHTML,
   rentalTermBadges,
 } from "./rental-map.ts";
-import { RENTAL_RAIL_CORRIDOR, RentalTable } from "./rental-table.ts";
+import {
+  RENTAL_RAIL_CORRIDOR,
+  RENTAL_SCBD_RADIUS,
+  RentalTable,
+} from "./rental-table.ts";
 import {
   checkedDate,
   distanceText,
@@ -1599,10 +1603,12 @@ async function start(): Promise<void> {
     else render();
   } else if (params.get("koleksi") === "listingku") openPrivate();
   else if (params.get("koleksi") === "sewa") {
-    if (params.get("koridor") === RENTAL_RAIL_CORRIDOR) {
-      rentalTable.showRailCorridor();
+    const corridor = params.get("koridor") === RENTAL_RAIL_CORRIDOR;
+    const scbd = params.get("scbd") === RENTAL_SCBD_RADIUS;
+    if (corridor) rentalTable.showRailCorridor();
+    if (scbd) rentalTable.showScbdRadius();
+    if (corridor || scbd || params.get("tampilan") === "tabel")
       openRentalTable();
-    } else if (params.get("tampilan") === "tabel") openRentalTable();
     else openRentals();
   }
   const rentalId = params.get("sewa");
