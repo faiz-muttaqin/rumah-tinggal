@@ -4800,7 +4800,13 @@
        "name": "Masjid Baitussalam Cilandak",
        "km": 1.474
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-pejaten-timur-fe898475",
@@ -4858,7 +4864,13 @@
        "name": "Masjid Nurul Amal",
        "km": 1.266
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Pejaten Timur (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-pisangan-baru-3fd83b9d",
@@ -5329,7 +5341,13 @@
        "name": "Masjid Imam Nawawi",
        "km": 1.358
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Bidara Cina (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-cipinang-besar-selatan-6e967ab7",
@@ -6456,7 +6474,13 @@
        "name": "Masjid Al Jannah GCC",
        "km": 0.928
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Catatan genangan Kampung Curug RT 01/04, Cilebut Barat, Sukaraja (2026-04-30); bukan bukti unit banjir",
+       "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1118"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-pondok-labu-a20145eb",
@@ -6519,7 +6543,13 @@
        "name": "Masjid Al Adhim",
        "km": 1.478
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Pondok Labu (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-kebon-jeruk-6bcc604f",
@@ -7872,7 +7902,13 @@
        "name": "Masjid Bunga Bangsa",
        "km": 0.739
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Genangan di RW 14 Perum Irigasi Danita, Bekasi Jaya (2025-05-13); bukan bukti unit banjir",
+       "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-durenjaya-duren-jaya-a5222673",
@@ -7930,7 +7966,13 @@
        "name": "Masjid Bunga Bangsa",
        "km": 0.981
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Genangan di Jl. Delima Raya, Duren Jaya (2025-05-13); bukan bukti unit banjir",
+       "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+      }
+     }
     },
     {
      "id": "sewa-jendela360-boia014",
@@ -10463,7 +10505,13 @@
        "name": "Masjid Al Jannah GCC",
        "km": 0.768
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Catatan genangan Kampung Curug RT 01/04, Cilebut Barat, Sukaraja (2026-04-30); bukan bukti unit banjir",
+       "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1118"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-sukabumi-utara-ilir-d684ed53",
@@ -12446,7 +12494,13 @@
        "name": "Masjid Bunga Bangsa",
        "km": 0.636
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Genangan di RW 14 Perum Irigasi Danita, Bekasi Jaya (2025-05-13); bukan bukti unit banjir",
+       "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-bekasijaya-bekasi-jaya-4ef75065",
@@ -12504,7 +12558,13 @@
        "name": "Masjid Bunga Bangsa",
        "km": 0.697
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Genangan di RW 14 Perum Irigasi Danita, Bekasi Jaya (2025-05-13); bukan bukti unit banjir",
+       "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-kaliabang-tengah-kali-abang-tengah-aebc2858",
@@ -13943,7 +14003,13 @@
        "name": "Masjid Al Jannah GCC",
        "km": 0.44
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Catatan genangan Kampung Curug RT 01/04, Cilebut Barat, Sukaraja (2026-04-30); bukan bukti unit banjir",
+       "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1118"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-pangkalan-jati-f77e2376",
@@ -14660,7 +14726,13 @@
        "name": "Masjid Bunga Bangsa",
        "km": 1.284
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Genangan di Jl. Delima Raya, Duren Jaya (2025-05-13); bukan bukti unit banjir",
+       "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-kaliabang-tengah-kali-abang-tengah-1f86e2ac",
@@ -15541,7 +15613,13 @@
        "name": "Masjid Imam Nawawi",
        "km": 1.213
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Bidara Cina (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-bidara-cina-bidaracina-6edd7a1a",
@@ -15601,7 +15679,11 @@
       }
      ],
      "review": {
-      "couples": false
+      "couples": false,
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Bidara Cina (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
      }
     },
     {
@@ -16203,7 +16285,13 @@
        "name": "Masjid Al Jannah GCC",
        "km": 0.742
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Catatan genangan Kampung Curug RT 01/04, Cilebut Barat, Sukaraja (2026-04-30); bukan bukti unit banjir",
+       "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1118"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-pangkalan-jati-58dc2bf8",
@@ -17528,7 +17616,13 @@
        "name": "Masjid Nurul Amal",
        "km": 1.13
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Pejaten Timur (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-cipinang-cempedak-2ad026d3",
@@ -18107,7 +18201,13 @@
        "name": "Masjid Al Jannah GCC",
        "km": 1.085
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Catatan genangan Kampung Curug RT 01/04, Cilebut Barat, Sukaraja (2026-04-30); bukan bukti unit banjir",
+       "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1118"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-pangkalan-jati-baru-966d1c22",
@@ -19523,7 +19623,13 @@
        "name": "Masjid Nurul Amal",
        "km": 0.609
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Pejaten Timur (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-cipinang-besar-utara-cdc59ebe",
@@ -21108,7 +21214,13 @@
        "name": "Masjid Baitussalam Cilandak",
        "km": 0.873
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-pisangan-baru-51cc269d",
@@ -25948,7 +26060,13 @@
        "name": "Masjid Al Hikmah DDN 2",
        "km": 1.227
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Pondok Labu (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-jurangmangu-barat-jurang-mangu-barat-6d864b4b",
@@ -28168,7 +28286,13 @@
        "name": "Masjid Bunga Bangsa",
        "km": 0.867
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Genangan di RW 14 Perum Irigasi Danita, Bekasi Jaya (2025-05-13); bukan bukti unit banjir",
+       "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-kaliabang-tengah-kali-abang-tengah-4e19323d",
@@ -30181,7 +30305,13 @@
        "name": "Masjid Bunga Bangsa",
        "km": 0.427
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Genangan di RW 14 Perum Irigasi Danita, Bekasi Jaya (2025-05-13); bukan bukti unit banjir",
+       "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-kaliabang-tengah-kali-abang-tengah-7c143168",
@@ -34561,7 +34691,13 @@
        "name": "Masjid Al Hikmah DDN 2",
        "km": 1.224
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Pondok Labu (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-mamikos-84579aba7508",
@@ -38733,7 +38869,11 @@
      "nearbyMosques": [],
      "review": {
       "couples": true,
-      "children": false
+      "children": false,
+      "flood": {
+       "label": "Konteks kelurahan · Genangan di RW 14 Perum Irigasi Danita, Bekasi Jaya (2025-05-13); bukan bukti unit banjir",
+       "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+      }
      }
     },
     {
@@ -38847,7 +38987,11 @@
      "nearbyMosques": [],
      "review": {
       "couples": true,
-      "children": false
+      "children": false,
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Cipete Utara (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
      }
     },
     {
@@ -38908,7 +39052,11 @@
      ],
      "review": {
       "couples": true,
-      "children": false
+      "children": false,
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Cilandak Barat (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
      }
     },
     {
@@ -38964,7 +39112,11 @@
      },
      "nearbyMosques": [],
      "review": {
-      "floors": 1
+      "floors": 1,
+      "flood": {
+       "label": "Konteks kelurahan · Genangan di Jl. Delima Raya, Duren Jaya (2025-05-13); bukan bukti unit banjir",
+       "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+      }
      }
     },
     {
@@ -39119,7 +39271,13 @@
       "note": "Jarak garis lurus dihitung dari titik acuan. Periksa rute jalan kaki dari pintu hunian.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Genangan di Perum Margahayu Jaya, Jl. Beringin (2025-05-13); bukan bukti unit banjir",
+       "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-8d6bd0b16562",
@@ -39624,7 +39782,13 @@
       "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Acuan kejadian ±414 m · Genangan di kolong ITC Cipulir (2026-03-08); bukan luas genangan",
+       "url": "https://www.bnpb.go.id/berita/perkembangan-situasi-dan-penanganan-bencana-di-tanah-air-tanggal-8-februari-2026"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-b402cd5c6ee4",
@@ -39672,7 +39836,13 @@
       "note": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Acuan kejadian ±402 m · Genangan di kolong ITC Cipulir (2026-03-08); bukan luas genangan",
+       "url": "https://www.bnpb.go.id/berita/perkembangan-situasi-dan-penanganan-bencana-di-tanah-air-tanggal-8-februari-2026"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-87acc21df80b",
@@ -39827,7 +39997,13 @@
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Kedaung Kali Angke (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-792c29d41acc",
@@ -39875,7 +40051,13 @@
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Acuan kejadian ±869 m · Genangan di Daan Mogot sekitar Halte Taman Kota (2026-03-08); bukan luas genangan",
+       "url": "https://www.bnpb.go.id/berita/perkembangan-situasi-dan-penanganan-bencana-di-tanah-air-tanggal-8-februari-2026"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-e42d8b87eb50",
@@ -40209,7 +40391,13 @@
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Cawang (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-7c483ed73393",
@@ -40470,7 +40658,13 @@
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Genangan di Jl. Delima Raya, Duren Jaya (2025-05-13); bukan bukti unit banjir",
+       "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-642d8a0fa267",
@@ -40575,7 +40769,13 @@
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Genangan di Perum Margahayu Jaya, Jl. Beringin (2025-05-13); bukan bukti unit banjir",
+       "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+      }
+     }
     },
     {
      "id": "sewa-mamikos-734eb42f9e1b",
@@ -41428,7 +41628,13 @@
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Bidara Cina (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-e42722975109",
@@ -41578,7 +41784,13 @@
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Rawa Buaya (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-38d109649dd3",
@@ -42501,7 +42713,13 @@
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Cawang (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-5a265838c566",
@@ -42549,7 +42767,13 @@
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Acuan kejadian ±922 m · Genangan di kolong ITC Cipulir (2026-03-08); bukan luas genangan",
+       "url": "https://www.bnpb.go.id/berita/perkembangan-situasi-dan-penanganan-bencana-di-tanah-air-tanggal-8-februari-2026"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-38d1c6a6fdf5",
@@ -43659,7 +43883,13 @@
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Cawang (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-29b63cd2151c",
@@ -44265,7 +44495,13 @@
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Acuan kejadian ±474 m · Genangan di kolong ITC Cipulir (2026-03-08); bukan luas genangan",
+       "url": "https://www.bnpb.go.id/berita/perkembangan-situasi-dan-penanganan-bencana-di-tanah-air-tanggal-8-februari-2026"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-b869aec46ea2",
@@ -44475,7 +44711,13 @@
        "name": "Masjid Al Hikmah DDN 2",
        "km": 1.092
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Pondok Labu (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-c9c6f56a2154",
@@ -45051,7 +45293,13 @@
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Pela Mampang (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-339bdc5a1e93",
@@ -45363,7 +45611,13 @@
        "name": "Masjid Nur Salma",
        "km": 1.389
       }
-     ]
+     ],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Pela Mampang (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-efe126350bfb",
@@ -47160,7 +47414,13 @@
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Genangan di Jl. Delima Raya, Duren Jaya (2025-05-13); bukan bukti unit banjir",
+       "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-bcda541a49bc",
@@ -47370,7 +47630,13 @@
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
       "checkedAt": "2026-11-26"
      },
-     "nearbyMosques": []
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · RT terdampak genangan di Cawang (2026-01-12); bukan bukti unit banjir",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
     },
     {
      "id": "sewa-pinhome-56deac345215",
@@ -47419,6 +47685,777 @@
       "checkedAt": "2026-11-26"
      },
      "nearbyMosques": []
+    },
+    {
+     "id": "sewa-jendela360-0b9f1622f0d9",
+     "title": "Sentra Timur Residence — Studio, 21 m² (STRA003)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Cakung, Jakarta Timur",
+     "buildingOrCluster": "Sentra Timur Residence",
+     "rent": {
+      "amount": 3500000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp3.500.000/bulan",
+      "url": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003",
+      "pageDate": null
+     },
+     "bedrooms": 0,
+     "sizeM2": 21.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp3.500.000/bulan",
+       "url": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 1.06 km ke TransJakarta Walikota Jakarta Timur.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.203631,
+      "lng": 106.948933,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-jendela360-fc81c516f073",
+     "title": "Serpong Garden Apartment — Studio, 20 m² (SPGA074)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Tangerang",
+     "locationText": "Cisauk, Tangerang",
+     "buildingOrCluster": "Serpong Garden Apartment",
+     "rent": {
+      "amount": 3200000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp3.200.000/bulan",
+      "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA074",
+      "pageDate": null
+     },
+     "bedrooms": 0,
+     "sizeM2": 20.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp3.200.000/bulan",
+       "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA074"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.10 km ke KRL Cisauk.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA074",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.325092,
+      "lng": 106.64218,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA074",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-jendela360-8e96ed7d0a30",
+     "title": "Margonda Residence — Studio, 24 m² (MGDA001)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Depok",
+     "locationText": "Margonda, Depok",
+     "buildingOrCluster": "Margonda Residence",
+     "rent": {
+      "amount": 35860000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp35.860.000/tahun",
+      "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA001",
+      "pageDate": null
+     },
+     "bedrooms": 0,
+     "sizeM2": 24.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp35.860.000/tahun",
+       "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA001"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.46 km ke KRL Universitas Indonesia.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA001",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.3635,
+      "lng": 106.8345,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA001",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-jendela360-c3d81a7f2d4e",
+     "title": "Serpong Garden Apartment — Studio, 20 m² (SPGA201)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Tangerang",
+     "locationText": "Cisauk, Tangerang",
+     "buildingOrCluster": "Serpong Garden Apartment",
+     "rent": {
+      "amount": 1400000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp1.400.000/bulan",
+      "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA201",
+      "pageDate": null
+     },
+     "bedrooms": 0,
+     "sizeM2": 20.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp1.400.000/bulan",
+       "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA201"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.10 km ke KRL Cisauk.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA201",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.325092,
+      "lng": 106.64218,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA201",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-jendela360-a9f6e462db6f",
+     "title": "Margonda Residence — Studio, 21 m² (MGDA005)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Depok",
+     "locationText": "Margonda, Depok",
+     "buildingOrCluster": "Margonda Residence",
+     "rent": {
+      "amount": 12300000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp12.300.000/tahun",
+      "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA005",
+      "pageDate": null
+     },
+     "bedrooms": 0,
+     "sizeM2": 21.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp12.300.000/tahun",
+       "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA005"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.46 km ke KRL Universitas Indonesia.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA005",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.3635,
+      "lng": 106.8345,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA005",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-jendela360-95956890c40e",
+     "title": "Margonda Residence — Studio, 21 m² (MGDA040)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Depok",
+     "locationText": "Margonda, Depok",
+     "buildingOrCluster": "Margonda Residence",
+     "rent": {
+      "amount": 44440000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp44.440.000/tahun",
+      "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA040",
+      "pageDate": null
+     },
+     "bedrooms": 0,
+     "sizeM2": 21.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp44.440.000/tahun",
+       "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA040"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.46 km ke KRL Universitas Indonesia.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA040",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.3635,
+      "lng": 106.8345,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA040",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-jendela360-dd57ab0ac8d0",
+     "title": "Margonda Residence — Studio, 24 m² (MGDA023)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Depok",
+     "locationText": "Margonda, Depok",
+     "buildingOrCluster": "Margonda Residence",
+     "rent": {
+      "amount": 21500000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp21.500.000/tahun",
+      "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA023",
+      "pageDate": null
+     },
+     "bedrooms": 0,
+     "sizeM2": 24.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp21.500.000/tahun",
+       "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA023"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.46 km ke KRL Universitas Indonesia.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA023",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.3635,
+      "lng": 106.8345,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA023",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-jendela360-8347d1b461bd",
+     "title": "Margonda Residence — Studio, 22 m² (MGDA003)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Depok",
+     "locationText": "Margonda, Depok",
+     "buildingOrCluster": "Margonda Residence",
+     "rent": {
+      "amount": 33840000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp33.840.000/tahun",
+      "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA003",
+      "pageDate": null
+     },
+     "bedrooms": 0,
+     "sizeM2": 22.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp33.840.000/tahun",
+       "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA003"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.46 km ke KRL Universitas Indonesia.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA003",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.3635,
+      "lng": 106.8345,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDA003",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-jendela360-958a3c221bd0",
+     "title": "Margonda Residence — 1 kamar, 24 m² (MGDB008)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Depok",
+     "locationText": "Margonda, Depok",
+     "buildingOrCluster": "Margonda Residence",
+     "rent": {
+      "amount": 22900000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp22.900.000/tahun",
+      "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB008",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 24.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp22.900.000/tahun",
+       "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB008"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif paket terstruktur dari detail unit, bukan jaminan stok. Periksa harga bayar langsung/cicilan, IPL, deposit, utilitas dan ketentuan penghuni. Jarak garis lurus sekitar 0.46 km ke KRL Universitas Indonesia.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB008",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.3635,
+      "lng": 106.8345,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-margonda-residence/MGDB008",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-mamikos-d00e8ef7c1dd",
+     "title": "Kos Karet Sawah I Tipe A",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Setia Budi, Kota Jakarta Selatan",
+     "buildingOrCluster": "Karet Sawah I",
+     "rent": {
+      "amount": 2700000,
+      "period": "monthly",
+      "quote": "Rp2.700.000/bulan",
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-karet-sawah-i-tipe-a-setiabudi-jakarta-selatan",
+      "pageDate": "2026-08-10"
+     },
+     "bedrooms": 1,
+     "sizeM2": 22.75,
+     "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
+     "evidence": [
+      {
+       "quote": "Rp2.700.000/bulan",
+       "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-karet-sawah-i-tipe-a-setiabudi-jakarta-selatan"
+      },
+      {
+       "quote": "Detail portal: kategori campur; pasutri dan anak diizinkan.",
+       "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-karet-sawah-i-tipe-a-setiabudi-jakarta-selatan"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dasar bulanan pada detail portal. Portal menandai pasutri dan anak diizinkan; biaya penghuni kedua/anak, deposit, syarat dan stok perlu konfirmasi. Jarak garis lurus sekitar 0.40 km ke TransJakarta Widya Chandra Telkomsel Arah Timur.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-karet-sawah-i-tipe-a-setiabudi-jakarta-selatan",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-08-10",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.223149,
+      "lng": 106.818156,
+      "precision": "approximate",
+      "label": "Pin perkiraan mamikos",
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-karet-sawah-i-tipe-a-setiabudi-jakarta-selatan",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-nur-salma",
+       "name": "Masjid Nur Salma",
+       "km": 0.813
+      }
+     ],
+     "review": {
+      "couples": true,
+      "children": true
+     }
+    },
+    {
+     "id": "sewa-mamikos-d06a4e80f031",
+     "title": "Kos Renz Home Poris 88",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Batuceper, Kota Tangerang",
+     "buildingOrCluster": "Renz Home Poris 88",
+     "rent": {
+      "amount": 2500000,
+      "period": "monthly",
+      "quote": "Rp2.500.000/bulan",
+      "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-renz-home-poris-88-batuceper-tangerang",
+      "pageDate": "2026-10-14"
+     },
+     "bedrooms": 1,
+     "sizeM2": 21.0,
+     "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
+     "evidence": [
+      {
+       "quote": "Rp2.500.000/bulan",
+       "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-renz-home-poris-88-batuceper-tangerang"
+      },
+      {
+       "quote": "Detail portal: kategori campur; pasutri dan anak diizinkan.",
+       "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-renz-home-poris-88-batuceper-tangerang"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dasar bulanan pada detail portal. Portal menandai pasutri dan anak diizinkan; biaya penghuni kedua/anak, deposit, syarat dan stok perlu konfirmasi. Jarak garis lurus sekitar 0.62 km ke KRL Batu Ceper.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-renz-home-poris-88-batuceper-tangerang",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-10-14",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.171781,
+      "lng": 106.670904,
+      "precision": "approximate",
+      "label": "Pin perkiraan mamikos",
+      "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-renz-home-poris-88-batuceper-tangerang",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "couples": true,
+      "children": true
+     }
+    },
+    {
+     "id": "sewa-mamikos-d6c25c306891",
+     "title": "Kos Duta Garden 14 Standart",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Benda, Tangerang",
+     "buildingOrCluster": "Duta Garden 14",
+     "rent": {
+      "amount": 2200000,
+      "period": "monthly",
+      "quote": "Rp2.200.000/bulan",
+      "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-duta-garden-14-standart-benda-tangerang",
+      "pageDate": "2026-11-03"
+     },
+     "bedrooms": 1,
+     "sizeM2": 15.0,
+     "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
+     "evidence": [
+      {
+       "quote": "Rp2.200.000/bulan",
+       "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-duta-garden-14-standart-benda-tangerang"
+      },
+      {
+       "quote": "Detail portal: kategori campur; pasutri dan anak diizinkan.",
+       "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-duta-garden-14-standart-benda-tangerang"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dasar bulanan pada detail portal. Portal menandai pasutri dan anak diizinkan; biaya penghuni kedua/anak, deposit, syarat dan stok perlu konfirmasi. Jarak garis lurus sekitar 2.71 km ke KRL Poris.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-duta-garden-14-standart-benda-tangerang",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-11-03",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.145658,
+      "lng": 106.67711,
+      "precision": "approximate",
+      "label": "Pin perkiraan mamikos",
+      "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-duta-garden-14-standart-benda-tangerang",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "couples": true,
+      "children": true
+     }
+    },
+    {
+     "id": "sewa-pinhome-5b2be14a7f85",
+     "title": "Rumah Serpong Garden 3, Cibogo — 2 kamar",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Cibogo, Cisauk, Kab. Tangerang",
+     "buildingOrCluster": "Serpong Garden 3",
+     "rent": {
+      "amount": 53000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp53.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-di-serpong-garden-3-cisauk-di-cibogo",
+      "pageDate": "2026-08-25"
+     },
+     "bedrooms": 2,
+     "sizeM2": 42.0,
+     "furnished": "semi",
+     "evidence": [
+      {
+       "quote": "Rp53.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-di-serpong-garden-3-cisauk-di-cibogo"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga sewa Rp53 juta/tahun; halaman juga mencantumkan IPL Rp350 ribu/bulan dan deposit Rp3 juta. Periksa biaya lain, ketersediaan dan rute aktual.Jarak garis lurus sekitar 1.41 km ke KRL Cisauk.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-di-serpong-garden-3-cisauk-di-cibogo",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-08-25",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.336406,
+      "lng": 106.645947,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-di-serpong-garden-3-cisauk-di-cibogo",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-ba1566f2ffe1",
+     "title": "Rumah Duren Jaya, Bekasi Timur — 3 kamar",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Bekasi",
+     "locationText": "Durenjaya (Duren Jaya), Bekasi Timur, Kota Bekasi",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 19133333,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp19.133.333/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya",
+      "pageDate": "2026-09-16"
+     },
+     "bedrooms": 3,
+     "sizeM2": 60.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp19.133.333/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Angka terstruktur Rp19.133.333/tahun; judul penawaran menyatakan Rp19 juta nego. Konfirmasi harga akhir, deposit, ketersediaan dan akses. Jarak garis lurus sekitar 1.60 km ke KRL Bekasi Timur.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-09-16",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.237042,
+      "lng": 107.02872,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-idr-19-juta-nego-di-duren-jaya",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Genangan di Jl. Delima Raya, Duren Jaya (2025-05-13); bukan bukti unit banjir",
+       "url": "https://bpbd.bekasikota.go.id/id/detail/update-kondisi-banjir-di-kota-bekasi-13-mei-2025-bpbd-lakukan-pemantauan-dan-penanganan-intensif"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-558b13aa6527",
+     "title": "Kontrakan Ragajaya, Bojonggede — Atsiri Permai",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Ragajaya, Bojong Gede (Bojonggede), Kab. Bogor",
+     "buildingOrCluster": "Atsiri Permai",
+     "rent": {
+      "amount": 1800000,
+      "period": "monthly",
+      "minimumMonths": 3,
+      "quote": "Rp1.800.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kayu-manis-raya-no-11-permatsiri-permai",
+      "pageDate": "2026-02-12"
+     },
+     "bedrooms": 2,
+     "sizeM2": 60.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp1.800.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kayu-manis-raya-no-11-permatsiri-permai"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Tarif bulanan pada detail berstatus aktif; pembaruan terakhir Februari 2026. Perlu konfirmasi stok, harga akhir dan lokasi sebelum survei. Jarak garis lurus sekitar 1.05 km ke KRL Citayam.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kayu-manis-raya-no-11-permatsiri-permai",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-02-12",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.447868,
+      "lng": 106.79294,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-kayu-manis-raya-no-11-permatsiri-permai",
+      "method": "Titik publik pada data detail penawaran",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks kelurahan · Catatan genangan Cluster Citayam Park, RT 02/RW 04, Ragajaya, Bojonggede (2025-08-09); bukan bukti unit banjir",
+       "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/1494"
+      }
+     }
     }
    ],
    "locationsCheckedAt": "2026-11-26"

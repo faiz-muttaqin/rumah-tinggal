@@ -1,3 +1,6 @@
+import officialFloodEvidence from "../research/flood-official-evidence-2026-11-26.json" with {
+  type: "json",
+};
 import { escapeHTML as esc } from "./geo.ts";
 import { googleMapsLocation } from "./maps-links.ts";
 import { checkedDate } from "./research-data.ts";
@@ -143,6 +146,7 @@ export const incidents: Incident[] = [
       url: "https://www.openstreetmap.org/node/4149398980",
     },
   },
+  ...(officialFloodEvidence.points as Incident[]),
 ];
 
 export function incidentPopup(incident: Incident): HTMLElement {

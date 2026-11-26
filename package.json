@@ -14,7 +14,7 @@
     "dev:api": "node --env-file-if-exists=.env --watch server/index.ts",
     "build": "vite build",
     "start": "node --env-file-if-exists=.env server/index.ts",
-    "test": "node --test scripts/security.test.mjs scripts/*.test.ts server/*.test.ts && python3 -I scripts/test_rental_crawler.py && python3 -I scripts/test_rental_multi.py",
+    "test": "node --test scripts/security.test.mjs scripts/*.test.ts server/*.test.ts && python3 -I scripts/test_rental_crawler.py && python3 -I scripts/test_rental_multi.py && python3 -I scripts/test_station_flood_research.py",
     "test:e2e": "playwright test",
     "doctor": "node scripts/doctor.ts",
     "typecheck": "tsc --noEmit",
