@@ -15,12 +15,12 @@
 
 `koridor-all-3km-queue-2026-11-26.json` berisi satu tugas per kode BIG × jenis hunian (rumah/kontrakan, kos, apartemen). Semua tugas masih pending untuk **cakupan sistematis**; pilot detail bukan bukti bahwa area sudah habis dicari. Cari wilayah sekali lalu kaitkan ke seluruh stop/line dari inventaris, hindari pengulangan antar koridor.
 
-| Prioritas | Tugas | Kriteria |
-|---|---:|---|
-| P0 | 555 | Area menyentuh 3 km titik yang belum punya iklan berpin dalam budget |
-| P1 | 620 | Ada titik tanpa kategori tersebut dalam 3 km |
-| P2 | 633 | Ada titik tanpa kategori tersebut dalam 1 km |
-| P3 | 118 | Sisanya, perlu pemutakhiran stok |
+| Prioritas | Tugas | Kriteria                                                             |
+| --------- | ----: | -------------------------------------------------------------------- |
+| P0        |   555 | Area menyentuh 3 km titik yang belum punya iklan berpin dalam budget |
+| P1        |   620 | Ada titik tanpa kategori tersebut dalam 3 km                         |
+| P2        |   633 | Ada titik tanpa kategori tersebut dalam 1 km                         |
+| P3        |   118 | Sisanya, perlu pemutakhiran stok                                     |
 
 ### Urutan batch
 
