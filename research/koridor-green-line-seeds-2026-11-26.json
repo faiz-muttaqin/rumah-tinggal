@@ -1,0 +1,2351 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-26",
+  "note": "Bounded Green Line station keyword searches. Search hits and station hints are not evidence of actual location, status or supply. Current map and outside-map stops are explicitly distinguished.",
+  "batches": [],
+  "stationQueries": [
+    {
+      "station": "Tanah Abang",
+      "stopId": "osm-node-4836555990",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Kampung Bali Kebon Kacang Kota Bambu Cideng",
+        "site:mamikos.com/room kos kampus Trisakti Karet Tengsin Tanah Abang pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Kampung Bali Kebon Kacang Kota Bambu Cideng",
+        "site:jendela360.com/sewa-apartemen Tanah Abang Thamrin City Karet Tengsin sewa apartemen"
+      ],
+      "webResultCount": 35,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-blok-8-lantai-3-jl-kb-kacang-xi-lantai-no-7-kebon-kacang-tanah-abang-central-jakarta-city-jakarta-10240",
+        "https://mamikos.com/room/kost-kota-jakarta-pusat-kost-campur-eksklusif-kost-mareta-karet-tengsin-non-ac-tanah-abang-jakarta-pusat",
+        "https://mamikos.com/room/kost-kota-jakarta-pusat-kost-campur-murah-kost-karet-tengsin-benhil-tanah-abang-jakarta-pusat-1",
+        "https://mamikos.com/room/kost-jakarta-pusat-kost-campur-eksklusif-kost-46-kebon-kacang-tanah-abang-jakrta-pusat",
+        "https://jendela360.com/sewa-apartemen-casa-domaine-apartment/CDMD002",
+        "https://jendela360.com/sewa-apartemen-city-lofts-apartment/CLSB018",
+        "https://jendela360.com/sewa-apartemen-sudirman-park-apartment/SUPC194"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-pusat/tanah-abang/kebon-kacang"
+      ],
+      "alreadyCheckedUrls": [],
+      "nearestLocalities": [
+        {
+          "code": "31.71.07.1007",
+          "name": "Kampung Bali",
+          "district": "Tanah Abang",
+          "city": "Kota Administrasi Jakarta Pusat",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "31.73.07.1006",
+          "name": "Kota Bambu Selatan",
+          "district": "Pal Merah",
+          "city": "Kota Administrasi Jakarta Barat",
+          "distanceToBoundaryMeters": 53.7
+        },
+        {
+          "code": "31.71.01.1002",
+          "name": "Cideng",
+          "district": "Gambir",
+          "city": "Kota Administrasi Jakarta Pusat",
+          "distanceToBoundaryMeters": 81.4
+        },
+        {
+          "code": "31.73.07.1003",
+          "name": "Kota Bambu Utara",
+          "district": "Pal Merah",
+          "city": "Kota Administrasi Jakarta Barat",
+          "distanceToBoundaryMeters": 81.4
+        },
+        {
+          "code": "31.71.07.1006",
+          "name": "Kebon Kacang",
+          "district": "Tanah Abang",
+          "city": "Kota Administrasi Jakarta Pusat",
+          "distanceToBoundaryMeters": 324.0
+        }
+      ],
+      "apartmentWebResultCount": 3
+    },
+    {
+      "station": "Palmerah",
+      "stopId": "osm-node-4877432803",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Palmerah Gelora Grogol Utara Slipi",
+        "site:mamikos.com/room kos campur BINUS Kemanggisan Palmerah pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Palmerah Gelora Grogol Utara Slipi",
+        "site:jendela360.com/sewa-apartemen Palmerah Slipi Permata Hijau sewa apartemen"
+      ],
+      "webResultCount": 33,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-komplek-bni-slipi-kemanggisan-palmerah-jakarta-barat",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlhsennin-no57b-rt009-rw012-kel-palmerah-kec-palmerah-11480",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-palmerah-utara-iii-no-8",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-1kt-35m-di-slipi",
+        "https://mamikos.com/room/kost-kota-jakarta-barat-kost-campur-eksklusif-kost-kemanggisan-binus-rawa-belong-palmerah-jakarta-barat-2",
+        "https://mamikos.com/room/kost-kota-jakarta-barat-kost-campur-eksklusif-kost-cozy-coliving-binus-3-kemanggisan-exclusive-palmerah-jakarta-barat",
+        "https://mamikos.com/room/kost-kota-jakarta-barat-kost-campur-eksklusif-kost-binus-kemanggisan-u-residence-85-tipe-c-palmerah-jakarta-barat",
+        "https://jendela360.com/sewa-apartemen-slipi-apartment/BULANAN",
+        "https://jendela360.com/sewa-apartemen-gp-plaza-apartment/GPPB008"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-barat/pal-merah/palmerah",
+        "https://jendela360.com/sewa-apartemen-slipi-apartment"
+      ],
+      "alreadyCheckedUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gg-srikaya-no62-rt04-12-palmerah-jakbar"
+      ],
+      "nearestLocalities": [
+        {
+          "code": "31.71.07.1001",
+          "name": "Gelora",
+          "district": "Tanah Abang",
+          "city": "Kota Administrasi Jakarta Pusat",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "31.73.07.1001",
+          "name": "Palmerah",
+          "district": "Pal Merah",
+          "city": "Kota Administrasi Jakarta Barat",
+          "distanceToBoundaryMeters": 128.7
+        },
+        {
+          "code": "31.74.05.1004",
+          "name": "Grogol Utara",
+          "district": "Kebayoran Lama",
+          "city": "Kota Administrasi Jakarta Selatan",
+          "distanceToBoundaryMeters": 511.5
+        },
+        {
+          "code": "31.71.07.1002",
+          "name": "Bendungan Hilir",
+          "district": "Tanah Abang",
+          "city": "Kota Administrasi Jakarta Pusat",
+          "distanceToBoundaryMeters": 557.9
+        },
+        {
+          "code": "31.71.07.1004",
+          "name": "Petamburan",
+          "district": "Tanah Abang",
+          "city": "Kota Administrasi Jakarta Pusat",
+          "distanceToBoundaryMeters": 588.0
+        }
+      ],
+      "apartmentWebResultCount": 6
+    },
+    {
+      "station": "Kebayoran",
+      "stopId": "osm-node-5070781613",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Kebayoran Lama Utara Cipulir Grogol Selatan",
+        "site:mamikos.com/room kos campur Kebayoran Lama Cipulir UHAMKA pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Kebayoran Lama Utara Cipulir Grogol Selatan",
+        "site:jendela360.com/sewa-apartemen Kebayoran Lama Cipulir Pakubuwono sewa apartemen"
+      ],
+      "webResultCount": 33,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dekat-mall-di-grogol-selatan",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-grogol-selatan",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-3-lantai-di-jalan-cipulir-1",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-di-jalan-kemandoran-vii-gg-h-rojali-no-58",
+        "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-rumah-kontrakan-bulanan-kebayoran-lama-jakarta-selatan-2",
+        "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-rumah-kontrakan-elka-kebayoran-lama-jakarta-selatan",
+        "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-ibu-arum-firman-tipe-a-kebayoran-lama-jakarta-selatan-2",
+        "https://jendela360.com/sewa-apartemen-pakubuwono-terrace/TAHUNAN",
+        "https://jendela360.com/sewa-apartemen-pakubuwono-terrace/BULANAN"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-selatan/kebayoran-lama/cipulir",
+        "https://jendela360.com/sewa-apartemen-pakubuwono-terrace"
+      ],
+      "alreadyCheckedUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-cipulir-1",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-3-petak-per-bulan-dengan-lokasi-strategis-di-jl-kebon-kelapa-bawah-rt-13-rw-11-nomor-8d-cidodol-grogol-selatan-kebayoran-lama-jakarta-selatan-12220",
+        "https://jendela360.com/sewa-apartemen-pakubuwono-terrace/PKTA101"
+      ],
+      "nearestLocalities": [
+        {
+          "code": "31.74.05.1001",
+          "name": "Kebayoran Lama Utara",
+          "district": "Kebayoran Lama",
+          "city": "Kota Administrasi Jakarta Selatan",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "31.74.05.1005",
+          "name": "Grogol Selatan",
+          "district": "Kebayoran Lama",
+          "city": "Kota Administrasi Jakarta Selatan",
+          "distanceToBoundaryMeters": 110.6
+        },
+        {
+          "code": "31.74.05.1003",
+          "name": "Cipulir",
+          "district": "Kebayoran Lama",
+          "city": "Kota Administrasi Jakarta Selatan",
+          "distanceToBoundaryMeters": 213.6
+        },
+        {
+          "code": "31.74.07.1002",
+          "name": "Gunung",
+          "district": "Kebayoran Baru",
+          "city": "Kota Administrasi Jakarta Selatan",
+          "distanceToBoundaryMeters": 261.0
+        },
+        {
+          "code": "31.74.07.1003",
+          "name": "Kramat Pela",
+          "district": "Kebayoran Baru",
+          "city": "Kota Administrasi Jakarta Selatan",
+          "distanceToBoundaryMeters": 364.1
+        }
+      ],
+      "apartmentWebResultCount": 8
+    },
+    {
+      "station": "Pondok Ranji",
+      "stopId": "osm-node-318718577",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Pondok Ranji Rengas Pondok Betung",
+        "site:mamikos.com/room kos campur Pondok Ranji STAN Bintaro pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Pondok Ranji Rengas Pondok Betung",
+        "site:jendela360.com/sewa-apartemen Bintaro Pondok Ranji sewa apartemen"
+      ],
+      "webResultCount": 32,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-pondok-ranji-di-pondok-ranji",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-halaman-luas-di-komplex-pertamina-pondok-ranji",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-rengas",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pondok-betung-1",
+        "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-pondok-ranji-tipe-a-ciputat-timur-tangerang-selatan-1",
+        "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-pondok-ranji-tipe-c-ciputat-timur-tangerang-selatan",
+        "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-cikini-3-bintaro-tangerang-selatan",
+        "https://jendela360.com/sewa-apartemen-bintaro-park-view/BPVA074",
+        "https://jendela360.com/sewa-apartemen-bintaro-park-view/BPVC055",
+        "https://jendela360.com/sewa-apartemen-the-accent-bintaro/STUDIO"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/banten/tangerang-selatan/ciputat-timur/pondok-ranji",
+        "https://jendela360.com/sewa-apartemen-the-breeze-bintaro-apartment"
+      ],
+      "alreadyCheckedUrls": [
+        "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-ciputat-bintaro-exchanged-ciputat-tangerang-selatan"
+      ],
+      "nearestLocalities": [
+        {
+          "code": "36.74.05.1002",
+          "name": "Pondok Ranji",
+          "district": "Ciputat Timur",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "36.74.05.1006",
+          "name": "Rengas",
+          "district": "Ciputat Timur",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 115.6
+        },
+        {
+          "code": "36.74.03.1001",
+          "name": "Pondok Betung",
+          "district": "Pondok Aren",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 120.7
+        },
+        {
+          "code": "36.74.03.1003",
+          "name": "Pondok Karya",
+          "district": "Pondok Aren",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 155.7
+        },
+        {
+          "code": "31.74.10.1002",
+          "name": "Bintaro",
+          "district": "Pesanggrahan",
+          "city": "Kota Administrasi Jakarta Selatan",
+          "distanceToBoundaryMeters": 792.1
+        }
+      ],
+      "apartmentWebResultCount": 10
+    },
+    {
+      "station": "Jurangmangu",
+      "stopId": "osm-node-318720710",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Sawah Sawah Baru Pondok Jaya Bintaro",
+        "site:mamikos.com/room kos campur Universitas Pembangunan Jaya Jurangmangu pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Sawah Sawah Baru Pondok Jaya Bintaro",
+        "site:jendela360.com/sewa-apartemen Bintaro Jurangmangu sewa apartemen"
+      ],
+      "webResultCount": 34,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dalam-cluster-di-sawah-baru-ciputat-di-bintaro-hills",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-boulevard-upj-sawah-baru-ciputat",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-tria-adara-residence-7-bintaro-di-jl-mesjid-nurul-qomar-sawah-baru-ciputat",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-bintaro-sektor-9-di-sawah-baru",
+        "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-minimalis-pondok-jaya-mampang-prapatan-jakarta-selatan-1",
+        "https://mamikos.com/room/kost-kota-padang-kost-campur-murah-rumah-kontrakan-mama-upik-kuranji-padang",
+        "https://jendela360.com/sewa-apartemen-bintaro-park-view/BPVA074",
+        "https://jendela360.com/sewa-apartemen-bintaro-park-view/BPVC055",
+        "https://jendela360.com/sewa-apartemen-bintaro-park-view/BPVA028"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/banten/tangerang-selatan/ciputat/sawah-baru",
+        "https://jendela360.com/sewa-apartemen-the-accent-bintaro"
+      ],
+      "alreadyCheckedUrls": [],
+      "nearestLocalities": [
+        {
+          "code": "36.74.04.1004",
+          "name": "Sawah",
+          "district": "Ciputat",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "36.74.04.1001",
+          "name": "Sawah Baru",
+          "district": "Ciputat",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 3.4
+        },
+        {
+          "code": "36.74.03.1004",
+          "name": "Pondok Jaya",
+          "district": "Pondok Aren",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 33.9
+        },
+        {
+          "code": "36.74.05.1002",
+          "name": "Pondok Ranji",
+          "district": "Ciputat Timur",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 259.6
+        },
+        {
+          "code": "36.74.03.1003",
+          "name": "Pondok Karya",
+          "district": "Pondok Aren",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 1420.5
+        }
+      ],
+      "apartmentWebResultCount": 9
+    },
+    {
+      "station": "Sudimara",
+      "stopId": "osm-node-316848964",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Jombang Pondok Pucung Sawah Baru Ciputat",
+        "site:mamikos.com/room kos campur Jombang Sudimara Ciputat pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Jombang Pondok Pucung Sawah Baru Ciputat",
+        "site:jendela360.com/sewa-apartemen Sudimara Ciputat Jombang Bintaro sewa apartemen"
+      ],
+      "webResultCount": 35,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-sudimara-ciputat-di-jombang",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-cluster-dekat-stasiun-sudimara-di-jombang",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-petak-kp-cilalung-ciputat-di-kp-cilalung-jombang-ciputat",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gg-h-kentol-rt3-rw3-sawah-baru-ciputat",
+        "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-murah-kost-eka-jombang-tipe-b-ciputat-tangerang-selatan",
+        "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-rumah-kontrakan-pakde-kamto-ciputat-tangerang-selatan",
+        "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-allegra-tipe-e-ciputat-tangerang-selatan",
+        "https://jendela360.com/sewa-apartemen-sudimara-forest-walk-apartment/SFWA002",
+        "https://jendela360.com/sewa-apartemen-sudimara-forest-walk-apartment/SFWA004",
+        "https://jendela360.com/sewa-apartemen-sudimara-forest-walk-apartment/TAHUNAN"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/banten/tangerang-selatan/ciputat/jombang"
+      ],
+      "alreadyCheckedUrls": [],
+      "nearestLocalities": [
+        {
+          "code": "36.74.04.1006",
+          "name": "Jombang",
+          "district": "Ciputat",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "36.74.03.1002",
+          "name": "Pondok Pucung",
+          "district": "Pondok Aren",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 338.3
+        },
+        {
+          "code": "36.74.04.1001",
+          "name": "Sawah Baru",
+          "district": "Ciputat",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 423.0
+        },
+        {
+          "code": "36.74.04.1002",
+          "name": "Serua",
+          "district": "Ciputat",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 942.2
+        },
+        {
+          "code": "36.74.04.1005",
+          "name": "Serua Indah",
+          "district": "Ciputat",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 1100.1
+        }
+      ],
+      "apartmentWebResultCount": 6
+    },
+    {
+      "station": "Rawa Buntu",
+      "stopId": "osm-node-5459945761",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Rawabuntu Rawa Buntu Cilenggang Ciater",
+        "site:mamikos.com/room kos campur Rawa Buntu kampus BSI BSD pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Rawabuntu Rawa Buntu Cilenggang Ciater",
+        "site:jendela360.com/sewa-apartemen Rawa Buntu BSD Serpong sewa apartemen"
+      ],
+      "webResultCount": 29,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kencana-loka-bsd-7088ypsv-di-rawabuntu-rawa-buntu",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-rt-005-rw-001-no-106-cicentang-rawabuntu",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-full-ac-kawasan-ciater-dekat-st-rawa-buntu-di-jl-raya-ciater-doel-silem",
+        "https://jendela360.com/sewa-apartemen-the-ayoma-apartment/AYMA005",
+        "https://jendela360.com/sewa-apartemen-the-ayoma-apartment/AYMA001",
+        "https://jendela360.com/sewa-apartemen-the-ayoma-apartment/AYMA002"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/banten/tangerang-selatan/serpong/rawabuntu",
+        "https://jendela360.com/sewa-apartemen-b-residence-bsd"
+      ],
+      "alreadyCheckedUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-rawa-buntu",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-asri-idaman-di-jln-raya-rawa-buntu-gg-haji-lati",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-rawabuntu-rawa-buntu",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-aman-di-rawabuntu-rawa-buntu",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-siap-huni-dekat-stasiun-rawabuntu-di-kencana-loka-bsd",
+        "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-stasiun-rawa-buntu-serpong-tangerang-selatan"
+      ],
+      "nearestLocalities": [
+        {
+          "code": "36.74.01.1002",
+          "name": "Rawabuntu",
+          "district": "Serpong",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "36.74.01.1008",
+          "name": "Cilenggang",
+          "district": "Serpong",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 6.2
+        },
+        {
+          "code": "36.74.01.1009",
+          "name": "Serpong",
+          "district": "Serpong",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 581.7
+        },
+        {
+          "code": "36.74.01.1003",
+          "name": "Rawa Mekar Jaya",
+          "district": "Serpong",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 656.4
+        },
+        {
+          "code": "36.74.01.1001",
+          "name": "Ciater",
+          "district": "Serpong",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 1053.5
+        }
+      ],
+      "apartmentWebResultCount": 8
+    },
+    {
+      "station": "Serpong",
+      "stopId": "osm-node-4152468605",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Serpong Sampora Kademangan Cilenggang",
+        "site:mamikos.com/room kos campur Serpong BSD pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Serpong Sampora Kademangan Cilenggang",
+        "site:jendela360.com/sewa-apartemen Serpong BSD sewa apartemen"
+      ],
+      "webResultCount": 32,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-taman-tekno-bsd-serpong-di-jl-kademangan",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-serpong-lagoon-south-pelican",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-cilenggang-1-rt-04-rw-02",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-ayub-jl-cilenggang-3-rt010-004",
+        "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-emerald-bsd-tipe-ac-serpong-tangerang-selatan",
+        "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-room-serpong-tangerang-selatan",
+        "https://mamikos.com/room/kost-tangerang-selatan-kost-campur-eksklusif-kost-rich-tipe-standard-serpong-tangerang-selatan-2"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/area/serpong-kota-tangerang-selatan/durasi/bulanan/properti?page=4",
+        "https://jendela360.com/sewa-apartemen-serpong-green-view-apartment"
+      ],
+      "alreadyCheckedUrls": [
+        "https://jendela360.com/sewa-apartemen-serpong-garden-apartment/SPGA201"
+      ],
+      "nearestLocalities": [
+        {
+          "code": "36.74.01.1009",
+          "name": "Serpong",
+          "district": "Serpong",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "36.03.23.2006",
+          "name": "Sampora",
+          "district": "Cisauk",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 460.6
+        },
+        {
+          "code": "36.74.01.1008",
+          "name": "Cilenggang",
+          "district": "Serpong",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 585.7
+        },
+        {
+          "code": "36.74.01.1002",
+          "name": "Rawabuntu",
+          "district": "Serpong",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 635.3
+        },
+        {
+          "code": "36.74.07.1004",
+          "name": "Kademangan",
+          "district": "Setu",
+          "city": "Kota Tangerang Selatan",
+          "distanceToBoundaryMeters": 668.0
+        }
+      ],
+      "apartmentWebResultCount": 4
+    },
+    {
+      "station": "Cisauk",
+      "stopId": "osm-node-7249140957",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Sampora Cibogo Cisauk Suradita",
+        "site:mamikos.com/room kos campur Cisauk Sampora Atma Jaya Prasetiya Mulya BSD pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Sampora Cibogo Cisauk Suradita",
+        "site:jendela360.com/sewa-apartemen Cisauk Intermoda BSD sewa apartemen"
+      ],
+      "webResultCount": 34,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-15-menit-dgn-kendaraan-di-suradita",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-serpong-garden-1-cluster-valley-di-jalan-raya-cibogo-cisauk",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-citra-garden-serpong-cisauk-di-suradita",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-serpong-garden-2-boulevard-di-suradita",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-pemerena-cibogo-residence-cisauk-tangerang-2",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA001",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA010",
+        "https://jendela360.com/sewa-apartemen-saveria-apartment/SVRC011"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/cisauk/sampora",
+        "https://jendela360.com/sewa-apartemen-b-residence-bsd"
+      ],
+      "alreadyCheckedUrls": [
+        "https://mamikos.com/room/kost-kota-tangerang-kost-campur-murah-rumah-kontrakan-mawi-cisauk-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-rumah-kontrakan-nadia-cisauk-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-the-icon-standart-cisauk-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-murah-kost-dini-cisauk-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-miz-cisauk-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-ernala-indekost-cisauk-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-almahyra-tipe-a-cisauk-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-murah-kost-pak-erwin-lama-cisauk-tangerang-2",
+        "https://mamikos.com/room/kost-tangerang-kost-putri-eksklusif-kost-allegra-cisauk-bsd-cisauk-tangerang",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-di-serpong-garden-3-cisauk-di-cibogo",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA013",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA004",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA005",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA007"
+      ],
+      "nearestLocalities": [
+        {
+          "code": "36.03.23.2006",
+          "name": "Sampora",
+          "district": "Cisauk",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "36.03.23.2011",
+          "name": "Cibogo",
+          "district": "Cisauk",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 4.8
+        },
+        {
+          "code": "36.03.23.1001",
+          "name": "Cisauk",
+          "district": "Cisauk",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 155.6
+        },
+        {
+          "code": "36.03.22.2007",
+          "name": "Situ Gadung",
+          "district": "Pagedangan",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 233.5
+        },
+        {
+          "code": "36.03.23.2005",
+          "name": "Suradita",
+          "district": "Cisauk",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 1699.3
+        }
+      ],
+      "apartmentWebResultCount": 10
+    },
+    {
+      "station": "Cicayur",
+      "stopId": "osm-node-1191930747",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Cisauk Situ Gadung Kadu Sirung Dangdang",
+        "site:mamikos.com/room kos campur Cicayur Situ Gadung Cisauk pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Cisauk Situ Gadung Kadu Sirung Dangdang",
+        "site:jendela360.com/sewa-apartemen Cicayur Cisauk sewa apartemen"
+      ],
+      "webResultCount": 34,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-cisauk-lapan-kec-cisauk",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cisauk",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-serpong-garden-1-cisauk-di-cisauk",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dengan-lingkungan-cluster-di-cisauk-suradita",
+        "https://mamikos.com/room/kost-tangerang-kost-campur-murah-kost-senada-cisauk-tangerang",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA001",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA002",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA010"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/cisauk",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment"
+      ],
+      "alreadyCheckedUrls": [
+        "https://mamikos.com/room/kost-kota-tangerang-kost-campur-murah-rumah-kontrakan-mawi-cisauk-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-rumah-kontrakan-nadia-cisauk-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-almahyra-tipe-a-cisauk-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-murah-kost-dini-cisauk-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-miz-cisauk-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-murah-kost-pak-erwin-lama-cisauk-tangerang-2",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA013",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA004",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA005",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA007"
+      ],
+      "nearestLocalities": [
+        {
+          "code": "36.03.23.1001",
+          "name": "Cisauk",
+          "district": "Cisauk",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "36.03.22.2007",
+          "name": "Situ Gadung",
+          "district": "Pagedangan",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 350.8
+        },
+        {
+          "code": "36.03.22.2010",
+          "name": "Kadu Sirung",
+          "district": "Pagedangan",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 836.1
+        },
+        {
+          "code": "36.03.23.2009",
+          "name": "Dangdang",
+          "district": "Cisauk",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 1153.7
+        },
+        {
+          "code": "36.03.22.2008",
+          "name": "Jatake",
+          "district": "Pagedangan",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 1225.2
+        }
+      ],
+      "apartmentWebResultCount": 9
+    },
+    {
+      "station": "Jatake",
+      "stopId": "osm-node-9335291125",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Jatake Kadu Sirung Mekar Wangi Cisauk",
+        "site:mamikos.com/room kos campur Jatake Pagedangan Tangerang pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Jatake Kadu Sirung Mekar Wangi Cisauk",
+        "site:jendela360.com/sewa-apartemen Jatake Pagedangan Cisauk sewa apartemen"
+      ],
+      "webResultCount": 32,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-cisauk-lapan-kec-cisauk",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-raya-serpong-cisauk-1",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-dengan-akses-club-house-kolam-renang-di-jl-raya-cisauk-lapan-suradita-kec-cisauk",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cisauk",
+        "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-a8-b-yanahjamal-tipe-a-pagedangan-tangerang",
+        "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-page-tipe-a-pagedangan-tangerang-2",
+        "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-studento-1-pagedangan-tangerang",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA001",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA010",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA002"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/pagedangan/jatake"
+      ],
+      "alreadyCheckedUrls": [
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-h-m-syarfan-tipe-a-pagedangan-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-oliver-guest-house-2c-pagedangan-tangerang",
+        "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-a8-b-yanahjamal-tipe-b-pagedangan-tangerang-2",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-edo-pagedangan-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-ap-bsd-tipe-a-pagedangan-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-pekerja-pagedangan-tangerang",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA004",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA013",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA005",
+        "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA007"
+      ],
+      "nearestLocalities": [
+        {
+          "code": "36.03.22.2010",
+          "name": "Kadu Sirung",
+          "district": "Pagedangan",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "36.03.22.2008",
+          "name": "Jatake",
+          "district": "Pagedangan",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 5.6
+        },
+        {
+          "code": "36.03.23.1001",
+          "name": "Cisauk",
+          "district": "Cisauk",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 359.0
+        },
+        {
+          "code": "36.03.23.2003",
+          "name": "Mekar Wangi",
+          "district": "Cisauk",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 585.0
+        },
+        {
+          "code": "36.03.23.2009",
+          "name": "Dangdang",
+          "district": "Cisauk",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 658.5
+        }
+      ],
+      "apartmentWebResultCount": 9
+    },
+    {
+      "station": "Parungpanjang",
+      "stopId": "osm-node-1191930561",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Parung Panjang Parungpanjang Kabasiran Cibunar",
+        "site:mamikos.com/room kos campur Parung Panjang Cibunar pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Parung Panjang Parungpanjang Kabasiran Cibunar"
+      ],
+      "webResultCount": 31,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-raya-kabasiran-parung-panjang",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-the-life-resident-cibunar-parung-panjang",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-forest-hill-parung-panjang-di-kabasiran",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-sentraland-parungpanjang",
+        "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-rumah-kontrakan-ibu-leny-cibinong-bogor"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/jawa-barat/kab-bogor/parung-panjang/parungpanjang"
+      ],
+      "alreadyCheckedUrls": [
+        "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-rumah-kontrakan-sentraland-parung-panjang-bogor",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-griya-parung-panjang-blok-e1-d2"
+      ],
+      "nearestLocalities": [
+        {
+          "code": "32.01.20.2006",
+          "name": "Parungpanjang",
+          "district": "Parungpanjang",
+          "city": "Bogor",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "32.01.20.2011",
+          "name": "Kabasiran",
+          "district": "Parungpanjang",
+          "city": "Bogor",
+          "distanceToBoundaryMeters": 208.7
+        },
+        {
+          "code": "32.01.20.2008",
+          "name": "Cibunar",
+          "district": "Parungpanjang",
+          "city": "Bogor",
+          "distanceToBoundaryMeters": 356.8
+        },
+        {
+          "code": "36.03.22.2012",
+          "name": "Karang Tengah",
+          "district": "Pagedangan",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 545.4
+        },
+        {
+          "code": "36.03.20.2012",
+          "name": "Cirarab",
+          "district": "Legok",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 594.6
+        }
+      ]
+    },
+    {
+      "station": "Cilejit",
+      "stopId": "osm-node-1191930798",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Cilejit Batok Gintungcilejet Taban Jambe",
+        "site:mamikos.com/room kos campur Cilejit Batok Jambe pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Cilejit Batok Gintungcilejet Taban Jambe"
+      ],
+      "webResultCount": 29,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-ramma-utama-perumahan-modernland-cilejit"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/jambe"
+      ],
+      "alreadyCheckedUrls": [],
+      "nearestLocalities": [
+        {
+          "code": "32.01.23.2003",
+          "name": "Batok",
+          "district": "Tenjo",
+          "city": "Bogor",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "36.03.04.2001",
+          "name": "Sukamanah",
+          "district": "Jambe",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 116.3
+        },
+        {
+          "code": "36.03.04.2004",
+          "name": "Taban",
+          "district": "Jambe",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 178.9
+        },
+        {
+          "code": "32.01.20.2010",
+          "name": "Gintungcilejet",
+          "district": "Parungpanjang",
+          "city": "Bogor",
+          "distanceToBoundaryMeters": 974.2
+        },
+        {
+          "code": "36.03.04.2008",
+          "name": "Mekarsari",
+          "district": "Jambe",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 1204.5
+        }
+      ]
+    },
+    {
+      "station": "Daru",
+      "stopId": "osm-node-1191930671",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Daru Jambe Mekarsari Taban Cilaku",
+        "site:mamikos.com/room kos campur Daru Jambe Tangerang pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Daru Jambe Mekarsari Taban Cilaku"
+      ],
+      "webResultCount": 30,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-metropolis",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-3-kamar-murah-dekat-stasiun-di-daru-metropolis",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilaku"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/jambe/daru"
+      ],
+      "alreadyCheckedUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-daru-raya-di-daru",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-jambe-tangerang",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-pratama-daru-jambe",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-sarwani-desa-daru-pemai-blok-d",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-daru-metropolis-grand-daru-city-jambe-kab-tangerang"
+      ],
+      "nearestLocalities": [
+        {
+          "code": "36.03.04.2005",
+          "name": "Daru",
+          "district": "Jambe",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "36.03.04.2008",
+          "name": "Mekarsari",
+          "district": "Jambe",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 311.0
+        },
+        {
+          "code": "36.03.04.2004",
+          "name": "Taban",
+          "district": "Jambe",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 420.0
+        },
+        {
+          "code": "32.01.23.2006",
+          "name": "Cilaku",
+          "district": "Tenjo",
+          "city": "Bogor",
+          "distanceToBoundaryMeters": 999.9
+        },
+        {
+          "code": "32.01.23.2003",
+          "name": "Batok",
+          "district": "Tenjo",
+          "city": "Bogor",
+          "distanceToBoundaryMeters": 1445.3
+        }
+      ]
+    },
+    {
+      "station": "Tenjo",
+      "stopId": "osm-node-1191930466",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Tenjo Singabangsa Cilaku Cileles",
+        "site:mamikos.com/room kos campur Tenjo Bogor pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Tenjo Singabangsa Cilaku Cileles"
+      ],
+      "webResultCount": 31,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-cilaku-kec-tenjo-kab-bogor",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tenjo-city-singabangsa-kectenjo-bogor",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bulanan-2-kamar-tidur-cluster-kana-di-kota-podomoro-tenjo",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rp-1-juta-perbulan-daeran-tenjo-di-perumahan-tenjo-city-blok-l3-no-20",
+        "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-murah-kost-satyaka-tipe-a-tenjolaya-bogor"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/jawa-barat/kab-bogor/tenjo/cilaku"
+      ],
+      "alreadyCheckedUrls": [],
+      "nearestLocalities": [
+        {
+          "code": "32.01.23.2005",
+          "name": "Tenjo",
+          "district": "Tenjo",
+          "city": "Bogor",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "32.01.23.2008",
+          "name": "Singabangsa",
+          "district": "Tenjo",
+          "city": "Bogor",
+          "distanceToBoundaryMeters": 728.5
+        },
+        {
+          "code": "32.01.23.2006",
+          "name": "Cilaku",
+          "district": "Tenjo",
+          "city": "Bogor",
+          "distanceToBoundaryMeters": 761.7
+        },
+        {
+          "code": "36.03.03.2014",
+          "name": "Bantar Panjang",
+          "district": "Tigaraksa",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 1488.0
+        },
+        {
+          "code": "36.03.03.2011",
+          "name": "Cileles",
+          "district": "Tigaraksa",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 1693.3
+        }
+      ]
+    },
+    {
+      "station": "Tigaraksa",
+      "stopId": "osm-node-1191729437",
+      "scope": "existing-inventory",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan stasiun Tigaraksa Cikasungka Cileles Cikuya Solear",
+        "site:mamikos.com/room kos campur Cikasungka Tigaraksa Solear pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan stasiun Tigaraksa Cikasungka Cileles Cikuya Solear"
+      ],
+      "webResultCount": 29,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-green-palme-residence-cileles-tigaraksa",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-green-palme-tigaraksa",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-green-palme-tigaraksa-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-puri-permai-1-tigaraksa-tangerang",
+        "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-murah-kost-bu-hj-aminah-tigaraksa-tangerang"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/solear/cikasungka"
+      ],
+      "alreadyCheckedUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-delta-tigaraksa",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cikasungka",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-harmoni-cikasungka-tangerang"
+      ],
+      "nearestLocalities": [
+        {
+          "code": "36.03.31.2003",
+          "name": "Cikasungka",
+          "district": "Solear",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 0
+        },
+        {
+          "code": "36.03.03.2011",
+          "name": "Cileles",
+          "district": "Tigaraksa",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 486.7
+        },
+        {
+          "code": "32.01.23.2005",
+          "name": "Tenjo",
+          "district": "Tenjo",
+          "city": "Bogor",
+          "distanceToBoundaryMeters": 562.5
+        },
+        {
+          "code": "36.03.31.2002",
+          "name": "Cikuya",
+          "district": "Solear",
+          "city": "Tangerang",
+          "distanceToBoundaryMeters": 653.9
+        },
+        {
+          "code": "32.01.23.2007",
+          "name": "Singabraja",
+          "district": "Tenjo",
+          "city": "Bogor",
+          "distanceToBoundaryMeters": 809.2
+        }
+      ]
+    },
+    {
+      "station": "Cikoya",
+      "stopId": null,
+      "scope": "additional-green-line-stop",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Cikoya Cikasungka Cikuya Solear Tangerang",
+        "site:mamikos.com/room kos Cikoya Cikuya Solear pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Cikoya Cikasungka Cikuya Solear Tangerang"
+      ],
+      "webResultCount": 28,
+      "selectedDetailUrls": [],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/solear/cikasungka"
+      ],
+      "alreadyCheckedUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlstasiun-cikoya",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cikasungka",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-harmoni-cikasungka-tangerang"
+      ]
+    },
+    {
+      "station": "Maja",
+      "stopId": null,
+      "scope": "additional-green-line-stop",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan stasiun Maja Citra Maja Raya Maja Lebak",
+        "site:mamikos.com/room kos campur Maja Lebak pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan stasiun Maja Citra Maja Raya Maja Lebak"
+      ],
+      "webResultCount": 32,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-citra-maja-curug-badak-maja-lebak-banten-di-maja",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-luas-murah-dekat-stasiun-maja-di-citra-maja-city",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-citra-maja-raya-boulevard",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-citra-maja-raya",
+        "https://mamikos.com/room/kost-lebak-kost-campur-murah-kost-rumah-kontrakan-citra-raya-maja-lebak",
+        "https://mamikos.com/room/kost-lebak-kost-campur-eksklusif-kost-permata-mutiara-tipe-standar-maja-lebak-2",
+        "https://mamikos.com/room/kost-kabupaten-majalengka-kost-campur-murah-kost-family-panyingkiran-majalengka-2"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/banten/kab-lebak/maja"
+      ],
+      "alreadyCheckedUrls": []
+    },
+    {
+      "station": "Citeras",
+      "stopId": null,
+      "scope": "additional-green-line-stop",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan stasiun Citeras Mekarsari Rangkasbitung Lebak",
+        "site:mamikos.com/room kos Citeras Lebak pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan stasiun Citeras Mekarsari Rangkasbitung Lebak"
+      ],
+      "webResultCount": 31,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-di-mekarsari",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-di-mekarsari-1",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-mekarsari-29",
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-mekarsari-di-jlmekarsari",
+        "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-singgahsini-papan-hobbies-tipe-a-lebak-bulus-jakarta-selatan-2",
+        "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-rumah-lebak-lestari-cilandak-jakarta-selatan",
+        "https://mamikos.com/room/kost-jakarta-selatan-kost-putri-eksklusif-kost-puri-aa-lebak-bulus-cilandak-jakarta-selatan"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/banten/kab-lebak/rangkasbitung"
+      ],
+      "alreadyCheckedUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-di-perumahan-mekarsari"
+      ]
+    },
+    {
+      "station": "Rangkasbitung",
+      "stopId": null,
+      "scope": "additional-green-line-stop",
+      "queries": [
+        "site:pinhome.id/disewa/rumah-sekunder/unit rumah kontrakan disewakan Rangkasbitung Muara Ciujung Lebak",
+        "site:mamikos.com/room kos campur Rangkasbitung kampus La Tansa Mashiro pasutri anak",
+        "site:pinhome.id/sewa/rumah rumah sewa kontrakan Rangkasbitung Muara Ciujung Lebak"
+      ],
+      "webResultCount": 29,
+      "selectedDetailUrls": [
+        "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-ciujung-indah",
+        "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-rumah-kontrakan-darussalam-cipondoh-tangerang"
+      ],
+      "selectedSearchUrls": [
+        "https://www.pinhome.id/sewa/rumah/banten/kab-lebak/rangkasbitung/muara-ciujung-barat"
+      ],
+      "alreadyCheckedUrls": []
+    }
+  ],
+  "seeds": [
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-blok-8-lantai-3-jl-kb-kacang-xi-lantai-no-7-kebon-kacang-tanah-abang-central-jakarta-city-jakarta-10240",
+      "taskHints": [],
+      "stationHints": ["Tanah Abang"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-pusat-kost-campur-eksklusif-kost-mareta-karet-tengsin-non-ac-tanah-abang-jakarta-pusat",
+      "taskHints": [],
+      "stationHints": ["Tanah Abang"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-pusat-kost-campur-murah-kost-karet-tengsin-benhil-tanah-abang-jakarta-pusat-1",
+      "taskHints": [],
+      "stationHints": ["Tanah Abang"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-pusat-kost-campur-eksklusif-kost-46-kebon-kacang-tanah-abang-jakrta-pusat",
+      "taskHints": [],
+      "stationHints": ["Tanah Abang"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-komplek-bni-slipi-kemanggisan-palmerah-jakarta-barat",
+      "taskHints": [],
+      "stationHints": ["Palmerah"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlhsennin-no57b-rt009-rw012-kel-palmerah-kec-palmerah-11480",
+      "taskHints": [],
+      "stationHints": ["Palmerah"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-palmerah-utara-iii-no-8",
+      "taskHints": [],
+      "stationHints": ["Palmerah"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-1kt-35m-di-slipi",
+      "taskHints": [],
+      "stationHints": ["Palmerah"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-barat-kost-campur-eksklusif-kost-kemanggisan-binus-rawa-belong-palmerah-jakarta-barat-2",
+      "taskHints": [],
+      "stationHints": ["Palmerah"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-barat-kost-campur-eksklusif-kost-cozy-coliving-binus-3-kemanggisan-exclusive-palmerah-jakarta-barat",
+      "taskHints": [],
+      "stationHints": ["Palmerah"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-barat-kost-campur-eksklusif-kost-binus-kemanggisan-u-residence-85-tipe-c-palmerah-jakarta-barat",
+      "taskHints": [],
+      "stationHints": ["Palmerah"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dekat-mall-di-grogol-selatan",
+      "taskHints": [],
+      "stationHints": ["Kebayoran"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-grogol-selatan",
+      "taskHints": [],
+      "stationHints": ["Kebayoran"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-3-lantai-di-jalan-cipulir-1",
+      "taskHints": [],
+      "stationHints": ["Kebayoran"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kontrakan-di-jalan-kemandoran-vii-gg-h-rojali-no-58",
+      "taskHints": [],
+      "stationHints": ["Kebayoran"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-rumah-kontrakan-bulanan-kebayoran-lama-jakarta-selatan-2",
+      "taskHints": [],
+      "stationHints": ["Kebayoran"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-rumah-kontrakan-elka-kebayoran-lama-jakarta-selatan",
+      "taskHints": [],
+      "stationHints": ["Kebayoran"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-ibu-arum-firman-tipe-a-kebayoran-lama-jakarta-selatan-2",
+      "taskHints": [],
+      "stationHints": ["Kebayoran"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-pondok-ranji-di-pondok-ranji",
+      "taskHints": [],
+      "stationHints": ["Pondok Ranji"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-halaman-luas-di-komplex-pertamina-pondok-ranji",
+      "taskHints": [],
+      "stationHints": ["Pondok Ranji"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-rengas",
+      "taskHints": [],
+      "stationHints": ["Pondok Ranji"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-pondok-betung-1",
+      "taskHints": [],
+      "stationHints": ["Pondok Ranji"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-pondok-ranji-tipe-a-ciputat-timur-tangerang-selatan-1",
+      "taskHints": [],
+      "stationHints": ["Pondok Ranji"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-pondok-ranji-tipe-c-ciputat-timur-tangerang-selatan",
+      "taskHints": [],
+      "stationHints": ["Pondok Ranji"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-cikini-3-bintaro-tangerang-selatan",
+      "taskHints": [],
+      "stationHints": ["Pondok Ranji"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dalam-cluster-di-sawah-baru-ciputat-di-bintaro-hills",
+      "taskHints": [],
+      "stationHints": ["Jurangmangu"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-boulevard-upj-sawah-baru-ciputat",
+      "taskHints": [],
+      "stationHints": ["Jurangmangu"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-tria-adara-residence-7-bintaro-di-jl-mesjid-nurul-qomar-sawah-baru-ciputat",
+      "taskHints": [],
+      "stationHints": ["Jurangmangu"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-bintaro-sektor-9-di-sawah-baru",
+      "taskHints": [],
+      "stationHints": ["Jurangmangu"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-minimalis-pondok-jaya-mampang-prapatan-jakarta-selatan-1",
+      "taskHints": [],
+      "stationHints": ["Jurangmangu"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-padang-kost-campur-murah-rumah-kontrakan-mama-upik-kuranji-padang",
+      "taskHints": [],
+      "stationHints": ["Jurangmangu"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-sudimara-ciputat-di-jombang",
+      "taskHints": [],
+      "stationHints": ["Sudimara"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-cluster-dekat-stasiun-sudimara-di-jombang",
+      "taskHints": [],
+      "stationHints": ["Sudimara"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-petak-kp-cilalung-ciputat-di-kp-cilalung-jombang-ciputat",
+      "taskHints": [],
+      "stationHints": ["Sudimara"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gg-h-kentol-rt3-rw3-sawah-baru-ciputat",
+      "taskHints": [],
+      "stationHints": ["Sudimara"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-murah-kost-eka-jombang-tipe-b-ciputat-tangerang-selatan",
+      "taskHints": [],
+      "stationHints": ["Sudimara"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-rumah-kontrakan-pakde-kamto-ciputat-tangerang-selatan",
+      "taskHints": [],
+      "stationHints": ["Sudimara"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-allegra-tipe-e-ciputat-tangerang-selatan",
+      "taskHints": [],
+      "stationHints": ["Sudimara"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-kencana-loka-bsd-7088ypsv-di-rawabuntu-rawa-buntu",
+      "taskHints": [],
+      "stationHints": ["Rawa Buntu"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-rt-005-rw-001-no-106-cicentang-rawabuntu",
+      "taskHints": [],
+      "stationHints": ["Rawa Buntu"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-full-ac-kawasan-ciater-dekat-st-rawa-buntu-di-jl-raya-ciater-doel-silem",
+      "taskHints": [],
+      "stationHints": ["Rawa Buntu"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-taman-tekno-bsd-serpong-di-jl-kademangan",
+      "taskHints": [],
+      "stationHints": ["Serpong"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-serpong-lagoon-south-pelican",
+      "taskHints": [],
+      "stationHints": ["Serpong"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-cilenggang-1-rt-04-rw-02",
+      "taskHints": [],
+      "stationHints": ["Serpong"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-ayub-jl-cilenggang-3-rt010-004",
+      "taskHints": [],
+      "stationHints": ["Serpong"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-emerald-bsd-tipe-ac-serpong-tangerang-selatan",
+      "taskHints": [],
+      "stationHints": ["Serpong"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-room-serpong-tangerang-selatan",
+      "taskHints": [],
+      "stationHints": ["Serpong"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-tangerang-selatan-kost-campur-eksklusif-kost-rich-tipe-standard-serpong-tangerang-selatan-2",
+      "taskHints": [],
+      "stationHints": ["Serpong"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-15-menit-dgn-kendaraan-di-suradita",
+      "taskHints": [],
+      "stationHints": ["Cisauk"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-serpong-garden-1-cluster-valley-di-jalan-raya-cibogo-cisauk",
+      "taskHints": [],
+      "stationHints": ["Cisauk"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-citra-garden-serpong-cisauk-di-suradita",
+      "taskHints": [],
+      "stationHints": ["Cisauk"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-cisauk-serpong-garden-2-boulevard-di-suradita",
+      "taskHints": [],
+      "stationHints": ["Cisauk"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-pemerena-cibogo-residence-cisauk-tangerang-2",
+      "taskHints": [],
+      "stationHints": ["Cisauk"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-cisauk-lapan-kec-cisauk",
+      "taskHints": [],
+      "stationHints": ["Cicayur", "Jatake"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cisauk",
+      "taskHints": [],
+      "stationHints": ["Cicayur", "Jatake"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-serpong-garden-1-cisauk-di-cisauk",
+      "taskHints": [],
+      "stationHints": ["Cicayur"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dengan-lingkungan-cluster-di-cisauk-suradita",
+      "taskHints": [],
+      "stationHints": ["Cicayur"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-tangerang-kost-campur-murah-kost-senada-cisauk-tangerang",
+      "taskHints": [],
+      "stationHints": ["Cicayur"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-raya-serpong-cisauk-1",
+      "taskHints": [],
+      "stationHints": ["Jatake"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-dengan-akses-club-house-kolam-renang-di-jl-raya-cisauk-lapan-suradita-kec-cisauk",
+      "taskHints": [],
+      "stationHints": ["Jatake"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-a8-b-yanahjamal-tipe-a-pagedangan-tangerang",
+      "taskHints": [],
+      "stationHints": ["Jatake"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-page-tipe-a-pagedangan-tangerang-2",
+      "taskHints": [],
+      "stationHints": ["Jatake"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-tangerang-kost-campur-eksklusif-kost-studento-1-pagedangan-tangerang",
+      "taskHints": [],
+      "stationHints": ["Jatake"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-raya-kabasiran-parung-panjang",
+      "taskHints": [],
+      "stationHints": ["Parungpanjang"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-the-life-resident-cibunar-parung-panjang",
+      "taskHints": [],
+      "stationHints": ["Parungpanjang"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-forest-hill-parung-panjang-di-kabasiran",
+      "taskHints": [],
+      "stationHints": ["Parungpanjang"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-sentraland-parungpanjang",
+      "taskHints": [],
+      "stationHints": ["Parungpanjang"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-rumah-kontrakan-ibu-leny-cibinong-bogor",
+      "taskHints": [],
+      "stationHints": ["Parungpanjang"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-ramma-utama-perumahan-modernland-cilejit",
+      "taskHints": [],
+      "stationHints": ["Cilejit"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-metropolis",
+      "taskHints": [],
+      "stationHints": ["Daru"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-baru-3-kamar-murah-dekat-stasiun-di-daru-metropolis",
+      "taskHints": [],
+      "stationHints": ["Daru"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilaku",
+      "taskHints": [],
+      "stationHints": ["Daru"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-cilaku-kec-tenjo-kab-bogor",
+      "taskHints": [],
+      "stationHints": ["Tenjo"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tenjo-city-singabangsa-kectenjo-bogor",
+      "taskHints": [],
+      "stationHints": ["Tenjo"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bulanan-2-kamar-tidur-cluster-kana-di-kota-podomoro-tenjo",
+      "taskHints": [],
+      "stationHints": ["Tenjo"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rp-1-juta-perbulan-daeran-tenjo-di-perumahan-tenjo-city-blok-l3-no-20",
+      "taskHints": [],
+      "stationHints": ["Tenjo"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-murah-kost-satyaka-tipe-a-tenjolaya-bogor",
+      "taskHints": [],
+      "stationHints": ["Tenjo"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-green-palme-residence-cileles-tigaraksa",
+      "taskHints": [],
+      "stationHints": ["Tigaraksa"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-green-palme-tigaraksa",
+      "taskHints": [],
+      "stationHints": ["Tigaraksa"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-green-palme-tigaraksa-tangerang",
+      "taskHints": [],
+      "stationHints": ["Tigaraksa"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-eksklusif-kost-puri-permai-1-tigaraksa-tangerang",
+      "taskHints": [],
+      "stationHints": ["Tigaraksa"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kabupaten-tangerang-kost-campur-murah-kost-bu-hj-aminah-tigaraksa-tangerang",
+      "taskHints": [],
+      "stationHints": ["Tigaraksa"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-citra-maja-curug-badak-maja-lebak-banten-di-maja",
+      "taskHints": [],
+      "stationHints": ["Maja"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-luas-murah-dekat-stasiun-maja-di-citra-maja-city",
+      "taskHints": [],
+      "stationHints": ["Maja"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-citra-maja-raya-boulevard",
+      "taskHints": [],
+      "stationHints": ["Maja"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-citra-maja-raya",
+      "taskHints": [],
+      "stationHints": ["Maja"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-lebak-kost-campur-murah-kost-rumah-kontrakan-citra-raya-maja-lebak",
+      "taskHints": [],
+      "stationHints": ["Maja"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-lebak-kost-campur-eksklusif-kost-permata-mutiara-tipe-standar-maja-lebak-2",
+      "taskHints": [],
+      "stationHints": ["Maja"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kabupaten-majalengka-kost-campur-murah-kost-family-panyingkiran-majalengka-2",
+      "taskHints": [],
+      "stationHints": ["Maja"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-di-mekarsari",
+      "taskHints": [],
+      "stationHints": ["Citeras"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-di-mekarsari-1",
+      "taskHints": [],
+      "stationHints": ["Citeras"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-mekarsari-29",
+      "taskHints": [],
+      "stationHints": ["Citeras"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-perumahan-mekarsari-di-jlmekarsari",
+      "taskHints": [],
+      "stationHints": ["Citeras"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-singgahsini-papan-hobbies-tipe-a-lebak-bulus-jakarta-selatan-2",
+      "taskHints": [],
+      "stationHints": ["Citeras"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-rumah-lebak-lestari-cilandak-jakarta-selatan",
+      "taskHints": [],
+      "stationHints": ["Citeras"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-putri-eksklusif-kost-puri-aa-lebak-bulus-cilandak-jakarta-selatan",
+      "taskHints": [],
+      "stationHints": ["Citeras"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-ciujung-indah",
+      "taskHints": [],
+      "stationHints": ["Rangkasbitung"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-tangerang-kost-campur-eksklusif-rumah-kontrakan-darussalam-cipondoh-tangerang",
+      "taskHints": [],
+      "stationHints": ["Rangkasbitung"],
+      "discovery": "web-search",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-pakubuwono-terrace/TAHUNAN",
+      "taskHints": [],
+      "stationHints": ["Kebayoran"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-pakubuwono-terrace/BULANAN",
+      "taskHints": [],
+      "stationHints": ["Kebayoran"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-casa-domaine-apartment/CDMD002",
+      "taskHints": [],
+      "stationHints": ["Tanah Abang"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-city-lofts-apartment/CLSB018",
+      "taskHints": [],
+      "stationHints": ["Tanah Abang"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-sudirman-park-apartment/SUPC194",
+      "taskHints": [],
+      "stationHints": ["Tanah Abang"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-bintaro-park-view/BPVA074",
+      "taskHints": [],
+      "stationHints": ["Pondok Ranji", "Jurangmangu"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-bintaro-park-view/BPVC055",
+      "taskHints": [],
+      "stationHints": ["Pondok Ranji", "Jurangmangu"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-the-accent-bintaro/STUDIO",
+      "taskHints": [],
+      "stationHints": ["Pondok Ranji"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-bintaro-park-view/BPVA028",
+      "taskHints": [],
+      "stationHints": ["Jurangmangu"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-sudimara-forest-walk-apartment/SFWA002",
+      "taskHints": [],
+      "stationHints": ["Sudimara"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-sudimara-forest-walk-apartment/SFWA004",
+      "taskHints": [],
+      "stationHints": ["Sudimara"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-sudimara-forest-walk-apartment/TAHUNAN",
+      "taskHints": [],
+      "stationHints": ["Sudimara"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-slipi-apartment/BULANAN",
+      "taskHints": [],
+      "stationHints": ["Palmerah"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-gp-plaza-apartment/GPPB008",
+      "taskHints": [],
+      "stationHints": ["Palmerah"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-the-ayoma-apartment/AYMA005",
+      "taskHints": [],
+      "stationHints": ["Rawa Buntu"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-the-ayoma-apartment/AYMA001",
+      "taskHints": [],
+      "stationHints": ["Rawa Buntu"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-the-ayoma-apartment/AYMA002",
+      "taskHints": [],
+      "stationHints": ["Rawa Buntu"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA001",
+      "taskHints": [],
+      "stationHints": ["Cisauk", "Cicayur", "Jatake"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA010",
+      "taskHints": [],
+      "stationHints": ["Cisauk", "Cicayur", "Jatake"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-saveria-apartment/SVRC011",
+      "taskHints": [],
+      "stationHints": ["Cisauk"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-cisauk-point-apartment/CSPA002",
+      "taskHints": [],
+      "stationHints": ["Cicayur", "Jatake"],
+      "discovery": "web-search-apartment",
+      "priorityFirst": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-pusat/tanah-abang/kebon-kacang",
+      "taskHints": [],
+      "stationHints": ["Tanah Abang"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-barat/pal-merah/palmerah",
+      "taskHints": [],
+      "stationHints": ["Palmerah"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-selatan/kebayoran-lama/cipulir",
+      "taskHints": [],
+      "stationHints": ["Kebayoran"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/tangerang-selatan/ciputat-timur/pondok-ranji",
+      "taskHints": [],
+      "stationHints": ["Pondok Ranji"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/tangerang-selatan/ciputat/sawah-baru",
+      "taskHints": [],
+      "stationHints": ["Jurangmangu"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/tangerang-selatan/ciputat/jombang",
+      "taskHints": [],
+      "stationHints": ["Sudimara"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/tangerang-selatan/serpong/rawabuntu",
+      "taskHints": [],
+      "stationHints": ["Rawa Buntu"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/area/serpong-kota-tangerang-selatan/durasi/bulanan/properti?page=4",
+      "taskHints": [],
+      "stationHints": ["Serpong"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/cisauk/sampora",
+      "taskHints": [],
+      "stationHints": ["Cisauk"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/cisauk",
+      "taskHints": [],
+      "stationHints": ["Cicayur"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/pagedangan/jatake",
+      "taskHints": [],
+      "stationHints": ["Jatake"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/jawa-barat/kab-bogor/parung-panjang/parungpanjang",
+      "taskHints": [],
+      "stationHints": ["Parungpanjang"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/jambe",
+      "taskHints": [],
+      "stationHints": ["Cilejit"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/jambe/daru",
+      "taskHints": [],
+      "stationHints": ["Daru"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/jawa-barat/kab-bogor/tenjo/cilaku",
+      "taskHints": [],
+      "stationHints": ["Tenjo"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/solear/cikasungka",
+      "taskHints": [],
+      "stationHints": ["Tigaraksa", "Cikoya"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/kab-lebak/maja",
+      "taskHints": [],
+      "stationHints": ["Maja"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/kab-lebak/rangkasbitung",
+      "taskHints": [],
+      "stationHints": ["Citeras"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/kab-lebak/rangkasbitung/muara-ciujung-barat",
+      "taskHints": [],
+      "stationHints": ["Rangkasbitung"],
+      "discovery": "web-search"
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-pakubuwono-terrace",
+      "taskHints": [],
+      "stationHints": ["Kebayoran"],
+      "discovery": "web-search-apartment"
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-the-breeze-bintaro-apartment",
+      "taskHints": [],
+      "stationHints": ["Pondok Ranji"],
+      "discovery": "web-search-apartment"
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-the-accent-bintaro",
+      "taskHints": [],
+      "stationHints": ["Jurangmangu"],
+      "discovery": "web-search-apartment"
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-slipi-apartment",
+      "taskHints": [],
+      "stationHints": ["Palmerah"],
+      "discovery": "web-search-apartment"
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-serpong-green-view-apartment",
+      "taskHints": [],
+      "stationHints": ["Serpong"],
+      "discovery": "web-search-apartment"
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-b-residence-bsd",
+      "taskHints": [],
+      "stationHints": ["Rawa Buntu", "Cisauk"],
+      "discovery": "web-search-apartment"
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-cisauk-point-apartment",
+      "taskHints": [],
+      "stationHints": ["Cicayur"],
+      "discovery": "web-search-apartment"
+    }
+  ],
+  "transportEvidence": [
+    {
+      "url": "https://www.commuterline.id/files/download/documents/Jadwal%20Commuter%20Line%20Jabodetabek%20-%20Update%2013%20Desember%202025.pdf",
+      "note": "Official timetable lists 19 pre-Jatake stations, including Cikoya, Maja, Citeras and Rangkasbitung; not the current timetable."
+    },
+    {
+      "url": "https://www.kai.id/publikasi/siaran-pers/7185-stasiun-jatake-perkuat-akomodasi-mobilitas-wilayah-barat-jawa-melalui-pengembangan-layanan-bertahap",
+      "note": "KAI official Jatake operation 28 January 2026."
+    }
+  ],
+  "campusEvidence": [
+    {
+      "name": "BINUS Kemanggisan",
+      "url": "https://binus.ac.id/kemanggisan/2026/03/cara-ke-binus-kemanggisan-naik-krl-stasiun-palmerah/",
+      "stationHints": ["Palmerah"],
+      "note": "Campus directions from Palmerah; not a 3 km coordinate proof."
+    },
+    {
+      "name": "Universitas Prof. Dr. Moestopo",
+      "url": "https://moestopo.ac.id/",
+      "stationHints": ["Palmerah"],
+      "note": "Official address Gelora, Tanah Abang."
+    },
+    {
+      "name": "PKN STAN",
+      "url": "https://pknstan.ac.id/id",
+      "stationHints": ["Pondok Ranji", "Jurangmangu"],
+      "note": "Official Bintaro Utama Sector V address."
+    },
+    {
+      "name": "Universitas Pembangunan Jaya",
+      "url": "https://upj.ac.id/",
+      "stationHints": ["Jurangmangu", "Sudimara"],
+      "note": "Official Boulevard UPJ Bintaro Jaya address."
+    },
+    {
+      "name": "Universitas Bina Sarana Informatika BSD",
+      "url": "https://www.bsi.ac.id/Cabang-ubsi-bsd",
+      "stationHints": ["Rawa Buntu", "Serpong"],
+      "note": "Official Letnan Sutopo address, Lengkong Gudang Timur."
+    },
+    {
+      "name": "Universitas Prasetiya Mulya BSD",
+      "url": "https://www.prasetiyamulya.ac.id/sekitar-kampus/",
+      "stationHints": ["Cisauk"],
+      "note": "Campus lists Stasiun KRL Cisauk as area transit."
+    },
+    {
+      "name": "Unika Atma Jaya BSD",
+      "url": "https://www.atmajaya.ac.id/id/pages/bsd_ref/",
+      "stationHints": ["Cisauk", "Serpong"],
+      "note": "Official Sampora Cisauk address."
+    },
+    {
+      "name": "Universitas Trisakti FEB Karet Tengsin",
+      "url": "https://feb.trisakti.ac.id/tentang/lokasi/",
+      "stationHints": ["Tanah Abang"],
+      "note": "Official Karet Tengsin address; lookup only, no distance inferred."
+    },
+    {
+      "name": "UHAMKA Kampus Limau",
+      "url": "https://pmb.uhamka.ac.id/lokasi-kampus/",
+      "stationHints": ["Kebayoran"],
+      "note": "Official Limau II, Kramat Pela address; station and campus hints, no inferred radius."
+    },
+    {
+      "name": "Universitas La Tansa Mashiro",
+      "url": "https://ejurnal.latansamashiro.ac.id/index.php/PEMTEKDIKMAS/about/contact",
+      "stationHints": ["Rangkasbitung"],
+      "note": "Official university journal address Bypass Pasir Jati, Rangkasbitung. Research-only area."
+    }
+  ],
+  "manualLeads": [
+    {
+      "station": "Cilejit",
+      "provider": "rumah123",
+      "url": "https://www.rumah123.com/properti/tangerang-jambe/disewakan-per-bulsn-rumah-siap-huni-baru-renovasi-di-perumahan-modern-land-cilejit-cluster-meratus-hor42670360/",
+      "localityLabel": "Jambe, Tangerang; Modernland Cilejit cluster Meratus",
+      "amount": 1500000,
+      "period": "monthly",
+      "bedrooms": 2,
+      "buildingAreaM2": 50,
+      "sourceUpdatedAt": "2026-10-24",
+      "status": "public-detail-text-read",
+      "resolution": "hold-no-verifiable-unit-pin",
+      "note": "Portal advertises near Cilejit, no public verified unit pin in retrieved text; no confirmation of stock, flood status or distance."
+    },
+    {
+      "station": "Daru",
+      "provider": "rumah123",
+      "url": "https://www.rumah123.com/properti/tangerang-jambe/rumah-disewa-di-daru-metropolis-tangerang-dekat-ke-stasiun-daru-hor41876490/",
+      "localityLabel": "Jambe, Tangerang; Daru Metropolis",
+      "amount": 15000000,
+      "period": "yearly",
+      "bedrooms": 2,
+      "buildingAreaM2": 27,
+      "sourceUpdatedAt": "2026-07-13",
+      "status": "public-detail-text-read",
+      "resolution": "hold-no-verifiable-unit-pin",
+      "note": "Advertised near Daru, no verified unit pin in retrieved text; potential cross-portal duplication check pending."
+    },
+    {
+      "station": "Cilejit",
+      "provider": "brighton",
+      "url": "https://www.brighton.co.id/cari-properti/view/rumah-modernland-cilejit",
+      "localityLabel": "Modernland Cilejit, portal labels Cisauk",
+      "amount": 17500000,
+      "period": null,
+      "bedrooms": 2,
+      "buildingAreaM2": 42,
+      "sourceUpdatedAt": "2026-10-25",
+      "status": "public-detail-text-read",
+      "resolution": "hold-price-period-and-locality",
+      "note": "Minimum rent two years stated; period of displayed amount is not explicit, locality inconsistent, no confirmed pin."
+    },
+    {
+      "station": "Maja",
+      "provider": "realoka",
+      "url": "https://www.realoka.com/353809-kontrakan-murah-dekat-stasiun-maja-citra-maja-raya",
+      "localityLabel": "Cluster Tevana, Citra Maja Raya, Lebak",
+      "amount": 12000000,
+      "period": "yearly",
+      "bedrooms": 2,
+      "buildingAreaM2": 42,
+      "sourceUpdatedAt": null,
+      "status": "public-detail-text-read",
+      "resolution": "hold-no-verifiable-unit-pin",
+      "note": "Public detail claims annual price includes IPKL, excludes deposit; relative update time not converted from cached text. No confirmed pin or availability."
+    }
+  ],
+  "supplementalDiscovery": [
+    {
+      "station": "Cilejit",
+      "query": "sewa kontrakan rumah Cilejit Modernland Cilejit Gintungcilejet Jambe dekat stasiun bukan jual"
+    },
+    {
+      "station": "Cikoya",
+      "query": "kontrakan disewakan rumah stasiun Cikoya Cikasungka Cikuya Solear bukan dijual"
+    },
+    {
+      "station": "Daru",
+      "query": "sewa rumah kontrakan Daru Metropolis Daru Jambe stasiun"
+    },
+    {
+      "station": "Citeras",
+      "query": "kontrakan sewa rumah Citeras dekat stasiun Mekarsari Rangkasbitung Lebak"
+    }
+  ],
+  "researchOnlyFloodSources": [
+    {
+      "url": "https://bpbd.lebakkab.go.id/data-bencana/index.php/webgis/list_bencana?page_bencana=73",
+      "note": "BPBD Lebak table shows Maja Baru flooding (21 houses), but no event date or verified coordinate in retrieved table; pagination dynamic, no dated incident imported."
+    }
+  ],
+  "buildingLocalityEvidence": [
+    {
+      "provider": "jendela360",
+      "buildingName": "Saveria Apartment",
+      "bigCode": "36.03.23.2006",
+      "url": "https://www.bsdcity.com/id/development/residential/saveria/",
+      "label": "Alamat pengembang: Grand Boulevard BSD City, Sampora, Cisauk, Tangerang.",
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "provider": "jendela360",
+      "buildingName": "The Breeze Bintaro Apartment",
+      "bigCode": "36.74.03.1003",
+      "url": "https://jendela.com/sewa-apartemen/tangerang-selatan/bintaro-tangerang/the-breeze-bintaro-apartment",
+      "label": "Alamat halaman gedung: Pondok Karya, Pondok Aren, Tangerang Selatan.",
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "provider": "jendela360",
+      "buildingName": "B Residence BSD",
+      "bigCode": "36.03.22.2003",
+      "url": "https://jendela.com/sewa-apartemen/tangerang-selatan/bsd-city/b-residence-bsd/bulanan",
+      "label": "Halaman gedung menyebut Pagedangan, Tangerang, Banten; pin bangunan cocok poligon BIG Pagedangan.",
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "provider": "jendela360",
+      "buildingName": "Cisauk Point Apartment",
+      "bigCode": "36.03.23.2011",
+      "url": "https://www.btnproperti.co.id/property/tipe/detail/TPR2022112511025816",
+      "label": "BTN Properti mencantumkan Cibogo, Cisauk, Kabupaten Tangerang, bukan Kota Tangerang Selatan.",
+      "checkedAt": "2026-11-26"
+    }
+  ]
+}

@@ -1,0 +1,960 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-26",
+  "note": "Four line stops intentionally outside production geography; research only. OSM public track stop positions from same route relation version as production; BIG polygon overlap, not routing. Do not equate candidate pins with verified availability.",
+  "coordinateSource": "https://api.openstreetmap.org/api/0.6/relation/15094546/full.json",
+  "osmRelationVersion": 23,
+  "osmResponseSha256": "2956ede5424e13e5c453947d9fc5b9d741b27cafba65f579d70b2376010897d3",
+  "attribution": "© OpenStreetMap contributors; ODbL 1.0",
+  "boundarySource": "https://geoservices.big.go.id/rbi/rest/services/BATASWILAYAH/BATAS_DESAKEL_AR/MapServer/0/query",
+  "boundaryBbox": [106.215693, -6.387763, 106.445738, -6.29683],
+  "radiiMeters": [500, 1000, 1500, 2000, 3000],
+  "areas": {
+    "37141": {
+      "objectId": 37141,
+      "code": "32.01.23.2007",
+      "name": "Singabraja",
+      "district": "Tenjo",
+      "city": "Bogor",
+      "province": "Jawa Barat",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "37145": {
+      "objectId": 37145,
+      "code": "32.01.23.2005",
+      "name": "Tenjo",
+      "district": "Tenjo",
+      "city": "Bogor",
+      "province": "Jawa Barat",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "37309": {
+      "objectId": 37309,
+      "code": "32.01.23.2009",
+      "name": "Bojong",
+      "district": "Tenjo",
+      "city": "Bogor",
+      "province": "Jawa Barat",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70474": {
+      "objectId": 70474,
+      "code": "36.03.31.2003",
+      "name": "Cikasungka",
+      "district": "Solear",
+      "city": "Tangerang",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70487": {
+      "objectId": 70487,
+      "code": "36.03.31.2002",
+      "name": "Cikuya",
+      "district": "Solear",
+      "city": "Tangerang",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70488": {
+      "objectId": 70488,
+      "code": "36.03.31.2004",
+      "name": "Cireundeu",
+      "district": "Solear",
+      "city": "Tangerang",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70489": {
+      "objectId": 70489,
+      "code": "36.03.31.2005",
+      "name": "Cikareo",
+      "district": "Solear",
+      "city": "Tangerang",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70727": {
+      "objectId": 70727,
+      "code": "36.03.03.2011",
+      "name": "Cileles",
+      "district": "Tigaraksa",
+      "city": "Tangerang",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70755": {
+      "objectId": 70755,
+      "code": "36.02.13.2005",
+      "name": "Tanjungsari",
+      "district": "Maja",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Batas Definitif"
+    },
+    "70756": {
+      "objectId": 70756,
+      "code": "36.02.13.2023",
+      "name": "Maja Baru",
+      "district": "Maja",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Batas Definitif"
+    },
+    "70757": {
+      "objectId": 70757,
+      "code": "36.02.13.2007",
+      "name": "Sangiang",
+      "district": "Maja",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Batas Definitif"
+    },
+    "70760": {
+      "objectId": 70760,
+      "code": "36.02.13.2015",
+      "name": "Curugbadak",
+      "district": "Maja",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Batas Definitif"
+    },
+    "70761": {
+      "objectId": 70761,
+      "code": "36.02.13.2006",
+      "name": "Maja",
+      "district": "Maja",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Batas Definitif"
+    },
+    "70842": {
+      "objectId": 70842,
+      "code": "36.04.25.2001",
+      "name": "Kopo",
+      "district": "Kopo",
+      "city": "Serang",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70843": {
+      "objectId": 70843,
+      "code": "36.04.25.2010",
+      "name": "Mekarbaru",
+      "district": "Kopo",
+      "city": "Serang",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70759": {
+      "objectId": 70759,
+      "code": "36.02.13.2020",
+      "name": "Pasirkembang",
+      "district": "Maja",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Batas Definitif"
+    },
+    "70845": {
+      "objectId": 70845,
+      "code": "36.04.25.2003",
+      "name": "Nanggung",
+      "district": "Kopo",
+      "city": "Serang",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70847": {
+      "objectId": 70847,
+      "code": "36.04.25.2002",
+      "name": "Garut",
+      "district": "Kopo",
+      "city": "Serang",
+      "province": "Banten",
+      "boundaryStatus": "Batas Definitif"
+    },
+    "70850": {
+      "objectId": 70850,
+      "code": "36.04.25.2008",
+      "name": "Rancasumur",
+      "district": "Kopo",
+      "city": "Serang",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70051": {
+      "objectId": 70051,
+      "code": "36.02.14.2021",
+      "name": "Cimangeunteung",
+      "district": "Rangkasbitung",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70058": {
+      "objectId": 70058,
+      "code": "36.02.14.2014",
+      "name": "Mekarsari",
+      "district": "Rangkasbitung",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70068": {
+      "objectId": 70068,
+      "code": "36.02.14.2009",
+      "name": "Citeras",
+      "district": "Rangkasbitung",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70074": {
+      "objectId": 70074,
+      "code": "36.02.14.2010",
+      "name": "Nameng",
+      "district": "Rangkasbitung",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70753": {
+      "objectId": 70753,
+      "code": "36.02.13.2008",
+      "name": "Binong",
+      "district": "Maja",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70754": {
+      "objectId": 70754,
+      "code": "36.02.13.2012",
+      "name": "Padasuka",
+      "district": "Maja",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70758": {
+      "objectId": 70758,
+      "code": "36.02.13.2009",
+      "name": "Gubugan Cibeureum",
+      "district": "Maja",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70844": {
+      "objectId": 70844,
+      "code": "36.04.26.2003",
+      "name": "Cemplang",
+      "district": "Jawilan",
+      "city": "Serang",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70846": {
+      "objectId": 70846,
+      "code": "36.04.26.2002",
+      "name": "Bojot",
+      "district": "Jawilan",
+      "city": "Serang",
+      "province": "Banten",
+      "boundaryStatus": "Batas Definitif"
+    },
+    "70852": {
+      "objectId": 70852,
+      "code": "36.04.26.2004",
+      "name": "Pagintungan",
+      "district": "Jawilan",
+      "city": "Serang",
+      "province": "Banten",
+      "boundaryStatus": "Batas Definitif"
+    },
+    "70036": {
+      "objectId": 70036,
+      "code": "36.02.24.2001",
+      "name": "Kalanganyar",
+      "district": "Kalanganyar",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70037": {
+      "objectId": 70037,
+      "code": "36.02.24.2006",
+      "name": "Sukamekarsari",
+      "district": "Kalanganyar",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70039": {
+      "objectId": 70039,
+      "code": "36.02.14.2017",
+      "name": "Rangkasbitung Timur",
+      "district": "Rangkasbitung",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70040": {
+      "objectId": 70040,
+      "code": "36.02.14.1002",
+      "name": "Rangkasbitung Barat",
+      "district": "Rangkasbitung",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70041": {
+      "objectId": 70041,
+      "code": "36.02.24.2004",
+      "name": "Aweh",
+      "district": "Kalanganyar",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70043": {
+      "objectId": 70043,
+      "code": "36.02.24.2003",
+      "name": "Cilangkap",
+      "district": "Kalanganyar",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70044": {
+      "objectId": 70044,
+      "code": "36.02.14.1007",
+      "name": "Muara Ciujung Barat",
+      "district": "Rangkasbitung",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70045": {
+      "objectId": 70045,
+      "code": "36.02.14.1012",
+      "name": "Muara Ciujung Timur",
+      "district": "Rangkasbitung",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70046": {
+      "objectId": 70046,
+      "code": "36.02.24.2007",
+      "name": "Cikatapis",
+      "district": "Kalanganyar",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70047": {
+      "objectId": 70047,
+      "code": "36.02.18.2011",
+      "name": "Bojong Leles",
+      "district": "Cibadak",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70048": {
+      "objectId": 70048,
+      "code": "36.02.14.2013",
+      "name": "Jatimulya",
+      "district": "Rangkasbitung",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70049": {
+      "objectId": 70049,
+      "code": "36.02.14.2023",
+      "name": "Narimbang Mulia",
+      "district": "Rangkasbitung",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70050": {
+      "objectId": 70050,
+      "code": "36.02.14.1006",
+      "name": "Cijoro Lebak",
+      "district": "Rangkasbitung",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70052": {
+      "objectId": 70052,
+      "code": "36.02.18.2002",
+      "name": "Kaduagung Timur",
+      "district": "Cibadak",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70053": {
+      "objectId": 70053,
+      "code": "36.02.18.2015",
+      "name": "Kaduagung Tengah",
+      "district": "Cibadak",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70054": {
+      "objectId": 70054,
+      "code": "36.02.18.2013",
+      "name": "Mekar Agung",
+      "district": "Cibadak",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70060": {
+      "objectId": 70060,
+      "code": "36.02.14.1008",
+      "name": "Cijoro Pasir",
+      "district": "Rangkasbitung",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70064": {
+      "objectId": 70064,
+      "code": "36.02.18.2004",
+      "name": "Cibadak",
+      "district": "Cibadak",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70065": {
+      "objectId": 70065,
+      "code": "36.02.18.2009",
+      "name": "Malabar",
+      "district": "Cibadak",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70067": {
+      "objectId": 70067,
+      "code": "36.02.18.2010",
+      "name": "Pasar Keong",
+      "district": "Cibadak",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70070": {
+      "objectId": 70070,
+      "code": "36.02.14.2016",
+      "name": "Pabuaran",
+      "district": "Rangkasbitung",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    },
+    "70076": {
+      "objectId": 70076,
+      "code": "36.02.18.2003",
+      "name": "Panancangan",
+      "district": "Cibadak",
+      "city": "Lebak",
+      "province": "Banten",
+      "boundaryStatus": "Hasil Kesepakatan"
+    }
+  },
+  "stations": [
+    {
+      "stopId": "osm-node-10312804558",
+      "station": "Cikoya",
+      "mode": "KRL",
+      "lines": ["rangkasbitung"],
+      "coordinate": [106.410738, -6.3358409],
+      "coordinateSource": "https://www.openstreetmap.org/node/10312804558",
+      "pointKind": "stop-position",
+      "mappingNote": "OSM route stop_position; track reference, not entrance; research only outside production snapshot",
+      "existingPinnedCounts": {
+        "500": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "1000": {
+          "rumah": 1,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "1500": {
+          "rumah": 1,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "2000": {
+          "rumah": 1,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "3000": {
+          "rumah": 4,
+          "kos": 0,
+          "apartemen": 0
+        }
+      },
+      "areas": [
+        {
+          "areaId": "70474",
+          "distanceToBoundaryMeters": 0,
+          "containsStop": true
+        },
+        {
+          "areaId": "70757",
+          "distanceToBoundaryMeters": 360.6,
+          "containsStop": false
+        },
+        {
+          "areaId": "70487",
+          "distanceToBoundaryMeters": 561.6,
+          "containsStop": false
+        },
+        {
+          "areaId": "70761",
+          "distanceToBoundaryMeters": 669.8,
+          "containsStop": false
+        },
+        {
+          "areaId": "70843",
+          "distanceToBoundaryMeters": 1210.4,
+          "containsStop": false
+        },
+        {
+          "areaId": "70755",
+          "distanceToBoundaryMeters": 1443.9,
+          "containsStop": false
+        },
+        {
+          "areaId": "70756",
+          "distanceToBoundaryMeters": 1644.3,
+          "containsStop": false
+        },
+        {
+          "areaId": "37141",
+          "distanceToBoundaryMeters": 2215.4,
+          "containsStop": false
+        },
+        {
+          "areaId": "70760",
+          "distanceToBoundaryMeters": 2228.9,
+          "containsStop": false
+        },
+        {
+          "areaId": "70842",
+          "distanceToBoundaryMeters": 2341.9,
+          "containsStop": false
+        },
+        {
+          "areaId": "70489",
+          "distanceToBoundaryMeters": 2388.6,
+          "containsStop": false
+        },
+        {
+          "areaId": "70727",
+          "distanceToBoundaryMeters": 2390.7,
+          "containsStop": false
+        },
+        {
+          "areaId": "70488",
+          "distanceToBoundaryMeters": 2424.1,
+          "containsStop": false
+        },
+        {
+          "areaId": "37145",
+          "distanceToBoundaryMeters": 2812.4,
+          "containsStop": false
+        },
+        {
+          "areaId": "37309",
+          "distanceToBoundaryMeters": 2924.6,
+          "containsStop": false
+        }
+      ],
+      "boundaryStatus": "mapped"
+    },
+    {
+      "stopId": "osm-node-3869818667",
+      "station": "Maja",
+      "mode": "KRL",
+      "lines": ["rangkasbitung"],
+      "coordinate": [106.3949324, -6.3318303],
+      "coordinateSource": "https://www.openstreetmap.org/node/3869818667",
+      "pointKind": "stop-position",
+      "mappingNote": "OSM route stop_position; track reference, not entrance; research only outside production snapshot",
+      "existingPinnedCounts": {
+        "500": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "1000": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "1500": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "2000": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "3000": {
+          "rumah": 1,
+          "kos": 0,
+          "apartemen": 0
+        }
+      },
+      "areas": [
+        {
+          "areaId": "70761",
+          "distanceToBoundaryMeters": 0,
+          "containsStop": true
+        },
+        {
+          "areaId": "70843",
+          "distanceToBoundaryMeters": 251.0,
+          "containsStop": false
+        },
+        {
+          "areaId": "70760",
+          "distanceToBoundaryMeters": 441.1,
+          "containsStop": false
+        },
+        {
+          "areaId": "70842",
+          "distanceToBoundaryMeters": 557.9,
+          "containsStop": false
+        },
+        {
+          "areaId": "70474",
+          "distanceToBoundaryMeters": 642.5,
+          "containsStop": false
+        },
+        {
+          "areaId": "70487",
+          "distanceToBoundaryMeters": 679.0,
+          "containsStop": false
+        },
+        {
+          "areaId": "70756",
+          "distanceToBoundaryMeters": 687.5,
+          "containsStop": false
+        },
+        {
+          "areaId": "70757",
+          "distanceToBoundaryMeters": 1169.6,
+          "containsStop": false
+        },
+        {
+          "areaId": "70850",
+          "distanceToBoundaryMeters": 1970.1,
+          "containsStop": false
+        },
+        {
+          "areaId": "70847",
+          "distanceToBoundaryMeters": 2108.3,
+          "containsStop": false
+        },
+        {
+          "areaId": "70845",
+          "distanceToBoundaryMeters": 2563.3,
+          "containsStop": false
+        },
+        {
+          "areaId": "70488",
+          "distanceToBoundaryMeters": 2623.4,
+          "containsStop": false
+        },
+        {
+          "areaId": "70759",
+          "distanceToBoundaryMeters": 2640.6,
+          "containsStop": false
+        },
+        {
+          "areaId": "70755",
+          "distanceToBoundaryMeters": 2816.5,
+          "containsStop": false
+        },
+        {
+          "areaId": "70489",
+          "distanceToBoundaryMeters": 2926.0,
+          "containsStop": false
+        }
+      ],
+      "boundaryStatus": "mapped"
+    },
+    {
+      "stopId": "osm-node-10312804560",
+      "station": "Citeras",
+      "mode": "KRL",
+      "lines": ["rangkasbitung"],
+      "coordinate": [106.331842, -6.3350982],
+      "coordinateSource": "https://www.openstreetmap.org/node/10312804560",
+      "pointKind": "stop-position",
+      "mappingNote": "OSM route stop_position; track reference, not entrance; research only outside production snapshot",
+      "existingPinnedCounts": {
+        "500": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "1000": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "1500": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "2000": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "3000": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        }
+      },
+      "areas": [
+        {
+          "areaId": "70058",
+          "distanceToBoundaryMeters": 0,
+          "containsStop": true
+        },
+        {
+          "areaId": "70844",
+          "distanceToBoundaryMeters": 2.1,
+          "containsStop": false
+        },
+        {
+          "areaId": "70068",
+          "distanceToBoundaryMeters": 68.0,
+          "containsStop": false
+        },
+        {
+          "areaId": "70852",
+          "distanceToBoundaryMeters": 703.4,
+          "containsStop": false
+        },
+        {
+          "areaId": "70758",
+          "distanceToBoundaryMeters": 1384.1,
+          "containsStop": false
+        },
+        {
+          "areaId": "70753",
+          "distanceToBoundaryMeters": 2047.9,
+          "containsStop": false
+        },
+        {
+          "areaId": "70759",
+          "distanceToBoundaryMeters": 2149.4,
+          "containsStop": false
+        },
+        {
+          "areaId": "70074",
+          "distanceToBoundaryMeters": 2207.9,
+          "containsStop": false
+        },
+        {
+          "areaId": "70051",
+          "distanceToBoundaryMeters": 2253.2,
+          "containsStop": false
+        },
+        {
+          "areaId": "70846",
+          "distanceToBoundaryMeters": 2415.0,
+          "containsStop": false
+        },
+        {
+          "areaId": "70754",
+          "distanceToBoundaryMeters": 2430.1,
+          "containsStop": false
+        },
+        {
+          "areaId": "70845",
+          "distanceToBoundaryMeters": 2662.6,
+          "containsStop": false
+        }
+      ],
+      "boundaryStatus": "mapped"
+    },
+    {
+      "stopId": "osm-node-12066633420",
+      "station": "Rangkasbitung",
+      "mode": "KRL",
+      "lines": ["rangkasbitung"],
+      "coordinate": [106.250693, -6.3527633],
+      "coordinateSource": "https://www.openstreetmap.org/node/12066633420",
+      "pointKind": "stop-position",
+      "mappingNote": "OSM route stop_position; track reference, not entrance; research only outside production snapshot",
+      "existingPinnedCounts": {
+        "500": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "1000": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "1500": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "2000": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        },
+        "3000": {
+          "rumah": 0,
+          "kos": 0,
+          "apartemen": 0
+        }
+      },
+      "areas": [
+        {
+          "areaId": "70045",
+          "distanceToBoundaryMeters": 0,
+          "containsStop": true
+        },
+        {
+          "areaId": "70044",
+          "distanceToBoundaryMeters": 101.4,
+          "containsStop": false
+        },
+        {
+          "areaId": "70050",
+          "distanceToBoundaryMeters": 439.0,
+          "containsStop": false
+        },
+        {
+          "areaId": "70040",
+          "distanceToBoundaryMeters": 816.8,
+          "containsStop": false
+        },
+        {
+          "areaId": "70052",
+          "distanceToBoundaryMeters": 841.0,
+          "containsStop": false
+        },
+        {
+          "areaId": "70064",
+          "distanceToBoundaryMeters": 913.2,
+          "containsStop": false
+        },
+        {
+          "areaId": "70046",
+          "distanceToBoundaryMeters": 1026.2,
+          "containsStop": false
+        },
+        {
+          "areaId": "70039",
+          "distanceToBoundaryMeters": 1055.8,
+          "containsStop": false
+        },
+        {
+          "areaId": "70060",
+          "distanceToBoundaryMeters": 1069.8,
+          "containsStop": false
+        },
+        {
+          "areaId": "70048",
+          "distanceToBoundaryMeters": 1101.0,
+          "containsStop": false
+        },
+        {
+          "areaId": "70041",
+          "distanceToBoundaryMeters": 1105.9,
+          "containsStop": false
+        },
+        {
+          "areaId": "70043",
+          "distanceToBoundaryMeters": 1597.6,
+          "containsStop": false
+        },
+        {
+          "areaId": "70053",
+          "distanceToBoundaryMeters": 1765.3,
+          "containsStop": false
+        },
+        {
+          "areaId": "70070",
+          "distanceToBoundaryMeters": 1802.6,
+          "containsStop": false
+        },
+        {
+          "areaId": "70037",
+          "distanceToBoundaryMeters": 1810.8,
+          "containsStop": false
+        },
+        {
+          "areaId": "70067",
+          "distanceToBoundaryMeters": 1867.3,
+          "containsStop": false
+        },
+        {
+          "areaId": "70047",
+          "distanceToBoundaryMeters": 2252.8,
+          "containsStop": false
+        },
+        {
+          "areaId": "70049",
+          "distanceToBoundaryMeters": 2315.9,
+          "containsStop": false
+        },
+        {
+          "areaId": "70076",
+          "distanceToBoundaryMeters": 2790.4,
+          "containsStop": false
+        },
+        {
+          "areaId": "70051",
+          "distanceToBoundaryMeters": 2817.9,
+          "containsStop": false
+        },
+        {
+          "areaId": "70036",
+          "distanceToBoundaryMeters": 2867.2,
+          "containsStop": false
+        },
+        {
+          "areaId": "70054",
+          "distanceToBoundaryMeters": 2914.8,
+          "containsStop": false
+        },
+        {
+          "areaId": "70065",
+          "distanceToBoundaryMeters": 2959.3,
+          "containsStop": false
+        }
+      ],
+      "boundaryStatus": "mapped"
+    }
+  ]
+}

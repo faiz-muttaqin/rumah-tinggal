@@ -1170,6 +1170,159 @@
           "url": "https://bpbd.jakarta.go.id/ppid/berita/2372/update-info-terkini-genangan-18-januari-2026-s-d-pukul-18-00-wib"
         }
       ]
+    },
+    {
+      "id": "banjir-ciputat-bantuan-2026-01-23",
+      "kind": "banjir",
+      "title": "Catatan banjir Kelurahan Ciputat",
+      "date": "2026-01-23",
+      "basis": "Rilis",
+      "region": "Tangerang Selatan",
+      "scope": "kelurahan",
+      "place": "Kelurahan Ciputat",
+      "summary": "Dinsos menyalurkan bantuan untuk warga terdampak pada 23 Januari; tanggal bantuan, bukan waktu pasti mulai banjir.",
+      "sources": [
+        {
+          "url": "https://berita.tangerangselatankota.go.id/berita/pemkot-tangsel-salurkan-bantuan-untuk-masyarakat-terdampak-banjir",
+          "label": "Pemkot Tangsel · 24 Januari 2026"
+        }
+      ]
+    },
+    {
+      "id": "banjir-pondok-kacang-timur-bantuan-2026-01-23",
+      "kind": "banjir",
+      "title": "Catatan banjir Kelurahan Pondok Kacang Timur",
+      "date": "2026-01-23",
+      "basis": "Rilis",
+      "region": "Tangerang Selatan",
+      "scope": "kelurahan",
+      "place": "Kelurahan Pondok Kacang Timur",
+      "summary": "Dinsos mendukung dapur umum warga terdampak. Tanggal bantuan, bukan waktu pasti mulai banjir.",
+      "sources": [
+        {
+          "url": "https://berita.tangerangselatankota.go.id/berita/pemkot-tangsel-salurkan-bantuan-untuk-masyarakat-terdampak-banjir",
+          "label": "Pemkot Tangsel · 24 Januari 2026"
+        }
+      ]
+    },
+    {
+      "id": "banjir-rawabuntu-puskesmas-2025-06-02",
+      "kind": "banjir",
+      "title": "Catatan banjir Puskesmas RW 02 Rawa Buntu",
+      "date": "2025-06-02",
+      "basis": "Rilis",
+      "region": "Tangerang Selatan",
+      "scope": "lingkungan",
+      "place": "Puskesmas RW 02 Rawa Buntu",
+      "summary": "Tinjauan Pemkot bersama BPBD; area Puskesmas pernah tergenang hingga sebetis. Tanggal peninjauan, bukan koordinat kejadian atau bukti risiko hunian.",
+      "sources": [
+        {
+          "url": "https://dsdabmbk.tangerangselatankota.go.id/blog/s/wakil-wali-kota-tinjau-tiga-titik-banjir-di-tangsel-dorong-solusi-teknis-permanen-40",
+          "label": "DSDABMBK Tangsel · 13 Juni 2025"
+        }
+      ]
+    },
+    {
+      "id": "banjir-citra-prima-serpong-dua-2025-06-02",
+      "kind": "banjir",
+      "title": "Catatan banjir Perumahan Citra Prima Serpong Dua",
+      "date": "2025-06-02",
+      "basis": "Rilis",
+      "region": "Tangerang Selatan",
+      "scope": "lingkungan",
+      "place": "Perumahan Citra Prima Serpong Dua",
+      "summary": "Pemkot meninjau perumahan terdampak; rencana pelebaran saluran dan peninggian turap. Tidak ditemukan koordinat resmi lokasi terdampak pada rilis.",
+      "sources": [
+        {
+          "url": "https://dsdabmbk.tangerangselatankota.go.id/blog/s/wakil-wali-kota-tinjau-tiga-titik-banjir-di-tangsel-dorong-solusi-teknis-permanen-40",
+          "label": "DSDABMBK Tangsel · 13 Juni 2025"
+        }
+      ]
+    },
+    {
+      "id": "banjir-perumahan-lagon-kranggan-2025-06-02",
+      "kind": "banjir",
+      "title": "Catatan banjir Perumahan Lagon, Kelurahan Kranggan",
+      "date": "2025-06-02",
+      "basis": "Rilis",
+      "region": "Tangerang Selatan",
+      "scope": "lingkungan",
+      "place": "Perumahan Lagon, Kelurahan Kranggan",
+      "summary": "Tinjauan Pemkot: panel dinding pengembang roboh akibat tekanan air. Tanggal peninjauan; lokasi unit tidak diketahui.",
+      "sources": [
+        {
+          "url": "https://dsdabmbk.tangerangselatankota.go.id/blog/s/wakil-wali-kota-tinjau-tiga-titik-banjir-di-tangsel-dorong-solusi-teknis-permanen-40",
+          "label": "DSDABMBK Tangsel · 13 Juni 2025"
+        }
+      ]
+    },
+    {
+      "id": "banjir-pondok-maharta-2026-01-22",
+      "kind": "banjir",
+      "title": "Catatan banjir Pondok Maharta",
+      "date": "2026-01-22",
+      "basis": "Rilis",
+      "region": "Tangerang Selatan",
+      "scope": "lingkungan",
+      "place": "Pondok Maharta",
+      "summary": "Data DSDABMBK mencantumkan lokasi tergenang 22 Januari 2026. Rilis memberi rentang surut agregat 1–5 jam, bukan durasi pasti untuk lokasi ini. Tanpa koordinat terverifikasi.",
+      "sources": [
+        {
+          "url": "https://dsdabmbk.tangerangselatankota.go.id/blog/s/cuaca-ekstrem-titik-banjir-di-tangsel-berkurang-sdabmbk-buktikan-penanganan-banjir-berjalan-efektif-52",
+          "label": "DSDABMBK Tangsel · 30 Januari 2026"
+        }
+      ]
+    },
+    {
+      "id": "banjir-kampung-bulak-2026-01-22",
+      "kind": "banjir",
+      "title": "Catatan banjir Kampung Bulak",
+      "date": "2026-01-22",
+      "basis": "Rilis",
+      "region": "Tangerang Selatan",
+      "scope": "lingkungan",
+      "place": "Kampung Bulak",
+      "summary": "Data DSDABMBK mencantumkan lokasi tergenang 22 Januari 2026. Rilis memberi rentang surut agregat 1–5 jam, bukan durasi pasti untuk lokasi ini. Tanpa koordinat terverifikasi.",
+      "sources": [
+        {
+          "url": "https://dsdabmbk.tangerangselatankota.go.id/blog/s/cuaca-ekstrem-titik-banjir-di-tangsel-berkurang-sdabmbk-buktikan-penanganan-banjir-berjalan-efektif-52",
+          "label": "DSDABMBK Tangsel · 30 Januari 2026"
+        }
+      ]
+    },
+    {
+      "id": "banjir-graha-mas-serpong-2026-01-22",
+      "kind": "banjir",
+      "title": "Catatan banjir Graha Mas Serpong",
+      "date": "2026-01-22",
+      "basis": "Rilis",
+      "region": "Tangerang Selatan",
+      "scope": "lingkungan",
+      "place": "Graha Mas Serpong",
+      "summary": "Data DSDABMBK mencantumkan lokasi tergenang 22 Januari 2026. Rilis memberi rentang surut agregat 1–5 jam, bukan durasi pasti untuk lokasi ini. Tanpa koordinat terverifikasi.",
+      "sources": [
+        {
+          "url": "https://dsdabmbk.tangerangselatankota.go.id/blog/s/cuaca-ekstrem-titik-banjir-di-tangsel-berkurang-sdabmbk-buktikan-penanganan-banjir-berjalan-efektif-52",
+          "label": "DSDABMBK Tangsel · 30 Januari 2026"
+        }
+      ]
+    },
+    {
+      "id": "banjir-empang-sari-ciputat-2026-01-22",
+      "kind": "banjir",
+      "title": "Catatan banjir Empang Sari Ciputat",
+      "date": "2026-01-22",
+      "basis": "Rilis",
+      "region": "Tangerang Selatan",
+      "scope": "lingkungan",
+      "place": "Empang Sari Ciputat",
+      "summary": "Data DSDABMBK mencantumkan lokasi tergenang 22 Januari 2026. Rilis memberi rentang surut agregat 1–5 jam, bukan durasi pasti untuk lokasi ini. Tanpa koordinat terverifikasi.",
+      "sources": [
+        {
+          "url": "https://dsdabmbk.tangerangselatankota.go.id/blog/s/cuaca-ekstrem-titik-banjir-di-tangsel-berkurang-sdabmbk-buktikan-penanganan-banjir-berjalan-efektif-52",
+          "label": "DSDABMBK Tangsel · 30 Januari 2026"
+        }
+      ]
     }
   ],
   "reportLocalities": {
@@ -1367,6 +1520,21 @@
       "city": "Jakarta Utara",
       "locality": "Penjaringan",
       "bigCode": "31.72.01.1001"
+    },
+    "banjir-ciputat-bantuan-2026-01-23": {
+      "city": "Kota Tangerang Selatan",
+      "locality": "Ciputat",
+      "bigCode": "36.74.04.1003"
+    },
+    "banjir-pondok-kacang-timur-bantuan-2026-01-23": {
+      "city": "Kota Tangerang Selatan",
+      "locality": "Pondok Kacang Timur",
+      "bigCode": "36.74.03.1007"
+    },
+    "banjir-rawabuntu-puskesmas-2025-06-02": {
+      "city": "Kota Tangerang Selatan",
+      "locality": "Rawabuntu",
+      "bigCode": "36.74.01.1002"
     }
   },
   "sourceRegistry": [
@@ -1503,6 +1671,21 @@
       "purpose": "Pembaruan genangan dan surut jalan Penjaringan 19 Januari pukul 06.00",
       "url": "https://bpbd.jakarta.go.id/berita/S2VxKzl2QXJ5N29VUE9ud296eTJUQT09/update-info-terkini-genangan-19-januari-2026-s-d-pukul-06-00-wib",
       "status": "official BPBD release read; roads only; no fabricated point"
+    },
+    {
+      "url": "https://berita.tangerangselatankota.go.id/berita/pemkot-tangsel-salurkan-bantuan-untuk-masyarakat-terdampak-banjir",
+      "purpose": "Bantuan warga terdampak di Ciputat dan Pondok Kacang Timur",
+      "status": "official municipal release read; dated report, not coordinate or risk label"
+    },
+    {
+      "url": "https://dsdabmbk.tangerangselatankota.go.id/blog/s/wakil-wali-kota-tinjau-tiga-titik-banjir-di-tangsel-dorong-solusi-teknis-permanen-40",
+      "purpose": "Peninjauan tiga lokasi terdampak di Serpong dan Setu",
+      "status": "official municipal release read; dated report, not coordinate or risk label"
+    },
+    {
+      "url": "https://dsdabmbk.tangerangselatankota.go.id/blog/s/cuaca-ekstrem-titik-banjir-di-tangsel-berkurang-sdabmbk-buktikan-penanganan-banjir-berjalan-efektif-52",
+      "purpose": "Data kejadian genangan 22 Januari di Tangsel",
+      "status": "official municipal release read; dated report, not coordinate or risk label"
     }
   ]
 }
