@@ -4,7 +4,19 @@ export interface MapCoordinates {
 }
 
 // Gedung Artha Graha, SCBD Lot 25. Building reference point, not an entrance.
-export const ARTHA_GRAHA_SCBD: MapCoordinates = { lat: -6.2246, lng: 106.8109 };
+export const ARTHA_GRAHA_SCBD = {
+  lat: -6.2246,
+  lng: 106.8109,
+  name: "Gedung Artha Graha",
+  area: "SCBD Lot 25",
+};
+
+// Map pin for Gedung Artha Graha, from the Google Maps place page. The 8 km filter
+// and route links keep ARTHA_GRAHA_SCBD so their boundary does not move.
+export const ARTHA_GRAHA_PIN: MapCoordinates = {
+  lat: -6.2244179,
+  lng: 106.8105479,
+};
 
 function coordinates(point: MapCoordinates): string {
   return `${point.lat},${point.lng}`;
@@ -53,7 +65,7 @@ export function googleMapsRoute(
 export function googleMapsToScbd(origin: MapCoordinates): string {
   return mapsUrl("dir/", {
     origin: coordinates(origin),
-    destination: "Gedung Artha Graha, SCBD Lot 25, Jakarta",
+    destination: `${ARTHA_GRAHA_SCBD.name}, ${ARTHA_GRAHA_SCBD.area}, Jakarta`,
     travelmode: "transit",
   });
 }

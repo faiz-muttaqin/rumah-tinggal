@@ -136,6 +136,7 @@ $("app").innerHTML = `
         <label class="layer-control" title="Masjid, sekolah, dan TK dari OpenStreetMap · tampil saat peta diperbesar">${icon("pin")} <span class="community-label">Masjid & sekolah</span><input id="community-toggle" aria-label="Masjid dan sekolah sekitar" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control">${icon("home")} Bangunan <input id="buildings-toggle" aria-label="Bangunan pada peta" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
         <label class="layer-control">${icon("pin")} Hunian <input id="listings-toggle" aria-label="Marker dan detail hunian" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
+        <label class="layer-control" title="Pin tempat kerja di kawasan bisnis">${pinIcon("kantor")} <span class="community-label">Tempat kerja</span><input id="workplaces-toggle" aria-label="Tempat kerja" type="checkbox"/><span class="switch" aria-hidden="true"></span></label>
         ${incidentKinds
           .map((kind) => {
             const { label, icon: layerIcon, color } = INCIDENT_LAYERS[kind];
@@ -1202,6 +1203,12 @@ $("kajian-toggle").onchange = () => {
 $("buildings-toggle").onchange = () => {
   void map?.showBuildings($<HTMLInputElement>("buildings-toggle").checked);
 };
+$<HTMLInputElement>("workplaces-toggle").onchange = (event) => {
+  void map?.showWorkplaces(
+    (event.currentTarget as HTMLInputElement).checked,
+    true,
+  );
+};
 listingsToggle.onchange = () => {
   if (!listingsToggle.checked) clearSelection();
   render();
@@ -1584,6 +1591,7 @@ async function start(): Promise<void> {
     void map.showKajian($<HTMLInputElement>("kajian-toggle").checked);
     void map.showBuildings($<HTMLInputElement>("buildings-toggle").checked);
     void map.showCommunity($<HTMLInputElement>("community-toggle").checked);
+    void map.showWorkplaces($<HTMLInputElement>("workplaces-toggle").checked);
     void map.showRail($<HTMLInputElement>("rail-toggle").checked);
     for (const [id, mode] of transitToggles)
       void map.showTransit(mode, $<HTMLInputElement>(id).checked);

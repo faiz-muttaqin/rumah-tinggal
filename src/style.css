@@ -973,6 +973,36 @@ select {
   outline-offset: 1px;
   z-index: 4;
 }
+.workplace-marker {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: var(--pin);
+  color: white;
+  box-shadow: 0 2px 5px #17262655;
+  cursor: pointer;
+  z-index: 2;
+}
+.workplace-marker:hover,
+.workplace-marker:focus-visible {
+  outline: 2px solid var(--pin);
+  outline-offset: 1px;
+}
+.workplace-popup {
+  z-index: 5;
+}
+.workplace-popup h2 {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.workplace-popup p {
+  margin: 4px 0;
+}
 .rental-layer-options small {
   font-size: 10px;
   font-weight: 500;

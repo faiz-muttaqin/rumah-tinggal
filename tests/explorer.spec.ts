@@ -1,7 +1,11 @@
 import { readFile } from "node:fs/promises";
 import { expect, type Page, test } from "@playwright/test";
 import { incidents } from "../src/incidents.ts";
-import { googleMapsLocation } from "../src/maps-links.ts";
+import {
+  ARTHA_GRAHA_PIN,
+  ARTHA_GRAHA_SCBD,
+  googleMapsLocation,
+} from "../src/maps-links.ts";
 import type {
   BookmarkChange,
   BookmarkLibrary,
@@ -1658,6 +1662,43 @@ test("shows historical flood and crime reports in independent opt-in map layers"
   await expect(page.locator("#listings-toggle")).not.toBeChecked();
 });
 
+test("toggles a small Artha Graha workplace pin independently of the housing layer", async ({
+  page,
+}) => {
+  await openMapLayers(page);
+  const toggle = page.getByRole("checkbox", { name: "Tempat kerja" });
+  const housing = page.getByRole("checkbox", {
+    name: "Marker dan detail hunian",
+  });
+  const pin = mapRegion(page).getByRole("button", {
+    name: ARTHA_GRAHA_SCBD.name,
+  });
+  const popup = page.locator(".workplace-popup");
+  await expect(toggle).not.toBeChecked();
+  await expect(pin).toHaveCount(0);
+
+  await toggle.check();
+  await expect(pin).toBeVisible();
+  await expect(pin).toHaveCSS("width", "24px");
+  await expect(housing).not.toBeChecked();
+  await pin.press("Enter");
+  await expect(popup.getByRole("heading")).toHaveText(ARTHA_GRAHA_SCBD.name);
+  await expect(popup).toContainText("SCBD Lot 25");
+  await expect(
+    popup.getByRole("link", { name: /Google Maps/ }),
+  ).toHaveAttribute("href", googleMapsLocation(ARTHA_GRAHA_PIN));
+
+  await toggle.uncheck();
+  await expect(pin).toHaveCount(0);
+  await expect(popup).toHaveCount(0);
+  await housing.check();
+  await toggle.check();
+  await expect(pin).toHaveCount(1);
+  await toggle.uncheck();
+  await expect(pin).toHaveCount(0);
+  await expect(housing).toBeChecked();
+});
+
 test("filters the Cikarang–MRT corridor and the Artha Graha radius together", async ({
   page,
 }) => {
@@ -2156,7 +2197,7 @@ test.describe("mobile explorer", () => {
     await expect(detail).toBeVisible();
     await openMapLayers(page);
     const switches = page.getByRole("checkbox");
-    await expect(switches).toHaveCount(10);
+    await expect(switches).toHaveCount(11);
     for (const control of await switches.all())
       await expect(control).toBeVisible();
     const bounds = await Promise.all(
@@ -2175,7 +2216,7 @@ test.describe("mobile explorer", () => {
       if (row) row.count++;
       else rows.push({ top: bound.y, count: 1 });
     }
-    expect(rows.map((row) => row.count)).toEqual([3, 3, 3, 1]);
+    expect(rows.map((row) => row.count)).toEqual([3, 3, 3, 2]);
     await expectNoHorizontalOverflow(page);
 
     const expected: Record<MobilityLayer, boolean> = {

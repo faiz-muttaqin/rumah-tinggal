@@ -17,7 +17,11 @@ import {
   incidentPopup,
   incidents,
 } from "./incidents.ts";
-import { googleMapsLocation } from "./maps-links.ts";
+import {
+  ARTHA_GRAHA_PIN,
+  ARTHA_GRAHA_SCBD,
+  googleMapsLocation,
+} from "./maps-links.ts";
 import { PIN_STYLES, pinIcon } from "./pins.ts";
 import {
   RENTAL_MAP_GROUPS,
@@ -107,6 +111,7 @@ export class HousingMap {
   private pinPopup?: Popup;
   private mosquePopup?: Popup;
   private rentalPopup?: Popup;
+  private workplace?: { marker: Marker; popup: Popup };
   private incidentMarkers = new Map<IncidentKind, Marker[]>();
   private openIncidentPopup?: { kind: IncidentKind; popup: Popup };
   private areaLocked = true;
@@ -893,6 +898,52 @@ export class HousingMap {
 
   closeMosque(): void {
     this.mosquePopup?.remove();
+  }
+
+  async showWorkplaces(visible: boolean, focus = false): Promise<void> {
+    await this.ready;
+    if (!visible) {
+      this.workplace?.popup.remove();
+      this.workplace?.marker.remove();
+      this.workplace = undefined;
+      return;
+    }
+    if (this.workplace) return;
+
+    const { name, area } = ARTHA_GRAHA_SCBD;
+    const { lng, lat } = ARTHA_GRAHA_PIN;
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "workplace-marker";
+    button.title = name;
+    button.setAttribute("aria-label", name);
+    button.style.setProperty("--pin", PIN_STYLES.kantor.color);
+    button.innerHTML = pinIcon("kantor", 14);
+    const popup = new maplibregl.Popup({
+      className: "workplace-popup",
+      maxWidth: "240px",
+      focusAfterOpen: false,
+      offset: 14,
+    })
+      .setLngLat([lng, lat])
+      .setHTML(
+        `<h2>${escapeHTML(name)}</h2><p>Tempat kerja · ${escapeHTML(area)}</p><a href="${escapeHTML(googleMapsLocation(ARTHA_GRAHA_PIN))}" target="_blank" rel="noopener noreferrer">Buka Google Maps ↗</a>`,
+      );
+    button.onclick = (event) => {
+      event.stopPropagation();
+      if (popup.isOpen()) popup.remove();
+      else popup.addTo(this.map);
+    };
+    const marker = new maplibregl.Marker({ element: button })
+      .setLngLat([lng, lat])
+      .addTo(this.map);
+    this.workplace = { marker, popup };
+    if (focus)
+      this.map.flyTo({
+        center: [lng, lat],
+        zoom: Math.max(13, this.map.getZoom()),
+        duration: 500,
+      });
   }
 
   async showIncidents(
