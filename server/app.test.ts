@@ -18,7 +18,13 @@ import {
   researchToListing,
   researchToPin,
 } from "../src/research-data.ts";
-import type { Listing } from "../src/types.ts";
+import type {
+  BookmarkChange,
+  BookmarkLibrary,
+  Listing,
+  OwnedBookmark,
+  SharedBookmark,
+} from "../src/types.ts";
 import { researchFixture } from "../tests/research-fixture.ts";
 import { createApp, readConfig } from "./app.ts";
 import { AuthError } from "./auth.ts";
@@ -361,6 +367,332 @@ test("saved rentals isolate accounts and share notes with revocable links", asyn
     (await stat(join(dataDir, "saved-rentals.sqlite"))).mode & 0o777,
     0o600,
   );
+});
+
+test("named collections scope collaboration and record atomic edits", async (t) => {
+  const { api, distDir, app, dataDir } = await fixture(t);
+  await mkdir(join(distDir, "data"));
+  await writeFile(
+    join(distDir, "data", "properties.geojson"),
+    JSON.stringify(researchFixture),
+  );
+  const [first, second] = researchFixture.metadata.rentals.rentals;
+  const library = "/api/bookmark-collections";
+  const shared = "/api/shared-bookmark-collection";
+  const collectionFrom = async (response: Response) =>
+    (await response.json()).collection as OwnedBookmark;
+  assert.equal((await api(library, "GET", undefined, null)).status, 401);
+  assert.equal((await api(library, "POST", { name: "  " })).status, 400);
+  assert.equal(
+    (await api(library, "POST", { name: "Gagal", rentalId: "missing" })).status,
+    404,
+  );
+  assert.deepEqual(
+    ((await (await api(library)).json()) as BookmarkLibrary).collections,
+    [],
+  );
+
+  let owned = await collectionFrom(
+    await api(library, "POST", { name: "Pilihan survei", rentalId: first.id }),
+  );
+  const privateCopy = await collectionFrom(
+    await api(library, "POST", { name: "Catatan pribadi", rentalId: first.id }),
+  );
+  const path = `${library}/${owned.id}`;
+  const item = `/items/${first.id}`;
+  assert.equal(owned.items[0].rental.rentalId, first.id);
+  assert.equal((await api(path, "GET", undefined, "bob")).status, 404);
+  assert.equal(
+    (await api(`${path}/history`, "GET", undefined, "bob")).status,
+    404,
+  );
+  owned = await collectionFrom(
+    await api(`${path}${item}`, "PATCH", {
+      revision: owned.revision,
+      note: "Catatan sebelum",
+    }),
+  );
+  const duplicate = await collectionFrom(
+    await api(`${path}${item}`, "PUT", { revision: owned.revision - 1 }),
+  );
+  assert.equal(duplicate.revision, owned.revision);
+  owned = await collectionFrom(
+    await api(`${path}/share`, "PUT", {
+      revision: owned.revision,
+      permission: "view",
+    }),
+  );
+  assert.ok(owned.share);
+  const token = owned.share.token;
+  const guest = (
+    suffix = "",
+    method = "GET",
+    body?: unknown,
+    user: string | null = null,
+  ) =>
+    api(`${shared}${suffix}`, method, body, user, APP_ORIGIN, {
+      "X-Rental-Share": token,
+    });
+  const publicView = await guest();
+  assert.equal(publicView.headers.get("cache-control"), "no-store");
+  const { collection: visible } = (await publicView.json()) as {
+    collection: SharedBookmark;
+  };
+  assert.deepEqual(Object.keys(visible).sort(), [
+    "items",
+    "name",
+    "permission",
+    "revision",
+  ]);
+  assert.equal(visible.items[0].rental.note, "Catatan sebelum");
+  assert.equal(
+    (await guest(`${item}/comments`, "POST", { text: "Tamu" })).status,
+    401,
+  );
+  assert.equal(
+    (await guest(`${item}/comments`, "POST", { text: "Tamu" }, "bob")).status,
+    403,
+  );
+  assert.equal(
+    (
+      await guest(
+        item,
+        "PATCH",
+        { revision: owned.revision, note: "Gagal" },
+        "bob",
+      )
+    ).status,
+    403,
+  );
+
+  owned = await collectionFrom(
+    await api(`${path}/share`, "PUT", {
+      revision: owned.revision,
+      permission: "comment",
+    }),
+  );
+  assert.equal(owned.share?.token, token);
+  assert.equal(
+    (await guest(`${item}/comments`, "POST", { text: "Boleh survei?" }, "bob"))
+      .status,
+    201,
+  );
+  assert.equal(
+    (
+      await guest(
+        item,
+        "PATCH",
+        { revision: owned.revision, note: "Gagal" },
+        "bob",
+      )
+    ).status,
+    403,
+  );
+  owned = await collectionFrom(
+    await api(`${path}/share`, "PUT", {
+      revision: owned.revision,
+      permission: "edit",
+    }),
+  );
+  assert.equal((await guest("/history")).status, 404);
+  assert.equal(
+    (
+      await guest(
+        "/share",
+        "PUT",
+        { revision: owned.revision, permission: "view" },
+        "bob",
+      )
+    ).status,
+    403,
+  );
+  const simultaneous = await Promise.all([
+    guest(
+      item,
+      "PATCH",
+      { revision: owned.revision, note: "Catatan editor" },
+      "bob",
+    ),
+    api(`${path}${item}`, "PATCH", {
+      revision: owned.revision,
+      note: "Catatan pemilik",
+    }),
+  ]);
+  assert.deepEqual(
+    simultaneous.map((response) => response.status).sort(),
+    [200, 409],
+  );
+  let current = await collectionFrom(await api(path));
+  const earlierNote = current.items[0].rental.note;
+  const updated = await guest(
+    item,
+    "PATCH",
+    { revision: current.revision, note: "Catatan sesudah", amount: 2_100_000 },
+    "bob",
+  );
+  assert.equal(updated.status, 200);
+  current = await collectionFrom(await api(path));
+  assert.equal(current.items[0].comments[0].text, "Boleh survei?");
+  assert.equal(
+    (await collectionFrom(await api(`${library}/${privateCopy.id}`))).items[0]
+      .rental.note,
+    "",
+  );
+  assert.equal(
+    (
+      await guest(
+        "",
+        "PATCH",
+        { revision: current.revision, name: "Siap survei" },
+        "bob",
+      )
+    ).status,
+    200,
+  );
+  current = await collectionFrom(await api(path));
+  assert.equal(current.name, "Siap survei");
+  assert.equal(
+    (
+      await guest(
+        `/items/${second.id}`,
+        "PUT",
+        { revision: current.revision },
+        "bob",
+      )
+    ).status,
+    200,
+  );
+  current = await collectionFrom(await api(path));
+  assert.equal(current.items.length, 2);
+  assert.equal(
+    (await guest(item, "DELETE", { revision: current.revision }, "bob")).status,
+    200,
+  );
+  current = await collectionFrom(await api(path));
+  assert.deepEqual(
+    current.items.map(({ rental }) => rental.rentalId),
+    [second.id],
+  );
+  const { changes } = (await (await api(`${path}/history`)).json()) as {
+    changes: BookmarkChange[];
+  };
+  assert.equal(changes[0].action, "remove");
+  assert.ok(
+    changes[0].fields.some((field) => field.before === "Catatan sesudah"),
+  );
+  assert.deepEqual(
+    changes.find(
+      (change) =>
+        change.action === "edit" &&
+        change.fields.some((field) => field.key === "amount"),
+    )?.fields,
+    [
+      { key: "note", before: earlierNote, after: "Catatan sesudah" },
+      { key: "amount", before: first.rent.amount, after: 2_100_000 },
+    ],
+  );
+  assert.equal(changes[0].author, "Kolaborator");
+  assert.deepEqual(
+    changes.map((change) => change.revision),
+    Array.from({ length: current.revision }, (_, i) => current.revision - i),
+  );
+
+  const revoked = await collectionFrom(
+    await api(`${path}/share`, "DELETE", { revision: current.revision }),
+  );
+  assert.equal(revoked.share, null);
+  assert.equal((await guest()).status, 404);
+  assert.equal(
+    (
+      await guest(
+        `/items/${second.id}`,
+        "PATCH",
+        { revision: revoked.revision, note: "Terlambat" },
+        "bob",
+      )
+    ).status,
+    404,
+  );
+  await app.close();
+  const reopened = new SavedRentalStore(dataDir);
+  try {
+    const retained = reopened.bookmarks.history(
+      { id: current.id, ownerUid: "alice" },
+      Number.MAX_SAFE_INTEGER,
+    );
+    assert.equal(retained.changes[0].action, "share");
+    assert.ok(
+      retained.changes.some(
+        (change) => change.author === "Kolaborator" && change.action === "edit",
+      ),
+    );
+  } finally {
+    reopened.close();
+  }
+});
+
+test("earlier saved rentals enter a private collection once and keep legacy links", async (t) => {
+  const { api, distDir, dataDir, app } = await fixture(t);
+  await mkdir(join(distDir, "data"));
+  await writeFile(
+    join(distDir, "data", "properties.geojson"),
+    JSON.stringify(researchFixture),
+  );
+  const [first, second] = researchFixture.metadata.rentals.rentals;
+  const old = `/api/saved-rentals/${first.id}`;
+  assert.equal((await api(old, "PUT")).status, 200);
+  await api(old, "PATCH", { note: "Catatan lama" });
+  const legacy = (await (await api(`${old}/share`, "PUT")).json()).rental;
+  const path = "/api/bookmark-collections";
+  const browse = (await (await api(path)).json()) as BookmarkLibrary;
+  assert.equal(browse.hasLegacyRentals, true);
+  const [summary] = browse.collections;
+  assert.equal(summary.name, "Simpanan lama");
+  assert.deepEqual(summary.rentalIds, [first.id]);
+  const collection = (await (await api(`${path}/${summary.id}`)).json())
+    .collection as OwnedBookmark;
+  assert.equal(collection.share, null);
+  assert.equal(collection.items[0].rental.note, "Catatan lama");
+  assert.equal(
+    (
+      await api("/api/shared-rentals", "GET", undefined, null, null, {
+        "X-Rental-Share": legacy.shareToken,
+      })
+    ).status,
+    200,
+  );
+
+  assert.equal(
+    (await api(`/api/saved-rentals/${second.id}`, "PUT")).status,
+    200,
+  );
+  assert.deepEqual(
+    ((await (await api(path)).json()) as BookmarkLibrary).collections,
+    browse.collections,
+  );
+  assert.equal(
+    (
+      await api(`${path}/${summary.id}/items/${first.id}`, "DELETE", {
+        revision: summary.revision,
+      })
+    ).status,
+    200,
+  );
+  await app.close();
+  const reopened = new SavedRentalStore(dataDir);
+  try {
+    const owners = reopened.bookmarks.list({
+      uid: "alice",
+      email: "alice@example.invalid",
+    });
+    assert.deepEqual(owners.collections[0].rentalIds, []);
+    assert.equal(
+      reopened.shared(legacy.shareToken)?.rental.note,
+      "Catatan lama",
+    );
+  } finally {
+    reopened.close();
+  }
 });
 
 test("listing creation and deletion stay isolated by verified owner", async (t) => {

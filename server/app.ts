@@ -9,12 +9,15 @@ import { extname, isAbsolute, relative, resolve } from "node:path";
 import {
   type AppConfig,
   AREAS,
+  BOOKMARK_PERMISSIONS,
+  type BookmarkPermission,
   type Listing,
   PIN_CATEGORIES,
   type Pin,
   type SavedRentalFields,
 } from "../src/types.ts";
 import { AuthError, createTokenVerifier, type TokenVerifier } from "./auth.ts";
+import { type BookmarkAccess, BookmarkError } from "./bookmark-collections.ts";
 import {
   createPhotonSearch,
   createRateLimiter,
@@ -235,6 +238,34 @@ function inputObject(value: unknown): Record<string, unknown> {
   if (!value || typeof value !== "object" || Array.isArray(value))
     throw new HttpError(400, "Isian tidak valid.");
   return value as Record<string, unknown>;
+}
+
+const bookmarksPath = "/api/bookmark-collections";
+const sharedBookmarkPath = "/api/shared-bookmark-collection";
+const rentalIdPattern = /^[A-Za-z0-9_-]{1,160}$/;
+
+function bookmarkName(value: unknown): string {
+  if (typeof value !== "string" || !value.trim() || value.length > 120)
+    throw new HttpError(400, "Isi nama koleksi hingga 120 karakter.");
+  return value.trim();
+}
+
+function bookmarkRevision(value: unknown): number {
+  if (typeof value !== "number" || !Number.isSafeInteger(value) || value < 1)
+    throw new HttpError(400, "Versi koleksi tidak valid.");
+  return value;
+}
+
+function bookmarkPermission(value: unknown): BookmarkPermission {
+  if (!BOOKMARK_PERMISSIONS.includes(value as BookmarkPermission))
+    throw new HttpError(400, "Izin koleksi tidak valid.");
+  return value as BookmarkPermission;
+}
+
+function commentText(value: unknown): string {
+  if (typeof value !== "string" || !value.trim() || value.length > 2000)
+    throw new HttpError(400, "Isi komentar 1–2.000 karakter.");
+  return value.trim();
 }
 
 function savedRentalFields(value: unknown): Partial<SavedRentalFields> {
@@ -529,6 +560,130 @@ export function createApp(options: AppOptions = {}) {
   const clientLimit = createRateLimiter(40);
   const globalLimit = createRateLimiter(300);
   const commentLimit = createRateLimiter(30);
+  const bookmarks = savedStore.bookmarks;
+
+  async function handleBookmarks(
+    request: IncomingMessage,
+    response: ServerResponse,
+    path: string,
+  ): Promise<void> {
+    const method = request.method;
+    const shared =
+      path === sharedBookmarkPath || path.startsWith(`${sharedBookmarkPath}/`);
+    const identity =
+      !shared || method !== "GET"
+        ? await authenticate(request, verifyRental)
+        : undefined;
+    if (path === bookmarksPath && identity) {
+      if (method === "GET")
+        return json(response, 200, bookmarks.list(identity));
+      if (method === "POST") {
+        checkWriteOrigin(request, config);
+        const { name, rentalId } = inputObject(await readJson(request));
+        const label = bookmarkName(name);
+        let rental: Awaited<ReturnType<typeof catalogRental>>;
+        if (rentalId !== undefined) {
+          if (typeof rentalId !== "string" || !rentalIdPattern.test(rentalId))
+            throw new HttpError(400, "Iklan sewa tidak valid.");
+          rental = await catalogRental(rentalId);
+          if (!rental) throw new HttpError(404, "Iklan sewa tidak ditemukan.");
+        }
+        return json(response, 201, {
+          collection: bookmarks.create(identity, label, rental),
+        });
+      }
+      throw new HttpError(405, "Metode tidak diizinkan.");
+    }
+    const owner = shared
+      ? null
+      : path.slice(bookmarksPath.length).match(/^\/([a-f0-9-]{36})(\/.*)?$/);
+    let access: BookmarkAccess;
+    let section: string;
+    if (shared) {
+      access = { token: readShareToken(request) };
+      section = path.slice(sharedBookmarkPath.length);
+    } else if (owner && identity) {
+      access = { id: owner[1], ownerUid: identity.uid };
+      section = owner[2] ?? "";
+    } else {
+      throw new HttpError(404, "Koleksi tidak ditemukan.");
+    }
+
+    if (method === "GET") {
+      if (!section)
+        return json(response, 200, { collection: bookmarks.read(access) });
+      if (section === "/history" && "ownerUid" in access) {
+        const query = new URL(
+          request.url ?? "/",
+          "http://local",
+        ).searchParams.get("before");
+        const before =
+          query === null
+            ? Number.MAX_SAFE_INTEGER
+            : bookmarkRevision(Number(query));
+        return json(response, 200, bookmarks.history(access, before));
+      }
+      throw new HttpError(404, "Koleksi tidak ditemukan.");
+    }
+    if (!identity) throw new AuthError();
+    checkWriteOrigin(request, config);
+    const item = section.match(
+      /^\/items\/([A-Za-z0-9_-]{1,160})(\/comments)?$/,
+    );
+    if (item?.[2] && method === "POST") {
+      const { text } = inputObject(await readJson(request));
+      if (!commentLimit(identity.uid))
+        throw new HttpError(429, "Terlalu banyak komentar. Coba lagi nanti.");
+      return json(response, 201, {
+        comment: bookmarks.comment(
+          access,
+          identity,
+          item[1],
+          commentText(text),
+        ),
+      });
+    }
+    if (section === "/share" && !("ownerUid" in access))
+      throw new HttpError(403, "Akses berbagi diatur oleh pemilik.");
+    const input = inputObject(await readJson(request));
+    const revision = bookmarkRevision(input.revision);
+    if (!section && method === "PATCH") {
+      bookmarks.rename(access, identity, revision, bookmarkName(input.name));
+    } else if (
+      section === "/share" &&
+      "ownerUid" in access &&
+      (method === "PUT" || method === "DELETE")
+    ) {
+      bookmarks.share(
+        access,
+        identity,
+        revision,
+        method === "PUT" ? bookmarkPermission(input.permission) : null,
+      );
+    } else if (item && !item[2] && method === "PUT") {
+      bookmarks.add(
+        access,
+        identity,
+        revision,
+        item[1],
+        await catalogRental(item[1]),
+      );
+    } else if (item && !item[2] && method === "PATCH") {
+      bookmarks.edit(
+        access,
+        identity,
+        revision,
+        item[1],
+        savedRentalFields(input),
+      );
+    } else if (item && !item[2] && method === "DELETE") {
+      bookmarks.remove(access, identity, revision, item[1]);
+    } else {
+      throw new HttpError(405, "Metode tidak diizinkan.");
+    }
+    json(response, 200, { collection: bookmarks.read(access) });
+  }
+
   const server = createServer((request, response) => {
     response.setHeader("X-Content-Type-Options", "nosniff");
     response.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
@@ -579,6 +734,15 @@ export function createApp(options: AppOptions = {}) {
         json(response, 200, { places });
         return;
       }
+      if (
+        path === bookmarksPath ||
+        path.startsWith(`${bookmarksPath}/`) ||
+        path === sharedBookmarkPath ||
+        path.startsWith(`${sharedBookmarkPath}/`)
+      ) {
+        await handleBookmarks(request, response, path);
+        return;
+      }
       if (path === "/api/shared-rentals" && request.method === "GET") {
         const shared = savedStore.shared(readShareToken(request));
         if (!shared) throw new HttpError(404, "Tautan hunian tidak tersedia.");
@@ -593,11 +757,9 @@ export function createApp(options: AppOptions = {}) {
         checkWriteOrigin(request, config);
         const token = readShareToken(request);
         const { text } = inputObject(await readJson(request));
-        if (typeof text !== "string" || !text.trim() || text.length > 2000)
-          throw new HttpError(400, "Isi komentar 1–2.000 karakter.");
         if (!commentLimit(identity.uid))
           throw new HttpError(429, "Terlalu banyak komentar. Coba lagi nanti.");
-        const comment = savedStore.comment(token, identity, text.trim());
+        const comment = savedStore.comment(token, identity, commentText(text));
         if (!comment) {
           if (!savedStore.shared(token))
             throw new HttpError(404, "Tautan hunian tidak tersedia.");
@@ -722,7 +884,11 @@ export function createApp(options: AppOptions = {}) {
       );
     })().catch((error: unknown) => {
       if (response.headersSent || response.destroyed) return;
-      if (error instanceof HttpError || error instanceof AuthError) {
+      if (
+        error instanceof HttpError ||
+        error instanceof AuthError ||
+        error instanceof BookmarkError
+      ) {
         json(response, error.status, { error: error.message });
       } else {
         json(response, 500, { error: "Permintaan belum dapat diproses." });

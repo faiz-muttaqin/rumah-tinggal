@@ -2,7 +2,12 @@ import { readFile } from "node:fs/promises";
 import { expect, type Page, test } from "@playwright/test";
 import { incidents } from "../src/incidents.ts";
 import { googleMapsLocation } from "../src/maps-links.ts";
-import type { Listing, RentalComment, SavedRental } from "../src/types.ts";
+import type {
+  BookmarkChange,
+  Listing,
+  OwnedBookmark,
+  SavedRentalEntry,
+} from "../src/types.ts";
 import { readExcel } from "./excel-workbook.ts";
 import { mockListingAccount } from "./listing-account.ts";
 import { researchFixture } from "./research-fixture.ts";
@@ -1243,28 +1248,15 @@ test("resizes a frozen column and exports every filtered row in CSV and Excel or
   expect(sheet.rows.at(-1)?.Hunian).toBe("Ekspor Uji 0");
 });
 
-test("saves and edits a rental, lets guests read, and accepts comments after login", async ({
+test("saves rentals from the table and cards into a named collection with share and history controls", async ({
   page,
-  browser,
 }) => {
-  test.setTimeout(60_000);
-  const useDomOnly = (target: Page) =>
-    target.addInitScript(() => {
-      const getContext = HTMLCanvasElement.prototype.getContext;
-      Object.defineProperty(HTMLCanvasElement.prototype, "getContext", {
-        value(this: HTMLCanvasElement, type: string, ...options: unknown[]) {
-          return type.includes("webgl")
-            ? null
-            : Reflect.apply(getContext, this, [type, ...options]);
-        },
-      });
-    });
-  await useDomOnly(page);
   await mockListingAccount(page, []);
-  const base = researchFixture.metadata.rentals.rentals[0];
+  const [first, second] = researchFixture.metadata.rentals.rentals;
+  const id = "00000000-0000-4000-8000-000000000001";
   const token = "a".repeat(32);
   const now = "2026-11-26T00:00:00.000Z";
-  const rental: SavedRental = {
+  const rental = (base: typeof first | typeof second): SavedRentalEntry => ({
     rentalId: base.id,
     title: base.title,
     locationText: base.locationText,
@@ -1272,115 +1264,159 @@ test("saves and edits a rental, lets guests read, and accepts comments after log
     sourceUrl: base.listingUrl,
     location: null,
     amount: base.rent.amount,
-    period: base.rent.period as "monthly" | "yearly",
+    period: base.rent.period as SavedRentalEntry["period"],
     minimumMonths: null,
     note: "",
     savedAt: now,
     updatedAt: now,
-    shareToken: null,
+  });
+  const collection: OwnedBookmark = {
+    id,
+    name: "",
+    items: [],
+    revision: 1,
+    share: null,
   };
-  const requests: string[] = [];
-  let hasSaved = false;
-  await page.route("**/api/saved-rentals**", (route) => {
+  const changes: BookmarkChange[] = [];
+  await page.route("**/api/bookmark-collections**", (route) => {
     const request = route.request();
     const path = new URL(request.url()).pathname;
-    const method = request.method();
-    requests.push(method);
-    if (method === "GET")
-      return route.fulfill({ json: { rentals: hasSaved ? [rental] : [] } });
-    if (path.endsWith("/share"))
-      rental.shareToken = method === "PUT" ? token : null;
-    else if (method === "PUT") hasSaved = true;
-    else if (method === "PATCH") Object.assign(rental, request.postDataJSON());
-    return route.fulfill({ json: { rental } });
+    if (path === "/api/bookmark-collections" && request.method() === "GET") {
+      const { id, name, revision } = collection;
+      return route.fulfill({
+        json: {
+          collections: name
+            ? [
+                {
+                  id,
+                  name,
+                  revision,
+                  rentalIds: collection.items.map(
+                    ({ rental }) => rental.rentalId,
+                  ),
+                },
+              ]
+            : [],
+          hasLegacyRentals: false,
+        },
+      });
+    }
+    if (path.endsWith("/history"))
+      return route.fulfill({ json: { changes, next: null } });
+    if (request.method() === "POST") {
+      const { name, rentalId } = request.postDataJSON();
+      expect(rentalId).toBe(first.id);
+      collection.name = name;
+      collection.items = [{ rental: rental(first), comments: [] }];
+    } else if (path.endsWith("/share")) {
+      collection.share = {
+        token,
+        permission: request.postDataJSON().permission,
+      };
+    } else if (request.method() === "PATCH") {
+      const before = collection.items[0].rental.note;
+      Object.assign(collection.items[0].rental, request.postDataJSON());
+      changes.push({
+        revision: collection.revision + 1,
+        action: "edit",
+        item: first.title,
+        author: "Pemilik",
+        createdAt: now,
+        fields: [
+          {
+            key: "note",
+            before,
+            after: collection.items[0].rental.note,
+          },
+        ],
+      });
+    } else if (request.method() === "PUT") {
+      expect(path.endsWith(second.id)).toBe(true);
+      collection.items.push({ rental: rental(second), comments: [] });
+    }
+    if (request.method() !== "GET") collection.revision++;
+    return route.fulfill({ json: { collection } });
   });
   await page.goto("/?koleksi=sewa&tampilan=tabel");
   await expect(page.locator("#account-label")).toContainText("Keluar");
   const table = page.locator("#rental-table");
-  const row = table.locator(`[data-rental="${base.id}"]`);
-  const owner = page.getByRole("dialog", { name: "Simpanan hunian" });
-  await row.getByRole("button", { name: "Simpan hunian" }).click();
-  await expect(owner.getByLabel("Nama simpanan")).toHaveValue(base.title);
-  await owner.getByLabel("Nama simpanan").fill("Hunian pilihan survei");
-  await owner.getByLabel("Harga sewa (Rp)").fill("2400000");
-  await owner
+  await table
+    .locator(`[data-rental="${first.id}"]`)
+    .getByRole("button", { name: "Simpan hunian" })
+    .click();
+  const picker = page.getByRole("dialog", { name: "Simpanan hunian" });
+  await picker.getByLabel("Nama koleksi baru").fill("Pilihan survei");
+  await picker.getByRole("button", { name: "Buat koleksi dan simpan" }).click();
+  const detail = page.getByRole("dialog", { name: "Pilihan survei" });
+  await detail.getByText("Edit hunian dan catatan", { exact: true }).click();
+  await detail
     .getByRole("textbox", { name: "Catatan", exact: true })
-    .fill("Cek ventilasi dapur.\nBawa meteran.");
-  await owner.getByRole("button", { name: "Simpan perubahan" }).click();
-  await expect(owner.getByRole("status")).toHaveText("Perubahan tersimpan.");
-  await owner.getByRole("button", { name: "Aktifkan tautan" }).click();
-  const url = await owner.getByLabel("Tautan berbagi").inputValue();
-  expect(new URL(url).search).toBe("");
-  expect(new URL(url).hash).toBe(`#bagikan=${token}`);
+    .fill("Cek ventilasi dapur.");
+  await detail.getByRole("button", { name: "Simpan perubahan" }).click();
+  await expect(detail.getByRole("status")).toHaveText(
+    "Perubahan tersimpan di riwayat.",
+  );
+  await detail.getByRole("button", { name: "Isi koleksi" }).click();
+  await detail.getByLabel("Izin tautan").selectOption("edit");
+  await detail.getByRole("button", { name: "Aktifkan tautan" }).click();
+  const link = await detail.getByLabel("Tautan koleksi").inputValue();
+  expect(new URL(link).search).toBe("");
+  expect(new URL(link).hash).toBe(`#bagikan-koleksi=${token}`);
+  await detail.getByRole("button", { name: "Riwayat edit" }).click();
+  await expect(detail).toContainText("Sebelum");
+  await expect(detail).toContainText("Sesudah");
+  await expect(detail).toContainText("Cek ventilasi dapur.");
+  await detail.getByRole("button", { name: "Tutup koleksi simpanan" }).click();
 
-  const guest = await browser.newPage();
-  const comments: RentalComment[] = [];
-  try {
-    await useDomOnly(guest);
-    await guest.route("**/tiles.openfreemap.org/**", (route) => route.abort());
-    await guest.route("**/api/shared-rentals**", (route) => {
-      const request = route.request();
-      expect(request.headers()["x-rental-share"]).toBe(token);
-      if (!rental.shareToken)
-        return route.fulfill({
-          status: 404,
-          json: { error: "Tautan dinonaktifkan" },
-        });
-      if (request.method() === "POST") {
-        expect(request.headers().authorization).toMatch(/^Bearer /);
-        const comment = {
-          id: "uji",
-          author: "Tamu Uji",
-          text: request.postDataJSON().text,
-          createdAt: now,
-        };
-        comments.push(comment);
-        return route.fulfill({ status: 201, json: { comment } });
-      }
-      const { shareToken: _, ...details } = rental;
-      return route.fulfill({ json: { rental: details, comments } });
-    });
-    await guest.goto(url, { waitUntil: "domcontentloaded" });
-    const shared = guest.getByRole("dialog", { name: "Hunian yang dibagikan" });
-    await expect(shared).toContainText("Hunian pilihan survei");
-    await expect(shared).toContainText("Cek ventilasi dapur.");
-    await expect(
-      shared.getByRole("button", {
-        name: "Masuk dengan Google untuk berkomentar",
-      }),
-    ).toBeVisible();
-    await expect(shared.getByLabel("Nama simpanan")).toHaveCount(0);
-    await expect(shared.getByLabel("Tulis komentar")).toHaveCount(0);
-    await mockListingAccount(guest, []);
-    await guest.reload({ waitUntil: "domcontentloaded" });
-    await shared
-      .getByLabel("Tulis komentar")
-      .fill("Boleh cek daya listrik juga?");
-    await shared.getByRole("button", { name: "Kirim komentar" }).click();
-    await expect(shared).toContainText("Boleh cek daya listrik juga?");
-    await expect(shared).toContainText("Tamu Uji");
+  await table.getByRole("button", { name: "Ke kartu" }).click();
+  await page
+    .getByTestId("map-rental-card")
+    .filter({ hasText: second.title })
+    .getByRole("button", { name: "Simpan hunian" })
+    .click();
+  await picker.getByRole("button", { name: /Pilihan survei/ }).click();
+  await expect(
+    detail.getByRole("heading", { name: second.title }),
+  ).toBeVisible();
+  await detail.getByRole("button", { name: "Isi koleksi" }).click();
+  await expect(
+    detail.getByRole("button", { name: new RegExp(first.title) }),
+  ).toBeVisible();
+  await expect(
+    detail.getByRole("button", { name: new RegExp(second.title) }),
+  ).toBeVisible();
+});
 
-    await page.bringToFront();
-    await page.reload({ waitUntil: "domcontentloaded" });
-    await table
-      .getByRole("button", { name: "Simpanan hunian", exact: true })
-      .click();
-    await owner.getByRole("button", { name: /Hunian pilihan survei/ }).click();
-    await expect(
-      owner.getByRole("textbox", { name: "Catatan", exact: true }),
-    ).toHaveValue("Cek ventilasi dapur.\nBawa meteran.");
-    await owner.getByRole("button", { name: "Nonaktifkan tautan" }).click();
-    await expect(owner.getByRole("status")).toHaveText("Tautan dinonaktifkan.");
-    await guest.bringToFront();
-    await guest.reload({ waitUntil: "domcontentloaded" });
-    await expect(shared.getByRole("status")).toHaveText(
-      "Tautan hunian tidak tersedia.",
-    );
-    expect(requests).toContain("PATCH");
-    expect(requests).toContain("DELETE");
-  } finally {
-    await guest.close();
-  }
+test("opens a legacy single-rental link with its note and guest access", async ({
+  page,
+}) => {
+  await page.route("**/api/shared-rentals", (route) =>
+    route.fulfill({
+      json: {
+        rental: {
+          title: "Hunian lama uji",
+          kind: "Rumah",
+          locationText: "Bekasi",
+          amount: 1_000_000,
+          period: "monthly",
+          sourceUrl: "https://portal.example.invalid/old",
+          note: "Catatan dari tautan lama.",
+        },
+        comments: [],
+      },
+    }),
+  );
+  await page.goto(`/#bagikan=${"b".repeat(32)}`);
+  const shared = page.getByRole("dialog", { name: "Hunian yang dibagikan" });
+  await expect(shared).toContainText("Catatan dari tautan lama.");
+  await expect(
+    shared.getByRole("button", {
+      name: "Masuk dengan Google untuk berkomentar",
+    }),
+  ).toBeVisible();
+  await expect(
+    shared.getByRole("button", { name: "Simpan perubahan" }),
+  ).toHaveCount(0);
 });
 
 test("shows historical flood and crime reports in independent opt-in map layers", async ({

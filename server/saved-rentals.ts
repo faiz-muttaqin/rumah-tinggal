@@ -9,6 +9,7 @@ import type {
   SharedRental,
 } from "../src/types.ts";
 import type { Identity } from "./auth.ts";
+import { BookmarkStore } from "./bookmark-collections.ts";
 import { openDatabase } from "./store.ts";
 
 type CatalogRental = {
@@ -78,6 +79,7 @@ function ownerEntry(row: Record<string, SQLOutputValue>): SavedRental {
 
 export class SavedRentalStore {
   private database: ReturnType<typeof openDatabase>;
+  readonly bookmarks: BookmarkStore;
 
   constructor(directory: string) {
     this.database = openDatabase(directory, "saved-rentals.sqlite");
@@ -111,6 +113,7 @@ export class SavedRentalStore {
         CREATE INDEX IF NOT EXISTS rental_comments_thread
           ON rental_comments(share_token, created_at, id);
       `);
+      this.bookmarks = new BookmarkStore(this.database);
     } catch (error) {
       this.database.close();
       throw error;

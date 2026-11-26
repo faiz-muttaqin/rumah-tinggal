@@ -15,7 +15,7 @@ import "./saved-rentals.css";
 const collectionPath = "/api/saved-rentals";
 const sharedPath = "/api/shared-rentals";
 type View =
-  | { kind: "list"; pending?: string }
+  | { kind: "list" }
   | { kind: "edit"; id: string }
   | { kind: "shared"; token: string; details?: SharedRental };
 
@@ -29,7 +29,7 @@ function shareUrl(token: string): string {
   return url.href;
 }
 
-function saveLabel(saved: boolean): string {
+export function saveLabel(saved: boolean): string {
   return saved ? "Buka simpanan" : "Simpan hunian";
 }
 
@@ -42,16 +42,16 @@ export function rentalSaveButton(
   return `<button type="button" class="rental-save-button${compact ? " is-compact" : " button"}" data-save-rental="${esc(id)}" data-saved="${saved}" aria-label="${label}" title="${label}">${icon("bookmark")}${compact ? "" : `<span>${label}</span>`}</button>`;
 }
 
-function rentalPrice(rental: SavedRentalEntry): string {
+export function rentalPrice(rental: SavedRentalEntry): string {
   return `Rp ${rental.amount.toLocaleString("id-ID")} / ${rental.period === "yearly" ? "tahun" : "bulan"}${rental.minimumMonths ? ` · min. ${rental.minimumMonths} bulan` : ""}`;
 }
 
-function rentalLinks(rental: SavedRentalEntry): string {
+export function rentalLinks(rental: SavedRentalEntry): string {
   const external = 'target="_blank" rel="noopener noreferrer"';
   return `<div class="saved-rental-links"><a href="${esc(safeUrl(rental.sourceUrl))}" ${external}>Iklan sumber ↗</a>${rental.location ? `<a href="${esc(googleMapsLocation(rental.location))}" ${external}>Titik di Google Maps ↗</a>` : ""}</div>`;
 }
 
-function formFields(form: HTMLFormElement): SavedRentalFields {
+export function formFields(form: HTMLFormElement): SavedRentalFields {
   const values = new FormData(form);
   const minimum = values.get("minimumMonths");
   return {
@@ -62,6 +62,12 @@ function formFields(form: HTMLFormElement): SavedRentalFields {
     minimumMonths: minimum ? Number(minimum) : null,
     note: String(values.get("note")),
   };
+}
+
+export function rentalEditFields(rental: SavedRentalEntry): string {
+  return `<label>Nama simpanan<input name="title" required maxlength="200" value="${esc(rental.title)}"/></label><label>Kawasan<input name="locationText" required maxlength="240" value="${esc(rental.locationText)}"/></label>
+      <div class="form-grid"><label>Harga sewa (Rp)<input type="number" name="amount" min="1" step="1" required value="${rental.amount}"/></label><label>Periode<select name="period"><option value="monthly">Bulanan</option><option value="yearly" ${rental.period === "yearly" ? "selected" : ""}>Tahunan</option></select></label></div>
+      <label>Minimum sewa (bulan)<input type="number" name="minimumMonths" min="1" max="120" step="1" value="${rental.minimumMonths ?? ""}"/></label><label>Catatan<textarea name="note" rows="4" maxlength="4000" placeholder="Hal yang perlu dicek saat survei…">${esc(rental.note)}</textarea></label>`;
 }
 
 export class SavedRentals {
@@ -107,42 +113,23 @@ export class SavedRentals {
       this.body.replaceChildren();
       this.feedback.textContent = "";
     };
-    document.addEventListener("click", (event) => {
-      const trigger = (event.target as Element).closest<HTMLButtonElement>(
-        "[data-save-rental], [data-open-saved-rentals]",
-      );
-      if (trigger?.dataset.saveRental)
-        void this.openRental(trigger.dataset.saveRental);
-      else if (trigger) this.openList();
-    });
     window.addEventListener("hashchange", () => this.checkHash());
     this.checkHash();
   }
 
-  has(id: string): boolean {
-    return this.entries.has(id);
-  }
-
   authChanged(): void {
-    const pending = this.view?.kind === "list" ? this.view.pending : undefined;
     this.accountVersion++;
     this.entries.clear();
-    this.syncButtons();
     if (this.view?.kind === "shared") {
       if (this.view.details) this.renderShared(this.view.details);
     } else if (this.dialog.open) {
-      if (pending && getUser()) {
-        void this.openRental(pending);
-      } else {
-        this.openList();
-      }
+      this.openList();
     }
-    if (getUser() && this.view?.kind !== "list") void this.loadList();
   }
 
-  private openList(pending?: string): void {
-    const view = { kind: "list", pending } as const;
-    this.show(view, "Simpanan hunian");
+  openList(): void {
+    const view = { kind: "list" } as const;
+    this.show(view, "Simpanan hunian lama");
     if (!getUser()) {
       this.body.innerHTML = `<p>Masuk untuk menyimpan hunian dan membuka catatanmu.</p><button type="button" class="button primary" data-saved-action="login">Masuk dengan Google</button>`;
       return;
@@ -163,7 +150,6 @@ export class SavedRentals {
       this.entries = new Map(
         rentals.map((rental) => [rental.rentalId, rental]),
       );
-      this.syncButtons();
       if (view && this.current(view)) this.renderList();
     } catch (error) {
       if (view && account === this.accountVersion && this.current(view))
@@ -177,16 +163,16 @@ export class SavedRentals {
     );
     this.body.innerHTML = rentals.length
       ? `<ul class="saved-rental-list">${rentals.map((rental) => `<li><button type="button" data-saved-action="edit" data-id="${esc(rental.rentalId)}"><strong>${esc(rental.title)}</strong><span>${esc(rentalPrice(rental))}</span><span>${esc(rental.locationText)}${rental.shareToken ? " · Dibagikan" : ""}</span></button></li>`).join("")}</ul>`
-      : "<p>Gunakan tombol simpan di tabel, kartu, atau pin hunian untuk mulai.</p>";
+      : "<p>Belum ada simpanan dari versi sebelumnya.</p>";
   }
 
   private async openRental(id: string): Promise<void> {
     if (!getUser()) {
-      this.openList(id);
+      this.openList();
       return;
     }
     const view = { kind: "edit", id } as const;
-    this.show(view, "Simpanan hunian");
+    this.show(view, "Simpanan hunian lama");
     const existing = this.entries.get(id);
     if (existing) {
       this.renderEditor(existing);
@@ -198,9 +184,7 @@ export class SavedRentals {
 
   private renderEditor(rental: SavedRental): void {
     this.body.innerHTML = `<button type="button" class="text-button" data-saved-action="list">← Semua simpanan</button>${rentalLinks(rental)}
-      <form data-saved-edit><label>Nama simpanan<input name="title" required maxlength="200" value="${esc(rental.title)}"/></label><label>Kawasan<input name="locationText" required maxlength="240" value="${esc(rental.locationText)}"/></label>
-      <div class="form-grid"><label>Harga sewa (Rp)<input type="number" name="amount" min="1" step="1" required value="${rental.amount}"/></label><label>Periode<select name="period"><option value="monthly">Bulanan</option><option value="yearly" ${rental.period === "yearly" ? "selected" : ""}>Tahunan</option></select></label></div>
-      <label>Minimum sewa (bulan)<input type="number" name="minimumMonths" min="1" max="120" step="1" value="${rental.minimumMonths ?? ""}"/></label><label>Catatan<textarea name="note" rows="4" maxlength="4000" placeholder="Hal yang perlu dicek saat survei…">${esc(rental.note)}</textarea></label><button class="button primary" type="submit">Simpan perubahan</button></form>
+      <form data-saved-edit>${rentalEditFields(rental)}<button class="button primary" type="submit">Simpan perubahan</button></form>
       <section class="saved-share-panel" data-saved-sharing></section><button type="button" class="text-button saved-remove" data-saved-action="remove">Hapus simpanan</button>`;
     this.renderSharing(rental);
   }
@@ -312,7 +296,6 @@ export class SavedRentals {
         if (account !== this.accountVersion) return;
         this.listVersion++;
         this.entries.delete(view.id);
-        this.syncButtons();
         if (this.current(view)) this.openList();
       } else {
         const { rental } = await privateAPI<{ rental: SavedRental }>(
@@ -421,21 +404,6 @@ export class SavedRentals {
   private record(rental: SavedRental): void {
     this.listVersion++;
     this.entries.set(rental.rentalId, rental);
-    this.syncButtons();
-  }
-
-  private syncButtons(): void {
-    for (const button of document.querySelectorAll<HTMLButtonElement>(
-      "[data-save-rental]",
-    )) {
-      const saved = this.has(button.dataset.saveRental ?? "");
-      const label = saveLabel(saved);
-      button.dataset.saved = String(saved);
-      button.setAttribute("aria-label", label);
-      button.title = label;
-      const text = button.querySelector("span");
-      if (text) text.textContent = label;
-    }
   }
 
   private show(view: View, heading: string): void {

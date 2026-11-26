@@ -10,6 +10,7 @@ import {
   logout,
   privateAPI,
 } from "./auth.ts";
+import { BookmarkCollections } from "./bookmark-collections.ts";
 import { demoListings } from "./demo.ts";
 import {
   createExcelBlob,
@@ -199,7 +200,11 @@ const listingsToggle = $<HTMLInputElement>("listings-toggle");
 let pickingPoint: "listing" | "pin" | undefined;
 let toastTimer: ReturnType<typeof setTimeout>;
 let exporting = false;
-const savedRentals = new SavedRentals();
+const legacyRentals = new SavedRentals();
+const savedRentals = new BookmarkCollections(
+  () => researchData?.rentals?.rentals ?? [],
+  () => legacyRentals.openList(),
+);
 const rentalTable = new RentalTable($("rental-table"), $("explorer"), {
   change: render,
   isSaved: (id) => savedRentals.has(id),
@@ -1622,6 +1627,7 @@ async function start(): Promise<void> {
   if (configResult.status === "fulfilled") {
     try {
       await initializeAuth(configResult.value, (user) => {
+        legacyRentals.authChanged();
         savedRentals.authChanged();
         privateListings = [];
         privateOwnerUid = undefined;
