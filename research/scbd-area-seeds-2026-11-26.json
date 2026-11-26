@@ -1,0 +1,1230 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-26",
+  "anchor": {
+    "name": "SCBD (approximate district centre; replace with office entrance when known)",
+    "lat": -6.2262,
+    "lng": 106.8098,
+    "source": "https://en.wikipedia.org/wiki/Sudirman_Central_Business_District"
+  },
+  "limits": {
+    "straightLineKm": 8,
+    "roadKm": 10,
+    "monthlyRentIdr": 5000000,
+    "includeRule": "straight-line OR road, evaluated independently; unknown is not eligible"
+  },
+  "sources": [
+    "https://surveilans-dinkes.jakarta.go.id/sarsbaru/umum_kel.php",
+    "https://selatan.jakarta.go.id/pemerintahan/kelurahan",
+    "https://pusat.jakarta.go.id/daftar-kelurahan",
+    "https://gis-dpmptsp.jakarta.go.id/arcgis/rest/services/Hosted/Batas_Administrasi_Kelurahan_DKI_Jakarta/FeatureServer/85",
+    "https://jdih.jakarta.go.id/tarikDataLokasi"
+  ],
+  "note": "Manual intentionally overinclusive seed; not an exhaustive polygon result. Border areas may fall outside both limits; office point is not a polygon or unit pin. Road-only leads may lie beyond 8km up to 10km straight line. Include Greater Jakarta boundaries in future query.",
+  "areas": [
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "name": "Senayan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "name": "Selong",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "name": "Rawa Barat",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "name": "Petogogan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "name": "Pulo",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "name": "Melawai",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "name": "Gunung",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "name": "Kramat Pela",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "name": "Gandaria Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "name": "Cipete Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "name": "Karet Semanggi",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "name": "Karet Kuningan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "name": "Karet",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "name": "Setiabudi",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "name": "Guntur",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "name": "Menteng Atas",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "name": "Pasar Manggis",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "name": "Kuningan Timur",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "name": "Kuningan Barat",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "name": "Mampang Prapatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "name": "Pela Mampang",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "name": "Tegal Parang",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "name": "Bangka",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "name": "Menteng Dalam",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "name": "Tebet Barat",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "name": "Tebet Timur",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "name": "Kebon Baru",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "name": "Bukit Duri",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "name": "Manggarai",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "name": "Manggarai Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "name": "Pancoran",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "name": "Duren Tiga",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "name": "Kalibata",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "name": "Rawajati",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "name": "Pengadegan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "name": "Cikoko",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "name": "Grogol Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "name": "Grogol Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "name": "Cipulir",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "name": "Kebayoran Lama Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "name": "Kebayoran Lama Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "name": "Pondok Pinang",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "name": "Pejaten Barat",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "name": "Pejaten Timur",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "name": "Jati Padang",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "name": "Pasar Minggu",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "name": "Cilandak Timur",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "name": "Ragunan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "name": "Cipete Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "name": "Gandaria Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "name": "Cilandak Barat",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "name": "Lebak Bulus",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "name": "Pondok Labu",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "name": "Ulujami",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "name": "Pesanggrahan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "name": "Petukangan Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "name": "Petukangan Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "name": "Bintaro",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "name": "Bendungan Hilir",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "name": "Karet Tengsin",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "name": "Petamburan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "name": "Kebon Melati",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "name": "Kebon Kacang",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "name": "Kampung Bali",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "name": "Gelora",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "name": "Menteng",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "name": "Pegangsaan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "name": "Cikini",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "name": "Gondangdia",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "name": "Kebon Sirih",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "name": "Gambir",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "name": "Cideng",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "name": "Petojo Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "name": "Petojo Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "name": "Kebon Kelapa",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "name": "Duri Pulo",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "name": "Senen",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "name": "Kenari",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "name": "Paseban",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "name": "Kramat",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "name": "Kwitang",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "name": "Bungur",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "name": "Johar Baru",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "name": "Kampung Rawa",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "name": "Galur",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "name": "Tanah Tinggi",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Cempaka Putih",
+      "name": "Rawasari",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Cempaka Putih",
+      "name": "Cempaka Putih Barat",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Cempaka Putih",
+      "name": "Cempaka Putih Timur",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "name": "Pasar Baru",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "name": "Karang Anyar",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "name": "Gunung Sahari Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "name": "Mangga Dua Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "name": "Kartini",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "name": "Gunung Sahari Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "name": "Serdang",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "name": "Harapan Mulia",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "name": "Cempaka Baru",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "name": "Utan Panjang",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "name": "Kebon Kosong",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "name": "Kemayoran",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "name": "Sumur Batu",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "name": "Palmerah",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "name": "Slipi",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "name": "Kemanggisan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "name": "Jatipulo",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "name": "Kota Bambu Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "name": "Kota Bambu Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "name": "Kebon Jeruk",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "name": "Kelapa Dua",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "name": "Sukabumi Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "name": "Sukabumi Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "name": "Kedoya Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "name": "Kedoya Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "name": "Duri Kepa",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "name": "Grogol",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "name": "Tomang",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "name": "Tanjung Duren Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "name": "Tanjung Duren Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "name": "Jelambar",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "name": "Jelambar Baru",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "name": "Wijaya Kusuma",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "name": "Meruya Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "name": "Meruya Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "name": "Srengseng",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "name": "Joglo",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "name": "Kembangan Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "name": "Duri Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "name": "Duri Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "name": "Jembatan Besi",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "name": "Tanah Sereal",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "name": "Krendang",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "name": "Angke",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "name": "Jembatan Lima",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "name": "Roa Malaka",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "name": "Kebon Manggis",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "name": "Pal Meriam",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "name": "Kayu Manis",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "name": "Pisangan Baru",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "name": "Utan Kayu Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "name": "Utan Kayu Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "name": "Bali Mester",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "name": "Kampung Melayu",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "name": "Bidara Cina",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "name": "Rawa Bunga",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "name": "Cipinang Cempedak",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "name": "Cipinang Besar Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "name": "Cipinang Besar Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "name": "Cipinang Muara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "name": "Cawang",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "name": "Cililitan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "name": "Kramat Jati",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "name": "Batu Ampar",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "name": "Balekambang",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "name": "Kampung Tengah",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "name": "Dukuh",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "name": "Rawamangun",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "name": "Kayu Putih",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "name": "Pisangan Timur",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "name": "Cipinang",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "name": "Rempoa",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "name": "Rengas",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "name": "Cireundeu",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "name": "Pisangan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Pondok Aren",
+      "name": "Pondok Ranji",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Pondok Aren",
+      "name": "Pondok Karya",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Pondok Aren",
+      "name": "Pondok Betung",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "name": "Larangan Utara",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "name": "Larangan Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "name": "Kreo",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "name": "Kreo Selatan",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "name": "Gaga",
+      "geometryStatus": "unverified",
+      "searchStatus": "seed"
+    }
+  ]
+}
