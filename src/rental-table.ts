@@ -36,7 +36,14 @@ import "./rental-table.css";
 
 const modes = ["KRL", "MRT", "LRT", "TransJakarta"] as const;
 export const RENTAL_RAIL_CORRIDOR = "cikarang-mrt";
+export const RENTAL_KRL_CORRIDOR = "cikarang-sudirman";
 export const RENTAL_SCBD_RADIUS = "8km";
+type CorridorMode = typeof RENTAL_RAIL_CORRIDOR | typeof RENTAL_KRL_CORRIDOR;
+
+export function isRentalCorridor(mode: string | null): mode is CorridorMode {
+  return mode === RENTAL_RAIL_CORRIDOR || mode === RENTAL_KRL_CORRIDOR;
+}
+
 const railRadiusKm = 1.2;
 const scbdRadiusKm = 8;
 const cikarangStops = [
@@ -70,6 +77,7 @@ type Row = {
   scbdKm?: number;
   stops: Partial<Record<Mode, Stop>>;
   corridorStop?: Stop;
+  krlCorridorStop?: Stop;
 };
 type Column = {
   id: string;
@@ -532,7 +540,7 @@ export class RentalTable {
           <select name="scbd" aria-label="Radius Artha Graha SCBD" title="Jarak garis lurus dari pin hunian ke Gedung Artha Graha"><option value="">Semua jarak SCBD</option><option value="${RENTAL_SCBD_RADIUS}">≤ 8 km Artha Graha</option></select>
           <select name="kind" aria-label="Jenis hunian di tabel"><option value="">Semua jenis</option>${RENTAL_MAP_GROUPS.map((g) => `<option value="${g.id}">${g.label}</option>`).join("")}</select>
           <select name="area" aria-label="Wilayah di tabel"><option value="">Semua wilayah</option>${AREAS.map((a) => `<option>${a}</option>`).join("")}</select>
-          <select name="mode" aria-label="Angkutan dekat hunian"><option value="">Semua angkutan</option><option value="${RENTAL_RAIL_CORRIDOR}">Cikarang–Sudirman + MRT</option>${modes.map((m) => `<option>${m}</option>`).join("")}</select>
+          <select name="mode" aria-label="Angkutan dekat hunian"><option value="">Semua angkutan</option><option value="${RENTAL_KRL_CORRIDOR}">KRL Cikarang–Sudirman</option><option value="${RENTAL_RAIL_CORRIDOR}">Cikarang–Sudirman + MRT</option>${modes.map((m) => `<option>${m}</option>`).join("")}</select>
           <select name="station" aria-label="Stasiun di koridor" hidden><option value="">Semua stasiun koridor</option></select>
           <label class="rent-table-kitchen"><input type="checkbox" name="kitchen"/> Dapur dalam unit</label>
           <select name="freeze" aria-label="Bekukan kolom kiri">${Array.from({ length: 5 }, (_, i) => `<option value="${i}">${i ? `Bekukan ${i} kolom` : "Tanpa kolom beku"}</option>`).join("")}</select>
@@ -742,9 +750,24 @@ export class RentalTable {
   }
 
   private syncCorridor(): void {
-    const active = this.select("mode").value === RENTAL_RAIL_CORRIDOR;
-    this.select("station").hidden = !active;
-    if (!active) this.select("station").value = "";
+    const mode = this.select("mode").value;
+    const active = isRentalCorridor(mode);
+    const stations = this.select("station");
+    const krlOnly = mode === RENTAL_KRL_CORRIDOR;
+    const mrt = stations.querySelector<HTMLOptGroupElement>(
+      'optgroup[data-mode="MRT"]',
+    );
+    if (mrt) {
+      mrt.disabled = krlOnly;
+      mrt.hidden = krlOnly;
+    }
+    if (
+      !active ||
+      (krlOnly && this.corridorStations.get(stations.value)?.mode === "MRT")
+    ) {
+      stations.value = "";
+    }
+    stations.hidden = !active;
     const guide = element<HTMLDetailsElement>(
       this.panel,
       ".rent-table-corridor",
@@ -753,8 +776,8 @@ export class RentalTable {
     if (!active) guide.open = false;
   }
 
-  showRailCorridor(): void {
-    this.select("mode").value = RENTAL_RAIL_CORRIDOR;
+  showRailCorridor(mode: CorridorMode): void {
+    this.select("mode").value = mode;
     this.syncCorridor();
   }
 
@@ -886,16 +909,17 @@ export class RentalTable {
     const corridor = [...krl, ...mrt];
     this.corridorStations = new Map(corridor.map((s) => [s.id, s]));
     const groups = [
-      ["KRL Cikarang–Sudirman", krl],
-      ["MRT Lebak Bulus–Bundaran HI", mrt],
+      ["KRL", "KRL Cikarang–Sudirman", krl],
+      ["MRT", "MRT Lebak Bulus–Bundaran HI", mrt],
     ] as const;
     this.select("station").innerHTML =
       `<option value="">Semua stasiun koridor</option>${groups
         .map(
-          ([label, stops]) =>
-            `<optgroup label="${label}">${stops.map((s) => `<option value="${esc(s.id)}">${esc(s.name)}</option>`).join("")}</optgroup>`,
+          ([mode, label, stops]) =>
+            `<optgroup data-mode="${mode}" label="${label}">${stops.map((s) => `<option value="${esc(s.id)}">${esc(s.name)}</option>`).join("")}</optgroup>`,
         )
         .join("")}`;
+    this.syncCorridor();
     this.rows.clear();
     for (const rental of rentals) {
       const near = rental.nearbyMosques?.[0];
@@ -914,6 +938,7 @@ export class RentalTable {
         for (const [mode, items] of byMode)
           row.stops[mode] = nearestStation(rental.location, items);
         row.corridorStop = nearestStation(rental.location, corridor);
+        row.krlCorridorStop = nearestStation(rental.location, krl);
       }
       this.rows.set(rental.id, row);
     }
@@ -921,11 +946,13 @@ export class RentalTable {
 
   private stop(row: Row): Stop | undefined {
     const mode = this.select("mode").value;
-    if (mode === RENTAL_RAIL_CORRIDOR) {
+    if (isRentalCorridor(mode)) {
       const station = this.corridorStations.get(this.select("station").value);
       return station && row.rental.location
         ? { station, distance: distanceKm(row.rental.location, station) }
-        : row.corridorStop;
+        : mode === RENTAL_KRL_CORRIDOR
+          ? row.krlCorridorStop
+          : row.corridorStop;
     }
     if (mode) return row.stops[mode as Mode];
     return Object.values(row.stops).reduce<Stop | undefined>(
@@ -939,6 +966,7 @@ export class RentalTable {
     const kind = this.select("kind").value as RentalMapKind | "";
     const group = kind ? new Set([kind]) : allKinds;
     const mode = this.select("mode").value;
+    const corridor = isRentalCorridor(mode);
     const scbd = this.select("scbd").value === RENTAL_SCBD_RADIUS;
     const tokens = (
       this.controls.elements.namedItem("query") as HTMLInputElement
@@ -963,21 +991,23 @@ export class RentalTable {
     ).filter((rental) => {
       const row = this.rows.get(rental.id);
       if (!row) return false;
-      if (scbd && (row.scbdKm === undefined || row.scbdKm > scbdRadiusKm))
-        return false;
       if (
-        (scbd || mode === RENTAL_RAIL_CORRIDOR) &&
+        (scbd || corridor) &&
         (rental.review?.couples === false ||
           (row.group.id === "kos" && !rental.review?.couples))
       )
         return false;
       const stop = this.stop(row);
-      if (
-        mode &&
-        (!stop ||
-          stop.distance > (mode === "TransJakarta" ? 0.7 : railRadiusKm))
-      )
-        return false;
+      const nearScbd = row.scbdKm !== undefined && row.scbdKm <= scbdRadiusKm;
+      const nearTransit =
+        !mode ||
+        (stop &&
+          stop.distance <= (mode === "TransJakarta" ? 0.7 : railRadiusKm));
+      const matchesLocation =
+        scbd && corridor
+          ? nearScbd || nearTransit
+          : (!scbd || nearScbd) && nearTransit;
+      if (!matchesLocation) return false;
       if (!tokens.length) return true;
       const text = columns
         .filter((c) => c.id !== "bookmark")

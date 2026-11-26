@@ -1699,7 +1699,7 @@ test("toggles a small Artha Graha workplace pin independently of the housing lay
   await expect(housing).toBeChecked();
 });
 
-test("filters the Cikarang–MRT corridor and the Artha Graha radius together", async ({
+test("includes the Artha Graha radius and Cikarang corridors together", async ({
   page,
 }) => {
   const fixture = structuredClone(researchFixture);
@@ -1731,6 +1731,12 @@ test("filters the Cikarang–MRT corridor and the Artha Graha radius together", 
             rentals: [
               rental("timur-uji", "Rumah uji Cikarang", -6.2553, 107.145),
               rental("tengah-uji", "Rumah uji Dukuh Atas", -6.2008, 106.8227),
+              rental(
+                "mrt-luar-uji",
+                "Rumah uji Lebak Bulus",
+                -6.2895,
+                106.7745,
+              ),
               rental("lewat-uji", "Rumah uji jauh", -6.2425, 107.145),
               rental("cabang-uji", "Rumah uji Kemayoran", -6.1617, 106.8414),
               { ...kos, rentalType: "kos-keluarga", review: { couples: true } },
@@ -1765,7 +1771,7 @@ test("filters the Cikarang–MRT corridor and the Artha Graha radius together", 
   await expect(station.locator("optgroup[label^='MRT'] option")).toHaveCount(
     13,
   );
-  await expect(rows).toHaveCount(3);
+  await expect(rows).toHaveCount(4);
   await expect(panel.locator("[data-rental='timur-uji']")).toContainText(
     "KRL · Cikarang",
   );
@@ -1784,18 +1790,35 @@ test("filters the Cikarang–MRT corridor and the Artha Graha radius together", 
   await expect(panel.locator("[data-rental='cabang-uji']")).toBeVisible();
   await mode.selectOption("cikarang-mrt");
   await expect(station).toHaveValue("");
-  await expect(rows).toHaveCount(3);
+  await expect(rows).toHaveCount(4);
 
   await page.goto("/?koleksi=sewa&scbd=8km&koridor=cikarang-mrt");
   const scbdRadius = panel.getByLabel("Radius Artha Graha SCBD");
   await expect(scbdRadius).toHaveValue("8km");
-  await expect(rows).toHaveCount(2);
-  await expect(panel.locator("[data-rental='timur-uji']")).toHaveCount(0);
+  await expect(rows).toHaveCount(6);
+  await expect(panel.locator("[data-rental='timur-uji']")).toBeVisible();
+  await expect(panel.locator("[data-rental='mrt-luar-uji']")).toBeVisible();
+  await expect(panel.locator("[data-rental='dalam-8km']")).toBeVisible();
+  await expect(panel.locator("[data-rental='lewat-uji']")).toHaveCount(0);
   const route = panel
     .locator("[data-rental='tengah-uji']")
     .getByRole("link", { name: "Buka rute" });
   const destination = new URL((await route.getAttribute("href")) ?? "");
   expect(destination.searchParams.get("destination")).toContain("Artha Graha");
+
+  await page.goto("/?koleksi=sewa&koridor=cikarang-sudirman");
+  await expect(mode).toHaveValue("cikarang-sudirman");
+  await expect(station.locator("optgroup[data-mode='MRT']")).toBeHidden();
+  await expect(rows).toHaveCount(2);
+
+  await page.goto("/?koleksi=sewa&scbd=8km&koridor=cikarang-sudirman");
+  await expect(scbdRadius).toHaveValue("8km");
+  await expect(rows).toHaveCount(5);
+  await expect(panel.locator("[data-rental='timur-uji']")).toBeVisible();
+  await expect(panel.locator("[data-rental='dalam-8km']")).toBeVisible();
+  await expect(panel.locator("[data-rental='mrt-luar-uji']")).toHaveCount(0);
+  await expect(panel.locator("[data-rental='tengah-uji']")).toHaveCount(1);
+
   await mode.selectOption("");
   await expect(panel.locator("[data-rental='dalam-8km']")).toHaveCount(1);
   await expect(panel.locator("[data-rental='luar-8km']")).toHaveCount(0);
@@ -1804,7 +1827,7 @@ test("filters the Cikarang–MRT corridor and the Artha Graha radius together", 
   await expect(panel.locator("[data-rental='khusus-uji']")).toHaveCount(0);
   await panel.getByRole("button", { name: "Reset filter" }).click();
   await expect(scbdRadius).toHaveValue("");
-  await expect(rows).toHaveCount(10);
+  await expect(rows).toHaveCount(11);
 });
 
 test("searches dated location reports and opens only mapped public references", async ({

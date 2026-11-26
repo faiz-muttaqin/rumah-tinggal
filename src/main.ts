@@ -47,7 +47,7 @@ import {
   rentalTermBadges,
 } from "./rental-map.ts";
 import {
-  RENTAL_RAIL_CORRIDOR,
+  isRentalCorridor,
   RENTAL_SCBD_RADIUS,
   RentalTable,
 } from "./rental-table.ts";
@@ -1612,11 +1612,12 @@ async function start(): Promise<void> {
     else render();
   } else if (params.get("koleksi") === "listingku") openPrivate();
   else if (params.get("koleksi") === "sewa") {
-    const corridor = params.get("koridor") === RENTAL_RAIL_CORRIDOR;
+    const corridor = params.get("koridor");
+    const hasCorridor = isRentalCorridor(corridor);
     const scbd = params.get("scbd") === RENTAL_SCBD_RADIUS;
-    if (corridor) rentalTable.showRailCorridor();
+    if (hasCorridor) rentalTable.showRailCorridor(corridor);
     if (scbd) rentalTable.showScbdRadius();
-    if (corridor || scbd || params.get("tampilan") === "tabel")
+    if (hasCorridor || scbd || params.get("tampilan") === "tabel")
       openRentalTable();
     else openRentals();
   }
