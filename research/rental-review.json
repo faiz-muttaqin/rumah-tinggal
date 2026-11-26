@@ -2721,5 +2721,61 @@
   "sewa-mamikos-734eb42f9e1b": {
     "couples": true,
     "children": false
+  },
+  "sewa-mamikos-6b314ad73992": {
+    "couples": true,
+    "children": true
+  },
+  "sewa-mamikos-d02b6cebf621": {
+    "couples": true,
+    "children": true
+  },
+  "sewa-mamikos-0cbd174305d2": {
+    "couples": true,
+    "children": true
+  },
+  "sewa-mamikos-46017458041b": {
+    "couples": true,
+    "children": true
+  },
+  "sewa-mamikos-5d2e573dd35a": {
+    "couples": true,
+    "children": true
+  },
+  "sewa-mamikos-c103f0dff15b": {
+    "couples": true,
+    "children": true
+  },
+  "sewa-rukita-48d4045627bf": {
+    "couples": true,
+    "children": true
+  },
+  "sewa-rukita-0ccf20c323d9": {
+    "couples": true,
+    "children": true
+  },
+  "sewa-rukita-04ef4571ea80": {
+    "couples": true,
+    "children": false
+  },
+  "sewa-rukita-d3e6f9d84d13": {
+    "couples": true,
+    "children": false
+  },
+  "sewa-rukita-48797a5ab188": {
+    "couples": true,
+    "children": false
+  },
+  "sewa-rukita-bfb0b3f26c34": {
+    "couples": true,
+    "children": true
+  },
+  "sewa-rukita-d55ec0781df3": {
+    "couples": true,
+    "children": true
+  },
+  "sewa-rukita-ddbff412c0ee": {
+    "couples": true,
+    "children": true
   }
 }
