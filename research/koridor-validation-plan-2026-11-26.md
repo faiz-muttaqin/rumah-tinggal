@@ -14,11 +14,11 @@ Recomputed directly from the seed JSON: 28 unique station names and IDs, 28 matc
 
 Public detail pages rechecked on 26 November; not added to master pending deduplication against both branches and location confirmation. No claim of walking distance or current stock.
 
-| Lead | Advertised rent | Building | Evidence/status |
-|---|---:|---|---|
-| [Margahayu, Bekasi](https://www.rumah123.com/properti/bekasi-margahayu/rumah-kontrak-tahunan-strategis-dekat-rs-primaya-bekasi-timur-hor42585321/) | Rp29m/year | 60 m², 2 bedrooms, 1 bath, 1 floor | Updated 12 Oct; claims Bekasi Timur station nearby, approximate map only |
-| [Perum Mangunjaya, Bekasi Timur](https://www.rumah123.com/properti/bekasi-bekasi-timur/rumah-kontrak-tahunan-siap-huni-di-perum-mangunjaya-bekasi-timur-hor42805326/) | Rp25m/year | 60 m², 2 bedrooms, 1 bath, 1 floor | Updated 9 Nov; named locality ambiguous, address not shown; similar specs/text to preceding lead, hold for possible duplication |
-| [Bekasi Jaya](https://www.rumah123.com/properti/bekasi-bekasi-timur/sewakan-rumah-luas-siap-huni-lingkungan-asri-dekat-stasiun-bekasi-hor10436160/) | Unknown | — | Detail returned 404; exclude from import |
+| Lead                                                                                                                                                                  | Advertised rent | Building                           | Evidence/status                                                                                                                 |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------: | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| [Margahayu, Bekasi](https://www.rumah123.com/properti/bekasi-margahayu/rumah-kontrak-tahunan-strategis-dekat-rs-primaya-bekasi-timur-hor42585321/)                    |      Rp29m/year | 60 m², 2 bedrooms, 1 bath, 1 floor | Updated 12 Oct; claims Bekasi Timur station nearby, approximate map only                                                        |
+| [Perum Mangunjaya, Bekasi Timur](https://www.rumah123.com/properti/bekasi-bekasi-timur/rumah-kontrak-tahunan-siap-huni-di-perum-mangunjaya-bekasi-timur-hor42805326/) |      Rp25m/year | 60 m², 2 bedrooms, 1 bath, 1 floor | Updated 9 Nov; named locality ambiguous, address not shown; similar specs/text to preceding lead, hold for possible duplication |
+| [Bekasi Jaya](https://www.rumah123.com/properti/bekasi-bekasi-timur/sewakan-rumah-luas-siap-huni-lingkungan-asri-dekat-stasiun-bekasi-hor10436160/)                   |         Unknown | —                                  | Detail returned 404; exclude from import                                                                                        |
 
 Discovery sources: [Duren Jaya](https://www.rumah123.com/sewa/bekasi/duren-jaya/rumah/), [Tambun station](https://www.rumah123.com/sewa/bekasi/poi/stasiun-tambun/rumah/), [Cikarang kontrakan](https://www.rumah123.com/sewa/cikarang/rumah/?quickLabel=Kontrakan). Area/POI pages are only discovery, never distance proof. Cipete listing hor42311798 exceeds budget (Rp130m/year), exclude.
 

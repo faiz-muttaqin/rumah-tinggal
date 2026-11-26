@@ -8,102 +8,57 @@
     {
       "mode": "KRL",
       "station": "Cikarang",
-      "searchAreas": [
-        "Karangasih",
-        "Karangbaru",
-        "Cikarang Kota"
-      ]
+      "searchAreas": ["Karangasih", "Karangbaru", "Cikarang Kota"]
     },
     {
       "mode": "KRL",
       "station": "Metland Telagamurni",
-      "searchAreas": [
-        "Telagamurni",
-        "Telaga Asih",
-        "Telaga Harapan"
-      ]
+      "searchAreas": ["Telagamurni", "Telaga Asih", "Telaga Harapan"]
     },
     {
       "mode": "KRL",
       "station": "Cibitung",
-      "searchAreas": [
-        "Wanasari",
-        "Wanajaya"
-      ]
+      "searchAreas": ["Wanasari", "Wanajaya"]
     },
     {
       "mode": "KRL",
       "station": "Tambun",
-      "searchAreas": [
-        "Mekarsari",
-        "Tambun",
-        "Setiadarma",
-        "Jatimulya"
-      ]
+      "searchAreas": ["Mekarsari", "Tambun", "Setiadarma", "Jatimulya"]
     },
     {
       "mode": "KRL",
       "station": "Bekasi Timur",
-      "searchAreas": [
-        "Durenjaya",
-        "Bekasijaya",
-        "Margahayu"
-      ]
+      "searchAreas": ["Durenjaya", "Bekasijaya", "Margahayu"]
     },
     {
       "mode": "KRL",
       "station": "Bekasi",
-      "searchAreas": [
-        "Margamulya",
-        "Marga Jaya",
-        "Bekasijaya",
-        "Harapan Mulya"
-      ]
+      "searchAreas": ["Margamulya", "Marga Jaya", "Bekasijaya", "Harapan Mulya"]
     },
     {
       "mode": "KRL",
       "station": "Kranji",
-      "searchAreas": [
-        "Kranji",
-        "Bintara",
-        "Jakasampurna"
-      ]
+      "searchAreas": ["Kranji", "Bintara", "Jakasampurna"]
     },
     {
       "mode": "KRL",
       "station": "Cakung",
-      "searchAreas": [
-        "Pulo Gebang",
-        "Bintara",
-        "Pondok Kopi"
-      ]
+      "searchAreas": ["Pulo Gebang", "Bintara", "Pondok Kopi"]
     },
     {
       "mode": "KRL",
       "station": "Klender Baru",
-      "searchAreas": [
-        "Malaka Jaya",
-        "Pondok Kopi",
-        "Pulo Gebang"
-      ]
+      "searchAreas": ["Malaka Jaya", "Pondok Kopi", "Pulo Gebang"]
     },
     {
       "mode": "KRL",
       "station": "Buaran",
-      "searchAreas": [
-        "Malaka Jaya",
-        "Malaka Sari",
-        "Jatinegara (Cakung)"
-      ]
+      "searchAreas": ["Malaka Jaya", "Malaka Sari", "Jatinegara (Cakung)"]
     },
     {
       "mode": "KRL",
       "station": "Klender",
-      "searchAreas": [
-        "Klender",
-        "Jatinegara (Cakung)",
-        "Cipinang"
-      ]
+      "searchAreas": ["Klender", "Jatinegara (Cakung)", "Cipinang"]
     },
     {
       "mode": "KRL",
@@ -138,133 +93,72 @@
     {
       "mode": "KRL",
       "station": "Sudirman",
-      "searchAreas": [
-        "Kebon Melati",
-        "Menteng",
-        "Karet Tengsin",
-        "Setiabudi"
-      ]
+      "searchAreas": ["Kebon Melati", "Menteng", "Karet Tengsin", "Setiabudi"]
     },
     {
       "mode": "MRT",
       "station": "Lebak Bulus",
-      "searchAreas": [
-        "Lebak Bulus",
-        "Pondok Pinang",
-        "Cirendeu",
-        "Bintaro"
-      ]
+      "searchAreas": ["Lebak Bulus", "Pondok Pinang", "Cirendeu", "Bintaro"]
     },
     {
       "mode": "MRT",
       "station": "Fatmawati",
-      "searchAreas": [
-        "Cilandak Barat",
-        "Pondok Labu",
-        "Lebak Bulus"
-      ]
+      "searchAreas": ["Cilandak Barat", "Pondok Labu", "Lebak Bulus"]
     },
     {
       "mode": "MRT",
       "station": "Cipete Raya",
-      "searchAreas": [
-        "Cipete Selatan",
-        "Gandaria Selatan",
-        "Cilandak Barat"
-      ]
+      "searchAreas": ["Cipete Selatan", "Gandaria Selatan", "Cilandak Barat"]
     },
     {
       "mode": "MRT",
       "station": "Haji Nawi",
-      "searchAreas": [
-        "Gandaria Selatan",
-        "Gandaria Utara",
-        "Cipete Utara"
-      ]
+      "searchAreas": ["Gandaria Selatan", "Gandaria Utara", "Cipete Utara"]
     },
     {
       "mode": "MRT",
       "station": "Blok A",
-      "searchAreas": [
-        "Gandaria Utara",
-        "Cipete Utara",
-        "Pulo"
-      ]
+      "searchAreas": ["Gandaria Utara", "Cipete Utara", "Pulo"]
     },
     {
       "mode": "MRT",
       "station": "Blok M",
-      "searchAreas": [
-        "Melawai",
-        "Kramat Pela",
-        "Pulo",
-        "Petogogan"
-      ]
+      "searchAreas": ["Melawai", "Kramat Pela", "Pulo", "Petogogan"]
     },
     {
       "mode": "MRT",
       "station": "ASEAN",
-      "searchAreas": [
-        "Gunung",
-        "Selong",
-        "Kramat Pela"
-      ]
+      "searchAreas": ["Gunung", "Selong", "Kramat Pela"]
     },
     {
       "mode": "MRT",
       "station": "Senayan",
-      "searchAreas": [
-        "Selong",
-        "Gunung",
-        "Gelora"
-      ]
+      "searchAreas": ["Selong", "Gunung", "Gelora"]
     },
     {
       "mode": "MRT",
       "station": "Istora",
-      "searchAreas": [
-        "Gelora",
-        "Senayan",
-        "Karet Semanggi"
-      ]
+      "searchAreas": ["Gelora", "Senayan", "Karet Semanggi"]
     },
     {
       "mode": "MRT",
       "station": "Bendungan Hilir",
-      "searchAreas": [
-        "Bendungan Hilir",
-        "Karet Tengsin",
-        "Karet Semanggi"
-      ]
+      "searchAreas": ["Bendungan Hilir", "Karet Tengsin", "Karet Semanggi"]
     },
     {
       "mode": "MRT",
       "station": "Setiabudi",
-      "searchAreas": [
-        "Karet",
-        "Karet Tengsin",
-        "Setiabudi",
-        "Karet Kuningan"
-      ]
+      "searchAreas": ["Karet", "Karet Tengsin", "Setiabudi", "Karet Kuningan"]
     },
     {
       "mode": "MRT",
       "station": "Dukuh Atas",
-      "searchAreas": [
-        "Kebon Melati",
-        "Menteng",
-        "Setiabudi",
-        "Karet Tengsin"
-      ]
+      "searchAreas": ["Kebon Melati", "Menteng", "Setiabudi", "Karet Tengsin"]
     },
     {
       "mode": "MRT",
       "station": "Bundaran HI",
-      "searchAreas": [
-        "Kebon Kacang",
-        "Kebon Melati",
-        "Menteng"
-      ]
+      "searchAreas": ["Kebon Kacang", "Kebon Melati", "Menteng"]
     }
   ],
   "auditedListings": [
