@@ -184,7 +184,7 @@ def markdown(result):
     scope = (result.get("run") or {}).get("scope")
     priority = "Prioritas masjid mengikuti konfigurasi sumber."
     if scope and scope.get("corridorOnly"):
-        priority = (f"Fokus {len(scope['activeTransitIds'])} stasiun KRL/MRT, radius garis lurus "
+        priority = (f"Fokus {len(scope['activeTransitIds'])} stasiun KRL/MRT/LRT, radius garis lurus "
                     f"{scope['transitRadiusKm']:g} km; plafon Rp5.000.000 per bulan ekuivalen. "
                     "Kelurahan dan slug pencarian merupakan seed, bukan irisan batas terverifikasi.")
     elif scope and scope.get("activeTransitIds"):
@@ -268,6 +268,8 @@ def main():
     parser.add_argument("--refresh-search", action="store_true", help="Refresh all configured first pages within the existing budgets")
     parser.add_argument("--transit-only", action="store_true", help="Use only the transit catchments for this run")
     parser.add_argument("--corridor-only", action="store_true", help="Use 28 KRL/MRT corridor seed targets with a separate crawl state")
+    parser.add_argument("--corridor-file", type=Path, default=ROOT / "research/koridor-station-targets.json",
+                        help="Corridor inventory inside research/; non-default files use their own crawl state")
     parser.add_argument("--station", action="append", default=[], help="Exact corridor station name; repeatable; isolated pilot state")
     parser.add_argument("--providers", default=",".join(PROVIDERS))
     parser.add_argument("--output-dir", type=Path, default=ROOT / ".runtime/research/rental-crawl")
@@ -283,13 +285,19 @@ def main():
         parser.error("Unknown or duplicate provider")
     if args.station and not args.corridor_only:
         parser.error("--station requires --corridor-only")
+    corridor_file = args.corridor_file.resolve()
+    custom_corridor = corridor_file != (ROOT / "research/koridor-station-targets.json").resolve()
+    if custom_corridor and not args.corridor_only:
+        parser.error("--corridor-file requires --corridor-only")
+    if not corridor_file.is_relative_to(ROOT / "research") or corridor_file.suffix != ".json" or not corridor_file.is_file():
+        parser.error("Corridor file must be an existing JSON file inside research/")
     if args.corridor_only:
         args.transit_only = True
         if args.output_dir == ROOT / ".runtime/research/rental-crawl":
-            suffix = ""
+            suffix = "-" + corridor_file.stem if custom_corridor else ""
             if args.station:
                 digest = hashlib.sha256(json.dumps(sorted(set(args.station))).encode()).hexdigest()[:16]
-                suffix = "-pilot-" + digest
+                suffix += "-pilot-" + digest
             args.output_dir = ROOT / (".runtime/research/corridor-crawl" + suffix)
         elif args.output_dir.resolve() in {(ROOT / ".runtime/research/rental-crawl").resolve(), Path("/var/lib/rumah-tinggal-rental-crawl").resolve()}:
             parser.error("Corridor crawl requires a separate private output directory")
@@ -300,7 +308,7 @@ def main():
     directory.mkdir(parents=True, exist_ok=True, mode=0o700)
     config = json.loads((ROOT / "research/rental-crawl-sources.json").read_text())
     if args.corridor_only:
-        corridor = json.loads((ROOT / "research/koridor-station-targets.json").read_text())
+        corridor = json.loads(corridor_file.read_text())
         try:
             config["transitTargets"] = corridor_targets(corridor, args.station)
         except ValueError as exc:

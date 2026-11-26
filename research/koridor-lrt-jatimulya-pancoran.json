@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-26",
+  "boundaryStatus": "big-intersections-500m-1000m-pending-portal-slug-check",
+  "note": "LRT Jabodebek Bekasi line from Jatimulya to Pancoran, 10 stations. Station points from OpenStreetMap nodes already in public/data/mobility.geojson. Search areas are BIG village polygons intersecting 500 m of the station point, padded from the 1 km result to at least 3. Portal slugs are derived from BIG names and are hypotheses until a portal page loads. Counts use existing rental points, not polygons.",
+  "radiiMeters": [500, 1000, 1500, 2000],
+  "stations": [
+    {
+      "mode": "LRT",
+      "station": "Jatimulya",
+      "stopId": "lrt-node-11040189489",
+      "coordinate": [107.0216652, -6.2641263],
+      "coordinateSource": "https://www.openstreetmap.org/node/11040189489",
+      "manualSearchAreas": ["Pengasinan", "Margahayu", "Jatimulya"],
+      "paths": [
+        "jawa-barat/bekasi/rawalumbu/pengasinan",
+        "jawa-barat/bekasi/bekasi-timur/margahayu",
+        "jawa-barat/kab-bekasi/tambun-selatan/jatimulya"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 2,
+        "2000": 4
+      }
+    },
+    {
+      "mode": "LRT",
+      "station": "Bekasi Barat",
+      "stopId": "lrt-node-4909917394",
+      "coordinate": [106.9904133, -6.2529685],
+      "coordinateSource": "https://www.openstreetmap.org/node/4909917394",
+      "manualSearchAreas": [
+        "Pekayonjaya",
+        "Margajaya",
+        "Sepanjangjaya",
+        "Margahayu"
+      ],
+      "paths": [
+        "jawa-barat/bekasi/bekasi-selatan/pekayonjaya",
+        "jawa-barat/bekasi/bekasi-selatan/margajaya",
+        "jawa-barat/bekasi/rawalumbu/sepanjangjaya",
+        "jawa-barat/bekasi/bekasi-timur/margahayu"
+      ],
+      "existingPinnedCounts": {
+        "500": 1,
+        "1000": 3,
+        "1500": 10,
+        "2000": 11
+      }
+    },
+    {
+      "mode": "LRT",
+      "station": "Cikunir 2",
+      "stopId": "lrt-node-11040189491",
+      "coordinate": [106.9631801, -6.2546804],
+      "coordinateSource": "https://www.openstreetmap.org/node/11040189491",
+      "manualSearchAreas": ["Jakamulya", "Jakasetia", "Jakasampurna"],
+      "paths": [
+        "jawa-barat/bekasi/bekasi-selatan/jakamulya",
+        "jawa-barat/bekasi/bekasi-selatan/jakasetia",
+        "jawa-barat/bekasi/bekasi-barat/jakasampurna"
+      ],
+      "existingPinnedCounts": {
+        "500": 3,
+        "1000": 5,
+        "1500": 9,
+        "2000": 20
+      }
+    },
+    {
+      "mode": "LRT",
+      "station": "Cikunir 1",
+      "stopId": "lrt-node-11040189493",
+      "coordinate": [106.9518542, -6.2566172],
+      "coordinateSource": "https://www.openstreetmap.org/node/11040189493",
+      "manualSearchAreas": ["Jatibening", "Jakasampurna", "Jakamulya"],
+      "paths": [
+        "jawa-barat/bekasi/pondokgede/jatibening",
+        "jawa-barat/bekasi/bekasi-barat/jakasampurna",
+        "jawa-barat/bekasi/bekasi-selatan/jakamulya"
+      ],
+      "existingPinnedCounts": {
+        "500": 3,
+        "1000": 6,
+        "1500": 8,
+        "2000": 11
+      }
+    },
+    {
+      "mode": "LRT",
+      "station": "Jatibening Baru",
+      "stopId": "lrt-node-11040189495",
+      "coordinate": [106.9279154, -6.2577426],
+      "coordinateSource": "https://www.openstreetmap.org/node/11040189495",
+      "manualSearchAreas": ["Jatibening Baru", "Jaticempaka", "Pondok Kelapa"],
+      "paths": [
+        "jawa-barat/bekasi/pondokgede/jatibening-baru",
+        "jawa-barat/bekasi/pondokgede/jaticempaka",
+        "dki-jakarta/jakarta-timur/duren-sawit/pondok-kelapa"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 2,
+        "2000": 3
+      }
+    },
+    {
+      "mode": "LRT",
+      "station": "Halim",
+      "stopId": "lrt-node-11040189497",
+      "coordinate": [106.8872969, -6.2458773],
+      "coordinateSource": "https://www.openstreetmap.org/node/11040189497",
+      "manualSearchAreas": [
+        "Halim Perdana Kusuma",
+        "Cipinang Besar Selatan",
+        "Cipinang Melayu"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-timur/makasar/halim-perdana-kusuma",
+        "dki-jakarta/jakarta-timur/jatinegara/cipinang-besar-selatan",
+        "dki-jakarta/jakarta-timur/makasar/cipinang-melayu"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 6
+      }
+    },
+    {
+      "mode": "LRT",
+      "station": "Cawang",
+      "stopId": "lrt-node-11040204409",
+      "coordinate": [106.8712341, -6.2458886],
+      "coordinateSource": "https://www.openstreetmap.org/node/11040204409",
+      "manualSearchAreas": [
+        "Bidara Cina",
+        "Cawang",
+        "Cipinang Cempedak",
+        "Kebon Pala"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-timur/jatinegara/bidara-cina",
+        "dki-jakarta/jakarta-timur/kramatjati/cawang",
+        "dki-jakarta/jakarta-timur/jatinegara/cipinang-cempedak",
+        "dki-jakarta/jakarta-timur/makasar/kebon-pala"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 7,
+        "1500": 15,
+        "2000": 19
+      }
+    },
+    {
+      "mode": "LRT",
+      "station": "Ciliwung",
+      "stopId": "lrt-node-9124369223",
+      "coordinate": [106.8639717, -6.2434289],
+      "coordinateSource": "https://www.openstreetmap.org/node/9124369223",
+      "manualSearchAreas": [
+        "Bidara Cina",
+        "Cawang",
+        "Cikoko",
+        "Kebon Baru",
+        "Pengadegan"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-timur/jatinegara/bidara-cina",
+        "dki-jakarta/jakarta-timur/kramatjati/cawang",
+        "dki-jakarta/jakarta-selatan/pancoran/cikoko",
+        "dki-jakarta/jakarta-selatan/tebet/kebon-baru",
+        "dki-jakarta/jakarta-selatan/pancoran/pengadegan"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 4,
+        "1500": 17,
+        "2000": 21
+      }
+    },
+    {
+      "mode": "LRT",
+      "station": "Cikoko",
+      "stopId": "lrt-node-11040204407",
+      "coordinate": [106.8570727, -6.2434471],
+      "coordinateSource": "https://www.openstreetmap.org/node/11040204407",
+      "manualSearchAreas": [
+        "Cikoko",
+        "Kebon Baru",
+        "Pengadegan",
+        "Tebet Barat",
+        "Tebet Timur"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/pancoran/cikoko",
+        "dki-jakarta/jakarta-selatan/tebet/kebon-baru",
+        "dki-jakarta/jakarta-selatan/pancoran/pengadegan",
+        "dki-jakarta/jakarta-selatan/tebet/tebet-barat",
+        "dki-jakarta/jakarta-selatan/tebet/tebet-timur"
+      ],
+      "existingPinnedCounts": {
+        "500": 1,
+        "1000": 1,
+        "1500": 7,
+        "2000": 17
+      }
+    },
+    {
+      "mode": "LRT",
+      "station": "Pancoran",
+      "stopId": "lrt-node-11040204406",
+      "coordinate": [106.8385223, -6.2421132],
+      "coordinateSource": "https://www.openstreetmap.org/node/11040204406",
+      "manualSearchAreas": [
+        "Kuningan Timur",
+        "Mampang Prapatan",
+        "Menteng Dalam",
+        "Pancoran",
+        "Tegal Parang"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-selatan/setiabudi/kuningan-timur",
+        "dki-jakarta/jakarta-selatan/mampang-prapatan/mampang-prapatan",
+        "dki-jakarta/jakarta-selatan/tebet/menteng-dalam",
+        "dki-jakarta/jakarta-selatan/pancoran/pancoran",
+        "dki-jakarta/jakarta-selatan/mampang-prapatan/tegal-parang"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 1
+      }
+    }
+  ],
+  "transitTargets": [
+    {
+      "stopId": "lrt-node-11040189489",
+      "paths": [
+        "jawa-barat/bekasi/rawalumbu/pengasinan",
+        "jawa-barat/bekasi/bekasi-timur/margahayu",
+        "jawa-barat/kab-bekasi/tambun-selatan/jatimulya"
+      ]
+    },
+    {
+      "stopId": "lrt-node-4909917394",
+      "paths": [
+        "jawa-barat/bekasi/bekasi-selatan/pekayonjaya",
+        "jawa-barat/bekasi/bekasi-selatan/margajaya",
+        "jawa-barat/bekasi/rawalumbu/sepanjangjaya",
+        "jawa-barat/bekasi/bekasi-timur/margahayu"
+      ]
+    },
+    {
+      "stopId": "lrt-node-11040189491",
+      "paths": [
+        "jawa-barat/bekasi/bekasi-selatan/jakamulya",
+        "jawa-barat/bekasi/bekasi-selatan/jakasetia",
+        "jawa-barat/bekasi/bekasi-barat/jakasampurna"
+      ]
+    },
+    {
+      "stopId": "lrt-node-11040189493",
+      "paths": [
+        "jawa-barat/bekasi/pondokgede/jatibening",
+        "jawa-barat/bekasi/bekasi-barat/jakasampurna",
+        "jawa-barat/bekasi/bekasi-selatan/jakamulya"
+      ]
+    },
+    {
+      "stopId": "lrt-node-11040189495",
+      "paths": [
+        "jawa-barat/bekasi/pondokgede/jatibening-baru",
+        "jawa-barat/bekasi/pondokgede/jaticempaka",
+        "dki-jakarta/jakarta-timur/duren-sawit/pondok-kelapa"
+      ]
+    },
+    {
+      "stopId": "lrt-node-11040189497",
+      "paths": [
+        "dki-jakarta/jakarta-timur/makasar/halim-perdana-kusuma",
+        "dki-jakarta/jakarta-timur/jatinegara/cipinang-besar-selatan",
+        "dki-jakarta/jakarta-timur/makasar/cipinang-melayu"
+      ]
+    },
+    {
+      "stopId": "lrt-node-11040204409",
+      "paths": [
+        "dki-jakarta/jakarta-timur/jatinegara/bidara-cina",
+        "dki-jakarta/jakarta-timur/kramatjati/cawang",
+        "dki-jakarta/jakarta-timur/jatinegara/cipinang-cempedak",
+        "dki-jakarta/jakarta-timur/makasar/kebon-pala"
+      ]
+    },
+    {
+      "stopId": "lrt-node-9124369223",
+      "paths": [
+        "dki-jakarta/jakarta-timur/jatinegara/bidara-cina",
+        "dki-jakarta/jakarta-timur/kramatjati/cawang",
+        "dki-jakarta/jakarta-selatan/pancoran/cikoko",
+        "dki-jakarta/jakarta-selatan/tebet/kebon-baru",
+        "dki-jakarta/jakarta-selatan/pancoran/pengadegan"
+      ]
+    },
+    {
+      "stopId": "lrt-node-11040204407",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/pancoran/cikoko",
+        "dki-jakarta/jakarta-selatan/tebet/kebon-baru",
+        "dki-jakarta/jakarta-selatan/pancoran/pengadegan",
+        "dki-jakarta/jakarta-selatan/tebet/tebet-barat",
+        "dki-jakarta/jakarta-selatan/tebet/tebet-timur"
+      ]
+    },
+    {
+      "stopId": "lrt-node-11040204406",
+      "paths": [
+        "dki-jakarta/jakarta-selatan/setiabudi/kuningan-timur",
+        "dki-jakarta/jakarta-selatan/mampang-prapatan/mampang-prapatan",
+        "dki-jakarta/jakarta-selatan/tebet/menteng-dalam",
+        "dki-jakarta/jakarta-selatan/pancoran/pancoran",
+        "dki-jakarta/jakarta-selatan/mampang-prapatan/tegal-parang"
+      ]
+    }
+  ]
+}

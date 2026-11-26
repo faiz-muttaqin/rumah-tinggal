@@ -673,6 +673,32 @@ class CorridorInventoryTests(unittest.TestCase):
             seed["transitTargets"][0]["paths"] = ["invalid"]
             m.corridor_targets(seed)
 
+    def test_tangerang_duri_inventory(self):
+        seed = json.loads((m.ROOT / "research/koridor-tangerang-duri.json").read_text())
+        targets = m.corridor_targets(seed)
+        self.assertEqual([s["station"] for s in seed["stations"]], [
+            "Duri", "Grogol", "Pesing", "Taman Kota", "Bojong Indah", "Rawa Buaya",
+            "Kalideres", "Poris", "Batu Ceper", "Tanah Tinggi", "Tangerang"])
+        self.assertEqual(len(targets), 11)
+        for station in seed["stations"]:
+            self.assertTrue(3 <= len(station["paths"]) <= 6, station["station"])
+            self.assertTrue(all(p.startswith(("dki-jakarta/", "banten/tangerang/")) for p in station["paths"]))
+        main_ids = {s["stopId"] for s in json.loads((m.ROOT / "research/koridor-station-targets.json").read_text())["stations"]}
+        self.assertFalse(main_ids & {s["stopId"] for s in seed["stations"]})
+
+    def test_lrt_jatimulya_pancoran_inventory(self):
+        seed = json.loads((m.ROOT / "research/koridor-lrt-jatimulya-pancoran.json").read_text())
+        self.assertEqual(len(m.corridor_targets(seed)), 10)
+        self.assertEqual([s["station"] for s in seed["stations"]], [
+            "Jatimulya", "Bekasi Barat", "Cikunir 2", "Cikunir 1", "Jatibening Baru",
+            "Halim", "Cawang", "Ciliwung", "Cikoko", "Pancoran"])
+        self.assertEqual({s["mode"] for s in seed["stations"]}, {"LRT"})
+        for station in seed["stations"]:
+            self.assertTrue(3 <= len(station["paths"]) <= 6, station["station"])
+            self.assertTrue(all(p.startswith(("dki-jakarta/", "jawa-barat/bekasi/", "jawa-barat/kab-bekasi/")) for p in station["paths"]))
+        other = json.loads((m.ROOT / "research/koridor-tangerang-duri.json").read_text())
+        self.assertFalse({s["stopId"] for s in seed["stations"]} & {s["stopId"] for s in other["stations"]})
+
     def test_duplicate_inventory_fails(self):
         seed = {"stations": [{"station": "X", "stopId": "x", "paths": ["a"]}],
                 "transitTargets": [{"stopId": "x", "paths": ["a"]}] * 2}

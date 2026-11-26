@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-26",
+  "boundaryStatus": "big-intersections-500m-1000m-pending-portal-slug-check",
+  "note": "KRL Tangerang line (Duri to Tangerang), 11 stations. Station points from OpenStreetMap nodes already in public/data/transit.geojson. Search areas are BIG village polygons intersecting 500 m of the station point, padded from the 1 km result to at least 3. Portal slugs are derived from BIG names and are hypotheses until a portal page loads. Counts use existing rental points, not polygons.",
+  "radiiMeters": [500, 1000, 1500, 2000],
+  "stations": [
+    {
+      "mode": "KRL",
+      "station": "Duri",
+      "stopId": "osm-node-4963295116",
+      "coordinate": [106.8012968, -6.1552764],
+      "coordinateSource": "https://www.openstreetmap.org/node/4963295116",
+      "manualSearchAreas": [
+        "Duri Pulo",
+        "Duri Selatan",
+        "Duri Utara",
+        "Jembatan Besi",
+        "Kali Anyar",
+        "Krendang"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-pusat/gambir/duri-pulo",
+        "dki-jakarta/jakarta-barat/tambora/duri-selatan",
+        "dki-jakarta/jakarta-barat/tambora/duri-utara",
+        "dki-jakarta/jakarta-barat/tambora/jembatan-besi",
+        "dki-jakarta/jakarta-barat/tambora/kali-anyar",
+        "dki-jakarta/jakarta-barat/tambora/krendang"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 2,
+        "2000": 9
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Grogol",
+      "stopId": "osm-node-5047494890",
+      "coordinate": [106.7896101, -6.162035],
+      "coordinateSource": "https://www.openstreetmap.org/node/5047494890",
+      "manualSearchAreas": ["Grogol", "Jelambar", "Duri Pulo"],
+      "paths": [
+        "dki-jakarta/jakarta-barat/grogol-petamburan/grogol",
+        "dki-jakarta/jakarta-barat/grogol-petamburan/jelambar",
+        "dki-jakarta/jakarta-pusat/gambir/duri-pulo"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 2
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Pesing",
+      "stopId": "osm-node-4149368915",
+      "coordinate": [106.7719077, -6.1612525],
+      "coordinateSource": "https://www.openstreetmap.org/node/4149368915",
+      "manualSearchAreas": ["Duri Kepa", "Kedoya Utara", "Wijaya Kusuma"],
+      "paths": [
+        "dki-jakarta/jakarta-barat/kebon-jeruk/duri-kepa",
+        "dki-jakarta/jakarta-barat/kebon-jeruk/kedoya-utara",
+        "dki-jakarta/jakarta-barat/grogol-petamburan/wijaya-kusuma"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 0
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Taman Kota",
+      "stopId": "osm-node-5070875099",
+      "coordinate": [106.7565728, -6.158627],
+      "coordinateSource": "https://www.openstreetmap.org/node/5070875099",
+      "manualSearchAreas": [
+        "Kedaung Kali Angke",
+        "Kedoya Utara",
+        "Kembangan Utara"
+      ],
+      "paths": [
+        "dki-jakarta/jakarta-barat/cengkareng/kedaung-kali-angke",
+        "dki-jakarta/jakarta-barat/kebon-jeruk/kedoya-utara",
+        "dki-jakarta/jakarta-barat/kembangan/kembangan-utara"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 0
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Bojong Indah",
+      "stopId": "osm-node-11201927617",
+      "coordinate": [106.7361338, -6.1602142],
+      "coordinateSource": "https://www.openstreetmap.org/node/11201927617",
+      "manualSearchAreas": ["Rawa Buaya", "Cengkareng Timur", "Duri Kosambi"],
+      "paths": [
+        "dki-jakarta/jakarta-barat/cengkareng/rawa-buaya",
+        "dki-jakarta/jakarta-barat/cengkareng/cengkareng-timur",
+        "dki-jakarta/jakarta-barat/cengkareng/duri-kosambi"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 0
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Rawa Buaya",
+      "stopId": "osm-node-5033751697",
+      "coordinate": [106.7227543, -6.1627437],
+      "coordinateSource": "https://www.openstreetmap.org/node/5033751697",
+      "manualSearchAreas": ["Duri Kosambi", "Rawa Buaya", "Semanan"],
+      "paths": [
+        "dki-jakarta/jakarta-barat/cengkareng/duri-kosambi",
+        "dki-jakarta/jakarta-barat/cengkareng/rawa-buaya",
+        "dki-jakarta/jakarta-barat/kalideres/semanan"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 0
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Kalideres",
+      "stopId": "osm-node-4905517383",
+      "coordinate": [106.7037283, -6.1659662],
+      "coordinateSource": "https://www.openstreetmap.org/node/4905517383",
+      "manualSearchAreas": ["Semanan", "Duri Kosambi", "Kalideres"],
+      "paths": [
+        "dki-jakarta/jakarta-barat/kalideres/semanan",
+        "dki-jakarta/jakarta-barat/cengkareng/duri-kosambi",
+        "dki-jakarta/jakarta-barat/kalideres/kalideres"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 0
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Poris",
+      "stopId": "osm-node-4149415299",
+      "coordinate": [106.6807523, -6.1697346],
+      "coordinateSource": "https://www.openstreetmap.org/node/4149415299",
+      "manualSearchAreas": [
+        "Poris Gaga",
+        "Poris Gaga Baru",
+        "Poris Jaya",
+        "Cipondoh Makmur"
+      ],
+      "paths": [
+        "banten/tangerang/batuceper/poris-gaga",
+        "banten/tangerang/batuceper/poris-gaga-baru",
+        "banten/tangerang/batuceper/poris-jaya",
+        "banten/tangerang/cipondoh/cipondoh-makmur"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 0
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Batu Ceper",
+      "stopId": "osm-node-9201422096",
+      "coordinate": [106.6652866, -6.1720268],
+      "coordinateSource": "https://www.openstreetmap.org/node/9201422096",
+      "manualSearchAreas": [
+        "Poris Gaga Baru",
+        "Poris Plawad",
+        "Poris Plawad Utara"
+      ],
+      "paths": [
+        "banten/tangerang/batuceper/poris-gaga-baru",
+        "banten/tangerang/cipondoh/poris-plawad",
+        "banten/tangerang/cipondoh/poris-plawad-utara"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 1,
+        "1500": 2,
+        "2000": 7
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Tanah Tinggi",
+      "stopId": "osm-node-316739060",
+      "coordinate": [106.6467095, -6.1751701],
+      "coordinateSource": "https://www.openstreetmap.org/node/316739060",
+      "manualSearchAreas": ["Tanah Tinggi", "Buaran Indah", "Sukaasih"],
+      "paths": [
+        "banten/tangerang/tangerang/tanah-tinggi",
+        "banten/tangerang/tangerang/buaran-indah",
+        "banten/tangerang/tangerang/sukaasih"
+      ],
+      "existingPinnedCounts": {
+        "500": 4,
+        "1000": 6,
+        "1500": 10,
+        "2000": 11
+      }
+    },
+    {
+      "mode": "KRL",
+      "station": "Tangerang",
+      "stopId": "osm-node-316739175",
+      "coordinate": [106.6320106, -6.1769753],
+      "coordinateSource": "https://www.openstreetmap.org/node/316739175",
+      "manualSearchAreas": [
+        "Sukarasa",
+        "Sukaasih",
+        "Sukasari",
+        "Gerendeng",
+        "Sukajadi"
+      ],
+      "paths": [
+        "banten/tangerang/tangerang/sukarasa",
+        "banten/tangerang/tangerang/sukaasih",
+        "banten/tangerang/tangerang/sukasari",
+        "banten/tangerang/karawaci/gerendeng",
+        "banten/tangerang/karawaci/sukajadi"
+      ],
+      "existingPinnedCounts": {
+        "500": 0,
+        "1000": 0,
+        "1500": 0,
+        "2000": 5
+      }
+    }
+  ],
+  "transitTargets": [
+    {
+      "stopId": "osm-node-4963295116",
+      "paths": [
+        "dki-jakarta/jakarta-pusat/gambir/duri-pulo",
+        "dki-jakarta/jakarta-barat/tambora/duri-selatan",
+        "dki-jakarta/jakarta-barat/tambora/duri-utara",
+        "dki-jakarta/jakarta-barat/tambora/jembatan-besi",
+        "dki-jakarta/jakarta-barat/tambora/kali-anyar",
+        "dki-jakarta/jakarta-barat/tambora/krendang"
+      ]
+    },
+    {
+      "stopId": "osm-node-5047494890",
+      "paths": [
+        "dki-jakarta/jakarta-barat/grogol-petamburan/grogol",
+        "dki-jakarta/jakarta-barat/grogol-petamburan/jelambar",
+        "dki-jakarta/jakarta-pusat/gambir/duri-pulo"
+      ]
+    },
+    {
+      "stopId": "osm-node-4149368915",
+      "paths": [
+        "dki-jakarta/jakarta-barat/kebon-jeruk/duri-kepa",
+        "dki-jakarta/jakarta-barat/kebon-jeruk/kedoya-utara",
+        "dki-jakarta/jakarta-barat/grogol-petamburan/wijaya-kusuma"
+      ]
+    },
+    {
+      "stopId": "osm-node-5070875099",
+      "paths": [
+        "dki-jakarta/jakarta-barat/cengkareng/kedaung-kali-angke",
+        "dki-jakarta/jakarta-barat/kebon-jeruk/kedoya-utara",
+        "dki-jakarta/jakarta-barat/kembangan/kembangan-utara"
+      ]
+    },
+    {
+      "stopId": "osm-node-11201927617",
+      "paths": [
+        "dki-jakarta/jakarta-barat/cengkareng/rawa-buaya",
+        "dki-jakarta/jakarta-barat/cengkareng/cengkareng-timur",
+        "dki-jakarta/jakarta-barat/cengkareng/duri-kosambi"
+      ]
+    },
+    {
+      "stopId": "osm-node-5033751697",
+      "paths": [
+        "dki-jakarta/jakarta-barat/cengkareng/duri-kosambi",
+        "dki-jakarta/jakarta-barat/cengkareng/rawa-buaya",
+        "dki-jakarta/jakarta-barat/kalideres/semanan"
+      ]
+    },
+    {
+      "stopId": "osm-node-4905517383",
+      "paths": [
+        "dki-jakarta/jakarta-barat/kalideres/semanan",
+        "dki-jakarta/jakarta-barat/cengkareng/duri-kosambi",
+        "dki-jakarta/jakarta-barat/kalideres/kalideres"
+      ]
+    },
+    {
+      "stopId": "osm-node-4149415299",
+      "paths": [
+        "banten/tangerang/batuceper/poris-gaga",
+        "banten/tangerang/batuceper/poris-gaga-baru",
+        "banten/tangerang/batuceper/poris-jaya",
+        "banten/tangerang/cipondoh/cipondoh-makmur"
+      ]
+    },
+    {
+      "stopId": "osm-node-9201422096",
+      "paths": [
+        "banten/tangerang/batuceper/poris-gaga-baru",
+        "banten/tangerang/cipondoh/poris-plawad",
+        "banten/tangerang/cipondoh/poris-plawad-utara"
+      ]
+    },
+    {
+      "stopId": "osm-node-316739060",
+      "paths": [
+        "banten/tangerang/tangerang/tanah-tinggi",
+        "banten/tangerang/tangerang/buaran-indah",
+        "banten/tangerang/tangerang/sukaasih"
+      ]
+    },
+    {
+      "stopId": "osm-node-316739175",
+      "paths": [
+        "banten/tangerang/tangerang/sukarasa",
+        "banten/tangerang/tangerang/sukaasih",
+        "banten/tangerang/tangerang/sukasari",
+        "banten/tangerang/karawaci/gerendeng",
+        "banten/tangerang/karawaci/sukajadi"
+      ]
+    }
+  ]
+}
