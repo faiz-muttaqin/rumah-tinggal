@@ -1966,6 +1966,13 @@ test("searches dated location reports and opens only mapped public references", 
     "https://dibi.bnpb.go.id/superset/dashboard/tentang-dibi/",
   );
   await dialog.getByText("Sumber riwayat dan pemantauan banjir").click();
+  await dialog.getByRole("searchbox").fill("Ciledug Indah");
+  await expect(dialog.locator(".location-reports-years")).toContainText(
+    "2020, 2021, 2025, 2026",
+  );
+  await expect(
+    dialog.locator('[data-report="banjir-ciledug-indah-2020-01"]'),
+  ).toContainText("Penanganan · 3 Jan 2020");
 
   await dialog.getByLabel("Jenis berita").selectOption("kriminalitas");
   await dialog.getByLabel("Wilayah berita").selectOption("Kota Depok");

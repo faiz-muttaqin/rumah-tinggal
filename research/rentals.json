@@ -32404,6 +32404,142 @@
       "ownerType": "unknown",
       "verdict": "partial",
       "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-pinhome-bcda541a49bc",
+      "title": "Kontrakan 3 kamar di Larangan Utara, 102 m²",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Tangerang",
+      "locationText": "Larangan Utara, Larangan, Kota Tangerang",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 59600000,
+        "period": "yearly",
+        "quote": "IDR 59.600.000 per tahun, minimum 12 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-puri-beta-cileduk-di-larangan-utara",
+        "pageDate": "2026-09-18",
+        "minimumMonths": 12
+      },
+      "bedrooms": 3,
+      "sizeM2": 102.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "IDR 59.600.000 per tahun, minimum 12 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-puri-beta-cileduk-di-larangan-utara"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Acuan pin sekitar 0,04 km garis lurus dari halte TransJakarta Puri Beta 1. ANTARA mendokumentasikan genangan di akses Puri Beta pada 25 Februari 2020. Lokasi unit dan aksesnya perlu dicocokkan. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-puri-beta-cileduk-di-larangan-utara",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-09-18",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-pinhome-ee233b368a31",
+      "title": "Apartemen Kemang View 2 kamar",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Bekasi",
+      "locationText": "Pekayonjaya (Pekayon Jaya), Bekasi Selatan, Kota Bekasi",
+      "buildingOrCluster": "Kemang View",
+      "rent": {
+        "amount": 1500000,
+        "period": "monthly",
+        "quote": "IDR 1.500.000 per bulan, minimum 2 bulan.",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-kemang-view-apartemen",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 2
+      },
+      "bedrooms": 2,
+      "sizeM2": 35.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "IDR 1.500.000 per bulan, minimum 2 bulan.",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-kemang-view-apartemen"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Acuan pin sekitar 0,07 km garis lurus dari LRT Bekasi Barat. Ketentuan pasutri dan biaya tambahan apartemen belum terbukti; konfirmasi ke pengelola. Tanggal iklan 11 Juni 2025 tampak sebagai pembaruan massal portal; kesegaran harga perlu dikonfirmasi. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-kemang-view-apartemen",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-pinhome-4366957a05aa",
+      "title": "Kontrakan 2 kamar di Jakamulya (Jaka Mulya), 50 m²",
+      "rentalType": "kontrakan",
+      "kind": "Rumah",
+      "area": "Bekasi",
+      "locationText": "Jakamulya (Jaka Mulya), Bekasi Selatan, Kota Bekasi",
+      "buildingOrCluster": null,
+      "rent": {
+        "amount": 29000000,
+        "period": "yearly",
+        "quote": "IDR 29.000.000 per tahun, minimum 12 bulan.",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-mungil-siap-huni-dekat-ke-galaxy-di-jakamulya-jaka-mulya",
+        "pageDate": "2026-11-12",
+        "minimumMonths": 12
+      },
+      "bedrooms": 2,
+      "sizeM2": 50.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "IDR 29.000.000 per tahun, minimum 12 bulan.",
+          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-mungil-siap-huni-dekat-ke-galaxy-di-jakamulya-jaka-mulya"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Acuan pin sekitar 0,69 km garis lurus dari LRT Cikunir 2. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-mungil-siap-huni-dekat-ke-galaxy-di-jakamulya-jaka-mulya",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2026-11-12",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
+    },
+    {
+      "id": "sewa-pinhome-ff56811633dc",
+      "title": "Apartemen Menara Cawang 2 kamar",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Jakarta",
+      "locationText": "Cawang, Kramatjati (Kramat Jati), Kota Jakarta Timur",
+      "buildingOrCluster": "Menara Cawang",
+      "rent": {
+        "amount": 2200000,
+        "period": "monthly",
+        "quote": "IDR 2.200.000 per bulan, minimum 3 bulan.",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-menara-cawang-3",
+        "pageDate": "2025-06-11",
+        "minimumMonths": 3
+      },
+      "bedrooms": 2,
+      "sizeM2": 33.0,
+      "furnished": null,
+      "evidence": [
+        {
+          "quote": "IDR 2.200.000 per bulan, minimum 3 bulan.",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-menara-cawang-3"
+        }
+      ],
+      "areaHighlights": [],
+      "note": "Acuan pin sekitar 0,00 km garis lurus dari LRT Cawang. Ketentuan pasutri dan biaya tambahan apartemen belum terbukti; konfirmasi ke pengelola. Tanggal iklan 11 Juni 2025 tampak sebagai pembaruan massal portal; kesegaran harga perlu dikonfirmasi. Belum ada laporan kriminalitas untuk area ini di data aplikasi; itu bukan jaminan keamanan. Stok perlu konfirmasi.",
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-menara-cawang-3",
+      "sourcePortal": "Pinhome",
+      "postedOrUpdated": "2025-06-11",
+      "ownerType": "unknown",
+      "verdict": "partial",
+      "lastChecked": "2026-11-26"
     }
   ]
 }

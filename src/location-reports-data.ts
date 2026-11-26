@@ -365,6 +365,75 @@ export const areaReports: LocationReport[] = [
     ],
   },
   {
+    id: "banjir-ciledug-indah-2020-01",
+    kind: "banjir",
+    title: "Banjir surut di Kompleks Ciledug Indah 1",
+    date: "2020-01-03",
+    basis: "Penanganan",
+    region: "Kota Tangerang",
+    scope: "lingkungan",
+    place: "Kompleks Ciledug Indah 1, Karang Tengah, Kota Tangerang",
+    summary:
+      "ANTARA melaporkan genangan di kompleks telah surut pada 3 Januari 2020 dan petugas mulai membersihkan material tanggul darurat.",
+    sources: [
+      {
+        label: "ANTARA Banten · Laporan kondisi",
+        url: "https://banten.antaranews.com/amp/berita/81160/banjir-di-komplek-ciledug-indah-tangerang-sudah-surut",
+      },
+    ],
+  },
+  {
+    id: "banjir-ciledug-indah-2021-02",
+    kind: "banjir",
+    title: "Banjir di Ciledug Indah pada 2021",
+    date: "2021-02-20",
+    region: "Kota Tangerang",
+    scope: "lingkungan",
+    place: "Perumahan Ciledug Indah, Karang Tengah, Kota Tangerang",
+    summary:
+      "PUPR Kota Tangerang menyebut luapan Kali Angke merendam permukiman Ciledug Indah dalam laporan 20 Februari 2021.",
+    sources: [
+      {
+        label: "ANTARA · PUPR Kota Tangerang",
+        url: "https://www.antaranews.com/berita/2010426/ribuan-kepala-keluarga-di-kota-tangerang-mengungsi-dampak-banjir",
+      },
+    ],
+  },
+  {
+    id: "banjir-ciledug-indah-2026-03",
+    kind: "banjir",
+    title: "Banjir di Ciledug Indah 1 pada 2026",
+    date: "2026-03-08",
+    region: "Kota Tangerang",
+    scope: "lingkungan",
+    place: "Perumahan Ciledug Indah 1, Karang Tengah, Kota Tangerang",
+    summary:
+      "ANTARA melaporkan BPBD Kota Tangerang mengevakuasi warga setelah banjir merendam permukiman pada 8 Maret 2026.",
+    sources: [
+      {
+        label: "ANTARA Banten · BPBD Kota Tangerang",
+        url: "https://banten.antaranews.com/video/5461287/banjir-warga-ciledug-indah-dievakuasi-bpbd-kota-tangerang",
+      },
+    ],
+  },
+  {
+    id: "banjir-akses-puri-beta-2020-02",
+    kind: "banjir",
+    title: "Genangan di akses Perumahan Puri Beta",
+    date: "2020-02-25",
+    region: "Kota Tangerang",
+    scope: "ruas",
+    place: "Akses masuk Perumahan Puri Beta, Larangan, Kota Tangerang",
+    summary:
+      "Foto ANTARA mendokumentasikan genangan pada akses masuk perumahan pada 25 Februari 2020.",
+    sources: [
+      {
+        label: "ANTARA · Dokumentasi lokasi",
+        url: "https://m.antaranews.com/amp/berita/1317606/hujan-lebat-sebabkan-banjir-di-13-titik-di-kota-tangerang",
+      },
+    ],
+  },
+  {
     id: "banjir-karang-tengah-duren-villa-2025-07",
     kind: "banjir",
     title: "Banjir di Ciledug Indah dan Duren Villa Park",

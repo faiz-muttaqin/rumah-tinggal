@@ -13430,6 +13430,58 @@
         "checkedAt": "2026-11-26"
       },
       "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-bcda541a49bc",
+      "location": {
+        "lat": -6.230866,
+        "lng": 106.726152,
+        "precision": "approximate",
+        "label": "Larangan Utara, Larangan, Kota Tangerang",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-puri-beta-cileduk-di-larangan-utara",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-ee233b368a31",
+      "location": {
+        "lat": -6.253389,
+        "lng": 106.990858,
+        "precision": "approximate",
+        "label": "Kemang View",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-kemang-view-apartemen",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-4366957a05aa",
+      "location": {
+        "lat": -6.259141,
+        "lng": 106.958894,
+        "precision": "approximate",
+        "label": "Jakamulya (Jaka Mulya), Bekasi Selatan, Kota Bekasi",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-mungil-siap-huni-dekat-ke-galaxy-di-jakamulya-jaka-mulya",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
+    },
+    {
+      "rentalId": "sewa-pinhome-ff56811633dc",
+      "location": {
+        "lat": -6.245886,
+        "lng": 106.871229,
+        "precision": "approximate",
+        "label": "Menara Cawang",
+        "method": "Pin perkiraan dari iklan",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-menara-cawang-3",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei."
     }
   ]
 }
