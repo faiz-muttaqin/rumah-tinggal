@@ -2,15 +2,15 @@
 
 7 kandidat baru, 0 URL duplikat. Halaman detail dibaca, stok dan koordinat belum dipastikan. Plafon Rp5 juta/bulan. Tidak menghubungi pengiklan.
 
-| Kandidat | Harga | Sumber |
-|---|---:|---|
-| Kontrakan 2 KT Kranji, kanopi | Rp1.500.000/bulan | [detail](https://www.rumah123.com/properti/bekasi-kranji/sewa-strategis-jl-lebar-kanopi-kranji-bekasi-dkt-stasiun-tol-lrt-hor42707004/) |
-| Rumah cluster 3+1 KT Kranji | Rp36.000.000/tahun | [detail](https://www.rumah123.com/properti/bekasi-kranji/sewa-cluster-strategis-modern-jl-lbr-dkt-stasiun-kranji-tol-lrt-hor42740263/) |
-| Rumah 2 KT Perumahan Telaga Murni | Rp16.000.000/tahun | [detail](https://www.rumah123.com/properti/bekasi-cibitung/disewakan-rumah-kontrakan-di-perumahan-telaga-murni-cibitung-026-hor41001920/) |
-| Rumah 2+1 KT Taman Pulo Gebang | Rp45.000.000/tahun | [detail](https://www.rumah123.com/properti/jakarta-timur-cakung/disewakan-rumah-daerah-taman-pulo-gebang-cakung-siap-huni-strategis-004-hor42400169/) |
-| Rusun Karet Tengsin II studio | Rp38.000.000/tahun | [detail](https://www.rumah123.com/properti/jakarta-pusat-bendungan-hilir/disewakan-rusun-karet-tengsin-bendungan-hilir-studio-size-35sqm-apr7603015/) |
-| Sentra Timur Residence 1 KT 36 m² | Rp2.600.000/bulan | [detail](https://www.sewa-apartemen.net/256486/apartemen-sentra-timur-residence-pulo-gebang-jakarta-timur-disewakan-1-br-36-m2-fully-furnished1/) |
-| Sentra Timur Residence studio STRA003 | Rp25.000.000/tahun | [detail](https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003) |
+| Kandidat                              |              Harga | Sumber                                                                                                                                                |
+| ------------------------------------- | -----------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kontrakan 2 KT Kranji, kanopi         |  Rp1.500.000/bulan | [detail](https://www.rumah123.com/properti/bekasi-kranji/sewa-strategis-jl-lebar-kanopi-kranji-bekasi-dkt-stasiun-tol-lrt-hor42707004/)               |
+| Rumah cluster 3+1 KT Kranji           | Rp36.000.000/tahun | [detail](https://www.rumah123.com/properti/bekasi-kranji/sewa-cluster-strategis-modern-jl-lbr-dkt-stasiun-kranji-tol-lrt-hor42740263/)                |
+| Rumah 2 KT Perumahan Telaga Murni     | Rp16.000.000/tahun | [detail](https://www.rumah123.com/properti/bekasi-cibitung/disewakan-rumah-kontrakan-di-perumahan-telaga-murni-cibitung-026-hor41001920/)             |
+| Rumah 2+1 KT Taman Pulo Gebang        | Rp45.000.000/tahun | [detail](https://www.rumah123.com/properti/jakarta-timur-cakung/disewakan-rumah-daerah-taman-pulo-gebang-cakung-siap-huni-strategis-004-hor42400169/) |
+| Rusun Karet Tengsin II studio         | Rp38.000.000/tahun | [detail](https://www.rumah123.com/properti/jakarta-pusat-bendungan-hilir/disewakan-rusun-karet-tengsin-bendungan-hilir-studio-size-35sqm-apr7603015/) |
+| Sentra Timur Residence 1 KT 36 m²     |  Rp2.600.000/bulan | [detail](https://www.sewa-apartemen.net/256486/apartemen-sentra-timur-residence-pulo-gebang-jakarta-timur-disewakan-1-br-36-m2-fully-furnished1/)     |
+| Sentra Timur Residence studio STRA003 | Rp25.000.000/tahun | [detail](https://jendela360.com/sewa-apartemen-sentra-timur-residence/STRA003)                                                                        |
 
 ## Ditahan
 

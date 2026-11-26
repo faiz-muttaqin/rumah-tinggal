@@ -2,36 +2,36 @@
 
 Hitungan entri katalog bertitik, bukan unit aktif atau jumlah unik lintas stasiun. Titik dari snapshot OSM aplikasi; radius garis lurus, bukan rute jalan kaki.
 
-| Moda | Stasiun | ≤500 m | ≤1 km | ≤1,5 km | ≤2 km |
-|---|---|---:|---:|---:|---:|
-| KRL | Cikarang | 0 | 0 | 0 | 0 |
-| KRL | Metland Telagamurni | 0 | 0 | 1 | 1 |
-| KRL | Cibitung | 0 | 1 | 1 | 1 |
-| KRL | Tambun | 0 | 0 | 0 | 0 |
-| KRL | Bekasi Timur | 0 | 0 | 1 | 5 |
-| KRL | Bekasi | 0 | 0 | 3 | 7 |
-| KRL | Kranji | 0 | 4 | 6 | 7 |
-| KRL | Cakung | 0 | 0 | 0 | 3 |
-| KRL | Klender Baru | 1 | 1 | 3 | 8 |
-| KRL | Buaran | 0 | 1 | 2 | 8 |
-| KRL | Klender | 3 | 9 | 24 | 25 |
-| KRL | Jatinegara | 2 | 4 | 29 | 38 |
-| KRL | Matraman | 0 | 5 | 9 | 13 |
-| KRL | Manggarai | 0 | 0 | 3 | 6 |
-| KRL | Sudirman | 0 | 0 | 0 | 0 |
-| MRT | Lebak Bulus | 0 | 1 | 1 | 2 |
-| MRT | Fatmawati | 0 | 0 | 2 | 4 |
-| MRT | Cipete Raya | 0 | 1 | 1 | 2 |
-| MRT | Haji Nawi | 0 | 0 | 0 | 0 |
-| MRT | Blok A | 0 | 0 | 0 | 2 |
-| MRT | Blok M | 0 | 1 | 3 | 3 |
-| MRT | ASEAN | 0 | 1 | 3 | 4 |
-| MRT | Senayan | 0 | 0 | 1 | 1 |
-| MRT | Istora | 0 | 0 | 0 | 1 |
-| MRT | Bendungan Hilir | 0 | 0 | 0 | 0 |
-| MRT | Setiabudi | 0 | 0 | 0 | 0 |
-| MRT | Dukuh Atas | 0 | 0 | 0 | 0 |
-| MRT | Bundaran HI | 0 | 0 | 0 | 1 |
+| Moda | Stasiun             | ≤500 m | ≤1 km | ≤1,5 km | ≤2 km |
+| ---- | ------------------- | -----: | ----: | ------: | ----: |
+| KRL  | Cikarang            |      0 |     0 |       0 |     0 |
+| KRL  | Metland Telagamurni |      0 |     0 |       1 |     1 |
+| KRL  | Cibitung            |      0 |     1 |       1 |     1 |
+| KRL  | Tambun              |      0 |     0 |       0 |     0 |
+| KRL  | Bekasi Timur        |      0 |     0 |       1 |     5 |
+| KRL  | Bekasi              |      0 |     0 |       3 |     7 |
+| KRL  | Kranji              |      0 |     4 |       6 |     7 |
+| KRL  | Cakung              |      0 |     0 |       0 |     3 |
+| KRL  | Klender Baru        |      1 |     1 |       3 |     8 |
+| KRL  | Buaran              |      0 |     1 |       2 |     8 |
+| KRL  | Klender             |      3 |     9 |      24 |    25 |
+| KRL  | Jatinegara          |      2 |     4 |      29 |    38 |
+| KRL  | Matraman            |      0 |     5 |       9 |    13 |
+| KRL  | Manggarai           |      0 |     0 |       3 |     6 |
+| KRL  | Sudirman            |      0 |     0 |       0 |     0 |
+| MRT  | Lebak Bulus         |      0 |     1 |       1 |     2 |
+| MRT  | Fatmawati           |      0 |     0 |       2 |     4 |
+| MRT  | Cipete Raya         |      0 |     1 |       1 |     2 |
+| MRT  | Haji Nawi           |      0 |     0 |       0 |     0 |
+| MRT  | Blok A              |      0 |     0 |       0 |     2 |
+| MRT  | Blok M              |      0 |     1 |       3 |     3 |
+| MRT  | ASEAN               |      0 |     1 |       3 |     4 |
+| MRT  | Senayan             |      0 |     0 |       1 |     1 |
+| MRT  | Istora              |      0 |     0 |       0 |     1 |
+| MRT  | Bendungan Hilir     |      0 |     0 |       0 |     0 |
+| MRT  | Setiabudi           |      0 |     0 |       0 |     0 |
+| MRT  | Dukuh Atas          |      0 |     0 |       0 |     0 |
+| MRT  | Bundaran HI         |      0 |     0 |       0 |     1 |
 
 ## Batas administrasi dan crawler
 
