@@ -1,0 +1,4650 @@
+{
+  "schemaVersion": 1,
+  "note": "Search plan, not scraped coverage. Batch 1/2 sampled portals and localities, not exhaustive per job. Update each job only after actual checks. Separate detail failures and no-result evidence; respect portal access rules.",
+  "jobs": [
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Senayan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Senayan Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Senayan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Senayan Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Senayan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Senayan Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Selong",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Selong Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Selong",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Selong Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Selong",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Selong Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Rawa Barat",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Rawa Barat Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Rawa Barat",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Rawa Barat Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Rawa Barat",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Rawa Barat Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Petogogan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Petogogan Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Petogogan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Petogogan Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Petogogan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Petogogan Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Pulo",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Pulo Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Pulo",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Pulo Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Pulo",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Pulo Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Melawai",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Melawai Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Melawai",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Melawai Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Melawai",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Melawai Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Gunung",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Gunung Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Gunung",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Gunung Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Gunung",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Gunung Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Kramat Pela",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kramat Pela Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Kramat Pela",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kramat Pela Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Kramat Pela",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kramat Pela Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Gandaria Utara",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Gandaria Utara Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Gandaria Utara",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Gandaria Utara Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Gandaria Utara",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Gandaria Utara Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Cipete Utara",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Cipete Utara Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Cipete Utara",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Cipete Utara Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Baru",
+      "locality": "Cipete Utara",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Cipete Utara Kebayoran Baru Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Karet Semanggi",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Karet Semanggi Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Karet Semanggi",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Karet Semanggi Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Karet Semanggi",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Karet Semanggi Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Karet Kuningan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Karet Kuningan Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Karet Kuningan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Karet Kuningan Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Karet Kuningan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Karet Kuningan Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Karet",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Karet Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Karet",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Karet Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Karet",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Karet Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Setiabudi",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Setiabudi Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Setiabudi",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Setiabudi Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Setiabudi",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Setiabudi Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Guntur",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Guntur Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Guntur",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Guntur Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Guntur",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Guntur Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Menteng Atas",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Menteng Atas Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Menteng Atas",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Menteng Atas Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Menteng Atas",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Menteng Atas Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Pasar Manggis",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Pasar Manggis Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Pasar Manggis",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Pasar Manggis Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Pasar Manggis",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Pasar Manggis Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Kuningan Timur",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kuningan Timur Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Kuningan Timur",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kuningan Timur Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Setiabudi",
+      "locality": "Kuningan Timur",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kuningan Timur Setiabudi Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Kuningan Barat",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kuningan Barat Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Kuningan Barat",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kuningan Barat Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Kuningan Barat",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kuningan Barat Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Mampang Prapatan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Mampang Prapatan Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Mampang Prapatan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Mampang Prapatan Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Mampang Prapatan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Mampang Prapatan Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Pela Mampang",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Pela Mampang Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Pela Mampang",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Pela Mampang Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Pela Mampang",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Pela Mampang Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Tegal Parang",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Tegal Parang Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Tegal Parang",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Tegal Parang Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Tegal Parang",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Tegal Parang Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Bangka",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Bangka Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Bangka",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Bangka Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Mampang Prapatan",
+      "locality": "Bangka",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Bangka Mampang Prapatan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Menteng Dalam",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Menteng Dalam Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Menteng Dalam",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Menteng Dalam Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Menteng Dalam",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Menteng Dalam Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Tebet Barat",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Tebet Barat Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Tebet Barat",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Tebet Barat Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Tebet Barat",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Tebet Barat Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Tebet Timur",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Tebet Timur Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Tebet Timur",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Tebet Timur Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Tebet Timur",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Tebet Timur Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Kebon Baru",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kebon Baru Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Kebon Baru",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kebon Baru Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Kebon Baru",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kebon Baru Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Bukit Duri",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Bukit Duri Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Bukit Duri",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Bukit Duri Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Bukit Duri",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Bukit Duri Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Manggarai",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Manggarai Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Manggarai",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Manggarai Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Manggarai",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Manggarai Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Manggarai Selatan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Manggarai Selatan Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Manggarai Selatan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Manggarai Selatan Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Tebet",
+      "locality": "Manggarai Selatan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Manggarai Selatan Tebet Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Pancoran",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Pancoran Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Pancoran",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Pancoran Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Pancoran",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Pancoran Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Duren Tiga",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Duren Tiga Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Duren Tiga",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Duren Tiga Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Duren Tiga",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Duren Tiga Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Kalibata",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kalibata Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Kalibata",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kalibata Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Kalibata",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kalibata Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Rawajati",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Rawajati Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Rawajati",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Rawajati Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Rawajati",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Rawajati Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Pengadegan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Pengadegan Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Pengadegan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Pengadegan Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Pengadegan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Pengadegan Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Cikoko",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Cikoko Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Cikoko",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Cikoko Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pancoran",
+      "locality": "Cikoko",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Cikoko Pancoran Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Grogol Utara",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Grogol Utara Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Grogol Utara",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Grogol Utara Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Grogol Utara",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Grogol Utara Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Grogol Selatan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Grogol Selatan Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Grogol Selatan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Grogol Selatan Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Grogol Selatan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Grogol Selatan Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Cipulir",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Cipulir Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Cipulir",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Cipulir Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Cipulir",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Cipulir Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Kebayoran Lama Utara",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kebayoran Lama Utara Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Kebayoran Lama Utara",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kebayoran Lama Utara Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Kebayoran Lama Utara",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kebayoran Lama Utara Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Kebayoran Lama Selatan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kebayoran Lama Selatan Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Kebayoran Lama Selatan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kebayoran Lama Selatan Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Kebayoran Lama Selatan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kebayoran Lama Selatan Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Pondok Pinang",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Pondok Pinang Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Pondok Pinang",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Pondok Pinang Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Kebayoran Lama",
+      "locality": "Pondok Pinang",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Pondok Pinang Kebayoran Lama Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Ulujami",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Ulujami Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Ulujami",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Ulujami Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Ulujami",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Ulujami Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Pesanggrahan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Pesanggrahan Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Pesanggrahan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Pesanggrahan Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Pesanggrahan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Pesanggrahan Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Petukangan Utara",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Petukangan Utara Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Petukangan Utara",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Petukangan Utara Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Petukangan Utara",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Petukangan Utara Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Petukangan Selatan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Petukangan Selatan Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Petukangan Selatan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Petukangan Selatan Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Petukangan Selatan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Petukangan Selatan Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Bintaro",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Bintaro Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Bintaro",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Bintaro Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pesanggrahan",
+      "locality": "Bintaro",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Bintaro Pesanggrahan Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Bendungan Hilir",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Bendungan Hilir Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Bendungan Hilir",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Bendungan Hilir Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Bendungan Hilir",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Bendungan Hilir Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Karet Tengsin",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Karet Tengsin Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Karet Tengsin",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Karet Tengsin Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Karet Tengsin",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Karet Tengsin Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Petamburan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Petamburan Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Petamburan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Petamburan Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Petamburan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Petamburan Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Kebon Melati",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kebon Melati Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Kebon Melati",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kebon Melati Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Kebon Melati",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kebon Melati Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Kebon Kacang",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kebon Kacang Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Kebon Kacang",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kebon Kacang Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Kebon Kacang",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kebon Kacang Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Kampung Bali",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kampung Bali Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Kampung Bali",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kampung Bali Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Kampung Bali",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kampung Bali Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Gelora",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Gelora Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Gelora",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Gelora Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Tanah Abang",
+      "locality": "Gelora",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Gelora Tanah Abang Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Palmerah",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Palmerah Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Palmerah",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Palmerah Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Palmerah",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Palmerah Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Slipi",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Slipi Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Slipi",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Slipi Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Slipi",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Slipi Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Kemanggisan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kemanggisan Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Kemanggisan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kemanggisan Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Kemanggisan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kemanggisan Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Jatipulo",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Jatipulo Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Jatipulo",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Jatipulo Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Jatipulo",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Jatipulo Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Kota Bambu Utara",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kota Bambu Utara Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Kota Bambu Utara",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kota Bambu Utara Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Kota Bambu Utara",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kota Bambu Utara Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Kota Bambu Selatan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kota Bambu Selatan Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Kota Bambu Selatan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kota Bambu Selatan Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Palmerah",
+      "locality": "Kota Bambu Selatan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kota Bambu Selatan Palmerah Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Kebon Jeruk",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kebon Jeruk Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Kebon Jeruk",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kebon Jeruk Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Kebon Jeruk",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kebon Jeruk Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Kelapa Dua",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kelapa Dua Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Kelapa Dua",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kelapa Dua Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Kelapa Dua",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kelapa Dua Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Sukabumi Utara",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Sukabumi Utara Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Sukabumi Utara",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Sukabumi Utara Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Sukabumi Utara",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Sukabumi Utara Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Sukabumi Selatan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Sukabumi Selatan Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Sukabumi Selatan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Sukabumi Selatan Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Sukabumi Selatan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Sukabumi Selatan Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Kedoya Selatan",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kedoya Selatan Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Kedoya Selatan",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kedoya Selatan Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Kedoya Selatan",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kedoya Selatan Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Kedoya Utara",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Kedoya Utara Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Kedoya Utara",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Kedoya Utara Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Kedoya Utara",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Kedoya Utara Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Duri Kepa",
+      "kind": "house",
+      "priority": 1,
+      "query": "sewa rumah kontrakan bulanan tahunan Duri Kepa Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Duri Kepa",
+      "kind": "apartment",
+      "priority": 1,
+      "query": "sewa apartemen bulanan tahunan Duri Kepa Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kebon Jeruk",
+      "locality": "Duri Kepa",
+      "kind": "boarding",
+      "priority": 1,
+      "query": "kos pasutri suami istri bulanan Duri Kepa Kebon Jeruk Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Pejaten Barat",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Pejaten Barat Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Pejaten Barat",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Pejaten Barat Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Pejaten Barat",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Pejaten Barat Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Pejaten Timur",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Pejaten Timur Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Pejaten Timur",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Pejaten Timur Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Pejaten Timur",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Pejaten Timur Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Jati Padang",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Jati Padang Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Jati Padang",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Jati Padang Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Jati Padang",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Jati Padang Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Pasar Minggu",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Pasar Minggu Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Pasar Minggu",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Pasar Minggu Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Pasar Minggu",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Pasar Minggu Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Cilandak Timur",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cilandak Timur Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Cilandak Timur",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cilandak Timur Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Cilandak Timur",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cilandak Timur Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Ragunan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Ragunan Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Ragunan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Ragunan Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Pasar Minggu",
+      "locality": "Ragunan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Ragunan Pasar Minggu Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Cipete Selatan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cipete Selatan Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Cipete Selatan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cipete Selatan Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Cipete Selatan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cipete Selatan Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Gandaria Selatan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Gandaria Selatan Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Gandaria Selatan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Gandaria Selatan Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Gandaria Selatan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Gandaria Selatan Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Cilandak Barat",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cilandak Barat Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Cilandak Barat",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cilandak Barat Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Cilandak Barat",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cilandak Barat Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Lebak Bulus",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Lebak Bulus Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Lebak Bulus",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Lebak Bulus Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Lebak Bulus",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Lebak Bulus Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Pondok Labu",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Pondok Labu Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Pondok Labu",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Pondok Labu Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Selatan",
+      "district": "Cilandak",
+      "locality": "Pondok Labu",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Pondok Labu Cilandak Jakarta Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Menteng",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Menteng Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Menteng",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Menteng Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Menteng",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Menteng Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Pegangsaan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Pegangsaan Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Pegangsaan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Pegangsaan Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Pegangsaan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Pegangsaan Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Cikini",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cikini Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Cikini",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cikini Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Cikini",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cikini Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Gondangdia",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Gondangdia Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Gondangdia",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Gondangdia Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Gondangdia",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Gondangdia Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Kebon Sirih",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kebon Sirih Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Kebon Sirih",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kebon Sirih Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Menteng",
+      "locality": "Kebon Sirih",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kebon Sirih Menteng Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Gambir",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Gambir Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Gambir",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Gambir Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Gambir",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Gambir Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Cideng",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cideng Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Cideng",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cideng Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Cideng",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cideng Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Petojo Selatan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Petojo Selatan Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Petojo Selatan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Petojo Selatan Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Petojo Selatan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Petojo Selatan Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Petojo Utara",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Petojo Utara Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Petojo Utara",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Petojo Utara Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Petojo Utara",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Petojo Utara Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Kebon Kelapa",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kebon Kelapa Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Kebon Kelapa",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kebon Kelapa Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Kebon Kelapa",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kebon Kelapa Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Duri Pulo",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Duri Pulo Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Duri Pulo",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Duri Pulo Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Gambir",
+      "locality": "Duri Pulo",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Duri Pulo Gambir Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Senen",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Senen Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Senen",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Senen Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Senen",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Senen Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Kenari",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kenari Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Kenari",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kenari Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Kenari",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kenari Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Paseban",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Paseban Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Paseban",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Paseban Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Paseban",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Paseban Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Kramat",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kramat Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Kramat",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kramat Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Kramat",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kramat Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Kwitang",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kwitang Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Kwitang",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kwitang Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Kwitang",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kwitang Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Bungur",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Bungur Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Bungur",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Bungur Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Senen",
+      "locality": "Bungur",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Bungur Senen Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "locality": "Johar Baru",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Johar Baru Johar Baru Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "locality": "Johar Baru",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Johar Baru Johar Baru Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "locality": "Johar Baru",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Johar Baru Johar Baru Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "locality": "Kampung Rawa",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kampung Rawa Johar Baru Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "locality": "Kampung Rawa",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kampung Rawa Johar Baru Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "locality": "Kampung Rawa",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kampung Rawa Johar Baru Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "locality": "Galur",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Galur Johar Baru Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "locality": "Galur",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Galur Johar Baru Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "locality": "Galur",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Galur Johar Baru Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "locality": "Tanah Tinggi",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Tanah Tinggi Johar Baru Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "locality": "Tanah Tinggi",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Tanah Tinggi Johar Baru Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Johar Baru",
+      "locality": "Tanah Tinggi",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Tanah Tinggi Johar Baru Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Cempaka Putih",
+      "locality": "Rawasari",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Rawasari Cempaka Putih Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Cempaka Putih",
+      "locality": "Rawasari",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Rawasari Cempaka Putih Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Cempaka Putih",
+      "locality": "Rawasari",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Rawasari Cempaka Putih Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Cempaka Putih",
+      "locality": "Cempaka Putih Barat",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cempaka Putih Barat Cempaka Putih Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Cempaka Putih",
+      "locality": "Cempaka Putih Barat",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cempaka Putih Barat Cempaka Putih Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Cempaka Putih",
+      "locality": "Cempaka Putih Barat",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cempaka Putih Barat Cempaka Putih Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Cempaka Putih",
+      "locality": "Cempaka Putih Timur",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cempaka Putih Timur Cempaka Putih Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Cempaka Putih",
+      "locality": "Cempaka Putih Timur",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cempaka Putih Timur Cempaka Putih Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Cempaka Putih",
+      "locality": "Cempaka Putih Timur",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cempaka Putih Timur Cempaka Putih Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Pasar Baru",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Pasar Baru Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Pasar Baru",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Pasar Baru Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Pasar Baru",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Pasar Baru Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Karang Anyar",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Karang Anyar Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Karang Anyar",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Karang Anyar Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Karang Anyar",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Karang Anyar Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Gunung Sahari Utara",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Gunung Sahari Utara Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Gunung Sahari Utara",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Gunung Sahari Utara Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Gunung Sahari Utara",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Gunung Sahari Utara Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Mangga Dua Selatan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Mangga Dua Selatan Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Mangga Dua Selatan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Mangga Dua Selatan Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Mangga Dua Selatan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Mangga Dua Selatan Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Kartini",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kartini Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Kartini",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kartini Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Sawah Besar",
+      "locality": "Kartini",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kartini Sawah Besar Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Gunung Sahari Selatan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Gunung Sahari Selatan Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Gunung Sahari Selatan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Gunung Sahari Selatan Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Gunung Sahari Selatan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Gunung Sahari Selatan Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Serdang",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Serdang Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Serdang",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Serdang Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Serdang",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Serdang Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Harapan Mulia",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Harapan Mulia Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Harapan Mulia",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Harapan Mulia Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Harapan Mulia",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Harapan Mulia Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Cempaka Baru",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cempaka Baru Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Cempaka Baru",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cempaka Baru Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Cempaka Baru",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cempaka Baru Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Utan Panjang",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Utan Panjang Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Utan Panjang",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Utan Panjang Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Utan Panjang",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Utan Panjang Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Kebon Kosong",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kebon Kosong Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Kebon Kosong",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kebon Kosong Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Kebon Kosong",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kebon Kosong Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Kemayoran",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kemayoran Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Kemayoran",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kemayoran Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Kemayoran",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kemayoran Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Sumur Batu",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Sumur Batu Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Sumur Batu",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Sumur Batu Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Pusat",
+      "district": "Kemayoran",
+      "locality": "Sumur Batu",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Sumur Batu Kemayoran Jakarta Pusat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Grogol",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Grogol Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Grogol",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Grogol Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Grogol",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Grogol Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Tomang",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Tomang Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Tomang",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Tomang Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Tomang",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Tomang Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Tanjung Duren Utara",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Tanjung Duren Utara Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Tanjung Duren Utara",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Tanjung Duren Utara Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Tanjung Duren Utara",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Tanjung Duren Utara Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Tanjung Duren Selatan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Tanjung Duren Selatan Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Tanjung Duren Selatan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Tanjung Duren Selatan Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Tanjung Duren Selatan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Tanjung Duren Selatan Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Jelambar",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Jelambar Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Jelambar",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Jelambar Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Jelambar",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Jelambar Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Jelambar Baru",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Jelambar Baru Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Jelambar Baru",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Jelambar Baru Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Jelambar Baru",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Jelambar Baru Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Wijaya Kusuma",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Wijaya Kusuma Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Wijaya Kusuma",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Wijaya Kusuma Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Grogol Petamburan",
+      "locality": "Wijaya Kusuma",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Wijaya Kusuma Grogol Petamburan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Meruya Utara",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Meruya Utara Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Meruya Utara",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Meruya Utara Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Meruya Utara",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Meruya Utara Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Meruya Selatan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Meruya Selatan Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Meruya Selatan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Meruya Selatan Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Meruya Selatan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Meruya Selatan Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Srengseng",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Srengseng Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Srengseng",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Srengseng Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Srengseng",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Srengseng Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Joglo",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Joglo Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Joglo",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Joglo Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Joglo",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Joglo Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Kembangan Selatan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kembangan Selatan Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Kembangan Selatan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kembangan Selatan Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Kembangan",
+      "locality": "Kembangan Selatan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kembangan Selatan Kembangan Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Duri Selatan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Duri Selatan Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Duri Selatan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Duri Selatan Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Duri Selatan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Duri Selatan Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Duri Utara",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Duri Utara Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Duri Utara",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Duri Utara Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Duri Utara",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Duri Utara Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Jembatan Besi",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Jembatan Besi Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Jembatan Besi",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Jembatan Besi Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Jembatan Besi",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Jembatan Besi Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Tanah Sereal",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Tanah Sereal Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Tanah Sereal",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Tanah Sereal Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Tanah Sereal",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Tanah Sereal Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Krendang",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Krendang Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Krendang",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Krendang Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Krendang",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Krendang Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Angke",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Angke Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Angke",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Angke Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Angke",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Angke Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Jembatan Lima",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Jembatan Lima Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Jembatan Lima",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Jembatan Lima Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Jembatan Lima",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Jembatan Lima Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Roa Malaka",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Roa Malaka Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Roa Malaka",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Roa Malaka Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Barat",
+      "district": "Tambora",
+      "locality": "Roa Malaka",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Roa Malaka Tambora Jakarta Barat maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Kebon Manggis",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kebon Manggis Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Kebon Manggis",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kebon Manggis Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Kebon Manggis",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kebon Manggis Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Pal Meriam",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Pal Meriam Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Pal Meriam",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Pal Meriam Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Pal Meriam",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Pal Meriam Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Kayu Manis",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kayu Manis Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Kayu Manis",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kayu Manis Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Kayu Manis",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kayu Manis Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Pisangan Baru",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Pisangan Baru Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Pisangan Baru",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Pisangan Baru Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Pisangan Baru",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Pisangan Baru Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Utan Kayu Selatan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Utan Kayu Selatan Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Utan Kayu Selatan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Utan Kayu Selatan Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Utan Kayu Selatan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Utan Kayu Selatan Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Utan Kayu Utara",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Utan Kayu Utara Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Utan Kayu Utara",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Utan Kayu Utara Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Matraman",
+      "locality": "Utan Kayu Utara",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Utan Kayu Utara Matraman Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Bali Mester",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Bali Mester Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Bali Mester",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Bali Mester Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Bali Mester",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Bali Mester Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Kampung Melayu",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kampung Melayu Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Kampung Melayu",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kampung Melayu Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Kampung Melayu",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kampung Melayu Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Bidara Cina",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Bidara Cina Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Bidara Cina",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Bidara Cina Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Bidara Cina",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Bidara Cina Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Rawa Bunga",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Rawa Bunga Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Rawa Bunga",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Rawa Bunga Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Rawa Bunga",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Rawa Bunga Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Cipinang Cempedak",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cipinang Cempedak Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Cipinang Cempedak",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cipinang Cempedak Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Cipinang Cempedak",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cipinang Cempedak Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Cipinang Besar Utara",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cipinang Besar Utara Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Cipinang Besar Utara",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cipinang Besar Utara Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Cipinang Besar Utara",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cipinang Besar Utara Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Cipinang Besar Selatan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cipinang Besar Selatan Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Cipinang Besar Selatan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cipinang Besar Selatan Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Cipinang Besar Selatan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cipinang Besar Selatan Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Cipinang Muara",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cipinang Muara Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Cipinang Muara",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cipinang Muara Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Jatinegara",
+      "locality": "Cipinang Muara",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cipinang Muara Jatinegara Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Cawang",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cawang Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Cawang",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cawang Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Cawang",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cawang Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Cililitan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cililitan Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Cililitan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cililitan Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Cililitan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cililitan Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Kramat Jati",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kramat Jati Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Kramat Jati",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kramat Jati Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Kramat Jati",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kramat Jati Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Batu Ampar",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Batu Ampar Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Batu Ampar",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Batu Ampar Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Batu Ampar",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Batu Ampar Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Balekambang",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Balekambang Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Balekambang",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Balekambang Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Balekambang",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Balekambang Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Kampung Tengah",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kampung Tengah Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Kampung Tengah",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kampung Tengah Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Kampung Tengah",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kampung Tengah Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Dukuh",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Dukuh Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Dukuh",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Dukuh Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Kramat Jati",
+      "locality": "Dukuh",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Dukuh Kramat Jati Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "locality": "Rawamangun",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Rawamangun Pulo Gadung Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "locality": "Rawamangun",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Rawamangun Pulo Gadung Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "locality": "Rawamangun",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Rawamangun Pulo Gadung Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "locality": "Kayu Putih",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kayu Putih Pulo Gadung Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "locality": "Kayu Putih",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kayu Putih Pulo Gadung Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "locality": "Kayu Putih",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kayu Putih Pulo Gadung Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "locality": "Pisangan Timur",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Pisangan Timur Pulo Gadung Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "locality": "Pisangan Timur",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Pisangan Timur Pulo Gadung Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "locality": "Pisangan Timur",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Pisangan Timur Pulo Gadung Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "locality": "Cipinang",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cipinang Pulo Gadung Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "locality": "Cipinang",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cipinang Pulo Gadung Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta Timur",
+      "district": "Pulo Gadung",
+      "locality": "Cipinang",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cipinang Pulo Gadung Jakarta Timur maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "locality": "Rempoa",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Rempoa Ciputat Timur Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "locality": "Rempoa",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Rempoa Ciputat Timur Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "locality": "Rempoa",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Rempoa Ciputat Timur Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "locality": "Rengas",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Rengas Ciputat Timur Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "locality": "Rengas",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Rengas Ciputat Timur Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "locality": "Rengas",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Rengas Ciputat Timur Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "locality": "Cireundeu",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Cireundeu Ciputat Timur Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "locality": "Cireundeu",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Cireundeu Ciputat Timur Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "locality": "Cireundeu",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Cireundeu Ciputat Timur Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "locality": "Pisangan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Pisangan Ciputat Timur Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "locality": "Pisangan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Pisangan Ciputat Timur Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Ciputat Timur",
+      "locality": "Pisangan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Pisangan Ciputat Timur Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Pondok Aren",
+      "locality": "Pondok Ranji",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Pondok Ranji Pondok Aren Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Pondok Aren",
+      "locality": "Pondok Ranji",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Pondok Ranji Pondok Aren Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Pondok Aren",
+      "locality": "Pondok Ranji",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Pondok Ranji Pondok Aren Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Pondok Aren",
+      "locality": "Pondok Karya",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Pondok Karya Pondok Aren Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Pondok Aren",
+      "locality": "Pondok Karya",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Pondok Karya Pondok Aren Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Pondok Aren",
+      "locality": "Pondok Karya",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Pondok Karya Pondok Aren Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Pondok Aren",
+      "locality": "Pondok Betung",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Pondok Betung Pondok Aren Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Pondok Aren",
+      "locality": "Pondok Betung",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Pondok Betung Pondok Aren Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang Selatan",
+      "district": "Pondok Aren",
+      "locality": "Pondok Betung",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Pondok Betung Pondok Aren Tangerang Selatan maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Larangan Utara",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Larangan Utara Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Larangan Utara",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Larangan Utara Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Larangan Utara",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Larangan Utara Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Larangan Selatan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Larangan Selatan Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Larangan Selatan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Larangan Selatan Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Larangan Selatan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Larangan Selatan Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Kreo",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kreo Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Kreo",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kreo Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Kreo",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kreo Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Kreo Selatan",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Kreo Selatan Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Kreo Selatan",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Kreo Selatan Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Kreo Selatan",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Kreo Selatan Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Gaga",
+      "kind": "house",
+      "priority": 2,
+      "query": "sewa rumah kontrakan bulanan tahunan Gaga Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Gaga",
+      "kind": "apartment",
+      "priority": 2,
+      "query": "sewa apartemen bulanan tahunan Gaga Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    },
+    {
+      "city": "Tangerang",
+      "district": "Larangan",
+      "locality": "Gaga",
+      "kind": "boarding",
+      "priority": 2,
+      "query": "kos pasutri suami istri bulanan Gaga Larangan Tangerang maksimal 5 juta per bulan",
+      "status": "pending"
+    }
+  ]
+}

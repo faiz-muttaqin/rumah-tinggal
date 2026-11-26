@@ -7,6 +7,7 @@ import {
 import { distanceKm, escapeHTML as esc, nearestStation } from "./geo.ts";
 import { icon } from "./icons.ts";
 import {
+  ARTHA_GRAHA_SCBD,
   googleMapsLocation,
   googleMapsToScbd,
   googleMapsWalkToStation,
@@ -31,7 +32,9 @@ import "./rental-table.css";
 
 const modes = ["KRL", "MRT", "LRT", "TransJakarta"] as const;
 export const RENTAL_RAIL_CORRIDOR = "cikarang-mrt";
+export const RENTAL_SCBD_RADIUS = "8km";
 const railRadiusKm = 1.2;
+const scbdRadiusKm = 8;
 const cikarangStops = [
   "Cikarang",
   "Metland Telagamurni",
@@ -59,6 +62,7 @@ type Row = {
   group: (typeof RENTAL_MAP_GROUPS)[number];
   mosque?: ResearchMosque;
   mosqueKm?: number;
+  scbdKm?: number;
   stops: Partial<Record<Mode, Stop>>;
   corridorStop?: Stop;
 };
@@ -153,6 +157,13 @@ const columns: Column[] = [
     label: "Jarak angkutan (km)",
     width: 145,
     value: (_, stop) => stop?.distance,
+    format: decimal,
+  },
+  {
+    id: "scbdKm",
+    label: "Jarak Artha Graha (km)",
+    width: 169,
+    value: ({ scbdKm }) => scbdKm,
     format: decimal,
   },
   {
@@ -502,6 +513,7 @@ export class RentalTable {
         <div class="rent-table-title"><h2 id="rent-table-title">Tabel sewa</h2><span class="rent-table-cap" title="Tarif tahunan dibagi 12 untuk pembanding. Periode pembayaran asli tercantum di tabel."><span>Maks. Rp5 juta/bln</span><span class="rent-cap-compact">≤ Rp5 jt/bln</span></span><button type="button" data-open-saved-rentals class="rent-table-action rent-table-saved" aria-haspopup="dialog" aria-label="Simpanan hunian" title="Simpanan hunian">${icon("bookmark")}<span>Simpanan</span></button><select class="rent-table-action rent-table-export" name="export" aria-label="Ekspor tabel sewa" title="Unduh semua hasil sesuai filter dan urutan tabel"><option value="">Ekspor</option><option value="csv">CSV</option><option value="xlsx">Excel (.xlsx)</option></select><button type="button" data-close-table class="rent-table-action">Ke kartu</button></div>
         <div class="rent-table-filters">
           <label class="rent-table-search">${icon("search")}<input type="search" name="query" aria-label="Cari di tabel sewa" placeholder="Cari hunian, kawasan, masjid…" autocomplete="off"/></label>
+          <select name="scbd" aria-label="Radius Artha Graha SCBD" title="Jarak garis lurus dari pin hunian ke Gedung Artha Graha"><option value="">Semua jarak SCBD</option><option value="${RENTAL_SCBD_RADIUS}">≤ 8 km Artha Graha</option></select>
           <select name="kind" aria-label="Jenis hunian di tabel"><option value="">Semua jenis</option>${RENTAL_MAP_GROUPS.map((g) => `<option value="${g.id}">${g.label}</option>`).join("")}</select>
           <select name="area" aria-label="Wilayah di tabel"><option value="">Semua wilayah</option>${AREAS.map((a) => `<option>${a}</option>`).join("")}</select>
           <select name="mode" aria-label="Angkutan dekat hunian"><option value="">Semua angkutan</option><option value="${RENTAL_RAIL_CORRIDOR}">Cikarang–Sudirman + MRT</option>${modes.map((m) => `<option>${m}</option>`).join("")}</select>
@@ -726,6 +738,10 @@ export class RentalTable {
     this.syncCorridor();
   }
 
+  showScbdRadius(): void {
+    this.select("scbd").value = RENTAL_SCBD_RADIUS;
+  }
+
   private freezeLimit(): number {
     const width = this.workspace.clientWidth;
     return width <= 760 ? 2 : width < 900 ? 3 : 4;
@@ -850,6 +866,7 @@ export class RentalTable {
           RENTAL_MAP_GROUPS[3],
       };
       if (rental.location) {
+        row.scbdKm = distanceKm(rental.location, ARTHA_GRAHA_SCBD);
         for (const [mode, items] of byMode)
           row.stops[mode] = nearestStation(rental.location, items);
         row.corridorStop = nearestStation(rental.location, corridor);
@@ -878,6 +895,7 @@ export class RentalTable {
     const kind = this.select("kind").value as RentalMapKind | "";
     const group = kind ? new Set([kind]) : allKinds;
     const mode = this.select("mode").value;
+    const scbd = this.select("scbd").value === RENTAL_SCBD_RADIUS;
     const tokens = (
       this.controls.elements.namedItem("query") as HTMLInputElement
     ).value
@@ -901,10 +919,12 @@ export class RentalTable {
     ).filter((rental) => {
       const row = this.rows.get(rental.id);
       if (!row) return false;
+      if (scbd && (row.scbdKm === undefined || row.scbdKm > scbdRadiusKm))
+        return false;
       if (
-        mode === RENTAL_RAIL_CORRIDOR &&
-        row.group.id === "kos" &&
-        !rental.review?.couples
+        (scbd || mode === RENTAL_RAIL_CORRIDOR) &&
+        (rental.review?.couples === false ||
+          (row.group.id === "kos" && !rental.review?.couples))
       )
         return false;
       const stop = this.stop(row);
