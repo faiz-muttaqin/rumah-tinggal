@@ -13690,6 +13690,253 @@
         "checkedAt": "2026-11-26"
       },
       "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; konfirmasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-b9750a751438",
+      "location": {
+        "lat": -6.14477,
+        "lng": 106.875949,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-green-lake-sunter-apartment/GLSA015",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-ac7355aa0530",
+      "location": {
+        "lat": -6.14477,
+        "lng": 106.875949,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-green-lake-sunter-apartment/GLSC056",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-509f7963cd83",
+      "location": {
+        "lat": -6.149478,
+        "lng": 106.856909,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-maple-park-apartment/MPPB024",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-efb8a714a325",
+      "location": {
+        "lat": -6.3086,
+        "lng": 106.8384,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-mahata-tanjung-barat-apartment/MHTB001",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-jendela360-656fcafabe65",
+      "location": {
+        "lat": -6.3086,
+        "lng": 106.8384,
+        "precision": "building",
+        "label": "Acuan gedung jendela360",
+        "url": "https://jendela360.com/sewa-apartemen-mahata-tanjung-barat-apartment/MHTA020",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-mamikos-cac78a5519a0",
+      "location": {
+        "lat": -6.125712,
+        "lng": 106.885337,
+        "precision": "approximate",
+        "label": "Pin perkiraan mamikos",
+        "url": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-eksklusif-kost-haji-agus-standar-tanjung-priok-jakarta-utara-2",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-6d9e158f07db",
+      "location": {
+        "lat": -6.340434,
+        "lng": 106.490062,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tanggamus-blok-a-no-30",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-58eabe49330b",
+      "location": {
+        "lat": -6.323846,
+        "lng": 106.488307,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-jambe",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-4dc85075a4ee",
+      "location": {
+        "lat": -6.343106,
+        "lng": 106.456918,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kana-timur-10-25",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-37c06ec3bf97",
+      "location": {
+        "lat": -6.34957,
+        "lng": 106.558718,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumnas-i-jl-kamper-4-no01-cibunar-parungpanjang",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-4988585cb564",
+      "location": {
+        "lat": -6.328399,
+        "lng": 106.429625,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-kereta-di-taman-adiyasa",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-da2728d88e7c",
+      "location": {
+        "lat": -6.334813,
+        "lng": 106.434572,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cikasungka",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-4b2909f17eeb",
+      "location": {
+        "lat": -6.338335,
+        "lng": 106.415594,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-harmoni-cikasungka-tangerang",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-423eb15f5696",
+      "location": {
+        "lat": -6.302608,
+        "lng": 106.677026,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kpdadap-rt-04-rw-04",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-de0413e33377",
+      "location": {
+        "lat": -6.592076,
+        "lng": 106.799684,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jalak-harupat-lebak-kantin",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-08722bb81ecb",
+      "location": {
+        "lat": -6.152807,
+        "lng": 106.866395,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jakan-sespakes",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-123d224f74f2",
+      "location": {
+        "lat": -6.12841,
+        "lng": 106.893363,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-sungai-bambu",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-430a25c7f488",
+      "location": {
+        "lat": -6.329752,
+        "lng": 106.491727,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-daru-raya-di-daru",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-9cf302397941",
+      "location": {
+        "lat": -6.336139,
+        "lng": 106.431414,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-delta-tigaraksa",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
     }
   ]
 }

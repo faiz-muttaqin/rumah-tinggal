@@ -1,0 +1,1162 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-26",
+  "note": "Search-index query batches: results aggregated, task hints not proof of location. Select relevant public rental detail URLs and validated search pages; matched locality and distance rechecked from detail pin.",
+  "batches": [
+    {
+      "id": 1,
+      "queries": [
+        {
+          "taskId": "32.01.23.2005:rumah",
+          "q": "site:pinhome.id/disewa/rumah-sekunder/unit disewakan rumah kontrakan Tenjo Kabupaten Bogor"
+        },
+        {
+          "taskId": "32.01.23.2005:kos",
+          "q": "site:mamikos.com/room kos Tenjo Kabupaten Bogor pasutri"
+        },
+        {
+          "taskId": "32.01.23.2005:apartemen",
+          "q": "sewa apartemen Tenjo Kabupaten Bogor site:jendela360.com/sewa-apartemen OR site:pinhome.id/disewa/apartemen"
+        },
+        {
+          "taskId": "36.03.04.2005:rumah",
+          "q": "site:pinhome.id/disewa/rumah-sekunder/unit disewakan rumah kontrakan Daru Jambe Kabupaten Tangerang"
+        }
+      ],
+      "returnedPublicRentalURLs": 39,
+      "selectedDetailURLs": 5
+    },
+    {
+      "id": 2,
+      "queries": [
+        {
+          "taskId": "36.03.04.2005:kos",
+          "q": "site:mamikos.com/room kos Daru Jambe Kabupaten Tangerang pasutri"
+        },
+        {
+          "taskId": "36.03.04.2005:apartemen",
+          "q": "sewa apartemen Daru Jambe Kabupaten Tangerang site:jendela360.com/sewa-apartemen OR site:pinhome.id/disewa/apartemen"
+        },
+        {
+          "taskId": "32.01.20.2006:rumah",
+          "q": "site:pinhome.id/disewa/rumah-sekunder/unit disewakan rumah kontrakan Parung Panjang Kabupaten Bogor"
+        },
+        {
+          "taskId": "32.01.20.2006:kos",
+          "q": "site:mamikos.com/room kos Parung Panjang Kabupaten Bogor pasutri"
+        }
+      ],
+      "returnedPublicRentalURLs": 40,
+      "selectedDetailURLs": 13
+    },
+    {
+      "id": 3,
+      "queries": [
+        {
+          "taskId": "32.01.20.2006:apartemen",
+          "q": "sewa apartemen Parung Panjang Kabupaten Bogor site:jendela360.com/sewa-apartemen OR site:pinhome.id/disewa/apartemen"
+        },
+        {
+          "taskId": "36.03.31.2003:rumah",
+          "q": "site:pinhome.id/disewa/rumah-sekunder/unit disewakan rumah kontrakan Cikasungka Solear Kabupaten Tangerang"
+        },
+        {
+          "taskId": "36.03.31.2003:kos",
+          "q": "site:mamikos.com/room kos Cikasungka Solear Kabupaten Tangerang pasutri"
+        },
+        {
+          "taskId": "36.03.31.2003:apartemen",
+          "q": "sewa apartemen Cikasungka Solear Kabupaten Tangerang site:jendela360.com/sewa-apartemen OR site:pinhome.id/disewa/apartemen"
+        }
+      ],
+      "returnedPublicRentalURLs": 38,
+      "selectedDetailURLs": 5
+    },
+    {
+      "id": 4,
+      "queries": [
+        {
+          "taskId": "36.74.01.1002:rumah",
+          "q": "site:pinhome.id/disewa/rumah-sekunder/unit disewakan rumah kontrakan Rawa Buntu Serpong Tangerang Selatan"
+        },
+        {
+          "taskId": "36.74.01.1002:kos",
+          "q": "site:mamikos.com/room kos Rawa Buntu Serpong Tangerang Selatan pasutri"
+        },
+        {
+          "taskId": "36.74.01.1002:apartemen",
+          "q": "sewa apartemen Rawa Buntu Serpong Tangerang Selatan site:jendela360.com/sewa-apartemen OR site:pinhome.id/disewa/apartemen"
+        },
+        {
+          "taskId": "31.74.09.1004:rumah",
+          "q": "site:pinhome.id/disewa/rumah-sekunder/unit disewakan rumah kontrakan Lenteng Agung Jagakarsa Jakarta Selatan"
+        }
+      ],
+      "returnedPublicRentalURLs": 37,
+      "selectedDetailURLs": 21
+    },
+    {
+      "id": 5,
+      "queries": [
+        {
+          "taskId": "31.74.09.1004:kos",
+          "q": "site:mamikos.com/room kos Lenteng Agung Jagakarsa Jakarta Selatan pasutri"
+        },
+        {
+          "taskId": "31.74.09.1004:apartemen",
+          "q": "sewa apartemen Lenteng Agung Jagakarsa Jakarta Selatan site:jendela360.com/sewa-apartemen OR site:pinhome.id/disewa/apartemen"
+        },
+        {
+          "taskId": "32.71.03.1004:rumah",
+          "q": "site:pinhome.id/disewa/rumah-sekunder/unit disewakan rumah kontrakan Cibogor Bogor Tengah Kota Bogor"
+        },
+        {
+          "taskId": "32.71.03.1004:kos",
+          "q": "site:mamikos.com/room kos Cibogor Bogor Tengah Kota Bogor pasutri"
+        }
+      ],
+      "returnedPublicRentalURLs": 43,
+      "selectedDetailURLs": 13
+    },
+    {
+      "id": 6,
+      "queries": [
+        {
+          "taskId": "32.71.03.1004:apartemen",
+          "q": "sewa apartemen Cibogor Bogor Tengah Kota Bogor site:jendela360.com/sewa-apartemen OR site:pinhome.id/disewa/apartemen"
+        },
+        {
+          "taskId": "32.01.32.2003:rumah",
+          "q": "site:pinhome.id/disewa/rumah-sekunder/unit disewakan rumah kontrakan Nambo Klapanunggal Kabupaten Bogor"
+        },
+        {
+          "taskId": "32.01.32.2003:kos",
+          "q": "site:mamikos.com/room kos Nambo Klapanunggal Kabupaten Bogor pasutri"
+        },
+        {
+          "taskId": "32.01.32.2003:apartemen",
+          "q": "sewa apartemen Nambo Klapanunggal Kabupaten Bogor site:jendela360.com/sewa-apartemen OR site:pinhome.id/disewa/apartemen"
+        }
+      ],
+      "returnedPublicRentalURLs": 36,
+      "selectedDetailURLs": 5
+    },
+    {
+      "id": 7,
+      "queries": [
+        {
+          "taskId": "31.72.02.1006:rumah",
+          "q": "site:pinhome.id/disewa/rumah-sekunder/unit disewakan rumah kontrakan Sunter Agung Tanjung Priok Jakarta Utara"
+        },
+        {
+          "taskId": "31.72.02.1006:kos",
+          "q": "site:mamikos.com/room kos Sunter Agung Tanjung Priok Jakarta Utara pasutri"
+        },
+        {
+          "taskId": "31.72.02.1006:apartemen",
+          "q": "sewa apartemen Sunter Agung Tanjung Priok Jakarta Utara site:jendela360.com/sewa-apartemen OR site:pinhome.id/disewa/apartemen"
+        },
+        {
+          "taskId": "31.72.02.1001:rumah",
+          "q": "site:pinhome.id/disewa/rumah-sekunder/unit disewakan rumah kontrakan Tanjung Priok Jakarta Utara"
+        }
+      ],
+      "returnedPublicRentalURLs": 37,
+      "selectedDetailURLs": 26
+    },
+    {
+      "id": 8,
+      "queries": [
+        {
+          "taskId": "31.72.02.1001:kos",
+          "q": "site:mamikos.com/room kos Tanjung Priok Jakarta Utara pasutri"
+        },
+        {
+          "taskId": "31.72.02.1001:apartemen",
+          "q": "sewa apartemen Tanjung Priok Jakarta Utara site:jendela360.com/sewa-apartemen OR site:pinhome.id/disewa/apartemen"
+        }
+      ],
+      "returnedPublicRentalURLs": 24,
+      "selectedDetailURLs": 11
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/jambe/daru",
+      "taskHints": ["36.03.04.2005:rumah"]
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/jawa-barat/kab-bogor/tenjo",
+      "taskHints": ["32.01.23.2005:rumah"]
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/jawa-barat/kab-bogor/parung-panjang/parungpanjang",
+      "taskHints": ["32.01.20.2006:rumah"]
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/kab-tangerang/solear/cikasungka",
+      "taskHints": ["36.03.31.2003:rumah"]
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/banten/tangerang-selatan/serpong/rawabuntu",
+      "taskHints": ["36.74.01.1002:rumah"]
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/apartemen/banten/tangerang-selatan/serpong/rawabuntu",
+      "taskHints": ["36.74.01.1002:apartemen"]
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-selatan/jagakarsa/lenteng-agung",
+      "taskHints": ["31.74.09.1004:rumah"]
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/apartemen/dki-jakarta/jakarta-selatan/jagakarsa/lenteng-agung",
+      "taskHints": ["31.74.09.1004:apartemen"]
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/jawa-barat/bogor/bogor-tengah",
+      "taskHints": ["32.71.03.1004:rumah"]
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/apartemen/jawa-barat/bogor/bogor-tengah",
+      "taskHints": ["32.71.03.1004:apartemen"]
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/jawa-barat/kab-bogor/klapanunggal",
+      "taskHints": ["32.01.32.2003:rumah"]
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/apartemen/dki-jakarta/jakarta-utara/tanjung-priok/sunter-agung",
+      "taskHints": ["31.72.02.1006:apartemen"]
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/apartemen/dki-jakarta/jakarta-utara/tanjung-priok",
+      "taskHints": ["31.72.02.1001:apartemen"]
+    },
+    {
+      "url": "https://www.pinhome.id/sewa/rumah/dki-jakarta/jakarta-utara/tanjung-priok",
+      "taskHints": ["31.72.02.1006:rumah", "31.72.02.1001:rumah"]
+    },
+    {
+      "url": "https://jendela360.com/apartemen-tanjung-priok",
+      "taskHints": ["31.72.02.1006:apartemen", "31.72.02.1001:apartemen"]
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-metro-sunter-apartment",
+      "taskHints": ["31.72.02.1006:apartemen"]
+    }
+  ],
+  "seeds": [
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-jambe-tangerang",
+      "discovery": "web-index P0 batch 1",
+      "taskHints": [
+        "32.01.23.2005:rumah",
+        "32.01.23.2005:kos",
+        "32.01.23.2005:apartemen",
+        "36.03.04.2005:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-daru-raya-di-daru",
+      "discovery": "web-index P0 batch 1",
+      "taskHints": [
+        "32.01.23.2005:rumah",
+        "32.01.23.2005:kos",
+        "32.01.23.2005:apartemen",
+        "36.03.04.2005:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-pratama-daru-jambe",
+      "discovery": "web-index P0 batch 1",
+      "taskHints": [
+        "32.01.23.2005:rumah",
+        "32.01.23.2005:kos",
+        "32.01.23.2005:apartemen",
+        "36.03.04.2005:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-sarwani-desa-daru-pemai-blok-d",
+      "discovery": "web-index P0 batch 1",
+      "taskHints": [
+        "32.01.23.2005:rumah",
+        "32.01.23.2005:kos",
+        "32.01.23.2005:apartemen",
+        "36.03.04.2005:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-daru-metropolis-grand-daru-city-jambe-kab-tangerang",
+      "discovery": "web-index P0 batch 1",
+      "taskHints": [
+        "32.01.23.2005:rumah",
+        "32.01.23.2005:kos",
+        "32.01.23.2005:apartemen",
+        "36.03.04.2005:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-rumah-kontrakan-sentraland-parung-panjang-bogor",
+      "discovery": "web-index P0 batch 2",
+      "taskHints": [
+        "36.03.04.2005:kos",
+        "36.03.04.2005:apartemen",
+        "32.01.20.2006:rumah",
+        "32.01.20.2006:kos"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-parung-panjang-4",
+      "discovery": "web-index P0 batch 2",
+      "taskHints": [
+        "36.03.04.2005:kos",
+        "36.03.04.2005:apartemen",
+        "32.01.20.2006:rumah",
+        "32.01.20.2006:kos"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-pertahun-siap-huni-bagus-asri-di-sentraland-paradise-parung-panjang",
+      "discovery": "web-index P0 batch 2",
+      "taskHints": [
+        "36.03.04.2005:kos",
+        "36.03.04.2005:apartemen",
+        "32.01.20.2006:rumah",
+        "32.01.20.2006:kos"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-parung-panjang-5",
+      "discovery": "web-index P0 batch 2",
+      "taskHints": [
+        "36.03.04.2005:kos",
+        "36.03.04.2005:apartemen",
+        "32.01.20.2006:rumah",
+        "32.01.20.2006:kos"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-griya-parung-panjang-blok-e1-d2",
+      "discovery": "web-index P0 batch 2",
+      "taskHints": [
+        "36.03.04.2005:kos",
+        "36.03.04.2005:apartemen",
+        "32.01.20.2006:rumah",
+        "32.01.20.2006:kos"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-parung-panjang-3",
+      "discovery": "web-index P0 batch 2",
+      "taskHints": [
+        "36.03.04.2005:kos",
+        "36.03.04.2005:apartemen",
+        "32.01.20.2006:rumah",
+        "32.01.20.2006:kos"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-dua-lantai-murah-di-parung-panjang-di-jagabaya",
+      "discovery": "web-index P0 batch 2",
+      "taskHints": [
+        "36.03.04.2005:kos",
+        "36.03.04.2005:apartemen",
+        "32.01.20.2006:rumah",
+        "32.01.20.2006:kos"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-parung-panjang-11",
+      "discovery": "web-index P0 batch 2",
+      "taskHints": [
+        "36.03.04.2005:kos",
+        "36.03.04.2005:apartemen",
+        "32.01.20.2006:rumah",
+        "32.01.20.2006:kos"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-ruko-di-periumahan-griya-parung-panjang-di-jl-griya-parung-panjang-no-c1-44",
+      "discovery": "web-index P0 batch 2",
+      "taskHints": [
+        "36.03.04.2005:kos",
+        "36.03.04.2005:apartemen",
+        "32.01.20.2006:rumah",
+        "32.01.20.2006:kos"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cikasungka",
+      "discovery": "web-index P0 batch 3",
+      "taskHints": [
+        "32.01.20.2006:apartemen",
+        "36.03.31.2003:rumah",
+        "36.03.31.2003:kos",
+        "36.03.31.2003:apartemen"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-delta-tigaraksa",
+      "discovery": "web-index P0 batch 3",
+      "taskHints": [
+        "32.01.20.2006:apartemen",
+        "36.03.31.2003:rumah",
+        "36.03.31.2003:kos",
+        "36.03.31.2003:apartemen"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jlstasiun-cikoya",
+      "discovery": "web-index P0 batch 3",
+      "taskHints": [
+        "32.01.20.2006:apartemen",
+        "36.03.31.2003:rumah",
+        "36.03.31.2003:kos",
+        "36.03.31.2003:apartemen"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-harmoni-cikasungka-tangerang",
+      "discovery": "web-index P0 batch 3",
+      "taskHints": [
+        "32.01.20.2006:apartemen",
+        "36.03.31.2003:rumah",
+        "36.03.31.2003:kos",
+        "36.03.31.2003:apartemen"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-dekat-stasiun-krl-parung-panjang-di-perumahan-forest-hill-cluster-the-village",
+      "discovery": "web-index P0 batch 3",
+      "taskHints": [
+        "32.01.20.2006:apartemen",
+        "36.03.31.2003:rumah",
+        "36.03.31.2003:kos",
+        "36.03.31.2003:apartemen"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-lenteng-agung-jagakarsa-jaksel",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-lenteng-agung-raya",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-lenteng-agung-raya-1",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-asri-idaman-di-jln-raya-rawa-buntu-gg-haji-lati",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-agung-raya-ii-3",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-lenteng-agung-2",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-stasiun-rawa-buntu-serpong-tangerang-selatan",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-raya-rawa-buntu",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-aeon-mall-tanjung-barat-stasiun-l-di-jl-raya-jagakarsa-no1a-rt8-rw5-kel-jagakarsa-kec-jagakarsa-jakarta-selatan-12620",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-agung-raya-ii",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-dekat-kfc-lenteng-agung-murah-di-jl-lenteng-agung",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-aman-di-rawabuntu-rawa-buntu",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-lenteng-agung-8",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dalam-komplek-one-gate-dekat-stasiun-lenteng-agung-di-jagakarsa",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-agung-raya-ii-6",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-samesta-mahata-serpong-krl-rawa-buntu",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-rawabuntu-rawa-buntu",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-tangerang-selatan-kost-campur-eksklusif-kost-nyaman-syariah-near-stasiun-rawa-buntu-serpong-tangerang-",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-tangerang-selatan-kost-campur-eksklusif-kost-anggrek-a10-rawa-buntu-bsd-serpong-tangerang-selatan-1",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-murah-nyaman-lokasi-di-serpong-bsd-rawa-buntu-di-jl-hutama-karya-muncul-kec-setu-kota-tangerang-selatan-banten-15314",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-siap-huni-dekat-stasiun-rawa-buntu-di-serpong-hill-residence",
+      "discovery": "web-index P0 batch 4",
+      "taskHints": [
+        "36.74.01.1002:rumah",
+        "36.74.01.1002:kos",
+        "36.74.01.1002:apartemen",
+        "31.74.09.1004:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-singgahsini-jp-lenteng-agung-tipe-a-jagakarsa-jakarta-selatan-2",
+      "discovery": "web-index P0 batch 5",
+      "taskHints": [
+        "31.74.09.1004:kos",
+        "31.74.09.1004:apartemen",
+        "32.71.03.1004:rumah",
+        "32.71.03.1004:kos"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-rumah-rania-tipe-b-lenteng-agung-jagakarsa-jakarta-selatan-1",
+      "discovery": "web-index P0 batch 5",
+      "taskHints": [
+        "31.74.09.1004:kos",
+        "31.74.09.1004:apartemen",
+        "32.71.03.1004:rumah",
+        "32.71.03.1004:kos"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-ekslusif-bpt-eksklusif-bogor-tengah-bogor-2",
+      "discovery": "web-index P0 batch 5",
+      "taskHints": [
+        "31.74.09.1004:kos",
+        "31.74.09.1004:apartemen",
+        "32.71.03.1004:rumah",
+        "32.71.03.1004:kos"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-la-hub",
+      "discovery": "web-index P0 batch 5",
+      "taskHints": [
+        "31.74.09.1004:kos",
+        "31.74.09.1004:apartemen",
+        "32.71.03.1004:rumah",
+        "32.71.03.1004:kos"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-kost-aa-jagakarsa-jakarta-selatan",
+      "discovery": "web-index P0 batch 5",
+      "taskHints": [
+        "31.74.09.1004:kos",
+        "31.74.09.1004:apartemen",
+        "32.71.03.1004:rumah",
+        "32.71.03.1004:kos"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-mahata-tanjung-barat-5",
+      "discovery": "web-index P0 batch 5",
+      "taskHints": [
+        "31.74.09.1004:kos",
+        "31.74.09.1004:apartemen",
+        "32.71.03.1004:rumah",
+        "32.71.03.1004:kos"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-selatan-kost-campur-eksklusif-kost-pendalungan-tipe-standar-jagakarsa-jakarta-selatan",
+      "discovery": "web-index P0 batch 5",
+      "taskHints": [
+        "31.74.09.1004:kos",
+        "31.74.09.1004:apartemen",
+        "32.71.03.1004:rumah",
+        "32.71.03.1004:kos"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-selatan-kost-campur-eksklusif-rumah-kontrakan-jaksel-jagakarsa-jakarta-selatan",
+      "discovery": "web-index P0 batch 5",
+      "taskHints": [
+        "31.74.09.1004:kos",
+        "31.74.09.1004:apartemen",
+        "32.71.03.1004:rumah",
+        "32.71.03.1004:kos"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-murah-kost-pancasila-8-tipe-a-bogor-tengah-bogor-2",
+      "discovery": "web-index P0 batch 5",
+      "taskHints": [
+        "31.74.09.1004:kos",
+        "31.74.09.1004:apartemen",
+        "32.71.03.1004:rumah",
+        "32.71.03.1004:kos"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-selot-tipe-executive-bogor-tengah-bogor",
+      "discovery": "web-index P0 batch 5",
+      "taskHints": [
+        "31.74.09.1004:kos",
+        "31.74.09.1004:apartemen",
+        "32.71.03.1004:rumah",
+        "32.71.03.1004:kos"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-eksklusif-kost-selot-tipe-a-lt-2-bogor-tengah-bogor",
+      "discovery": "web-index P0 batch 5",
+      "taskHints": [
+        "31.74.09.1004:kos",
+        "31.74.09.1004:apartemen",
+        "32.71.03.1004:rumah",
+        "32.71.03.1004:kos"
+      ]
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-mahata-tanjung-barat-apartment/MHTB001",
+      "discovery": "web-index P0 batch 5",
+      "taskHints": [
+        "31.74.09.1004:kos",
+        "31.74.09.1004:apartemen",
+        "32.71.03.1004:rumah",
+        "32.71.03.1004:kos"
+      ]
+    },
+    {
+      "url": "https://jendela360.com/sewa-apartemen-mahata-tanjung-barat-apartment/MHTA020",
+      "discovery": "web-index P0 batch 5",
+      "taskHints": [
+        "31.74.09.1004:kos",
+        "31.74.09.1004:apartemen",
+        "32.71.03.1004:rumah",
+        "32.71.03.1004:kos"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-disewakan-rumah-di-klapanunggal-cileungsi-bogor",
+      "discovery": "web-index P0 batch 6",
+      "taskHints": [
+        "32.71.03.1004:apartemen",
+        "32.01.32.2003:rumah",
+        "32.01.32.2003:kos",
+        "32.01.32.2003:apartemen"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-primavera-residence-klapanunggal",
+      "discovery": "web-index P0 batch 6",
+      "taskHints": [
+        "32.71.03.1004:apartemen",
+        "32.01.32.2003:rumah",
+        "32.01.32.2003:kos",
+        "32.01.32.2003:apartemen"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-cileungsi-klapanunggal-di-green-amalia-2-blok-a-no-6",
+      "discovery": "web-index P0 batch 6",
+      "taskHints": [
+        "32.71.03.1004:apartemen",
+        "32.01.32.2003:rumah",
+        "32.01.32.2003:kos",
+        "32.01.32.2003:apartemen"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kabupaten-bogor-kost-campur-eksklusif-kost-kelapa-mamah-iddo-klapanunggal-bogor",
+      "discovery": "web-index P0 batch 6",
+      "taskHints": [
+        "32.71.03.1004:apartemen",
+        "32.01.32.2003:rumah",
+        "32.01.32.2003:kos",
+        "32.01.32.2003:apartemen"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-bogor-kost-campur-murah-kost-mami-lily-tipe-a-bogor-tengah-bogor-2",
+      "discovery": "web-index P0 batch 6",
+      "taskHints": [
+        "32.71.03.1004:apartemen",
+        "32.01.32.2003:rumah",
+        "32.01.32.2003:kos",
+        "32.01.32.2003:apartemen"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-eksklusif-kost-sunter-karya-tipe-i-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-eksklusif-kost-danau-sunter-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jkt-utara-kost-campur-murah-kost-bu-ganda-sunter-agung-jakarta-utara",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-sunter-agung-utara-4-blok-a-36-a-no-33",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-eksklusif-kost-almic-tipe-l-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-eksklusif-kost-killa-sunter-agung-jakarta-utara",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-sunter-agung-2",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-murah-kost-almic-i-tipe-a-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-agung-utara-di-jl-agung-utara-rt-02-rw-11-sunter-agung",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-pakai-di-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-eksklusif-kost-dhouse-tipe-a-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-3kt-rumah-sunter-sewa-rapi-sudah-renovasi-cat-bgs-di-sunter-agung",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-sunter-4-kt-2-carport-rapih-siap-huni-di-sunter-agung",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-eksklusif-kost-sunter-indah-residence-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-eksklusif-kost-phoenix-sunter-tanjung-priok-jakarta-utara-1",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-eksklusif-kost-jiss-ancol-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-luas-dan-siap-huni-di-sunter-agung-permai-jakarta-utara",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-lt-132-m2-di-sunter-agung-jakarta-utara-di-sunter-agung",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-eksklusif-kost-special-sunter-agung-tipe-b-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-disewakan-rumah-sunter-agung-utara-di-jl-agung-utara-22",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bebas-banjir-di-rumah-komplek-sts-sunter-agung-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lt-108-m2-di-sunter-agung-jakarta-utara-murah-di-sunter-agung",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lt-154-m2-di-sunter-agung-jakarta-utara-murah-di-sunter-agung",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-sunter-park-view-di-sunter-agung",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id//disewa/apartemen-sekunder/unit/disewakan-apartemen-jakarta-utara-tanjung-priok-sunter-agung-di-green-lake-sunter-studio-furnish-tanpa-kitchen-1slrtwfkb5",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rapih-dan-nyaman-di-sunter-jakarta-utara-di-sunter-jaya-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 7",
+      "taskHints": [
+        "31.72.02.1006:rumah",
+        "31.72.02.1006:kos",
+        "31.72.02.1006:apartemen",
+        "31.72.02.1001:rumah"
+      ]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-eksklusif-kost-mijn-tipe-a-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 8",
+      "taskHints": ["31.72.02.1001:kos", "31.72.02.1001:apartemen"]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-eksklusif-kost-lisa-santoso-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 8",
+      "taskHints": ["31.72.02.1001:kos", "31.72.02.1001:apartemen"]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-eksklusif-kost-haji-agus-standar-tanjung-priok-jakarta-utara-2",
+      "discovery": "web-index P0 batch 8",
+      "taskHints": ["31.72.02.1001:kos", "31.72.02.1001:apartemen"]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-murah-kos-ibu-selvie-tipe-a-tanjung-priok-jakarta-utara-2",
+      "discovery": "web-index P0 batch 8",
+      "taskHints": ["31.72.02.1001:kos", "31.72.02.1001:apartemen"]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-eksklusif-kost-bina-berkat-2-tipe-standard-tanjung-priok-jakarta-utara-2",
+      "discovery": "web-index P0 batch 8",
+      "taskHints": ["31.72.02.1001:kos", "31.72.02.1001:apartemen"]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-murah-kost-senang-hati-tipe-standar-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 8",
+      "taskHints": ["31.72.02.1001:kos", "31.72.02.1001:apartemen"]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jkt-utara-kost-campur-eksklusif-kost-ibu-sri-warakas-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 8",
+      "taskHints": ["31.72.02.1001:kos", "31.72.02.1001:apartemen"]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-eksklusif-kost-jl-upaya-utara-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 8",
+      "taskHints": ["31.72.02.1001:kos", "31.72.02.1001:apartemen"]
+    },
+    {
+      "url": "https://mamikos.com/room/kost-jakarta-utara-kost-campur-eksklusif-kost-93-suites-standart-2-tanjung-priok-jakarta-utara",
+      "discovery": "web-index P0 batch 8",
+      "taskHints": ["31.72.02.1001:kos", "31.72.02.1001:apartemen"]
+    }
+  ],
+  "buildingLocalityEvidence": [
+    {
+      "provider": "jendela360",
+      "buildingName": "Green Lake Sunter Apartment",
+      "bigCode": "31.72.02.1006",
+      "url": "https://jendela360.com/info/apartemen-dengan-kolam-renang-jakarta-utara/",
+      "label": "Alamat kompleks Green Lake Sunter mencantumkan Sunter Agung, Tanjung Priok, Jakarta Utara.",
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "provider": "jendela360",
+      "buildingName": "Maple Park Apartment",
+      "bigCode": "31.72.02.1006",
+      "url": "https://jendela360.com/info/apartemen-dekat-stasiun-juanda-0625/",
+      "label": "Alamat Maple Park mencantumkan Sunter Agung, Tanjung Priok, Jakarta Utara.",
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "provider": "jendela360",
+      "buildingName": "Mahata Tanjung Barat Apartment",
+      "bigCode": "31.74.09.1004",
+      "url": "https://hop.perumnas.co.id/lokasi/samesta-mahatatanjungbarat",
+      "label": "Katalog pengembang Perumnas mencantumkan kelurahan Lenteng Agung, Jagakarsa, Jakarta Selatan.",
+      "checkedAt": "2026-11-26"
+    }
+  ]
+}

@@ -6,13 +6,13 @@
   "localityMode": "BIG-polygons",
   "note": "Historical records, not risk classes. Distance to a public landmark is straight-line, not extent of flood or access route. Same-locality means a part of the area was reported. Unknown/no match never means safe.",
   "summary": {
-    "rentals": 860,
-    "pinned": 847,
-    "mappedLocality": 844,
-    "within1kmOfOfficialEvent": 7,
-    "within3kmOfOfficialEvent": 88,
-    "sameLocalityReport": 67,
-    "hazardUnknown": 860
+    "rentals": 879,
+    "pinned": 866,
+    "mappedLocality": 863,
+    "within1kmOfOfficialEvent": 9,
+    "within3kmOfOfficialEvent": 96,
+    "sameLocalityReport": 74,
+    "hazardUnknown": 879
   },
   "items": [
     {
@@ -414,8 +414,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 36292.1
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 34543.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -435,8 +435,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 44512.2
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 39370.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -2171,8 +2171,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 35487.0
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 33621.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4124,8 +4124,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 36666.5
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 33290.2
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4145,8 +4145,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 35996.0
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 32391.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4166,8 +4166,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 35487.0
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 33621.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4292,8 +4292,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 39259.1
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 38991.5
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -4313,8 +4313,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 48387.8
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 46860.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -5044,8 +5044,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 48143.3
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 46510.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -5813,8 +5813,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 33718.2
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 32406.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6506,8 +6506,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 33783.6
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 32575.2
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -6527,8 +6527,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 35534.9
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 33628.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -7115,8 +7115,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 36183.9
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 33562.8
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -7136,8 +7136,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 49324.8
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 47564.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8325,8 +8325,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 27641.7
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 26887.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8367,8 +8367,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 32487.4
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 31235.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8388,8 +8388,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 35230.3
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 32187.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8409,8 +8409,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 36032.9
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 32396.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -8430,8 +8430,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 36041.3
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 32402.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9837,8 +9837,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 27050.1
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 26647.9
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9963,8 +9963,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 33753.3
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 32405.2
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -9984,8 +9984,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 35504.3
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 33609.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -10005,8 +10005,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 35847.1
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 32887.0
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -10110,8 +10110,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 41215.2
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 40371.6
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11097,8 +11097,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 35501.4
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 33618.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11223,8 +11223,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-sdn-pinang-5-8-2026-02-05",
-        "distanceMeters": 12310.3
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 10838.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11244,8 +11244,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-sdn-pinang-5-8-2026-02-05",
-        "distanceMeters": 12309.2
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 10879.2
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11307,8 +11307,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-sdn-pinang-5-8-2026-02-05",
-        "distanceMeters": 13285.2
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 10038.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11370,8 +11370,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-sdn-pinang-5-8-2026-02-05",
-        "distanceMeters": 13394.3
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 10444.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11412,8 +11412,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-sdn-pinang-5-8-2026-02-05",
-        "distanceMeters": 13316.6
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 10009.7
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -11769,8 +11769,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 35487.0
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 33621.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -12886,8 +12886,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 33986.1
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 32714.2
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -13600,8 +13600,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 33782.7
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 32575.4
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -13621,8 +13621,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-itc-cipulir-2026-03-08",
-        "distanceMeters": 33718.2
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 32406.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -17610,8 +17610,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-sdn-pinang-5-8-2026-02-05",
-        "distanceMeters": 13967.2
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 9722.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -17652,8 +17652,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "building",
       "nearestOfficialEvent": {
-        "id": "banjir-sdn-pinang-5-8-2026-02-05",
-        "distanceMeters": 13967.2
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 9722.3
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -17841,8 +17841,8 @@
       "locationStatus": "pinned",
       "locationPrecision": "approximate",
       "nearestOfficialEvent": {
-        "id": "banjir-sdn-pinang-5-8-2026-02-05",
-        "distanceMeters": 15016.4
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 9925.1
       },
       "eventsWithin1km": [],
       "eventsWithin3kmCount": 0,
@@ -17901,6 +17901,421 @@
         "boundaryStatus": "Hasil Kesepakatan"
       },
       "sameLocalityReportIds": ["banjir-ragajaya-citayam-park-2025-08-09"]
+    },
+    {
+      "rentalId": "sewa-jendela360-b9750a751438",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-ancol-stasiun-2026-01-13",
+        "distanceMeters": 3877.3
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.02.1006",
+        "name": "Sunter Agung",
+        "district": "Tanjung Priok",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": [
+        "banjir-sunter-agung-jalan-agung-raya-2026-01-18"
+      ]
+    },
+    {
+      "rentalId": "sewa-jendela360-ac7355aa0530",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-ancol-stasiun-2026-01-13",
+        "distanceMeters": 3877.3
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.02.1006",
+        "name": "Sunter Agung",
+        "district": "Tanjung Priok",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": [
+        "banjir-sunter-agung-jalan-agung-raya-2026-01-18"
+      ]
+    },
+    {
+      "rentalId": "sewa-jendela360-509f7963cd83",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-ancol-stasiun-2026-01-13",
+        "distanceMeters": 2708.6
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.02.1006",
+        "name": "Sunter Agung",
+        "district": "Tanjung Priok",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": [
+        "banjir-sunter-agung-jalan-agung-raya-2026-01-18"
+      ]
+    },
+    {
+      "rentalId": "sewa-jendela360-efb8a714a325",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-itc-cipulir-2026-03-08",
+        "distanceMeters": 11306.4
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.74.09.1004",
+        "name": "Lenteng Agung",
+        "district": "Jagakarsa",
+        "city": "Kota Administrasi Jakarta Selatan",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": ["banjir-lenteng-agung-bpbd-2025-03-04"]
+    },
+    {
+      "rentalId": "sewa-jendela360-656fcafabe65",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "building",
+      "nearestOfficialEvent": {
+        "id": "banjir-itc-cipulir-2026-03-08",
+        "distanceMeters": 11306.4
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.74.09.1004",
+        "name": "Lenteng Agung",
+        "district": "Jagakarsa",
+        "city": "Kota Administrasi Jakarta Selatan",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": ["banjir-lenteng-agung-bpbd-2025-03-04"]
+    },
+    {
+      "rentalId": "sewa-mamikos-cac78a5519a0",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-makam-mbah-priok-2026-01-12",
+        "distanceMeters": 2921.3
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.02.1005",
+        "name": "Kebon Bawang",
+        "district": "Tanjung Priok",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": ["banjir-kebon-bawang-bpbd-2026-01-12"]
+    },
+    {
+      "rentalId": "sewa-pinhome-6d9e158f07db",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+        "distanceMeters": 5239.0
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.04.2005",
+        "name": "Daru",
+        "district": "Jambe",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-58eabe49330b",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+        "distanceMeters": 5139.8
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.04.2005",
+        "name": "Daru",
+        "district": "Jambe",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-4dc85075a4ee",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+        "distanceMeters": 1810.5
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "32.01.23.2004",
+        "name": "Babakan",
+        "district": "Tenjo",
+        "city": "Bogor",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-37c06ec3bf97",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-cibunar-parungpanjang-2025-11-30",
+        "distanceMeters": 532.8
+      },
+      "eventsWithin1km": [
+        {
+          "id": "banjir-cibunar-parungpanjang-2025-11-30",
+          "distanceMeters": 532.8
+        }
+      ],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "32.01.20.2006",
+        "name": "Parungpanjang",
+        "district": "Parungpanjang",
+        "city": "Bogor",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-4988585cb564",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+        "distanceMeters": 1628.3
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.31.2003",
+        "name": "Cikasungka",
+        "district": "Solear",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-da2728d88e7c",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+        "distanceMeters": 936.8
+      },
+      "eventsWithin1km": [
+        {
+          "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+          "distanceMeters": 936.8
+        }
+      ],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.31.2003",
+        "name": "Cikasungka",
+        "district": "Solear",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-4b2909f17eeb",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+        "distanceMeters": 3063.9
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.31.2003",
+        "name": "Cikasungka",
+        "district": "Solear",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-423eb15f5696",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-sdn-pinang-5-8-2026-02-05",
+        "distanceMeters": 10604.4
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.74.01.1002",
+        "name": "Rawabuntu",
+        "district": "Serpong",
+        "city": "Kota Tangerang Selatan",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-de0413e33377",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-ciomas-tenjo-2026-04-18",
+        "distanceMeters": 37257.1
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "32.71.03.1006",
+        "name": "Sempur",
+        "district": "Bogor Tengah",
+        "city": "Kota Bogor",
+        "boundaryStatus": "Batas Definitif"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-08722bb81ecb",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-ancol-stasiun-2026-01-13",
+        "distanceMeters": 3614.1
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.02.1002",
+        "name": "Sunter Jaya",
+        "district": "Tanjung Priok",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-123d224f74f2",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-makam-mbah-priok-2026-01-12",
+        "distanceMeters": 2877.7
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "31.72.02.1004",
+        "name": "Sungai Bambu",
+        "district": "Tanjung Priok",
+        "city": "Kota Administrasi Jakarta Utara",
+        "boundaryStatus": "Batas Indikatif"
+      },
+      "sameLocalityReportIds": ["banjir-sungai-bambu-gaya-motor-2026-01-18"]
+    },
+    {
+      "rentalId": "sewa-pinhome-430a25c7f488",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+        "distanceMeters": 5405.9
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 0,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.04.2005",
+        "name": "Daru",
+        "district": "Jambe",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
+    },
+    {
+      "rentalId": "sewa-pinhome-9cf302397941",
+      "hazardStatus": "unknown",
+      "locationStatus": "pinned",
+      "locationPrecision": "approximate",
+      "nearestOfficialEvent": {
+        "id": "banjir-tenjo-leuweng-gede-2026-04-29",
+        "distanceMeters": 1298.6
+      },
+      "eventsWithin1km": [],
+      "eventsWithin3kmCount": 1,
+      "localityStatus": "mapped",
+      "locality": {
+        "code": "36.03.31.2003",
+        "name": "Cikasungka",
+        "district": "Solear",
+        "city": "Tangerang",
+        "boundaryStatus": "Hasil Kesepakatan"
+      },
+      "sameLocalityReportIds": []
     }
   ]
 }

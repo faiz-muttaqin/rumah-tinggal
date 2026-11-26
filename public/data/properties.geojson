@@ -48456,6 +48456,1061 @@
        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/1494"
       }
      }
+    },
+    {
+     "id": "sewa-jendela360-b9750a751438",
+     "title": "Green Lake Sunter Apartment — Studio, 21 m² (GLSA015)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Sunter Agung, Tanjung Priok, Kota Administrasi Jakarta Utara",
+     "buildingOrCluster": "Green Lake Sunter Apartment",
+     "rent": {
+      "amount": 37680000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp37.680.000/tahun",
+      "url": "https://jendela360.com/sewa-apartemen-green-lake-sunter-apartment/GLSA015",
+      "pageDate": null
+     },
+     "bedrooms": 0,
+     "sizeM2": 21.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp37.680.000/tahun",
+       "url": "https://jendela360.com/sewa-apartemen-green-lake-sunter-apartment/GLSA015"
+      },
+      {
+       "quote": "Alamat kompleks Green Lake Sunter mencantumkan Sunter Agung, Tanjung Priok, Jakarta Utara.",
+       "url": "https://jendela360.com/info/apartemen-dengan-kolam-renang-jakarta-utara/"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 0.98 km ke TransJakarta Sunter Karya. Alamat gedung dicocokkan dengan sumber alamat dan batas BIG.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-green-lake-sunter-apartment/GLSA015",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.14477,
+      "lng": 106.875949,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-green-lake-sunter-apartment/GLSA015",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks wilayah · Jl. Agung Raya, Sunter Agung, 2026-01-18 · bukan risiko unit",
+       "url": "https://bpbd.jakarta.go.id/berita/WEJPRVhPdnhaVjBaRHpyTWJZczdrUT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-21-00-wib"
+      }
+     }
+    },
+    {
+     "id": "sewa-jendela360-ac7355aa0530",
+     "title": "Green Lake Sunter Apartment — 2 kamar, 36 m² (GLSC056)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Sunter Agung, Tanjung Priok, Kota Administrasi Jakarta Utara",
+     "buildingOrCluster": "Green Lake Sunter Apartment",
+     "rent": {
+      "amount": 54950000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp54.950.000/tahun",
+      "url": "https://jendela360.com/sewa-apartemen-green-lake-sunter-apartment/GLSC056",
+      "pageDate": null
+     },
+     "bedrooms": 2,
+     "sizeM2": 36.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp54.950.000/tahun",
+       "url": "https://jendela360.com/sewa-apartemen-green-lake-sunter-apartment/GLSC056"
+      },
+      {
+       "quote": "Alamat kompleks Green Lake Sunter mencantumkan Sunter Agung, Tanjung Priok, Jakarta Utara.",
+       "url": "https://jendela360.com/info/apartemen-dengan-kolam-renang-jakarta-utara/"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 0.98 km ke TransJakarta Sunter Karya. Alamat gedung dicocokkan dengan sumber alamat dan batas BIG.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-green-lake-sunter-apartment/GLSC056",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.14477,
+      "lng": 106.875949,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-green-lake-sunter-apartment/GLSC056",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks wilayah · Jl. Agung Raya, Sunter Agung, 2026-01-18 · bukan risiko unit",
+       "url": "https://bpbd.jakarta.go.id/berita/WEJPRVhPdnhaVjBaRHpyTWJZczdrUT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-21-00-wib"
+      }
+     }
+    },
+    {
+     "id": "sewa-jendela360-509f7963cd83",
+     "title": "Maple Park Apartment — 1 kamar, 34 m² (MPPB024)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Sunter Agung, Tanjung Priok, Kota Administrasi Jakarta Utara",
+     "buildingOrCluster": "Maple Park Apartment",
+     "rent": {
+      "amount": 48280000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp48.280.000/tahun",
+      "url": "https://jendela360.com/sewa-apartemen-maple-park-apartment/MPPB024",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 34.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp48.280.000/tahun",
+       "url": "https://jendela360.com/sewa-apartemen-maple-park-apartment/MPPB024"
+      },
+      {
+       "quote": "Alamat Maple Park mencantumkan Sunter Agung, Tanjung Priok, Jakarta Utara.",
+       "url": "https://jendela360.com/info/apartemen-dekat-stasiun-juanda-0625/"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 0.33 km ke TransJakarta Danau Agung. Alamat gedung dicocokkan dengan sumber alamat dan batas BIG.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-maple-park-apartment/MPPB024",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.149478,
+      "lng": 106.856909,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-maple-park-apartment/MPPB024",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks wilayah · Jl. Agung Raya, Sunter Agung, 2026-01-18 · bukan risiko unit",
+       "url": "https://bpbd.jakarta.go.id/berita/WEJPRVhPdnhaVjBaRHpyTWJZczdrUT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-21-00-wib"
+      }
+     }
+    },
+    {
+     "id": "sewa-jendela360-efb8a714a325",
+     "title": "Mahata Tanjung Barat Apartment — 1 kamar, 40 m² (MHTB001)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Lenteng Agung, Jagakarsa, Kota Administrasi Jakarta Selatan",
+     "buildingOrCluster": "Mahata Tanjung Barat Apartment",
+     "rent": {
+      "amount": 45660000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp45.660.000/tahun",
+      "url": "https://jendela360.com/sewa-apartemen-mahata-tanjung-barat-apartment/MHTB001",
+      "pageDate": null
+     },
+     "bedrooms": 1,
+     "sizeM2": 40.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp45.660.000/tahun",
+       "url": "https://jendela360.com/sewa-apartemen-mahata-tanjung-barat-apartment/MHTB001"
+      },
+      {
+       "quote": "Katalog pengembang Perumnas mencantumkan kelurahan Lenteng Agung, Jagakarsa, Jakarta Selatan.",
+       "url": "https://hop.perumnas.co.id/lokasi/samesta-mahatatanjungbarat"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 2.45 km ke KRL Lenteng Agung. Alamat gedung dicocokkan dengan sumber alamat dan batas BIG.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-mahata-tanjung-barat-apartment/MHTB001",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.3086,
+      "lng": 106.8384,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-mahata-tanjung-barat-apartment/MHTB001",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks wilayah · Lenteng Agung, Jagakarsa, 2025-03-04 · bukan risiko unit",
+       "url": "https://bpbd.jakarta.go.id/berita/b0x2U0ZNYTBzTXZHMmRLWWp3UzVRdz09/update-info-terkini-genangan-04-maret-2025-s-d-pukul-15-00-wib"
+      }
+     }
+    },
+    {
+     "id": "sewa-jendela360-656fcafabe65",
+     "title": "Mahata Tanjung Barat Apartment — Studio, 23.5 m² (MHTA020)",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Lenteng Agung, Jagakarsa, Kota Administrasi Jakarta Selatan",
+     "buildingOrCluster": "Mahata Tanjung Barat Apartment",
+     "rent": {
+      "amount": 55660000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp55.660.000/tahun",
+      "url": "https://jendela360.com/sewa-apartemen-mahata-tanjung-barat-apartment/MHTA020",
+      "pageDate": null
+     },
+     "bedrooms": 0,
+     "sizeM2": 23.5,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp55.660.000/tahun",
+       "url": "https://jendela360.com/sewa-apartemen-mahata-tanjung-barat-apartment/MHTA020"
+      },
+      {
+       "quote": "Katalog pengembang Perumnas mencantumkan kelurahan Lenteng Agung, Jagakarsa, Jakarta Selatan.",
+       "url": "https://hop.perumnas.co.id/lokasi/samesta-mahatatanjungbarat"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga paket pada detail portal, bukan jaminan stok. Konfirmasi harga akhir, IPL, deposit, utilitas, dan ketentuan penghuni. Jarak garis lurus sekitar 2.45 km ke KRL Lenteng Agung. Alamat gedung dicocokkan dengan sumber alamat dan batas BIG.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://jendela360.com/sewa-apartemen-mahata-tanjung-barat-apartment/MHTA020",
+     "sourcePortal": "jendela360",
+     "postedOrUpdated": null,
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.3086,
+      "lng": 106.8384,
+      "precision": "building",
+      "label": "Acuan gedung jendela360",
+      "url": "https://jendela360.com/sewa-apartemen-mahata-tanjung-barat-apartment/MHTA020",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks wilayah · Lenteng Agung, Jagakarsa, 2025-03-04 · bukan risiko unit",
+       "url": "https://bpbd.jakarta.go.id/berita/b0x2U0ZNYTBzTXZHMmRLWWp3UzVRdz09/update-info-terkini-genangan-04-maret-2025-s-d-pukul-15-00-wib"
+      }
+     }
+    },
+    {
+     "id": "sewa-mamikos-cac78a5519a0",
+     "title": "Kos keluarga Kebon Bawang — 12.25 m²",
+     "rentalType": "kos-keluarga",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Kebon Bawang, Tanjung Priok, Kota Administrasi Jakarta Utara",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 900000,
+      "period": "monthly",
+      "quote": "Rp900.000/bulan",
+      "url": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-eksklusif-kost-haji-agus-standar-tanjung-priok-jakarta-utara-2",
+      "pageDate": "2026-11-02"
+     },
+     "bedrooms": 1,
+     "sizeM2": 12.25,
+     "furnished": null,
+     "residentGender": {
+      "value": "mixed",
+      "checkedAt": "2026-11-26"
+     },
+     "evidence": [
+      {
+       "quote": "Rp900.000/bulan",
+       "url": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-eksklusif-kost-haji-agus-standar-tanjung-priok-jakarta-utara-2"
+      },
+      {
+       "quote": "Detail portal: kategori campur; pasutri dan anak diizinkan.",
+       "url": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-eksklusif-kost-haji-agus-standar-tanjung-priok-jakarta-utara-2"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Detail portal menandai kos campur, pasutri dan anak diizinkan. Konfirmasi biaya penghuni tambahan, deposit, syarat, dan stok. Jarak garis lurus sekitar 0.97 km ke TransJakarta Plumpang.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-eksklusif-kost-haji-agus-standar-tanjung-priok-jakarta-utara-2",
+     "sourcePortal": "mamikos",
+     "postedOrUpdated": "2026-11-02",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.125712,
+      "lng": 106.885337,
+      "precision": "approximate",
+      "label": "Pin perkiraan mamikos",
+      "url": "https://mamikos.com/room/kost-kota-jakarta-utara-kost-campur-eksklusif-kost-haji-agus-standar-tanjung-priok-jakarta-utara-2",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "couples": true,
+      "children": true,
+      "flood": {
+       "label": "Konteks wilayah · Kebon Bawang, Jakarta Utara, 2026-01-12 · bukan risiko unit",
+       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-6d9e158f07db",
+     "title": "Kontrakan Daru — 2 kamar, 60 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Daru, Jambe, Kabupaten Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 700000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp700.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tanggamus-blok-a-no-30",
+      "pageDate": "2026-05-31"
+     },
+     "bedrooms": 2,
+     "sizeM2": 60.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp700.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tanggamus-blok-a-no-30"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.39 km ke KRL Daru.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tanggamus-blok-a-no-30",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-05-31",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.340434,
+      "lng": 106.490062,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tanggamus-blok-a-no-30",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Peta bahaya BNPB · rujukan wilayah; risiko unit belum diketahui",
+       "url": "https://inarisk.bnpb.go.id/"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-58eabe49330b",
+     "title": "Kontrakan Daru — 2 kamar, 45 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Daru, Jambe, Kabupaten Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 800000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp800.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-jambe",
+      "pageDate": "2026-11-14"
+     },
+     "bedrooms": 2,
+     "sizeM2": 45.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp800.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-jambe"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.64 km ke KRL Daru.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-jambe",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-11-14",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.323846,
+      "lng": 106.488307,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-daru-jambe",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Peta bahaya BNPB · rujukan wilayah; risiko unit belum diketahui",
+       "url": "https://inarisk.bnpb.go.id/"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-4dc85075a4ee",
+     "title": "Rumah sewa Babakan — 2 kamar, 27 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Babakan, Tenjo, Kabupaten Bogor",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 9000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp9.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kana-timur-10-25",
+      "pageDate": "2026-07-10"
+     },
+     "bedrooms": 2,
+     "sizeM2": 27.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp9.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kana-timur-10-25"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.83 km ke KRL Tenjo.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kana-timur-10-25",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-07-10",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.343106,
+      "lng": 106.456918,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kana-timur-10-25",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Peta bahaya BNPB · rujukan wilayah; risiko unit belum diketahui",
+       "url": "https://inarisk.bnpb.go.id/"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-37c06ec3bf97",
+     "title": "Kontrakan Parungpanjang — 2 kamar, 50 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Parungpanjang, Parungpanjang, Kabupaten Bogor",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1000000,
+      "period": "monthly",
+      "minimumMonths": 6,
+      "quote": "Rp1.000.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumnas-i-jl-kamper-4-no01-cibunar-parungpanjang",
+      "pageDate": "2025-12-04"
+     },
+     "bedrooms": 2,
+     "sizeM2": 50.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp1.000.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumnas-i-jl-kamper-4-no01-cibunar-parungpanjang"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.36 km ke KRL Parungpanjang. Pin portal berada sekitar 4 m dari batas BIG desa Cibunar; sumber menampilkan Parungpanjang. Kelurahan/desa akhir perlu dikonfirmasi saat survei.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumnas-i-jl-kamper-4-no01-cibunar-parungpanjang",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2025-12-04",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.34957,
+      "lng": 106.558718,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumnas-i-jl-kamper-4-no01-cibunar-parungpanjang",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Catatan historis · Banjir di Perumnas 1 Parung Panjang (2025-11-30) · titik acuan 533 m; bukan risiko unit",
+       "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2025/2089"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-4988585cb564",
+     "title": "Kontrakan Cikasungka — 2 kamar, 30 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Cikasungka, Solear, Kabupaten Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 500000,
+      "period": "monthly",
+      "minimumMonths": 3,
+      "quote": "Rp500.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-kereta-di-taman-adiyasa",
+      "pageDate": "2026-09-18"
+     },
+     "bedrooms": 2,
+     "sizeM2": 30.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp500.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-kereta-di-taman-adiyasa"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.49 km ke KRL Tigaraksa.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-kereta-di-taman-adiyasa",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-09-18",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.328399,
+      "lng": 106.429625,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dekat-stasiun-kereta-di-taman-adiyasa",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Peta bahaya BNPB · rujukan wilayah; risiko unit belum diketahui",
+       "url": "https://inarisk.bnpb.go.id/"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-da2728d88e7c",
+     "title": "Kontrakan Cikasungka — 2 kamar, 32 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Cikasungka, Solear, Kabupaten Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 500000,
+      "period": "monthly",
+      "minimumMonths": 3,
+      "quote": "Rp500.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cikasungka",
+      "pageDate": "2026-01-11"
+     },
+     "bedrooms": 2,
+     "sizeM2": 32.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp500.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cikasungka"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.67 km ke KRL Tigaraksa.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cikasungka",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-01-11",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.334813,
+      "lng": 106.434572,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cikasungka",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Catatan historis · Banjir di Kampung Leuweng Gede, Tenjo (2026-04-29) · titik acuan 937 m; bukan risiko unit",
+       "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1102"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-4b2909f17eeb",
+     "title": "Kontrakan Cikasungka — 2 kamar, 30 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Cikasungka, Solear, Kabupaten Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 700000,
+      "period": "monthly",
+      "minimumMonths": 12,
+      "quote": "Rp700.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-harmoni-cikasungka-tangerang",
+      "pageDate": "2026-11-18"
+     },
+     "bedrooms": 2,
+     "sizeM2": 30.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp700.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-harmoni-cikasungka-tangerang"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 2.30 km ke KRL Tigaraksa.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-harmoni-cikasungka-tangerang",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-11-18",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.338335,
+      "lng": 106.415594,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-harmoni-cikasungka-tangerang",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Peta bahaya BNPB · rujukan wilayah; risiko unit belum diketahui",
+       "url": "https://inarisk.bnpb.go.id/"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-423eb15f5696",
+     "title": "Rumah sewa Rawabuntu — 1 kamar, 50 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Rawabuntu, Serpong, Kota Tangerang Selatan",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 12500000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp12.500.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kpdadap-rt-04-rw-04",
+      "pageDate": "2026-06-17"
+     },
+     "bedrooms": 1,
+     "sizeM2": 50.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp12.500.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kpdadap-rt-04-rw-04"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.37 km ke KRL Rawa Buntu.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kpdadap-rt-04-rw-04",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-06-17",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.302608,
+      "lng": 106.677026,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-kpdadap-rt-04-rw-04",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Peta bahaya BNPB · rujukan wilayah; risiko unit belum diketahui",
+       "url": "https://inarisk.bnpb.go.id/"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-de0413e33377",
+     "title": "Rumah sewa Sempur — 3 kamar, 100 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Bogor",
+     "locationText": "Sempur, Bogor Tengah, Kota Bogor",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 18000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp18.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jalak-harupat-lebak-kantin",
+      "pageDate": "2026-04-21"
+     },
+     "bedrooms": 3,
+     "sizeM2": 100.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp18.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jalak-harupat-lebak-kantin"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.01 km ke KRL Bogor.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jalak-harupat-lebak-kantin",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-04-21",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.592076,
+      "lng": 106.799684,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jalak-harupat-lebak-kantin",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Peta bahaya BNPB · rujukan wilayah; risiko unit belum diketahui",
+       "url": "https://inarisk.bnpb.go.id/"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-08722bb81ecb",
+     "title": "Kontrakan Sunter Jaya — 1 kamar, 50 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Sunter Jaya, Tanjung Priok, Kota Administrasi Jakarta Utara",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1000000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp1.000.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jakan-sespakes",
+      "pageDate": "2026-08-04"
+     },
+     "bedrooms": 1,
+     "sizeM2": 50.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp1.000.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jakan-sespakes"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.14 km ke TransJakarta Danau Agung.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jakan-sespakes",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-08-04",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.152807,
+      "lng": 106.866395,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jakan-sespakes",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Peta bahaya BNPB · rujukan wilayah; risiko unit belum diketahui",
+       "url": "https://inarisk.bnpb.go.id/"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-123d224f74f2",
+     "title": "Rumah sewa Sungai Bambu — 1 kamar, 37 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Sungai Bambu, Tanjung Priok, Kota Administrasi Jakarta Utara",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 30000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp30.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-sungai-bambu",
+      "pageDate": "2026-03-17"
+     },
+     "bedrooms": 1,
+     "sizeM2": 37.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp30.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-sungai-bambu"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.04 km ke TransJakarta Plumpang.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-sungai-bambu",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-03-17",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.12841,
+      "lng": 106.893363,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-sungai-bambu",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks wilayah · Jl. Gaya Motor Raya, depan Kodim 0502, Sungai Bambu, 2026-01-18 · bukan risiko unit",
+       "url": "https://bpbd.jakarta.go.id/berita/WEJPRVhPdnhaVjBaRHpyTWJZczdrUT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-21-00-wib"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-430a25c7f488",
+     "title": "Rumah sewa Daru — 2 kamar, 29 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Daru, Jambe, Kabupaten Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 12000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp12.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-daru-raya-di-daru",
+      "pageDate": "2026-08-20"
+     },
+     "bedrooms": 2,
+     "sizeM2": 29.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp12.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-daru-raya-di-daru"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.92 km ke KRL Daru.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-daru-raya-di-daru",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-08-20",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.329752,
+      "lng": 106.491727,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-daru-raya-di-daru",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Peta bahaya BNPB · rujukan wilayah; risiko unit belum diketahui",
+       "url": "https://inarisk.bnpb.go.id/"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-9cf302397941",
+     "title": "Rumah sewa Cikasungka — 2 kamar, 40 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Tangerang",
+     "locationText": "Cikasungka, Solear, Kabupaten Tangerang",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 12000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp12.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-delta-tigaraksa",
+      "pageDate": "2026-10-27"
+     },
+     "bedrooms": 2,
+     "sizeM2": 40.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp12.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-delta-tigaraksa"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.86 km ke KRL Tigaraksa.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-delta-tigaraksa",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-10-27",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-26",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.336139,
+      "lng": 106.431414,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-puri-delta-tigaraksa",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-26"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Peta bahaya BNPB · rujukan wilayah; risiko unit belum diketahui",
+       "url": "https://inarisk.bnpb.go.id/"
+      }
+     }
     }
    ],
    "locationsCheckedAt": "2026-11-26"

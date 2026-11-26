@@ -1,4 +1,5 @@
 """Offline checks for the catchment, official flood and rental research snapshots."""
+import datetime as dt
 import importlib.util
 import json
 from pathlib import Path
@@ -16,6 +17,7 @@ def module(name):
 
 geo = module("all_station_catchments")
 screen = module("flood_rental_screening")
+curate = module("corridor_priority_curate")
 
 
 def research(name):
@@ -40,6 +42,27 @@ class GeometryTest(unittest.TestCase):
         self.assertEqual(geo.coverage(station, points)["3000"], {"rumah": 0, "kos": 1, "apartemen": 0})
 
 
+class PriorityCurationTest(unittest.TestCase):
+    def test_price_location_and_family_policy_are_fail_closed(self):
+        area = {"name": "Tenjo", "district": "Tenjo"}
+        row = {"status": "detail-read", "provider": "pinhome", "kind": "Rumah", "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/contoh",
+               "sourceStatus": "unit_type_status.active", "issues": [], "amount": 60_000_000,
+               "period": "yearly", "monthlyEquivalent": 5_000_000,
+               "location": {"precision": "approximate"}, "nearbyGapTransit": [{"km": 3}],
+               "locality": "Tenjo, Tenjo, Kab Bogor", "sourceUpdatedAt": "2026-10-01",
+               "bedrooms": 2, "buildingAreaM2": 36}
+        day = dt.date(2026, 11, 26)
+        self.assertEqual(curate.resolution(row, area, day), "candidate")
+        self.assertEqual(curate.resolution({**row, "amount": 60_000_001}, area, day), "outside-budget")
+        self.assertEqual(curate.resolution({**row, "nearbyGapTransit": []}, area, day), "outside-gap-or-no-pin")
+        self.assertEqual(curate.resolution({**row, "locality": "Daru, Jambe, Tangerang"}, area, day), "hold-locality-mismatch")
+        self.assertEqual(curate.resolution({**row, "sourceUpdatedAt": "2024-01-01"}, area, day), "hold-source-date")
+        kos = {**row, "provider": "mamikos", "residentGender": "campur",
+               "residentPolicy": {"marriedCouplesAllowed": True, "childrenAllowed": None}}
+        self.assertEqual(curate.resolution(kos, area, day), "hold-resident-policy")
+        self.assertEqual(curate.resolution({**kos, "residentPolicy": {"marriedCouplesAllowed": True, "childrenAllowed": True}}, area, day), "candidate")
+
+
 class SnapshotTest(unittest.TestCase):
     def test_inventory_and_queue(self):
         data = research("koridor-all-3km-2026-11-26")
@@ -55,6 +78,57 @@ class SnapshotTest(unittest.TestCase):
         self.assertEqual(queue, geo.make_queue(data))
         self.assertEqual(len(queue), len(data["areas"]) * 3)
         self.assertEqual(len({t["taskId"] for t in queue}), len(queue))
+
+    def test_p0_batch_outcomes_and_exact_radius(self):
+        data = research("koridor-p0-batch-01-results-2026-11-26")
+        source = research("koridor-p0-batch-01-seeds-2026-11-26")
+        queue = {r["taskId"]: r for r in research("koridor-all-3km-queue-2026-11-26")["tasks"]}
+        inventory = research("koridor-all-3km-2026-11-26")
+        stops = {s["stopId"]: s for s in inventory["stations"]}
+        rentals = {r["id"]: r for r in research("rentals")["rentals"]}
+        locs = {r["rentalId"]: r["location"] for r in research("rental-locations")["items"]}
+        screening = {r["rentalId"]: r for r in research("flood-rental-screening-2026-11-26")["items"]}
+        task_ids = {q["taskId"] for b in source["batches"] for q in b["queries"]}
+        self.assertEqual(task_ids, {r["taskId"] for r in data["tasks"]})
+        self.assertEqual(len(task_ids), 30)
+        self.assertTrue(all(queue[t]["priority"] == 0 for t in task_ids))
+        self.assertEqual(data["taskCounts"]["completed"], 0)
+        gap_ids = {s["stopId"] for s in inventory["stations"] if not sum(s["existingPinnedCounts"]["3000"].values())}
+        self.assertEqual(gap_ids, {g["stopId"] for g in data["gapCoverage"]})
+        rows = [r for g in data["runs"] for r in g["results"]]
+        imported = [r for r in rows if r["resolution"] == "imported-partial"]
+        self.assertEqual(len(imported), data["catalogAfter"] - data["catalogBefore"])
+        self.assertEqual(len(imported), sum(data["importedByCategory"].values()))
+        self.assertEqual(len(imported), len({r["rentalId"] for r in imported}))
+        self.assertEqual(len(rows), sum(data["summary"].values()))
+        self.assertEqual(data["taskCounts"]["attempted"], len(task_ids))
+        self.assertEqual(sum(t["imported"] for t in data["tasks"]),
+                         sum(r["matchedTaskId"] in task_ids for r in imported))
+        for r in imported:
+            rid = r["rentalId"]
+            self.assertEqual(rentals[rid]["listingUrl"], r["url"])
+            self.assertEqual(rentals[rid]["verdict"], "partial")
+            self.assertEqual(r["sourceStatus"], "unit_type_status.active")
+            self.assertLessEqual(r["monthlyEquivalent"], 5_000_000)
+            self.assertTrue(r["nearbyGapTransit"])
+            self.assertEqual(screening[rid]["locality"]["code"], r["bigLocality"]["code"])
+            self.assertEqual(screening[rid]["hazardStatus"], "unknown")
+            loc = locs[rid]
+            for near in r["nearbyGapTransit"]:
+                sid = near["stopId"]
+                self.assertIn(sid, gap_ids)
+                self.assertLessEqual(geo.haversine([loc["lng"], loc["lat"]], stops[sid]["coordinate"]), 3000)
+            if r["provider"] == "mamikos":
+                self.assertTrue(r["residentPolicy"]["marriedCouplesAllowed"])
+                self.assertTrue(r["residentPolicy"]["childrenAllowed"])
+                self.assertEqual(rentals[rid]["rentalType"], "kos-keluarga")
+        additions = [([locs[r["rentalId"]]["lng"], locs[r["rentalId"]]["lat"]], curate.category(r)) for r in imported]
+        for g in data["gapCoverage"]:
+            added = geo.coverage(stops[g["stopId"]], additions)
+            for radius, counts in g["before"].items():
+                self.assertEqual(g["after"][radius], {k: n + added[radius][k] for k, n in counts.items()})
+        self.assertEqual(data["gapCountAfter"], sum(not sum(g["after"]["3000"].values()) for g in data["gapCoverage"]))
+        self.assertLess(data["gapCountAfter"], data["gapCountBefore"])
 
     def test_evidence_screening_and_import(self):
         evidence = research("flood-official-evidence-2026-11-26")
