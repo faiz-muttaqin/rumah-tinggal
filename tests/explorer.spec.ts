@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { expect, type Page, test } from "@playwright/test";
 import { incidents } from "../src/incidents.ts";
 import { googleMapsLocation } from "../src/maps-links.ts";
-import type { Listing } from "../src/types.ts";
+import type { Listing, RentalComment, SavedRental } from "../src/types.ts";
 import { readExcel } from "./excel-workbook.ts";
 import { mockListingAccount } from "./listing-account.ts";
 import { researchFixture } from "./research-fixture.ts";
@@ -1121,7 +1121,7 @@ test("uses the bottom rental table for searching, sorting, freezing and opening 
   await expect(frozen).toHaveCSS("position", "sticky");
   expect((await frozen.boundingBox())?.x).toBeCloseTo(firstX ?? 0, 0);
 
-  const handle = panel.getByRole("separator");
+  const handle = panel.getByRole("separator", { name: "Tinggi tabel sewa" });
   const height = Number(await handle.getAttribute("aria-valuenow"));
   await handle.press("ArrowUp");
   await expect(handle).toHaveAttribute("aria-valuenow", String(height + 24));
@@ -1143,6 +1143,244 @@ test("uses the bottom rental table for searching, sorting, freezing and opening 
   await panel.getByRole("button", { name: "Ke kartu" }).click();
   await expect(panel).toBeHidden();
   await expect(page.locator(".sidebar")).toBeVisible();
+});
+
+test("resizes a frozen column and exports every filtered row in CSV and Excel order", async ({
+  page,
+}) => {
+  const fixture = structuredClone(researchFixture);
+  const dataset = fixture.metadata.rentals;
+  const base = dataset.rentals[0];
+  const lastTitle = '=Ekspor Uji "kutip"';
+  await page.route("**/data/properties.geojson", (route) =>
+    route.fulfill({
+      json: {
+        ...fixture,
+        metadata: {
+          ...fixture.metadata,
+          rentals: {
+            ...dataset,
+            rentals: [
+              ...dataset.rentals,
+              ...Array.from({ length: 45 }, (_, i) => ({
+                ...base,
+                id: `ekspor-uji-${i}`,
+                title: i === 44 ? lastTitle : `Ekspor Uji ${i}`,
+                rent: {
+                  ...base.rent,
+                  period: "monthly",
+                  amount: 1_000_000 + i * 10_000,
+                },
+              })),
+            ],
+          },
+        },
+      },
+    }),
+  );
+  await page.goto("/?koleksi=sewa&tampilan=tabel");
+  const panel = page.locator("#rental-table");
+  const titleResize = panel.getByRole("separator", {
+    name: "Ubah lebar kolom Hunian",
+    exact: true,
+  });
+  const before = Number(await titleResize.getAttribute("aria-valuenow"));
+  const box = await titleResize.boundingBox();
+  if (!box) throw new Error("Handle kolom tidak ditemukan");
+  await panel.getByLabel("Bekukan kolom kiri").selectOption("2");
+  await page.mouse.move(box.x + 4, box.y + 17);
+  await page.mouse.down();
+  await page.mouse.move(box.x + 88, box.y + 17, { steps: 5 });
+  await page.mouse.up();
+  await expect(titleResize).toHaveAttribute(
+    "aria-valuenow",
+    String(before + 84),
+  );
+  const secondHeader = panel.locator('th[data-col="1"]');
+  await expect(secondHeader).toHaveCSS("left", `${before + 84}px`);
+  await titleResize.press("ArrowRight");
+  await expect(titleResize).toHaveAttribute(
+    "aria-valuenow",
+    String(before + 100),
+  );
+  await page.reload();
+  await expect(titleResize).toHaveAttribute(
+    "aria-valuenow",
+    String(before + 100),
+  );
+
+  await panel.getByRole("searchbox").fill("ekspor uji");
+  await expect(panel.locator("tr[data-rental]")).toHaveCount(40);
+  await panel.getByRole("button", { name: "Setara / bulan" }).click();
+  await expect(panel.locator("tr[data-rental]").first()).toContainText(
+    lastTitle,
+  );
+  const exportMenu = panel.getByLabel("Ekspor tabel sewa");
+  const csvEvent = page.waitForEvent("download");
+  await exportMenu.selectOption("csv");
+  const csv = await csvEvent;
+  expect(csv.suggestedFilename()).toMatch(/^tabel-sewa-.*\.csv$/);
+  const csvPath = await csv.path();
+  if (!csvPath) throw new Error("CSV belum diunduh");
+  const content = await readFile(csvPath, "utf8");
+  expect(content).toContain('"Tautan Iklan"');
+  expect(content.split("\r\n")[1]).toContain(`"'=Ekspor Uji ""kutip"""`);
+  expect(content).toContain('"Ekspor Uji 0"');
+
+  const excelEvent = page.waitForEvent("download");
+  await exportMenu.selectOption("xlsx");
+  const excel = await excelEvent;
+  expect(excel.suggestedFilename()).toMatch(/^tabel-sewa-.*\.xlsx$/);
+  const excelPath = await excel.path();
+  if (!excelPath) throw new Error("Excel belum diunduh");
+  const sheet = readExcel(await readFile(excelPath))["Tabel Sewa"];
+  expect(sheet.frozenRows).toBe(1);
+  expect(sheet.formulaCount).toBe(0);
+  expect(sheet.rows).toHaveLength(45);
+  expect(sheet.rows[0].Hunian).toBe(lastTitle);
+  expect(sheet.rows[0]["Setara / bulan"]).toBe(1_440_000);
+  expect(sheet.rows[0]["Tautan Iklan"]).toBe(base.listingUrl);
+  expect(sheet.rows.at(-1)?.Hunian).toBe("Ekspor Uji 0");
+});
+
+test("saves and edits a rental, lets guests read, and accepts comments after login", async ({
+  page,
+  browser,
+}) => {
+  test.setTimeout(60_000);
+  const useDomOnly = (target: Page) =>
+    target.addInitScript(() => {
+      const getContext = HTMLCanvasElement.prototype.getContext;
+      Object.defineProperty(HTMLCanvasElement.prototype, "getContext", {
+        value(this: HTMLCanvasElement, type: string, ...options: unknown[]) {
+          return type.includes("webgl")
+            ? null
+            : Reflect.apply(getContext, this, [type, ...options]);
+        },
+      });
+    });
+  await useDomOnly(page);
+  await mockListingAccount(page, []);
+  const base = researchFixture.metadata.rentals.rentals[0];
+  const token = "a".repeat(32);
+  const now = "2026-11-26T00:00:00.000Z";
+  const rental: SavedRental = {
+    rentalId: base.id,
+    title: base.title,
+    locationText: base.locationText,
+    kind: "Rumah",
+    sourceUrl: base.listingUrl,
+    location: null,
+    amount: base.rent.amount,
+    period: base.rent.period as "monthly" | "yearly",
+    minimumMonths: null,
+    note: "",
+    savedAt: now,
+    updatedAt: now,
+    shareToken: null,
+  };
+  const requests: string[] = [];
+  let hasSaved = false;
+  await page.route("**/api/saved-rentals**", (route) => {
+    const request = route.request();
+    const path = new URL(request.url()).pathname;
+    const method = request.method();
+    requests.push(method);
+    if (method === "GET")
+      return route.fulfill({ json: { rentals: hasSaved ? [rental] : [] } });
+    if (path.endsWith("/share"))
+      rental.shareToken = method === "PUT" ? token : null;
+    else if (method === "PUT") hasSaved = true;
+    else if (method === "PATCH") Object.assign(rental, request.postDataJSON());
+    return route.fulfill({ json: { rental } });
+  });
+  await page.goto("/?koleksi=sewa&tampilan=tabel");
+  await expect(page.locator("#account-label")).toContainText("Keluar");
+  const table = page.locator("#rental-table");
+  const row = table.locator(`[data-rental="${base.id}"]`);
+  const owner = page.getByRole("dialog", { name: "Simpanan hunian" });
+  await row.getByRole("button", { name: "Simpan hunian" }).click();
+  await expect(owner.getByLabel("Nama simpanan")).toHaveValue(base.title);
+  await owner.getByLabel("Nama simpanan").fill("Hunian pilihan survei");
+  await owner.getByLabel("Harga sewa (Rp)").fill("2400000");
+  await owner
+    .getByRole("textbox", { name: "Catatan", exact: true })
+    .fill("Cek ventilasi dapur.\nBawa meteran.");
+  await owner.getByRole("button", { name: "Simpan perubahan" }).click();
+  await expect(owner.getByRole("status")).toHaveText("Perubahan tersimpan.");
+  await owner.getByRole("button", { name: "Aktifkan tautan" }).click();
+  const url = await owner.getByLabel("Tautan berbagi").inputValue();
+  expect(new URL(url).search).toBe("");
+  expect(new URL(url).hash).toBe(`#bagikan=${token}`);
+
+  const guest = await browser.newPage();
+  const comments: RentalComment[] = [];
+  try {
+    await useDomOnly(guest);
+    await guest.route("**/tiles.openfreemap.org/**", (route) => route.abort());
+    await guest.route("**/api/shared-rentals**", (route) => {
+      const request = route.request();
+      expect(request.headers()["x-rental-share"]).toBe(token);
+      if (!rental.shareToken)
+        return route.fulfill({
+          status: 404,
+          json: { error: "Tautan dinonaktifkan" },
+        });
+      if (request.method() === "POST") {
+        expect(request.headers().authorization).toMatch(/^Bearer /);
+        const comment = {
+          id: "uji",
+          author: "Tamu Uji",
+          text: request.postDataJSON().text,
+          createdAt: now,
+        };
+        comments.push(comment);
+        return route.fulfill({ status: 201, json: { comment } });
+      }
+      const { shareToken: _, ...details } = rental;
+      return route.fulfill({ json: { rental: details, comments } });
+    });
+    await guest.goto(url, { waitUntil: "domcontentloaded" });
+    const shared = guest.getByRole("dialog", { name: "Hunian yang dibagikan" });
+    await expect(shared).toContainText("Hunian pilihan survei");
+    await expect(shared).toContainText("Cek ventilasi dapur.");
+    await expect(
+      shared.getByRole("button", {
+        name: "Masuk dengan Google untuk berkomentar",
+      }),
+    ).toBeVisible();
+    await expect(shared.getByLabel("Nama simpanan")).toHaveCount(0);
+    await expect(shared.getByLabel("Tulis komentar")).toHaveCount(0);
+    await mockListingAccount(guest, []);
+    await guest.reload({ waitUntil: "domcontentloaded" });
+    await shared
+      .getByLabel("Tulis komentar")
+      .fill("Boleh cek daya listrik juga?");
+    await shared.getByRole("button", { name: "Kirim komentar" }).click();
+    await expect(shared).toContainText("Boleh cek daya listrik juga?");
+    await expect(shared).toContainText("Tamu Uji");
+
+    await page.bringToFront();
+    await page.reload({ waitUntil: "domcontentloaded" });
+    await table
+      .getByRole("button", { name: "Simpanan hunian", exact: true })
+      .click();
+    await owner.getByRole("button", { name: /Hunian pilihan survei/ }).click();
+    await expect(
+      owner.getByRole("textbox", { name: "Catatan", exact: true }),
+    ).toHaveValue("Cek ventilasi dapur.\nBawa meteran.");
+    await owner.getByRole("button", { name: "Nonaktifkan tautan" }).click();
+    await expect(owner.getByRole("status")).toHaveText("Tautan dinonaktifkan.");
+    await guest.bringToFront();
+    await guest.reload({ waitUntil: "domcontentloaded" });
+    await expect(shared.getByRole("status")).toHaveText(
+      "Tautan hunian tidak tersedia.",
+    );
+    expect(requests).toContain("PATCH");
+    expect(requests).toContain("DELETE");
+  } finally {
+    await guest.close();
+  }
 });
 
 test("shows historical flood and crime reports in independent opt-in map layers", async ({

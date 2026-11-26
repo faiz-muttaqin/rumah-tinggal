@@ -133,6 +133,7 @@ export function rentalConnections(
 export function rentalPopupHTML(
   rentals: ResearchRental[],
   mosques: ResearchMosque[] = [],
+  bookmark?: (id: string) => string,
 ): string {
   const external = 'target="_blank" rel="noopener noreferrer"';
   return `<div class="mosque-popup" data-testid="rental-popup">${rentals.length > 1 ? `<h2>${rentals.length} sewa pada titik yang sama</h2>` : ""}${rentals
@@ -145,7 +146,7 @@ export function rentalPopupHTML(
           return `<li><button class="rental-mosque-link" data-rental-mosque="${esc(near.id)}">${esc(near.name)} · ≈ ${esc(distanceText(near.km))}</button>${mosque ? `<a href="${esc(googleMapsRoute(point, mosque))}" ${external}>Rute dari titik acuan ↗</a>` : ""}</li>`;
         })
         .join("");
-      return `<article class="rental-popup-item"><span class="mosque-kicker">${esc(RENTAL_LABELS[rental.rentalType])}</span><h2>${esc(rental.title)}</h2>${rentalTermBadges(rental)}<p><strong>${esc(rentText(rental))}</strong></p><p>${esc(rentalLocationLabel(rental))}</p><p class="mosque-note">${esc(point.note)} Lokasi dicek ${esc(checkedDate(point.checkedAt))}; harga dicek ${esc(checkedDate(rental.lastChecked))}. Konfirmasi harga dan ketersediaan ke portal.</p><a href="${esc(safeUrl(point.url))}" ${external}>Sumber titik ↗</a><h3>Masjid Ihrish sekitar</h3>${nearby ? `<ul class="mosque-transit">${nearby}</ul>` : `<p class="mosque-note">${esc(rentalMosqueSummary(rental))}.</p>`}<p class="mosque-note">Jarak garis lurus dari titik acuan ${point.precision === "approximate" ? "perkiraan portal" : point.precision === "complex" ? "kompleks" : "gedung"}, bukan jarak dari pintu unit atau rute berjalan.</p><div class="mosque-actions"><a href="/?koleksi=sewa&sewa=${encodeURIComponent(rental.id)}">Tautan pin sewa</a><a href="${esc(googleMapsLocation(point))}" ${external}>Titik di Google Maps ↗</a><a href="/riset#${encodeURIComponent(rental.id)}">Bukti & rincian ↗</a><a href="${esc(safeUrl(rental.listingUrl))}" ${external}>Buka listing ↗</a></div></article>`;
+      return `<article class="rental-popup-item"><span class="mosque-kicker">${esc(RENTAL_LABELS[rental.rentalType])}</span><h2>${esc(rental.title)}</h2>${rentalTermBadges(rental)}<p><strong>${esc(rentText(rental))}</strong></p><p>${esc(rentalLocationLabel(rental))}</p><p class="mosque-note">${esc(point.note)} Lokasi dicek ${esc(checkedDate(point.checkedAt))}; harga dicek ${esc(checkedDate(rental.lastChecked))}. Konfirmasi harga dan ketersediaan ke portal.</p><a href="${esc(safeUrl(point.url))}" ${external}>Sumber titik ↗</a><h3>Masjid Ihrish sekitar</h3>${nearby ? `<ul class="mosque-transit">${nearby}</ul>` : `<p class="mosque-note">${esc(rentalMosqueSummary(rental))}.</p>`}<p class="mosque-note">Jarak garis lurus dari titik acuan ${point.precision === "approximate" ? "perkiraan portal" : point.precision === "complex" ? "kompleks" : "gedung"}, bukan jarak dari pintu unit atau rute berjalan.</p><div class="mosque-actions">${bookmark?.(rental.id) ?? ""}<a href="/?koleksi=sewa&sewa=${encodeURIComponent(rental.id)}">Tautan pin sewa</a><a href="${esc(googleMapsLocation(point))}" ${external}>Titik di Google Maps ↗</a><a href="/riset#${encodeURIComponent(rental.id)}">Bukti & rincian ↗</a><a href="${esc(safeUrl(rental.listingUrl))}" ${external}>Buka listing ↗</a></div></article>`;
     })
     .join("")}</div>`;
 }

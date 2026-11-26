@@ -1,3 +1,9 @@
+import {
+  createExcelBlob,
+  downloadCsv,
+  downloadExcel,
+  type ExportSheet,
+} from "./excel-export.ts";
 import { distanceKm, escapeHTML as esc, nearestStation } from "./geo.ts";
 import { icon } from "./icons.ts";
 import {
@@ -19,6 +25,7 @@ import {
   type ResearchRental,
   safeUrl,
 } from "./research-data.ts";
+import { rentalSaveButton } from "./saved-rentals.ts";
 import { AREAS, type Station } from "./types.ts";
 import "./rental-table.css";
 
@@ -60,6 +67,7 @@ type Column = {
   label: string;
   width: number;
   mobileWidth?: number;
+  link?: true;
   value: (row: Row, stop: Stop | undefined) => Value;
   format?: (value: number) => string;
 };
@@ -129,6 +137,7 @@ const columns: Column[] = [
   },
   {
     id: "station",
+    link: true,
     label: "Stasiun / halte",
     width: 184,
     value: ({ rental }, stop) =>
@@ -148,6 +157,7 @@ const columns: Column[] = [
   },
   {
     id: "commute",
+    link: true,
     label: "Rute transit ke SCBD",
     width: 168,
     value: ({ rental }) =>
@@ -157,6 +167,7 @@ const columns: Column[] = [
   },
   {
     id: "mosque",
+    link: true,
     label: "Masjid Ihrish",
     width: 200,
     value: ({ mosque }) =>
@@ -265,18 +276,21 @@ const columns: Column[] = [
   },
   {
     id: "flood",
+    link: true,
     label: "Banjir & genangan",
     width: 232,
     value: ({ rental }) => rental.review?.flood,
   },
   {
     id: "security",
+    link: true,
     label: "Kriminalitas & keamanan",
     width: 232,
     value: ({ rental }) => rental.review?.security,
   },
   {
     id: "environment",
+    link: true,
     label: "Akses & lingkungan",
     width: 232,
     value: ({ rental }) => rental.review?.environment,
@@ -317,6 +331,7 @@ const columns: Column[] = [
   },
   {
     id: "career",
+    link: true,
     label: "Bukti lowongan",
     width: 167,
     value: ({ rental }) => rental.review?.career,
@@ -338,6 +353,7 @@ const columns: Column[] = [
   },
   {
     id: "location",
+    link: true,
     label: "Titik hunian",
     width: 169,
     value: ({ rental }) =>
@@ -350,6 +366,7 @@ const columns: Column[] = [
   },
   {
     id: "mosqueMap",
+    link: true,
     label: "Peta masjid",
     width: 128,
     value: ({ mosque }) =>
@@ -365,6 +382,7 @@ const columns: Column[] = [
   },
   {
     id: "source",
+    link: true,
     label: "Iklan",
     width: 122,
     value: ({ rental }) => ({
@@ -380,6 +398,9 @@ const pageSizes = [defaultPageSize, 100, 250, 500, 750, 1000, 2000];
 const pageSizeKey = "rumah-tinggal:baris-tabel-sewa";
 const heightKey = "rumah-tinggal:tinggi-tabel-sewa";
 const stickyKey = "rumah-tinggal:kolom-beku-sewa";
+const widthKey = (id: string) => `rumah-tinggal:lebar-sewa:${id}`;
+const minColumnWidth = 64;
+const maxColumnWidth = 960;
 function preference(key: string, fallback: number): number {
   try {
     const value = localStorage.getItem(key);
@@ -442,11 +463,21 @@ export class RentalTable {
     Math.max(0, Math.floor(preference(stickyKey, 1))),
   );
   private drag?: { y: number; height: number };
+  private columnDrag?: {
+    id: string;
+    x: number;
+    width: number;
+    pointer: number;
+  };
+  private widths = new Map(
+    columns.map(({ id }) => [id, preference(widthKey(id), 0)]),
+  );
   private page = 0;
   private pageSize = defaultPageSize;
   private sort = { id: "rent", ascending: true };
   private onChange: () => void;
   private onSelect: (rental: ResearchRental) => void;
+  private isSaved: (id: string) => boolean;
 
   constructor(
     panel: HTMLElement,
@@ -457,15 +488,18 @@ export class RentalTable {
       close: () => void;
       reset: () => void;
       resize: () => void;
+      isSaved: (id: string) => boolean;
+      message: (message: string) => void;
     },
   ) {
     this.panel = panel;
     this.workspace = workspace;
     this.onChange = callbacks.change;
     this.onSelect = callbacks.select;
+    this.isSaved = callbacks.isSaved;
     panel.innerHTML = `<div class="rent-table-grab" tabindex="0" role="separator" aria-orientation="horizontal" aria-controls="rent-table-scroll" aria-label="Tinggi tabel sewa"><span></span></div>
       <form class="rent-table-controls">
-        <div class="rent-table-title"><h2 id="rent-table-title">Tabel sewa</h2><span class="rent-table-cap" title="Tarif tahunan dibagi 12 untuk pembanding. Periode pembayaran asli tercantum di tabel.">Maks. Rp5 juta/bln</span><button type="button" data-close-table class="rent-table-action">Ke kartu</button></div>
+        <div class="rent-table-title"><h2 id="rent-table-title">Tabel sewa</h2><span class="rent-table-cap" title="Tarif tahunan dibagi 12 untuk pembanding. Periode pembayaran asli tercantum di tabel."><span>Maks. Rp5 juta/bln</span><span class="rent-cap-compact">≤ Rp5 jt/bln</span></span><button type="button" data-open-saved-rentals class="rent-table-action rent-table-saved" aria-haspopup="dialog" aria-label="Simpanan hunian" title="Simpanan hunian">${icon("bookmark")}<span>Simpanan</span></button><select class="rent-table-action rent-table-export" name="export" aria-label="Ekspor tabel sewa" title="Unduh semua hasil sesuai filter dan urutan tabel"><option value="">Ekspor</option><option value="csv">CSV</option><option value="xlsx">Excel (.xlsx)</option></select><button type="button" data-close-table class="rent-table-action">Ke kartu</button></div>
         <div class="rent-table-filters">
           <label class="rent-table-search">${icon("search")}<input type="search" name="query" aria-label="Cari di tabel sewa" placeholder="Cari hunian, kawasan, masjid…" autocomplete="off"/></label>
           <select name="kind" aria-label="Jenis hunian di tabel"><option value="">Semua jenis</option>${RENTAL_MAP_GROUPS.map((g) => `<option value="${g.id}">${g.label}</option>`).join("")}</select>
@@ -491,6 +525,7 @@ export class RentalTable {
     this.controls.onsubmit = (event) => event.preventDefault();
     this.controls.oninput = (event) => {
       const name = (event.target as HTMLElement).getAttribute("name");
+      if (name === "export") return;
       if (name === "mode") this.syncCorridor();
       if (name === "freeze") {
         this.frozen = Number(this.select("freeze").value);
@@ -515,6 +550,24 @@ export class RentalTable {
     };
     element<HTMLButtonElement>(panel, "[data-close-table]").onclick =
       callbacks.close;
+    const exportMenu = this.select("export");
+    exportMenu.onchange = async () => {
+      const format = exportMenu.value;
+      if (!format) return;
+      exportMenu.value = "";
+      exportMenu.disabled = true;
+      try {
+        const sheet = this.exportSheet();
+        if (!sheet.rows.length)
+          callbacks.message("Belum ada hunian untuk diekspor.");
+        else if (format === "csv") downloadCsv(sheet, "tabel-sewa");
+        else downloadExcel(await createExcelBlob([sheet]), "tabel-sewa");
+      } catch {
+        callbacks.message("Ekspor tabel sewa belum berhasil. Coba lagi.");
+      } finally {
+        exportMenu.disabled = false;
+      }
+    };
     this.head.onclick = (event) => {
       const button = (event.target as HTMLElement).closest<HTMLButtonElement>(
         "[data-sort]",
@@ -533,10 +586,66 @@ export class RentalTable {
     };
     this.body.onclick = (event) => {
       const target = event.target as HTMLElement;
-      if (target.closest("a")) return;
+      if (target.closest("a, [data-save-rental]")) return;
       const row = target.closest<HTMLTableRowElement>("tr[data-rental]");
       const rental = this.rows.get(row?.dataset.rental ?? "")?.rental;
       if (rental) this.onSelect(rental);
+    };
+    this.head.onpointerdown = (event) => {
+      const handle = (event.target as Element).closest<HTMLElement>(
+        "[data-resize-column]",
+      );
+      const id = handle?.dataset.resizeColumn;
+      if (!handle || !id || event.button !== 0 || this.columnDrag) return;
+      event.preventDefault();
+      handle.focus({ preventScroll: true });
+      this.columnDrag = {
+        id,
+        x: event.clientX,
+        width: Number(handle.getAttribute("aria-valuenow")),
+        pointer: event.pointerId,
+      };
+      handle.setPointerCapture(event.pointerId);
+      this.grid.classList.add("is-resizing");
+    };
+    this.head.onpointermove = (event) => {
+      const drag = this.columnDrag;
+      if (drag?.pointer === event.pointerId)
+        this.setColumnWidth(drag.id, drag.width + event.clientX - drag.x);
+    };
+    this.head.onlostpointercapture = (event) => {
+      const drag = this.columnDrag;
+      if (drag?.pointer !== event.pointerId) return;
+      savePreference(widthKey(drag.id), this.widths.get(drag.id) ?? 0);
+      this.columnDrag = undefined;
+      this.grid.classList.remove("is-resizing");
+    };
+    this.head.onkeydown = (event) => {
+      const handle = (event.target as Element).closest<HTMLElement>(
+        "[data-resize-column]",
+      );
+      const id = handle?.dataset.resizeColumn;
+      if (!handle || !id) return;
+      const width = Number(handle.getAttribute("aria-valuenow"));
+      const size = {
+        ArrowLeft: width - 16,
+        ArrowRight: width + 16,
+        Home: minColumnWidth,
+        End: maxColumnWidth,
+      }[event.key];
+      if (size === undefined) return;
+      event.preventDefault();
+      this.setColumnWidth(id, size);
+      savePreference(widthKey(id), this.widths.get(id) ?? 0);
+    };
+    this.head.ondblclick = (event) => {
+      const id = (event.target as Element).closest<HTMLElement>(
+        "[data-resize-column]",
+      )?.dataset.resizeColumn;
+      if (!id) return;
+      this.widths.delete(id);
+      savePreference(widthKey(id), 0);
+      this.layoutColumns();
     };
     const pageSize = element<HTMLSelectElement>(panel, "[data-page-size]");
     const savedPageSize = preference(pageSizeKey, defaultPageSize);
@@ -648,25 +757,47 @@ export class RentalTable {
     this.grab.setAttribute("aria-valuenow", String(h));
   }
 
+  private width(column: Column): number {
+    const saved = this.widths.get(column.id);
+    return saved && saved > 0
+      ? Math.min(maxColumnWidth, Math.max(minColumnWidth, saved))
+      : this.workspace.clientWidth <= 760
+        ? (column.mobileWidth ?? column.width)
+        : column.width;
+  }
+
+  private setColumnWidth(id: string, size: number): void {
+    this.widths.set(
+      id,
+      Math.round(Math.min(maxColumnWidth, Math.max(minColumnWidth, size))),
+    );
+    this.layoutColumns();
+  }
+
   private layoutColumns(): void {
-    const limit = this.freezeLimit();
-    const freeze = Math.min(this.frozen, limit);
-    const input = this.select("freeze");
-    for (const option of input.options)
-      option.disabled = Number(option.value) > limit;
-    input.value = String(freeze);
+    const maxFrozen = this.freezeLimit();
+    const available = this.scroller.clientWidth - 72;
+    let limit = 0;
     let offset = 0;
     for (const [index, column] of columns.entries()) {
-      const width =
-        limit === 2 ? (column.mobileWidth ?? column.width) : column.width;
+      const width = this.width(column);
       const col = element<HTMLTableColElement>(
         this.grid,
         `[data-column="${column.id}"]`,
       );
       col.style.width = `${width}px`;
+      this.head
+        .querySelector(`[data-resize-column="${column.id}"]`)
+        ?.setAttribute("aria-valuenow", String(width));
       this.grid.style.setProperty(`--rent-left-${index}`, `${offset}px`);
       offset += width;
+      if (index < maxFrozen && offset <= available) limit++;
     }
+    const freeze = Math.min(this.frozen, limit);
+    const input = this.select("freeze");
+    for (const option of input.options)
+      option.disabled = Number(option.value) > limit;
+    input.value = String(freeze);
     this.grid.style.width = `${offset}px`;
     this.grid.dataset.frozen = String(freeze);
   }
@@ -820,9 +951,9 @@ export class RentalTable {
     this.paint();
   }
 
-  private paint(): void {
+  private sortedRows(): Row[] {
     const column = columns.find((c) => c.id === this.sort.id) ?? columns[0];
-    const sorted = this.matches
+    return this.matches
       .map((rental) => this.rows.get(rental.id))
       .filter((row): row is Row => Boolean(row))
       .sort((a, b) => {
@@ -839,6 +970,30 @@ export class RentalTable {
           collator.compare(a.rental.title, b.rental.title)
         );
       });
+  }
+
+  private exportSheet(): ExportSheet {
+    return {
+      name: "Tabel Sewa",
+      headers: columns.flatMap((column) =>
+        column.link ? [column.label, `Tautan ${column.label}`] : [column.label],
+      ),
+      rows: this.sortedRows().map((row) => {
+        const stop = this.stop(row);
+        return columns.flatMap((column) => {
+          const value = column.value(row, stop);
+          const label = sortValue(value);
+          if (!column.link) return [label];
+          const link =
+            value && typeof value === "object" ? safeUrl(value.url) : "#";
+          return [label, link === "#" ? null : link];
+        });
+      }),
+    };
+  }
+
+  private paint(): void {
+    const sorted = this.sortedRows();
     this.page = Math.max(
       0,
       Math.min(this.page, Math.ceil(sorted.length / this.pageSize) - 1),
@@ -848,7 +1003,7 @@ export class RentalTable {
     this.head.innerHTML = `<tr>${columns
       .map((c, i) => {
         const active = c.id === this.sort.id;
-        return `<th scope="col" data-col="${i}"${active ? ` aria-sort="${this.sort.ascending ? "ascending" : "descending"}"` : ""}><button type="button" data-sort="${c.id}">${esc(c.label)}<span aria-hidden="true">${active ? (this.sort.ascending ? "↑" : "↓") : "↕"}</span></button></th>`;
+        return `<th scope="col" data-col="${i}"${active ? ` aria-sort="${this.sort.ascending ? "ascending" : "descending"}"` : ""}><button type="button" data-sort="${c.id}">${esc(c.label)}<span aria-hidden="true">${active ? (this.sort.ascending ? "↑" : "↓") : "↕"}</span></button><span class="rent-column-resize" data-resize-column="${c.id}" role="separator" aria-orientation="vertical" aria-label="Ubah lebar kolom ${esc(c.label)}" aria-valuemin="${minColumnWidth}" aria-valuemax="${maxColumnWidth}" aria-valuenow="${this.width(c)}" tabindex="0" title="Geser batas kolom atau gunakan tombol panah"></span></th>`;
       })
       .join("")}</tr>`;
     this.body.innerHTML = slice.length
@@ -857,7 +1012,7 @@ export class RentalTable {
             const stop = this.stop(row);
             const { rental, group } = row;
             const selected = this.selected.includes(rental.id);
-            return `<tr data-rental="${esc(rental.id)}" data-kind="${group.id}" class="${selected ? "is-selected" : ""}" style="--rent-type:${group.color}">${columns.map((c, i) => `<td data-col="${i}">${i === 0 ? `<button type="button" aria-pressed="${selected}" title="${esc(rental.title)}">${esc(rental.title)}</button>` : i === 1 ? `<span class="rent-table-type">${group.label}</span>` : cellHTML(c.value(row, stop), c)}</td>`).join("")}</tr>`;
+            return `<tr data-rental="${esc(rental.id)}" data-kind="${group.id}" class="${selected ? "is-selected" : ""}" style="--rent-type:${group.color}">${columns.map((c, i) => `<td data-col="${i}">${i === 0 ? `<div class="rent-table-name"><button type="button" aria-pressed="${selected}" title="${esc(rental.title)}">${esc(rental.title)}</button>${rentalSaveButton(rental.id, this.isSaved(rental.id), true)}</div>` : i === 1 ? `<span class="rent-table-type">${group.label}</span>` : cellHTML(c.value(row, stop), c)}</td>`).join("")}</tr>`;
           })
           .join("")
       : `<tr><td class="rent-table-empty" colspan="${columns.length}">Belum ada hunian yang cocok. Ubah pencarian atau reset filter.</td></tr>`;

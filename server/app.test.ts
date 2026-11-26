@@ -23,6 +23,7 @@ import { researchFixture } from "../tests/research-fixture.ts";
 import { createApp, readConfig } from "./app.ts";
 import { AuthError } from "./auth.ts";
 import { createPhotonSearch, parsePhoton } from "./places.ts";
+import { SavedRentalStore } from "./saved-rentals.ts";
 import { ListingStore, MAX_LISTINGS_PER_OWNER } from "./store.ts";
 
 const APP_ORIGIN = "http://localhost:3100";
@@ -95,8 +96,9 @@ async function fixture(t: TestContext) {
     body?: unknown,
     user: string | null = "alice",
     originHeader: string | null = APP_ORIGIN,
+    extraHeaders?: HeadersInit,
   ) => {
-    const headers = new Headers();
+    const headers = new Headers(extraHeaders);
     if (user) headers.set("Authorization", `Bearer ${user}`);
     if (originHeader) headers.set("Origin", originHeader);
     if (body !== undefined) headers.set("Content-Type", "application/json");
@@ -189,6 +191,176 @@ test("private listings reject missing and invalid bearer tokens", async (t) => {
       401,
     );
   }
+});
+
+test("saved rentals isolate accounts and share notes with revocable links", async (t) => {
+  const { api, app, dataDir, distDir } = await fixture(t);
+  await mkdir(join(distDir, "data"));
+  await writeFile(
+    join(distDir, "data", "properties.geojson"),
+    JSON.stringify(researchFixture),
+  );
+  const original = researchFixture.metadata.rentals.rentals[0];
+  const savedPath = "/api/saved-rentals";
+  const rentalPath = `${savedPath}/${original.id}`;
+  const sharedPath = "/api/shared-rentals";
+  assert.equal((await api(savedPath, "GET", undefined, null)).status, 401);
+  assert.equal((await api(rentalPath, "PUT", undefined, null)).status, 401);
+  assert.equal((await api(`${savedPath}/missing`, "PUT")).status, 404);
+  const saved = await Promise.all([
+    api(rentalPath, "PUT"),
+    api(rentalPath, "PUT"),
+  ]);
+  for (const response of saved) {
+    assert.equal(response.status, 200);
+    const { rental } = await response.json();
+    assert.equal(rental.rentalId, original.id);
+    assert.equal(rental.amount, original.rent.amount);
+    assert.equal(rental.shareToken, null);
+  }
+  assert.equal((await (await api(savedPath)).json()).rentals.length, 1);
+  assert.deepEqual(
+    await (await api(savedPath, "GET", undefined, "bob")).json(),
+    { rentals: [] },
+  );
+  assert.equal(
+    (await api(rentalPath, "PATCH", { note: "Catatan lain" }, "bob")).status,
+    404,
+  );
+  assert.equal(
+    (await api(`${rentalPath}/share`, "PUT", undefined, "bob")).status,
+    404,
+  );
+  assert.equal((await api(rentalPath, "DELETE", undefined, "bob")).status, 404);
+  assert.equal(
+    (await api(rentalPath, "PATCH", { minimumMonths: 0 })).status,
+    400,
+  );
+  assert.equal(
+    (
+      await api(
+        rentalPath,
+        "PATCH",
+        { note: "Asing" },
+        "alice",
+        "http://other.invalid",
+      )
+    ).status,
+    403,
+  );
+  const note = "Periksa dapur.\nBawa meteran.";
+  const edited = await api(rentalPath, "PATCH", {
+    title: "Simpanan uji",
+    amount: 2_150_000,
+    note,
+  });
+  assert.equal(edited.status, 200);
+  assert.equal((await edited.json()).rental.note, note);
+  assert.equal((await api(sharedPath, "GET", undefined, null)).status, 404);
+
+  const {
+    rental: { shareToken },
+  } = await (await api(`${rentalPath}/share`, "PUT")).json();
+  assert.match(shareToken, /^[A-Za-z0-9_-]{32}$/);
+  assert.equal(
+    (await (await api(`${rentalPath}/share`, "PUT")).json()).rental.shareToken,
+    shareToken,
+  );
+  const shareHeader = { "X-Rental-Share": shareToken };
+  const shareRead = () =>
+    api(sharedPath, "GET", undefined, null, null, shareHeader);
+  const guest = await shareRead();
+  assert.equal(guest.status, 200);
+  assert.equal(guest.headers.get("cache-control"), "no-store");
+  const content = await guest.json();
+  assert.equal(content.rental.note, note);
+  assert.equal(content.rental.title, "Simpanan uji");
+  assert.equal(content.rental.amount, 2_150_000);
+  assert.equal("shareToken" in content.rental, false);
+  assert.equal("owner_uid" in content.rental, false);
+  const commentPath = `${sharedPath}/comments`;
+  assert.equal(
+    (
+      await api(
+        commentPath,
+        "POST",
+        { text: "Tanya" },
+        null,
+        APP_ORIGIN,
+        shareHeader,
+      )
+    ).status,
+    401,
+  );
+  assert.equal(
+    (
+      await api(
+        commentPath,
+        "POST",
+        { text: "   " },
+        "bob",
+        APP_ORIGIN,
+        shareHeader,
+      )
+    ).status,
+    400,
+  );
+  const comment = await api(
+    commentPath,
+    "POST",
+    { text: "Tanya dapur" },
+    "bob",
+    APP_ORIGIN,
+    shareHeader,
+  );
+  assert.equal(comment.status, 201);
+  assert.deepEqual(Object.keys((await comment.json()).comment).sort(), [
+    "author",
+    "createdAt",
+    "id",
+    "text",
+  ]);
+  assert.equal(
+    (await (await shareRead()).json()).comments[0].text,
+    "Tanya dapur",
+  );
+
+  assert.equal((await api(`${rentalPath}/share`, "DELETE")).status, 200);
+  assert.equal((await shareRead()).status, 404);
+  assert.equal(
+    (
+      await api(
+        commentPath,
+        "POST",
+        { text: "Terlambat" },
+        "bob",
+        APP_ORIGIN,
+        shareHeader,
+      )
+    ).status,
+    404,
+  );
+  const replacement = (await (await api(`${rentalPath}/share`, "PUT")).json())
+    .rental.shareToken;
+  assert.notEqual(replacement, shareToken);
+  const fresh = await api(sharedPath, "GET", undefined, null, null, {
+    "X-Rental-Share": replacement,
+  });
+  assert.deepEqual((await fresh.json()).comments, []);
+  assert.equal((await api(rentalPath, "PUT")).status, 200);
+  await app.close();
+  const reopened = new SavedRentalStore(dataDir);
+  try {
+    assert.equal(reopened.get("alice", original.id)?.note, note);
+    assert.equal(reopened.shared(shareToken), undefined);
+    assert.equal(reopened.shared(replacement)?.rental.amount, 2_150_000);
+  } finally {
+    reopened.close();
+  }
+  assert.equal(
+    (await stat(join(dataDir, "saved-rentals.sqlite"))).mode & 0o777,
+    0o600,
+  );
 });
 
 test("listing creation and deletion stay isolated by verified owner", async (t) => {

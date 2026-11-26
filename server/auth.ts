@@ -3,6 +3,7 @@ import { createRemoteJWKSet, type JWTVerifyGetKey, jwtVerify } from "jose";
 export interface Identity {
   uid: string;
   email: string;
+  name?: string;
 }
 
 export type TokenVerifier = (token: string) => Promise<Identity>;
@@ -78,6 +79,11 @@ export function createTokenVerifier(
     if (allowlist.size && !allowlist.has(payload.email.toLowerCase())) {
       throw new AuthError(403);
     }
-    return { uid: payload.sub, email: payload.email };
+    const name = typeof payload.name === "string" ? payload.name.trim() : "";
+    return {
+      uid: payload.sub,
+      email: payload.email,
+      ...(name && name.length <= 100 && !name.includes("@") ? { name } : {}),
+    };
   };
 }

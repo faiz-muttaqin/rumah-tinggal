@@ -516,6 +516,27 @@ export async function createExcelBlob(sheets: ExportSheet[]): Promise<Blob> {
 }
 
 export function downloadExcel(blob: Blob, prefix: string): void {
+  download(blob, prefix, "xlsx");
+}
+
+export function downloadCsv(sheet: ExportSheet, prefix: string): void {
+  const escapeCell = (value: Value): string => {
+    if (value == null) return "";
+    if (typeof value === "number") return String(value);
+    const text = /^[\t\r\n]|^\s*[=+\-@]/u.test(value) ? `'${value}` : value;
+    return `"${text.replaceAll('"', '""')}"`;
+  };
+  const csv = [sheet.headers, ...sheet.rows]
+    .map((row) => row.map(escapeCell).join(","))
+    .join("\r\n");
+  download(
+    new Blob(["\uFEFF", csv, "\r\n"], { type: "text/csv;charset=utf-8" }),
+    prefix,
+    "csv",
+  );
+}
+
+function download(blob: Blob, prefix: string, extension: "xlsx" | "csv"): void {
   const date = new Intl.DateTimeFormat("sv-SE", {
     timeZone: "Asia/Jakarta",
     year: "numeric",
@@ -525,7 +546,7 @@ export function downloadExcel(blob: Blob, prefix: string): void {
   const objectUrl = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = objectUrl;
-  link.download = `${prefix}-${date}.xlsx`;
+  link.download = `${prefix}-${date}.${extension}`;
   document.body.append(link);
   link.click();
   link.remove();

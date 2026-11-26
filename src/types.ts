@@ -25,6 +25,40 @@ export interface Listing {
   createdAt: string;
 }
 
+export interface SavedRentalFields {
+  title: string;
+  locationText: string;
+  amount: number;
+  period: "monthly" | "yearly";
+  minimumMonths: number | null;
+  note: string;
+}
+
+export interface SavedRentalEntry extends SavedRentalFields {
+  rentalId: string;
+  kind: HousingType;
+  sourceUrl: string;
+  location: { lat: number; lng: number } | null;
+  savedAt: string;
+  updatedAt: string;
+}
+
+export interface SavedRental extends SavedRentalEntry {
+  shareToken: string | null;
+}
+
+export interface RentalComment {
+  id: string;
+  author: string;
+  text: string;
+  createdAt: string;
+}
+
+export interface SharedRental {
+  rental: SavedRentalEntry;
+  comments: RentalComment[];
+}
+
 export interface Station {
   id: string;
   name: string;
