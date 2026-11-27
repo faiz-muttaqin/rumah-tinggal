@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-26",
+  "checkedAt": "2026-11-27",
   "note": "Kurasi titik publik seluruh sewa. Pin perkiraan portal dibedakan dari titik gedung/kompleks; posisi unit tidak dijamin. Centroid administratif ditolak. Lokasi belum terbukti tetap di daftar tanpa pin. Harga dan stok tetap memakai tanggal cek iklan masing-masing.",
   "items": [
     {
@@ -14481,6 +14481,240 @@
         "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-pluit-sea-view-4",
         "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
         "checkedAt": "2026-11-26"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-501073ef61ac",
+      "location": {
+        "lat": -6.187508,
+        "lng": 106.959384,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-di-jakarta-garden-city-cakung-jaktim-di-ujung-menteng",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-6cb52472b0bb",
+      "location": {
+        "lat": -6.196568,
+        "lng": 106.950362,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-jakarta-timur-di-pulo-gebang-permai",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-1b1069032f1a",
+      "location": {
+        "lat": -6.240524,
+        "lng": 106.912657,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bulanan-di-komplek-perumahan-guru-sman-71",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-575fbf2dc27e",
+      "location": {
+        "lat": -6.225424,
+        "lng": 106.933113,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bunga-rampai-2-no-16-rt-rw-04-09",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-0b2cf1549c80",
+      "location": {
+        "lat": -6.223759,
+        "lng": 106.929693,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-wijaya-kusuma-ii-gg-13-no-310",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-6b8c66ed56a9",
+      "location": {
+        "lat": -6.229288,
+        "lng": 106.94405,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arabika-3-depan-keluarahan-pondok-kopi",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-70fc93a0bd9e",
+      "location": {
+        "lat": -6.227808,
+        "lng": 106.898454,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-gotong-royong-2",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-c863ebf73c00",
+      "location": {
+        "lat": -6.23736,
+        "lng": 106.880818,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-panca-warga-1-pasar-ciplak",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-94913135ea54",
+      "location": {
+        "lat": -6.195079,
+        "lng": 106.866302,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-town-house-srikaya-unit-a-jl-srikaya-29",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-40534fb5d786",
+      "location": {
+        "lat": -6.319223,
+        "lng": 106.884599,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pengantin-ali-1-gg-pengantin-ali-dalam",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-b2c7c8800744",
+      "location": {
+        "lat": -6.291697,
+        "lng": 106.890556,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mundu-lubang-buaya-jakarta-timur",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-fde53dcad64a",
+      "location": {
+        "lat": -6.298506,
+        "lng": 106.876076,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-jami-albashor",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-8752ca152f64",
+      "location": {
+        "lat": -6.298506,
+        "lng": 106.876076,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-jami-albashor-1",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-2e7f109b34d4",
+      "location": {
+        "lat": -6.294998,
+        "lng": 106.887299,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-rwformasi-pinang-ranti",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-e523e88d43f9",
+      "location": {
+        "lat": -6.293996,
+        "lng": 106.885619,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-pinang-ranti-2",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-ca0299e6dd91",
+      "location": {
+        "lat": -6.265212,
+        "lng": 106.875847,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-tahunan-di-makkasar-jaktim",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-9e38cffa66eb",
+      "location": {
+        "lat": -6.336302,
+        "lng": 106.860247,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-damai-kalisari-psr-rebo",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-pinhome-851779100ccb",
+      "location": {
+        "lat": -6.33122,
+        "lng": 106.881045,
+        "precision": "approximate",
+        "label": "Pin perkiraan pinhome",
+        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mesjid-al-taufik-kelkelapa-dua-wetan",
+        "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+        "checkedAt": "2026-11-27"
       },
       "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
     }

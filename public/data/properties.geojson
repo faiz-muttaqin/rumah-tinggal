@@ -1933,7 +1933,7 @@
    ]
   },
   "rentals": {
-   "checkedAt": "2026-11-26",
+   "checkedAt": "2026-11-27",
    "note": "Iklan sewa publik diperiksa pada tanggal di masing-masing kartu. Keterangan fasilitas dan transit dapat berasal dari iklan atau sumber kawasan, bukan survei; cek hubungan lokasinya. Nama dan kontak pemilik tidak disimpan. Harga dan ketersediaan cepat berubah.",
    "rentals": [
     {
@@ -51881,9 +51881,943 @@
        "url": "https://bpbd.jakarta.go.id/index.php/berita/R2pqeGRUSkc3eFkrVjdPbjRyeUp6QT09/update-info-terkini-genangan-18-januari-2026-s-d-pukul-10-00-wib"
       }
      }
+    },
+    {
+     "id": "sewa-pinhome-501073ef61ac",
+     "title": "Rumah sewa Ujung Menteng — 3 kamar, 90 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Ujung Menteng, Cakung, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 60000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp60.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-di-jakarta-garden-city-cakung-jaktim-di-ujung-menteng",
+      "pageDate": "2026-08-06"
+     },
+     "bedrooms": 3,
+     "sizeM2": 90.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp60.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-di-jakarta-garden-city-cakung-jaktim-di-ujung-menteng"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 2.95 km ke TransJakarta Terminal Pulogebang. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-di-jakarta-garden-city-cakung-jaktim-di-ujung-menteng",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-08-06",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.187508,
+      "lng": 106.959384,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-2-lantai-di-jakarta-garden-city-cakung-jaktim-di-ujung-menteng",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hidayah",
+       "name": "Masjid Al-Hidayah",
+       "km": 1.408
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-6cb52472b0bb",
+     "title": "Rumah sewa Pulo Gebang — 2 kamar, 70 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Pulo Gebang, Cakung, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 47000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp47.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-jakarta-timur-di-pulo-gebang-permai",
+      "pageDate": "2026-07-05"
+     },
+     "bedrooms": 2,
+     "sizeM2": 70.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp47.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-jakarta-timur-di-pulo-gebang-permai"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.86 km ke TransJakarta Walikota Jakarta Timur. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-jakarta-timur-di-pulo-gebang-permai",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-07-05",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.196568,
+      "lng": 106.950362,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-1-lantai-jakarta-timur-di-pulo-gebang-permai",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-al-hidayah",
+       "name": "Masjid Al-Hidayah",
+       "km": 0.856
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-1b1069032f1a",
+     "title": "Kontrakan Duren Sawit — 2 kamar, 200 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Duren Sawit, Duren Sawit, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1700000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp1.700.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bulanan-di-komplek-perumahan-guru-sman-71",
+      "pageDate": "2026-08-12"
+     },
+     "bedrooms": 2,
+     "sizeM2": 200.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp1.700.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bulanan-di-komplek-perumahan-guru-sman-71"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 2.55 km ke LRT Jatibening Baru. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bulanan-di-komplek-perumahan-guru-sman-71",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-08-12",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.240524,
+      "lng": 106.912657,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-bulanan-di-komplek-perumahan-guru-sman-71",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "security": {
+       "label": "Ada laporan kriminal pada cakupan kecamatan Duren Sawit (17 Okt 2023); sumber menyebut kawasan perkantoran, bukan titik hunian ini. Ini konteks, bukan ukuran tingkat kriminalitas atau bukti risiko di unit.",
+       "url": "https://tribratanews.polri.go.id/article/polrestro-jaksel-bekuk-komplotan-perampok-bersenpi-saat-beraksi-di-jaktim"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-575fbf2dc27e",
+     "title": "Rumah sewa Malaka Jaya — 3 kamar, 85 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Malaka Jaya, Duren Sawit, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 40000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp40.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bunga-rampai-2-no-16-rt-rw-04-09",
+      "pageDate": "2026-04-28"
+     },
+     "bedrooms": 3,
+     "sizeM2": 85.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp40.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bunga-rampai-2-no-16-rt-rw-04-09"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.01 km ke TransJakarta Flyover Pondok Kopi. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bunga-rampai-2-no-16-rt-rw-04-09",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-04-28",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.225424,
+      "lng": 106.933113,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-bunga-rampai-2-no-16-rt-rw-04-09",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "security": {
+       "label": "Ada laporan kriminal pada cakupan kecamatan Duren Sawit (17 Okt 2023); sumber menyebut kawasan perkantoran, bukan titik hunian ini. Ini konteks, bukan ukuran tingkat kriminalitas atau bukti risiko di unit.",
+       "url": "https://tribratanews.polri.go.id/article/polrestro-jaksel-bekuk-komplotan-perampok-bersenpi-saat-beraksi-di-jaktim"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-0b2cf1549c80",
+     "title": "Rumah sewa Malaka Sari — 3 kamar, 78 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Malaka Sari, Duren Sawit, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 30000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp30.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-wijaya-kusuma-ii-gg-13-no-310",
+      "pageDate": "2026-05-03"
+     },
+     "bedrooms": 3,
+     "sizeM2": 78.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp30.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-wijaya-kusuma-ii-gg-13-no-310"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.79 km ke TransJakarta Flyover Pondok Kopi. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-wijaya-kusuma-ii-gg-13-no-310",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-05-03",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.223759,
+      "lng": 106.929693,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-wijaya-kusuma-ii-gg-13-no-310",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "security": {
+       "label": "Ada laporan kriminal pada cakupan kecamatan Duren Sawit (17 Okt 2023); sumber menyebut kawasan perkantoran, bukan titik hunian ini. Ini konteks, bukan ukuran tingkat kriminalitas atau bukti risiko di unit.",
+       "url": "https://tribratanews.polri.go.id/article/polrestro-jaksel-bekuk-komplotan-perampok-bersenpi-saat-beraksi-di-jaktim"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-6b8c66ed56a9",
+     "title": "Kontrakan Pondok Kopi — 2 kamar, 55 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Pondok Kopi, Duren Sawit, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 3500000,
+      "period": "monthly",
+      "minimumMonths": 12,
+      "quote": "Rp3.500.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arabika-3-depan-keluarahan-pondok-kopi",
+      "pageDate": "2026-04-02"
+     },
+     "bedrooms": 2,
+     "sizeM2": 55.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp3.500.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arabika-3-depan-keluarahan-pondok-kopi"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.36 km ke KRL Klender Baru. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arabika-3-depan-keluarahan-pondok-kopi",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-04-02",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.229288,
+      "lng": 106.94405,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arabika-3-depan-keluarahan-pondok-kopi",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "security": {
+       "label": "Ada laporan kriminal pada cakupan kecamatan Duren Sawit (17 Okt 2023); sumber menyebut kawasan perkantoran, bukan titik hunian ini. Ini konteks, bukan ukuran tingkat kriminalitas atau bukti risiko di unit.",
+       "url": "https://tribratanews.polri.go.id/article/polrestro-jaksel-bekuk-komplotan-perampok-bersenpi-saat-beraksi-di-jaktim"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-70fc93a0bd9e",
+     "title": "Kontrakan Pondok Bambu — 3 kamar, 104 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Pondok Bambu, Duren Sawit, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 3500000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp3.500.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-gotong-royong-2",
+      "pageDate": "2026-09-15"
+     },
+     "bedrooms": 3,
+     "sizeM2": 104.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp3.500.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-gotong-royong-2"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.59 km ke TransJakarta Stasiun Klender. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-gotong-royong-2",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-09-15",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.227808,
+      "lng": 106.898454,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-gotong-royong-2",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-istiqomah-kavling-pengadilan",
+       "name": "Masjid Istiqomah Kavling Pengadilan",
+       "km": 1.221
+      },
+      {
+       "id": "masjid-al-ihsan",
+       "name": "Masjid Al-Ihsan Cipinang",
+       "km": 1.292
+      }
+     ],
+     "review": {
+      "security": {
+       "label": "Kelurahan Pondok Bambu: laporan polisi tentang pencegahan dugaan tawuran (11 Okt 2026). Lokasi rumah tidak disebut; ini konteks wilayah, bukan kejadian di unit.",
+       "url": "https://wahananews.co/kriminal/polisi-bergerak-usai-laporan-warga-jam-2-pagi-5-terduga-pelaku-tawuran-diciduk-awBYgvYnRB"
+      }
+     }
+    },
+    {
+     "id": "sewa-pinhome-c863ebf73c00",
+     "title": "Rumah sewa Cipinang Besar Selatan — 1 kamar, 46 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Cipinang Besar Selatan, Jatinegara, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 45000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp45.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-panca-warga-1-pasar-ciplak",
+      "pageDate": "2026-02-13"
+     },
+     "bedrooms": 1,
+     "sizeM2": 46.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp45.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-panca-warga-1-pasar-ciplak"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.35 km ke TransJakarta Halim. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-panca-warga-1-pasar-ciplak",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-02-13",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.23736,
+      "lng": 106.880818,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-panca-warga-1-pasar-ciplak",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-raya-cipinang-muara",
+       "name": "Masjid Raya Cipinang Muara",
+       "km": 0.822
+      },
+      {
+       "id": "masjid-imam-nawawi",
+       "name": "Masjid Imam Nawawi",
+       "km": 1.159
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-94913135ea54",
+     "title": "Rumah sewa Utan Kayu Utara — 2 kamar, 42 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Utan Kayu Utara, Matraman, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 48000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp48.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-town-house-srikaya-unit-a-jl-srikaya-29",
+      "pageDate": "2026-11-18"
+     },
+     "bedrooms": 2,
+     "sizeM2": 42.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp48.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-town-house-srikaya-unit-a-jl-srikaya-29"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.32 km ke TransJakarta Utan Kayu. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-town-house-srikaya-unit-a-jl-srikaya-29",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-11-18",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.195079,
+      "lng": 106.866302,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-town-house-srikaya-unit-a-jl-srikaya-29",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-raya-al-fatah",
+       "name": "Masjid Raya Al Fatah",
+       "km": 1.232
+      }
+     ]
+    },
+    {
+     "id": "sewa-pinhome-40534fb5d786",
+     "title": "Kontrakan Ciracas — 1 kamar, 25 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Ciracas, Ciracas, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 1000000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp1.000.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pengantin-ali-1-gg-pengantin-ali-dalam",
+      "pageDate": "2026-06-13"
+     },
+     "bedrooms": 1,
+     "sizeM2": 25.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp1.000.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pengantin-ali-1-gg-pengantin-ali-dalam"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.56 km ke LRT Ciracas. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pengantin-ali-1-gg-pengantin-ali-dalam",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-06-13",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.319223,
+      "lng": 106.884599,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-pengantin-ali-1-gg-pengantin-ali-dalam",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-b2c7c8800744",
+     "title": "Rumah sewa Lubang Buaya — 1 kamar, 70 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Lubang Buaya, Cipayung, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 22000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp22.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mundu-lubang-buaya-jakarta-timur",
+      "pageDate": "2026-06-19"
+     },
+     "bedrooms": 1,
+     "sizeM2": 70.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp22.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mundu-lubang-buaya-jakarta-timur"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.45 km ke TransJakarta Pinang Ranti. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mundu-lubang-buaya-jakarta-timur",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-06-19",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.291697,
+      "lng": 106.890556,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mundu-lubang-buaya-jakarta-timur",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-fde53dcad64a",
+     "title": "Kontrakan Dukuh — 1 kamar, 25 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Dukuh, Kramatjati, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 800000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp800.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-jami-albashor",
+      "pageDate": "2026-07-08"
+     },
+     "bedrooms": 1,
+     "sizeM2": 25.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp800.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-jami-albashor"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.65 km ke TransJakarta Pasar Induk. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-jami-albashor",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-07-08",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.298506,
+      "lng": 106.876076,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-jami-albashor",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-8752ca152f64",
+     "title": "Kontrakan Dukuh — 1 kamar, 30 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Dukuh, Kramatjati, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 900000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp900.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-jami-albashor-1",
+      "pageDate": "2026-01-10"
+     },
+     "bedrooms": 1,
+     "sizeM2": 30.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp900.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-jami-albashor-1"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.65 km ke TransJakarta Pasar Induk. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-jami-albashor-1",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-01-10",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.298506,
+      "lng": 106.876076,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-masjid-jami-albashor-1",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-2e7f109b34d4",
+     "title": "Kontrakan Pinangranti — 1 kamar, 50 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Pinangranti, Makasar, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 700000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp700.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-rwformasi-pinang-ranti",
+      "pageDate": "2026-09-05"
+     },
+     "bedrooms": 1,
+     "sizeM2": 50.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp700.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-rwformasi-pinang-ranti"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.43 km ke TransJakarta Pinang Ranti. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-rwformasi-pinang-ranti",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-09-05",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.294998,
+      "lng": 106.887299,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-rwformasi-pinang-ranti",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-e523e88d43f9",
+     "title": "Kontrakan Pinangranti — 1 kamar, 50 m²",
+     "rentalType": "kontrakan",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Pinangranti, Makasar, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 750000,
+      "period": "monthly",
+      "minimumMonths": 1,
+      "quote": "Rp750.000/bulan",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-pinang-ranti-2",
+      "pageDate": "2026-03-28"
+     },
+     "bedrooms": 1,
+     "sizeM2": 50.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp750.000/bulan",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-pinang-ranti-2"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 0.32 km ke TransJakarta Pinang Ranti. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-pinang-ranti-2",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-03-28",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.293996,
+      "lng": 106.885619,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-pinang-ranti-2",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-ca0299e6dd91",
+     "title": "Rumah sewa Makasar — 4 kamar, 100 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Makasar, Makasar, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 40000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp40.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-tahunan-di-makkasar-jaktim",
+      "pageDate": "2026-09-28"
+     },
+     "bedrooms": 4,
+     "sizeM2": 100.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp40.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-tahunan-di-makkasar-jaktim"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.05 km ke TransJakarta Cawang Cililitan. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-tahunan-di-makkasar-jaktim",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-09-28",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.265212,
+      "lng": 106.875847,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-tahunan-di-makkasar-jaktim",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-9e38cffa66eb",
+     "title": "Rumah sewa Kalisari — 2 kamar, 120 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Kalisari, Pasar Rebo, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 32000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp32.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-damai-kalisari-psr-rebo",
+      "pageDate": "2026-08-08"
+     },
+     "bedrooms": 2,
+     "sizeM2": 120.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp32.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-damai-kalisari-psr-rebo"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 2.90 km ke KRL Lenteng Agung. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-damai-kalisari-psr-rebo",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-08-08",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.336302,
+      "lng": 106.860247,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-damai-kalisari-psr-rebo",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": []
+    },
+    {
+     "id": "sewa-pinhome-851779100ccb",
+     "title": "Rumah sewa Kelapa Dua Wetan — 2 kamar, 90 m²",
+     "rentalType": "rumah-sewa",
+     "kind": "Rumah",
+     "area": "Jakarta",
+     "locationText": "Kelapa Dua Wetan, Ciracas, Kota Administrasi Jakarta Timur",
+     "buildingOrCluster": null,
+     "rent": {
+      "amount": 33000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp33.000.000/tahun",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mesjid-al-taufik-kelkelapa-dua-wetan",
+      "pageDate": "2026-07-26"
+     },
+     "bedrooms": 2,
+     "sizeM2": 90.0,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp33.000.000/tahun",
+       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mesjid-al-taufik-kelkelapa-dua-wetan"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.03 km ke LRT Ciracas. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit.",
+     "nearStationsClaim": [],
+     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mesjid-al-taufik-kelkelapa-dua-wetan",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-07-26",
+     "ownerType": "unknown",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+     "location": {
+      "lat": -6.33122,
+      "lng": 106.881045,
+      "precision": "approximate",
+      "label": "Pin perkiraan pinhome",
+      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mesjid-al-taufik-kelkelapa-dua-wetan",
+      "method": "Titik publik pada detail penawaran; dicocokkan dengan batas BIG",
+      "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": []
     }
    ],
-   "locationsCheckedAt": "2026-11-26"
+   "locationsCheckedAt": "2026-11-27"
   },
   "saleAds": {
    "checkedAt": "2026-10-31",
