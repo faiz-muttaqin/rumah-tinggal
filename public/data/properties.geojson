@@ -51837,6 +51837,90 @@
        "url": "https://news.detik.com/berita/d-8531127/sebulan-kerja-karyawan-ternak-ayam-di-bekasi-gondol-motor-operasional/amp"
       }
      }
+    },
+    {
+     "id": "sewa-pinhome-bassura-city-jasmine-2026-11-27",
+     "title": "Apartemen 2 kamar Bassura City, Tower Jasmine — 34 m²*",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Jakarta",
+     "locationText": "Cipinang Besar Utara, Jatinegara, Kota Jakarta Timur",
+     "buildingOrCluster": "Bassura City, Tower Jasmine",
+     "rent": {
+      "amount": 3083333,
+      "period": "monthly",
+      "minimumMonths": 12,
+      "quote": "Rp3.083.333/bulan ekuivalen; minimum 12 bulan (total Rp37.000.000)",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-bassura-city-428",
+      "pageDate": "2026-07-11"
+     },
+     "bedrooms": 2,
+     "sizeM2": 34,
+     "furnished": null,
+     "evidence": [
+      {
+       "quote": "Rp3,08 juta/bulan; minimum sewa 12 bulan (Rp37 juta)",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-bassura-city-428"
+      },
+      {
+       "quote": "2 kamar tidur; furnished; free IPL",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-bassura-city-428"
+      },
+      {
+       "quote": "Spesifikasi: 34 m²; deskripsi: 48 m²",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-bassura-city-428"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Halaman Pinhome masih menampilkan Ajukan Sewa saat dicek 2026-11-27; stok belum dikonfirmasi. Rp3,083 jt/bln untuk 12 bulan (Rp37 jt); opsi 3 bln Rp14 jt, 6 bln Rp23 jt; deposit Rp3 jt, booking Rp2 jt perlu dikonfirmasi. Ukuran konflik: spesifikasi 34 m², deskripsi 48 m²; tampil 34 m². Pin kompleks perkiraan; KRL Jatinegara 1,272 km garis lurus. Izin pasutri/dapur privat tidak disebut. Curanmor Kost 88 di alamat lain dalam kelurahan yang sama; berita tanpa koordinat, bukan kejadian di unit.",
+     "nearStationsClaim": [
+      {
+       "station": "Jatinegara",
+       "quote": "Jatinegara 1,38 KM",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-bassura-city-428"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-bassura-city-428",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-07-11",
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Titik perkiraan portal. Jarak garis lurus ke titik acuan KRL Jatinegara sekitar 1,272 km; Pinhome menampilkan 1,38 km. Bukan jarak atau rute berjalan kaki.",
+     "location": {
+      "lat": -6.224027,
+      "lng": 106.877307,
+      "precision": "approximate",
+      "label": "Pin perkiraan Pinhome pada kompleks Bassura City",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-bassura-city-428",
+      "method": "Pin publik pada halaman penawaran; tidak diverifikasi sebagai tower/unit/pintu",
+      "note": "Titik perkiraan portal. Jarak garis lurus ke titik acuan KRL Jatinegara sekitar 1,272 km; Pinhome menampilkan 1,38 km. Bukan jarak atau rute berjalan kaki.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": [
+      {
+       "id": "masjid-imam-nawawi",
+       "name": "Masjid Imam Nawawi",
+       "km": 0.719
+      },
+      {
+       "id": "masjid-raya-cipinang-muara",
+       "name": "Masjid Raya Cipinang Muara",
+       "km": 1.103
+      },
+      {
+       "id": "masjid-al-fattah",
+       "name": "Masjid Al Fattah",
+       "km": 1.209
+      }
+     ],
+     "review": {
+      "security": {
+       "label": "Konteks · Kost 88, Cipinang Besar Utara • curanmor, 13 Mei 2026; lokasi lain, tanpa pin",
+       "url": "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis"
+      }
+     }
     }
    ],
    "locationsCheckedAt": "2026-11-27"

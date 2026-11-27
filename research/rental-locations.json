@@ -14445,6 +14445,19 @@
         "checkedAt": "2026-11-27"
       },
       "note": "Pin perkiraan properti/kompleks. Jarak garis lurus dari pin ke acuan Stasiun Bekasi sekitar 0,237 km; bukan jarak atau rute berjalan kaki."
+    },
+    {
+      "rentalId": "sewa-pinhome-bassura-city-jasmine-2026-11-27",
+      "location": {
+        "lat": -6.224027,
+        "lng": 106.877307,
+        "precision": "approximate",
+        "label": "Pin perkiraan Pinhome pada kompleks Bassura City",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-bassura-city-428",
+        "method": "Pin publik pada halaman penawaran; tidak diverifikasi sebagai tower/unit/pintu",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Titik perkiraan portal. Jarak garis lurus ke titik acuan KRL Jatinegara sekitar 1,272 km; Pinhome menampilkan 1,38 km. Bukan jarak atau rute berjalan kaki."
     }
   ]
 }

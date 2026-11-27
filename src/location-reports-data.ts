@@ -1006,5 +1006,27 @@ export const areaReports: LocationReport[] = [
       },
     ],
   },
+  {
+    id: "curanmor-kost-88-cipinang-besar-utara-2026-05-13",
+    kind: "kriminalitas",
+    title: "Curanmor di Kost 88, Jalan Bekasi Timur V",
+    date: "2026-05-13",
+    region: "Jakarta Timur",
+    scope: "lingkungan",
+    place:
+      "Kost 88, Jalan Bekasi Timur V, RT 009/RW 009, Kelurahan Cipinang Besar Utara, Kecamatan Jatinegara, Jakarta Timur",
+    summary:
+      "Detik melaporkan dua sepeda motor dicuri dari area parkir kos pada 13 Mei 2026; empat tersangka kemudian ditangkap. Artikel menyebut alamat RT/RW tetapi tidak memberi koordinat, sehingga laporan ditampilkan sebagai konteks lingkungan tanpa pin kejadian. Lokasi ini berbeda dari unit apartemen Bassura City di kelurahan yang sama.",
+    sources: [
+      {
+        label: "DetikNews · kronologi dan alamat yang dikutip dari kepolisian",
+        url: "https://news.detik.com/berita/d-8500360/komplotan-maling-motor-di-kos-jatinegara-ditangkap-ada-residivis",
+      },
+      {
+        label: "ANTARA · penangkapan dan wilayah kejadian",
+        url: "https://m.antaranews.com/amp/berita/5577843/polisi-bekuk-komplotan-curanmor-di-indekos-jaktim",
+      },
+    ],
+  },
   ...(officialFloodEvidence.reports as LocationReport[]),
 ];

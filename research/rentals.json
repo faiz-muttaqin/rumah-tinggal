@@ -35584,6 +35584,55 @@
       "verdict": "partial",
       "lastChecked": "2026-11-27",
       "note": "Halaman masih menampilkan Ajukan Sewa saat dicek 2026-11-27, tetapi stok belum dikonfirmasi. Minimum 6 bulan (Rp9.600.000). Pin perkiraan; jarak garis lurus ke Stasiun Bekasi 0,237 km, bukan rute jalan kaki. Izin pasutri dan dapur di dalam unit tidak dicantumkan. Banjir diberitakan pada akses selatan stasiun, bukan unit. Kriminalitas diberitakan di Ruko Simpasa, titik lain di kelurahan sama; koordinat TKP tidak tersedia."
+    },
+    {
+      "id": "sewa-pinhome-bassura-city-jasmine-2026-11-27",
+      "title": "Apartemen 2 kamar Bassura City, Tower Jasmine — 34 m²*",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Jakarta",
+      "locationText": "Cipinang Besar Utara, Jatinegara, Kota Jakarta Timur",
+      "buildingOrCluster": "Bassura City, Tower Jasmine",
+      "rent": {
+        "amount": 3083333,
+        "period": "monthly",
+        "minimumMonths": 12,
+        "quote": "Rp3.083.333/bulan ekuivalen; minimum 12 bulan (total Rp37.000.000)",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-bassura-city-428",
+        "pageDate": "2026-07-11"
+      },
+      "bedrooms": 2,
+      "sizeM2": 34,
+      "furnished": "furnished",
+      "evidence": [
+        {
+          "quote": "Rp3,08 juta/bulan; minimum sewa 12 bulan (Rp37 juta)",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-bassura-city-428"
+        },
+        {
+          "quote": "2 kamar tidur; furnished; free IPL",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-bassura-city-428"
+        },
+        {
+          "quote": "Spesifikasi: 34 m²; deskripsi: 48 m²",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-bassura-city-428"
+        }
+      ],
+      "nearStationsClaim": [
+        {
+          "station": "Jatinegara",
+          "quote": "Jatinegara 1,38 KM",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-bassura-city-428"
+        }
+      ],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-apartemen-bassura-city-428",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-07-11",
+      "ownerType": "individual",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-27",
+      "note": "Halaman Pinhome masih menampilkan Ajukan Sewa saat dicek 2026-11-27; stok belum dikonfirmasi. Rp3,083 jt/bln untuk 12 bulan (Rp37 jt); opsi 3 bln Rp14 jt, 6 bln Rp23 jt; deposit Rp3 jt, booking Rp2 jt perlu dikonfirmasi. Ukuran konflik: spesifikasi 34 m², deskripsi 48 m²; tampil 34 m². Pin kompleks perkiraan; KRL Jatinegara 1,272 km garis lurus. Izin pasutri/dapur privat tidak disebut. Curanmor Kost 88 di alamat lain dalam kelurahan yang sama; berita tanpa koordinat, bukan kejadian di unit."
     }
   ]
 }
