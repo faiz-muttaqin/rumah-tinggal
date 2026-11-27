@@ -984,5 +984,27 @@ export const areaReports: LocationReport[] = [
       },
     ],
   },
+  {
+    id: "curanmor-ruko-simpasa-marga-mulya-2026-05",
+    kind: "kriminalitas",
+    title: "Pencurian motor di kawasan Ruko Simpasa",
+    date: "2026-05-13",
+    region: "Kota Bekasi",
+    scope: "lingkungan",
+    place:
+      "Kawasan Ruko Simpasa, Summarecon Mall Bekasi, Kelurahan Marga Mulya, Kecamatan Bekasi Utara, Kota Bekasi",
+    summary:
+      "Laporan menyebut motor operasional dicuri dari area parkir ruko. Kronologi Polres yang dikutip media menempatkan kejadian dua hari sebelum penangkapan 15 Mei 2026. Artikel tidak memberi koordinat atau nomor unit, jadi tidak dibuat pin; lokasi penangkapan yang disebut berbeda dari TKP. Ini konteks kawasan, bukan kejadian di apartemen.",
+    sources: [
+      {
+        label: "detikNews · keterangan Kapolres",
+        url: "https://news.detik.com/berita/d-8531127/sebulan-kerja-karyawan-ternak-ayam-di-bekasi-gondol-motor-operasional/amp",
+      },
+      {
+        label: "Pojok Bekasi · lokasi kawasan ruko",
+        url: "https://bekasi.pojoksatu.id/kriminal/baru-sebulan-kerja-pria-di-bekasi-nekat-curi-motor-kantor-milik-bosnya",
+      },
+    ],
+  },
   ...(officialFloodEvidence.reports as LocationReport[]),
 ];

@@ -35535,6 +35535,55 @@
       "verdict": "partial",
       "lastChecked": "2026-11-27",
       "note": "Harga dan status aktif pada detail portal; konfirmasi ketersediaan, pembayaran, deposit, biaya lain dan lokasi sebelum survei. Jarak garis lurus sekitar 1.03 km ke LRT Ciracas. Detail portal tidak memastikan izin pasutri, dapur pribadi/berbagi, dan seluruh biaya; konfirmasi unit utuh serta stok sebelum survei. Pin lokasi perkiraan gedung/kawasan, bukan pintu/unit."
+    },
+    {
+      "id": "sewa-apartemen-patraland-urbano-bekasi-2026-11-27",
+      "title": "Apartemen studio Patraland Urbano — 20 m²",
+      "rentalType": "apartemen-sewa",
+      "kind": "Apartemen",
+      "area": "Bekasi",
+      "locationText": "Marga Mulya, Bekasi Utara, Kota Bekasi",
+      "buildingOrCluster": "Patraland Urbano",
+      "rent": {
+        "amount": 1600000,
+        "period": "monthly",
+        "minimumMonths": 6,
+        "quote": "Rp1.600.000/bulan; minimum 6 bulan (Rp9.600.000)",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-patraland-urbano",
+        "pageDate": "2026-05-20"
+      },
+      "bedrooms": null,
+      "sizeM2": 20,
+      "furnished": "unfurnished",
+      "evidence": [
+        {
+          "quote": "Rp1,6 Juta/Bulan; minimum sewa 6 bulan (Rp9,6 Juta)",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-patraland-urbano"
+        },
+        {
+          "quote": "Apartemen studio unfurnished, luas 20 m²",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-patraland-urbano"
+        },
+        {
+          "quote": "Bagi pengguna kereta, cukup berjalan kaki ke Stasiun Bekasi",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-patraland-urbano"
+        }
+      ],
+      "nearStationsClaim": [
+        {
+          "station": "Bekasi",
+          "quote": "Bagi pengguna kereta, cukup berjalan kaki ke Stasiun Bekasi",
+          "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-patraland-urbano"
+        }
+      ],
+      "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-patraland-urbano",
+      "sourcePortal": "pinhome",
+      "postedOrUpdated": "2026-05-20",
+      "ownerType": "individual",
+      "social": [],
+      "verdict": "partial",
+      "lastChecked": "2026-11-27",
+      "note": "Halaman masih menampilkan Ajukan Sewa saat dicek 2026-11-27, tetapi stok belum dikonfirmasi. Minimum 6 bulan (Rp9.600.000). Pin perkiraan; jarak garis lurus ke Stasiun Bekasi 0,237 km, bukan rute jalan kaki. Izin pasutri dan dapur di dalam unit tidak dicantumkan. Banjir diberitakan pada akses selatan stasiun, bukan unit. Kriminalitas diberitakan di Ruko Simpasa, titik lain di kelurahan sama; koordinat TKP tidak tersedia."
     }
   ]
 }

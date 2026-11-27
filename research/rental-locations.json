@@ -14432,6 +14432,19 @@
         "checkedAt": "2026-11-27"
       },
       "note": "Titik acuan gedung/portal, bukan koordinat unit. Jarak garis lurus; verifikasi lokasi pintu masuk dan rute aktual."
+    },
+    {
+      "rentalId": "sewa-apartemen-patraland-urbano-bekasi-2026-11-27",
+      "location": {
+        "lat": -6.234095,
+        "lng": 106.998983,
+        "precision": "approximate",
+        "label": "Pin perkiraan Pinhome",
+        "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-patraland-urbano",
+        "method": "Pin publik pada halaman penawaran; tidak diverifikasi sebagai pintu atau unit",
+        "checkedAt": "2026-11-27"
+      },
+      "note": "Pin perkiraan properti/kompleks. Jarak garis lurus dari pin ke acuan Stasiun Bekasi sekitar 0,237 km; bukan jarak atau rute berjalan kaki."
     }
   ]
 }

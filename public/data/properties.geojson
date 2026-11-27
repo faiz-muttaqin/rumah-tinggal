@@ -51765,6 +51765,78 @@
       "checkedAt": "2026-11-27"
      },
      "nearbyMosques": []
+    },
+    {
+     "id": "sewa-apartemen-patraland-urbano-bekasi-2026-11-27",
+     "title": "Apartemen studio Patraland Urbano — 20 m²",
+     "rentalType": "apartemen-sewa",
+     "kind": "Apartemen",
+     "area": "Bekasi",
+     "locationText": "Marga Mulya, Bekasi Utara, Kota Bekasi",
+     "buildingOrCluster": "Patraland Urbano",
+     "rent": {
+      "amount": 1600000,
+      "period": "monthly",
+      "minimumMonths": 6,
+      "quote": "Rp1.600.000/bulan; minimum 6 bulan (Rp9.600.000)",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-patraland-urbano",
+      "pageDate": "2026-05-20"
+     },
+     "bedrooms": null,
+     "sizeM2": 20,
+     "furnished": "unfurnished",
+     "evidence": [
+      {
+       "quote": "Rp1,6 Juta/Bulan; minimum sewa 6 bulan (Rp9,6 Juta)",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-patraland-urbano"
+      },
+      {
+       "quote": "Apartemen studio unfurnished, luas 20 m²",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-patraland-urbano"
+      },
+      {
+       "quote": "Bagi pengguna kereta, cukup berjalan kaki ke Stasiun Bekasi",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-patraland-urbano"
+      }
+     ],
+     "areaHighlights": [],
+     "note": "Halaman masih menampilkan Ajukan Sewa saat dicek 2026-11-27, tetapi stok belum dikonfirmasi. Minimum 6 bulan (Rp9.600.000). Pin perkiraan; jarak garis lurus ke Stasiun Bekasi 0,237 km, bukan rute jalan kaki. Izin pasutri dan dapur di dalam unit tidak dicantumkan. Banjir diberitakan pada akses selatan stasiun, bukan unit. Kriminalitas diberitakan di Ruko Simpasa, titik lain di kelurahan sama; koordinat TKP tidak tersedia.",
+     "nearStationsClaim": [
+      {
+       "station": "Bekasi",
+       "quote": "Bagi pengguna kereta, cukup berjalan kaki ke Stasiun Bekasi",
+       "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-patraland-urbano"
+      }
+     ],
+     "listingUrl": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-patraland-urbano",
+     "sourcePortal": "pinhome",
+     "postedOrUpdated": "2026-05-20",
+     "ownerType": "individual",
+     "social": [],
+     "verdict": "partial",
+     "lastChecked": "2026-11-27",
+     "locationNote": "Pin perkiraan properti/kompleks. Jarak garis lurus dari pin ke acuan Stasiun Bekasi sekitar 0,237 km; bukan jarak atau rute berjalan kaki.",
+     "location": {
+      "lat": -6.234095,
+      "lng": 106.998983,
+      "precision": "approximate",
+      "label": "Pin perkiraan Pinhome",
+      "url": "https://www.pinhome.id/disewa/apartemen-sekunder/unit/disewakan-apartemen-di-patraland-urbano",
+      "method": "Pin publik pada halaman penawaran; tidak diverifikasi sebagai pintu atau unit",
+      "note": "Pin perkiraan properti/kompleks. Jarak garis lurus dari pin ke acuan Stasiun Bekasi sekitar 0,237 km; bukan jarak atau rute berjalan kaki.",
+      "checkedAt": "2026-11-27"
+     },
+     "nearbyMosques": [],
+     "review": {
+      "flood": {
+       "label": "Konteks · akses selatan Stasiun Bekasi; bukan bukti unit terendam",
+       "url": "https://rri.co.id/regional/1367288/contact.html"
+      },
+      "security": {
+       "label": "Konteks · Marga Mulya, Ruko Simpasa; titik lain, bukan unit",
+       "url": "https://news.detik.com/berita/d-8531127/sebulan-kerja-karyawan-ternak-ayam-di-bekasi-gondol-motor-operasional/amp"
+      }
+     }
     }
    ],
    "locationsCheckedAt": "2026-11-27"
