@@ -2027,7 +2027,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-10-30",
+     "lastChecked": "2026-11-27",
      "locationNote": "Titik perkiraan portal. Tidak memakai field location yang berbeda; posisi unit perlu dikonfirmasi.",
      "location": {
       "lat": -6.318543,
@@ -3338,7 +3338,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-10-30",
+     "lastChecked": "2026-11-27",
      "locationNote": "Titik perkiraan portal. Tidak memakai field location yang berbeda; posisi unit perlu dikonfirmasi.",
      "location": {
       "lat": -6.203307,
@@ -3630,11 +3630,12 @@
      "locationText": "Jakasampurna, Bekasi Barat",
      "buildingOrCluster": null,
      "rent": {
-      "amount": 1350000,
-      "period": "monthly",
-      "quote": "Rp 1,35 Juta/Bulan",
+      "amount": 15000000,
+      "period": "yearly",
+      "minimumMonths": 12,
+      "quote": "Rp 15 Juta/Tahun",
       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-3-rt-002-rw-010-jakasampurna",
-      "pageDate": null
+      "pageDate": "2026-11-17"
      },
      "bedrooms": 1,
      "sizeM2": 40,
@@ -3682,11 +3683,11 @@
      ],
      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-3-rt-002-rw-010-jakasampurna",
      "sourcePortal": "Pinhome",
-     "postedOrUpdated": null,
+     "postedOrUpdated": "2026-11-17",
      "ownerType": "individual",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-10-31",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin dari pengiklan/portal, belum disurvei; posisi unit dan pintu masuk perlu dikonfirmasi.",
      "location": {
       "lat": -6.239758,
@@ -4846,7 +4847,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari pengiklan/portal, bukan kepastian pintu unit; lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.292621,
@@ -4910,7 +4911,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari pengiklan/portal, bukan kepastian pintu unit; lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.212295,
@@ -5000,7 +5001,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari pengiklan/portal, bukan kepastian pintu unit; lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.181777,
@@ -5058,7 +5059,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari pengiklan/portal, bukan kepastian pintu unit; lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.230844,
@@ -6340,7 +6341,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari pengiklan/portal, bukan kepastian pintu unit; lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.265938,
@@ -6479,75 +6480,6 @@
       "flood": {
        "label": "Konteks kelurahan · Catatan genangan Kampung Curug RT 01/04, Cilebut Barat, Sukaraja (2026-04-30); bukan bukti unit banjir",
        "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1118"
-      }
-     }
-    },
-    {
-     "id": "sewa-pinhome-pondok-labu-a20145eb",
-     "title": "Kontrakan 3 kamar di Pondok Labu",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Jakarta",
-     "locationText": "Pondok Labu, Cilandak, Kota Jakarta Selatan",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 3700000,
-      "period": "monthly",
-      "minimumMonths": 3,
-      "quote": "Rp 3,7 Juta/Bulan",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-haji-ipin",
-      "pageDate": "2026-07-08"
-     },
-     "bedrooms": 3,
-     "sizeM2": 50.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Pondok Labu",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-haji-ipin"
-      },
-      {
-       "quote": "Minimum sewa 3 bulan (Rp 11,1 Juta)",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-haji-ipin"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Pembaruan sumber 2026-07-08. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-haji-ipin",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-07-08",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-03",
-     "locationNote": "Pin perkiraan dari pengiklan/portal, bukan kepastian pintu unit; lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.311851,
-      "lng": 106.792745,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-haji-ipin",
-      "method": "Pin publik pada halaman iklan Pinhome",
-      "note": "Pin perkiraan dari pengiklan/portal, bukan kepastian pintu unit; lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-03"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-al-hikmah-ddn-2",
-       "name": "Masjid Al Hikmah DDN 2",
-       "km": 0.421
-      },
-      {
-       "id": "masjid-al-adhim",
-       "name": "Masjid Al Adhim",
-       "km": 1.478
-      }
-     ],
-     "review": {
-      "flood": {
-       "label": "Konteks kelurahan · RT terdampak genangan di Pondok Labu (2026-01-12); bukan bukti unit banjir",
-       "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
       }
      }
     },
@@ -7088,7 +7020,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari pengiklan/portal, bukan kepastian pintu unit; lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.226892,
@@ -7209,7 +7141,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari pengiklan/portal, bukan kepastian pintu unit; lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.366318,
@@ -7504,7 +7436,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari pengiklan/portal, bukan kepastian pintu unit; lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.318373,
@@ -7652,7 +7584,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari pengiklan/portal, bukan kepastian pintu unit; lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.187508,
@@ -7884,7 +7816,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari pengiklan/portal, bukan kepastian pintu unit; lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.230642,
@@ -7948,7 +7880,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari pengiklan/portal, bukan kepastian pintu unit; lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.234344,
@@ -8186,7 +8118,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.284781,
@@ -8215,12 +8147,12 @@
      "locationText": "Kayu Manis, Matraman, Kota Jakarta Timur",
      "buildingOrCluster": null,
      "rent": {
-      "amount": 18000000,
+      "amount": 15000000,
       "period": "yearly",
       "minimumMonths": 12,
-      "quote": "Rp 18 Juta/Tahun",
+      "quote": "Rp 15 Juta/Tahun",
       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-samping-alfamart-kayumanis-8-matraman",
-      "pageDate": "2026-10-23"
+      "pageDate": "2026-11-26"
      },
      "bedrooms": 1,
      "sizeM2": 24.0,
@@ -8240,11 +8172,11 @@
      "nearStationsClaim": [],
      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-samping-alfamart-kayumanis-8-matraman",
      "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-10-23",
+     "postedOrUpdated": "2026-11-26",
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.206991,
@@ -8332,7 +8264,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.205305,
@@ -8395,7 +8327,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.181075,
@@ -8813,7 +8745,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.198475,
@@ -8871,7 +8803,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.235624,
@@ -9113,7 +9045,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.145353,
@@ -9408,7 +9340,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.189059,
@@ -9466,7 +9398,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.215316,
@@ -9529,7 +9461,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.218028,
@@ -9587,7 +9519,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.206848,
@@ -9650,7 +9582,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.216267,
@@ -9713,7 +9645,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.215714,
@@ -9834,7 +9766,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.303373,
@@ -9902,7 +9834,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.189533,
@@ -9960,7 +9892,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.301103,
@@ -10023,7 +9955,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.29652,
@@ -10139,7 +10071,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.260017,
@@ -10197,7 +10129,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.263274,
@@ -10255,7 +10187,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.256454,
@@ -10371,7 +10303,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.451206,
@@ -10429,7 +10361,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.52458,
@@ -10487,7 +10419,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.529415,
@@ -10551,7 +10483,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.210842,
@@ -10609,7 +10541,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.213718,
@@ -10667,7 +10599,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.269186,
@@ -10923,7 +10855,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.249346,
@@ -10981,7 +10913,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.249826,
@@ -11039,7 +10971,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.254369,
@@ -11102,7 +11034,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.270716,
@@ -11165,7 +11097,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.269723,
@@ -11228,7 +11160,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.280841,
@@ -11286,7 +11218,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.227722,
@@ -11349,7 +11281,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.224748,
@@ -11412,7 +11344,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.24858,
@@ -11429,69 +11361,6 @@
        "id": "masjid-baiturrahim-kavling-marinir",
        "name": "Masjid Baiturrahim Kavling Marinir",
        "km": 1.36
-      }
-     ]
-    },
-    {
-     "id": "sewa-pinhome-limo-796ee069",
-     "title": "Rumah sewa 1 kamar di Limo",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Depok",
-     "locationText": "Limo, Limo, Kota Depok",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 1200000,
-      "period": "monthly",
-      "minimumMonths": 1,
-      "quote": "Rp 1,2 Juta/Bulan",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arthayasa-stable-kpblok-tengki-rt02-10",
-      "pageDate": "2026-11-01"
-     },
-     "bedrooms": 1,
-     "sizeM2": 40.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Limo",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arthayasa-stable-kpblok-tengki-rt02-10"
-      },
-      {
-       "quote": "Minimum sewa 1 bulan",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arthayasa-stable-kpblok-tengki-rt02-10"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Sumber menyebut parkir motor dan pompa air sendiri; klaim waktu akses belum diuji. Pembaruan sumber 2026-11-01. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arthayasa-stable-kpblok-tengki-rt02-10",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-11-01",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-03",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.373199,
-      "lng": 106.777554,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arthayasa-stable-kpblok-tengki-rt02-10",
-      "method": "Pin publik pada halaman iklan Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-03"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-as-sunnah-meruyung",
-       "name": "Masjid As Sunnah Meruyung",
-       "km": 0.795
-      },
-      {
-       "id": "masjid-al-muhajirin-wal-anshar",
-       "name": "Masjid Al Muhajirin Wal Anshar",
-       "km": 1.416
       }
      ]
     },
@@ -11533,7 +11402,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.364271,
@@ -11591,7 +11460,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.371956,
@@ -11649,7 +11518,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.338506,
@@ -11707,7 +11576,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.339894,
@@ -11765,7 +11634,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.3383,
@@ -11823,7 +11692,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.386979,
@@ -11886,7 +11755,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.382447,
@@ -11949,7 +11818,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.387063,
@@ -12012,7 +11881,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.373344,
@@ -12070,7 +11939,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.380846,
@@ -12186,7 +12055,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.228926,
@@ -12244,7 +12113,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.325587,
@@ -12302,7 +12171,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.327295,
@@ -12319,64 +12188,6 @@
        "id": "masjid-muadz-bin-jabal",
        "name": "Masjid Muadz Bin Jabal",
        "km": 0.106
-      }
-     ]
-    },
-    {
-     "id": "sewa-pinhome-pengasinan-6dcb37c3",
-     "title": "Rumah sewa 3 kamar di Pengasinan",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Bekasi",
-     "locationText": "Pengasinan, Rawalumbu, Kota Bekasi",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 20000000,
-      "period": "yearly",
-      "minimumMonths": 12,
-      "quote": "Rp 20 Juta/Tahun",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-jl-narogong-cantik",
-      "pageDate": "2026-10-12"
-     },
-     "bedrooms": 3,
-     "sizeM2": 120.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Pengasinan",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-jl-narogong-cantik"
-      },
-      {
-       "quote": "Minimum sewa 12 bulan",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-jl-narogong-cantik"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Pembaruan sumber 2026-10-12. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-jl-narogong-cantik",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-10-12",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-03",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.280748,
-      "lng": 107.00904,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-jl-narogong-cantik",
-      "method": "Pin publik pada halaman iklan Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-03"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-raya-at-taqwa-rawalumbu",
-       "name": "Masjid Raya At Taqwa Rawalumbu",
-       "km": 1.111
       }
      ]
     },
@@ -12418,7 +12229,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.274995,
@@ -12476,7 +12287,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.231444,
@@ -12540,7 +12351,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.232213,
@@ -12604,7 +12415,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.18352,
@@ -12662,7 +12473,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.17579,
@@ -12720,7 +12531,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.27076,
@@ -12800,7 +12611,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.566982,
@@ -12829,12 +12640,12 @@
      "locationText": "Curug Mekar, Bogor Barat, Kota Bogor",
      "buildingOrCluster": null,
      "rent": {
-      "amount": 900000,
+      "amount": 850000,
       "period": "monthly",
       "minimumMonths": 1,
-      "quote": "Rp 900 Ribu/Bulan",
+      "quote": "Rp 850 Ribu/Bulan",
       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-murah-belakang-taman-yasmin-sektor-5-bogor-di-jlpalem-putri-ix-belakang-komplek-50m",
-      "pageDate": "2025-12-11"
+      "pageDate": "2026-11-16"
      },
      "bedrooms": 2,
      "sizeM2": 27.0,
@@ -12854,11 +12665,11 @@
      "nearStationsClaim": [],
      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-murah-belakang-taman-yasmin-sektor-5-bogor-di-jlpalem-putri-ix-belakang-komplek-50m",
      "sourcePortal": "pinhome",
-     "postedOrUpdated": "2025-12-11",
+     "postedOrUpdated": "2026-11-16",
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.561034,
@@ -12974,7 +12785,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.248374,
@@ -13032,7 +12843,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.22674,
@@ -13148,7 +12959,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.5919,
@@ -13206,7 +13017,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.585944,
@@ -13264,7 +13075,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.663034,
@@ -13322,7 +13133,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.203979,
@@ -13385,7 +13196,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.199599,
@@ -13448,7 +13259,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.196222,
@@ -13532,69 +13343,6 @@
      ]
     },
     {
-     "id": "sewa-pinhome-cipinang-muara-027a0c75",
-     "title": "Rumah sewa 1 kamar di Cipinang Muara",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Jakarta",
-     "locationText": "Cipinang Muara, Jatinegara, Kota Jakarta Timur",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 825000,
-      "period": "monthly",
-      "minimumMonths": 1,
-      "quote": "Rp 825 Ribu/Bulan",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-rt-11-rw-08-no-44",
-      "pageDate": "2026-11-03"
-     },
-     "bedrooms": 1,
-     "sizeM2": 17.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Cipinang Muara",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-rt-11-rw-08-no-44"
-      },
-      {
-       "quote": "Minimum sewa 1 bulan",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-rt-11-rw-08-no-44"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Kontrakan berada di lantai dua, kamar mandi di dalam dan parkir motor disebut tersedia; deskripsi menyebut keluarga kecil. Pembaruan sumber 2026-11-03. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-rt-11-rw-08-no-44",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-11-03",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-03",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.221545,
-      "lng": 106.892592,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-rt-11-rw-08-no-44",
-      "method": "Pin publik pada halaman iklan Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-03"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-al-ihsan",
-       "name": "Masjid Al-Ihsan Cipinang",
-       "km": 0.46
-      },
-      {
-       "id": "masjid-raya-cipinang-muara",
-       "name": "Masjid Raya Cipinang Muara",
-       "km": 1.376
-      }
-     ]
-    },
-    {
      "id": "sewa-pinhome-cipinang-besar-utara-ee072d33",
      "title": "Rumah sewa 1 kamar di Cipinang Besar Utara",
      "rentalType": "kontrakan",
@@ -13632,7 +13380,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.219381,
@@ -13695,7 +13443,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.213947,
@@ -13811,7 +13559,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.224931,
@@ -13927,7 +13675,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.525222,
@@ -13985,7 +13733,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.525585,
@@ -14049,7 +13797,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.320423,
@@ -14112,7 +13860,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.252529,
@@ -14170,7 +13918,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.353606,
@@ -14228,7 +13976,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.373628,
@@ -14286,7 +14034,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.379035,
@@ -14344,7 +14092,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.348921,
@@ -14402,7 +14150,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.332039,
@@ -14460,7 +14208,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.317367,
@@ -14534,7 +14282,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.419175,
@@ -14592,7 +14340,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.323529,
@@ -14650,7 +14398,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.277895,
@@ -14708,7 +14456,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.229615,
@@ -14772,7 +14520,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.176394,
@@ -14830,7 +14578,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.486462,
@@ -14888,7 +14636,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.24172,
@@ -14946,7 +14694,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.229358,
@@ -15120,7 +14868,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-03",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.590796,
@@ -15178,7 +14926,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.206731,
@@ -15532,7 +15280,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.196248,
@@ -15595,7 +15343,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.238578,
@@ -15659,7 +15407,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.23923,
@@ -15724,7 +15472,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.220943,
@@ -15850,7 +15598,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.217257,
@@ -15913,7 +15661,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.315094,
@@ -15930,74 +15678,6 @@
        "id": "masjid-al-barkah-ciputat",
        "name": "Masjid Al Barkah Sawah Baru",
        "km": 1.316
-      }
-     ]
-    },
-    {
-     "id": "sewa-pinhome-jombang-93bbe1ee",
-     "title": "Rumah sewa 2 kamar di Jombang",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Tangerang",
-     "locationText": "Jombang, Ciputat, Kota Tangerang Selatan",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 40000000,
-      "period": "yearly",
-      "minimumMonths": 12,
-      "quote": "Rp 40 Juta/Tahun",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-betawi",
-      "pageDate": "2026-06-30"
-     },
-     "bedrooms": 2,
-     "sizeM2": 75.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Jombang",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-betawi"
-      },
-      {
-       "quote": "Minimum sewa 12 bulan",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-betawi"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Pembaruan sumber 2026-06-30. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-betawi",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-06-30",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-04",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.300408,
-      "lng": 106.710526,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-betawi",
-      "method": "Pin publik pada halaman iklan Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-04"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-al-muhajirin-villa-gunung-lestari",
-       "name": "Masjid Al-Muhajirin Villa Gunung Lestari",
-       "km": 0.37
-      },
-      {
-       "id": "masjid-al-amanah",
-       "name": "Masjid Al Amanah",
-       "km": 0.882
-      },
-      {
-       "id": "masjid-al-barkah-ciputat",
-       "name": "Masjid Al Barkah Sawah Baru",
-       "km": 1.403
       }
      ]
     },
@@ -16039,7 +15719,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.19045,
@@ -16267,7 +15947,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.524649,
@@ -16331,7 +16011,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.328471,
@@ -16348,69 +16028,6 @@
        "id": "masjid-al-adhim",
        "name": "Masjid Al Adhim",
        "km": 1.171
-      }
-     ]
-    },
-    {
-     "id": "sewa-pinhome-jurangmangu-barat-jurang-mangu-barat-86e111b3",
-     "title": "Rumah sewa 3 kamar di Jurangmangu Barat (Jurang Mangu Barat)",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Tangerang",
-     "locationText": "Jurangmangu Barat (Jurang Mangu Barat), Pondok Aren, Kota Tangerang Selatan",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 40000000,
-      "period": "yearly",
-      "minimumMonths": 12,
-      "quote": "Rp 40 Juta/Tahun",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-japos-raya-no-8-d",
-      "pageDate": "2026-08-02"
-     },
-     "bedrooms": 3,
-     "sizeM2": 100.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Jurangmangu Barat (Jurang Mangu Barat)",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-japos-raya-no-8-d"
-      },
-      {
-       "quote": "Minimum sewa 12 bulan",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-japos-raya-no-8-d"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Pembaruan sumber 2026-08-02. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-japos-raya-no-8-d",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-08-02",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-04",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.258133,
-      "lng": 106.719861,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-japos-raya-no-8-d",
-      "method": "Pin publik pada halaman iklan Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-04"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-jami-utsman-bin-affan",
-       "name": "Masjid Jami' Utsman bin Affan",
-       "km": 0.743
-      },
-      {
-       "id": "masjid-al-hasanah-bintaro",
-       "name": "Masjid Al Hasanah Bintaro",
-       "km": 1.163
       }
      ]
     },
@@ -16532,7 +16149,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.24611,
@@ -16590,7 +16207,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.273068,
@@ -16653,7 +16270,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.361739,
@@ -16711,7 +16328,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.377164,
@@ -16769,7 +16386,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.335831,
@@ -16827,7 +16444,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.335734,
@@ -16885,7 +16502,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.391129,
@@ -16948,7 +16565,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.323809,
@@ -17022,7 +16639,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.182399,
@@ -17080,7 +16697,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.419248,
@@ -17097,64 +16714,6 @@
        "id": "masjid-imam-asy-syafi-i",
        "name": "Masjid Imam Asy-Syafi'i",
        "km": 0.629
-      }
-     ]
-    },
-    {
-     "id": "sewa-pinhome-bojong-kulur-e88f9845",
-     "title": "Rumah sewa 5 kamar di Villa Mahkota Pesona",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Bogor",
-     "locationText": "Bojong Kulur, Gunung Putri, Kab. Bogor",
-     "buildingOrCluster": "Villa Mahkota Pesona",
-     "rent": {
-      "amount": 30000000,
-      "period": "yearly",
-      "minimumMonths": 12,
-      "quote": "Rp 30 Juta/Tahun",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-siap-huni-di-villa-mahkota-pesona",
-      "pageDate": "2026-10-29"
-     },
-     "bedrooms": 5,
-     "sizeM2": 216.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Bojong Kulur",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-siap-huni-di-villa-mahkota-pesona"
-      },
-      {
-       "quote": "Minimum sewa 12 bulan",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-siap-huni-di-villa-mahkota-pesona"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Sumber menyebut rumah 3 lantai di Villa Mahkota Pesona, semi furnished. Pembaruan sumber 2026-10-29. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-siap-huni-di-villa-mahkota-pesona",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-10-29",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-04",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.321468,
-      "lng": 106.962884,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-siap-huni-di-villa-mahkota-pesona",
-      "method": "Pin publik pada halaman iklan Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-04"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-muadz-bin-jabal",
-       "name": "Masjid Muadz Bin Jabal",
-       "km": 0.812
       }
      ]
     },
@@ -17196,7 +16755,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.333011,
@@ -17254,7 +16813,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.27751,
@@ -17312,7 +16871,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.479611,
@@ -17370,7 +16929,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.540281,
@@ -17428,7 +16987,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.232556,
@@ -17457,10 +17016,10 @@
      "locationText": "Babakan Madang, Babakan Madang, Kab. Bogor",
      "buildingOrCluster": "Griya Alam Sentul",
      "rent": {
-      "amount": 20000000,
-      "period": "yearly",
-      "minimumMonths": 12,
-      "quote": "1 th = 20 jt",
+      "amount": 2333333,
+      "period": "monthly",
+      "minimumMonths": 3,
+      "quote": "Rp 2,33 Juta/Bulan",
       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-griya-alam-sentul-2-kamar-tidur-baru-di-perum-griya-alam-sentul-c18-no-16",
       "pageDate": "2025-11-21"
      },
@@ -17482,7 +17041,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.557427,
@@ -17540,7 +17099,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.284392,
@@ -17598,7 +17157,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.295402,
@@ -17662,7 +17221,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.229103,
@@ -17752,7 +17311,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.196758,
@@ -17810,7 +17369,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.24025,
@@ -17926,7 +17485,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.183538,
@@ -17989,7 +17548,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.209919,
@@ -18052,7 +17611,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.3114,
@@ -18120,7 +17679,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.257007,
@@ -18183,7 +17742,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.516741,
@@ -18247,7 +17806,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.322846,
@@ -18310,7 +17869,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.322974,
@@ -18332,64 +17891,6 @@
        "id": "masjid-al-adhim",
        "name": "Masjid Al Adhim",
        "km": 1.273
-      }
-     ]
-    },
-    {
-     "id": "sewa-pinhome-sukabumi-utara-ilir-ab73e31a",
-     "title": "Rumah sewa 1 kamar di Sukabumi Utara (Ilir)",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Jakarta",
-     "locationText": "Sukabumi Utara (Ilir), Kebon Jeruk, Kota Jakarta Barat",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 2500000,
-      "period": "monthly",
-      "minimumMonths": 1,
-      "quote": "Rp 2,5 Juta/Bulan",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat",
-      "pageDate": "2026-10-20"
-     },
-     "bedrooms": 1,
-     "sizeM2": 25.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Sukabumi Utara (Ilir)",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat"
-      },
-      {
-       "quote": "Minimum sewa 1 bulan",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Pembaruan sumber 2026-10-20. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-10-20",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-04",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.211442,
-      "lng": 106.778527,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat",
-      "method": "Pin publik pada halaman iklan Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-04"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-an-nur-casagoya",
-       "name": "Masjid An Nur Casagoya",
-       "km": 1.357
       }
      ]
     },
@@ -18431,7 +17932,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.213334,
@@ -18489,7 +17990,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.239944,
@@ -18662,7 +18163,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.244214,
@@ -18720,7 +18221,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.239732,
@@ -18778,7 +18279,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.251247,
@@ -18836,7 +18337,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.230612,
@@ -18894,7 +18395,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.365778,
@@ -18952,7 +18453,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.377061,
@@ -19010,7 +18511,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.337665,
@@ -19068,7 +18569,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.390893,
@@ -19131,7 +18632,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.387674,
@@ -19315,7 +18816,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.505521,
@@ -19373,7 +18874,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.540806,
@@ -19489,7 +18990,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.228858,
@@ -19547,7 +19048,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.240286,
@@ -19605,7 +19106,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.293586,
@@ -19759,7 +19260,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.195431,
@@ -19822,7 +19323,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.191168,
@@ -19943,7 +19444,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.31646,
@@ -19977,12 +19478,12 @@
      "locationText": "Jombang, Ciputat, Kota Tangerang Selatan",
      "buildingOrCluster": "Puri Bintaro Indah",
      "rent": {
-      "amount": 1800000,
+      "amount": 1700000,
       "period": "monthly",
       "minimumMonths": 3,
-      "quote": "Rp 1,8 Juta/Bulan",
+      "quote": "Rp 1,7 Juta/Bulan",
       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-real-madrid-e8-no-6",
-      "pageDate": "2026-10-07"
+      "pageDate": "2026-11-27"
      },
      "bedrooms": 2,
      "sizeM2": 60.0,
@@ -20002,11 +19503,11 @@
      "nearStationsClaim": [],
      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-real-madrid-e8-no-6",
      "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-10-07",
+     "postedOrUpdated": "2026-11-27",
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.298758,
@@ -20069,7 +19570,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.257673,
@@ -20127,7 +19628,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.455327,
@@ -20185,7 +19686,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.526238,
@@ -20243,7 +19744,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.210271,
@@ -20301,7 +19802,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.207387,
@@ -20359,7 +19860,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.198335,
@@ -20417,7 +19918,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.313156,
@@ -20553,7 +20054,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.251649,
@@ -20611,7 +20112,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.234261,
@@ -20669,7 +20170,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.360364,
@@ -20727,7 +20228,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.372198,
@@ -20785,7 +20286,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.344435,
@@ -20843,7 +20344,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.382164,
@@ -20906,7 +20407,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.398858,
@@ -20964,7 +20465,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.489497,
@@ -21022,7 +20523,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.23701,
@@ -21080,7 +20581,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.255924,
@@ -21138,7 +20639,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.562469,
@@ -21196,7 +20697,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.285685,
@@ -21260,7 +20761,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.210205,
@@ -21350,7 +20851,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.217422,
@@ -21530,7 +21031,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.240867,
@@ -21588,7 +21089,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.232775,
@@ -21651,7 +21152,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.234986,
@@ -21714,7 +21215,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.235099,
@@ -21950,7 +21451,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.216585,
@@ -22013,7 +21514,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.218416,
@@ -22139,7 +21640,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.311511,
@@ -22275,7 +21776,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.19099,
@@ -22333,7 +21834,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.191595,
@@ -22391,7 +21892,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.295867,
@@ -22408,64 +21909,6 @@
        "id": "masjid-al-muhajirin-villa-gunung-lestari",
        "name": "Masjid Al-Muhajirin Villa Gunung Lestari",
        "km": 1.057
-      }
-     ]
-    },
-    {
-     "id": "sewa-pinhome-jatibening-7ec74065",
-     "title": "Rumah sewa 2 kamar di Sanctuary Jatibening",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Bekasi",
-     "locationText": "Jatibening, Pondokgede (Pondok Gede), Kota Bekasi",
-     "buildingOrCluster": "Sanctuary Jatibening",
-     "rent": {
-      "amount": 36000000,
-      "period": "yearly",
-      "minimumMonths": 12,
-      "quote": "Rp 36 Juta/Tahun",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-santuary-di-pondok-gede-bekasi-di-jatibening",
-      "pageDate": "2026-03-10"
-     },
-     "bedrooms": 2,
-     "sizeM2": 70.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Jatibening",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-santuary-di-pondok-gede-bekasi-di-jatibening"
-      },
-      {
-       "quote": "Minimum sewa 12 bulan",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-santuary-di-pondok-gede-bekasi-di-jatibening"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Sumber menyebut Perumahan Sanctuary Jatibening; paket Rp 36 juta/tahun dapat dinegosiasikan menurut deskripsi. Pembaruan sumber 2026-03-10. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-santuary-di-pondok-gede-bekasi-di-jatibening",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-03-10",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-04",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.261559,
-      "lng": 106.950724,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-santuary-di-pondok-gede-bekasi-di-jatibening",
-      "method": "Pin publik pada halaman Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-04"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-al-aqsho",
-       "name": "Masjid Al-Aqsho",
-       "km": 1.233
       }
      ]
     },
@@ -22507,7 +21950,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.182378,
@@ -22583,7 +22026,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.173882,
@@ -22668,7 +22111,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.174198,
@@ -22753,7 +22196,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.177787,
@@ -22834,7 +22277,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.180129,
@@ -22915,7 +22358,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.451647,
@@ -22973,7 +22416,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.460583,
@@ -23031,7 +22474,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.459869,
@@ -23089,7 +22532,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.258808,
@@ -23152,7 +22595,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.26272,
@@ -23215,7 +22658,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.250765,
@@ -23298,7 +22741,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.239397,
@@ -23376,7 +22819,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.272792,
@@ -23464,7 +22907,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.286178,
@@ -23544,7 +22987,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.286241,
@@ -23624,7 +23067,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.249983,
@@ -23682,7 +23125,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.222639,
@@ -23740,7 +23183,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.23471,
@@ -23823,64 +23266,6 @@
      ]
     },
     {
-     "id": "sewa-pinhome-pondok-benda-edc041f9",
-     "title": "Rumah sewa 1 kamar di Pondok Benda",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Tangerang",
-     "locationText": "Pondok Benda, Pamulang, Kota Tangerang Selatan",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 1300000,
-      "period": "monthly",
-      "minimumMonths": 1,
-      "quote": "Rp 1,3 Juta/Bulan",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-natuna-2",
-      "pageDate": "2025-10-11"
-     },
-     "bedrooms": 1,
-     "sizeM2": 30.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Pondok Benda",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-natuna-2"
-      },
-      {
-       "quote": "Minimum sewa 1 bulan",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-natuna-2"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Pembaruan sumber 2025-10-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-natuna-2",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2025-10-11",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-04",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.355422,
-      "lng": 106.725356,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-natuna-2",
-      "method": "Pin publik pada halaman Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-04"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-al-hakim-pamulang",
-       "name": "Masjid Al-Hakim Pamulang",
-       "km": 0.144
-      }
-     ]
-    },
-    {
      "id": "sewa-pinhome-pondok-benda-3e05b2d4",
      "title": "Rumah sewa 3 kamar di Pondok Benda",
      "rentalType": "kontrakan",
@@ -23918,7 +23303,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.347724,
@@ -23976,7 +23361,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.352102,
@@ -23993,64 +23378,6 @@
        "id": "masjid-al-hakim-pamulang",
        "name": "Masjid Al-Hakim Pamulang",
        "km": 0.624
-      }
-     ]
-    },
-    {
-     "id": "sewa-pinhome-maruyung-meruyung-e5fd4cb8",
-     "title": "Rumah sewa 1 kamar di Maruyung (Meruyung)",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Depok",
-     "locationText": "Maruyung (Meruyung), Limo, Kota Depok",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 1200000,
-      "period": "monthly",
-      "minimumMonths": 6,
-      "quote": "Rp 1,2 Juta/Bulan",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tridharma-iii-no-20a",
-      "pageDate": "2026-10-02"
-     },
-     "bedrooms": 1,
-     "sizeM2": 33.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Maruyung (Meruyung)",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tridharma-iii-no-20a"
-      },
-      {
-       "quote": "Minimum sewa 6 bulan (Rp 7,2 Juta)",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tridharma-iii-no-20a"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Pembaruan sumber 2026-10-02. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tridharma-iii-no-20a",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-10-02",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-04",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.38345,
-      "lng": 106.777914,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tridharma-iii-no-20a",
-      "method": "Pin publik pada halaman Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-04"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-as-sunnah-meruyung",
-       "name": "Masjid As Sunnah Meruyung",
-       "km": 0.67
       }
      ]
     },
@@ -24092,7 +23419,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.375229,
@@ -24150,7 +23477,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.379432,
@@ -24208,7 +23535,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.390811,
@@ -24271,7 +23598,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.388839,
@@ -24334,7 +23661,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.390095,
@@ -24397,7 +23724,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.323526,
@@ -24471,7 +23798,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.319745,
@@ -24606,7 +23933,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.501325,
@@ -24664,7 +23991,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.529417,
@@ -24779,7 +24106,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.561367,
@@ -24837,7 +24164,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.561442,
@@ -24895,7 +24222,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.229234,
@@ -24953,7 +24280,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.572677,
@@ -25011,7 +24338,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.58981,
@@ -25069,7 +24396,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-04",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.585803,
@@ -25184,7 +24511,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.296971,
@@ -25252,7 +24579,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.302906,
@@ -25279,74 +24606,6 @@
        "id": "masjid-al-muhajirin-villa-gunung-lestari",
        "name": "Masjid Al-Muhajirin Villa Gunung Lestari",
        "km": 0.706
-      }
-     ]
-    },
-    {
-     "id": "sewa-pinhome-jombang-c2db81a3",
-     "title": "Rumah sewa di Jombang",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Tangerang",
-     "locationText": "Jombang, Ciputat, Kota Tangerang Selatan",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 40000000,
-      "period": "yearly",
-      "minimumMonths": 12,
-      "quote": "Rp 40 Juta/Tahun",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-siap-huni-dekat-stasiun-sudimara-di-villa-gunung-lestari",
-      "pageDate": "2026-10-19"
-     },
-     "bedrooms": null,
-     "sizeM2": null,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Jombang",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-siap-huni-dekat-stasiun-sudimara-di-villa-gunung-lestari"
-      },
-      {
-       "quote": "Minimum sewa 12 bulan",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-siap-huni-dekat-stasiun-sudimara-di-villa-gunung-lestari"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Jumlah kamar dan luas tidak dicantumkan: portal 3 kamar/100 m², sementara deskripsi 2+1 kamar dan luas bangunan 65 m². Pembaruan sumber 2026-10-19. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-siap-huni-dekat-stasiun-sudimara-di-villa-gunung-lestari",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-10-19",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-05",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.302106,
-      "lng": 106.709563,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-siap-huni-dekat-stasiun-sudimara-di-villa-gunung-lestari",
-      "method": "Pin publik pada halaman Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-05"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-al-muhajirin-villa-gunung-lestari",
-       "name": "Masjid Al-Muhajirin Villa Gunung Lestari",
-       "km": 0.252
-      },
-      {
-       "id": "masjid-al-amanah",
-       "name": "Masjid Al Amanah",
-       "km": 0.797
-      },
-      {
-       "id": "masjid-al-barkah-ciputat",
-       "name": "Masjid Al Barkah Sawah Baru",
-       "km": 1.47
       }
      ]
     },
@@ -25456,7 +24715,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.298575,
@@ -25514,7 +24773,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.218503,
@@ -25572,7 +24831,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.257298,
@@ -25635,7 +24894,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.258916,
@@ -25698,7 +24957,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.257811,
@@ -25761,7 +25020,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.252904,
@@ -25815,11 +25074,11 @@
      "nearStationsClaim": [],
      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-hunian-nyaman-asri-lokasi-strategis-bebas-banjir-di-taman-royal-3",
      "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-10-28",
+     "postedOrUpdated": "2026-11-22",
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.179628,
@@ -25899,7 +25158,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.178956,
@@ -25979,7 +25238,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.325441,
@@ -26042,7 +25301,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.302374,
@@ -26106,7 +25365,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.262938,
@@ -26169,7 +25428,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-25",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.322875,
@@ -26247,7 +25506,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.319062,
@@ -26501,7 +25760,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.286198,
@@ -26581,7 +25840,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.287669,
@@ -26661,7 +25920,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.235831,
@@ -26729,7 +25988,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.232472,
@@ -26797,7 +26056,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.235152,
@@ -26865,7 +26124,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.232741,
@@ -26933,7 +26192,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.234241,
@@ -27001,7 +26260,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.231678,
@@ -27069,7 +26328,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.248429,
@@ -27127,7 +26386,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.239277,
@@ -27185,7 +26444,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.378768,
@@ -27248,7 +26507,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.377694,
@@ -27265,64 +26524,6 @@
        "id": "masjid-al-muhajirin-wal-anshar",
        "name": "Masjid Al Muhajirin Wal Anshar",
        "km": 0.6
-      }
-     ]
-    },
-    {
-     "id": "sewa-pinhome-grogol-3f477b4a",
-     "title": "Rumah sewa 4 kamar di Grogol",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Depok",
-     "locationText": "Grogol, Limo, Kota Depok",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 30000000,
-      "period": "yearly",
-      "minimumMonths": 12,
-      "quote": "Rp 30 Juta/Tahun",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-haji-tamrin-grogol-depok",
-      "pageDate": "2025-06-11"
-     },
-     "bedrooms": 4,
-     "sizeM2": 130.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Grogol",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-haji-tamrin-grogol-depok"
-      },
-      {
-       "quote": "Minimum sewa 12 bulan",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-haji-tamrin-grogol-depok"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-haji-tamrin-grogol-depok",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2025-06-11",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-05",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.37975,
-      "lng": 106.789986,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-haji-tamrin-grogol-depok",
-      "method": "Pin publik pada halaman Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-05"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-al-muhajirin-wal-anshar",
-       "name": "Masjid Al Muhajirin Wal Anshar",
-       "km": 0.761
       }
      ]
     },
@@ -27364,7 +26565,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.379832,
@@ -27381,69 +26582,6 @@
        "id": "masjid-al-muhajirin-wal-anshar",
        "name": "Masjid Al Muhajirin Wal Anshar",
        "km": 0.898
-      }
-     ]
-    },
-    {
-     "id": "sewa-pinhome-grogol-c7bb440c",
-     "title": "Rumah sewa 4 kamar di Grogol",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Depok",
-     "locationText": "Grogol, Limo, Kota Depok",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 44000000,
-      "period": "yearly",
-      "minimumMonths": 12,
-      "quote": "Rp 44 Juta/Tahun",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-asri-strategis-di-jalan-jambu-kelurahan-grogol-limo-depok",
-      "pageDate": "2026-10-20"
-     },
-     "bedrooms": 4,
-     "sizeM2": 150.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Grogol",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-asri-strategis-di-jalan-jambu-kelurahan-grogol-limo-depok"
-      },
-      {
-       "quote": "Minimum sewa 12 bulan",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-asri-strategis-di-jalan-jambu-kelurahan-grogol-limo-depok"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Pembaruan sumber 2026-10-20. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-asri-strategis-di-jalan-jambu-kelurahan-grogol-limo-depok",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-10-20",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-05",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.375669,
-      "lng": 106.782224,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-asri-strategis-di-jalan-jambu-kelurahan-grogol-limo-depok",
-      "method": "Pin publik pada halaman Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-05"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-al-muhajirin-wal-anshar",
-       "name": "Masjid Al Muhajirin Wal Anshar",
-       "km": 0.951
-      },
-      {
-       "id": "masjid-as-sunnah-meruyung",
-       "name": "Masjid As Sunnah Meruyung",
-       "km": 1.027
       }
      ]
     },
@@ -27485,7 +26623,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.367849,
@@ -27543,7 +26681,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.355666,
@@ -27601,7 +26739,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.343391,
@@ -27659,7 +26797,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.334631,
@@ -27676,64 +26814,6 @@
        "id": "masjid-hijau-nurul-iman",
        "name": "Masjid Hijau Nurul Iman",
        "km": 0.916
-      }
-     ]
-    },
-    {
-     "id": "sewa-pinhome-cilangkap-dba5dfde",
-     "title": "Rumah sewa 3 kamar di Cilangkap",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Jakarta",
-     "locationText": "Cilangkap, Cipayung, Kota Jakarta Timur",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 47000000,
-      "period": "yearly",
-      "minimumMonths": 12,
-      "quote": "Rp 47 Juta/Tahun",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilangkap-2",
-      "pageDate": "2026-11-01"
-     },
-     "bedrooms": 3,
-     "sizeM2": 75.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Cilangkap",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilangkap-2"
-      },
-      {
-       "quote": "Minimum sewa 12 bulan",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilangkap-2"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Pembaruan sumber 2026-11-01. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilangkap-2",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-11-01",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-05",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.343564,
-      "lng": 106.90148,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilangkap-2",
-      "method": "Pin publik pada halaman Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-05"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-hijau-nurul-iman",
-       "name": "Masjid Hijau Nurul Iman",
-       "km": 0.423
       }
      ]
     },
@@ -27775,7 +26855,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.391189,
@@ -27838,7 +26918,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.31641,
@@ -28036,7 +27116,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.225221,
@@ -28094,7 +27174,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.416128,
@@ -28152,7 +27232,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.411378,
@@ -28210,7 +27290,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.275589,
@@ -28268,7 +27348,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.232405,
@@ -28332,7 +27412,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.177182,
@@ -28390,7 +27470,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.472808,
@@ -28448,7 +27528,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.490303,
@@ -28506,7 +27586,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.480395,
@@ -28564,7 +27644,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.505643,
@@ -28622,7 +27702,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.490873,
@@ -28680,7 +27760,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.236015,
@@ -28738,7 +27818,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.540604,
@@ -28854,7 +27934,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.568814,
@@ -28912,7 +27992,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.573602,
@@ -29028,7 +28108,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.587622,
@@ -29086,7 +28166,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-05",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.60306,
@@ -29234,7 +28314,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.22146,
@@ -29297,7 +28377,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.293335,
@@ -29355,7 +28435,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.299415,
@@ -29539,7 +28619,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.261677,
@@ -29597,7 +28677,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.273099,
@@ -29655,7 +28735,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.317345,
@@ -29733,7 +28813,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.285946,
@@ -29813,7 +28893,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.233547,
@@ -29881,7 +28961,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.241066,
@@ -29939,7 +29019,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.237572,
@@ -29997,7 +29077,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.358245,
@@ -30055,7 +29135,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.382227,
@@ -30072,64 +29152,6 @@
        "id": "masjid-as-sunnah-meruyung",
        "name": "Masjid As Sunnah Meruyung",
        "km": 0.642
-      }
-     ]
-    },
-    {
-     "id": "sewa-pinhome-cilangkap-43a03d1d",
-     "title": "Rumah sewa 3 kamar di Cilangkap",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Jakarta",
-     "locationText": "Cilangkap, Cipayung, Kota Jakarta Timur",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 4300000,
-      "period": "monthly",
-      "minimumMonths": 3,
-      "quote": "Rp 4,3 Juta/Bulan",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur",
-      "pageDate": "2026-11-01"
-     },
-     "bedrooms": 3,
-     "sizeM2": 90.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Cilangkap",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur"
-      },
-      {
-       "quote": "Minimum sewa 3 bulan (Rp 12,9 Juta)",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Tarif Rp 4,3 juta/bulan mensyaratkan minimum 3 bulan (Rp 12,9 juta). Deskripsi menyebut semi furnished; inventaris akhir perlu konfirmasi. Pembaruan sumber 2026-11-01. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-11-01",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-07",
-     "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-     "location": {
-      "lat": -6.343535,
-      "lng": 106.902177,
-      "precision": "approximate",
-      "label": "Pin perkiraan portal",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur",
-      "method": "Pin publik pada halaman iklan Pinhome",
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "checkedAt": "2026-11-07"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-hijau-nurul-iman",
-       "name": "Masjid Hijau Nurul Iman",
-       "km": 0.359
       }
      ]
     },
@@ -30171,7 +29193,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.214651,
@@ -30287,7 +29309,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.226963,
@@ -30351,7 +29373,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.176348,
@@ -30409,7 +29431,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.211026,
@@ -30467,7 +29489,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.274623,
@@ -30547,7 +29569,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.232481,
@@ -30605,7 +29627,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.23214,
@@ -32033,7 +31055,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.309171,
@@ -32101,7 +31123,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.369176,
@@ -32159,7 +31181,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.380351,
@@ -32390,7 +31412,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.309363,
@@ -32458,7 +31480,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.294026,
@@ -32521,7 +31543,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.2686,
@@ -32579,7 +31601,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.368438,
@@ -32637,7 +31659,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
      "location": {
       "lat": -6.218072,
@@ -32752,7 +31774,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
      "location": {
       "lat": -6.304334,
@@ -32820,7 +31842,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
      "location": {
       "lat": -6.296977,
@@ -32976,7 +31998,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-07",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
      "location": {
       "lat": -6.216483,
@@ -33911,7 +32933,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-25",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
      "location": {
       "lat": -6.319717,
@@ -33995,7 +33017,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-25",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; rute berjalan perlu diperiksa.",
      "location": {
       "lat": -6.318974,
@@ -34443,7 +33465,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-10",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan portal, bukan kepastian pintu unit; jarak garis lurus ke masjid, bukan rute berjalan.",
      "location": {
       "lat": -6.319804,
@@ -34665,7 +33687,7 @@
       }
      ],
      "areaHighlights": [],
-     "note": "Khusus pasutri, 1 kamar tidur ber-AC, bangunan 30 m². Rp2,5 juta/bulan atau Rp30 juta/tahun. Air, parkir, sampah dan perawatan AC tercantum gratis; listrik token sendiri. Pin acuan jalan/RT-RW dari peta pengiklan, bukan pintu unit; sekitar 1,224 km garis lurus dari acuan ke Al Hikmah DDN 2. Minimum, deposit dan stok perlu konfirmasi. Tanggal iklan belum diketahui; diperiksa 10 November 2026.",
+     "note": "Khusus pasutri, 1 kamar tidur ber-AC, bangunan 30 m². Rp2,5 juta/bulan atau Rp30 juta/tahun. Air, parkir, sampah dan perawatan AC tercantum gratis; listrik token sendiri. Pin acuan jalan/RT-RW dari peta pengiklan, bukan pintu unit; sekitar 1,224 km garis lurus dari acuan ke Al Hikmah DDN 2. Minimum, deposit dan stok perlu konfirmasi. Tanggal iklan belum diketahui; diperiksa 10 November 2026. Pemeriksaan 2026-11-27: halaman Facebook Marketplace diblokir/throttled; ketersediaan belum dapat diverif",
      "nearStationsClaim": [],
      "listingUrl": "https://www.facebook.com/marketplace/item/907612185524596/",
      "sourcePortal": "facebook",
@@ -34673,7 +33695,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-10",
+     "lastChecked": "2026-11-27",
      "locationNote": "Titik acuan Jalan Pinang Kalijati, RT/RW yang sama dengan iklan; bukan titik pintu unit. Sekitar 1,224 km garis lurus dari acuan ke Al Hikmah DDN 2, bukan jarak berjalan. Survei lokasi unit tetap diperlukan.",
      "location": {
       "lat": -6.304105,
@@ -34962,11 +33984,11 @@
      "nearStationsClaim": [],
      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-di-perumahan-aleyra-residence-ar-7-no-5-buaran-indah-poris-tangerang",
      "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-11-16",
+     "postedOrUpdated": "2026-11-18",
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-17",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
      "location": {
       "lat": -6.182591,
@@ -35038,7 +34060,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-17",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
      "location": {
       "lat": -6.5342,
@@ -35106,7 +34128,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-17",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
      "location": {
       "lat": -6.542604,
@@ -35170,7 +34192,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-25",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan portal, bukan kepastian pintu unit; jarak garis lurus, bukan rute berjalan.",
      "location": {
       "lat": -6.257184,
@@ -36030,7 +35052,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-23",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari portal. Jarak dihitung garis lurus dari acuan. Konfirmasi lokasi unit dan rute berjalan.",
      "location": {
       "lat": -6.169273,
@@ -36106,7 +35128,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-23",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari portal. Jarak dihitung garis lurus dari acuan. Konfirmasi lokasi unit dan rute berjalan.",
      "location": {
       "lat": -6.46525,
@@ -36732,7 +35754,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-23",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari portal. Jarak dihitung garis lurus dari acuan. Konfirmasi lokasi unit dan rute berjalan. Beberapa penawaran memakai acuan yang sama.",
      "location": {
       "lat": -6.217257,
@@ -37006,7 +36028,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-23",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari portal. Jarak dihitung garis lurus dari acuan. Konfirmasi lokasi unit dan rute berjalan.",
      "location": {
       "lat": -6.23517,
@@ -37122,7 +36144,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-23",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari portal. Jarak dihitung garis lurus dari acuan. Konfirmasi lokasi unit dan rute berjalan.",
      "location": {
       "lat": -6.242341,
@@ -37284,7 +36306,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-23",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari portal. Jarak dihitung garis lurus dari acuan. Konfirmasi lokasi unit dan rute berjalan. Beberapa penawaran memakai acuan yang sama.",
      "location": {
       "lat": -6.275195,
@@ -37362,7 +36384,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-23",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari portal. Jarak dihitung garis lurus dari acuan. Konfirmasi lokasi unit dan rute berjalan.",
      "location": {
       "lat": -6.540798,
@@ -37416,7 +36438,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-23",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari portal. Jarak dihitung garis lurus dari acuan. Konfirmasi lokasi unit dan rute berjalan. Beberapa penawaran memakai acuan yang sama.",
      "location": {
       "lat": -6.540281,
@@ -37470,7 +36492,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-23",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari portal. Jarak dihitung garis lurus dari acuan. Konfirmasi lokasi unit dan rute berjalan. Beberapa penawaran memakai acuan yang sama.",
      "location": {
       "lat": -6.218679,
@@ -37524,7 +36546,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-23",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari portal. Jarak dihitung garis lurus dari acuan. Konfirmasi lokasi unit dan rute berjalan. Beberapa penawaran memakai acuan yang sama.",
      "location": {
       "lat": -6.218679,
@@ -37578,7 +36600,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-23",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari portal. Jarak dihitung garis lurus dari acuan. Konfirmasi lokasi unit dan rute berjalan.",
      "location": {
       "lat": -6.219135,
@@ -37700,7 +36722,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-23",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari portal. Jarak dihitung garis lurus dari acuan. Konfirmasi lokasi unit dan rute berjalan.",
      "location": {
       "lat": -6.278729,
@@ -37776,7 +36798,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-23",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari portal. Jarak dihitung garis lurus dari acuan. Konfirmasi lokasi unit dan rute berjalan.",
      "location": {
       "lat": -6.418862,
@@ -37916,7 +36938,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-23",
+     "lastChecked": "2026-11-27",
      "locationNote": "Pin perkiraan dari portal. Jarak dihitung garis lurus dari acuan. Konfirmasi lokasi unit dan rute berjalan. Beberapa penawaran memakai acuan yang sama.",
      "location": {
       "lat": -6.286178,
@@ -38309,7 +37331,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-25",
+     "lastChecked": "2026-11-27",
      "locationNote": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual.",
      "location": {
       "lat": -6.239277,
@@ -38329,78 +37351,6 @@
       }
      ],
      "review": {
-      "mosqueCoverage": "outside-radius",
-      "flood": {
-       "label": "Peta bahaya BNPB · rujukan wilayah",
-       "url": "https://inarisk.bnpb.go.id/"
-      }
-     }
-    },
-    {
-     "id": "sewa-pinhome-8e0c61140df5",
-     "title": "Rumah sewa 2 kamar di Jombang, dekat KRL Sudimara",
-     "rentalType": "kontrakan",
-     "kind": "Rumah",
-     "area": "Tangerang",
-     "locationText": "Jombang, Ciputat, Kota Tangerang Selatan",
-     "buildingOrCluster": null,
-     "rent": {
-      "amount": 31000000,
-      "period": "yearly",
-      "minimumMonths": 12,
-      "quote": "Rp 31 Juta/Tahun",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jombang-raya-1",
-      "pageDate": "2026-10-23"
-     },
-     "bedrooms": 2,
-     "sizeM2": 61.0,
-     "furnished": null,
-     "evidence": [
-      {
-       "quote": "Rp 31 Juta/Tahun",
-       "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jombang-raya-1"
-      }
-     ],
-     "areaHighlights": [],
-     "note": "Tarif Rp31 juta per tahun, minimum 12 bulan. Rumah satu lantai dengan dua kamar menurut portal. Periksa dapur, izin kompor dan rute dari pintu unit ke stasiun.",
-     "nearStationsClaim": [],
-     "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jombang-raya-1",
-     "sourcePortal": "pinhome",
-     "postedOrUpdated": "2026-10-23",
-     "ownerType": "unknown",
-     "social": [],
-     "verdict": "partial",
-     "lastChecked": "2026-11-25",
-     "locationNote": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual.",
-     "location": {
-      "lat": -6.302743,
-      "lng": 106.715701,
-      "precision": "approximate",
-      "label": "Perkiraan portal pinhome",
-      "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jombang-raya-1",
-      "method": "Pencocokan titik publik dari detail penawaran",
-      "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual.",
-      "checkedAt": "2026-11-25"
-     },
-     "nearbyMosques": [
-      {
-       "id": "masjid-al-muhajirin-villa-gunung-lestari",
-       "name": "Masjid Al-Muhajirin Villa Gunung Lestari",
-       "km": 0.507
-      },
-      {
-       "id": "masjid-al-amanah",
-       "name": "Masjid Al Amanah",
-       "km": 0.513
-      },
-      {
-       "id": "masjid-al-barkah-ciputat",
-       "name": "Masjid Al Barkah Sawah Baru",
-       "km": 0.788
-      }
-     ],
-     "review": {
-      "floors": 1,
       "mosqueCoverage": "outside-radius",
       "flood": {
        "label": "Peta bahaya BNPB · rujukan wilayah",
@@ -38502,7 +37452,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-25",
+     "lastChecked": "2026-11-27",
      "locationNote": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual.",
      "location": {
       "lat": -6.229106,
@@ -38680,7 +37630,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual.",
      "location": {
       "lat": -6.242178,
@@ -39406,7 +38356,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.251451,
@@ -39460,7 +38410,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.216114,
@@ -39519,7 +38469,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Titik acuan portal untuk perbandingan garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.221474,
@@ -39931,7 +38881,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.176408,
@@ -40093,7 +39043,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.252846,
@@ -40157,7 +39107,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.242697,
@@ -40303,11 +39253,11 @@
      "nearStationsClaim": [],
      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jombang-raya",
      "sourcePortal": "Pinhome",
-     "postedOrUpdated": "2026-10-23",
+     "postedOrUpdated": "2026-11-27",
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.302813,
@@ -40584,7 +39534,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.21886,
@@ -41390,7 +40340,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.23999,
@@ -41444,7 +40394,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.263329,
@@ -41498,7 +40448,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.29379,
@@ -41562,7 +40512,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.17956,
@@ -41670,7 +40620,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.209531,
@@ -41874,7 +40824,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.229875,
@@ -42126,7 +41076,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.242666,
@@ -42180,7 +41130,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.245105,
@@ -42282,7 +41232,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.210957,
@@ -42384,7 +41334,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.368195,
@@ -42438,7 +41388,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.263678,
@@ -42497,7 +41447,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.290594,
@@ -42857,7 +41807,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.378616,
@@ -42959,7 +41909,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.178809,
@@ -43157,7 +42107,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.233659,
@@ -43259,7 +42209,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.158538,
@@ -43367,7 +42317,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.193459,
@@ -43469,7 +42419,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.373865,
@@ -43817,7 +42767,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.27807,
@@ -43925,7 +42875,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.213238,
@@ -44075,7 +43025,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.17633,
@@ -44129,7 +43079,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.271831,
@@ -44327,7 +43277,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.324539,
@@ -44429,7 +43379,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.340178,
@@ -44537,7 +43487,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.245766,
@@ -44639,7 +43589,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.393655,
@@ -44693,7 +43643,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.303992,
@@ -44753,7 +43703,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.464643,
@@ -44807,7 +43757,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.270793,
@@ -44861,7 +43811,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.300184,
@@ -44969,7 +43919,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.23052,
@@ -45023,7 +43973,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.227005,
@@ -45125,7 +44075,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.333023,
@@ -45179,7 +44129,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.243873,
@@ -45335,7 +44285,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.371785,
@@ -45389,7 +44339,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.183115,
@@ -45593,7 +44543,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.242132,
@@ -45653,7 +44603,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.500494,
@@ -45707,7 +44657,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.229331,
@@ -46478,7 +45428,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.233892,
@@ -46724,7 +45674,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.259134,
@@ -46778,7 +45728,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.260948,
@@ -46885,7 +45835,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.176445,
@@ -46939,7 +45889,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.176341,
@@ -46993,7 +45943,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.228559,
@@ -47047,7 +45997,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.230588,
@@ -47149,7 +46099,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.276992,
@@ -47456,7 +46406,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.230866,
@@ -47564,7 +46514,7 @@
      "ownerType": "unknown",
      "social": [],
      "verdict": "partial",
-     "lastChecked": "2026-11-26",
+     "lastChecked": "2026-11-27",
      "locationNote": "Acuan perkiraan dari portal untuk menghitung jarak garis lurus. Pastikan lokasi unit sebelum survei.",
      "location": {
       "lat": -6.259141,

@@ -1326,23 +1326,6 @@
       }
     },
     {
-      "rentalId": "sewa-pinhome-pondok-labu-a20145eb",
-      "location": {
-        "lat": -6.311851,
-        "lng": 106.792745,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-haji-ipin",
-        "method": "Pin publik pada halaman iklan Pinhome",
-        "checkedAt": "2026-11-03"
-      },
-      "note": "Pin perkiraan dari pengiklan/portal, bukan kepastian pintu unit; lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "1b68140595804be044fa0e224d5d1217353377f629bac99303c3121c72271df8",
-        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari titik administratif; harga/periode/status/minimum dari unit yang sama"
-      }
-    },
-    {
       "rentalId": "sewa-pinhome-kebon-jeruk-6bcc604f",
       "location": {
         "lat": -6.195942,
@@ -2941,23 +2924,6 @@
       }
     },
     {
-      "rentalId": "sewa-pinhome-limo-796ee069",
-      "location": {
-        "lat": -6.373199,
-        "lng": 106.777554,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arthayasa-stable-kpblok-tengki-rt02-10",
-        "method": "Pin publik pada halaman iklan Pinhome",
-        "checkedAt": "2026-11-03"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "a6aa0ed83b4dddca3e66ce380a65d7d6220e915895e5ff5d4c13288b1de4ae44",
-        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status/minimum dari unit yang sama"
-      }
-    },
-    {
       "rentalId": "sewa-pinhome-tugu-28b62b03",
       "location": {
         "lat": -6.364271,
@@ -3192,23 +3158,6 @@
       "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
       "evidence": {
         "sha256": "15e776566dbf178292833de93a7d5f723b6573804bc4b65a347ca2df2a16b6de",
-        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status/minimum dari unit yang sama"
-      }
-    },
-    {
-      "rentalId": "sewa-pinhome-pengasinan-6dcb37c3",
-      "location": {
-        "lat": -6.280748,
-        "lng": 107.00904,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-jl-narogong-cantik",
-        "method": "Pin publik pada halaman iklan Pinhome",
-        "checkedAt": "2026-11-03"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "47833849441aa0a06cbed7567e6281c440aceeefb50117569907f3e291bdb587",
         "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status/minimum dari unit yang sama"
       }
     },
@@ -3583,23 +3532,6 @@
       "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
       "evidence": {
         "sha256": "940b1363ce05022b3511a983f3f44fafee13eb345d5e8cb41883cdfe80cfab8b",
-        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status/minimum dari unit yang sama"
-      }
-    },
-    {
-      "rentalId": "sewa-pinhome-cipinang-muara-027a0c75",
-      "location": {
-        "lat": -6.221545,
-        "lng": 106.892592,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-rt-11-rw-08-no-44",
-        "method": "Pin publik pada halaman iklan Pinhome",
-        "checkedAt": "2026-11-03"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "fcbdd6f5446dd347535693496eddebe8f1b8c9f077b885589f2845c4ca648411",
         "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status/minimum dari unit yang sama"
       }
     },
@@ -4301,23 +4233,6 @@
       }
     },
     {
-      "rentalId": "sewa-pinhome-jombang-93bbe1ee",
-      "location": {
-        "lat": -6.300408,
-        "lng": 106.710526,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-betawi",
-        "method": "Pin publik pada halaman iklan Pinhome",
-        "checkedAt": "2026-11-04"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "3a673aed24ae1a5640b36aacb2c38185adba3a3b62a9e2dd8f1016f83426bbb3",
-        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status/minimum dari unit yang sama"
-      }
-    },
-    {
       "rentalId": "sewa-pinhome-jati-7b53fd93",
       "location": {
         "lat": -6.19045,
@@ -4416,23 +4331,6 @@
       "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
       "evidence": {
         "sha256": "402e6d27919dac4dd280ee61909ae9d39f0750d43648228f7019d117ca61b2b2",
-        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status/minimum dari unit yang sama"
-      }
-    },
-    {
-      "rentalId": "sewa-pinhome-jurangmangu-barat-jurang-mangu-barat-86e111b3",
-      "location": {
-        "lat": -6.258133,
-        "lng": 106.719861,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-japos-raya-no-8-d",
-        "method": "Pin publik pada halaman iklan Pinhome",
-        "checkedAt": "2026-11-04"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "b08c7815a4a85e3ce5766532b1666ea1c658c85e22f70e85a4625d4914c5ae58",
         "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status/minimum dari unit yang sama"
       }
     },
@@ -4620,23 +4518,6 @@
       "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
       "evidence": {
         "sha256": "fde793b1c2a6704831ced9469c8bc98e07134a53f177d88068b4af26990b00bb",
-        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status/minimum dari unit yang sama"
-      }
-    },
-    {
-      "rentalId": "sewa-pinhome-bojong-kulur-e88f9845",
-      "location": {
-        "lat": -6.321468,
-        "lng": 106.962884,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-siap-huni-di-villa-mahkota-pesona",
-        "method": "Pin publik pada halaman iklan Pinhome",
-        "checkedAt": "2026-11-04"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "4ca38728620d3b553df0bb3f7abade425c0dd0f1592990205a65547b6c8cfd68",
         "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status/minimum dari unit yang sama"
       }
     },
@@ -4977,23 +4858,6 @@
       "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
       "evidence": {
         "sha256": "5b0d9a519b88a678f236a5f5dd8b12c45d84e20fff56d54b59df273240f2fe56",
-        "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
-      }
-    },
-    {
-      "rentalId": "sewa-pinhome-sukabumi-utara-ilir-ab73e31a",
-      "location": {
-        "lat": -6.211442,
-        "lng": 106.778527,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat",
-        "method": "Pin publik pada halaman iklan Pinhome",
-        "checkedAt": "2026-11-04"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "12be1dd51c114e923d8af2e38c72b7b79525a3ea17ccc0a9f12e457dd91f6577",
         "selector": "__UNIT_DETAIL__.location.coordinate; berbeda dari centroid administratif; harga/periode/status dari unit yang sama; minimum dari label portal"
       }
     },
@@ -6171,23 +6035,6 @@
       }
     },
     {
-      "rentalId": "sewa-pinhome-jatibening-7ec74065",
-      "location": {
-        "lat": -6.261559,
-        "lng": 106.950724,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-santuary-di-pondok-gede-bekasi-di-jatibening",
-        "method": "Pin publik pada halaman Pinhome",
-        "checkedAt": "2026-11-04"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "d7457254593f2d50c62cee20cc7852c1e901f7e1c7e54492f18fbe9114e6d1e6",
-        "selector": "__UNIT_DETAIL__.location.coordinate, bukan centroid administratif; harga/periode/status dan minimum dari unit yang sama"
-      }
-    },
-    {
       "rentalId": "sewa-pinhome-buaran-indah-34fd3d6f",
       "location": {
         "lat": -6.182378,
@@ -6528,23 +6375,6 @@
       }
     },
     {
-      "rentalId": "sewa-pinhome-pondok-benda-edc041f9",
-      "location": {
-        "lat": -6.355422,
-        "lng": 106.725356,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-natuna-2",
-        "method": "Pin publik pada halaman Pinhome",
-        "checkedAt": "2026-11-04"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "716832f799d02c245d9e59bf45eb5fea5b1a5ddec70bd75252da6c37af9355ee",
-        "selector": "__UNIT_DETAIL__.location.coordinate, bukan centroid administratif; harga/periode/status dan minimum dari unit yang sama"
-      }
-    },
-    {
       "rentalId": "sewa-pinhome-pondok-benda-3e05b2d4",
       "location": {
         "lat": -6.347724,
@@ -6575,23 +6405,6 @@
       "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
       "evidence": {
         "sha256": "db4af0f0d036f12a8268b31a877363a0477121711e902fd1372a9b0d9e798912",
-        "selector": "__UNIT_DETAIL__.location.coordinate, bukan centroid administratif; harga/periode/status dan minimum dari unit yang sama"
-      }
-    },
-    {
-      "rentalId": "sewa-pinhome-maruyung-meruyung-e5fd4cb8",
-      "location": {
-        "lat": -6.38345,
-        "lng": 106.777914,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tridharma-iii-no-20a",
-        "method": "Pin publik pada halaman Pinhome",
-        "checkedAt": "2026-11-04"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "5c25666edeee30c63421c68829eb03882205da6f4dabeb5dbe5d97109bdf0f17",
         "selector": "__UNIT_DETAIL__.location.coordinate, bukan centroid administratif; harga/periode/status dan minimum dari unit yang sama"
       }
     },
@@ -6983,23 +6796,6 @@
       "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
       "evidence": {
         "sha256": "da365186eff1d53b9305a01e94a1993eac46658aa2c2add5ae42df9acccb3661",
-        "selector": "__UNIT_DETAIL__.location.coordinate, bukan centroid administratif; harga/periode/status dan minimum dari unit yang sama"
-      }
-    },
-    {
-      "rentalId": "sewa-pinhome-jombang-c2db81a3",
-      "location": {
-        "lat": -6.302106,
-        "lng": 106.709563,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-siap-huni-dekat-stasiun-sudimara-di-villa-gunung-lestari",
-        "method": "Pin publik pada halaman Pinhome",
-        "checkedAt": "2026-11-05"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "75611cb13d9bc06ed21f3f9208c98cbe055e16b090c0a6527fe59f4fadf56432",
         "selector": "__UNIT_DETAIL__.location.coordinate, bukan centroid administratif; harga/periode/status dan minimum dari unit yang sama"
       }
     },
@@ -7599,23 +7395,6 @@
       }
     },
     {
-      "rentalId": "sewa-pinhome-grogol-3f477b4a",
-      "location": {
-        "lat": -6.37975,
-        "lng": 106.789986,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-haji-tamrin-grogol-depok",
-        "method": "Pin publik pada halaman Pinhome",
-        "checkedAt": "2026-11-05"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "ace034883baad77a185e0df6569df7fd25de550ea96b30dc351bded6807d8d82",
-        "selector": "__UNIT_DETAIL__.location.coordinate, bukan centroid administratif; harga/periode/status dan minimum dari unit yang sama"
-      }
-    },
-    {
       "rentalId": "sewa-pinhome-grogol-8baaf0ba",
       "location": {
         "lat": -6.379832,
@@ -7629,23 +7408,6 @@
       "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
       "evidence": {
         "sha256": "4b6650f50e0dbc56677e63c0f95b35500232a02c990b8436d8c23b5a3fde92ca",
-        "selector": "__UNIT_DETAIL__.location.coordinate, bukan centroid administratif; harga/periode/status dan minimum dari unit yang sama"
-      }
-    },
-    {
-      "rentalId": "sewa-pinhome-grogol-c7bb440c",
-      "location": {
-        "lat": -6.375669,
-        "lng": 106.782224,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-asri-strategis-di-jalan-jambu-kelurahan-grogol-limo-depok",
-        "method": "Pin publik pada halaman Pinhome",
-        "checkedAt": "2026-11-05"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "34826500d6fcddd4e03dca9321063fb3cf59c81b335f9a1e711b451cdd48cf69",
         "selector": "__UNIT_DETAIL__.location.coordinate, bukan centroid administratif; harga/periode/status dan minimum dari unit yang sama"
       }
     },
@@ -7714,23 +7476,6 @@
       "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
       "evidence": {
         "sha256": "5b3b75e6f016deb8091a0586668c7d7eb154949d91da269cd13a910aa1554ec8",
-        "selector": "__UNIT_DETAIL__.location.coordinate, bukan centroid administratif; harga/periode/status dan minimum dari unit yang sama"
-      }
-    },
-    {
-      "rentalId": "sewa-pinhome-cilangkap-dba5dfde",
-      "location": {
-        "lat": -6.343564,
-        "lng": 106.90148,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilangkap-2",
-        "method": "Pin publik pada halaman Pinhome",
-        "checkedAt": "2026-11-05"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "a8fe842377f7e6c554dba0d2e236c8efafaf1ef7d54b6aac4fbbd7bbb5aa1fb6",
         "selector": "__UNIT_DETAIL__.location.coordinate, bukan centroid administratif; harga/periode/status dan minimum dari unit yang sama"
       }
     },
@@ -8819,23 +8564,6 @@
       "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
       "evidence": {
         "sha256": "ee461f38da397ed706d96d226681d21a76abb87ba87e89a29976073c6371f29f",
-        "selector": "__UNIT_DETAIL__.location.coordinate, bukan centroid administratif; harga/periode/status dan minimum dari unit yang sama"
-      }
-    },
-    {
-      "rentalId": "sewa-pinhome-cilangkap-43a03d1d",
-      "location": {
-        "lat": -6.343535,
-        "lng": 106.902177,
-        "precision": "approximate",
-        "label": "Pin perkiraan portal",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur",
-        "method": "Pin publik pada halaman iklan Pinhome",
-        "checkedAt": "2026-11-07"
-      },
-      "note": "Pin perkiraan pengiklan/portal, bukan kepastian pintu unit. Lokasi dan rute berjalan perlu dikonfirmasi.",
-      "evidence": {
-        "sha256": "6d11362c8e2eb741977d373c829c29808546fd8a488dc3cf5c8996be93a33e2c",
         "selector": "__UNIT_DETAIL__.location.coordinate, bukan centroid administratif; harga/periode/status dan minimum dari unit yang sama"
       }
     },
@@ -11245,19 +10973,6 @@
         "precision": "approximate",
         "label": "Perkiraan portal pinhome",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-dalam-cluster-2-5-lantai-di-di-pondok-kelapa",
-        "method": "Pencocokan titik publik dari detail penawaran",
-        "checkedAt": "2026-11-25"
-      },
-      "note": "Perkiraan portal. Jarak garis lurus dari acuan. Konfirmasi titik unit dan rute aktual."
-    },
-    {
-      "rentalId": "sewa-pinhome-8e0c61140df5",
-      "location": {
-        "lat": -6.302743,
-        "lng": 106.715701,
-        "precision": "approximate",
-        "label": "Perkiraan portal pinhome",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jombang-raya-1",
         "method": "Pencocokan titik publik dari detail penawaran",
         "checkedAt": "2026-11-25"
       },

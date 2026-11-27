@@ -74,7 +74,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-10-30"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-grand-center-point-bekasi-apartment-2br",
@@ -972,7 +972,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-10-30"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-kost-rumah-mawaddah-kelapa-dua",
@@ -1131,11 +1131,12 @@
       "locationText": "Jakasampurna, Bekasi Barat",
       "buildingOrCluster": null,
       "rent": {
-        "amount": 1350000,
-        "period": "monthly",
-        "quote": "Rp 1,35 Juta/Bulan",
+        "amount": 15000000,
+        "period": "yearly",
+        "quote": "Rp 15 Juta/Tahun",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-3-rt-002-rw-010-jakasampurna",
-        "pageDate": null
+        "pageDate": "2026-11-17",
+        "minimumMonths": 12
       },
       "bedrooms": 1,
       "sizeM2": 40,
@@ -1183,11 +1184,11 @@
       "note": "Minimum sewa 3 bulan menurut portal. Deskripsi menyebut Rp8 juta per 6 bulan; tidak ada parkir mobil. Kesesuaian untuk anak dan ketersediaan perlu dikonfirmasi.",
       "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-flamboyan-3-rt-002-rw-010-jakasampurna",
       "sourcePortal": "Pinhome",
-      "postedOrUpdated": null,
+      "postedOrUpdated": "2026-11-17",
       "ownerType": "individual",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-10-31"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-griya-anindya-jatibening",
@@ -2305,7 +2306,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-07-08. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -2345,7 +2346,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Akses gang dan parkir motor; parkir mobil perlu pengaturan terpisah sesuai sumber. Pembaruan sumber 2026-10-04. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -2385,7 +2386,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Sumber menjelaskan tiga lantai dengan dapur, ruang istirahat/kamar mandi, dan kamar. Pembaruan sumber 2026-09-22. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -2425,7 +2426,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Satu penawaran petakan dua lantai. Luas blok tidak dipakai sebagai luas tiap unit. Pembaruan sumber 2026-08-20. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -3225,7 +3226,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Kontrakan TIOTA Pekayon. Pernyataan akses LRT/KRL pada deskripsi belum diuji sebagai rute berjalan. Pembaruan sumber 2025-11-02. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -3307,46 +3308,6 @@
       "verdict": "partial",
       "lastChecked": "2026-11-03",
       "note": "Pembaruan sumber 2026-10-25. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
-    },
-    {
-      "id": "sewa-pinhome-pondok-labu-a20145eb",
-      "title": "Kontrakan 3 kamar di Pondok Labu",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Pondok Labu, Cilandak, Kota Jakarta Selatan",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 3700000,
-        "period": "monthly",
-        "quote": "Rp 3,7 Juta/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-haji-ipin",
-        "pageDate": "2026-07-08",
-        "minimumMonths": 3
-      },
-      "bedrooms": 3,
-      "sizeM2": 50.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Pondok Labu",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-haji-ipin"
-        },
-        {
-          "quote": "Minimum sewa 3 bulan (Rp 11,1 Juta)",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-haji-ipin"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-haji-ipin",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-07-08",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-03",
-      "note": "Pembaruan sumber 2026-07-08. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
       "id": "sewa-pinhome-kebon-jeruk-6bcc604f",
@@ -3705,7 +3666,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Deskripsi menyebut air termasuk; listrik dan iuran mengikuti ketentuan sumber. Pembaruan sumber 2026-05-04. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -3785,7 +3746,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Harga utama untuk tanpa AC; tersedia paket ber-AC dengan harga lain. Konfirmasi listrik dan biaya tambahan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -3985,7 +3946,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Deskripsi menyebut rumah petakan dengan akses motor. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -4065,7 +4026,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-04-12. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -4225,7 +4186,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-05-26. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -4265,7 +4226,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Kontrakan dengan tiga sekat; akses parkir motor dan ketentuan hewan mengikuti sumber. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -4865,7 +4826,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-03-25. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -4917,11 +4878,11 @@
       "locationText": "Kayu Manis, Matraman, Kota Jakarta Timur",
       "buildingOrCluster": null,
       "rent": {
-        "amount": 18000000,
+        "amount": 15000000,
         "period": "yearly",
-        "quote": "Rp 18 Juta/Tahun",
+        "quote": "Rp 15 Juta/Tahun",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-samping-alfamart-kayumanis-8-matraman",
-        "pageDate": "2026-10-23",
+        "pageDate": "2026-11-26",
         "minimumMonths": 12
       },
       "bedrooms": 1,
@@ -4941,11 +4902,11 @@
       "nearStationsClaim": [],
       "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-samping-alfamart-kayumanis-8-matraman",
       "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-10-23",
+      "postedOrUpdated": "2026-11-26",
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Parkir motor di depan rumah; sumber menyebut rumah dua lantai. Harga halaman saat pemeriksaan Rp 18 juta/tahun, berbeda dari hasil indeks lama. Pembaruan sumber 2026-10-23. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -4985,7 +4946,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-07-19. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -5025,7 +4986,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-10-13. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -5225,7 +5186,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Sumber menyebut deposit Rp 2 juta; rincian pengembalian mengikuti sumber. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -5265,7 +5226,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Penawaran petakan lantai 2. Parkir mobil menggunakan lahan sewa terpisah. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -5425,7 +5386,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Penawaran sewa dipisahkan dari opsi jual pada halaman yang sama. Pembaruan sumber 2026-08-23. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -5625,7 +5586,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Harga per tahun dengan minimum 24 bulan; sumber menampilkan total awal Rp 120 juta. Pembaruan sumber 2026-06-13. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -5665,7 +5626,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -5705,7 +5666,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -5745,7 +5706,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -5785,7 +5746,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -5825,7 +5786,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -5905,7 +5866,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-06-30. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -5985,7 +5946,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Harga terstruktur dan deskripsi Rp 50 juta/tahun; judul URL masih memuat angka lama. Pembaruan sumber 2026-04-18. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6025,7 +5986,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Harga per bulan dengan minimum 24 bulan; sumber menampilkan total Rp 48 juta. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6065,7 +6026,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-05-08. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6145,7 +6106,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6185,7 +6146,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Jumlah kamar di spesifikasi dan deskripsi berbeda, sehingga jumlah kamar belum dicantumkan. Minimum 24 bulan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6225,7 +6186,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6305,7 +6266,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6345,7 +6306,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6385,7 +6346,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6465,7 +6426,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Angka luas 320 m² pada portal belum cukup jelas sebagai luas unit, sehingga tidak dicantumkan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6585,7 +6546,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-10-21. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6625,7 +6586,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6785,7 +6746,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Sumber menyebut air termasuk; listrik token dan iuran sampah terpisah. Pembaruan sumber 2026-01-31. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6825,7 +6786,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-06-18. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6865,7 +6826,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-03-12. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6905,7 +6866,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Sumber menyebut air dan iuran sampah termasuk; parkir mobil memakai lahan sewa terpisah. Pembaruan sumber 2025-10-19. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6945,7 +6906,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -6985,7 +6946,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-08-12. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7025,7 +6986,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-09-15. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7065,7 +7026,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7105,48 +7066,8 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
-    },
-    {
-      "id": "sewa-pinhome-limo-796ee069",
-      "title": "Rumah sewa 1 kamar di Limo",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Depok",
-      "locationText": "Limo, Limo, Kota Depok",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 1200000,
-        "period": "monthly",
-        "quote": "Rp 1,2 Juta/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arthayasa-stable-kpblok-tengki-rt02-10",
-        "pageDate": "2026-11-01",
-        "minimumMonths": 1
-      },
-      "bedrooms": 1,
-      "sizeM2": 40.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Limo",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arthayasa-stable-kpblok-tengki-rt02-10"
-        },
-        {
-          "quote": "Minimum sewa 1 bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arthayasa-stable-kpblok-tengki-rt02-10"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-arthayasa-stable-kpblok-tengki-rt02-10",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-11-01",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-03",
-      "note": "Sumber menyebut parkir motor dan pompa air sendiri; klaim waktu akses belum diuji. Pembaruan sumber 2026-11-01. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
       "id": "sewa-pinhome-tugu-28b62b03",
@@ -7185,7 +7106,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7225,7 +7146,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-07-17. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7265,7 +7186,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Luas 85 m² belum cukup jelas sebagai luas unit satu kamar, sehingga tidak dicantumkan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7305,7 +7226,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-07-29. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7345,7 +7266,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-08-06. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7385,7 +7306,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7425,7 +7346,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7465,7 +7386,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7505,7 +7426,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Air dari pompa bersama disebut termasuk; listrik token penghuni terpisah. Pembaruan sumber 2026-01-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7545,7 +7466,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Sumber menyebut kamar tidur tanpa pintu; minimum 24 bulan. Pembaruan sumber 2025-11-07. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7625,7 +7546,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7665,7 +7586,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7705,48 +7626,8 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-02-06. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
-    },
-    {
-      "id": "sewa-pinhome-pengasinan-6dcb37c3",
-      "title": "Rumah sewa 3 kamar di Pengasinan",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Bekasi",
-      "locationText": "Pengasinan, Rawalumbu, Kota Bekasi",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 20000000,
-        "period": "yearly",
-        "quote": "Rp 20 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-jl-narogong-cantik",
-        "pageDate": "2026-10-12",
-        "minimumMonths": 12
-      },
-      "bedrooms": 3,
-      "sizeM2": 120.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Pengasinan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-jl-narogong-cantik"
-        },
-        {
-          "quote": "Minimum sewa 12 bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-jl-narogong-cantik"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-lokasi-strategis-di-jl-narogong-cantik",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-10-12",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-03",
-      "note": "Pembaruan sumber 2026-10-12. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
       "id": "sewa-pinhome-pengasinan-f8cf513d",
@@ -7785,7 +7666,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Luas 100 m² belum cukup jelas sebagai luas unit satu kamar, sehingga tidak dicantumkan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7825,7 +7706,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-08-28. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7865,7 +7746,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7905,7 +7786,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Luas 100 m² belum cukup jelas sebagai luas unit satu kamar, sehingga tidak dicantumkan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7945,7 +7826,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -7985,7 +7866,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-08-10. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8025,7 +7906,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8037,11 +7918,11 @@
       "locationText": "Curug Mekar, Bogor Barat, Kota Bogor",
       "buildingOrCluster": null,
       "rent": {
-        "amount": 900000,
+        "amount": 850000,
         "period": "monthly",
-        "quote": "Rp 900 Ribu/Bulan",
+        "quote": "Rp 850 Ribu/Bulan",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-murah-belakang-taman-yasmin-sektor-5-bogor-di-jlpalem-putri-ix-belakang-komplek-50m",
-        "pageDate": "2025-12-11",
+        "pageDate": "2026-11-16",
         "minimumMonths": 1
       },
       "bedrooms": 2,
@@ -8061,11 +7942,11 @@
       "nearStationsClaim": [],
       "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-murah-belakang-taman-yasmin-sektor-5-bogor-di-jlpalem-putri-ix-belakang-komplek-50m",
       "sourcePortal": "pinhome",
-      "postedOrUpdated": "2025-12-11",
+      "postedOrUpdated": "2026-11-16",
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-12-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8145,7 +8026,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8185,7 +8066,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-05-25. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8305,7 +8186,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8345,7 +8226,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Spesifikasi menyebut 3 kamar sedangkan deskripsi 2 kamar; jumlah kamar belum dicantumkan. Pembaruan sumber 2026-08-18. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8385,7 +8266,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-02-19. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8465,7 +8346,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Penawaran hanya untuk lantai dua menurut deskripsi. Pembaruan sumber 2025-09-22. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8505,7 +8386,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Luas bangunan portal51m² dan deskripsi52m² berbeda, sehingga luas belum dicantumkan. Pembaruan sumber 2026-09-23. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8585,7 +8466,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8629,46 +8510,6 @@
       "note": "Pembaruan sumber 2025-02-17. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
-      "id": "sewa-pinhome-cipinang-muara-027a0c75",
-      "title": "Rumah sewa 1 kamar di Cipinang Muara",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Cipinang Muara, Jatinegara, Kota Jakarta Timur",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 825000,
-        "period": "monthly",
-        "quote": "Rp 825 Ribu/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-rt-11-rw-08-no-44",
-        "pageDate": "2026-11-03",
-        "minimumMonths": 1
-      },
-      "bedrooms": 1,
-      "sizeM2": 17.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Cipinang Muara",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-rt-11-rw-08-no-44"
-        },
-        {
-          "quote": "Minimum sewa 1 bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-rt-11-rw-08-no-44"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-mulia-jaya-gang-z-rt-11-rw-08-no-44",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-11-03",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-03",
-      "note": "Kontrakan berada di lantai dua, kamar mandi di dalam dan parkir motor disebut tersedia; deskripsi menyebut keluarga kecil. Pembaruan sumber 2026-11-03. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
-    },
-    {
       "id": "sewa-pinhome-cipinang-besar-utara-ee072d33",
       "title": "Rumah sewa 1 kamar di Cipinang Besar Utara",
       "rentalType": "kontrakan",
@@ -8705,7 +8546,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Harga per bulan dengan minimum kontrak12bulan menurut portal. Pembaruan sumber 2026-08-18. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8745,7 +8586,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8825,7 +8666,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-03-07. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8905,7 +8746,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-08-14. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8945,7 +8786,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-06-05. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -8985,7 +8826,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-09-18. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9025,7 +8866,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-08-08. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9065,7 +8906,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Deskripsi menyebut petakan3ruang dan kamar mandi. Luas portal belum cukup jelas sebagai luas unit sehingga belum dicantumkan. Pembaruan sumber 2026-10-02. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9105,7 +8946,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9145,7 +8986,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9185,7 +9026,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-08-04. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9225,7 +9066,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-04-04. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9265,7 +9106,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Harga sewa dipisahkan dari opsi jual pada halaman yang sama. Pembaruan sumber 2026-04-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9305,7 +9146,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9345,7 +9186,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-12-07. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9385,7 +9226,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Deskripsi menyebut2kamar utama dan kamar tamu mezanin; jumlah kamar belum dicantumkan karena spesifikasi berbeda. Deposit disebut Rp3juta. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9425,7 +9266,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9465,7 +9306,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-04-22. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9505,7 +9346,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9545,7 +9386,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembayaran disebut per3bulan dengan minimum3bulan; nominal bulanan adalah pembanding paket. Luas portal40m²/deskripsi36m² berbeda sehingga belum dicantumkan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9585,7 +9426,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9745,7 +9586,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9825,7 +9666,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -9981,7 +9822,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -10021,7 +9862,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -10061,7 +9902,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Kontrakan di lantai dua, kamar mandi sendiri; deskripsi menyebut cocok untuk pasutri/keluarga kecil. Luas portal 60 m² belum jelas sebagai luas unit sehingga belum dicantumkan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung. Halaman Pinhome menyebut khusus karyawan saat diperiksa pada 26 November 2026."
     },
     {
@@ -10181,7 +10022,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -10261,7 +10102,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-05-05. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -10301,48 +10142,8 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Harga sewa dipisahkan dari opsi jual pada halaman yang sama. Pembaruan sumber 2026-04-08. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
-    },
-    {
-      "id": "sewa-pinhome-jombang-93bbe1ee",
-      "title": "Rumah sewa 2 kamar di Jombang",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Tangerang",
-      "locationText": "Jombang, Ciputat, Kota Tangerang Selatan",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 40000000,
-        "period": "yearly",
-        "quote": "Rp 40 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-betawi",
-        "pageDate": "2026-06-30",
-        "minimumMonths": 12
-      },
-      "bedrooms": 2,
-      "sizeM2": 75.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Jombang",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-betawi"
-        },
-        {
-          "quote": "Minimum sewa 12 bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-betawi"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-betawi",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-06-30",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-04",
-      "note": "Pembaruan sumber 2026-06-30. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
       "id": "sewa-pinhome-jati-7b53fd93",
@@ -10381,7 +10182,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-04-18. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -10537,7 +10338,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -10577,47 +10378,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
-      "note": "Pembaruan sumber 2026-08-02. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
-    },
-    {
-      "id": "sewa-pinhome-jurangmangu-barat-jurang-mangu-barat-86e111b3",
-      "title": "Rumah sewa 3 kamar di Jurangmangu Barat (Jurang Mangu Barat)",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Tangerang",
-      "locationText": "Jurangmangu Barat (Jurang Mangu Barat), Pondok Aren, Kota Tangerang Selatan",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 40000000,
-        "period": "yearly",
-        "quote": "Rp 40 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-japos-raya-no-8-d",
-        "pageDate": "2026-08-02",
-        "minimumMonths": 12
-      },
-      "bedrooms": 3,
-      "sizeM2": 100.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Jurangmangu Barat (Jurang Mangu Barat)",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-japos-raya-no-8-d"
-        },
-        {
-          "quote": "Minimum sewa 12 bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-japos-raya-no-8-d"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-japos-raya-no-8-d",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-08-02",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-08-02. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -10697,7 +10458,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Minimum 3 bulan; deskripsi menyebut paket tahunan dapat lebih murah tanpa nominal pasti. Deposit mengikuti sumber. Pembaruan sumber 2026-06-21. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -10737,7 +10498,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Judul sumber menyebut akses jalan hanya untuk motor; akses masuk perlu dikonfirmasi. Pembaruan sumber 2026-08-04. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -10777,7 +10538,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-08-01. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -10817,7 +10578,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -10857,7 +10618,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-04-10. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -10897,7 +10658,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Paket tahunan Rp 25 juta; sumber juga menyebut pembayaran persemester Rp 13 juta dengan kontrak tetap 1 tahun. Pembaruan sumber 2026-04-22. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -10937,7 +10698,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-07-14. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -10977,7 +10738,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-04-02. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11017,7 +10778,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-05-20. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11057,48 +10818,8 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-10-20. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
-    },
-    {
-      "id": "sewa-pinhome-bojong-kulur-e88f9845",
-      "title": "Rumah sewa 5 kamar di Villa Mahkota Pesona",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Bogor",
-      "locationText": "Bojong Kulur, Gunung Putri, Kab. Bogor",
-      "buildingOrCluster": "Villa Mahkota Pesona",
-      "rent": {
-        "amount": 30000000,
-        "period": "yearly",
-        "quote": "Rp 30 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-siap-huni-di-villa-mahkota-pesona",
-        "pageDate": "2026-10-29",
-        "minimumMonths": 12
-      },
-      "bedrooms": 5,
-      "sizeM2": 216.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Bojong Kulur",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-siap-huni-di-villa-mahkota-pesona"
-        },
-        {
-          "quote": "Minimum sewa 12 bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-siap-huni-di-villa-mahkota-pesona"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-semi-furnished-siap-huni-di-villa-mahkota-pesona",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-10-29",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-04",
-      "note": "Sumber menyebut rumah 3 lantai di Villa Mahkota Pesona, semi furnished. Pembaruan sumber 2026-10-29. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
       "id": "sewa-pinhome-bojong-kulur-89d56d67",
@@ -11137,7 +10858,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Sumber menyebut semi furnished; dua unit yang disebut adalah AC, bukan dua rumah. Pembaruan sumber 2026-09-16. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11177,7 +10898,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Sumber menyebut Kemang Pratama 3; harga masih dapat dinegosiasikan. Pembaruan sumber 2026-05-09. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11217,7 +10938,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11257,7 +10978,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-05-23. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11297,7 +11018,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11309,12 +11030,12 @@
       "locationText": "Babakan Madang, Babakan Madang, Kab. Bogor",
       "buildingOrCluster": "Griya Alam Sentul",
       "rent": {
-        "amount": 20000000,
-        "period": "yearly",
-        "quote": "1 th = 20 jt",
+        "amount": 2333333,
+        "period": "monthly",
+        "quote": "Rp 2,33 Juta/Bulan",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-griya-alam-sentul-2-kamar-tidur-baru-di-perum-griya-alam-sentul-c18-no-16",
         "pageDate": "2025-11-21",
-        "minimumMonths": 12
+        "minimumMonths": 3
       },
       "bedrooms": 2,
       "sizeM2": 50.0,
@@ -11333,7 +11054,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Paket yang dicatat 1 tahun Rp 20 juta. Sumber juga menyebut 3 bulan Rp 7 juta atau 6 bulan Rp 11 juta; angka Rp 2,33 juta/bulan di portal merupakan ekuivalen paket 3 bulan. Deposit Rp 1 juta dan iuran di luar sewa. Pembaruan sumber 2025-11-21. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11413,7 +11134,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11453,7 +11174,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11493,7 +11214,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11533,7 +11254,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Minimum 6 bulan mengikuti deskripsi, meski label portal menyebut 1 bulan. Jumlah kamar portal 2 berbeda dari deskripsi 3 sehingga tidak dicantumkan. Pembayaran bulanan disebut tersedia; deposit/opsi diskon perlu konfirmasi. Pembaruan sumber 2026-07-09. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11573,7 +11294,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11653,7 +11374,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11693,7 +11414,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-11-17. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11733,7 +11454,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Minimum komitmen 3 bulan mengikuti deskripsi, meski label portal menyebut 1 bulan. Opsi total 3 bulan Rp 3,7 juta dan 6 bulan Rp 7 juta; tarif 1 bulan Rp 1,3 juta. Akses parkir hanya motor menurut sumber. Pembaruan sumber 2026-02-19. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11773,7 +11494,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11813,7 +11534,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11853,7 +11574,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -11893,48 +11614,8 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
-    },
-    {
-      "id": "sewa-pinhome-sukabumi-utara-ilir-ab73e31a",
-      "title": "Rumah sewa 1 kamar di Sukabumi Utara (Ilir)",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Sukabumi Utara (Ilir), Kebon Jeruk, Kota Jakarta Barat",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 2500000,
-        "period": "monthly",
-        "quote": "Rp 2,5 Juta/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat",
-        "pageDate": "2026-10-20",
-        "minimumMonths": 1
-      },
-      "bedrooms": 1,
-      "sizeM2": 25.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Sukabumi Utara (Ilir)",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat"
-        },
-        {
-          "quote": "Minimum sewa 1 bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-gang-rayong-rt-13-09-no39-jakarta-barat",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-10-20",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-04",
-      "note": "Pembaruan sumber 2026-10-20. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
       "id": "sewa-pinhome-meruya-selatan-udik-bc61b2ed",
@@ -11973,7 +11654,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-09-14. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12013,7 +11694,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-11-03. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12093,7 +11774,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Paket yang dicatat Rp 24 juta/tahun. Opsi bulanan Rp 2,1 juta memiliki pembayaran awal 6 bulan dan deposit Rp 4 juta; syarat berikutnya mengikuti sumber. Jumlah 3 kamar pada portal mencakup 1 ruang serbaguna menurut deskripsi sehingga tidak dicantumkan. Pembaruan sumber 2026-08-23. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12133,7 +11814,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12173,7 +11854,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Sumber menyebut Graha Bintaro. Nominal tahunan sesuai label portal; harga dapat dinegosiasikan. Klaim bebas banjir belum diverifikasi mandiri. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12213,7 +11894,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12253,7 +11934,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12293,7 +11974,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12333,7 +12014,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-07-06. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12373,7 +12054,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-07-29. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12413,7 +12094,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-05-22. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12533,7 +12214,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12573,7 +12254,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Sumber menyebut Bukit Cimanggu City, Cluster Savana Boteo, dengan paket Rp 25 juta/tahun. Pin tetap perkiraan portal. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12653,7 +12334,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Paket sewa Rp 13 juta/tahun dipisahkan dari opsi take over beserta barang yang memiliki nominal berbeda; rincian barang dan biaya akhir perlu dikonfirmasi. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12693,7 +12374,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Tarif Rp 5 juta/bulan mensyaratkan minimum 12 bulan (total Rp 60 juta), bukan janji kontrak satu bulan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12733,7 +12414,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12813,7 +12494,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Minimum 6 bulan; deskripsi menyebut pembayaran bulanan atau sekaligus. Pembaruan sumber 2026-09-19. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12853,7 +12534,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12933,7 +12614,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-12-13. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -12945,11 +12626,11 @@
       "locationText": "Jombang, Ciputat, Kota Tangerang Selatan",
       "buildingOrCluster": "Puri Bintaro Indah",
       "rent": {
-        "amount": 1800000,
+        "amount": 1700000,
         "period": "monthly",
-        "quote": "Rp 1,8 Juta/Bulan",
+        "quote": "Rp 1,7 Juta/Bulan",
         "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-real-madrid-e8-no-6",
-        "pageDate": "2026-10-07",
+        "pageDate": "2026-11-27",
         "minimumMonths": 3
       },
       "bedrooms": 2,
@@ -12969,11 +12650,11 @@
       "nearStationsClaim": [],
       "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-real-madrid-e8-no-6",
       "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-10-07",
+      "postedOrUpdated": "2026-11-27",
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-10-07. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13013,7 +12694,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-07-20. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13053,7 +12734,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-04-21. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13093,7 +12774,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13133,7 +12814,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13173,7 +12854,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Jumlah kamar portal 3 berbeda dari deskripsi 2 sehingga tidak dicantumkan. Klaim bebas banjir belum diverifikasi mandiri. Pembaruan sumber 2026-06-22. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13213,7 +12894,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Tarif Rp 4,4 juta/bulan mensyaratkan minimum 12 bulan (total Rp 52,8 juta). Deposit Rp 2 juta disebut pada deskripsi. Pembaruan sumber 2026-09-05. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13253,7 +12934,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Deskripsi menyebut kamar 3+1; jumlah kamar utama tidak disimpulkan dari total 4 pada portal. Pembaruan sumber 2026-08-13. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13333,7 +13014,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-04-29. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13373,7 +13054,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Luas portal 30 m² berbeda dari deskripsi 20/25 m² sehingga tidak dicantumkan. Pembaruan sumber 2025-05-07. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13413,7 +13094,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13453,7 +13134,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-04-22. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13493,7 +13174,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-04-14. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13533,7 +13214,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-05-30. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13573,7 +13254,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13613,7 +13294,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-01-21. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13653,7 +13334,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13693,7 +13374,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-26",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13733,7 +13414,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Deskripsi mencampur kata dijual dengan penawaran sewa; paket Rp 25 juta/tahun mengikuti label sewa dan status listing rent. Pembaruan sumber 2026-02-08. Stok, biaya akhir, dan kebijakan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13813,7 +13494,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-04-21. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13853,7 +13534,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Nominal numerik portal Rp 3.996.500/bulan; label dibulatkan Rp 4 juta. Luas portal 164 m² berbeda dari deskripsi 90 m² sehingga tidak dicantumkan. Pembaruan sumber 2026-03-26. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -13893,7 +13574,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14093,7 +13774,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14133,7 +13814,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14173,7 +13854,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-03-02. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14213,7 +13894,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-09-22. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14372,7 +14053,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14412,7 +14093,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-08-07. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14492,7 +14173,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Minimum komitmen 3 bulan mengikuti deskripsi, walaupun label portal menyebut 1 bulan. Iklan ini dapat merujuk unit Sarua yang sudah tercatat pada sumber berbeda. Pembaruan sumber 2026-10-19. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14572,7 +14253,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Jumlah kamar portal 2 berbeda dari keterangan 2+1 pada deskripsi sehingga tidak dicantumkan. Pembaruan sumber 2026-04-15. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14612,7 +14293,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Jumlah kamar portal 4 berbeda dari keterangan 4+1 pada deskripsi sehingga tidak dicantumkan. Pembaruan sumber 2026-04-02. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14692,48 +14373,8 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-12-02. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
-    },
-    {
-      "id": "sewa-pinhome-jatibening-7ec74065",
-      "title": "Rumah sewa 2 kamar di Sanctuary Jatibening",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Bekasi",
-      "locationText": "Jatibening, Pondokgede (Pondok Gede), Kota Bekasi",
-      "buildingOrCluster": "Sanctuary Jatibening",
-      "rent": {
-        "amount": 36000000,
-        "period": "yearly",
-        "quote": "Rp 36 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-santuary-di-pondok-gede-bekasi-di-jatibening",
-        "pageDate": "2026-03-10",
-        "minimumMonths": 12
-      },
-      "bedrooms": 2,
-      "sizeM2": 70.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Jatibening",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-santuary-di-pondok-gede-bekasi-di-jatibening"
-        },
-        {
-          "quote": "Minimum sewa 12 bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-santuary-di-pondok-gede-bekasi-di-jatibening"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-perumahan-santuary-di-pondok-gede-bekasi-di-jatibening",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-03-10",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-04",
-      "note": "Sumber menyebut Perumahan Sanctuary Jatibening; paket Rp 36 juta/tahun dapat dinegosiasikan menurut deskripsi. Pembaruan sumber 2026-03-10. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
       "id": "sewa-pinhome-buaran-indah-34fd3d6f",
@@ -14772,7 +14413,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-01-14. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14812,7 +14453,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14852,7 +14493,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Luas unit tidak dicantumkan karena angka sumber 15 m² untuk 2 kamar belum cukup jelas. Dapat merujuk unit yang sama dengan iklan Tanah Tinggi lain. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14892,7 +14533,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-09-19. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14932,7 +14573,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Minimum 24 bulan sesuai label; tarif Rp 45 juta/tahun dengan total minimum Rp 90 juta. Pembaruan sumber 2026-08-28. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -14972,7 +14613,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-11-01. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15012,7 +14653,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15052,7 +14693,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-11-02. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15092,7 +14733,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15132,7 +14773,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Tarif Rp 1,7 juta/bulan mensyaratkan minimum 12 bulan (total Rp 20,4 juta), bukan kontrak satu bulan. Pembaruan sumber 2025-11-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15172,7 +14813,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-07-14. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15212,7 +14853,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Sumber menyebut Taman Mutiara Peninggilan Utara. Harga Rp 40 juta/tahun termasuk iuran lingkungan selama satu tahun menurut deskripsi. Pembaruan sumber 2026-01-27. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15252,7 +14893,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15292,7 +14933,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15332,7 +14973,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15372,7 +15013,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-01-12. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15412,7 +15053,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-03-15. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15492,7 +15133,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15535,46 +15176,6 @@
       }
     },
     {
-      "id": "sewa-pinhome-pondok-benda-edc041f9",
-      "title": "Rumah sewa 1 kamar di Pondok Benda",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Tangerang",
-      "locationText": "Pondok Benda, Pamulang, Kota Tangerang Selatan",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 1300000,
-        "period": "monthly",
-        "quote": "Rp 1,3 Juta/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-natuna-2",
-        "pageDate": "2025-10-11",
-        "minimumMonths": 1
-      },
-      "bedrooms": 1,
-      "sizeM2": 30.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Pondok Benda",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-natuna-2"
-        },
-        {
-          "quote": "Minimum sewa 1 bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-natuna-2"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-natuna-2",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2025-10-11",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-04",
-      "note": "Pembaruan sumber 2025-10-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
-    },
-    {
       "id": "sewa-pinhome-pondok-benda-3e05b2d4",
       "title": "Rumah sewa 3 kamar di Pondok Benda",
       "rentalType": "kontrakan",
@@ -15611,7 +15212,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Minimum 3 bulan. Deskripsi menerima kontrak 3/6 bulan atau 1 tahun; tarif bulanan tidak berarti kontrak satu bulan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15651,48 +15252,8 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Sumber menyebut Renijaya dan sedang direnovasi; tanggal selesai tidak ditampilkan. Kondisi serta waktu penyerahan perlu diperiksa langsung. Pembaruan sumber 2026-07-10. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
-    },
-    {
-      "id": "sewa-pinhome-maruyung-meruyung-e5fd4cb8",
-      "title": "Rumah sewa 1 kamar di Maruyung (Meruyung)",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Depok",
-      "locationText": "Maruyung (Meruyung), Limo, Kota Depok",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 1200000,
-        "period": "monthly",
-        "quote": "Rp 1,2 Juta/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tridharma-iii-no-20a",
-        "pageDate": "2026-10-02",
-        "minimumMonths": 6
-      },
-      "bedrooms": 1,
-      "sizeM2": 33.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Maruyung (Meruyung)",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tridharma-iii-no-20a"
-        },
-        {
-          "quote": "Minimum sewa 6 bulan (Rp 7,2 Juta)",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tridharma-iii-no-20a"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-tridharma-iii-no-20a",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-10-02",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-04",
-      "note": "Pembaruan sumber 2026-10-02. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
       "id": "sewa-pinhome-maruyung-meruyung-e6e3c57f",
@@ -15731,7 +15292,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15771,7 +15332,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-10-26. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15811,7 +15372,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-07-27. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15851,7 +15412,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15891,7 +15452,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Penawaran sumber ini dapat merujuk unit yang sama dengan iklan Mekar Jaya Rp 20 juta/tahun; harga Rp 22 juta/tahun dipertahankan sesuai halaman ini. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -15971,7 +15532,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-01-08. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16011,7 +15572,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16094,7 +15655,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-01-03. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16134,7 +15695,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16213,7 +15774,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16253,7 +15814,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Penawaran sumber tersendiri; alamat, spesifikasi dan titiknya sangat mirip iklan Curug Mekar lain sehingga dapat merujuk unit yang sama. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16293,7 +15854,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16333,7 +15894,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16373,7 +15934,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16413,7 +15974,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-04",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16572,7 +16133,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-12-27. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16612,48 +16173,8 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
-    },
-    {
-      "id": "sewa-pinhome-jombang-c2db81a3",
-      "title": "Rumah sewa di Jombang",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Tangerang",
-      "locationText": "Jombang, Ciputat, Kota Tangerang Selatan",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 40000000,
-        "period": "yearly",
-        "quote": "Rp 40 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-siap-huni-dekat-stasiun-sudimara-di-villa-gunung-lestari",
-        "pageDate": "2026-10-19",
-        "minimumMonths": 12
-      },
-      "bedrooms": null,
-      "sizeM2": null,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Jombang",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-siap-huni-dekat-stasiun-sudimara-di-villa-gunung-lestari"
-        },
-        {
-          "quote": "Minimum sewa 12 bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-siap-huni-dekat-stasiun-sudimara-di-villa-gunung-lestari"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-rumah-siap-huni-dekat-stasiun-sudimara-di-villa-gunung-lestari",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-10-19",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-05",
-      "note": "Jumlah kamar dan luas tidak dicantumkan: portal 3 kamar/100 m², sementara deskripsi 2+1 kamar dan luas bangunan 65 m². Pembaruan sumber 2026-10-19. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
       "id": "sewa-pinhome-sawah-baru-863699e6",
@@ -16772,7 +16293,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Angka numerik portal Rp 36.999.999/tahun dipertahankan; label harga membulatkan menjadi Rp 37 juta. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16812,7 +16333,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-02-25. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16852,7 +16373,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16892,7 +16413,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Tarif Rp 38,4 juta/tahun dengan minimum 24 bulan; total minimum pada label Rp 76,8 juta. Pembaruan sumber 2025-06-25. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16932,7 +16453,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -16972,7 +16493,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-15. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17008,11 +16529,11 @@
       "nearStationsClaim": [],
       "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-hunian-nyaman-asri-lokasi-strategis-bebas-banjir-di-taman-royal-3",
       "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-10-28",
+      "postedOrUpdated": "2026-11-22",
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-10-28. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17052,7 +16573,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Luas tidak dicantumkan karena portal menyebut bangunan 54 m², sedangkan deskripsi menyebut 55 m². Pembaruan sumber 2026-09-08. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17092,7 +16613,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Halaman yang sama menawarkan empat petakan dalam satu pagar untuk keluarga kecil. Dicatat sebagai satu penawaran sumber; unit yang tersedia perlu ditanyakan. Harga belum termasuk IPL dan parkir mobil berbayar. Pembaruan sumber 2025-09-03. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17132,7 +16653,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Deskripsi menyatakan hanya bagian bawah yang kosong; bukan sewa seluruh bangunan atas dan bawah. Tarif Rp 2,5 juta/bulan dengan minimum 6 bulan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17212,7 +16733,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-09-01. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17252,7 +16773,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-10-13. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17292,7 +16813,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Jumlah kamar tidak dicantumkan: portal menyebut 2, sementara deskripsi menyebut 2+1 tanpa membedakan kamar utama dan tambahan. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17612,7 +17133,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17652,7 +17173,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17692,7 +17213,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-08-21. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17732,7 +17253,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-05-12. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17772,7 +17293,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-10-13. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17812,7 +17333,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-01-24. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17852,7 +17373,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-04-22. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17892,7 +17413,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-02-25. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17932,7 +17453,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Label dan deskripsi mensyaratkan minimum sewa 6 bulan. Tarif Rp 3,5 juta/bulan berarti total minimum Rp 21 juta. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -17972,7 +17493,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-06-22. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18012,7 +17533,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18052,47 +17573,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
-      "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
-    },
-    {
-      "id": "sewa-pinhome-grogol-3f477b4a",
-      "title": "Rumah sewa 4 kamar di Grogol",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Depok",
-      "locationText": "Grogol, Limo, Kota Depok",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 30000000,
-        "period": "yearly",
-        "quote": "Rp 30 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-haji-tamrin-grogol-depok",
-        "pageDate": "2025-06-11",
-        "minimumMonths": 12
-      },
-      "bedrooms": 4,
-      "sizeM2": 130.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Grogol",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-haji-tamrin-grogol-depok"
-        },
-        {
-          "quote": "Minimum sewa 12 bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-haji-tamrin-grogol-depok"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-haji-tamrin-grogol-depok",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2025-06-11",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18132,48 +17613,8 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-01-08. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
-    },
-    {
-      "id": "sewa-pinhome-grogol-c7bb440c",
-      "title": "Rumah sewa 4 kamar di Grogol",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Depok",
-      "locationText": "Grogol, Limo, Kota Depok",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 44000000,
-        "period": "yearly",
-        "quote": "Rp 44 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-asri-strategis-di-jalan-jambu-kelurahan-grogol-limo-depok",
-        "pageDate": "2026-10-20",
-        "minimumMonths": 12
-      },
-      "bedrooms": 4,
-      "sizeM2": 150.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Grogol",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-asri-strategis-di-jalan-jambu-kelurahan-grogol-limo-depok"
-        },
-        {
-          "quote": "Minimum sewa 12 bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-asri-strategis-di-jalan-jambu-kelurahan-grogol-limo-depok"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-nyaman-asri-strategis-di-jalan-jambu-kelurahan-grogol-limo-depok",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-10-20",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-05",
-      "note": "Pembaruan sumber 2026-10-20. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
       "id": "sewa-pinhome-mekarsari-1f73ea6c",
@@ -18212,7 +17653,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Label memilih paket tahunan Rp 34,5 juta. Deskripsi juga menyebut opsi 6 bulan tetapi nominal paket itu tidak ditampilkan. Pembaruan sumber 2025-10-15. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18252,7 +17693,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-10-14. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18292,7 +17733,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-03-03. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18332,48 +17773,8 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
-    },
-    {
-      "id": "sewa-pinhome-cilangkap-dba5dfde",
-      "title": "Rumah sewa 3 kamar di Cilangkap",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Cilangkap, Cipayung, Kota Jakarta Timur",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 47000000,
-        "period": "yearly",
-        "quote": "Rp 47 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilangkap-2",
-        "pageDate": "2026-11-01",
-        "minimumMonths": 12
-      },
-      "bedrooms": 3,
-      "sizeM2": 75.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Cilangkap",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilangkap-2"
-        },
-        {
-          "quote": "Minimum sewa 12 bulan",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilangkap-2"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-cilangkap-2",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-11-01",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-05",
-      "note": "Pembaruan sumber 2026-11-01. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
       "id": "sewa-pinhome-mekar-jaya-mekarjaya-a36416cd",
@@ -18412,7 +17813,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18452,7 +17853,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Tarif Rp 3 juta/bulan untuk komitmen 6 bulan cocok dengan total paket Rp 18 juta pada deskripsi. Opsi Rp 30 juta/tahun adalah paket berbeda; tarif ini bukan kontrak satu bulan. Pembaruan sumber 2026-09-26. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18620,7 +18021,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-10-18. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18660,7 +18061,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-05-16. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18700,7 +18101,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18740,7 +18141,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Tarif Rp 50 juta/tahun dengan minimum 24 bulan; total minimum pada label Rp 100 juta. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18780,7 +18181,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18820,7 +18221,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18860,7 +18261,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-01-18. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18900,7 +18301,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-12-17. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18940,7 +18341,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Luas tidak dicantumkan: portal 36 m², sementara deskripsi menyebut sudah direnovasi menjadi tipe 45. Pembaruan sumber 2026-06-24. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -18980,7 +18381,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -19020,7 +18421,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -19140,7 +18541,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -19180,7 +18581,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-09-10. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -19300,7 +18701,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-06-18. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -19340,7 +18741,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-09-27. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -19420,7 +18821,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-11-18. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -19460,7 +18861,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-05-02. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -19700,7 +19101,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-02-18. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -19740,7 +19141,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -19780,7 +19181,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Jumlah kamar tidak dicantumkan: portal menyebut 3, sedangkan deskripsi menyebut KT 2. Harga mengikuti label Rp 47 juta/tahun; deposit pada deskripsi Rp 3,5 juta. Pembaruan sumber 2026-09-15. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -19980,7 +19381,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -20020,7 +19421,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -20180,7 +19581,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-07-20. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -20540,7 +19941,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -20660,7 +20061,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-01-29. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -20740,7 +20141,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -20780,7 +20181,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -20900,7 +20301,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -20940,48 +20341,8 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-11-06. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
-    },
-    {
-      "id": "sewa-pinhome-cilangkap-43a03d1d",
-      "title": "Rumah sewa 3 kamar di Cilangkap",
-      "rentalType": "kontrakan",
-      "kind": "Rumah",
-      "area": "Jakarta",
-      "locationText": "Cilangkap, Cipayung, Kota Jakarta Timur",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 4300000,
-        "period": "monthly",
-        "quote": "Rp 4,3 Juta/Bulan",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur",
-        "pageDate": "2026-11-01",
-        "minimumMonths": 3
-      },
-      "bedrooms": 3,
-      "sizeM2": 90.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Cilangkap",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur"
-        },
-        {
-          "quote": "Minimum sewa 3 bulan (Rp 12,9 Juta)",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jalan-sepakat-ix-cilangkap-jakarta-timur",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-11-01",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-07",
-      "note": "Tarif Rp 4,3 juta/bulan mensyaratkan minimum 3 bulan (Rp 12,9 juta). Deskripsi menyebut semi furnished; inventaris akhir perlu konfirmasi. Pembaruan sumber 2026-11-01. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
       "id": "sewa-pinhome-harapanbaru-harapan-baru-d728c1df",
@@ -21020,7 +20381,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -21100,7 +20461,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -21140,7 +20501,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-07-10. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -21180,7 +20541,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-02-26. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -21220,7 +20581,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Tarif Rp 40 juta/tahun dengan minimum 24 bulan berarti total minimum Rp 80 juta, bukan kontrak satu tahun. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -21260,7 +20621,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-01-14. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -21300,7 +20661,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Portal dan deskripsi menyebut empat kamar serta bangunan 100 m². Penawaran berdekatan dengan URL lain tetap dicatat sebagai penawaran sumber, bukan bukti unit unik. Pembaruan sumber 2026-02-28. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -22213,7 +21574,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -22537,7 +21898,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Satu unit kontrakan di perumahan menurut deskripsi; dua kamar tidur dan dua kamar mandi disebut sumber. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -22577,7 +21938,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -22776,7 +22137,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Pembaruan sumber 2026-09-02. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -22816,7 +22177,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Deskripsi menyebut semi furnished; inventaris dan biaya tambahan perlu konfirmasi. Klaim jarak transportasi dari iklan tidak dianggap sebagai rute terukur. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -22896,7 +22257,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Deskripsi menyebut tiga kamar tidur, bangunan 90 m² dan deposit Rp 3 juta. Klaim bebas banjir pada iklan belum diverifikasi dan tidak dijadikan penilaian risiko. Pembaruan sumber 2025-09-09. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -23056,7 +22417,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Satu penawaran rumah kosong di perumahan menurut deskripsi; bukan penawaran sewa kamar. Pembaruan sumber 2025-06-11. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -23136,7 +22497,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Deskripsi menyebut dua kamar tidur, satu kamar mandi dan sewa Rp 30 juta per tahun. Klaim tidak banjir belum diverifikasi dan tidak dijadikan penilaian risiko. Pembaruan sumber 2026-06-01. Stok, biaya akhir, dan ketentuan penghuni perlu dikonfirmasi langsung."
     },
     {
@@ -23215,7 +22576,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": " Pembaruan sumber 2025-06-11. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
     },
     {
@@ -23255,7 +22616,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": "Deskripsi menyebut IPL sekitar Rp 300 ribuan/bulan. Klaim bebas banjir dan waktu ke stasiun pada iklan belum diverifikasi. Pembaruan sumber 2026-09-05. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
     },
     {
@@ -23415,7 +22776,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-07",
+      "lastChecked": "2026-11-27",
       "note": " Pembaruan sumber 2025-06-11. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi."
     },
     {
@@ -24082,7 +23443,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-27",
       "note": "Dua lantai, 2 kamar tidur dan 2 kamar mandi menurut deskripsi. Penggunaan sebagai rumah tinggal diperbolehkan. Harga termasuk IPL; air dan listrik perlu konfirmasi. Pin dan foto dua iklan serupa berbeda; pastikan unit saat survei. Pembaruan sumber 2025-09-03. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
       "kitchen": "private"
     },
@@ -24127,7 +23488,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-27",
       "note": "Dua lantai, 2 kamar tidur dan 2 kamar mandi menurut deskripsi. Penggunaan sebagai rumah tinggal diperbolehkan. Harga termasuk IPL; air dan listrik perlu konfirmasi. Pin dan foto dua iklan serupa berbeda; pastikan unit saat survei. Pembaruan sumber 2025-09-12. Stok, tanggal masuk, deposit dan biaya akhir perlu konfirmasi.",
       "kitchen": "private"
     },
@@ -24414,7 +23775,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-10",
+      "lastChecked": "2026-11-27",
       "note": "Deskripsi menawarkan kontrakan 4 sekat/ruangan dan menyebut cocok untuk pasutri. Aturan portal mengizinkan pasutri dan anak. Harga Rp1,5 juta/bulan; biaya untuk dua orang, minimum kontrak dan stok perlu konfirmasi. Portal mencantumkan 3×3 m untuk tipe kamar; luas total dan jumlah kamar tidur belum pasti. Pin perkiraan 755 m dari Al Hikmah DDN 2 dan 1,017 km dari Al Adhim, garis lurus. Pembaruan sumber 2025-10-23. Deposit dan tagihan perlu konfirmasi."
     },
     {
@@ -24609,8 +23970,8 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-10",
-      "note": "Khusus pasutri, 1 kamar tidur ber-AC, bangunan 30 m². Rp2,5 juta/bulan atau Rp30 juta/tahun. Air, parkir, sampah dan perawatan AC tercantum gratis; listrik token sendiri. Pin acuan jalan/RT-RW dari peta pengiklan, bukan pintu unit; sekitar 1,224 km garis lurus dari acuan ke Al Hikmah DDN 2. Minimum, deposit dan stok perlu konfirmasi. Tanggal iklan belum diketahui; diperiksa 10 November 2026."
+      "lastChecked": "2026-11-27",
+      "note": "Khusus pasutri, 1 kamar tidur ber-AC, bangunan 30 m². Rp2,5 juta/bulan atau Rp30 juta/tahun. Air, parkir, sampah dan perawatan AC tercantum gratis; listrik token sendiri. Pin acuan jalan/RT-RW dari peta pengiklan, bukan pintu unit; sekitar 1,224 km garis lurus dari acuan ke Al Hikmah DDN 2. Minimum, deposit dan stok perlu konfirmasi. Tanggal iklan belum diketahui; diperiksa 10 November 2026. Pemeriksaan 2026-11-27: halaman Facebook Marketplace diblokir/throttled; ketersediaan belum dapat diverif"
     },
     {
       "id": "sewa-mamikos-84579aba7508",
@@ -24788,11 +24149,11 @@
       "nearStationsClaim": [],
       "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-siap-huni-di-perumahan-aleyra-residence-ar-7-no-5-buaran-indah-poris-tangerang",
       "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-11-16",
+      "postedOrUpdated": "2026-11-18",
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-17",
+      "lastChecked": "2026-11-27",
       "note": "Rp29 juta/tahun, minimum 12 bulan. Deskripsi menyebut sesuai keluarga kecil/pasangan dan kondisi kosong. Luas bangunan tidak dicantumkan karena field 45 m² berbeda dari deskripsi 60 m². IPL, utilitas, deposit, cara bayar dan stok perlu konfirmasi. Acuan KRL Tanah Tinggi 1,380 km garis lurus, bukan rute berjalan."
     },
     {
@@ -24828,7 +24189,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-17",
+      "lastChecked": "2026-11-27",
       "note": "Rp2,7 juta/bulan, minimum 3 bulan; komitmen tarif dasar minimal Rp8,1 juta, bukan kepastian bayar sekaligus. Sumber mencantumkan perabot seperti sofa, meja makan, kasur dan lemari. Deposit, utilitas, cara bayar dan stok perlu konfirmasi. Acuan KRL Cilebut 428 m garis lurus, bukan rute berjalan."
     },
     {
@@ -24864,7 +24225,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-17",
+      "lastChecked": "2026-11-27",
       "note": "Rp30 juta/tahun, minimum 12 bulan; deposit Rp2 juta disebut terpisah. Deskripsi: rumah satu lantai, 2 kamar tidur/1 kamar mandi, bangunan 65 m² dan tanah 90 m². Stok, biaya akhir dan ketentuan penghuni perlu konfirmasi. Acuan KRL Cilebut 2,606 km garis lurus, bukan rute berjalan."
     },
     {
@@ -24900,7 +24261,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-27",
       "note": "Rp1,8 juta/bulan, minimum 12 bulan; komitmen tarif dasar minimal Rp21,6 juta, bukan kepastian bayar bulanan atau sekaligus. Deskripsi menyebut rumah keluarga dua lantai dalam kondisi kosong. Cara bayar, deposit, utilitas dan stok perlu konfirmasi. Acuan KRL Pondok Ranji 2,817 km garis lurus, bukan rute berjalan."
     },
     {
@@ -25340,7 +24701,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-23",
+      "lastChecked": "2026-11-27",
       "note": "Rp45 juta per tahun dengan minimum 12 bulan. Iklan menyebut air PDAM dan listrik 2.200 W. Konfirmasi ketentuan penghuni, deposit, tagihan dan ketersediaan. Acuan ke KRL Tanah Tinggi 737 m garis lurus."
     },
     {
@@ -25376,7 +24737,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-23",
+      "lastChecked": "2026-11-27",
       "note": "Rp42 juta per tahun dengan minimum 12 bulan. Deskripsi rumah tinggal mencantumkan dua AC dan carport. Konfirmasi perabot yang disertakan, deposit, tagihan dan stok. Acuan ke KRL Pondok Rajeg 761 m garis lurus."
     },
     {
@@ -25712,7 +25073,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-23",
+      "lastChecked": "2026-11-27",
       "note": "Rp52 juta per tahun dengan minimum 12 bulan. Deposit Rp5 juta disebut terpisah. Empat kamar tidur, dua kamar mandi dan satu carport menurut iklan. Konfirmasi tagihan dan stok. Acuan ke KRL Klender 621 m garis lurus."
     },
     {
@@ -25899,7 +25260,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-23",
+      "lastChecked": "2026-11-27",
       "note": "Rp45 juta per tahun dengan minimum 12 bulan. Iklan menyebut satu kamar di lantai bawah, dua di lantai atas, dan carport. Konfirmasi deposit, perabot, utilitas dan stok. Acuan ke KRL Klender Baru 2,045 km garis lurus."
     },
     {
@@ -25974,7 +25335,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-23",
+      "lastChecked": "2026-11-27",
       "note": "Rp27 juta per tahun dengan minimum 12 bulan. Deskripsi menawarkan rumah untuk tinggal, dengan penggunaan usaha sebagai opsi. Empat kamar dan dua kamar mandi. Konfirmasi deposit, tagihan dan stok. Acuan ke KRL Tambun 2,296 km garis lurus."
     },
     {
@@ -26082,7 +25443,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-23",
+      "lastChecked": "2026-11-27",
       "note": "Deskripsi menawarkan rumah satu lantai berperabot untuk suami istri, dua orang. Rp16 juta per tahun dengan minimum 12 bulan. Satu kamar tidur, bangunan 25 m² dan tanah 35 m². Konfirmasi deposit, utilitas, pelunasan dan stok. Acuan ke KRL Tambun 2,487 km garis lurus."
     },
     {
@@ -26118,7 +25479,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-23",
+      "lastChecked": "2026-11-27",
       "note": "Rp26 juta per tahun dengan minimum 24 bulan. Portal mencantumkan Rp52 juta untuk dua tahun dan deskripsi meminta sewa dua tahun di awal. Deposit Rp2 juta terpisah. Konfirmasi jadwal bayar, biaya dan stok. Acuan ke KRL Cilebut 2,562 km garis lurus."
     },
     {
@@ -26154,7 +25515,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-23",
+      "lastChecked": "2026-11-27",
       "note": "Rp28 juta per tahun dengan minimum 12 bulan. Portal mencantumkan dua kamar dan bangunan 80 m². Konfirmasi perabot, deposit, utilitas dan stok. Acuan ke KRL Cilebut 2,683 km garis lurus."
     },
     {
@@ -26190,7 +25551,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-23",
+      "lastChecked": "2026-11-27",
       "note": "Rp30 juta per tahun dengan minimum 12 bulan. Iklan menyebut dua kamar tidur, dua kamar mandi, air jet pump, listrik token dan carport. Konfirmasi tagihan, deposit dan stok. Acuan ke KRL Bekasi 2,694 km garis lurus."
     },
     {
@@ -26226,7 +25587,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-23",
+      "lastChecked": "2026-11-27",
       "note": "Rp25 juta per tahun dengan minimum 12 bulan. Deskripsi mencantumkan dua kamar, satu kamar mandi dan bangunan 60 m². Konfirmasi biaya dan ketersediaan. Acuan ke KRL Bekasi 2,694 km garis lurus."
     },
     {
@@ -26262,7 +25623,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-23",
+      "lastChecked": "2026-11-27",
       "note": "Rp25 juta per tahun dengan minimum 12 bulan. Deskripsi mencantumkan dua kamar dan satu kamar mandi, sesuai untuk keluarga kecil. Konfirmasi biaya, ketentuan penghuni dan stok. Acuan ke KRL Bekasi 2,813 km garis lurus."
     },
     {
@@ -26334,7 +25695,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-23",
+      "lastChecked": "2026-11-27",
       "note": "Rp48 juta per tahun dengan minimum 12 bulan. Deskripsi menyebut kamar tidur 3+1, kamar mandi 2+1 dan carport dua mobil. Konfirmasi fungsi ruang tambahan, biaya dan stok. Acuan ke KRL Tambun 2,868 km garis lurus."
     },
     {
@@ -26370,7 +25731,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-23",
+      "lastChecked": "2026-11-27",
       "note": "Rp35 juta per tahun dengan minimum 12 bulan. Deskripsi menyebut kondisi kosong dan opsi bayar per enam bulan. Iklan mencatat sewa sebelumnya hingga September 2026. Konfirmasi ketersediaan sekarang, jadwal bayar dan biaya. Acuan ke KRL Depok 2,976 km garis lurus."
     },
     {
@@ -26442,7 +25803,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-23",
+      "lastChecked": "2026-11-27",
       "note": "Rp55 juta per tahun dengan minimum 12 bulan. Deskripsi mencantumkan kamar tidur 3+1, dua kamar mandi, air PAM dan carport. Konfirmasi fungsi ruang tambahan, deposit, biaya dan stok. Acuan ke KRL Sudimara 1,833 km garis lurus."
     },
     {
@@ -26668,45 +26029,9 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-27",
       "note": "Rumah 2,5 lantai dengan dapur di dalam unit menurut iklan. Rp45 juta per tahun, minimum 12 bulan. Deposit Rp3 juta disebut terpisah. Cek fasilitas dapur, izin kompor, dan pembayaran.",
       "kitchen": "private"
-    },
-    {
-      "id": "sewa-pinhome-8e0c61140df5",
-      "title": "Rumah sewa 2 kamar di Jombang, dekat KRL Sudimara",
-      "kind": "Rumah",
-      "rentalType": "kontrakan",
-      "area": "Tangerang",
-      "locationText": "Jombang, Ciputat, Kota Tangerang Selatan",
-      "buildingOrCluster": null,
-      "rent": {
-        "amount": 31000000,
-        "period": "yearly",
-        "quote": "Rp 31 Juta/Tahun",
-        "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jombang-raya-1",
-        "pageDate": "2026-10-23",
-        "minimumMonths": 12
-      },
-      "bedrooms": 2,
-      "sizeM2": 61.0,
-      "furnished": null,
-      "evidence": [
-        {
-          "quote": "Rp 31 Juta/Tahun",
-          "url": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jombang-raya-1"
-        }
-      ],
-      "areaHighlights": [],
-      "nearStationsClaim": [],
-      "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jombang-raya-1",
-      "sourcePortal": "pinhome",
-      "postedOrUpdated": "2026-10-23",
-      "ownerType": "unknown",
-      "social": [],
-      "verdict": "partial",
-      "lastChecked": "2026-11-25",
-      "note": "Tarif Rp31 juta per tahun, minimum 12 bulan. Rumah satu lantai dengan dua kamar menurut portal. Periksa dapur, izin kompor dan rute dari pintu unit ke stasiun."
     },
     {
       "id": "sewa-pinhome-dba881bc3208",
@@ -26781,7 +26106,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-27",
       "note": "Alternatif sekitar Malaka Jaya. Deskripsi rumah menyebut dapur dalam unit. Rp45 juta per tahun, minimum 12 bulan. Periksa apakah kompor boleh dipakai, deposit dan harga akhir.",
       "kitchen": "private"
     },
@@ -26895,7 +26220,7 @@
       "ownerType": "unknown",
       "social": [],
       "verdict": "partial",
-      "lastChecked": "2026-11-26",
+      "lastChecked": "2026-11-27",
       "note": "Tarif bulanan dengan minimum satu bulan menurut Pinhome. Dapur dan izin kompor belum dijelaskan. Titik perkiraan portal berjarak sekitar 765 m garis lurus dari MRT Blok M."
     },
     {
@@ -27407,7 +26732,7 @@
       "postedOrUpdated": "2026-09-27",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-c4cba71cab62",
@@ -27442,7 +26767,7 @@
       "postedOrUpdated": "2026-09-17",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-46dbdaf25fb1",
@@ -27477,7 +26802,7 @@
       "postedOrUpdated": "2026-11-19",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-scbd-20261126-026",
@@ -27760,7 +27085,7 @@
       "postedOrUpdated": "2026-11-16",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-0aba380e0bdb",
@@ -27862,7 +27187,7 @@
       "postedOrUpdated": "2026-08-26",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-22a89c52118f",
@@ -27901,7 +27226,7 @@
       "postedOrUpdated": "2026-06-26",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-cd1227103e47",
@@ -28000,10 +27325,10 @@
       "note": "Acuan pin sekitar 0,74 km garis lurus dari KRL Sudimara. Sewa tahunan. Luas di spesifikasi dan deskripsi berbeda; konfirmasi luas bangunan. Stok perlu konfirmasi.",
       "listingUrl": "https://www.pinhome.id/disewa/rumah-sekunder/unit/disewakan-rumah-di-jl-jombang-raya",
       "sourcePortal": "Pinhome",
-      "postedOrUpdated": "2026-10-23",
+      "postedOrUpdated": "2026-11-27",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-a5d080d9e497",
@@ -28182,7 +27507,7 @@
       "postedOrUpdated": "2025-12-30",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-4d272e7d6092",
@@ -28703,7 +28028,7 @@
       "postedOrUpdated": "2026-10-21",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-2c87007076f9",
@@ -28737,7 +28062,7 @@
       "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-f9cef6d9f6e3",
@@ -28771,7 +28096,7 @@
       "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-76ad8358510f",
@@ -28805,7 +28130,7 @@
       "postedOrUpdated": "2025-09-22",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-62fbaec5ffe4",
@@ -28873,7 +28198,7 @@
       "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-6dcde845ed73",
@@ -29009,7 +28334,7 @@
       "postedOrUpdated": "2025-11-28",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-e54a875d487e",
@@ -29179,7 +28504,7 @@
       "postedOrUpdated": "2026-11-21",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-4a5c7b83c12a",
@@ -29213,7 +28538,7 @@
       "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-86b334193640",
@@ -29281,7 +28606,7 @@
       "postedOrUpdated": "2025-10-29",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-1dbb3ff12c22",
@@ -29349,7 +28674,7 @@
       "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-64ac45093ff2",
@@ -29383,7 +28708,7 @@
       "postedOrUpdated": "2025-07-25",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-0f81f3e39dd2",
@@ -29417,7 +28742,7 @@
       "postedOrUpdated": "2026-05-07",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-357916454fd8",
@@ -29655,7 +28980,7 @@
       "postedOrUpdated": "2026-09-22",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-f9eedf6cd38b",
@@ -29723,7 +29048,7 @@
       "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-0f63daa3013d",
@@ -29859,7 +29184,7 @@
       "postedOrUpdated": "2026-11-20",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-f7729fa61860",
@@ -29927,7 +29252,7 @@
       "postedOrUpdated": "2025-09-22",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-8475394ecbad",
@@ -29995,7 +29320,7 @@
       "postedOrUpdated": "2026-05-02",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-31233fbbaca8",
@@ -30063,7 +29388,7 @@
       "postedOrUpdated": "2026-11-09",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-c5ac48d3216b",
@@ -30301,7 +29626,7 @@
       "postedOrUpdated": "2026-11-24",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-0947c29fc3ae",
@@ -30369,7 +29694,7 @@
       "postedOrUpdated": "2026-03-02",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-a4f781da3b1a",
@@ -30471,7 +29796,7 @@
       "postedOrUpdated": "2026-04-17",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-54b139dc9074",
@@ -30505,7 +29830,7 @@
       "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-d6155160067c",
@@ -30641,7 +29966,7 @@
       "postedOrUpdated": "2025-12-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-94fe57e13648",
@@ -30709,7 +30034,7 @@
       "postedOrUpdated": "2026-11-15",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-7c0321279417",
@@ -30777,7 +30102,7 @@
       "postedOrUpdated": "2025-11-09",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-1341fdca57d1",
@@ -30845,7 +30170,7 @@
       "postedOrUpdated": "2026-11-03",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-f917318b97be",
@@ -30879,7 +30204,7 @@
       "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-c9c6f56a2154",
@@ -30913,7 +30238,7 @@
       "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-235b5c93784c",
@@ -30947,7 +30272,7 @@
       "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-a0421fef910c",
@@ -30981,7 +30306,7 @@
       "postedOrUpdated": "2026-03-01",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-07f971af0ef9",
@@ -31049,7 +30374,7 @@
       "postedOrUpdated": "2026-11-16",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-5d3e884974af",
@@ -31083,7 +30408,7 @@
       "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-693666b1dd78",
@@ -31151,7 +30476,7 @@
       "postedOrUpdated": "2025-10-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-15d77de80f22",
@@ -31185,7 +30510,7 @@
       "postedOrUpdated": "2026-11-21",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-4eb25bb00233",
@@ -31287,7 +30612,7 @@
       "postedOrUpdated": "2026-07-01",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-1fa5084d25e5",
@@ -31321,7 +30646,7 @@
       "postedOrUpdated": "2026-02-23",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-f7b9412f9f97",
@@ -31457,7 +30782,7 @@
       "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-efe126350bfb",
@@ -31491,7 +30816,7 @@
       "postedOrUpdated": "2026-01-29",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-d1deab7e8664",
@@ -31525,7 +30850,7 @@
       "postedOrUpdated": "2025-09-24",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-rukita-48d4045627bf",
@@ -32008,7 +31333,7 @@
       "postedOrUpdated": "2026-11-16",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-d5490c2ebb92",
@@ -32178,7 +31503,7 @@
       "postedOrUpdated": "2026-05-19",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-c955a12b0d26",
@@ -32212,7 +31537,7 @@
       "postedOrUpdated": "2026-09-19",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-9d2b6f81615e",
@@ -32280,7 +31605,7 @@
       "postedOrUpdated": "2026-05-07",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-6df0eeb8cfbd",
@@ -32314,7 +31639,7 @@
       "postedOrUpdated": "2026-05-21",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-8cdc3fb6f80d",
@@ -32348,7 +31673,7 @@
       "postedOrUpdated": "2025-06-11",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-c2db6722bc74",
@@ -32382,7 +31707,7 @@
       "postedOrUpdated": "2026-11-24",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-a44bc8ec1e33",
@@ -32450,7 +31775,7 @@
       "postedOrUpdated": "2026-08-23",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-rukita-c6d80bc9a5bc",
@@ -32657,7 +31982,7 @@
       "postedOrUpdated": "2026-09-18",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-ee233b368a31",
@@ -32725,7 +32050,7 @@
       "postedOrUpdated": "2026-11-12",
       "ownerType": "unknown",
       "verdict": "partial",
-      "lastChecked": "2026-11-26"
+      "lastChecked": "2026-11-27"
     },
     {
       "id": "sewa-pinhome-ff56811633dc",

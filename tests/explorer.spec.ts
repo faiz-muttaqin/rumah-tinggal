@@ -1251,17 +1251,49 @@ test("resizes a frozen column and downloads all filtered rows in Excel order", a
   );
   await page.goto("/?koleksi=sewa&tampilan=tabel");
   const panel = page.locator("#rental-table");
+  await expect(panel.locator("[data-table-count]")).toHaveText(
+    "1–40 dari 47 penawaran",
+  );
   const titleResize = panel.getByRole("separator", {
     name: "Ubah lebar kolom Hunian",
     exact: true,
   });
-  const before = Number(await titleResize.getAttribute("aria-valuenow"));
-  const box = await titleResize.boundingBox();
+  await page.waitForFunction(() => {
+    const node = document.querySelector<HTMLElement>(
+      '#rental-table [data-resize-column="title"]',
+    );
+    if (!node?.isConnected) return null;
+    const rect = node.getBoundingClientRect();
+    if (!rect.width || !rect.height) return null;
+    return {
+      x: rect.x,
+      y: rect.y,
+      width: rect.width,
+      height: rect.height,
+      value: Number(node.getAttribute("aria-valuenow")),
+    };
+  });
+  const box = await page.evaluate(() => {
+    const node = document.querySelector<HTMLElement>(
+      '#rental-table [data-resize-column="title"]',
+    );
+    if (!node?.isConnected) return null;
+    const rect = node.getBoundingClientRect();
+    if (!rect.width || !rect.height) return null;
+    return {
+      x: rect.x,
+      y: rect.y,
+      width: rect.width,
+      height: rect.height,
+      value: Number(node.getAttribute("aria-valuenow")),
+    };
+  });
   if (!box) throw new Error("Handle kolom tidak ditemukan");
+  const before = box.value;
   await panel.getByLabel("Bekukan kolom kiri").selectOption("3");
-  await page.mouse.move(box.x + 4, box.y + 17);
+  await page.mouse.move(box.x + 4, box.y + box.height / 2);
   await page.mouse.down();
-  await page.mouse.move(box.x + 88, box.y + 17, { steps: 5 });
+  await page.mouse.move(box.x + 88, box.y + box.height / 2, { steps: 5 });
   await page.mouse.up();
   await expect(titleResize).toHaveAttribute(
     "aria-valuenow",

@@ -1407,14 +1407,6 @@
     },
     "mosqueCoverage": "within-radius"
   },
-  "sewa-pinhome-8e0c61140df5": {
-    "flood": {
-      "label": "Peta bahaya BNPB · rujukan wilayah",
-      "url": "https://inarisk.bnpb.go.id/"
-    },
-    "floors": 1,
-    "mosqueCoverage": "outside-radius"
-  },
   "sewa-pinhome-9138b6d7240d": {
     "career": {
       "label": "Xumei • 2–3 tahun, sert. halal ↗",
@@ -2894,12 +2886,6 @@
     "flood": {
       "label": "Konteks kelurahan · Catatan genangan Kampung Curug RT 01/04, Cilebut Barat, Sukaraja (2026-04-30); bukan bukti unit banjir",
       "url": "https://siaga112.bogorkab.go.id/detail-aduan/bpbd/2026/1118"
-    }
-  },
-  "sewa-pinhome-pondok-labu-a20145eb": {
-    "flood": {
-      "label": "Konteks kelurahan · RT terdampak genangan di Pondok Labu (2026-01-12); bukan bukti unit banjir",
-      "url": "https://bpbd.jakarta.go.id/berita/eEd3Nk5rL1Y3QXBRbTZKaDI5MkJVQT09/update-info-terkini-genangan-12-januari-2026-s-d-pukul-18-00-wib"
     }
   },
   "sewa-pinhome-bekasijaya-bekasi-jaya-51ff52a2": {

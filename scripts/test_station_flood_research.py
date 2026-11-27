@@ -285,9 +285,8 @@ class SnapshotTest(unittest.TestCase):
         rentals = {r["id"]: r for r in research("rentals")["rentals"]}
         locations = {r["rentalId"]: r["location"] for r in research("rental-locations")["items"]}
         self.assertEqual(set(locations), set(rentals))
-        # This is a dated checkpoint; future additional rentals need not be present.
+        # This is a dated checkpoint; later additions and retired listings can differ.
         ids = {r["rentalId"] for r in screening["items"]}
-        self.assertTrue(ids <= set(rentals))
         self.assertEqual(len(ids), screening["summary"]["rentals"])
         points = {p["id"]: p for p in evidence["points"]}
         reports = {p["id"]: p for p in evidence["reports"]}
